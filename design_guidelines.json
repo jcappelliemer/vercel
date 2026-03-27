@@ -1,0 +1,81 @@
+{
+  "theme": "light",
+  "archetype": "4 - Swiss & High-Contrast",
+  "domain": "Construction, Architecture, Premium B2B/B2C Services",
+  "colors": {
+    "primary": "#002FA7",
+    "primary_foreground": "#FFFFFF",
+    "secondary": "#0A0A0A",
+    "secondary_foreground": "#FFFFFF",
+    "accent": "#FF3B30",
+    "accent_foreground": "#FFFFFF",
+    "background": "#F9FAFB",
+    "foreground": "#0A0A0A",
+    "surface": "#FFFFFF",
+    "border": "#E5E7EB",
+    "success": "#22C55E"
+  },
+  "typography": {
+    "heading_font": "Cabinet Grotesk",
+    "body_font": "Satoshi",
+    "h1": "text-5xl sm:text-6xl tracking-tighter font-black uppercase",
+    "h2": "text-4xl sm:text-5xl tracking-tight font-bold uppercase",
+    "h3": "text-2xl sm:text-3xl tracking-tight font-semibold",
+    "body": "text-base leading-relaxed text-foreground/80",
+    "overline": "text-xs tracking-[0.2em] uppercase font-bold text-primary"
+  },
+  "layout": {
+    "spacing": "Generous (p-8, p-12, p-16, p-24, p-32)",
+    "grid_system": "Bento 'Tetris' Grid (grid-cols-1 md:grid-cols-12 gap-8) for features and services. Do not perfectly fill 100% of the grid.",
+    "border_radius": "Sharp edges (rounded-none or rounded-sm) for a technical, precise architectural feel."
+  },
+  "components_strategy": {
+    "header": "Sticky with Glassmorphism (backdrop-blur-xl bg-white/80 border-b border-black/5).",
+    "hero": "Asymmetrical layout. Heavy typography overlaid on architectural glass imagery with bg-white/30 gradient overlay.",
+    "cards": "Flat solid surfaces. 1px solid border (border-black/10). No soft shadows, use sharp drop-shadows on hover.",
+    "buttons": "Square edges, high contrast. Primary uses #002FA7. Include clear data-testid attributes.",
+    "icons": "@phosphor-icons/react (Duotone or Regular weight for technical precision)."
+  },
+  "image_urls": {
+    "hero_background": {
+      "url": "https://images.unsplash.com/photo-1719437354892-f64ea7e03d4e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBnbGFzcyUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHx8fHwxNzc0NjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Tall modern glass building with trees. Use in hero section."
+    },
+    "service_antisolari": {
+      "url": "https://images.unsplash.com/photo-1761706885595-02fdd9fe91bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBnbGFzcyUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHx8fHwxNzc0NjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Modern building facade reflecting sunset colors. Use for Solar/Heat Control Window Films."
+    },
+    "service_privacy": {
+      "url": "https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg",
+      "description": "Contemporary office space with glass doors. Use for Privacy/Design Films."
+    },
+    "service_sicurezza": {
+      "url": "https://images.unsplash.com/photo-1674829763557-19283dbde6e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxzZWN1cml0eSUyMHNoYXR0ZXJwcm9vZiUyMGdsYXNzfGVufDB8fHx8MTc3NDYzNjM2Nnww&ixlib=rb-4.1.0&q=85",
+      "description": "Shatterproof security glass demo. Use for Security Films."
+    },
+    "service_lcd_switch": {
+      "url": "https://images.pexels.com/photos/5213546/pexels-photo-5213546.jpeg",
+      "description": "Smart glass privacy partition. Use for LCD Switch Films."
+    },
+    "installation_process": {
+      "url": "https://images.pexels.com/photos/5691531/pexels-photo-5691531.jpeg",
+      "description": "Professional installer fitting a window. Use for About Us / Process section."
+    }
+  },
+  "instructions_to_main_agent": [
+    "1. FRAMEWORK: Use pure HTML/Tailwind for structural marketing layouts. Use Shadcn strictly for complex interactive components (forms, dialogs) but heavily override their styles to match the 'Swiss High-Contrast' theme (sharp edges, high contrast).",
+    "2. TYPOGRAPHY: Import and use Cabinet Grotesk for headings. Headings must be tight (tracking-tight or tracking-tighter) and never centered by default (asymmetry preferred).",
+    "3. HERO SECTION: Implement multiple CTAs (Quote, Call, WhatsApp) distinctly. Use pure #002FA7 for the primary action (Quote) and white/outline for others. Max hero image overlay opacity is bg-white/40 (gradient preferred).",
+    "4. SERVICES GRID: Use Mode A: 'The Tetris Grid' (col-span-full, col-span-4, row-span-2). Make it look like an architectural bento box. Do not use basic 3-column equal grids.",
+    "5. TRUST BAR: Implement a slow 'Editorial Ribbon' marquee using react-fast-marquee for partners (MADICO, ISO 9001) and stats (30+ Anni, 150k mq/anno).",
+    "6. ANIMATION: Install and configure `lenis` for smooth scrolling. Add staggered entrance animations (framer-motion) for bento grid cards.",
+    "7. TESTING: ALL interactive elements (buttons, forms, links) MUST have a `data-testid` attribute (e.g., data-testid='cta-preventivo-hero').",
+    "8. THEME: No generic blue gradients. Stick to solid, high-contrast colors (White, #0A0A0A, #002FA7). Use 1px borders to define structure."
+  ],
+  "dependencies_to_install": [
+    "@phosphor-icons/react",
+    "framer-motion",
+    "react-fast-marquee",
+    "lenis"
+  ]
+}

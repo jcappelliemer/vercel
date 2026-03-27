@@ -14,36 +14,38 @@ const benefits = [
 
 const PreventivoPagina = () => {
   return (
-    <div className="min-h-screen bg-[#F9FAFB]" data-testid="preventivo-page">
+    <div className="min-h-screen bg-[#05050A]" data-testid="preventivo-page">
       <Header />
       
       <main className="pt-24">
         {/* Hero */}
-        <section className="py-16 bg-white border-b border-[#E5E7EB]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-2xl">
-              <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#002FA7] mb-4">
-                Preventivo Gratuito
-              </p>
-              <h1 className="text-4xl sm:text-5xl font-black tracking-tighter text-[#0A0A0A] uppercase mb-6">
+              <div className="flex items-center gap-3 mb-4">
+                <span className="w-8 h-px bg-[#00E5FF]" />
+                <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00E5FF]">
+                  Preventivo Gratuito
+                </span>
+              </div>
+              <h1 className="text-4xl sm:text-5xl font-light tracking-tight text-white mb-6">
                 Richiedi il tuo<br />
-                <span className="text-[#002FA7]">preventivo</span>
+                <span className="text-gradient">preventivo</span>
               </h1>
-              <p className="text-lg text-[#0A0A0A]/70 leading-relaxed">
-                Compila il form e riceverai un preventivo personalizzato entro 24 ore. 
-                Il nostro team ti contatterà per capire al meglio le tue esigenze.
+              <p className="text-lg text-slate-400 leading-relaxed">
+                Compila il form e riceverai un preventivo personalizzato entro 24 ore.
               </p>
             </div>
           </div>
         </section>
 
         {/* Form Section */}
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid lg:grid-cols-3 gap-12">
               {/* Form */}
               <div className="lg:col-span-2">
-                <div className="bg-white border border-[#E5E7EB] p-8">
+                <div className="glass p-8 md:p-10">
                   <QuoteForm />
                 </div>
               </div>
@@ -54,16 +56,14 @@ const PreventivoPagina = () => {
                 <motion.div 
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
-                  className="bg-white border border-[#E5E7EB] p-6"
+                  className="glass p-6"
                 >
-                  <h3 className="font-bold text-lg text-[#0A0A0A] mb-4">
-                    Perché sceglierci
-                  </h3>
+                  <h3 className="font-medium text-white mb-4">Perché sceglierci</h3>
                   <ul className="space-y-3">
                     {benefits.map((benefit, index) => (
                       <li key={index} className="flex items-center gap-3">
-                        <CheckCircle size={20} weight="fill" className="text-[#22C55E]" />
-                        <span className="text-sm text-[#0A0A0A]">{benefit}</span>
+                        <CheckCircle size={18} weight="fill" className="text-[#00E5FF]" />
+                        <span className="text-sm text-slate-400">{benefit}</span>
                       </li>
                     ))}
                   </ul>
@@ -74,30 +74,25 @@ const PreventivoPagina = () => {
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.1 }}
-                  className="bg-[#0A0A0A] text-white p-6"
+                  className="bg-[#0B101E] border border-white/10 p-6"
                 >
-                  <h3 className="font-bold text-lg mb-4">
-                    Preferisci parlare?
-                  </h3>
-                  <p className="text-white/70 text-sm mb-6">
-                    Contattaci direttamente per una consulenza immediata.
-                  </p>
-                  <div className="space-y-3">
+                  <h3 className="font-medium text-white mb-4">Preferisci parlare?</h3>
+                  <div className="space-y-4">
                     <a 
                       href="tel:+390000000000"
-                      className="flex items-center gap-3 text-white hover:text-[#002FA7] transition-colors"
+                      className="flex items-center gap-3 text-slate-400 hover:text-[#00E5FF] transition-colors"
                       data-testid="preventivo-phone"
                     >
-                      <Phone size={20} weight="bold" />
-                      <span>+39 000 000 0000</span>
+                      <Phone size={18} weight="light" className="text-[#00E5FF]" />
+                      <span className="text-sm">+39 000 000 0000</span>
                     </a>
                     <a 
                       href="https://wa.me/390000000000"
-                      className="flex items-center gap-3 text-white hover:text-[#25D366] transition-colors"
+                      className="flex items-center gap-3 text-slate-400 hover:text-[#25D366] transition-colors"
                       data-testid="preventivo-whatsapp"
                     >
-                      <WhatsappLogo size={20} weight="fill" />
-                      <span>WhatsApp</span>
+                      <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
+                      <span className="text-sm">WhatsApp</span>
                     </a>
                   </div>
                 </motion.div>
@@ -107,14 +102,14 @@ const PreventivoPagina = () => {
                   initial={{ opacity: 0, x: 30 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2 }}
-                  className="bg-[#002FA7] text-white p-6"
+                  className="bg-gradient-to-br from-[#00E5FF]/20 to-transparent border border-[#00E5FF]/30 p-6"
                 >
                   <div className="flex items-center gap-3 mb-2">
-                    <Clock size={24} weight="bold" />
-                    <span className="font-bold">Risposta in 24h</span>
+                    <Clock size={20} weight="light" className="text-[#00E5FF]" />
+                    <span className="font-medium text-white">Risposta in 24h</span>
                   </div>
-                  <p className="text-white/80 text-sm">
-                    Garantiamo una risposta entro 24 ore lavorative dalla ricezione della richiesta.
+                  <p className="text-sm text-slate-400">
+                    Garantiamo una risposta entro 24 ore lavorative.
                   </p>
                 </motion.div>
               </div>

@@ -1,95 +1,95 @@
 import { Link } from 'react-router-dom';
-import { Phone, EnvelopeSimple, MapPin, WhatsappLogo, LinkedinLogo, InstagramLogo, FacebookLogo, YoutubeLogo } from '@phosphor-icons/react';
+import { Phone, EnvelopeSimple, MapPin, LinkedinLogo, InstagramLogo, FacebookLogo } from '@phosphor-icons/react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#0A0A0A] text-white" data-testid="footer">
+    <footer className="bg-[#05050A] border-t border-white/5" data-testid="footer">
       {/* Main Footer */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
-          {/* Company Info */}
-          <div>
-            <div className="flex items-center gap-2 mb-6">
-              <div className="w-10 h-10 bg-[#002FA7] flex items-center justify-center">
-                <span className="text-white font-black text-xl">SF</span>
+          {/* Brand */}
+          <div className="lg:col-span-1">
+            <div className="flex items-center gap-3 mb-6">
+              <div className="w-10 h-10 border border-[#00E5FF]/50 flex items-center justify-center">
+                <span className="text-[#00E5FF] font-semibold">SF</span>
               </div>
               <div>
-                <span className="font-bold text-lg tracking-tight">SOLARIS</span>
-                <span className="font-medium text-lg text-[#002FA7]">FILMS</span>
+                <span className="font-light text-lg text-white">SOLARIS</span>
+                <span className="font-light text-lg text-[#00E5FF]">FILMS</span>
               </div>
             </div>
-            <p className="text-white/60 text-sm leading-relaxed mb-6">
-              Distributore esclusivo MADICO USA per Italia e Spagna. 
-              40 anni di esperienza nelle pellicole per vetri professionali.
+            <p className="text-slate-500 text-sm leading-relaxed mb-6">
+              Distributore esclusivo MADICO USA per Italia. 
+              40 anni di eccellenza nelle pellicole per vetri.
             </p>
-            <div className="flex gap-4">
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-[#002FA7] transition-colors" data-testid="footer-linkedin">
-                <LinkedinLogo size={24} weight="fill" />
-              </a>
-              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-[#002FA7] transition-colors" data-testid="footer-instagram">
-                <InstagramLogo size={24} weight="fill" />
-              </a>
-              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-[#002FA7] transition-colors" data-testid="footer-facebook">
-                <FacebookLogo size={24} weight="fill" />
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-[#002FA7] transition-colors" data-testid="footer-youtube">
-                <YoutubeLogo size={24} weight="fill" />
-              </a>
+            <div className="flex gap-3">
+              {[LinkedinLogo, InstagramLogo, FacebookLogo].map((Icon, i) => (
+                <a 
+                  key={i}
+                  href="#" 
+                  className="w-10 h-10 border border-white/10 flex items-center justify-center text-slate-500 hover:text-[#00E5FF] hover:border-[#00E5FF]/30 transition-all"
+                >
+                  <Icon size={18} weight="light" />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Quick Links */}
+          {/* Services */}
           <div>
-            <h4 className="font-bold uppercase tracking-wider text-sm mb-6">Servizi</h4>
+            <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-6">Servizi</h4>
             <ul className="space-y-3">
-              <li><Link to="/servizi#antisolari" className="text-white/60 hover:text-white text-sm transition-colors">Pellicole Antisolari</Link></li>
-              <li><Link to="/servizi#sicurezza" className="text-white/60 hover:text-white text-sm transition-colors">Pellicole di Sicurezza</Link></li>
-              <li><Link to="/servizi#privacy" className="text-white/60 hover:text-white text-sm transition-colors">Pellicole Privacy</Link></li>
-              <li><Link to="/servizi#lcd-switch" className="text-white/60 hover:text-white text-sm transition-colors">Pellicole LCD Switch</Link></li>
-              <li><Link to="/servizi#fotocromatiche" className="text-white/60 hover:text-white text-sm transition-colors">Pellicole Fotocromatiche</Link></li>
+              {['Pellicole Antisolari', 'Pellicole di Sicurezza', 'Pellicole Privacy', 'LCD Switch', 'Fotocromatiche'].map((item, i) => (
+                <li key={i}>
+                  <Link to="/servizi" className="text-sm text-slate-500 hover:text-[#00E5FF] transition-colors">
+                    {item}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Company */}
           <div>
-            <h4 className="font-bold uppercase tracking-wider text-sm mb-6">Azienda</h4>
+            <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-6">Azienda</h4>
             <ul className="space-y-3">
-              <li><Link to="/chi-siamo" className="text-white/60 hover:text-white text-sm transition-colors">Chi Siamo</Link></li>
-              <li><Link to="/blog" className="text-white/60 hover:text-white text-sm transition-colors">Blog</Link></li>
-              <li><Link to="/contatti" className="text-white/60 hover:text-white text-sm transition-colors">Contatti</Link></li>
-              <li><Link to="/preventivo" className="text-white/60 hover:text-white text-sm transition-colors">Preventivo</Link></li>
-              <li><a href="/privacy-policy" className="text-white/60 hover:text-white text-sm transition-colors">Privacy Policy</a></li>
+              {[
+                { name: 'Chi Siamo', path: '/chi-siamo' },
+                { name: 'Blog', path: '/blog' },
+                { name: 'Contatti', path: '/contatti' },
+                { name: 'Preventivo', path: '/preventivo' },
+              ].map((item, i) => (
+                <li key={i}>
+                  <Link to={item.path} className="text-sm text-slate-500 hover:text-[#00E5FF] transition-colors">
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
 
           {/* Contact */}
           <div>
-            <h4 className="font-bold uppercase tracking-wider text-sm mb-6">Contatti</h4>
+            <h4 className="text-xs font-bold uppercase tracking-widest text-white mb-6">Contatti</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+390000000000" className="flex items-center gap-3 text-white/60 hover:text-white text-sm transition-colors" data-testid="footer-phone">
-                  <Phone size={20} weight="bold" className="text-[#002FA7]" />
+                <a href="tel:+390000000000" className="flex items-center gap-3 text-sm text-slate-500 hover:text-[#00E5FF] transition-colors">
+                  <Phone size={16} weight="light" className="text-[#00E5FF]" />
                   +39 000 000 0000
                 </a>
               </li>
               <li>
-                <a href="https://wa.me/390000000000" className="flex items-center gap-3 text-white/60 hover:text-white text-sm transition-colors" data-testid="footer-whatsapp">
-                  <WhatsappLogo size={20} weight="fill" className="text-[#25D366]" />
-                  WhatsApp
-                </a>
-              </li>
-              <li>
-                <a href="mailto:info@solarisfilms.it" className="flex items-center gap-3 text-white/60 hover:text-white text-sm transition-colors" data-testid="footer-email">
-                  <EnvelopeSimple size={20} weight="bold" className="text-[#002FA7]" />
+                <a href="mailto:info@solarisfilms.it" className="flex items-center gap-3 text-sm text-slate-500 hover:text-[#00E5FF] transition-colors">
+                  <EnvelopeSimple size={16} weight="light" className="text-[#00E5FF]" />
                   info@solarisfilms.it
                 </a>
               </li>
               <li>
-                <div className="flex items-start gap-3 text-white/60 text-sm">
-                  <MapPin size={20} weight="bold" className="text-[#002FA7] flex-shrink-0 mt-0.5" />
-                  <span>Toscana, Italia</span>
+                <div className="flex items-start gap-3 text-sm text-slate-500">
+                  <MapPin size={16} weight="light" className="text-[#00E5FF] mt-0.5" />
+                  <span>Toscana, Italia<br />Operiamo in tutta Europa</span>
                 </div>
               </li>
             </ul>
@@ -98,19 +98,18 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-white/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="border-t border-white/5">
+        <div className="max-w-7xl mx-auto px-6 md:px-12 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-white/40 text-xs">
-              © {currentYear} Solaris Films. Tutti i diritti riservati. P.IVA 00000000000
+            <p className="text-xs text-slate-600">
+              © {currentYear} Solaris Films. Tutti i diritti riservati.
             </p>
-            <div className="flex items-center gap-4">
-              <img 
-                src="https://www.solarisfilms.it/wp-content/uploads/2025/05/iso9001logosmart.svg" 
-                alt="ISO 9001"
-                className="h-8 opacity-60"
-              />
-              <span className="text-white/40 text-xs">Distributore Esclusivo MADICO USA</span>
+            <div className="flex items-center gap-6 text-xs text-slate-600">
+              <span>ISO 9001</span>
+              <span className="w-px h-4 bg-white/10" />
+              <span>Distributore MADICO USA</span>
+              <span className="w-px h-4 bg-white/10" />
+              <span>Garanzia 10 anni</span>
             </div>
           </div>
         </div>

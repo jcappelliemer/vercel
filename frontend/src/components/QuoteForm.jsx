@@ -64,32 +64,32 @@ const QuoteForm = () => {
   if (isSuccess) {
     return (
       <motion.div
-        initial={{ opacity: 0, scale: 0.9 }}
+        initial={{ opacity: 0, scale: 0.95 }}
         animate={{ opacity: 1, scale: 1 }}
-        className="bg-white border border-[#E5E7EB] p-8 text-center"
+        className="text-center py-12"
         data-testid="quote-success"
       >
-        <div className="w-16 h-16 bg-[#22C55E] rounded-full flex items-center justify-center mx-auto mb-6">
-          <CheckCircle size={40} weight="fill" className="text-white" />
+        <div className="w-20 h-20 border border-[#00E5FF] flex items-center justify-center mx-auto mb-6">
+          <CheckCircle size={40} weight="light" className="text-[#00E5FF]" />
         </div>
-        <h3 className="text-2xl font-bold text-[#0A0A0A] mb-4">
-          Richiesta Inviata!
+        <h3 className="text-2xl font-light text-white mb-4">
+          Richiesta Inviata
         </h3>
-        <p className="text-[#0A0A0A]/70 mb-6">
-          Grazie per averci contattato. Ti risponderemo entro 24 ore con un preventivo personalizzato.
+        <p className="text-slate-400 mb-8 max-w-sm mx-auto">
+          Ti risponderemo entro 24 ore con un preventivo personalizzato.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <a 
             href="https://wa.me/390000000000"
-            className="flex items-center justify-center gap-2 px-6 py-3 bg-[#25D366] text-white font-medium"
+            className="btn-secondary"
             data-testid="quote-success-whatsapp"
           >
-            <WhatsappLogo size={20} weight="fill" />
-            Contattaci su WhatsApp
+            <WhatsappLogo size={18} weight="fill" />
+            WhatsApp
           </a>
           <button
             onClick={() => setIsSuccess(false)}
-            className="px-6 py-3 border-2 border-[#0A0A0A] font-medium hover:bg-[#0A0A0A] hover:text-white transition-colors"
+            className="btn-secondary"
           >
             Nuova Richiesta
           </button>
@@ -99,16 +99,16 @@ const QuoteForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6" data-testid="quote-form">
+    <form onSubmit={handleSubmit} className="space-y-8" data-testid="quote-form">
       {error && (
-        <div className="p-4 bg-red-50 border border-red-200 text-red-600 text-sm">
+        <div className="p-4 bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
           {error}
         </div>
       )}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
+          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
             Nome *
           </label>
           <input
@@ -117,13 +117,12 @@ const QuoteForm = () => {
             value={formData.nome}
             onChange={handleChange}
             required
-            className="form-input"
-            placeholder="Mario"
+            className="form-input-luxury"
             data-testid="quote-nome"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
+          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
             Cognome *
           </label>
           <input
@@ -132,16 +131,15 @@ const QuoteForm = () => {
             value={formData.cognome}
             onChange={handleChange}
             required
-            className="form-input"
-            placeholder="Rossi"
+            className="form-input-luxury"
             data-testid="quote-cognome"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
+          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
             Email *
           </label>
           <input
@@ -150,13 +148,12 @@ const QuoteForm = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="form-input"
-            placeholder="mario@email.com"
+            className="form-input-luxury"
             data-testid="quote-email"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
+          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
             Telefono *
           </label>
           <input
@@ -165,16 +162,15 @@ const QuoteForm = () => {
             value={formData.telefono}
             onChange={handleChange}
             required
-            className="form-input"
-            placeholder="+39 333 1234567"
+            className="form-input-luxury"
             data-testid="quote-telefono"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
+          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
             Ragione Sociale
           </label>
           <input
@@ -182,13 +178,12 @@ const QuoteForm = () => {
             name="ragione_sociale"
             value={formData.ragione_sociale}
             onChange={handleChange}
-            className="form-input"
-            placeholder="Nome Azienda (opzionale)"
+            className="form-input-luxury"
             data-testid="quote-ragione-sociale"
           />
         </div>
         <div>
-          <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
+          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
             Città *
           </label>
           <input
@@ -197,15 +192,14 @@ const QuoteForm = () => {
             value={formData.citta}
             onChange={handleChange}
             required
-            className="form-input"
-            placeholder="Roma"
+            className="form-input-luxury"
             data-testid="quote-citta"
           />
         </div>
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
+        <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
           Tipo di Pellicola *
         </label>
         <select
@@ -213,12 +207,12 @@ const QuoteForm = () => {
           value={formData.tipo_pellicola}
           onChange={handleChange}
           required
-          className="form-input"
+          className="form-input-luxury bg-transparent"
           data-testid="quote-tipo-pellicola"
         >
-          <option value="">Seleziona il tipo di pellicola</option>
+          <option value="" className="bg-[#0B101E]">Seleziona</option>
           {pellicoleTipi.map((tipo) => (
-            <option key={tipo.value} value={tipo.value}>
+            <option key={tipo.value} value={tipo.value} className="bg-[#0B101E]">
               {tipo.label}
             </option>
           ))}
@@ -226,50 +220,42 @@ const QuoteForm = () => {
       </div>
 
       <div>
-        <label className="block text-sm font-medium text-[#0A0A0A] mb-2">
-          Messaggio / Dettagli
+        <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+          Messaggio
         </label>
         <textarea
           name="messaggio"
           value={formData.messaggio}
           onChange={handleChange}
           rows={4}
-          className="form-input resize-none"
-          placeholder="Descrivi le tue esigenze: dimensioni vetrate, problemi da risolvere, ecc."
+          className="form-input-luxury resize-none"
+          placeholder="Descrivi le tue esigenze..."
           data-testid="quote-messaggio"
         />
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-4">
+      <div className="flex flex-col sm:flex-row gap-4 pt-4">
         <button
           type="submit"
           disabled={isSubmitting}
-          className="btn-primary flex-1 flex items-center justify-center gap-2 disabled:opacity-50"
+          className="btn-cyan flex-1 disabled:opacity-50"
           data-testid="quote-submit"
         >
-          {isSubmitting ? (
-            'Invio in corso...'
-          ) : (
-            <>
-              Richiedi Preventivo
-              <ArrowRight size={20} weight="bold" />
-            </>
-          )}
+          {isSubmitting ? 'Invio in corso...' : 'Richiedi Preventivo'}
+          <ArrowRight size={18} weight="bold" />
         </button>
         <a
           href="tel:+390000000000"
-          className="btn-outline flex items-center justify-center gap-2"
+          className="btn-secondary"
           data-testid="quote-call"
         >
-          <Phone size={20} weight="bold" />
-          Chiama Ora
+          <Phone size={18} weight="light" />
+          Chiama
         </a>
       </div>
 
-      <p className="text-xs text-[#0A0A0A]/50 text-center">
-        Inviando questo form accetti la nostra{' '}
-        <a href="/privacy-policy" className="underline">Privacy Policy</a>. 
-        Risposta garantita entro 24 ore.
+      <p className="text-xs text-slate-600 text-center">
+        Inviando questo form accetti la nostra Privacy Policy.
       </p>
     </form>
   );

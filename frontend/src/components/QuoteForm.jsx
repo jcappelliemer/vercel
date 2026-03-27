@@ -69,13 +69,13 @@ const QuoteForm = () => {
         className="text-center py-12"
         data-testid="quote-success"
       >
-        <div className="w-20 h-20 border border-[#00E5FF] flex items-center justify-center mx-auto mb-6">
-          <CheckCircle size={40} weight="light" className="text-[#00E5FF]" />
+        <div className="w-20 h-20 bg-[#0891B2]/10 border border-[#0891B2] flex items-center justify-center mx-auto mb-6">
+          <CheckCircle size={40} weight="light" className="text-[#0891B2]" />
         </div>
-        <h3 className="text-2xl font-light text-white mb-4">
+        <h3 className="text-2xl font-light text-[#0F172A] mb-4">
           Richiesta Inviata
         </h3>
-        <p className="text-slate-400 mb-8 max-w-sm mx-auto">
+        <p className="text-slate-500 mb-8 max-w-sm mx-auto">
           Ti risponderemo entro 24 ore con un preventivo personalizzato.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -101,14 +101,14 @@ const QuoteForm = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-8" data-testid="quote-form">
       {error && (
-        <div className="p-4 bg-red-500/10 border border-red-500/30 text-red-400 text-sm">
+        <div className="p-4 bg-red-50 border border-red-200 text-red-600 text-sm">
           {error}
         </div>
       )}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+          <label className="block text-xs uppercase tracking-widest text-slate-400 mb-3">
             Nome *
           </label>
           <input
@@ -122,7 +122,7 @@ const QuoteForm = () => {
           />
         </div>
         <div>
-          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+          <label className="block text-xs uppercase tracking-widest text-slate-400 mb-3">
             Cognome *
           </label>
           <input
@@ -139,7 +139,7 @@ const QuoteForm = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+          <label className="block text-xs uppercase tracking-widest text-slate-400 mb-3">
             Email *
           </label>
           <input
@@ -153,7 +153,7 @@ const QuoteForm = () => {
           />
         </div>
         <div>
-          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+          <label className="block text-xs uppercase tracking-widest text-slate-400 mb-3">
             Telefono *
           </label>
           <input
@@ -170,7 +170,7 @@ const QuoteForm = () => {
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
-          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+          <label className="block text-xs uppercase tracking-widest text-slate-400 mb-3">
             Ragione Sociale
           </label>
           <input
@@ -183,7 +183,7 @@ const QuoteForm = () => {
           />
         </div>
         <div>
-          <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+          <label className="block text-xs uppercase tracking-widest text-slate-400 mb-3">
             Città *
           </label>
           <input
@@ -199,7 +199,7 @@ const QuoteForm = () => {
       </div>
 
       <div>
-        <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+        <label className="block text-xs uppercase tracking-widest text-slate-400 mb-3">
           Tipo di Pellicola *
         </label>
         <select
@@ -210,9 +210,9 @@ const QuoteForm = () => {
           className="form-input-luxury bg-transparent"
           data-testid="quote-tipo-pellicola"
         >
-          <option value="" className="bg-[#0B101E]">Seleziona</option>
+          <option value="">Seleziona</option>
           {pellicoleTipi.map((tipo) => (
-            <option key={tipo.value} value={tipo.value} className="bg-[#0B101E]">
+            <option key={tipo.value} value={tipo.value}>
               {tipo.label}
             </option>
           ))}
@@ -220,7 +220,7 @@ const QuoteForm = () => {
       </div>
 
       <div>
-        <label className="block text-xs uppercase tracking-widest text-slate-500 mb-3">
+        <label className="block text-xs uppercase tracking-widest text-slate-400 mb-3">
           Messaggio
         </label>
         <textarea
@@ -254,7 +254,7 @@ const QuoteForm = () => {
         </a>
       </div>
 
-      <p className="text-xs text-slate-600 text-center">
+      <p className="text-xs text-slate-400 text-center">
         Inviando questo form accetti la nostra Privacy Policy.
       </p>
     </form>

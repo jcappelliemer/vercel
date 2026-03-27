@@ -10,7 +10,7 @@ const trustItems = [
 
 const TrustBar = () => {
   return (
-    <section className="py-16 bg-[#0B101E] border-y border-white/5" data-testid="trust-bar">
+    <section className="py-16 bg-[#0F172A]" data-testid="trust-bar">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
           {trustItems.map((item, index) => (
@@ -22,8 +22,8 @@ const TrustBar = () => {
               transition={{ delay: index * 0.1 }}
               className="flex items-center gap-4 group"
             >
-              <div className="w-14 h-14 border border-white/10 flex items-center justify-center group-hover:border-[#00E5FF]/30 transition-colors">
-                <item.icon size={24} weight="light" className="text-[#00E5FF]" />
+              <div className="w-14 h-14 border border-white/10 flex items-center justify-center group-hover:border-[#0891B2]/50 group-hover:bg-[#0891B2]/10 transition-all">
+                <item.icon size={24} weight="light" className="text-[#0891B2]" />
               </div>
               <div>
                 <div className="text-white font-medium">{item.label}</div>

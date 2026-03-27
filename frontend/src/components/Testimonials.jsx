@@ -24,7 +24,7 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-24 md:py-32 bg-[#0B101E]" data-testid="testimonials-section">
+    <section className="py-24 md:py-32 bg-white" data-testid="testimonials-section">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Header */}
         <motion.div 
@@ -33,15 +33,15 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="flex items-center justify-center gap-3 mb-4">
-            <span className="w-8 h-px bg-[#00E5FF]" />
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00E5FF]">
+          <div className="flex items-center justify-center gap-4 mb-4">
+            <div className="accent-line" />
+            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0891B2]">
               Testimonianze
             </span>
-            <span className="w-8 h-px bg-[#00E5FF]" />
+            <div className="accent-line" />
           </div>
-          <h2 className="text-3xl sm:text-4xl font-light tracking-tight text-white">
-            La voce dei nostri <span className="text-gradient">clienti</span>
+          <h2 className="text-3xl sm:text-4xl font-light tracking-tight text-[#0F172A]">
+            La voce dei nostri <span className="text-gradient font-medium">clienti</span>
           </h2>
         </motion.div>
 
@@ -54,16 +54,16 @@ const Testimonials = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="glass p-8 group hover:border-[#00E5FF]/20 transition-all duration-500"
+              className="bg-[#FAFBFC] border border-slate-200 p-8 group hover:border-[#0891B2]/20 hover:shadow-lg transition-all duration-500"
             >
-              <Quotes size={32} weight="fill" className="text-[#00E5FF]/30 mb-6" />
-              <p className="text-slate-300 leading-relaxed mb-8 italic">
+              <Quotes size={32} weight="fill" className="text-[#0891B2]/20 mb-6" />
+              <p className="text-slate-600 leading-relaxed mb-8 italic">
                 "{item.quote}"
               </p>
-              <div className="border-t border-white/10 pt-6">
-                <div className="font-medium text-white">{item.author}</div>
-                <div className="text-sm text-[#00E5FF]">{item.role}</div>
-                <div className="text-xs text-slate-500 mt-1">{item.company}</div>
+              <div className="border-t border-slate-200 pt-6">
+                <div className="font-medium text-[#0F172A]">{item.author}</div>
+                <div className="text-sm text-[#0891B2]">{item.role}</div>
+                <div className="text-xs text-slate-400 mt-1">{item.company}</div>
               </div>
             </motion.div>
           ))}

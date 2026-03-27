@@ -28,7 +28,7 @@ const Header = () => {
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled 
-          ? 'glass-strong' 
+          ? 'glass shadow-sm' 
           : 'bg-transparent'
       }`}
       data-testid="header"
@@ -38,14 +38,13 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
             <div className="relative">
-              <div className="w-10 h-10 border border-[#00E5FF]/50 flex items-center justify-center group-hover:border-[#00E5FF] transition-colors">
-                <span className="text-[#00E5FF] font-semibold text-lg tracking-tight">SF</span>
+              <div className="w-10 h-10 bg-[#0F172A] flex items-center justify-center group-hover:bg-[#0891B2] transition-colors">
+                <span className="text-white font-semibold text-lg tracking-tight">SF</span>
               </div>
-              <div className="absolute -inset-1 bg-[#00E5FF]/20 blur-lg opacity-0 group-hover:opacity-100 transition-opacity" />
             </div>
             <div className="hidden sm:block">
-              <span className="font-light text-xl tracking-wide text-white">SOLARIS</span>
-              <span className="font-light text-xl tracking-wide text-[#00E5FF]">FILMS</span>
+              <span className="font-medium text-xl tracking-wide text-[#0F172A]">SOLARIS</span>
+              <span className="font-medium text-xl tracking-wide text-[#0891B2]">FILMS</span>
             </div>
           </Link>
 
@@ -57,8 +56,8 @@ const Header = () => {
                 to={link.path}
                 className={`relative text-sm tracking-widest uppercase transition-colors ${
                   location.pathname === link.path 
-                    ? 'text-[#00E5FF]' 
-                    : 'text-white/60 hover:text-white'
+                    ? 'text-[#0891B2]' 
+                    : 'text-slate-500 hover:text-[#0F172A]'
                 }`}
                 data-testid={`nav-${link.name.toLowerCase().replace(' ', '-')}`}
               >
@@ -66,7 +65,7 @@ const Header = () => {
                 {location.pathname === link.path && (
                   <motion.span 
                     layoutId="nav-indicator"
-                    className="absolute -bottom-1 left-0 right-0 h-px bg-[#00E5FF]" 
+                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#0891B2]" 
                   />
                 )}
               </Link>
@@ -77,7 +76,7 @@ const Header = () => {
           <div className="hidden lg:block">
             <Link 
               to="/preventivo" 
-              className="btn-secondary text-xs"
+              className="btn-cyan text-xs"
               data-testid="header-cta-preventivo"
             >
               Richiedi Preventivo
@@ -86,7 +85,7 @@ const Header = () => {
 
           {/* Mobile Menu Button */}
           <button 
-            className="lg:hidden p-2 text-white"
+            className="lg:hidden p-2 text-[#0F172A]"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="mobile-menu-toggle"
           >
@@ -102,7 +101,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden glass-strong border-t border-white/10"
+            className="lg:hidden bg-white border-t border-slate-100"
             data-testid="mobile-menu"
           >
             <div className="px-6 py-8 space-y-2">
@@ -110,7 +109,7 @@ const Header = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="block py-3 text-lg tracking-wide text-white/80 hover:text-[#00E5FF] transition-colors"
+                  className="block py-3 text-lg tracking-wide text-slate-600 hover:text-[#0891B2] transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}

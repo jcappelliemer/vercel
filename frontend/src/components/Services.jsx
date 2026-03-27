@@ -42,7 +42,7 @@ const services = [
     subtitle: 'Custom Solutions',
     description: 'Design personalizzato per ambienti esclusivi.',
     icon: Eye,
-    image: 'https://images.unsplash.com/photo-1772001936267-b6058748eff4?w=800',
+    image: 'https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?w=800',
     featured: false,
     colSpan: 'md:col-span-4 lg:col-span-4',
     rowSpan: 'md:row-span-1',
@@ -53,7 +53,7 @@ const services = [
     subtitle: 'Adaptive Technology',
     description: 'Si adattano automaticamente alla luce. Zero energia.',
     icon: Sparkle,
-    image: 'https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?w=800',
+    image: 'https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg?w=800',
     featured: false,
     colSpan: 'md:col-span-4 lg:col-span-3',
     rowSpan: 'md:row-span-1',
@@ -62,7 +62,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-24 md:py-32 bg-[#05050A]" data-testid="services-section">
+    <section className="py-24 md:py-32 bg-white" data-testid="services-section">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         {/* Section Header */}
         <motion.div 
@@ -72,18 +72,18 @@ const Services = () => {
           className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16"
         >
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <span className="w-8 h-px bg-[#00E5FF]" />
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#00E5FF]">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="accent-line" />
+              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0891B2]">
                 Soluzioni
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-white">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-[#0F172A]">
               Tecnologie<br />
-              <span className="text-gradient">all'avanguardia</span>
+              <span className="text-gradient font-medium">all'avanguardia</span>
             </h2>
           </div>
-          <p className="text-slate-400 max-w-md lg:text-right">
+          <p className="text-slate-500 max-w-md lg:text-right">
             Pellicole certificate MADICO USA per ogni esigenza: 
             dal controllo solare alla sicurezza, dalla privacy allo smart glass.
           </p>
@@ -109,27 +109,27 @@ const Services = () => {
                     alt={service.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#05050A] via-[#05050A]/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent" />
                   
                   {/* Icon */}
                   <div className="absolute top-6 left-6">
-                    <div className="w-12 h-12 glass flex items-center justify-center group-hover:border-[#00E5FF]/50 transition-colors">
-                      <service.icon size={22} weight="light" className="text-[#00E5FF]" />
+                    <div className="w-12 h-12 bg-white/90 backdrop-blur flex items-center justify-center group-hover:bg-[#0891B2] transition-colors">
+                      <service.icon size={22} weight="light" className="text-[#0891B2] group-hover:text-white transition-colors" />
                     </div>
                   </div>
 
                   {/* Content */}
                   <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <span className="text-xs uppercase tracking-widest text-[#00E5FF] mb-2 block">
+                    <span className="text-xs uppercase tracking-widest text-[#0891B2] mb-2 block">
                       {service.subtitle}
                     </span>
                     <h3 className="text-xl lg:text-2xl font-medium text-white mb-2">
                       {service.name}
                     </h3>
-                    <p className="text-sm text-slate-400 mb-4 line-clamp-2">
+                    <p className="text-sm text-white/70 mb-4 line-clamp-2">
                       {service.description}
                     </p>
-                    <span className="inline-flex items-center gap-2 text-white text-sm font-medium group-hover:text-[#00E5FF] transition-colors">
+                    <span className="inline-flex items-center gap-2 text-white text-sm font-medium group-hover:text-[#0891B2] transition-colors">
                       Scopri
                       <ArrowUpRight size={16} weight="bold" className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                     </span>

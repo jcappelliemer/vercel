@@ -75,12 +75,12 @@ const ChatBot = () => {
         animate={{ scale: 1 }}
         transition={{ delay: 1, type: 'spring' }}
         onClick={() => setIsOpen(true)}
-        className={`fixed bottom-8 right-8 z-50 w-16 h-16 glass flex items-center justify-center hover:border-[#00E5FF]/50 transition-all animate-pulse-glow ${
+        className={`fixed bottom-8 right-8 z-50 w-16 h-16 bg-[#0891B2] shadow-lg shadow-[#0891B2]/30 flex items-center justify-center hover:bg-[#0E7490] transition-all ${
           isOpen ? 'hidden' : ''
         }`}
         data-testid="chatbot-toggle"
       >
-        <ChatCircle size={28} weight="light" className="text-[#00E5FF]" />
+        <ChatCircle size={28} weight="light" className="text-white" />
       </motion.button>
 
       {/* Chat Window */}
@@ -91,24 +91,24 @@ const ChatBot = () => {
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.95 }}
             transition={{ type: 'spring', damping: 25 }}
-            className="fixed bottom-8 right-8 z-50 w-[400px] max-w-[calc(100vw-64px)] glass-strong flex flex-col"
+            className="fixed bottom-8 right-8 z-50 w-[400px] max-w-[calc(100vw-64px)] bg-white border border-slate-200 shadow-2xl flex flex-col"
             style={{ height: '550px', maxHeight: 'calc(100vh-100px)' }}
             data-testid="chatbot-window"
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
+            <div className="flex items-center justify-between px-6 py-4 bg-[#0F172A]">
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 bg-[#00E5FF]/10 border border-[#00E5FF]/30 flex items-center justify-center">
-                  <Robot size={22} weight="light" className="text-[#00E5FF]" />
+                <div className="w-10 h-10 bg-[#0891B2] flex items-center justify-center">
+                  <Robot size={22} weight="light" className="text-white" />
                 </div>
                 <div>
                   <p className="font-medium text-white text-sm">Assistente AI</p>
-                  <p className="text-xs text-[#00E5FF]">Online</p>
+                  <p className="text-xs text-[#0891B2]">Online</p>
                 </div>
               </div>
               <button 
                 onClick={() => setIsOpen(false)}
-                className="w-8 h-8 flex items-center justify-center text-slate-500 hover:text-white transition-colors"
+                className="w-8 h-8 flex items-center justify-center text-slate-400 hover:text-white transition-colors"
                 data-testid="chatbot-close"
               >
                 <X size={20} />
@@ -116,7 +116,7 @@ const ChatBot = () => {
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-6 space-y-4">
+            <div className="flex-1 overflow-y-auto p-6 space-y-4 bg-slate-50">
               {messages.map((msg, index) => (
                 <motion.div
                   key={index}
@@ -133,9 +133,9 @@ const ChatBot = () => {
                 <div className="flex justify-start">
                   <div className="chat-bubble-bot">
                     <div className="flex gap-1.5">
-                      <span className="w-2 h-2 bg-[#00E5FF] rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
-                      <span className="w-2 h-2 bg-[#00E5FF] rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
-                      <span className="w-2 h-2 bg-[#00E5FF] rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
+                      <span className="w-2 h-2 bg-[#0891B2] rounded-full animate-bounce" style={{ animationDelay: '0ms' }} />
+                      <span className="w-2 h-2 bg-[#0891B2] rounded-full animate-bounce" style={{ animationDelay: '150ms' }} />
+                      <span className="w-2 h-2 bg-[#0891B2] rounded-full animate-bounce" style={{ animationDelay: '300ms' }} />
                     </div>
                   </div>
                 </div>
@@ -144,7 +144,7 @@ const ChatBot = () => {
             </div>
 
             {/* Input */}
-            <div className="p-4 border-t border-white/10">
+            <div className="p-4 border-t border-slate-200 bg-white">
               <div className="flex gap-3">
                 <input
                   type="text"
@@ -152,14 +152,14 @@ const ChatBot = () => {
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={handleKeyPress}
                   placeholder="Scrivi un messaggio..."
-                  className="flex-1 bg-white/5 border border-white/10 px-4 py-3 text-sm text-white placeholder-slate-500 focus:outline-none focus:border-[#00E5FF]/50 transition-colors"
+                  className="flex-1 border border-slate-200 px-4 py-3 text-sm focus:outline-none focus:border-[#0891B2] transition-colors"
                   disabled={isLoading}
                   data-testid="chatbot-input"
                 />
                 <button
                   onClick={handleSend}
                   disabled={isLoading || !input.trim()}
-                  className="px-4 bg-[#00E5FF] text-[#05050A] disabled:opacity-30 disabled:cursor-not-allowed hover:shadow-lg hover:shadow-[#00E5FF]/30 transition-all"
+                  className="px-4 bg-[#0891B2] text-white disabled:opacity-30 disabled:cursor-not-allowed hover:bg-[#0E7490] transition-all"
                   data-testid="chatbot-send"
                 >
                   <PaperPlaneTilt size={20} weight="bold" />

@@ -16,38 +16,26 @@ const CountUp = ({ end, suffix, duration = 2 }) => {
 
   useEffect(() => {
     if (!isInView) return;
-    
     let startTime;
     let animationFrame;
-    
     const animate = (timestamp) => {
       if (!startTime) startTime = timestamp;
       const progress = Math.min((timestamp - startTime) / (duration * 1000), 1);
-      
-      // Easing function for smooth animation
       const easeOutQuart = 1 - Math.pow(1 - progress, 4);
       setCount(Math.floor(easeOutQuart * end));
-      
-      if (progress < 1) {
-        animationFrame = requestAnimationFrame(animate);
-      }
+      if (progress < 1) animationFrame = requestAnimationFrame(animate);
     };
-    
     animationFrame = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(animationFrame);
   }, [isInView, end, duration]);
 
-  return (
-    <span ref={ref}>
-      {count.toLocaleString('it-IT')}{suffix}
-    </span>
-  );
+  return <span ref={ref}>{count.toLocaleString('it-IT')}{suffix}</span>;
 };
 
 const Stats = () => {
   return (
-    <section className="py-20 bg-[#0A0A0A]" data-testid="stats-section">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-20 bg-[#111827]/80 border-y border-white/5" data-testid="stats-section">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -65,10 +53,10 @@ const Stats = () => {
               className="text-center lg:border-r last:border-r-0 border-white/10"
               data-testid={`stat-${index}`}
             >
-              <div className="stat-number text-white mb-2">
+              <div className="text-4xl lg:text-5xl font-bold text-gradient mb-2">
                 <CountUp end={stat.value} suffix={stat.suffix} />
               </div>
-              <p className="text-white/60 text-sm uppercase tracking-wider font-medium">
+              <p className="text-[#94A3B8] text-sm uppercase tracking-wider font-medium">
                 {stat.label}
               </p>
             </motion.div>

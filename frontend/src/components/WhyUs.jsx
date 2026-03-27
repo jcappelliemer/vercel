@@ -13,8 +13,8 @@ const benefits = [
 
 const WhyUs = () => {
   return (
-    <section className="py-24 bg-[#F9FAFB]" data-testid="why-us-section">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="py-32 relative" data-testid="why-us-section">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Image */}
           <motion.div
@@ -24,16 +24,17 @@ const WhyUs = () => {
             transition={{ duration: 0.6 }}
             className="relative"
           >
-            <div className="relative">
+            <div className="relative rounded-2xl overflow-hidden border border-white/10">
               <img 
                 src="https://images.pexels.com/photos/5691531/pexels-photo-5691531.jpeg?w=800"
                 alt="Installazione professionale"
-                className="w-full h-auto"
+                className="w-full h-auto object-cover"
               />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] via-transparent to-transparent" />
               {/* Badge */}
-              <div className="absolute -bottom-6 -right-6 bg-[#002FA7] text-white p-6">
-                <div className="text-4xl font-black">40+</div>
-                <div className="text-xs uppercase tracking-wider">Anni Esperienza</div>
+              <div className="absolute bottom-6 right-6 card-glass rounded-xl p-5">
+                <div className="text-4xl font-bold text-[#EAB308]">40+</div>
+                <div className="text-xs uppercase tracking-wider text-white/60">Anni Esperienza</div>
               </div>
             </div>
           </motion.div>
@@ -45,21 +46,18 @@ const WhyUs = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#002FA7] mb-4">
-              Perché Sceglierci
-            </p>
-            <h2 className="text-3xl sm:text-4xl font-black tracking-tighter text-[#0A0A0A] uppercase mb-6">
-              Affidati ai<br />
-              <span className="text-[#002FA7]">professionisti</span>
+            <div className="accent-bar w-16 mb-6" />
+            <h2 className="text-4xl lg:text-5xl font-medium text-white mb-6">
+              Affidati ai
+              <span className="text-gradient"> professionisti</span>
             </h2>
-            <p className="text-[#0A0A0A]/70 leading-relaxed mb-8">
+            <p className="text-[#94A3B8] leading-relaxed mb-8 text-lg">
               Siamo un'azienda italiana con sede in Toscana che da 40 anni opera in tutta Italia 
               ed Europa. L'esperienza maturata su oltre 45.000 edifici ci permette di risolvere 
               sempre in modo efficace ogni problematica delle superfici vetrate.
             </p>
 
-            {/* Benefits List */}
-            <ul className="space-y-4 mb-8">
+            <ul className="space-y-4 mb-10">
               {benefits.map((benefit, index) => (
                 <motion.li 
                   key={index}
@@ -69,19 +67,19 @@ const WhyUs = () => {
                   transition={{ duration: 0.3, delay: index * 0.1 }}
                   className="flex items-center gap-3"
                 >
-                  <CheckCircle size={24} weight="fill" className="text-[#22C55E] flex-shrink-0" />
-                  <span className="text-[#0A0A0A] font-medium">{benefit}</span>
+                  <CheckCircle size={22} weight="fill" className="text-[#EAB308] flex-shrink-0" />
+                  <span className="text-white/80 font-medium">{benefit}</span>
                 </motion.li>
               ))}
             </ul>
 
             <Link 
               to="/chi-siamo"
-              className="btn-outline inline-flex items-center gap-2"
+              className="btn-secondary group"
               data-testid="why-us-cta"
             >
               Scopri di Più
-              <ArrowRight size={20} weight="bold" />
+              <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
         </div>

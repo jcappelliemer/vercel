@@ -45,7 +45,7 @@ const ChatBot = () => {
         whileHover={{ scale: 1.1 }}
         onClick={() => setIsOpen(true)}
         className={`fixed bottom-8 right-8 z-50 w-16 h-16 rounded-2xl flex items-center justify-center transition-all ${isOpen ? 'hidden' : ''}`}
-        style={{ background: 'linear-gradient(135deg, #00D4FF 0%, #7C3AED 100%)' }}
+        style={{ background: 'linear-gradient(135deg, #2563EB 0%, #EAB308 100%)' }}
         data-testid="chatbot-toggle"
       >
         <ChatCircle size={28} weight="light" className="text-white" />
@@ -57,19 +57,19 @@ const ChatBot = () => {
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-8 right-8 z-50 w-[400px] max-w-[calc(100vw-64px)] bg-[#131B2E] border border-white/10 rounded-2xl flex flex-col overflow-hidden shadow-2xl"
-            style={{ height: '550px', maxHeight: 'calc(100vh-100px)' }}
+            className="fixed bottom-8 right-8 z-50 w-[400px] max-w-[calc(100vw-64px)] bg-[#0A0F1C] border border-white/10 rounded-2xl flex flex-col overflow-hidden shadow-2xl"
+            style={{ height: '550px', maxHeight: 'calc(100vh - 100px)' }}
             data-testid="chatbot-window"
           >
             {/* Header */}
-            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10" style={{ background: 'linear-gradient(135deg, rgba(0,212,255,0.1) 0%, rgba(124,58,237,0.1) 100%)' }}>
+            <div className="flex items-center justify-between px-6 py-4 border-b border-white/10" style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.15) 0%, rgba(234,179,8,0.15) 100%)' }}>
               <div className="flex items-center gap-3">
-                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #00D4FF 0%, #7C3AED 100%)' }}>
+                <div className="w-10 h-10 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #2563EB 0%, #EAB308 100%)' }}>
                   <Robot size={20} className="text-white" />
                 </div>
                 <div>
-                  <p className="font-medium text-white text-sm">Assistente AI</p>
-                  <p className="text-xs text-[#00D4FF]">Online</p>
+                  <p className="font-medium text-white text-sm">Assistente Solaris</p>
+                  <p className="text-xs text-[#EAB308]">Online</p>
                 </div>
               </div>
               <button onClick={() => setIsOpen(false)} className="text-white/50 hover:text-white" data-testid="chatbot-close">
@@ -90,7 +90,7 @@ const ChatBot = () => {
                 <div className="flex justify-start">
                   <div className="chat-bubble-bot flex gap-1.5">
                     {[0, 1, 2].map((i) => (
-                      <motion.span key={i} animate={{ y: [0, -8, 0] }} transition={{ duration: 0.6, repeat: Infinity, delay: i * 0.15 }} className="w-2 h-2 rounded-full" style={{ background: 'linear-gradient(135deg, #00D4FF 0%, #7C3AED 100%)' }} />
+                      <motion.span key={i} animate={{ y: [0, -8, 0] }} transition={{ duration: 0.6, repeat: Infinity, delay: i * 0.15 }} className="w-2 h-2 rounded-full bg-[#EAB308]" />
                     ))}
                   </div>
                 </div>
@@ -107,11 +107,11 @@ const ChatBot = () => {
                   onChange={(e) => setInput(e.target.value)}
                   onKeyPress={(e) => e.key === 'Enter' && handleSend()}
                   placeholder="Scrivi un messaggio..."
-                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#00D4FF]/50"
+                  className="flex-1 bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-sm text-white placeholder-white/30 focus:outline-none focus:border-[#EAB308]/50"
                   disabled={isLoading}
                   data-testid="chatbot-input"
                 />
-                <button onClick={handleSend} disabled={isLoading || !input.trim()} className="px-4 rounded-xl disabled:opacity-30 transition-all" style={{ background: 'linear-gradient(135deg, #00D4FF 0%, #7C3AED 100%)' }} data-testid="chatbot-send">
+                <button onClick={handleSend} disabled={isLoading || !input.trim()} className="px-4 rounded-xl disabled:opacity-30 transition-all" style={{ background: 'linear-gradient(135deg, #2563EB 0%, #EAB308 100%)' }} data-testid="chatbot-send">
                   <PaperPlaneTilt size={20} weight="bold" className="text-white" />
                 </button>
               </div>

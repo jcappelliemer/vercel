@@ -25,11 +25,9 @@ const testimonials = [
 const Testimonials = () => {
   return (
     <section className="py-32 relative" data-testid="testimonials-section">
-      {/* Background */}
-      <div className="absolute inset-0 bg-[#131B2E]/50" />
+      <div className="absolute inset-0 bg-[#111827]/50" />
       
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
-        {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +40,6 @@ const Testimonials = () => {
           </h2>
         </motion.div>
 
-        {/* Grid */}
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((item, index) => (
             <motion.div
@@ -54,14 +51,13 @@ const Testimonials = () => {
               whileHover={{ y: -10 }}
               className="card-glass rounded-2xl p-8 transition-all duration-500"
             >
-              {/* Rating */}
               <div className="flex gap-1 mb-6">
                 {[...Array(item.rating)].map((_, i) => (
-                  <Star key={i} size={16} weight="fill" className="text-[#00D4FF]" />
+                  <Star key={i} size={16} weight="fill" className="text-[#EAB308]" />
                 ))}
               </div>
               
-              <Quotes size={32} weight="fill" className="text-[#7C3AED]/30 mb-4" />
+              <Quotes size={32} weight="fill" className="text-[#EAB308]/30 mb-4" />
               
               <p className="text-white/90 text-lg leading-relaxed mb-8">
                 "{item.quote}"
@@ -69,7 +65,7 @@ const Testimonials = () => {
               
               <div className="border-t border-white/10 pt-6">
                 <div className="font-medium text-white">{item.author}</div>
-                <div className="text-sm text-[#00D4FF]">{item.role}</div>
+                <div className="text-sm text-[#EAB308]">{item.role}</div>
               </div>
             </motion.div>
           ))}

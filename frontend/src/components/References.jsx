@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-import Marquee from 'react-fast-marquee';
 
 const references = [
   'Banca d\'Italia',
@@ -19,35 +18,43 @@ const references = [
 
 const References = () => {
   return (
-    <section className="py-20 bg-white" data-testid="references-section">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12">
+    <section className="py-24 relative overflow-hidden" data-testid="references-section">
+      <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center"
         >
-          <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#002FA7] mb-4">
-            Ci hanno scelto
-          </p>
-          <h2 className="text-2xl sm:text-3xl font-bold tracking-tight text-[#0A0A0A]">
-            Le nostre referenze
+          <div className="accent-bar w-16 mx-auto mb-6" />
+          <h2 className="text-3xl lg:text-4xl font-medium text-white mb-4">
+            Ci hanno <span className="text-gradient">scelto</span>
           </h2>
+          <p className="text-[#94A3B8] text-lg">Le nostre referenze più importanti</p>
         </motion.div>
       </div>
 
-      <Marquee speed={30} gradient gradientColor="#ffffff" gradientWidth={100}>
-        {references.map((ref, index) => (
-          <div 
-            key={index}
-            className="mx-8 py-4 px-6 border border-[#E5E7EB] bg-[#F9FAFB]"
-          >
-            <span className="text-sm font-medium text-[#0A0A0A] whitespace-nowrap">
-              {ref}
-            </span>
-          </div>
-        ))}
-      </Marquee>
+      {/* Marquee row 1 */}
+      <div className="relative">
+        <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#0A0F1C] to-transparent z-10" />
+        <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0A0F1C] to-transparent z-10" />
+        <motion.div 
+          className="flex gap-4"
+          animate={{ x: ['0%', '-50%'] }}
+          transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+        >
+          {[...references, ...references].map((ref, index) => (
+            <div 
+              key={index}
+              className="flex-shrink-0 py-3 px-6 rounded-lg border border-white/5 bg-[#111827]/50 hover:border-[#EAB308]/20 transition-all"
+            >
+              <span className="text-sm font-medium text-white/70 whitespace-nowrap">
+                {ref}
+              </span>
+            </div>
+          ))}
+        </motion.div>
+      </div>
     </section>
   );
 };

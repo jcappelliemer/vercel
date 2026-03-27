@@ -172,7 +172,7 @@ async def chat_with_bot(input: ChatMessage):
             api_key=api_key,
             session_id=session_id,
             system_message=CHATBOT_SYSTEM_MESSAGE
-        ).with_model("openai", "gpt-5.2")
+        ).with_model("anthropic", "claude-sonnet-4-5")
         
         user_message = UserMessage(text=input.message)
         response = await chat.send_message(user_message)

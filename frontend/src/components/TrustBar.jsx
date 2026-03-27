@@ -10,7 +10,7 @@ const trustItems = [
 
 const TrustBar = () => {
   return (
-    <section className="py-12 border-y border-white/5" data-testid="trust-bar">
+    <section className="py-12 border-y border-white/5 bg-[#111827]/50" data-testid="trust-bar">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {trustItems.map((item, index) => (
@@ -20,15 +20,15 @@ const TrustBar = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              whileHover={{ scale: 1.02 }}
-              className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#00D4FF]/30 transition-all group"
+              whileHover={{ scale: 1.02, y: -2 }}
+              className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#EAB308]/20 transition-all group"
             >
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-[#00D4FF]/10 to-[#7C3AED]/10 group-hover:from-[#00D4FF]/20 group-hover:to-[#7C3AED]/20 transition-all">
-                <item.icon size={22} weight="light" className="text-[#00D4FF]" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-[#2563EB]/10 to-[#EAB308]/10 group-hover:from-[#2563EB]/20 group-hover:to-[#EAB308]/20 transition-all">
+                <item.icon size={22} weight="light" className="text-[#EAB308]" />
               </div>
               <div>
                 <div className="text-white font-medium">{item.label}</div>
-                <div className="text-xs text-[#8B9AB8] uppercase tracking-wider">{item.value}</div>
+                <div className="text-xs text-[#94A3B8] uppercase tracking-wider">{item.value}</div>
               </div>
             </motion.div>
           ))}

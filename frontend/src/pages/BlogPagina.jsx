@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
@@ -6,14 +6,13 @@ import ChatBot from '../components/ChatBot';
 import { motion } from 'framer-motion';
 import { ArrowRight, CalendarBlank, Tag } from '@phosphor-icons/react';
 
-// Sample blog posts (in production these would come from API)
 const samplePosts = [
   {
     id: '1',
     titolo: 'Come scegliere la pellicola antisolare giusta per il tuo edificio',
     slug: 'come-scegliere-pellicola-antisolare',
     excerpt: 'Guida completa alla scelta delle pellicole antisolari: fattori da considerare, tipologie disponibili e consigli degli esperti.',
-    immagine: 'https://images.unsplash.com/photo-1761706885595-02fdd9fe91bb?w=800',
+    immagine: 'https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/41cd0458add26ba29df8fb0b010533e357770d6fb0f027d6a8eea3a954452d5f.png',
     categoria: 'Guide',
     tags: ['antisolari', 'risparmio energetico'],
     created_at: '2025-01-15',
@@ -23,7 +22,7 @@ const samplePosts = [
     titolo: 'Pellicole di sicurezza: normative e certificazioni',
     slug: 'pellicole-sicurezza-normative-certificazioni',
     excerpt: 'Tutto quello che devi sapere sulle certificazioni UNI EN 12600 e la conformità al D.Lgs. 81/2008 per le pellicole di sicurezza.',
-    immagine: 'https://images.unsplash.com/photo-1674829763557-19283dbde6e5?w=800',
+    immagine: 'https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg?w=800',
     categoria: 'Normative',
     tags: ['sicurezza', 'certificazioni'],
     created_at: '2025-01-10',
@@ -33,7 +32,7 @@ const samplePosts = [
     titolo: 'Le pellicole LCD Switch: il futuro delle vetrate intelligenti',
     slug: 'pellicole-lcd-switch-futuro-vetrate',
     excerpt: 'Scopri la tecnologia rivoluzionaria delle pellicole LCD che trasformano le vetrate in schermi interattivi.',
-    immagine: 'https://images.pexels.com/photos/5213546/pexels-photo-5213546.jpeg?w=800',
+    immagine: 'https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/e8649b92ae1cac102c10dcb549bc56fc73e517786dc90eeef30de1c82db1c77f.png',
     categoria: 'Innovazione',
     tags: ['lcd-switch', 'smart building'],
     created_at: '2025-01-05',
@@ -43,7 +42,7 @@ const samplePosts = [
     titolo: 'Risparmio energetico con le pellicole per vetri: case study',
     slug: 'risparmio-energetico-pellicole-case-study',
     excerpt: 'Analisi dettagliata del risparmio energetico ottenuto in diversi edifici grazie all\'installazione di pellicole antisolari.',
-    immagine: 'https://images.unsplash.com/photo-1719437354892-f64ea7e03d4e?w=800',
+    immagine: 'https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg?w=800',
     categoria: 'Case Study',
     tags: ['risparmio', 'efficienza'],
     created_at: '2024-12-20',
@@ -51,60 +50,47 @@ const samplePosts = [
 ];
 
 const BlogPagina = () => {
-  const [posts, setPosts] = useState(samplePosts);
   const [selectedCategory, setSelectedCategory] = useState('Tutti');
-
   const categories = ['Tutti', ...new Set(samplePosts.map(p => p.categoria))];
-
-  const filteredPosts = selectedCategory === 'Tutti' 
-    ? posts 
-    : posts.filter(p => p.categoria === selectedCategory);
+  const filteredPosts = selectedCategory === 'Tutti' ? samplePosts : samplePosts.filter(p => p.categoria === selectedCategory);
 
   const formatDate = (dateString) => {
-    const date = new Date(dateString);
-    return date.toLocaleDateString('it-IT', { 
-      day: 'numeric', 
-      month: 'long', 
-      year: 'numeric' 
-    });
+    return new Date(dateString).toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' });
   };
 
   return (
-    <div className="min-h-screen bg-[#F9FAFB]" data-testid="blog-page">
+    <div className="min-h-screen bg-[#0A0F1C]" data-testid="blog-page">
       <Header />
       
       <main className="pt-24">
-        {/* Hero */}
-        <section className="py-16 bg-white border-b border-[#E5E7EB]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-20 border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-2xl">
-              <p className="text-xs tracking-[0.2em] uppercase font-bold text-[#002FA7] mb-4">
-                Blog
-              </p>
-              <h1 className="text-4xl sm:text-5xl font-black tracking-tighter text-[#0A0A0A] uppercase mb-6">
-                News e<br />
-                <span className="text-[#002FA7]">approfondimenti</span>
+              <div className="accent-bar w-16 mb-6" />
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white mb-6">
+                News e
+                <span className="text-gradient"> approfondimenti</span>
               </h1>
-              <p className="text-lg text-[#0A0A0A]/70 leading-relaxed">
+              <p className="text-lg text-[#94A3B8] leading-relaxed">
                 Articoli, guide e novità dal mondo delle pellicole per vetri. 
-                Resta aggiornato sulle ultime tecnologie e normative del settore.
+                Resta aggiornato sulle ultime tecnologie.
               </p>
             </div>
           </div>
         </section>
 
         {/* Categories */}
-        <section className="py-8 bg-white border-b border-[#E5E7EB]">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <section className="py-6 border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="flex flex-wrap gap-3">
               {categories.map((cat) => (
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 text-sm font-medium transition-colors ${
+                  className={`px-4 py-2 text-sm font-medium rounded-lg transition-all ${
                     selectedCategory === cat 
-                      ? 'bg-[#002FA7] text-white' 
-                      : 'bg-[#F9FAFB] text-[#0A0A0A] hover:bg-[#E5E7EB]'
+                      ? 'bg-[#EAB308] text-[#0A0F1C]' 
+                      : 'bg-white/5 text-white/60 hover:bg-white/10 hover:text-white'
                   }`}
                   data-testid={`blog-category-${cat.toLowerCase()}`}
                 >
@@ -116,9 +102,9 @@ const BlogPagina = () => {
         </section>
 
         {/* Posts Grid */}
-        <section className="py-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <section className="py-20">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
               {filteredPosts.map((post, index) => (
                 <motion.article
                   key={post.id}
@@ -126,42 +112,36 @@ const BlogPagina = () => {
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: index * 0.1 }}
-                  className="bg-white border border-[#E5E7EB] group hover:border-[#002FA7] transition-colors"
+                  className="card-glass rounded-2xl overflow-hidden group hover:border-[#EAB308]/30 transition-all"
                   data-testid={`blog-post-${post.id}`}
                 >
                   <Link to={`/blog/${post.slug}`}>
                     <div className="relative overflow-hidden">
-                      <img 
-                        src={post.immagine}
-                        alt={post.titolo}
-                        className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105"
-                      />
-                      <span className="absolute top-4 left-4 bg-[#002FA7] text-white text-xs font-bold uppercase px-3 py-1">
+                      <img src={post.immagine} alt={post.titolo} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
+                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] to-transparent" />
+                      <span className="absolute top-4 left-4 bg-[#EAB308] text-[#0A0F1C] text-xs font-bold uppercase px-3 py-1 rounded-md">
                         {post.categoria}
                       </span>
                     </div>
                     <div className="p-6">
-                      <div className="flex items-center gap-4 text-xs text-[#0A0A0A]/60 mb-3">
+                      <div className="flex items-center gap-4 text-xs text-[#94A3B8] mb-3">
                         <span className="flex items-center gap-1">
                           <CalendarBlank size={14} />
                           {formatDate(post.created_at)}
                         </span>
                       </div>
-                      <h2 className="text-lg font-bold text-[#0A0A0A] mb-3 group-hover:text-[#002FA7] transition-colors line-clamp-2">
+                      <h2 className="text-lg font-medium text-white mb-3 group-hover:text-[#EAB308] transition-colors line-clamp-2">
                         {post.titolo}
                       </h2>
-                      <p className="text-sm text-[#0A0A0A]/70 mb-4 line-clamp-2">
-                        {post.excerpt}
-                      </p>
+                      <p className="text-sm text-[#94A3B8] mb-4 line-clamp-2">{post.excerpt}</p>
                       <div className="flex flex-wrap gap-2 mb-4">
                         {post.tags.map((tag) => (
-                          <span key={tag} className="flex items-center gap-1 text-xs text-[#0A0A0A]/60 bg-[#F9FAFB] px-2 py-1">
-                            <Tag size={12} />
-                            {tag}
+                          <span key={tag} className="flex items-center gap-1 text-xs text-[#94A3B8] bg-white/5 px-2 py-1 rounded">
+                            <Tag size={12} />{tag}
                           </span>
                         ))}
                       </div>
-                      <span className="inline-flex items-center gap-2 text-[#002FA7] text-sm font-semibold uppercase tracking-wide group-hover:gap-3 transition-all">
+                      <span className="inline-flex items-center gap-2 text-[#EAB308] text-sm font-medium uppercase tracking-wide group-hover:gap-3 transition-all">
                         Leggi articolo
                         <ArrowRight size={16} weight="bold" />
                       </span>
@@ -173,27 +153,22 @@ const BlogPagina = () => {
 
             {filteredPosts.length === 0 && (
               <div className="text-center py-12">
-                <p className="text-[#0A0A0A]/60">Nessun articolo trovato per questa categoria.</p>
+                <p className="text-[#94A3B8]">Nessun articolo trovato per questa categoria.</p>
               </div>
             )}
           </div>
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-[#0A0A0A]">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h2 className="text-2xl sm:text-3xl font-bold text-white mb-4">
-              Hai domande sulle pellicole per vetri?
+        <section className="py-20 bg-[#111827]/50 border-t border-white/5">
+          <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
+            <h2 className="text-2xl lg:text-3xl font-medium text-white mb-4">
+              Hai domande sulle <span className="text-gradient">pellicole</span>?
             </h2>
-            <p className="text-white/70 mb-6">
-              Il nostro team è pronto a rispondere a tutte le tue domande.
-            </p>
-            <Link 
-              to="/contatti"
-              className="px-6 py-3 bg-[#002FA7] text-white font-bold uppercase tracking-wide hover:bg-[#001d6a] transition-colors inline-flex items-center gap-2"
-            >
-              Contattaci
-              <ArrowRight size={20} weight="bold" />
+            <p className="text-[#94A3B8] mb-8">Il nostro team è pronto a rispondere.</p>
+            <Link to="/contatti" className="btn-yellow group">
+              <span>Contattaci</span>
+              <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </div>
         </section>

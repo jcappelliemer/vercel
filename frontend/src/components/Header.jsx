@@ -25,7 +25,7 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled ? 'bg-[#0C1222]/90 backdrop-blur-xl border-b border-white/5' : ''
+        isScrolled ? 'bg-[#0A0F1C]/95 backdrop-blur-xl border-b border-white/5' : ''
       }`}
       data-testid="header"
     >
@@ -34,16 +34,15 @@ const Header = () => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
             <motion.div 
-              whileHover={{ rotate: 180 }}
-              transition={{ duration: 0.5 }}
-              className="w-12 h-12 rounded-xl flex items-center justify-center"
-              style={{ background: 'linear-gradient(135deg, #00D4FF 0%, #7C3AED 100%)' }}
+              whileHover={{ scale: 1.05 }}
+              className="w-12 h-12 rounded-xl flex items-center justify-center relative overflow-hidden"
+              style={{ background: 'linear-gradient(135deg, #2563EB 0%, #EAB308 100%)' }}
             >
-              <span className="text-white font-bold text-lg">SF</span>
+              <span className="text-white font-bold text-lg relative z-10">SF</span>
             </motion.div>
-            <div className="hidden sm:block">
+            <div className="hidden sm:flex items-baseline">
               <span className="font-semibold text-xl text-white">SOLARIS</span>
-              <span className="font-semibold text-xl text-gradient">FILMS</span>
+              <span className="font-semibold text-xl text-gradient-gold">FILMS</span>
             </div>
           </Link>
 
@@ -55,7 +54,7 @@ const Header = () => {
                 to={link.path}
                 className={`relative text-sm tracking-wider uppercase transition-colors ${
                   location.pathname === link.path 
-                    ? 'text-[#00D4FF]' 
+                    ? 'text-[#EAB308]' 
                     : 'text-white/60 hover:text-white'
                 }`}
                 data-testid={`nav-${link.name.toLowerCase().replace(' ', '-')}`}
@@ -64,8 +63,7 @@ const Header = () => {
                 {location.pathname === link.path && (
                   <motion.span 
                     layoutId="nav-indicator"
-                    className="absolute -bottom-2 left-0 right-0 h-0.5"
-                    style={{ background: 'linear-gradient(90deg, #00D4FF, #7C3AED)' }}
+                    className="absolute -bottom-2 left-0 right-0 h-0.5 bg-[#EAB308]"
                   />
                 )}
               </Link>
@@ -73,7 +71,7 @@ const Header = () => {
           </nav>
 
           {/* CTA */}
-          <Link to="/preventivo" className="hidden lg:block btn-primary text-xs" data-testid="header-cta-preventivo">
+          <Link to="/preventivo" className="hidden lg:block btn-yellow text-xs" data-testid="header-cta-preventivo">
             Preventivo
           </Link>
 
@@ -94,7 +92,7 @@ const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-[#131B2E] border-t border-white/10"
+            className="lg:hidden bg-[#111827] border-t border-white/10"
             data-testid="mobile-menu"
           >
             <div className="px-6 py-8 space-y-4">
@@ -102,13 +100,13 @@ const Header = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="block py-3 text-lg text-white/80 hover:text-[#00D4FF]"
+                  className="block py-3 text-lg text-white/80 hover:text-[#EAB308]"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              <Link to="/preventivo" className="btn-primary w-full justify-center mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+              <Link to="/preventivo" className="btn-yellow w-full justify-center mt-4" onClick={() => setIsMobileMenuOpen(false)}>
                 Preventivo
               </Link>
             </div>

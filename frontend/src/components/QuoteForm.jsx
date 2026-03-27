@@ -8,10 +8,9 @@ const API = `${BACKEND_URL}/api`;
 
 const pellicoleTipi = [
   { value: 'antisolari', label: 'Pellicole Antisolari' },
+  { value: 'safety-shield', label: 'Safety Shield — Anti-Esplosione' },
   { value: 'sicurezza', label: 'Pellicole di Sicurezza' },
   { value: 'privacy', label: 'Pellicole Privacy/Design' },
-  { value: 'lcd-switch', label: 'Pellicole LCD Switch' },
-  { value: 'fotocromatiche', label: 'Pellicole Fotocromatiche' },
   { value: 'altro', label: 'Altro / Non so' },
 ];
 

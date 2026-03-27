@@ -2,8 +2,13 @@ import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TrustBar from '../components/TrustBar';
 import Services from '../components/Services';
+import FocusTecnici from '../components/FocusTecnici';
 import Process from '../components/Process';
+import LoSapeviChe from '../components/LoSapeviChe';
+import CaseStudy from '../components/CaseStudy';
+import References from '../components/References';
 import Testimonials from '../components/Testimonials';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
 import { motion } from 'framer-motion';
@@ -16,7 +21,7 @@ const CTASection = () => (
       <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/10 via-transparent to-[#EAB308]/10" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#EAB308]/8 rounded-full blur-[150px]" />
     </div>
-    
+
     <div className="relative max-w-4xl mx-auto px-6 md:px-12 text-center">
       <motion.div
         initial={{ opacity: 0, y: 30 }}
@@ -54,8 +59,13 @@ const HomePage = () => {
         <Hero />
         <TrustBar />
         <Services />
+        <FocusTecnici />
         <Process />
+        <LoSapeviChe />
+        <CaseStudy />
+        <References />
         <Testimonials />
+        <FAQ />
         <CTASection />
       </main>
       <Footer />

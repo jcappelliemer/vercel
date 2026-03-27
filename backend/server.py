@@ -101,26 +101,27 @@ INFORMAZIONI AZIENDALI:
 - Garanzia fino a 10 anni
 
 PRODOTTI PRINCIPALI:
-1. PELLICOLE ANTISOLARI: Riducono il calore fino a 7-8°C, risparmio energetico 30-50%, protezione UV 99%
-2. PELLICOLE DI SICUREZZA: Certificate UNI EN 12600, anti-sfondamento, protezione da schegge
-3. PELLICOLE PRIVACY/DESIGN: Satinate, decorative, personalizzabili
-4. PELLICOLE LCD SWITCH: Da opaca a trasparente con un interruttore
-5. PELLICOLE FOTOCROMATICHE: Si scuriscono automaticamente con la luce solare
+1. PELLICOLE ANTISOLARI (prodotto di punta): Riducono il calore fino a 7-8°C, risparmio energetico 30-50%, protezione UV 99%, riflessione IR 85%. Disponibili in finitura brunito, argento, neutro e grigio fumè.
+2. SAFETY SHIELD ANTI-ESPLOSIONE (secondo prodotto chiave): Pellicole MADICO SafetyShield G2, le più testate al mondo. Protezione blast, anti-intrusione, disastri naturali. Certifiate GSA 3A/3B, ASTM F1642, ASTM F3561, EN 356. Sistema FrameGard 500-800 lbs/ft.
+3. PELLICOLE DI SICUREZZA: Certificate UNI EN 12600, anti-sfondamento, protezione da schegge, conformità D.Lgs. 81/2008
+4. PELLICOLE PRIVACY/DESIGN: Satinate, decorative, personalizzabili
 
 VANTAGGI:
 - Nessun lavoro strutturale invasivo
 - Installazione rapida senza interrompere attività
 - Conformità D.Lgs. 81/2008 per sicurezza sul lavoro
 - Migliore efficienza energetica edifici
+- Ammortamento investimento in max 2-3 anni
 
-REFERENZE: Banca d'Italia, EUR Spa, Università di Bologna, Aeroporto di Bologna, Ministero dell'Interno, CNR, e molti altri.
+REFERENZE: Banca d'Italia, EUR Spa Nuvola Roma, Università di Bologna, Aeroporto di Bologna, Ministero dell'Interno, CNR, Sapienza, Palazzo Pitti, e molti altri.
 
 ISTRUZIONI:
 - Rispondi sempre in italiano in modo professionale ma cordiale
 - Suggerisci di richiedere un preventivo gratuito per informazioni specifiche sui prezzi
 - Per urgenze, invita a chiamare o usare WhatsApp
 - Mantieni risposte concise ma complete (max 3-4 frasi)
-- Se non sai qualcosa, ammettilo e suggerisci di contattare l'azienda"""
+- Se non sai qualcosa, ammettilo e suggerisci di contattare l'azienda
+- NON menzionare pellicole LCD Switch o fotocromatiche, non fanno più parte del catalogo"""
 
 # ============== API ROUTES ==============
 
@@ -218,37 +219,26 @@ async def get_services():
             {
                 "id": "antisolari",
                 "nome": "Pellicole Antisolari",
-                "descrizione": "Riducono drasticamente il passaggio di calore, bloccando fino al 99% dei raggi UV e riducendo le temperature interne fino a 7-8°C.",
-                "vantaggi": ["Risparmio energetico 30-50%", "Protezione UV 99%", "Riduzione abbagliamento", "Garanzia 10 anni"],
-                "immagine": "https://images.unsplash.com/photo-1761706885595-02fdd9fe91bb?w=800"
+                "descrizione": "Riducono drasticamente il passaggio di calore, bloccando fino al 99% dei raggi UV e riducendo le temperature interne fino a 7-8°C. Risparmio energetico 30-50%.",
+                "vantaggi": ["Risparmio energetico 30-50%", "Protezione UV 99%", "Riduzione temperatura 8°C", "Garanzia 10 anni"],
+            },
+            {
+                "id": "safety-shield",
+                "nome": "Safety Shield — Anti-Esplosione",
+                "descrizione": "SafetyShield MADICO G2: la pellicola anti-esplosione più testata al mondo. Protezione blast, anti-intrusione, disastri naturali. Sistema FrameGard brevettato.",
+                "vantaggi": ["Blast Mitigation GSA 3A/3B", "Anti-intrusione ASTM F3561", "EN 356 Manual Attack", "FrameGard 500-800 lbs/ft"],
             },
             {
                 "id": "sicurezza",
                 "nome": "Pellicole di Sicurezza",
                 "descrizione": "Certificate UNI EN 12600, trasformano qualsiasi vetro in vetro di sicurezza, proteggendo da schegge e intrusioni.",
-                "vantaggi": ["Certificazione UNI EN 12600", "Anti-sfondamento", "Conformità D.Lgs. 81/2008", "Protezione antiesplosione"],
-                "immagine": "https://images.unsplash.com/photo-1674829763557-19283dbde6e5?w=800"
+                "vantaggi": ["Certificazione UNI EN 12600", "Anti-sfondamento", "Conformità D.Lgs. 81/2008", "Protezione da schegge"],
             },
             {
                 "id": "privacy",
                 "nome": "Pellicole Privacy e Design",
                 "descrizione": "Pellicole satinate e decorative per privacy e design personalizzato. Numerose varianti di disegno e colorazioni.",
                 "vantaggi": ["Design personalizzabile", "Privacy garantita", "Numerose finiture", "Aspetto professionale"],
-                "immagine": "https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?w=800"
-            },
-            {
-                "id": "lcd-switch",
-                "nome": "Pellicole LCD Switch",
-                "descrizione": "Tecnologia rivoluzionaria: da opaca a trasparente con un interruttore. Controllabile da smartphone o comando vocale.",
-                "vantaggi": ["Controllo smartphone", "Proiezione 4K", "Privacy modulabile", "Effetto WOW"],
-                "immagine": "https://images.pexels.com/photos/5213546/pexels-photo-5213546.jpeg?w=800"
-            },
-            {
-                "id": "fotocromatiche",
-                "nome": "Pellicole Fotocromatiche",
-                "descrizione": "Si scuriscono automaticamente con la luce solare, senza elettricità. Protezione adattiva intelligente.",
-                "vantaggi": ["Automatiche", "Zero elettricità", "Adattive", "Innovazione"],
-                "immagine": "https://images.unsplash.com/photo-1719437354892-f64ea7e03d4e?w=800"
             }
         ]
     }

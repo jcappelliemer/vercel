@@ -174,17 +174,17 @@ class TestChatEndpoint:
 
 
 class TestServicesEndpoint:
-    """Services endpoint tests"""
+    """Services endpoint tests - Updated: 4 services (LCD Switch and Fotocromatiche removed, Safety Shield added)"""
     
     def test_get_services(self):
-        """Test GET /api/services returns service list"""
+        """Test GET /api/services returns 4 services (no LCD/Fotocromatiche)"""
         response = requests.get(f"{BASE_URL}/api/services")
         assert response.status_code == 200
         data = response.json()
         
         assert "services" in data
         services = data["services"]
-        assert len(services) == 5  # 5 service types
+        assert len(services) == 4  # 4 service types (LCD Switch and Fotocromatiche removed)
         
         # Verify service structure
         for service in services:
@@ -194,14 +194,17 @@ class TestServicesEndpoint:
             assert "vantaggi" in service
             assert isinstance(service["vantaggi"], list)
         
-        # Verify specific services exist
+        # Verify specific services exist (updated list)
         service_ids = [s["id"] for s in services]
         assert "antisolari" in service_ids
+        assert "safety-shield" in service_ids  # NEW: Safety Shield added
         assert "sicurezza" in service_ids
         assert "privacy" in service_ids
-        assert "lcd-switch" in service_ids
-        assert "fotocromatiche" in service_ids
-        print("✓ Get services passed")
+        
+        # Verify LCD Switch and Fotocromatiche are NOT present
+        assert "lcd-switch" not in service_ids, "LCD Switch should be removed"
+        assert "fotocromatiche" not in service_ids, "Fotocromatiche should be removed"
+        print("✓ Get services passed - 4 services, no LCD/Fotocromatiche")
 
 
 class TestStatsEndpoint:

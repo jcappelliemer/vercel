@@ -31,6 +31,7 @@ Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfil
 - [x] Processo (4 step)
 - [x] Lo Sapevi Che (6 facts educativi)
 - [x] Case Study (3 progetti: Banca d'Italia, EUR Spa, Università Bologna)
+- [x] Gallery "I nostri lavori" (8 progetti, filtri per categoria, lightbox)
 - [x] Carosello Referenze (marquee animato)
 - [x] Testimonials (3 reviews)
 - [x] FAQ Accordion (8 domande)
@@ -38,8 +39,8 @@ Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfil
 
 ### Header
 - [x] Navigazione responsive + menu mobile
-- [x] CTA Telefono (icona cornetta)
-- [x] CTA WhatsApp (logo WhatsApp)
+- [x] CTA Telefono (icona cornetta cyan)
+- [x] CTA WhatsApp (logo WhatsApp verde)
 - [x] CTA Preventivo (bottone giallo)
 
 ### Pagine

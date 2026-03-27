@@ -74,7 +74,7 @@ const Header = () => {
           <div className="hidden lg:flex items-center gap-3">
             <a
               href="tel:+390000000000"
-              className="w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center text-white/60 hover:text-[#EAB308] hover:border-[#EAB308]/30 transition-all"
+              className="w-11 h-11 rounded-xl border border-cyan-400/30 bg-cyan-400/10 flex items-center justify-center text-cyan-400 hover:bg-cyan-400/20 hover:border-cyan-400/50 transition-all"
               data-testid="header-cta-phone"
               title="Chiamaci"
             >
@@ -84,7 +84,7 @@ const Header = () => {
               href="https://wa.me/390000000000"
               target="_blank"
               rel="noopener noreferrer"
-              className="w-11 h-11 rounded-xl border border-white/10 flex items-center justify-center text-white/60 hover:text-[#25D366] hover:border-[#25D366]/30 transition-all"
+              className="w-11 h-11 rounded-xl border border-[#25D366]/30 bg-[#25D366]/10 flex items-center justify-center text-[#25D366] hover:bg-[#25D366]/20 hover:border-[#25D366]/50 transition-all"
               data-testid="header-cta-whatsapp"
               title="WhatsApp"
             >
@@ -127,11 +127,11 @@ const Header = () => {
                 </Link>
               ))}
               <div className="flex gap-3 pt-4">
-                <a href="tel:+390000000000" className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-white/10 text-white hover:text-[#EAB308] hover:border-[#EAB308]/30 transition-all">
+                <a href="tel:+390000000000" className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-cyan-400/30 bg-cyan-400/10 text-cyan-400 hover:bg-cyan-400/20 transition-all">
                   <Phone size={18} weight="fill" />
                   <span className="text-sm">Chiama</span>
                 </a>
-                <a href="https://wa.me/390000000000" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-white/10 text-white hover:text-[#25D366] hover:border-[#25D366]/30 transition-all">
+                <a href="https://wa.me/390000000000" target="_blank" rel="noopener noreferrer" className="flex-1 flex items-center justify-center gap-2 py-3 rounded-xl border border-[#25D366]/30 bg-[#25D366]/10 text-[#25D366] hover:bg-[#25D366]/20 transition-all">
                   <WhatsappLogo size={18} weight="fill" />
                   <span className="text-sm">WhatsApp</span>
                 </a>

@@ -6,6 +6,7 @@ import FocusTecnici from '../components/FocusTecnici';
 import Process from '../components/Process';
 import LoSapeviChe from '../components/LoSapeviChe';
 import CaseStudy from '../components/CaseStudy';
+import Gallery from '../components/Gallery';
 import References from '../components/References';
 import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
@@ -63,6 +64,7 @@ const HomePage = () => {
         <Process />
         <LoSapeviChe />
         <CaseStudy />
+        <Gallery />
         <References />
         <Testimonials />
         <FAQ />

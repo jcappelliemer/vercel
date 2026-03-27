@@ -6,133 +6,133 @@ const services = [
   {
     id: 'lcd-switch',
     name: 'LCD Switch',
-    subtitle: 'Smart Glass Technology',
-    description: 'Da opaca a trasparente con un click. Controllo smartphone e proiezione 4K.',
+    subtitle: 'Smart Glass',
+    description: 'Da opaca a trasparente istantaneamente. Il futuro è adesso.',
     icon: Lightning,
     image: 'https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/e8649b92ae1cac102c10dcb549bc56fc73e517786dc90eeef30de1c82db1c77f.png',
+    colSpan: 'lg:col-span-8',
+    rowSpan: 'lg:row-span-2',
     featured: true,
-    colSpan: 'md:col-span-5 lg:col-span-7',
-    rowSpan: 'md:row-span-2',
   },
   {
     id: 'antisolari',
-    name: 'Pellicole Antisolari',
-    subtitle: 'Thermal Control',
-    description: 'Riduzione calore fino a 8°C. Risparmio energetico 50%.',
+    name: 'Antisolari',
+    subtitle: '-8°C',
+    description: 'Controllo termico avanzato.',
     icon: Sun,
     image: 'https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/41cd0458add26ba29df8fb0b010533e357770d6fb0f027d6a8eea3a954452d5f.png',
+    colSpan: 'lg:col-span-4',
     featured: false,
-    colSpan: 'md:col-span-3 lg:col-span-5',
-    rowSpan: 'md:row-span-1',
   },
   {
     id: 'sicurezza',
-    name: 'Pellicole Sicurezza',
-    subtitle: 'UNI EN 12600 Certified',
-    description: 'Protezione anti-sfondamento certificata.',
+    name: 'Sicurezza',
+    subtitle: 'Certificato',
+    description: 'UNI EN 12600.',
     icon: ShieldCheck,
     image: 'https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg?w=800',
+    colSpan: 'lg:col-span-4',
     featured: false,
-    colSpan: 'md:col-span-3 lg:col-span-5',
-    rowSpan: 'md:row-span-1',
   },
   {
     id: 'privacy',
-    name: 'Privacy & Design',
-    subtitle: 'Custom Solutions',
-    description: 'Design personalizzato per ambienti esclusivi.',
+    name: 'Privacy',
+    subtitle: 'Design',
+    description: 'Soluzioni su misura.',
     icon: Eye,
     image: 'https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?w=800',
+    colSpan: 'lg:col-span-6',
     featured: false,
-    colSpan: 'md:col-span-4 lg:col-span-4',
-    rowSpan: 'md:row-span-1',
   },
   {
     id: 'fotocromatiche',
     name: 'Fotocromatiche',
-    subtitle: 'Adaptive Technology',
-    description: 'Si adattano automaticamente alla luce. Zero energia.',
+    subtitle: 'Auto',
+    description: 'Si adattano alla luce.',
     icon: Sparkle,
     image: 'https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg?w=800',
+    colSpan: 'lg:col-span-6',
     featured: false,
-    colSpan: 'md:col-span-4 lg:col-span-3',
-    rowSpan: 'md:row-span-1',
   },
 ];
 
 const Services = () => {
   return (
-    <section className="py-24 md:py-32 bg-white" data-testid="services-section">
+    <section className="py-32 relative" data-testid="services-section">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        {/* Section Header */}
+        {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16"
+          className="flex flex-col lg:flex-row lg:items-end justify-between gap-8 mb-16"
         >
           <div>
-            <div className="flex items-center gap-4 mb-4">
-              <div className="accent-line" />
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0891B2]">
-                Soluzioni
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-[#0F172A]">
-              Tecnologie<br />
-              <span className="text-gradient font-medium">all'avanguardia</span>
+            <div className="accent-bar w-16 mb-6" />
+            <h2 className="text-4xl lg:text-5xl font-medium text-white">
+              Soluzioni
+              <span className="text-gradient"> premium</span>
             </h2>
           </div>
-          <p className="text-slate-500 max-w-md lg:text-right">
-            Pellicole certificate MADICO USA per ogni esigenza: 
-            dal controllo solare alla sicurezza, dalla privacy allo smart glass.
+          <p className="text-[#8B9AB8] max-w-md lg:text-right text-lg">
+            Tecnologie certificate MADICO USA per ogni esigenza.
           </p>
         </motion.div>
 
         {/* Bento Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-4 md:gap-6">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-5">
           {services.map((service, index) => (
             <motion.div
               key={service.id}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className={`luxury-card group ${service.colSpan} ${service.rowSpan}`}
+              className={`group relative overflow-hidden rounded-2xl ${service.colSpan} ${service.rowSpan || ''}`}
               data-testid={`service-card-${service.id}`}
             >
               <Link to={`/servizi#${service.id}`} className="block h-full">
-                {/* Image */}
-                <div className={`relative overflow-hidden ${service.featured ? 'h-full min-h-[400px]' : 'h-48 md:h-56'}`}>
-                  <img 
-                    src={service.image} 
+                <div className={`relative h-full ${service.featured ? 'min-h-[500px]' : 'min-h-[250px]'}`}>
+                  {/* Image */}
+                  <motion.img 
+                    src={service.image}
                     alt={service.name}
-                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    className="w-full h-full object-cover"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ duration: 0.6 }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0F172A] via-[#0F172A]/40 to-transparent" />
                   
-                  {/* Icon */}
-                  <div className="absolute top-6 left-6">
-                    <div className="w-12 h-12 bg-white/90 backdrop-blur flex items-center justify-center group-hover:bg-[#0891B2] transition-colors">
-                      <service.icon size={22} weight="light" className="text-[#0891B2] group-hover:text-white transition-colors" />
-                    </div>
-                  </div>
-
+                  {/* Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0C1222] via-[#0C1222]/60 to-transparent" />
+                  
                   {/* Content */}
-                  <div className="absolute bottom-0 left-0 right-0 p-6">
-                    <span className="text-xs uppercase tracking-widest text-[#0891B2] mb-2 block">
-                      {service.subtitle}
-                    </span>
-                    <h3 className="text-xl lg:text-2xl font-medium text-white mb-2">
-                      {service.name}
-                    </h3>
-                    <p className="text-sm text-white/70 mb-4 line-clamp-2">
-                      {service.description}
-                    </p>
-                    <span className="inline-flex items-center gap-2 text-white text-sm font-medium group-hover:text-[#0891B2] transition-colors">
-                      Scopri
-                      <ArrowUpRight size={16} weight="bold" className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                    </span>
+                  <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                    {/* Icon */}
+                    <motion.div 
+                      whileHover={{ rotate: 15, scale: 1.1 }}
+                      className="w-14 h-14 rounded-xl flex items-center justify-center mb-4"
+                      style={{ background: 'linear-gradient(135deg, rgba(0,212,255,0.2) 0%, rgba(124,58,237,0.2) 100%)', border: '1px solid rgba(255,255,255,0.1)' }}
+                    >
+                      <service.icon size={26} weight="light" className="text-[#00D4FF]" />
+                    </motion.div>
+                    
+                    <div className="flex items-end justify-between">
+                      <div>
+                        <span className="text-[#00D4FF] text-sm font-medium uppercase tracking-wider">
+                          {service.subtitle}
+                        </span>
+                        <h3 className="text-2xl lg:text-3xl font-medium text-white mt-1">
+                          {service.name}
+                        </h3>
+                        <p className="text-[#8B9AB8] mt-2 text-sm">{service.description}</p>
+                      </div>
+                      <motion.div 
+                        whileHover={{ x: 5, y: -5 }}
+                        className="w-12 h-12 rounded-full border border-white/20 flex items-center justify-center group-hover:border-[#00D4FF] group-hover:bg-[#00D4FF]/10 transition-all"
+                      >
+                        <ArrowUpRight size={20} className="text-white group-hover:text-[#00D4FF] transition-colors" />
+                      </motion.div>
+                    </div>
                   </div>
                 </div>
               </Link>

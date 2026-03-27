@@ -2,17 +2,17 @@ import { motion } from 'framer-motion';
 import { ShieldCheck, Medal, Certificate, Leaf } from '@phosphor-icons/react';
 
 const trustItems = [
-  { icon: Certificate, label: 'ISO 9001', desc: 'Certificato' },
-  { icon: Medal, label: 'MADICO USA', desc: 'Esclusivista Italia' },
-  { icon: ShieldCheck, label: 'UNI EN 12600', desc: 'Sicurezza Certificata' },
-  { icon: Leaf, label: 'Sostenibilità', desc: 'Eco-friendly' },
+  { icon: Certificate, label: 'ISO 9001', value: 'Certificato' },
+  { icon: Medal, label: 'MADICO', value: 'Esclusivista' },
+  { icon: ShieldCheck, label: 'UNI EN 12600', value: 'Sicurezza' },
+  { icon: Leaf, label: 'Green', value: 'Eco-friendly' },
 ];
 
 const TrustBar = () => {
   return (
-    <section className="py-16 bg-[#0F172A]" data-testid="trust-bar">
+    <section className="py-12 border-y border-white/5" data-testid="trust-bar">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
           {trustItems.map((item, index) => (
             <motion.div
               key={index}
@@ -20,14 +20,15 @@ const TrustBar = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
-              className="flex items-center gap-4 group"
+              whileHover={{ scale: 1.02 }}
+              className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#00D4FF]/30 transition-all group"
             >
-              <div className="w-14 h-14 border border-white/10 flex items-center justify-center group-hover:border-[#0891B2]/50 group-hover:bg-[#0891B2]/10 transition-all">
-                <item.icon size={24} weight="light" className="text-[#0891B2]" />
+              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-[#00D4FF]/10 to-[#7C3AED]/10 group-hover:from-[#00D4FF]/20 group-hover:to-[#7C3AED]/20 transition-all">
+                <item.icon size={22} weight="light" className="text-[#00D4FF]" />
               </div>
               <div>
                 <div className="text-white font-medium">{item.label}</div>
-                <div className="text-xs text-slate-500 uppercase tracking-wider">{item.desc}</div>
+                <div className="text-xs text-[#8B9AB8] uppercase tracking-wider">{item.value}</div>
               </div>
             </motion.div>
           ))}

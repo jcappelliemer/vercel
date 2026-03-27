@@ -1,62 +1,39 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Check } from '@phosphor-icons/react';
+import { ArrowRight } from '@phosphor-icons/react';
 
 const steps = [
-  {
-    number: '01',
-    title: 'Sopralluogo Gratuito',
-    description: 'Analisi tecnico-energetica delle vetrate e consulenza personalizzata.',
-  },
-  {
-    number: '02',
-    title: 'Preventivo Dettagliato',
-    description: 'Proposta su misura con calcolo del risparmio energetico atteso.',
-  },
-  {
-    number: '03',
-    title: 'Installazione Professionale',
-    description: 'Intervento rapido senza interruzioni, con personale specializzato.',
-  },
-  {
-    number: '04',
-    title: 'Garanzia 10 Anni',
-    description: 'Assistenza completa e garanzia estesa su prodotto e posa.',
-  },
+  { number: '01', title: 'Sopralluogo', desc: 'Analisi gratuita delle tue vetrate' },
+  { number: '02', title: 'Preventivo', desc: 'Proposta dettagliata su misura' },
+  { number: '03', title: 'Installazione', desc: 'Intervento rapido e professionale' },
+  { number: '04', title: 'Garanzia', desc: '10 anni di copertura totale' },
 ];
 
 const Process = () => {
   return (
-    <section className="py-24 md:py-32 bg-[#FAFBFC] relative overflow-hidden" data-testid="process-section">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left - Content */}
+    <section className="py-32 relative overflow-hidden" data-testid="process-section">
+      {/* Background accent */}
+      <div className="absolute top-1/2 left-0 w-1/2 h-[500px] bg-gradient-to-r from-[#7C3AED]/10 to-transparent blur-3xl" />
+      
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
+          {/* Left */}
           <motion.div
             initial={{ opacity: 0, x: -30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center gap-4 mb-4">
-              <div className="accent-line" />
-              <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0891B2]">
-                Come Lavoriamo
-              </span>
-            </div>
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-light tracking-tight text-[#0F172A] mb-6">
-              Un processo<br />
-              <span className="text-gradient font-medium">semplice e chiaro</span>
+            <div className="accent-bar w-16 mb-6" />
+            <h2 className="text-4xl lg:text-5xl font-medium text-white mb-6">
+              Processo
+              <span className="text-gradient"> semplice</span>
             </h2>
-            <p className="text-slate-500 mb-8 max-w-md">
-              Dalla consulenza all'installazione, ti accompagniamo in ogni fase 
-              con trasparenza e professionalità.
+            <p className="text-[#8B9AB8] text-lg mb-10 max-w-md">
+              Dalla consulenza all'installazione, ti accompagniamo con trasparenza.
             </p>
-            <Link 
-              to="/preventivo"
-              className="btn-cyan"
-              data-testid="process-cta"
-            >
-              Inizia Ora
-              <ArrowRight size={18} weight="bold" />
+            <Link to="/preventivo" className="btn-primary group">
+              <span>Inizia Ora</span>
+              <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>
 
@@ -69,22 +46,19 @@ const Process = () => {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: index * 0.15 }}
-                className="group bg-white border border-slate-200 p-6 hover:border-[#0891B2]/30 hover:shadow-lg transition-all duration-500"
+                whileHover={{ x: 10 }}
+                className="group flex items-center gap-6 p-6 rounded-xl bg-[#131B2E]/50 border border-white/5 hover:border-[#00D4FF]/30 hover:bg-[#1A2540]/50 transition-all cursor-default"
               >
-                <div className="flex items-start gap-6">
-                  <div className="text-4xl font-light text-[#0891B2]/30 group-hover:text-[#0891B2]/60 transition-colors">
-                    {step.number}
-                  </div>
-                  <div className="flex-1">
-                    <h3 className="text-lg font-medium text-[#0F172A] mb-2">{step.title}</h3>
-                    <p className="text-sm text-slate-500">{step.description}</p>
-                  </div>
-                  <div className="hidden sm:block">
-                    <div className="w-8 h-8 border border-slate-200 flex items-center justify-center group-hover:border-[#0891B2]/50 group-hover:bg-[#0891B2]/10 transition-all">
-                      <Check size={16} weight="bold" className="text-[#0891B2] opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </div>
-                  </div>
+                <div className="text-5xl font-bold text-gradient opacity-50 group-hover:opacity-100 transition-opacity">
+                  {step.number}
                 </div>
+                <div className="flex-1">
+                  <h3 className="text-xl font-medium text-white group-hover:text-[#00D4FF] transition-colors">
+                    {step.title}
+                  </h3>
+                  <p className="text-sm text-[#8B9AB8] mt-1">{step.desc}</p>
+                </div>
+                <div className="w-3 h-3 rounded-full bg-[#00D4FF]/30 group-hover:bg-[#00D4FF] group-hover:glow-cyan transition-all" />
               </motion.div>
             ))}
           </div>

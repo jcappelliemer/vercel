@@ -1,31 +1,34 @@
 import { motion } from 'framer-motion';
-import { Quotes } from '@phosphor-icons/react';
+import { Quotes, Star } from '@phosphor-icons/react';
 
 const testimonials = [
   {
-    quote: "L'intervento di Solaris Films ha ridotto del 45% i nostri costi di climatizzazione. Un investimento che si è ripagato in meno di 2 anni.",
-    author: "Ing. Marco Bellini",
+    quote: "Riduzione del 45% sui costi di climatizzazione. ROI in meno di 2 anni.",
+    author: "Marco Bellini",
     role: "Facility Manager",
-    company: "Gruppo Industriale Toscano",
+    rating: 5,
   },
   {
-    quote: "Professionalità impeccabile. Le pellicole LCD Switch hanno trasformato le nostre sale riunioni in spazi versatili e hi-tech.",
-    author: "Arch. Laura Conti",
-    role: "Studio Architettura",
-    company: "Conti & Partners",
+    quote: "Le pellicole LCD hanno rivoluzionato le nostre sale riunioni. Effetto wow garantito.",
+    author: "Laura Conti",
+    role: "Architetto",
+    rating: 5,
   },
   {
-    quote: "La messa in sicurezza dei vetri secondo la normativa è stata rapida e senza interruzioni per il personale. Altamente consigliati.",
-    author: "Dott. Paolo Ricci",
-    role: "Responsabile Sicurezza",
-    company: "Ospedale San Giovanni",
+    quote: "Messa in sicurezza rapida e senza interruzioni. Team altamente professionale.",
+    author: "Paolo Ricci",
+    role: "HSE Manager",
+    rating: 5,
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="py-24 md:py-32 bg-white" data-testid="testimonials-section">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
+    <section className="py-32 relative" data-testid="testimonials-section">
+      {/* Background */}
+      <div className="absolute inset-0 bg-[#131B2E]/50" />
+      
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         {/* Header */}
         <motion.div 
           initial={{ opacity: 0, y: 30 }}
@@ -33,37 +36,40 @@ const Testimonials = () => {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <div className="accent-line" />
-            <span className="text-xs font-bold uppercase tracking-[0.2em] text-[#0891B2]">
-              Testimonianze
-            </span>
-            <div className="accent-line" />
-          </div>
-          <h2 className="text-3xl sm:text-4xl font-light tracking-tight text-[#0F172A]">
-            La voce dei nostri <span className="text-gradient font-medium">clienti</span>
+          <div className="accent-bar w-16 mx-auto mb-6" />
+          <h2 className="text-4xl lg:text-5xl font-medium text-white">
+            Cosa dicono di <span className="text-gradient">noi</span>
           </h2>
         </motion.div>
 
-        {/* Testimonials Grid */}
+        {/* Grid */}
         <div className="grid md:grid-cols-3 gap-6">
           {testimonials.map((item, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, y: 30 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="bg-[#FAFBFC] border border-slate-200 p-8 group hover:border-[#0891B2]/20 hover:shadow-lg transition-all duration-500"
+              transition={{ delay: index * 0.15 }}
+              whileHover={{ y: -10 }}
+              className="card-glass rounded-2xl p-8 transition-all duration-500"
             >
-              <Quotes size={32} weight="fill" className="text-[#0891B2]/20 mb-6" />
-              <p className="text-slate-600 leading-relaxed mb-8 italic">
+              {/* Rating */}
+              <div className="flex gap-1 mb-6">
+                {[...Array(item.rating)].map((_, i) => (
+                  <Star key={i} size={16} weight="fill" className="text-[#00D4FF]" />
+                ))}
+              </div>
+              
+              <Quotes size={32} weight="fill" className="text-[#7C3AED]/30 mb-4" />
+              
+              <p className="text-white/90 text-lg leading-relaxed mb-8">
                 "{item.quote}"
               </p>
-              <div className="border-t border-slate-200 pt-6">
-                <div className="font-medium text-[#0F172A]">{item.author}</div>
-                <div className="text-sm text-[#0891B2]">{item.role}</div>
-                <div className="text-xs text-slate-400 mt-1">{item.company}</div>
+              
+              <div className="border-t border-white/10 pt-6">
+                <div className="font-medium text-white">{item.author}</div>
+                <div className="text-sm text-[#00D4FF]">{item.role}</div>
               </div>
             </motion.div>
           ))}

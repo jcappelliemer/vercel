@@ -9,9 +9,7 @@ const Header = () => {
   const location = useLocation();
 
   useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
+    const handleScroll = () => setIsScrolled(window.scrollY > 50);
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
@@ -27,9 +25,7 @@ const Header = () => {
   return (
     <header 
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        isScrolled 
-          ? 'glass shadow-sm' 
-          : 'bg-transparent'
+        isScrolled ? 'bg-[#0C1222]/90 backdrop-blur-xl border-b border-white/5' : ''
       }`}
       data-testid="header"
     >
@@ -37,27 +33,30 @@ const Header = () => {
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
-            <div className="relative">
-              <div className="w-10 h-10 bg-[#0F172A] flex items-center justify-center group-hover:bg-[#0891B2] transition-colors">
-                <span className="text-white font-semibold text-lg tracking-tight">SF</span>
-              </div>
-            </div>
+            <motion.div 
+              whileHover={{ rotate: 180 }}
+              transition={{ duration: 0.5 }}
+              className="w-12 h-12 rounded-xl flex items-center justify-center"
+              style={{ background: 'linear-gradient(135deg, #00D4FF 0%, #7C3AED 100%)' }}
+            >
+              <span className="text-white font-bold text-lg">SF</span>
+            </motion.div>
             <div className="hidden sm:block">
-              <span className="font-medium text-xl tracking-wide text-[#0F172A]">SOLARIS</span>
-              <span className="font-medium text-xl tracking-wide text-[#0891B2]">FILMS</span>
+              <span className="font-semibold text-xl text-white">SOLARIS</span>
+              <span className="font-semibold text-xl text-gradient">FILMS</span>
             </div>
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-10">
+          <nav className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.path}
                 to={link.path}
-                className={`relative text-sm tracking-widest uppercase transition-colors ${
+                className={`relative text-sm tracking-wider uppercase transition-colors ${
                   location.pathname === link.path 
-                    ? 'text-[#0891B2]' 
-                    : 'text-slate-500 hover:text-[#0F172A]'
+                    ? 'text-[#00D4FF]' 
+                    : 'text-white/60 hover:text-white'
                 }`}
                 data-testid={`nav-${link.name.toLowerCase().replace(' ', '-')}`}
               >
@@ -65,27 +64,22 @@ const Header = () => {
                 {location.pathname === link.path && (
                   <motion.span 
                     layoutId="nav-indicator"
-                    className="absolute -bottom-1 left-0 right-0 h-0.5 bg-[#0891B2]" 
+                    className="absolute -bottom-2 left-0 right-0 h-0.5"
+                    style={{ background: 'linear-gradient(90deg, #00D4FF, #7C3AED)' }}
                   />
                 )}
               </Link>
             ))}
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <Link 
-              to="/preventivo" 
-              className="btn-cyan text-xs"
-              data-testid="header-cta-preventivo"
-            >
-              Richiedi Preventivo
-            </Link>
-          </div>
+          {/* CTA */}
+          <Link to="/preventivo" className="hidden lg:block btn-primary text-xs" data-testid="header-cta-preventivo">
+            Preventivo
+          </Link>
 
-          {/* Mobile Menu Button */}
+          {/* Mobile Menu */}
           <button 
-            className="lg:hidden p-2 text-[#0F172A]"
+            className="lg:hidden p-2 text-white"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="mobile-menu-toggle"
           >
@@ -94,36 +88,29 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-slate-100"
+            className="lg:hidden bg-[#131B2E] border-t border-white/10"
             data-testid="mobile-menu"
           >
-            <div className="px-6 py-8 space-y-2">
+            <div className="px-6 py-8 space-y-4">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="block py-3 text-lg tracking-wide text-slate-600 hover:text-[#0891B2] transition-colors"
+                  className="block py-3 text-lg text-white/80 hover:text-[#00D4FF]"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-6">
-                <Link 
-                  to="/preventivo" 
-                  className="btn-cyan w-full justify-center"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Richiedi Preventivo
-                </Link>
-              </div>
+              <Link to="/preventivo" className="btn-primary w-full justify-center mt-4" onClick={() => setIsMobileMenuOpen(false)}>
+                Preventivo
+              </Link>
             </div>
           </motion.div>
         )}

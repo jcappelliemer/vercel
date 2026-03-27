@@ -1,7 +1,7 @@
 # Solaris Films - PRD
 
 ## Problema Originale
-Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfilms.it), azienda distributrice esclusiva MADICO USA per pellicole per vetri in Italia. Il sito deve sostituire l'attuale WordPress, con design "luxury hi-tech", SEO-friendly, chatbot AI, e form di lead generation.
+Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfilms.it), azienda distributrice esclusiva MADICO USA per pellicole per vetri in Italia. Design "luxury hi-tech", SEO-friendly, chatbot AI, form di lead generation.
 
 ## Architettura
 - **Frontend**: React, Tailwind CSS, Framer Motion, Shadcn UI, @phosphor-icons/react
@@ -12,20 +12,48 @@ Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfil
 ## Design System
 - **Tema**: Dark Navy (#0A0F1C) con accenti blu (#2563EB) e giallo Solaris (#EAB308)
 - **Font**: Outfit (headings) + Manrope (body)
-- **Stile**: Luxury hi-tech, glassmorphism cards, gradient accents, Framer Motion animations
+- **Stile**: Luxury hi-tech, glassmorphism, gradient accents, Framer Motion animations
+
+## Prodotti (aggiornato)
+1. **Pellicole Antisolari** — Prodotto principale. -8°C, UV 99%, risparmio 30-50%
+2. **Safety Shield Anti-Esplosione** — MADICO SafetyShield G2. Anti-blast, anti-intrusione. Certificazioni GSA, ASTM, EN 356
+3. **Pellicole di Sicurezza** — UNI EN 12600, D.Lgs. 81/2008
+4. **Pellicole Privacy/Design** — Satinate, decorative, personalizzabili
+
+**RIMOSSI**: LCD Switch, Fotocromatiche
 
 ## Funzionalità Implementate
-- [x] Homepage con Hero, TrustBar, Services, Process, Testimonials, CTA, Footer
+### Homepage
+- [x] Hero con CTA e badge flottanti
+- [x] TrustBar (ISO 9001, MADICO, UNI EN 12600, Green)
+- [x] Sezione Servizi (4 prodotti)
+- [x] Focus Tecnici (6 dati tecnici)
+- [x] Processo (4 step)
+- [x] Lo Sapevi Che (6 facts educativi)
+- [x] Case Study (3 progetti: Banca d'Italia, EUR Spa, Università Bologna)
+- [x] Carosello Referenze (marquee animato)
+- [x] Testimonials (3 reviews)
+- [x] FAQ Accordion (8 domande)
+- [x] CTA finale
+
+### Header
+- [x] Navigazione responsive + menu mobile
+- [x] CTA Telefono (icona cornetta)
+- [x] CTA WhatsApp (logo WhatsApp)
+- [x] CTA Preventivo (bottone giallo)
+
+### Pagine
+- [x] Servizi — 4 prodotti dettagliati con Safety Shield + certificazioni
+- [x] Chi Siamo — Storia, Mission, Vision, Sostenibilità, Referenze
+- [x] Blog — 4 articoli con filtro categorie
+- [x] Contatti — Form + link tel/WA/email/mappa
+- [x] Preventivo — Form completo con dropdown prodotti aggiornato
+
+### Backend
 - [x] Chatbot AI (Claude Sonnet 4.5) con sessioni multi-turno
-- [x] Form Preventivo (/preventivo) → salva in MongoDB
-- [x] Form Contatti (/contatti) → salva in MongoDB
-- [x] Pagina Servizi con 5 servizi dettagliati
-- [x] Pagina Chi Siamo con storia, mission, vision, referenze
-- [x] Pagina Blog con filtro categorie
-- [x] Header con navigazione responsive + menu mobile
-- [x] Footer con link, contatti, social
-- [x] Animazioni Framer Motion su tutti i componenti
-- [x] Palette giallo Solaris (#EAB308) su tutto il sito
+- [x] Form Preventivo → MongoDB
+- [x] Form Contatti → MongoDB
+- [x] API Servizi (4 prodotti)
 
 ## API Endpoints
 - `GET /api/health` - Health check
@@ -33,17 +61,17 @@ Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfil
 - `GET /api/quotes` - Lista preventivi
 - `POST /api/contact` - Invia contatto
 - `POST /api/chat` - Chatbot AI
-- `GET /api/services` - Lista servizi
+- `GET /api/services` - Lista servizi (4)
 - `GET /api/stats` - Statistiche azienda
 - `GET /api/blog` - Lista articoli blog
 
 ## Backlog
 ### P1
-- Verificare che i testi corrispondano esattamente a solarisfilms.it
+- Verificare corrispondenza testi con solarisfilms.it originale
 - SEO metadata, Open Graph tags, sitemap
+- Componenti Stats e WhyUs nella homepage
 
 ### P2
-- Completare link WhatsApp/telefono con numeri reali
+- Configurare numeri telefono/WhatsApp reali
 - Integrazioni email per notifiche form
-- Aggiungere componente Stats e WhyUs alla homepage
 - Blog con CMS/admin per gestione articoli

@@ -9,7 +9,7 @@ const testimonials = [
     rating: 5,
   },
   {
-    quote: "Le pellicole LCD hanno rivoluzionato le nostre sale riunioni. Effetto wow garantito.",
+    quote: "Le pellicole SafetyShield hanno messo in sicurezza l'intero edificio. Massima protezione, zero impatto estetico.",
     author: "Laura Conti",
     role: "Architetto",
     rating: 5,

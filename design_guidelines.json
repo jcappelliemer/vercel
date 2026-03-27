@@ -1,81 +1,118 @@
 {
-  "theme": "light",
-  "archetype": "4 - Swiss & High-Contrast",
-  "domain": "Construction, Architecture, Premium B2B/B2C Services",
-  "colors": {
-    "primary": "#002FA7",
-    "primary_foreground": "#FFFFFF",
-    "secondary": "#0A0A0A",
-    "secondary_foreground": "#FFFFFF",
-    "accent": "#FF3B30",
-    "accent_foreground": "#FFFFFF",
-    "background": "#F9FAFB",
-    "foreground": "#0A0A0A",
-    "surface": "#FFFFFF",
-    "border": "#E5E7EB",
-    "success": "#22C55E"
+  "theme": "dark",
+  "archetype": "5 (Jewel & Luxury) infused with Hi-Tech Precision",
+  "brand_identity": {
+    "name": "Solaris Films",
+    "positioning": "Luxury Hi-Tech Window Films",
+    "tone": "Exclusive, innovative, technologically advanced, authoritative (Tesla/Apple aesthetic)"
   },
   "typography": {
-    "heading_font": "Cabinet Grotesk",
-    "body_font": "Satoshi",
-    "h1": "text-5xl sm:text-6xl tracking-tighter font-black uppercase",
-    "h2": "text-4xl sm:text-5xl tracking-tight font-bold uppercase",
-    "h3": "text-2xl sm:text-3xl tracking-tight font-semibold",
-    "body": "text-base leading-relaxed text-foreground/80",
-    "overline": "text-xs tracking-[0.2em] uppercase font-bold text-primary"
-  },
-  "layout": {
-    "spacing": "Generous (p-8, p-12, p-16, p-24, p-32)",
-    "grid_system": "Bento 'Tetris' Grid (grid-cols-1 md:grid-cols-12 gap-8) for features and services. Do not perfectly fill 100% of the grid.",
-    "border_radius": "Sharp edges (rounded-none or rounded-sm) for a technical, precise architectural feel."
-  },
-  "components_strategy": {
-    "header": "Sticky with Glassmorphism (backdrop-blur-xl bg-white/80 border-b border-black/5).",
-    "hero": "Asymmetrical layout. Heavy typography overlaid on architectural glass imagery with bg-white/30 gradient overlay.",
-    "cards": "Flat solid surfaces. 1px solid border (border-black/10). No soft shadows, use sharp drop-shadows on hover.",
-    "buttons": "Square edges, high contrast. Primary uses #002FA7. Include clear data-testid attributes.",
-    "icons": "@phosphor-icons/react (Duotone or Regular weight for technical precision)."
-  },
-  "image_urls": {
-    "hero_background": {
-      "url": "https://images.unsplash.com/photo-1719437354892-f64ea7e03d4e?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHw0fHxtb2Rlcm4lMjBnbGFzcyUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHx8fHwxNzc0NjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
-      "description": "Tall modern glass building with trees. Use in hero section."
-    },
-    "service_antisolari": {
-      "url": "https://images.unsplash.com/photo-1761706885595-02fdd9fe91bb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjAzMjh8MHwxfHNlYXJjaHwzfHxtb2Rlcm4lMjBnbGFzcyUyMGJ1aWxkaW5nJTIwZXh0ZXJpb3J8ZW58MHx8fHwxNzc0NjM2MzUwfDA&ixlib=rb-4.1.0&q=85",
-      "description": "Modern building facade reflecting sunset colors. Use for Solar/Heat Control Window Films."
-    },
-    "service_privacy": {
-      "url": "https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg",
-      "description": "Contemporary office space with glass doors. Use for Privacy/Design Films."
-    },
-    "service_sicurezza": {
-      "url": "https://images.unsplash.com/photo-1674829763557-19283dbde6e5?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzF8MHwxfHNlYXJjaHw0fHxzZWN1cml0eSUyMHNoYXR0ZXJwcm9vZiUyMGdsYXNzfGVufDB8fHx8MTc3NDYzNjM2Nnww&ixlib=rb-4.1.0&q=85",
-      "description": "Shatterproof security glass demo. Use for Security Films."
-    },
-    "service_lcd_switch": {
-      "url": "https://images.pexels.com/photos/5213546/pexels-photo-5213546.jpeg",
-      "description": "Smart glass privacy partition. Use for LCD Switch Films."
-    },
-    "installation_process": {
-      "url": "https://images.pexels.com/photos/5691531/pexels-photo-5691531.jpeg",
-      "description": "Professional installer fitting a window. Use for About Us / Process section."
+    "primary_font": "Outfit",
+    "secondary_font": "Manrope",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl lg:text-6xl font-light tracking-tighter text-white",
+      "h2": "text-2xl sm:text-3xl lg:text-4xl font-medium tracking-tight text-white",
+      "h3": "text-xl sm:text-2xl font-medium tracking-tight text-slate-200",
+      "body": "text-base leading-relaxed text-slate-400 font-manrope",
+      "overline": "text-xs font-bold uppercase tracking-[0.2em] text-cyan-400"
     }
   },
-  "instructions_to_main_agent": [
-    "1. FRAMEWORK: Use pure HTML/Tailwind for structural marketing layouts. Use Shadcn strictly for complex interactive components (forms, dialogs) but heavily override their styles to match the 'Swiss High-Contrast' theme (sharp edges, high contrast).",
-    "2. TYPOGRAPHY: Import and use Cabinet Grotesk for headings. Headings must be tight (tracking-tight or tracking-tighter) and never centered by default (asymmetry preferred).",
-    "3. HERO SECTION: Implement multiple CTAs (Quote, Call, WhatsApp) distinctly. Use pure #002FA7 for the primary action (Quote) and white/outline for others. Max hero image overlay opacity is bg-white/40 (gradient preferred).",
-    "4. SERVICES GRID: Use Mode A: 'The Tetris Grid' (col-span-full, col-span-4, row-span-2). Make it look like an architectural bento box. Do not use basic 3-column equal grids.",
-    "5. TRUST BAR: Implement a slow 'Editorial Ribbon' marquee using react-fast-marquee for partners (MADICO, ISO 9001) and stats (30+ Anni, 150k mq/anno).",
-    "6. ANIMATION: Install and configure `lenis` for smooth scrolling. Add staggered entrance animations (framer-motion) for bento grid cards.",
-    "7. TESTING: ALL interactive elements (buttons, forms, links) MUST have a `data-testid` attribute (e.g., data-testid='cta-preventivo-hero').",
-    "8. THEME: No generic blue gradients. Stick to solid, high-contrast colors (White, #0A0A0A, #002FA7). Use 1px borders to define structure."
-  ],
-  "dependencies_to_install": [
-    "@phosphor-icons/react",
-    "framer-motion",
-    "react-fast-marquee",
-    "lenis"
-  ]
+  "colors": {
+    "background": {
+      "base": "#05050A",
+      "surface": "#0B101E",
+      "glass": "rgba(255, 255, 255, 0.03)"
+    },
+    "text": {
+      "primary": "#FFFFFF",
+      "secondary": "#94A3B8",
+      "accent": "#00E5FF"
+    },
+    "accents": {
+      "electric_blue": "#00E5FF",
+      "liquid_silver": "#E2E8F0",
+      "subtle_gold": "#D4AF37"
+    },
+    "gradients": {
+      "primary": "bg-gradient-to-r from-cyan-500 to-blue-600",
+      "text_metallic": "bg-clip-text text-transparent bg-gradient-to-r from-slate-300 via-white to-slate-400"
+    }
+  },
+  "surfaces_and_materials": {
+    "glassmorphism": "bg-white/5 backdrop-blur-2xl border border-white/10 shadow-[0_8px_32px_rgba(0,0,0,0.5)]",
+    "tracing_beam_card": "relative overflow-hidden bg-slate-950 border border-white/5 hover:border-cyan-500/30 transition-colors duration-500",
+    "buttons": {
+      "primary": "bg-white text-black font-medium hover:bg-slate-200 transition-colors rounded-none px-8 py-4 text-sm tracking-wide uppercase",
+      "secondary": "border border-white/20 text-white hover:bg-white/5 transition-colors rounded-none px-8 py-4 text-sm tracking-wide uppercase"
+    }
+  },
+  "layout_and_spacing": {
+    "generous_padding": "py-24 md:py-32",
+    "container": "max-w-7xl mx-auto px-6 md:px-12",
+    "bento_grid": "grid grid-cols-1 md:grid-cols-8 lg:grid-cols-12 gap-8 md:gap-12"
+  },
+  "motion_and_interaction": {
+    "hover_states": "Use transform -translate-y-1 and subtle glow drop-shadow-[0_0_15px_rgba(0,229,255,0.3)]",
+    "scroll_animations": "Staggered fade-up for bento grid items, subtle parallax for hero background",
+    "glass_transition": "When hovering over glass cards, increase backdrop-saturate and border opacity slightly."
+  },
+  "components_strategy": {
+    "hero": "Full-screen fixed background with parallax. Overlay MUST be bg-black/40 (max). Bold asymmetric typography aligned left. CTA buttons stacked or side-by-side.",
+    "services_bento": "MODE A: TETRIS GRID. Mix of spans (e.g., LCD Switch as the large 'Hero' col-span-8 row-span-2). Use glassmorphism and the tracing beam effect.",
+    "statistics": "DO NOT USE A SEPARATE BLACK BAR. Integrate stats directly into a large typography section using 'Kinetic Texture' or large numbers overlapping subtle architectural glass images.",
+    "trust_indicators": "Do not use placeholder image URLs. Instead, use pure typography and Lucide React icons (e.g., ShieldCheck for ISO 9001, Award for MADICO, Shield for 10-Year Warranty). Integrate these as sleek metallic badges.",
+    "purchase_process": "Vertical step-by-step timeline with glowing active states and subtle connecting lines. Clean, minimalist layout.",
+    "quote_form": "Shadcn Form, highly customized. Floating labels, bottom-border only inputs (or sleek glass boxes), dark theme.",
+    "chatbot": "Floating glassmorphic orb in the bottom right corner with a subtle pulse animation.",
+    "navigation": "Crystal Glass sticky header. backdrop-blur-xl bg-black/60. 1px bottom border border-white/10."
+  },
+  "media": {
+    "instructions_to_main_agent": "Use ONLY these exact URLs for images. Ensure all images have descriptive alt text. Apply a subtle gradient overlay to hero images to guarantee text contrast. DO NOT USE PLACEHOLDER SERVICES.",
+    "image_urls": {
+      "hero_background": {
+        "url": "https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg",
+        "description": "Luxury modern mansion by a lake at night, perfect for hero section reflecting high-end aesthetics.",
+        "category": "hero"
+      },
+      "services_lcd_switch": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/e8649b92ae1cac102c10dcb549bc56fc73e517786dc90eeef30de1c82db1c77f.png",
+        "description": "AI-generated macro shot of hi-tech glass transitioning, perfect for LCD Switch product card.",
+        "category": "services"
+      },
+      "services_photochromic": {
+        "url": "https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/41cd0458add26ba29df8fb0b010533e357770d6fb0f027d6a8eea3a954452d5f.png",
+        "description": "Abstract sleek architectural glass reflecting a sun glare, for the solar/photochromic films card.",
+        "category": "services"
+      },
+      "services_privacy": {
+        "url": "https://images.unsplash.com/photo-1772001936267-b6058748eff4?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2MTJ8MHwxfHNlYXJjaHwxfHxtb2Rlcm4lMjBvZmZpY2UlMjBpbnRlcmlvciUyMGdsYXNzfGVufDB8fHx8MTc3NDYzODExNHww&ixlib=rb-4.1.0&q=85",
+        "description": "Modern office interior with glass walls and reflections, ideal for privacy film service.",
+        "category": "services"
+      },
+      "process_background": {
+        "url": "https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg",
+        "description": "Contemporary office space with glass doors. Use with heavy dark overlay for the background of the step-by-step process.",
+        "category": "background"
+      },
+      "blog_thumbnail_1": {
+        "url": "https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg",
+        "description": "Spacious empty office with city views.",
+        "category": "blog"
+      },
+      "blog_thumbnail_2": {
+        "url": "https://images.unsplash.com/photo-1757924432508-d4e92411caeb?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA0MTJ8MHwxfHNlYXJjaHwyfHxsdXh1cnklMjBtb2Rlcm4lMjBob3VzZSUyMG5pZ2h0fGVufDB8fHx8MTc3NDYzODExM3ww&ixlib=rb-4.1.0&q=85",
+        "description": "Modern skyscraper reflecting the city, indicating architectural energy efficiency.",
+        "category": "blog"
+      }
+    }
+  },
+  "accessibility": {
+    "contrast": "Ensure all text overlaid on images has sufficient contrast by utilizing the specified overlays. Use minimum 4.5:1 ratio for body text.",
+    "focus": "Use focus:ring-2 focus:ring-cyan-500 for all interactive elements.",
+    "testing": "All interactive elements MUST include data-testid attribute formatted as kebab-case and role-based."
+  },
+  "iconography": {
+    "library": "lucide-react",
+    "usage": "Use stroke-width 1.5 for a sophisticated, delicate tech feel. Do not use filled icons."
+  }
 }

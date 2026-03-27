@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { List, X, Phone, WhatsappLogo } from '@phosphor-icons/react';
+import { List, X, Phone, EnvelopeSimple } from '@phosphor-icons/react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Header = () => {
@@ -10,7 +10,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 20);
     };
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -25,125 +25,125 @@ const Header = () => {
   ];
 
   return (
-    <header 
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'glass-header border-b border-black/5' : 'bg-transparent'
-      }`}
-      data-testid="header"
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center gap-2" data-testid="logo-link">
-            <div className="w-10 h-10 bg-[#002FA7] flex items-center justify-center">
-              <span className="text-white font-black text-xl">SF</span>
-            </div>
-            <div className="hidden sm:block">
-              <span className="font-bold text-lg tracking-tight text-[#0A0A0A]">SOLARIS</span>
-              <span className="font-medium text-lg text-[#002FA7]">FILMS</span>
-            </div>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-8">
-            {navLinks.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className={`text-sm font-medium tracking-wide uppercase transition-colors ${
-                  location.pathname === link.path 
-                    ? 'text-[#002FA7]' 
-                    : 'text-[#0A0A0A] hover:text-[#002FA7]'
-                }`}
-                data-testid={`nav-${link.name.toLowerCase().replace(' ', '-')}`}
-              >
-                {link.name}
-              </Link>
-            ))}
-          </nav>
-
-          {/* CTA Buttons */}
-          <div className="hidden lg:flex items-center gap-3">
-            <a 
-              href="tel:+390000000000" 
-              className="flex items-center gap-2 text-sm font-medium text-[#0A0A0A] hover:text-[#002FA7] transition-colors"
-              data-testid="header-phone"
-            >
-              <Phone size={18} weight="bold" />
-              <span>Chiama</span>
+    <>
+      {/* Top Bar */}
+      <div className="hidden lg:block bg-[#111827] text-white py-2">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center text-sm">
+          <div className="flex items-center gap-6">
+            <a href="tel:+390000000000" className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors">
+              <Phone size={14} weight="bold" />
+              +39 000 000 0000
             </a>
-            <a 
-              href="https://wa.me/390000000000" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-4 py-2 bg-[#25D366] text-white text-sm font-medium hover:bg-[#128C7E] transition-colors"
-              data-testid="header-whatsapp"
-            >
-              <WhatsappLogo size={18} weight="fill" />
-              <span>WhatsApp</span>
+            <a href="mailto:info@solarisfilms.it" className="flex items-center gap-2 hover:text-[#3b82f6] transition-colors">
+              <EnvelopeSimple size={14} weight="bold" />
+              info@solarisfilms.it
             </a>
-            <Link 
-              to="/preventivo" 
-              className="btn-primary text-sm"
-              data-testid="header-cta-preventivo"
-            >
-              Preventivo Gratuito
-            </Link>
           </div>
-
-          {/* Mobile Menu Button */}
-          <button 
-            className="lg:hidden p-2"
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            data-testid="mobile-menu-toggle"
-          >
-            {isMobileMenuOpen ? <X size={28} /> : <List size={28} />}
-          </button>
+          <div className="text-gray-400">
+            Distributore Esclusivo MADICO USA per Italia
+          </div>
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <AnimatePresence>
-        {isMobileMenuOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-[#E5E7EB]"
-            data-testid="mobile-menu"
-          >
-            <div className="px-4 py-6 space-y-4">
+      {/* Main Header */}
+      <header 
+        className={`sticky top-0 z-50 transition-all duration-300 ${
+          isScrolled ? 'bg-white shadow-md' : 'bg-white'
+        }`}
+        data-testid="header"
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex items-center justify-between h-16 lg:h-20">
+            {/* Logo */}
+            <Link to="/" className="flex items-center gap-3" data-testid="logo-link">
+              <div className="w-10 h-10 bg-gradient-to-br from-[#1a56db] to-[#3b82f6] rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-lg">SF</span>
+              </div>
+              <div className="hidden sm:block">
+                <span className="font-bold text-xl text-[#111827]">Solaris</span>
+                <span className="font-bold text-xl text-[#1a56db]">Films</span>
+              </div>
+            </Link>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden lg:flex items-center gap-8">
               {navLinks.map((link) => (
                 <Link
                   key={link.path}
                   to={link.path}
-                  className="block py-2 text-lg font-medium text-[#0A0A0A]"
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  className={`text-sm font-medium transition-colors relative py-2 ${
+                    location.pathname === link.path 
+                      ? 'text-[#1a56db]' 
+                      : 'text-[#374151] hover:text-[#1a56db]'
+                  }`}
+                  data-testid={`nav-${link.name.toLowerCase().replace(' ', '-')}`}
                 >
                   {link.name}
+                  {location.pathname === link.path && (
+                    <span className="absolute bottom-0 left-0 right-0 h-0.5 bg-[#1a56db] rounded-full" />
+                  )}
                 </Link>
               ))}
-              <div className="pt-4 space-y-3">
-                <a 
-                  href="https://wa.me/390000000000" 
-                  className="flex items-center justify-center gap-2 w-full py-3 bg-[#25D366] text-white font-medium"
-                >
-                  <WhatsappLogo size={20} weight="fill" />
-                  WhatsApp
-                </a>
-                <Link 
-                  to="/preventivo" 
-                  className="block w-full py-3 bg-[#002FA7] text-white text-center font-medium"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Preventivo Gratuito
-                </Link>
-              </div>
+            </nav>
+
+            {/* CTA Button */}
+            <div className="hidden lg:flex items-center gap-4">
+              <Link 
+                to="/preventivo" 
+                className="btn-primary text-sm"
+                data-testid="header-cta-preventivo"
+              >
+                Richiedi Preventivo
+              </Link>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </header>
+
+            {/* Mobile Menu Button */}
+            <button 
+              className="lg:hidden p-2 text-[#374151]"
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              data-testid="mobile-menu-toggle"
+            >
+              {isMobileMenuOpen ? <X size={28} /> : <List size={28} />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Menu */}
+        <AnimatePresence>
+          {isMobileMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: 'auto' }}
+              exit={{ opacity: 0, height: 0 }}
+              className="lg:hidden bg-white border-t border-gray-100"
+              data-testid="mobile-menu"
+            >
+              <div className="px-4 py-6 space-y-1">
+                {navLinks.map((link) => (
+                  <Link
+                    key={link.path}
+                    to={link.path}
+                    className="block py-3 text-lg font-medium text-[#374151] hover:text-[#1a56db]"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                ))}
+                <div className="pt-4">
+                  <Link 
+                    to="/preventivo" 
+                    className="btn-primary w-full justify-center"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    Richiedi Preventivo
+                  </Link>
+                </div>
+              </div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+      </header>
+    </>
   );
 };
 

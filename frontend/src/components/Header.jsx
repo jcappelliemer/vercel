@@ -16,10 +16,10 @@ const Header = () => {
 
   const navLinks = [
     { name: 'Home', path: '/' },
+    { name: 'Prodotti', path: '/prodotti' },
     { name: 'Servizi', path: '/servizi' },
     { name: 'Guida Tecnica', path: '/guida-tecnica' },
     { name: 'Chi Siamo', path: '/chi-siamo' },
-    { name: 'Blog', path: '/blog' },
     { name: 'Contatti', path: '/contatti' },
   ];
 

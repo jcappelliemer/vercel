@@ -12,6 +12,7 @@ import ProfiloSolarisPagina from "./pages/ProfiloSolarisPagina";
 import ServizioLocalePagina, { ServizioLocaleIndexPagina } from "./pages/ServizioLocalePagina";
 import PaginaInfoPagina, { PaginaInfoIndexPagina } from "./pages/PaginaInfoPagina";
 import FocusTecnicoPagina, { FocusTecnicoIndexPagina } from "./pages/FocusTecnicoPagina";
+import ProdottoPagina, { ProdottiIndexPagina } from "./pages/ProdottoPagina";
 
 function App() {
   return (
@@ -34,6 +35,8 @@ function App() {
           <Route path="/info/:slug" element={<PaginaInfoPagina />} />
           <Route path="/focus-tecnico" element={<FocusTecnicoIndexPagina />} />
           <Route path="/focus-tecnico/:slug" element={<FocusTecnicoPagina />} />
+          <Route path="/prodotti" element={<ProdottiIndexPagina />} />
+          <Route path="/prodotti/:slug" element={<ProdottoPagina />} />
         </Routes>
       </BrowserRouter>
     </div>

@@ -47,7 +47,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-medium mb-6">Azienda</h4>
             <ul className="space-y-3">
-              {[{ name: 'Chi Siamo', path: '/chi-siamo' }, { name: 'Guida Tecnica', path: '/guida-tecnica' }, { name: 'Blog', path: '/blog' }, { name: 'Contatti', path: '/contatti' }, { name: 'Preventivo', path: '/preventivo' }].map((item, i) => (
+              {[{ name: 'Chi Siamo', path: '/chi-siamo' }, { name: 'Profilo Solaris', path: '/profilo-solaris' }, { name: 'Guida Tecnica', path: '/guida-tecnica' }, { name: 'Focus Tecnico', path: '/focus-tecnico' }, { name: 'Info e Norme', path: '/info' }, { name: 'Servizio Locale', path: '/servizio-locale' }, { name: 'Blog', path: '/blog' }, { name: 'Contatti', path: '/contatti' }].map((item, i) => (
                 <li key={i}>
                   <Link to={item.path} className="text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">{item.name}</Link>
                 </li>

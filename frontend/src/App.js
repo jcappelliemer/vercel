@@ -8,6 +8,10 @@ import ContattiPagina from "./pages/ContattiPagina";
 import BlogPagina from "./pages/BlogPagina";
 import GuidaTecnicaPagina from "./pages/GuidaTecnicaPagina";
 import PrivacyPolicyPagina from "./pages/PrivacyPolicyPagina";
+import ProfiloSolarisPagina from "./pages/ProfiloSolarisPagina";
+import ServizioLocalePagina, { ServizioLocaleIndexPagina } from "./pages/ServizioLocalePagina";
+import PaginaInfoPagina, { PaginaInfoIndexPagina } from "./pages/PaginaInfoPagina";
+import FocusTecnicoPagina, { FocusTecnicoIndexPagina } from "./pages/FocusTecnicoPagina";
 
 function App() {
   return (
@@ -23,6 +27,13 @@ function App() {
           <Route path="/blog/:slug" element={<BlogPagina />} />
           <Route path="/guida-tecnica" element={<GuidaTecnicaPagina />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPagina />} />
+          <Route path="/profilo-solaris" element={<ProfiloSolarisPagina />} />
+          <Route path="/servizio-locale" element={<ServizioLocaleIndexPagina />} />
+          <Route path="/servizio-locale/:city" element={<ServizioLocalePagina />} />
+          <Route path="/info" element={<PaginaInfoIndexPagina />} />
+          <Route path="/info/:slug" element={<PaginaInfoPagina />} />
+          <Route path="/focus-tecnico" element={<FocusTecnicoIndexPagina />} />
+          <Route path="/focus-tecnico/:slug" element={<FocusTecnicoPagina />} />
         </Routes>
       </BrowserRouter>
     </div>

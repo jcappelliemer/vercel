@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CheckCircle, ShieldCheck } from '@phosphor-icons/react';
 import { pagineInfoData } from '../data/siteContent';
@@ -29,6 +30,7 @@ const PaginaInfoPagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`info-${pagina.slug}`}>
+      <SEO title={pagina.titolo} description={pagina.contenuto?.[0]?.substring(0, 160) || `${pagina.titolo} — Informazioni e normative sulle pellicole per vetri.`} path={`/info/${pagina.slug}`} />
       <Header />
       <main className="pt-24">
         <section className="py-20 border-b border-white/5">
@@ -158,6 +160,7 @@ const PaginaInfoPagina = () => {
 export const PaginaInfoIndexPagina = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="info-index">
+      <SEO title="Informazioni e Normative" description="Norme, garanzie, certificazioni e informazioni utili sulle pellicole per vetri. UNI EN 12600, D.Lgs. 81/2008, DPR 59/09, BRC e molto altro." path="/info" />
       <Header />
       <main className="pt-24">
         <section className="py-20 border-b border-white/5">

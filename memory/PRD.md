@@ -1,65 +1,59 @@
-# Solaris Films - PRD
+# Solaris Films - PRD (Product Requirements Document)
 
 ## Problema Originale
-Sito web moderno per Solaris Films (solarisfilms.it), distributore esclusivo MADICO USA. Design luxury hi-tech, chatbot AI, form lead generation. Replica completa pagine sito originale.
+Creazione di un sito web moderno, dinamico e competitivo per sostituire il sito WordPress solarisfilms.it. Design "luxury hi-tech" con base scura e colori del brand (Solaris Yellow #EAB308). Il sito deve duplicare i contenuti esistenti, avere form di lead generation, chatbot AI e essere SEO-friendly.
 
 ## Architettura
-- **Frontend**: React, Tailwind CSS, Framer Motion, @phosphor-icons/react
-- **Backend**: FastAPI, Motor (MongoDB async), emergentintegrations (Claude Sonnet 4.5)
-- **Database**: MongoDB
+- **Frontend**: React + Tailwind CSS + Framer Motion + React Router
+- **Backend**: FastAPI + Python + MongoDB (Motor)
+- **Integrazioni**: OpenAI (Chatbot), react-helmet-async (SEO)
 
-## Design System
-- **Tema**: Dark Navy (#0A0F1C) + alternanze bianco freddo (#F1F5F9)
-- **Accenti**: Blu (#2563EB) + Giallo Solaris (#EAB308)
-- **Font**: Outfit (headings) + Manrope (body)
+## Funzionalita Implementate
 
-## Prodotti (4)
-1. Pellicole Antisolari (principale)
-2. Safety Shield Anti-Esplosione (MADICO SafetyShield G2)
-3. Pellicole di Sicurezza (UNI EN 12600)
-4. Pellicole Privacy/Design
+### Fase 1 - Core (COMPLETATA)
+- [x] Design luxury hi-tech, dark theme con Solaris Yellow (#EAB308)
+- [x] Header con logo, navigazione, CTA Telefono (Cyan) e WhatsApp (Verde)
+- [x] Hero section animata
+- [x] Sezioni Trust Bar, Services, Process, References, Testimonials, FAQ
+- [x] Form preventivo e contatti (backend API)
+- [x] Chatbot AI integrato con OpenAI (sessioni multi-turn)
+- [x] Gallery con filtri Before/After
+- [x] Case Study section
+- [x] Alternanza sezioni chiare/scure ("bianco freddo")
 
-## Pagine Implementate (50+)
+### Fase 2 - Contenuti Dinamici (COMPLETATA)
+- [x] 22 pagine Servizio Locale (citta italiane)
+- [x] 10 pagine Info (norme, certificazioni, garanzie)
+- [x] 15 pagine Focus Tecnico (tipologie pellicole)
+- [x] Routing dinamico completo via siteContent.js
 
-### Pagine Principali
-- [x] Homepage (12 sezioni: Hero, TrustBar, Services, FocusTecnici, Process, LoSapeviChe, CaseStudy, Gallery, References, Testimonials, FAQ, CTA)
-- [x] Servizi (/servizi)
-- [x] Chi Siamo (/chi-siamo)
-- [x] Contatti (/contatti)
-- [x] Preventivo (/preventivo)
-- [x] Blog (/blog)
-- [x] Guida Tecnica (/guida-tecnica)
-- [x] Profilo Solaris (/profilo-solaris)
-- [x] Privacy Policy (/privacy-policy)
+### Fase 3 - Prodotti & SEO (COMPLETATA - Feb 2026)
+- [x] 21 pagine prodotto individuali (Schede Prodotto MADICO)
+  - 8 Antisolari (SB 20, SB 35, NT 20, SG 20, SL 8, SSN 50, RS 20 E, RS 40 E)
+  - 10 Sicurezza (RS 20/40 4mil/8mil, CL 400/700 int/ext, SafetyShield 800/1500, GullWing)
+  - 2 Privacy (MT 200 XW, Vetrofanie)
+- [x] Catalogo prodotti /prodotti con filtro per categoria
+- [x] Template prodotto con dati tecnici animati (barre energia, stat cards)
+- [x] Navigazione Prodotti nel Header
+- [x] SEO dinamico con react-helmet-async su tutte le 80+ pagine
+- [x] Sitemap.xml dinamica (81 URL) via /api/sitemap.xml
+- [x] Meta title, description, Open Graph per ogni pagina
 
-### Servizio Locale (22 città)
-- [x] Index (/servizio-locale) + pagine per: Roma, Milano, Firenze, Napoli, Torino, Bologna, Venezia, Genova, Bari, Palermo, Ancona, Aosta, Campobasso, Catanzaro, Cosenza, L'Aquila, Perugia, Potenza, Romagna, Trento, Trieste, Udine
-
-### Pagine Info (10)
-- [x] Index (/info) + pagine per: Norme, Norma BRC, Sicurezza a norma di legge, Testo unico sicurezza, Sistemi filtranti DPR 59/09, Istruzioni e manutenzione, Garanzie, Certificazione NFRC, Punti di forza, Glossario termini
-
-### Focus Tecnico (15)
-- [x] Index (/focus-tecnico) + pagine per: Sputtered, Sunscape, Oscuranti, Riflettenti, Spettro-selettive, Antigraffiti, Termoisolanti, Sicurezza, Decorative, Antisolari, Serie RS, Privacy, Stampabili/Vetrofanie, SafetyShield, Serie CL
-
-### Funzionalità
-- [x] Chatbot AI (Claude Sonnet 4.5) con sessioni multi-turno
-- [x] Form Preventivo → MongoDB
-- [x] Form Contatti → MongoDB
-- [x] Gallery con filtri e lightbox
-- [x] FAQ Accordion
-- [x] Header CTA: telefono cyan + WhatsApp verde
+## Totale Pagine Dinamiche: 80+
+- Home, Servizi, Chi Siamo, Contatti, Preventivo, Guida Tecnica, Blog, Profilo, Privacy Policy
+- 22 Servizio Locale
+- 10 Info
+- 15 Focus Tecnico
+- 21 Prodotti
 
 ## API Endpoints
-- GET /api/health, GET /api/services, GET /api/stats, GET /api/blog
-- POST /api/quote, GET /api/quotes
-- POST /api/contact
-- POST /api/chat
+- `POST /api/chat` - Chatbot OpenAI
+- `POST /api/contact` - Form contatti
+- `POST /api/quote` - Form preventivo
+- `GET /api/health` - Health check
+- `GET /api/sitemap.xml` - Sitemap XML dinamica
 
-## Backlog
-### P1
-- SEO metadata, Open Graph tags, sitemap.xml
-- Configurare numeri telefono/WhatsApp reali
-### P2
-- Integrazioni email per notifiche form
-- Blog CMS/admin
-- Pagine prodotto singolo (schede tecniche per ogni pellicola)
+## Task Futuri
+- **P1**: Strategia/script per conversione WordPress
+- **P2**: Integrazioni email/WhatsApp reali per form
+- **P2**: Robots.txt, structured data (JSON-LD)

@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle } from '@phosphor-icons/react';
@@ -8,6 +9,7 @@ import { ArrowRight, CheckCircle } from '@phosphor-icons/react';
 const ProfiloSolarisPagina = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="profilo-solaris-page">
+      <SEO title="Profilo Aziendale Solaris Films" description="Solaris Films: profilo aziendale, storia, missione e valori. Distributore esclusivo MADICO USA per Italia, 40 anni di esperienza nel settore pellicole per vetri." path="/profilo-solaris" />
       <Header />
       <main className="pt-24">
         <section className="py-20 border-b border-white/5">

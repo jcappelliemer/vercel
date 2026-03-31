@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, CalendarBlank, Tag } from '@phosphor-icons/react';
 
@@ -60,6 +61,7 @@ const BlogPagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="blog-page">
+      <SEO title="Blog" description="News, approfondimenti e guide sulle pellicole per vetri. Consigli degli esperti Solaris Films su risparmio energetico, sicurezza e normative." path="/blog" />
       <Header />
       
       <main className="pt-24">

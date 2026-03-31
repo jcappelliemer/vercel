@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Phone, EnvelopeSimple, MapPin, WhatsappLogo, Clock, CheckCircle } from '@phosphor-icons/react';
 import axios from 'axios';
@@ -37,6 +38,7 @@ const ContattiPagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="contatti-page">
+      <SEO title="Contatti" description="Contatta Solaris Films per informazioni sulle pellicole per vetri MADICO. Richiedi una consulenza gratuita o un preventivo senza impegno." path="/contatti" />
       <Header />
       
       <main className="pt-24">

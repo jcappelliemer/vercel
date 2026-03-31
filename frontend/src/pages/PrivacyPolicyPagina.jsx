@@ -1,9 +1,11 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import SEO from '../components/SEO';
 
 const PrivacyPolicyPagina = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="privacy-policy-page">
+      <SEO title="Privacy Policy" description="Informativa sulla privacy di Solaris Films. Trattamento dei dati personali ai sensi del GDPR." path="/privacy-policy" />
       <Header />
       <main className="pt-24">
         <section className="py-20 border-b border-white/5">

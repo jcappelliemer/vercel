@@ -1,4 +1,5 @@
 from fastapi import FastAPI, APIRouter, HTTPException
+from fastapi.responses import Response
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
 from motor.motor_asyncio import AsyncIOMotorClient
@@ -254,6 +255,75 @@ async def get_stats():
             {"label": "Anni di Garanzia", "value": "10"}
         ]
     }
+
+# ============== SITEMAP.XML ==============
+@api_router.get("/sitemap.xml")
+async def generate_sitemap():
+    base = "https://www.solarisfilms.it"
+    urls = [
+        ("", "1.0", "daily"),
+        ("/servizi", "0.9", "weekly"),
+        ("/prodotti", "0.9", "weekly"),
+        ("/chi-siamo", "0.8", "monthly"),
+        ("/contatti", "0.8", "monthly"),
+        ("/preventivo", "0.8", "monthly"),
+        ("/guida-tecnica", "0.8", "weekly"),
+        ("/blog", "0.7", "weekly"),
+        ("/profilo-solaris", "0.7", "monthly"),
+        ("/servizio-locale", "0.7", "weekly"),
+        ("/info", "0.7", "weekly"),
+        ("/focus-tecnico", "0.7", "weekly"),
+        ("/privacy-policy", "0.3", "yearly"),
+    ]
+    citta = [
+        "roma", "milano", "firenze", "torino", "napoli", "bologna", "genova", "venezia",
+        "palermo", "verona", "parma", "padova", "brescia", "modena", "prato", "reggio-emilia",
+        "perugia", "rimini", "cagliari", "bergamo", "vicenza", "trieste"
+    ]
+    for c in citta:
+        urls.append((f"/servizio-locale/{c}", "0.6", "monthly"))
+    info_slugs = [
+        "norme-en-12600", "testo-unico-sicurezza", "dpr-59-09", "ecobonus-pellicole",
+        "certificazione-brc", "garanzia-madico", "normativa-pellicole-auto",
+        "come-funzionano-pellicole", "vantaggi-pellicole-antisolari", "manutenzione-pellicole"
+    ]
+    for s in info_slugs:
+        urls.append((f"/info/{s}", "0.6", "monthly"))
+    focus_slugs = [
+        "pellicole-antisolari-sputtered", "pellicole-antisolari-sunscape", "pellicole-oscuranti-per-vetri",
+        "pellicole-spettro-selettive", "pellicole-riflettenti", "pellicole-antisolari-stampabili-e-vetrofanie",
+        "pellicole-decorative-privacy", "pellicole-antisolari-di-sicurezza-la-serie-rs",
+        "pellicole-di-sicurezza-neutre-la-serie-cl", "pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield",
+        "pellicole-anti-uv", "pellicole-anti-graffiti", "pellicole-basso-emissive",
+        "pellicole-anti-piccioni", "pellicole-per-serre"
+    ]
+    for s in focus_slugs:
+        urls.append((f"/focus-tecnico/{s}", "0.6", "monthly"))
+    prodotti_slugs = [
+        "madico-sb-20-e-ps-sr", "madico-sb-35-e-ps-sr", "tecnosolar-nt-20-e-ps-sr",
+        "madico-sg-20-e-ps-sr", "madico-sl-8-e-ps-sr", "tecnosolar-ssn-50-te-sr",
+        "madico-rs-20-e-ps-sr", "madico-rs-40-e-ps-sr", "madico-rs-20-ps-sr-4mil",
+        "madico-rs-20-ps-sr-8mil", "madico-rs-40-ps-sr-4mil", "madico-rs-40-ps-sr-8mil",
+        "madico-cl-400-ps-sr", "madico-cl-400-e-ps-sr", "madico-cl-700-ps-sr",
+        "madico-cl-700-e-ps-sr", "madico-safetyshield-800", "madico-safetyshield-1500",
+        "madico-gullwing", "madico-mt-200-xw", "vetrofanie"
+    ]
+    for s in prodotti_slugs:
+        urls.append((f"/prodotti/{s}", "0.7", "monthly"))
+
+    xml_entries = []
+    for path, priority, changefreq in urls:
+        xml_entries.append(f"""  <url>
+    <loc>{base}{path}</loc>
+    <changefreq>{changefreq}</changefreq>
+    <priority>{priority}</priority>
+  </url>""")
+
+    xml = f"""<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{chr(10).join(xml_entries)}
+</urlset>"""
+    return Response(content=xml, media_type="application/xml")
 
 # Include the router in the main app
 app.include_router(api_router)

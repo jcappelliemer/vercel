@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import QuoteForm from '../components/QuoteForm';
 import { motion } from 'framer-motion';
 import { Phone, WhatsappLogo, Clock, CheckCircle } from '@phosphor-icons/react';
@@ -15,6 +16,7 @@ const benefits = [
 const PreventivoPagina = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="preventivo-page">
+      <SEO title="Richiedi Preventivo Gratuito" description="Richiedi un preventivo gratuito e senza impegno per pellicole antisolari, di sicurezza o privacy MADICO. Risposta in 24 ore." path="/preventivo" />
       <Header />
       
       <main className="pt-24">

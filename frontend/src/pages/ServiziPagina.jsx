@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sun, Bomb, ShieldCheck, Eye, CheckCircle } from '@phosphor-icons/react';
@@ -53,6 +54,7 @@ const services = [
 const ServiziPagina = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="servizi-page">
+      <SEO title="Servizi" description="Pellicole antisolari, di sicurezza, anti-esplosione SafetyShield e privacy MADICO. Solaris Films offre soluzioni professionali per ogni esigenza." path="/servizi" />
       <Header />
 
       <main className="pt-24">

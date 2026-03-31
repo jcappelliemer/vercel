@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CheckCircle } from '@phosphor-icons/react';
 import { focusTecnicoData } from '../data/siteContent';
@@ -29,6 +30,7 @@ const FocusTecnicoPagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`focus-${focus.slug}`}>
+      <SEO title={focus.titolo} description={focus.descrizione?.substring(0, 160)} path={`/focus-tecnico/${focus.slug}`} />
       <Header />
       <main className="pt-24">
         <section className="py-20 border-b border-white/5">
@@ -83,6 +85,7 @@ export const FocusTecnicoIndexPagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="focus-tecnico-index">
+      <SEO title="Focus Tecnico" description="Approfondimenti tecnici su tutte le tipologie di pellicole per vetri MADICO: sputtered, sunscape, spettro-selettive, sicurezza, privacy e decorative." path="/focus-tecnico" />
       <Header />
       <main className="pt-24">
         <section className="py-20 border-b border-white/5">

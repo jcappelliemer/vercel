@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, CheckCircle, Target, Eye, Leaf } from '@phosphor-icons/react';
@@ -22,6 +23,7 @@ const referenze = [
 const ChiSiamoPagina = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="chi-siamo-page">
+      <SEO title="Chi Siamo" description="Solaris Films: 40 anni di esperienza, distributore esclusivo MADICO USA per Italia e Spagna. Oltre 45.000 edifici trattati, certificazione ISO 9001." path="/chi-siamo" />
       <Header />
       
       <main className="pt-24">

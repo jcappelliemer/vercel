@@ -2,6 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CheckCircle, Shield, Sun, Drop, Eye, Certificate, Tag } from '@phosphor-icons/react';
 import { prodottiData } from '../data/siteContent';
@@ -60,6 +61,7 @@ const ProdottoPagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`prodotto-${prodotto.slug}`}>
+      <SEO title={`${prodotto.nome} — Pellicola ${prodotto.categoria}`} description={prodotto.descrizione?.substring(0, 160)} path={`/prodotti/${prodotto.slug}`} type="product" />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}
@@ -229,6 +231,7 @@ export const ProdottiIndexPagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="prodotti-index">
+      <SEO title="Catalogo Prodotti — Pellicole per Vetri MADICO" description="Catalogo completo pellicole per vetri MADICO: antisolari, sicurezza, anti-esplosione SafetyShield, privacy e decorative. Schede tecniche dettagliate." path="/prodotti" />
       <Header />
       <main className="pt-24">
         <section className="py-16 lg:py-20 border-b border-white/5">

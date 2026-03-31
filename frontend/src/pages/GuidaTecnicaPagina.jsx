@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sun, ShieldCheck, Eye, Bomb, Thermometer, Drop, Lightning } from '@phosphor-icons/react';
@@ -74,6 +75,7 @@ const techSpecs = [
 const GuidaTecnicaPagina = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="guida-tecnica-page">
+      <SEO title="Guida Tecnica alle Pellicole per Vetri" description="Guida completa alle pellicole per vetri: tipologie, tecnologie, normative e vantaggi. Tutto quello che devi sapere sulle pellicole MADICO." path="/guida-tecnica" />
       <Header />
 
       <main className="pt-24">

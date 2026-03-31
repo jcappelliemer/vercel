@@ -1,81 +1,65 @@
 # Solaris Films - PRD
 
 ## Problema Originale
-Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfilms.it), azienda distributrice esclusiva MADICO USA per pellicole per vetri in Italia. Design "luxury hi-tech", SEO-friendly, chatbot AI, form di lead generation.
+Sito web moderno per Solaris Films (solarisfilms.it), distributore esclusivo MADICO USA. Design luxury hi-tech, chatbot AI, form lead generation. Replica completa pagine sito originale.
 
 ## Architettura
-- **Frontend**: React, Tailwind CSS, Framer Motion, Shadcn UI, @phosphor-icons/react
-- **Backend**: FastAPI, Motor (MongoDB async), emergentintegrations (LLM)
+- **Frontend**: React, Tailwind CSS, Framer Motion, @phosphor-icons/react
+- **Backend**: FastAPI, Motor (MongoDB async), emergentintegrations (Claude Sonnet 4.5)
 - **Database**: MongoDB
-- **AI Chatbot**: Claude Sonnet 4.5 via Emergent LLM Key
 
 ## Design System
-- **Tema**: Dark Navy (#0A0F1C) con alternanze bianco freddo (#F1F5F9) + accenti blu (#2563EB) e giallo Solaris (#EAB308)
+- **Tema**: Dark Navy (#0A0F1C) + alternanze bianco freddo (#F1F5F9)
+- **Accenti**: Blu (#2563EB) + Giallo Solaris (#EAB308)
 - **Font**: Outfit (headings) + Manrope (body)
-- **Stile**: Luxury hi-tech, glassmorphism, gradient accents, Framer Motion animations
-- **Alternanza**: Services, Process, CaseStudy, Testimonials su bianco freddo; Hero, FocusTecnici, LoSapeviChe, Gallery su dark
 
-## Prodotti (aggiornato)
-1. **Pellicole Antisolari** — Prodotto principale. -8°C, UV 99%, risparmio 30-50%
-2. **Safety Shield Anti-Esplosione** — MADICO SafetyShield G2. Anti-blast, anti-intrusione. Certificazioni GSA, ASTM, EN 356
-3. **Pellicole di Sicurezza** — UNI EN 12600, D.Lgs. 81/2008
-4. **Pellicole Privacy/Design** — Satinate, decorative, personalizzabili
+## Prodotti (4)
+1. Pellicole Antisolari (principale)
+2. Safety Shield Anti-Esplosione (MADICO SafetyShield G2)
+3. Pellicole di Sicurezza (UNI EN 12600)
+4. Pellicole Privacy/Design
 
-**RIMOSSI**: LCD Switch, Fotocromatiche
+## Pagine Implementate (50+)
 
-## Funzionalità Implementate
-### Homepage
-- [x] Hero con CTA e badge flottanti
-- [x] TrustBar (ISO 9001, MADICO, UNI EN 12600, Green)
-- [x] Sezione Servizi (4 prodotti)
-- [x] Focus Tecnici (6 dati tecnici)
-- [x] Processo (4 step)
-- [x] Lo Sapevi Che (6 facts educativi)
-- [x] Case Study (3 progetti: Banca d'Italia, EUR Spa, Università Bologna)
-- [x] Gallery "I nostri lavori" (8 progetti, filtri per categoria, lightbox)
-- [x] Carosello Referenze (marquee animato)
-- [x] Testimonials (3 reviews)
-- [x] FAQ Accordion (8 domande)
-- [x] CTA finale
+### Pagine Principali
+- [x] Homepage (12 sezioni: Hero, TrustBar, Services, FocusTecnici, Process, LoSapeviChe, CaseStudy, Gallery, References, Testimonials, FAQ, CTA)
+- [x] Servizi (/servizi)
+- [x] Chi Siamo (/chi-siamo)
+- [x] Contatti (/contatti)
+- [x] Preventivo (/preventivo)
+- [x] Blog (/blog)
+- [x] Guida Tecnica (/guida-tecnica)
+- [x] Profilo Solaris (/profilo-solaris)
+- [x] Privacy Policy (/privacy-policy)
 
-### Header
-- [x] Navigazione responsive + menu mobile
-- [x] CTA Telefono (icona cornetta cyan)
-- [x] CTA WhatsApp (logo WhatsApp verde)
-- [x] CTA Preventivo (bottone giallo)
+### Servizio Locale (22 città)
+- [x] Index (/servizio-locale) + pagine per: Roma, Milano, Firenze, Napoli, Torino, Bologna, Venezia, Genova, Bari, Palermo, Ancona, Aosta, Campobasso, Catanzaro, Cosenza, L'Aquila, Perugia, Potenza, Romagna, Trento, Trieste, Udine
 
-### Pagine
-- [x] Servizi — 4 prodotti dettagliati con Safety Shield + certificazioni
-- [x] Chi Siamo — Storia, Mission, Vision, Sostenibilità, Referenze
-- [x] Blog — 4 articoli con filtro categorie
-- [x] Contatti — Form + link tel/WA/email/mappa
-- [x] Preventivo — Form completo con dropdown prodotti aggiornato
-- [x] Guida Tecnica — Guida completa alle pellicole (antisolari, sicurezza, SafetyShield, privacy)
-- [x] Privacy Policy — Informativa GDPR completa
+### Pagine Info (10)
+- [x] Index (/info) + pagine per: Norme, Norma BRC, Sicurezza a norma di legge, Testo unico sicurezza, Sistemi filtranti DPR 59/09, Istruzioni e manutenzione, Garanzie, Certificazione NFRC, Punti di forza, Glossario termini
 
-### Backend
+### Focus Tecnico (15)
+- [x] Index (/focus-tecnico) + pagine per: Sputtered, Sunscape, Oscuranti, Riflettenti, Spettro-selettive, Antigraffiti, Termoisolanti, Sicurezza, Decorative, Antisolari, Serie RS, Privacy, Stampabili/Vetrofanie, SafetyShield, Serie CL
+
+### Funzionalità
 - [x] Chatbot AI (Claude Sonnet 4.5) con sessioni multi-turno
 - [x] Form Preventivo → MongoDB
 - [x] Form Contatti → MongoDB
-- [x] API Servizi (4 prodotti)
+- [x] Gallery con filtri e lightbox
+- [x] FAQ Accordion
+- [x] Header CTA: telefono cyan + WhatsApp verde
 
 ## API Endpoints
-- `GET /api/health` - Health check
-- `POST /api/quote` - Invia preventivo
-- `GET /api/quotes` - Lista preventivi
-- `POST /api/contact` - Invia contatto
-- `POST /api/chat` - Chatbot AI
-- `GET /api/services` - Lista servizi (4)
-- `GET /api/stats` - Statistiche azienda
-- `GET /api/blog` - Lista articoli blog
+- GET /api/health, GET /api/services, GET /api/stats, GET /api/blog
+- POST /api/quote, GET /api/quotes
+- POST /api/contact
+- POST /api/chat
 
 ## Backlog
 ### P1
-- Verificare corrispondenza testi con solarisfilms.it originale
-- SEO metadata, Open Graph tags, sitemap
-- Componenti Stats e WhyUs nella homepage
-
-### P2
+- SEO metadata, Open Graph tags, sitemap.xml
 - Configurare numeri telefono/WhatsApp reali
+### P2
 - Integrazioni email per notifiche form
-- Blog con CMS/admin per gestione articoli
+- Blog CMS/admin
+- Pagine prodotto singolo (schede tecniche per ogni pellicola)

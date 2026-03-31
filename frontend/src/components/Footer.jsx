@@ -47,7 +47,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-medium mb-6">Azienda</h4>
             <ul className="space-y-3">
-              {[{ name: 'Chi Siamo', path: '/chi-siamo' }, { name: 'Blog', path: '/blog' }, { name: 'Contatti', path: '/contatti' }, { name: 'Preventivo', path: '/preventivo' }].map((item, i) => (
+              {[{ name: 'Chi Siamo', path: '/chi-siamo' }, { name: 'Guida Tecnica', path: '/guida-tecnica' }, { name: 'Blog', path: '/blog' }, { name: 'Contatti', path: '/contatti' }, { name: 'Preventivo', path: '/preventivo' }].map((item, i) => (
                 <li key={i}>
                   <Link to={item.path} className="text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">{item.name}</Link>
                 </li>
@@ -86,11 +86,11 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-xs text-[#94A3B8]/50">© {currentYear} Solaris Films. Tutti i diritti riservati.</p>
           <div className="flex items-center gap-4 text-xs text-[#94A3B8]/50">
+            <Link to="/privacy-policy" className="hover:text-[#EAB308] transition-colors">Privacy Policy</Link>
+            <span className="w-px h-3 bg-white/10" />
             <span>ISO 9001</span>
             <span className="w-px h-3 bg-white/10" />
             <span>MADICO USA</span>
-            <span className="w-px h-3 bg-white/10" />
-            <span>Garanzia 10 anni</span>
           </div>
         </div>
       </div>

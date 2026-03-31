@@ -6,6 +6,8 @@ import ServiziPagina from "./pages/ServiziPagina";
 import ChiSiamoPagina from "./pages/ChiSiamoPagina";
 import ContattiPagina from "./pages/ContattiPagina";
 import BlogPagina from "./pages/BlogPagina";
+import GuidaTecnicaPagina from "./pages/GuidaTecnicaPagina";
+import PrivacyPolicyPagina from "./pages/PrivacyPolicyPagina";
 
 function App() {
   return (
@@ -19,6 +21,8 @@ function App() {
           <Route path="/contatti" element={<ContattiPagina />} />
           <Route path="/blog" element={<BlogPagina />} />
           <Route path="/blog/:slug" element={<BlogPagina />} />
+          <Route path="/guida-tecnica" element={<GuidaTecnicaPagina />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicyPagina />} />
         </Routes>
       </BrowserRouter>
     </div>

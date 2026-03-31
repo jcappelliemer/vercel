@@ -24,18 +24,16 @@ const testimonials = [
 
 const Testimonials = () => {
   return (
-    <section className="py-32 relative" data-testid="testimonials-section">
-      <div className="absolute inset-0 bg-[#111827]/50" />
-      
-      <div className="relative max-w-7xl mx-auto px-6 md:px-12">
-        <motion.div 
+    <section className="py-32 relative section-light" data-testid="testimonials-section">
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           className="text-center mb-16"
         >
           <div className="accent-bar w-16 mx-auto mb-6" />
-          <h2 className="text-4xl lg:text-5xl font-medium text-white">
+          <h2 className="text-4xl lg:text-5xl font-medium">
             Cosa dicono di <span className="text-gradient">noi</span>
           </h2>
         </motion.div>
@@ -49,23 +47,23 @@ const Testimonials = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
               whileHover={{ y: -10 }}
-              className="card-glass rounded-2xl p-8 transition-all duration-500"
+              className="card-light rounded-2xl p-8 transition-all duration-500"
             >
               <div className="flex gap-1 mb-6">
                 {[...Array(item.rating)].map((_, i) => (
                   <Star key={i} size={16} weight="fill" className="text-[#EAB308]" />
                 ))}
               </div>
-              
-              <Quotes size={32} weight="fill" className="text-[#EAB308]/30 mb-4" />
-              
-              <p className="text-white/90 text-lg leading-relaxed mb-8">
+
+              <Quotes size={32} weight="fill" className="text-[#2563EB]/20 mb-4" />
+
+              <p className="text-[#0A0F1C] text-lg leading-relaxed mb-8">
                 "{item.quote}"
               </p>
-              
-              <div className="border-t border-white/10 pt-6">
-                <div className="font-medium text-white">{item.author}</div>
-                <div className="text-sm text-[#EAB308]">{item.role}</div>
+
+              <div className="border-t border-[#E2E8F0] pt-6">
+                <div className="font-medium text-[#0A0F1C]">{item.author}</div>
+                <div className="text-sm text-[#2563EB]">{item.role}</div>
               </div>
             </motion.div>
           ))}

@@ -34,7 +34,7 @@ const caseStudies = [
 
 const CaseStudy = () => {
   return (
-    <section className="py-32 relative" data-testid="case-study-section">
+    <section className="py-32 relative section-light" data-testid="case-study-section">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -44,11 +44,11 @@ const CaseStudy = () => {
         >
           <div>
             <div className="accent-bar w-16 mb-6" />
-            <h2 className="text-4xl lg:text-5xl font-medium text-white">
+            <h2 className="text-4xl lg:text-5xl font-medium">
               Case <span className="text-gradient">study</span>
             </h2>
           </div>
-          <p className="text-[#94A3B8] max-w-md lg:text-right text-lg">
+          <p className="max-w-md lg:text-right text-lg" style={{ color: '#64748B' }}>
             Alcuni dei progetti più significativi realizzati in 40 anni di attività.
           </p>
         </motion.div>
@@ -62,40 +62,38 @@ const CaseStudy = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.15 }}
               whileHover={{ y: -10 }}
-              className="card-glass rounded-2xl overflow-hidden group"
+              className="card-light rounded-2xl overflow-hidden group"
               data-testid={`case-study-${index}`}
             >
-              {/* Image */}
               <div className="relative h-52 overflow-hidden">
                 <img src={cs.image} alt={cs.titolo} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] to-transparent" />
-                <div className="absolute top-4 left-4 flex items-center gap-2 bg-[#EAB308]/20 border border-[#EAB308]/30 rounded-lg px-3 py-1.5">
-                  <cs.icon size={16} weight="light" className="text-[#EAB308]" />
-                  <span className="text-xs font-medium text-[#EAB308] uppercase tracking-wider">{cs.categoria}</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C]/80 to-transparent" />
+                <div className="absolute top-4 left-4 flex items-center gap-2 bg-[#EAB308] rounded-lg px-3 py-1.5">
+                  <cs.icon size={16} weight="light" className="text-[#0A0F1C]" />
+                  <span className="text-xs font-bold text-[#0A0F1C] uppercase tracking-wider">{cs.categoria}</span>
                 </div>
               </div>
 
-              {/* Content */}
               <div className="p-6">
-                <h3 className="text-xl font-medium text-white mb-4 group-hover:text-[#EAB308] transition-colors">
+                <h3 className="text-xl font-medium text-[#0A0F1C] mb-4 group-hover:text-[#2563EB] transition-colors">
                   {cs.titolo}
                 </h3>
 
                 <div className="space-y-4 mb-6">
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[#94A3B8] font-medium">Problema</span>
-                    <p className="text-sm text-white/70 mt-1">{cs.problema}</p>
+                    <span className="text-xs uppercase tracking-wider text-[#64748B] font-medium">Problema</span>
+                    <p className="text-sm text-[#475569] mt-1">{cs.problema}</p>
                   </div>
                   <div>
-                    <span className="text-xs uppercase tracking-wider text-[#EAB308] font-medium">Soluzione</span>
-                    <p className="text-sm text-white/70 mt-1">{cs.soluzione}</p>
+                    <span className="text-xs uppercase tracking-wider text-[#2563EB] font-medium">Soluzione</span>
+                    <p className="text-sm text-[#475569] mt-1">{cs.soluzione}</p>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-2 gap-2">
                   {cs.risultati.map((r, i) => (
-                    <div key={i} className="bg-white/[0.03] rounded-lg px-3 py-2 text-center">
-                      <span className="text-xs text-[#EAB308] font-medium">{r}</span>
+                    <div key={i} className="bg-[#F1F5F9] rounded-lg px-3 py-2 text-center">
+                      <span className="text-xs text-[#2563EB] font-medium">{r}</span>
                     </div>
                   ))}
                 </div>
@@ -110,7 +108,7 @@ const CaseStudy = () => {
           viewport={{ once: true }}
           className="text-center mt-12"
         >
-          <Link to="/preventivo" className="btn-yellow group" data-testid="case-study-cta">
+          <Link to="/preventivo" className="btn-primary group" data-testid="case-study-cta">
             <span>Diventa il prossimo caso di successo</span>
             <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
           </Link>

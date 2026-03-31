@@ -190,6 +190,30 @@ h1, h2, h3, h4, h5, h6 {
 .logo-blue { color: #2563EB; }
 .logo-yellow { color: #EAB308; }
 
+/* Light section utilities */
+.section-light {
+  background: #F1F5F9;
+}
+.section-light h2,
+.section-light h3,
+.section-light h4 {
+  color: #0A0F1C;
+}
+.section-light p,
+.section-light span {
+  color: #475569;
+}
+
+.card-light {
+  background: white;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+.card-light:hover {
+  border-color: rgba(234, 179, 8, 0.4);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+}
+
 @layer base {
   [data-debug-wrapper="true"] { display: contents !important; }
 }

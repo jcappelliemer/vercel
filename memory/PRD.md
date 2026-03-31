@@ -10,9 +10,10 @@ Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfil
 - **AI Chatbot**: Claude Sonnet 4.5 via Emergent LLM Key
 
 ## Design System
-- **Tema**: Dark Navy (#0A0F1C) con accenti blu (#2563EB) e giallo Solaris (#EAB308)
+- **Tema**: Dark Navy (#0A0F1C) con alternanze bianco freddo (#F1F5F9) + accenti blu (#2563EB) e giallo Solaris (#EAB308)
 - **Font**: Outfit (headings) + Manrope (body)
 - **Stile**: Luxury hi-tech, glassmorphism, gradient accents, Framer Motion animations
+- **Alternanza**: Services, Process, CaseStudy, Testimonials su bianco freddo; Hero, FocusTecnici, LoSapeviChe, Gallery su dark
 
 ## Prodotti (aggiornato)
 1. **Pellicole Antisolari** — Prodotto principale. -8°C, UV 99%, risparmio 30-50%
@@ -49,6 +50,8 @@ Creare un sito web moderno, dinamico e competitivo per Solaris Films (solarisfil
 - [x] Blog — 4 articoli con filtro categorie
 - [x] Contatti — Form + link tel/WA/email/mappa
 - [x] Preventivo — Form completo con dropdown prodotti aggiornato
+- [x] Guida Tecnica — Guida completa alle pellicole (antisolari, sicurezza, SafetyShield, privacy)
+- [x] Privacy Policy — Informativa GDPR completa
 
 ### Backend
 - [x] Chatbot AI (Claude Sonnet 4.5) con sessioni multi-turno

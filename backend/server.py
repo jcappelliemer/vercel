@@ -256,6 +256,17 @@ async def get_stats():
         ]
     }
 
+# ============== ROBOTS.TXT ==============
+@api_router.get("/robots.txt")
+async def robots_txt():
+    content = """User-agent: *
+Allow: /
+Disallow: /api/
+
+Sitemap: https://www.solarisfilms.it/api/sitemap.xml
+"""
+    return Response(content=content, media_type="text/plain")
+
 # ============== SITEMAP.XML ==============
 @api_router.get("/sitemap.xml")
 async def generate_sitemap():

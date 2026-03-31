@@ -2,7 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
-import SEO from '../components/SEO';
+import SEO, { buildLocalBusinessSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, MapPin, CheckCircle, Phone, WhatsappLogo } from '@phosphor-icons/react';
 import { cittaData } from '../data/siteContent';
@@ -39,7 +39,7 @@ const ServizioLocalePagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`servizio-locale-${citta.slug}`}>
-      <SEO title={`Pellicole per Vetri ${citta.nome}`} description={`Installazione pellicole antisolari e di sicurezza MADICO a ${citta.nome}, ${citta.regione}. Sopralluogo e preventivo gratuiti. Solaris Films, 40 anni di esperienza.`} path={`/servizio-locale/${citta.slug}`} />
+      <SEO title={`Pellicole per Vetri ${citta.nome}`} description={`Installazione pellicole antisolari e di sicurezza MADICO a ${citta.nome}, ${citta.regione}. Sopralluogo e preventivo gratuiti. Solaris Films, 40 anni di esperienza.`} path={`/servizio-locale/${citta.slug}`} jsonLd={buildLocalBusinessSchema(citta)} />
       <Header />
       <main className="pt-24">
         {/* Hero */}

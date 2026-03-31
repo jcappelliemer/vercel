@@ -12,7 +12,7 @@ import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
-import SEO from '../components/SEO';
+import SEO, { buildOrganizationSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from '@phosphor-icons/react';
@@ -56,7 +56,7 @@ const CTASection = () => (
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="home-page">
-      <SEO path="/" />
+      <SEO path="/" jsonLd={buildOrganizationSchema()} />
       <Header />
       <main>
         <Hero />

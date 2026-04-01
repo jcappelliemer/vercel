@@ -26,6 +26,19 @@ function solaris_setup() {
 }
 add_action('after_setup_theme', 'solaris_setup');
 
+// ============== WIDGET AREAS ==============
+function solaris_widgets_init() {
+    register_sidebar(array(
+        'name'          => __('Footer Widget Area', 'solaris-films'),
+        'id'            => 'footer-widgets',
+        'before_widget' => '<div class="widget %2$s">',
+        'after_widget'  => '</div>',
+        'before_title'  => '<h4 class="widget-title">',
+        'after_title'   => '</h4>',
+    ));
+}
+add_action('widgets_init', 'solaris_widgets_init');
+
 // ============== ENQUEUE ASSETS ==============
 function solaris_enqueue_assets() {
     // CSS
@@ -141,10 +154,16 @@ function solaris_handle_quote_form() {
 add_action('wp_ajax_solaris_quote', 'solaris_handle_quote_form');
 add_action('wp_ajax_nopriv_solaris_quote', 'solaris_handle_quote_form');
 
-// ============== YOAST SEO COMPATIBILITY ==============
-// Disable theme meta tags when Yoast is active
-function solaris_is_yoast_active() {
-    return defined('WPSEO_VERSION');
+// ============== FALLBACK MENU ==============
+function solaris_fallback_menu() {
+    echo '<ul class="sf-header__menu">';
+    echo '<li><a href="' . esc_url(home_url('/')) . '">Home</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/prodotti/')) . '">Prodotti</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/servizio-locale/')) . '">Servizi Locali</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/guida-tecnica/')) . '">Guida Tecnica</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/chi-siamo/')) . '">Chi Siamo</a></li>';
+    echo '<li><a href="' . esc_url(home_url('/contatti/')) . '">Contatti</a></li>';
+    echo '</ul>';
 }
 
 // ============== DISABLE GUTENBERG FOR CPTs ==============

@@ -65,17 +65,3 @@
         </div>
     </div>
 </header>
-
-<?php
-// Fallback menu if no menu is assigned
-function solaris_fallback_menu() {
-    echo '<ul class="sf-header__menu">';
-    echo '<li><a href="' . esc_url(home_url('/')) . '">Home</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/prodotti/')) . '">Prodotti</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/servizi/')) . '">Servizi</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/guida-tecnica/')) . '">Guida Tecnica</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/chi-siamo/')) . '">Chi Siamo</a></li>';
-    echo '<li><a href="' . esc_url(home_url('/contatti/')) . '">Contatti</a></li>';
-    echo '</ul>';
-}
-?>

@@ -31,18 +31,22 @@ Creazione di un sito web moderno, dinamico e competitivo per sostituire il sito 
 - [x] Sitemap.xml dinamica (81 URL), robots.txt
 - [x] JSON-LD Schema (Product, Organization, LocalBusiness)
 
-### Fase 4 - Tema WordPress Custom (COMPLETATA - Feb 2026)
-- [x] Tema WP completo con 31 file (46KB zippato)
+### Fase 4 - Tema WordPress Custom (COMPLETATA - Feb 2026, FIX Apr 2026)
+- [x] Tema WP completo con 32 file (48KB zippato)
 - [x] 6 Custom Post Types (Prodotto, Servizio Locale, Focus Tecnico, Pagina Info, Contatto, Preventivo)
 - [x] ACF field groups programmatici + fallback meta box
 - [x] 4 archive templates, 4 single templates, 7 template parts
 - [x] Script import dati (21 prodotti + 22 citta + 7 pagine)
 - [x] Form contatti/preventivo con AJAX
-- [x] CSS completo (luxury hi-tech dark theme, responsive)
+- [x] CSS completo (luxury hi-tech dark theme, responsive, form styles)
 - [x] JS: AOS animations, mobile menu, FAQ accordion, scroll effects
 - [x] Compatibilita Yoast SEO (disattivazione automatica meta/schema tema)
 - [x] Admin columns per prodotti, Gutenberg disabilitato per CPT
+- [x] Menu di navigazione e widget registrati correttamente
 - [x] Guida installazione completa (INSTALLAZIONE.md)
+- [x] FIX: Rimossa funzione duplicata solaris_is_yoast_active() (causa fatal error)
+- [x] FIX: Spostata solaris_fallback_menu() da header.php a functions.php
+- [x] FIX: Form CSS spostato da inline a theme.css
 
 ## Totale Pagine: 80+
 ## API Endpoints
@@ -50,5 +54,6 @@ Creazione di un sito web moderno, dinamico e competitivo per sostituire il sito 
 - GET /api/health, GET /api/sitemap.xml, GET /api/robots.txt
 
 ## Task Futuri
+- **P1**: Verificare che lo script import dati funzioni correttamente su WP dell'utente
 - **P2**: Integrazioni email/WhatsApp reali per form
 - **P2**: Configurazione hosting WP e deployment tema

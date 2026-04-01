@@ -1,137 +1,70 @@
-# Solaris Films — Guida Installazione Tema WordPress
+# Guida Installazione Tema Solaris Films per WordPress
 
 ## Requisiti
 - WordPress 6.0+
 - PHP 8.0+
-- Plugin consigliati: **ACF** (Advanced Custom Fields), **Yoast SEO**
+- Plugin ACF (opzionale ma consigliato per gestione campi avanzata)
 
----
+## Step 1 — Installa il Tema
+1. Vai su **Aspetto > Temi > Aggiungi nuovo > Carica tema**
+2. Seleziona il file `solaris-films.zip`
+3. Clicca **Installa ora** e poi **Attiva**
 
-## Installazione Rapida
+## Step 2 — Importa i Contenuti
+1. Vai su **Strumenti > Solaris Import** (nel menu WP Admin)
+2. Clicca **Importa Dati**
+3. Verranno creati automaticamente:
+   - 21 prodotti MADICO con schede tecniche complete
+   - 22 citta (servizi locali)
+   - 7 pagine standard (Contatti, Preventivo, Servizi, Chi Siamo, ecc.)
 
-### 1. Carica il tema
-- Comprimi la cartella `solaris-films/` in un file `.zip`
-- Vai su **Aspetto > Temi > Aggiungi nuovo > Carica tema**
-- Carica il file `.zip` e attiva il tema
+## Step 3 — Configura la Homepage
+1. Vai su **Impostazioni > Lettura**
+2. Seleziona "**Una pagina statica**"
+3. Come "Pagina iniziale" scegli una qualsiasi pagina (il tema usa `front-page.php` automaticamente)
 
-### 2. Installa i plugin consigliati
-- **Advanced Custom Fields (ACF)** — per i campi prodotto editabili
-- **Yoast SEO** — per gestione SEO completa
-- **WP Mail SMTP** — per invio email form (opzionale)
+## Step 4 — Configura i Menu
+1. Vai su **Aspetto > Menu**
+2. Crea un nuovo menu chiamato "Menu Principale"
+3. Aggiungi le pagine:
+   - Home
+   - Prodotti (link personalizzato a `/prodotti/`)
+   - Servizi Locali (link personalizzato a `/servizio-locale/`)
+   - Focus Tecnici (link personalizzato a `/focus-tecnico/`)
+   - Chi Siamo
+   - Contatti
+4. In **Posizioni del menu**, seleziona "Menu Principale"
+5. Salva il menu
 
-### 3. Importa i dati
-- Vai su **Strumenti > Solaris Import**
-- Clicca "Importa Dati"
-- Questo crea automaticamente: 21 prodotti, 22 citta, 7 pagine statiche
+## Step 5 — Aggiorna i Permalink
+1. Vai su **Impostazioni > Permalink**
+2. Seleziona "**Nome articolo**" (post name)
+3. Salva le modifiche
 
-### 4. Configura menu
-- Vai su **Aspetto > Menu**
-- Crea menu "Menu Principale" con: Home, Prodotti, Servizi, Guida Tecnica, Chi Siamo, Contatti
-- Assegna a posizione "Menu Principale"
-
-### 5. Imposta homepage
-- Vai su **Impostazioni > Lettura**
-- "La homepage mostra" > "Una pagina statica"
-- Homepage: (crea una pagina vuota "Home" con template "Homepage")
-
-### 6. Configura Permalink
-- Vai su **Impostazioni > Permalink**
-- Seleziona "Nome articolo" (/%postname%/)
-- Salva — IMPORTANTE per far funzionare gli URL puliti
-
----
-
-## Struttura Contenuti nel Pannello Admin
-
-### Prodotti (Custom Post Type)
-- **Menu laterale > Prodotti**
-- Ogni prodotto ha campi editabili:
-  - Categoria (Antisolari/Sicurezza/Privacy)
-  - Sottocategoria
-  - Applicazione (Interno/Esterno)
-  - Certificazione, Garanzia
-  - Dati Tecnici (VLT, IR, UV, Energia, ecc.)
-  - Caratteristiche (lista)
-  - Focus Tecnico collegato
-
-### Servizi Locali (Citta)
-- **Menu laterale > Servizi Locali**
-- Ogni citta ha: Regione, Servizi disponibili, Vantaggi
-
-### Focus Tecnici
-- **Menu laterale > Focus Tecnici**
-- Approfondimenti per tipologia di pellicola
-
-### Pagine Info
-- **Menu laterale > Pagine Info**
-- Norme, garanzie, certificazioni
-
-### Contatti/Preventivi Ricevuti
-- **Menu laterale > Contatti / Preventivi**
-- Tutti i messaggi ricevuti dai form vengono salvati qui
-
----
-
-## Compatibilita Yoast SEO
-
-Il tema e **100% compatibile con Yoast**. Quando Yoast e attivo:
-- I meta tag del tema vengono automaticamente disattivati
-- Yoast gestisce: title, description, Open Graph, sitemap.xml, robots.txt
-- JSON-LD Schema del tema viene disattivato (Yoast usa il suo)
-- Puoi modificare il SEO di ogni singola pagina dal box Yoast sotto l'editor
-
----
-
-## Come Modificare i Contenuti
-
-| Cosa modificare | Dove |
-|---|---|
-| Testi homepage (hero, stats, FAQ, testimonials) | Modifica pagina Home > campi ACF |
-| Aggiungere un prodotto | Prodotti > Aggiungi nuovo |
-| Modificare dati tecnici prodotto | Modifica prodotto > tab "Dati Tecnici" |
-| Aggiungere una citta | Servizi Locali > Aggiungi nuovo |
-| Modificare menu navigazione | Aspetto > Menu |
-| Logo e colori | Aspetto > Personalizza |
-| Form contatti | I form sono integrati nel tema (AJAX) |
-
----
-
-## File del Tema
-
+## Struttura del Tema
 ```
 solaris-films/
-├── style.css                    # Dichiarazione tema
-├── functions.php                # Setup tema, CPT, form AJAX
-├── header.php                   # Header + navigazione
-├── footer.php                   # Footer
-├── front-page.php               # Homepage
-├── page.php                     # Template pagina generica
-├── index.php                    # Fallback / blog
-├── single-prodotto.php          # Scheda prodotto singolo
-├── archive-prodotto.php         # Catalogo prodotti
-├── single-servizio_locale.php   # Pagina citta
-├── archive-servizio_locale.php  # Elenco citta
-├── single-focus_tecnico.php     # Focus tecnico singolo
-├── archive-focus_tecnico.php    # Elenco focus tecnici
-├── single-pagina_info.php       # Pagina info singola
-├── archive-pagina_info.php      # Elenco pagine info
-├── page-contatti.php            # Template contatti (con form)
-├── page-preventivo.php          # Template preventivo (con form)
-├── css/
-│   └── theme.css                # CSS completo del tema
-├── js/
-│   └── main.js                  # JavaScript (menu, AOS, form)
-├── inc/
-│   ├── custom-post-types.php    # Registrazione CPT
-│   ├── acf-fields.php           # Campi ACF (o meta box fallback)
-│   ├── theme-helpers.php        # Funzioni helper
-│   └── import-data.php          # Script importazione dati
-└── template-parts/
-    ├── trust-bar.php
-    ├── services.php
-    ├── process.php
-    ├── gallery.php
-    ├── testimonials.php
-    ├── faq.php
-    └── cta-section.php
+  functions.php          — Setup tema, menu, widget, form AJAX
+  header.php             — Header con navigazione e CTA
+  footer.php             — Footer con link e contatti
+  front-page.php         — Homepage completa
+  style.css              — Metadati tema WP
+  css/theme.css          — Tutti gli stili (dark theme, responsive)
+  js/main.js             — Animazioni AOS, menu mobile, form AJAX
+  inc/
+    custom-post-types.php — CPT e tassonomie
+    acf-fields.php        — Campi ACF (con fallback meta box)
+    theme-helpers.php     — Funzioni helper
+    import-data.php       — Script import dati
+  template-parts/        — Sezioni riutilizzabili
+  single-*.php           — Template singoli per CPT
+  archive-*.php          — Template archivio per CPT
+  page-contatti.php      — Pagina contatti con form
+  page-preventivo.php    — Pagina preventivo con form
 ```
+
+## Note
+- Il tema include un menu di fallback automatico se non ne viene configurato uno
+- I form di contatto e preventivo funzionano via AJAX e salvano i dati nel DB di WP
+- Il tema e compatibile con Yoast SEO (disattiva schema/meta quando Yoast e attivo)
+- I dati tecnici dei prodotti si visualizzano con barre animate (AOS)

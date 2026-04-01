@@ -1,15 +1,14 @@
 {
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "@vercel/node@3"
+    }
+  },
   "rewrites": [
-    { "source": "/api/wp/:path*", "destination": "/api/wp/:path*" },
+    { "source": "/api/wp/(.*)", "destination": "/api/wp/$1" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ],
   "headers": [
-    {
-      "source": "/api/wp/(.*)",
-      "headers": [
-        { "key": "Cache-Control", "value": "s-maxage=300, stale-while-revalidate" }
-      ]
-    },
     {
       "source": "/static/(.*)",
       "headers": [

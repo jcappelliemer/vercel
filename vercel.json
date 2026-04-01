@@ -1,11 +1,5 @@
 {
-  "functions": {
-    "api/**/*.js": {
-      "runtime": "@vercel/node@3"
-    }
-  },
   "rewrites": [
-    { "source": "/api/wp/(.*)", "destination": "/api/wp/$1" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ],
   "headers": [
@@ -16,7 +10,7 @@
       ]
     }
   ],
-  "buildCommand": "cd frontend && yarn build",
+  "buildCommand": "cd frontend && node fetch-wp-data.js && yarn build",
   "outputDirectory": "frontend/build",
   "framework": null
 }

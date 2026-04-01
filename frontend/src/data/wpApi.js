@@ -1,32 +1,53 @@
 /**
  * WordPress Headless API Service
- * Fetches content from WordPress REST API with static fallback
+ * - In production (Vercel): reads pre-fetched static JSON from /wp-data/
+ * - In development: fetches directly from WP REST API
  */
 
 const WP_URL = process.env.REACT_APP_WP_URL || '';
-
-// Use serverless proxy on Vercel (HTTPS) to avoid mixed-content blocking
-function getApiBase() {
-  if (typeof window !== 'undefined' && window.location.protocol === 'https:') {
-    return '/api/wp';
-  }
-  return WP_URL ? `${WP_URL}/wp-json` : '';
-}
+const IS_PROD = typeof window !== 'undefined' && window.location.protocol === 'https:';
 
 const cache = new Map();
-const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
+const CACHE_TTL = 5 * 60 * 1000;
+
+async function fetchStaticJson(filename) {
+  const cacheKey = `static_${filename}`;
+  const cached = cache.get(cacheKey);
+  if (cached && Date.now() - cached.time < CACHE_TTL) return cached.data;
+
+  try {
+    const res = await fetch(`/wp-data/${filename}.json`);
+    if (!res.ok) return null;
+    const data = await res.json();
+    cache.set(cacheKey, { data, time: Date.now() });
+    return data;
+  } catch {
+    return null;
+  }
+}
 
 async function wpFetch(endpoint, params = {}) {
-  const apiBase = getApiBase();
-  if (!apiBase) return null;
+  if (!WP_URL && !IS_PROD) return null;
+
+  // On production, use pre-fetched static JSON
+  if (IS_PROD) {
+    const nameMap = {
+      'prodotto': 'prodotti',
+      'focus_tecnico': 'focus-tecnici',
+      'pagina_info': 'pagine-info',
+      'servizio_locale': 'servizi-locali',
+    };
+    const staticName = nameMap[endpoint];
+    if (staticName) return fetchStaticJson(staticName);
+  }
+
+  // In development, fetch directly from WP
   const query = new URLSearchParams({ per_page: 100, ...params }).toString();
-  const url = `${apiBase}/wp/v2/${endpoint}?${query}`;
+  const url = `${WP_URL}/wp-json/wp/v2/${endpoint}?${query}`;
   const cacheKey = url;
 
   const cached = cache.get(cacheKey);
-  if (cached && Date.now() - cached.time < CACHE_TTL) {
-    return cached.data;
-  }
+  if (cached && Date.now() - cached.time < CACHE_TTL) return cached.data;
 
   try {
     const res = await fetch(url);
@@ -114,7 +135,7 @@ export async function fetchPagineInfo() {
   return data.map(mapPaginaInfo);
 }
 
-// ===== SERVIZI LOCALI (Città) =====
+// ===== SERVIZI LOCALI =====
 function mapCitta(wp) {
   const m = wp.solaris_meta || wp.meta || {};
   return {
@@ -132,15 +153,15 @@ export async function fetchCitta() {
 
 // ===== SETTINGS =====
 export async function fetchSettings() {
-  const apiBase = getApiBase();
-  if (!apiBase) return null;
+  if (IS_PROD) {
+    return fetchStaticJson('settings');
+  }
+  if (!WP_URL) return null;
   const cacheKey = 'settings';
   const cached = cache.get(cacheKey);
-  if (cached && Date.now() - cached.time < CACHE_TTL) {
-    return cached.data;
-  }
+  if (cached && Date.now() - cached.time < CACHE_TTL) return cached.data;
   try {
-    const res = await fetch(`${apiBase}/solaris/v1/settings`);
+    const res = await fetch(`${WP_URL}/wp-json/solaris/v1/settings`);
     if (!res.ok) throw new Error(`Settings API error: ${res.status}`);
     const data = await res.json();
     cache.set(cacheKey, { data, time: Date.now() });

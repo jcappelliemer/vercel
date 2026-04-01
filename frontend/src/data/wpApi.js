@@ -5,10 +5,10 @@
 
 const WP_URL = process.env.REACT_APP_WP_URL || '';
 
-// Use proxy path on Vercel (HTTPS) to avoid mixed-content blocking
+// Use serverless proxy on Vercel (HTTPS) to avoid mixed-content blocking
 function getApiBase() {
-  if (typeof window !== 'undefined' && window.location.protocol === 'https:' && WP_URL) {
-    return '/wp-api';
+  if (typeof window !== 'undefined' && window.location.protocol === 'https:') {
+    return '/api/wp';
   }
   return WP_URL ? `${WP_URL}/wp-json` : '';
 }

@@ -1,11 +1,11 @@
 {
   "rewrites": [
-    { "source": "/wp-api/:path*", "destination": "http://187.124.168.153:32769/wp-json/:path*" },
-    { "source": "/((?!wp-api/).*)", "destination": "/index.html" }
+    { "source": "/api/wp/:path*", "destination": "/api/wp/:path*" },
+    { "source": "/((?!api/).*)", "destination": "/index.html" }
   ],
   "headers": [
     {
-      "source": "/wp-api/(.*)",
+      "source": "/api/wp/(.*)",
       "headers": [
         { "key": "Cache-Control", "value": "s-maxage=300, stale-while-revalidate" }
       ]

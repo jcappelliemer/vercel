@@ -309,6 +309,9 @@ ul { list-style: none; }
 .sf-footer__icon { color: var(--sf-text-muted); display: flex; }
 .sf-footer__bottom { border-top: 1px solid var(--sf-dark-border); padding-top: 1.5rem; }
 .sf-footer__bottom p { color: var(--sf-text-muted); font-size: 0.75rem; text-align: center; }
+.sf-footer__social { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 1rem; }
+.sf-footer__social-link { color: var(--sf-text-muted); font-size: 0.8125rem; font-weight: 500; transition: var(--sf-transition); }
+.sf-footer__social-link:hover { color: var(--sf-gold); }
 
 /* ===== Flexbox Helpers ===== */
 .sf-flex-between { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; }

@@ -25,21 +25,21 @@ get_header();
                             <div class="sf-contact-icon sf-contact-icon--phone"><?php echo solaris_icon('phone', 20); ?></div>
                             <div>
                                 <p class="sf-contact-label">Telefono</p>
-                                <a href="tel:+390200000000" class="sf-contact-value">+39 02 000 0000</a>
+                                <a href="tel:<?php echo esc_attr(solaris_option('phone', '+390287168098')); ?>" class="sf-contact-value"><?php echo esc_html(solaris_option('phone_display', '+39 02 8716 8098')); ?></a>
                             </div>
                         </div>
                         <div class="sf-contact-item">
                             <div class="sf-contact-icon sf-contact-icon--whatsapp"><?php echo solaris_icon('whatsapp', 20); ?></div>
                             <div>
                                 <p class="sf-contact-label">WhatsApp</p>
-                                <a href="https://wa.me/39XXXXXXXXXX" class="sf-contact-value">Scrivici su WhatsApp</a>
+                                <a href="https://wa.me/<?php echo esc_attr(solaris_option('whatsapp', '390287168098')); ?>" class="sf-contact-value">Scrivici su WhatsApp</a>
                             </div>
                         </div>
                         <div class="sf-contact-item">
                             <div class="sf-contact-icon sf-contact-icon--email"><span style="font-weight:700;">@</span></div>
                             <div>
                                 <p class="sf-contact-label">Email</p>
-                                <a href="mailto:info@solarisfilms.it" class="sf-contact-value">info@solarisfilms.it</a>
+                                <a href="mailto:<?php echo esc_attr(solaris_option('email', 'info@solarisfilms.it')); ?>" class="sf-contact-value"><?php echo esc_html(solaris_option('email', 'info@solarisfilms.it')); ?></a>
                             </div>
                         </div>
                     </div>

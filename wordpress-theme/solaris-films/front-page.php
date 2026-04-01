@@ -5,8 +5,9 @@
  */
 get_header();
 
-$hero_title = solaris_get_field('hero_title') ?: 'Protezione Solare Professionale per i Tuoi Vetri';
-$hero_subtitle = solaris_get_field('hero_subtitle') ?: 'Distributore esclusivo MADICO USA per l\'Italia. Da oltre 40 anni proteggiamo, isoliamo e rendiamo sicuri i vetri di edifici residenziali, commerciali e industriali.';
+$defaults = solaris_defaults();
+$hero_title = solaris_get_field('hero_title') ?: solaris_option('hero_title', $defaults['hero_title']);
+$hero_subtitle = solaris_get_field('hero_subtitle') ?: solaris_option('hero_subtitle', $defaults['hero_subtitle']);
 ?>
 
 <main>
@@ -57,11 +58,13 @@ $hero_subtitle = solaris_get_field('hero_subtitle') ?: 'Distributore esclusivo M
 solaris_render_jsonld(array(
     '@context' => 'https://schema.org',
     '@type' => 'Organization',
-    'name' => 'Solaris Films',
+    'name' => solaris_option('company_name', 'Solaris Films'),
     'url' => home_url('/'),
-    'description' => 'Distributore esclusivo MADICO USA per l\'Italia.',
+    'description' => solaris_option('company_subtitle', 'Distributore esclusivo MADICO USA per l\'Italia.'),
     'foundingDate' => '1985',
     'areaServed' => array('@type' => 'Country', 'name' => 'Italy'),
+    'telephone' => solaris_option('phone', '+390287168098'),
+    'email' => solaris_option('email', 'info@solarisfilms.it'),
 ));
 
 get_footer();

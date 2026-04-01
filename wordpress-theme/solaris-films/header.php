@@ -33,10 +33,10 @@
 
         <!-- CTA Buttons -->
         <div class="sf-header__cta">
-            <a href="tel:+390200000000" class="sf-header__cta-icon sf-header__cta-icon--phone" title="Chiama ora">
+            <a href="tel:<?php echo esc_attr(solaris_option('phone', '+390287168098')); ?>" class="sf-header__cta-icon sf-header__cta-icon--phone" title="Chiama ora">
                 <?php echo solaris_icon('phone', 18); ?>
             </a>
-            <a href="https://wa.me/39XXXXXXXXXX" target="_blank" class="sf-header__cta-icon sf-header__cta-icon--whatsapp" title="WhatsApp">
+            <a href="https://wa.me/<?php echo esc_attr(solaris_option('whatsapp', '390287168098')); ?>" target="_blank" class="sf-header__cta-icon sf-header__cta-icon--whatsapp" title="WhatsApp">
                 <?php echo solaris_icon('whatsapp', 18); ?>
             </a>
             <a href="<?php echo esc_url(home_url('/preventivo/')); ?>" class="sf-btn sf-btn--yellow">
@@ -60,7 +60,7 @@
         ));
         ?>
         <div class="sf-header__mobile-cta">
-            <a href="tel:+390200000000" class="sf-btn sf-btn--outline">Chiama Ora</a>
+            <a href="tel:<?php echo esc_attr(solaris_option('phone', '+390287168098')); ?>" class="sf-btn sf-btn--outline">Chiama Ora</a>
             <a href="<?php echo esc_url(home_url('/preventivo/')); ?>" class="sf-btn sf-btn--yellow">Preventivo Gratuito</a>
         </div>
     </div>

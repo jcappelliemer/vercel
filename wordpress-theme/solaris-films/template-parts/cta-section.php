@@ -11,7 +11,7 @@
             <a href="<?php echo esc_url(home_url('/preventivo/')); ?>" class="sf-btn sf-btn--yellow sf-btn--lg">
                 Preventivo Gratuito <?php echo solaris_icon('arrow-right', 18); ?>
             </a>
-            <a href="tel:+390200000000" class="sf-btn sf-btn--outline sf-btn--lg">
+            <a href="tel:<?php echo esc_attr(solaris_option('phone', '+390287168098')); ?>" class="sf-btn sf-btn--outline sf-btn--lg">
                 <?php echo solaris_icon('phone', 18); ?> Chiama Ora
             </a>
         </div>

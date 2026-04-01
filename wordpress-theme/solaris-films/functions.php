@@ -68,6 +68,9 @@ require_once get_template_directory() . '/inc/acf-fields.php';
 // ============== THEME HELPERS ==============
 require_once get_template_directory() . '/inc/theme-helpers.php';
 
+// ============== THEME SETTINGS ==============
+require_once get_template_directory() . '/inc/theme-settings.php';
+
 // ============== DATA IMPORT ==============
 require_once get_template_directory() . '/inc/import-data.php';
 

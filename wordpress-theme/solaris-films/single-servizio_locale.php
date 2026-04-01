@@ -103,8 +103,10 @@ if (function_exists('get_field') && have_rows('vantaggi')) {
 solaris_render_jsonld(array(
     '@context' => 'https://schema.org',
     '@type' => 'LocalBusiness',
-    'name' => 'Solaris Films — ' . $nome_citta,
+    'name' => solaris_option('company_name', 'Solaris Films') . ' — ' . $nome_citta,
     'url' => get_permalink(),
+    'telephone' => solaris_option('phone', '+390287168098'),
+    'email' => solaris_option('email', 'info@solarisfilms.it'),
     'areaServed' => array('@type' => 'City', 'name' => $nome_citta),
 ));
 get_footer();

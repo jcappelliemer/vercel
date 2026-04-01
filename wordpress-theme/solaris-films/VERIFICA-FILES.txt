@@ -1,0 +1,36 @@
+Theme Name: Solaris Films
+Version: 1.0.0
+
+Questo tema DEVE contenere questi file:
+- style.css
+- functions.php
+- header.php
+- footer.php
+- front-page.php
+- page.php
+- index.php
+- single-prodotto.php
+- archive-prodotto.php
+- single-servizio_locale.php
+- archive-servizio_locale.php
+- single-focus_tecnico.php
+- archive-focus_tecnico.php
+- single-pagina_info.php
+- archive-pagina_info.php
+- page-contatti.php
+- page-preventivo.php
+- css/theme.css
+- js/main.js
+- inc/custom-post-types.php
+- inc/acf-fields.php
+- inc/theme-helpers.php
+- inc/import-data.php
+- template-parts/trust-bar.php
+- template-parts/services.php
+- template-parts/process.php
+- template-parts/gallery.php
+- template-parts/testimonials.php
+- template-parts/faq.php
+- template-parts/cta-section.php
+
+Se manca qualcuno di questi file, il tema non funzionera correttamente.

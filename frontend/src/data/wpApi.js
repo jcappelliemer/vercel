@@ -5,12 +5,22 @@
 
 const WP_URL = process.env.REACT_APP_WP_URL || '';
 
+// Use proxy path on Vercel (HTTPS) to avoid mixed-content blocking
+function getApiBase() {
+  if (typeof window !== 'undefined' && window.location.protocol === 'https:' && WP_URL) {
+    return '/wp-api';
+  }
+  return WP_URL ? `${WP_URL}/wp-json` : '';
+}
+
 const cache = new Map();
 const CACHE_TTL = 5 * 60 * 1000; // 5 minutes
 
 async function wpFetch(endpoint, params = {}) {
+  const apiBase = getApiBase();
+  if (!apiBase) return null;
   const query = new URLSearchParams({ per_page: 100, ...params }).toString();
-  const url = `${WP_URL}/wp-json/wp/v2/${endpoint}?${query}`;
+  const url = `${apiBase}/wp/v2/${endpoint}?${query}`;
   const cacheKey = url;
 
   const cached = cache.get(cacheKey);
@@ -122,14 +132,15 @@ export async function fetchCitta() {
 
 // ===== SETTINGS =====
 export async function fetchSettings() {
-  if (!WP_URL) return null;
+  const apiBase = getApiBase();
+  if (!apiBase) return null;
   const cacheKey = 'settings';
   const cached = cache.get(cacheKey);
   if (cached && Date.now() - cached.time < CACHE_TTL) {
     return cached.data;
   }
   try {
-    const res = await fetch(`${WP_URL}/wp-json/solaris/v1/settings`);
+    const res = await fetch(`${apiBase}/solaris/v1/settings`);
     if (!res.ok) throw new Error(`Settings API error: ${res.status}`);
     const data = await res.json();
     cache.set(cacheKey, { data, time: Date.now() });

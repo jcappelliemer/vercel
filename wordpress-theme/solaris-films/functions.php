@@ -197,13 +197,13 @@ add_filter('manage_prodotto_posts_columns', 'solaris_prodotto_columns');
 
 function solaris_prodotto_column_content($column, $post_id) {
     if ($column === 'categoria') {
-        echo esc_html(get_field('categoria', $post_id) ?: '—');
+        echo esc_html(get_post_meta($post_id, 'categoria', true) ?: '—');
     }
     if ($column === 'sottocategoria') {
-        echo esc_html(get_field('sottocategoria', $post_id) ?: '—');
+        echo esc_html(get_post_meta($post_id, 'sottocategoria', true) ?: '—');
     }
     if ($column === 'applicazione') {
-        echo esc_html(get_field('applicazione', $post_id) ?: '—');
+        echo esc_html(get_post_meta($post_id, 'applicazione', true) ?: '—');
     }
 }
 add_action('manage_prodotto_posts_custom_column', 'solaris_prodotto_column_content', 10, 2);

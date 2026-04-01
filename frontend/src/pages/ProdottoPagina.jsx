@@ -6,6 +6,7 @@ import SEO, { buildProductSchema, buildBreadcrumbSchema } from '../components/SE
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CheckCircle, Shield, Sun, Drop, Eye, Certificate, Tag } from '@phosphor-icons/react';
 import { prodottiData } from '../data/siteContent';
+import { useWPData } from '../hooks/useWPData';
 
 const EnergyBar = ({ label, value, color = '#EAB308' }) => {
   const numVal = parseInt(value) || 0;
@@ -37,7 +38,8 @@ const SpecCard = ({ icon: Icon, label, value }) => (
 
 const ProdottoPagina = () => {
   const { slug } = useParams();
-  const prodotto = prodottiData.find(p => p.slug === slug);
+  const { data: allProdotti } = useWPData('prodotti');
+  const prodotto = allProdotti.find(p => p.slug === slug);
 
   if (!prodotto) {
     return (
@@ -218,6 +220,7 @@ const ProdottoPagina = () => {
 
 // Index Page - Catalogo Prodotti
 export const ProdottiIndexPagina = () => {
+  const { data: allProdotti } = useWPData('prodotti');
   const categorie = ['Antisolari', 'Sicurezza', 'Privacy'];
 
   const getCategoriaDesc = (cat) => {
@@ -245,7 +248,7 @@ export const ProdottiIndexPagina = () => {
         </section>
 
         {categorie.map((cat, catIndex) => {
-          const prodotti = prodottiData.filter(p => p.categoria === cat);
+          const prodotti = allProdotti.filter(p => p.categoria === cat);
           const sottocategorie = [...new Set(prodotti.map(p => p.sottocategoria))];
           const isLight = catIndex % 2 === 0;
 

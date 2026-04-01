@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import { Phone, EnvelopeSimple, MapPin, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
+import { useSettings } from '../hooks/useSettings';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+  const settings = useSettings();
 
   return (
     <footer className="border-t border-white/5" data-testid="footer">
@@ -20,7 +22,7 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-[#94A3B8] text-sm leading-relaxed mb-6">
-              Distributore esclusivo MADICO USA. 40 anni di eccellenza nel settore.
+              {settings.footer_text}
             </p>
             <div className="flex gap-3">
               {[LinkedinLogo, InstagramLogo, YoutubeLogo].map((Icon, i) => (
@@ -60,21 +62,21 @@ const Footer = () => {
             <h4 className="text-white font-medium mb-6">Contatti</h4>
             <ul className="space-y-4">
               <li>
-                <a href="tel:+390000000000" className="flex items-center gap-3 text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">
+                <a href={`tel:${settings.phone}`} className="flex items-center gap-3 text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">
                   <Phone size={16} className="text-[#EAB308]" />
-                  +39 000 000 0000
+                  {settings.phone_display}
                 </a>
               </li>
               <li>
-                <a href="mailto:info@solarisfilms.it" className="flex items-center gap-3 text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">
+                <a href={`mailto:${settings.email}`} className="flex items-center gap-3 text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">
                   <EnvelopeSimple size={16} className="text-[#EAB308]" />
-                  info@solarisfilms.it
+                  {settings.email}
                 </a>
               </li>
               <li>
                 <div className="flex items-start gap-3 text-[#94A3B8] text-sm">
                   <MapPin size={16} className="text-[#EAB308] mt-0.5" />
-                  <span>Toscana, Italia</span>
+                  <span>{settings.address}</span>
                 </div>
               </li>
             </ul>
@@ -84,7 +86,7 @@ const Footer = () => {
 
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-[#94A3B8]/50">© {currentYear} Solaris Films. Tutti i diritti riservati.</p>
+          <p className="text-xs text-[#94A3B8]/50">© {currentYear} {settings.company_name}. P.IVA {settings.piva}. Tutti i diritti riservati.</p>
           <div className="flex items-center gap-4 text-xs text-[#94A3B8]/50">
             <Link to="/privacy-policy" className="hover:text-[#EAB308] transition-colors">Privacy Policy</Link>
             <span className="w-px h-3 bg-white/10" />

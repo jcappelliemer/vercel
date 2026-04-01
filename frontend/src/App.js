@@ -1,5 +1,6 @@
 import "@/App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { SettingsProvider } from "./hooks/useSettings";
 import HomePage from "./pages/HomePage";
 import PreventivoPagina from "./pages/PreventivoPagina";
 import ServiziPagina from "./pages/ServiziPagina";
@@ -17,8 +18,9 @@ import ProdottoPagina, { ProdottiIndexPagina } from "./pages/ProdottoPagina";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Routes>
+      <SettingsProvider>
+        <BrowserRouter>
+          <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/preventivo" element={<PreventivoPagina />} />
           <Route path="/servizi" element={<ServiziPagina />} />
@@ -38,7 +40,8 @@ function App() {
           <Route path="/prodotti" element={<ProdottiIndexPagina />} />
           <Route path="/prodotti/:slug" element={<ProdottoPagina />} />
         </Routes>
-      </BrowserRouter>
+        </BrowserRouter>
+      </SettingsProvider>
     </div>
   );
 }

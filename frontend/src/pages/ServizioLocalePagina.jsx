@@ -6,10 +6,12 @@ import SEO, { buildLocalBusinessSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, MapPin, CheckCircle, Phone, WhatsappLogo } from '@phosphor-icons/react';
 import { cittaData } from '../data/siteContent';
+import { useWPData } from '../hooks/useWPData';
 
 const ServizioLocalePagina = () => {
   const { city } = useParams();
-  const citta = cittaData.find(c => c.slug === city);
+  const { data: allCitta } = useWPData('citta');
+  const citta = allCitta.find(c => c.slug === city);
 
   if (!citta) {
     return (
@@ -184,6 +186,7 @@ const ServizioLocalePagina = () => {
 
 // Index page listing all cities
 export const ServizioLocaleIndexPagina = () => {
+  const { data: allCitta } = useWPData('citta');
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="servizio-locale-index">
       <SEO title="Pellicole per Vetri in Tutta Italia" description="Solaris Films opera in tutta Italia con installatori certificati MADICO. Roma, Milano, Firenze, Napoli, Torino e oltre 20 sedi. Sopralluogo gratuito." path="/servizio-locale" />
@@ -205,7 +208,7 @@ export const ServizioLocaleIndexPagina = () => {
         <section className="py-20 section-light">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-              {cittaData.map((citta, i) => (
+              {allCitta.map((citta, i) => (
                 <motion.div key={citta.slug} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.03 }}>
                   <Link to={`/servizio-locale/${citta.slug}`} className="card-light rounded-xl p-5 flex items-center gap-3 group" data-testid={`city-link-${citta.slug}`}>
                     <MapPin size={18} weight="fill" className="text-[#EAB308] flex-shrink-0" />

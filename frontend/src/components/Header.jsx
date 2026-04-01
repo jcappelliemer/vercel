@@ -2,11 +2,13 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { List, X, Phone, WhatsappLogo } from '@phosphor-icons/react';
 import { motion, AnimatePresence } from 'framer-motion';
+import { useSettings } from '../hooks/useSettings';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const location = useLocation();
+  const settings = useSettings();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -74,7 +76,7 @@ const Header = () => {
           {/* CTA buttons: Phone, WhatsApp, Preventivo */}
           <div className="hidden lg:flex items-center gap-3">
             <a
-              href="tel:+390000000000"
+              href={`tel:${settings.phone}`}
               className="w-11 h-11 rounded-xl border border-cyan-400/30 bg-cyan-400/10 flex items-center justify-center text-cyan-400 hover:bg-cyan-400/20 hover:border-cyan-400/50 transition-all"
               data-testid="header-cta-phone"
               title="Chiamaci"
@@ -82,7 +84,7 @@ const Header = () => {
               <Phone size={20} weight="fill" />
             </a>
             <a
-              href="https://wa.me/390000000000"
+              href={`https://wa.me/${settings.whatsapp}`}
               target="_blank"
               rel="noopener noreferrer"
               className="w-11 h-11 rounded-xl border border-[#25D366]/30 bg-[#25D366]/10 flex items-center justify-center text-[#25D366] hover:bg-[#25D366]/20 hover:border-[#25D366]/50 transition-all"

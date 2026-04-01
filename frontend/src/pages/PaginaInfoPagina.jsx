@@ -6,10 +6,12 @@ import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CheckCircle, ShieldCheck } from '@phosphor-icons/react';
 import { pagineInfoData } from '../data/siteContent';
+import { useWPData } from '../hooks/useWPData';
 
 const PaginaInfoPagina = () => {
   const { slug } = useParams();
-  const pagina = pagineInfoData.find(p => p.slug === slug);
+  const { data: allInfo } = useWPData('info');
+  const pagina = allInfo.find(p => p.slug === slug);
 
   if (!pagina) {
     return (
@@ -158,6 +160,7 @@ const PaginaInfoPagina = () => {
 
 // Index page listing all info pages
 export const PaginaInfoIndexPagina = () => {
+  const { data: allInfo } = useWPData('info');
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="info-index">
       <SEO title="Informazioni e Normative" description="Norme, garanzie, certificazioni e informazioni utili sulle pellicole per vetri. UNI EN 12600, D.Lgs. 81/2008, DPR 59/09, BRC e molto altro." path="/info" />
@@ -176,7 +179,7 @@ export const PaginaInfoIndexPagina = () => {
         <section className="py-20 section-light">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-              {pagineInfoData.map((pagina, i) => (
+              {allInfo.map((pagina, i) => (
                 <motion.div key={pagina.slug} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}>
                   <Link to={`/info/${pagina.slug}`} className="card-light rounded-xl p-6 group block h-full" data-testid={`info-link-${pagina.slug}`}>
                     <h3 className="font-medium text-[#0A0F1C] group-hover:text-[#2563EB] transition-colors mb-2">{pagina.titolo}</h3>

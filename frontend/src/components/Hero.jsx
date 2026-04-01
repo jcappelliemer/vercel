@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from '@phosphor-icons/react';
+import { useSettings } from '../hooks/useSettings';
 
 const Hero = () => {
+  const settings = useSettings();
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" data-testid="hero-section">
       {/* Animated background */}
@@ -40,14 +42,23 @@ const Hero = () => {
               </motion.div>
 
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-white leading-[1.05] mb-8">
-                Il futuro del
-                <br />
-                <span className="text-gradient">vetro è qui</span>
+                {settings.hero_title ? (
+                  <>
+                    {settings.hero_title.split(' ').slice(0, 3).join(' ')}
+                    <br />
+                    <span className="text-gradient">{settings.hero_title.split(' ').slice(3).join(' ')}</span>
+                  </>
+                ) : (
+                  <>
+                    Il futuro del
+                    <br />
+                    <span className="text-gradient">vetro è qui</span>
+                  </>
+                )}
               </h1>
 
               <p className="text-xl text-[#94A3B8] leading-relaxed mb-10 max-w-xl">
-                Smart glass, pellicole di nuova generazione. 
-                <span className="text-white"> 40 anni</span> di innovazione al tuo servizio.
+                {settings.hero_subtitle}
               </p>
 
               <div className="flex flex-wrap gap-4">

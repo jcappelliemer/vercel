@@ -60,7 +60,7 @@ const QuoteForm = () => {
           Ti risponderemo entro 24 ore con un preventivo personalizzato.
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <a href="https://wa.me/390000000000" className="btn-secondary" data-testid="quote-success-whatsapp">
+          <a href="https://wa.me/393925466518" className="btn-secondary" data-testid="quote-success-whatsapp">
             <WhatsappLogo size={18} weight="fill" />
             WhatsApp
           </a>
@@ -129,7 +129,7 @@ const QuoteForm = () => {
           {isSubmitting ? 'Invio in corso...' : 'Richiedi Preventivo'}
           <ArrowRight size={18} weight="bold" />
         </button>
-        <a href="tel:+390000000000" className="btn-secondary" data-testid="quote-call">
+        <a href="tel:+390559107621" className="btn-secondary" data-testid="quote-call">
           <Phone size={18} weight="light" />
           Chiama
         </a>

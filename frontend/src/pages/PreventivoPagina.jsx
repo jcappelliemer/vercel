@@ -74,11 +74,11 @@ const PreventivoPagina = () => {
                 >
                   <h3 className="font-medium text-white mb-4">Preferisci parlare?</h3>
                   <div className="space-y-4">
-                    <a href="tel:+390000000000" className="flex items-center gap-3 text-[#94A3B8] hover:text-[#EAB308] transition-colors" data-testid="preventivo-phone">
+                    <a href="tel:+390559107621" className="flex items-center gap-3 text-[#94A3B8] hover:text-[#EAB308] transition-colors" data-testid="preventivo-phone">
                       <Phone size={18} weight="light" className="text-[#EAB308]" />
-                      <span className="text-sm">+39 000 000 0000</span>
+                      <span className="text-sm">+39 055 910 7621</span>
                     </a>
-                    <a href="https://wa.me/390000000000" className="flex items-center gap-3 text-[#94A3B8] hover:text-[#25D366] transition-colors" data-testid="preventivo-whatsapp">
+                    <a href="https://wa.me/393925466518" className="flex items-center gap-3 text-[#94A3B8] hover:text-[#25D366] transition-colors" data-testid="preventivo-whatsapp">
                       <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
                       <span className="text-sm">WhatsApp</span>
                     </a>

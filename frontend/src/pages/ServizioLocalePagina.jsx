@@ -109,13 +109,13 @@ const ServizioLocalePagina = () => {
                     il risparmio energetico ottenibile.
                   </p>
                   <div className="space-y-3 mb-6">
-                    <a href="tel:+390000000000" className="flex items-center gap-3 text-[#0A0F1C] hover:text-[#2563EB] transition-colors">
+                    <a href="tel:+390559107621" className="flex items-center gap-3 text-[#0A0F1C] hover:text-[#2563EB] transition-colors">
                       <div className="w-10 h-10 rounded-lg bg-cyan-50 flex items-center justify-center">
                         <Phone size={18} weight="fill" className="text-cyan-500" />
                       </div>
-                      <span className="font-medium">+39 000 000 0000</span>
+                      <span className="font-medium">+39 055 910 7621</span>
                     </a>
-                    <a href="https://wa.me/390000000000" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#0A0F1C] hover:text-[#25D366] transition-colors">
+                    <a href="https://wa.me/393925466518" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#0A0F1C] hover:text-[#25D366] transition-colors">
                       <div className="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center">
                         <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
                       </div>

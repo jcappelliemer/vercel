@@ -14,6 +14,7 @@ import ServizioLocalePagina, { ServizioLocaleIndexPagina } from "./pages/Servizi
 import PaginaInfoPagina, { PaginaInfoIndexPagina } from "./pages/PaginaInfoPagina";
 import FocusTecnicoPagina, { FocusTecnicoIndexPagina } from "./pages/FocusTecnicoPagina";
 import ProdottoPagina, { ProdottiIndexPagina } from "./pages/ProdottoPagina";
+import WhatsAppButton from "./components/WhatsAppButton";
 
 function App() {
   return (
@@ -40,6 +41,7 @@ function App() {
           <Route path="/prodotti" element={<ProdottiIndexPagina />} />
           <Route path="/prodotti/:slug" element={<ProdottoPagina />} />
         </Routes>
+        <WhatsAppButton />
         </BrowserRouter>
       </SettingsProvider>
     </div>

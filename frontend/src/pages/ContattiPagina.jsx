@@ -63,7 +63,7 @@ const ContattiPagina = () => {
             <div className="grid lg:grid-cols-3 gap-12">
               {/* Contact Info */}
               <div className="space-y-4">
-                <motion.a href="tel:+390000000000" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}
+                <motion.a href="tel:+390559107621" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }}
                   className="flex items-start gap-4 card-glass rounded-xl p-5 hover:border-[#EAB308]/30 transition-all" data-testid="contact-phone"
                 >
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#2563EB]/20">
@@ -71,12 +71,12 @@ const ContattiPagina = () => {
                   </div>
                   <div>
                     <h3 className="font-medium text-white mb-1">Telefono</h3>
-                    <p className="text-[#EAB308] font-medium text-sm">+39 000 000 0000</p>
+                    <p className="text-[#EAB308] font-medium text-sm">+39 055 910 7621</p>
                     <p className="text-xs text-[#94A3B8] mt-1">Lun-Ven 9:00-18:00</p>
                   </div>
                 </motion.a>
 
-                <motion.a href="https://wa.me/390000000000" target="_blank" rel="noopener noreferrer" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}
+                <motion.a href="https://wa.me/393925466518" target="_blank" rel="noopener noreferrer" initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: 0.1 }}
                   className="flex items-start gap-4 rounded-xl p-5 bg-[#25D366]/10 border border-[#25D366]/20 hover:border-[#25D366]/40 transition-all" data-testid="contact-whatsapp"
                 >
                   <div className="w-12 h-12 rounded-xl flex items-center justify-center bg-[#25D366]/20">

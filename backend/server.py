@@ -1,4 +1,5 @@
 from fastapi import FastAPI, APIRouter, HTTPException
+from seo_agents import analyze_content, generate_meta, generate_content, generate_local_seo, orchestrate
 from fastapi.responses import Response
 from dotenv import load_dotenv
 from starlette.middleware.cors import CORSMiddleware
@@ -11,7 +12,7 @@ from typing import List, Optional
 import uuid
 from datetime import datetime, timezone
 from emergentintegrations.llm.chat import LlmChat, UserMessage
-from seo_agents import analyze_content, generate_meta, generate_content, generate_local_seo, orchestrate
+from email_service import send_email, build_quote_email, build_contact_email
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -169,6 +170,12 @@ async def create_quote(input: QuoteRequestCreate):
     doc = quote_obj.model_dump()
     doc['created_at'] = doc['created_at'].isoformat()
     await db.quotes.insert_one(doc)
+    # Send email notification
+    try:
+        subject, html = build_quote_email(doc)
+        send_email(subject, html, reply_to=doc.get('email'))
+    except Exception as e:
+        logger.error(f"Quote email failed: {e}")
     return quote_obj
 
 @api_router.get("/quotes", response_model=List[QuoteRequest])
@@ -186,6 +193,12 @@ async def create_contact(input: ContactRequestCreate):
     doc = contact_obj.model_dump()
     doc['created_at'] = doc['created_at'].isoformat()
     await db.contacts.insert_one(doc)
+    # Send email notification
+    try:
+        subject, html = build_contact_email(doc)
+        send_email(subject, html, reply_to=doc.get('email'))
+    except Exception as e:
+        logger.error(f"Contact email failed: {e}")
     return contact_obj
 
 # Chatbot endpoint

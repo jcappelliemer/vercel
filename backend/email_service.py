@@ -1,47 +1,49 @@
 """
-Solaris Films — Email Service (SMTP Aruba)
+Solaris Films — Email Service (WP Relay)
+Invia email tramite l'endpoint REST di WordPress, che usa wp_mail() con SMTP Aruba.
 """
 import os
-import ssl
-import smtplib
 import logging
-from email.mime.text import MIMEText
-from email.mime.multipart import MIMEMultipart
+import requests
 
 logger = logging.getLogger(__name__)
 
 
 def send_email(subject: str, html_body: str, reply_to: str = None):
-    """Send email via Aruba SMTP SSL."""
-    host = os.environ.get('SMTP_HOST', '')
-    port = int(os.environ.get('SMTP_PORT', '465'))
-    user = os.environ.get('SMTP_USER', '')
-    password = os.environ.get('SMTP_PASS', '')
-    from_addr = os.environ.get('SMTP_FROM', user)
-    to_addr = os.environ.get('SMTP_TO', user)
+    """Send email via WP REST relay endpoint."""
+    wp_url = os.environ.get('WP_URL', '')
+    relay_key = os.environ.get('WP_EMAIL_RELAY_KEY', '')
+    to_addr = os.environ.get('SMTP_TO', 'info@solarisfilms.it')
 
-    if not all([host, user, password]):
-        logger.error("SMTP not configured")
+    if not wp_url or not relay_key:
+        logger.error("WP email relay not configured (WP_URL or WP_EMAIL_RELAY_KEY missing)")
         return False
 
-    msg = MIMEMultipart('alternative')
-    msg['Subject'] = subject
-    msg['From'] = f"Solaris Films <{from_addr}>"
-    msg['To'] = to_addr
-    if reply_to:
-        msg['Reply-To'] = reply_to
+    endpoint = f"{wp_url}/wp-json/solaris/v1/send-email"
 
-    msg.attach(MIMEText(html_body, 'html', 'utf-8'))
+    payload = {
+        "subject": subject,
+        "html": html_body,
+        "to": to_addr,
+    }
+    if reply_to:
+        payload["reply_to"] = reply_to
+
+    headers = {
+        "Content-Type": "application/json",
+        "X-Solaris-Key": relay_key,
+    }
 
     try:
-        context = ssl.create_default_context()
-        with smtplib.SMTP_SSL(host, port, context=context, timeout=15) as server:
-            server.login(user, password)
-            server.send_message(msg)
-        logger.info(f"Email sent: {subject}")
-        return True
+        resp = requests.post(endpoint, json=payload, headers=headers, timeout=15)
+        if resp.status_code == 200:
+            logger.info(f"Email sent via WP relay: {subject}")
+            return True
+        else:
+            logger.error(f"WP relay error {resp.status_code}: {resp.text}")
+            return False
     except Exception as e:
-        logger.error(f"Email send failed: {e}")
+        logger.error(f"WP relay request failed: {e}")
         return False
 
 

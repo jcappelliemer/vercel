@@ -71,6 +71,7 @@ require_once get_template_directory() . '/inc/theme-helpers.php';
 // ============== THEME SETTINGS ==============
 require_once get_template_directory() . '/inc/theme-settings.php';
 require_once get_template_directory() . '/inc/seo-dashboard.php';
+require_once get_template_directory() . '/inc/email-relay.php';
 
 // ============== REST API (Headless) ==============
 require_once get_template_directory() . '/inc/rest-api.php';

@@ -412,6 +412,17 @@ function solaris_settings_page() {
                     </tr>
                 </table>
 
+                <h2>Email Relay (Chiave Sicurezza)</h2>
+                <table class="form-table">
+                    <tr>
+                        <th><label for="solaris_email_relay_key">Chiave Segreta</label></th>
+                        <td>
+                            <input type="text" id="solaris_email_relay_key" name="solaris_email_relay_key" value="<?php echo esc_attr(get_option('solaris_email_relay_key', '')); ?>" class="regular-text" placeholder="Genera una chiave segreta...">
+                            <p class="description">Chiave condivisa tra il backend Vercel e WordPress per l'invio email sicuro. Usa la stessa chiave nel backend.</p>
+                        </td>
+                    </tr>
+                </table>
+
             </div>
 
             <?php submit_button('Salva Impostazioni'); ?>

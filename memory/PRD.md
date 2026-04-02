@@ -1,40 +1,37 @@
 # Solaris Films - PRD
 
-## Architettura
+## Architettura: WordPress Headless + React + Vercel
 ```
-Utente compila form → React Frontend → FastAPI Backend → MongoDB (salvataggio)
-                                                        → WP REST Endpoint (email relay)
-                                                        → wp_mail() → Aruba SMTP → info@solarisfilms.it
+VPS (utente)        →  WordPress (backoffice contenuti + SEO Dashboard + Email Relay)
+                         ↓ REST API
+Vercel (staging)    →  Sito React (frontend pubblico)
+                         ↓ 
+                    →  FastAPI Backend (SEO Agents + Chatbot + Form)
 ```
 
-## Form Contatti & Preventivo (02/04/2026)
-- [x] Form Contatti (`/contatti`) — nome, cognome, email, telefono, messaggio
-- [x] Form Preventivo (`/preventivo`) — + ragione sociale, città, tipo pellicola
-- [x] Salvataggio MongoDB (collections: `contacts`, `quotes`)
-- [x] Invio email via WP Relay (aggira blacklist IP cloud)
-- [x] Email HTML formattate con tutti i dati del form
-- [x] Reply-To impostato sull'email del mittente
+## Completato
+- [x] Architettura Headless WP + React + Vercel con deploy automatico (webhook)
+- [x] Build-time data fetching (fetch-wp-data.js) per aggirare mixed content HTTP/HTTPS
+- [x] Tutti i CPT collegati: Prodotti, Focus Tecnici, Pagine Info, Servizi Locali
+- [x] WP Settings: Hero, Stats, Footer, Header, Case Studies (6), Gallery (12), Referenze (20 con logo)
+- [x] Media Picker integrato per tutti i campi immagine
+- [x] Logo personalizzabile da WP (sostituisce SF + SOLARISFILMS)
+- [x] Referenze con Nome + Logo + marquee scorrevole
+- [x] SEO Agent Orchestra (5 agenti AI, dashboard in WP admin, Gemini 2.5 Flash)
+- [x] AI Chatbot (Claude Sonnet 4.5, sessioni multi-turno, MongoDB)
+- [x] Form Contatti + Preventivo con email relay via WP REST → Aruba SMTP
+- [x] Numeri reali: Tel +39 055 910 7621, WhatsApp +39 392 546 6518
+- [x] Pulsante WhatsApp fisso (basso sinistra)
+- [x] Badge "Made with Emergent" eliminato
+- [x] Testi homepage aggiornati (LoSapeviChe, CaseStudy, FocusTecnici, Process, Services)
+- [x] Fix leggibilità "Soluzioni Premium" (overlay scuro + text-shadow)
 
-## Numeri Reali Configurati
-- [x] Telefono: +39 055 910 7621 (tutti i componenti aggiornati)
-- [x] WhatsApp: +39 392 546 6518 (tutti i link wa.me aggiornati)
-- [x] Pulsante WhatsApp fisso in basso a destra su tutte le pagine
+## Setup Richiesto dall'Utente
+1. Caricare tema ZIP su WP
+2. WP Mail SMTP configurato con Aruba (FATTO)
+3. Chiave Email Relay: `sf-relay-2026-x7k9m` in Impostazioni Solaris
+4. SEO Orchestra: configurare API URL Backend in WP admin
 
-## Email Relay WP — Setup Richiesto
-Per attivare l'invio email, l'utente deve:
-1. Caricare il tema ZIP su WP
-2. In Impostazioni Solaris → campo "Chiave Segreta Email Relay" → inserire: `sf-relay-2026-x7k9m`
-3. Il backend FastAPI (su Vercel) ha la stessa chiave in .env (`WP_EMAIL_RELAY_KEY`)
-4. WP_URL nel backend .env deve puntare al sito WP (http://solarisfilms.it)
-
-## SEO Agent Orchestra
-- Dashboard integrata in WP Admin (non pubblica)
-- 5 agenti AI: Orchestratore, Analisi, Generatore Meta, Contenuto, Local SEO
-- LLM: Gemini 2.5 Flash via Emergent Universal Key
-
-## Collegamento WP ↔ React
-- [x] Tutti i CPT + Settings + Case Studies + Gallery + Referenze + Media Picker
-
-## Task Prossimi
-- P2: Collegare dominio solarisfilms.it
-- P2: AI Chatbot con chiave OpenAI utente
+## Task Futuri
+- P2: Collegamento dominio solarisfilms.it
+- P3: Prodotto SaaS vendibile (plugin SEO Orchestra + pacchetto agenzia)

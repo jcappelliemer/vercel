@@ -3,8 +3,12 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Play } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
+const defaultHeroImage = 'https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg';
+
 const Hero = () => {
-  const settings = useSettings();
+  const s = useSettings();
+  const heroImage = s.hero_image || defaultHeroImage;
+
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" data-testid="hero-section">
       {/* Animated background */}
@@ -37,16 +41,16 @@ const Hero = () => {
               >
                 <span className="w-2 h-2 rounded-full bg-[#EAB308] animate-pulse" />
                 <span className="text-xs font-medium uppercase tracking-widest text-[#EAB308]">
-                  Distributore Esclusivo MADICO USA
+                  {s.hero_badge}
                 </span>
               </motion.div>
 
               <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-white leading-[1.05] mb-8">
-                {settings.hero_title ? (
+                {s.hero_title ? (
                   <>
-                    {settings.hero_title.split(' ').slice(0, 3).join(' ')}
+                    {s.hero_title.split(' ').slice(0, 3).join(' ')}
                     <br />
-                    <span className="text-gradient">{settings.hero_title.split(' ').slice(3).join(' ')}</span>
+                    <span className="text-gradient">{s.hero_title.split(' ').slice(3).join(' ')}</span>
                   </>
                 ) : (
                   <>
@@ -58,18 +62,20 @@ const Hero = () => {
               </h1>
 
               <p className="text-xl text-[#94A3B8] leading-relaxed mb-10 max-w-xl">
-                {settings.hero_subtitle}
+                {s.hero_subtitle}
               </p>
 
               <div className="flex flex-wrap gap-4">
                 <Link to="/preventivo" className="btn-yellow group" data-testid="cta-preventivo-hero">
-                  <span>Richiedi Preventivo</span>
+                  <span>{s.hero_cta_text}</span>
                   <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
                 </Link>
-                <button className="btn-secondary group">
-                  <Play size={18} weight="fill" />
-                  <span>Guarda Video</span>
-                </button>
+                {s.hero_video_url && (
+                  <a href={s.hero_video_url} target="_blank" rel="noopener noreferrer" className="btn-secondary group">
+                    <Play size={18} weight="fill" />
+                    <span>Guarda Video</span>
+                  </a>
+                )}
               </div>
             </motion.div>
           </div>
@@ -83,8 +89,8 @@ const Hero = () => {
             >
               <div className="relative rounded-2xl overflow-hidden border border-white/10">
                 <img 
-                  src="https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg"
-                  alt="Smart glass technology"
+                  src={heroImage}
+                  alt={s.company_name}
                   className="w-full h-[450px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] via-transparent to-transparent" />
@@ -97,8 +103,8 @@ const Hero = () => {
                 whileHover={{ scale: 1.05, y: -5 }}
                 className="absolute -left-8 top-1/4 card-glass rounded-xl p-5 animate-float"
               >
-                <div className="text-4xl font-bold text-gradient">40+</div>
-                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">Anni Esperienza</div>
+                <div className="text-4xl font-bold text-gradient">{s.stat1_value}</div>
+                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">{s.stat1_label}</div>
               </motion.div>
 
               <motion.div 
@@ -109,8 +115,8 @@ const Hero = () => {
                 className="absolute -right-4 top-1/2 card-glass rounded-xl p-5 animate-float"
                 style={{ animationDelay: '1s' }}
               >
-                <div className="text-4xl font-bold text-gradient">45k+</div>
-                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">Edifici Trattati</div>
+                <div className="text-4xl font-bold text-gradient">{s.stat2_value}</div>
+                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">{s.stat2_label}</div>
               </motion.div>
 
               <motion.div 
@@ -121,8 +127,8 @@ const Hero = () => {
                 className="absolute left-1/4 -bottom-6 card-glass rounded-xl p-5 glow-yellow animate-float"
                 style={{ animationDelay: '2s' }}
               >
-                <div className="text-4xl font-bold text-[#EAB308]">-40%</div>
-                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">Bolletta Energia</div>
+                <div className="text-4xl font-bold text-[#EAB308]">{s.stat3_value}</div>
+                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">{s.stat3_label}</div>
               </motion.div>
             </motion.div>
           </div>

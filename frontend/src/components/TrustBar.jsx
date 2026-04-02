@@ -1,14 +1,19 @@
 import { motion } from 'framer-motion';
 import { ShieldCheck, Medal, Certificate, Leaf } from '@phosphor-icons/react';
+import { useSettings } from '../hooks/useSettings';
 
-const trustItems = [
-  { icon: Certificate, label: 'ISO 9001', value: 'Certificato' },
-  { icon: Medal, label: 'MADICO', value: 'Esclusivista' },
-  { icon: ShieldCheck, label: 'UNI EN 12600', value: 'Sicurezza' },
-  { icon: Leaf, label: 'Green', value: 'Eco-friendly' },
-];
+const icons = [Certificate, Medal, ShieldCheck, Leaf];
 
 const TrustBar = () => {
+  const s = useSettings();
+
+  const trustItems = [
+    { icon: icons[0], label: s.trust1_label, value: s.trust1_value },
+    { icon: icons[1], label: s.trust2_label, value: s.trust2_value },
+    { icon: icons[2], label: s.trust3_label, value: s.trust3_value },
+    { icon: icons[3], label: s.trust4_label, value: s.trust4_value },
+  ];
+
   return (
     <section className="py-12 border-y border-white/5 bg-[#111827]/50" data-testid="trust-bar">
       <div className="max-w-7xl mx-auto px-6 md:px-12">

@@ -16,8 +16,15 @@ import SEO, { buildOrganizationSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from '@phosphor-icons/react';
+import { useSettings } from '../hooks/useSettings';
 
-const CTASection = () => (
+const CTASection = () => {
+  const s = useSettings();
+  const titleParts = (s.cta_title || 'Il futuro del tuo spazio inizia qui').split(' ');
+  const firstHalf = titleParts.slice(0, Math.ceil(titleParts.length / 2)).join(' ');
+  const secondHalf = titleParts.slice(Math.ceil(titleParts.length / 2)).join(' ');
+
+  return (
   <section className="py-32 relative overflow-hidden" data-testid="cta-section">
     <div className="absolute inset-0">
       <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/10 via-transparent to-[#EAB308]/10" />
@@ -32,16 +39,16 @@ const CTASection = () => (
       >
         <div className="accent-bar w-16 mx-auto mb-8" />
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white mb-6">
-          Il futuro del tuo
+          {firstHalf}
           <br />
-          <span className="text-gradient">spazio inizia qui</span>
+          <span className="text-gradient">{secondHalf}</span>
         </h2>
         <p className="text-[#94A3B8] text-xl mb-10 max-w-xl mx-auto">
-          Preventivo gratuito. Risposta in 24 ore.
+          {s.cta_subtitle}
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/preventivo" className="btn-yellow group" data-testid="cta-preventivo-bottom">
-            <span>Richiedi Preventivo</span>
+            <span>{s.hero_cta_text}</span>
             <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
           </Link>
           <Link to="/contatti" className="btn-secondary" data-testid="cta-contatti-bottom">
@@ -51,7 +58,8 @@ const CTASection = () => (
       </motion.div>
     </div>
   </section>
-);
+  );
+};
 
 const HomePage = () => {
   return (

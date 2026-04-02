@@ -17,6 +17,7 @@ add_action('admin_menu', 'solaris_settings_menu');
 
 function solaris_register_settings() {
     register_setting('solaris_settings_group', 'solaris_options', 'solaris_sanitize_options');
+    register_setting('solaris_settings_group', 'solaris_vercel_webhook', 'sanitize_url');
 }
 add_action('admin_init', 'solaris_register_settings');
 
@@ -173,6 +174,17 @@ function solaris_settings_page() {
                     <tr>
                         <th><label for="youtube">YouTube URL</label></th>
                         <td><input type="url" id="youtube" name="solaris_options[youtube]" value="<?php echo esc_attr(solaris_option('youtube')); ?>" class="regular-text" placeholder="https://youtube.com/@solarisfilms"></td>
+                    </tr>
+                </table>
+
+                <h2>Vercel (Deploy Automatico)</h2>
+                <table class="form-table">
+                    <tr>
+                        <th><label for="vercel_webhook">Deploy Hook URL</label></th>
+                        <td>
+                            <input type="url" id="vercel_webhook" name="solaris_vercel_webhook" value="<?php echo esc_attr(get_option('solaris_vercel_webhook', '')); ?>" class="regular-text" placeholder="https://api.vercel.com/v1/integrations/deploy/...">
+                            <p class="description">Quando salvi un contenuto, il sito Vercel si ricostruisce automaticamente.</p>
+                        </td>
                     </tr>
                 </table>
 

@@ -74,6 +74,9 @@ require_once get_template_directory() . '/inc/theme-settings.php';
 // ============== REST API (Headless) ==============
 require_once get_template_directory() . '/inc/rest-api.php';
 
+// ============== VERCEL WEBHOOK ==============
+require_once get_template_directory() . '/inc/vercel-webhook.php';
+
 // ============== DATA IMPORT ==============
 require_once get_template_directory() . '/inc/import-data.php';
 

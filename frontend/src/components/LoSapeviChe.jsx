@@ -8,7 +8,7 @@ const facts = [
   },
   {
     question: 'Le pellicole riducono la luminosità interna?',
-    answer: 'Le pellicole eliminano la sensazione di irraggiamento e il riflesso solare, ma mantengono la luminosità naturale. Puoi scegliere tra pellicole chiare, riflettenti e semi-riflettenti in diversi colori.',
+    answer: 'Le pellicole eliminano la sensazione di irraggiamento, riflesso solare e abbagliamento, ma mantengono la luminosità naturale. Puoi scegliere tra diverse tipologie di pellicole.',
   },
   {
     question: 'Quanto si risparmia davvero?',

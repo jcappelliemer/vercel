@@ -97,7 +97,50 @@ function solaris_register_settings_route() {
         'callback' => function() {
             $defaults = function_exists('solaris_defaults') ? solaris_defaults() : array();
             $options = get_option('solaris_options', array());
-            return array_merge($defaults, $options);
+            $merged = array_merge($defaults, $options);
+
+            // Build structured case_studies array
+            $case_studies = array();
+            for ($i = 1; $i <= 6; $i++) {
+                $titolo = !empty($merged["cs{$i}_titolo"]) ? $merged["cs{$i}_titolo"] : '';
+                if (empty($titolo)) continue;
+                $risultati_raw = !empty($merged["cs{$i}_risultati"]) ? $merged["cs{$i}_risultati"] : '';
+                $risultati = array_map('trim', explode(',', $risultati_raw));
+                $risultati = array_filter($risultati);
+                $case_studies[] = array(
+                    'titolo'    => $titolo,
+                    'categoria' => !empty($merged["cs{$i}_categoria"]) ? $merged["cs{$i}_categoria"] : '',
+                    'image'     => !empty($merged["cs{$i}_image"]) ? $merged["cs{$i}_image"] : '',
+                    'problema'  => !empty($merged["cs{$i}_problema"]) ? $merged["cs{$i}_problema"] : '',
+                    'soluzione' => !empty($merged["cs{$i}_soluzione"]) ? $merged["cs{$i}_soluzione"] : '',
+                    'risultati' => array_values($risultati),
+                );
+            }
+            $merged['case_studies'] = $case_studies;
+
+            // Build structured gallery array
+            $gallery = array();
+            for ($i = 1; $i <= 12; $i++) {
+                $titolo = !empty($merged["gal{$i}_titolo"]) ? $merged["gal{$i}_titolo"] : '';
+                if (empty($titolo)) continue;
+                $gallery[] = array(
+                    'titolo'      => $titolo,
+                    'categoria'   => !empty($merged["gal{$i}_categoria"]) ? $merged["gal{$i}_categoria"] : '',
+                    'location'    => !empty($merged["gal{$i}_location"]) ? $merged["gal{$i}_location"] : '',
+                    'image'       => !empty($merged["gal{$i}_image"]) ? $merged["gal{$i}_image"] : '',
+                    'descrizione' => !empty($merged["gal{$i}_descrizione"]) ? $merged["gal{$i}_descrizione"] : '',
+                    'risultato'   => !empty($merged["gal{$i}_risultato"]) ? $merged["gal{$i}_risultato"] : '',
+                );
+            }
+            $merged['gallery_items'] = $gallery;
+
+            // Build references array (one per line)
+            $refs_raw = !empty($merged['references_list']) ? $merged['references_list'] : '';
+            $refs = array_map('trim', explode("\n", $refs_raw));
+            $refs = array_filter($refs);
+            $merged['references'] = array_values($refs);
+
+            return $merged;
         },
         'permission_callback' => '__return_true',
     ));

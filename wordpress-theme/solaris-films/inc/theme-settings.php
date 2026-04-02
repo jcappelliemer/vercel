@@ -37,6 +37,30 @@ function solaris_sanitize_options($input) {
         $sanitized[$key] = sanitize_text_field($input[$key] ?? '');
     }
     $sanitized['footer_text'] = sanitize_textarea_field($input['footer_text'] ?? '');
+
+    // Case Studies (up to 6)
+    for ($i = 1; $i <= 6; $i++) {
+        $sanitized["cs{$i}_titolo"]    = sanitize_text_field($input["cs{$i}_titolo"] ?? '');
+        $sanitized["cs{$i}_categoria"] = sanitize_text_field($input["cs{$i}_categoria"] ?? '');
+        $sanitized["cs{$i}_image"]     = esc_url_raw($input["cs{$i}_image"] ?? '');
+        $sanitized["cs{$i}_problema"]  = sanitize_textarea_field($input["cs{$i}_problema"] ?? '');
+        $sanitized["cs{$i}_soluzione"] = sanitize_textarea_field($input["cs{$i}_soluzione"] ?? '');
+        $sanitized["cs{$i}_risultati"] = sanitize_textarea_field($input["cs{$i}_risultati"] ?? '');
+    }
+
+    // Gallery (up to 12)
+    for ($i = 1; $i <= 12; $i++) {
+        $sanitized["gal{$i}_titolo"]      = sanitize_text_field($input["gal{$i}_titolo"] ?? '');
+        $sanitized["gal{$i}_categoria"]   = sanitize_text_field($input["gal{$i}_categoria"] ?? '');
+        $sanitized["gal{$i}_location"]    = sanitize_text_field($input["gal{$i}_location"] ?? '');
+        $sanitized["gal{$i}_image"]       = esc_url_raw($input["gal{$i}_image"] ?? '');
+        $sanitized["gal{$i}_descrizione"] = sanitize_textarea_field($input["gal{$i}_descrizione"] ?? '');
+        $sanitized["gal{$i}_risultato"]   = sanitize_text_field($input["gal{$i}_risultato"] ?? '');
+    }
+
+    // References (comma-separated list)
+    $sanitized['references_list'] = sanitize_textarea_field($input['references_list'] ?? '');
+
     return $sanitized;
 }
 
@@ -287,6 +311,81 @@ function solaris_settings_page() {
                     <tr>
                         <th><label for="youtube">YouTube URL</label></th>
                         <td><input type="url" id="youtube" name="solaris_options[youtube]" value="<?php echo esc_attr(solaris_option('youtube')); ?>" class="regular-text" placeholder="https://youtube.com/@solarisfilms"></td>
+                    </tr>
+                </table>
+
+                <h2>Case Studies (fino a 6)</h2>
+                <p style="color:#666;">Per ogni case study compila titolo, categoria, URL immagine, problema, soluzione e risultati (separati da virgola).</p>
+                <?php for ($i = 1; $i <= 6; $i++) : ?>
+                <table class="form-table" style="border-left: 3px solid #D4A017; padding-left: 10px; margin-bottom: 20px;">
+                    <tr><th colspan="2"><strong>Case Study <?php echo $i; ?></strong></th></tr>
+                    <tr>
+                        <th><label>Titolo</label></th>
+                        <td><input type="text" name="solaris_options[cs<?php echo $i; ?>_titolo]" value="<?php echo esc_attr(solaris_option("cs{$i}_titolo")); ?>" class="regular-text"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Categoria</label></th>
+                        <td><input type="text" name="solaris_options[cs<?php echo $i; ?>_categoria]" value="<?php echo esc_attr(solaris_option("cs{$i}_categoria")); ?>" class="regular-text" placeholder="Es: Istituzionale, Commerciale, Educazione"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Immagine URL</label></th>
+                        <td><input type="url" name="solaris_options[cs<?php echo $i; ?>_image]" value="<?php echo esc_attr(solaris_option("cs{$i}_image")); ?>" class="regular-text" placeholder="https://..."></td>
+                    </tr>
+                    <tr>
+                        <th><label>Problema</label></th>
+                        <td><textarea name="solaris_options[cs<?php echo $i; ?>_problema]" rows="2"><?php echo esc_textarea(solaris_option("cs{$i}_problema")); ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><label>Soluzione</label></th>
+                        <td><textarea name="solaris_options[cs<?php echo $i; ?>_soluzione]" rows="2"><?php echo esc_textarea(solaris_option("cs{$i}_soluzione")); ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><label>Risultati (separati da virgola)</label></th>
+                        <td><input type="text" name="solaris_options[cs<?php echo $i; ?>_risultati]" value="<?php echo esc_attr(solaris_option("cs{$i}_risultati")); ?>" class="regular-text" placeholder="Risultato 1, Risultato 2, Risultato 3"></td>
+                    </tr>
+                </table>
+                <?php endfor; ?>
+
+                <h2>Gallery (fino a 12 lavori)</h2>
+                <p style="color:#666;">Per ogni lavoro compila titolo, categoria, città, URL immagine, descrizione e risultato.</p>
+                <?php for ($i = 1; $i <= 12; $i++) : ?>
+                <table class="form-table" style="border-left: 3px solid #2563EB; padding-left: 10px; margin-bottom: 20px;">
+                    <tr><th colspan="2"><strong>Lavoro <?php echo $i; ?></strong></th></tr>
+                    <tr>
+                        <th><label>Titolo</label></th>
+                        <td><input type="text" name="solaris_options[gal<?php echo $i; ?>_titolo]" value="<?php echo esc_attr(solaris_option("gal{$i}_titolo")); ?>" class="regular-text"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Categoria</label></th>
+                        <td><input type="text" name="solaris_options[gal<?php echo $i; ?>_categoria]" value="<?php echo esc_attr(solaris_option("gal{$i}_categoria")); ?>" class="regular-text" placeholder="Es: Antisolari, Sicurezza, Safety Shield, Privacy"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Città</label></th>
+                        <td><input type="text" name="solaris_options[gal<?php echo $i; ?>_location]" value="<?php echo esc_attr(solaris_option("gal{$i}_location")); ?>" class="regular-text" placeholder="Es: Roma, Milano, Firenze"></td>
+                    </tr>
+                    <tr>
+                        <th><label>Immagine URL</label></th>
+                        <td><input type="url" name="solaris_options[gal<?php echo $i; ?>_image]" value="<?php echo esc_attr(solaris_option("gal{$i}_image")); ?>" class="regular-text" placeholder="https://..."></td>
+                    </tr>
+                    <tr>
+                        <th><label>Descrizione</label></th>
+                        <td><textarea name="solaris_options[gal<?php echo $i; ?>_descrizione]" rows="2"><?php echo esc_textarea(solaris_option("gal{$i}_descrizione")); ?></textarea></td>
+                    </tr>
+                    <tr>
+                        <th><label>Risultato</label></th>
+                        <td><input type="text" name="solaris_options[gal<?php echo $i; ?>_risultato]" value="<?php echo esc_attr(solaris_option("gal{$i}_risultato")); ?>" class="regular-text" placeholder="Es: -7°C temperatura interna"></td>
+                    </tr>
+                </table>
+                <?php endfor; ?>
+
+                <h2>Referenze</h2>
+                <table class="form-table">
+                    <tr>
+                        <th><label for="references_list">Lista Referenze</label></th>
+                        <td>
+                            <textarea id="references_list" name="solaris_options[references_list]" rows="6" style="width:100%;max-width:500px;"><?php echo esc_textarea(solaris_option('references_list')); ?></textarea>
+                            <p class="description">Una referenza per riga. Es:<br>Banca d'Italia<br>EUR Spa - Nuvola Roma<br>Università di Bologna</p>
+                        </td>
                     </tr>
                 </table>
 

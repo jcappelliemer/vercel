@@ -32,7 +32,7 @@ const Process = () => {
             <p className="text-lg mb-10 max-w-md" style={{ color: '#64748B' }}>
               Dalla consulenza all'installazione, ti accompagniamo con trasparenza in ogni fase.
             </p>
-            <Link to="/preventivo" className="inline-flex items-center gap-2 px-6 py-3 bg-[#0A0F1C] text-white font-medium rounded-xl hover:bg-[#1a2035] transition-all group" data-testid="process-cta">
+            <Link to="/preventivo" className="inline-flex items-center gap-2 px-8 py-4 bg-[#EAB308] text-[#0A0F1C] font-bold rounded-xl hover:bg-[#D4A017] transition-all shadow-lg shadow-[#EAB308]/20 group" data-testid="process-cta">
               <span>Inizia Ora</span>
               <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
             </Link>

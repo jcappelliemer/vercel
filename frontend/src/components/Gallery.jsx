@@ -1,23 +1,22 @@
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ArrowLeft, ArrowRight, MapPin, Tag } from '@phosphor-icons/react';
+import { useSettings } from '../hooks/useSettings';
 
-const galleryItems = [
+const defaultGalleryItems = [
   {
     id: 1,
     titolo: 'Palazzo Uffici — Roma',
     categoria: 'Antisolari',
-    tipo: 'antisolari',
     location: 'Roma',
     descrizione: 'Pellicole antisolari MADICO su facciata in vetro continuo. Riduzione temperatura interna di 7°C.',
-    image: 'https://images.unsplash.com/photo-1774099690798-c4fe300374b2?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=800',
+    image: 'https://images.pexels.com/photos/2073623/pexels-photo-2073623.jpeg?auto=compress&cs=tinysrgb&w=800',
     risultato: '-7°C temperatura interna',
   },
   {
     id: 2,
     titolo: 'Centro Congressi — Bologna',
     categoria: 'Antisolari',
-    tipo: 'antisolari',
     location: 'Bologna',
     descrizione: 'Installazione pellicole a riflessione solare su 2.500 mq di vetrate esposizione sud.',
     image: 'https://images.pexels.com/photos/2073623/pexels-photo-2073623.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -27,37 +26,33 @@ const galleryItems = [
     id: 3,
     titolo: 'Sede Bancaria — Firenze',
     categoria: 'Sicurezza',
-    tipo: 'sicurezza',
     location: 'Firenze',
     descrizione: 'Messa in sicurezza vetrate con pellicole anti-sfondamento UNI EN 12600 classe 1B1.',
-    image: 'https://images.unsplash.com/photo-1763813581032-f8adf709070f?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=800',
+    image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
     risultato: 'Conformità D.Lgs. 81/2008',
   },
   {
     id: 4,
     titolo: 'Ambasciata — Roma',
     categoria: 'Safety Shield',
-    tipo: 'safety-shield',
     location: 'Roma',
     descrizione: 'Protezione anti-esplosione SafetyShield G2 con sistema FrameGard su tutte le vetrate perimetrali.',
-    image: 'https://images.unsplash.com/photo-1763121379548-2fae8be2ab7b?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=800',
+    image: 'https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg?auto=compress&cs=tinysrgb&w=800',
     risultato: 'Certificazione GSA 3A',
   },
   {
     id: 5,
     titolo: 'Hotel 5 Stelle — Milano',
     categoria: 'Privacy',
-    tipo: 'privacy',
     location: 'Milano',
     descrizione: 'Pellicole satinate decorative per suite e sale meeting. Design personalizzato su misura.',
-    image: 'https://images.unsplash.com/photo-1769146109206-e87b458649a7?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=800',
+    image: 'https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?auto=compress&cs=tinysrgb&w=800',
     risultato: 'Privacy + design esclusivo',
   },
   {
     id: 6,
     titolo: 'Laboratorio Universitario — Pisa',
     categoria: 'Antisolari',
-    tipo: 'antisolari',
     location: 'Pisa',
     descrizione: 'Protezione UV 99% per laboratorio con strumentazione sensibile. Riduzione abbagliamento.',
     image: 'https://images.pexels.com/photos/358530/pexels-photo-358530.jpeg?auto=compress&cs=tinysrgb&w=800',
@@ -67,35 +62,59 @@ const galleryItems = [
     id: 7,
     titolo: 'Edificio Governativo — Napoli',
     categoria: 'Safety Shield',
-    tipo: 'safety-shield',
     location: 'Napoli',
     descrizione: 'SafetyShield anti-intrusione e anti-esplosione su edificio ad alto rischio. ASTM F3561.',
-    image: 'https://images.unsplash.com/photo-1698591395699-f24b1e07073a?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=800',
+    image: 'https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg?auto=compress&cs=tinysrgb&w=800',
     risultato: 'Anti-intrusione certificata',
   },
   {
     id: 8,
     titolo: 'Showroom Auto — Torino',
     categoria: 'Antisolari',
-    tipo: 'antisolari',
     location: 'Torino',
     descrizione: 'Pellicole antisolari con finitura neutra per protezione auto esposte e comfort clienti.',
-    image: 'https://images.unsplash.com/photo-1709562880479-7eac2f158fd2?crop=entropy&cs=srgb&fm=jpg&ixlib=rb-4.1.0&q=85&w=800',
+    image: 'https://images.pexels.com/photos/2073623/pexels-photo-2073623.jpeg?auto=compress&cs=tinysrgb&w=800',
     risultato: '-50% irraggiamento solare',
   },
 ];
 
-const filters = [
-  { label: 'Tutti', value: 'tutti' },
-  { label: 'Antisolari', value: 'antisolari' },
-  { label: 'Safety Shield', value: 'safety-shield' },
-  { label: 'Sicurezza', value: 'sicurezza' },
-  { label: 'Privacy', value: 'privacy' },
-];
+function slugify(str) {
+  return str.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '');
+}
 
 const Gallery = () => {
+  const s = useSettings();
   const [activeFilter, setActiveFilter] = useState('tutti');
   const [selectedItem, setSelectedItem] = useState(null);
+
+  // Use WP gallery_items if available, fallback to defaults
+  const galleryItems = useMemo(() => {
+    if (s.gallery_items && s.gallery_items.length > 0) {
+      return s.gallery_items.map((item, i) => ({
+        id: i + 1,
+        titolo: item.titolo,
+        categoria: item.categoria,
+        tipo: slugify(item.categoria),
+        location: item.location,
+        descrizione: item.descrizione,
+        image: item.image,
+        risultato: item.risultato,
+      }));
+    }
+    return defaultGalleryItems.map(item => ({
+      ...item,
+      tipo: slugify(item.categoria),
+    }));
+  }, [s.gallery_items]);
+
+  // Build dynamic filters from data
+  const filters = useMemo(() => {
+    const cats = [...new Set(galleryItems.map(i => i.categoria))];
+    return [
+      { label: 'Tutti', value: 'tutti' },
+      ...cats.map(c => ({ label: c, value: slugify(c) })),
+    ];
+  }, [galleryItems]);
 
   const filtered = activeFilter === 'tutti'
     ? galleryItems

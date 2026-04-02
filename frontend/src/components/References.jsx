@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
+import { useSettings } from '../hooks/useSettings';
 
-const references = [
+const defaultReferences = [
   'Banca d\'Italia',
   'EUR Spa - Nuvola Roma',
   'Università di Bologna',
@@ -17,6 +18,11 @@ const references = [
 ];
 
 const References = () => {
+  const s = useSettings();
+
+  // Use WP references if available (array from settings), otherwise fallback
+  const references = (s.references && s.references.length > 0) ? s.references : defaultReferences;
+
   return (
     <section className="py-24 relative overflow-hidden" data-testid="references-section">
       <div className="max-w-7xl mx-auto px-6 md:px-12 mb-12">

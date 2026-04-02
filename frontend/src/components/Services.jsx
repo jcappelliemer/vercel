@@ -85,7 +85,7 @@ const Services = () => {
                     whileHover={{ scale: 1.05 }}
                     transition={{ duration: 0.6 }}
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] via-[#0A0F1C]/50 to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] via-[#0A0F1C]/70 to-[#0A0F1C]/30" />
 
                   <div className="absolute inset-0 p-6 flex flex-col justify-end">
                     <motion.div
@@ -96,10 +96,10 @@ const Services = () => {
                     </motion.div>
 
                     <div className="flex items-end justify-between">
-                      <div>
-                        <span className="text-[#EAB308] text-sm font-medium uppercase tracking-wider">{service.subtitle}</span>
-                        <h3 className="text-2xl lg:text-3xl font-medium text-white mt-1">{service.name}</h3>
-                        <p className="text-white/70 mt-2 text-sm">{service.description}</p>
+                      <div style={{ textShadow: '0 2px 8px rgba(0,0,0,0.7)' }}>
+                        <span className="text-[#EAB308] text-sm font-semibold uppercase tracking-wider">{service.subtitle}</span>
+                        <h3 className="text-2xl lg:text-3xl font-semibold text-white mt-1">{service.name}</h3>
+                        <p className="text-white/80 mt-2 text-sm font-medium">{service.description}</p>
                       </div>
                       <motion.div
                         whileHover={{ x: 5, y: -5 }}

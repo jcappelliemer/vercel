@@ -1,0 +1,169 @@
+/* Solaris SEO Dashboard - WP Admin */
+.solaris-seo-wrap { max-width: 1400px; }
+
+.seo-header { 
+    background: linear-gradient(135deg, #0A0F1C 0%, #1a2035 100%); 
+    margin: -10px -20px 20px; 
+    padding: 30px 30px 25px; 
+    border-radius: 0 0 12px 12px; 
+}
+.seo-header h1 { 
+    color: #fff; font-size: 28px; margin: 0 0 5px; 
+    display: flex; align-items: center; gap: 10px; 
+}
+.seo-header h1 .dashicons { color: #EAB308; font-size: 28px; width: 28px; height: 28px; }
+.seo-subtitle { color: #94A3B8; margin: 0; font-size: 14px; }
+
+.seo-config-bar { 
+    background: #fff; border: 1px solid #ddd; border-radius: 8px; 
+    padding: 15px 20px; margin-bottom: 20px; 
+}
+.seo-config-form { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.seo-config-form label { white-space: nowrap; }
+.seo-config-hint { color: #666; font-size: 12px; }
+
+/* Tabs */
+.seo-tabs { 
+    display: flex; gap: 4px; margin-bottom: 20px; 
+    background: #f0f0f1; padding: 4px; border-radius: 8px; 
+    flex-wrap: wrap;
+}
+.seo-tab { 
+    display: flex; align-items: center; gap: 6px; 
+    padding: 10px 16px; border: none; border-radius: 6px; 
+    background: transparent; cursor: pointer; font-size: 13px; 
+    color: #50575e; transition: all 0.2s; font-weight: 500; 
+}
+.seo-tab:hover { background: #e0e0e0; color: #1d2327; }
+.seo-tab.active { background: #0A0F1C; color: #EAB308; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+.seo-tab .dashicons { font-size: 16px; width: 16px; height: 16px; line-height: 16px; }
+
+/* Layout */
+.seo-main { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+@media (max-width: 1200px) { .seo-main { grid-template-columns: 1fr; } }
+
+.seo-form-panel { 
+    background: #fff; border: 1px solid #ddd; border-radius: 10px; padding: 24px; 
+}
+.seo-form-panel h2 { font-size: 20px; margin: 0 0 5px; color: #1d2327; }
+.seo-form-panel .description { color: #666; margin-bottom: 15px; }
+.seo-form-panel textarea, .seo-form-panel input[type="text"], .seo-form-panel select { width: 100%; max-width: 100%; }
+
+.seo-panel { display: none; }
+.seo-panel.active { display: block; }
+
+.seo-submit { 
+    margin-top: 15px !important; display: flex !important; align-items: center; gap: 8px; 
+}
+.seo-submit .dashicons { font-size: 18px; width: 18px; height: 18px; }
+
+/* Results */
+.seo-results-panel { 
+    background: #0A0F1C; border-radius: 10px; padding: 24px; 
+    min-height: 400px; color: #fff; 
+}
+
+.seo-empty { 
+    display: flex; flex-direction: column; align-items: center; 
+    justify-content: center; height: 350px; opacity: 0.3; 
+}
+.seo-empty .dashicons { font-size: 48px; width: 48px; height: 48px; margin-bottom: 15px; }
+.seo-empty p { font-size: 14px; }
+
+#seo-loading { text-align: center; padding: 80px 20px; }
+.seo-spinner { 
+    width: 50px; height: 50px; margin: 0 auto 15px; 
+    border: 3px solid rgba(234,179,8,0.2); border-top-color: #EAB308; 
+    border-radius: 50%; animation: seo-spin 0.8s linear infinite; 
+}
+@keyframes seo-spin { to { transform: rotate(360deg); } }
+#seo-loading p { color: #94A3B8; font-size: 14px; }
+
+#seo-error { 
+    background: rgba(239,68,68,0.1); border: 1px solid rgba(239,68,68,0.3); 
+    border-radius: 8px; padding: 15px; color: #ef4444; margin-bottom: 15px; 
+}
+
+/* Result Cards */
+.seo-result-card { 
+    background: #111827; border: 1px solid rgba(255,255,255,0.08); 
+    border-radius: 10px; padding: 18px; margin-bottom: 12px; 
+}
+.seo-result-card h4 { 
+    color: #EAB308; font-size: 11px; text-transform: uppercase; 
+    letter-spacing: 1px; margin: 0 0 10px; font-weight: 600; 
+}
+.seo-result-card p { color: rgba(255,255,255,0.8); font-size: 14px; margin: 0; line-height: 1.6; }
+.seo-result-card .char-count { color: rgba(255,255,255,0.3); font-size: 11px; margin-top: 4px; }
+
+.seo-copy-btn { 
+    background: none; border: 1px solid rgba(255,255,255,0.15); 
+    color: rgba(255,255,255,0.4); cursor: pointer; padding: 3px 8px; 
+    border-radius: 4px; font-size: 11px; margin-left: 8px; transition: all 0.2s; 
+}
+.seo-copy-btn:hover { color: #EAB308; border-color: #EAB308; }
+
+/* Score */
+.seo-score { 
+    display: inline-flex; align-items: center; gap: 6px; 
+    padding: 5px 14px; border-radius: 20px; font-weight: 700; font-size: 15px; 
+}
+.seo-score.high { background: rgba(34,197,94,0.1); color: #22c55e; }
+.seo-score.mid { background: rgba(234,179,8,0.1); color: #EAB308; }
+.seo-score.low { background: rgba(239,68,68,0.1); color: #ef4444; }
+
+/* Tags */
+.seo-tags { display: flex; flex-wrap: wrap; gap: 6px; }
+.seo-tag { 
+    padding: 4px 10px; border-radius: 5px; font-size: 12px; font-weight: 500; 
+}
+.seo-tag.gold { background: rgba(234,179,8,0.1); color: #EAB308; }
+.seo-tag.red { background: rgba(239,68,68,0.1); color: #ef4444; }
+.seo-tag.blue { background: rgba(59,130,246,0.1); color: #3b82f6; }
+
+/* Issues */
+.seo-issue { 
+    background: #0A0F1C; border-radius: 8px; padding: 12px; 
+    margin-bottom: 8px; border-left: 3px solid; 
+}
+.seo-issue.alta { border-color: #ef4444; }
+.seo-issue.media { border-color: #EAB308; }
+.seo-issue.bassa { border-color: #3b82f6; }
+.seo-issue .issue-text { color: rgba(255,255,255,0.8); font-size: 13px; }
+.seo-issue .issue-fix { color: #EAB308; font-size: 12px; margin-top: 4px; }
+
+/* Agent result */
+.seo-agent-block { 
+    border: 1px solid rgba(255,255,255,0.05); border-radius: 8px; 
+    margin-bottom: 12px; overflow: hidden; 
+}
+.seo-agent-header { 
+    background: rgba(234,179,8,0.08); padding: 10px 15px; 
+    display: flex; justify-content: space-between; align-items: center; 
+}
+.seo-agent-header strong { color: #EAB308; font-size: 13px; text-transform: uppercase; }
+.seo-agent-header span { color: rgba(255,255,255,0.4); font-size: 11px; }
+.seo-agent-body { padding: 15px; }
+.seo-agent-body pre { 
+    color: rgba(255,255,255,0.7); font-size: 12px; 
+    white-space: pre-wrap; word-break: break-word; margin: 0; 
+    font-family: 'Courier New', monospace; line-height: 1.5; 
+}
+
+/* FAQ */
+.seo-faq { background: #0A0F1C; border-radius: 8px; padding: 12px; margin-bottom: 8px; }
+.seo-faq .faq-q { color: #fff; font-weight: 600; font-size: 13px; margin-bottom: 4px; }
+.seo-faq .faq-a { color: rgba(255,255,255,0.6); font-size: 12px; }
+
+/* Report list */
+.seo-report-item { 
+    background: #111827; border: 1px solid rgba(255,255,255,0.05); 
+    border-radius: 8px; padding: 12px 15px; margin-bottom: 8px; 
+    display: flex; justify-content: space-between; align-items: center; 
+}
+.seo-report-type { 
+    background: rgba(234,179,8,0.1); color: #EAB308; 
+    padding: 3px 8px; border-radius: 4px; font-size: 11px; 
+    text-transform: uppercase; font-weight: 600; 
+}
+.seo-report-date { color: rgba(255,255,255,0.3); font-size: 12px; }

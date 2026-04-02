@@ -134,11 +134,27 @@ function solaris_register_settings_route() {
             }
             $merged['gallery_items'] = $gallery;
 
-            // Build references array (one per line)
-            $refs_raw = !empty($merged['references_list']) ? $merged['references_list'] : '';
-            $refs = array_map('trim', explode("\n", $refs_raw));
-            $refs = array_filter($refs);
-            $merged['references'] = array_values($refs);
+            // Build references array (structured with logo)
+            $refs_structured = array();
+            for ($i = 1; $i <= 20; $i++) {
+                $nome = !empty($merged["ref{$i}_nome"]) ? $merged["ref{$i}_nome"] : '';
+                if (empty($nome)) continue;
+                $refs_structured[] = array(
+                    'nome' => $nome,
+                    'logo' => !empty($merged["ref{$i}_logo"]) ? $merged["ref{$i}_logo"] : '',
+                );
+            }
+            // Fallback to old text list if no structured refs
+            if (empty($refs_structured)) {
+                $refs_raw = !empty($merged['references_list']) ? $merged['references_list'] : '';
+                $refs = array_map('trim', explode("\n", $refs_raw));
+                $refs = array_filter($refs);
+                $merged['references'] = array_values(array_map(function($r) {
+                    return array('nome' => $r, 'logo' => '');
+                }, $refs));
+            } else {
+                $merged['references'] = $refs_structured;
+            }
 
             return $merged;
         },

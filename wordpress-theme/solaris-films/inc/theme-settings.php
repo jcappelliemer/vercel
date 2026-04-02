@@ -62,6 +62,12 @@ function solaris_sanitize_options($input) {
     // References (comma-separated list)
     $sanitized['references_list'] = sanitize_textarea_field($input['references_list'] ?? '');
 
+    // References with logos (up to 20)
+    for ($i = 1; $i <= 20; $i++) {
+        $sanitized["ref{$i}_nome"] = sanitize_text_field($input["ref{$i}_nome"] ?? '');
+        $sanitized["ref{$i}_logo"] = esc_url_raw($input["ref{$i}_logo"] ?? '');
+    }
+
     return $sanitized;
 }
 
@@ -405,16 +411,17 @@ function solaris_settings_page() {
                 </table>
                 <?php endfor; ?>
 
-                <h2>Referenze</h2>
-                <table class="form-table">
-                    <tr>
-                        <th><label for="references_list">Lista Referenze</label></th>
-                        <td>
-                            <textarea id="references_list" name="solaris_options[references_list]" rows="6" style="width:100%;max-width:500px;"><?php echo esc_textarea(solaris_option('references_list')); ?></textarea>
-                            <p class="description">Una referenza per riga. Es:<br>Banca d'Italia<br>EUR Spa - Nuvola Roma<br>Università di Bologna</p>
-                        </td>
-                    </tr>
-                </table>
+                <h2>Referenze (fino a 20)</h2>
+                <p style="color:#666;">Per ogni referenza compila il nome dell'azienda e (opzionalmente) l'URL del logo.</p>
+                <?php for ($i = 1; $i <= 20; $i++) : ?>
+                <div style="display:flex;gap:10px;align-items:center;margin-bottom:8px;padding:8px 12px;background:<?php echo $i % 2 ? '#f9f9f9' : '#fff'; ?>;border-radius:6px;">
+                    <span style="color:#999;font-size:12px;width:24px;"><?php echo $i; ?>.</span>
+                    <input type="text" name="solaris_options[ref<?php echo $i; ?>_nome]" value="<?php echo esc_attr(solaris_option("ref{$i}_nome")); ?>" style="flex:1;" placeholder="Nome azienda">
+                    <input type="url" name="solaris_options[ref<?php echo $i; ?>_logo]" value="<?php echo esc_attr(solaris_option("ref{$i}_logo")); ?>" style="flex:1;" placeholder="URL logo (opzionale)">
+                    <button type="button" class="button solaris-media-btn">Logo</button>
+                    <div class="solaris-media-preview" style="width:40px;"></div>
+                </div>
+                <?php endfor; ?>
 
                 <h2>Vercel (Deploy Automatico)</h2>
                 <table class="form-table">

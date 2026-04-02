@@ -2,26 +2,28 @@ import { motion } from 'framer-motion';
 import { useSettings } from '../hooks/useSettings';
 
 const defaultReferences = [
-  'Banca d\'Italia',
-  'EUR Spa - Nuvola Roma',
-  'Università di Bologna',
-  'Aeroporto di Bologna',
-  'Ministero dell\'Interno',
-  'CNR',
-  'Sapienza Università',
-  'Palazzo Pitti Firenze',
-  'Reggimento Corazzieri',
-  'Accademia Navale Livorno',
-  'Crédit Agricole',
-  'H-Farm',
-  'Cassa Depositi e Prestiti',
+  { nome: 'Banca d\'Italia', logo: '' },
+  { nome: 'EUR Spa - Nuvola Roma', logo: '' },
+  { nome: 'Università di Bologna', logo: '' },
+  { nome: 'Aeroporto di Bologna', logo: '' },
+  { nome: 'Ministero dell\'Interno', logo: '' },
+  { nome: 'CNR', logo: '' },
+  { nome: 'Sapienza Università', logo: '' },
+  { nome: 'Palazzo Pitti Firenze', logo: '' },
+  { nome: 'Reggimento Corazzieri', logo: '' },
+  { nome: 'Accademia Navale Livorno', logo: '' },
+  { nome: 'Crédit Agricole', logo: '' },
+  { nome: 'H-Farm', logo: '' },
+  { nome: 'Cassa Depositi e Prestiti', logo: '' },
 ];
 
 const References = () => {
   const s = useSettings();
 
-  // Use WP references if available (array from settings), otherwise fallback
-  const references = (s.references && s.references.length > 0) ? s.references : defaultReferences;
+  // WP returns array of {nome, logo} objects
+  const references = (s.references && s.references.length > 0)
+    ? s.references.map(r => typeof r === 'string' ? { nome: r, logo: '' } : r)
+    : defaultReferences;
 
   return (
     <section className="py-24 relative overflow-hidden" data-testid="references-section">
@@ -40,22 +42,30 @@ const References = () => {
         </motion.div>
       </div>
 
-      {/* Marquee row 1 */}
+      {/* Marquee */}
       <div className="relative">
         <div className="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-[#0A0F1C] to-transparent z-10" />
         <div className="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-[#0A0F1C] to-transparent z-10" />
-        <motion.div 
-          className="flex gap-4"
+        <motion.div
+          className="flex gap-5"
           animate={{ x: ['0%', '-50%'] }}
-          transition={{ duration: 30, repeat: Infinity, ease: 'linear' }}
+          transition={{ duration: 35, repeat: Infinity, ease: 'linear' }}
         >
           {[...references, ...references].map((ref, index) => (
-            <div 
+            <div
               key={index}
-              className="flex-shrink-0 py-3 px-6 rounded-lg border border-white/5 bg-[#111827]/50 hover:border-[#EAB308]/20 transition-all"
+              className="flex-shrink-0 flex items-center gap-3 py-3 px-5 rounded-xl border border-white/5 bg-[#111827]/60 hover:border-[#EAB308]/20 hover:bg-[#111827] transition-all"
+              data-testid={`reference-${index}`}
             >
+              {ref.logo ? (
+                <img
+                  src={ref.logo}
+                  alt={ref.nome}
+                  className="h-8 w-auto max-w-[80px] object-contain brightness-0 invert opacity-70"
+                />
+              ) : null}
               <span className="text-sm font-medium text-white/70 whitespace-nowrap">
-                {ref}
+                {ref.nome}
               </span>
             </div>
           ))}

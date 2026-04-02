@@ -211,6 +211,14 @@ function solaris_prodotto_column_content($column, $post_id) {
 }
 add_action('manage_prodotto_posts_custom_column', 'solaris_prodotto_column_content', 10, 2);
 
+// ============== ADMIN MEDIA PICKER ==============
+function solaris_admin_enqueue_media($hook) {
+    if ($hook !== 'appearance_page_solaris-settings') return;
+    wp_enqueue_media();
+    wp_enqueue_script('solaris-admin-media', get_template_directory_uri() . '/js/admin-media.js', array('jquery'), '1.0.0', true);
+}
+add_action('admin_enqueue_scripts', 'solaris_admin_enqueue_media');
+
 // ============== EXCERPT LENGTH ==============
 function solaris_excerpt_length($length) {
     return 30;

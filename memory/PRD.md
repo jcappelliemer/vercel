@@ -24,24 +24,19 @@ Tutte le pagine React ora leggono da WordPress con fallback statico:
 - [x] Gallery — editabile da WP Settings (fino a 12, con filtri dinamici, fallback statico)
 - [x] Referenze — editabili da WP Settings (lista testo, fallback statico)
 
-## Aggiornamenti Homepage (02/04/2026)
-- [x] LoSapeviChe Card 2: testo aggiornato con "diverse tipologie di pellicole"
+## Aggiornamenti (02/04/2026)
+- [x] LoSapeviChe Card 2: testo aggiornato
 - [x] Case Study sottotitolo: "nell'ultimo anno"
-- [x] FocusTecnici: testi Riduzione Temperatura e Riflessione IR corretti
-- [x] Process: 6 step esatti (Richiesta → Garanzia) + CTA giallo
-- [x] Services (Soluzioni Premium): overlay scuro + text-shadow per leggibilità
-- [x] Process CTA: pulsante giallo ad alta visibilità
-
-## Tema WP Aggiornato
-Il tema `solaris-films` include ora:
-- Sezione Case Studies nel pannello Impostazioni Solaris (fino a 6)
-- Sezione Gallery/Lavori nel pannello Impostazioni Solaris (fino a 12)
-- Sezione Referenze nel pannello Impostazioni Solaris (lista testo)
-- REST API espone `case_studies`, `gallery_items`, `references` come array strutturati
-- ZIP disponibile in: `/app/frontend/public/solaris-films-theme.zip`
+- [x] FocusTecnici: testi corretti
+- [x] Process: 6 step + CTA giallo
+- [x] Services: overlay scuro + text-shadow
+- [x] Badge "Made with Emergent" rimosso
+- [x] Titolo pagina e meta description aggiornati a Solaris Films
+- [x] Media Picker WP: pulsante "Seleziona Immagine" + anteprima per tutti i campi immagine
+- [x] ZIP tema aggiornato: /app/frontend/public/solaris-films-theme.zip
 
 ## Task Prossimi
-- P1: Form contatti/preventivo funzionanti su Vercel (email via WP REST o FastAPI)
-- P2: Collegare dominio solarisfilms.it quando pronto
+- P1: Form contatti/preventivo funzionanti su Vercel
+- P2: Collegare dominio solarisfilms.it
 - P2: Agente AI per SEO automatica
 - P2: Integrazioni email/WhatsApp reali

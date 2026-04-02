@@ -28,6 +28,9 @@ body {
 
 html { scroll-behavior: smooth; }
 
+/* Hide Emergent badge */
+#emergent-badge { display: none !important; visibility: hidden !important; opacity: 0 !important; pointer-events: none !important; }
+
 ::selection {
   background-color: var(--sf-yellow);
   color: var(--sf-bg-primary);

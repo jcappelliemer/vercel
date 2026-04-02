@@ -205,10 +205,12 @@ function solaris_settings_page() {
                         <td><textarea id="hero_subtitle" name="solaris_options[hero_subtitle]" rows="3"><?php echo esc_textarea(solaris_option('hero_subtitle', $defaults['hero_subtitle'])); ?></textarea></td>
                     </tr>
                     <tr>
-                        <th><label for="hero_image">Immagine Hero (URL)</label></th>
+                        <th><label for="hero_image">Immagine Hero</label></th>
                         <td>
                             <input type="url" id="hero_image" name="solaris_options[hero_image]" value="<?php echo esc_attr(solaris_option('hero_image', $defaults['hero_image'])); ?>" class="regular-text" placeholder="https://...">
-                            <p class="description">URL dell'immagine hero. Puoi caricare un'immagine nella Libreria Media e copiare il link qui.</p>
+                            <button type="button" class="button solaris-media-btn">Seleziona Immagine</button>
+                            <a href="#" class="solaris-media-remove" style="color:#a00;margin-left:8px;text-decoration:none;">Rimuovi</a>
+                            <div class="solaris-media-preview"></div>
                         </td>
                     </tr>
                     <tr>
@@ -328,8 +330,13 @@ function solaris_settings_page() {
                         <td><input type="text" name="solaris_options[cs<?php echo $i; ?>_categoria]" value="<?php echo esc_attr(solaris_option("cs{$i}_categoria")); ?>" class="regular-text" placeholder="Es: Istituzionale, Commerciale, Educazione"></td>
                     </tr>
                     <tr>
-                        <th><label>Immagine URL</label></th>
-                        <td><input type="url" name="solaris_options[cs<?php echo $i; ?>_image]" value="<?php echo esc_attr(solaris_option("cs{$i}_image")); ?>" class="regular-text" placeholder="https://..."></td>
+                        <th><label>Immagine</label></th>
+                        <td>
+                            <input type="url" name="solaris_options[cs<?php echo $i; ?>_image]" value="<?php echo esc_attr(solaris_option("cs{$i}_image")); ?>" class="regular-text" placeholder="https://...">
+                            <button type="button" class="button solaris-media-btn">Seleziona Immagine</button>
+                            <a href="#" class="solaris-media-remove" style="color:#a00;margin-left:8px;text-decoration:none;">Rimuovi</a>
+                            <div class="solaris-media-preview"></div>
+                        </td>
                     </tr>
                     <tr>
                         <th><label>Problema</label></th>
@@ -364,8 +371,13 @@ function solaris_settings_page() {
                         <td><input type="text" name="solaris_options[gal<?php echo $i; ?>_location]" value="<?php echo esc_attr(solaris_option("gal{$i}_location")); ?>" class="regular-text" placeholder="Es: Roma, Milano, Firenze"></td>
                     </tr>
                     <tr>
-                        <th><label>Immagine URL</label></th>
-                        <td><input type="url" name="solaris_options[gal<?php echo $i; ?>_image]" value="<?php echo esc_attr(solaris_option("gal{$i}_image")); ?>" class="regular-text" placeholder="https://..."></td>
+                        <th><label>Immagine</label></th>
+                        <td>
+                            <input type="url" name="solaris_options[gal<?php echo $i; ?>_image]" value="<?php echo esc_attr(solaris_option("gal{$i}_image")); ?>" class="regular-text" placeholder="https://...">
+                            <button type="button" class="button solaris-media-btn">Seleziona Immagine</button>
+                            <a href="#" class="solaris-media-remove" style="color:#a00;margin-left:8px;text-decoration:none;">Rimuovi</a>
+                            <div class="solaris-media-preview"></div>
+                        </td>
                     </tr>
                     <tr>
                         <th><label>Descrizione</label></th>

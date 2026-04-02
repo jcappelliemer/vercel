@@ -32,6 +32,7 @@ function solaris_sanitize_options($input) {
         'trust3_label', 'trust3_value', 'trust4_label', 'trust4_value',
         'cta_title', 'cta_subtitle',
         'facebook', 'instagram', 'linkedin', 'youtube',
+        'logo_url',
     );
     foreach ($text_fields as $key) {
         $sanitized[$key] = sanitize_text_field($input[$key] ?? '');
@@ -140,6 +141,20 @@ function solaris_settings_page() {
             </style>
 
             <div class="solaris-settings">
+
+                <h2>Logo</h2>
+                <table class="form-table">
+                    <tr>
+                        <th><label>Logo (sostituisce icona SF + testo)</label></th>
+                        <td>
+                            <input type="url" name="solaris_options[logo_url]" value="<?php echo esc_attr(solaris_option('logo_url')); ?>" class="regular-text" placeholder="https://...">
+                            <button type="button" class="button solaris-media-btn">Seleziona Immagine</button>
+                            <a href="#" class="solaris-media-remove" style="color:#a00;margin-left:8px;text-decoration:none;">Rimuovi</a>
+                            <div class="solaris-media-preview"></div>
+                            <p class="description">Carica il tuo logo. Consigliato: PNG trasparente, altezza 40-50px. L'immagine sostituirà il logo SF e la scritta SOLARISFILMS nel menu.</p>
+                        </td>
+                    </tr>
+                </table>
 
                 <h2>Dati Aziendali</h2>
                 <table class="form-table">

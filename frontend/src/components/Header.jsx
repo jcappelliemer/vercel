@@ -36,17 +36,29 @@ const Header = () => {
         <div className="flex items-center justify-between h-20 lg:h-24">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="w-12 h-12 rounded-xl flex items-center justify-center relative overflow-hidden"
-              style={{ background: 'linear-gradient(135deg, #2563EB 0%, #EAB308 100%)' }}
-            >
-              <span className="text-white font-bold text-lg relative z-10">SF</span>
-            </motion.div>
-            <div className="hidden sm:flex items-baseline">
-              <span className="font-semibold text-xl text-white">SOLARIS</span>
-              <span className="font-semibold text-xl text-gradient-gold">FILMS</span>
-            </div>
+            {settings.logo_url ? (
+              <motion.img
+                whileHover={{ scale: 1.03 }}
+                src={settings.logo_url}
+                alt={settings.company_name || 'Solaris Films'}
+                className="h-10 sm:h-12 w-auto object-contain"
+                data-testid="logo-image"
+              />
+            ) : (
+              <>
+                <motion.div
+                  whileHover={{ scale: 1.05 }}
+                  className="w-12 h-12 rounded-xl flex items-center justify-center relative overflow-hidden"
+                  style={{ background: 'linear-gradient(135deg, #2563EB 0%, #EAB308 100%)' }}
+                >
+                  <span className="text-white font-bold text-lg relative z-10">SF</span>
+                </motion.div>
+                <div className="hidden sm:flex items-baseline">
+                  <span className="font-semibold text-xl text-white">SOLARIS</span>
+                  <span className="font-semibold text-xl text-gradient-gold">FILMS</span>
+                </div>
+              </>
+            )}
           </Link>
 
           {/* Desktop Navigation */}

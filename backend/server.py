@@ -11,6 +11,7 @@ from typing import List, Optional
 import uuid
 from datetime import datetime, timezone
 from emergentintegrations.llm.chat import LlmChat, UserMessage
+from seo_agents import analyze_content, generate_meta, generate_content, generate_local_seo, orchestrate
 
 ROOT_DIR = Path(__file__).parent
 load_dotenv(ROOT_DIR / '.env')
@@ -76,6 +77,33 @@ class ChatMessage(BaseModel):
 class ChatResponse(BaseModel):
     response: str
     session_id: str
+
+# SEO Agent Models
+class SEOAnalyzeRequest(BaseModel):
+    content: str
+    url: Optional[str] = ""
+    page_type: Optional[str] = "generic"
+
+class SEOMetaRequest(BaseModel):
+    page_type: str
+    page_title: str
+    content: Optional[str] = ""
+    keywords: Optional[List[str]] = None
+
+class SEOContentRequest(BaseModel):
+    topic: str
+    page_type: Optional[str] = "articolo"
+    target_keywords: Optional[List[str]] = None
+
+class SEOLocalRequest(BaseModel):
+    city: str
+
+class SEOOrchestrateRequest(BaseModel):
+    request_type: str
+    details: str
+
+class SEOBulkRequest(BaseModel):
+    pages: List[dict]
 
 class BlogPost(BaseModel):
     model_config = ConfigDict(extra="ignore")
@@ -255,6 +283,107 @@ async def get_stats():
             {"label": "Anni di Garanzia", "value": "10"}
         ]
     }
+
+# ============== SEO AGENT ROUTES ==============
+
+@api_router.post("/seo/analyze")
+async def seo_analyze(req: SEOAnalyzeRequest):
+    """Analyzer Agent: analizza contenuto per problemi SEO."""
+    result = await analyze_content(req.content, req.url, req.page_type)
+    # Save to DB
+    doc = {
+        "id": str(uuid.uuid4()),
+        "type": "analyze",
+        "input": req.model_dump(),
+        "result": result,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    await db.seo_reports.insert_one(doc)
+    return {"status": "ok", "result": result}
+
+@api_router.post("/seo/generate-meta")
+async def seo_generate_meta(req: SEOMetaRequest):
+    """Generator Agent: genera meta tags SEO."""
+    result = await generate_meta(req.page_type, req.page_title, req.content, req.keywords)
+    doc = {
+        "id": str(uuid.uuid4()),
+        "type": "meta",
+        "input": req.model_dump(),
+        "result": result,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    await db.seo_reports.insert_one(doc)
+    return {"status": "ok", "result": result}
+
+@api_router.post("/seo/generate-content")
+async def seo_generate_content(req: SEOContentRequest):
+    """Generator Agent: genera contenuto SEO completo."""
+    result = await generate_content(req.topic, req.page_type, req.target_keywords)
+    doc = {
+        "id": str(uuid.uuid4()),
+        "type": "content",
+        "input": req.model_dump(),
+        "result": result,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    await db.seo_reports.insert_one(doc)
+    return {"status": "ok", "result": result}
+
+@api_router.post("/seo/local")
+async def seo_local(req: SEOLocalRequest):
+    """Local SEO Agent: genera contenuto per posizionamento locale."""
+    result = await generate_local_seo(req.city)
+    doc = {
+        "id": str(uuid.uuid4()),
+        "type": "local",
+        "input": req.model_dump(),
+        "result": result,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    await db.seo_reports.insert_one(doc)
+    return {"status": "ok", "result": result}
+
+@api_router.post("/seo/orchestrate")
+async def seo_orchestrate(req: SEOOrchestrateRequest):
+    """Orchestrator: pianifica ed esegue workflow SEO multi-agente."""
+    result = await orchestrate(req.request_type, req.details)
+    doc = {
+        "id": str(uuid.uuid4()),
+        "type": "orchestrate",
+        "input": req.model_dump(),
+        "result": result,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    await db.seo_reports.insert_one(doc)
+    return {"status": "ok", "result": result}
+
+@api_router.post("/seo/bulk-meta")
+async def seo_bulk_meta(req: SEOBulkRequest):
+    """Genera meta tags per più pagine in batch."""
+    results = []
+    for page in req.pages:
+        result = await generate_meta(
+            page.get("page_type", "generic"),
+            page.get("page_title", ""),
+            page.get("content", ""),
+            page.get("keywords")
+        )
+        results.append({"page": page.get("page_title", ""), "result": result})
+    doc = {
+        "id": str(uuid.uuid4()),
+        "type": "bulk_meta",
+        "count": len(req.pages),
+        "results": results,
+        "created_at": datetime.now(timezone.utc).isoformat()
+    }
+    await db.seo_reports.insert_one(doc)
+    return {"status": "ok", "results": results}
+
+@api_router.get("/seo/reports")
+async def seo_get_reports(limit: int = 20):
+    """Recupera gli ultimi report SEO generati."""
+    reports = await db.seo_reports.find({}, {"_id": 0}).sort("created_at", -1).to_list(limit)
+    return {"reports": reports}
 
 # ============== ROBOTS.TXT ==============
 @api_router.get("/robots.txt")

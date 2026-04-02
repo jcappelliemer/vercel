@@ -5,38 +5,46 @@
 VPS (utente)        →  WordPress (backoffice contenuti)
                          ↓ REST API
 Vercel (staging)    →  Sito React (frontend pubblico)
+                         ↓ FastAPI Backend
+                    →  SEO Agent Orchestra (AI multi-agente)
 ```
 
 ## Collegamento WP ↔ React Completato
-Tutte le pagine React ora leggono da WordPress con fallback statico:
-- [x] Prodotti (21) — ProdottoPagina + ProdottiIndexPagina
-- [x] Focus Tecnici (15) — FocusTecnicoPagina + FocusTecnicoIndexPagina
-- [x] Pagine Info (10) — PaginaInfoPagina + PaginaInfoIndexPagina
-- [x] Servizi Locali (22) — ServizioLocalePagina + ServizioLocaleIndexPagina
-- [x] Header — telefono, WhatsApp dinamici da WP Settings
-- [x] Footer — email, indirizzo, P.IVA, testo dinamici da WP Settings
-- [x] Hero — titolo, sottotitolo e immagine dinamici da WP Settings
-- [x] SettingsProvider (React Context) per dati condivisi
-- [x] wpApi.js — fetch con cache 5min + fallback statico
-- [x] useWPData hook — per tutti i CPT
-- [x] REST API WP — solaris_meta, CORS, /solaris/v1/settings
-- [x] Case Studies — editabili da WP Settings (fino a 6, con fallback statico)
-- [x] Gallery — editabile da WP Settings (fino a 12, con filtri dinamici, fallback statico)
-- [x] Referenze — editabili da WP Settings (lista testo, fallback statico)
+- [x] Prodotti, Focus Tecnici, Pagine Info, Servizi Locali (CPTs)
+- [x] Header, Footer, Hero, Stats (WP Settings)
+- [x] Case Studies (6), Gallery (12), Referenze (WP Settings, con fallback statico)
+- [x] Media Picker integrato nel pannello WP
+- [x] SettingsProvider, wpApi.js, useWPData hook
 
-## Aggiornamenti (02/04/2026)
-- [x] LoSapeviChe Card 2: testo aggiornato
-- [x] Case Study sottotitolo: "nell'ultimo anno"
-- [x] FocusTecnici: testi corretti
-- [x] Process: 6 step + CTA giallo
-- [x] Services: overlay scuro + text-shadow
-- [x] Badge "Made with Emergent" rimosso
-- [x] Titolo pagina e meta description aggiornati a Solaris Films
-- [x] Media Picker WP: pulsante "Seleziona Immagine" + anteprima per tutti i campi immagine
-- [x] ZIP tema aggiornato: /app/frontend/public/solaris-films-theme.zip
+## SEO Agent Orchestra (02/04/2026)
+Sistema multi-agente AI per SEO automatica:
+- [x] **Agente Analisi**: Analizza contenuti e identifica gap SEO (score, issues, keywords mancanti)
+- [x] **Agente Generatore Meta**: Genera meta title, description, h1, keywords, og tags
+- [x] **Agente Generatore Contenuto**: Crea contenuti SEO completi (sezioni, FAQ, meta)
+- [x] **Agente Local SEO**: Ottimizza per città (meta, intro, servizi locali, FAQ, schema)
+- [x] **Orchestratore**: Coordina agenti in workflow automatico
+- [x] **Bulk Meta**: Genera meta tags per più pagine in batch
+- [x] **Dashboard Frontend**: `/seo` con tabs, form, risultati formattati, copia
+- [x] **Persistenza**: Tutti i report salvati in MongoDB `seo_reports`
+- LLM: Gemini 2.5 Flash via Emergent Universal Key
+
+## Altre Modifiche (02/04/2026)
+- [x] Badge "Made with Emergent" ELIMINATO (non nascosto)
+- [x] Titolo/meta description aggiornati a Solaris Films
+- [x] Testi homepage corretti (LoSapeviChe, CaseStudy, FocusTecnici, Process)
+- [x] Leggibilità "Soluzioni Premium" migliorata (overlay + text-shadow)
+- [x] CTA "Inizia Ora" giallo ad alta visibilità
+
+## API Endpoints SEO
+- POST `/api/seo/analyze` — Analisi SEO contenuti
+- POST `/api/seo/generate-meta` — Genera meta tags
+- POST `/api/seo/generate-content` — Genera contenuto completo
+- POST `/api/seo/local` — Local SEO per città
+- POST `/api/seo/orchestrate` — Workflow multi-agente
+- POST `/api/seo/bulk-meta` — Meta tags in batch
+- GET `/api/seo/reports` — Storico report
 
 ## Task Prossimi
 - P1: Form contatti/preventivo funzionanti su Vercel
 - P2: Collegare dominio solarisfilms.it
-- P2: Agente AI per SEO automatica
 - P2: Integrazioni email/WhatsApp reali

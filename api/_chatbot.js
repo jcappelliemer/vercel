@@ -281,7 +281,7 @@ async function fetchKnowledgeContext({ message, pagePath }) {
 }
 
 function relevantHighlight(source, tokens) {
-  const snippet = normalizeText(source?.snippet);
+  const snippet = normalizeText(source?.snippet).replace(/\bD\.Lgs\./gi, 'D Lgs');
   if (!snippet) return '';
   const sentences = snippet
     .split(/(?<=[.!?])\s+/)

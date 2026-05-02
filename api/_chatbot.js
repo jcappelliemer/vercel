@@ -121,6 +121,22 @@ function formatTranscript(transcript) {
   }).filter(Boolean).join('\n');
 }
 
+function resolveSourceSite(data) {
+  const explicit = normalizeText(data.source_site);
+  if (explicit) return explicit;
+
+  const sourceUrl = normalizeText(data.source_url || data.source_page);
+  if (sourceUrl) {
+    try {
+      return new URL(sourceUrl).hostname || 'solarisfilms.it';
+    } catch {
+      return sourceUrl.replace(/^https?:\/\//, '').split('/')[0] || 'solarisfilms.it';
+    }
+  }
+
+  return 'solarisfilms.it';
+}
+
 function buildCrmPayload(data, leadId) {
   const name = [data.nome, data.cognome].map(normalizeText).filter(Boolean).join(' ')
     || normalizeText(data.email)
@@ -155,7 +171,7 @@ function buildCrmPayload(data, leadId) {
     source: 'chatbot',
     product_interest: normalizeText(data.interesse),
     source_page: normalizeText(data.source_url) || normalizeText(data.page_path),
-    source_site: 'solarisfilms.it',
+    source_site: resolveSourceSite(data),
     priority,
   };
 }
@@ -195,7 +211,7 @@ function buildWhatsAppCrmPayload(data, leadId) {
     source: 'whatsapp',
     product_interest: interest,
     source_page: sourcePage,
-    source_site: 'solarisfilms.it',
+    source_site: resolveSourceSite(data),
     priority,
   };
 }

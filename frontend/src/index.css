@@ -204,6 +204,23 @@ h1, h2, h3, h4, h5, h6 {
   color: #475569;
 }
 
+.section-light .service-card-copy .service-kicker {
+  color: #FACC15;
+}
+
+.section-light .service-card-copy .service-title {
+  color: #FFFFFF;
+}
+
+.section-light .service-card-copy .service-description {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.section-light .service-card-copy .service-cta,
+.section-light .service-card-copy .service-cta span {
+  color: #EAB308;
+}
+
 .card-light {
   background: white;
   border: 1px solid #E2E8F0;

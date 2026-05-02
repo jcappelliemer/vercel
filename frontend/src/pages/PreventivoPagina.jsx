@@ -5,6 +5,8 @@ import SEO from '../components/SEO';
 import QuoteForm from '../components/QuoteForm';
 import { motion } from 'framer-motion';
 import { Phone, WhatsappLogo, Clock, CheckCircle } from '@phosphor-icons/react';
+import { useSettings } from '../hooks/useSettings';
+import { buildWhatsAppHref } from '../utils/contactLinks';
 
 const benefits = [
   'Preventivo in 24 ore',
@@ -14,6 +16,7 @@ const benefits = [
 ];
 
 const PreventivoPagina = () => {
+  const settings = useSettings();
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="preventivo-page">
       <SEO title="Richiedi Preventivo Gratuito" description="Richiedi un preventivo gratuito e senza impegno per pellicole antisolari, di sicurezza o privacy MADICO. Risposta in 24 ore." path="/preventivo" />
@@ -78,7 +81,7 @@ const PreventivoPagina = () => {
                       <Phone size={18} weight="light" className="text-[#EAB308]" />
                       <span className="text-sm">+39 055 910 7621</span>
                     </a>
-                    <a href="https://wa.me/393925466518" className="flex items-center gap-3 text-[#94A3B8] hover:text-[#25D366] transition-colors" data-testid="preventivo-whatsapp">
+                    <a href={buildWhatsAppHref(settings.whatsapp, 'Ciao, preferisco parlare con Solaris Films per un preventivo.')} className="flex items-center gap-3 text-[#94A3B8] hover:text-[#25D366] transition-colors" data-testid="preventivo-whatsapp">
                       <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
                       <span className="text-sm">WhatsApp</span>
                     </a>

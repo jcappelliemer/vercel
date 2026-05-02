@@ -1,0 +1,110 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/pellicola-specchio/",
+  "path": "/approfondimenti/pellicola-specchio/",
+  "route": {
+    "type": "article",
+    "label": "Approfondimento",
+    "newPath": "/blog/pellicola-specchio/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/post-sitemap.xml",
+  "seo": {
+    "title": "PELLICOLA SPECCHIO - Solaris Films",
+    "description": "La pellicola specchio è studiata appositamente per non far penetrare all'interno dei vostri locali tutta una serie di radiazioni dannose.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-specchio/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "PELLICOLA SPECCHIO",
+      "og:description": "La pellicola specchio è studiata appositamente per non far penetrare all'interno dei vostri locali tutta una serie di radiazioni dannose.",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/pellicola-specchio/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/pellicole-riflettenti-argento.webp",
+      "og:image:width": "1600",
+      "og:image:height": "1200",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Scritto da",
+      "twitter:data1": "Fabio Meucci",
+      "twitter:label2": "Tempo di lettura stimato",
+      "twitter:data2": "3 minuti"
+    },
+    "article": {
+      "article:published_time": "2025-06-17T13:40:45+00:00",
+      "article:modified_time": "2025-06-18T07:26:06+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/\"},\"author\":{\"name\":\"Fabio Meucci\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\"},\"headline\":\"PELLICOLA SPECCHIO\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-18T07:26:06+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/\"},\"wordCount\":401,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicole-riflettenti-argento.webp\",\"articleSection\":[\"Approfondimenti\"],\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/\",\"name\":\"PELLICOLA SPECCHIO - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicole-riflettenti-argento.webp\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-18T07:26:06+00:00\",\"description\":\"La pellicola specchio è studiata appositamente per non far penetrare all'interno dei vostri locali tutta una serie di radiazioni dannose.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicole-riflettenti-argento.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicole-riflettenti-argento.webp\",\"width\":1600,\"height\":1200},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-specchio\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Lo sapevi che?\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/lo-sapevi-che\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"PELLICOLA SPECCHIO\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\",\"name\":\"Fabio Meucci\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"caption\":\"Fabio Meucci\"},\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/fabio-meucci\\/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLA SPECCHIO O PELLICOLA ANTISOLARE?"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "paragraph",
+      "html": "Come Solaris Films siamo convinti che la chiarezza e l&amp;#8217;informazione sia prioritaria per fornire il miglior servizio. La nostra iniziativa &#xE8; aiutare i nostri clienti a capire in che modo i nostri prodotti per pellicole per finestre beneficiano direttamente loro, le loro case ed i loro affetti.",
+      "text": "Come Solaris Films siamo convinti che la chiarezza e l’informazione sia prioritaria per fornire il miglior servizio. La nostra iniziativa è aiutare i nostri clienti a capire in che modo i nostri prodotti per pellicole per finestre beneficiano direttamente loro, le loro case ed i loro affetti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Pu&#xF2; sembrare strano, per&#xF2; il compito principale di questa pellicola specchio &#xE8; quello di proteggervi dalle radiazioni pericolose provenienti dal sole, come raggi UV o infrarossi!",
+      "text": "Può sembrare strano, però il compito principale di questa pellicola specchio è quello di proteggervi dalle radiazioni pericolose provenienti dal sole, come raggi UV o infrarossi!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Queste pellicole sono studiate appositamente per non far penetrare all&amp;#8217;interno dei vostri locali tutta una serie di radiazioni dannose e fastidiose e mantenere una illuminazione costante. L&amp;#8217;effetto riflessione non &#xE8; un effetto privacy completa, come vengono definite da alcuni imprenditori che provano a vendervi un prodotto non in linea con le vostre necessit&#xE0;. La pellicola impedisce solo parzialmente di vedere all&amp;#8217;interno nelle ore in cui &#xE8; pi&#xF9; colpita dal sole proprio per via della riflessione dei suoi raggi. Appena la luminosit&#xE0; interna pareggia o supera quella interna ecco che la vostra riservatezza termina e che i vostri interni tornano visibili anche dall&amp;#8217;esterno.",
+      "text": "Queste pellicole sono studiate appositamente per non far penetrare all’interno dei vostri locali tutta una serie di radiazioni dannose e fastidiose e mantenere una illuminazione costante. L’effetto riflessione non è un effetto privacy completa, come vengono definite da alcuni imprenditori che provano a vendervi un prodotto non in linea con le vostre necessità. La pellicola impedisce solo parzialmente di vedere all’interno nelle ore in cui è più colpita dal sole proprio per via della riflessione dei suoi raggi. Appena la luminosità interna pareggia o supera quella interna ecco che la vostra riservatezza termina e che i vostri interni tornano visibili anche dall’esterno."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "PELLICOLA SPECCHIO O PELLICOLA ANTISOLARE?",
+      "text": "PELLICOLA SPECCHIO O PELLICOLA ANTISOLARE?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Proprio per questo motivo &#xE8; improprio parlare di pellicola specchio, pellicola riflettente o pellicola privacy diurna. Questi films sono pensati per una azione antisolare, la riflessione &#xE8; un effetto secondario sicuramente piacevole e di impatto ma non il fulcro di questa tecnologia.",
+      "text": "Proprio per questo motivo è improprio parlare di pellicola specchio, pellicola riflettente o pellicola privacy diurna. Questi films sono pensati per una azione antisolare, la riflessione è un effetto secondario sicuramente piacevole e di impatto ma non il fulcro di questa tecnologia."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole per vetri antisolari vengono montate per migliorare l&amp;#8217;isolamento delle vetrate. I materiali con cui vengono fabbricate garantiscono filtraggio e schermatura dai raggi solari, evitano che il calore entri negli ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Per questo motivo vengono anche chiamate pellicole anticalore. Utilizzando la giusta pellicola si possono ridurre le temperature interne degli edifici fino a 7/8&#xB0;C. Questo ovviamente porter&#xE0; una cospicua diminuzione dei costi di climatizzazione estivi ed un impatto ambientale molto inferiore.",
+      "text": "Le pellicole per vetri antisolari vengono montate per migliorare l’isolamento delle vetrate. I materiali con cui vengono fabbricate garantiscono filtraggio e schermatura dai raggi solari, evitano che il calore entri negli ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Per questo motivo vengono anche chiamate pellicole anticalore. Utilizzando la giusta pellicola si possono ridurre le temperature interne degli edifici fino a 7/8°C. Questo ovviamente porterà una cospicua diminuzione dei costi di climatizzazione estivi ed un impatto ambientale molto inferiore."
+    },
+    {
+      "type": "paragraph",
+      "html": "La nostra azienda si affida solo al distributore Tecnosolar e monta solo Pellicole MADICO, leader mondiale nel settore delle pellicole per vetri che da pi&#xF9; di 100 anni garantisce qualit&#xE0; ed affidabilit&#xE0; per i suoi prodotti.",
+      "text": "La nostra azienda si affida solo al distributore Tecnosolar e monta solo Pellicole MADICO, leader mondiale nel settore delle pellicole per vetri che da più di 100 anni garantisce qualità ed affidabilità per i suoi prodotti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Se volete la protezione fino al 99% dai raggi UV ed una schermatura dai raggi infrarossi, unito ad un bellissimo effetto a specchio vi consigliamo <a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/\">MADICO RS20 E PS SR.<br>\nVolete sapere di pi&#xF9; sulle pellicole antisolari?<br>\nVolete capire quanti e quali modelli possono essere applicati alle vostre vetrate? Cliccate QUI!",
+      "text": "Se volete la protezione fino al 99% dai raggi UV ed una schermatura dai raggi infrarossi, unito ad un bellissimo effetto a specchio vi consigliamo MADICO RS20 E PS SR. Volete sapere di più sulle pellicole antisolari? Volete capire quanti e quali modelli possono essere applicati alle vostre vetrate? Cliccate QUI!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive Come Solaris Films siamo convinti che la chiarezza e l’informazione sia prioritaria per fornire il miglior servizio. La nostra iniziativa è aiutare i nostri clienti a capire in che modo i nostri prodotti per pellicole per finestre beneficiano direttamente loro, le loro case ed i loro affetti. Può sembrare strano, però il compito principale di questa pellicola specchio è quello di proteggervi dalle radiazioni pericolose provenienti dal sole, come raggi UV o infrarossi! Queste pellicole sono studiate appositamente per non far penetrare all’interno dei vostri locali tutta una serie di radiazioni dannose e fastidiose e mantenere una illuminazione costante. L’effetto riflessione non è un effetto privacy completa, come vengono definite da alcuni imprenditori che provano a vendervi un prodotto non in linea con le vostre necessità. La pellicola impedisce solo parzialmente di vedere all’interno nelle ore in cui è più colpita dal sole proprio per via della riflessione dei suoi raggi. Appena la luminosità interna pareggia o supera quella interna ecco che la vostra riservatezza termina e che i vostri interni tornano visibili anche dall’esterno. PELLICOLA SPECCHIO O PELLICOLA ANTISOLARE? Proprio per questo motivo è improprio parlare di pellicola specchio, pellicola riflettente o pellicola privacy diurna. Questi films sono pensati per una azione antisolare, la riflessione è un effetto secondario sicuramente piacevole e di impatto ma non il fulcro di questa tecnologia. Le pellicole per vetri antisolari vengono montate per migliorare l’isolamento delle vetrate. I materiali con cui vengono fabbricate garantiscono filtraggio e schermatura dai raggi solari, evitano che il calore entri negli ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Per questo motivo vengono anche chiamate pellicole anticalore. Utilizzando la giusta pellicola si possono ridurre le temperature interne degli edifici fino a 7/8°C. Questo ovviamente porterà una cospicua diminuzione dei costi di climatizzazione estivi ed un impatto ambientale molto inferiore. La nostra azienda si affida solo al distributore Tecnosolar e monta solo Pellicole MADICO, leader mondiale nel settore delle pellicole per vetri che da più di 100 anni garantisce qualità ed affidabilità per i suoi prodotti. Se volete la protezione fino al 99% dai raggi UV ed una schermatura dai raggi infrarossi, unito ad un bellissimo effetto a specchio vi consigliamo MADICO RS20 E PS SR. Volete sapere di più sulle pellicole antisolari? Volete capire quanti e quali modelli possono essere applicati alle vostre vetrate? Cliccate QUI!",
+  "textLength": 2726,
+  "fetchedAt": "2026-04-28T15:08:04.556Z"
+}

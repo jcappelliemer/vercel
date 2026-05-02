@@ -1,0 +1,201 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
+  "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
+  "route": {
+    "type": "product",
+    "label": "Prodotto",
+    "newPath": "/prodotti/vetrofanie/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-privacy-sitemap.xml",
+  "seo": {
+    "title": "vetrofanie - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "vetrofanie",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T09:59:48+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/vetrofanie\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/vetrofanie\\/\",\"name\":\"vetrofanie - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/vetrofanie\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/vetrofanie\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/vetrofanie.svg\",\"datePublished\":\"2025-06-16T15:27:22+00:00\",\"dateModified\":\"2025-09-18T09:59:48+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/vetrofanie\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/vetrofanie\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/vetrofanie\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/vetrofanie.svg\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/vetrofanie.svg\",\"width\":1200,\"height\":1200},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/vetrofanie\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole privacy e design\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"vetrofanie\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Vetrofanie, una soluzione pratica e di design"
+    },
+    {
+      "level": 2,
+      "text": "Ma che cos’è una vetrofania?"
+    },
+    {
+      "level": 3,
+      "text": "Quali sono i vantaggi delle vetrofanie?"
+    },
+    {
+      "level": 6,
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "level": 2,
+      "text": "Vetrofanie ad UV"
+    },
+    {
+      "level": 2,
+      "text": "Vetrofanie ad EcoSolvent"
+    }
+  ],
+  "h1": "Vetrofanie, una soluzione pratica e di design",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Vetrofanie, una soluzione pratica e di design",
+      "text": "Vetrofanie, una soluzione pratica e di design"
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai intenzione di abbellire le superfici vetrate esterne del tuo edificio con elementi di design, vuoi utilizzare le vetrine del tuo negozio in modo creativo per attirare clientela? Quello che ti serve &#xE8; una vetrofania. I nostri esperti tecnici della sezione Graphics di Solaris sapranno dare forma alle tue idee!",
+      "text": "Hai intenzione di abbellire le superfici vetrate esterne del tuo edificio con elementi di design, vuoi utilizzare le vetrine del tuo negozio in modo creativo per attirare clientela? Quello che ti serve è una vetrofania. I nostri esperti tecnici della sezione Graphics di Solaris sapranno dare forma alle tue idee!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Ma che cos&#x2019;&#xE8; una vetrofania?",
+      "text": "Ma che cos’è una vetrofania?"
+    },
+    {
+      "type": "paragraph",
+      "html": "La vetrofania &#xE8; un <strong>sottile foglio di materiale (spesso vinile) <strong>stampato a colori con decorazioni o scritte che si applica con modalit&#xE0; adesiva o elettrostatica sulle vetrine di negozi o sulle finestre di casa. Noi di Solaris Films vi portiamo una grande novit&#xE0;: la possibilit&#xE0; di <strong>stampare le vostre vetrofanie anche<strong> su un materiale di altissima qualit&#xE0;, del tutto <strong>trasparente, in grado di <strong>schermare i tuoi beni <strong>dai raggi UV. Decora la tua vetrina mentre lasci inalterata la trasparenza del vetro e proteggi la merce esposta!",
+      "text": "La vetrofania è un sottile foglio di materiale (spesso vinile) stampato a colori con decorazioni o scritte che si applica con modalità adesiva o elettrostatica sulle vetrine di negozi o sulle finestre di casa. Noi di Solaris Films vi portiamo una grande novità: la possibilità di stampare le vostre vetrofanie anche su un materiale di altissima qualità, del tutto trasparente, in grado di schermare i tuoi beni dai raggi UV. Decora la tua vetrina mentre lasci inalterata la trasparenza del vetro e proteggi la merce esposta!"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#xC8; una soluzione<strong> pi&#xF9; economica rispetto a qualsiasi altro allestimento pubblicitario e permette anche di acquisire una maggiore visibilit&#xE0; migliorando l&#x2019;aspetto della tua vetrina espositiva, potendo rinnovarla ogni volta che vuoi in modo rapido ed economico in base al periodo dell&#x2019;anno o delle proprie necessit&#xE0;.",
+      "text": "È una soluzione più economica rispetto a qualsiasi altro allestimento pubblicitario e permette anche di acquisire una maggiore visibilità migliorando l’aspetto della tua vetrina espositiva, potendo rinnovarla ogni volta che vuoi in modo rapido ed economico in base al periodo dell’anno o delle proprie necessità."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Quali sono i vantaggi delle vetrofanie?",
+      "text": "Quali sono i vantaggi delle vetrofanie?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Soluzione rapida ed economica",
+          "text": "Soluzione rapida ed economica"
+        },
+        {
+          "html": "Rimozione semplice",
+          "text": "Rimozione semplice"
+        },
+        {
+          "html": "Design accattivante",
+          "text": "Design accattivante"
+        },
+        {
+          "html": "Grande variet&#xE0; di soluzioni",
+          "text": "Grande varietà di soluzioni"
+        }
+      ],
+      "text": "Soluzione rapida ed economica Rimozione semplice Design accattivante Grande varietà di soluzioni"
+    },
+    {
+      "type": "paragraph",
+      "html": "Per soddisfare tutte le vostre idee e le vostre esigenze abbiamo due distinte soluzioni di stampa per le vostre pellicole, in grado di soddisfare qualsiasi necessit&#xE0; abbiate.",
+      "text": "Per soddisfare tutte le vostre idee e le vostre esigenze abbiamo due distinte soluzioni di stampa per le vostre pellicole, in grado di soddisfare qualsiasi necessità abbiate."
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola",
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-antisolari-stampabili-e-vetrofanie/",
+      "text": "Vai al focus tecnico",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Vetrofanie ad UV",
+      "text": "Vetrofanie ad UV"
+    },
+    {
+      "type": "paragraph",
+      "html": "La Stampa UV &#xE8; un tipo di tecnologia di stampa digitale rivoluzionaria che consiste nell&#x2019;applicare inchiostro sui materiali per poi farlo asciugare con una lampada a raggi UV. Questa stampa ha come peculiarit&#xE0; la <strong>rapida essiccazione, grazie alla luce Ultravioletta delle lampade a LED applicate sulla stampante. Le stampanti UV permettono di <strong>stampare rapidamente ed in maniera economica&#xA0;le vostre vetrofanie.",
+      "text": "La Stampa UV è un tipo di tecnologia di stampa digitale rivoluzionaria che consiste nell’applicare inchiostro sui materiali per poi farlo asciugare con una lampada a raggi UV. Questa stampa ha come peculiarità la rapida essiccazione, grazie alla luce Ultravioletta delle lampade a LED applicate sulla stampante. Le stampanti UV permettono di stampare rapidamente ed in maniera economica le vostre vetrofanie."
+    },
+    {
+      "type": "paragraph",
+      "html": "Questo tipo di lavorazione permette di applicare delle finiture particolari che con tecniche di stampa tradizionali sarebbero altamente dispendiose per brevi tirature.",
+      "text": "Questo tipo di lavorazione permette di applicare delle finiture particolari che con tecniche di stampa tradizionali sarebbero altamente dispendiose per brevi tirature."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Vetrofanie ad EcoSolvent",
+      "text": "Vetrofanie ad EcoSolvent"
+    },
+    {
+      "type": "paragraph",
+      "html": "La stampa con inchiostri EcoSolvente &#xE8; indicata per ottenere <strong>un&#x2019;alta qualit&#xE0; su grandi superfici esponibili sia all&#x2019;interno che all&#x2019;esterno. Sono <strong>resistenti ai raggi UV (Ultravioletti) e agli agenti atmosferici sono <strong>impermeabili e resistenti all&amp;#8217;abrasione.",
+      "text": "La stampa con inchiostri EcoSolvente è indicata per ottenere un’alta qualità su grandi superfici esponibili sia all’interno che all’esterno. Sono resistenti ai raggi UV (Ultravioletti) e agli agenti atmosferici sono impermeabili e resistenti all’abrasione."
+    },
+    {
+      "type": "paragraph",
+      "html": "In genere impiegano circa tre anni prima che l&amp;#8217;inchiostro cominci ad attenuarsi.",
+      "text": "In genere impiegano circa tre anni prima che l’inchiostro cominci ad attenuarsi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Con questa tecnologia quasi tutti i materiali possono essere plastificati per prolungarne la durabilit&#xE0; nel tempo.",
+      "text": "Con questa tecnologia quasi tutti i materiali possono essere plastificati per prolungarne la durabilità nel tempo."
+    },
+    {
+      "type": "paragraph",
+      "html": "In conclusione",
+      "text": "In conclusione"
+    },
+    {
+      "type": "paragraph",
+      "html": "Cerchiamo sempre di offrirvi <a href=\"/\">nuove possibilit&#xE0; per le vostre superfici vetrate, la personalizzazione estrema derivata dalle&#xA0; vetrofanie &#xE8; sicuramente una delle pi&#xF9; interessanti. <a href=\"/contact/\">Contattateci per un <a href=\"/preventivo/\">preventivo o per avere maggiori informazioni su questo nuovo servizio che abbiamo voluto offrirvi!",
+      "text": "Cerchiamo sempre di offrirvi nuove possibilità per le vostre superfici vetrate, la personalizzazione estrema derivata dalle vetrofanie è sicuramente una delle più interessanti. Contattateci per un preventivo o per avere maggiori informazioni su questo nuovo servizio che abbiamo voluto offrirvi!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi?",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Scopri insieme a noi il mondo delle <a href=\"/\">pellicole per vetri!",
+      "text": "Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Vetrofanie, una soluzione pratica e di design Hai intenzione di abbellire le superfici vetrate esterne del tuo edificio con elementi di design, vuoi utilizzare le vetrine del tuo negozio in modo creativo per attirare clientela? Quello che ti serve è una vetrofania. I nostri esperti tecnici della sezione Graphics di Solaris sapranno dare forma alle tue idee! Ma che cos’è una vetrofania? La vetrofania è un sottile foglio di materiale (spesso vinile) stampato a colori con decorazioni o scritte che si applica con modalità adesiva o elettrostatica sulle vetrine di negozi o sulle finestre di casa. Noi di Solaris Films vi portiamo una grande novità: la possibilità di stampare le vostre vetrofanie anche su un materiale di altissima qualità, del tutto trasparente, in grado di schermare i tuoi beni dai raggi UV. Decora la tua vetrina mentre lasci inalterata la trasparenza del vetro e proteggi la merce esposta! È una soluzione più economica rispetto a qualsiasi altro allestimento pubblicitario e permette anche di acquisire una maggiore visibilità migliorando l’aspetto della tua vetrina espositiva, potendo rinnovarla ogni volta che vuoi in modo rapido ed economico in base al periodo dell’anno o delle proprie necessità. Quali sono i vantaggi delle vetrofanie? Soluzione rapida ed economica Rimozione semplice Design accattivante Grande varietà di soluzioni Per soddisfare tutte le vostre idee e le vostre esigenze abbiamo due distinte soluzioni di stampa per le vostre pellicole, in grado di soddisfare qualsiasi necessità abbiate. Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico Vetrofanie ad UV La Stampa UV è un tipo di tecnologia di stampa digitale rivoluzionaria che consiste nell’applicare inchiostro sui materiali per poi farlo asciugare con una lampada a raggi UV. Questa stampa ha come peculiarità la rapida essiccazione, grazie alla luce Ultravioletta delle lampade a LED applicate sulla stampante. Le stampanti UV permettono di stampare rapidamente ed in maniera economica le vostre vetrofanie. Questo tipo di lavorazione permette di applicare delle finiture particolari che con tecniche di stampa tradizionali sarebbero altamente dispendiose per brevi tirature. Vetrofanie ad EcoSolvent La stampa con inchiostri EcoSolvente è indicata per ottenere un’alta qualità su grandi superfici esponibili sia all’interno che all’esterno. Sono resistenti ai raggi UV (Ultravioletti) e agli agenti atmosferici sono impermeabili e resistenti all’abrasione. In genere impiegano circa tre anni prima che l’inchiostro cominci ad attenuarsi. Con questa tecnologia quasi tutti i materiali possono essere plastificati per prolungarne la durabilità nel tempo. In conclusione Cerchiamo sempre di offrirvi nuove possibilità per le vostre superfici vetrate, la personalizzazione estrema derivata dalle vetrofanie è sicuramente una delle più interessanti. Contattateci per un preventivo o per avere maggiori informazioni su questo nuovo servizio che abbiamo voluto offrirvi! Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 3136,
+  "fetchedAt": "2026-04-28T15:09:19.712Z"
+}

@@ -1,0 +1,204 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/author/j-cappelli/",
+  "path": "/approfondimenti/author/j-cappelli/",
+  "route": {
+    "type": "author",
+    "label": "Autore",
+    "newPath": "/blog/autore/j-cappelli/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/author-sitemap.xml",
+  "seo": {
+    "title": "James Cappelli, Autore presso Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/author/j-cappelli/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "profile",
+      "og:title": "James Cappelli",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/author/j-cappelli/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://secure.gravatar.com/avatar/c581a06ededff52dc271fb57d6b1ec67e750868dd90901bc0e5e20af333b90ee?s=500&d=mm&r=g"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"ProfilePage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/\",\"name\":\"James Cappelli, Autore presso Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2026\\/04\\/pellicola-sicurezza-o-sostituzione-vetro-featured.webp\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2026\\/04\\/pellicola-sicurezza-o-sostituzione-vetro-featured.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2026\\/04\\/pellicola-sicurezza-o-sostituzione-vetro-featured.webp\",\"width\":1536,\"height\":1024,\"caption\":\"Pellicola sicurezza o sostituzione vetro?\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Archivi per James Cappelli\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/2f82d8ae87bc10155738678c469b51cd\",\"name\":\"James Cappelli\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/c581a06ededff52dc271fb57d6b1ec67e750868dd90901bc0e5e20af333b90ee?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/c581a06ededff52dc271fb57d6b1ec67e750868dd90901bc0e5e20af333b90ee?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/c581a06ededff52dc271fb57d6b1ec67e750868dd90901bc0e5e20af333b90ee?s=96&d=mm&r=g\",\"caption\":\"James Cappelli\"},\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/j-cappelli\\/\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Autore: James Cappelli"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola sicurezza o sostituzione vetro?"
+    },
+    {
+      "level": 2,
+      "text": "Vetri sicurezza scuole: cosa serve davvero"
+    },
+    {
+      "level": 2,
+      "text": "Esempio riduzione consumi con pellicole"
+    },
+    {
+      "level": 2,
+      "text": "Migliori film sicurezza vetrate scuole"
+    },
+    {
+      "level": 2,
+      "text": "Guida scelta pellicole per scuole"
+    },
+    {
+      "level": 2,
+      "text": "Ridurre abbagliamento vetrate senza tende"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole schermatura solare per vetrate sud"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole termoisolanti per infissi esistenti"
+    },
+    {
+      "level": 2,
+      "text": "Garanzia decennale pellicole per vetri"
+    },
+    {
+      "level": 2,
+      "text": "Calcolo risparmio energetico pellicole solari"
+    }
+  ],
+  "h1": "Autore: James Cappelli",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Autore: James Cappelli",
+      "text": "Autore: James Cappelli"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/pellicola-sicurezza-o-sostituzione-vetro/\">Pellicola sicurezza o sostituzione vetro?",
+      "text": "Pellicola sicurezza o sostituzione vetro?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicola sicurezza o sostituzione vetro? Scopri differenze, limiti, norme e criteri pratici per scegliere la soluzione pi&#xF9; adatta.",
+      "text": "Pellicola sicurezza o sostituzione vetro? Scopri differenze, limiti, norme e criteri pratici per scegliere la soluzione più adatta."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/vetri-sicurezza-scuole/\">Vetri sicurezza scuole: cosa serve davvero",
+      "text": "Vetri sicurezza scuole: cosa serve davvero"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vetri sicurezza scuole: norme, rischi e soluzioni per ridurre frammentazione, urti e danni. Come scegliere interventi efficaci e conformi.",
+      "text": "Vetri sicurezza scuole: norme, rischi e soluzioni per ridurre frammentazione, urti e danni. Come scegliere interventi efficaci e conformi."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/esempio-riduzione-consumi-con-pellicole/\">Esempio riduzione consumi con pellicole",
+      "text": "Esempio riduzione consumi con pellicole"
+    },
+    {
+      "type": "paragraph",
+      "html": "Esempio riduzione consumi con pellicole: come stimare risparmio energetico, comfort e tempi di rientro su uffici, case e capannoni vetrati.",
+      "text": "Esempio riduzione consumi con pellicole: come stimare risparmio energetico, comfort e tempi di rientro su uffici, case e capannoni vetrati."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/migliori-film-sicurezza-vetrate-scuole/\">Migliori film sicurezza vetrate scuole",
+      "text": "Migliori film sicurezza vetrate scuole"
+    },
+    {
+      "type": "paragraph",
+      "html": "Guida ai migliori film sicurezza vetrate scuole: norme, classi, spessori e criteri tecnici per scegliere una protezione efficace e durevole.",
+      "text": "Guida ai migliori film sicurezza vetrate scuole: norme, classi, spessori e criteri tecnici per scegliere una protezione efficace e durevole."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/guida-scelta-pellicole-per-scuole/\">Guida scelta pellicole per scuole",
+      "text": "Guida scelta pellicole per scuole"
+    },
+    {
+      "type": "paragraph",
+      "html": "Guida scelta pellicole per scuole: come valutare sicurezza, controllo solare, privacy e norme per aule, corridoi e ambienti comuni.",
+      "text": "Guida scelta pellicole per scuole: come valutare sicurezza, controllo solare, privacy e norme per aule, corridoi e ambienti comuni."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/ridurre-abbagliamento-vetrate-senza-tende/\">Ridurre abbagliamento vetrate senza tende",
+      "text": "Ridurre abbagliamento vetrate senza tende"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ridurre abbagliamento vetrate senza tende &#xE8; possibile con pellicole solari professionali: pi&#xF9; comfort visivo, luce naturale e prestazioni misurabili.",
+      "text": "Ridurre abbagliamento vetrate senza tende è possibile con pellicole solari professionali: più comfort visivo, luce naturale e prestazioni misurabili."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/pellicole-schermatura-solare-per-vetrate-sud/\">Pellicole schermatura solare per vetrate sud",
+      "text": "Pellicole schermatura solare per vetrate sud"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicole schermatura solare per vetrate sud: come ridurre calore, abbagliamento e UV, migliorando comfort, efficienza e protezione.",
+      "text": "Pellicole schermatura solare per vetrate sud: come ridurre calore, abbagliamento e UV, migliorando comfort, efficienza e protezione."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/pellicole-termoisolanti-per-infissi-esistenti/\">Pellicole termoisolanti per infissi esistenti",
+      "text": "Pellicole termoisolanti per infissi esistenti"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicole termoisolanti per infissi esistenti: come funzionano, quando convengono, limiti reali, posa e criteri tecnici per scegliere bene.",
+      "text": "Pellicole termoisolanti per infissi esistenti: come funzionano, quando convengono, limiti reali, posa e criteri tecnici per scegliere bene."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/garanzia-decennale-pellicole-per-vetri/\">Garanzia decennale pellicole per vetri",
+      "text": "Garanzia decennale pellicole per vetri"
+    },
+    {
+      "type": "paragraph",
+      "html": "Garanzia decennale pellicole per vetri: cosa copre davvero, da cosa dipende e come valutarla tra posa, prodotto, certificazioni e durata.",
+      "text": "Garanzia decennale pellicole per vetri: cosa copre davvero, da cosa dipende e come valutarla tra posa, prodotto, certificazioni e durata."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/calcolo-risparmio-energetico-pellicole-solari/\">Calcolo risparmio energetico pellicole solari",
+      "text": "Calcolo risparmio energetico pellicole solari"
+    },
+    {
+      "type": "paragraph",
+      "html": "Calcolo risparmio energetico pellicole solari: come stimarlo davvero, quali dati servono e da cosa dipende il taglio dei consumi negli edifici.",
+      "text": "Calcolo risparmio energetico pellicole solari: come stimarlo davvero, quali dati servono e da cosa dipende il taglio dei consumi negli edifici."
+    }
+  ],
+  "contentHtml": "",
+  "text": "Autore: James Cappelli Pellicola sicurezza o sostituzione vetro? Pellicola sicurezza o sostituzione vetro? Scopri differenze, limiti, norme e criteri pratici per scegliere la soluzione più adatta. Vetri sicurezza scuole: cosa serve davvero Vetri sicurezza scuole: norme, rischi e soluzioni per ridurre frammentazione, urti e danni. Come scegliere interventi efficaci e conformi. Esempio riduzione consumi con pellicole Esempio riduzione consumi con pellicole: come stimare risparmio energetico, comfort e tempi di rientro su uffici, case e capannoni vetrati. Migliori film sicurezza vetrate scuole Guida ai migliori film sicurezza vetrate scuole: norme, classi, spessori e criteri tecnici per scegliere una protezione efficace e durevole. Guida scelta pellicole per scuole Guida scelta pellicole per scuole: come valutare sicurezza, controllo solare, privacy e norme per aule, corridoi e ambienti comuni. Ridurre abbagliamento vetrate senza tende Ridurre abbagliamento vetrate senza tende è possibile con pellicole solari professionali: più comfort visivo, luce naturale e prestazioni misurabili. Pellicole schermatura solare per vetrate sud Pellicole schermatura solare per vetrate sud: come ridurre calore, abbagliamento e UV, migliorando comfort, efficienza e protezione. Pellicole termoisolanti per infissi esistenti Pellicole termoisolanti per infissi esistenti: come funzionano, quando convengono, limiti reali, posa e criteri tecnici per scegliere bene. Garanzia decennale pellicole per vetri Garanzia decennale pellicole per vetri: cosa copre davvero, da cosa dipende e come valutarla tra posa, prodotto, certificazioni e durata. Calcolo risparmio energetico pellicole solari Calcolo risparmio energetico pellicole solari: come stimarlo davvero, quali dati servono e da cosa dipende il taglio dei consumi negli edifici.",
+  "textLength": 1827,
+  "fetchedAt": "2026-04-28T15:09:55.785Z"
+}

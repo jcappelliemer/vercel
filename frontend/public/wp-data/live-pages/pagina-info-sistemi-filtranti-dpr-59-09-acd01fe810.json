@@ -1,0 +1,177 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/sistemi-filtranti-dpr-59-09/",
+  "path": "/pagina-info/sistemi-filtranti-dpr-59-09/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/sistemi-filtranti-dpr-59-09/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Sistemi filtranti Dpr. 59/09 - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/sistemi-filtranti-dpr-59-09/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Sistemi filtranti Dpr. 59/09",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pagina-info/sistemi-filtranti-dpr-59-09/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-15T20:34:25+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sistemi-filtranti-dpr-59-09\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sistemi-filtranti-dpr-59-09\\/\",\"name\":\"Sistemi filtranti Dpr. 59\\/09 - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-11T09:57:12+00:00\",\"dateModified\":\"2025-09-15T20:34:25+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sistemi-filtranti-dpr-59-09\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sistemi-filtranti-dpr-59-09\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sistemi-filtranti-dpr-59-09\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sistemi filtranti Dpr. 59\\/09\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Sistemi filtranti Dpr. 59/09"
+    },
+    {
+      "level": 3,
+      "text": "SISTEMI FILTRANTI NEL Dpr. 59/09"
+    },
+    {
+      "level": 3,
+      "text": "Migliorare l’efficienza energetica una sfida che parte da lontano"
+    },
+    {
+      "level": 3,
+      "text": "L’Italia recepisce queste due direttive CE pubblicando diversi decreti legislativi:"
+    },
+    {
+      "level": 3,
+      "text": "DPR 59/09 \"RENDIMENTO ENERGETICO IN EDILIZIA\""
+    }
+  ],
+  "h1": "Sistemi filtranti Dpr. 59/09",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Sistemi filtranti Dpr. 59/09",
+      "text": "Sistemi filtranti Dpr. 59/09"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "SISTEMI FILTRANTI NEL Dpr. 59/09",
+      "text": "SISTEMI FILTRANTI NEL Dpr. 59/09"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Migliorare l&amp;#8217;efficienza energetica una sfida che parte da lontano",
+      "text": "Migliorare l’efficienza energetica una sfida che parte da lontano"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "<b>Protocollo di Kyoto",
+          "text": "Protocollo di Kyoto"
+        },
+        {
+          "html": "<b>Direttiva 2002/91/CE&#xA0; &#x201C;Rendimento energetico nell&#x2019;edilizia&#x201D;",
+          "text": "Direttiva 2002/91/CE “Rendimento energetico nell’edilizia”"
+        },
+        {
+          "html": "<b>Direttiva 2006/32/CE&#xA0;&#x201C;Efficienza degli usi finali dell&#x2019;energia e i servizi energetici&#x201D;.",
+          "text": "Direttiva 2006/32/CE “Efficienza degli usi finali dell’energia e i servizi energetici”."
+        }
+      ],
+      "text": "Protocollo di Kyoto Direttiva 2002/91/CE “Rendimento energetico nell’edilizia” Direttiva 2006/32/CE “Efficienza degli usi finali dell’energia e i servizi energetici”."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "L&#x2019;Italia recepisce queste due direttive CE pubblicando diversi decreti legislativi:",
+      "text": "L’Italia recepisce queste due direttive CE pubblicando diversi decreti legislativi:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Decreto Legislativo del 19 agosto&#xA0;<b>2005 n&#xB0; 192",
+          "text": "Decreto Legislativo del 19 agosto 2005 n° 192"
+        },
+        {
+          "html": "Decreto Legislativo del 29 dicembre&#xA0;<b>2006 n&#xB0; 311",
+          "text": "Decreto Legislativo del 29 dicembre 2006 n° 311"
+        },
+        {
+          "html": "<b>DPR 59/09&#xA0;del 19 Giugno 2009",
+          "text": "DPR 59/09 del 19 Giugno 2009"
+        }
+      ],
+      "text": "Decreto Legislativo del 19 agosto 2005 n° 192 Decreto Legislativo del 29 dicembre 2006 n° 311 DPR 59/09 del 19 Giugno 2009"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "DPR 59/09 &quot;RENDIMENTO ENERGETICO IN EDILIZIA&quot;",
+      "text": "DPR 59/09 \"RENDIMENTO ENERGETICO IN EDILIZIA\""
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Il DPR 59/09 del 19 Giugno 2009 &#xE8; il Decreto Attuativo ai D. Lgs. 192/2005 e 311/2006 e recepisce le pellicole per vetri a controllo solare come sistemi filtranti e ne impone l&#x2019;applicazione.",
+      "text": "Il DPR 59/09 del 19 Giugno 2009 è il Decreto Attuativo ai D. Lgs. 192/2005 e 311/2006 e recepisce le pellicole per vetri a controllo solare come sistemi filtranti e ne impone l’applicazione."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Una pellicola per vetri a controllo solare viene intesa come SISTEMA FILTRANTE per vetri in quanto riduce l&#x2019;ingresso dell&#x2019;irraggiamento solare, lascia passare una parte della luce visibile, blocca quasi totalmente gli ultravioletti e respinge una notevole percentuale di raggi infrarossi.",
+      "text": "Una pellicola per vetri a controllo solare viene intesa come SISTEMA FILTRANTE per vetri in quanto riduce l’ingresso dell’irraggiamento solare, lascia passare una parte della luce visibile, blocca quasi totalmente gli ultravioletti e respinge una notevole percentuale di raggi infrarossi."
+    },
+    {
+      "type": "paragraph",
+      "html": "A questo proposito il progettista deve valutare e documentare l&#x2019;efficacia dei sistemi filtranti delle superficie vetrate esterne&#xA0; per ridurre l&#x2019;apporto di calore per irraggiamento solare.",
+      "text": "A questo proposito il progettista deve valutare e documentare l’efficacia dei sistemi filtranti delle superficie vetrate esterne per ridurre l’apporto di calore per irraggiamento solare."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Nelle nuove costruzioni &#xE8; obbligatoria l&#x2019;adozione di sistemi schermanti, ma &#x201C;qualora si dimostri la non convenienza in termini tecnico-economici&#x201D;, gli schermi possono essere omessi in presenza di superfici vetrate con fattore solare minore o uguale a 0,5.",
+      "text": "Nelle nuove costruzioni è obbligatoria l’adozione di sistemi schermanti, ma “qualora si dimostri la non convenienza in termini tecnico-economici”, gli schermi possono essere omessi in presenza di superfici vetrate con fattore solare minore o uguale a 0,5."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Nel caso delle ristrutturazioni il progettista deve ricorrere, a scelta, all&#x2019;utilizzo dei sistemi filtranti o schermanti che devono essere stimati con una valutazione ad hoc. Tale valutazione pu&#xF2; essere omessa in presenza di superfici vetrate con fattore solare minore o uguale a 0,5.",
+      "text": "Nel caso delle ristrutturazioni il progettista deve ricorrere, a scelta, all’utilizzo dei sistemi filtranti o schermanti che devono essere stimati con una valutazione ad hoc. Tale valutazione può essere omessa in presenza di superfici vetrate con fattore solare minore o uguale a 0,5."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>E&#x2019; importante notare che dal momento in cui la pellicola a controllo solare trasforma un vetro normale in un vetro a controllo solare ad alte prestazioni, il Fattore solare della vetrata esistente diventa inferiore a 0,5, e quindi potrebbe essere una soluzione alternativa in qualsiasi caso.",
+      "text": "E’ importante notare che dal momento in cui la pellicola a controllo solare trasforma un vetro normale in un vetro a controllo solare ad alte prestazioni, il Fattore solare della vetrata esistente diventa inferiore a 0,5, e quindi potrebbe essere una soluzione alternativa in qualsiasi caso."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Sistemi filtranti Dpr. 59/09 SISTEMI FILTRANTI NEL Dpr. 59/09 Migliorare l’efficienza energetica una sfida che parte da lontano Protocollo di Kyoto Direttiva 2002/91/CE “Rendimento energetico nell’edilizia” Direttiva 2006/32/CE “Efficienza degli usi finali dell’energia e i servizi energetici”. L’Italia recepisce queste due direttive CE pubblicando diversi decreti legislativi: Decreto Legislativo del 19 agosto 2005 n° 192 Decreto Legislativo del 29 dicembre 2006 n° 311 DPR 59/09 del 19 Giugno 2009 DPR 59/09 \"RENDIMENTO ENERGETICO IN EDILIZIA\" Il DPR 59/09 del 19 Giugno 2009 è il Decreto Attuativo ai D. Lgs. 192/2005 e 311/2006 e recepisce le pellicole per vetri a controllo solare come sistemi filtranti e ne impone l’applicazione. Una pellicola per vetri a controllo solare viene intesa come SISTEMA FILTRANTE per vetri in quanto riduce l’ingresso dell’irraggiamento solare, lascia passare una parte della luce visibile, blocca quasi totalmente gli ultravioletti e respinge una notevole percentuale di raggi infrarossi. A questo proposito il progettista deve valutare e documentare l’efficacia dei sistemi filtranti delle superficie vetrate esterne per ridurre l’apporto di calore per irraggiamento solare. Nelle nuove costruzioni è obbligatoria l’adozione di sistemi schermanti, ma “qualora si dimostri la non convenienza in termini tecnico-economici”, gli schermi possono essere omessi in presenza di superfici vetrate con fattore solare minore o uguale a 0,5. Nel caso delle ristrutturazioni il progettista deve ricorrere, a scelta, all’utilizzo dei sistemi filtranti o schermanti che devono essere stimati con una valutazione ad hoc. Tale valutazione può essere omessa in presenza di superfici vetrate con fattore solare minore o uguale a 0,5. E’ importante notare che dal momento in cui la pellicola a controllo solare trasforma un vetro normale in un vetro a controllo solare ad alte prestazioni, il Fattore solare della vetrata esistente diventa inferiore a 0,5, e quindi potrebbe essere una soluzione alternativa in qualsiasi caso. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 2139,
+  "fetchedAt": "2026-04-28T15:09:39.816Z"
+}

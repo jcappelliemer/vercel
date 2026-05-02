@@ -58,7 +58,7 @@
   },
   "components_strategy": {
     "hero": "Full-screen fixed background with parallax. Overlay MUST be bg-black/40 (max). Bold asymmetric typography aligned left. CTA buttons stacked or side-by-side.",
-    "services_bento": "MODE A: TETRIS GRID. Mix of spans (e.g., LCD Switch as the large 'Hero' col-span-8 row-span-2). Use glassmorphism and the tracing beam effect.",
+    "services_bento": "MODE A: TETRIS GRID. Mix of spans (e.g., Safety Shield as the large 'Hero' col-span-8 row-span-2). Use glassmorphism and the tracing beam effect.",
     "statistics": "DO NOT USE A SEPARATE BLACK BAR. Integrate stats directly into a large typography section using 'Kinetic Texture' or large numbers overlapping subtle architectural glass images.",
     "trust_indicators": "Do not use placeholder image URLs. Instead, use pure typography and Lucide React icons (e.g., ShieldCheck for ISO 9001, Award for MADICO, Shield for 10-Year Warranty). Integrate these as sleek metallic badges.",
     "purchase_process": "Vertical step-by-step timeline with glowing active states and subtle connecting lines. Clean, minimalist layout.",
@@ -73,11 +73,6 @@
         "url": "https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg",
         "description": "Luxury modern mansion by a lake at night, perfect for hero section reflecting high-end aesthetics.",
         "category": "hero"
-      },
-      "services_lcd_switch": {
-        "url": "https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/e8649b92ae1cac102c10dcb549bc56fc73e517786dc90eeef30de1c82db1c77f.png",
-        "description": "AI-generated macro shot of hi-tech glass transitioning, perfect for LCD Switch product card.",
-        "category": "services"
       },
       "services_photochromic": {
         "url": "https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/41cd0458add26ba29df8fb0b010533e357770d6fb0f027d6a8eea3a954452d5f.png",

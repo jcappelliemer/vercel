@@ -1,13 +1,29 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Solaris Films — Distributore esclusivo MADICO USA per l'Italia. Pellicole per vetri antisolari, sicurezza, privacy." />
+        <meta name="description" content="Solaris Films - Distributore esclusivo MADICO USA per l'Italia. Pellicole per vetri antisolari, sicurezza, privacy." />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="%PUBLIC_URL%/assets/favicon.png" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/favicon.png" />
+        <script>
+            if ("scrollRestoration" in window.history) {
+                window.history.scrollRestoration = "manual";
+            }
+            (function () {
+                var host = window.location.hostname;
+                if (host !== "solarisfilms.it" && host !== "www.solarisfilms.it") {
+                    var meta = document.createElement("meta");
+                    meta.name = "robots";
+                    meta.content = "noindex,nofollow";
+                    document.head.appendChild(meta);
+                }
+            })();
+        </script>
         <!--
         manifest.json provides metadata used when your web app is installed on a
         user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -21,7 +37,7 @@
         work correctly both with client-side routing and a non-root public URL.
         Learn how to configure a non-root public URL by running `npm run build`.
         -->
-        <title>Solaris Films — Pellicole per Vetri | MADICO USA</title>
+        <title>Solaris Films - Pellicole per Vetri | MADICO USA</title>
         <script>window.addEventListener("error",function(e){if(e.error instanceof DOMException&&e.error.name==="DataCloneError"&&e.message&&e.message.includes("PerformanceServerTiming")){e.stopImmediatePropagation();e.preventDefault()}},true);</script>
     </head>
     <body>
@@ -99,14 +115,19 @@
                     }),
                     (e.__SV = 1));
             })(document, window.posthog || []);
-            posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
-                api_host: "https://us.i.posthog.com",
-                person_profiles: "identified_only", // or 'always' to create profiles for anonymous users as well,
-                session_recording: {
-                    recordCrossOriginIframes: true,
-                    capturePerformance: false,
-                },
-            });
+            if (
+                window.location.hostname === "solarisfilms.it" ||
+                window.location.hostname === "www.solarisfilms.it"
+            ) {
+                posthog.init("phc_xAvL2Iq4tFmANRE7kzbKwaSqp1HJjN7x48s3vr0CMjs", {
+                    api_host: "https://us.i.posthog.com",
+                    person_profiles: "identified_only",
+                    session_recording: {
+                        recordCrossOriginIframes: true,
+                        capturePerformance: false,
+                    },
+                });
+            }
         </script>
     </body>
 </html>

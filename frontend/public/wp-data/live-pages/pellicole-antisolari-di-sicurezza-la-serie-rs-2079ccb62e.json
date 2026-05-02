@@ -1,0 +1,280 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+  "path": "/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole antisolari di sicurezza, la serie RS - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Sapevi che un solo decimetro quadro di vetro può produrre fino a 200 frammenti potenzialmente mortali e affilati come rasoi? Il vetro può rompersi per una miriade di motivi. Pensiamo solo ai più comuni; vento, grandine, vibrazioni, torsione, affaticamento, stress sismico, impattI, sbalzi termici o semplicemente difetti di [&hellip;]",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole antisolari di sicurezza, la serie RS",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Sapevi che un solo decimetro quadro di vetro può produrre fino a 200 frammenti potenzialmente mortali e affilati come rasoi? Il vetro può rompersi per una miriade di motivi. Pensiamo solo ai più comuni; vento, grandine, vibrazioni, torsione, affaticamento, stress sismico, impattI, sbalzi termici o semplicemente difetti di [&hellip;]",
+      "og:url": "https://www.solarisfilms.it/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-19T10:36:45+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-di-sicurezza-la-serie-rs\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-di-sicurezza-la-serie-rs\\/\",\"name\":\"Pellicole antisolari di sicurezza, la serie RS - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-16T10:23:57+00:00\",\"dateModified\":\"2025-09-19T10:36:45+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-di-sicurezza-la-serie-rs\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-di-sicurezza-la-serie-rs\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-di-sicurezza-la-serie-rs\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole antisolari di sicurezza, la serie RS\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole antisolari di sicurezza, la serie RS"
+    },
+    {
+      "level": 2,
+      "text": "Cosa sono le pellicole di sicurezza?"
+    },
+    {
+      "level": 2,
+      "text": "Come funzionano le pellicole antisolari riflettenti"
+    },
+    {
+      "level": 2,
+      "text": "Perché consente la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformità al Testo Unico D.lgs. 81/2008."
+    },
+    {
+      "level": 2,
+      "text": "Perché offre una costante protezione antinfortunistica in caso di rottura del vetro."
+    },
+    {
+      "level": 2,
+      "text": "Perché riflette l’energia solare (calore), prodotta dall’irraggiamento solare incidente sulle vetrate, in modo da ridurre significativamente l’utilizzo dei climatizzatori, riducendo drasticamente i costi di condizionamento estivo."
+    },
+    {
+      "level": 2,
+      "text": "Perché garantisce una perfetta trasparenza, la visuale sarà perfettamente cristallina con assenza di distorsioni ottiche."
+    },
+    {
+      "level": 2,
+      "text": "La serie RS"
+    },
+    {
+      "level": 2,
+      "text": "RS 20 PS SR 4 mil"
+    },
+    {
+      "level": 2,
+      "text": "RS 20 PS SR 8 mil"
+    },
+    {
+      "level": 2,
+      "text": "RS 40 PS SR 4 mil"
+    },
+    {
+      "level": 3,
+      "text": "La pellicola antisolare di sicurezza RS 40 PS SR 4 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm."
+    },
+    {
+      "level": 2,
+      "text": "RS 40 PS SR 8 mil"
+    }
+  ],
+  "h1": "Pellicole antisolari di sicurezza, la serie RS",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole antisolari di sicurezza, la serie RS",
+      "text": "Pellicole antisolari di sicurezza, la serie RS"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Cosa sono le pellicole di sicurezza?",
+      "text": "Cosa sono le pellicole di sicurezza?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari di sicurezza vanno a risolvere questa problematicit&#xE0;. Realizzate in diversi strati di poliestere&#xA0;<strong>permettono al vetro di non proiettare schegge in caso di rottura, impedendo loro di disperdersi nell&#x2019;ambiente e causare danni e lesioni anche gravi a cose e persone. Pertanto, forniscono protezione per molte piccole variabili nella nostra vita quotidiana, privata o lavorativa!",
+      "text": "Le pellicole antisolari di sicurezza vanno a risolvere questa problematicità. Realizzate in diversi strati di poliestere permettono al vetro di non proiettare schegge in caso di rottura, impedendo loro di disperdersi nell’ambiente e causare danni e lesioni anche gravi a cose e persone. Pertanto, forniscono protezione per molte piccole variabili nella nostra vita quotidiana, privata o lavorativa!"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Le pellicole di sicurezza di Madico, azienda&#xA0;<em>made in USA&#xA0;con 100 anni di storia nel settore, sono la linea di difesa pi&#xF9; collaudata contro il rischio di rottura da urto e da eventi naturali. Queste pellicole sono ideali per i proprietari di case e aziende in aree soggette a condizioni meteorologiche avverse come uragani, tornado e altre forti tempeste, mantenendo le loro famiglie, clienti e propriet&#xE0; al sicuro da lesioni dovute al vetro.",
+      "text": "Le pellicole di sicurezza di Madico, azienda made in USA con 100 anni di storia nel settore, sono la linea di difesa più collaudata contro il rischio di rottura da urto e da eventi naturali. Queste pellicole sono ideali per i proprietari di case e aziende in aree soggette a condizioni meteorologiche avverse come uragani, tornado e altre forti tempeste, mantenendo le loro famiglie, clienti e proprietà al sicuro da lesioni dovute al vetro."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Una pellicola trasparente di sicurezza e protezione fornisce una protezione passiva 24 ore su 24 contro le minacce pi&#xF9; comuni. Finestre e porte in vetro sono i punti di ingresso pi&#xF9; vulnerabili in una propriet&#xE0; commerciale. Con l&#x2019;applicazione della pellicola di sicurezza e protezione puoi essere certo che le apparecchiature costose sono al sicuro e che i dipendenti sono al sicuro.",
+      "text": "Una pellicola trasparente di sicurezza e protezione fornisce una protezione passiva 24 ore su 24 contro le minacce più comuni. Finestre e porte in vetro sono i punti di ingresso più vulnerabili in una proprietà commerciale. Con l’applicazione della pellicola di sicurezza e protezione puoi essere certo che le apparecchiature costose sono al sicuro e che i dipendenti sono al sicuro."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Come funzionano le pellicole antisolari riflettenti",
+      "text": "Come funzionano le pellicole antisolari riflettenti"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole riflettenti sono prodotti antisolari utilizzati per migliorare l&#x2019;isolamento termico delle vetrate.",
+      "text": "Le pellicole riflettenti sono prodotti antisolari utilizzati per migliorare l’isolamento termico delle vetrate."
+    },
+    {
+      "type": "paragraph",
+      "html": "I materiali con cui vengono fabbricate garantiscono&#xA0;<strong>filtraggio e schermatura dai raggi solari, evitano che il calore entri negli ambienti illuminati dalle nostre vetrate,&#xA0;<strong>migliorano la resa energetica&#xA0;dei nostri edifici,&#xA0;<strong>riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Utilizzando la giusta pellicola si possono ridurre le temperature interne degli edifici fino a 7/8&#xB0;C. Questo ovviamente porter&#xE0; una cospicua diminuzione dei costi di climatizzazione estivi ed un impatto ambientale molto inferiore.",
+      "text": "I materiali con cui vengono fabbricate garantiscono filtraggio e schermatura dai raggi solari, evitano che il calore entri negli ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Utilizzando la giusta pellicola si possono ridurre le temperature interne degli edifici fino a 7/8°C. Questo ovviamente porterà una cospicua diminuzione dei costi di climatizzazione estivi ed un impatto ambientale molto inferiore."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole a specchio hanno l&#x2019;utilit&#xE0; di riflettere la luce solare per cercare di impedire alla componente di calore di entrare all&#x2019;interno della superficie vetrata.",
+      "text": "Le pellicole a specchio hanno l’utilità di riflettere la luce solare per cercare di impedire alla componente di calore di entrare all’interno della superficie vetrata."
+    },
+    {
+      "type": "note",
+      "html": "Perch&#xE9; dovrei installare una pellicola antisolare di sicurezza?",
+      "text": "Perché dovrei installare una pellicola antisolare di sicurezza?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Perch&#xE9; consente la &#x201C;messa in sicurezza&#x201D; di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformit&#xE0; al Testo Unico D.lgs. 81/2008.",
+      "text": "Perché consente la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformità al Testo Unico D.lgs. 81/2008."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Perch&#xE9; offre una costante protezione antinfortunistica in caso di rottura del vetro.",
+      "text": "Perché offre una costante protezione antinfortunistica in caso di rottura del vetro."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Perch&#xE9; riflette l&#x2019;energia solare (calore), prodotta dall&#x2019;irraggiamento solare incidente sulle vetrate, in modo da ridurre significativamente l&#x2019;utilizzo dei climatizzatori, riducendo drasticamente i costi di condizionamento estivo.",
+      "text": "Perché riflette l’energia solare (calore), prodotta dall’irraggiamento solare incidente sulle vetrate, in modo da ridurre significativamente l’utilizzo dei climatizzatori, riducendo drasticamente i costi di condizionamento estivo."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Perch&#xE9; garantisce una perfetta trasparenza, la visuale sar&#xE0; perfettamente cristallina con assenza di distorsioni ottiche.",
+      "text": "Perché garantisce una perfetta trasparenza, la visuale sarà perfettamente cristallina con assenza di distorsioni ottiche."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie RS",
+      "text": "La serie RS"
+    },
+    {
+      "type": "paragraph",
+      "html": "Se vuoi unire la tutela antinfortunistica alla comodit&#xE0; di poter vivere i tuoi ambienti senza surriscaldamenti e deperimento degli oggetti all&#x2019;interno le pellicole antisolari di sicurezza della serie RS sono quello che fa per te.",
+      "text": "Se vuoi unire la tutela antinfortunistica alla comodità di poter vivere i tuoi ambienti senza surriscaldamenti e deperimento degli oggetti all’interno le pellicole antisolari di sicurezza della serie RS sono quello che fa per te."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "RS 20 PS SR 4 mil",
+      "text": "RS 20 PS SR 4 mil"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola antisolare di sicurezza RS 20 PS SR 4 Mil &#xE8; testata e certificata in conformit&#xE0; alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm.",
+      "text": "La pellicola antisolare di sicurezza RS 20 PS SR 4 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "RS 20 PS SR 8 mil",
+      "text": "RS 20 PS SR 8 mil"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola antisolare di sicurezza RS 20 PS SR 8 Mil &#xE8; testata e certificata in conformit&#xE0; alla Norma europea EN12600, classe 1B1 su lastra singola da 4 e 6 mm.",
+      "text": "La pellicola antisolare di sicurezza RS 20 PS SR 8 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 1B1 su lastra singola da 4 e 6 mm."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "RS 40 PS SR 4 mil",
+      "text": "RS 40 PS SR 4 mil"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "La pellicola antisolare di sicurezza RS 40 PS SR 4 Mil &#xE8; testata e certificata in conformit&#xE0; alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm.",
+      "text": "La pellicola antisolare di sicurezza RS 40 PS SR 4 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "RS 40 PS SR 8 mil",
+      "text": "RS 40 PS SR 8 mil"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola antisolare di sicurezza RS 40 PS SR 4 Mil &#xE8; testata e certificata in conformit&#xE0; alla Norma europea EN12600, classe 1B1 su lastra singola da 4 e 6 mm.",
+      "text": "La pellicola antisolare di sicurezza RS 40 PS SR 4 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 1B1 su lastra singola da 4 e 6 mm."
+    },
+    {
+      "type": "note",
+      "html": "I nostri Prodotti di questa categoria",
+      "text": "I nostri Prodotti di questa categoria"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/\">Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL",
+      "text": "Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/\">Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL",
+      "text": "Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/\">Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL",
+      "text": "Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/\">Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL",
+      "text": "Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole antisolari di sicurezza, la serie RS Cosa sono le pellicole di sicurezza? Le pellicole antisolari di sicurezza vanno a risolvere questa problematicità. Realizzate in diversi strati di poliestere permettono al vetro di non proiettare schegge in caso di rottura, impedendo loro di disperdersi nell’ambiente e causare danni e lesioni anche gravi a cose e persone. Pertanto, forniscono protezione per molte piccole variabili nella nostra vita quotidiana, privata o lavorativa! Le pellicole di sicurezza di Madico, azienda made in USA con 100 anni di storia nel settore, sono la linea di difesa più collaudata contro il rischio di rottura da urto e da eventi naturali. Queste pellicole sono ideali per i proprietari di case e aziende in aree soggette a condizioni meteorologiche avverse come uragani, tornado e altre forti tempeste, mantenendo le loro famiglie, clienti e proprietà al sicuro da lesioni dovute al vetro. Una pellicola trasparente di sicurezza e protezione fornisce una protezione passiva 24 ore su 24 contro le minacce più comuni. Finestre e porte in vetro sono i punti di ingresso più vulnerabili in una proprietà commerciale. Con l’applicazione della pellicola di sicurezza e protezione puoi essere certo che le apparecchiature costose sono al sicuro e che i dipendenti sono al sicuro. Come funzionano le pellicole antisolari riflettenti Le pellicole riflettenti sono prodotti antisolari utilizzati per migliorare l’isolamento termico delle vetrate. I materiali con cui vengono fabbricate garantiscono filtraggio e schermatura dai raggi solari, evitano che il calore entri negli ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Utilizzando la giusta pellicola si possono ridurre le temperature interne degli edifici fino a 7/8°C. Questo ovviamente porterà una cospicua diminuzione dei costi di climatizzazione estivi ed un impatto ambientale molto inferiore. Le pellicole a specchio hanno l’utilità di riflettere la luce solare per cercare di impedire alla componente di calore di entrare all’interno della superficie vetrata. Perché dovrei installare una pellicola antisolare di sicurezza? Perché consente la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformità al Testo Unico D.lgs. 81/2008. Perché offre una costante protezione antinfortunistica in caso di rottura del vetro. Perché riflette l’energia solare (calore), prodotta dall’irraggiamento solare incidente sulle vetrate, in modo da ridurre significativamente l’utilizzo dei climatizzatori, riducendo drasticamente i costi di condizionamento estivo. Perché garantisce una perfetta trasparenza, la visuale sarà perfettamente cristallina con assenza di distorsioni ottiche. La serie RS Se vuoi unire la tutela antinfortunistica alla comodità di poter vivere i tuoi ambienti senza surriscaldamenti e deperimento degli oggetti all’interno le pellicole antisolari di sicurezza della serie RS sono quello che fa per te. RS 20 PS SR 4 mil La pellicola antisolare di sicurezza RS 20 PS SR 4 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci RS 20 PS SR 8 mil La pellicola antisolare di sicurezza RS 20 PS SR 8 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 1B1 su lastra singola da 4 e 6 mm. RS 40 PS SR 4 mil La pellicola antisolare di sicurezza RS 40 PS SR 4 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. RS 40 PS SR 8 mil La pellicola antisolare di sicurezza RS 40 PS SR 4 Mil è testata e certificata in conformità alla Norma europea EN12600, classe 1B1 su lastra singola da 4 e 6 mm. I nostri Prodotti di questa categoria Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 4221,
+  "fetchedAt": "2026-04-28T15:09:44.563Z"
+}

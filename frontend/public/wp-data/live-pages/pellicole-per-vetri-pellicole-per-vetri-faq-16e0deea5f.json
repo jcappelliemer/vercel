@@ -1,0 +1,124 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/faq/",
+  "path": "/pellicole-per-vetri/pellicole-per-vetri/faq/",
+  "route": {
+    "type": "faq",
+    "label": "FAQ",
+    "newPath": "/faq/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/page-sitemap.xml",
+  "seo": {
+    "title": "FAQ - Solaris Films",
+    "description": "Risposte celeri e concrete per le problematiche più frequenti. Un aiuto per ogni esigenza e ogni difficoltà",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/faq/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "FAQ",
+      "og:description": "Risposte celeri e concrete per le problematiche più frequenti. Un aiuto per ogni esigenza e ogni difficoltà",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/faq/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "5 minuti"
+    },
+    "article": {
+      "article:modified_time": "2025-09-09T09:33:18+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/faq\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/faq\\/\",\"name\":\"FAQ - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-06-17T08:10:07+00:00\",\"dateModified\":\"2025-09-09T09:33:18+00:00\",\"description\":\"Risposte celeri e concrete per le problematiche più frequenti. Un aiuto per ogni esigenza e ogni difficoltà\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/faq\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/faq\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/faq\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole per vetri\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"FAQ\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "FAQ"
+    },
+    {
+      "level": 2,
+      "text": "Domande Frequenti"
+    },
+    {
+      "level": 2,
+      "text": "Abbiamo alcune risposte rapide per te, per le problematiche più comuni."
+    }
+  ],
+  "h1": "FAQ",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "FAQ",
+      "text": "FAQ"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Domande Frequenti",
+      "text": "Domande Frequenti"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Abbiamo alcune risposte rapide per te, per le problematiche pi&#xF9; comuni.",
+      "text": "Abbiamo alcune risposte rapide per te, per le problematiche più comuni."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sono dei film formati da diversi strati di polimeri che vanno a riflettere principalmente la componente UV e la componente Infrarossa dei raggi solari. Altri strati vanno a riflettere la componente visibile per raggiungere, in questa riflessione, fino all&#x2019;80% della componente di energia riflessa. La perdita della componente UV &#xE8; subito apprezzabile a livello di comfort nel sostare di fronte alle vetrate in pieno sole.",
+      "text": "Le pellicole antisolari sono dei film formati da diversi strati di polimeri che vanno a riflettere principalmente la componente UV e la componente Infrarossa dei raggi solari. Altri strati vanno a riflettere la componente visibile per raggiungere, in questa riflessione, fino all’80% della componente di energia riflessa. La perdita della componente UV è subito apprezzabile a livello di comfort nel sostare di fronte alle vetrate in pieno sole."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole a controllo solare riflettono fino al 94% dell&#x2019;energia solare incidente,&#xA0; il risparmio energetico nel periodo estivo va dal 30 al 50% dell&#x2019;elettricit&#xE0; impiegata per il condizionamento dei locali vetrati. Oltre al risparmio energetico, il confort della perdita dell&#x2019;effetto dell&#x2019;irraggiamento permette di godere la vista esterna senza la percezione del calore del sole.",
+      "text": "Le pellicole a controllo solare riflettono fino al 94% dell’energia solare incidente, il risparmio energetico nel periodo estivo va dal 30 al 50% dell’elettricità impiegata per il condizionamento dei locali vetrati. Oltre al risparmio energetico, il confort della perdita dell’effetto dell’irraggiamento permette di godere la vista esterna senza la percezione del calore del sole."
+    },
+    {
+      "type": "paragraph",
+      "html": "No! L&#x2019;irraggiamento solare in inverno ed autunno &#xE8; considerato irrilevante per effetto della minore incidenza del sole dovuto alla sua declinazione.",
+      "text": "No! L’irraggiamento solare in inverno ed autunno è considerato irrilevante per effetto della minore incidenza del sole dovuto alla sua declinazione."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole a controllo solare o antisolari che utilizziamo hanno una garanzia che pu&#xF2; arrivare fino a 10 anni, per la validazione della garanzia &#xE8; necessario che l&#x2019;intervento sia eseguito da personale qualificato ed abilitato da Solaris Films.",
+      "text": "Le pellicole a controllo solare o antisolari che utilizziamo hanno una garanzia che può arrivare fino a 10 anni, per la validazione della garanzia è necessario che l’intervento sia eseguito da personale qualificato ed abilitato da Solaris Films."
+    },
+    {
+      "type": "paragraph",
+      "html": "Esistono pellicole antisolari da applicare all&#x2019;interno o all&#x2019;esterno, con differenti nuance colorate e pi&#xF9; o meno trasparenti a seconda della quantit&#xE0; di energia che si vuole riflettere. I nostri tecnici sono in grado di consigliarvi nella scelta della migliore soluzione per voi.",
+      "text": "Esistono pellicole antisolari da applicare all’interno o all’esterno, con differenti nuance colorate e più o meno trasparenti a seconda della quantità di energia che si vuole riflettere. I nostri tecnici sono in grado di consigliarvi nella scelta della migliore soluzione per voi."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;acquisto e la messa in opera a regola d&#x2019;arte delle pellicole antisolari professionali varia da circa 60 a 110&#x20AC; al metro quadro. Per installazioni di dimensioni importanti contattateci, vi invieremo un preventivo personalizzato secondo le vostre esigenze.",
+      "text": "L’acquisto e la messa in opera a regola d’arte delle pellicole antisolari professionali varia da circa 60 a 110€ al metro quadro. Per installazioni di dimensioni importanti contattateci, vi invieremo un preventivo personalizzato secondo le vostre esigenze."
+    },
+    {
+      "type": "paragraph",
+      "html": "La nuova pellicola fotocromatica da esterni ha invece un costo di acquisto e montaggio fino a 150&#x20AC;/mq.",
+      "text": "La nuova pellicola fotocromatica da esterni ha invece un costo di acquisto e montaggio fino a 150€/mq."
+    },
+    {
+      "type": "paragraph",
+      "html": "Per installare le pellicole antisolari o anticalore &#xE8; necessario pulire al meglio le superfici vetrate, rimuovendo eventuali tracce di silicone perimetrale che potrebbero ostacolare l&#x2019;aderenza della pellicola. Una volta tagliata a misura la pellicola, viene applicata alla vetrata inumidendo la superficie da ricoprire, rimuovendo poi il liquido con l&#x2019;utilizzo di una spatola. A concludere l&#x2019;operazione viene applicato uno strato di silicone apposito perimetralmente sulla cornice del vetro.",
+      "text": "Per installare le pellicole antisolari o anticalore è necessario pulire al meglio le superfici vetrate, rimuovendo eventuali tracce di silicone perimetrale che potrebbero ostacolare l’aderenza della pellicola. Una volta tagliata a misura la pellicola, viene applicata alla vetrata inumidendo la superficie da ricoprire, rimuovendo poi il liquido con l’utilizzo di una spatola. A concludere l’operazione viene applicato uno strato di silicone apposito perimetralmente sulla cornice del vetro."
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "CONTATTACI",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "FAQ Domande Frequenti Abbiamo alcune risposte rapide per te, per le problematiche più comuni. Le pellicole antisolari sono dei film formati da diversi strati di polimeri che vanno a riflettere principalmente la componente UV e la componente Infrarossa dei raggi solari. Altri strati vanno a riflettere la componente visibile per raggiungere, in questa riflessione, fino all’80% della componente di energia riflessa. La perdita della componente UV è subito apprezzabile a livello di comfort nel sostare di fronte alle vetrate in pieno sole. Le pellicole a controllo solare riflettono fino al 94% dell’energia solare incidente, il risparmio energetico nel periodo estivo va dal 30 al 50% dell’elettricità impiegata per il condizionamento dei locali vetrati. Oltre al risparmio energetico, il confort della perdita dell’effetto dell’irraggiamento permette di godere la vista esterna senza la percezione del calore del sole. No! L’irraggiamento solare in inverno ed autunno è considerato irrilevante per effetto della minore incidenza del sole dovuto alla sua declinazione. Le pellicole a controllo solare o antisolari che utilizziamo hanno una garanzia che può arrivare fino a 10 anni, per la validazione della garanzia è necessario che l’intervento sia eseguito da personale qualificato ed abilitato da Solaris Films. Esistono pellicole antisolari da applicare all’interno o all’esterno, con differenti nuance colorate e più o meno trasparenti a seconda della quantità di energia che si vuole riflettere. I nostri tecnici sono in grado di consigliarvi nella scelta della migliore soluzione per voi. L’acquisto e la messa in opera a regola d’arte delle pellicole antisolari professionali varia da circa 60 a 110€ al metro quadro. Per installazioni di dimensioni importanti contattateci, vi invieremo un preventivo personalizzato secondo le vostre esigenze. La nuova pellicola fotocromatica da esterni ha invece un costo di acquisto e montaggio fino a 150€/mq. Per installare le pellicole antisolari o anticalore è necessario pulire al meglio le superfici vetrate, rimuovendo eventuali tracce di silicone perimetrale che potrebbero ostacolare l’aderenza della pellicola. Una volta tagliata a misura la pellicola, viene applicata alla vetrata inumidendo la superficie da ricoprire, rimuovendo poi il liquido con l’utilizzo di una spatola. A concludere l’operazione viene applicato uno strato di silicone apposito perimetralmente sulla cornice del vetro. CONTATTACI",
+  "textLength": 2459,
+  "fetchedAt": "2026-04-28T15:09:05.071Z"
+}

@@ -1,0 +1,199 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+  "path": "/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Testo unico sulla salute e sicurezza sul lavoro ​ - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Testo unico sulla salute e sicurezza sul lavoro ​",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-15T20:33:50+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/testo-unico-sulla-salute-e-sicurezza-sul-lavoro\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/testo-unico-sulla-salute-e-sicurezza-sul-lavoro\\/\",\"name\":\"Testo unico sulla salute e sicurezza sul lavoro ​ - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-11T09:49:48+00:00\",\"dateModified\":\"2025-09-15T20:33:50+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/testo-unico-sulla-salute-e-sicurezza-sul-lavoro\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/testo-unico-sulla-salute-e-sicurezza-sul-lavoro\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/testo-unico-sulla-salute-e-sicurezza-sul-lavoro\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Testo unico sulla salute e sicurezza sul lavoro ​\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Testo unico sulla salute e sicurezza sul lavoro ​"
+    },
+    {
+      "level": 3,
+      "text": "DEFINIZIONE DI PERICOLO (dal D. Lgs. 81/2008 art. 2)​"
+    },
+    {
+      "level": 2,
+      "text": "Testo Unico D.Lgs.81/2008 (ultimo aggiornamento Giugno 2016)"
+    },
+    {
+      "level": 3,
+      "text": "DEFINIZIONE DI RISCHIO (dal D. Lgs. 81/2008 art. 2 )"
+    },
+    {
+      "level": 3,
+      "text": "TESTO UNICO ALLEGATO IV REQUISITI DEI LUOGHI DI LAVORO:"
+    }
+  ],
+  "h1": "Testo unico sulla salute e sicurezza sul lavoro ​",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Testo unico sulla salute e sicurezza sul lavoro &#x200B;",
+      "text": "Testo unico sulla salute e sicurezza sul lavoro ​"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "DEFINIZIONE DI PERICOLO (dal D. Lgs. 81/2008 art. 2)&#x200B;",
+      "text": "DEFINIZIONE DI PERICOLO (dal D. Lgs. 81/2008 art. 2)​"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Testo Unico D.Lgs.81/2008 (ultimo aggiornamento Giugno 2016)",
+      "text": "Testo Unico D.Lgs.81/2008 (ultimo aggiornamento Giugno 2016)"
+    },
+    {
+      "type": "paragraph",
+      "html": "Nel Supplemento Ordinario n. 108/L della Gazzetta Ufficiale n. 101 del 30 aprile 2008 &#xE8; stato pubblicato Il Decreto Legislativo n. 81 del 9 aprile 2008.",
+      "text": "Nel Supplemento Ordinario n. 108/L della Gazzetta Ufficiale n. 101 del 30 aprile 2008 è stato pubblicato Il Decreto Legislativo n. 81 del 9 aprile 2008."
+    },
+    {
+      "type": "paragraph",
+      "html": "Il Testo Unico definisce con precisione i concetti di Propriet&#xE0; o qualit&#xE0; intrinseca di un determinato fattore (processo lavorativo, sostanza, strumentazione,&#x2026;) avente il potenziale di causare danni.",
+      "text": "Il Testo Unico definisce con precisione i concetti di Proprietà o qualità intrinseca di un determinato fattore (processo lavorativo, sostanza, strumentazione,…) avente il potenziale di causare danni."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "DEFINIZIONE DI RISCHIO (dal D. Lgs. 81/2008 art. 2 )",
+      "text": "DEFINIZIONE DI RISCHIO (dal D. Lgs. 81/2008 art. 2 )"
+    },
+    {
+      "type": "paragraph",
+      "html": "Probabilit&#xE0; di raggiungimento del livello potenziale di danno nelle condizioni di impiego o di esposizione ad un determinato fattore o agente oppure alla loro combinazione RISCHIO=PROBABILITA&#x2019; x GRAVITA&#x2019;",
+      "text": "Probabilità di raggiungimento del livello potenziale di danno nelle condizioni di impiego o di esposizione ad un determinato fattore o agente oppure alla loro combinazione RISCHIO=PROBABILITA’ x GRAVITA’"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il D.Lgs. 81/2008, denominato &#x201C;Testo unico sulla sicurezza&#x201D;, &#xE8; entrato in vigore il 15 maggio 2008, in attuazione all&#x2019;articolo 1 Legge 03 agosto 2007, n. 123 disciplina il campo della tutela della salute e della sicurezza dei lavoratori negli ambienti di lavoro.",
+      "text": "Il D.Lgs. 81/2008, denominato “Testo unico sulla sicurezza”, è entrato in vigore il 15 maggio 2008, in attuazione all’articolo 1 Legge 03 agosto 2007, n. 123 disciplina il campo della tutela della salute e della sicurezza dei lavoratori negli ambienti di lavoro."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "TESTO UNICO ALLEGATO IV REQUISITI DEI LUOGHI DI LAVORO:",
+      "text": "TESTO UNICO ALLEGATO IV REQUISITI DEI LUOGHI DI LAVORO:"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>1.6 Porte e portoni<br>\n<br>\nComma 1.6.11 del Testo Unico (allegato IV):&#xA0;Se le superfici trasparenti o traslucide delle&#xA0;<b>porte e dei portoni&#xA0;non sono costituite da materiali di sicurezza e c&#x2019;&#xE8; il rischio che i lavoratori possano rimanere feriti in caso di rottura di dette superfici,&#xA0;<b>queste devono essere protette contro lo sfondamento.<br>\n<b><br>\n1.3 Pavimenti,&#xA0;muri soffitte, finestre e lucernari dei locali scale e marciapiedi mobili, banchina e rampe di carico",
+      "text": "1.6 Porte e portoni Comma 1.6.11 del Testo Unico (allegato IV): Se le superfici trasparenti o traslucide delle porte e dei portoni non sono costituite da materiali di sicurezza e c’è il rischio che i lavoratori possano rimanere feriti in caso di rottura di dette superfici, queste devono essere protette contro lo sfondamento. 1.3 Pavimenti, muri soffitte, finestre e lucernari dei locali scale e marciapiedi mobili, banchina e rampe di carico"
+    },
+    {
+      "type": "paragraph",
+      "html": "Comma 1.3.6<b>.&#xA0;del Testo Unico (allegato IV):&#xA0;Le pareti trasparenti o traslucide, in particolare le pareti completamente vetrate, nei locali o nelle vicinanze dei posti di lavoro e delle vie di circolazione, devono essere chiaramente segnalate e&#xA0;<b>costituite da materiali di sicurezza fino all&#x2019;altezza di 1 metro dal pavimento,&#xA0;ovvero essere separate dai posti di lavoro e dalle vie di circolazione succitati in modo tale che i lavoratori non possano entrare in contatto con le pareti, n&#xE8; rimanere feriti qualora esse vadano in frantumi. Nel caso in cui vengano utilizzati materiali di sicurezza fino all&#x2019; altezza di 1 metro dal pavimento ,&#xA0;<b>tale altezza &#xE8; elevata quando ci&#xF2; &#xE8; necessario in relazione al rischio che i lavoratori rimangano feriti qualora essi vadano in frantumi.",
+      "text": "Comma 1.3.6. del Testo Unico (allegato IV): Le pareti trasparenti o traslucide, in particolare le pareti completamente vetrate, nei locali o nelle vicinanze dei posti di lavoro e delle vie di circolazione, devono essere chiaramente segnalate e costituite da materiali di sicurezza fino all’altezza di 1 metro dal pavimento, ovvero essere separate dai posti di lavoro e dalle vie di circolazione succitati in modo tale che i lavoratori non possano entrare in contatto con le pareti, nè rimanere feriti qualora esse vadano in frantumi. Nel caso in cui vengano utilizzati materiali di sicurezza fino all’ altezza di 1 metro dal pavimento , tale altezza è elevata quando ciò è necessario in relazione al rischio che i lavoratori rimangano feriti qualora essi vadano in frantumi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Comma 1.3.7.&#xA0;del Testo Unico (allegato IV):&#xA0;Le finestre, i lucernari e i dispositivi di ventilazione devono poter essere aperti, chiusi, regolati e fissati dai lavoratori&#xA0;<b>in tutta sicurezza.",
+      "text": "Comma 1.3.7. del Testo Unico (allegato IV): Le finestre, i lucernari e i dispositivi di ventilazione devono poter essere aperti, chiusi, regolati e fissati dai lavoratori in tutta sicurezza."
+    },
+    {
+      "type": "paragraph",
+      "html": "Comma 1.3.8.&#xA0;del Testo Unico (allegatoIV):&#xA0;Le finestre e i lucernari devono essere concepiti congiuntamente con l&#x2019;attrezzatura o dotati di dispositivi che consentano la loro pulitura senza rischi per i lavoratori che effettuano tale lavoro nonch&#xE9; per i lavoratori presenti nell&#x2019;edificio ed intorno ad esso.",
+      "text": "Comma 1.3.8. del Testo Unico (allegatoIV): Le finestre e i lucernari devono essere concepiti congiuntamente con l’attrezzatura o dotati di dispositivi che consentano la loro pulitura senza rischi per i lavoratori che effettuano tale lavoro nonché per i lavoratori presenti nell’edificio ed intorno ad esso."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>1.9 Microclima<br>\n1.9.2 Temperatura dei locali<br>\n<br>\nComma 1.9.2.1.&#xA0;del Testo Unico (allegato IV):&#xA0;La temperatura nei locali di lavoro deve essere&#xA0;<b>adeguata all&#x2019;organismo umano&#xA0;durante il tempo di lavoro, tenuto conto dei metodi di lavoro applicati e dagli sforzi fisici imposti ai lavoratori.",
+      "text": "1.9 Microclima 1.9.2 Temperatura dei locali Comma 1.9.2.1. del Testo Unico (allegato IV): La temperatura nei locali di lavoro deve essere adeguata all’organismo umano durante il tempo di lavoro, tenuto conto dei metodi di lavoro applicati e dagli sforzi fisici imposti ai lavoratori."
+    },
+    {
+      "type": "paragraph",
+      "html": "Comma 1.9.2.4&#xA0;del Testo Unico (allegato IV):<b>&#xA0;Le finestre, i lucerneri e le pareti vetrate devono essere tali da evitare un soleggiamento eccessivo dei luoghi di lavoro, tenendo conto del tipo di attivit&#xE0; e della natura del luogo di lavoro.",
+      "text": "Comma 1.9.2.4 del Testo Unico (allegato IV): Le finestre, i lucerneri e le pareti vetrate devono essere tali da evitare un soleggiamento eccessivo dei luoghi di lavoro, tenendo conto del tipo di attività e della natura del luogo di lavoro."
+    },
+    {
+      "type": "paragraph",
+      "html": "Comma 1.9.2.5.&#xA0;del Testo Unico (allegato IV):&#xA0;Quando non &#xE8; conveniente modificare la temperatura di tutto l&#x2019;ambiente, si deve provvedere alla difesa dei lavoratori contro le temperature troppo alte o troppo basse mediante misure tecniche localizzate o mezzi personali di protezione.",
+      "text": "Comma 1.9.2.5. del Testo Unico (allegato IV): Quando non è conveniente modificare la temperatura di tutto l’ambiente, si deve provvedere alla difesa dei lavoratori contro le temperature troppo alte o troppo basse mediante misure tecniche localizzate o mezzi personali di protezione."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Art.26 &#x2013; Contratto di appalto o contratto d&#x2019;opera",
+      "text": "Art.26 – Contratto di appalto o contratto d’opera"
+    },
+    {
+      "type": "paragraph",
+      "html": "1. Il datore di lavoro, in caso di affidamento dei lavori all&#x2019;impresa appaltatrice o a lavoratori autonomi all&#x2019;interno della propria azienda, o di una singola unita&#x2019; produttiva della stessa, nonch&#xE8; nell&#x2019;ambito dell&#x2019;intero ciclo produttivo dell&#x2019;azienda medesima:",
+      "text": "1. Il datore di lavoro, in caso di affidamento dei lavori all’impresa appaltatrice o a lavoratori autonomi all’interno della propria azienda, o di una singola unita’ produttiva della stessa, nonchè nell’ambito dell’intero ciclo produttivo dell’azienda medesima:"
+    },
+    {
+      "type": "paragraph",
+      "html": "a) verifica, con le modalita&#x2019; previste dal decreto di cui all&#x2019;articolo 6, comma 8, lettera g), l&#x2019;idoneita&#x2019; tecnico professionale delle imprese appaltatrici o dei lavoratori autonomi in relazione ai lavori da affidare in appalto o mediante contratto d&#x2019;opera o di somministrazione. Fino alla data di entrata in vigore del decreto di cui al periodo che precede, la verifica e&#x2019; eseguita attraverso le seguenti modalit&#xE0;&#x2019;:",
+      "text": "a) verifica, con le modalita’ previste dal decreto di cui all’articolo 6, comma 8, lettera g), l’idoneita’ tecnico professionale delle imprese appaltatrici o dei lavoratori autonomi in relazione ai lavori da affidare in appalto o mediante contratto d’opera o di somministrazione. Fino alla data di entrata in vigore del decreto di cui al periodo che precede, la verifica e’ eseguita attraverso le seguenti modalità’:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        {
+          "html": "acquisizione del certificato di iscrizione alla camera di commercio, industria e artigianato;",
+          "text": "acquisizione del certificato di iscrizione alla camera di commercio, industria e artigianato;"
+        },
+        {
+          "html": "acquisizione dell&#x2019;autocertificazione dell&#x2019;impresa appaltatrice o dei lavoratori autonomi del possesso dei requisiti di idoneita&#x2019; tecnico professionale, ai sensi dell&#x2019;articolo 47 del testo unico delle disposizioni legislative e regolamentari in materia di documentazione amministrativa, di cui al decreto del Presidente della Repubblica del 28 dicembre 2000, n. 445;",
+          "text": "acquisizione dell’autocertificazione dell’impresa appaltatrice o dei lavoratori autonomi del possesso dei requisiti di idoneita’ tecnico professionale, ai sensi dell’articolo 47 del testo unico delle disposizioni legislative e regolamentari in materia di documentazione amministrativa, di cui al decreto del Presidente della Repubblica del 28 dicembre 2000, n. 445;"
+        }
+      ],
+      "text": "acquisizione del certificato di iscrizione alla camera di commercio, industria e artigianato; acquisizione dell’autocertificazione dell’impresa appaltatrice o dei lavoratori autonomi del possesso dei requisiti di idoneita’ tecnico professionale, ai sensi dell’articolo 47 del testo unico delle disposizioni legislative e regolamentari in materia di documentazione amministrativa, di cui al decreto del Presidente della Repubblica del 28 dicembre 2000, n. 445;"
+    },
+    {
+      "type": "paragraph",
+      "html": "b) fornisce agli stessi soggetti dettagliate informazioni sui rischi specifici esistenti nell&#x2019;ambiente&#xA0; in cui sono destinati ad operare e sulle misure di prevenzione e di emergenza adottate in relazione alla propria attivita&#x2019;.",
+      "text": "b) fornisce agli stessi soggetti dettagliate informazioni sui rischi specifici esistenti nell’ambiente in cui sono destinati ad operare e sulle misure di prevenzione e di emergenza adottate in relazione alla propria attivita’."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Testo unico sulla salute e sicurezza sul lavoro ​ DEFINIZIONE DI PERICOLO (dal D. Lgs. 81/2008 art. 2)​ Testo Unico D.Lgs.81/2008 (ultimo aggiornamento Giugno 2016) Nel Supplemento Ordinario n. 108/L della Gazzetta Ufficiale n. 101 del 30 aprile 2008 è stato pubblicato Il Decreto Legislativo n. 81 del 9 aprile 2008. Il Testo Unico definisce con precisione i concetti di Proprietà o qualità intrinseca di un determinato fattore (processo lavorativo, sostanza, strumentazione,…) avente il potenziale di causare danni. DEFINIZIONE DI RISCHIO (dal D. Lgs. 81/2008 art. 2 ) Probabilità di raggiungimento del livello potenziale di danno nelle condizioni di impiego o di esposizione ad un determinato fattore o agente oppure alla loro combinazione RISCHIO=PROBABILITA’ x GRAVITA’ Il D.Lgs. 81/2008, denominato “Testo unico sulla sicurezza”, è entrato in vigore il 15 maggio 2008, in attuazione all’articolo 1 Legge 03 agosto 2007, n. 123 disciplina il campo della tutela della salute e della sicurezza dei lavoratori negli ambienti di lavoro. TESTO UNICO ALLEGATO IV REQUISITI DEI LUOGHI DI LAVORO: 1.6 Porte e portoni Comma 1.6.11 del Testo Unico (allegato IV): Se le superfici trasparenti o traslucide delle porte e dei portoni non sono costituite da materiali di sicurezza e c’è il rischio che i lavoratori possano rimanere feriti in caso di rottura di dette superfici, queste devono essere protette contro lo sfondamento. 1.3 Pavimenti, muri soffitte, finestre e lucernari dei locali scale e marciapiedi mobili, banchina e rampe di carico Comma 1.3.6. del Testo Unico (allegato IV): Le pareti trasparenti o traslucide, in particolare le pareti completamente vetrate, nei locali o nelle vicinanze dei posti di lavoro e delle vie di circolazione, devono essere chiaramente segnalate e costituite da materiali di sicurezza fino all’altezza di 1 metro dal pavimento, ovvero essere separate dai posti di lavoro e dalle vie di circolazione succitati in modo tale che i lavoratori non possano entrare in contatto con le pareti, nè rimanere feriti qualora esse vadano in frantumi. Nel caso in cui vengano utilizzati materiali di sicurezza fino all’ altezza di 1 metro dal pavimento , tale altezza è elevata quando ciò è necessario in relazione al rischio che i lavoratori rimangano feriti qualora essi vadano in frantumi. Comma 1.3.7. del Testo Unico (allegato IV): Le finestre, i lucernari e i dispositivi di ventilazione devono poter essere aperti, chiusi, regolati e fissati dai lavoratori in tutta sicurezza. Comma 1.3.8. del Testo Unico (allegatoIV): Le finestre e i lucernari devono essere concepiti congiuntamente con l’attrezzatura o dotati di dispositivi che consentano la loro pulitura senza rischi per i lavoratori che effettuano tale lavoro nonché per i lavoratori presenti nell’edificio ed intorno ad esso. 1.9 Microclima 1.9.2 Temperatura dei locali Comma 1.9.2.1. del Testo Unico (allegato IV): La temperatura nei locali di lavoro deve essere adeguata all’organismo umano durante il tempo di lavoro, tenuto conto dei metodi di lavoro applicati e dagli sforzi fisici imposti ai lavoratori. Comma 1.9.2.4 del Testo Unico (allegato IV): Le finestre, i lucerneri e le pareti vetrate devono essere tali da evitare un soleggiamento eccessivo dei luoghi di lavoro, tenendo conto del tipo di attività e della natura del luogo di lavoro. Comma 1.9.2.5. del Testo Unico (allegato IV): Quando non è conveniente modificare la temperatura di tutto l’ambiente, si deve provvedere alla difesa dei lavoratori contro le temperature troppo alte o troppo basse mediante misure tecniche localizzate o mezzi personali di protezione. Art.26 – Contratto di appalto o contratto d’opera 1. Il datore di lavoro, in caso di affidamento dei lavori all’impresa appaltatrice o a lavoratori autonomi all’interno della propria azienda, o di una singola unita’ produttiva della stessa, nonchè nell’ambito dell’intero ciclo produttivo dell’azienda medesima: a) verifica, con le modalita’ previste dal decreto di cui all’articolo 6, comma 8, lettera g), l’idoneita’ tecnico professionale delle imprese appaltatrici o dei lavoratori autonomi in relazione ai lavori da affidare in appalto o mediante contratto d’opera o di somministrazione. Fino alla data di entrata in vigore del decreto di cui al periodo che precede, la verifica e’ eseguita attraverso le seguenti modalità’: acquisizione del certificato di iscrizione alla camera di commercio, industria e artigianato; acquisizione dell’autocertificazione dell’impresa appaltatrice o dei lavoratori autonomi del possesso dei requisiti di idoneita’ tecnico professionale, ai sensi dell’articolo 47 del testo unico delle disposizioni legislative e regolamentari in materia di documentazione amministrativa, di cui al decreto del Presidente della Repubblica del 28 dicembre 2000, n. 445; b) fornisce agli stessi soggetti dettagliate informazioni sui rischi specifici esistenti nell’ambiente in cui sono destinati ad operare e sulle misure di prevenzione e di emergenza adottate in relazione alla propria attivita’. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 5125,
+  "fetchedAt": "2026-04-28T15:09:39.691Z"
+}

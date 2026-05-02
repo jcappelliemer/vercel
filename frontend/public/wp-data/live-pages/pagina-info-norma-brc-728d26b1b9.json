@@ -1,0 +1,498 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/norma-brc/",
+  "path": "/pagina-info/norma-brc/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/norma-brc/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Norma BRC - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/norma-brc/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Norma BRC",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pagina-info/norma-brc/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-15T20:32:24+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norma-brc\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norma-brc\\/\",\"name\":\"Norma BRC - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-11T09:30:19+00:00\",\"dateModified\":\"2025-09-15T20:32:24+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norma-brc\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norma-brc\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norma-brc\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Norma BRC\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Norma BRC"
+    },
+    {
+      "level": 3,
+      "text": "CERTIFICAZIONE BRC"
+    },
+    {
+      "level": 3,
+      "text": "Dall’ agosto 2018 è entrata in vigore la versione 8 del BRC Standard che introduce notevoli modifiche alla versione precedente.​"
+    },
+    {
+      "level": 3,
+      "text": "OBIETTIVI E VANTAGGI DELLA CERTIFICAZIONE BRC"
+    },
+    {
+      "level": 3,
+      "text": "UNA CERTIFICAZIONE IN ACCORDO ALLO STANDARD BRC PERMETTE DI:"
+    },
+    {
+      "level": 3,
+      "text": "IL NUOVO BRC STANDARD EDIZIONE 8"
+    },
+    {
+      "level": 3,
+      "text": "SESSIONE 1 – IMPEGNO DELLA DIREZIONE"
+    },
+    {
+      "level": 3,
+      "text": "SESSIONE 3 – SICUREZZA ALIMENTARE E SISTEMA DI GESTIONE DELLA QUALITA'"
+    },
+    {
+      "level": 3,
+      "text": "SESSIONE 4.11 – ORDINE E IGIENE"
+    },
+    {
+      "level": 2,
+      "text": "Sessione 5 – Controllo del prodotto"
+    },
+    {
+      "level": 3,
+      "text": "SESSIONE 5 – CONTROLLO DEL PRODOTTO"
+    },
+    {
+      "level": 3,
+      "text": "SESSIONE 8 – AREE DELLO STABILIMENTO"
+    }
+  ],
+  "h1": "Norma BRC",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Norma BRC",
+      "text": "Norma BRC"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "CERTIFICAZIONE BRC",
+      "text": "CERTIFICAZIONE BRC"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il BRC Global Standard for Food Safety &#xE8; nato nel 1998 per garantire che i prodotti a marchio siano ottenuti secondo standard qualitativi ben definiti e nel rispetto di requisiti minimi.&#xA0; Pu&#xF2; essere paragonato ad un&#xA0;capitolato&#xA0;che&#xA0;lega i fornitori qualificati all&#x2019;azienda di distribuzione.",
+      "text": "Il BRC Global Standard for Food Safety è nato nel 1998 per garantire che i prodotti a marchio siano ottenuti secondo standard qualitativi ben definiti e nel rispetto di requisiti minimi. Può essere paragonato ad un capitolato che lega i fornitori qualificati all’azienda di distribuzione."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Dall&amp;#8217; agosto 2018 &#xE8; entrata in vigore la versione 8 del BRC Standard che introduce notevoli modifiche alla versione precedente.&#x200B;",
+      "text": "Dall’ agosto 2018 è entrata in vigore la versione 8 del BRC Standard che introduce notevoli modifiche alla versione precedente.​"
+    },
+    {
+      "type": "paragraph",
+      "html": "A seguito della crescente importanza della commercializzazione di prodotto a marchio della Grande Distribuzione Organizzata, le maggiori aziende della distribuzione hanno sentito la necessit&#xE0; di assumere nuovi obblighi e responsabilit&#xE0; nei confronti dei consumatori.",
+      "text": "A seguito della crescente importanza della commercializzazione di prodotto a marchio della Grande Distribuzione Organizzata, le maggiori aziende della distribuzione hanno sentito la necessità di assumere nuovi obblighi e responsabilità nei confronti dei consumatori."
+    },
+    {
+      "type": "paragraph",
+      "html": "Di conseguenza le catene distributive hanno cominciato a studiare opportune misure per evitare incidenti in tutto il processo, dalla produzione alla distribuzione dei prodotti alimentari, verificando le prestazioni tecniche presso i siti di produzione dei fornitori avvalendosi di una struttura interna o affidandosi a enti terzi.",
+      "text": "Di conseguenza le catene distributive hanno cominciato a studiare opportune misure per evitare incidenti in tutto il processo, dalla produzione alla distribuzione dei prodotti alimentari, verificando le prestazioni tecniche presso i siti di produzione dei fornitori avvalendosi di una struttura interna o affidandosi a enti terzi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Con lo scopo di creare un riferimento comune per le valutazioni dei fornitori nasce, nel 1998, il BRC Technical Standard for Companies Supplying Retailer Branded Food Products, sviluppato dai principali nomi della distribuzione inglese.<br>\nIn pochi anni il mercato alimentare europeo assiste ad un&#x2019;ampia diffusione dello standard, anche oltre i confini britannici, che cambia il suo nome in &#x201C;BRC Global Standard &#x2013; Food&#x201D;.",
+      "text": "Con lo scopo di creare un riferimento comune per le valutazioni dei fornitori nasce, nel 1998, il BRC Technical Standard for Companies Supplying Retailer Branded Food Products, sviluppato dai principali nomi della distribuzione inglese. In pochi anni il mercato alimentare europeo assiste ad un’ampia diffusione dello standard, anche oltre i confini britannici, che cambia il suo nome in “BRC Global Standard – Food”."
+    },
+    {
+      "type": "paragraph",
+      "html": "Lo schema BRC si propone di aiutare i retailer a soddisfare pienamente gli obblighi legali e a proteggere il consumatore assicurando che i fornitori di prodotto a marchio operino nel rispetto di alcuni requisiti fondamentali e di standard qualitativi ben definiti.<br>\nAd oggi rappresenta uno degli strumenti pi&#xF9; validi per la valutazione dei fornitori di marca privata, ma anche un riferimento per la &#x201C;best practice&#x201D; nell&#x2019;industria alimentare sul quale molti operatori della filiera alimentare hanno basato i loro programmi di valutazione e qualifica fornitori.",
+      "text": "Lo schema BRC si propone di aiutare i retailer a soddisfare pienamente gli obblighi legali e a proteggere il consumatore assicurando che i fornitori di prodotto a marchio operino nel rispetto di alcuni requisiti fondamentali e di standard qualitativi ben definiti. Ad oggi rappresenta uno degli strumenti più validi per la valutazione dei fornitori di marca privata, ma anche un riferimento per la “best practice” nell’industria alimentare sul quale molti operatori della filiera alimentare hanno basato i loro programmi di valutazione e qualifica fornitori."
+    },
+    {
+      "type": "paragraph",
+      "html": "Lo standard BRC ha riconoscibilit&#xE0; internazionale, in quanto approvato da GFSI &#x2013; Global Food Safety Iniziative.<br>\nSolo gli organi di controllo accreditati a fronte della EN 45011 per la certificazione di prodotto possono svolgere verifiche a fronte dello standard BRC.",
+      "text": "Lo standard BRC ha riconoscibilità internazionale, in quanto approvato da GFSI – Global Food Safety Iniziative. Solo gli organi di controllo accreditati a fronte della EN 45011 per la certificazione di prodotto possono svolgere verifiche a fronte dello standard BRC."
+    },
+    {
+      "type": "paragraph",
+      "html": "La certificazione&#xA0;<b>BRC FOOD&#xA0;si applica ad aziende alimentari di trasformazione che operano per la Grande Distribuzione inglese e generalmente &#xE8; un presupposto necessario per esportare i propri prodotti.",
+      "text": "La certificazione BRC FOOD si applica ad aziende alimentari di trasformazione che operano per la Grande Distribuzione inglese e generalmente è un presupposto necessario per esportare i propri prodotti."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "OBIETTIVI E VANTAGGI DELLA CERTIFICAZIONE BRC",
+      "text": "OBIETTIVI E VANTAGGI DELLA CERTIFICAZIONE BRC"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;obiettivo principale della certificazione BRC FOOD &#xE8; avere a disposizione uno strumento operativo comune per selezionare i fornitori di prodotti alimentari a marchio in conformit&#xE0; a sicurezza, legalit&#xE0; e qualit&#xE0;.",
+      "text": "L’obiettivo principale della certificazione BRC FOOD è avere a disposizione uno strumento operativo comune per selezionare i fornitori di prodotti alimentari a marchio in conformità a sicurezza, legalità e qualità."
+    },
+    {
+      "type": "paragraph",
+      "html": "Lo Standard BRC assicura la presenza di questi requisiti imponendo il controllo sistematico di materie prime, semilavorati, prodotti finiti, ambienti produttivi e risorse che interagiscono nei processi.",
+      "text": "Lo Standard BRC assicura la presenza di questi requisiti imponendo il controllo sistematico di materie prime, semilavorati, prodotti finiti, ambienti produttivi e risorse che interagiscono nei processi."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "UNA CERTIFICAZIONE IN ACCORDO ALLO STANDARD  BRC PERMETTE DI:",
+      "text": "UNA CERTIFICAZIONE IN ACCORDO ALLO STANDARD BRC PERMETTE DI:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "avere riconoscibilit&#xE0; internazionale in materia di sicurezza alimentare",
+          "text": "avere riconoscibilità internazionale in materia di sicurezza alimentare"
+        },
+        {
+          "html": "ampliare il ventaglio dei propri clienti; la certificazione BRC FOOD infatti &#xE8; sempre pi&#xF9; spesso un prerequisito essenziale per accedere al mercato",
+          "text": "ampliare il ventaglio dei propri clienti; la certificazione BRC FOOD infatti è sempre più spesso un prerequisito essenziale per accedere al mercato"
+        },
+        {
+          "html": "tutelare l&#x2019;immagine di chi immette i prodotti sul mercato",
+          "text": "tutelare l’immagine di chi immette i prodotti sul mercato"
+        },
+        {
+          "html": "garantire le aspettative e tutelare la salute del consumatore finale",
+          "text": "garantire le aspettative e tutelare la salute del consumatore finale"
+        },
+        {
+          "html": "ridurre le verifiche ispettive di parte seconda (minori risorse dedicate alla gestione delle verifiche)",
+          "text": "ridurre le verifiche ispettive di parte seconda (minori risorse dedicate alla gestione delle verifiche)"
+        },
+        {
+          "html": "integrare i requisiti dello standard con eventuali requisiti aggiuntivi specifici",
+          "text": "integrare i requisiti dello standard con eventuali requisiti aggiuntivi specifici"
+        },
+        {
+          "html": "sfruttare sinergie ed elementi comuni ai sistemi di gestione per la qualit&#xE0; secondo le ISO 9000 e il metodo HACCP",
+          "text": "sfruttare sinergie ed elementi comuni ai sistemi di gestione per la qualità secondo le ISO 9000 e il metodo HACCP"
+        },
+        {
+          "html": "ridurre i tempi e i costi delle verifiche ispettive grazie a auditor qualificati anche su altri schemi (es. IFS)",
+          "text": "ridurre i tempi e i costi delle verifiche ispettive grazie a auditor qualificati anche su altri schemi (es. IFS)"
+        },
+        {
+          "html": "Rischio Vetri nello standard BRC",
+          "text": "Rischio Vetri nello standard BRC"
+        }
+      ],
+      "text": "avere riconoscibilità internazionale in materia di sicurezza alimentare ampliare il ventaglio dei propri clienti; la certificazione BRC FOOD infatti è sempre più spesso un prerequisito essenziale per accedere al mercato tutelare l’immagine di chi immette i prodotti sul mercato garantire le aspettative e tutelare la salute del consumatore finale ridurre le verifiche ispettive di parte seconda (minori risorse dedicate alla gestione delle verifiche) integrare i requisiti dello standard con eventuali requisiti aggiuntivi specifici sfruttare sinergie ed elementi comuni ai sistemi di gestione per la qualità secondo le ISO 9000 e il metodo HACCP ridurre i tempi e i costi delle verifiche ispettive grazie a auditor qualificati anche su altri schemi (es. IFS) Rischio Vetri nello standard BRC"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "IL NUOVO BRC STANDARD EDIZIONE 8",
+      "text": "IL NUOVO BRC STANDARD EDIZIONE 8"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le modifiche allo standard BRC Food versione 8 propongono l&#x2019;introduzione di&#xA0;<strong>nuovi moduli aggiuntivi e volontari&#xA0;per le imprese alimentari, al fine di personalizzare la certificazione in modo pi&#xF9; specifico, ritagliandole sulle specifiche esigenze di business.",
+      "text": "Le modifiche allo standard BRC Food versione 8 propongono l’introduzione di nuovi moduli aggiuntivi e volontari per le imprese alimentari, al fine di personalizzare la certificazione in modo più specifico, ritagliandole sulle specifiche esigenze di business."
+    },
+    {
+      "type": "paragraph",
+      "html": "Questi nuovi moduli sono:",
+      "text": "Questi nuovi moduli sono:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Modulo volontario 8 &#x2013; Gestione dei prodotti commercializzati",
+          "text": "Modulo volontario 8 – Gestione dei prodotti commercializzati"
+        },
+        {
+          "html": "Modulo volontario 9 &#x2013; Gestione di materiali a contatto alimentare per alimentazione animale",
+          "text": "Modulo volontario 9 – Gestione di materiali a contatto alimentare per alimentazione animale"
+        },
+        {
+          "html": "Modulo volontario 10 &#x2013; GLOBAL GAP e catena di custodia",
+          "text": "Modulo volontario 10 – GLOBAL GAP e catena di custodia"
+        },
+        {
+          "html": "Modulo volontario 11 &#x2013; Gestione catena di approvvigionamento delle carni",
+          "text": "Modulo volontario 11 – Gestione catena di approvvigionamento delle carni"
+        },
+        {
+          "html": "Modulo volontario 12 &#x2013; Prodotti senza glutine (approvato AOECS)",
+          "text": "Modulo volontario 12 – Prodotti senza glutine (approvato AOECS)"
+        },
+        {
+          "html": "Modulo volontario 15 &#x2013; FSMA (Food Safety Modernization Act,)",
+          "text": "Modulo volontario 15 – FSMA (Food Safety Modernization Act,)"
+        }
+      ],
+      "text": "Modulo volontario 8 – Gestione dei prodotti commercializzati Modulo volontario 9 – Gestione di materiali a contatto alimentare per alimentazione animale Modulo volontario 10 – GLOBAL GAP e catena di custodia Modulo volontario 11 – Gestione catena di approvvigionamento delle carni Modulo volontario 12 – Prodotti senza glutine (approvato AOECS) Modulo volontario 15 – FSMA (Food Safety Modernization Act,)"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "SESSIONE 1 &#x2013;  IMPEGNO DELLA DIREZIONE",
+      "text": "SESSIONE 1 – IMPEGNO DELLA DIREZIONE"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;alta direzione dovr&#xE0; dimostrare un impegno tangibile verso una cultura della qualit&#xE0;. Questo significa che dovranno:",
+      "text": "L’alta direzione dovrà dimostrare un impegno tangibile verso una cultura della qualità. Questo significa che dovranno:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Definire attivit&#xE0; che coinvolgano tutte le parti del sito che hanno impatto sulla sicurezza del prodotto.",
+          "text": "Definire attività che coinvolgano tutte le parti del sito che hanno impatto sulla sicurezza del prodotto."
+        },
+        {
+          "html": "La definizione di un piano di azione che indichi la modalit&#xE0; di attuazione delle attivit&#xE0; intraprese ed i tempi previsti.",
+          "text": "La definizione di un piano di azione che indichi la modalità di attuazione delle attività intraprese ed i tempi previsti."
+        },
+        {
+          "html": "La definizione di un protocollo di verifica dell&#x2019;efficacia delle attivit&#xE0; intraprese.",
+          "text": "La definizione di un protocollo di verifica dell’efficacia delle attività intraprese."
+        }
+      ],
+      "text": "Definire attività che coinvolgano tutte le parti del sito che hanno impatto sulla sicurezza del prodotto. La definizione di un piano di azione che indichi la modalità di attuazione delle attività intraprese ed i tempi previsti. La definizione di un protocollo di verifica dell’efficacia delle attività intraprese."
+    },
+    {
+      "type": "paragraph",
+      "html": "La responsabilit&#xE0; sulla sicurezza del prodotto si allargher&#xE0; a tutto il personale e non sar&#xE0; appannaggio delle figure responsabili. Questo implica il fatto che dovranno essere previste procedure di segnalazione delle non conformit&#xE0;, problematiche ed incidenti, per tutto il personale.",
+      "text": "La responsabilità sulla sicurezza del prodotto si allargherà a tutto il personale e non sarà appannaggio delle figure responsabili. Questo implica il fatto che dovranno essere previste procedure di segnalazione delle non conformità, problematiche ed incidenti, per tutto il personale."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 1.1.5&#xA0;(modificato): Il sito dovr&#xE0; dimostrare di possedere un programma di incontri che permetta di portare all&#x2019;attenzione della direzione i problemi connessi alla sicurezza alimentare, alla legalit&#xE0;, all&#x2019;integrit&#xE0; e alla qualit&#xE0;. Questi incontri dovranno avere una frequenza minima di 1 volta al mese.",
+      "text": "Punto 1.1.5 (modificato): Il sito dovrà dimostrare di possedere un programma di incontri che permetta di portare all’attenzione della direzione i problemi connessi alla sicurezza alimentare, alla legalità, all’integrità e alla qualità. Questi incontri dovranno avere una frequenza minima di 1 volta al mese."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 1.1.6&#xA0;(aggiunto): Il sito dovr&#xE0; possedere un sistema di segnalazione confidenziale per consentire al personale di segnalare problemi relativi alla sicurezza, all&#x2019;integrit&#xE0;, alla legalit&#xE0; e alla qualit&#xE0; del prodotto.",
+      "text": "Punto 1.1.6 (aggiunto): Il sito dovrà possedere un sistema di segnalazione confidenziale per consentire al personale di segnalare problemi relativi alla sicurezza, all’integrità, alla legalità e alla qualità del prodotto."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "SESSIONE 3 &#x2013;  SICUREZZA ALIMENTARE E  SISTEMA DI GESTIONE DELLA QUALITA&apos;",
+      "text": "SESSIONE 3 – SICUREZZA ALIMENTARE E SISTEMA DI GESTIONE DELLA QUALITA'"
+    },
+    {
+      "type": "paragraph",
+      "html": "Questa sezione &#xE8; stata ampiamente modificata, specie nella logica di&#xA0;<strong>approvazione e qualifica del fornitore, e nella&#xA0;<strong>pianificazione e gestione degli audit interni.",
+      "text": "Questa sezione è stata ampiamente modificata, specie nella logica di approvazione e qualifica del fornitore, e nella pianificazione e gestione degli audit interni."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 3.4.1&#xA0;(modificato): La frequenza degli audit interni &#xE8; stata fissata obbligatoriamente a 4 volte in un anno, mentre la vecchia versione non stabiliva la frequenza delle verifiche ma raccomandava solamente che fossero eseguite contemplando l&#x2019;intera produzione durante il corso dell&#x2019;anno.",
+      "text": "Punto 3.4.1 (modificato): La frequenza degli audit interni è stata fissata obbligatoriamente a 4 volte in un anno, mentre la vecchia versione non stabiliva la frequenza delle verifiche ma raccomandava solamente che fossero eseguite contemplando l’intera produzione durante il corso dell’anno."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 3.5.2.2&#xA0;(modificato): Si prevedono procedure per garantire che le modifiche approvate sulle materie prime (comprese gli imballaggi primari) siano comunicate al personale addetto alla ricezione della merce e che sia accettata solo la corretta versione delle materie prime. Ad esempio, quando vengono modificate le etichette o gli imballaggi stampati, si deve verificare che sia stata accettata e immessa nel processo produttivo solo la versione corretta.",
+      "text": "Punto 3.5.2.2 (modificato): Si prevedono procedure per garantire che le modifiche approvate sulle materie prime (comprese gli imballaggi primari) siano comunicate al personale addetto alla ricezione della merce e che sia accettata solo la corretta versione delle materie prime. Ad esempio, quando vengono modificate le etichette o gli imballaggi stampati, si deve verificare che sia stata accettata e immessa nel processo produttivo solo la versione corretta."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 3.5.2.3&#xA0;(modificato): Si devono adottare adeguate procedure di ispezione da parte di personale qualificato per la ricezione di animali vivi,&#xA0; nelle fasi di stabulazione e post mortem per garantire che le carni degli animali macellati siano adatte al consumo umano.",
+      "text": "Punto 3.5.2.3 (modificato): Si devono adottare adeguate procedure di ispezione da parte di personale qualificato per la ricezione di animali vivi, nelle fasi di stabulazione e post mortem per garantire che le carni degli animali macellati siano adatte al consumo umano."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "SESSIONE 4.11 &#x2013;  ORDINE E IGIENE",
+      "text": "SESSIONE 4.11 – ORDINE E IGIENE"
+    },
+    {
+      "type": "paragraph",
+      "html": "In questa sessione il nuovo standard BRC focalizza l&#x2019;attenzione sulla necessit&#xE0; di&#xA0;<strong>garantire condizioni igieniche e di pulizia&#xA0; atte a ridurre al minimo le contaminazioni del prodotto.",
+      "text": "In questa sessione il nuovo standard BRC focalizza l’attenzione sulla necessità di garantire condizioni igieniche e di pulizia atte a ridurre al minimo le contaminazioni del prodotto."
+    },
+    {
+      "type": "paragraph",
+      "html": "Il punto 4.11 rappresenta un&#xA0;<strong>Requisito Fondamentale&#xA0;dello schema",
+      "text": "Il punto 4.11 rappresenta un Requisito Fondamentale dello schema"
+    },
+    {
+      "type": "paragraph",
+      "html": "Lo sviluppo di questo punto ha lo scopo di:",
+      "text": "Lo sviluppo di questo punto ha lo scopo di:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Misurare l&#x2019;efficacia complessiva della progettazione igienica, della buone prassi del personale e dei metodi operativi",
+          "text": "Misurare l’efficacia complessiva della progettazione igienica, della buone prassi del personale e dei metodi operativi"
+        },
+        {
+          "html": "Fornire informazione di organismi indicatori, organismi di degradazione, patogeni di interesse, in modo tempestivo e tale da intraprendere efficaci azioni preventive verso contaminazioni microbiche.",
+          "text": "Fornire informazione di organismi indicatori, organismi di degradazione, patogeni di interesse, in modo tempestivo e tale da intraprendere efficaci azioni preventive verso contaminazioni microbiche."
+        },
+        {
+          "html": "Monitorare il sistema e fornire quindi un sistema di allarme precoce per i rischi microbiologici sia nell&#x2019;ambiente di produzione che post-produzione. Questo sistema deve essere implementato come parte integrante dei prerequisiti.",
+          "text": "Monitorare il sistema e fornire quindi un sistema di allarme precoce per i rischi microbiologici sia nell’ambiente di produzione che post-produzione. Questo sistema deve essere implementato come parte integrante dei prerequisiti."
+        },
+        {
+          "html": "Rilevare i punti critici dello stabilimento che possono rappresentare una fonte di contaminazione.",
+          "text": "Rilevare i punti critici dello stabilimento che possono rappresentare una fonte di contaminazione."
+        },
+        {
+          "html": "Convalidare il programma di igiene e valutare l&#x2019;effettiva congruenza delle frequenze delle operazioni di pulizia&#xA0; ed igiene.",
+          "text": "Convalidare il programma di igiene e valutare l’effettiva congruenza delle frequenze delle operazioni di pulizia ed igiene."
+        }
+      ],
+      "text": "Misurare l’efficacia complessiva della progettazione igienica, della buone prassi del personale e dei metodi operativi Fornire informazione di organismi indicatori, organismi di degradazione, patogeni di interesse, in modo tempestivo e tale da intraprendere efficaci azioni preventive verso contaminazioni microbiche. Monitorare il sistema e fornire quindi un sistema di allarme precoce per i rischi microbiologici sia nell’ambiente di produzione che post-produzione. Questo sistema deve essere implementato come parte integrante dei prerequisiti. Rilevare i punti critici dello stabilimento che possono rappresentare una fonte di contaminazione. Convalidare il programma di igiene e valutare l’effettiva congruenza delle frequenze delle operazioni di pulizia ed igiene."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 4.11.7&#xA0;(modificato) vengono introdotte alcune importanti modifiche nei sistemi di pulizia CIP, fra le quali:",
+      "text": "Punto 4.11.7 (modificato) vengono introdotte alcune importanti modifiche nei sistemi di pulizia CIP, fra le quali:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "La valutazione degli allergeni alimentari nella progettazione dei sistemi CIP (deve essere fornita una chiara evidenza di gestione del rischio)",
+          "text": "La valutazione degli allergeni alimentari nella progettazione dei sistemi CIP (deve essere fornita una chiara evidenza di gestione del rischio)"
+        },
+        {
+          "html": "Devono essere definiti limiti accettabili per tempistiche, concentrazione, portata, pressione e temperatura del sistema CIP.",
+          "text": "Devono essere definiti limiti accettabili per tempistiche, concentrazione, portata, pressione e temperatura del sistema CIP."
+        },
+        {
+          "html": "La formazione del personale che opera sul sistema CIP deve essere presente e formalizzata",
+          "text": "La formazione del personale che opera sul sistema CIP deve essere presente e formalizzata"
+        }
+      ],
+      "text": "La valutazione degli allergeni alimentari nella progettazione dei sistemi CIP (deve essere fornita una chiara evidenza di gestione del rischio) Devono essere definiti limiti accettabili per tempistiche, concentrazione, portata, pressione e temperatura del sistema CIP. La formazione del personale che opera sul sistema CIP deve essere presente e formalizzata"
+    },
+    {
+      "type": "paragraph",
+      "html": "Devono essere stabiliti indicatori di monitoraggio dei parametri chiave del processo CIP.",
+      "text": "Devono essere stabiliti indicatori di monitoraggio dei parametri chiave del processo CIP."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Sessione 5 &#x2013;&#xA0; Controllo del prodotto",
+      "text": "Sessione 5 – Controllo del prodotto"
+    },
+    {
+      "type": "paragraph",
+      "html": "La sessione 5 introduce un nuovo aspetto nella gestione dello schema ovvero gli&#xA0;<strong>alimenti per animali domestici. Nel campo di applicazione dello del nuovo standard BRC Food versione 8,&#xE8; infatti introdotto il mangime per animali domestici, mentre rimane escluso il mangime per animali.",
+      "text": "La sessione 5 introduce un nuovo aspetto nella gestione dello schema ovvero gli alimenti per animali domestici. Nel campo di applicazione dello del nuovo standard BRC Food versione 8,è infatti introdotto il mangime per animali domestici, mentre rimane escluso il mangime per animali."
+    },
+    {
+      "type": "paragraph",
+      "html": "In nuovi requisiti introdotti (3 in totale) non sono per&#xF2; applicabili all&#x2019;alimentazione umana.",
+      "text": "In nuovi requisiti introdotti (3 in totale) non sono però applicabili all’alimentazione umana."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 5.8.1&#xA0;(aggiunto): Il sito dovr&#xE0; verificare che l&#x2019;alimento sia formulato per l&#x2019;uso previsto ovvero per animali domestici (dieta completa o complementare).",
+      "text": "Punto 5.8.1 (aggiunto): Il sito dovrà verificare che l’alimento sia formulato per l’uso previsto ovvero per animali domestici (dieta completa o complementare)."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 5.8.2&#xA0;(aggiunto): Nel caso il sito produca alimenti formulati per animali domestici, si dovr&#xE0; procedere con un&#x2019;analisi dei rischi al fine di determinare eventuali effetti nocivi su destinatari involontari.",
+      "text": "Punto 5.8.2 (aggiunto): Nel caso il sito produca alimenti formulati per animali domestici, si dovrà procedere con un’analisi dei rischi al fine di determinare eventuali effetti nocivi su destinatari involontari."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 5.8.3&#xA0;(aggiunto): Nel caso il sito produca alimenti formulati per animali domestici contenenti sostanze medicinali, dovranno essere presenti specifiche procedure per la gestione dei prodotti finiti e delle materie prime medicate.",
+      "text": "Punto 5.8.3 (aggiunto): Nel caso il sito produca alimenti formulati per animali domestici contenenti sostanze medicinali, dovranno essere presenti specifiche procedure per la gestione dei prodotti finiti e delle materie prime medicate."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "SESSIONE 5 &#x2013;  CONTROLLO DEL PRODOTTO",
+      "text": "SESSIONE 5 – CONTROLLO DEL PRODOTTO"
+    },
+    {
+      "type": "paragraph",
+      "html": "La sessione 5 introduce un nuovo aspetto nella gestione dello schema ovvero gli&#xA0;<strong>alimenti per animali domestici. Nel campo di applicazione dello del nuovo standard BRC Food versione 8,&#xE8; infatti introdotto il mangime per animali domestici, mentre rimane escluso il mangime per animali.",
+      "text": "La sessione 5 introduce un nuovo aspetto nella gestione dello schema ovvero gli alimenti per animali domestici. Nel campo di applicazione dello del nuovo standard BRC Food versione 8,è infatti introdotto il mangime per animali domestici, mentre rimane escluso il mangime per animali."
+    },
+    {
+      "type": "paragraph",
+      "html": "In nuovi requisiti introdotti (3 in totale) non sono per&#xF2; applicabili all&#x2019;alimentazione umana.",
+      "text": "In nuovi requisiti introdotti (3 in totale) non sono però applicabili all’alimentazione umana."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 5.8.1&#xA0;(aggiunto): Il sito dovr&#xE0; verificare che l&#x2019;alimento sia formulato per l&#x2019;uso previsto ovvero per animali domestici (dieta completa o complementare).",
+      "text": "Punto 5.8.1 (aggiunto): Il sito dovrà verificare che l’alimento sia formulato per l’uso previsto ovvero per animali domestici (dieta completa o complementare)."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 5.8.2&#xA0;(aggiunto): Nel caso il sito produca alimenti formulati per animali domestici, si dovr&#xE0; procedere con un&#x2019;analisi dei rischi al fine di determinare eventuali effetti nocivi su destinatari involontari.",
+      "text": "Punto 5.8.2 (aggiunto): Nel caso il sito produca alimenti formulati per animali domestici, si dovrà procedere con un’analisi dei rischi al fine di determinare eventuali effetti nocivi su destinatari involontari."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Punto 5.8.3&#xA0;(aggiunto): Nel caso il sito produca alimenti formulati per animali domestici contenenti sostanze medicinali, dovranno essere presenti specifiche procedure per la gestione dei prodotti finiti e delle materie prime medicate.",
+      "text": "Punto 5.8.3 (aggiunto): Nel caso il sito produca alimenti formulati per animali domestici contenenti sostanze medicinali, dovranno essere presenti specifiche procedure per la gestione dei prodotti finiti e delle materie prime medicate."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "SESSIONE 8 &#x2013;  AREE DELLO STABILIMENTO",
+      "text": "SESSIONE 8 – AREE DELLO STABILIMENTO"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il nuovo standard BRC Food versione 8 ha chiarito alcune questioni relative ai requisiti per le&#xA0;<strong>zone produttive ad alto rischio,&#xA0;<strong>alta attenzione&#xA0;e&#xA0;<strong>alto rischio ambientale.",
+      "text": "Il nuovo standard BRC Food versione 8 ha chiarito alcune questioni relative ai requisiti per le zone produttive ad alto rischio, alta attenzione e alto rischio ambientale."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>I professionisti del gruppo&#xA0;Madico &#x2013; Tecnosolar&#xA0;presenti capillarmente su&#xA0; tutto il territorio nazionale con capacit&#xE0; tecniche professionali eseguono sopralluoghi per&#xA0; effettuare la valutazione delle vetrate esistenti (in materia di sicurezza e protezione), per la messa a norma e il ripristino delle funzionalit&#xE0; dei vetri in modo da impedire, in caso di rottura la dispersione di schegge nei prodotti o nelle merci.",
+      "text": "I professionisti del gruppo Madico – Tecnosolar presenti capillarmente su tutto il territorio nazionale con capacità tecniche professionali eseguono sopralluoghi per effettuare la valutazione delle vetrate esistenti (in materia di sicurezza e protezione), per la messa a norma e il ripristino delle funzionalità dei vetri in modo da impedire, in caso di rottura la dispersione di schegge nei prodotti o nelle merci."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Norma BRC CERTIFICAZIONE BRC Il BRC Global Standard for Food Safety è nato nel 1998 per garantire che i prodotti a marchio siano ottenuti secondo standard qualitativi ben definiti e nel rispetto di requisiti minimi. Può essere paragonato ad un capitolato che lega i fornitori qualificati all’azienda di distribuzione. Dall’ agosto 2018 è entrata in vigore la versione 8 del BRC Standard che introduce notevoli modifiche alla versione precedente.​ A seguito della crescente importanza della commercializzazione di prodotto a marchio della Grande Distribuzione Organizzata, le maggiori aziende della distribuzione hanno sentito la necessità di assumere nuovi obblighi e responsabilità nei confronti dei consumatori. Di conseguenza le catene distributive hanno cominciato a studiare opportune misure per evitare incidenti in tutto il processo, dalla produzione alla distribuzione dei prodotti alimentari, verificando le prestazioni tecniche presso i siti di produzione dei fornitori avvalendosi di una struttura interna o affidandosi a enti terzi. Con lo scopo di creare un riferimento comune per le valutazioni dei fornitori nasce, nel 1998, il BRC Technical Standard for Companies Supplying Retailer Branded Food Products, sviluppato dai principali nomi della distribuzione inglese. In pochi anni il mercato alimentare europeo assiste ad un’ampia diffusione dello standard, anche oltre i confini britannici, che cambia il suo nome in “BRC Global Standard – Food”. Lo schema BRC si propone di aiutare i retailer a soddisfare pienamente gli obblighi legali e a proteggere il consumatore assicurando che i fornitori di prodotto a marchio operino nel rispetto di alcuni requisiti fondamentali e di standard qualitativi ben definiti. Ad oggi rappresenta uno degli strumenti più validi per la valutazione dei fornitori di marca privata, ma anche un riferimento per la “best practice” nell’industria alimentare sul quale molti operatori della filiera alimentare hanno basato i loro programmi di valutazione e qualifica fornitori. Lo standard BRC ha riconoscibilità internazionale, in quanto approvato da GFSI – Global Food Safety Iniziative. Solo gli organi di controllo accreditati a fronte della EN 45011 per la certificazione di prodotto possono svolgere verifiche a fronte dello standard BRC. La certificazione BRC FOOD si applica ad aziende alimentari di trasformazione che operano per la Grande Distribuzione inglese e generalmente è un presupposto necessario per esportare i propri prodotti. OBIETTIVI E VANTAGGI DELLA CERTIFICAZIONE BRC L’obiettivo principale della certificazione BRC FOOD è avere a disposizione uno strumento operativo comune per selezionare i fornitori di prodotti alimentari a marchio in conformità a sicurezza, legalità e qualità. Lo Standard BRC assicura la presenza di questi requisiti imponendo il controllo sistematico di materie prime, semilavorati, prodotti finiti, ambienti produttivi e risorse che interagiscono nei processi. UNA CERTIFICAZIONE IN ACCORDO ALLO STANDARD BRC PERMETTE DI: avere riconoscibilità internazionale in materia di sicurezza alimentare ampliare il ventaglio dei propri clienti; la certificazione BRC FOOD infatti è sempre più spesso un prerequisito essenziale per accedere al mercato tutelare l’immagine di chi immette i prodotti sul mercato garantire le aspettative e tutelare la salute del consumatore finale ridurre le verifiche ispettive di parte seconda (minori risorse dedicate alla gestione delle verifiche) integrare i requisiti dello standard con eventuali requisiti aggiuntivi specifici sfruttare sinergie ed elementi comuni ai sistemi di gestione per la qualità secondo le ISO 9000 e il metodo HACCP ridurre i tempi e i costi delle verifiche ispettive grazie a auditor qualificati anche su altri schemi (es. IFS) Rischio Vetri nello standard BRC IL NUOVO BRC STANDARD EDIZIONE 8 Le modifiche allo standard BRC Food versione 8 propongono l’introduzione di nuovi moduli aggiuntivi e volontari per le imprese alimentari, al fine di personalizzare la certificazione in modo più specifico, ritagliandole sulle specifiche esigenze di business. Questi nuovi moduli sono: Modulo volontario 8 – Gestione dei prodotti commercializzati Modulo volontario 9 – Gestione di materiali a contatto alimentare per alimentazione animale Modulo volontario 10 – GLOBAL GAP e catena di custodia Modulo volontario 11 – Gestione catena di approvvigionamento delle carni Modulo volontario 12 – Prodotti senza glutine (approvato AOECS) Modulo volontario 15 – FSMA (Food Safety Modernization Act,) SESSIONE 1 – IMPEGNO DELLA DIREZIONE L’alta direzione dovrà dimostrare un impegno tangibile verso una cultura della qualità. Questo significa che dovranno: Definire attività che coinvolgano tutte le parti del sito che hanno impatto sulla sicurezza del prodotto. La definizione di un piano di azione che indichi la modalità di attuazione delle attività intraprese ed i tempi previsti. La definizione di un protocollo di verifica dell’efficacia delle attività intraprese. La responsabilità sulla sicurezza del prodotto si allargherà a tutto il personale e non sarà appannaggio delle figure responsabili. Questo implica il fatto che dovranno essere previste procedure di segnalazione delle non conformità, problematiche ed incidenti, per tutto il personale. Punto 1.1.5 (modificato): Il sito dovrà dimostrare di possedere un programma di incontri che permetta di portare all’attenzione della direzione i problemi connessi alla sicurezza alimentare, alla legalità, all’integrità e alla qualità. Questi incontri dovranno avere una frequenza minima di 1 volta al mese. Punto 1.1.6 (aggiunto): Il sito dovrà possedere un sistema di segnalazione confidenziale per consentire al personale di segnalare problemi relativi alla sicurezza, all’integrità, alla legalità e alla qualità del prodotto. SESSIONE 3 – SICUREZZA ALIMENTARE E SISTEMA DI GESTIONE DELLA QUALITA' Questa sezione è stata ampiamente modificata, specie nella logica di approvazione e qualifica del fornitore, e nella pianificazione e gestione degli audit interni. Punto 3.4.1 (modificato): La frequenza degli audit interni è stata fissata obbligatoriamente a 4 volte in un anno, mentre la vecchia versione non stabiliva la frequenza delle verifiche ma raccomandava solamente che fossero eseguite contemplando l’intera produzione durante il corso dell’anno. Punto 3.5.2.2 (modificato): Si prevedono procedure per garantire che le modifiche approvate sulle materie prime (comprese gli imballaggi primari) siano comunicate al personale addetto alla ricezione della merce e che sia accettata solo la corretta versione delle materie prime. Ad esempio, quando vengono modificate le etichette o gli imballaggi stampati, si deve verificare che sia stata accettata e immessa nel processo produttivo solo la versione corretta. Punto 3.5.2.3 (modificato): Si devono adottare adeguate procedure di ispezione da parte di personale qualificato per la ricezione di animali vivi, nelle fasi di stabulazione e post mortem per garantire che le carni degli animali macellati siano adatte al consumo umano. SESSIONE 4.11 – ORDINE E IGIENE In questa sessione il nuovo standard BRC focalizza l’attenzione sulla necessità di garantire condizioni igieniche e di pulizia atte a ridurre al minimo le contaminazioni del prodotto. Il punto 4.11 rappresenta un Requisito Fondamentale dello schema Lo sviluppo di questo punto ha lo scopo di: Misurare l’efficacia complessiva della progettazione igienica, della buone prassi del personale e dei metodi operativi Fornire informazione di organismi indicatori, organismi di degradazione, patogeni di interesse, in modo tempestivo e tale da intraprendere efficaci azioni preventive verso contaminazioni microbiche. Monitorare il sistema e fornire quindi un sistema di allarme precoce per i rischi microbiologici sia nell’ambiente di produzione che post-produzione. Questo sistema deve essere implementato come parte integrante dei prerequisiti. Rilevare i punti critici dello stabilimento che possono rappresentare una fonte di contaminazione. Convalidare il programma di igiene e valutare l’effettiva congruenza delle frequenze delle operazioni di pulizia ed igiene. Punto 4.11.7 (modificato) vengono introdotte alcune importanti modifiche nei sistemi di pulizia CIP, fra le quali: La valutazione degli allergeni alimentari nella progettazione dei sistemi CIP (deve essere fornita una chiara evidenza di gestione del rischio) Devono essere definiti limiti accettabili per tempistiche, concentrazione, portata, pressione e temperatura del sistema CIP. La formazione del personale che opera sul sistema CIP deve essere presente e formalizzata Devono essere stabiliti indicatori di monitoraggio dei parametri chiave del processo CIP. Sessione 5 – Controllo del prodotto La sessione 5 introduce un nuovo aspetto nella gestione dello schema ovvero gli alimenti per animali domestici. Nel campo di applicazione dello del nuovo standard BRC Food versione 8,è infatti introdotto il mangime per animali domestici, mentre rimane escluso il mangime per animali. In nuovi requisiti introdotti (3 in totale) non sono però applicabili all’alimentazione umana. Punto 5.8.1 (aggiunto): Il sito dovrà verificare che l’alimento sia formulato per l’uso previsto ovvero per animali domestici (dieta completa o complementare). Punto 5.8.2 (aggiunto): Nel caso il sito produca alimenti formulati per animali domestici, si dovrà procedere con un’analisi dei rischi al fine di determinare eventuali effetti nocivi su destinatari involontari. Punto 5.8.3 (aggiunto): Nel caso il sito produca alimenti formulati per animali domestici contenenti sostanze medicinali, dovranno essere presenti specifiche procedure per la gestione dei prodotti finiti e delle materie prime medicate. SESSIONE 5 – CONTROLLO DEL PRODOTTO La sessione 5 introduce un nuovo aspetto nella gestione dello schema ovvero gli alimenti per animali domestici. Nel campo di applicazione dello del nuovo standard BRC Food versione 8,è infatti introdotto il mangime per animali domestici, mentre rimane escluso il mangime per animali. In nuovi requisiti introdotti (3 in totale) non sono però applicabili all’alimentazione umana. Punto 5.8.1 (aggiunto): Il sito dovrà verificare che l’alimento sia formulato per l’uso previsto ovvero per animali domestici (dieta completa o complementare). Punto 5.8.2 (aggiunto): Nel caso il sito produca alimenti formulati per animali domestici, si dovrà procedere con un’analisi dei rischi al fine di determinare eventuali effetti nocivi su destinatari involontari. Punto 5.8.3 (aggiunto): Nel caso il sito produca alimenti formulati per animali domestici contenenti sostanze medicinali, dovranno essere presenti specifiche procedure per la gestione dei prodotti finiti e delle materie prime medicate. SESSIONE 8 – AREE DELLO STABILIMENTO Il nuovo standard BRC Food versione 8 ha chiarito alcune questioni relative ai requisiti per le zone produttive ad alto rischio, alta attenzione e alto rischio ambientale. I professionisti del gruppo Madico – Tecnosolar presenti capillarmente su tutto il territorio nazionale con capacità tecniche professionali eseguono sopralluoghi per effettuare la valutazione delle vetrate esistenti (in materia di sicurezza e protezione), per la messa a norma e il ripristino delle funzionalità dei vetri in modo da impedire, in caso di rottura la dispersione di schegge nei prodotti o nelle merci. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 11498,
+  "fetchedAt": "2026-04-28T15:09:39.290Z"
+}

@@ -1,0 +1,390 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/profilo-solaris/",
+  "path": "/pellicole-per-vetri/profilo-solaris/",
+  "route": {
+    "type": "company",
+    "label": "Profilo Solaris",
+    "newPath": "/profilo-solaris/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/page-sitemap.xml",
+  "seo": {
+    "title": "- Solaris Films",
+    "description": "Company profile Solaris Films riservato alla condivisione con clienti e prospect.",
+    "robots": "noindex,nofollow,noarchive,nosnippet,noimageindex",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/profilo-solaris/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:description": "Company profile Solaris Films riservato alla condivisione con clienti e prospect.",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/profilo-solaris/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2026/03/logo-white-payoff.png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "3 minuti"
+    },
+    "article": {
+      "article:modified_time": "2026-03-24T15:59:14+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/profilo-solaris\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/profilo-solaris\\/\",\"name\":\"- Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/profilo-solaris\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/profilo-solaris\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2026\\/03\\/logo-white-payoff.png\",\"datePublished\":\"2026-03-24T15:55:30+00:00\",\"dateModified\":\"2026-03-24T15:59:14+00:00\",\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/profilo-solaris\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/profilo-solaris\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2026\\/03\\/logo-white-payoff.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2026\\/03\\/logo-white-payoff.png\",\"width\":164,\"height\":192,\"caption\":\"Solaris Films\"},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "SOLARIS FILMS"
+    },
+    {
+      "level": 2,
+      "text": "Esperienza, specializzazione, risultati concreti"
+    },
+    {
+      "level": 2,
+      "text": "Soluzioni su misura per ogni esigenza"
+    },
+    {
+      "level": 3,
+      "text": "Schermatura solare"
+    },
+    {
+      "level": 3,
+      "text": "Sicurezza"
+    },
+    {
+      "level": 3,
+      "text": "Privacy e design"
+    },
+    {
+      "level": 3,
+      "text": "Superfici plastiche"
+    },
+    {
+      "level": 2,
+      "text": "Tecnologia applicata a comfort, protezione e prestazioni"
+    },
+    {
+      "level": 3,
+      "text": "Più comfort, meno calore, maggiore efficienza"
+    },
+    {
+      "level": 3,
+      "text": "Protezione e sicurezza per persone e ambienti"
+    },
+    {
+      "level": 3,
+      "text": "Privacy, design e superfici speciali"
+    },
+    {
+      "level": 2,
+      "text": "La fiducia dei clienti è la nostra credibilità"
+    },
+    {
+      "level": 2,
+      "text": "Un partner tecnico affidabile per valorizzare e proteggere le superfici trasparenti"
+    },
+    {
+      "level": 3,
+      "text": "Parliamo del tuo progetto"
+    }
+  ],
+  "h1": "SOLARIS FILMS",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "paragraph",
+      "html": "<br>\n<br>\n<br>\n  <br>\n  <br>\n  Solaris Films &#x2014; Company Profile<br>",
+      "text": "Solaris Films — Company Profile"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "SOLARIS FILMS",
+      "text": "SOLARIS FILMS"
+    },
+    {
+      "type": "paragraph",
+      "html": "Gli specialisti delle pellicole per vetri.",
+      "text": "Gli specialisti delle pellicole per vetri."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Esperienza, specializzazione, risultati concreti",
+      "text": "Esperienza, specializzazione, risultati concreti"
+    },
+    {
+      "type": "paragraph",
+      "html": "Solaris Films nasce nel 2015 come evoluzione strutturata di una realt&#xE0; familiare attiva fin dal 1987, con l&#x2019;obiettivo di costruire un&#x2019;azienda specializzata e operativa su tutto il territorio nazionale.",
+      "text": "Solaris Films nasce nel 2015 come evoluzione strutturata di una realtà familiare attiva fin dal 1987, con l’obiettivo di costruire un’azienda specializzata e operativa su tutto il territorio nazionale."
+    },
+    {
+      "type": "paragraph",
+      "html": "Da oltre 30 anni operiamo con competenza tecnica e visione concreta, offrendo soluzioni efficaci per migliorare comfort, sicurezza, efficienza energetica e qualit&#xE0; degli ambienti.",
+      "text": "Da oltre 30 anni operiamo con competenza tecnica e visione concreta, offrendo soluzioni efficaci per migliorare comfort, sicurezza, efficienza energetica e qualità degli ambienti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Nel tempo abbiamo lavorato su oltre <strong>20.000 edifici, affrontando esigenze molto diverse: dalla riduzione del calore negli ambienti produttivi e direzionali, alla messa in sicurezza di vetrate non conformi, fino agli interventi speciali su edifici sensibili, superfici plastiche e contesti architettonici complessi.",
+      "text": "Nel tempo abbiamo lavorato su oltre 20.000 edifici, affrontando esigenze molto diverse: dalla riduzione del calore negli ambienti produttivi e direzionali, alla messa in sicurezza di vetrate non conformi, fino agli interventi speciali su edifici sensibili, superfici plastiche e contesti architettonici complessi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Dal 2017 abbiamo sviluppato competenze dedicate anche alle superfici plastiche; dal 2019 operiamo con efficacia anche in contesti complessi e lavorazioni in quota. Dal 2020 Solaris &#xE8; distributore ufficiale delle pellicole MADICO in Italia e, dal 2026, ha esteso questa presenza anche alla Spagna e alle Isole Canarie, consolidando una struttura tecnica specializzata e una forte capacit&#xE0; operativa internazionale.",
+      "text": "Dal 2017 abbiamo sviluppato competenze dedicate anche alle superfici plastiche; dal 2019 operiamo con efficacia anche in contesti complessi e lavorazioni in quota. Dal 2020 Solaris è distributore ufficiale delle pellicole MADICO in Italia e, dal 2026, ha esteso questa presenza anche alla Spagna e alle Isole Canarie, consolidando una struttura tecnica specializzata e una forte capacità operativa internazionale."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Soluzioni su misura per ogni esigenza",
+      "text": "Soluzioni su misura per ogni esigenza"
+    },
+    {
+      "type": "paragraph",
+      "html": "Studiamo, progettiamo e realizziamo interventi professionali per migliorare prestazioni, comfort, sicurezza e qualit&#xE0; estetica delle superfici trasparenti.",
+      "text": "Studiamo, progettiamo e realizziamo interventi professionali per migliorare prestazioni, comfort, sicurezza e qualità estetica delle superfici trasparenti."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Schermatura solare",
+      "text": "Schermatura solare"
+    },
+    {
+      "type": "paragraph",
+      "html": "Riduzione del calore, controllo dell&#x2019;abbagliamento, protezione UV, maggiore comfort e minori consumi.",
+      "text": "Riduzione del calore, controllo dell’abbagliamento, protezione UV, maggiore comfort e minori consumi."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Sicurezza",
+      "text": "Sicurezza"
+    },
+    {
+      "type": "paragraph",
+      "html": "Messa in sicurezza delle vetrate, protezione anti-scheggia, anti-effrazione e soluzioni per contesti sensibili.",
+      "text": "Messa in sicurezza delle vetrate, protezione anti-scheggia, anti-effrazione e soluzioni per contesti sensibili."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Privacy e design",
+      "text": "Privacy e design"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicole decorative, opacizzanti e personalizzazioni per ambienti professionali e istituzionali.",
+      "text": "Pellicole decorative, opacizzanti e personalizzazioni per ambienti professionali e istituzionali."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Superfici plastiche",
+      "text": "Superfici plastiche"
+    },
+    {
+      "type": "paragraph",
+      "html": "Interventi su policarbonato, plexiglass, lucernari e coperture dove servono soluzioni specifiche ad alte prestazioni.",
+      "text": "Interventi su policarbonato, plexiglass, lucernari e coperture dove servono soluzioni specifiche ad alte prestazioni."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Tecnologia applicata a comfort, protezione e prestazioni",
+      "text": "Tecnologia applicata a comfort, protezione e prestazioni"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Pi&#xF9; comfort, meno calore, maggiore efficienza",
+      "text": "Più comfort, meno calore, maggiore efficienza"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le superfici vetrate non schermate possono essere tra le principali cause di surriscaldamento interno, abbagliamento e aumento dei costi di climatizzazione.",
+      "text": "Le superfici vetrate non schermate possono essere tra le principali cause di surriscaldamento interno, abbagliamento e aumento dei costi di climatizzazione."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le nostre soluzioni di schermatura solare aiutano a ridurre il calore, migliorare il comfort visivo e ottimizzare i consumi energetici.",
+      "text": "Le nostre soluzioni di schermatura solare aiutano a ridurre il calore, migliorare il comfort visivo e ottimizzare i consumi energetici."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Protezione e sicurezza per persone e ambienti",
+      "text": "Protezione e sicurezza per persone e ambienti"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le nostre soluzioni consentono di aumentare la sicurezza delle superfici vetrate riducendo i rischi in caso di rottura accidentale, urto, atto vandalico o tentativo di intrusione, con sistemi specifici anche per la protezione antiesplosione.",
+      "text": "Le nostre soluzioni consentono di aumentare la sicurezza delle superfici vetrate riducendo i rischi in caso di rottura accidentale, urto, atto vandalico o tentativo di intrusione, con sistemi specifici anche per la protezione antiesplosione."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Privacy, design e superfici speciali",
+      "text": "Privacy, design e superfici speciali"
+    },
+    {
+      "type": "paragraph",
+      "html": "Interveniamo anche in contesti dove le soluzioni standard non bastano: privacy su vetrate, personalizzazioni decorative e trattamenti su superfici plastiche come policarbonato e plexiglass.",
+      "text": "Interveniamo anche in contesti dove le soluzioni standard non bastano: privacy su vetrate, personalizzazioni decorative e trattamenti su superfici plastiche come policarbonato e plexiglass."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "riduzione del calore interno",
+          "text": "riduzione del calore interno"
+        },
+        {
+          "html": "minore abbagliamento",
+          "text": "minore abbagliamento"
+        },
+        {
+          "html": "protezione dai raggi UV",
+          "text": "protezione dai raggi UV"
+        },
+        {
+          "html": "incremento della sicurezza",
+          "text": "incremento della sicurezza"
+        },
+        {
+          "html": "maggiore riservatezza",
+          "text": "maggiore riservatezza"
+        },
+        {
+          "html": "valorizzazione estetica delle superfici",
+          "text": "valorizzazione estetica delle superfici"
+        }
+      ],
+      "text": "riduzione del calore interno minore abbagliamento protezione dai raggi UV incremento della sicurezza maggiore riservatezza valorizzazione estetica delle superfici"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La fiducia dei clienti &#xE8; la nostra credibilit&#xE0;",
+      "text": "La fiducia dei clienti è la nostra credibilità"
+    },
+    {
+      "type": "paragraph",
+      "html": "Nel corso degli anni abbiamo lavorato per enti pubblici, aziende, strutture sanitarie, universit&#xE0;, musei, aeroporti e realt&#xE0; istituzionali in tutta Italia. Di seguito, alcune delle nostre ultime referenze.",
+      "text": "Nel corso degli anni abbiamo lavorato per enti pubblici, aziende, strutture sanitarie, università, musei, aeroporti e realtà istituzionali in tutta Italia. Di seguito, alcune delle nostre ultime referenze."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Palazzo Hyundai &#x2014; sede centrale Milano",
+          "text": "Palazzo Hyundai — sede centrale Milano"
+        },
+        {
+          "html": "Still S.p.A. &#x2014; sede centrale Milano",
+          "text": "Still S.p.A. — sede centrale Milano"
+        },
+        {
+          "html": "Palazzo Lancia &#x2014; Torino",
+          "text": "Palazzo Lancia — Torino"
+        },
+        {
+          "html": "Capitaneria di Porto di Genova &#x2014; Genova",
+          "text": "Capitaneria di Porto di Genova — Genova"
+        },
+        {
+          "html": "Fercam Italia &#x2014; Bolzano",
+          "text": "Fercam Italia — Bolzano"
+        },
+        {
+          "html": "Groom &#x2014; Torino",
+          "text": "Groom — Torino"
+        },
+        {
+          "html": "Ministero della Cultura &#x2014; Roma",
+          "text": "Ministero della Cultura — Roma"
+        },
+        {
+          "html": "Ministero della Difesa &#x2014; Roma",
+          "text": "Ministero della Difesa — Roma"
+        },
+        {
+          "html": "Cassa Depositi e Prestiti &#x2014; Roma",
+          "text": "Cassa Depositi e Prestiti — Roma"
+        },
+        {
+          "html": "Philip Morris &#x2014; Bologna",
+          "text": "Philip Morris — Bologna"
+        },
+        {
+          "html": "Palazzo Pitti &#x2014; Firenze",
+          "text": "Palazzo Pitti — Firenze"
+        },
+        {
+          "html": "Careggi &#x2014; Firenze",
+          "text": "Careggi — Firenze"
+        },
+        {
+          "html": "Universit&#xE0; di Bologna &#x2014; Bologna",
+          "text": "Università di Bologna — Bologna"
+        },
+        {
+          "html": "Aeroporto di Bologna &#x2014; Bologna",
+          "text": "Aeroporto di Bologna — Bologna"
+        },
+        {
+          "html": "Banca d&amp;#8217;Italia &#x2014; Roma",
+          "text": "Banca d’Italia — Roma"
+        },
+        {
+          "html": "CNR &#x2014; Milano",
+          "text": "CNR — Milano"
+        }
+      ],
+      "text": "Palazzo Hyundai — sede centrale Milano Still S.p.A. — sede centrale Milano Palazzo Lancia — Torino Capitaneria di Porto di Genova — Genova Fercam Italia — Bolzano Groom — Torino Ministero della Cultura — Roma Ministero della Difesa — Roma Cassa Depositi e Prestiti — Roma Philip Morris — Bologna Palazzo Pitti — Firenze Careggi — Firenze Università di Bologna — Bologna Aeroporto di Bologna — Bologna Banca d’Italia — Roma CNR — Milano"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Un partner tecnico affidabile per valorizzare e proteggere le superfici trasparenti",
+      "text": "Un partner tecnico affidabile per valorizzare e proteggere le superfici trasparenti"
+    },
+    {
+      "type": "paragraph",
+      "html": "Scegliere Solaris significa affidarsi a un interlocutore specializzato, capace di unire esperienza, competenza tecnica, qualit&#xE0; esecutiva e visione concreta del risultato.",
+      "text": "Scegliere Solaris significa affidarsi a un interlocutore specializzato, capace di unire esperienza, competenza tecnica, qualità esecutiva e visione concreta del risultato."
+    },
+    {
+      "type": "paragraph",
+      "html": "Non ci limitiamo a fornire prodotti: analizziamo problemi reali, proponiamo soluzioni efficaci e realizziamo interventi progettati per durare nel tempo.",
+      "text": "Non ci limitiamo a fornire prodotti: analizziamo problemi reali, proponiamo soluzioni efficaci e realizziamo interventi progettati per durare nel tempo."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Parliamo del tuo progetto",
+      "text": "Parliamo del tuo progetto"
+    },
+    {
+      "type": "paragraph",
+      "html": "Se desideri migliorare comfort, sicurezza, privacy o prestazioni delle tue superfici vetrate, possiamo aiutarti a individuare la soluzione pi&#xF9; adatta.",
+      "text": "Se desideri migliorare comfort, sicurezza, privacy o prestazioni delle tue superfici vetrate, possiamo aiutarti a individuare la soluzione più adatta."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>SOLARIS FILMS SRL<br>\n        www.solarisfilms.it<br>\n        info@solarisfilms.it<br>\n        Numero Verde 800625052<br>\n        Tel. 0559107621",
+      "text": "SOLARIS FILMS SRL www.solarisfilms.it info@solarisfilms.it Numero Verde 800625052 Tel. 0559107621"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Solaris Films — Company Profile SOLARIS FILMS Gli specialisti delle pellicole per vetri. Esperienza, specializzazione, risultati concreti Solaris Films nasce nel 2015 come evoluzione strutturata di una realtà familiare attiva fin dal 1987, con l’obiettivo di costruire un’azienda specializzata e operativa su tutto il territorio nazionale. Da oltre 30 anni operiamo con competenza tecnica e visione concreta, offrendo soluzioni efficaci per migliorare comfort, sicurezza, efficienza energetica e qualità degli ambienti. Nel tempo abbiamo lavorato su oltre 20.000 edifici, affrontando esigenze molto diverse: dalla riduzione del calore negli ambienti produttivi e direzionali, alla messa in sicurezza di vetrate non conformi, fino agli interventi speciali su edifici sensibili, superfici plastiche e contesti architettonici complessi. Dal 2017 abbiamo sviluppato competenze dedicate anche alle superfici plastiche; dal 2019 operiamo con efficacia anche in contesti complessi e lavorazioni in quota. Dal 2020 Solaris è distributore ufficiale delle pellicole MADICO in Italia e, dal 2026, ha esteso questa presenza anche alla Spagna e alle Isole Canarie, consolidando una struttura tecnica specializzata e una forte capacità operativa internazionale. Soluzioni su misura per ogni esigenza Studiamo, progettiamo e realizziamo interventi professionali per migliorare prestazioni, comfort, sicurezza e qualità estetica delle superfici trasparenti. Schermatura solare Riduzione del calore, controllo dell’abbagliamento, protezione UV, maggiore comfort e minori consumi. Sicurezza Messa in sicurezza delle vetrate, protezione anti-scheggia, anti-effrazione e soluzioni per contesti sensibili. Privacy e design Pellicole decorative, opacizzanti e personalizzazioni per ambienti professionali e istituzionali. Superfici plastiche Interventi su policarbonato, plexiglass, lucernari e coperture dove servono soluzioni specifiche ad alte prestazioni. Tecnologia applicata a comfort, protezione e prestazioni Più comfort, meno calore, maggiore efficienza Le superfici vetrate non schermate possono essere tra le principali cause di surriscaldamento interno, abbagliamento e aumento dei costi di climatizzazione. Le nostre soluzioni di schermatura solare aiutano a ridurre il calore, migliorare il comfort visivo e ottimizzare i consumi energetici. Protezione e sicurezza per persone e ambienti Le nostre soluzioni consentono di aumentare la sicurezza delle superfici vetrate riducendo i rischi in caso di rottura accidentale, urto, atto vandalico o tentativo di intrusione, con sistemi specifici anche per la protezione antiesplosione. Privacy, design e superfici speciali Interveniamo anche in contesti dove le soluzioni standard non bastano: privacy su vetrate, personalizzazioni decorative e trattamenti su superfici plastiche come policarbonato e plexiglass. riduzione del calore interno minore abbagliamento protezione dai raggi UV incremento della sicurezza maggiore riservatezza valorizzazione estetica delle superfici La fiducia dei clienti è la nostra credibilità Nel corso degli anni abbiamo lavorato per enti pubblici, aziende, strutture sanitarie, università, musei, aeroporti e realtà istituzionali in tutta Italia. Di seguito, alcune delle nostre ultime referenze. Palazzo Hyundai — sede centrale Milano Still S.p.A. — sede centrale Milano Palazzo Lancia — Torino Capitaneria di Porto di Genova — Genova Fercam Italia — Bolzano Groom — Torino Ministero della Cultura — Roma Ministero della Difesa — Roma Cassa Depositi e Prestiti — Roma Philip Morris — Bologna Palazzo Pitti — Firenze Careggi — Firenze Università di Bologna — Bologna Aeroporto di Bologna — Bologna Banca d’Italia — Roma CNR — Milano Un partner tecnico affidabile per valorizzare e proteggere le superfici trasparenti Scegliere Solaris significa affidarsi a un interlocutore specializzato, capace di unire esperienza, competenza tecnica, qualità esecutiva e visione concreta del risultato. Non ci limitiamo a fornire prodotti: analizziamo problemi reali, proponiamo soluzioni efficaci e realizziamo interventi progettati per durare nel tempo. Parliamo del tuo progetto Se desideri migliorare comfort, sicurezza, privacy o prestazioni delle tue superfici vetrate, possiamo aiutarti a individuare la soluzione più adatta. SOLARIS FILMS SRL www.solarisfilms.it info@solarisfilms.it Numero Verde 800625052 Tel. 0559107621",
+  "textLength": 4384,
+  "fetchedAt": "2026-04-28T15:09:15.475Z"
+}

@@ -1,0 +1,170 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/pellicole-per-vetri-e-fake-news/",
+  "path": "/approfondimenti/pellicole-per-vetri-e-fake-news/",
+  "route": {
+    "type": "article",
+    "label": "Approfondimento",
+    "newPath": "/blog/pellicole-per-vetri-e-fake-news/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/post-sitemap.xml",
+  "seo": {
+    "title": "PELLICOLE PER VETRI E FAKE NEWS - Solaris Films",
+    "description": "Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-per-vetri-e-fake-news/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "PELLICOLE PER VETRI E FAKE NEWS",
+      "og:description": "Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente.",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/pellicole-per-vetri-e-fake-news/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/controllo-termico.webp",
+      "og:image:width": "600",
+      "og:image:height": "900",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Scritto da",
+      "twitter:data1": "Fabio Meucci",
+      "twitter:label2": "Tempo di lettura stimato",
+      "twitter:data2": "4 minuti"
+    },
+    "article": {
+      "article:published_time": "2025-06-17T13:42:27+00:00",
+      "article:modified_time": "2025-07-22T16:13:51+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/\"},\"author\":{\"name\":\"Fabio Meucci\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\"},\"headline\":\"PELLICOLE PER VETRI E FAKE NEWS\",\"datePublished\":\"2025-06-17T13:42:27+00:00\",\"dateModified\":\"2025-07-22T16:13:51+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/\"},\"wordCount\":703,\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/controllo-termico.webp\",\"articleSection\":[\"Approfondimenti\"],\"inLanguage\":\"it-IT\"},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/\",\"name\":\"PELLICOLE PER VETRI E FAKE NEWS - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/controllo-termico.webp\",\"datePublished\":\"2025-06-17T13:42:27+00:00\",\"dateModified\":\"2025-07-22T16:13:51+00:00\",\"description\":\"Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/controllo-termico.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/controllo-termico.webp\",\"width\":600,\"height\":900},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-per-vetri-e-fake-news\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Lo sapevi che?\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/lo-sapevi-che\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"PELLICOLE PER VETRI E FAKE NEWS\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\",\"name\":\"Fabio Meucci\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"caption\":\"Fabio Meucci\"},\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/fabio-meucci\\/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "level": 2,
+      "text": "LE PELLICOLE PER VETRI IMPEDIRANNO DI SBIADIRE GLI ARREDI INTERNI AL 100%"
+    },
+    {
+      "level": 2,
+      "text": "LE PELLICOLE PER VETRI ROVINERANNO IL MIO PANORAMA"
+    },
+    {
+      "level": 2,
+      "text": "LA PELLICOLA DI SICUREZZA È RESISTENTE AI PROIETTILI E AGLI URAGANI"
+    },
+    {
+      "level": 2,
+      "text": "TUTTE LE PELLICOLE PER VETRI PER AUTO SONO ILLEGALI"
+    },
+    {
+      "level": 2,
+      "text": "CHIUNQUE PUÒ INSTALLARE PELLICOLE PER VETRI"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente. Nel nostro settore ci sono tanti competitor molto corretti, purtroppo ci sono alcuni che non esitano a darvi informazioni errate pur di vendervi qualcosa che non vi serve. Per questo motivo uno dei nostri obiettivi nei confronti del cliente &#xE8; quello di fornirgli le corrette informazioni per permettergli di fare la scelta migliore per le sue necessit&#xE0;. Abbiamo voluto scrivere questo piccolo vademecum dei miti e delle esagerazioni che abbiamo letto su internet, in modo da aiutarvi a districarvi nel mare del web ed evitarvi di abboccare all&#x2019;amo di qualche soggetto poco corretto.",
+      "text": "Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente. Nel nostro settore ci sono tanti competitor molto corretti, purtroppo ci sono alcuni che non esitano a darvi informazioni errate pur di vendervi qualcosa che non vi serve. Per questo motivo uno dei nostri obiettivi nei confronti del cliente è quello di fornirgli le corrette informazioni per permettergli di fare la scelta migliore per le sue necessità. Abbiamo voluto scrivere questo piccolo vademecum dei miti e delle esagerazioni che abbiamo letto su internet, in modo da aiutarvi a districarvi nel mare del web ed evitarvi di abboccare all’amo di qualche soggetto poco corretto."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>LE PELLICOLE PER VETRI IMPEDIRANNO DI SBIADIRE GLI ARREDI INTERNI AL 100%",
+      "text": "LE PELLICOLE PER VETRI IMPEDIRANNO DI SBIADIRE GLI ARREDI INTERNI AL 100%"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ovviamente la pellicola per vetri fa un lavoro enorme nel ridurre la quantit&#xE0; e la velocit&#xE0; di sbiadimento causato dai dannosi raggi UV (bloccandone fino al 99%, come nel caso della nostra<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr/\"> MADICO SL 8), il calore solare e la luce visibile. Non pu&#xF2; per&#xF2; eliminare il 100% degli effetti deterioranti del sole, per cui chiunque vi dica che blocca questo effetto vi sta mentendo. La pellicola per finestre &#xE8; comunque una soluzione molto efficace per ridurre lo sbiadimento rispetto al vetro non trattato!",
+      "text": "Ovviamente la pellicola per vetri fa un lavoro enorme nel ridurre la quantità e la velocità di sbiadimento causato dai dannosi raggi UV (bloccandone fino al 99%, come nel caso della nostra MADICO SL 8), il calore solare e la luce visibile. Non può però eliminare il 100% degli effetti deterioranti del sole, per cui chiunque vi dica che blocca questo effetto vi sta mentendo. La pellicola per finestre è comunque una soluzione molto efficace per ridurre lo sbiadimento rispetto al vetro non trattato!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>LE PELLICOLE PER VETRI ROVINERANNO IL MIO PANORAMA",
+      "text": "LE PELLICOLE PER VETRI ROVINERANNO IL MIO PANORAMA"
+    },
+    {
+      "type": "paragraph",
+      "html": "Sebbene una pellicola scura o riflettente possa ridurre la vista dall&amp;#8217;esterno guardando all&amp;#8217;interno della propria casa o ufficio, non succede lo stesso se si guarda dall&amp;#8217;interno verso l&amp;#8217;esterno. Ci&#xF2; &#xE8; dovuto alla velocit&#xE0; in cui l&amp;#8217;occhio umano si adatta alla quantit&#xE0; di luce che riceve, consentendo di vedere all&amp;#8217;esterno anche quando la trasmissione della luce &#xE8; stata ridotta.",
+      "text": "Sebbene una pellicola scura o riflettente possa ridurre la vista dall’esterno guardando all’interno della propria casa o ufficio, non succede lo stesso se si guarda dall’interno verso l’esterno. Ciò è dovuto alla velocità in cui l’occhio umano si adatta alla quantità di luce che riceve, consentendo di vedere all’esterno anche quando la trasmissione della luce è stata ridotta."
+    },
+    {
+      "type": "paragraph",
+      "html": "Cliccate <a href=\"/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/\">QUI per avere pi&#xF9; info sulle pellicole oscuranti, oppure <a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/\">QUI per info sulle pellicole riflettenti!",
+      "text": "Cliccate QUI per avere più info sulle pellicole oscuranti, oppure QUI per info sulle pellicole riflettenti!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>LA PELLICOLA DI SICUREZZA &#xC8; RESISTENTE AI PROIETTILI E AGLI URAGANI",
+      "text": "LA PELLICOLA DI SICUREZZA È RESISTENTE AI PROIETTILI E AGLI URAGANI"
+    },
+    {
+      "type": "paragraph",
+      "html": "Molte aziende affermano che le pellicole di sicurezza per finestre proteggeranno il vetro da forze cos&#xEC; estreme come uragani e persino proiettili. I test che potete vedere in internet per promuovere queste affermazioni sono spesso condotti utilizzando vetro spesso pi&#xF9; di 10 cm con un multistrato di pellicola di sicurezza, entrambe condizioni non normali. La maggior parte del vetro installato ha infatti uno spessore massimo di 5 centimetri, per cui nessuna pellicola pu&#xF2; da sola fermare magicamente un proiettile su un vetro standard. Inoltre, &amp;#8220;a prova di uragano&amp;#8221; &#xE8; un termine completamente improprio. Se un uragano pu&#xF2; squarciare un tetto, ha senso che possa sradicare anche una finestra. Sicuramente le pellicole di sicurezza sono molto efficaci contro gli eventi atmosferici anche pi&#xF9; violenti, ma non rendono completamente invulnerabile il vostro serramento.",
+      "text": "Molte aziende affermano che le pellicole di sicurezza per finestre proteggeranno il vetro da forze così estreme come uragani e persino proiettili. I test che potete vedere in internet per promuovere queste affermazioni sono spesso condotti utilizzando vetro spesso più di 10 cm con un multistrato di pellicola di sicurezza, entrambe condizioni non normali. La maggior parte del vetro installato ha infatti uno spessore massimo di 5 centimetri, per cui nessuna pellicola può da sola fermare magicamente un proiettile su un vetro standard. Inoltre, “a prova di uragano” è un termine completamente improprio. Se un uragano può squarciare un tetto, ha senso che possa sradicare anche una finestra. Sicuramente le pellicole di sicurezza sono molto efficaci contro gli eventi atmosferici anche più violenti, ma non rendono completamente invulnerabile il vostro serramento."
+    },
+    {
+      "type": "paragraph",
+      "html": "Se volete maggiori info sulle pellicole di sicurezza potete cliccare <a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr/\">QUI!",
+      "text": "Se volete maggiori info sulle pellicole di sicurezza potete cliccare QUI!"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/\">SAFETYSHIELD 1500 &#xE8; il nostro top di gamma in materia di film di sicurezza.",
+      "text": "SAFETYSHIELD 1500 è il nostro top di gamma in materia di film di sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "TUTTE LE PELLICOLE PER VETRI PER AUTO SONO ILLEGALI",
+      "text": "TUTTE LE PELLICOLE PER VETRI PER AUTO SONO ILLEGALI"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le leggi variano da stato a stato. In Italia, la pellicola per vetri &#xE8; vietata sul parabrezza e sui finestrini anteriori, ma &#xE8; consentita sui finestrini laterali posteriori e sul lunotto posteriore. Ovviamente vanno installate solo pellicole omologate per il tipo di vetro che monta la vostra vettura. La quantit&#xE0; di trasmissione della luce consentita varia a seconda delle leggi statali. Alcuni paesi esteri invece consentono l&amp;#8217;uso di pellicole per vetri sull&amp;#8217;intera vettura purch&#xE9; soddisfino determinati standard di trasmissione della luce.",
+      "text": "Le leggi variano da stato a stato. In Italia, la pellicola per vetri è vietata sul parabrezza e sui finestrini anteriori, ma è consentita sui finestrini laterali posteriori e sul lunotto posteriore. Ovviamente vanno installate solo pellicole omologate per il tipo di vetro che monta la vostra vettura. La quantità di trasmissione della luce consentita varia a seconda delle leggi statali. Alcuni paesi esteri invece consentono l’uso di pellicole per vetri sull’intera vettura purché soddisfino determinati standard di trasmissione della luce."
+    },
+    {
+      "type": "paragraph",
+      "html": "Solaris Films non vende n&#xE9; monta pellicole per auto, ma vi affidiamo alle mani esperte del nostro distributore <a href=\"https://www.tecnosolar.it/\" target=\"_blank\" rel=\"noopener noreferrer\">TECNOSOLAR!",
+      "text": "Solaris Films non vende né monta pellicole per auto, ma vi affidiamo alle mani esperte del nostro distributore TECNOSOLAR!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "CHIUNQUE PU&#xD2; INSTALLARE PELLICOLE PER VETRI",
+      "text": "CHIUNQUE PUÒ INSTALLARE PELLICOLE PER VETRI"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&amp;#8217;installazione di pellicole per vetri pu&#xF2; sembrare relativamente facile, ma ci sono molte circostanze che potrebbero portare a un&amp;#8217;installazione non corretta. &#xC8; molto facile che il film si contamini con sporco, polvere o capelli, rovinando cos&#xEC; la posa e creando microbolle o pieghe che inficiano la posa. Un installatore professionista ha esperienza nella preparazione e nelle tecniche di applicazione adeguate per prevenire problemi con la pellicola e garantire un&amp;#8217;installazione di qualit&#xE0;, pi&#xF9; resistente e che duri pi&#xF9; a lungo. Le pellicole installate da un nostro installatore soprattutto sono garantite fino a 10 anni; per questo motivo vi consigliamo sempre di affidarvi ai nostri installatori in caso di lavori di una certa entit&#xE0;.",
+      "text": "L’installazione di pellicole per vetri può sembrare relativamente facile, ma ci sono molte circostanze che potrebbero portare a un’installazione non corretta. È molto facile che il film si contamini con sporco, polvere o capelli, rovinando così la posa e creando microbolle o pieghe che inficiano la posa. Un installatore professionista ha esperienza nella preparazione e nelle tecniche di applicazione adeguate per prevenire problemi con la pellicola e garantire un’installazione di qualità, più resistente e che duri più a lungo. Le pellicole installate da un nostro installatore soprattutto sono garantite fino a 10 anni; per questo motivo vi consigliamo sempre di affidarvi ai nostri installatori in caso di lavori di una certa entità."
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente. Nel nostro settore ci sono tanti competitor molto corretti, purtroppo ci sono alcuni che non esitano a darvi informazioni errate pur di vendervi qualcosa che non vi serve. Per questo motivo uno dei nostri obiettivi nei confronti del cliente è quello di fornirgli le corrette informazioni per permettergli di fare la scelta migliore per le sue necessità. Abbiamo voluto scrivere questo piccolo vademecum dei miti e delle esagerazioni che abbiamo letto su internet, in modo da aiutarvi a districarvi nel mare del web ed evitarvi di abboccare all’amo di qualche soggetto poco corretto. LE PELLICOLE PER VETRI IMPEDIRANNO DI SBIADIRE GLI ARREDI INTERNI AL 100% Ovviamente la pellicola per vetri fa un lavoro enorme nel ridurre la quantità e la velocità di sbiadimento causato dai dannosi raggi UV (bloccandone fino al 99%, come nel caso della nostra MADICO SL 8), il calore solare e la luce visibile. Non può però eliminare il 100% degli effetti deterioranti del sole, per cui chiunque vi dica che blocca questo effetto vi sta mentendo. La pellicola per finestre è comunque una soluzione molto efficace per ridurre lo sbiadimento rispetto al vetro non trattato! LE PELLICOLE PER VETRI ROVINERANNO IL MIO PANORAMA Sebbene una pellicola scura o riflettente possa ridurre la vista dall’esterno guardando all’interno della propria casa o ufficio, non succede lo stesso se si guarda dall’interno verso l’esterno. Ciò è dovuto alla velocità in cui l’occhio umano si adatta alla quantità di luce che riceve, consentendo di vedere all’esterno anche quando la trasmissione della luce è stata ridotta. Cliccate QUI per avere più info sulle pellicole oscuranti, oppure QUI per info sulle pellicole riflettenti! LA PELLICOLA DI SICUREZZA È RESISTENTE AI PROIETTILI E AGLI URAGANI Molte aziende affermano che le pellicole di sicurezza per finestre proteggeranno il vetro da forze così estreme come uragani e persino proiettili. I test che potete vedere in internet per promuovere queste affermazioni sono spesso condotti utilizzando vetro spesso più di 10 cm con un multistrato di pellicola di sicurezza, entrambe condizioni non normali. La maggior parte del vetro installato ha infatti uno spessore massimo di 5 centimetri, per cui nessuna pellicola può da sola fermare magicamente un proiettile su un vetro standard. Inoltre, “a prova di uragano” è un termine completamente improprio. Se un uragano può squarciare un tetto, ha senso che possa sradicare anche una finestra. Sicuramente le pellicole di sicurezza sono molto efficaci contro gli eventi atmosferici anche più violenti, ma non rendono completamente invulnerabile il vostro serramento. Se volete maggiori info sulle pellicole di sicurezza potete cliccare QUI! SAFETYSHIELD 1500 è il nostro top di gamma in materia di film di sicurezza. TUTTE LE PELLICOLE PER VETRI PER AUTO SONO ILLEGALI Le leggi variano da stato a stato. In Italia, la pellicola per vetri è vietata sul parabrezza e sui finestrini anteriori, ma è consentita sui finestrini laterali posteriori e sul lunotto posteriore. Ovviamente vanno installate solo pellicole omologate per il tipo di vetro che monta la vostra vettura. La quantità di trasmissione della luce consentita varia a seconda delle leggi statali. Alcuni paesi esteri invece consentono l’uso di pellicole per vetri sull’intera vettura purché soddisfino determinati standard di trasmissione della luce. Solaris Films non vende né monta pellicole per auto, ma vi affidiamo alle mani esperte del nostro distributore TECNOSOLAR! CHIUNQUE PUÒ INSTALLARE PELLICOLE PER VETRI L’installazione di pellicole per vetri può sembrare relativamente facile, ma ci sono molte circostanze che potrebbero portare a un’installazione non corretta. È molto facile che il film si contamini con sporco, polvere o capelli, rovinando così la posa e creando microbolle o pieghe che inficiano la posa. Un installatore professionista ha esperienza nella preparazione e nelle tecniche di applicazione adeguate per prevenire problemi con la pellicola e garantire un’installazione di qualità, più resistente e che duri più a lungo. Le pellicole installate da un nostro installatore soprattutto sono garantite fino a 10 anni; per questo motivo vi consigliamo sempre di affidarvi ai nostri installatori in caso di lavori di una certa entità. Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 4544,
+  "fetchedAt": "2026-04-28T15:08:06.459Z"
+}

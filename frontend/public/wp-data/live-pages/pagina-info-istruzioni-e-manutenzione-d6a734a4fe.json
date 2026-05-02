@@ -1,0 +1,200 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/istruzioni-e-manutenzione/",
+  "path": "/pagina-info/istruzioni-e-manutenzione/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/istruzioni-e-manutenzione/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Istruzione e manutenzione - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/istruzioni-e-manutenzione/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Istruzione e manutenzione",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pagina-info/istruzioni-e-manutenzione/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-15T20:35:50+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/istruzioni-e-manutenzione\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/istruzioni-e-manutenzione\\/\",\"name\":\"Istruzione e manutenzione - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-15T20:25:03+00:00\",\"dateModified\":\"2025-09-15T20:35:50+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/istruzioni-e-manutenzione\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/istruzioni-e-manutenzione\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/istruzioni-e-manutenzione\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Istruzione e manutenzione\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Istruzione e manutenzione"
+    },
+    {
+      "level": 3,
+      "text": "PULIZIA E MANUTENZIONE DELLE PELLICOLE PER VETRI MADICO USO ESTERNO"
+    },
+    {
+      "level": 3,
+      "text": "VETRATE DI DIMENSIONI SUPERIORI A CM 183"
+    }
+  ],
+  "h1": "Istruzione e manutenzione",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Istruzione e manutenzione",
+      "text": "Istruzione e manutenzione"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "PULIZIA E MANUTENZIONE DELLE PELLICOLE PER VETRI MADICO USO ESTERNO",
+      "text": "PULIZIA E MANUTENZIONE DELLE PELLICOLE PER VETRI MADICO USO ESTERNO"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Le pellicole Madico sono riconosciute come prodotti di alta qualit&#xE0;. Lo strato protettivo antigraffio superficiale protegge la pellicola dall&#x2019;abrasione ma tuttavia essa non possiede la stessa durezza del vetro.",
+      "text": "Le pellicole Madico sono riconosciute come prodotti di alta qualità. Lo strato protettivo antigraffio superficiale protegge la pellicola dall’abrasione ma tuttavia essa non possiede la stessa durezza del vetro."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "<b>Non pulire il vetro trattato con pellicola prima di 30/40 giorni dall&#x2019;applicazione.",
+          "text": "Non pulire il vetro trattato con pellicola prima di 30/40 giorni dall’applicazione."
+        },
+        {
+          "html": "<b>Al termine dell&#x2019;installazione si pu&#xF2; manifestare una leggera opacizzazione che pu&#xF2; durare circa 20/40 giorni, questo fa parte del normale processo di adesivizzazione al vetro.",
+          "text": "Al termine dell’installazione si può manifestare una leggera opacizzazione che può durare circa 20/40 giorni, questo fa parte del normale processo di adesivizzazione al vetro."
+        },
+        {
+          "html": "<strong>Si raccomanda di mantenere pulito il vetro trattato.",
+          "text": "Si raccomanda di mantenere pulito il vetro trattato."
+        }
+      ],
+      "text": "Non pulire il vetro trattato con pellicola prima di 30/40 giorni dall’applicazione. Al termine dell’installazione si può manifestare una leggera opacizzazione che può durare circa 20/40 giorni, questo fa parte del normale processo di adesivizzazione al vetro. Si raccomanda di mantenere pulito il vetro trattato."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole per esterno che non vengono pulite perdono le propriet&#xE0; di riflessione e la trasparenza. L&#x2019;aumento del calore assorbito a causa della mancata pulizia pu&#xF2; pregiudicarne la durata.<br>\nE&#x2019; importante pulire il vetro trattato con le pellicole almeno due volte l&#x2019;anno (primavera e autunno), mentre per vetrate inclinate o orizzontali, in base alla quantit&#xE0; di residui, detriti e sporcizia di varia natura, &#xE8; fondamentale effettuare pi&#xF9; di due lavaggi all&#x2019;anno utilizzando pi&#xF9; acqua del solito.",
+      "text": "Le pellicole per esterno che non vengono pulite perdono le proprietà di riflessione e la trasparenza. L’aumento del calore assorbito a causa della mancata pulizia può pregiudicarne la durata. E’ importante pulire il vetro trattato con le pellicole almeno due volte l’anno (primavera e autunno), mentre per vetrate inclinate o orizzontali, in base alla quantità di residui, detriti e sporcizia di varia natura, è fondamentale effettuare più di due lavaggi all’anno utilizzando più acqua del solito."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Per la pulizia si consiglia di attenersi alle seguenti istruzioni:",
+      "text": "Per la pulizia si consiglia di attenersi alle seguenti istruzioni:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Per eliminare le impurit&#xE0; o granelli di polvere che a contatto con la spugna rischiano di graffiare la pellicola, si consiglia il lavaggio con un getto d&#x2019;acqua tubolare ed una leggera soluzione saponosa;",
+          "text": "Per eliminare le impurità o granelli di polvere che a contatto con la spugna rischiano di graffiare la pellicola, si consiglia il lavaggio con un getto d’acqua tubolare ed una leggera soluzione saponosa;"
+        },
+        {
+          "html": "Pulire il vetro con una spugna sintetica non abrasiva;",
+          "text": "Pulire il vetro con una spugna sintetica non abrasiva;"
+        },
+        {
+          "html": "E&#x2019; consigliato l&#x2019;uso di normali soluzioni detergenti neutre a base di acqua e shampoo&#xA0; non aggressive o acide (come ammoniaca);",
+          "text": "E’ consigliato l’uso di normali soluzioni detergenti neutre a base di acqua e shampoo non aggressive o acide (come ammoniaca);"
+        },
+        {
+          "html": "Per rimuovere la soluzione detergente dalla pellicola utilizzare solo tergivetro morbido evitando forti pressioni in ogni operazione di pulizia;",
+          "text": "Per rimuovere la soluzione detergente dalla pellicola utilizzare solo tergivetro morbido evitando forti pressioni in ogni operazione di pulizia;"
+        },
+        {
+          "html": "Per le macchie pi&#xF9; resistenti pu&#xF2; essere utilizzato un panno morbido;",
+          "text": "Per le macchie più resistenti può essere utilizzato un panno morbido;"
+        },
+        {
+          "html": "Non devono mai essere utilizzati spazzole, carta o prodotti abrasivi;",
+          "text": "Non devono mai essere utilizzati spazzole, carta o prodotti abrasivi;"
+        },
+        {
+          "html": "Non usare prodotti aggressivi quali: acetone, benzina, diluenti, acidi e solventi;",
+          "text": "Non usare prodotti aggressivi quali: acetone, benzina, diluenti, acidi e solventi;"
+        },
+        {
+          "html": "Non attaccare sulla pellicola adesivi, etichette o nastri adesivi.",
+          "text": "Non attaccare sulla pellicola adesivi, etichette o nastri adesivi."
+        }
+      ],
+      "text": "Per eliminare le impurità o granelli di polvere che a contatto con la spugna rischiano di graffiare la pellicola, si consiglia il lavaggio con un getto d’acqua tubolare ed una leggera soluzione saponosa; Pulire il vetro con una spugna sintetica non abrasiva; E’ consigliato l’uso di normali soluzioni detergenti neutre a base di acqua e shampoo non aggressive o acide (come ammoniaca); Per rimuovere la soluzione detergente dalla pellicola utilizzare solo tergivetro morbido evitando forti pressioni in ogni operazione di pulizia; Per le macchie più resistenti può essere utilizzato un panno morbido; Non devono mai essere utilizzati spazzole, carta o prodotti abrasivi; Non usare prodotti aggressivi quali: acetone, benzina, diluenti, acidi e solventi; Non attaccare sulla pellicola adesivi, etichette o nastri adesivi."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "VETRATE DI DIMENSIONI SUPERIORI A CM 183",
+      "text": "VETRATE DI DIMENSIONI SUPERIORI A CM 183"
+    },
+    {
+      "type": "paragraph",
+      "html": "Tutte le pellicole per esterno devono essere siliconate su ogni bordo per evitare danni causati da infiltrazioni di umidit&#xE0; sotto la pellicola. Per le vetrate di dimensioni&#xA0; superiori a cm 183 si dovr&#xE0; effettuare una giunta (due fogli di pellicola accostate applicate sullo stesso vetro). Anche i bordi della pellicola lungo la linea di giunzione devono essere siliconati.",
+      "text": "Tutte le pellicole per esterno devono essere siliconate su ogni bordo per evitare danni causati da infiltrazioni di umidità sotto la pellicola. Per le vetrate di dimensioni superiori a cm 183 si dovrà effettuare una giunta (due fogli di pellicola accostate applicate sullo stesso vetro). Anche i bordi della pellicola lungo la linea di giunzione devono essere siliconati."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>ATTENZIONE:<br>\nAi fini della validit&#xE0; della garanzia il committente&#xA0; deve verificare lo stato di usura del silicone applicato dall&#x2019;installatore lungo la linea di giuntura.<br>\nMaggiore attenzione e cura devono essere prestate quando si pulisce nella zona della giuntura, evitando forti pressioni e pulendo sempre nella direzione della giunta.<br>\nPer mantenere effettiva la garanzia e&#x2019; importante ripristinare la siliconatura eventualmente deteriorata dalle periodiche pulizie con silicone neutro Dowcorning.<br>\n<b><br>\nPer il ripristino della siliconatura procedere come segue:",
+      "text": "ATTENZIONE: Ai fini della validità della garanzia il committente deve verificare lo stato di usura del silicone applicato dall’installatore lungo la linea di giuntura. Maggiore attenzione e cura devono essere prestate quando si pulisce nella zona della giuntura, evitando forti pressioni e pulendo sempre nella direzione della giunta. Per mantenere effettiva la garanzia e’ importante ripristinare la siliconatura eventualmente deteriorata dalle periodiche pulizie con silicone neutro Dowcorning. Per il ripristino della siliconatura procedere come segue:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        {
+          "html": "Rimuovere il silicone restante;",
+          "text": "Rimuovere il silicone restante;"
+        },
+        {
+          "html": "Applicare del nastro adesivo ad entrambi i lati, lungo la linea di giuntura, a 3 &#xF7; 4 mm di distanza;",
+          "text": "Applicare del nastro adesivo ad entrambi i lati, lungo la linea di giuntura, a 3 ÷ 4 mm di distanza;"
+        },
+        {
+          "html": "Applicare del silicone neutro su tutta la linea di giuntura e, con una spatola, rendere lo strato di silicone applicato il pi&#xF9; sottile possibile;",
+          "text": "Applicare del silicone neutro su tutta la linea di giuntura e, con una spatola, rendere lo strato di silicone applicato il più sottile possibile;"
+        },
+        {
+          "html": "Rimuovere il nastro adesivo applicato precedentemente.",
+          "text": "Rimuovere il nastro adesivo applicato precedentemente."
+        }
+      ],
+      "text": "Rimuovere il silicone restante; Applicare del nastro adesivo ad entrambi i lati, lungo la linea di giuntura, a 3 ÷ 4 mm di distanza; Applicare del silicone neutro su tutta la linea di giuntura e, con una spatola, rendere lo strato di silicone applicato il più sottile possibile; Rimuovere il nastro adesivo applicato precedentemente."
+    },
+    {
+      "type": "paragraph",
+      "html": "Contattateci per maggiori informazioni in merito!",
+      "text": "Contattateci per maggiori informazioni in merito!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Istruzione e manutenzione PULIZIA E MANUTENZIONE DELLE PELLICOLE PER VETRI MADICO USO ESTERNO Le pellicole Madico sono riconosciute come prodotti di alta qualità. Lo strato protettivo antigraffio superficiale protegge la pellicola dall’abrasione ma tuttavia essa non possiede la stessa durezza del vetro. Non pulire il vetro trattato con pellicola prima di 30/40 giorni dall’applicazione. Al termine dell’installazione si può manifestare una leggera opacizzazione che può durare circa 20/40 giorni, questo fa parte del normale processo di adesivizzazione al vetro. Si raccomanda di mantenere pulito il vetro trattato. Le pellicole per esterno che non vengono pulite perdono le proprietà di riflessione e la trasparenza. L’aumento del calore assorbito a causa della mancata pulizia può pregiudicarne la durata. E’ importante pulire il vetro trattato con le pellicole almeno due volte l’anno (primavera e autunno), mentre per vetrate inclinate o orizzontali, in base alla quantità di residui, detriti e sporcizia di varia natura, è fondamentale effettuare più di due lavaggi all’anno utilizzando più acqua del solito. Per la pulizia si consiglia di attenersi alle seguenti istruzioni: Per eliminare le impurità o granelli di polvere che a contatto con la spugna rischiano di graffiare la pellicola, si consiglia il lavaggio con un getto d’acqua tubolare ed una leggera soluzione saponosa; Pulire il vetro con una spugna sintetica non abrasiva; E’ consigliato l’uso di normali soluzioni detergenti neutre a base di acqua e shampoo non aggressive o acide (come ammoniaca); Per rimuovere la soluzione detergente dalla pellicola utilizzare solo tergivetro morbido evitando forti pressioni in ogni operazione di pulizia; Per le macchie più resistenti può essere utilizzato un panno morbido; Non devono mai essere utilizzati spazzole, carta o prodotti abrasivi; Non usare prodotti aggressivi quali: acetone, benzina, diluenti, acidi e solventi; Non attaccare sulla pellicola adesivi, etichette o nastri adesivi. VETRATE DI DIMENSIONI SUPERIORI A CM 183 Tutte le pellicole per esterno devono essere siliconate su ogni bordo per evitare danni causati da infiltrazioni di umidità sotto la pellicola. Per le vetrate di dimensioni superiori a cm 183 si dovrà effettuare una giunta (due fogli di pellicola accostate applicate sullo stesso vetro). Anche i bordi della pellicola lungo la linea di giunzione devono essere siliconati. ATTENZIONE: Ai fini della validità della garanzia il committente deve verificare lo stato di usura del silicone applicato dall’installatore lungo la linea di giuntura. Maggiore attenzione e cura devono essere prestate quando si pulisce nella zona della giuntura, evitando forti pressioni e pulendo sempre nella direzione della giunta. Per mantenere effettiva la garanzia e’ importante ripristinare la siliconatura eventualmente deteriorata dalle periodiche pulizie con silicone neutro Dowcorning. Per il ripristino della siliconatura procedere come segue: Rimuovere il silicone restante; Applicare del nastro adesivo ad entrambi i lati, lungo la linea di giuntura, a 3 ÷ 4 mm di distanza; Applicare del silicone neutro su tutta la linea di giuntura e, con una spatola, rendere lo strato di silicone applicato il più sottile possibile; Rimuovere il nastro adesivo applicato precedentemente. Contattateci per maggiori informazioni in merito! Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 3448,
+  "fetchedAt": "2026-04-28T15:09:39.956Z"
+}

@@ -4,7 +4,8 @@
  * - In development: fetches directly from WP REST API
  */
 
-const WP_URL = process.env.REACT_APP_WP_URL || '';
+const DEFAULT_WP_URL = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
+const WP_URL = (process.env.REACT_APP_WP_URL || DEFAULT_WP_URL).replace(/\/$/, '');
 const IS_PROD = typeof window !== 'undefined' && window.location.protocol === 'https:';
 
 const cache = new Map();
@@ -156,7 +157,6 @@ export async function fetchSettings() {
   if (IS_PROD) {
     return fetchStaticJson('settings');
   }
-  if (!WP_URL) return null;
   const cacheKey = 'settings';
   const cached = cache.get(cacheKey);
   if (cached && Date.now() - cached.time < CACHE_TTL) return cached.data;

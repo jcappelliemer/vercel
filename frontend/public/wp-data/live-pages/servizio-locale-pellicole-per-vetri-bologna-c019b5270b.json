@@ -1,0 +1,131 @@
+{
+  "url": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-bologna/",
+  "path": "/servizio-locale/pellicole-per-vetri-bologna/",
+  "route": {
+    "type": "local-service",
+    "label": "Servizio locale",
+    "newPath": "/servizio-locale/bologna/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/servizio-locale-sitemap.xml",
+  "seo": {
+    "title": "PELLICOLE PER VETRI BOLOGNA - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-bologna/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "PELLICOLE PER VETRI BOLOGNA",
+      "og:url": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-bologna/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/MinilogoBologna.webp",
+      "og:image:width": "198",
+      "og:image:height": "100",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-09T11:11:06+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/pellicole-per-vetri-bologna\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/pellicole-per-vetri-bologna\\/\",\"name\":\"PELLICOLE PER VETRI BOLOGNA - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/pellicole-per-vetri-bologna\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/pellicole-per-vetri-bologna\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/MinilogoBologna.webp\",\"datePublished\":\"2025-07-16T14:44:38+00:00\",\"dateModified\":\"2025-09-09T11:11:06+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/pellicole-per-vetri-bologna\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/pellicole-per-vetri-bologna\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/pellicole-per-vetri-bologna\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/MinilogoBologna.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/MinilogoBologna.webp\",\"width\":198,\"height\":100},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/pellicole-per-vetri-bologna\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Servizi locali\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"PELLICOLE PER VETRI BOLOGNA\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "level": 3,
+      "text": "INSTALLIAMO DA ANNI PELLICOLE PER VETRI ANCHE IN PROVINCIA DI BOLOGNA."
+    },
+    {
+      "level": 4,
+      "text": "ABBIAMO PIÙ DI 30 ANNI DI ESPERIENZA NELLA PROGETTAZIONE E INSTALLAZIONE DI PELLICOLE PER VETRI A BOLOGNA ED IN TUTTA ITALIA."
+    },
+    {
+      "level": 4,
+      "text": "HAI BISOGNO DI UNA CONSULENZA GRATUITA E DI UN PREVENTIVO PER L’INSTALLAZIONE DI PELLICOLE PER VETRI A BOLOGNA?"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "INSTALLIAMO DA ANNI PELLICOLE PER VETRI ANCHE IN PROVINCIA DI BOLOGNA.",
+      "text": "INSTALLIAMO DA ANNI PELLICOLE PER VETRI ANCHE IN PROVINCIA DI BOLOGNA."
+    },
+    {
+      "type": "paragraph",
+      "html": "Dalla progettazione del prodotto all&#x2019;installazione finale, Solaris Films installa pellicole per finestre a Bologna e provincia e da molti anni impieghiamo tutte le nostre energie per portare soluzioni tagliate su misura per risolvere i problemi dei nostri clienti. Riteniamo fondamentale implementare l&#x2019;efficienza energetica e la sicurezza delle superfici vetrate; per questo forniamo una consulenza completa per tutti i tipi di propriet&#xE0; e attivit&#xE0; commerciali, dalle case private alle imprese commerciali. Grandi istituzioni, pubbliche e private, si rivolgono quotidianamente alla nostra azienda per consulenze ed installazioni.",
+      "text": "Dalla progettazione del prodotto all’installazione finale, Solaris Films installa pellicole per finestre a Bologna e provincia e da molti anni impieghiamo tutte le nostre energie per portare soluzioni tagliate su misura per risolvere i problemi dei nostri clienti. Riteniamo fondamentale implementare l’efficienza energetica e la sicurezza delle superfici vetrate; per questo forniamo una consulenza completa per tutti i tipi di proprietà e attività commerciali, dalle case private alle imprese commerciali. Grandi istituzioni, pubbliche e private, si rivolgono quotidianamente alla nostra azienda per consulenze ed installazioni."
+    },
+    {
+      "type": "paragraph",
+      "html": "Installiamo solo le pellicole americane&#xA0;<a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Madico, le pi&#xF9; performanti al mondo, per garantire la piena soddisfazione dei nostri clienti.",
+      "text": "Installiamo solo le pellicole americane Madico, le più performanti al mondo, per garantire la piena soddisfazione dei nostri clienti."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "ABBIAMO PI&#xD9; DI 30 ANNI DI ESPERIENZA NELLA PROGETTAZIONE E INSTALLAZIONE DI PELLICOLE PER VETRI A BOLOGNA ED IN TUTTA ITALIA.",
+      "text": "ABBIAMO PIÙ DI 30 ANNI DI ESPERIENZA NELLA PROGETTAZIONE E INSTALLAZIONE DI PELLICOLE PER VETRI A BOLOGNA ED IN TUTTA ITALIA."
+    },
+    {
+      "type": "paragraph",
+      "html": "Importanti istituzioni del territorio si sono affidati alla nostra esperienza trentennale per abbattere i costi di climatizzazione o garantire la sicurezza dei propri serramenti.",
+      "text": "Importanti istituzioni del territorio si sono affidati alla nostra esperienza trentennale per abbattere i costi di climatizzazione o garantire la sicurezza dei propri serramenti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Grazie alla distribuzione esclusiva per l&amp;#8217;Italia delle pellicole MADICO U.S.A., la qualit&#xE0; USA nelle pellicole per vetri, il top dei prodotti a livello mondiale.",
+      "text": "Grazie alla distribuzione esclusiva per l’Italia delle pellicole MADICO U.S.A., la qualità USA nelle pellicole per vetri, il top dei prodotti a livello mondiale."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "HAI BISOGNO DI UNA CONSULENZA GRATUITA E DI UN PREVENTIVO PER L&#x2019;INSTALLAZIONE DI PELLICOLE PER VETRI A BOLOGNA?",
+      "text": "HAI BISOGNO DI UNA CONSULENZA GRATUITA E DI UN PREVENTIVO PER L’INSTALLAZIONE DI PELLICOLE PER VETRI A BOLOGNA?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Contattaci, ti mostreremo tutte le possibili soluzioni e calcoleremo il risparmio energetico che puoi ottenere dall&#x2019;applicazione delle nostre pellicole per vetri.<br>\nSolaris Films &#xE8; Installatore Certificato Tecnosolar: questo ci permette di presentarvi le migliore pellicole per vetri a Bologna e provincia al miglior prezzo sul mercato.",
+      "text": "Contattaci, ti mostreremo tutte le possibili soluzioni e calcoleremo il risparmio energetico che puoi ottenere dall’applicazione delle nostre pellicole per vetri. Solaris Films è Installatore Certificato Tecnosolar: questo ci permette di presentarvi le migliore pellicole per vetri a Bologna e provincia al miglior prezzo sul mercato."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vieni a scoprire di pi&#xF9; sulle nostre installazioni a Bologna ed in tutta l&amp;#8217;Emilia Romagna su <a href=\"/\">solarisfilms.it, chiedi un preventivo gratuito!",
+      "text": "Vieni a scoprire di più sulle nostre installazioni a Bologna ed in tutta l’Emilia Romagna su solarisfilms.it, chiedi un preventivo gratuito!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Scegli la qualit&#xE0; di un installatore certificato, scegli chi fa questo lavoro con passione, scegli Solaris Films.",
+      "text": "Scegli la qualità di un installatore certificato, scegli chi fa questo lavoro con passione, scegli Solaris Films."
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle&#xA0;<a href=\"/\">pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive INSTALLIAMO DA ANNI PELLICOLE PER VETRI ANCHE IN PROVINCIA DI BOLOGNA. Dalla progettazione del prodotto all’installazione finale, Solaris Films installa pellicole per finestre a Bologna e provincia e da molti anni impieghiamo tutte le nostre energie per portare soluzioni tagliate su misura per risolvere i problemi dei nostri clienti. Riteniamo fondamentale implementare l’efficienza energetica e la sicurezza delle superfici vetrate; per questo forniamo una consulenza completa per tutti i tipi di proprietà e attività commerciali, dalle case private alle imprese commerciali. Grandi istituzioni, pubbliche e private, si rivolgono quotidianamente alla nostra azienda per consulenze ed installazioni. Installiamo solo le pellicole americane Madico, le più performanti al mondo, per garantire la piena soddisfazione dei nostri clienti. ABBIAMO PIÙ DI 30 ANNI DI ESPERIENZA NELLA PROGETTAZIONE E INSTALLAZIONE DI PELLICOLE PER VETRI A BOLOGNA ED IN TUTTA ITALIA. Importanti istituzioni del territorio si sono affidati alla nostra esperienza trentennale per abbattere i costi di climatizzazione o garantire la sicurezza dei propri serramenti. Grazie alla distribuzione esclusiva per l’Italia delle pellicole MADICO U.S.A., la qualità USA nelle pellicole per vetri, il top dei prodotti a livello mondiale. HAI BISOGNO DI UNA CONSULENZA GRATUITA E DI UN PREVENTIVO PER L’INSTALLAZIONE DI PELLICOLE PER VETRI A BOLOGNA? Contattaci, ti mostreremo tutte le possibili soluzioni e calcoleremo il risparmio energetico che puoi ottenere dall’applicazione delle nostre pellicole per vetri. Solaris Films è Installatore Certificato Tecnosolar: questo ci permette di presentarvi le migliore pellicole per vetri a Bologna e provincia al miglior prezzo sul mercato. Vieni a scoprire di più sulle nostre installazioni a Bologna ed in tutta l’Emilia Romagna su solarisfilms.it, chiedi un preventivo gratuito! Scegli la qualità di un installatore certificato, scegli chi fa questo lavoro con passione, scegli Solaris Films. Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 2151,
+  "fetchedAt": "2026-04-28T15:09:25.692Z"
+}

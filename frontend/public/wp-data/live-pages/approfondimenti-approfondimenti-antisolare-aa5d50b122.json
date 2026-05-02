@@ -1,0 +1,120 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/approfondimenti-antisolare/",
+  "path": "/approfondimenti/approfondimenti-antisolare/",
+  "route": {
+    "type": "article",
+    "label": "Approfondimento",
+    "newPath": "/blog/approfondimenti-antisolare/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/post-sitemap.xml",
+  "seo": {
+    "title": "PELLICOLE ANTISOLARI - Solaris Films",
+    "description": "Leggi il nostro approfondimento sulle pellicole antisolari e le varie tipologie presenti sul mercato.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/approfondimenti-antisolare/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "PELLICOLE ANTISOLARI",
+      "og:description": "Leggi il nostro approfondimento sulle pellicole antisolari e le varie tipologie presenti sul mercato.",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/approfondimenti-antisolare/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/controllo-termico.webp",
+      "og:image:width": "600",
+      "og:image:height": "900",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Scritto da",
+      "twitter:data1": "Fabio Meucci",
+      "twitter:label2": "Tempo di lettura stimato",
+      "twitter:data2": "3 minuti"
+    },
+    "article": {
+      "article:published_time": "2025-06-17T13:40:45+00:00",
+      "article:modified_time": "2025-06-18T11:09:54+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/\"},\"author\":{\"name\":\"Fabio Meucci\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\"},\"headline\":\"PELLICOLE ANTISOLARI\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-18T11:09:54+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/\"},\"wordCount\":409,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/controllo-termico.webp\",\"articleSection\":[\"Approfondimenti\"],\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/\",\"name\":\"PELLICOLE ANTISOLARI - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/controllo-termico.webp\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-18T11:09:54+00:00\",\"description\":\"Leggi il nostro approfondimento sulle pellicole antisolari e le varie tipologie presenti sul mercato.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/controllo-termico.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/controllo-termico.webp\",\"width\":600,\"height\":900},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-antisolare\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Lo sapevi che?\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/lo-sapevi-che\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"PELLICOLE ANTISOLARI\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\",\"name\":\"Fabio Meucci\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"caption\":\"Fabio Meucci\"},\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/fabio-meucci\\/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicole antisolari: per noi &#xE8; fondamentale informare correttamente il cliente per instradarlo verso la scelta del film pi&#xF9; giusto alle sue aspettative. In Solaris Films abbiamo deciso di scrivere approfondimenti che aiutino sia i neofiti sia i pi&#xF9; esperti ad acquisire informazioni importanti.",
+      "text": "Pellicole antisolari: per noi è fondamentale informare correttamente il cliente per instradarlo verso la scelta del film più giusto alle sue aspettative. In Solaris Films abbiamo deciso di scrivere approfondimenti che aiutino sia i neofiti sia i più esperti ad acquisire informazioni importanti."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE ANTI UV<br>\nIn Solaris Films pensiamo anche al vostro benessere. Per questo offriamo soluzioni per proteggere voi e i vostri cari dalle parti dannose dello spettro solare.",
+      "text": "PELLICOLE ANTI UV In Solaris Films pensiamo anche al vostro benessere. Per questo offriamo soluzioni per proteggere voi e i vostri cari dalle parti dannose dello spettro solare."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE FOTOCROMATICHE<br>\nDesideri una corretta illuminazione senza tende solari antiestetiche? Vuoi valorizzare facciata e interni con una pellicola funzionale e remunerativa? Le pellicole fotocromatiche fanno al caso tuo.",
+      "text": "PELLICOLE FOTOCROMATICHE Desideri una corretta illuminazione senza tende solari antiestetiche? Vuoi valorizzare facciata e interni con una pellicola funzionale e remunerativa? Le pellicole fotocromatiche fanno al caso tuo."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLA OSCURANTE VETRO<br>\nCrediamo nella chiarezza e nell&#x2019;informazione per offrire il miglior servizio. I nostri clienti devono comprendere come i prodotti per finestre beneficiano loro e le loro abitazioni.",
+      "text": "PELLICOLA OSCURANTE VETRO Crediamo nella chiarezza e nell’informazione per offrire il miglior servizio. I nostri clienti devono comprendere come i prodotti per finestre beneficiano loro e le loro abitazioni."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE OSCURANTI<br>\nLe pellicole oscuranti risolvono il problema dell&#x2019;irraggiamento solare. Riflettono la luce e ostacolano l&#x2019;ingresso del calore, garantendo anche una ridotta privacy, pur non essendo il loro scopo principale.",
+      "text": "PELLICOLE OSCURANTI Le pellicole oscuranti risolvono il problema dell’irraggiamento solare. Riflettono la luce e ostacolano l’ingresso del calore, garantendo anche una ridotta privacy, pur non essendo il loro scopo principale."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE ANTISOLARI, ANTICALORE E RIFLETTENTI<br>\nApplicati alle superfici vetrate, questi film migliorano notevolmente la prestazione degli infissi nel controllare la radiazione solare. Conosciuti come pellicole a controllo solare, anticalore o riflettenti.",
+      "text": "PELLICOLE ANTISOLARI, ANTICALORE E RIFLETTENTI Applicati alle superfici vetrate, questi film migliorano notevolmente la prestazione degli infissi nel controllare la radiazione solare. Conosciuti come pellicole a controllo solare, anticalore o riflettenti."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE RIFLETTENTI, PRO E CONTRO<br>\nSempre pi&#xF9; presenti nella decorazione domestica, le pellicole riflettenti possono far risparmiare energia, ma l&#x2019;installazione va valutata considerando vantaggi e svantaggi.",
+      "text": "PELLICOLE RIFLETTENTI, PRO E CONTRO Sempre più presenti nella decorazione domestica, le pellicole riflettenti possono far risparmiare energia, ma l’installazione va valutata considerando vantaggi e svantaggi."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>SCHERMATURE SOLARI<br>\nLe finestre lasciano entrare luce e vista, ma anche surriscaldamento e sbiadimento degli arredi. Le pellicole solari sono ideate per prevenire il calore, proteggere gli oggetti e offrire comfort abitativo.",
+      "text": "SCHERMATURE SOLARI Le finestre lasciano entrare luce e vista, ma anche surriscaldamento e sbiadimento degli arredi. Le pellicole solari sono ideate per prevenire il calore, proteggere gli oggetti e offrire comfort abitativo."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE RIFLETTENTI<br>\nProgettate per riflettere il calore solare, possono variare in grado di riflettenza. L&#x2019;effetto specchio del film dipende dalla quantit&#xE0; di luce riflessa dentro e fuori l&#x2019;edificio.",
+      "text": "PELLICOLE RIFLETTENTI Progettate per riflettere il calore solare, possono variare in grado di riflettenza. L’effetto specchio del film dipende dalla quantità di luce riflessa dentro e fuori l’edificio."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLA ADESIVA SPECCHIO<br>\nLa pellicola specchiante &#xE8; sicuramente l&amp;#8217;oggetto di design che attira immediatamente l&amp;#8217;attenzione dell&amp;#8217;osservatore. Tutti noi ricordiamo a memoria gli scenari delle metropoli americane: il maestoso grattacielo riflette lo skyline al tramonto e la visione evocativa che trasmette perseveranza e maestosit&#xE0;. Il riflesso &#xE8; per&#xF2; solo un effetto secondario della comodissima pellicola effettivamente utilizzata. Pu&#xF2; sembrare strano, ma il compito principale di questa pellicola specchiante &#xE8; proteggerti dalle pericolose radiazioni del sole (come ultravioletti o infrarossi)!",
+      "text": "PELLICOLA ADESIVA SPECCHIO La pellicola specchiante è sicuramente l’oggetto di design che attira immediatamente l’attenzione dell’osservatore. Tutti noi ricordiamo a memoria gli scenari delle metropoli americane: il maestoso grattacielo riflette lo skyline al tramonto e la visione evocativa che trasmette perseveranza e maestosità. Il riflesso è però solo un effetto secondario della comodissima pellicola effettivamente utilizzata. Può sembrare strano, ma il compito principale di questa pellicola specchiante è proteggerti dalle pericolose radiazioni del sole (come ultravioletti o infrarossi)!"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLA SPECCHIO<br>\nCome Solaris Films siamo convinti che la chiarezza e l&amp;#8217;informazione sia prioritaria per fornire il miglior servizio. La nostra iniziativa &#xE8; aiutare i nostri clienti a capire in che modo i nostri prodotti per pellicole per finestre beneficiano direttamente loro, le loro case ed i loro affetti.",
+      "text": "PELLICOLA SPECCHIO Come Solaris Films siamo convinti che la chiarezza e l’informazione sia prioritaria per fornire il miglior servizio. La nostra iniziativa è aiutare i nostri clienti a capire in che modo i nostri prodotti per pellicole per finestre beneficiano direttamente loro, le loro case ed i loro affetti."
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive Pellicole antisolari: per noi è fondamentale informare correttamente il cliente per instradarlo verso la scelta del film più giusto alle sue aspettative. In Solaris Films abbiamo deciso di scrivere approfondimenti che aiutino sia i neofiti sia i più esperti ad acquisire informazioni importanti. PELLICOLE ANTI UV In Solaris Films pensiamo anche al vostro benessere. Per questo offriamo soluzioni per proteggere voi e i vostri cari dalle parti dannose dello spettro solare. PELLICOLE FOTOCROMATICHE Desideri una corretta illuminazione senza tende solari antiestetiche? Vuoi valorizzare facciata e interni con una pellicola funzionale e remunerativa? Le pellicole fotocromatiche fanno al caso tuo. PELLICOLA OSCURANTE VETRO Crediamo nella chiarezza e nell’informazione per offrire il miglior servizio. I nostri clienti devono comprendere come i prodotti per finestre beneficiano loro e le loro abitazioni. PELLICOLE OSCURANTI Le pellicole oscuranti risolvono il problema dell’irraggiamento solare. Riflettono la luce e ostacolano l’ingresso del calore, garantendo anche una ridotta privacy, pur non essendo il loro scopo principale. PELLICOLE ANTISOLARI, ANTICALORE E RIFLETTENTI Applicati alle superfici vetrate, questi film migliorano notevolmente la prestazione degli infissi nel controllare la radiazione solare. Conosciuti come pellicole a controllo solare, anticalore o riflettenti. PELLICOLE RIFLETTENTI, PRO E CONTRO Sempre più presenti nella decorazione domestica, le pellicole riflettenti possono far risparmiare energia, ma l’installazione va valutata considerando vantaggi e svantaggi. SCHERMATURE SOLARI Le finestre lasciano entrare luce e vista, ma anche surriscaldamento e sbiadimento degli arredi. Le pellicole solari sono ideate per prevenire il calore, proteggere gli oggetti e offrire comfort abitativo. PELLICOLE RIFLETTENTI Progettate per riflettere il calore solare, possono variare in grado di riflettenza. L’effetto specchio del film dipende dalla quantità di luce riflessa dentro e fuori l’edificio. PELLICOLA ADESIVA SPECCHIO La pellicola specchiante è sicuramente l’oggetto di design che attira immediatamente l’attenzione dell’osservatore. Tutti noi ricordiamo a memoria gli scenari delle metropoli americane: il maestoso grattacielo riflette lo skyline al tramonto e la visione evocativa che trasmette perseveranza e maestosità. Il riflesso è però solo un effetto secondario della comodissima pellicola effettivamente utilizzata. Può sembrare strano, ma il compito principale di questa pellicola specchiante è proteggerti dalle pericolose radiazioni del sole (come ultravioletti o infrarossi)! PELLICOLA SPECCHIO Come Solaris Films siamo convinti che la chiarezza e l’informazione sia prioritaria per fornire il miglior servizio. La nostra iniziativa è aiutare i nostri clienti a capire in che modo i nostri prodotti per pellicole per finestre beneficiano direttamente loro, le loro case ed i loro affetti.",
+  "textLength": 2962,
+  "fetchedAt": "2026-04-28T15:08:05.952Z"
+}

@@ -1,0 +1,306 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/norme/",
+  "path": "/pagina-info/norme/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/norme/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Norme - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/norme/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Norme",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pagina-info/norme/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-11T08:41:07+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norme\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norme\\/\",\"name\":\"Norme - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-09T10:25:15+00:00\",\"dateModified\":\"2025-09-11T08:41:07+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norme\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norme\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/norme\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Norme\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Norme"
+    },
+    {
+      "level": 3,
+      "text": "QUALI SONO LE NORME DELLE VETRATE?"
+    },
+    {
+      "level": 3,
+      "text": "NORMA UNI 7697:2021 \"Criteri di sicurezza nelle applicazioni vetrarie\""
+    },
+    {
+      "level": 3,
+      "text": "NORMA EN 12600:2004 \"Vetro stratificato di sicurezza\""
+    },
+    {
+      "level": 3,
+      "text": "NORMA UNI EN ISO 12543-1:2011 Definizione dei vetri di sicurezza"
+    },
+    {
+      "level": 3,
+      "text": "Scopo della Norma :"
+    },
+    {
+      "level": 3,
+      "text": "NORMA UNI EN 356-2002 sicurezza antiproiettile"
+    },
+    {
+      "level": 3,
+      "text": "NORMA UNI EN 13123-1 :2001 Requisiti e classificazioni di porte e finestre sulla resistenza all'esplosione"
+    },
+    {
+      "level": 3,
+      "text": "NORMA UNI EN 13124-1 :2002 Metodi di prova di resistenza all'esplosione"
+    },
+    {
+      "level": 3,
+      "text": "NORMA UNI EN 13124–1:2012 Metodi di prova di resistenza all'esplosione"
+    }
+  ],
+  "h1": "Norme",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Norme",
+      "text": "Norme"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "QUALI SONO LE NORME DELLE VETRATE?",
+      "text": "QUALI SONO LE NORME DELLE VETRATE?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il professionista del vetro, aiutato dalle normative e dagli standard nazionali ed internazionali procede per fasi, esso valuter&#xE0; prima le cause di potenziale pericolo, individuer&#xE0; i rischi, definir&#xE0; la tipologia di vetro pi&#xF9; idonea ad evitarli ed infine elaborer&#xE0; misure e spessori pi&#xF9; adatti.",
+      "text": "Il professionista del vetro, aiutato dalle normative e dagli standard nazionali ed internazionali procede per fasi, esso valuterà prima le cause di potenziale pericolo, individuerà i rischi, definirà la tipologia di vetro più idonea ad evitarli ed infine elaborerà misure e spessori più adatti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Partendo dalla norma UNI 7697, mediante il quale stabilir&#xE0; il tipo di vetro da impiegare nel caso si voglia garantire la sicurezza delle persone, successivamente far&#xE0; riferimento ad altre normative che stabiliscono determinate prestazioni in base allo specifico pericolo che il vetro stesso &#xE8; soggetto.",
+      "text": "Partendo dalla norma UNI 7697, mediante il quale stabilirà il tipo di vetro da impiegare nel caso si voglia garantire la sicurezza delle persone, successivamente farà riferimento ad altre normative che stabiliscono determinate prestazioni in base allo specifico pericolo che il vetro stesso è soggetto."
+    },
+    {
+      "type": "paragraph",
+      "html": "I vetri devono rispondere alle richieste prestazionali date dalle seguenti norme:",
+      "text": "I vetri devono rispondere alle richieste prestazionali date dalle seguenti norme:"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>UNI EN 7697&#xA0;&#x201C;norma cogente&#x201D;<br>\n<b>UNI EN 7697&#xA0;(prescrive le tipologie di vetro da adottare)<br>\n<b>UNI EN 12543/1/2/3/4/5/6&#xA0;(definizioni, durabilit&#xE0;)<br>\n<b>UNI EN 12600&#xA0;(resistenza all&#x2019;impatto)<br>\n<b>UNI EN 356&#xA0;(resistenza contro l&#x2019;attacco manuale)<br>\n<b>UNI EN 1063&#xA0;(resistenza ai proiettili)<br>\n<b>UNI EN 13123 &#x2013; 1&#xA0;(requisiti e classificazioni di porte e finestre sulla resistenza all&#x2019;esplosione)<br>\n<b>UNI EN 13124 &#x2013; 1&#xA0;(metodi di prova di resistenza all&#x2019; esplosione)<br>\n<b>UNI EN 13541&#xA0;(prove e classificazione della resistenza alla pressione causata da esplosioni)",
+      "text": "UNI EN 7697 “norma cogente” UNI EN 7697 (prescrive le tipologie di vetro da adottare) UNI EN 12543/1/2/3/4/5/6 (definizioni, durabilità) UNI EN 12600 (resistenza all’impatto) UNI EN 356 (resistenza contro l’attacco manuale) UNI EN 1063 (resistenza ai proiettili) UNI EN 13123 – 1 (requisiti e classificazioni di porte e finestre sulla resistenza all’esplosione) UNI EN 13124 – 1 (metodi di prova di resistenza all’ esplosione) UNI EN 13541 (prove e classificazione della resistenza alla pressione causata da esplosioni)"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>ATTENZIONE:&#xA0;NUOVA NORMA UNI 7697 in vigore dal 26 agosto 2021.",
+      "text": "ATTENZIONE: NUOVA NORMA UNI 7697 in vigore dal 26 agosto 2021."
+    },
+    {
+      "type": "paragraph",
+      "html": "La norma UNI 7697 &#xE8; uno dei documenti normativi fondamentale per tutti i professionisti legati alla trasformazione, alla lavorazione, all&#x2019;applicazione e all&#x2019;uso finale del vetro. Essa &#xE9; da annoverarsi tra i testi normativi pi&#xF9; utili e condivisibili, in quanto permette di fissare in maniera chiara e facilmente comprensibile criteri di sicurezza inequivocabili relativi ad un prodotto potenzialmente pericoloso come &#xE8; il vetro. Nella maggior parte dei casi, a causa di una insufficiente conoscenza della norma, viene scelta un vetro non idoneo all&#x2019; utilizzo a discapito delle pi&#xF9; semplici norme di sicurezza.",
+      "text": "La norma UNI 7697 è uno dei documenti normativi fondamentale per tutti i professionisti legati alla trasformazione, alla lavorazione, all’applicazione e all’uso finale del vetro. Essa é da annoverarsi tra i testi normativi più utili e condivisibili, in quanto permette di fissare in maniera chiara e facilmente comprensibile criteri di sicurezza inequivocabili relativi ad un prodotto potenzialmente pericoloso come è il vetro. Nella maggior parte dei casi, a causa di una insufficiente conoscenza della norma, viene scelta un vetro non idoneo all’ utilizzo a discapito delle più semplici norme di sicurezza."
+    },
+    {
+      "type": "paragraph",
+      "html": "OBBLIGATORIETA&#x2019; DELLA NORMA UNI 7697:2021",
+      "text": "OBBLIGATORIETA’ DELLA NORMA UNI 7697:2021"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il rispetto della norma UNI 7697 &#xE8; obbligatorio e cogente. La nuova versione della norma UNI 7697 viene in aiuto agli operatori del settore per effettuare la scelta pi&#xF9; idonea nel rispetto della sicurezza dell&#x2019;utilizzatore finale.",
+      "text": "Il rispetto della norma UNI 7697 è obbligatorio e cogente. La nuova versione della norma UNI 7697 viene in aiuto agli operatori del settore per effettuare la scelta più idonea nel rispetto della sicurezza dell’utilizzatore finale."
+    },
+    {
+      "type": "paragraph",
+      "html": "Bisogna evidenziare che l&#x2019;applicazione della norma UNI 7697 ha gi&#xE0; fin dalla prima pubblicazione nel lontano 1977 avuto un effetto estremamente positivo nell&#x2019;incremento della sicurezza, la nuova versione della norma UNI 7697 pubblicata nel 2021 servir&#xE0; ulteriormente a limitare gli incidenti domestici e nei luoghi di lavoro che sono ancora tanti, alcuni dei quali, purtroppo, degenerano in decessi.",
+      "text": "Bisogna evidenziare che l’applicazione della norma UNI 7697 ha già fin dalla prima pubblicazione nel lontano 1977 avuto un effetto estremamente positivo nell’incremento della sicurezza, la nuova versione della norma UNI 7697 pubblicata nel 2021 servirà ulteriormente a limitare gli incidenti domestici e nei luoghi di lavoro che sono ancora tanti, alcuni dei quali, purtroppo, degenerano in decessi."
+    },
+    {
+      "type": "paragraph",
+      "html": "MOTIVAZIONE:<br>",
+      "text": "MOTIVAZIONE:"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il Decreto Legislativo 6 settembre 2005, n. 206 &#x201C;Codice del consumo&#x201D; a norma dell&#x2019;articolo 7 della legge 29 luglio 2003, n. 229&#x201D; relativa alla sicurezza generale dei prodotti rende, di fatto, obbligatoria l&#x2019;applicazione della norma UNI 7697.",
+      "text": "Il Decreto Legislativo 6 settembre 2005, n. 206 “Codice del consumo” a norma dell’articolo 7 della legge 29 luglio 2003, n. 229” relativa alla sicurezza generale dei prodotti rende, di fatto, obbligatoria l’applicazione della norma UNI 7697."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;Art. 105 &#x201C;Presunzione e valutazione di sicurezza&#x201D; del Decreto Legislativo 6 settembre 2005, n. 206 infatti riporta:",
+      "text": "L’Art. 105 “Presunzione e valutazione di sicurezza” del Decreto Legislativo 6 settembre 2005, n. 206 infatti riporta:"
+    },
+    {
+      "type": "paragraph",
+      "html": "Comma 1. In mancanza di specifiche disposizioni comunitarie che disciplinano gli aspetti di sicurezza, un prodotto si presume sicuro quando e&#x2019; conforme alla legislazione vigente nello Stato membro in cui il prodotto stesso e&#x2019; commercializzato e con riferimento ai requisiti cui deve rispondere sul piano sanitario e della sicurezza.",
+      "text": "Comma 1. In mancanza di specifiche disposizioni comunitarie che disciplinano gli aspetti di sicurezza, un prodotto si presume sicuro quando e’ conforme alla legislazione vigente nello Stato membro in cui il prodotto stesso e’ commercializzato e con riferimento ai requisiti cui deve rispondere sul piano sanitario e della sicurezza."
+    },
+    {
+      "type": "paragraph",
+      "html": "Comma 2. Si presume che un prodotto sia sicuro, per quanto concerne i rischi e le categorie di rischi disciplinati dalla normativa nazionale, quando e&#x2019; conforme alle norme nazionali non cogenti che recepiscono le norme europee i cui riferimenti sono stati pubblicati dalla Commissione europea nella Gazzetta Ufficiale delle Comunit&#xE0; europee a norma dell&#x2019;articolo 4 della direttiva 2001/95/CE, del Parlamento europeo e del Consiglio, del 3 dicembre 2001.",
+      "text": "Comma 2. Si presume che un prodotto sia sicuro, per quanto concerne i rischi e le categorie di rischi disciplinati dalla normativa nazionale, quando e’ conforme alle norme nazionali non cogenti che recepiscono le norme europee i cui riferimenti sono stati pubblicati dalla Commissione europea nella Gazzetta Ufficiale delle Comunità europee a norma dell’articolo 4 della direttiva 2001/95/CE, del Parlamento europeo e del Consiglio, del 3 dicembre 2001."
+    },
+    {
+      "type": "paragraph",
+      "html": "Comma 3. In assenza delle norme di cui ai commi 1 e 2, la sicurezza del prodotto e&#x2019; valutata in base alle norme nazionali non cogenti che recepiscono norme europee, alle norme in vigore nello Stato membro in cui il prodotto e&#x2019; commercializzato, alle raccomandazioni della Commissione europea relative ad orientamenti sulla valutazione della sicurezza dei prodotti, ai codici di buona condotta in materia di sicurezza vigenti nel settore interessato, agli ultimi ritrovati della tecnica, al livello di sicurezza che i consumatori possono ragionevolmente attendersi.",
+      "text": "Comma 3. In assenza delle norme di cui ai commi 1 e 2, la sicurezza del prodotto e’ valutata in base alle norme nazionali non cogenti che recepiscono norme europee, alle norme in vigore nello Stato membro in cui il prodotto e’ commercializzato, alle raccomandazioni della Commissione europea relative ad orientamenti sulla valutazione della sicurezza dei prodotti, ai codici di buona condotta in materia di sicurezza vigenti nel settore interessato, agli ultimi ritrovati della tecnica, al livello di sicurezza che i consumatori possono ragionevolmente attendersi."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>In conclusione, non ci sono davvero pi&#xF9; dubbi sulla cogenza della UNI 7697, la sicurezza dei vetri &#xE8; un obbligo.",
+      "text": "In conclusione, non ci sono davvero più dubbi sulla cogenza della UNI 7697, la sicurezza dei vetri è un obbligo."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NORMA UNI 7697:2021 &quot;Criteri di sicurezza nelle applicazioni vetrarie&quot;",
+      "text": "NORMA UNI 7697:2021 \"Criteri di sicurezza nelle applicazioni vetrarie\""
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Scopo&#xA0; della&#xA0; norma:<br>\nStabilire i criteri dei vetri da impiegare nei casi in cui si voglia garantire la sicurezza degli utenti, indicando i tipi di vetro di cui si ammette l&#x2019;utilizzo nelle varie applicazioni.<br>\n<b>Definizioni e classificazioni:<br>\nVetrazioni esterne:&#xA0;quando sono integrate nelle pareti perimetrali esterne di un edificio, di una cabina ecc.<br>\nVetrazioni interne:&#xA0;quando sono ubicate all&#x2019;interno e non a contatto con l&#x2019;ambiente esterno.<br>\nVetrazioni accessibili:&#xA0;quando le persone possono venire a contatto durante l&#x2019;uso previsto.<br>\nVetrazioni non accessibili: quando le persone non possono venire a contatto durante l&#x2019;uso previsto.<br>\nVetrazioni protette:&#xA0;quando si sono adottati accorgimenti che eliminano in modo certo il rischio connesso alla eventuale rottura delle lastre.<br>\nVetrazioni non protette:&#xA0;quando non si sono adottati gli accorgimenti di cui sopra.<br>\nPosa delle lastre:<b>&#xA0;telai e scanalature di contenimento devono essere adeguati alle caratteristiche e prestazioni della vetrata.<br>\nCriteri di scelta delle lastre da impiegare:&#xA0;la norma elenca le tipologie di potenziale pericolo. Per ognuna di queste tipologie e, ove presenti, sotto tipologie, la norma indica le lastre da applicare e la classe minima di sicurezza prescritta secondo la EN 12600.<br>\nProgettazione:&#xA0;Si possono adottare criteri diversi da quelli indicati dalla presente norma, purch&#xE8; non conducano a condizioni di sicurezza meno favorevoli. L&#x2019; adozione dei tipi di lastra da impiegare prescritti nella tabella &#xE8; vincolante, a meno che il rischio di danno connesso a quella particolare applicazione sia stato eliminato con provvedimenti o protezioni adeguati.",
+      "text": "Scopo della norma: Stabilire i criteri dei vetri da impiegare nei casi in cui si voglia garantire la sicurezza degli utenti, indicando i tipi di vetro di cui si ammette l’utilizzo nelle varie applicazioni. Definizioni e classificazioni: Vetrazioni esterne: quando sono integrate nelle pareti perimetrali esterne di un edificio, di una cabina ecc. Vetrazioni interne: quando sono ubicate all’interno e non a contatto con l’ambiente esterno. Vetrazioni accessibili: quando le persone possono venire a contatto durante l’uso previsto. Vetrazioni non accessibili: quando le persone non possono venire a contatto durante l’uso previsto. Vetrazioni protette: quando si sono adottati accorgimenti che eliminano in modo certo il rischio connesso alla eventuale rottura delle lastre. Vetrazioni non protette: quando non si sono adottati gli accorgimenti di cui sopra. Posa delle lastre: telai e scanalature di contenimento devono essere adeguati alle caratteristiche e prestazioni della vetrata. Criteri di scelta delle lastre da impiegare: la norma elenca le tipologie di potenziale pericolo. Per ognuna di queste tipologie e, ove presenti, sotto tipologie, la norma indica le lastre da applicare e la classe minima di sicurezza prescritta secondo la EN 12600. Progettazione: Si possono adottare criteri diversi da quelli indicati dalla presente norma, purchè non conducano a condizioni di sicurezza meno favorevoli. L’ adozione dei tipi di lastra da impiegare prescritti nella tabella è vincolante, a meno che il rischio di danno connesso a quella particolare applicazione sia stato eliminato con provvedimenti o protezioni adeguati."
+    },
+    {
+      "type": "paragraph",
+      "html": "Casi pi&#xF9; frequenti:",
+      "text": "Casi più frequenti:"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        {
+          "html": "Le uniche superfici vetrate non soggette a prescrizioni sono: porte finestre, porte-finestre interamente intelaiate in abitazioni o uffici senza dipendenti, a meno che il lato inferiore della lastra si trovi a meno di 100 cm dal piano di calpestio (rischio di caduta nel vuoto, classe&#xA0;<b>1B1) oppure sporgenti verso l&#x2019;esterno (classe&#xA0;<b>3B3).",
+          "text": "Le uniche superfici vetrate non soggette a prescrizioni sono: porte finestre, porte-finestre interamente intelaiate in abitazioni o uffici senza dipendenti, a meno che il lato inferiore della lastra si trovi a meno di 100 cm dal piano di calpestio (rischio di caduta nel vuoto, classe 1B1) oppure sporgenti verso l’esterno (classe 3B3)."
+        },
+        {
+          "html": "Le superfici vetrate poste in ambienti aperti al pubblico adibiti ad attivit&#xE0; sportive o ricreative e/o frequentate da giovani, indipendentemente dall&#x2019;altezza dal piano di calpestio, devono essere in classe&#xA0;<b>1B1.",
+          "text": "Le superfici vetrate poste in ambienti aperti al pubblico adibiti ad attività sportive o ricreative e/o frequentate da giovani, indipendentemente dall’altezza dal piano di calpestio, devono essere in classe 1B1."
+        },
+        {
+          "html": "Tutte le superfici vetrate di superficie maggiore di 6 mq in luoghi aperti al pubblico devono essere protette con la classe&#xA0;<b>1B1.",
+          "text": "Tutte le superfici vetrate di superficie maggiore di 6 mq in luoghi aperti al pubblico devono essere protette con la classe 1B1."
+        },
+        {
+          "html": "Le lastre di vetro di balaustre, parapetti, partizioni interne, paratie e divisori con rischio di caduta nel vuoto,&#xA0; devono essere protette con classe&#xA0;<b>1B1.",
+          "text": "Le lastre di vetro di balaustre, parapetti, partizioni interne, paratie e divisori con rischio di caduta nel vuoto, devono essere protette con classe 1B1."
+        },
+        {
+          "html": "Le superfici vetrate interne di asili, scuole ed ospedali devono essere di classe&#xA0;<b>2B2.",
+          "text": "Le superfici vetrate interne di asili, scuole ed ospedali devono essere di classe 2B2."
+        }
+      ],
+      "text": "Le uniche superfici vetrate non soggette a prescrizioni sono: porte finestre, porte-finestre interamente intelaiate in abitazioni o uffici senza dipendenti, a meno che il lato inferiore della lastra si trovi a meno di 100 cm dal piano di calpestio (rischio di caduta nel vuoto, classe 1B1) oppure sporgenti verso l’esterno (classe 3B3). Le superfici vetrate poste in ambienti aperti al pubblico adibiti ad attività sportive o ricreative e/o frequentate da giovani, indipendentemente dall’altezza dal piano di calpestio, devono essere in classe 1B1. Tutte le superfici vetrate di superficie maggiore di 6 mq in luoghi aperti al pubblico devono essere protette con la classe 1B1. Le lastre di vetro di balaustre, parapetti, partizioni interne, paratie e divisori con rischio di caduta nel vuoto, devono essere protette con classe 1B1. Le superfici vetrate interne di asili, scuole ed ospedali devono essere di classe 2B2."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NORMA EN 12600:2004 &quot;Vetro stratificato di sicurezza&quot;",
+      "text": "NORMA EN 12600:2004 \"Vetro stratificato di sicurezza\""
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Scopo&#xA0; della&#xA0; Norma:<br>\nDettare i requisiti e le prove che&#xA0; un vetro stratificato deve superare per poter essere classificato &#x201C;vetro stratificato di sicurezza&#x201D;<br>\nClassificazioni previste dalla norma. La norma prevede delle prove di resistenza del vetro e i relativi livelli di sicurezza.<br>\nClassi di altezza della massa d&#x2019;urto:<br>\nClasse 1: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un&#x2019;altezza di cm 120.<br>\nClasse 2: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un&#x2019;altezza di cm 45.<br>\nClasse 3: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un&#x2019;altezza di cm 19.<br>\nClassi dipendenti dal modo di rottura del vetro:<br>\nClasse A: Si evidenziano numerose rotture&#xA0; che&#xA0; formano numerosi frammenti con bordi taglienti, alcuni dei quali anche grandi (rottura tipo di un vetro&#xA0; float)<br>\nClasse B: Si evidenziano numerose rotture, ma i frammenti sono tenuti&#xA0; assieme e non si separano (rottura tipo di un vetro stratificato)<br>\nClasse C: Il vetro si&#xA0; disintegra generando un gran&#xA0; numero di piccoli&#xA0; frammenti generalmente inoffensivi (rottura tipo di un vetro temperato).<br>\n<b>Descrizione della prova:<br>\nPrevede che i vetri di sicurezza siano classificati in relazione all&#x2019; impatto di uno speciale attrezzo (impattatore del peso di circa 50 Kg) che cade da differenti altezze:<br>\n<b>Classe 3B3:<br>\ndeve resistere alla caduta dell&#x2019;impattatore da un&#x2019;altezza di 190 mm.<br>\n<b>Classe 2B2:<br>\ndeve resistere alla caduta dell&#x2019;impattatore da un&#x2019;altezza di 450 mm &#x2013;&#xA0;<i>(Antiferita).<br>\n<b>Classe 1B1:<br>\ndeve resistere alla caduta dell&#x2019;impattatore da un&#x2019;altezza di 1200 mm &#x2013;&#xA0;<i>(Anticaduta nel vuoto).",
+      "text": "Scopo della Norma: Dettare i requisiti e le prove che un vetro stratificato deve superare per poter essere classificato “vetro stratificato di sicurezza” Classificazioni previste dalla norma. La norma prevede delle prove di resistenza del vetro e i relativi livelli di sicurezza. Classi di altezza della massa d’urto: Classe 1: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un’altezza di cm 120. Classe 2: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un’altezza di cm 45. Classe 3: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un’altezza di cm 19. Classi dipendenti dal modo di rottura del vetro: Classe A: Si evidenziano numerose rotture che formano numerosi frammenti con bordi taglienti, alcuni dei quali anche grandi (rottura tipo di un vetro float) Classe B: Si evidenziano numerose rotture, ma i frammenti sono tenuti assieme e non si separano (rottura tipo di un vetro stratificato) Classe C: Il vetro si disintegra generando un gran numero di piccoli frammenti generalmente inoffensivi (rottura tipo di un vetro temperato). Descrizione della prova: Prevede che i vetri di sicurezza siano classificati in relazione all’ impatto di uno speciale attrezzo (impattatore del peso di circa 50 Kg) che cade da differenti altezze: Classe 3B3: deve resistere alla caduta dell’impattatore da un’altezza di 190 mm. Classe 2B2: deve resistere alla caduta dell’impattatore da un’altezza di 450 mm – (Antiferita). Classe 1B1: deve resistere alla caduta dell’impattatore da un’altezza di 1200 mm – (Anticaduta nel vuoto)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NORMA UNI EN ISO 12543-1:2011 Definizione dei vetri di sicurezza",
+      "text": "NORMA UNI EN ISO 12543-1:2011 Definizione dei vetri di sicurezza"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<b>Scopo&#xA0; della&#xA0; Norma:",
+      "text": "Scopo della Norma:"
+    },
+    {
+      "type": "paragraph",
+      "html": "Definire e descrivere i vetri stratificati&#xA0; di sicurezza.<br>\nVetro stratificato:&#xA0;Insieme composto da un foglio di vetro e da uno o pi&#xF9; fogli di vetro e/o di plastica, uniti assieme con uno o pi&#xF9; intercalari.<br>\nVetro stratificato simmetrico:&#xA0;Vetro stratificato in cui, partendo da entrambe le superfici esterne, la sequenza delle lastre di vetro, dei fogli di plastica e dell&#x2019;/degli intercalare/i, per tipo, spessore, finitura e/o caratteristiche generali, &#xE8; la stessa.<br>\nVetro stratificato assimmetrico:&#xA0;Vetro stratificato in cui, partendo da entrambe le superfici esterne, la sequenza delle lastre di vetro, dei fogli di plastica e e dell&#x2019;/degli intercalare/i, per tipo, spessore, finitura e/o caratteristiche generali, &#xE8; diversa.<br>\nVetro stratificato di sicurezza:&#xA0;Vetro stratificato dove, in caso di rottura, l&#x2019;intercalare serve a trattenere i frammenti di vetro, limita le dimensioni dell&#x2019;apertura, offre resistenza residua e riduce il rischio di ferite da taglio o penetrazione.",
+      "text": "Definire e descrivere i vetri stratificati di sicurezza. Vetro stratificato: Insieme composto da un foglio di vetro e da uno o più fogli di vetro e/o di plastica, uniti assieme con uno o più intercalari. Vetro stratificato simmetrico: Vetro stratificato in cui, partendo da entrambe le superfici esterne, la sequenza delle lastre di vetro, dei fogli di plastica e dell’/degli intercalare/i, per tipo, spessore, finitura e/o caratteristiche generali, è la stessa. Vetro stratificato assimmetrico: Vetro stratificato in cui, partendo da entrambe le superfici esterne, la sequenza delle lastre di vetro, dei fogli di plastica e e dell’/degli intercalare/i, per tipo, spessore, finitura e/o caratteristiche generali, è diversa. Vetro stratificato di sicurezza: Vetro stratificato dove, in caso di rottura, l’intercalare serve a trattenere i frammenti di vetro, limita le dimensioni dell’apertura, offre resistenza residua e riduce il rischio di ferite da taglio o penetrazione."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NORMA UNI EN 356-2002 sicurezza antiproiettile",
+      "text": "NORMA UNI EN 356-2002 sicurezza antiproiettile"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Scopo&#xA0; della&#xA0; norma:<br>\nDefinire i requisiti prestazionali e i metodi di prova per classificare la<br>\nresistenza ai proiettili di vetrate e di lastre composte di vetro/plastica.<br>\n<b>Descrizione prova:<br>\nIl campione &#xE8; formato da 3 provini quadrati di dimensioni 50 cm X 50 cm per ogni classe per cui deve essere effettuata la prova.<br>\nClassificazione dei livello di resistenza a proiettili e condizioni di prova:<br>\nBR1&#x2013;BR7:&#xA0;vetrate resistenti ai proiettili secondo il livello crescente di attacco al quale resistono.<br>\nSG1:&#xA0;tipo di campione con n&#xB0;1 impatto.<br>\nSG2:&#xA0;tipo di campione con n&#xB0;2 impatti.<br>\nNS&#xA0;(senza schegge): nessuna perforazione della vetrata da proiettile o da parte di esso e nessuna perforazione da schegge di vetro del foglio testimone sulla faccia opposta.<br>\nS&#xA0;(con schegge): nessuna perforazione della vetrata da proiettile o da parte di esso, ma perforazione del foglio testimone di schegge di vetro staccatesi dalla faccia posteriore.<br>\n<b>Campi di applicazione:<br>\nVetri sottoposti ad attacchi con pistole, fucili e fucili da caccia.<br>\nVetrate per edilizia ad uso interno ed esterno.",
+      "text": "Scopo della norma: Definire i requisiti prestazionali e i metodi di prova per classificare la resistenza ai proiettili di vetrate e di lastre composte di vetro/plastica. Descrizione prova: Il campione è formato da 3 provini quadrati di dimensioni 50 cm X 50 cm per ogni classe per cui deve essere effettuata la prova. Classificazione dei livello di resistenza a proiettili e condizioni di prova: BR1–BR7: vetrate resistenti ai proiettili secondo il livello crescente di attacco al quale resistono. SG1: tipo di campione con n°1 impatto. SG2: tipo di campione con n°2 impatti. NS (senza schegge): nessuna perforazione della vetrata da proiettile o da parte di esso e nessuna perforazione da schegge di vetro del foglio testimone sulla faccia opposta. S (con schegge): nessuna perforazione della vetrata da proiettile o da parte di esso, ma perforazione del foglio testimone di schegge di vetro staccatesi dalla faccia posteriore. Campi di applicazione: Vetri sottoposti ad attacchi con pistole, fucili e fucili da caccia. Vetrate per edilizia ad uso interno ed esterno."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NORMA UNI EN 13123-1 :2001 Requisiti e classificazioni di porte e finestre sulla resistenza all&apos;esplosione",
+      "text": "NORMA UNI EN 13123-1 :2001 Requisiti e classificazioni di porte e finestre sulla resistenza all'esplosione"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Scopo&#xA0; della&#xA0; norma:<br>\nStabilire i criteri che finestre, porte e chiusure oscuranti devono soddisfare per conseguire una classificazione.<br>\n<b>Descrizione prova:<br>\nUtilizzo di una struttura a tubo da onda d&#x2019;urto atta a simulare una detonazione ad alto esplosivo nell&#x2019;ordine di grandezza dai 100 ai 2500 kg di tritolo da distanze da 35 a 50 m.<br>\n<b>Classi di resistenza:<br>\nDa EPR1 a EPR4 in ordine crescente di resistenza alla pressione dell&#x2019;esplosione.",
+      "text": "Scopo della norma: Stabilire i criteri che finestre, porte e chiusure oscuranti devono soddisfare per conseguire una classificazione. Descrizione prova: Utilizzo di una struttura a tubo da onda d’urto atta a simulare una detonazione ad alto esplosivo nell’ordine di grandezza dai 100 ai 2500 kg di tritolo da distanze da 35 a 50 m. Classi di resistenza: Da EPR1 a EPR4 in ordine crescente di resistenza alla pressione dell’esplosione."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NORMA UNI EN 13124-1 :2002 Metodi di prova di resistenza all&apos;esplosione",
+      "text": "NORMA UNI EN 13124-1 :2002 Metodi di prova di resistenza all'esplosione"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Scopo&#xA0; della&#xA0; norma:<br>\nStabilire un procedimento di prova convenzionale per consentire la classificazione della resistenza alle esplosioni di finestre, porte e chiusure oscuranti assieme ai loro tamponamenti.",
+      "text": "Scopo della norma: Stabilire un procedimento di prova convenzionale per consentire la classificazione della resistenza alle esplosioni di finestre, porte e chiusure oscuranti assieme ai loro tamponamenti."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NORMA UNI EN 13124&#x2013;1:2012 Metodi di prova di resistenza all&apos;esplosione",
+      "text": "NORMA UNI EN 13124–1:2012 Metodi di prova di resistenza all'esplosione"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Scopo&#xA0; della&#xA0; norma:<br>\nSpecificare un metodo di prova, i requisiti di prestazione e la classificazione relativi ai vetri resistenti alla pressione causata da esplosioni per l&#x2019;utilizzo in edifici.",
+      "text": "Scopo della norma: Specificare un metodo di prova, i requisiti di prestazione e la classificazione relativi ai vetri resistenti alla pressione causata da esplosioni per l’utilizzo in edifici."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Norme QUALI SONO LE NORME DELLE VETRATE? Il professionista del vetro, aiutato dalle normative e dagli standard nazionali ed internazionali procede per fasi, esso valuterà prima le cause di potenziale pericolo, individuerà i rischi, definirà la tipologia di vetro più idonea ad evitarli ed infine elaborerà misure e spessori più adatti. Partendo dalla norma UNI 7697, mediante il quale stabilirà il tipo di vetro da impiegare nel caso si voglia garantire la sicurezza delle persone, successivamente farà riferimento ad altre normative che stabiliscono determinate prestazioni in base allo specifico pericolo che il vetro stesso è soggetto. I vetri devono rispondere alle richieste prestazionali date dalle seguenti norme: UNI EN 7697 “norma cogente” UNI EN 7697 (prescrive le tipologie di vetro da adottare) UNI EN 12543/1/2/3/4/5/6 (definizioni, durabilità) UNI EN 12600 (resistenza all’impatto) UNI EN 356 (resistenza contro l’attacco manuale) UNI EN 1063 (resistenza ai proiettili) UNI EN 13123 – 1 (requisiti e classificazioni di porte e finestre sulla resistenza all’esplosione) UNI EN 13124 – 1 (metodi di prova di resistenza all’ esplosione) UNI EN 13541 (prove e classificazione della resistenza alla pressione causata da esplosioni) ATTENZIONE: NUOVA NORMA UNI 7697 in vigore dal 26 agosto 2021. La norma UNI 7697 è uno dei documenti normativi fondamentale per tutti i professionisti legati alla trasformazione, alla lavorazione, all’applicazione e all’uso finale del vetro. Essa é da annoverarsi tra i testi normativi più utili e condivisibili, in quanto permette di fissare in maniera chiara e facilmente comprensibile criteri di sicurezza inequivocabili relativi ad un prodotto potenzialmente pericoloso come è il vetro. Nella maggior parte dei casi, a causa di una insufficiente conoscenza della norma, viene scelta un vetro non idoneo all’ utilizzo a discapito delle più semplici norme di sicurezza. OBBLIGATORIETA’ DELLA NORMA UNI 7697:2021 Il rispetto della norma UNI 7697 è obbligatorio e cogente. La nuova versione della norma UNI 7697 viene in aiuto agli operatori del settore per effettuare la scelta più idonea nel rispetto della sicurezza dell’utilizzatore finale. Bisogna evidenziare che l’applicazione della norma UNI 7697 ha già fin dalla prima pubblicazione nel lontano 1977 avuto un effetto estremamente positivo nell’incremento della sicurezza, la nuova versione della norma UNI 7697 pubblicata nel 2021 servirà ulteriormente a limitare gli incidenti domestici e nei luoghi di lavoro che sono ancora tanti, alcuni dei quali, purtroppo, degenerano in decessi. MOTIVAZIONE: Il Decreto Legislativo 6 settembre 2005, n. 206 “Codice del consumo” a norma dell’articolo 7 della legge 29 luglio 2003, n. 229” relativa alla sicurezza generale dei prodotti rende, di fatto, obbligatoria l’applicazione della norma UNI 7697. L’Art. 105 “Presunzione e valutazione di sicurezza” del Decreto Legislativo 6 settembre 2005, n. 206 infatti riporta: Comma 1. In mancanza di specifiche disposizioni comunitarie che disciplinano gli aspetti di sicurezza, un prodotto si presume sicuro quando e’ conforme alla legislazione vigente nello Stato membro in cui il prodotto stesso e’ commercializzato e con riferimento ai requisiti cui deve rispondere sul piano sanitario e della sicurezza. Comma 2. Si presume che un prodotto sia sicuro, per quanto concerne i rischi e le categorie di rischi disciplinati dalla normativa nazionale, quando e’ conforme alle norme nazionali non cogenti che recepiscono le norme europee i cui riferimenti sono stati pubblicati dalla Commissione europea nella Gazzetta Ufficiale delle Comunità europee a norma dell’articolo 4 della direttiva 2001/95/CE, del Parlamento europeo e del Consiglio, del 3 dicembre 2001. Comma 3. In assenza delle norme di cui ai commi 1 e 2, la sicurezza del prodotto e’ valutata in base alle norme nazionali non cogenti che recepiscono norme europee, alle norme in vigore nello Stato membro in cui il prodotto e’ commercializzato, alle raccomandazioni della Commissione europea relative ad orientamenti sulla valutazione della sicurezza dei prodotti, ai codici di buona condotta in materia di sicurezza vigenti nel settore interessato, agli ultimi ritrovati della tecnica, al livello di sicurezza che i consumatori possono ragionevolmente attendersi. In conclusione, non ci sono davvero più dubbi sulla cogenza della UNI 7697, la sicurezza dei vetri è un obbligo. NORMA UNI 7697:2021 \"Criteri di sicurezza nelle applicazioni vetrarie\" Scopo della norma: Stabilire i criteri dei vetri da impiegare nei casi in cui si voglia garantire la sicurezza degli utenti, indicando i tipi di vetro di cui si ammette l’utilizzo nelle varie applicazioni. Definizioni e classificazioni: Vetrazioni esterne: quando sono integrate nelle pareti perimetrali esterne di un edificio, di una cabina ecc. Vetrazioni interne: quando sono ubicate all’interno e non a contatto con l’ambiente esterno. Vetrazioni accessibili: quando le persone possono venire a contatto durante l’uso previsto. Vetrazioni non accessibili: quando le persone non possono venire a contatto durante l’uso previsto. Vetrazioni protette: quando si sono adottati accorgimenti che eliminano in modo certo il rischio connesso alla eventuale rottura delle lastre. Vetrazioni non protette: quando non si sono adottati gli accorgimenti di cui sopra. Posa delle lastre: telai e scanalature di contenimento devono essere adeguati alle caratteristiche e prestazioni della vetrata. Criteri di scelta delle lastre da impiegare: la norma elenca le tipologie di potenziale pericolo. Per ognuna di queste tipologie e, ove presenti, sotto tipologie, la norma indica le lastre da applicare e la classe minima di sicurezza prescritta secondo la EN 12600. Progettazione: Si possono adottare criteri diversi da quelli indicati dalla presente norma, purchè non conducano a condizioni di sicurezza meno favorevoli. L’ adozione dei tipi di lastra da impiegare prescritti nella tabella è vincolante, a meno che il rischio di danno connesso a quella particolare applicazione sia stato eliminato con provvedimenti o protezioni adeguati. Casi più frequenti: Le uniche superfici vetrate non soggette a prescrizioni sono: porte finestre, porte-finestre interamente intelaiate in abitazioni o uffici senza dipendenti, a meno che il lato inferiore della lastra si trovi a meno di 100 cm dal piano di calpestio (rischio di caduta nel vuoto, classe 1B1) oppure sporgenti verso l’esterno (classe 3B3). Le superfici vetrate poste in ambienti aperti al pubblico adibiti ad attività sportive o ricreative e/o frequentate da giovani, indipendentemente dall’altezza dal piano di calpestio, devono essere in classe 1B1. Tutte le superfici vetrate di superficie maggiore di 6 mq in luoghi aperti al pubblico devono essere protette con la classe 1B1. Le lastre di vetro di balaustre, parapetti, partizioni interne, paratie e divisori con rischio di caduta nel vuoto, devono essere protette con classe 1B1. Le superfici vetrate interne di asili, scuole ed ospedali devono essere di classe 2B2. NORMA EN 12600:2004 \"Vetro stratificato di sicurezza\" Scopo della Norma: Dettare i requisiti e le prove che un vetro stratificato deve superare per poter essere classificato “vetro stratificato di sicurezza” Classificazioni previste dalla norma. La norma prevede delle prove di resistenza del vetro e i relativi livelli di sicurezza. Classi di altezza della massa d’urto: Classe 1: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un’altezza di cm 120. Classe 2: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un’altezza di cm 45. Classe 3: Il vetro soddisfa i requisiti richiesti con un impactor che cade da un’altezza di cm 19. Classi dipendenti dal modo di rottura del vetro: Classe A: Si evidenziano numerose rotture che formano numerosi frammenti con bordi taglienti, alcuni dei quali anche grandi (rottura tipo di un vetro float) Classe B: Si evidenziano numerose rotture, ma i frammenti sono tenuti assieme e non si separano (rottura tipo di un vetro stratificato) Classe C: Il vetro si disintegra generando un gran numero di piccoli frammenti generalmente inoffensivi (rottura tipo di un vetro temperato). Descrizione della prova: Prevede che i vetri di sicurezza siano classificati in relazione all’ impatto di uno speciale attrezzo (impattatore del peso di circa 50 Kg) che cade da differenti altezze: Classe 3B3: deve resistere alla caduta dell’impattatore da un’altezza di 190 mm. Classe 2B2: deve resistere alla caduta dell’impattatore da un’altezza di 450 mm – (Antiferita). Classe 1B1: deve resistere alla caduta dell’impattatore da un’altezza di 1200 mm – (Anticaduta nel vuoto). NORMA UNI EN ISO 12543-1:2011 Definizione dei vetri di sicurezza Scopo della Norma: Definire e descrivere i vetri stratificati di sicurezza. Vetro stratificato: Insieme composto da un foglio di vetro e da uno o più fogli di vetro e/o di plastica, uniti assieme con uno o più intercalari. Vetro stratificato simmetrico: Vetro stratificato in cui, partendo da entrambe le superfici esterne, la sequenza delle lastre di vetro, dei fogli di plastica e dell’/degli intercalare/i, per tipo, spessore, finitura e/o caratteristiche generali, è la stessa. Vetro stratificato assimmetrico: Vetro stratificato in cui, partendo da entrambe le superfici esterne, la sequenza delle lastre di vetro, dei fogli di plastica e e dell’/degli intercalare/i, per tipo, spessore, finitura e/o caratteristiche generali, è diversa. Vetro stratificato di sicurezza: Vetro stratificato dove, in caso di rottura, l’intercalare serve a trattenere i frammenti di vetro, limita le dimensioni dell’apertura, offre resistenza residua e riduce il rischio di ferite da taglio o penetrazione. NORMA UNI EN 356-2002 sicurezza antiproiettile Scopo della norma: Definire i requisiti prestazionali e i metodi di prova per classificare la resistenza ai proiettili di vetrate e di lastre composte di vetro/plastica. Descrizione prova: Il campione è formato da 3 provini quadrati di dimensioni 50 cm X 50 cm per ogni classe per cui deve essere effettuata la prova. Classificazione dei livello di resistenza a proiettili e condizioni di prova: BR1–BR7: vetrate resistenti ai proiettili secondo il livello crescente di attacco al quale resistono. SG1: tipo di campione con n°1 impatto. SG2: tipo di campione con n°2 impatti. NS (senza schegge): nessuna perforazione della vetrata da proiettile o da parte di esso e nessuna perforazione da schegge di vetro del foglio testimone sulla faccia opposta. S (con schegge): nessuna perforazione della vetrata da proiettile o da parte di esso, ma perforazione del foglio testimone di schegge di vetro staccatesi dalla faccia posteriore. Campi di applicazione: Vetri sottoposti ad attacchi con pistole, fucili e fucili da caccia. Vetrate per edilizia ad uso interno ed esterno. NORMA UNI EN 13123-1 :2001 Requisiti e classificazioni di porte e finestre sulla resistenza all'esplosione Scopo della norma: Stabilire i criteri che finestre, porte e chiusure oscuranti devono soddisfare per conseguire una classificazione. Descrizione prova: Utilizzo di una struttura a tubo da onda d’urto atta a simulare una detonazione ad alto esplosivo nell’ordine di grandezza dai 100 ai 2500 kg di tritolo da distanze da 35 a 50 m. Classi di resistenza: Da EPR1 a EPR4 in ordine crescente di resistenza alla pressione dell’esplosione. NORMA UNI EN 13124-1 :2002 Metodi di prova di resistenza all'esplosione Scopo della norma: Stabilire un procedimento di prova convenzionale per consentire la classificazione della resistenza alle esplosioni di finestre, porte e chiusure oscuranti assieme ai loro tamponamenti. NORMA UNI EN 13124–1:2012 Metodi di prova di resistenza all'esplosione Scopo della norma: Specificare un metodo di prova, i requisiti di prestazione e la classificazione relativi ai vetri resistenti alla pressione causata da esplosioni per l’utilizzo in edifici. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 12045,
+  "fetchedAt": "2026-04-28T15:09:39.156Z"
+}

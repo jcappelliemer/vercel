@@ -1,0 +1,159 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/pellicola-oscurante-vetro/",
+  "path": "/approfondimenti/pellicola-oscurante-vetro/",
+  "route": {
+    "type": "article",
+    "label": "Approfondimento",
+    "newPath": "/blog/pellicola-oscurante-vetro/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/post-sitemap.xml",
+  "seo": {
+    "title": "PELLICOLA OSCURANTE VETRO - Solaris Films",
+    "description": "La pellicole oscurante per vetro non è solamente un bell'oggetto di design, ma risolve al meglio l'annoso problema dell'irraggiamento solare.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-oscurante-vetro/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "PELLICOLA OSCURANTE VETRO",
+      "og:description": "La pellicole oscurante per vetro non è solamente un bell'oggetto di design, ma risolve al meglio l'annoso problema dell'irraggiamento solare.",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/pellicola-oscurante-vetro/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/pellicola-antisolare.webp",
+      "og:image:width": "2048",
+      "og:image:height": "1367",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Scritto da",
+      "twitter:data1": "Fabio Meucci",
+      "twitter:label2": "Tempo di lettura stimato",
+      "twitter:data2": "3 minuti"
+    },
+    "article": {
+      "article:published_time": "2025-06-17T13:40:45+00:00",
+      "article:modified_time": "2025-06-19T07:17:43+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/\"},\"author\":{\"name\":\"Fabio Meucci\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\"},\"headline\":\"PELLICOLA OSCURANTE VETRO\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-19T07:17:43+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/\"},\"wordCount\":486,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare.webp\",\"articleSection\":[\"Approfondimenti\"],\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/\",\"name\":\"PELLICOLA OSCURANTE VETRO - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare.webp\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-19T07:17:43+00:00\",\"description\":\"La pellicole oscurante per vetro non è solamente un bell'oggetto di design, ma risolve al meglio l'annoso problema dell'irraggiamento solare.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare.webp\",\"width\":2048,\"height\":1367},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-oscurante-vetro\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Lo sapevi che?\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/lo-sapevi-che\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"PELLICOLA OSCURANTE VETRO\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\",\"name\":\"Fabio Meucci\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"caption\":\"Fabio Meucci\"},\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/fabio-meucci\\/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "level": 2,
+      "text": "PERCHÉ MONTARE PELLICOLE OSCURANTI PER VETRI?"
+    },
+    {
+      "level": 2,
+      "text": "PERCHÈ UNA PELLICOLA OSCURANTE VETRI?"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola oscurante per vetro non &#xE8; solamente un bell&amp;#8217;oggetto di design, ma risolve l&amp;#8217;annoso problema dell&amp;#8217;irraggiamento solare.",
+      "text": "La pellicola oscurante per vetro non è solamente un bell’oggetto di design, ma risolve l’annoso problema dell’irraggiamento solare."
+    },
+    {
+      "type": "paragraph",
+      "html": "La loro denominazione tecnica &#xE8; &#x201C;pellicole a controllo solare&#x201C;, anche se vengono chiamate pellicole riflettenti in quanto riflettono la luce e impediscono al calore di entrare. Questo produce un meccanismo di riflessione che oscura i vetri &amp;#8211; da qui il nome con cui vengono conosciute &amp;#8211; e garantisce parzialmente privacy, ma non &#xE8; il suo compito principale!",
+      "text": "La loro denominazione tecnica è “pellicole a controllo solare“, anche se vengono chiamate pellicole riflettenti in quanto riflettono la luce e impediscono al calore di entrare. Questo produce un meccanismo di riflessione che oscura i vetri – da qui il nome con cui vengono conosciute – e garantisce parzialmente privacy, ma non è il suo compito principale!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Questo prodotto migliora la resa energetica degli edifici, riduce il calore, l&amp;#8217;abbagliamento e di conseguenza i riverberi. Garantendo filtraggio e schermatura dai raggi solari, evitano che il calore penetri nei vari ambienti illuminati dalle nostre vetrate; questo si converte in una riduzione dei consumi energetici di climatizzazione abbassando le temperature fino a 7/8&#xB0;C. Per questo motivo si chiamano anche pellicole anticalore.",
+      "text": "Questo prodotto migliora la resa energetica degli edifici, riduce il calore, l’abbagliamento e di conseguenza i riverberi. Garantendo filtraggio e schermatura dai raggi solari, evitano che il calore penetri nei vari ambienti illuminati dalle nostre vetrate; questo si converte in una riduzione dei consumi energetici di climatizzazione abbassando le temperature fino a 7/8°C. Per questo motivo si chiamano anche pellicole anticalore."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "PERCH&#xC9; MONTARE PELLICOLE OSCURANTI PER VETRI?",
+      "text": "PERCHÉ MONTARE PELLICOLE OSCURANTI PER VETRI?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Questi film adesivi antisolari vanno a migliorare le prestazioni delle superfici vetrate e di conseguenza l&#x2019;efficientamento energetico dei vostri edifici con una semplice applicazione sugli infissi, evitando lavori strutturali costosi, invasivi e di lunga durata.",
+      "text": "Questi film adesivi antisolari vanno a migliorare le prestazioni delle superfici vetrate e di conseguenza l’efficientamento energetico dei vostri edifici con una semplice applicazione sugli infissi, evitando lavori strutturali costosi, invasivi e di lunga durata."
+    },
+    {
+      "type": "paragraph",
+      "html": "Consentono di migliorare la protezione solare e l&amp;#8217;isolamento termico, riducendo consumi energetici, emissioni di CO&#x2082; ma anche calore, abbagliamento e riverberi.",
+      "text": "Consentono di migliorare la protezione solare e l’isolamento termico, riducendo consumi energetici, emissioni di CO₂ ma anche calore, abbagliamento e riverberi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Cercate una soluzione ideale, che sia economica, ecologica e di design contro il surriscaldamento provocato dal sole? Le pellicole riflettenti sono il prodotto adatto a voi.",
+      "text": "Cercate una soluzione ideale, che sia economica, ecologica e di design contro il surriscaldamento provocato dal sole? Le pellicole riflettenti sono il prodotto adatto a voi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Grazie all&amp;#8217;esperienza del nostro distributore <a href=\"https://www.tecnosolar.it/\" target=\"_blank\" rel=\"noopener noreferrer\">TECNOSOLAR possiamo installare sulle vostre superfici vetrate le pellicole<a href=\"https://madico.com/it\" target=\"_blank\" rel=\"noopener noreferrer\"> MADICO, le migliori al mondo.",
+      "text": "Grazie all’esperienza del nostro distributore TECNOSOLAR possiamo installare sulle vostre superfici vetrate le pellicole MADICO, le migliori al mondo."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "PERCH&#xC8; UNA PELLICOLA OSCURANTE VETRI?",
+      "text": "PERCHÈ UNA PELLICOLA OSCURANTE VETRI?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Perch&#xE9; migliora la vivibilit&#xE0; degli ambienti rendendoli confortevoli e smussando gli sbalzi di temperatura.",
+          "text": "Perché migliora la vivibilità degli ambienti rendendoli confortevoli e smussando gli sbalzi di temperatura."
+        },
+        {
+          "html": "Perch&#xE9; contribuisce ad aumentare il rendimento dei dipendenti evitando ingresso di luce diretta ed azzerando problemi di riflesso e di abbaglio.",
+          "text": "Perché contribuisce ad aumentare il rendimento dei dipendenti evitando ingresso di luce diretta ed azzerando problemi di riflesso e di abbaglio."
+        },
+        {
+          "html": "Perch&#xE9; consente un notevole risparmio energetico; si parla di un taglio netto dei costi di climatizzazione in estate che va da un minimo del 30% ad un dimezzamento e di un miglioramento di resa e durata dell&#x2019;impianto di climatizzazione. Solaris Films &#xE8; in grado di stimare in fase di preventivo il risparmio economico che otterrete grazie all&#x2019;installazione delle pellicole.",
+          "text": "Perché consente un notevole risparmio energetico; si parla di un taglio netto dei costi di climatizzazione in estate che va da un minimo del 30% ad un dimezzamento e di un miglioramento di resa e durata dell’impianto di climatizzazione. Solaris Films è in grado di stimare in fase di preventivo il risparmio economico che otterrete grazie all’installazione delle pellicole."
+        }
+      ],
+      "text": "Perché migliora la vivibilità degli ambienti rendendoli confortevoli e smussando gli sbalzi di temperatura. Perché contribuisce ad aumentare il rendimento dei dipendenti evitando ingresso di luce diretta ed azzerando problemi di riflesso e di abbaglio. Perché consente un notevole risparmio energetico; si parla di un taglio netto dei costi di climatizzazione in estate che va da un minimo del 30% ad un dimezzamento e di un miglioramento di resa e durata dell’impianto di climatizzazione. Solaris Films è in grado di stimare in fase di preventivo il risparmio economico che otterrete grazie all’installazione delle pellicole."
+    },
+    {
+      "type": "paragraph",
+      "html": "Questo risparmio energetico vi garantir&#xE0; di ammortizzare l&#x2019;investimento fatto sulle pellicole oscuranti vetri in max 3 anni a fronte di una GARANZIA delle PELLICOLE PER ESTERNO fino a 10 ANNI per le versioni sputtered e sunscape. In pi&#xF9; ottempera ai requisiti del &#x201C;Testo Unico&#x201D; D.Lgs. 81/2008, in materia di microclima e sicurezza. Si tratta di un&#x2019;ottima opzione per rispettare i requisiti minimi della legge senza dover sostituire gli infissi e fare lunghi e laboriosi interventi. Il suo utilizzo inoltre &#xE8; raccomandato in modo da far rientrare l&#x2019;edificio all&#x2019;interno delle classificazioni energetiche.",
+      "text": "Questo risparmio energetico vi garantirà di ammortizzare l’investimento fatto sulle pellicole oscuranti vetri in max 3 anni a fronte di una GARANZIA delle PELLICOLE PER ESTERNO fino a 10 ANNI per le versioni sputtered e sunscape. In più ottempera ai requisiti del “Testo Unico” D.Lgs. 81/2008, in materia di microclima e sicurezza. Si tratta di un’ottima opzione per rispettare i requisiti minimi della legge senza dover sostituire gli infissi e fare lunghi e laboriosi interventi. Il suo utilizzo inoltre è raccomandato in modo da far rientrare l’edificio all’interno delle classificazioni energetiche."
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete approfondire il mondo delle pellicole antisolari? Vi consigliamo <a href=\"/approfondimenti/approfondimenti-antisolare/\">QUESTO ARTICOLO.",
+      "text": "Volete approfondire il mondo delle pellicole antisolari? Vi consigliamo QUESTO ARTICOLO."
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire alcuni dei nostri prodotti antisolari MADICO? Potete seguire <a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/\">QUESTO LINK.",
+      "text": "Volete scoprire alcuni dei nostri prodotti antisolari MADICO? Potete seguire QUESTO LINK."
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai bisogno di una pellicola antisolare? Consulta il nostro <a href=\"/approfondimenti/pellicole-oscuranti-vetri/\">approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive La pellicola oscurante per vetro non è solamente un bell’oggetto di design, ma risolve l’annoso problema dell’irraggiamento solare. La loro denominazione tecnica è “pellicole a controllo solare“, anche se vengono chiamate pellicole riflettenti in quanto riflettono la luce e impediscono al calore di entrare. Questo produce un meccanismo di riflessione che oscura i vetri – da qui il nome con cui vengono conosciute – e garantisce parzialmente privacy, ma non è il suo compito principale! Questo prodotto migliora la resa energetica degli edifici, riduce il calore, l’abbagliamento e di conseguenza i riverberi. Garantendo filtraggio e schermatura dai raggi solari, evitano che il calore penetri nei vari ambienti illuminati dalle nostre vetrate; questo si converte in una riduzione dei consumi energetici di climatizzazione abbassando le temperature fino a 7/8°C. Per questo motivo si chiamano anche pellicole anticalore. PERCHÉ MONTARE PELLICOLE OSCURANTI PER VETRI? Questi film adesivi antisolari vanno a migliorare le prestazioni delle superfici vetrate e di conseguenza l’efficientamento energetico dei vostri edifici con una semplice applicazione sugli infissi, evitando lavori strutturali costosi, invasivi e di lunga durata. Consentono di migliorare la protezione solare e l’isolamento termico, riducendo consumi energetici, emissioni di CO₂ ma anche calore, abbagliamento e riverberi. Cercate una soluzione ideale, che sia economica, ecologica e di design contro il surriscaldamento provocato dal sole? Le pellicole riflettenti sono il prodotto adatto a voi. Grazie all’esperienza del nostro distributore TECNOSOLAR possiamo installare sulle vostre superfici vetrate le pellicole MADICO, le migliori al mondo. PERCHÈ UNA PELLICOLA OSCURANTE VETRI? Perché migliora la vivibilità degli ambienti rendendoli confortevoli e smussando gli sbalzi di temperatura. Perché contribuisce ad aumentare il rendimento dei dipendenti evitando ingresso di luce diretta ed azzerando problemi di riflesso e di abbaglio. Perché consente un notevole risparmio energetico; si parla di un taglio netto dei costi di climatizzazione in estate che va da un minimo del 30% ad un dimezzamento e di un miglioramento di resa e durata dell’impianto di climatizzazione. Solaris Films è in grado di stimare in fase di preventivo il risparmio economico che otterrete grazie all’installazione delle pellicole. Questo risparmio energetico vi garantirà di ammortizzare l’investimento fatto sulle pellicole oscuranti vetri in max 3 anni a fronte di una GARANZIA delle PELLICOLE PER ESTERNO fino a 10 ANNI per le versioni sputtered e sunscape. In più ottempera ai requisiti del “Testo Unico” D.Lgs. 81/2008, in materia di microclima e sicurezza. Si tratta di un’ottima opzione per rispettare i requisiti minimi della legge senza dover sostituire gli infissi e fare lunghi e laboriosi interventi. Il suo utilizzo inoltre è raccomandato in modo da far rientrare l’edificio all’interno delle classificazioni energetiche. Volete approfondire il mondo delle pellicole antisolari? Vi consigliamo QUESTO ARTICOLO. Volete scoprire alcuni dei nostri prodotti antisolari MADICO? Potete seguire QUESTO LINK. Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!",
+  "textLength": 3364,
+  "fetchedAt": "2026-04-28T15:08:06.083Z"
+}

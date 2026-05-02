@@ -1,0 +1,113 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/antisfondamento/",
+  "path": "/approfondimenti/tipo-pellicola/antisfondamento/",
+  "route": {
+    "type": "film-type",
+    "label": "Tipo pellicola",
+    "newPath": "/blog/tipo-pellicola/antisfondamento/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/tipo-pellicola-sitemap.xml",
+  "seo": {
+    "title": "Antisfondamento Archivi - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/antisfondamento/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Antisfondamento Archivi",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/antisfondamento/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/antisfondamento\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/antisfondamento\\/\",\"name\":\"Antisfondamento Archivi - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/antisfondamento\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/antisfondamento\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/CL700PSPSR.webp\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/antisfondamento\\/#breadcrumb\"},\"inLanguage\":\"it-IT\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/antisfondamento\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/CL700PSPSR.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/CL700PSPSR.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/antisfondamento\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Antisfondamento\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Tipo Pellicola: Antisfondamento"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola di sicurezza Madico CL 700 PS SR"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola di sicurezza Madico CL 700 E PS SR"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola di sicurezza Madico CL 400 PS SR"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola di sicurezza Madico CL 400 E PS SR"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola di sicurezza Madico Safetyshield 1500"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola di sicurezza Madico Safetyshield 800"
+    }
+  ],
+  "h1": "Tipo Pellicola: Antisfondamento",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Tipo Pellicola: Antisfondamento",
+      "text": "Tipo Pellicola: Antisfondamento"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr/\">Pellicola di sicurezza Madico CL 700 PS SR",
+      "text": "Pellicola di sicurezza Madico CL 700 PS SR"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr/\">Pellicola di sicurezza Madico CL 700 E PS SR",
+      "text": "Pellicola di sicurezza Madico CL 700 E PS SR"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-ps-sr/\">Pellicola di sicurezza Madico CL 400 PS SR",
+      "text": "Pellicola di sicurezza Madico CL 400 PS SR"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-e-ps-sr/\">Pellicola di sicurezza Madico CL 400 E PS SR",
+      "text": "Pellicola di sicurezza Madico CL 400 E PS SR"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/\">Pellicola di sicurezza Madico Safetyshield 1500",
+      "text": "Pellicola di sicurezza Madico Safetyshield 1500"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/\">Pellicola di sicurezza Madico Safetyshield 800",
+      "text": "Pellicola di sicurezza Madico Safetyshield 800"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Tipo Pellicola: Antisfondamento Pellicola di sicurezza Madico CL 700 PS SR Pellicola di sicurezza Madico CL 700 E PS SR Pellicola di sicurezza Madico CL 400 PS SR Pellicola di sicurezza Madico CL 400 E PS SR Pellicola di sicurezza Madico Safetyshield 1500 Pellicola di sicurezza Madico Safetyshield 800",
+  "textLength": 302,
+  "fetchedAt": "2026-04-28T15:09:50.810Z"
+}

@@ -70,7 +70,7 @@ class SolarisAPITester:
         if success and 'services' in response:
             services = response['services']
             print(f"   Found {len(services)} services")
-            expected_services = ['antisolari', 'sicurezza', 'privacy', 'lcd-switch', 'fotocromatiche']
+            expected_services = ['antisolari', 'safety-shield', 'sicurezza', 'privacy']
             found_services = [s['id'] for s in services]
             if all(service in found_services for service in expected_services):
                 print("   ✅ All expected services found")

@@ -1,0 +1,583 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-antisolari/",
+  "path": "/pellicole-antisolari/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-antisolari/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole Antisolari - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-antisolari/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole Antisolari",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pellicole-antisolari/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-19T10:16:19+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari\\/\",\"name\":\"Pellicole Antisolari - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-09T15:32:51+00:00\",\"dateModified\":\"2025-09-19T10:16:19+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole Antisolari\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole Antisolari"
+    },
+    {
+      "level": 2,
+      "text": "Installare una pellicola antisolare risolverà in modo efficiente i problemi legati all'irraggiamento solare"
+    },
+    {
+      "level": 2,
+      "text": "L’applicazione delle pellicole antisolari MADICO risolve tutte queste problematiche in un colpo solo."
+    },
+    {
+      "level": 2,
+      "text": "Riflessione solare fino al 94%."
+    },
+    {
+      "level": 2,
+      "text": "Spessore medio 75 micron."
+    },
+    {
+      "level": 2,
+      "text": "Due strati di protezione antigraffio."
+    },
+    {
+      "level": 2,
+      "text": "Elevata qualità d’installazione."
+    },
+    {
+      "level": 2,
+      "text": "Grande resistenza all’abrasione."
+    },
+    {
+      "level": 2,
+      "text": "Sicurezza del vetro a norma EN 12600."
+    },
+    {
+      "level": 2,
+      "text": "Garanzia di 10 anni dal produttore."
+    },
+    {
+      "level": 2,
+      "text": "Quali vantaggi mi dà l'installazione di pellicole antisolari per vetri? LA TEMPERATURA IDEALE"
+    },
+    {
+      "level": 2,
+      "text": "La riduzione dell’abbaglio"
+    },
+    {
+      "level": 2,
+      "text": "La privacy diurna"
+    },
+    {
+      "level": 2,
+      "text": "L'estetica"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari sputtered"
+    },
+    {
+      "level": 2,
+      "text": "La serie SB"
+    },
+    {
+      "level": 2,
+      "text": "La serie SG"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole oscuranti"
+    },
+    {
+      "level": 2,
+      "text": "La serie NT"
+    },
+    {
+      "level": 2,
+      "text": "La pellicole CH 8"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari sunscape"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola SL 8"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari spettroselettive"
+    },
+    {
+      "level": 2,
+      "text": "La serie Nova"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola SSN 70"
+    },
+    {
+      "level": 2,
+      "text": "La serie Optivision"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola UV Gard"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola Amber"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole riflettenti"
+    },
+    {
+      "level": 2,
+      "text": "La serie RS"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole fotocromatiche"
+    },
+    {
+      "level": 2,
+      "text": "La serie Cromia"
+    }
+  ],
+  "h1": "Pellicole Antisolari",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole Antisolari",
+      "text": "Pellicole Antisolari"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Installare una pellicola antisolare risolver&#xE0; in modo efficiente i problemi legati all&apos;irraggiamento solare",
+      "text": "Installare una pellicola antisolare risolverà in modo efficiente i problemi legati all'irraggiamento solare"
+    },
+    {
+      "type": "paragraph",
+      "html": "Perch&#xE9; le pellicole antisolari sono uno strumento molto importante per le aziende? Le nuove tendenze architettoniche e di design si sono orientate progressivamente verso l&#x2019;installazione di&#xA0;<strong>ampie vetrate negli edifici, perch&#xE9; l&#x2019;inclusione dell&#x2019;architettura con l&#x2019;ambiente circostante &#xE8; diventato un must. Le vetrate consentono inoltre l&#x2019;ingresso negli ambienti di una&#xA0;<strong>elevata quantit&#xE0; di luce&#xA0;e permettono una corretta areazione dei locali donando nella maggior parte dei casi una bella vista sull&#x2019;esterno.&#xA0;Il sole trasferisce calore verso la terra tramite irradiazione. L&#x2019;energia solare che raggiunge una finestra sar&#xE0; parzialmente trasferita attraverso la finestra all&#x2019;interno dell&#x2019;edificio. I muri, il pavimento, il soffitto, i mobili, ecc. assorbiranno l&#x2019;energia penetrata all&#x2019;interno della stanza e la stanza aumenter&#xE0; di temperatura. Questo fenomeno &#xE8; l&#x2019;apporto gratuito di calore dovuto al sole.",
+      "text": "Perché le pellicole antisolari sono uno strumento molto importante per le aziende? Le nuove tendenze architettoniche e di design si sono orientate progressivamente verso l’installazione di ampie vetrate negli edifici, perché l’inclusione dell’architettura con l’ambiente circostante è diventato un must. Le vetrate consentono inoltre l’ingresso negli ambienti di una elevata quantità di luce e permettono una corretta areazione dei locali donando nella maggior parte dei casi una bella vista sull’esterno. Il sole trasferisce calore verso la terra tramite irradiazione. L’energia solare che raggiunge una finestra sarà parzialmente trasferita attraverso la finestra all’interno dell’edificio. I muri, il pavimento, il soffitto, i mobili, ecc. assorbiranno l’energia penetrata all’interno della stanza e la stanza aumenterà di temperatura. Questo fenomeno è l’apporto gratuito di calore dovuto al sole."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Questo comporta:",
+      "text": "Questo comporta:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "un drastico&#xA0;<strong>aumento delle temperature&#xA0;all&#x2019;interno dei locali colpiti direttamente dai raggi solari;",
+          "text": "un drastico aumento delle temperature all’interno dei locali colpiti direttamente dai raggi solari;"
+        },
+        {
+          "html": "un vistoso&#xA0;<strong>aumento del consumo di energia&#xA0;elettrica dovuto all&#x2019;uso degli impianti di climatizzazione;",
+          "text": "un vistoso aumento del consumo di energia elettrica dovuto all’uso degli impianti di climatizzazione;"
+        },
+        {
+          "html": "l&#x2019;ingresso di luce diretta che con il suo&#xA0;<strong>abbaglio e riflesso&#xA0;provoca un fastidio nello svolgimento di ogni attivit&#xE0; e nel lavoro ai computer;",
+          "text": "l’ingresso di luce diretta che con il suo abbaglio e riflesso provoca un fastidio nello svolgimento di ogni attività e nel lavoro ai computer;"
+        },
+        {
+          "html": "una&#xA0;<strong>vivibilit&#xE0;&#xA0;complessiva dei vani<strong>&#xA0;drasticamente ridotta.",
+          "text": "una vivibilità complessiva dei vani drasticamente ridotta."
+        }
+      ],
+      "text": "un drastico aumento delle temperature all’interno dei locali colpiti direttamente dai raggi solari; un vistoso aumento del consumo di energia elettrica dovuto all’uso degli impianti di climatizzazione; l’ingresso di luce diretta che con il suo abbaglio e riflesso provoca un fastidio nello svolgimento di ogni attività e nel lavoro ai computer; una vivibilità complessiva dei vani drasticamente ridotta."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Ci&#xF2; significa che&#xA0;maggiore sar&#xE0; l&#x2019;apporto gratuito di calore dovuto al sole, pi&#xF9;&#xA0;<strong>sar&#xE0; elevata la temperatura costante e minore la vivibilit&#xE0; dei vostri spazi.",
+      "text": "Ciò significa che maggiore sarà l’apporto gratuito di calore dovuto al sole, più sarà elevata la temperatura costante e minore la vivibilità dei vostri spazi."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "L&#x2019;applicazione delle pellicole antisolari MADICO risolve tutte queste problematiche in un colpo solo.",
+      "text": "L’applicazione delle pellicole antisolari MADICO risolve tutte queste problematiche in un colpo solo."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Riequilibrano il clima&#xA0;degli ambienti rendendoli freschi e confortevoli, abbassando la temperatura costante e garantendo un minore sbalzo termico.&#xA0;<strong>Migliorano il rendimento&#xA0;del personale dipendente, annullando il riflesso e l&#x2019;abbaglio che pu&#xF2; causare enormi fastidi per chi lavora in ufficio. Consentono inoltre un notevole&#xA0;<strong>risparmio energetico,&#xA0;in quanto la riduzione degli sbalzi termici abbassa drasticamente i costi di condizionamento e migliorano anche la resa e la durata dell&#x2019;impianto di climatizzazione.",
+      "text": "Riequilibrano il clima degli ambienti rendendoli freschi e confortevoli, abbassando la temperatura costante e garantendo un minore sbalzo termico. Migliorano il rendimento del personale dipendente, annullando il riflesso e l’abbaglio che può causare enormi fastidi per chi lavora in ufficio. Consentono inoltre un notevole risparmio energetico, in quanto la riduzione degli sbalzi termici abbassa drasticamente i costi di condizionamento e migliorano anche la resa e la durata dell’impianto di climatizzazione."
+    },
+    {
+      "type": "paragraph",
+      "html": "Il risparmio energetico sar&#xE0; tale da ammortizzare l&#x2019;investimento in poco tempo, a fronte di una&#xA0;<strong>GARANZIA DELLE PELLICOLE PER ESTERNO DI 10 ANNI&#xA0;anche se si tratta di prodotti che in condizioni di posa ottimali possono durare anche pi&#xF9; a lungo. Inoltre&#xA0;<strong>ottempera ai requisiti del &#x201C;Testo Unico&#x201D; D.Lgs. 81/2008, in materia di microclima e sicurezza.",
+      "text": "Il risparmio energetico sarà tale da ammortizzare l’investimento in poco tempo, a fronte di una GARANZIA DELLE PELLICOLE PER ESTERNO DI 10 ANNI anche se si tratta di prodotti che in condizioni di posa ottimali possono durare anche più a lungo. Inoltre ottempera ai requisiti del “Testo Unico” D.Lgs. 81/2008, in materia di microclima e sicurezza."
+    },
+    {
+      "type": "paragraph",
+      "html": "Considerata la tipologia e la composizione delle vetrate pi&#xF9; moderne,&#xA0;<strong>l&#x2019;installazione delle pellicole antisolari&#xA0;&#xE8;&#xA0;<strong>realizzabile&#xA0;nella maggior parte dei casi&#xA0;<strong>in esterno,&#xA0;anche se ovviamente abbiamo&#xA0;<strong>anche&#xA0;prodotti che si installano&#xA0;<strong>internamente per i tipi di vetro che lo supportano. Per questo sono soggette ad una maggior usura e degrado, dovuto ai fattori atmosferici e radiazioni U.V. Pertanto<strong>&#xA0;bisogna fare attenzione alla scelta delle pellicole ed &#xE8;&#xA0;<strong>fondamentale selezionare prodotti con tecnologie all&#x2019;avanguardia&#xA0;in grado di resistere al tempo ed alle intemperie e capaci di proteggere a dovere la superficie vetrata sulla quale si installa. Inoltre si tratta di prodotti che&#xA0;<strong>non hanno bisogno di alcuna manutenzione specifica: la pellicola installata dopo 20 giorni diventa un corpo unico con il vetro. Dopo averla fatta riposare per il periodo necessario ad una totale adesione al vetro la pellicola va semplicemente pulita periodicamente, come se doveste pulire semplicemente i vostri vetri!",
+      "text": "Considerata la tipologia e la composizione delle vetrate più moderne, l’installazione delle pellicole antisolari è realizzabile nella maggior parte dei casi in esterno, anche se ovviamente abbiamo anche prodotti che si installano internamente per i tipi di vetro che lo supportano. Per questo sono soggette ad una maggior usura e degrado, dovuto ai fattori atmosferici e radiazioni U.V. Pertanto bisogna fare attenzione alla scelta delle pellicole ed è fondamentale selezionare prodotti con tecnologie all’avanguardia in grado di resistere al tempo ed alle intemperie e capaci di proteggere a dovere la superficie vetrata sulla quale si installa. Inoltre si tratta di prodotti che non hanno bisogno di alcuna manutenzione specifica: la pellicola installata dopo 20 giorni diventa un corpo unico con il vetro. Dopo averla fatta riposare per il periodo necessario ad una totale adesione al vetro la pellicola va semplicemente pulita periodicamente, come se doveste pulire semplicemente i vostri vetri!"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>L&#x2019;applicazione&#xA0;delle pellicole antisolari avviene&#xA0;<strong>senza modificare gli infissi, con un&#x2019;operazione rapida che&#xA0;<strong>non bloccher&#xE0;&#xA0;<strong>le&#xA0;vostre&#xA0;<strong>attivit&#xE0; produttive&#xA0;e soprattutto&#xA0;<strong>ad un prezzo decisamente ridotto&#xA0;rispetto al cambio delle vetrate o dell&#x2019;intero serramento.",
+      "text": "L’applicazione delle pellicole antisolari avviene senza modificare gli infissi, con un’operazione rapida che non bloccherà le vostre attività produttive e soprattutto ad un prezzo decisamente ridotto rispetto al cambio delle vetrate o dell’intero serramento."
+    },
+    {
+      "type": "paragraph",
+      "html": "Un impegno senza eguali nella ricerca e nello sviluppo ha dato alla MADICO l&#x2019;opportunit&#xE0; di essere la prima azienda a sviluppare una serie di&#xA0;<strong>prodotti innovativi e tecnologici. Grazie all&#x2019;utilizzo dei migliori collanti e del miglior poliestere e prodotte con processi produttivi tecnologicamente evoluti, le pellicole antisolari Madico sono il top per qualit&#xE0; ed affidabilit&#xE0;.",
+      "text": "Un impegno senza eguali nella ricerca e nello sviluppo ha dato alla MADICO l’opportunità di essere la prima azienda a sviluppare una serie di prodotti innovativi e tecnologici. Grazie all’utilizzo dei migliori collanti e del miglior poliestere e prodotte con processi produttivi tecnologicamente evoluti, le pellicole antisolari Madico sono il top per qualità ed affidabilità."
+    },
+    {
+      "type": "paragraph",
+      "html": "Grazie ad un&#x2019;elevata specializzazione nel settore delle pellicole antisolari che ci contraddistingue sul mercato, un know-how accumulato dal 1983 e ad un&#x2019;altissima expertise nell&#x2019;applicazione che ci &#xE8; possibile fornirvi tramite la nostra rete di Concessionari Certificati, siamo in grado di offrirvi il servizio pi&#xF9; efficiente ed i materiali migliori per&#xA0;<strong>proteggere voi ed i vostri beni.",
+      "text": "Grazie ad un’elevata specializzazione nel settore delle pellicole antisolari che ci contraddistingue sul mercato, un know-how accumulato dal 1983 e ad un’altissima expertise nell’applicazione che ci è possibile fornirvi tramite la nostra rete di Concessionari Certificati, siamo in grado di offrirvi il servizio più efficiente ed i materiali migliori per proteggere voi ed i vostri beni."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Il vasto assortimento di pellicole antisolari ci permette di offrirvi una soluzione personalizzata per le vostre esigenze. Potete scegliere tra pellicole chiare, oscuranti, riflettenti e semi-riflettenti, in diversi colori e sfumature.",
+      "text": "Il vasto assortimento di pellicole antisolari ci permette di offrirvi una soluzione personalizzata per le vostre esigenze. Potete scegliere tra pellicole chiare, oscuranti, riflettenti e semi-riflettenti, in diversi colori e sfumature."
+    },
+    {
+      "type": "paragraph",
+      "html": "Oltre a garantire protezione e confort, i prodotti Madico, gi&#xE0; insigniti di numerosi riconoscimenti, hanno la provata garanzia di incrementare il risparmio energetico e la conseguente&#xA0;<strong>riduzione di CO2 nell&#x2019;atmosfera. La garanzia di un minor impatto ambientale pu&#xF2; sembrare un dettaglio irrilevante, ma noi di Tecnosolar sappiamo bene che &#xE8; fondamentale&#xA0;<strong>tutelare l&#x2019;ambiente&#xA0;per<strong>&#xA0;garantire un futuro ai nostri figli.",
+      "text": "Oltre a garantire protezione e confort, i prodotti Madico, già insigniti di numerosi riconoscimenti, hanno la provata garanzia di incrementare il risparmio energetico e la conseguente riduzione di CO2 nell’atmosfera. La garanzia di un minor impatto ambientale può sembrare un dettaglio irrilevante, ma noi di Tecnosolar sappiamo bene che è fondamentale tutelare l’ambiente per garantire un futuro ai nostri figli."
+    },
+    {
+      "type": "note",
+      "html": "Alcuni dati sulle pellicole antisolari per vetri Madico:",
+      "text": "Alcuni dati sulle pellicole antisolari per vetri Madico:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Riflessione solare fino al 94%.",
+      "text": "Riflessione solare fino al 94%."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Spessore medio 75 micron.",
+      "text": "Spessore medio 75 micron."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Due strati di protezione antigraffio.",
+      "text": "Due strati di protezione antigraffio."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Elevata qualit&#xE0; d&#x2019;installazione.",
+      "text": "Elevata qualità d’installazione."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Grande resistenza all&#x2019;abrasione.",
+      "text": "Grande resistenza all’abrasione."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Sicurezza del vetro a norma EN 12600.",
+      "text": "Sicurezza del vetro a norma EN 12600."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Garanzia di 10 anni dal produttore.",
+      "text": "Garanzia di 10 anni dal produttore."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Quali vantaggi mi d&#xE0; l&apos;installazione di pellicole antisolari per vetri? LA TEMPERATURA IDEALE",
+      "text": "Quali vantaggi mi dà l'installazione di pellicole antisolari per vetri? LA TEMPERATURA IDEALE"
+    },
+    {
+      "type": "paragraph",
+      "html": "Un vantaggio importante dato dall&#x2019;installazione delle pellicole antisolari &#xE8; l&#x2019;<strong>abbassamento della temperatura interna. Si tratta di un valore difficile da stimare con esattezza, perch&#xE9; la progettazione e la posizione nei confronti del sole di ogni edificio &#xE8; diversa, le condizioni climatiche possono variare, i sistemi di vetratura sono differenti. Possiamo dire per&#xF2; che questi prodotti riescono ad abbassare la temperatura nei tuoi vani&#xA0;<strong>da un minimo di 3 o 4&#xB0;&#xA0;nelle situazioni in cui le vetrate non causano grandi fastidi&#xA0;<strong>ad un massimo di 7-8&#xB0;&#xA0;nelle situazioni in cui le superfici vetrate sono molto prominenti nell&#x2019;architettura dell&#x2019;edificio e molto esposte al sole.",
+      "text": "Un vantaggio importante dato dall’installazione delle pellicole antisolari è l’abbassamento della temperatura interna. Si tratta di un valore difficile da stimare con esattezza, perché la progettazione e la posizione nei confronti del sole di ogni edificio è diversa, le condizioni climatiche possono variare, i sistemi di vetratura sono differenti. Possiamo dire però che questi prodotti riescono ad abbassare la temperatura nei tuoi vani da un minimo di 3 o 4° nelle situazioni in cui le vetrate non causano grandi fastidi ad un massimo di 7-8° nelle situazioni in cui le superfici vetrate sono molto prominenti nell’architettura dell’edificio e molto esposte al sole."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La riduzione dell&#x2019;abbaglio",
+      "text": "La riduzione dell’abbaglio"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;abbaglio viene definito come un eccesso di luce visibile; per questo motivo &#xE8; necessario diminuire la quantit&#xE0; di luce visibile per poterlo ridurre. Di conseguenza,<strong>&#xA0;per ridurre l&#x2019;abbaglio&#xA0;proveniente dal sole &#xE8; necessario&#xA0;<strong>ridurre la trasmissione della luce visibile attraverso la finestra. Molti clienti si lamentano del problema dell&#x2019;abbaglio ma non vogliono che la quantit&#xE0; di luce visibile che penetra nell&#x2019;edificio sia ridotta. L&#x2019;unica soluzione consiste nel trovare un giusto c<strong>ompromesso tra la quantit&#xE0; di luce desiderata e la riduzione dell&#x2019;abbaglio&#xA0;senza rendere le finestre troppo scure. I nostri tecnici sapranno consigliarvi il miglior prodotto per le vostre esigenze.",
+      "text": "L’abbaglio viene definito come un eccesso di luce visibile; per questo motivo è necessario diminuire la quantità di luce visibile per poterlo ridurre. Di conseguenza, per ridurre l’abbaglio proveniente dal sole è necessario ridurre la trasmissione della luce visibile attraverso la finestra. Molti clienti si lamentano del problema dell’abbaglio ma non vogliono che la quantità di luce visibile che penetra nell’edificio sia ridotta. L’unica soluzione consiste nel trovare un giusto compromesso tra la quantità di luce desiderata e la riduzione dell’abbaglio senza rendere le finestre troppo scure. I nostri tecnici sapranno consigliarvi il miglior prodotto per le vostre esigenze."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La privacy diurna",
+      "text": "La privacy diurna"
+    },
+    {
+      "type": "paragraph",
+      "html": "Esistono&#xA0;<strong>due metodi per garantire la privacy&#xA0;con una superficie vetrata:",
+      "text": "Esistono due metodi per garantire la privacy con una superficie vetrata:"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em><strong>Rendendo il vetro opaco, offuscato o satinato con una pellicola in modo da rendere difficile o impossibile osservare oggetti attraverso il vetro;",
+      "text": "Rendendo il vetro opaco, offuscato o satinato con una pellicola in modo da rendere difficile o impossibile osservare oggetti attraverso il vetro;"
+    },
+    {
+      "type": "paragraph",
+      "html": "<em><strong>Rendendo il vetro uno &#x201C;specchio unidirezionale&#x201D; cos&#xEC; da rendere difficile vedere attraverso il vetro in un senso ma non nell&#x2019;altro.",
+      "text": "Rendendo il vetro uno “specchio unidirezionale” così da rendere difficile vedere attraverso il vetro in un senso ma non nell’altro."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole a &#x201C;specchio unidirezionale&#x201D; sono le pellicole antisolari riflettenti, e funzionano attraverso la giusta regolazione dei livelli di illuminazione su entrambi i lati del vetro.",
+      "text": "Le pellicole a “specchio unidirezionale” sono le pellicole antisolari riflettenti, e funzionano attraverso la giusta regolazione dei livelli di illuminazione su entrambi i lati del vetro."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;effetto speculare dipende in gran parte dal fatto che la fonte di luce primaria (il sole) si trova all&#x2019;esterno della superficie del vetro e una pellicola che riflette la luce visibile crea un effetto speculare. Di notte, l&#x2019;effetto specchio scompare perch&#xE9; la luce interna &#xE8; pi&#xF9; forte della luce esterna!",
+      "text": "L’effetto speculare dipende in gran parte dal fatto che la fonte di luce primaria (il sole) si trova all’esterno della superficie del vetro e una pellicola che riflette la luce visibile crea un effetto speculare. Di notte, l’effetto specchio scompare perché la luce interna è più forte della luce esterna!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "L&apos;estetica",
+      "text": "L'estetica"
+    },
+    {
+      "type": "paragraph",
+      "html": "Al giorno d&#x2019;oggi l&#x2019;aspetto estetico di un edificio &#xE8; diventato un fattore equiparabile alla sua funzionalit&#xE0;, dunque sempre pi&#xF9; importante.&#xA0;<strong>Le pellicole&#xA0;per finestre&#xA0;<strong>Madico&#xA0;forniscono una&#xA0;<strong>vasta gamma di colori ed effetti&#xA0;fra cui scegliere. Tutte le pellicole per vetri Madico riescono a migliorare l&#x2019;aspetto delle facciate di un edificio&#xA0;<strong>in base ai gusti personali del cliente.",
+      "text": "Al giorno d’oggi l’aspetto estetico di un edificio è diventato un fattore equiparabile alla sua funzionalità, dunque sempre più importante. Le pellicole per finestre Madico forniscono una vasta gamma di colori ed effetti fra cui scegliere. Tutte le pellicole per vetri Madico riescono a migliorare l’aspetto delle facciate di un edificio in base ai gusti personali del cliente."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole antisolari sputtered",
+      "text": "Pellicole antisolari sputtered"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>I filtri solari Madico Sputtering sono costituiti da un substrato di poliestere trasparente trattato mediante un processo chiamato&#xA0;<em>sputtering, che prevede la scomposizione dei metalli attraverso il bombardamento ionico ed il bombardamento della superficie della pellicola. Ci&#xF2; consente ai singoli atomi emessi dal metallo interessato di essere raccolti e legati alla superficie del film. Questo garantisce alla pellicola una schermatura dai raggi solari intensa unita ad una altissima luminosit&#xE0;. Su di esso viene applicato un ulteriore strato di poliestere, seguito da un trattamento antigraffio per proteggerlo dall&#x2019;abrasione e dalla corrosione.",
+      "text": "I filtri solari Madico Sputtering sono costituiti da un substrato di poliestere trasparente trattato mediante un processo chiamato sputtering, che prevede la scomposizione dei metalli attraverso il bombardamento ionico ed il bombardamento della superficie della pellicola. Ciò consente ai singoli atomi emessi dal metallo interessato di essere raccolti e legati alla superficie del film. Questo garantisce alla pellicola una schermatura dai raggi solari intensa unita ad una altissima luminosità. Su di esso viene applicato un ulteriore strato di poliestere, seguito da un trattamento antigraffio per proteggerlo dall’abrasione e dalla corrosione."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie SB",
+      "text": "La serie SB"
+    },
+    {
+      "type": "paragraph",
+      "html": "I film sputtered della serie SB vengono utilizzati dove &#xE8; richiesta una schermatura dai raggi solari intensa unita ad una altissima luminosit&#xE0;. Disponibile sia per l&#x2019;installazione in esterno che in interno, di colore bronzo fum&#xE9;. Disponibile anche nella versione di sicurezza.",
+      "text": "I film sputtered della serie SB vengono utilizzati dove è richiesta una schermatura dai raggi solari intensa unita ad una altissima luminosità. Disponibile sia per l’installazione in esterno che in interno, di colore bronzo fumé. Disponibile anche nella versione di sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie SG",
+      "text": "La serie SG"
+    },
+    {
+      "type": "paragraph",
+      "html": "La serie SG offre un tono neutro che sta benissimo in combinato con qualsiasi arredamento. La pellicola riduce anche i fastidiosi riflessi e aiuta a gestire i costi energetici. Disponibile sia per l&#x2019;installazione in esterno che in interno e nella versione di sicurezza.",
+      "text": "La serie SG offre un tono neutro che sta benissimo in combinato con qualsiasi arredamento. La pellicola riduce anche i fastidiosi riflessi e aiuta a gestire i costi energetici. Disponibile sia per l’installazione in esterno che in interno e nella versione di sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole oscuranti",
+      "text": "Pellicole oscuranti"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>La serie NT",
+      "text": "La serie NT"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole solari Tecnosolar NT20 e PS SR vengono utilizzate dove &#xE8; necessario schermare in maniera decisa la radiazione solare ed eliminare i problemi di abbagliamento senza per&#xF2; avere le propriet&#xE0; riflettenti di altri tipi di pellicole",
+      "text": "Le pellicole solari Tecnosolar NT20 e PS SR vengono utilizzate dove è necessario schermare in maniera decisa la radiazione solare ed eliminare i problemi di abbagliamento senza però avere le proprietà riflettenti di altri tipi di pellicole"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicole CH 8",
+      "text": "La pellicole CH 8"
+    },
+    {
+      "type": "paragraph",
+      "html": "CH 8 &#xE8; una pellicola antisolare non riflettente, applicabile in esterno. Riduce significativamente l&#x2019;abbaglio e conferisce un look uniforme alle vetrate sugli edifici commerciali.",
+      "text": "CH 8 è una pellicola antisolare non riflettente, applicabile in esterno. Riduce significativamente l’abbaglio e conferisce un look uniforme alle vetrate sugli edifici commerciali."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole antisolari sunscape",
+      "text": "Pellicole antisolari sunscape"
+    },
+    {
+      "type": "paragraph",
+      "html": "Si tratta di pellicole con doppio rivestimento fum&#xE8;, consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell&#x2019;irraggiamento ed un alto fattore anti-abbaglio.",
+      "text": "Si tratta di pellicole con doppio rivestimento fumè, consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell’irraggiamento ed un alto fattore anti-abbaglio."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola SL 8",
+      "text": "La pellicola SL 8"
+    },
+    {
+      "type": "paragraph",
+      "html": "Si tratta di una pellicola di colore argento/fum&#xE9;, prodotta depositando uno strato di alluminio col processo di&#xA0;<em>sputtering&#xA0;e uno strato di colore fum&#xE9;, oltre ad un trattamento antigraffio.",
+      "text": "Si tratta di una pellicola di colore argento/fumé, prodotta depositando uno strato di alluminio col processo di sputtering e uno strato di colore fumé, oltre ad un trattamento antigraffio."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole antisolari spettroselettive",
+      "text": "Pellicole antisolari spettroselettive"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie Nova",
+      "text": "La serie Nova"
+    },
+    {
+      "type": "paragraph",
+      "html": "Riduzione del calore: blocca fino all&#x2019;80% del calore solare, risparmiando sui costi dell&#x2019;aria condizionata. Risparmio Energetico: consente di risparmiare sui costi anche in inverno, poich&#xE9; la stessa pellicola trattiene il calore interno. Respinge oltre il 99% dei raggi UV, rallentando lo sbiadimento di arredi e pavimenti. Protezione contro la rottura del vetro: in caso di rottura di una finestra, la pellicola protegge te e la tua famiglia dai frammenti di vetro volanti tenendo insieme il vetro.",
+      "text": "Riduzione del calore: blocca fino all’80% del calore solare, risparmiando sui costi dell’aria condizionata. Risparmio Energetico: consente di risparmiare sui costi anche in inverno, poiché la stessa pellicola trattiene il calore interno. Respinge oltre il 99% dei raggi UV, rallentando lo sbiadimento di arredi e pavimenti. Protezione contro la rottura del vetro: in caso di rottura di una finestra, la pellicola protegge te e la tua famiglia dai frammenti di vetro volanti tenendo insieme il vetro."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola SSN 70",
+      "text": "La pellicola SSN 70"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola SSN 70 TE SR &#xE8; una pellicola per vetro estremamente selettiva, progettata per applicazioni esterne. Il rivestimento esterno utilizza un&#x2019;innovativa tecnologia brevettata particolarmente resistente ai graffi.",
+      "text": "La pellicola SSN 70 TE SR è una pellicola per vetro estremamente selettiva, progettata per applicazioni esterne. Il rivestimento esterno utilizza un’innovativa tecnologia brevettata particolarmente resistente ai graffi."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie Optivision",
+      "text": "La serie Optivision"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola architettonica Optivision offre viste notturne ottimali riducendo la riflettivit&#xE0; interna del vetro, fornendo una visione pi&#xF9; naturale. La pellicola fornisce anche protezione solare riducendo il calore e l&#x2019;abbagliamento durante il giorno.&#x200B;",
+      "text": "La pellicola architettonica Optivision offre viste notturne ottimali riducendo la riflettività interna del vetro, fornendo una visione più naturale. La pellicola fornisce anche protezione solare riducendo il calore e l’abbagliamento durante il giorno.​"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola UV Gard",
+      "text": "La pellicola UV Gard"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola architettonica UV Gard &#xE8; una pellicola otticamente trasparente per la reiezione della luce ultravioletta, che pu&#xF2; essere utilizzata in applicazioni in cui si desidera la massima trasmissione della luce e il massimo controllo della dissolvenza.&#x200B;&#x200B;",
+      "text": "La pellicola architettonica UV Gard è una pellicola otticamente trasparente per la reiezione della luce ultravioletta, che può essere utilizzata in applicazioni in cui si desidera la massima trasmissione della luce e il massimo controllo della dissolvenza.​​"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola Amber",
+      "text": "La pellicola Amber"
+    },
+    {
+      "type": "paragraph",
+      "html": "Amber 81 &#xE8; una pellicola progettata per bloccare la luce UV nella gamma di luce visibile fino a 500 nanometri, filtrando le lunghezze d&#x2019;onda pericolose e lasciando passare la luce visibile non nociva. Il caratteristico colore ambrato del film &#xE8; ci&#xF2; che gli conferisce questa peculiare capacit&#xE0; di filtraggio dei raggi solari.&#x200B;",
+      "text": "Amber 81 è una pellicola progettata per bloccare la luce UV nella gamma di luce visibile fino a 500 nanometri, filtrando le lunghezze d’onda pericolose e lasciando passare la luce visibile non nociva. Il caratteristico colore ambrato del film è ciò che gli conferisce questa peculiare capacità di filtraggio dei raggi solari.​"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole riflettenti",
+      "text": "Pellicole riflettenti"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie RS",
+      "text": "La serie RS"
+    },
+    {
+      "type": "paragraph",
+      "html": "RS 20 &#xE8; consigliata per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. La sua finitura riflettente argento forte doner&#xE0; una discrezione nelle ore diurne ed un look molto personale ai tuoi infissi.",
+      "text": "RS 20 è consigliata per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. La sua finitura riflettente argento forte donerà una discrezione nelle ore diurne ed un look molto personale ai tuoi infissi."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole fotocromatiche",
+      "text": "Pellicole fotocromatiche"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie Cromia",
+      "text": "La serie Cromia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Cromia utilizza le pi&#xF9; avanzate applicazioni della tecnologia&#xA0;<em>transition&#xA0;utilizzata nell&#x2019;ottica, volta a proteggere gli occhi dai cambiamenti improvvisi della luce solare. Cromia garantisce un&#x2019;illuminazione continua per tutto il giorno, adattandosi alla quantit&#xE0; di luce solare che colpisce le vostre vetrate, lasciando penetrare una percentuale costante di luce.",
+      "text": "Cromia utilizza le più avanzate applicazioni della tecnologia transition utilizzata nell’ottica, volta a proteggere gli occhi dai cambiamenti improvvisi della luce solare. Cromia garantisce un’illuminazione continua per tutto il giorno, adattandosi alla quantità di luce solare che colpisce le vostre vetrate, lasciando penetrare una percentuale costante di luce."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole Antisolari Installare una pellicola antisolare risolverà in modo efficiente i problemi legati all'irraggiamento solare Perché le pellicole antisolari sono uno strumento molto importante per le aziende? Le nuove tendenze architettoniche e di design si sono orientate progressivamente verso l’installazione di ampie vetrate negli edifici, perché l’inclusione dell’architettura con l’ambiente circostante è diventato un must. Le vetrate consentono inoltre l’ingresso negli ambienti di una elevata quantità di luce e permettono una corretta areazione dei locali donando nella maggior parte dei casi una bella vista sull’esterno. Il sole trasferisce calore verso la terra tramite irradiazione. L’energia solare che raggiunge una finestra sarà parzialmente trasferita attraverso la finestra all’interno dell’edificio. I muri, il pavimento, il soffitto, i mobili, ecc. assorbiranno l’energia penetrata all’interno della stanza e la stanza aumenterà di temperatura. Questo fenomeno è l’apporto gratuito di calore dovuto al sole. Questo comporta: un drastico aumento delle temperature all’interno dei locali colpiti direttamente dai raggi solari; un vistoso aumento del consumo di energia elettrica dovuto all’uso degli impianti di climatizzazione; l’ingresso di luce diretta che con il suo abbaglio e riflesso provoca un fastidio nello svolgimento di ogni attività e nel lavoro ai computer; una vivibilità complessiva dei vani drasticamente ridotta. Ciò significa che maggiore sarà l’apporto gratuito di calore dovuto al sole, più sarà elevata la temperatura costante e minore la vivibilità dei vostri spazi. L’applicazione delle pellicole antisolari MADICO risolve tutte queste problematiche in un colpo solo. Riequilibrano il clima degli ambienti rendendoli freschi e confortevoli, abbassando la temperatura costante e garantendo un minore sbalzo termico. Migliorano il rendimento del personale dipendente, annullando il riflesso e l’abbaglio che può causare enormi fastidi per chi lavora in ufficio. Consentono inoltre un notevole risparmio energetico, in quanto la riduzione degli sbalzi termici abbassa drasticamente i costi di condizionamento e migliorano anche la resa e la durata dell’impianto di climatizzazione. Il risparmio energetico sarà tale da ammortizzare l’investimento in poco tempo, a fronte di una GARANZIA DELLE PELLICOLE PER ESTERNO DI 10 ANNI anche se si tratta di prodotti che in condizioni di posa ottimali possono durare anche più a lungo. Inoltre ottempera ai requisiti del “Testo Unico” D.Lgs. 81/2008, in materia di microclima e sicurezza. Considerata la tipologia e la composizione delle vetrate più moderne, l’installazione delle pellicole antisolari è realizzabile nella maggior parte dei casi in esterno, anche se ovviamente abbiamo anche prodotti che si installano internamente per i tipi di vetro che lo supportano. Per questo sono soggette ad una maggior usura e degrado, dovuto ai fattori atmosferici e radiazioni U.V. Pertanto bisogna fare attenzione alla scelta delle pellicole ed è fondamentale selezionare prodotti con tecnologie all’avanguardia in grado di resistere al tempo ed alle intemperie e capaci di proteggere a dovere la superficie vetrata sulla quale si installa. Inoltre si tratta di prodotti che non hanno bisogno di alcuna manutenzione specifica: la pellicola installata dopo 20 giorni diventa un corpo unico con il vetro. Dopo averla fatta riposare per il periodo necessario ad una totale adesione al vetro la pellicola va semplicemente pulita periodicamente, come se doveste pulire semplicemente i vostri vetri! L’applicazione delle pellicole antisolari avviene senza modificare gli infissi, con un’operazione rapida che non bloccherà le vostre attività produttive e soprattutto ad un prezzo decisamente ridotto rispetto al cambio delle vetrate o dell’intero serramento. Un impegno senza eguali nella ricerca e nello sviluppo ha dato alla MADICO l’opportunità di essere la prima azienda a sviluppare una serie di prodotti innovativi e tecnologici. Grazie all’utilizzo dei migliori collanti e del miglior poliestere e prodotte con processi produttivi tecnologicamente evoluti, le pellicole antisolari Madico sono il top per qualità ed affidabilità. Grazie ad un’elevata specializzazione nel settore delle pellicole antisolari che ci contraddistingue sul mercato, un know-how accumulato dal 1983 e ad un’altissima expertise nell’applicazione che ci è possibile fornirvi tramite la nostra rete di Concessionari Certificati, siamo in grado di offrirvi il servizio più efficiente ed i materiali migliori per proteggere voi ed i vostri beni. Il vasto assortimento di pellicole antisolari ci permette di offrirvi una soluzione personalizzata per le vostre esigenze. Potete scegliere tra pellicole chiare, oscuranti, riflettenti e semi-riflettenti, in diversi colori e sfumature. Oltre a garantire protezione e confort, i prodotti Madico, già insigniti di numerosi riconoscimenti, hanno la provata garanzia di incrementare il risparmio energetico e la conseguente riduzione di CO2 nell’atmosfera. La garanzia di un minor impatto ambientale può sembrare un dettaglio irrilevante, ma noi di Tecnosolar sappiamo bene che è fondamentale tutelare l’ambiente per garantire un futuro ai nostri figli. Alcuni dati sulle pellicole antisolari per vetri Madico: Riflessione solare fino al 94%. Spessore medio 75 micron. Due strati di protezione antigraffio. Elevata qualità d’installazione. Grande resistenza all’abrasione. Sicurezza del vetro a norma EN 12600. Garanzia di 10 anni dal produttore. Quali vantaggi mi dà l'installazione di pellicole antisolari per vetri? LA TEMPERATURA IDEALE Un vantaggio importante dato dall’installazione delle pellicole antisolari è l’abbassamento della temperatura interna. Si tratta di un valore difficile da stimare con esattezza, perché la progettazione e la posizione nei confronti del sole di ogni edificio è diversa, le condizioni climatiche possono variare, i sistemi di vetratura sono differenti. Possiamo dire però che questi prodotti riescono ad abbassare la temperatura nei tuoi vani da un minimo di 3 o 4° nelle situazioni in cui le vetrate non causano grandi fastidi ad un massimo di 7-8° nelle situazioni in cui le superfici vetrate sono molto prominenti nell’architettura dell’edificio e molto esposte al sole. La riduzione dell’abbaglio L’abbaglio viene definito come un eccesso di luce visibile; per questo motivo è necessario diminuire la quantità di luce visibile per poterlo ridurre. Di conseguenza, per ridurre l’abbaglio proveniente dal sole è necessario ridurre la trasmissione della luce visibile attraverso la finestra. Molti clienti si lamentano del problema dell’abbaglio ma non vogliono che la quantità di luce visibile che penetra nell’edificio sia ridotta. L’unica soluzione consiste nel trovare un giusto compromesso tra la quantità di luce desiderata e la riduzione dell’abbaglio senza rendere le finestre troppo scure. I nostri tecnici sapranno consigliarvi il miglior prodotto per le vostre esigenze. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci La privacy diurna Esistono due metodi per garantire la privacy con una superficie vetrata: Rendendo il vetro opaco, offuscato o satinato con una pellicola in modo da rendere difficile o impossibile osservare oggetti attraverso il vetro; Rendendo il vetro uno “specchio unidirezionale” così da rendere difficile vedere attraverso il vetro in un senso ma non nell’altro. Le pellicole a “specchio unidirezionale” sono le pellicole antisolari riflettenti, e funzionano attraverso la giusta regolazione dei livelli di illuminazione su entrambi i lati del vetro. L’effetto speculare dipende in gran parte dal fatto che la fonte di luce primaria (il sole) si trova all’esterno della superficie del vetro e una pellicola che riflette la luce visibile crea un effetto speculare. Di notte, l’effetto specchio scompare perché la luce interna è più forte della luce esterna! L'estetica Al giorno d’oggi l’aspetto estetico di un edificio è diventato un fattore equiparabile alla sua funzionalità, dunque sempre più importante. Le pellicole per finestre Madico forniscono una vasta gamma di colori ed effetti fra cui scegliere. Tutte le pellicole per vetri Madico riescono a migliorare l’aspetto delle facciate di un edificio in base ai gusti personali del cliente. Pellicole antisolari sputtered I filtri solari Madico Sputtering sono costituiti da un substrato di poliestere trasparente trattato mediante un processo chiamato sputtering, che prevede la scomposizione dei metalli attraverso il bombardamento ionico ed il bombardamento della superficie della pellicola. Ciò consente ai singoli atomi emessi dal metallo interessato di essere raccolti e legati alla superficie del film. Questo garantisce alla pellicola una schermatura dai raggi solari intensa unita ad una altissima luminosità. Su di esso viene applicato un ulteriore strato di poliestere, seguito da un trattamento antigraffio per proteggerlo dall’abrasione e dalla corrosione. La serie SB I film sputtered della serie SB vengono utilizzati dove è richiesta una schermatura dai raggi solari intensa unita ad una altissima luminosità. Disponibile sia per l’installazione in esterno che in interno, di colore bronzo fumé. Disponibile anche nella versione di sicurezza. La serie SG La serie SG offre un tono neutro che sta benissimo in combinato con qualsiasi arredamento. La pellicola riduce anche i fastidiosi riflessi e aiuta a gestire i costi energetici. Disponibile sia per l’installazione in esterno che in interno e nella versione di sicurezza. Pellicole oscuranti La serie NT Le pellicole solari Tecnosolar NT20 e PS SR vengono utilizzate dove è necessario schermare in maniera decisa la radiazione solare ed eliminare i problemi di abbagliamento senza però avere le proprietà riflettenti di altri tipi di pellicole La pellicole CH 8 CH 8 è una pellicola antisolare non riflettente, applicabile in esterno. Riduce significativamente l’abbaglio e conferisce un look uniforme alle vetrate sugli edifici commerciali. Pellicole antisolari sunscape Si tratta di pellicole con doppio rivestimento fumè, consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell’irraggiamento ed un alto fattore anti-abbaglio. La pellicola SL 8 Si tratta di una pellicola di colore argento/fumé, prodotta depositando uno strato di alluminio col processo di sputtering e uno strato di colore fumé, oltre ad un trattamento antigraffio. Pellicole antisolari spettroselettive La serie Nova Riduzione del calore: blocca fino all’80% del calore solare, risparmiando sui costi dell’aria condizionata. Risparmio Energetico: consente di risparmiare sui costi anche in inverno, poiché la stessa pellicola trattiene il calore interno. Respinge oltre il 99% dei raggi UV, rallentando lo sbiadimento di arredi e pavimenti. Protezione contro la rottura del vetro: in caso di rottura di una finestra, la pellicola protegge te e la tua famiglia dai frammenti di vetro volanti tenendo insieme il vetro. La pellicola SSN 70 La pellicola SSN 70 TE SR è una pellicola per vetro estremamente selettiva, progettata per applicazioni esterne. Il rivestimento esterno utilizza un’innovativa tecnologia brevettata particolarmente resistente ai graffi. La serie Optivision La pellicola architettonica Optivision offre viste notturne ottimali riducendo la riflettività interna del vetro, fornendo una visione più naturale. La pellicola fornisce anche protezione solare riducendo il calore e l’abbagliamento durante il giorno.​ La pellicola UV Gard La pellicola architettonica UV Gard è una pellicola otticamente trasparente per la reiezione della luce ultravioletta, che può essere utilizzata in applicazioni in cui si desidera la massima trasmissione della luce e il massimo controllo della dissolvenza.​​ La pellicola Amber Amber 81 è una pellicola progettata per bloccare la luce UV nella gamma di luce visibile fino a 500 nanometri, filtrando le lunghezze d’onda pericolose e lasciando passare la luce visibile non nociva. Il caratteristico colore ambrato del film è ciò che gli conferisce questa peculiare capacità di filtraggio dei raggi solari.​ Pellicole riflettenti La serie RS RS 20 è consigliata per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. La sua finitura riflettente argento forte donerà una discrezione nelle ore diurne ed un look molto personale ai tuoi infissi. Pellicole fotocromatiche La serie Cromia Cromia utilizza le più avanzate applicazioni della tecnologia transition utilizzata nell’ottica, volta a proteggere gli occhi dai cambiamenti improvvisi della luce solare. Cromia garantisce un’illuminazione continua per tutto il giorno, adattandosi alla quantità di luce solare che colpisce le vostre vetrate, lasciando penetrare una percentuale costante di luce. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 12997,
+  "fetchedAt": "2026-04-28T15:09:42.930Z"
+}

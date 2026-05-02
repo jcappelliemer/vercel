@@ -8,11 +8,9 @@ import { prodottiData, focusTecnicoData, pagineInfoData, cittaData } from '../da
  */
 export function useWPData(type) {
   const [data, setData] = useState(getStaticData(type));
-  const [loading, setLoading] = useState(!!process.env.REACT_APP_WP_URL);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!process.env.REACT_APP_WP_URL) return;
-
     const fetchers = {
       prodotti: fetchProdotti,
       focus: fetchFocusTecnici,
@@ -21,14 +19,17 @@ export function useWPData(type) {
     };
 
     const fetcher = fetchers[type];
-    if (!fetcher) return;
+    if (!fetcher) {
+      setLoading(false);
+      return;
+    }
 
     fetcher().then(result => {
       if (result && result.length > 0) {
         setData(result);
       }
       setLoading(false);
-    });
+    }).catch(() => setLoading(false));
   }, [type]);
 
   return { data, loading };

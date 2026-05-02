@@ -3,11 +3,14 @@ import { motion } from 'framer-motion';
 import { ArrowRight, Play } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
-const defaultHeroImage = 'https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg';
-
 const Hero = () => {
   const s = useSettings();
-  const heroImage = s.hero_image || defaultHeroImage;
+  const heroImage = s.hero_image;
+  const stats = [
+    { value: s.stat1_value, label: s.stat1_label, delay: 0.6 },
+    { value: s.stat2_value, label: s.stat2_label, delay: 0.75 },
+    { value: s.stat3_value, label: s.stat3_label, delay: 0.9, accent: true }
+  ];
 
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden" data-testid="hero-section">
@@ -88,48 +91,48 @@ const Hero = () => {
               className="relative"
             >
               <div className="relative rounded-2xl overflow-hidden border border-white/10">
-                <img 
-                  src={heroImage}
-                  alt={s.company_name}
-                  className="w-full h-[450px] object-cover"
-                />
+                {heroImage ? (
+                  <img
+                    src={heroImage}
+                    alt={s.company_name}
+                    className="w-full h-[450px] object-cover"
+                    loading="eager"
+                    decoding="async"
+                    fetchPriority="high"
+                  />
+                ) : (
+                  <div className="w-full h-[450px] bg-[#111827]" aria-hidden="true" />
+                )}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] via-transparent to-transparent" />
               </div>
 
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.6 }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="absolute -left-8 top-1/4 card-glass rounded-xl p-5 animate-float"
+              <div
+                className="relative -mt-5 mx-3 sm:mx-6 grid grid-cols-1 sm:grid-cols-3 gap-3"
+                data-testid="hero-stats"
               >
-                <div className="text-4xl font-bold text-gradient">{s.stat1_value}</div>
-                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">{s.stat1_label}</div>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.8 }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="absolute -right-4 top-1/2 card-glass rounded-xl p-5 animate-float"
-                style={{ animationDelay: '1s' }}
-              >
-                <div className="text-4xl font-bold text-gradient">{s.stat2_value}</div>
-                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">{s.stat2_label}</div>
-              </motion.div>
-
-              <motion.div 
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 1 }}
-                whileHover={{ scale: 1.05 }}
-                className="absolute left-1/4 -bottom-6 card-glass rounded-xl p-5 glow-yellow animate-float"
-                style={{ animationDelay: '2s' }}
-              >
-                <div className="text-4xl font-bold text-[#EAB308]">{s.stat3_value}</div>
-                <div className="text-xs uppercase tracking-widest text-white/50 mt-1">{s.stat3_label}</div>
-              </motion.div>
+                {stats.map((stat, index) => (
+                  <motion.div
+                    key={`${stat.label || 'stat'}-${index}`}
+                    initial={{ opacity: 0, y: 16 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: stat.delay }}
+                    className="min-h-[86px]"
+                    data-testid={`hero-stat-${index + 1}`}
+                  >
+                    <div
+                      className={`card-glass animate-float rounded-xl px-4 py-3 h-full flex flex-col justify-center transition-colors duration-300 hover:border-[#EAB308]/45 ${stat.accent ? 'border-[#EAB308]/35 shadow-[0_0_28px_rgba(234,179,8,0.18)]' : ''}`}
+                      style={{ animationDelay: `${index * 0.85}s` }}
+                    >
+                      <div className={`text-2xl sm:text-3xl font-bold ${stat.accent ? 'text-[#EAB308]' : 'text-gradient'}`}>
+                        {stat.value}
+                      </div>
+                      <div className="text-[10px] sm:text-[11px] uppercase tracking-widest text-white/55 mt-1 leading-tight">
+                        {stat.label}
+                      </div>
+                    </div>
+                  </motion.div>
+                ))}
+              </div>
             </motion.div>
           </div>
         </div>

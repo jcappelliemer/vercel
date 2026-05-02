@@ -1,0 +1,61 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
+  "path": "/pellicole-per-vetri/privacy-policy/",
+  "route": {
+    "type": "legal",
+    "label": "Privacy",
+    "newPath": "/privacy-policy/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/page-sitemap.xml",
+  "seo": {
+    "title": "Privacy Policy - Solaris Films",
+    "description": "INFORMATIVA SULLA PRIVACYGentile clienteIl Regolamento Europeo in materia di protezione dei dati personali (GDPR) agli artt. 13 e 14, commi 1, imponel’obbligo di informare l’interessato, in caso di raccolta diretta ed indiretta dei suoi dati, sugli elementi fondamentalidel trattamento, specificandoli al § 1, lett. a/f.La scrivente Società vi adempie compiutamente informandoLa che:TITOLARE DEL TRATTAMENTOTitolare del [&hellip;]",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Privacy Policy",
+      "og:description": "INFORMATIVA SULLA PRIVACYGentile clienteIl Regolamento Europeo in materia di protezione dei dati personali (GDPR) agli artt. 13 e 14, commi 1, imponel’obbligo di informare l’interessato, in caso di raccolta diretta ed indiretta dei suoi dati, sugli elementi fondamentalidel trattamento, specificandoli al § 1, lett. a/f.La scrivente Società vi adempie compiutamente informandoLa che:TITOLARE DEL TRATTAMENTOTitolare del [&hellip;]",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {
+      "article:modified_time": "2026-03-19T11:54:55+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/privacy-policy\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/privacy-policy\\/\",\"name\":\"Privacy Policy - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-05-12T07:50:17+00:00\",\"dateModified\":\"2026-03-19T11:54:55+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/privacy-policy\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/privacy-policy\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/privacy-policy\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Privacy Policy\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Privacy Policy"
+    }
+  ],
+  "h1": "Privacy Policy",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Privacy Policy",
+      "text": "Privacy Policy"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>INFORMATIVA SULLA PRIVACY<br>Gentile cliente<br>Il Regolamento Europeo in materia di protezione dei dati personali (GDPR) agli artt. 13 e 14, commi 1, impone<br>l&#x2019;obbligo di informare l&#x2019;interessato, in caso di raccolta diretta ed indiretta dei suoi dati, sugli elementi fondamentali<br>del trattamento, specificandoli al &#xA7; 1, lett. a/f.<br>La scrivente Societ&#xE0; vi adempie compiutamente informandoLa che:<br><strong>TITOLARE DEL TRATTAMENTO<br>Titolare del trattamento &#xE8; la Societ&#xE0; SOLARIS FILMS SRL sita in Via G. Brodolini, 8 Figline e Incisa Valdarno (FI)<br>PEC: solarisfilms@pec.ntc.it &amp;#8211; EMAIL: info@solarisfilms.it &amp;#8211; TEL: 0559107621<br><strong>FINALIT&#xC1;<br>I dati sono raccolti per le seguenti finalit&#xE0;: profilazione cliente per contatto, informazioni sui prodotti, preventivo ed<br>esigenze di marketing.<br>Il legittimo interesse consiste: nel marketing diretto convenzionale e altre forme di marketing o pubblicit&#xE0;.<br><strong>MODALIT&#xC1; DEL TRATTAMENTO<br>In relazione alle gi&#xE0; menzionate finalit&#xE0;, il trattamento dei dati personali avviene mediante strumenti cartacei e<br>informatici, con logiche strettamente correlate alle finalit&#xE0; suddette e, comunque, in modo da garantirle la sicurezza<br>e la riservatezza dei dati nonch&#xE9; la piena osservanza della legge.<br><strong>PERIODO DI CONSERVAZIONE<br>Il periodo di conservazione dei dati personali contenuti nelle banche dati riferito al trattamento per le finalit&#xE0;<br>contrattuali coincide con la durata del rapporto contrattuale, mentre quello legato all&#x2019;espletamento degli obblighi<br>legali &#xE8; prescritto dalla legge. In relazione alle finalit&#xE0; di marketing, promozionali, invio di materiale pubblicitario, i<br>dati verranno conservati finch&#xE9; l&#x2019;interessato non revocher&#xE0; il consenso prestato.",
+      "text": "INFORMATIVA SULLA PRIVACYGentile clienteIl Regolamento Europeo in materia di protezione dei dati personali (GDPR) agli artt. 13 e 14, commi 1, imponel’obbligo di informare l’interessato, in caso di raccolta diretta ed indiretta dei suoi dati, sugli elementi fondamentalidel trattamento, specificandoli al § 1, lett. a/f.La scrivente Società vi adempie compiutamente informandoLa che:TITOLARE DEL TRATTAMENTOTitolare del trattamento è la Società SOLARIS FILMS SRL sita in Via G. Brodolini, 8 Figline e Incisa Valdarno (FI)PEC: solarisfilms@pec.ntc.it – EMAIL: info@solarisfilms.it – TEL: 0559107621FINALITÁI dati sono raccolti per le seguenti finalità: profilazione cliente per contatto, informazioni sui prodotti, preventivo edesigenze di marketing.Il legittimo interesse consiste: nel marketing diretto convenzionale e altre forme di marketing o pubblicità.MODALITÁ DEL TRATTAMENTOIn relazione alle già menzionate finalità, il trattamento dei dati personali avviene mediante strumenti cartacei einformatici, con logiche strettamente correlate alle finalità suddette e, comunque, in modo da garantirle la sicurezzae la riservatezza dei dati nonché la piena osservanza della legge.PERIODO DI CONSERVAZIONEIl periodo di conservazione dei dati personali contenuti nelle banche dati riferito al trattamento per le finalitàcontrattuali coincide con la durata del rapporto contrattuale, mentre quello legato all’espletamento degli obblighilegali è prescritto dalla legge. In relazione alle finalità di marketing, promozionali, invio di materiale pubblicitario, idati verranno conservati finché l’interessato non revocherà il consenso prestato."
+    }
+  ],
+  "contentHtml": "",
+  "text": "Privacy Policy INFORMATIVA SULLA PRIVACYGentile clienteIl Regolamento Europeo in materia di protezione dei dati personali (GDPR) agli artt. 13 e 14, commi 1, imponel’obbligo di informare l’interessato, in caso di raccolta diretta ed indiretta dei suoi dati, sugli elementi fondamentalidel trattamento, specificandoli al § 1, lett. a/f.La scrivente Società vi adempie compiutamente informandoLa che:TITOLARE DEL TRATTAMENTOTitolare del trattamento è la Società SOLARIS FILMS SRL sita in Via G. Brodolini, 8 Figline e Incisa Valdarno (FI)PEC: solarisfilms@pec.ntc.it – EMAIL: info@solarisfilms.it – TEL: 0559107621FINALITÁI dati sono raccolti per le seguenti finalità: profilazione cliente per contatto, informazioni sui prodotti, preventivo edesigenze di marketing.Il legittimo interesse consiste: nel marketing diretto convenzionale e altre forme di marketing o pubblicità.MODALITÁ DEL TRATTAMENTOIn relazione alle già menzionate finalità, il trattamento dei dati personali avviene mediante strumenti cartacei einformatici, con logiche strettamente correlate alle finalità suddette e, comunque, in modo da garantirle la sicurezzae la riservatezza dei dati nonché la piena osservanza della legge.PERIODO DI CONSERVAZIONEIl periodo di conservazione dei dati personali contenuti nelle banche dati riferito al trattamento per le finalitàcontrattuali coincide con la durata del rapporto contrattuale, mentre quello legato all’espletamento degli obblighilegali è prescritto dalla legge. In relazione alle finalità di marketing, promozionali, invio di materiale pubblicitario, idati verranno conservati finché l’interessato non revocherà il consenso prestato.",
+  "textLength": 1652,
+  "fetchedAt": "2026-04-28T15:09:14.579Z"
+}

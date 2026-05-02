@@ -1,0 +1,273 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-antisolari-sputtered/",
+  "path": "/pellicole-antisolari-sputtered/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-antisolari-sputtered/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole Antisolari Sputtered - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-antisolari-sputtered/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole Antisolari Sputtered",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pellicole-antisolari-sputtered/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T15:19:30+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sputtered\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sputtered\\/\",\"name\":\"Pellicole Antisolari Sputtered - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-16T09:28:23+00:00\",\"dateModified\":\"2025-09-18T15:19:30+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sputtered\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sputtered\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sputtered\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole Antisolari Sputtered\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole Antisolari Sputtered"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole Antisolari Sputtered"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari sputtered, applicazione in esterno"
+    },
+    {
+      "level": 2,
+      "text": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo."
+    },
+    {
+      "level": 2,
+      "text": "Stoppano fino al 91% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica."
+    },
+    {
+      "level": 2,
+      "text": "Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari."
+    },
+    {
+      "level": 2,
+      "text": "Prodotto unico, con brevetto esclusivo."
+    },
+    {
+      "level": 2,
+      "text": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata."
+    },
+    {
+      "level": 2,
+      "text": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3."
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza."
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari sputtered, applicazione interna"
+    },
+    {
+      "level": 4,
+      "text": "La serie SB"
+    },
+    {
+      "level": 4,
+      "text": "La serie SG"
+    }
+  ],
+  "h1": "Pellicole Antisolari Sputtered",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole Antisolari Sputtered",
+      "text": "Pellicole Antisolari Sputtered"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered di&#xA0;<a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Madico&#xA0;sono costituite da un&#xA0;<strong>substrato di poliestere&#xA0;trasparente trattato mediante un processo chiamato&#xA0;<em>sputtering, che prevede la scomposizione dei metalli attraverso il bombardamento ionico ed il&#xA0;<strong>bombardamento della superficie della pellicola. Ci&#xF2; consente ai singoli atomi emessi dal&#xA0;<strong>metallo&#xA0;interessato di essere&#xA0;<strong>raccolti e legati alla superficie del film. Questo garantisce alla pellicola una&#xA0;<strong>schermatura dai raggi solari intensa unita ad una altissima luminosit&#xE0;. Su di esso viene applicato un ulteriore strato di poliestere, seguito da un trattamento antigraffio per proteggerlo dall&#x2019;abrasione e dalla corrosione.",
+      "text": "Le pellicole antisolari sputtered di Madico sono costituite da un substrato di poliestere trasparente trattato mediante un processo chiamato sputtering, che prevede la scomposizione dei metalli attraverso il bombardamento ionico ed il bombardamento della superficie della pellicola. Ciò consente ai singoli atomi emessi dal metallo interessato di essere raccolti e legati alla superficie del film. Questo garantisce alla pellicola una schermatura dai raggi solari intensa unita ad una altissima luminosità. Su di esso viene applicato un ulteriore strato di poliestere, seguito da un trattamento antigraffio per proteggerlo dall’abrasione e dalla corrosione."
+    },
+    {
+      "type": "paragraph",
+      "html": "Queste pellicole adesive antisolari migliorano le prestazioni delle superfici in vetro con una&#xA0;<strong>semplice applicazione, aumentando cos&#xEC; l&#x2019;efficienza energetica degli edifici ed evitando opere strutturali costose, invasive e di lunga durata.",
+      "text": "Queste pellicole adesive antisolari migliorano le prestazioni delle superfici in vetro con una semplice applicazione, aumentando così l’efficienza energetica degli edifici ed evitando opere strutturali costose, invasive e di lunga durata."
+    },
+    {
+      "type": "paragraph",
+      "html": "Migliorano la protezione solare e l&#x2019;isolamento termico, riducono il consumo di energia, le emissioni di anidride carbonica e riducono anche il calore, l&#x2019;abbagliamento e il riverbero.",
+      "text": "Migliorano la protezione solare e l’isolamento termico, riducono il consumo di energia, le emissioni di anidride carbonica e riducono anche il calore, l’abbagliamento e il riverbero."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole antisolari sputtered, applicazione in esterno",
+      "text": "Pellicole antisolari sputtered, applicazione in esterno"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Le pellicole antisolari vengono quasi sempre installate esternamente&#xA0;per diversi motivi. L&#x2019;installazione esterna evita che i raggi del sole passino due volte all&#x2019;interno del vetro, riscaldandolo e rischiando di rovinarlo. Un lavoro all&#x2019;esterno &#xE8; ovviamente meno invasivo, e la pellicola funger&#xE0; anche da strato protettivo da agenti atmosferici ed erosione per la superficie vetrata.",
+      "text": "Le pellicole antisolari vengono quasi sempre installate esternamente per diversi motivi. L’installazione esterna evita che i raggi del sole passino due volte all’interno del vetro, riscaldandolo e rischiando di rovinarlo. Un lavoro all’esterno è ovviamente meno invasivo, e la pellicola fungerà anche da strato protettivo da agenti atmosferici ed erosione per la superficie vetrata."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered non vi proteggono solamente dal sole, ma riescono a trasformare la vostra vetrata esterna da almeno 4 mm di spessore in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. In un colpo solo&#xA0;<strong>potrete risolvere due problemi, risparmiando tempo e denaro!",
+      "text": "Le pellicole antisolari sputtered non vi proteggono solamente dal sole, ma riescono a trasformare la vostra vetrata esterna da almeno 4 mm di spessore in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. In un colpo solo potrete risolvere due problemi, risparmiando tempo e denaro!"
+    },
+    {
+      "type": "note",
+      "html": "Le pellicole antisolari sputtered di sicurezza MADICO permettono di modificare un normale vetro in un &#x201C;Vetro di sicurezza&#x201D; di diverse tipologie:",
+      "text": "Le pellicole antisolari sputtered di sicurezza MADICO permettono di modificare un normale vetro in un “Vetro di sicurezza” di diverse tipologie:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.",
+      "text": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Stoppano fino al 91% dell&#x2019;energia solare rendendo gli ambienti pi&#xF9; freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica.",
+      "text": "Stoppano fino al 91% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole pi&#xF9; chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilit&#xE0; ed evitando effetti speculari.",
+      "text": "Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Prodotto unico, con brevetto esclusivo.",
+      "text": "Prodotto unico, con brevetto esclusivo."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.",
+      "text": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.",
+      "text": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.",
+      "text": "Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole antisolari sputtered, applicazione interna",
+      "text": "Pellicole antisolari sputtered, applicazione interna"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari&#xA0;<strong>si possono installare internamente&#xA0;principalmente quando ci si trova di fronte a vetri monolitici non molto spessi. Vengono anche consigliati nelle situazioni estreme in cui &#xE8; impossibile applicare esternamente la pellicola. In questi limitati casi l&#x2019;installazione intera preserva la pellicola dall&#x2019;erosione degli agenti atmosferici.",
+      "text": "Le pellicole antisolari si possono installare internamente principalmente quando ci si trova di fronte a vetri monolitici non molto spessi. Vengono anche consigliati nelle situazioni estreme in cui è impossibile applicare esternamente la pellicola. In questi limitati casi l’installazione intera preserva la pellicola dall’erosione degli agenti atmosferici."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "La serie SB",
+      "text": "La serie SB"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered della serie SB (<em>Solar Bronze) vengono utilizzate dove &#xE8; richiesta una schermatura dai raggi solari intensa, unita ad una altissima luminosit&#xE0;.&#xA0;<strong>Disponibile sia per l&#x2019;installazione in esterno che in interno, si presentano con un bellissimo colore bronzo fum&#xE9;. Disponibile anche nella versione di sicurezza.",
+      "text": "Le pellicole antisolari sputtered della serie SB (Solar Bronze) vengono utilizzate dove è richiesta una schermatura dai raggi solari intensa, unita ad una altissima luminosità. Disponibile sia per l’installazione in esterno che in interno, si presentano con un bellissimo colore bronzo fumé. Disponibile anche nella versione di sicurezza."
+    },
+    {
+      "type": "paragraph",
+      "html": "Impediscono la trasmissione dell&#x2019;88% dell&#x2019;energia solare che colpisce le vostre superfici vetrate, rendendo gli ambienti pi&#xF9; freschi e confortevoli, garantendo una&#xA0;<strong>elevata trasmissione luminosa e una maggiore riflessione energetica.",
+      "text": "Impediscono la trasmissione dell’88% dell’energia solare che colpisce le vostre superfici vetrate, rendendo gli ambienti più freschi e confortevoli, garantendo una elevata trasmissione luminosa e una maggiore riflessione energetica."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered della serie SB da esterno sono la&#xA0;<strong>SB 20 E PS SR 75 micron&#xA0;e la&#xA0;<strong>SB 35 E PS SR 75 micron.",
+      "text": "Le pellicole antisolari sputtered della serie SB da esterno sono la SB 20 E PS SR 75 micron e la SB 35 E PS SR 75 micron."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered della serie SB da interno sono la&#xA0;<strong>SB 20 DA SR&#xA0;e la&#xA0;<strong>SB 35 DA SR.",
+      "text": "Le pellicole antisolari sputtered della serie SB da interno sono la SB 20 DA SR e la SB 35 DA SR."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "La serie SG",
+      "text": "La serie SG"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered della serie SG (<em>Solar Grey) vengono utilizzate dove &#xE8; richiesta una schermatura dai raggi solari intensa per risolvere anche problemi di abbagliamento importanti.&#xA0;<strong>Disponibile sia per l&#x2019;installazione in esterno che in interno, si presentano con un bellissimo colore grigio fum&#xE9;.",
+      "text": "Le pellicole antisolari sputtered della serie SG (Solar Grey) vengono utilizzate dove è richiesta una schermatura dai raggi solari intensa per risolvere anche problemi di abbagliamento importanti. Disponibile sia per l’installazione in esterno che in interno, si presentano con un bellissimo colore grigio fumé."
+    },
+    {
+      "type": "paragraph",
+      "html": "Impediscono la trasmissione all&#x2019;interno del 91% dell&#x2019;energia solare che colpisce le vostre superfici vetrate, rendendo gli ambienti pi&#xF9; freschi e confortevoli, garantendo una&#xA0;<strong>elevata protezione dall&#x2019;irraggiamento solare e una maggiore riflessione energetica.",
+      "text": "Impediscono la trasmissione all’interno del 91% dell’energia solare che colpisce le vostre superfici vetrate, rendendo gli ambienti più freschi e confortevoli, garantendo una elevata protezione dall’irraggiamento solare e una maggiore riflessione energetica."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered della serie SB da esterno sono la&#xA0;<strong>SG 20 E PS SR 75 micron&#xA0;e la&#xA0;<strong>SG 35 E PS SR 75 micron.",
+      "text": "Le pellicole antisolari sputtered della serie SB da esterno sono la SG 20 E PS SR 75 micron e la SG 35 E PS SR 75 micron."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered della serie SB da interno sono la&#xA0;<strong>SG 20 DA SR&#xA0;e la&#xA0;<strong>SG 35 DA SR.",
+      "text": "Le pellicole antisolari sputtered della serie SB da interno sono la SG 20 DA SR e la SG 35 DA SR."
+    },
+    {
+      "type": "note",
+      "html": "I nostri Prodotti di questa categoria",
+      "text": "I nostri Prodotti di questa categoria"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madicosb20epssr/\">Pellicola antisolare Madico SB 20 E PS SR 75 micron",
+      "text": "Pellicola antisolare Madico SB 20 E PS SR 75 micron"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madicosb35epssr/\">Pellicola antisolare Madico SB 35 E PS SR 75 micron",
+      "text": "Pellicola antisolare Madico SB 35 E PS SR 75 micron"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole Antisolari Sputtered Le pellicole antisolari sputtered di Madico sono costituite da un substrato di poliestere trasparente trattato mediante un processo chiamato sputtering, che prevede la scomposizione dei metalli attraverso il bombardamento ionico ed il bombardamento della superficie della pellicola. Ciò consente ai singoli atomi emessi dal metallo interessato di essere raccolti e legati alla superficie del film. Questo garantisce alla pellicola una schermatura dai raggi solari intensa unita ad una altissima luminosità. Su di esso viene applicato un ulteriore strato di poliestere, seguito da un trattamento antigraffio per proteggerlo dall’abrasione e dalla corrosione. Queste pellicole adesive antisolari migliorano le prestazioni delle superfici in vetro con una semplice applicazione, aumentando così l’efficienza energetica degli edifici ed evitando opere strutturali costose, invasive e di lunga durata. Migliorano la protezione solare e l’isolamento termico, riducono il consumo di energia, le emissioni di anidride carbonica e riducono anche il calore, l’abbagliamento e il riverbero. Pellicole antisolari sputtered, applicazione in esterno Le pellicole antisolari vengono quasi sempre installate esternamente per diversi motivi. L’installazione esterna evita che i raggi del sole passino due volte all’interno del vetro, riscaldandolo e rischiando di rovinarlo. Un lavoro all’esterno è ovviamente meno invasivo, e la pellicola fungerà anche da strato protettivo da agenti atmosferici ed erosione per la superficie vetrata. Le pellicole antisolari sputtered non vi proteggono solamente dal sole, ma riescono a trasformare la vostra vetrata esterna da almeno 4 mm di spessore in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. In un colpo solo potrete risolvere due problemi, risparmiando tempo e denaro! Le pellicole antisolari sputtered di sicurezza MADICO permettono di modificare un normale vetro in un “Vetro di sicurezza” di diverse tipologie: Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo. Stoppano fino al 91% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica. Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza. Pellicole antisolari sputtered, applicazione interna Le pellicole antisolari si possono installare internamente principalmente quando ci si trova di fronte a vetri monolitici non molto spessi. Vengono anche consigliati nelle situazioni estreme in cui è impossibile applicare esternamente la pellicola. In questi limitati casi l’installazione intera preserva la pellicola dall’erosione degli agenti atmosferici. La serie SB Le pellicole antisolari sputtered della serie SB (Solar Bronze) vengono utilizzate dove è richiesta una schermatura dai raggi solari intensa, unita ad una altissima luminosità. Disponibile sia per l’installazione in esterno che in interno, si presentano con un bellissimo colore bronzo fumé. Disponibile anche nella versione di sicurezza. Impediscono la trasmissione dell’88% dell’energia solare che colpisce le vostre superfici vetrate, rendendo gli ambienti più freschi e confortevoli, garantendo una elevata trasmissione luminosa e una maggiore riflessione energetica. Le pellicole antisolari sputtered della serie SB da esterno sono la SB 20 E PS SR 75 micron e la SB 35 E PS SR 75 micron. Le pellicole antisolari sputtered della serie SB da interno sono la SB 20 DA SR e la SB 35 DA SR. La serie SG Le pellicole antisolari sputtered della serie SG (Solar Grey) vengono utilizzate dove è richiesta una schermatura dai raggi solari intensa per risolvere anche problemi di abbagliamento importanti. Disponibile sia per l’installazione in esterno che in interno, si presentano con un bellissimo colore grigio fumé. Impediscono la trasmissione all’interno del 91% dell’energia solare che colpisce le vostre superfici vetrate, rendendo gli ambienti più freschi e confortevoli, garantendo una elevata protezione dall’irraggiamento solare e una maggiore riflessione energetica. Le pellicole antisolari sputtered della serie SB da esterno sono la SG 20 E PS SR 75 micron e la SG 35 E PS SR 75 micron. Le pellicole antisolari sputtered della serie SB da interno sono la SG 20 DA SR e la SG 35 DA SR. I nostri Prodotti di questa categoria Pellicola antisolare Madico SB 20 E PS SR 75 micron Pellicola antisolare Madico SB 35 E PS SR 75 micron Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 5029,
+  "fetchedAt": "2026-04-28T15:09:40.594Z"
+}

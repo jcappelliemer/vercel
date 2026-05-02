@@ -1,0 +1,317 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
+  "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
+  "route": {
+    "type": "product",
+    "label": "Prodotto",
+    "newPath": "/prodotti/madico-safetyshield-800/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-sicurezza-sitemap.xml",
+  "seo": {
+    "title": "Pellicola di sicurezza Madico Safetyshield 800 - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicola di sicurezza Madico Safetyshield 800",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/SAFETTSHIELD_800.webp",
+      "og:image:width": "1141",
+      "og:image:height": "1080",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T09:53:27+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-safetyshield-800\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-safetyshield-800\\/\",\"name\":\"Pellicola di sicurezza Madico Safetyshield 800 - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-safetyshield-800\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-safetyshield-800\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SAFETTSHIELD_800.webp\",\"datePublished\":\"2025-06-11T15:46:28+00:00\",\"dateModified\":\"2025-09-18T09:53:27+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-safetyshield-800\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-safetyshield-800\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-safetyshield-800\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SAFETTSHIELD_800.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SAFETTSHIELD_800.webp\",\"width\":1141,\"height\":1080},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-safetyshield-800\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole di sicurezza\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pellicola di sicurezza Madico Safetyshield 800\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicola di sicurezza Madico Safetyshield 800"
+    },
+    {
+      "level": 3,
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola certificata"
+    },
+    {
+      "level": 4,
+      "text": "Applicazioni"
+    },
+    {
+      "level": 6,
+      "text": "Vetro singolo 3 mm"
+    },
+    {
+      "level": 6,
+      "text": "Energia solare totale"
+    },
+    {
+      "level": 6,
+      "text": "Luce visibile"
+    },
+    {
+      "level": 6,
+      "text": "Totale energia respinta"
+    },
+    {
+      "level": 6,
+      "text": "Proprietà Fisiche"
+    },
+    {
+      "level": 6,
+      "text": "Tipo adesivo"
+    },
+    {
+      "level": 2,
+      "text": "10"
+    },
+    {
+      "level": 3,
+      "text": "anni di garanzia"
+    }
+  ],
+  "h1": "Pellicola di sicurezza Madico Safetyshield 800",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicola di sicurezza Madico Safetyshield 800",
+      "text": "Pellicola di sicurezza Madico Safetyshield 800"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<a href=\"https://www.solarisfilms.it/wp-content/uploads/2025/06/SAFETYSHIELD-800.pdf\">Consulta la scheda tecnica",
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicola certificata",
+      "text": "Pellicola certificata"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola di sicurezza SAFETYSHIELD&#xAE; 800 trasforma un normale vetro monolitico in un vetro antieffrazione per resistere all&#x2019;attacco di persone malintenzionate ed antiesplosione. &#xC9; stata infatti testata e certificata <a href=\"https://store.uni.com/\" target=\"_blank\" rel=\"noopener noreferrer\">EN 13123, <a href=\"https://store.uni.com/?josso_back_to=http%3A%2F%2Fstore.uni.com%2Fjosso-security-check.php&amp;amp;josso_cmd=login_optional&amp;amp;josso_partnerapp_host=store.uni.com\" target=\"_blank\" rel=\"noopener noreferrer\">EN 13124, <a href=\"https://www.gsa.gov/\" target=\"_blank\" rel=\"noopener noreferrer\">US-GSA ed in conformit&#xE0; alla severa Norma Antiesplosione ISO 16933, classe EXV 33C su lastra singola da 6 mm.",
+      "text": "La pellicola di sicurezza SAFETYSHIELD® 800 trasforma un normale vetro monolitico in un vetro antieffrazione per resistere all’attacco di persone malintenzionate ed antiesplosione. É stata infatti testata e certificata EN 13123, EN 13124, US-GSA ed in conformità alla severa Norma Antiesplosione ISO 16933, classe EXV 33C su lastra singola da 6 mm."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Applicazioni",
+      "text": "Applicazioni"
+    },
+    {
+      "type": "note",
+      "html": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola",
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
+      "text": "Vai al focus tecnico",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Vetro singolo 3 mm",
+      "text": "Vetro singolo 3 mm"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Energia solare totale",
+      "text": "Energia solare totale"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "79%",
+      "text": "Trasmessa 79%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa",
+      "value": "8%",
+      "text": "Riflessa 8%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Assorbita",
+      "value": "13%",
+      "text": "Assorbita 13%",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Luce visibile",
+      "text": "Luce visibile"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "87%",
+      "text": "Trasmessa 87%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa - Esterno",
+      "value": "10%",
+      "text": "Riflessa - Esterno 10%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riduzione abbaglio",
+      "value": "3%",
+      "text": "Riduzione abbaglio 3%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Infrarossi respinti",
+      "value": "0%",
+      "text": "Infrarossi respinti 0%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Raggi UV trasmessi (max)",
+      "value": "1%",
+      "text": "Raggi UV trasmessi (max) 1%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Coefficiente schermatura",
+      "value": "0.95",
+      "text": "Coefficiente schermatura 0.95",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Fattore solare g",
+      "value": "0.83",
+      "text": "Fattore solare g 0.83",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Totale energia respinta",
+      "text": "Totale energia respinta"
+    },
+    {
+      "type": "metric",
+      "label": "Energia Respinta",
+      "value": "17%",
+      "text": "Energia Respinta 17%",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Propriet&#xE0; Fisiche",
+      "text": "Proprietà Fisiche"
+    },
+    {
+      "type": "metric",
+      "label": "Spessore",
+      "value": "200",
+      "text": "Spessore 200",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Res. Trazione",
+      "value": "220",
+      "text": "Res. Trazione 220",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Res. Rottura",
+      "value": "42",
+      "text": "Res. Rottura 42",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Forza adesiva",
+      "value": "1.05",
+      "text": "Forza adesiva 1.05",
+      "html": ""
+    },
+    {
+      "type": "paragraph",
+      "html": "Acrilico sensibile alla pressione",
+      "text": "Acrilico sensibile alla pressione"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Tipo adesivo",
+      "text": "Tipo adesivo"
+    },
+    {
+      "type": "paragraph",
+      "html": "Singolo strato",
+      "text": "Singolo strato"
+    },
+    {
+      "type": "paragraph",
+      "html": "Struttura",
+      "text": "Struttura"
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai bisogno di una pellicola antisolare? Consulta il nostro&#xA0;<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/\">approfondimento sulle pellicole antisolari&#xA0;per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>10",
+      "text": "10"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>anni di garanzia",
+      "text": "anni di garanzia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <span>pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicola di sicurezza Madico Safetyshield 800 Consulta la scheda tecnica Pellicola certificata La pellicola di sicurezza SAFETYSHIELD® 800 trasforma un normale vetro monolitico in un vetro antieffrazione per resistere all’attacco di persone malintenzionate ed antiesplosione. É stata infatti testata e certificata EN 13123, EN 13124, US-GSA ed in conformità alla severa Norma Antiesplosione ISO 16933, classe EXV 33C su lastra singola da 6 mm. Applicazioni Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico Vetro singolo 3 mm Energia solare totale Trasmessa 79% Riflessa 8% Assorbita 13% Luce visibile Trasmessa 87% Riflessa - Esterno 10% Riduzione abbaglio 3% Infrarossi respinti 0% Raggi UV trasmessi (max) 1% Coefficiente schermatura 0.95 Fattore solare g 0.83 Totale energia respinta Energia Respinta 17% Proprietà Fisiche Spessore 200 Res. Trazione 220 Res. Rottura 42 Forza adesiva 1.05 Acrilico sensibile alla pressione Tipo adesivo Singolo strato Struttura Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole! 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 1320,
+  "fetchedAt": "2026-04-28T15:09:19.192Z"
+}

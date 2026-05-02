@@ -1,0 +1,83 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/sunscape/",
+  "path": "/approfondimenti/tipo-pellicola/sunscape/",
+  "route": {
+    "type": "film-type",
+    "label": "Tipo pellicola",
+    "newPath": "/blog/tipo-pellicola/sunscape/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/tipo-pellicola-sitemap.xml",
+  "seo": {
+    "title": "Sunscape Archivi - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/sunscape/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Sunscape Archivi",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/sunscape/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/sunscape\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/sunscape\\/\",\"name\":\"Sunscape Archivi - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/sunscape\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/sunscape\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SL8EPSSR.webp\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/sunscape\\/#breadcrumb\"},\"inLanguage\":\"it-IT\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/sunscape\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SL8EPSSR.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SL8EPSSR.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/sunscape\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Sunscape\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Tipo Pellicola: Sunscape"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare Madico SL 8 E PS SR 75 Micron"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare Madico SG 20 E PS SR 75 micron"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare Tecnosolar NT 20 E PS SR"
+    }
+  ],
+  "h1": "Tipo Pellicola: Sunscape",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Tipo Pellicola: Sunscape",
+      "text": "Tipo Pellicola: Sunscape"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr/\">Pellicola antisolare Madico SL 8 E PS SR 75 Micron",
+      "text": "Pellicola antisolare Madico SL 8 E PS SR 75 Micron"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/\">Pellicola antisolare Madico SG 20 E PS SR 75 micron",
+      "text": "Pellicola antisolare Madico SG 20 E PS SR 75 micron"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr/\">Pellicola antisolare Tecnosolar NT 20 E PS SR",
+      "text": "Pellicola antisolare Tecnosolar NT 20 E PS SR"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Tipo Pellicola: Sunscape Pellicola antisolare Madico SL 8 E PS SR 75 Micron Pellicola antisolare Madico SG 20 E PS SR 75 micron Pellicola antisolare Tecnosolar NT 20 E PS SR",
+  "textLength": 173,
+  "fetchedAt": "2026-04-28T15:09:54.821Z"
+}

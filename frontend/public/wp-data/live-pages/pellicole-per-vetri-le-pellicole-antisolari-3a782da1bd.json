@@ -1,0 +1,290 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/",
+  "path": "/pellicole-per-vetri/le-pellicole-antisolari/",
+  "route": {
+    "type": "category",
+    "label": "Pellicole antisolari",
+    "newPath": "/servizi/pellicole-antisolari/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-antisolari-sitemap.xml",
+  "seo": {
+    "title": "Archivi Pellicole antisolari - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "website",
+      "og:title": "Archivi Pellicole antisolari",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/\",\"name\":\"Archivi Pellicole antisolari - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS30EPSSR75.webp\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/#breadcrumb\"},\"inLanguage\":\"it-IT\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS30EPSSR75.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS30EPSSR75.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole antisolari\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole antisolari, anticalore e riflettenti"
+    },
+    {
+      "level": 5,
+      "text": "L’applicazione di pellicole antisolari sulle superfici vetrate aumenta esponenzialmente la prestazione degli infissi nell’ostacolare l’ingresso della radiazione solare. Sono chiamate anche pellicole anticalore o riflettenti, ma la loro denominazione tecnica è “pellicole a controllo solare”."
+    },
+    {
+      "level": 3,
+      "text": "Riflessione dello spettro solare massimo"
+    },
+    {
+      "level": 2,
+      "text": "A cosa servono le pellicole antisolari?"
+    },
+    {
+      "level": 2,
+      "text": "L’applicazione sul vetro esterno permette di evitare questo problema."
+    },
+    {
+      "level": 5,
+      "text": "Le caratteristiche tecniche"
+    },
+    {
+      "level": 4,
+      "text": "Le pellicole riflettenti rovineranno la mia facciata o renderanno meno luminosi i miei interni?"
+    },
+    {
+      "level": 4,
+      "text": "Perché conviene installare pellicole antisolari?"
+    },
+    {
+      "level": 2,
+      "text": "10"
+    },
+    {
+      "level": 3,
+      "text": "anni di garanzia"
+    }
+  ],
+  "h1": "Pellicole antisolari, anticalore e riflettenti",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole antisolari, anticalore e riflettenti",
+      "text": "Pellicole antisolari, anticalore e riflettenti"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "html": "L&#x2019;applicazione di pellicole antisolari sulle superfici vetrate aumenta esponenzialmente la prestazione degli infissi nell&#x2019;ostacolare l&#x2019;ingresso della radiazione solare. Sono chiamate anche pellicole anticalore o riflettenti, ma la loro denominazione tecnica &#xE8; &#x201C;pellicole a controllo solare&#x201D;.",
+      "text": "L’applicazione di pellicole antisolari sulle superfici vetrate aumenta esponenzialmente la prestazione degli infissi nell’ostacolare l’ingresso della radiazione solare. Sono chiamate anche pellicole anticalore o riflettenti, ma la loro denominazione tecnica è “pellicole a controllo solare”."
+    },
+    {
+      "type": "note",
+      "html": "Le pellicole antisolari sono nate con la funzione di migliorare l&#x2019;isolamento delle vetrate.",
+      "text": "Le pellicole antisolari sono nate con la funzione di migliorare l’isolamento delle vetrate."
+    },
+    {
+      "type": "note",
+      "html": "Costruite con materiali che consentono filtraggio e schermatura dai raggi solari, evitano che il calore penetri nei vari ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici.",
+      "text": "Costruite con materiali che consentono filtraggio e schermatura dai raggi solari, evitano che il calore penetri nei vari ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici."
+    },
+    {
+      "type": "paragraph",
+      "html": "Per questo motivo vengono anche chiamate pellicole anticalore. &#xC8; infatti possibile, con l&#x2019;impiego della giusta pellicola, ridurre le temperature interne degli edifici fino a 7/8&#xB0;C.",
+      "text": "Per questo motivo vengono anche chiamate pellicole anticalore. È infatti possibile, con l’impiego della giusta pellicola, ridurre le temperature interne degli edifici fino a 7/8°C."
+    },
+    {
+      "type": "paragraph",
+      "html": "Questi film adesivi antisolari contribuiscono perci&#xF2; a migliorare le prestazioni dei vetri gi&#xE0; presenti nei vostri edifici e di conseguenza l&#x2019;efficientamento energetico dello stabile con un semplice lavoro sugli infissi ed evitando lavori strutturali, costosi, invasivi e di lunga durata.",
+      "text": "Questi film adesivi antisolari contribuiscono perciò a migliorare le prestazioni dei vetri già presenti nei vostri edifici e di conseguenza l’efficientamento energetico dello stabile con un semplice lavoro sugli infissi ed evitando lavori strutturali, costosi, invasivi e di lunga durata."
+    },
+    {
+      "type": "paragraph",
+      "html": "In altre parole consentono di migliorare il grado di protezione solare e di isolamento termico, riducendo calore, abbagliamento, riverberi, ma anche consumi energetici ed emissioni di CO2.",
+      "text": "In altre parole consentono di migliorare il grado di protezione solare e di isolamento termico, riducendo calore, abbagliamento, riverberi, ma anche consumi energetici ed emissioni di CO2."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari per vetri sono dunque la soluzione ideale, economica, ecologica e di design contro il surriscaldamento dovuto al calore solare negli edifici con superfici vetrate.",
+      "text": "Le pellicole antisolari per vetri sono dunque la soluzione ideale, economica, ecologica e di design contro il surriscaldamento dovuto al calore solare negli edifici con superfici vetrate."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;applicazione di questi film sulle superfici vetrate aumenta esponenzialmente la prestazione degli infissi nell&#x2019;ostacolare l&#x2019;ingresso della radiazione solare. Sono chiamate anche pellicole anticalore o riflettenti in base all&#x2019;effetto sul vetro, ma la loro denominazione tecnica &#xE8; &#x2018;pellicole a controllo solare&#x2019;.",
+      "text": "L’applicazione di questi film sulle superfici vetrate aumenta esponenzialmente la prestazione degli infissi nell’ostacolare l’ingresso della radiazione solare. Sono chiamate anche pellicole anticalore o riflettenti in base all’effetto sul vetro, ma la loro denominazione tecnica è ‘pellicole a controllo solare’."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Riflessione dello spettro solare massimo",
+      "text": "Riflessione dello spettro solare massimo"
+    },
+    {
+      "type": "metric",
+      "label": "Raggi U.V.",
+      "value": "99",
+      "text": "Raggi U.V. 99",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Raggi I.R.",
+      "value": "98",
+      "text": "Raggi I.R. 98",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "A cosa servono le pellicole antisolari?",
+      "text": "A cosa servono le pellicole antisolari?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vista la tipologia e la composizione delle vetrate attuali, l&#x2019;installazione delle pellicole antisolari &#xE8; realizzabile quasi esclusivamente in esterno; per questo sono per&#xF2; soggette ad una maggiore usura a causa dell&#x2019;esposizione continua agli agenti atmosferici ed alle radiazioni U.V. Pertanto &#xE8; importante fare attenzione alla scelta delle pellicole pi&#xF9; adatte per le proprie esigenze ed &#xE8; fondamentale selezionare prodotti di qualit&#xE0; con le tecnologie pi&#xF9; all&#x2019;avanguardia. Grazie al nostro distributore <a href=\"http://www.tecnosolar.it\" target=\"_blank\" rel=\"noopener noreferrer\">TECNOSOLAR siamo in grado di fornirvi il meglio che il mercato &#xE8; in grado di offrirvi al momento!",
+      "text": "Vista la tipologia e la composizione delle vetrate attuali, l’installazione delle pellicole antisolari è realizzabile quasi esclusivamente in esterno; per questo sono però soggette ad una maggiore usura a causa dell’esposizione continua agli agenti atmosferici ed alle radiazioni U.V. Pertanto è importante fare attenzione alla scelta delle pellicole più adatte per le proprie esigenze ed è fondamentale selezionare prodotti di qualità con le tecnologie più all’avanguardia. Grazie al nostro distributore TECNOSOLAR siamo in grado di fornirvi il meglio che il mercato è in grado di offrirvi al momento!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Negli ultimi anni in edilizia ci si &#xE8; decisamente orientati verso l&#x2019;espansione delle superfici vetrate per motivi estetici e di migliore utilizzo della luce del sole. Nonostante l&#x2019;installazione di vetri a taglio termico la prestazione dell&#x2019;infisso nella schermatura solare &#xE8; contrastata dall&#x2019;assorbimento dato dall&#x2019;irraggiamento della lastra esterna della vetrocamera. Infissi con forte oscuramento e riflessione devono montare vetri temperati per il rischio di shock termico sulla lastra esterna.",
+      "text": "Negli ultimi anni in edilizia ci si è decisamente orientati verso l’espansione delle superfici vetrate per motivi estetici e di migliore utilizzo della luce del sole. Nonostante l’installazione di vetri a taglio termico la prestazione dell’infisso nella schermatura solare è contrastata dall’assorbimento dato dall’irraggiamento della lastra esterna della vetrocamera. Infissi con forte oscuramento e riflessione devono montare vetri temperati per il rischio di shock termico sulla lastra esterna."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "L&#x2019;applicazione sul vetro esterno permette di evitare questo problema.",
+      "text": "L’applicazione sul vetro esterno permette di evitare questo problema."
+    },
+    {
+      "type": "paragraph",
+      "html": "egli edifici datati, la presenza di lastre in vetro singolo o vetri camera non a taglio termico si risolve facilmente installando le pellicole. Questo tipo di soluzione &#xE8; la pi&#xF9; economica rispetto al costo di sostituzione dell&#x2019;infisso. Nessuna modifica degli infissi, nessun disagio all&#x2019;attivit&#xE0; produttiva e costi decisamente contenuti sono la carta vincente che spinge sempre pi&#xF9; persone a scegliere pellicole per vetri antisolari!",
+      "text": "egli edifici datati, la presenza di lastre in vetro singolo o vetri camera non a taglio termico si risolve facilmente installando le pellicole. Questo tipo di soluzione è la più economica rispetto al costo di sostituzione dell’infisso. Nessuna modifica degli infissi, nessun disagio all’attività produttiva e costi decisamente contenuti sono la carta vincente che spinge sempre più persone a scegliere pellicole per vetri antisolari!"
+    },
+    {
+      "type": "paragraph",
+      "html": "In pi&#xF9;, alcuni modelli di pellicole antisolari sono anche certificati per mettere in sicurezza le vostre superfici vetrate.",
+      "text": "In più, alcuni modelli di pellicole antisolari sono anche certificati per mettere in sicurezza le vostre superfici vetrate."
+    },
+    {
+      "type": "paragraph",
+      "html": "Scopri le nostre <a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/\">MADICO RS 40 PS SR 4MIL e <a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/\">MADICO RS 40 PS SR 8MIL",
+      "text": "Scopri le nostre MADICO RS 40 PS SR 4MIL e MADICO RS 40 PS SR 8MIL"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ora che sai come proteggerti dal sole vuoi proteggere anche le tue vetrate? Scegli una delle nostre&#xA0;<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/\">pellicole di sicurezza!",
+      "text": "Ora che sai come proteggerti dal sole vuoi proteggere anche le tue vetrate? Scegli una delle nostre pellicole di sicurezza!"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "html": "Le caratteristiche tecniche",
+      "text": "Le caratteristiche tecniche"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Le pellicole riflettenti rovineranno la mia facciata o renderanno meno luminosi i miei interni?",
+      "text": "Le pellicole riflettenti rovineranno la mia facciata o renderanno meno luminosi i miei interni?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Un altro aspetto da considerare &#xE8; il comfort. La percezione dell&#x2019;irraggiamento solare e l&#x2019;abbaglio risultano fastidiosi negli ambienti interni, specie se ci troviamo vicino a una finestra. Le pellicole eliminano la sensazione di irraggiamento ed il fastidioso riflesso solare, lasciando la luminosit&#xE0; e la piacevolezza di guardare fuori dalla finestra senza fastidi; dopo 20 giorni la pellicola installata diventa un corpo unico con il vetro.",
+      "text": "Un altro aspetto da considerare è il comfort. La percezione dell’irraggiamento solare e l’abbaglio risultano fastidiosi negli ambienti interni, specie se ci troviamo vicino a una finestra. Le pellicole eliminano la sensazione di irraggiamento ed il fastidioso riflesso solare, lasciando la luminosità e la piacevolezza di guardare fuori dalla finestra senza fastidi; dopo 20 giorni la pellicola installata diventa un corpo unico con il vetro."
+    },
+    {
+      "type": "paragraph",
+      "html": "Anche per quel che riguarda il design ce n&#x2019;&#xE8; per soddisfare tutti i gusti. <a href=\"https://madico.com/it\" target=\"_blank\" rel=\"noopener noreferrer\">MADICO ha elaborato diverse soluzioni per adattarsi a tutti i tipi di facciata, mantenendo sempre fissa l&#x2019;alta qualit&#xE0; antisolare che li contraddistingue. Si pu&#xF2; dunque scegliere tra quattro finiture per proteggervi dai raggi solari:",
+      "text": "Anche per quel che riguarda il design ce n’è per soddisfare tutti i gusti. MADICO ha elaborato diverse soluzioni per adattarsi a tutti i tipi di facciata, mantenendo sempre fissa l’alta qualità antisolare che li contraddistingue. Si può dunque scegliere tra quattro finiture per proteggervi dai raggi solari:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Brunito, film con un basso effetto specchio SB20 E PS SR",
+          "text": "Brunito, film con un basso effetto specchio SB20 E PS SR"
+        },
+        {
+          "html": "Argento, con una superficie riflettente che impedisce la vista dall&#x2019;esterno in condizioni soleggiate <a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/\">RS 20 E PS SR",
+          "text": "Argento, con una superficie riflettente che impedisce la vista dall’esterno in condizioni soleggiate RS 20 E PS SR"
+        },
+        {
+          "html": "Neutro, nessun effetto, per chi vuole il minimo impatto ma alta resa anticalore <a href=\"/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/\">SSN 50 TE SR",
+          "text": "Neutro, nessun effetto, per chi vuole il minimo impatto ma alta resa anticalore SSN 50 TE SR"
+        },
+        {
+          "html": "Grigio fum&#xE8; <a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/\">SG 20 E PS SR",
+          "text": "Grigio fumè SG 20 E PS SR"
+        }
+      ],
+      "text": "Brunito, film con un basso effetto specchio SB20 E PS SR Argento, con una superficie riflettente che impedisce la vista dall’esterno in condizioni soleggiate RS 20 E PS SR Neutro, nessun effetto, per chi vuole il minimo impatto ma alta resa anticalore SSN 50 TE SR Grigio fumè SG 20 E PS SR"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il vasto assortimento di pellicole antisolari ci permette dunque di offrirvi una soluzione personalizzata. Potete scegliere tra pellicole chiare, riflettenti e semi-riflettenti, in diversi colori e sfumature, per adattarsi a qualsiasi edificio. Possiamo consigliarvi la pellicola antisolare adatta alle vostre esigenze e che impatti il meno possibile sulla luce del locale e sui colori!",
+      "text": "Il vasto assortimento di pellicole antisolari ci permette dunque di offrirvi una soluzione personalizzata. Potete scegliere tra pellicole chiare, riflettenti e semi-riflettenti, in diversi colori e sfumature, per adattarsi a qualsiasi edificio. Possiamo consigliarvi la pellicola antisolare adatta alle vostre esigenze e che impatti il meno possibile sulla luce del locale e sui colori!"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Perch&#xE9; conviene installare pellicole antisolari?",
+      "text": "Perché conviene installare pellicole antisolari?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ad esempio perch&#xE9; l&#x2019;applicazione delle pellicole antisolari <strong>MADICO migliora il clima degli ambienti rendendoli freschi e confortevoli, contribuendo ad aumentare il rendimento del personale dipendente evitando l&#x2019;ingresso di luce diretta che con il suo riflesso provoca un fastidio nello svolgimento di ogni attivit&#xE0;. Consente inoltre un notevole risparmio energetico, evitando l&#x2019;aumento delle temperature all&#x2019;interno dei locali, riducendo drasticamente i costi di condizionamento. Si parla di un risparmio medio che va da un minimo del 30% ad un dimezzamento netto dei costi di climatizzazione in estate e di un miglioramento della resa e durata dell&#x2019;impianto di climatizzazione.",
+      "text": "Ad esempio perché l’applicazione delle pellicole antisolari MADICO migliora il clima degli ambienti rendendoli freschi e confortevoli, contribuendo ad aumentare il rendimento del personale dipendente evitando l’ingresso di luce diretta che con il suo riflesso provoca un fastidio nello svolgimento di ogni attività. Consente inoltre un notevole risparmio energetico, evitando l’aumento delle temperature all’interno dei locali, riducendo drasticamente i costi di condizionamento. Si parla di un risparmio medio che va da un minimo del 30% ad un dimezzamento netto dei costi di climatizzazione in estate e di un miglioramento della resa e durata dell’impianto di climatizzazione."
+    },
+    {
+      "type": "paragraph",
+      "html": "In fase di preventivo &#xE8; possibile stimare il risparmio economico che otterrete grazie all&#x2019;installazione delle pellicole.",
+      "text": "In fase di preventivo è possibile stimare il risparmio economico che otterrete grazie all’installazione delle pellicole."
+    },
+    {
+      "type": "paragraph",
+      "html": "Il risparmio energetico garantir&#xE0; l&#x2019;ammortizzamento dell&#x2019;investimento in max 3 anni a fronte di una <strong>GARANZIA delle PELLICOLE PER ESTERNO fino a 10 ANNI per le versioni sputtered e sunscape, a fronte di una vita media verificata dei prodotti da noi installati decisamente superiore. In pi&#xF9; ottempera ai requisiti del &#x201C;Testo Unico&#x201D; D.Lgs. 81/2008, in materia di microclima e sicurezza, risultando dunque un&#x2019;ottima opzione per rispettare i requisiti minimi della legge come sistema schermante e filtrante idoneo a migliorare sicurezza e prestazioni energetiche del vetro in edilizia. Il suo utilizzo inoltre &#xE8; raccomandato in modo da far rientrare e catalogare l&#x2019;edificio all&#x2019;interno delle classificazioni energetiche.",
+      "text": "Il risparmio energetico garantirà l’ammortizzamento dell’investimento in max 3 anni a fronte di una GARANZIA delle PELLICOLE PER ESTERNO fino a 10 ANNI per le versioni sputtered e sunscape, a fronte di una vita media verificata dei prodotti da noi installati decisamente superiore. In più ottempera ai requisiti del “Testo Unico” D.Lgs. 81/2008, in materia di microclima e sicurezza, risultando dunque un’ottima opzione per rispettare i requisiti minimi della legge come sistema schermante e filtrante idoneo a migliorare sicurezza e prestazioni energetiche del vetro in edilizia. Il suo utilizzo inoltre è raccomandato in modo da far rientrare e catalogare l’edificio all’interno delle classificazioni energetiche."
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola antisolare <strong>MADICO &#xE8; dunque un ottimo investimento sia per abitazioni private che per uffici o siti produttivi. Infatti &#xE8; un investimento che non vi pentirete di aver fatto, non solo dal punto di vista economico ma anche per la vivibilit&#xE0; e lo sfruttamento degli immobili!",
+      "text": "La pellicola antisolare MADICO è dunque un ottimo investimento sia per abitazioni private che per uffici o siti produttivi. Infatti è un investimento che non vi pentirete di aver fatto, non solo dal punto di vista economico ma anche per la vivibilità e lo sfruttamento degli immobili!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Se volete entrare pi&#xF9; in profondit&#xE0; nel mondo delle pellicole antisolari controllate la nostra serie di approfondimenti a tema <a href=\"/lo-sapevi-che/\">QUI.",
+      "text": "Se volete entrare più in profondità nel mondo delle pellicole antisolari controllate la nostra serie di approfondimenti a tema QUI."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>10",
+      "text": "10"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>anni di garanzia",
+      "text": "anni di garanzia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <span>pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole antisolari, anticalore e riflettenti L’applicazione di pellicole antisolari sulle superfici vetrate aumenta esponenzialmente la prestazione degli infissi nell’ostacolare l’ingresso della radiazione solare. Sono chiamate anche pellicole anticalore o riflettenti, ma la loro denominazione tecnica è “pellicole a controllo solare”. Le pellicole antisolari sono nate con la funzione di migliorare l’isolamento delle vetrate. Costruite con materiali che consentono filtraggio e schermatura dai raggi solari, evitano che il calore penetri nei vari ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Per questo motivo vengono anche chiamate pellicole anticalore. È infatti possibile, con l’impiego della giusta pellicola, ridurre le temperature interne degli edifici fino a 7/8°C. Questi film adesivi antisolari contribuiscono perciò a migliorare le prestazioni dei vetri già presenti nei vostri edifici e di conseguenza l’efficientamento energetico dello stabile con un semplice lavoro sugli infissi ed evitando lavori strutturali, costosi, invasivi e di lunga durata. In altre parole consentono di migliorare il grado di protezione solare e di isolamento termico, riducendo calore, abbagliamento, riverberi, ma anche consumi energetici ed emissioni di CO2. Le pellicole antisolari per vetri sono dunque la soluzione ideale, economica, ecologica e di design contro il surriscaldamento dovuto al calore solare negli edifici con superfici vetrate. L’applicazione di questi film sulle superfici vetrate aumenta esponenzialmente la prestazione degli infissi nell’ostacolare l’ingresso della radiazione solare. Sono chiamate anche pellicole anticalore o riflettenti in base all’effetto sul vetro, ma la loro denominazione tecnica è ‘pellicole a controllo solare’. Riflessione dello spettro solare massimo Raggi U.V. 99 Raggi I.R. 98 A cosa servono le pellicole antisolari? Vista la tipologia e la composizione delle vetrate attuali, l’installazione delle pellicole antisolari è realizzabile quasi esclusivamente in esterno; per questo sono però soggette ad una maggiore usura a causa dell’esposizione continua agli agenti atmosferici ed alle radiazioni U.V. Pertanto è importante fare attenzione alla scelta delle pellicole più adatte per le proprie esigenze ed è fondamentale selezionare prodotti di qualità con le tecnologie più all’avanguardia. Grazie al nostro distributore TECNOSOLAR siamo in grado di fornirvi il meglio che il mercato è in grado di offrirvi al momento! Negli ultimi anni in edilizia ci si è decisamente orientati verso l’espansione delle superfici vetrate per motivi estetici e di migliore utilizzo della luce del sole. Nonostante l’installazione di vetri a taglio termico la prestazione dell’infisso nella schermatura solare è contrastata dall’assorbimento dato dall’irraggiamento della lastra esterna della vetrocamera. Infissi con forte oscuramento e riflessione devono montare vetri temperati per il rischio di shock termico sulla lastra esterna. L’applicazione sul vetro esterno permette di evitare questo problema. egli edifici datati, la presenza di lastre in vetro singolo o vetri camera non a taglio termico si risolve facilmente installando le pellicole. Questo tipo di soluzione è la più economica rispetto al costo di sostituzione dell’infisso. Nessuna modifica degli infissi, nessun disagio all’attività produttiva e costi decisamente contenuti sono la carta vincente che spinge sempre più persone a scegliere pellicole per vetri antisolari! In più, alcuni modelli di pellicole antisolari sono anche certificati per mettere in sicurezza le vostre superfici vetrate. Scopri le nostre MADICO RS 40 PS SR 4MIL e MADICO RS 40 PS SR 8MIL Ora che sai come proteggerti dal sole vuoi proteggere anche le tue vetrate? Scegli una delle nostre pellicole di sicurezza! Le caratteristiche tecniche Le pellicole riflettenti rovineranno la mia facciata o renderanno meno luminosi i miei interni? Un altro aspetto da considerare è il comfort. La percezione dell’irraggiamento solare e l’abbaglio risultano fastidiosi negli ambienti interni, specie se ci troviamo vicino a una finestra. Le pellicole eliminano la sensazione di irraggiamento ed il fastidioso riflesso solare, lasciando la luminosità e la piacevolezza di guardare fuori dalla finestra senza fastidi; dopo 20 giorni la pellicola installata diventa un corpo unico con il vetro. Anche per quel che riguarda il design ce n’è per soddisfare tutti i gusti. MADICO ha elaborato diverse soluzioni per adattarsi a tutti i tipi di facciata, mantenendo sempre fissa l’alta qualità antisolare che li contraddistingue. Si può dunque scegliere tra quattro finiture per proteggervi dai raggi solari: Brunito, film con un basso effetto specchio SB20 E PS SR Argento, con una superficie riflettente che impedisce la vista dall’esterno in condizioni soleggiate RS 20 E PS SR Neutro, nessun effetto, per chi vuole il minimo impatto ma alta resa anticalore SSN 50 TE SR Grigio fumè SG 20 E PS SR Il vasto assortimento di pellicole antisolari ci permette dunque di offrirvi una soluzione personalizzata. Potete scegliere tra pellicole chiare, riflettenti e semi-riflettenti, in diversi colori e sfumature, per adattarsi a qualsiasi edificio. Possiamo consigliarvi la pellicola antisolare adatta alle vostre esigenze e che impatti il meno possibile sulla luce del locale e sui colori! Perché conviene installare pellicole antisolari? Ad esempio perché l’applicazione delle pellicole antisolari MADICO migliora il clima degli ambienti rendendoli freschi e confortevoli, contribuendo ad aumentare il rendimento del personale dipendente evitando l’ingresso di luce diretta che con il suo riflesso provoca un fastidio nello svolgimento di ogni attività. Consente inoltre un notevole risparmio energetico, evitando l’aumento delle temperature all’interno dei locali, riducendo drasticamente i costi di condizionamento. Si parla di un risparmio medio che va da un minimo del 30% ad un dimezzamento netto dei costi di climatizzazione in estate e di un miglioramento della resa e durata dell’impianto di climatizzazione. In fase di preventivo è possibile stimare il risparmio economico che otterrete grazie all’installazione delle pellicole. Il risparmio energetico garantirà l’ammortizzamento dell’investimento in max 3 anni a fronte di una GARANZIA delle PELLICOLE PER ESTERNO fino a 10 ANNI per le versioni sputtered e sunscape, a fronte di una vita media verificata dei prodotti da noi installati decisamente superiore. In più ottempera ai requisiti del “Testo Unico” D.Lgs. 81/2008, in materia di microclima e sicurezza, risultando dunque un’ottima opzione per rispettare i requisiti minimi della legge come sistema schermante e filtrante idoneo a migliorare sicurezza e prestazioni energetiche del vetro in edilizia. Il suo utilizzo inoltre è raccomandato in modo da far rientrare e catalogare l’edificio all’interno delle classificazioni energetiche. La pellicola antisolare MADICO è dunque un ottimo investimento sia per abitazioni private che per uffici o siti produttivi. Infatti è un investimento che non vi pentirete di aver fatto, non solo dal punto di vista economico ma anche per la vivibilità e lo sfruttamento degli immobili! Se volete entrare più in profondità nel mondo delle pellicole antisolari controllate la nostra serie di approfondimenti a tema QUI. 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 7581,
+  "fetchedAt": "2026-04-28T15:09:16.862Z"
+}

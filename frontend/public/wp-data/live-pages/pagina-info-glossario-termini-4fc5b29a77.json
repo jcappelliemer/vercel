@@ -1,0 +1,219 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/glossario-termini/",
+  "path": "/pagina-info/glossario-termini/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/glossario-termini/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Glossario termini - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/glossario-termini/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Glossario termini",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pagina-info/glossario-termini/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T09:05:51+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/glossario-termini\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/glossario-termini\\/\",\"name\":\"Glossario termini - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-15T20:31:16+00:00\",\"dateModified\":\"2025-09-18T09:05:51+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/glossario-termini\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/glossario-termini\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/glossario-termini\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Glossario termini\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Glossario termini"
+    },
+    {
+      "level": 3,
+      "text": "Percentuale di Trasmissione Solare"
+    },
+    {
+      "level": 3,
+      "text": "Percentuale di Riflessione Solare"
+    },
+    {
+      "level": 3,
+      "text": "Percentuale di Assorbimento Solare"
+    },
+    {
+      "level": 3,
+      "text": "Percentuale di Trasmissione della luce visibile"
+    },
+    {
+      "level": 3,
+      "text": "Percentuale di Riflessione della luce visibile"
+    },
+    {
+      "level": 3,
+      "text": "Percentuale di trasmissione raggi ultravioletti"
+    },
+    {
+      "level": 3,
+      "text": "Coefficiente di schermatura"
+    },
+    {
+      "level": 3,
+      "text": "Percentuale di energia solare totale respinta"
+    },
+    {
+      "level": 3,
+      "text": "Percentuale di riduzione dell’abbaglio"
+    },
+    {
+      "level": 3,
+      "text": "Trasmittanza Termica U"
+    }
+  ],
+  "h1": "Glossario termini",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Glossario termini",
+      "text": "Glossario termini"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Percentuale di Trasmissione Solare",
+      "text": "Percentuale di Trasmissione Solare"
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; la percentuale dell&#x2019;energia solare passante attraverso il vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri).",
+      "text": "E’ la percentuale dell’energia solare passante attraverso il vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Percentuale di Riflessione Solare",
+      "text": "Percentuale di Riflessione Solare"
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; la percentuale dell&#x2019;energia solare riflessa dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri).",
+      "text": "E’ la percentuale dell’energia solare riflessa dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Percentuale di Assorbimento Solare",
+      "text": "Percentuale di Assorbimento Solare"
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; la percentuale dell&#x2019;energia solare assorbita dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri).",
+      "text": "E’ la percentuale dell’energia solare assorbita dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Percentuale di Trasmissione della luce visibile",
+      "text": "Percentuale di Trasmissione della luce visibile"
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; la percentuale di luce visibile passante direttamente attraverso il vetro rivestito da pellicola (compresa tra 380 e 780 nanometri).",
+      "text": "E’ la percentuale di luce visibile passante direttamente attraverso il vetro rivestito da pellicola (compresa tra 380 e 780 nanometri)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Percentuale di Riflessione della luce visibile",
+      "text": "Percentuale di Riflessione della luce visibile"
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; la percentuale di luce visibile riflessa dal vetro rivestito da pellicola (compresa tra 380 e 780 nanometri).",
+      "text": "E’ la percentuale di luce visibile riflessa dal vetro rivestito da pellicola (compresa tra 380 e 780 nanometri)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Percentuale di trasmissione raggi ultravioletti",
+      "text": "Percentuale di trasmissione raggi ultravioletti"
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; la percentuale dei raggi ultravioletti passante attraverso il vetro rivestito da pellicola (compresa tra 300 e 380 nanometri).",
+      "text": "E’ la percentuale dei raggi ultravioletti passante attraverso il vetro rivestito da pellicola (compresa tra 300 e 380 nanometri)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Coefficiente di schermatura",
+      "text": "Coefficiente di schermatura"
+    },
+    {
+      "type": "paragraph",
+      "html": "Misura dell&#x2019;energia solare passante attraverso il vetro ricoperto da pellicola, rispetto ad un vetro di 4mm trasparente non trattato.",
+      "text": "Misura dell’energia solare passante attraverso il vetro ricoperto da pellicola, rispetto ad un vetro di 4mm trasparente non trattato."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Percentuale di energia solare totale respinta",
+      "text": "Percentuale di energia solare totale respinta"
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; la percentuale dell&#x2019;energia solare respinta dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri).",
+      "text": "E’ la percentuale dell’energia solare respinta dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Percentuale di riduzione dell&#x2019;abbaglio",
+      "text": "Percentuale di riduzione dell’abbaglio"
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; la percentuale della riduzione della luce visibile attraverso il vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri).",
+      "text": "E’ la percentuale della riduzione della luce visibile attraverso il vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri)."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Trasmittanza Termica U",
+      "text": "Trasmittanza Termica U"
+    },
+    {
+      "type": "paragraph",
+      "html": "Gli scambi termici che si verificano attraverso un sistema vetrato per conduzione, convenzione e irraggiamento. Rappresenta il flusso di calore che attraversa 1mq di parete per una differenza di temperatura pari a 1C&#xB0;.",
+      "text": "Gli scambi termici che si verificano attraverso un sistema vetrato per conduzione, convenzione e irraggiamento. Rappresenta il flusso di calore che attraversa 1mq di parete per una differenza di temperatura pari a 1C°."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Glossario termini Percentuale di Trasmissione Solare E’ la percentuale dell’energia solare passante attraverso il vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri). Percentuale di Riflessione Solare E’ la percentuale dell’energia solare riflessa dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri). Percentuale di Assorbimento Solare E’ la percentuale dell’energia solare assorbita dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri). Percentuale di Trasmissione della luce visibile E’ la percentuale di luce visibile passante direttamente attraverso il vetro rivestito da pellicola (compresa tra 380 e 780 nanometri). Percentuale di Riflessione della luce visibile E’ la percentuale di luce visibile riflessa dal vetro rivestito da pellicola (compresa tra 380 e 780 nanometri). Percentuale di trasmissione raggi ultravioletti E’ la percentuale dei raggi ultravioletti passante attraverso il vetro rivestito da pellicola (compresa tra 300 e 380 nanometri). Coefficiente di schermatura Misura dell’energia solare passante attraverso il vetro ricoperto da pellicola, rispetto ad un vetro di 4mm trasparente non trattato. Percentuale di energia solare totale respinta E’ la percentuale dell’energia solare respinta dal vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri). Percentuale di riduzione dell’abbaglio E’ la percentuale della riduzione della luce visibile attraverso il vetro rivestito da pellicola (compresa tra 300 e 2100 nanometri). Trasmittanza Termica U Gli scambi termici che si verificano attraverso un sistema vetrato per conduzione, convenzione e irraggiamento. Rappresenta il flusso di calore che attraversa 1mq di parete per una differenza di temperatura pari a 1C°. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 1837,
+  "fetchedAt": "2026-04-28T15:09:40.466Z"
+}

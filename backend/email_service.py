@@ -1,6 +1,5 @@
 """
-Solaris Films — Email Service (WP Relay)
-Invia email tramite l'endpoint REST di WordPress, che usa wp_mail() con SMTP Aruba.
+Solaris Films email service through the WordPress relay.
 """
 import os
 import logging
@@ -39,18 +38,25 @@ def send_email(subject: str, html_body: str, reply_to: str = None):
         if resp.status_code == 200:
             logger.info(f"Email sent via WP relay: {subject}")
             return True
-        else:
-            logger.error(f"WP relay error {resp.status_code}: {resp.text}")
-            return False
+        logger.error(f"WP relay error {resp.status_code}: {resp.text}")
+        return False
     except Exception as e:
         logger.error(f"WP relay request failed: {e}")
         return False
 
 
+def attachment_list_html(data: dict) -> str:
+    allegati = data.get('allegati') or []
+    return ''.join(
+        f"<li>{item.get('filename', '')} ({item.get('size', 0)} byte)</li>"
+        for item in allegati
+    ) or '<li>Nessun allegato</li>'
+
+
 def build_quote_email(data: dict) -> tuple:
     """Build HTML email for quote request."""
     tipo = data.get('tipo_pellicola', '-')
-    subject = f"Nuovo Preventivo — {data.get('nome', '')} {data.get('cognome', '')} ({tipo})"
+    subject = f"Nuovo Preventivo - {data.get('nome', '')} {data.get('cognome', '')} ({tipo})"
     html = f"""
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background: #0A0F1C; padding: 24px 30px; border-radius: 12px 12px 0 0;">
@@ -61,17 +67,23 @@ def build_quote_email(data: dict) -> tuple:
                 <tr><td style="padding: 8px 0; color: #666; width: 140px;">Nome</td><td style="padding: 8px 0; font-weight: 600;">{data.get('nome', '')} {data.get('cognome', '')}</td></tr>
                 <tr><td style="padding: 8px 0; color: #666;">Email</td><td style="padding: 8px 0;"><a href="mailto:{data.get('email', '')}">{data.get('email', '')}</a></td></tr>
                 <tr><td style="padding: 8px 0; color: #666;">Telefono</td><td style="padding: 8px 0;"><a href="tel:{data.get('telefono', '')}">{data.get('telefono', '')}</a></td></tr>
-                <tr><td style="padding: 8px 0; color: #666;">Ragione Sociale</td><td style="padding: 8px 0;">{data.get('ragione_sociale', '-')}</td></tr>
-                <tr><td style="padding: 8px 0; color: #666;">Città</td><td style="padding: 8px 0;">{data.get('citta', '-')}</td></tr>
-                <tr><td style="padding: 8px 0; color: #666;">Tipo Pellicola</td><td style="padding: 8px 0; font-weight: 600; color: #2563EB;">{tipo}</td></tr>
+                <tr><td style="padding: 8px 0; color: #666;">Azienda</td><td style="padding: 8px 0;">{data.get('ragione_sociale', '-')}</td></tr>
+                <tr><td style="padding: 8px 0; color: #666;">Citta</td><td style="padding: 8px 0;">{data.get('citta', '-')}</td></tr>
+                <tr><td style="padding: 8px 0; color: #666;">Superficie (mq)</td><td style="padding: 8px 0;">{data.get('superficie_mq', '-')}</td></tr>
+                <tr><td style="padding: 8px 0; color: #666;">Prodotto di interesse</td><td style="padding: 8px 0; font-weight: 600; color: #2563EB;">{tipo}</td></tr>
+                <tr><td style="padding: 8px 0; color: #666;">Privacy</td><td style="padding: 8px 0;">{'Accettata' if data.get('privacy_accettata') else 'Non indicata'}</td></tr>
             </table>
             <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px; border: 1px solid #e0e0e0;">
-                <p style="color: #666; margin: 0 0 5px; font-size: 12px; text-transform: uppercase;">Messaggio</p>
-                <p style="margin: 0; line-height: 1.6;">{data.get('messaggio', 'Nessun messaggio')}</p>
+                <p style="color: #666; margin: 0 0 5px; font-size: 12px; text-transform: uppercase;">Richiesta</p>
+                <p style="margin: 0; line-height: 1.6;">{data.get('richiesta') or data.get('messaggio', 'Nessuna richiesta')}</p>
+            </div>
+            <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px; border: 1px solid #e0e0e0;">
+                <p style="color: #666; margin: 0 0 5px; font-size: 12px; text-transform: uppercase;">Allegati caricati</p>
+                <ul style="margin: 0; padding-left: 18px; line-height: 1.6;">{attachment_list_html(data)}</ul>
             </div>
         </div>
         <div style="background: #0A0F1C; padding: 15px 30px; border-radius: 0 0 12px 12px; text-align: center;">
-            <p style="color: #94A3B8; margin: 0; font-size: 12px;">Solaris Films — Distributore Esclusivo MADICO USA</p>
+            <p style="color: #94A3B8; margin: 0; font-size: 12px;">Solaris Films - Distributore Esclusivo MADICO USA</p>
         </div>
     </div>
     """
@@ -80,7 +92,7 @@ def build_quote_email(data: dict) -> tuple:
 
 def build_contact_email(data: dict) -> tuple:
     """Build HTML email for contact form."""
-    subject = f"Nuovo Contatto — {data.get('nome', '')} {data.get('cognome', '')}"
+    subject = f"Nuovo Contatto - {data.get('nome', '')} {data.get('cognome', '')}"
     html = f"""
     <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto;">
         <div style="background: #0A0F1C; padding: 24px 30px; border-radius: 12px 12px 0 0;">
@@ -91,14 +103,21 @@ def build_contact_email(data: dict) -> tuple:
                 <tr><td style="padding: 8px 0; color: #666; width: 140px;">Nome</td><td style="padding: 8px 0; font-weight: 600;">{data.get('nome', '')} {data.get('cognome', '')}</td></tr>
                 <tr><td style="padding: 8px 0; color: #666;">Email</td><td style="padding: 8px 0;"><a href="mailto:{data.get('email', '')}">{data.get('email', '')}</a></td></tr>
                 <tr><td style="padding: 8px 0; color: #666;">Telefono</td><td style="padding: 8px 0;"><a href="tel:{data.get('telefono', '')}">{data.get('telefono', '')}</a></td></tr>
+                <tr><td style="padding: 8px 0; color: #666;">Ragione Sociale</td><td style="padding: 8px 0;">{data.get('ragione_sociale', '-')}</td></tr>
+                <tr><td style="padding: 8px 0; color: #666;">Citta</td><td style="padding: 8px 0;">{data.get('citta', '-')}</td></tr>
+                <tr><td style="padding: 8px 0; color: #666;">Privacy</td><td style="padding: 8px 0;">{'Accettata' if data.get('privacy_accettata') else 'Non indicata'}</td></tr>
             </table>
             <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px; border: 1px solid #e0e0e0;">
-                <p style="color: #666; margin: 0 0 5px; font-size: 12px; text-transform: uppercase;">Messaggio</p>
-                <p style="margin: 0; line-height: 1.6;">{data.get('messaggio', 'Nessun messaggio')}</p>
+                <p style="color: #666; margin: 0 0 5px; font-size: 12px; text-transform: uppercase;">Richiesta</p>
+                <p style="margin: 0; line-height: 1.6;">{data.get('richiesta') or data.get('messaggio', 'Nessuna richiesta')}</p>
+            </div>
+            <div style="margin-top: 20px; padding: 15px; background: white; border-radius: 8px; border: 1px solid #e0e0e0;">
+                <p style="color: #666; margin: 0 0 5px; font-size: 12px; text-transform: uppercase;">Allegati caricati</p>
+                <ul style="margin: 0; padding-left: 18px; line-height: 1.6;">{attachment_list_html(data)}</ul>
             </div>
         </div>
         <div style="background: #0A0F1C; padding: 15px 30px; border-radius: 0 0 12px 12px; text-align: center;">
-            <p style="color: #94A3B8; margin: 0; font-size: 12px;">Solaris Films — Distributore Esclusivo MADICO USA</p>
+            <p style="color: #94A3B8; margin: 0; font-size: 12px;">Solaris Films - Distributore Esclusivo MADICO USA</p>
         </div>
     </div>
     """

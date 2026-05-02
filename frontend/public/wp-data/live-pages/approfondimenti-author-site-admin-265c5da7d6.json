@@ -1,0 +1,69 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/author/site-admin/",
+  "path": "/approfondimenti/author/site-admin/",
+  "route": {
+    "type": "author",
+    "label": "Autore",
+    "newPath": "/blog/autore/site-admin/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/author-sitemap.xml",
+  "seo": {
+    "title": "site-admin, Autore presso Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/author/site-admin/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "profile",
+      "og:title": "site-admin",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/author/site-admin/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://secure.gravatar.com/avatar/40bad6423ad853101d79ffdb2767046e750759e17615b8623345e3b9f73cc89d?s=500&d=mm&r=g"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"ProfilePage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/\",\"name\":\"site-admin, Autore presso Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/pellicole_per_vetri_fake_newsjpg.jpg\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/pellicole_per_vetri_fake_newsjpg.jpg\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/pellicole_per_vetri_fake_newsjpg.jpg\",\"width\":1920,\"height\":1080},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Archivi per site-admin\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/1b2cac2104aa8c6393018d0f22a895c4\",\"name\":\"site-admin\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/40bad6423ad853101d79ffdb2767046e750759e17615b8623345e3b9f73cc89d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/40bad6423ad853101d79ffdb2767046e750759e17615b8623345e3b9f73cc89d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/40bad6423ad853101d79ffdb2767046e750759e17615b8623345e3b9f73cc89d?s=96&d=mm&r=g\",\"caption\":\"site-admin\"},\"sameAs\":[\"https:\\/\\/solarisfilms.it\"],\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/site-admin\\/\"}}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Autore: site-admin"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI E FAKE NEWS"
+    }
+  ],
+  "h1": "Autore: site-admin",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Autore: site-admin",
+      "text": "Autore: site-admin"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/approfondimenti/pellicole-vetri-fake-news/\">PELLICOLE PER VETRI E FAKE NEWS",
+      "text": "PELLICOLE PER VETRI E FAKE NEWS"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente. Nel nostro settore ci sono tanti competitor molto corretti, purtroppo ci sono alcuni che non esitano a darvi informazioni errate pur di vendervi qualcosa che non vi serve. Per questo motivo uno dei nostri obbiettivi nei [&amp;hellip;]",
+      "text": "Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente. Nel nostro settore ci sono tanti competitor molto corretti, purtroppo ci sono alcuni che non esitano a darvi informazioni errate pur di vendervi qualcosa che non vi serve. Per questo motivo uno dei nostri obbiettivi nei [&hellip;]"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Autore: site-admin PELLICOLE PER VETRI E FAKE NEWS Pellicole per vetri e fake news: noi di Solaris Films mettiamo sempre al primo posto la soddisfazione del cliente. Nel nostro settore ci sono tanti competitor molto corretti, purtroppo ci sono alcuni che non esitano a darvi informazioni errate pur di vendervi qualcosa che non vi serve. Per questo motivo uno dei nostri obbiettivi nei [&hellip;]",
+  "textLength": 396,
+  "fetchedAt": "2026-04-28T15:09:56.703Z"
+}

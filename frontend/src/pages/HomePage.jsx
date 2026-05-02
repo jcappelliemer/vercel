@@ -1,7 +1,9 @@
 import Header from '../components/Header';
 import Hero from '../components/Hero';
 import TrustBar from '../components/TrustBar';
+import NeedGuide from '../components/NeedGuide';
 import Services from '../components/Services';
+import DecisionProof from '../components/DecisionProof';
 import FocusTecnici from '../components/FocusTecnici';
 import Process from '../components/Process';
 import LoSapeviChe from '../components/LoSapeviChe';
@@ -15,14 +17,28 @@ import ChatBot from '../components/ChatBot';
 import SEO, { buildOrganizationSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { ArrowRight } from '@phosphor-icons/react';
+import { ArrowRight, Buildings, Camera, Ruler } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
 const CTASection = () => {
   const s = useSettings();
-  const titleParts = (s.cta_title || 'Il futuro del tuo spazio inizia qui').split(' ');
-  const firstHalf = titleParts.slice(0, Math.ceil(titleParts.length / 2)).join(' ');
-  const secondHalf = titleParts.slice(Math.ceil(titleParts.length / 2)).join(' ');
+  const quickItems = [
+    {
+      icon: Buildings,
+      title: s.home_cta_item1_title || 'Tipo edificio',
+      text: s.home_cta_item1_text || 'ufficio, casa, negozio o stabilimento',
+    },
+    {
+      icon: Ruler,
+      title: s.home_cta_item2_title || 'Misure indicative',
+      text: s.home_cta_item2_text || 'metri quadri o numero di vetrate',
+    },
+    {
+      icon: Camera,
+      title: s.home_cta_item3_title || 'Foto facoltative',
+      text: s.home_cta_item3_text || 'utili per valutare esposizione e vincoli',
+    },
+  ];
 
   return (
   <section className="py-32 relative overflow-hidden" data-testid="cta-section">
@@ -39,13 +55,26 @@ const CTASection = () => {
       >
         <div className="accent-bar w-16 mx-auto mb-8" />
         <h2 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white mb-6">
-          {firstHalf}
+          {s.home_cta_title || 'Descrivici il tuo edificio'}
           <br />
-          <span className="text-gradient">{secondHalf}</span>
+          <span className="text-gradient">{s.home_cta_highlight || 'ti diciamo quale pellicola usare'}</span>
         </h2>
         <p className="text-[#94A3B8] text-xl mb-10 max-w-xl mx-auto">
-          {s.cta_subtitle}
+          {s.cta_subtitle || 'Preventivo gratuito. Risposta in 24 ore.'}
         </p>
+
+        <div className="grid sm:grid-cols-3 gap-4 mb-10 text-left">
+          {quickItems.map((item) => (
+            <div key={item.title} className="rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <div className="w-11 h-11 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#2563EB]/20 to-[#EAB308]/20 border border-white/10 mb-4">
+                <item.icon size={22} weight="light" className="text-[#EAB308]" />
+              </div>
+              <div className="text-white font-semibold">{item.title}</div>
+              <p className="text-[#94A3B8] text-sm mt-2 leading-relaxed">{item.text}</p>
+            </div>
+          ))}
+        </div>
+
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link to="/preventivo" className="btn-yellow group" data-testid="cta-preventivo-bottom">
             <span>{s.hero_cta_text}</span>
@@ -69,7 +98,9 @@ const HomePage = () => {
       <main>
         <Hero />
         <TrustBar />
+        <NeedGuide />
         <Services />
+        <DecisionProof />
         <FocusTecnici />
         <Process />
         <LoSapeviChe />

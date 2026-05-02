@@ -1,0 +1,72 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+  "path": "/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+  "route": {
+    "type": "page",
+    "label": "Preventivo",
+    "newPath": "/preventivo/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/page-sitemap.xml",
+  "seo": {
+    "title": "Richiedi preventivo - Solaris Films",
+    "description": "Richiedi preventivo Compila il form, invia la tua richiesta e riceverai un preventivo entro poche ore, se necessario faremo un sopralluogo in max 48h. Nome *Cognome *AziendaCittà *Telefono *Email *Superficie (mq) *Prodotto di interesse *Richiesta * Caricamento filePuoi allegare fino a 10 file tutti insieme aggiungi file separatamente Accetto i termini e dichiaro di aver [&hellip;]",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Richiedi preventivo",
+      "og:description": "Richiedi preventivo Compila il form, invia la tua richiesta e riceverai un preventivo entro poche ore, se necessario faremo un sopralluogo in max 48h. Nome *Cognome *AziendaCittà *Telefono *Email *Superficie (mq) *Prodotto di interesse *Richiesta * Caricamento filePuoi allegare fino a 10 file tutti insieme aggiungi file separatamente Accetto i termini e dichiaro di aver [&hellip;]",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2026-03-19T11:46:57+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/preventivo\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/preventivo\\/\",\"name\":\"Richiedi preventivo - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2026-03-17T20:07:13+00:00\",\"dateModified\":\"2026-03-19T11:46:57+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/preventivo\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/preventivo\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/preventivo\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole per vetri\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Richiedi preventivo\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Richiedi preventivo"
+    },
+    {
+      "level": 1,
+      "text": "Richiedi preventivo"
+    },
+    {
+      "level": 2,
+      "text": "Compila il form, invia la tua richiesta e riceverai un preventivo entro poche ore, se necessario faremo un sopralluogo in max 48h."
+    }
+  ],
+  "h1": "Richiedi preventivo",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Richiedi preventivo",
+      "text": "Richiedi preventivo"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Compila il form, invia la tua richiesta e riceverai un preventivo entro poche ore, se necessario faremo un sopralluogo in max 48h.",
+      "text": "Compila il form, invia la tua richiesta e riceverai un preventivo entro poche ore, se necessario faremo un sopralluogo in max 48h."
+    }
+  ],
+  "contentHtml": "",
+  "text": "Richiedi preventivo Compila il form, invia la tua richiesta e riceverai un preventivo entro poche ore, se necessario faremo un sopralluogo in max 48h.",
+  "textLength": 150,
+  "fetchedAt": "2026-04-28T15:09:13.726Z"
+}

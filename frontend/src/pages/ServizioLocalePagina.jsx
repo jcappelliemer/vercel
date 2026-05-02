@@ -7,9 +7,12 @@ import { motion } from 'framer-motion';
 import { ArrowRight, MapPin, CheckCircle, Phone, WhatsappLogo } from '@phosphor-icons/react';
 import { cittaData } from '../data/siteContent';
 import { useWPData } from '../hooks/useWPData';
+import { useSettings } from '../hooks/useSettings';
+import { buildWhatsAppHref } from '../utils/contactLinks';
 
 const ServizioLocalePagina = () => {
   const { city } = useParams();
+  const settings = useSettings();
   const { data: allCitta } = useWPData('citta');
   const citta = allCitta.find(c => c.slug === city);
 
@@ -115,7 +118,7 @@ const ServizioLocalePagina = () => {
                       </div>
                       <span className="font-medium">+39 055 910 7621</span>
                     </a>
-                    <a href="https://wa.me/393925466518" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#0A0F1C] hover:text-[#25D366] transition-colors">
+                    <a href={buildWhatsAppHref(settings.whatsapp, `Ciao, vorrei informazioni sulle pellicole per vetri a ${citta.nome}.`)} target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-[#0A0F1C] hover:text-[#25D366] transition-colors">
                       <div className="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center">
                         <WhatsappLogo size={18} weight="fill" className="text-[#25D366]" />
                       </div>

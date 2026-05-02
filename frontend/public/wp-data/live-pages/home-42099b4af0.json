@@ -1,0 +1,340 @@
+{
+  "url": "https://www.solarisfilms.it/",
+  "path": "/",
+  "route": {
+    "type": "home",
+    "label": "Home",
+    "newPath": "/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/page-sitemap.xml",
+  "seo": {
+    "title": "Pellicole per vetri antisolari e di sicurezza | Preventivo in 24h",
+    "description": "Installazione pellicole per vetri antisolari, sicurezza e privacy certificate MADICO. 30 anni di esperienza, ISO 9001, garanzia 10 anni. Richiedi ora il preventivo gratuito.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/",
+    "og": {
+      "og:title": "Pellicole per Vetri: Soluzioni Antisolari e di Sicurezza per Ogni Esigenza",
+      "og:description": "Installazione pellicole per vetri antisolari, sicurezza e privacy certificate MADICO. 30 anni di esperienza, ISO 9001, garanzia 10 anni. Richiedi ora il preventivo gratuito.",
+      "og:locale": "it_IT",
+      "og:type": "website",
+      "og:url": "https://www.solarisfilms.it/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {
+      "article:modified_time": "2026-04-27T11:35:14+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Pellicole per vetri antisolari e di sicurezza | Preventivo in 24h\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"datePublished\":\"2025-05-12T13:28:46+00:00\",\"dateModified\":\"2026-04-27T11:35:14+00:00\",\"description\":\"Installazione pellicole per vetri antisolari, sicurezza e privacy certificate MADICO. 30 anni di esperienza, ISO 9001, garanzia 10 anni. Richiedi ora il preventivo gratuito.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri"
+    },
+    {
+      "level": 2,
+      "text": "Distributore ufficiale ed installatore esclusivo MADICO USA, le originali pellicole per vetri direttamente da chi le produce."
+    },
+    {
+      "level": 2,
+      "text": "Pellicole Antisolari"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole di Sicurezza"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole Privacy e Design"
+    },
+    {
+      "level": 3,
+      "text": "Cosa sono le pellicole antisolari?"
+    },
+    {
+      "level": 3,
+      "text": "Pellicole per vetri di sicurezza"
+    },
+    {
+      "level": 3,
+      "text": "Pellicole opacizzanti - Pellicole privacy - Pellicole design"
+    },
+    {
+      "level": 3,
+      "text": "Novità - Pellicola fotocromatica"
+    },
+    {
+      "level": 3,
+      "text": "Scegli al meglio la tua pellicola per vetri!"
+    },
+    {
+      "level": 3,
+      "text": "La precisione artigianale per un risultato garantito"
+    },
+    {
+      "level": 3,
+      "text": "Perchè dovreste scegliere noi?"
+    },
+    {
+      "level": 3,
+      "text": "Pellicole per vetri al servizio del cliente"
+    },
+    {
+      "level": 4,
+      "text": "ISO 9001"
+    }
+  ],
+  "h1": "Pellicole per vetri",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri",
+      "text": "Pellicole per vetri"
+    },
+    {
+      "type": "paragraph",
+      "html": "Oltre il vetro, proteggiamo il vostro spazio",
+      "text": "Oltre il vetro, proteggiamo il vostro spazio"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Distributore ufficiale ed installatore esclusivo  MADICO USA, le originali pellicole per vetri direttamente da chi le produce.",
+      "text": "Distributore ufficiale ed installatore esclusivo MADICO USA, le originali pellicole per vetri direttamente da chi le produce."
+    },
+    {
+      "type": "paragraph",
+      "html": "Distribuiamo in Italia ed in Spagna le pellicole MADICO U.S.A. le originali pellicole per vetri.",
+      "text": "Distribuiamo in Italia ed in Spagna le pellicole MADICO U.S.A. le originali pellicole per vetri."
+    },
+    {
+      "type": "paragraph",
+      "html": "Installiamo direttamente e tramite i nostri partner pellicole per vetri da 40 anni, con passione, competenza e professionalit&#xE0;, perch&#xE8; intendiamo portare una visione ecocompatibile in edilizia, implementando soluzioni in grado di abbassare le emissioni, il consumo di energia e migliorare la sostenibilit&#xE0; ambientale degli edifici.",
+      "text": "Installiamo direttamente e tramite i nostri partner pellicole per vetri da 40 anni, con passione, competenza e professionalità, perchè intendiamo portare una visione ecocompatibile in edilizia, implementando soluzioni in grado di abbassare le emissioni, il consumo di energia e migliorare la sostenibilità ambientale degli edifici."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Il nostro obiettivo &#xE8; la soddisfazione del cliente; per questo vi accompagniamo in ogni fase, dal preventivo alla posa in opera, ritagliando la soluzione perfetta per le vostre esigenze.",
+      "text": "Il nostro obiettivo è la soddisfazione del cliente; per questo vi accompagniamo in ogni fase, dal preventivo alla posa in opera, ritagliando la soluzione perfetta per le vostre esigenze."
+    },
+    {
+      "type": "paragraph",
+      "html": "Affidati ai professionisti delle pellicole per vetri, scegli Solaris Films.",
+      "text": "Affidati ai professionisti delle pellicole per vetri, scegli Solaris Films."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole<br>Antisolari",
+      "text": "PellicoleAntisolari"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole di<br>Sicurezza",
+      "text": "Pellicole diSicurezza"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole Privacy e Design",
+      "text": "Pellicole Privacy e Design"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/pellicole-decorative-per-vetri/",
+      "text": "Scopri +",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Anni d'esperienza",
+      "value": "30",
+      "text": "Anni d'esperienza 30",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Agenti sul territorio",
+      "value": "20",
+      "text": "Agenti sul territorio 20",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Mq / anno installati",
+      "value": "50000",
+      "text": "Mq / anno installati 50000",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Prodotti specifici",
+      "value": "60",
+      "text": "Prodotti specifici 60",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Cosa sono le pellicole antisolari?",
+      "text": "Cosa sono le pellicole antisolari?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole per vetri antisolari sono dei film composti da strati protettivi che, agendo per riflessione delle varie componenti dell&#x2019;energia solare, riducono drasticamente il passaggio di calore all&#x2019;interno delle finestre. Questo avviene riflettendo la componente IR, i raggi UV e parte del visibile.",
+      "text": "Le pellicole per vetri antisolari sono dei film composti da strati protettivi che, agendo per riflessione delle varie componenti dell’energia solare, riducono drasticamente il passaggio di calore all’interno delle finestre. Questo avviene riflettendo la componente IR, i raggi UV e parte del visibile."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sono dunque la soluzione ideale, economica, ecologica e di design contro il surriscaldamento dovuto al calore solare negli edifici con superfici vetrate.",
+      "text": "Le pellicole antisolari sono dunque la soluzione ideale, economica, ecologica e di design contro il surriscaldamento dovuto al calore solare negli edifici con superfici vetrate."
+    },
+    {
+      "type": "paragraph",
+      "html": "Il nostro produttore di riferimento &#xE8; l&#x2019;americana&#xA0;<em><a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\"><strong>MADICO.&#xA0;La sicurezza di installare i prodotti di un&#x2019;azienda con oltre 100 anni di storia nel settore &#xE8; una garanzia di qualit&#xE0; ed efficienza. I&#xA0;prodotti sono distribuiti in esclusiva per l&#x2019;Italia da&#xA0;<strong><em><a href=\"http://www.tecnosolar.it/\" target=\"_blank\" rel=\"noopener noreferrer\">TECNOSOLAR<strong>,&#xA0;nostro partner in ogni progetto.",
+      "text": "Il nostro produttore di riferimento è l’americana MADICO. La sicurezza di installare i prodotti di un’azienda con oltre 100 anni di storia nel settore è una garanzia di qualità ed efficienza. I prodotti sono distribuiti in esclusiva per l’Italia da TECNOSOLAR, nostro partner in ogni progetto."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Pellicole per vetri di sicurezza",
+      "text": "Pellicole per vetri di sicurezza"
+    },
+    {
+      "type": "paragraph",
+      "html": "Solaris Films installa da pi&#xF9; di 30 anni pellicole per vetri di sicurezza e antiesplosione che rendono le vostre superfici vetrate &#x2018;vetri di sicurezza&#x2019; secondo la norma UNI EN 12600: 2004.",
+      "text": "Solaris Films installa da più di 30 anni pellicole per vetri di sicurezza e antiesplosione che rendono le vostre superfici vetrate ‘vetri di sicurezza’ secondo la norma UNI EN 12600: 2004."
+    },
+    {
+      "type": "paragraph",
+      "html": "Sono film che servono a migliorare la resistenza delle vetrate. Il loro compito &#xE8; rinforzare la vetrata sulla quale vengono applicate per permetterle di non frantumarsi anche a seguito dell&#x2019;onda d&#x2019;urto di una deflagrazione esterna o di un urto.",
+      "text": "Sono film che servono a migliorare la resistenza delle vetrate. Il loro compito è rinforzare la vetrata sulla quale vengono applicate per permetterle di non frantumarsi anche a seguito dell’onda d’urto di una deflagrazione esterna o di un urto."
+    },
+    {
+      "type": "paragraph",
+      "html": "Tutela la sicurezza dei tuoi cari e dei tuoi dipendenti con le pellicole per vetri di sicurezza! Se vuoi maggiori info clicca&#xA0;<strong><em><a href=\"/pellicole-di-sicurezza/\">QUI!",
+      "text": "Tutela la sicurezza dei tuoi cari e dei tuoi dipendenti con le pellicole per vetri di sicurezza! Se vuoi maggiori info clicca QUI!"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Pellicole opacizzanti - Pellicole privacy - Pellicole design",
+      "text": "Pellicole opacizzanti - Pellicole privacy - Pellicole design"
+    },
+    {
+      "type": "paragraph",
+      "html": "Queste pellicole servono a rendere satinati i vetri per impedire la visione dall&#x2019;esterno. Esistono numerose varianti di disegno base e di colorazioni.<br>Scegli il motivo che pi&#xF9; ti piace e modellalo secondo i tuoi gusti, potrai esprimere la tua creativit&#xE0; ed avere contemporaneamente discrezione per le tue superfici vetrate!",
+      "text": "Queste pellicole servono a rendere satinati i vetri per impedire la visione dall’esterno. Esistono numerose varianti di disegno base e di colorazioni.Scegli il motivo che più ti piace e modellalo secondo i tuoi gusti, potrai esprimere la tua creatività ed avere contemporaneamente discrezione per le tue superfici vetrate!"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;effetto &#xE8; veramente sorprendente!<br>Essendo la superficie opaca ottimizzata per la proiezione in 4k pu&#xF2; infatti trasformare una superficie vetrata in un grande schermo. Pu&#xF2; inoltre garantirvi una privacy modulabile in base alle vostre esigenze, non intaccando la trasparenza del vetro nelle situazioni in cui volete godere della vista esterna.",
+      "text": "L’effetto è veramente sorprendente!Essendo la superficie opaca ottimizzata per la proiezione in 4k può infatti trasformare una superficie vetrata in un grande schermo. Può inoltre garantirvi una privacy modulabile in base alle vostre esigenze, non intaccando la trasparenza del vetro nelle situazioni in cui volete godere della vista esterna."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Novit&#xE0; - Pellicola fotocromatica",
+      "text": "Novità - Pellicola fotocromatica"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola per vetri fotocromatica &#xE8; in grado di scurirsi o rischiararsi in base all&#x2019;aumento o alla diminuzione della luce solare. Questa caratteristica permette alla pellicola di oscurare i vetri automaticamente e senza elettricit&#xE0;.",
+      "text": "La pellicola per vetri fotocromatica è in grado di scurirsi o rischiararsi in base all’aumento o alla diminuzione della luce solare. Questa caratteristica permette alla pellicola di oscurare i vetri automaticamente e senza elettricità."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Ma come funzionano le pellicole fotocromatiche? Come riescono a scurirsi?",
+      "text": "Ma come funzionano le pellicole fotocromatiche? Come riescono a scurirsi?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Queste pellicole per vetri sono composti da strati di poliestere che racchiudono sostanze sensibili alla luce solare. Queste sostanze cambiano la loro struttura chimica quando sono colpite dai raggi UV e formano una trama che scurisce la pellicola. Godetevi al massimo le vostre vetrate ed i vostri spazi, senza rinunciare n&#xE9; alla protezione antisolare n&#xE9; alla visuale offerta dal vostro vetro! Volete saperne di pi&#xF9;? Cliccate&#xA0;<a href=\"/pellicole-per-vetri/approfondimenti-design/\"><strong>QUI!",
+      "text": "Queste pellicole per vetri sono composti da strati di poliestere che racchiudono sostanze sensibili alla luce solare. Queste sostanze cambiano la loro struttura chimica quando sono colpite dai raggi UV e formano una trama che scurisce la pellicola. Godetevi al massimo le vostre vetrate ed i vostri spazi, senza rinunciare né alla protezione antisolare né alla visuale offerta dal vostro vetro! Volete saperne di più? Cliccate QUI!"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Scegli al meglio la tua pellicola per vetri!",
+      "text": "Scegli al meglio la tua pellicola per vetri!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Con trent&#x2019;anni di esperienza nel settore possiamo seguirvi in ogni passo dalla scelta della pellicola alle esigenze di installazione. Voi mettetevi comodi: penseremo a tutto noi!",
+      "text": "Con trent’anni di esperienza nel settore possiamo seguirvi in ogni passo dalla scelta della pellicola alle esigenze di installazione. Voi mettetevi comodi: penseremo a tutto noi!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Che siate un privato, un professionista, un general contractor, un ente pubblico o privato siamo in grado di gestire per voi qualsiasi progetto, con qualsiasi pellicola, in qualunque condizione.",
+      "text": "Che siate un privato, un professionista, un general contractor, un ente pubblico o privato siamo in grado di gestire per voi qualsiasi progetto, con qualsiasi pellicola, in qualunque condizione."
+    },
+    {
+      "type": "paragraph",
+      "html": "Solaris Films, scegli il meglio.",
+      "text": "Solaris Films, scegli il meglio."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "La precisione artigianale per un risultato garantito",
+      "text": "La precisione artigianale per un risultato garantito"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il nostro personale tecnico &#xE8; selezionato e formato con grande cura per poter risolvere ogni problematica inerente le vostre superfici vetrate.",
+      "text": "Il nostro personale tecnico è selezionato e formato con grande cura per poter risolvere ogni problematica inerente le vostre superfici vetrate."
+    },
+    {
+      "type": "paragraph",
+      "html": "I nostri installatori sono professionisti seri ed efficienti, in grado di poter lavorare in qualsiasi condizione ed applicare qualsiasi tipo di pellicola per vetri.",
+      "text": "I nostri installatori sono professionisti seri ed efficienti, in grado di poter lavorare in qualsiasi condizione ed applicare qualsiasi tipo di pellicola per vetri."
+    },
+    {
+      "type": "paragraph",
+      "html": "Per questo possiamo garantirvi fino a 10 anni di assistenza sulle nostre installazioni di pellicole per vetri!",
+      "text": "Per questo possiamo garantirvi fino a 10 anni di assistenza sulle nostre installazioni di pellicole per vetri!"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Perch&#xE8; dovreste scegliere noi?",
+      "text": "Perchè dovreste scegliere noi?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Perch&#xE9; abbiamo trent&#x2019;anni di esperienza nell&#x2019;installazione di pellicole per vetri. Inoltre installiamo solo le migliori pellicole per vetri al mondo. Ma ancora pi&#xF9; importante perch&#xE9; il nostro obbiettivo &#xE8; risolvere qualsiasi problema inerente le superfici vetrate; per questo cerchiamo sempre le pellicole per vetri pi&#xF9; all&#x2019;avanguardia del mercato. Perch&#xE9; i nostri operai sono altamente specializzati e possono lavorare in qualsiasi condizione, installando pellicole per vetri anche in corda. Perch&#xE9; sappiamo che le nostre pellicole per vetri rendono pi&#xF9; sicure e sostenibili le vostre vite. Perch&#xE9; per noi applicare le pellicole per vetri non &#xE8; solo un mestiere, &#xE8; una passione.",
+      "text": "Perché abbiamo trent’anni di esperienza nell’installazione di pellicole per vetri. Inoltre installiamo solo le migliori pellicole per vetri al mondo. Ma ancora più importante perché il nostro obbiettivo è risolvere qualsiasi problema inerente le superfici vetrate; per questo cerchiamo sempre le pellicole per vetri più all’avanguardia del mercato. Perché i nostri operai sono altamente specializzati e possono lavorare in qualsiasi condizione, installando pellicole per vetri anche in corda. Perché sappiamo che le nostre pellicole per vetri rendono più sicure e sostenibili le vostre vite. Perché per noi applicare le pellicole per vetri non è solo un mestiere, è una passione."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Pellicole per vetri al servizio del cliente",
+      "text": "Pellicole per vetri al servizio del cliente"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "ISO 9001",
+      "text": "ISO 9001"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il nostro obiettivo non &#xE8; semplicemente montare pellicole per vetri ma &#xE8; sempre e solo la soddisfazione del cliente, per questo abbiamo deciso di&#xA0;<strong>certificarci ISO 9001.<br>Che significa? Che mettiamo&#xA0;<strong>al primo posto la soddisfazione dei nostri clienti&#xA0;in merito ai prodotti e servizi forniti. Soprattutto puntiamo costantemente al miglioramento delle prestazioni aziendali ed&#xA0;<strong>assicuriamo ai nostri clienti&#xA0;il mantenimento e<strong>&#xA0;il miglioramento nel tempo della qualit&#xE0; dei&#xA0;<strong>nostri beni e servizi.&#xA0;Che installiamo pellicole per vetri in tutta Italia, con passione ed abnegazione.",
+      "text": "Il nostro obiettivo non è semplicemente montare pellicole per vetri ma è sempre e solo la soddisfazione del cliente, per questo abbiamo deciso di certificarci ISO 9001.Che significa? Che mettiamo al primo posto la soddisfazione dei nostri clienti in merito ai prodotti e servizi forniti. Soprattutto puntiamo costantemente al miglioramento delle prestazioni aziendali ed assicuriamo ai nostri clienti il mantenimento e il miglioramento nel tempo della qualità dei nostri beni e servizi. Che installiamo pellicole per vetri in tutta Italia, con passione ed abnegazione."
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri Oltre il vetro, proteggiamo il vostro spazio Distributore ufficiale ed installatore esclusivo MADICO USA, le originali pellicole per vetri direttamente da chi le produce. Distribuiamo in Italia ed in Spagna le pellicole MADICO U.S.A. le originali pellicole per vetri. Installiamo direttamente e tramite i nostri partner pellicole per vetri da 40 anni, con passione, competenza e professionalità, perchè intendiamo portare una visione ecocompatibile in edilizia, implementando soluzioni in grado di abbassare le emissioni, il consumo di energia e migliorare la sostenibilità ambientale degli edifici. Il nostro obiettivo è la soddisfazione del cliente; per questo vi accompagniamo in ogni fase, dal preventivo alla posa in opera, ritagliando la soluzione perfetta per le vostre esigenze. Affidati ai professionisti delle pellicole per vetri, scegli Solaris Films. PellicoleAntisolari Pellicole diSicurezza Pellicole Privacy e Design Scopri + Anni d'esperienza 30 Agenti sul territorio 20 Mq / anno installati 50000 Prodotti specifici 60 Cosa sono le pellicole antisolari? Le pellicole per vetri antisolari sono dei film composti da strati protettivi che, agendo per riflessione delle varie componenti dell’energia solare, riducono drasticamente il passaggio di calore all’interno delle finestre. Questo avviene riflettendo la componente IR, i raggi UV e parte del visibile. Le pellicole antisolari sono dunque la soluzione ideale, economica, ecologica e di design contro il surriscaldamento dovuto al calore solare negli edifici con superfici vetrate. Il nostro produttore di riferimento è l’americana MADICO. La sicurezza di installare i prodotti di un’azienda con oltre 100 anni di storia nel settore è una garanzia di qualità ed efficienza. I prodotti sono distribuiti in esclusiva per l’Italia da TECNOSOLAR, nostro partner in ogni progetto. Pellicole per vetri di sicurezza Solaris Films installa da più di 30 anni pellicole per vetri di sicurezza e antiesplosione che rendono le vostre superfici vetrate ‘vetri di sicurezza’ secondo la norma UNI EN 12600: 2004. Sono film che servono a migliorare la resistenza delle vetrate. Il loro compito è rinforzare la vetrata sulla quale vengono applicate per permetterle di non frantumarsi anche a seguito dell’onda d’urto di una deflagrazione esterna o di un urto. Tutela la sicurezza dei tuoi cari e dei tuoi dipendenti con le pellicole per vetri di sicurezza! Se vuoi maggiori info clicca QUI! Pellicole opacizzanti - Pellicole privacy - Pellicole design Queste pellicole servono a rendere satinati i vetri per impedire la visione dall’esterno. Esistono numerose varianti di disegno base e di colorazioni.Scegli il motivo che più ti piace e modellalo secondo i tuoi gusti, potrai esprimere la tua creatività ed avere contemporaneamente discrezione per le tue superfici vetrate! L’effetto è veramente sorprendente!Essendo la superficie opaca ottimizzata per la proiezione in 4k può infatti trasformare una superficie vetrata in un grande schermo. Può inoltre garantirvi una privacy modulabile in base alle vostre esigenze, non intaccando la trasparenza del vetro nelle situazioni in cui volete godere della vista esterna. Novità - Pellicola fotocromatica La pellicola per vetri fotocromatica è in grado di scurirsi o rischiararsi in base all’aumento o alla diminuzione della luce solare. Questa caratteristica permette alla pellicola di oscurare i vetri automaticamente e senza elettricità. Ma come funzionano le pellicole fotocromatiche? Come riescono a scurirsi? Queste pellicole per vetri sono composti da strati di poliestere che racchiudono sostanze sensibili alla luce solare. Queste sostanze cambiano la loro struttura chimica quando sono colpite dai raggi UV e formano una trama che scurisce la pellicola. Godetevi al massimo le vostre vetrate ed i vostri spazi, senza rinunciare né alla protezione antisolare né alla visuale offerta dal vostro vetro! Volete saperne di più? Cliccate QUI! Scegli al meglio la tua pellicola per vetri! Con trent’anni di esperienza nel settore possiamo seguirvi in ogni passo dalla scelta della pellicola alle esigenze di installazione. Voi mettetevi comodi: penseremo a tutto noi! Che siate un privato, un professionista, un general contractor, un ente pubblico o privato siamo in grado di gestire per voi qualsiasi progetto, con qualsiasi pellicola, in qualunque condizione. Solaris Films, scegli il meglio. La precisione artigianale per un risultato garantito Il nostro personale tecnico è selezionato e formato con grande cura per poter risolvere ogni problematica inerente le vostre superfici vetrate. I nostri installatori sono professionisti seri ed efficienti, in grado di poter lavorare in qualsiasi condizione ed applicare qualsiasi tipo di pellicola per vetri. Per questo possiamo garantirvi fino a 10 anni di assistenza sulle nostre installazioni di pellicole per vetri! Perchè dovreste scegliere noi? Perché abbiamo trent’anni di esperienza nell’installazione di pellicole per vetri. Inoltre installiamo solo le migliori pellicole per vetri al mondo. Ma ancora più importante perché il nostro obbiettivo è risolvere qualsiasi problema inerente le superfici vetrate; per questo cerchiamo sempre le pellicole per vetri più all’avanguardia del mercato. Perché i nostri operai sono altamente specializzati e possono lavorare in qualsiasi condizione, installando pellicole per vetri anche in corda. Perché sappiamo che le nostre pellicole per vetri rendono più sicure e sostenibili le vostre vite. Perché per noi applicare le pellicole per vetri non è solo un mestiere, è una passione. Pellicole per vetri al servizio del cliente ISO 9001 Il nostro obiettivo non è semplicemente montare pellicole per vetri ma è sempre e solo la soddisfazione del cliente, per questo abbiamo deciso di certificarci ISO 9001.Che significa? Che mettiamo al primo posto la soddisfazione dei nostri clienti in merito ai prodotti e servizi forniti. Soprattutto puntiamo costantemente al miglioramento delle prestazioni aziendali ed assicuriamo ai nostri clienti il mantenimento e il miglioramento nel tempo della qualità dei nostri beni e servizi. Che installiamo pellicole per vetri in tutta Italia, con passione ed abnegazione.",
+  "textLength": 6222,
+  "fetchedAt": "2026-04-28T15:09:04.817Z"
+}

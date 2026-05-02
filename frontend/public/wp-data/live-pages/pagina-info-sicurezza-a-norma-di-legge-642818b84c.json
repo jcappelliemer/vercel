@@ -1,0 +1,229 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/sicurezza-a-norma-di-legge/",
+  "path": "/pagina-info/sicurezza-a-norma-di-legge/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/sicurezza-a-norma-di-legge/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Sicurezza a norma di legge - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/sicurezza-a-norma-di-legge/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Sicurezza a norma di legge",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pagina-info/sicurezza-a-norma-di-legge/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-15T20:33:03+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sicurezza-a-norma-di-legge\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sicurezza-a-norma-di-legge\\/\",\"name\":\"Sicurezza a norma di legge - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-11T09:39:49+00:00\",\"dateModified\":\"2025-09-15T20:33:03+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sicurezza-a-norma-di-legge\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sicurezza-a-norma-di-legge\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/sicurezza-a-norma-di-legge\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sicurezza a norma di legge\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Sicurezza a norma di legge"
+    },
+    {
+      "level": 3,
+      "text": "I PROBLEMI LEGATI ALLE SUPERFICI VETRATE E LE SOLUZIONI DELLE PELLICOLE PER VETRI"
+    },
+    {
+      "level": 3,
+      "text": "LA SOLUZIONE"
+    }
+  ],
+  "h1": "Sicurezza a norma di legge",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Sicurezza a norma di legge",
+      "text": "Sicurezza a norma di legge"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "I PROBLEMI LEGATI ALLE SUPERFICI VETRATE E LE SOLUZIONI DELLE PELLICOLE PER VETRI",
+      "text": "I PROBLEMI LEGATI ALLE SUPERFICI VETRATE E LE SOLUZIONI DELLE PELLICOLE PER VETRI"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il vetro, l&#x2019;elemento maggiormente usato nell&#x2019;edilizia e nell&#x2019;architettura moderna, pu&#xF2; essere estremamente pericoloso e in caso di rottura viene costantemente sottovalutato in rapporto ai danni che pu&#xF2; provocare a persone o cose. Scoppi, urti violenti, atti vandalici, esplosioni, ma anche semplici rotture accidentali possono arrecare gravi ferite alle persone o danneggiare l&#x2019;ambiente circostante.",
+      "text": "Il vetro, l’elemento maggiormente usato nell’edilizia e nell’architettura moderna, può essere estremamente pericoloso e in caso di rottura viene costantemente sottovalutato in rapporto ai danni che può provocare a persone o cose. Scoppi, urti violenti, atti vandalici, esplosioni, ma anche semplici rotture accidentali possono arrecare gravi ferite alle persone o danneggiare l’ambiente circostante."
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; importante tuttavia avere una profonda conoscenza delle&#xA0;<a href=\"https://www.tecnosolar.it/il-vetro/\" target=\"_blank\" rel=\"noopener noreferrer\">caratteristiche del vetro&#xA0;in modo tale da affrontare le problematiche legate ad esso in modo professionale.&#xA0;<b>Occorre dunque rivolgersi a personale altamente professionale per istallare pellicole per vetri a norma di legge.",
+      "text": "E’ importante tuttavia avere una profonda conoscenza delle caratteristiche del vetro in modo tale da affrontare le problematiche legate ad esso in modo professionale. Occorre dunque rivolgersi a personale altamente professionale per istallare pellicole per vetri a norma di legge."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>La sicurezza delle superficie vetrate nei luoghi di lavoro &#xE8; obbligatoria come prescritto dal D.Lgs. 81/2008.",
+      "text": "La sicurezza delle superficie vetrate nei luoghi di lavoro è obbligatoria come prescritto dal D.Lgs. 81/2008."
+    },
+    {
+      "type": "paragraph",
+      "html": "Il D.Lgs. 81/2008 denominato &#x201C;Testo unico sulla sicurezza&#x201D; &#xE8; entrato in vigore il 15 maggio 2008, disciplina il campo della tutela della salute e della sicurezza dei lavoratori negli ambienti di lavoro.",
+      "text": "Il D.Lgs. 81/2008 denominato “Testo unico sulla sicurezza” è entrato in vigore il 15 maggio 2008, disciplina il campo della tutela della salute e della sicurezza dei lavoratori negli ambienti di lavoro."
+    },
+    {
+      "type": "paragraph",
+      "html": "In riferimento alle superfici vetrate il testo unico elenca una serie di articoli:",
+      "text": "In riferimento alle superfici vetrate il testo unico elenca una serie di articoli:"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Comma 1.3.6. del Testo Unico&#xA0;<i>(allegato IV)<b>:&#xA0;Le pareti trasparenti o traslucide, in particolare le pareti completamente vetrate, nei locali o nelle vicinanze dei posti di lavoro e delle vie di circolazione, devono essere chiaramente segnalate e costituite da materiali di sicurezza fino all&#x2019;altezza di 1 metro dal pavimento, ovvero essere separate dai posti di lavoro e dalle vie di circolazione succitati in modo tale che i lavoratori non possano entrare in contatto con le pareti, ne rimanere feriti qualora esse vadano in frantumi. Nel caso in cui vengano utilizzati materiali di sicurezza fino all&#x2019; altezza di 1 metro dal pavimento , tale altezza &#xE8; elevata quando ci&#xF2; &#xE8; necessario in relazione al rischio che i lavoratori rimangano feriti qualora essi vadano in frantumi.",
+      "text": "Comma 1.3.6. del Testo Unico (allegato IV): Le pareti trasparenti o traslucide, in particolare le pareti completamente vetrate, nei locali o nelle vicinanze dei posti di lavoro e delle vie di circolazione, devono essere chiaramente segnalate e costituite da materiali di sicurezza fino all’altezza di 1 metro dal pavimento, ovvero essere separate dai posti di lavoro e dalle vie di circolazione succitati in modo tale che i lavoratori non possano entrare in contatto con le pareti, ne rimanere feriti qualora esse vadano in frantumi. Nel caso in cui vengano utilizzati materiali di sicurezza fino all’ altezza di 1 metro dal pavimento , tale altezza è elevata quando ciò è necessario in relazione al rischio che i lavoratori rimangano feriti qualora essi vadano in frantumi."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Comma 1.6.11 del Testo Unico&#xA0;<i>(allegato IV)<b>:&#xA0;Se le superfici trasparenti o traslucide delle porte e dei portoni non sono costituite da materiali di sicurezza e c&#x2019;&#xE8; il rischio che i lavoratori possano rimanere feriti in caso di rottura di dette superfici, queste devono essere protette contro lo sfondamento.",
+      "text": "Comma 1.6.11 del Testo Unico (allegato IV): Se le superfici trasparenti o traslucide delle porte e dei portoni non sono costituite da materiali di sicurezza e c’è il rischio che i lavoratori possano rimanere feriti in caso di rottura di dette superfici, queste devono essere protette contro lo sfondamento."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Gli articoli sono espliciti, essi obbligano la messa in sicurezza delle superficie vetrate per evitare grave ferimenti alle persone. L&#x2019;uso di pellicole per vetri sono una risposta a norma di legge a tale esigenza.",
+      "text": "Gli articoli sono espliciti, essi obbligano la messa in sicurezza delle superficie vetrate per evitare grave ferimenti alle persone. L’uso di pellicole per vetri sono una risposta a norma di legge a tale esigenza."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>UNI 7697/2015&#xA0;<i>(punto 1 &#x2013; Scopo e campo di applicazione):&#xA0;La presente norma fornisce i criteri di scelta dei vetri da impiegarsi,sia in esterni che in interni, in modo che, nella destinazione di impiego prevista, sia assicurata la rispondenza tra prestazioni dei vetri e requisiti minimi necessari per la sicurezza dell&#x2019;utenza.",
+      "text": "UNI 7697/2015 (punto 1 – Scopo e campo di applicazione): La presente norma fornisce i criteri di scelta dei vetri da impiegarsi,sia in esterni che in interni, in modo che, nella destinazione di impiego prevista, sia assicurata la rispondenza tra prestazioni dei vetri e requisiti minimi necessari per la sicurezza dell’utenza."
+    },
+    {
+      "type": "paragraph",
+      "html": "In merito le linee guida sull&#x2019;attuazione di questi articoli l&#x2019; ISPELS cita: &#x201C;[&#x2026;] si pu&#xF2; applicare una pellicola di sicurezza, valutando nella scelta del tipo il pi&#xF9; idoneo da impiegare&#x201D; .",
+      "text": "In merito le linee guida sull’attuazione di questi articoli l’ ISPELS cita: “[…] si può applicare una pellicola di sicurezza, valutando nella scelta del tipo il più idoneo da impiegare” ."
+    },
+    {
+      "type": "paragraph",
+      "html": "Nel valutare l&#x2019; adeguamento della superficie vetrata o la sostituzione degli stessi bisogna tener conto di ulteriori fattori, la sostituzione di un vetro semplice con un vetro stratificato comporta una serie di problematiche molte volte trascurate, che in caso di incidente o infortuni l&#x2019;intervento non risulta a norma.",
+      "text": "Nel valutare l’ adeguamento della superficie vetrata o la sostituzione degli stessi bisogna tener conto di ulteriori fattori, la sostituzione di un vetro semplice con un vetro stratificato comporta una serie di problematiche molte volte trascurate, che in caso di incidente o infortuni l’intervento non risulta a norma."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Le norme UNI riportano:",
+      "text": "Le norme UNI riportano:"
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>UNI 7697&#xA0;<i>(punto 5 &#x2013; Posa delle lastre): Telai e scanalature di contenimento non devono compromettere le caratteristiche e le prestazioni della vetrata.",
+      "text": "UNI 7697 (punto 5 – Posa delle lastre): Telai e scanalature di contenimento non devono compromettere le caratteristiche e le prestazioni della vetrata."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>UNI 6534&#xA0;<i>(punto 3.3 &#x2013; Serramenti): I serramenti devono essere costruiti in modo da essere sufficientemente solidi in rapporto alla massa delle lastre, alle sollecitazioni previste ed all&#x2019;usura meccanica.",
+      "text": "UNI 6534 (punto 3.3 – Serramenti): I serramenti devono essere costruiti in modo da essere sufficientemente solidi in rapporto alla massa delle lastre, alle sollecitazioni previste ed all’usura meccanica."
+    },
+    {
+      "type": "paragraph",
+      "html": "Nel progettare un serramento prima si determinano lo spessore, la dimensione e il peso del vetro e successivamente si realizza un serramento idoneo.",
+      "text": "Nel progettare un serramento prima si determinano lo spessore, la dimensione e il peso del vetro e successivamente si realizza un serramento idoneo."
+    },
+    {
+      "type": "paragraph",
+      "html": "E&#x2019; evidente che sostituire un normale vetro di 3 mm con un vetro stratificato comporta delle problematiche da non sottovalutare, nella maggioranza dei casi comporta anche la sostituzione del serramento stesso con dei costi non indifferenti, considerando le varie opere murarie che ne conseguono.",
+      "text": "E’ evidente che sostituire un normale vetro di 3 mm con un vetro stratificato comporta delle problematiche da non sottovalutare, nella maggioranza dei casi comporta anche la sostituzione del serramento stesso con dei costi non indifferenti, considerando le varie opere murarie che ne conseguono."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "LA SOLUZIONE",
+      "text": "LA SOLUZIONE"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole di sicurezza MADICO grazie ad una avanzata ricerca permettono la &#x201C;messa in sicurezza&#x201D; di qualsiasi vetrata, obbligatoria nei luoghi di lavoro come prescritto dal Testo Unico Decreto Legislativo 9 aprile 2008, n.81. e varie Norme UNI EN ISO di riferimento, pertanto permettono di modificare un normale vetro in un &#x201C;vetro di sicurezza&#x201D; di diverse tipologie:",
+      "text": "Le pellicole di sicurezza MADICO grazie ad una avanzata ricerca permettono la “messa in sicurezza” di qualsiasi vetrata, obbligatoria nei luoghi di lavoro come prescritto dal Testo Unico Decreto Legislativo 9 aprile 2008, n.81. e varie Norme UNI EN ISO di riferimento, pertanto permettono di modificare un normale vetro in un “vetro di sicurezza” di diverse tipologie:"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>&amp;gt;&amp;gt; VETRI STRATIFICATI DI SICUREZZA<br>\n<strong>&amp;gt;&amp;gt; VETRI DI SICUREZZA CONTRO L&#x2019; ATTACCO MANUALE<br>\n<strong>&amp;gt;&amp;gt; VETRI ANTIPROIETTILE in VETRI ANTIPROIETTILE ANTISCHEGGIA<br>\n<strong>&amp;gt;&amp;gt; VETRI DI SICUREZZA RESISTENTI ALLA PRESSIONE CAUSATA DA&#xA0;<strong>ESPLOSIONE &#x2013; VETRI ANTIBOMBA",
+      "text": ">> VETRI STRATIFICATI DI SICUREZZA >> VETRI DI SICUREZZA CONTRO L’ ATTACCO MANUALE >> VETRI ANTIPROIETTILE in VETRI ANTIPROIETTILE ANTISCHEGGIA >> VETRI DI SICUREZZA RESISTENTI ALLA PRESSIONE CAUSATA DA ESPLOSIONE – VETRI ANTIBOMBA"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ogni pellicola pu&#xF2; essere applicata sui vetri gi&#xE0; esistenti con un&#x2019; operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attivit&#xE0; lavorativa.",
+      "text": "Ogni pellicola può essere applicata sui vetri già esistenti con un’ operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attività lavorativa."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Il D.Lgs. 81/2008 &#x201C;Testo Unico&#x201D;&#xA0;oltre alla sicurezza dei vetri tiene<b>&#xA0;conto anche del&#xA0;<b>micro clima nelle aree di lavoro,<b>&#xA0;sulle superficie vetrate cita alcuni articoli tra questi:<br>\n<b><br>\nComma 1.9.2.4 del Testo Unico&#xA0;<i>(allegato IV):&#xA0;Le finestre, i lucernari e le pareti vetrate devono essere tali da evitare un soleggiamento eccessivo dei luoghi di lavoro, tenendo conto del tipo di attivit&#xE0; e della natura del luogo di lavoro. Bisogna creare nei luoghi di lavoro un micro clima ideale, evitando un soleggiamento eccessivo.",
+      "text": "Il D.Lgs. 81/2008 “Testo Unico” oltre alla sicurezza dei vetri tiene conto anche del micro clima nelle aree di lavoro, sulle superficie vetrate cita alcuni articoli tra questi: Comma 1.9.2.4 del Testo Unico (allegato IV): Le finestre, i lucernari e le pareti vetrate devono essere tali da evitare un soleggiamento eccessivo dei luoghi di lavoro, tenendo conto del tipo di attività e della natura del luogo di lavoro. Bisogna creare nei luoghi di lavoro un micro clima ideale, evitando un soleggiamento eccessivo."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole Madico, oltre a mettere in sicurezza qualsiasi vetro, possono migliorare le condizioni climatiche nei luoghi di lavoro, la gamma di sicurezza comprende diverse tipologie di pellicole:<br>\n<b><br>\nNeutre<br>\nCon una sola pellicola si adegua in sicurezza un semplice vetro.",
+      "text": "Le pellicole Madico, oltre a mettere in sicurezza qualsiasi vetro, possono migliorare le condizioni climatiche nei luoghi di lavoro, la gamma di sicurezza comprende diverse tipologie di pellicole: Neutre Con una sola pellicola si adegua in sicurezza un semplice vetro."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Riflettenti<br>\nCon una sola pellicola si adegua in sicurezza un semplice vetro, riflettendo l&#x2019;irraggiamento solare e abbaglio.",
+      "text": "Riflettenti Con una sola pellicola si adegua in sicurezza un semplice vetro, riflettendo l’irraggiamento solare e abbaglio."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Sputtered<br>\nCon una sola pellicola si adeguano in sicurezza i vetri esterni, riflettendo l&#x2019;irraggiamento solare e abbaglio con maggior trasparenza.",
+      "text": "Sputtered Con una sola pellicola si adeguano in sicurezza i vetri esterni, riflettendo l’irraggiamento solare e abbaglio con maggior trasparenza."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Colorate<br>\nCon una sola pellicola si adegua in sicurezza i vetri, rendendolo colorato.",
+      "text": "Colorate Con una sola pellicola si adegua in sicurezza i vetri, rendendolo colorato."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Opacizzanti<br>\nCon una sola pellicola si adegua in sicurezza il vetro, rendendolo opaco per ottenere privacy.",
+      "text": "Opacizzanti Con una sola pellicola si adegua in sicurezza il vetro, rendendolo opaco per ottenere privacy."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Per esterno neutre<br>\nCon una sola pellicola si adeguano in sicurezza il vetro.",
+      "text": "Per esterno neutre Con una sola pellicola si adeguano in sicurezza il vetro."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Per esterno riflettenti<br>\nCon una sola pellicola si adegua in sicurezza il vetro, riflettendo l&#x2019;irraggiamento.",
+      "text": "Per esterno riflettenti Con una sola pellicola si adegua in sicurezza il vetro, riflettendo l’irraggiamento."
+    },
+    {
+      "type": "paragraph",
+      "html": "<b>Tutte le pellicole di sicurezza Madico sono state testate, collaudate e certificate, come dimostrato dai certificati delle prove&#xA0; alle quali sono state sottoposte.",
+      "text": "Tutte le pellicole di sicurezza Madico sono state testate, collaudate e certificate, come dimostrato dai certificati delle prove alle quali sono state sottoposte."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Sicurezza a norma di legge I PROBLEMI LEGATI ALLE SUPERFICI VETRATE E LE SOLUZIONI DELLE PELLICOLE PER VETRI Il vetro, l’elemento maggiormente usato nell’edilizia e nell’architettura moderna, può essere estremamente pericoloso e in caso di rottura viene costantemente sottovalutato in rapporto ai danni che può provocare a persone o cose. Scoppi, urti violenti, atti vandalici, esplosioni, ma anche semplici rotture accidentali possono arrecare gravi ferite alle persone o danneggiare l’ambiente circostante. E’ importante tuttavia avere una profonda conoscenza delle caratteristiche del vetro in modo tale da affrontare le problematiche legate ad esso in modo professionale. Occorre dunque rivolgersi a personale altamente professionale per istallare pellicole per vetri a norma di legge. La sicurezza delle superficie vetrate nei luoghi di lavoro è obbligatoria come prescritto dal D.Lgs. 81/2008. Il D.Lgs. 81/2008 denominato “Testo unico sulla sicurezza” è entrato in vigore il 15 maggio 2008, disciplina il campo della tutela della salute e della sicurezza dei lavoratori negli ambienti di lavoro. In riferimento alle superfici vetrate il testo unico elenca una serie di articoli: Comma 1.3.6. del Testo Unico (allegato IV): Le pareti trasparenti o traslucide, in particolare le pareti completamente vetrate, nei locali o nelle vicinanze dei posti di lavoro e delle vie di circolazione, devono essere chiaramente segnalate e costituite da materiali di sicurezza fino all’altezza di 1 metro dal pavimento, ovvero essere separate dai posti di lavoro e dalle vie di circolazione succitati in modo tale che i lavoratori non possano entrare in contatto con le pareti, ne rimanere feriti qualora esse vadano in frantumi. Nel caso in cui vengano utilizzati materiali di sicurezza fino all’ altezza di 1 metro dal pavimento , tale altezza è elevata quando ciò è necessario in relazione al rischio che i lavoratori rimangano feriti qualora essi vadano in frantumi. Comma 1.6.11 del Testo Unico (allegato IV): Se le superfici trasparenti o traslucide delle porte e dei portoni non sono costituite da materiali di sicurezza e c’è il rischio che i lavoratori possano rimanere feriti in caso di rottura di dette superfici, queste devono essere protette contro lo sfondamento. Gli articoli sono espliciti, essi obbligano la messa in sicurezza delle superficie vetrate per evitare grave ferimenti alle persone. L’uso di pellicole per vetri sono una risposta a norma di legge a tale esigenza. UNI 7697/2015 (punto 1 – Scopo e campo di applicazione): La presente norma fornisce i criteri di scelta dei vetri da impiegarsi,sia in esterni che in interni, in modo che, nella destinazione di impiego prevista, sia assicurata la rispondenza tra prestazioni dei vetri e requisiti minimi necessari per la sicurezza dell’utenza. In merito le linee guida sull’attuazione di questi articoli l’ ISPELS cita: “[…] si può applicare una pellicola di sicurezza, valutando nella scelta del tipo il più idoneo da impiegare” . Nel valutare l’ adeguamento della superficie vetrata o la sostituzione degli stessi bisogna tener conto di ulteriori fattori, la sostituzione di un vetro semplice con un vetro stratificato comporta una serie di problematiche molte volte trascurate, che in caso di incidente o infortuni l’intervento non risulta a norma. Le norme UNI riportano: UNI 7697 (punto 5 – Posa delle lastre): Telai e scanalature di contenimento non devono compromettere le caratteristiche e le prestazioni della vetrata. UNI 6534 (punto 3.3 – Serramenti): I serramenti devono essere costruiti in modo da essere sufficientemente solidi in rapporto alla massa delle lastre, alle sollecitazioni previste ed all’usura meccanica. Nel progettare un serramento prima si determinano lo spessore, la dimensione e il peso del vetro e successivamente si realizza un serramento idoneo. E’ evidente che sostituire un normale vetro di 3 mm con un vetro stratificato comporta delle problematiche da non sottovalutare, nella maggioranza dei casi comporta anche la sostituzione del serramento stesso con dei costi non indifferenti, considerando le varie opere murarie che ne conseguono. LA SOLUZIONE Le pellicole di sicurezza MADICO grazie ad una avanzata ricerca permettono la “messa in sicurezza” di qualsiasi vetrata, obbligatoria nei luoghi di lavoro come prescritto dal Testo Unico Decreto Legislativo 9 aprile 2008, n.81. e varie Norme UNI EN ISO di riferimento, pertanto permettono di modificare un normale vetro in un “vetro di sicurezza” di diverse tipologie: >> VETRI STRATIFICATI DI SICUREZZA >> VETRI DI SICUREZZA CONTRO L’ ATTACCO MANUALE >> VETRI ANTIPROIETTILE in VETRI ANTIPROIETTILE ANTISCHEGGIA >> VETRI DI SICUREZZA RESISTENTI ALLA PRESSIONE CAUSATA DA ESPLOSIONE – VETRI ANTIBOMBA Ogni pellicola può essere applicata sui vetri già esistenti con un’ operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attività lavorativa. Il D.Lgs. 81/2008 “Testo Unico” oltre alla sicurezza dei vetri tiene conto anche del micro clima nelle aree di lavoro, sulle superficie vetrate cita alcuni articoli tra questi: Comma 1.9.2.4 del Testo Unico (allegato IV): Le finestre, i lucernari e le pareti vetrate devono essere tali da evitare un soleggiamento eccessivo dei luoghi di lavoro, tenendo conto del tipo di attività e della natura del luogo di lavoro. Bisogna creare nei luoghi di lavoro un micro clima ideale, evitando un soleggiamento eccessivo. Le pellicole Madico, oltre a mettere in sicurezza qualsiasi vetro, possono migliorare le condizioni climatiche nei luoghi di lavoro, la gamma di sicurezza comprende diverse tipologie di pellicole: Neutre Con una sola pellicola si adegua in sicurezza un semplice vetro. Riflettenti Con una sola pellicola si adegua in sicurezza un semplice vetro, riflettendo l’irraggiamento solare e abbaglio. Sputtered Con una sola pellicola si adeguano in sicurezza i vetri esterni, riflettendo l’irraggiamento solare e abbaglio con maggior trasparenza. Colorate Con una sola pellicola si adegua in sicurezza i vetri, rendendolo colorato. Opacizzanti Con una sola pellicola si adegua in sicurezza il vetro, rendendolo opaco per ottenere privacy. Per esterno neutre Con una sola pellicola si adeguano in sicurezza il vetro. Per esterno riflettenti Con una sola pellicola si adegua in sicurezza il vetro, riflettendo l’irraggiamento. Tutte le pellicole di sicurezza Madico sono state testate, collaudate e certificate, come dimostrato dai certificati delle prove alle quali sono state sottoposte. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 6640,
+  "fetchedAt": "2026-04-28T15:09:39.566Z"
+}

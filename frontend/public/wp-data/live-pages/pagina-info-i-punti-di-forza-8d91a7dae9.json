@@ -1,0 +1,134 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/i-punti-di-forza/",
+  "path": "/pagina-info/i-punti-di-forza/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/i-punti-di-forza/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "I punti di forza - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 I PUNTI DI FORZA DELLE PELLICOLE ANTISOLARI MADICO",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/i-punti-di-forza/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "I punti di forza",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 I PUNTI DI FORZA DELLE PELLICOLE ANTISOLARI MADICO",
+      "og:url": "https://www.solarisfilms.it/pagina-info/i-punti-di-forza/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T08:54:36+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/i-punti-di-forza\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/i-punti-di-forza\\/\",\"name\":\"I punti di forza - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-11T10:19:32+00:00\",\"dateModified\":\"2025-09-18T08:54:36+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/i-punti-di-forza\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/i-punti-di-forza\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/i-punti-di-forza\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"I punti di forza\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "I punti di forza"
+    },
+    {
+      "level": 3,
+      "text": "TRASPARENZA, COMFORT E RISPARMIO ENERGETICO: ECCO I PUNTI DI FORZA DELLE DELLE PELLICOLE ANTISOLARI MADICO"
+    },
+    {
+      "level": 3,
+      "text": "TRASPARENZA, COMFORT E RISPARMIO ENERGETICO: ECCO I PUNTI DI FORZA DELLE DELLE PELLICOLE ANTISOLARI MADICO"
+    }
+  ],
+  "h1": "I punti di forza",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "I punti di forza",
+      "text": "I punti di forza"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "TRASPARENZA, COMFORT E RISPARMIO ENERGETICO: ECCO I PUNTI DI FORZA DELLE DELLE PELLICOLE ANTISOLARI MADICO",
+      "text": "TRASPARENZA, COMFORT E RISPARMIO ENERGETICO: ECCO I PUNTI DI FORZA DELLE DELLE PELLICOLE ANTISOLARI MADICO"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Trasparenza delle pellicole antisolari<br>\nLa trasparenza assoluta &#xE8; uno dei principali punti di forza pellicole antisolari Garantiscono un&#x2019;elevata trasparenza evitando distorsioni ottiche poich&#xE9; il loro adesivo, estremamente sottile e perfettamente uniforme, crea un corpo unico tra vetro e pellicola evitando la formazione di effetti &#x201C;a buccia d&#x2019;arancia&#x201D;",
+      "text": "Trasparenza delle pellicole antisolari La trasparenza assoluta è uno dei principali punti di forza pellicole antisolari Garantiscono un’elevata trasparenza evitando distorsioni ottiche poiché il loro adesivo, estremamente sottile e perfettamente uniforme, crea un corpo unico tra vetro e pellicola evitando la formazione di effetti “a buccia d’arancia”"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Comfort delle pellicole antisolari<br>\nRespingendo fino all&#x2019; 94% dell&#x2019;irraggiamento solare offrono il massimo in termini di protezione limitando da una parte l&#x2019;incremento del calore e dall&#x2019;altra riducendo drasticamente l&#x2019;abbaglio. Di conseguenza questo regala agli ambienti un notevole comfort termico e visivo.",
+      "text": "Comfort delle pellicole antisolari Respingendo fino all’ 94% dell’irraggiamento solare offrono il massimo in termini di protezione limitando da una parte l’incremento del calore e dall’altra riducendo drasticamente l’abbaglio. Di conseguenza questo regala agli ambienti un notevole comfort termico e visivo."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Risparmio Energetico delle pellicole antisolari<br>\nRiequilibrando il clima dell&#x2019; ambiente lavorativo, consentono un elevato risparmio energetico ed una drastica riduzione dei costi di condizionamento. La resa e la durata dell&#x2019;impianto di climatizzazione vengono cos&#xEC; ottimizzate ammortizzando l&#x2019;investimento in pochi anni.",
+      "text": "Risparmio Energetico delle pellicole antisolari Riequilibrando il clima dell’ ambiente lavorativo, consentono un elevato risparmio energetico ed una drastica riduzione dei costi di condizionamento. La resa e la durata dell’impianto di climatizzazione vengono così ottimizzate ammortizzando l’investimento in pochi anni."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Protezione delle pellicole antisolari<br>\nProtegge dalle alterazioni cromatiche, scolorimento, deterioramento e degrado di arredi, materiali, merci, prodotti, opere d&#x2019;arte ecc&#x2026; causati dall&#x2019;azione aggressiva dei raggi U.V. lasciandone filtrare meno dell&#x2019; 1%. La protezione &#xE8; probabilmente il punto di forza delle pellicole antisolari Madico pi&#xF9; utile al comfort degli ambienti e alla durata degli arredi.",
+      "text": "Protezione delle pellicole antisolari Protegge dalle alterazioni cromatiche, scolorimento, deterioramento e degrado di arredi, materiali, merci, prodotti, opere d’arte ecc… causati dall’azione aggressiva dei raggi U.V. lasciandone filtrare meno dell’ 1%. La protezione è probabilmente il punto di forza delle pellicole antisolari Madico più utile al comfort degli ambienti e alla durata degli arredi."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "TRASPARENZA, COMFORT E RISPARMIO ENERGETICO: ECCO I PUNTI DI FORZA DELLE DELLE PELLICOLE ANTISOLARI MADICO",
+      "text": "TRASPARENZA, COMFORT E RISPARMIO ENERGETICO: ECCO I PUNTI DI FORZA DELLE DELLE PELLICOLE ANTISOLARI MADICO"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Estetica delle pellicole antisolari<br>\nOffrendo una maggiore eleganza all&#x2019;edificio si consigliano per migliorare l&#x2019;estetica di uffici, banche, industrie, alberghi, ristoranti, negozi, servizi pubblici, scuole, ospedali, palestre e abitazioni di prestigio.",
+      "text": "Estetica delle pellicole antisolari Offrendo una maggiore eleganza all’edificio si consigliano per migliorare l’estetica di uffici, banche, industrie, alberghi, ristoranti, negozi, servizi pubblici, scuole, ospedali, palestre e abitazioni di prestigio."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Durata delle pellicole antisolari<br>\nL&#x2019;elevata qualit&#xE0; consente alle pellicole Madico una lunga durata. In particolare tutte le pellicole Madico per esterno hanno una rivoluzionaria struttura formata da uno spessore complessivo di 75 micron, e una protezione antigraffio composta da 2 strati speciali che garantiscono alla pellicola una durata fuori dal comune.",
+      "text": "Durata delle pellicole antisolari L’elevata qualità consente alle pellicole Madico una lunga durata. In particolare tutte le pellicole Madico per esterno hanno una rivoluzionaria struttura formata da uno spessore complessivo di 75 micron, e una protezione antigraffio composta da 2 strati speciali che garantiscono alla pellicola una durata fuori dal comune."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Semplicit&#xE0; delle pellicole antisolari<br>\nNon necessitano di manutenzione. Si possono lavare normalmente utilizzando gli abituali detergenti e materiali, purch&#xE9; non aggressivi, corrosivi e abrasivi. Alla fine, quindi, anche il risparmio economico sul lungo periodo pu&#xF2; essere considerato un punto di forza delle pellicole antisolari.",
+      "text": "Semplicità delle pellicole antisolari Non necessitano di manutenzione. Si possono lavare normalmente utilizzando gli abituali detergenti e materiali, purché non aggressivi, corrosivi e abrasivi. Alla fine, quindi, anche il risparmio economico sul lungo periodo può essere considerato un punto di forza delle pellicole antisolari."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Praticit&#xE0; delle pellicole antisolari<br>\nSi installano con rapidit&#xE0; e senza disturbare la normale attivit&#xE0; lavorativa.",
+      "text": "Praticità delle pellicole antisolari Si installano con rapidità e senza disturbare la normale attività lavorativa."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Garanzia delle Pellicole Antisolari&#xA0; per vetri<br>\nSono coperte da una garanzia fino a 10 anni se installate da personale specializzato. La garanzia &#xE8; valida contro screpolature, demetalizzazioni, delaminazioni.",
+      "text": "Garanzia delle Pellicole Antisolari per vetri Sono coperte da una garanzia fino a 10 anni se installate da personale specializzato. La garanzia è valida contro screpolature, demetalizzazioni, delaminazioni."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "I punti di forza TRASPARENZA, COMFORT E RISPARMIO ENERGETICO: ECCO I PUNTI DI FORZA DELLE DELLE PELLICOLE ANTISOLARI MADICO Trasparenza delle pellicole antisolari La trasparenza assoluta è uno dei principali punti di forza pellicole antisolari Garantiscono un’elevata trasparenza evitando distorsioni ottiche poiché il loro adesivo, estremamente sottile e perfettamente uniforme, crea un corpo unico tra vetro e pellicola evitando la formazione di effetti “a buccia d’arancia” Comfort delle pellicole antisolari Respingendo fino all’ 94% dell’irraggiamento solare offrono il massimo in termini di protezione limitando da una parte l’incremento del calore e dall’altra riducendo drasticamente l’abbaglio. Di conseguenza questo regala agli ambienti un notevole comfort termico e visivo. Risparmio Energetico delle pellicole antisolari Riequilibrando il clima dell’ ambiente lavorativo, consentono un elevato risparmio energetico ed una drastica riduzione dei costi di condizionamento. La resa e la durata dell’impianto di climatizzazione vengono così ottimizzate ammortizzando l’investimento in pochi anni. Protezione delle pellicole antisolari Protegge dalle alterazioni cromatiche, scolorimento, deterioramento e degrado di arredi, materiali, merci, prodotti, opere d’arte ecc… causati dall’azione aggressiva dei raggi U.V. lasciandone filtrare meno dell’ 1%. La protezione è probabilmente il punto di forza delle pellicole antisolari Madico più utile al comfort degli ambienti e alla durata degli arredi. TRASPARENZA, COMFORT E RISPARMIO ENERGETICO: ECCO I PUNTI DI FORZA DELLE DELLE PELLICOLE ANTISOLARI MADICO Estetica delle pellicole antisolari Offrendo una maggiore eleganza all’edificio si consigliano per migliorare l’estetica di uffici, banche, industrie, alberghi, ristoranti, negozi, servizi pubblici, scuole, ospedali, palestre e abitazioni di prestigio. Durata delle pellicole antisolari L’elevata qualità consente alle pellicole Madico una lunga durata. In particolare tutte le pellicole Madico per esterno hanno una rivoluzionaria struttura formata da uno spessore complessivo di 75 micron, e una protezione antigraffio composta da 2 strati speciali che garantiscono alla pellicola una durata fuori dal comune. Semplicità delle pellicole antisolari Non necessitano di manutenzione. Si possono lavare normalmente utilizzando gli abituali detergenti e materiali, purché non aggressivi, corrosivi e abrasivi. Alla fine, quindi, anche il risparmio economico sul lungo periodo può essere considerato un punto di forza delle pellicole antisolari. Praticità delle pellicole antisolari Si installano con rapidità e senza disturbare la normale attività lavorativa. Garanzia delle Pellicole Antisolari per vetri Sono coperte da una garanzia fino a 10 anni se installate da personale specializzato. La garanzia è valida contro screpolature, demetalizzazioni, delaminazioni. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 2968,
+  "fetchedAt": "2026-04-28T15:09:40.340Z"
+}

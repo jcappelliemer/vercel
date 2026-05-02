@@ -1,0 +1,196 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/pellicole-fotocromatiche/",
+  "path": "/approfondimenti/pellicole-fotocromatiche/",
+  "route": {
+    "type": "article",
+    "label": "Approfondimento",
+    "newPath": "/blog/pellicole-fotocromatiche/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/post-sitemap.xml",
+  "seo": {
+    "title": "PELLICOLE FOTOCROMATICHE - Solaris Films",
+    "description": "Le pellicole fotocromatiche: leggi il nostro approfondimento per scoprire proprietà e tipologie di questa pellicola.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-fotocromatiche/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "PELLICOLE FOTOCROMATICHE",
+      "og:description": "Le pellicole fotocromatiche: leggi il nostro approfondimento per scoprire proprietà e tipologie di questa pellicola.",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/pellicole-fotocromatiche/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/fotocromatica.webp",
+      "og:image:width": "1500",
+      "og:image:height": "2250",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Scritto da",
+      "twitter:data1": "Fabio Meucci",
+      "twitter:label2": "Tempo di lettura stimato",
+      "twitter:data2": "6 minuti"
+    },
+    "article": {
+      "article:published_time": "2025-06-17T13:40:45+00:00",
+      "article:modified_time": "2025-06-19T07:24:03+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/\"},\"author\":{\"name\":\"Fabio Meucci\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\"},\"headline\":\"PELLICOLE FOTOCROMATICHE\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-19T07:24:03+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/\"},\"wordCount\":933,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/fotocromatica.webp\",\"articleSection\":[\"Approfondimenti\"],\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/\",\"name\":\"PELLICOLE FOTOCROMATICHE - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/fotocromatica.webp\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-19T07:24:03+00:00\",\"description\":\"Le pellicole fotocromatiche: leggi il nostro approfondimento per scoprire proprietà e tipologie di questa pellicola.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/fotocromatica.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/fotocromatica.webp\",\"width\":1500,\"height\":2250},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicole-fotocromatiche\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Lo sapevi che?\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/lo-sapevi-che\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"PELLICOLE FOTOCROMATICHE\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\",\"name\":\"Fabio Meucci\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"caption\":\"Fabio Meucci\"},\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/fabio-meucci\\/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete un prodotto in grado di garantirvi una giusta illuminazione senza installare inestetiche tende solari? Volete una soluzione che valorizzi sia la vostra facciata che i vostri interni, impreziosendo i vostri stabili? Vi interessa una pellicola per vetri che sia allo stesso tempo funzionale e vi garantisca un tangibile rientro economico? Le pellicole fotocromatiche sono quello che fa per voi.",
+      "text": "Volete un prodotto in grado di garantirvi una giusta illuminazione senza installare inestetiche tende solari? Volete una soluzione che valorizzi sia la vostra facciata che i vostri interni, impreziosendo i vostri stabili? Vi interessa una pellicola per vetri che sia allo stesso tempo funzionale e vi garantisca un tangibile rientro economico? Le pellicole fotocromatiche sono quello che fa per voi."
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola fotocromatica blocca fino al:",
+      "text": "La pellicola fotocromatica blocca fino al:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "0 % RAGGI U.V.",
+          "text": "0 % RAGGI U.V."
+        },
+        {
+          "html": "0 % RAGGI I.R.",
+          "text": "0 % RAGGI I.R."
+        }
+      ],
+      "text": "0 % RAGGI U.V. 0 % RAGGI I.R."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Che cosa sono le pellicole fotocromatiche?<br>\nQuando si parla di pellicole fotocromatiche per vetri ci si riferisce ad una parola composta da altre due parole; foto, che si riferisce alla luce, e cromatico, che si riferisce invece al colore. &#xC8; una tecnologia che esiste dagli anni &#x2019;60 ed &#xE8; stata ampiamente sviluppata nel settore dell&#x2019;ottica per garantire protezione solare a chi indossa occhiali da vista. La transizione cromatica delle lenti garantisce infatti comfort in condizione di luce variabile.",
+      "text": "Che cosa sono le pellicole fotocromatiche? Quando si parla di pellicole fotocromatiche per vetri ci si riferisce ad una parola composta da altre due parole; foto, che si riferisce alla luce, e cromatico, che si riferisce invece al colore. È una tecnologia che esiste dagli anni ’60 ed è stata ampiamente sviluppata nel settore dell’ottica per garantire protezione solare a chi indossa occhiali da vista. La transizione cromatica delle lenti garantisce infatti comfort in condizione di luce variabile."
+    },
+    {
+      "type": "paragraph",
+      "html": "Tale tecnologia &#xE8; sbarcata anche nel mondo delle pellicole protettive per vetri. Queste pellicole passano da una colorazione pi&#xF9; neutra ad una pi&#xF9; scura e colorata quando esposte al sole diretto. Dopo accurate ricerche, sperimentazioni e test, siamo in grado di portarvi il top di gamma nel settore delle pellicole fotocromatiche!",
+      "text": "Tale tecnologia è sbarcata anche nel mondo delle pellicole protettive per vetri. Queste pellicole passano da una colorazione più neutra ad una più scura e colorata quando esposte al sole diretto. Dopo accurate ricerche, sperimentazioni e test, siamo in grado di portarvi il top di gamma nel settore delle pellicole fotocromatiche!"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;esposizione ai raggi UV e alla luce visibile modifica la trasmissione della luce mentre le propriet&#xE0; fotocromatiche derivano dall&#x2019;aggiunta di coloranti e molecole fotocromatiche. Dopo essere state colpite dai raggi UV, le molecole subiscono un processo chimico e cambiano forma; questo permette di assorbire una maggiore quantit&#xE0; di luce, e di conseguenza si scuriscono. Questi processi sono reversibili, una volta che la luce diminuisce, i composti fotocromatici tornano al loro stato trasparente. La tecnologia &#xE8; stata progettata per rispondere alle brevi lunghezze d&#x2019;onda della radiazione solare. Questo &#xE8; il motivo per cui la luce artificiale interna NON influisce sulla trasmissione della luce.",
+      "text": "L’esposizione ai raggi UV e alla luce visibile modifica la trasmissione della luce mentre le proprietà fotocromatiche derivano dall’aggiunta di coloranti e molecole fotocromatiche. Dopo essere state colpite dai raggi UV, le molecole subiscono un processo chimico e cambiano forma; questo permette di assorbire una maggiore quantità di luce, e di conseguenza si scuriscono. Questi processi sono reversibili, una volta che la luce diminuisce, i composti fotocromatici tornano al loro stato trasparente. La tecnologia è stata progettata per rispondere alle brevi lunghezze d’onda della radiazione solare. Questo è il motivo per cui la luce artificiale interna NON influisce sulla trasmissione della luce."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>A chi si rivolge questa tecnologia?",
+      "text": "A chi si rivolge questa tecnologia?"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Chi vuole una illuminazione costante nei suoi ambienti in ogni ora della giornata",
+          "text": "Chi vuole una illuminazione costante nei suoi ambienti in ogni ora della giornata"
+        },
+        {
+          "html": "Chi vuole discrezione nelle ore diurne",
+          "text": "Chi vuole discrezione nelle ore diurne"
+        },
+        {
+          "html": "Chi vuole migliorare il design della sua struttura",
+          "text": "Chi vuole migliorare il design della sua struttura"
+        },
+        {
+          "html": "Chi ha problemi di sbiadimento/deperimento beni vicino a finestre e vetrine",
+          "text": "Chi ha problemi di sbiadimento/deperimento beni vicino a finestre e vetrine"
+        },
+        {
+          "html": "Chi non vuole installare persiane o tende per fermare l&#x2019;abbagliamento del sole.",
+          "text": "Chi non vuole installare persiane o tende per fermare l’abbagliamento del sole."
+        },
+        {
+          "html": "Chi vuole ridurre la temperatura interna e bloccare i dannosi raggi UV",
+          "text": "Chi vuole ridurre la temperatura interna e bloccare i dannosi raggi UV"
+        }
+      ],
+      "text": "Chi vuole una illuminazione costante nei suoi ambienti in ogni ora della giornata Chi vuole discrezione nelle ore diurne Chi vuole migliorare il design della sua struttura Chi ha problemi di sbiadimento/deperimento beni vicino a finestre e vetrine Chi non vuole installare persiane o tende per fermare l’abbagliamento del sole. Chi vuole ridurre la temperatura interna e bloccare i dannosi raggi UV"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Vuoi conoscere tutte le possibilit&#xE0; delle soluzioni antisolari? Leggi il nostro approfondimento sulle <a href=\"/approfondimenti/approfondimenti-antisolare/\">pellicole antisolari!",
+      "text": "Vuoi conoscere tutte le possibilità delle soluzioni antisolari? Leggi il nostro approfondimento sulle pellicole antisolari!"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Quali sono i principali campi di applicazione?<br>\nLa pellicola fotocromatica si presenta in maniera meno invasiva di quella antisolare, tornando trasparente al diminuire della luce esterna. Per questo noi la consigliamo in quelle situazioni particolari in cui si deve intervenire sull&#x2019;irraggiamento avendo per&#xF2; l&#x2019;obbligo di impattare il meno possibile sugli edifici.",
+      "text": "Quali sono i principali campi di applicazione? La pellicola fotocromatica si presenta in maniera meno invasiva di quella antisolare, tornando trasparente al diminuire della luce esterna. Per questo noi la consigliamo in quelle situazioni particolari in cui si deve intervenire sull’irraggiamento avendo però l’obbligo di impattare il meno possibile sugli edifici."
+    },
+    {
+      "type": "paragraph",
+      "html": "In tutte le situazioni delicate in cui si vuole risparmio energetico e protezione dai raggi UV la pellicola fotocromatica, con il suo bassissimo impatto visivo, &#xE8; la risposta giusta.",
+      "text": "In tutte le situazioni delicate in cui si vuole risparmio energetico e protezione dai raggi UV la pellicola fotocromatica, con il suo bassissimo impatto visivo, è la risposta giusta."
+    },
+    {
+      "type": "paragraph",
+      "html": "Pensiamo ad un museo, sito in un edificio storico, che ha la necessit&#xE0; di proteggere le sue opere e mantenere costanti calore e luce solare, senza deturpare la propria facciata. Oppure pensiamo ad un esercizio commerciale, che deve esporre merce in vetrina ma non pu&#xF2; per questo far deperire i prodotti sotto il sole. La pellicola fotocromatica &#xE8; un&#x2019;installazione veloce e discreta che vi permetter&#xE0; di avere i vantaggi di un film antisolare con un impatto visivo che si adatta all&#x2019;andamento del sole.",
+      "text": "Pensiamo ad un museo, sito in un edificio storico, che ha la necessità di proteggere le sue opere e mantenere costanti calore e luce solare, senza deturpare la propria facciata. Oppure pensiamo ad un esercizio commerciale, che deve esporre merce in vetrina ma non può per questo far deperire i prodotti sotto il sole. La pellicola fotocromatica è un’installazione veloce e discreta che vi permetterà di avere i vantaggi di un film antisolare con un impatto visivo che si adatta all’andamento del sole."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Quanta energia respinge la pellicola fotovoltaica?<br>\nQueste pellicole possono passare da un indice VLT pi&#xF9; chiaro a un VLT pi&#xF9; scuro in meno di 60 secondi, mentre il passaggio dal VLT pi&#xF9; scuro a quello pi&#xF9; chiaro richiede pi&#xF9; tempo, da 2 a 15 minuti e anche di pi&#xF9; nei climi pi&#xF9; freddi (NON SAI COSA &#xE8; L&#x2019;INDICE VLT? SCOPRILO QUI).",
+      "text": "Quanta energia respinge la pellicola fotovoltaica? Queste pellicole possono passare da un indice VLT più chiaro a un VLT più scuro in meno di 60 secondi, mentre il passaggio dal VLT più scuro a quello più chiaro richiede più tempo, da 2 a 15 minuti e anche di più nei climi più freddi (NON SAI COSA è L’INDICE VLT? SCOPRILO QUI)."
+    },
+    {
+      "type": "paragraph",
+      "html": "Una soluzione pratica e di design per aumentare la vivibilit&#xE0; dei propri spazi e proteggersi dagli effetti nocivi dell&#x2019;irraggiamento solare!",
+      "text": "Una soluzione pratica e di design per aumentare la vivibilità dei propri spazi e proteggersi dagli effetti nocivi dell’irraggiamento solare!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole fotocromatiche che Vi proponiamo garantiscono un abbattimento del 99% dei raggi UV, il 96% dei raggi infrarossi ed un indice VLT fino al 18%, con soluzioni per tutte le necessit&#xE0;. L&#x2019;applicazione delle pellicole fotocromatiche migliora il clima degli ambienti rendendoli freschi e confortevoli, contribuendo ad aumentare il rendimento del personale dipendente modulando l&#x2019;ingresso di luce che con il suo riflesso provoca un fastidio nello svolgimento di ogni attivit&#xE0;.",
+      "text": "Le pellicole fotocromatiche che Vi proponiamo garantiscono un abbattimento del 99% dei raggi UV, il 96% dei raggi infrarossi ed un indice VLT fino al 18%, con soluzioni per tutte le necessità. L’applicazione delle pellicole fotocromatiche migliora il clima degli ambienti rendendoli freschi e confortevoli, contribuendo ad aumentare il rendimento del personale dipendente modulando l’ingresso di luce che con il suo riflesso provoca un fastidio nello svolgimento di ogni attività."
+    },
+    {
+      "type": "paragraph",
+      "html": "I nostri fornitori sono ovviamente il top di gamma per quanto riguarda questa rivoluzionaria tecnologia di pellicole per vetri, garantendoVi qualit&#xE0; ed affidabilit&#xE0;.",
+      "text": "I nostri fornitori sono ovviamente il top di gamma per quanto riguarda questa rivoluzionaria tecnologia di pellicole per vetri, garantendoVi qualità ed affidabilità."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>I nostri prodotti<br>\nLa pellicola TECNOSOLAR CROMIA &#xE8; realizzata tramite una nanotecnologia sputtered. La sua particolarit&#xE0; &#xE8; di avere un range dell&#x2019;indice VLT che va dal 75% al 25%, cio&#xE8; da una situazione con illuminazione interna alta ad una buona schermatura con luce molto intensa. Con uno spessore di 75 micrometri, una schermatura ai raggi UV del 99% e dei raggi infrarossi fino al 95% &#xE8; un&#x2019;ottima soluzione in tutte le occasioni. Riuscendo a reagire bene al cambio di luminosit&#xE0; &#xE8; in grado di garantirvi un&#x2019;illuminazione uniforme in ogni momento della giornata, non oscurando il vetro in caso di poca luce esterna. Si tratta di una scelta di qualit&#xE0; in grado di soddisfare qualsiasi esigenza ed alla portata di tutti.",
+      "text": "I nostri prodotti La pellicola TECNOSOLAR CROMIA è realizzata tramite una nanotecnologia sputtered. La sua particolarità è di avere un range dell’indice VLT che va dal 75% al 25%, cioè da una situazione con illuminazione interna alta ad una buona schermatura con luce molto intensa. Con uno spessore di 75 micrometri, una schermatura ai raggi UV del 99% e dei raggi infrarossi fino al 95% è un’ottima soluzione in tutte le occasioni. Riuscendo a reagire bene al cambio di luminosità è in grado di garantirvi un’illuminazione uniforme in ogni momento della giornata, non oscurando il vetro in caso di poca luce esterna. Si tratta di una scelta di qualità in grado di soddisfare qualsiasi esigenza ed alla portata di tutti."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>In conclusione<br>\nLe pellicole fotocromatiche, oltre ad agire in modo efficace sull&#x2019;illuminazione che entra nei vostri edifici, ha anche tutti i vantaggi delle altre pellicole. A livello economico garantisce un notevole risparmio energetico, riduce molto i costi di condizionamento evitando l&#x2019;aumento delle temperature all&#x2019;interno dei locali. Questo si traduce in un risparmio medio che va da un minimo del 30% ad un -50% netto dei costi di climatizzazione in estate e di un miglioramento della resa e durata dell&#x2019;impianto di climatizzazione.",
+      "text": "In conclusione Le pellicole fotocromatiche, oltre ad agire in modo efficace sull’illuminazione che entra nei vostri edifici, ha anche tutti i vantaggi delle altre pellicole. A livello economico garantisce un notevole risparmio energetico, riduce molto i costi di condizionamento evitando l’aumento delle temperature all’interno dei locali. Questo si traduce in un risparmio medio che va da un minimo del 30% ad un -50% netto dei costi di climatizzazione in estate e di un miglioramento della resa e durata dell’impianto di climatizzazione."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire di pi&#xF9; su Cromia? Vi aspettiamo su <a href=\"https://www.tecnosolar.it\" target=\"_blank\" rel=\"noopener noreferrer\">tecnosolar.it",
+      "text": "Vuoi scoprire di più su Cromia? Vi aspettiamo su tecnosolar.it"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive Volete un prodotto in grado di garantirvi una giusta illuminazione senza installare inestetiche tende solari? Volete una soluzione che valorizzi sia la vostra facciata che i vostri interni, impreziosendo i vostri stabili? Vi interessa una pellicola per vetri che sia allo stesso tempo funzionale e vi garantisca un tangibile rientro economico? Le pellicole fotocromatiche sono quello che fa per voi. La pellicola fotocromatica blocca fino al: 0 % RAGGI U.V. 0 % RAGGI I.R. Che cosa sono le pellicole fotocromatiche? Quando si parla di pellicole fotocromatiche per vetri ci si riferisce ad una parola composta da altre due parole; foto, che si riferisce alla luce, e cromatico, che si riferisce invece al colore. È una tecnologia che esiste dagli anni ’60 ed è stata ampiamente sviluppata nel settore dell’ottica per garantire protezione solare a chi indossa occhiali da vista. La transizione cromatica delle lenti garantisce infatti comfort in condizione di luce variabile. Tale tecnologia è sbarcata anche nel mondo delle pellicole protettive per vetri. Queste pellicole passano da una colorazione più neutra ad una più scura e colorata quando esposte al sole diretto. Dopo accurate ricerche, sperimentazioni e test, siamo in grado di portarvi il top di gamma nel settore delle pellicole fotocromatiche! L’esposizione ai raggi UV e alla luce visibile modifica la trasmissione della luce mentre le proprietà fotocromatiche derivano dall’aggiunta di coloranti e molecole fotocromatiche. Dopo essere state colpite dai raggi UV, le molecole subiscono un processo chimico e cambiano forma; questo permette di assorbire una maggiore quantità di luce, e di conseguenza si scuriscono. Questi processi sono reversibili, una volta che la luce diminuisce, i composti fotocromatici tornano al loro stato trasparente. La tecnologia è stata progettata per rispondere alle brevi lunghezze d’onda della radiazione solare. Questo è il motivo per cui la luce artificiale interna NON influisce sulla trasmissione della luce. A chi si rivolge questa tecnologia? Chi vuole una illuminazione costante nei suoi ambienti in ogni ora della giornata Chi vuole discrezione nelle ore diurne Chi vuole migliorare il design della sua struttura Chi ha problemi di sbiadimento/deperimento beni vicino a finestre e vetrine Chi non vuole installare persiane o tende per fermare l’abbagliamento del sole. Chi vuole ridurre la temperatura interna e bloccare i dannosi raggi UV Vuoi conoscere tutte le possibilità delle soluzioni antisolari? Leggi il nostro approfondimento sulle pellicole antisolari! Quali sono i principali campi di applicazione? La pellicola fotocromatica si presenta in maniera meno invasiva di quella antisolare, tornando trasparente al diminuire della luce esterna. Per questo noi la consigliamo in quelle situazioni particolari in cui si deve intervenire sull’irraggiamento avendo però l’obbligo di impattare il meno possibile sugli edifici. In tutte le situazioni delicate in cui si vuole risparmio energetico e protezione dai raggi UV la pellicola fotocromatica, con il suo bassissimo impatto visivo, è la risposta giusta. Pensiamo ad un museo, sito in un edificio storico, che ha la necessità di proteggere le sue opere e mantenere costanti calore e luce solare, senza deturpare la propria facciata. Oppure pensiamo ad un esercizio commerciale, che deve esporre merce in vetrina ma non può per questo far deperire i prodotti sotto il sole. La pellicola fotocromatica è un’installazione veloce e discreta che vi permetterà di avere i vantaggi di un film antisolare con un impatto visivo che si adatta all’andamento del sole. Quanta energia respinge la pellicola fotovoltaica? Queste pellicole possono passare da un indice VLT più chiaro a un VLT più scuro in meno di 60 secondi, mentre il passaggio dal VLT più scuro a quello più chiaro richiede più tempo, da 2 a 15 minuti e anche di più nei climi più freddi (NON SAI COSA è L’INDICE VLT? SCOPRILO QUI). Una soluzione pratica e di design per aumentare la vivibilità dei propri spazi e proteggersi dagli effetti nocivi dell’irraggiamento solare! Le pellicole fotocromatiche che Vi proponiamo garantiscono un abbattimento del 99% dei raggi UV, il 96% dei raggi infrarossi ed un indice VLT fino al 18%, con soluzioni per tutte le necessità. L’applicazione delle pellicole fotocromatiche migliora il clima degli ambienti rendendoli freschi e confortevoli, contribuendo ad aumentare il rendimento del personale dipendente modulando l’ingresso di luce che con il suo riflesso provoca un fastidio nello svolgimento di ogni attività. I nostri fornitori sono ovviamente il top di gamma per quanto riguarda questa rivoluzionaria tecnologia di pellicole per vetri, garantendoVi qualità ed affidabilità. I nostri prodotti La pellicola TECNOSOLAR CROMIA è realizzata tramite una nanotecnologia sputtered. La sua particolarità è di avere un range dell’indice VLT che va dal 75% al 25%, cioè da una situazione con illuminazione interna alta ad una buona schermatura con luce molto intensa. Con uno spessore di 75 micrometri, una schermatura ai raggi UV del 99% e dei raggi infrarossi fino al 95% è un’ottima soluzione in tutte le occasioni. Riuscendo a reagire bene al cambio di luminosità è in grado di garantirvi un’illuminazione uniforme in ogni momento della giornata, non oscurando il vetro in caso di poca luce esterna. Si tratta di una scelta di qualità in grado di soddisfare qualsiasi esigenza ed alla portata di tutti. In conclusione Le pellicole fotocromatiche, oltre ad agire in modo efficace sull’illuminazione che entra nei vostri edifici, ha anche tutti i vantaggi delle altre pellicole. A livello economico garantisce un notevole risparmio energetico, riduce molto i costi di condizionamento evitando l’aumento delle temperature all’interno dei locali. Questo si traduce in un risparmio medio che va da un minimo del 30% ad un -50% netto dei costi di climatizzazione in estate e di un miglioramento della resa e durata dell’impianto di climatizzazione. Vuoi scoprire di più su Cromia? Vi aspettiamo su tecnosolar.it",
+  "textLength": 6085,
+  "fetchedAt": "2026-04-28T15:08:06.209Z"
+}

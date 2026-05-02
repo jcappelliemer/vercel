@@ -26,14 +26,16 @@ const TrustBar = () => {
               viewport={{ once: true }}
               transition={{ delay: index * 0.1 }}
               whileHover={{ scale: 1.02, y: -2 }}
-              className="flex items-center gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#EAB308]/20 transition-all group"
+              className="min-w-0 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[#EAB308]/20 transition-all group"
             >
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-[#2563EB]/10 to-[#EAB308]/10 group-hover:from-[#2563EB]/20 group-hover:to-[#EAB308]/20 transition-all">
-                <item.icon size={22} weight="light" className="text-[#EAB308]" />
+              <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-lg flex items-center justify-center bg-gradient-to-br from-[#2563EB]/10 to-[#EAB308]/10 group-hover:from-[#2563EB]/20 group-hover:to-[#EAB308]/20 transition-all flex-shrink-0">
+                <item.icon size={20} weight="light" className="text-[#EAB308] sm:w-[22px] sm:h-[22px]" />
               </div>
-              <div>
-                <div className="text-white font-medium">{item.label}</div>
-                <div className="text-xs text-[#94A3B8] uppercase tracking-wider">{item.value}</div>
+              <div className="min-w-0 max-w-full">
+                <div className="text-white text-sm sm:text-base font-medium leading-tight break-words">{item.label}</div>
+                <div className="mt-1 text-[10px] sm:text-xs text-[#94A3B8] uppercase tracking-[0.08em] sm:tracking-wider leading-tight break-words">
+                  {item.value}
+                </div>
               </div>
             </motion.div>
           ))}

@@ -1,0 +1,153 @@
+{
+  "url": "https://www.solarisfilms.it/servizio-locale/",
+  "path": "/servizio-locale/",
+  "route": {
+    "type": "local-index",
+    "label": "Servizio locale",
+    "newPath": "/servizio-locale/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/servizio-locale-sitemap.xml",
+  "seo": {
+    "title": "Archivi Servizi locali - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/servizio-locale/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "website",
+      "og:title": "Archivi Servizi locali",
+      "og:url": "https://www.solarisfilms.it/servizio-locale/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/\",\"name\":\"Archivi Servizi locali - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/Aosta-Small.webp\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/#breadcrumb\"},\"inLanguage\":\"it-IT\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/Aosta-Small.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/Aosta-Small.webp\",\"width\":205,\"height\":100},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/servizio-locale\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Servizi locali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Archivi: Servizi locali"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI AOSTA"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI ANCONA"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI MILANO"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI L’AQUILA"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI GENOVA"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI FIRENZE"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI COSENZA"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI CATANZARO"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI CAMPOBASSO"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE PER VETRI BOLOGNA"
+    }
+  ],
+  "h1": "Archivi: Servizi locali",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Archivi: Servizi locali",
+      "text": "Archivi: Servizi locali"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-aosta/\">PELLICOLE PER VETRI AOSTA",
+      "text": "PELLICOLE PER VETRI AOSTA"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-ancona/\">PELLICOLE PER VETRI ANCONA",
+      "text": "PELLICOLE PER VETRI ANCONA"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-milano/\">PELLICOLE PER VETRI MILANO",
+      "text": "PELLICOLE PER VETRI MILANO"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-laquila/\">PELLICOLE PER VETRI L&amp;#8217;AQUILA",
+      "text": "PELLICOLE PER VETRI L’AQUILA"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-genova/\">PELLICOLE PER VETRI GENOVA",
+      "text": "PELLICOLE PER VETRI GENOVA"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-firenze/\">PELLICOLE PER VETRI FIRENZE",
+      "text": "PELLICOLE PER VETRI FIRENZE"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-cosenza/\">PELLICOLE PER VETRI COSENZA",
+      "text": "PELLICOLE PER VETRI COSENZA"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-catanzaro/\">PELLICOLE PER VETRI CATANZARO",
+      "text": "PELLICOLE PER VETRI CATANZARO"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-campobasso/\">PELLICOLE PER VETRI CAMPOBASSO",
+      "text": "PELLICOLE PER VETRI CAMPOBASSO"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/servizio-locale/pellicole-per-vetri-bologna/\">PELLICOLE PER VETRI BOLOGNA",
+      "text": "PELLICOLE PER VETRI BOLOGNA"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Archivi: Servizi locali PELLICOLE PER VETRI AOSTA PELLICOLE PER VETRI ANCONA PELLICOLE PER VETRI MILANO PELLICOLE PER VETRI L’AQUILA PELLICOLE PER VETRI GENOVA PELLICOLE PER VETRI FIRENZE PELLICOLE PER VETRI COSENZA PELLICOLE PER VETRI CATANZARO PELLICOLE PER VETRI CAMPOBASSO PELLICOLE PER VETRI BOLOGNA",
+  "textLength": 304,
+  "fetchedAt": "2026-04-28T15:09:19.982Z"
+}

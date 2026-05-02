@@ -1,0 +1,214 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-decorative-privacy/",
+  "path": "/pellicole-decorative-privacy/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-decorative-privacy/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole decorative privacy - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Il vetro è diventato una delle principali tendenze di design per arredare spazi di business e gli uffici, e con buone ragioni. La sostituzione delle pareti interne con il vetro di uffici e sale conferenze può reindirizzare la luce naturale all’interno degli spazi di lavoro, riducendo la dipendenza [&hellip;]",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-decorative-privacy/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole decorative privacy",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Il vetro è diventato una delle principali tendenze di design per arredare spazi di business e gli uffici, e con buone ragioni. La sostituzione delle pareti interne con il vetro di uffici e sale conferenze può reindirizzare la luce naturale all’interno degli spazi di lavoro, riducendo la dipendenza [&hellip;]",
+      "og:url": "https://www.solarisfilms.it/pellicole-decorative-privacy/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-19T10:43:58+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-decorative-privacy\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-decorative-privacy\\/\",\"name\":\"Pellicole decorative privacy - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-17T14:34:23+00:00\",\"dateModified\":\"2025-09-19T10:43:58+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-decorative-privacy\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-decorative-privacy\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-decorative-privacy\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole decorative privacy\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole decorative privacy"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola decorativa per vetri"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola per la privacy"
+    },
+    {
+      "level": 3,
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "level": 3,
+      "text": "Pellicole decorative privacy – Utilizzi"
+    },
+    {
+      "level": 2,
+      "text": "Le pellicole per vetri migliorano il design del vetro. Puoi utilizzare una pellicola decorativa per personalizzare il tuo spazio con design, stampe o motivi unici."
+    },
+    {
+      "level": 2,
+      "text": "Puoi installare pellicole per vetri satinate o colorate per ottenere la privacy di cui hai bisogno senza sacrificare la luce naturale."
+    },
+    {
+      "level": 2,
+      "text": "Le pellicole decorative per vetri riducono la trasmissione della luce attraverso il vetro per diminuire i riflessi, rendendo i dipendenti più a proprio agio mentre sfruttano i benefici della luce solare."
+    },
+    {
+      "level": 2,
+      "text": "La pellicola satinata MT 200 VX"
+    },
+    {
+      "level": 2,
+      "text": "La serie Out"
+    }
+  ],
+  "h1": "Pellicole decorative privacy",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole decorative privacy",
+      "text": "Pellicole decorative privacy"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola decorativa per vetri",
+      "text": "La pellicola decorativa per vetri"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole decorative Madico sono particolarmente indicate negli uffici, centri commerciali, banche, ambulatori, ospedali, studi professionali.",
+      "text": "Le pellicole decorative Madico sono particolarmente indicate negli uffici, centri commerciali, banche, ambulatori, ospedali, studi professionali."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole per vetri che vi presentiamo&#xA0;<strong>migliorano il design del vetro. Puoi utilizzare una pellicola decorativa per personalizzare il tuo spazio con design, stampe o motivi unici. La pellicola per vetri &#xE8; facile da pulire e dura nel tempo, ma poich&#xE9; la pellicola pu&#xF2; essere applicata e rimossa in modo semplice ed economico senza danneggiare il vetro, hai la flessibilit&#xE0; di cambiare l&#x2019;aspetto del tuo spazio a poco costo.",
+      "text": "Le pellicole per vetri che vi presentiamo migliorano il design del vetro. Puoi utilizzare una pellicola decorativa per personalizzare il tuo spazio con design, stampe o motivi unici. La pellicola per vetri è facile da pulire e dura nel tempo, ma poiché la pellicola può essere applicata e rimossa in modo semplice ed economico senza danneggiare il vetro, hai la flessibilità di cambiare l’aspetto del tuo spazio a poco costo."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>La pellicola decorativa&#xA0;non ha solo il grande pregio di migliorare la linea delle vostre superfici vetrate,&#xA0;<strong>offre anche discrezione&#xA0;quando la riservatezza delle informazioni o la privacy dei dipendenti &#xE8; un problema. Puoi installare pellicole per vetri satinate o colorate per ottenere la privacy di cui hai bisogno senza sacrificare la luce naturale, oppure puoi installare una pellicola che impedisca anche al sole di entrare nei tuoi spazi.",
+      "text": "La pellicola decorativa non ha solo il grande pregio di migliorare la linea delle vostre superfici vetrate, offre anche discrezione quando la riservatezza delle informazioni o la privacy dei dipendenti è un problema. Puoi installare pellicole per vetri satinate o colorate per ottenere la privacy di cui hai bisogno senza sacrificare la luce naturale, oppure puoi installare una pellicola che impedisca anche al sole di entrare nei tuoi spazi."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;aumento della luce naturale sul posto di lavoro &#xE8; stato collegato all&#x2019;aumento della produttivit&#xE0; e del morale dei dipendenti. Tuttavia, la luce solare diretta pu&#xF2; causare abbagliamento sugli schermi dei computer, costringendo i dipendenti a fare affidamento su persiane e illuminazione ambientale per affrontare il problema.&#xA0;<strong>Le pellicole decorative per vetri riducono la trasmissione della luce&#xA0;attraverso il vetro per diminuire i riflessi, rendendo i dipendenti pi&#xF9; a proprio agio mentre sfruttano i benefici della luce solare.",
+      "text": "L’aumento della luce naturale sul posto di lavoro è stato collegato all’aumento della produttività e del morale dei dipendenti. Tuttavia, la luce solare diretta può causare abbagliamento sugli schermi dei computer, costringendo i dipendenti a fare affidamento su persiane e illuminazione ambientale per affrontare il problema. Le pellicole decorative per vetri riducono la trasmissione della luce attraverso il vetro per diminuire i riflessi, rendendo i dipendenti più a proprio agio mentre sfruttano i benefici della luce solare."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola per la privacy",
+      "text": "La pellicola per la privacy"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>Caratteristiche distintive",
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole decorative Madico sono un&#x2019;<strong>ottima soluzione anche sul lato privacy!<br>\nSi pu&#xF2; trasformare un vetro trasparente in un vetro opaco in varie colorazioni e finiture, oppure installare una pellicola totalmente coprente. Anche in quest&#x2019;ultimo caso &#xE8; possibile scegliere tra una vasta gamma di colorazioni e gradazioni.",
+      "text": "Le pellicole decorative Madico sono un’ottima soluzione anche sul lato privacy! Si può trasformare un vetro trasparente in un vetro opaco in varie colorazioni e finiture, oppure installare una pellicola totalmente coprente. Anche in quest’ultimo caso è possibile scegliere tra una vasta gamma di colorazioni e gradazioni."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>Pellicole decorative privacy &#x2013; Utilizzi",
+      "text": "Pellicole decorative privacy – Utilizzi"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole per la Privacy Madico sono&#xA0;<strong>ideali&#xA0;in tutte quelle strutture, pubbliche o private, in cui si ha la&#xA0;<strong>necessit&#xE0; di tutelare la privacy&#xA0;delle persone.",
+      "text": "Le pellicole per la Privacy Madico sono ideali in tutte quelle strutture, pubbliche o private, in cui si ha la necessità di tutelare la privacy delle persone."
+    },
+    {
+      "type": "paragraph",
+      "html": "Se hai intenzione di rinnovare il tuo ufficio con pareti e pareti divisorie in vetro, potrai godere di pi&#xF9; luce naturale riducendo il consumo di energia e garantirti al contempo discrezione, se installi questo prodotto. Migliorare il look vetro con pellicole decorative per vetri pu&#xF2; personalizzare ulteriormente il tuo spazio e fornire ulteriori vantaggi di privacy e protezione per i dipendenti.",
+      "text": "Se hai intenzione di rinnovare il tuo ufficio con pareti e pareti divisorie in vetro, potrai godere di più luce naturale riducendo il consumo di energia e garantirti al contempo discrezione, se installi questo prodotto. Migliorare il look vetro con pellicole decorative per vetri può personalizzare ulteriormente il tuo spazio e fornire ulteriori vantaggi di privacy e protezione per i dipendenti."
+    },
+    {
+      "type": "note",
+      "html": "Le principali caratteristiche delle Pellicole decorative privacy:",
+      "text": "Le principali caratteristiche delle Pellicole decorative privacy:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Le pellicole per vetri migliorano il design del vetro. Puoi utilizzare una pellicola decorativa per personalizzare il tuo spazio con design, stampe o motivi unici.",
+      "text": "Le pellicole per vetri migliorano il design del vetro. Puoi utilizzare una pellicola decorativa per personalizzare il tuo spazio con design, stampe o motivi unici."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Puoi installare pellicole per vetri satinate o colorate per ottenere la privacy di cui hai bisogno senza sacrificare la luce naturale.",
+      "text": "Puoi installare pellicole per vetri satinate o colorate per ottenere la privacy di cui hai bisogno senza sacrificare la luce naturale."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Le pellicole decorative per vetri riducono la trasmissione della luce attraverso il vetro per diminuire i riflessi, rendendo i dipendenti pi&#xF9; a proprio agio mentre sfruttano i benefici della luce solare.",
+      "text": "Le pellicole decorative per vetri riducono la trasmissione della luce attraverso il vetro per diminuire i riflessi, rendendo i dipendenti più a proprio agio mentre sfruttano i benefici della luce solare."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola satinata MT 200 VX",
+      "text": "La pellicola satinata MT 200 VX"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola satinata MT 200 VX di Madico pu&#xF2; essere utilizzata per&#xA0;<strong>migliorare la privacy o per applicazioni di design decorativo&#xA0;in qualsiasi spazio.<strong>&#xA0;Il suo aspetto imita il vetro smerigliato, con la differenza che il costo della lavorazione &#xE8; decisamente minore ed &#xE8; facilmente rimovibile.",
+      "text": "La pellicola satinata MT 200 VX di Madico può essere utilizzata per migliorare la privacy o per applicazioni di design decorativo in qualsiasi spazio. Il suo aspetto imita il vetro smerigliato, con la differenza che il costo della lavorazione è decisamente minore ed è facilmente rimovibile."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie Out",
+      "text": "La serie Out"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole decorative Black Out e White Out di Madico sono il modo perfetto per&#xA0;<strong>creare privacy in qualsiasi spazio.",
+      "text": "Le pellicole decorative Black Out e White Out di Madico sono il modo perfetto per creare privacy in qualsiasi spazio."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole della serie Out di Madico&#xA0;<strong>bloccano la trasmissione della luce&#xA0;e possono essere utilizzate per creare privacy o per applicazioni decorative in edifici per uffici, ristoranti o ambienti commerciali.",
+      "text": "Le pellicole della serie Out di Madico bloccano la trasmissione della luce e possono essere utilizzate per creare privacy o per applicazioni decorative in edifici per uffici, ristoranti o ambienti commerciali."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole decorative privacy La pellicola decorativa per vetri Le pellicole decorative Madico sono particolarmente indicate negli uffici, centri commerciali, banche, ambulatori, ospedali, studi professionali. Le pellicole per vetri che vi presentiamo migliorano il design del vetro. Puoi utilizzare una pellicola decorativa per personalizzare il tuo spazio con design, stampe o motivi unici. La pellicola per vetri è facile da pulire e dura nel tempo, ma poiché la pellicola può essere applicata e rimossa in modo semplice ed economico senza danneggiare il vetro, hai la flessibilità di cambiare l’aspetto del tuo spazio a poco costo. La pellicola decorativa non ha solo il grande pregio di migliorare la linea delle vostre superfici vetrate, offre anche discrezione quando la riservatezza delle informazioni o la privacy dei dipendenti è un problema. Puoi installare pellicole per vetri satinate o colorate per ottenere la privacy di cui hai bisogno senza sacrificare la luce naturale, oppure puoi installare una pellicola che impedisca anche al sole di entrare nei tuoi spazi. L’aumento della luce naturale sul posto di lavoro è stato collegato all’aumento della produttività e del morale dei dipendenti. Tuttavia, la luce solare diretta può causare abbagliamento sugli schermi dei computer, costringendo i dipendenti a fare affidamento su persiane e illuminazione ambientale per affrontare il problema. Le pellicole decorative per vetri riducono la trasmissione della luce attraverso il vetro per diminuire i riflessi, rendendo i dipendenti più a proprio agio mentre sfruttano i benefici della luce solare. La pellicola per la privacy Caratteristiche distintive Le pellicole decorative Madico sono un’ottima soluzione anche sul lato privacy! Si può trasformare un vetro trasparente in un vetro opaco in varie colorazioni e finiture, oppure installare una pellicola totalmente coprente. Anche in quest’ultimo caso è possibile scegliere tra una vasta gamma di colorazioni e gradazioni. Pellicole decorative privacy – Utilizzi Le pellicole per la Privacy Madico sono ideali in tutte quelle strutture, pubbliche o private, in cui si ha la necessità di tutelare la privacy delle persone. Se hai intenzione di rinnovare il tuo ufficio con pareti e pareti divisorie in vetro, potrai godere di più luce naturale riducendo il consumo di energia e garantirti al contempo discrezione, se installi questo prodotto. Migliorare il look vetro con pellicole decorative per vetri può personalizzare ulteriormente il tuo spazio e fornire ulteriori vantaggi di privacy e protezione per i dipendenti. Le principali caratteristiche delle Pellicole decorative privacy: Le pellicole per vetri migliorano il design del vetro. Puoi utilizzare una pellicola decorativa per personalizzare il tuo spazio con design, stampe o motivi unici. Puoi installare pellicole per vetri satinate o colorate per ottenere la privacy di cui hai bisogno senza sacrificare la luce naturale. Le pellicole decorative per vetri riducono la trasmissione della luce attraverso il vetro per diminuire i riflessi, rendendo i dipendenti più a proprio agio mentre sfruttano i benefici della luce solare. La pellicola satinata MT 200 VX La pellicola satinata MT 200 VX di Madico può essere utilizzata per migliorare la privacy o per applicazioni di design decorativo in qualsiasi spazio. Il suo aspetto imita il vetro smerigliato, con la differenza che il costo della lavorazione è decisamente minore ed è facilmente rimovibile. La serie Out Le pellicole decorative Black Out e White Out di Madico sono il modo perfetto per creare privacy in qualsiasi spazio. Le pellicole della serie Out di Madico bloccano la trasmissione della luce e possono essere utilizzate per creare privacy o per applicazioni decorative in edifici per uffici, ristoranti o ambienti commerciali. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 3909,
+  "fetchedAt": "2026-04-28T15:09:44.692Z"
+}

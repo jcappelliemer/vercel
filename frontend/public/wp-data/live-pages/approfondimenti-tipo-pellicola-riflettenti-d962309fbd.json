@@ -1,0 +1,123 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/riflettenti/",
+  "path": "/approfondimenti/tipo-pellicola/riflettenti/",
+  "route": {
+    "type": "film-type",
+    "label": "Tipo pellicola",
+    "newPath": "/blog/tipo-pellicola/riflettenti/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/tipo-pellicola-sitemap.xml",
+  "seo": {
+    "title": "Riflettenti Archivi - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/riflettenti/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Riflettenti Archivi",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/tipo-pellicola/riflettenti/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/riflettenti\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/riflettenti\\/\",\"name\":\"Riflettenti Archivi - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/riflettenti\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/riflettenti\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS40PSSR8MIL.webp\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/riflettenti\\/#breadcrumb\"},\"inLanguage\":\"it-IT\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/riflettenti\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS40PSSR8MIL.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS40PSSR8MIL.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/tipo-pellicola\\/riflettenti\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Riflettenti\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Tipo Pellicola: Riflettenti"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare Madico RS 20 e PS SR 75 Micron"
+    }
+  ],
+  "h1": "Tipo Pellicola: Riflettenti",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Tipo Pellicola: Riflettenti",
+      "text": "Tipo Pellicola: Riflettenti"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/\">Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL",
+      "text": "Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/\">Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL",
+      "text": "Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/\">Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL",
+      "text": "Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/\">Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL",
+      "text": "Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/\">Pellicola antisolare Madico RS 40 E PS SR 75 Micron",
+      "text": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari Madico RS 40 E PS SR sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Le pellicole antisolari riflettenti dell&#x2019;americana Madico, distribuite in esclusiva per l&#x2019;Italia da Tecnosolar, sono formate da [&amp;hellip;]",
+      "text": "Le pellicole antisolari Madico RS 40 E PS SR sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Le pellicole antisolari riflettenti dell’americana Madico, distribuite in esclusiva per l’Italia da Tecnosolar, sono formate da [&hellip;]"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/\">Pellicola antisolare Madico RS 20 e PS SR 75 Micron",
+      "text": "Pellicola antisolare Madico RS 20 e PS SR 75 Micron"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola antisolare Madico RS 20 e PS SR &#xE8; consigliata per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. &#xC9; ideale per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. La pellicola antisolare Madico RS 20 e PS SR quindi ha estrema versatilit&#xE0; e grande efficacia [&amp;hellip;]",
+      "text": "La pellicola antisolare Madico RS 20 e PS SR è consigliata per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. É ideale per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. La pellicola antisolare Madico RS 20 e PS SR quindi ha estrema versatilità e grande efficacia [&hellip;]"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Tipo Pellicola: Riflettenti Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL Pellicola antisolare Madico RS 40 E PS SR 75 Micron Le pellicole antisolari Madico RS 40 E PS SR sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Le pellicole antisolari riflettenti dell’americana Madico, distribuite in esclusiva per l’Italia da Tecnosolar, sono formate da [&hellip;] Pellicola antisolare Madico RS 20 e PS SR 75 Micron La pellicola antisolare Madico RS 20 e PS SR è consigliata per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. É ideale per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. La pellicola antisolare Madico RS 20 e PS SR quindi ha estrema versatilità e grande efficacia [&hellip;]",
+  "textLength": 1149,
+  "fetchedAt": "2026-04-28T15:09:51.790Z"
+}

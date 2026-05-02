@@ -2,9 +2,21 @@ import { Link } from 'react-router-dom';
 import { Phone, EnvelopeSimple, MapPin, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
+const serviceLinks = [
+  { name: 'Pellicole Antisolari', path: '/servizi#antisolari' },
+  { name: 'Safety Shield', path: '/servizi#safety-shield' },
+  { name: 'Sicurezza', path: '/servizi#sicurezza' },
+  { name: 'Privacy e Design', path: '/servizi#privacy' },
+];
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const settings = useSettings();
+  const socialLinks = [
+    { icon: LinkedinLogo, href: settings.linkedin, label: 'LinkedIn' },
+    { icon: InstagramLogo, href: settings.instagram, label: 'Instagram' },
+    { icon: YoutubeLogo, href: settings.youtube, label: 'YouTube' },
+  ].filter((item) => item.href);
 
   return (
     <footer className="border-t border-white/5" data-testid="footer">
@@ -12,34 +24,34 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl flex items-center justify-center" style={{ background: 'linear-gradient(135deg, #2563EB 0%, #EAB308 100%)' }}>
-                <span className="text-white font-bold">SF</span>
-              </div>
-              <div>
-                <span className="font-semibold text-xl text-white">SOLARIS</span>
-                <span className="font-semibold text-xl text-gradient-gold">FILMS</span>
-              </div>
-            </div>
+            <Link to="/" className="inline-flex items-center mb-6">
+              <img
+                src={settings.logo_url || '/assets/solaris-logo.png'}
+                alt={settings.company_name || 'Solaris Films'}
+                className="h-14 w-auto object-contain"
+              />
+            </Link>
             <p className="text-[#94A3B8] text-sm leading-relaxed mb-6">
               {settings.footer_text}
             </p>
-            <div className="flex gap-3">
-              {[LinkedinLogo, InstagramLogo, YoutubeLogo].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#94A3B8] hover:text-[#EAB308] hover:border-[#EAB308]/30 transition-all">
-                  <Icon size={18} weight="light" />
+            {socialLinks.length > 0 && (
+              <div className="flex gap-3">
+                {socialLinks.map((item) => (
+                <a key={item.label} href={item.href} target="_blank" rel="noopener noreferrer" aria-label={item.label} className="w-10 h-10 rounded-lg bg-white/5 border border-white/10 flex items-center justify-center text-[#94A3B8] hover:text-[#EAB308] hover:border-[#EAB308]/30 transition-all">
+                  <item.icon size={18} weight="light" />
                 </a>
-              ))}
-            </div>
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Services */}
           <div>
             <h4 className="text-white font-medium mb-6">Servizi</h4>
             <ul className="space-y-3">
-              {['Pellicole Antisolari', 'Safety Shield', 'Sicurezza', 'Privacy e Design'].map((item, i) => (
-                <li key={i}>
-                  <Link to="/servizi" className="text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">{item}</Link>
+              {serviceLinks.map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path} className="text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">{item.name}</Link>
                 </li>
               ))}
             </ul>

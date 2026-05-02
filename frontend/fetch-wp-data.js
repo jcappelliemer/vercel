@@ -9,17 +9,19 @@ const fs = require('fs');
 const path = require('path');
 const { URL } = require('url');
 
-const WP_URL = process.env.REACT_APP_WP_URL || '';
+const DEFAULT_WP_URL = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
+const WP_URL = (process.env.REACT_APP_WP_URL || process.env.WP_URL || DEFAULT_WP_URL).replace(/\/$/, '');
+const FETCH_TIMEOUT_MS = Number(process.env.WP_FETCH_TIMEOUT_MS || 3000);
 
-if (!WP_URL) {
-  console.log('No REACT_APP_WP_URL set, skipping WP data fetch');
+if (!WP_URL || process.env.SKIP_WP_FETCH === '1') {
+  console.log('WP data fetch skipped');
   process.exit(0);
 }
 
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
-    client.get(url, (res) => {
+    const req = client.get(url, (res) => {
       let body = '';
       res.on('data', chunk => body += chunk);
       res.on('end', () => {
@@ -27,6 +29,9 @@ function fetchJson(url) {
         catch (e) { reject(new Error(`Invalid JSON from ${url}`)); }
       });
     }).on('error', reject);
+    req.setTimeout(FETCH_TIMEOUT_MS, () => {
+      req.destroy(new Error(`Timeout after ${FETCH_TIMEOUT_MS}ms for ${url}`));
+    });
   });
 }
 
@@ -34,7 +39,7 @@ function downloadFile(url, destPath) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
     const file = fs.createWriteStream(destPath);
-    client.get(url, (res) => {
+    const req = client.get(url, (res) => {
       if (res.statusCode === 301 || res.statusCode === 302) {
         // Follow redirect
         downloadFile(res.headers.location, destPath).then(resolve).catch(reject);
@@ -49,6 +54,9 @@ function downloadFile(url, destPath) {
     }).on('error', (err) => {
       fs.unlink(destPath, () => {});
       reject(err);
+    });
+    req.setTimeout(FETCH_TIMEOUT_MS, () => {
+      req.destroy(new Error(`Timeout after ${FETCH_TIMEOUT_MS}ms for ${url}`));
     });
   });
 }
@@ -84,6 +92,7 @@ async function main() {
   // 1. Fetch all endpoints
   const endpoints = {
     'settings': `${WP_URL}/wp-json/solaris/v1/settings`,
+    'headless-seo': `${WP_URL}/wp-json/solaris/v1/seo-map`,
     'prodotti': `${WP_URL}/wp-json/wp/v2/prodotto?per_page=100`,
     'focus-tecnici': `${WP_URL}/wp-json/wp/v2/focus_tecnico?per_page=100`,
     'pagine-info': `${WP_URL}/wp-json/wp/v2/pagina_info?per_page=100`,
@@ -99,7 +108,17 @@ async function main() {
       console.log(`  -> Fetched ${name} (${Array.isArray(data) ? data.length + ' items' : 'object'})`);
     } catch (err) {
       console.warn(`  -> FAILED ${name}: ${err.message}`);
-      fetchedData[name] = null;
+      const existingPath = path.join(outputDir, `${name}.json`);
+      if (fs.existsSync(existingPath)) {
+        try {
+          fetchedData[name] = JSON.parse(fs.readFileSync(existingPath, 'utf8'));
+          console.warn(`  -> Using existing ${name}.json fallback`);
+        } catch {
+          fetchedData[name] = null;
+        }
+      } else {
+        fetchedData[name] = null;
+      }
     }
   }
 

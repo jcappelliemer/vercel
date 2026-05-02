@@ -5,6 +5,8 @@ import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { ArrowRight, Sun, Bomb, ShieldCheck, Eye, CheckCircle } from '@phosphor-icons/react';
+import { useLivePages } from '../hooks/useLivePages';
+import { byTitle, filterByTypes, getLiveDescription, getLivePath, getLiveTitle } from '../utils/liveContent';
 
 const services = [
   {
@@ -52,6 +54,9 @@ const services = [
 ];
 
 const ServiziPagina = () => {
+  const { pages } = useLivePages();
+  const liveServicePages = filterByTypes(pages, ['category', 'service-index']).sort(byTitle);
+
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="servizi-page">
       <SEO title="Servizi" description="Pellicole antisolari, di sicurezza, anti-esplosione SafetyShield e privacy MADICO. Solaris Films offre soluzioni professionali per ogni esigenza." path="/servizi" />
@@ -76,6 +81,32 @@ const ServiziPagina = () => {
 
         <section className="py-20">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
+            {liveServicePages.length > 0 && (
+              <div className="mb-20">
+                <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
+                  <div>
+                    <p className="text-[#EAB308] text-sm font-medium uppercase tracking-wider mb-3">Sezioni live importate</p>
+                    <h2 className="text-3xl font-medium text-white">Percorsi servizio</h2>
+                  </div>
+                  <Link to="/mappa-sito" className="text-sm font-medium text-[#EAB308] hover:text-white inline-flex items-center gap-2">
+                    Vedi tutti gli URL
+                    <ArrowRight size={15} weight="bold" />
+                  </Link>
+                </div>
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+                  {liveServicePages.map((page, index) => (
+                    <motion.div key={page.path} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
+                      <Link to={getLivePath(page)} className="card-glass rounded-xl p-6 block h-full group">
+                        <span className="text-xs text-[#EAB308] uppercase tracking-wider">{page.route?.label}</span>
+                        <h3 className="text-white font-medium mt-3 mb-3 group-hover:text-[#EAB308] transition-colors">{getLiveTitle(page)}</h3>
+                        <p className="text-sm text-[#94A3B8] line-clamp-3">{getLiveDescription(page) || 'Contenuto servizio importato dal sito live.'}</p>
+                      </Link>
+                    </motion.div>
+                  ))}
+                </div>
+              </div>
+            )}
+
             <div className="space-y-32">
               {services.map((service, index) => (
                 <motion.div

@@ -1,0 +1,168 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-oscuranti-per-vetri/",
+  "path": "/pellicole-oscuranti-per-vetri/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-oscuranti-per-vetri/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole oscuranti per vetri - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-oscuranti-per-vetri/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole oscuranti per vetri",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pellicole-oscuranti-per-vetri/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T15:40:42+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-oscuranti-per-vetri\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-oscuranti-per-vetri\\/\",\"name\":\"Pellicole oscuranti per vetri - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-16T09:38:28+00:00\",\"dateModified\":\"2025-09-18T15:40:42+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-oscuranti-per-vetri\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-oscuranti-per-vetri\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-oscuranti-per-vetri\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole oscuranti per vetri\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole oscuranti per vetri"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole oscuranti per vetri"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola oscurante NT"
+    },
+    {
+      "level": 2,
+      "text": "Un eccellente filtraggio dei raggi UV che riduce lo sbiadimento ed il deperimento di tessuti, mobili e opere d’arte."
+    },
+    {
+      "level": 2,
+      "text": "Un eccellente riduzione dell’abbagliamento per ridurre l’affaticamento degli occhi e lavorare più facilmente con gli schermi dei computer."
+    },
+    {
+      "level": 2,
+      "text": "Una pellicola per esterni a controllo solare la cui installazione esterna migliora il controllo del calore negli interni degli edifici."
+    },
+    {
+      "level": 2,
+      "text": "La pellicola oscurante CH 8"
+    }
+  ],
+  "h1": "Pellicole oscuranti per vetri",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole oscuranti per vetri",
+      "text": "Pellicole oscuranti per vetri"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole oscuranti per vetri sono prodotti&#xA0;<strong>indicati nelle situazioni pi&#xF9; critiche&#xA0;di posizionamento ed irraggiamento solare. Questo perch&#xE9; sono formidabili nel taglio della luce solare, garantendo una<strong>&#xA0;schermatura superiore&#xA0;e l&#x2019;eliminazione di qualsiasi problema legato all&#x2019;<strong>abbaglio ed al riverbero. Si presentano come pellicole<strong>&#xA0;scure ma non riflettenti, donando un aspetto pi&#xF9; discreto ai vostri edifici ed evitando gli effetti specchio che potrebbero infastidire il vicinato.",
+      "text": "Le pellicole oscuranti per vetri sono prodotti indicati nelle situazioni più critiche di posizionamento ed irraggiamento solare. Questo perché sono formidabili nel taglio della luce solare, garantendo una schermatura superiore e l’eliminazione di qualsiasi problema legato all’abbaglio ed al riverbero. Si presentano come pellicole scure ma non riflettenti, donando un aspetto più discreto ai vostri edifici ed evitando gli effetti specchio che potrebbero infastidire il vicinato."
+    },
+    {
+      "type": "paragraph",
+      "html": "Queste pellicole adesive antisolari migliorano le prestazioni delle superfici in vetro con una semplice applicazione, aumentando cos&#xEC; l&#x2019;efficienza energetica degli edifici ed evitando opere strutturali costose, invasive e di lunga durata.",
+      "text": "Queste pellicole adesive antisolari migliorano le prestazioni delle superfici in vetro con una semplice applicazione, aumentando così l’efficienza energetica degli edifici ed evitando opere strutturali costose, invasive e di lunga durata."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Migliorano la protezione solare e l&#x2019;isolamento termico, riducono il consumo di energia, le emissioni di anidride carbonica e riducono anche il calore, l&#x2019;abbagliamento e il riverbero&#xA0;<strong>senza lavori di ristrutturazione&#xA0;lunghi, costosi ed invasivi.",
+      "text": "Migliorano la protezione solare e l’isolamento termico, riducono il consumo di energia, le emissioni di anidride carbonica e riducono anche il calore, l’abbagliamento e il riverbero senza lavori di ristrutturazione lunghi, costosi ed invasivi."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola oscurante NT",
+      "text": "La pellicola oscurante NT"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole solari&#xA0;<strong>Tecnosolar NT20 E PS SR&#xA0;vengono utilizzate dove &#xE8; necessario schermare in maniera decisa la radiazione solare ed eliminare i problemi di abbagliamento senza per&#xF2; avere le propriet&#xE0; riflettenti di altri tipi di pellicole. Viene installata solo in esterno e garantisce una colorazione nera neutra alle vostre superfici vetrate.",
+      "text": "Le pellicole solari Tecnosolar NT20 E PS SR vengono utilizzate dove è necessario schermare in maniera decisa la radiazione solare ed eliminare i problemi di abbagliamento senza però avere le proprietà riflettenti di altri tipi di pellicole. Viene installata solo in esterno e garantisce una colorazione nera neutra alle vostre superfici vetrate."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari NT20 E PS SR vengono utilizzate dove si deve schermare l&#x2019;irraggiamento solare ed eliminare i problemi di abbagliamento senza provocare l&#x2019;effetto riflettente caratteristico di altri tipi di pellicole. Questa pellicola &#xE8;&#xA0;<strong>molto scura&#xA0;e garantisce discrezione nelle ore diurne. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre.",
+      "text": "Le pellicole antisolari NT20 E PS SR vengono utilizzate dove si deve schermare l’irraggiamento solare ed eliminare i problemi di abbagliamento senza provocare l’effetto riflettente caratteristico di altri tipi di pellicole. Questa pellicola è molto scura e garantisce discrezione nelle ore diurne. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre."
+    },
+    {
+      "type": "note",
+      "html": "Le pellicole oscuranti per vetri vengono sempre installate in esterno a causa della loro forte azione di rifrazione dei raggi solari:",
+      "text": "Le pellicole oscuranti per vetri vengono sempre installate in esterno a causa della loro forte azione di rifrazione dei raggi solari:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Un eccellente filtraggio dei raggi UV che riduce lo sbiadimento ed il deperimento di tessuti, mobili e opere d&#x2019;arte.",
+      "text": "Un eccellente filtraggio dei raggi UV che riduce lo sbiadimento ed il deperimento di tessuti, mobili e opere d’arte."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Un eccellente riduzione dell&#x2019;abbagliamento per ridurre l&#x2019;affaticamento degli occhi e lavorare pi&#xF9; facilmente con gli schermi dei computer.",
+      "text": "Un eccellente riduzione dell’abbagliamento per ridurre l’affaticamento degli occhi e lavorare più facilmente con gli schermi dei computer."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Una pellicola per esterni a controllo solare la cui installazione esterna migliora il controllo del calore negli interni degli edifici.",
+      "text": "Una pellicola per esterni a controllo solare la cui installazione esterna migliora il controllo del calore negli interni degli edifici."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola oscurante CH 8",
+      "text": "La pellicola oscurante CH 8"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Madico CH 8 E PS SR&#xA0;&#xE8; una pellicola antisolare non riflettente, applicabile in esterno. Come la NT riesce a ridurre significativamente l&#x2019;abbaglio e conferisce un look uniforme alle vetrate sugli edifici commerciali. Nonostante lo spessore di soli 5 micron riesce ad essere molto potente. Per quanto riguarda il design si tratta di una pellicola molto elegante; il grigio scuro della sua finitura dar&#xE0; un aspetto nobile alle vostre facciate ed essendo molto fina non appesantir&#xE0; la linea degli infissi.",
+      "text": "Madico CH 8 E PS SR è una pellicola antisolare non riflettente, applicabile in esterno. Come la NT riesce a ridurre significativamente l’abbaglio e conferisce un look uniforme alle vetrate sugli edifici commerciali. Nonostante lo spessore di soli 5 micron riesce ad essere molto potente. Per quanto riguarda il design si tratta di una pellicola molto elegante; il grigio scuro della sua finitura darà un aspetto nobile alle vostre facciate ed essendo molto fina non appesantirà la linea degli infissi."
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola oscurante CH 8 E PS SR &#xE8;&#xA0;<strong>prodotta da Madico, azienda americana leader nel settore con&#xA0;<strong>pi&#xF9; di 100 anni di know-how. La missione di Madico &#xE8; creare pellicole ad alte prestazioni che non solo proteggono voi ed i vostri beni, ma migliorano l&#x2019;estetica della tua casa e ne<strong>&#xA0;esalta il comfort. Con le pellicole oscuranti di Madico potete smettere di proteggere i vostri cari dietro tende e persiane e cominciare veramente a godersi le bellezze che solo la vista e l&#x2019;illuminazione date da una bella finestra pu&#xF2; darvi.",
+      "text": "La pellicola oscurante CH 8 E PS SR è prodotta da Madico, azienda americana leader nel settore con più di 100 anni di know-how. La missione di Madico è creare pellicole ad alte prestazioni che non solo proteggono voi ed i vostri beni, ma migliorano l’estetica della tua casa e ne esalta il comfort. Con le pellicole oscuranti di Madico potete smettere di proteggere i vostri cari dietro tende e persiane e cominciare veramente a godersi le bellezze che solo la vista e l’illuminazione date da una bella finestra può darvi."
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola oscurante CH8 E PS SR &#xE8; installabile solo in esterno e doner&#xE0; una finitura grigia neutra alle vostre superfici vetrate.",
+      "text": "La pellicola oscurante CH8 E PS SR è installabile solo in esterno e donerà una finitura grigia neutra alle vostre superfici vetrate."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole oscuranti per vetri Le pellicole oscuranti per vetri sono prodotti indicati nelle situazioni più critiche di posizionamento ed irraggiamento solare. Questo perché sono formidabili nel taglio della luce solare, garantendo una schermatura superiore e l’eliminazione di qualsiasi problema legato all’abbaglio ed al riverbero. Si presentano come pellicole scure ma non riflettenti, donando un aspetto più discreto ai vostri edifici ed evitando gli effetti specchio che potrebbero infastidire il vicinato. Queste pellicole adesive antisolari migliorano le prestazioni delle superfici in vetro con una semplice applicazione, aumentando così l’efficienza energetica degli edifici ed evitando opere strutturali costose, invasive e di lunga durata. Migliorano la protezione solare e l’isolamento termico, riducono il consumo di energia, le emissioni di anidride carbonica e riducono anche il calore, l’abbagliamento e il riverbero senza lavori di ristrutturazione lunghi, costosi ed invasivi. La pellicola oscurante NT Le pellicole solari Tecnosolar NT20 E PS SR vengono utilizzate dove è necessario schermare in maniera decisa la radiazione solare ed eliminare i problemi di abbagliamento senza però avere le proprietà riflettenti di altri tipi di pellicole. Viene installata solo in esterno e garantisce una colorazione nera neutra alle vostre superfici vetrate. Le pellicole antisolari NT20 E PS SR vengono utilizzate dove si deve schermare l’irraggiamento solare ed eliminare i problemi di abbagliamento senza provocare l’effetto riflettente caratteristico di altri tipi di pellicole. Questa pellicola è molto scura e garantisce discrezione nelle ore diurne. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre. Le pellicole oscuranti per vetri vengono sempre installate in esterno a causa della loro forte azione di rifrazione dei raggi solari: Un eccellente filtraggio dei raggi UV che riduce lo sbiadimento ed il deperimento di tessuti, mobili e opere d’arte. Un eccellente riduzione dell’abbagliamento per ridurre l’affaticamento degli occhi e lavorare più facilmente con gli schermi dei computer. Una pellicola per esterni a controllo solare la cui installazione esterna migliora il controllo del calore negli interni degli edifici. La pellicola oscurante CH 8 Madico CH 8 E PS SR è una pellicola antisolare non riflettente, applicabile in esterno. Come la NT riesce a ridurre significativamente l’abbaglio e conferisce un look uniforme alle vetrate sugli edifici commerciali. Nonostante lo spessore di soli 5 micron riesce ad essere molto potente. Per quanto riguarda il design si tratta di una pellicola molto elegante; il grigio scuro della sua finitura darà un aspetto nobile alle vostre facciate ed essendo molto fina non appesantirà la linea degli infissi. La pellicola oscurante CH 8 E PS SR è prodotta da Madico, azienda americana leader nel settore con più di 100 anni di know-how. La missione di Madico è creare pellicole ad alte prestazioni che non solo proteggono voi ed i vostri beni, ma migliorano l’estetica della tua casa e ne esalta il comfort. Con le pellicole oscuranti di Madico potete smettere di proteggere i vostri cari dietro tende e persiane e cominciare veramente a godersi le bellezze che solo la vista e l’illuminazione date da una bella finestra può darvi. La pellicola oscurante CH8 E PS SR è installabile solo in esterno e donerà una finitura grigia neutra alle vostre superfici vetrate. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 3610,
+  "fetchedAt": "2026-04-28T15:09:40.848Z"
+}

@@ -1,0 +1,113 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing/",
+  "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing/",
+  "route": {
+    "type": "product",
+    "label": "Prodotto",
+    "newPath": "/prodotti/madico-gullwing/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-sicurezza-sitemap.xml",
+  "seo": {
+    "title": "Sistema di ancoraggio Gullwing - Solaris Films",
+    "description": "In caso di rottura del vetro, il sistema di ancoraggio GullWing®, in combinazione con le pellicole per vetri Madico SafetyShield®, è stato concepito per assorbire e disperdere l’energia incidente a cui il vetro trattato con la pellicola è soggetto, e trasferire il ridotto carico all’intera superficie netta del vetro. Assorbendo e distribuendo il carico, l’ancoraggio [&hellip;]",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Sistema di ancoraggio Gullwing",
+      "og:description": "In caso di rottura del vetro, il sistema di ancoraggio GullWing®, in combinazione con le pellicole per vetri Madico SafetyShield®, è stato concepito per assorbire e disperdere l’energia incidente a cui il vetro trattato con la pellicola è soggetto, e trasferire il ridotto carico all’intera superficie netta del vetro. Assorbendo e distribuendo il carico, l’ancoraggio [&hellip;]",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/damaged-glass-texture.jpg",
+      "og:image:width": "1200",
+      "og:image:height": "1200",
+      "og:image:type": "image/jpeg"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T10:09:02+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-gullwing\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-gullwing\\/\",\"name\":\"Sistema di ancoraggio Gullwing - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-gullwing\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-gullwing\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/damaged-glass-texture.jpg\",\"datePublished\":\"2025-06-12T07:26:55+00:00\",\"dateModified\":\"2025-09-18T10:09:02+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-gullwing\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-gullwing\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-gullwing\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/damaged-glass-texture.jpg\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/damaged-glass-texture.jpg\",\"width\":1200,\"height\":1200},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-gullwing\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole di sicurezza\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Sistema di ancoraggio Gullwing\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Sistema di ancoraggio GullWing"
+    },
+    {
+      "level": 4,
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "level": 4,
+      "text": "Prestazioni certificate"
+    },
+    {
+      "level": 6,
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    }
+  ],
+  "h1": "Sistema di ancoraggio GullWing",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Sistema di ancoraggio GullWing",
+      "text": "Sistema di ancoraggio GullWing"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Consulta la scheda tecnica",
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "type": "paragraph",
+      "html": "In caso di rottura del vetro, il sistema di ancoraggio GullWing&#xAE;, in combinazione con le <a href=\"/\">pellicole per vetri Madico SafetyShield&#xAE;, &#xE8; stato concepito per assorbire e disperdere l&#x2019;energia incidente a cui il vetro trattato con la pellicola &#xE8; soggetto, e trasferire il ridotto carico all&#x2019;intera superficie netta del vetro. Assorbendo e distribuendo il carico, l&#x2019;ancoraggio GullWing&#xAE; trattiene il vetro nel proprio vano, riducendo la probabilit&#xE0; che schegge e detriti di vetro vengano proiettati all&#x2019;interno degli ambienti. Il sistema di ancoraggio GullWing&#xAE; si avvale di una membrana flessibile che viene fatta aderire sia al vetro con la pellicola installata che all&#x2019;infisso. A differenza dei sistemi di &#x201C;contenimento&#x201D;, ideati per bloccare la proiezione del vetro, il sistema GullWing&#xAE;, &#xE8; stato ideato per evitare che il vetro trattato con la pellicola fuoriesca dal proprio vano",
+      "text": "In caso di rottura del vetro, il sistema di ancoraggio GullWing®, in combinazione con le pellicole per vetri Madico SafetyShield®, è stato concepito per assorbire e disperdere l’energia incidente a cui il vetro trattato con la pellicola è soggetto, e trasferire il ridotto carico all’intera superficie netta del vetro. Assorbendo e distribuendo il carico, l’ancoraggio GullWing® trattiene il vetro nel proprio vano, riducendo la probabilità che schegge e detriti di vetro vengano proiettati all’interno degli ambienti. Il sistema di ancoraggio GullWing® si avvale di una membrana flessibile che viene fatta aderire sia al vetro con la pellicola installata che all’infisso. A differenza dei sistemi di “contenimento”, ideati per bloccare la proiezione del vetro, il sistema GullWing®, è stato ideato per evitare che il vetro trattato con la pellicola fuoriesca dal proprio vano"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Prestazioni certificate",
+      "text": "Prestazioni certificate"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola SafetyShield&#xAE; 800 con il Sistema di Ancoraggio GullWing&#xAE; applicato ai 4 lati raggiunge livello 2 della norma anti esplosione GSA e della norma UK PSDB, test eseguiti con carica esplosiva di 39 kPa e 322 kPa ms. Il sistema di ancoraggio GullWing&#xAE; &#xE8; disponibile in tre diversi profili, adattabili pertanto a vari tipi d&#x2019;infissi. Inoltre il sistema &#xE8; disponibile in tre colori standard: nero, grigio e bianco, su richiesta anche altri colori. I nostri sistemi sono i pi&#xF9; testati ed innovativi del settore e soddisfano o eccedono ai requisiti di sicurezza nazionali ed internazionali. Disponiamo di cinque diversi sistemi di ancoraggio con propriet&#xE0; brevettate, funzionali con le nostre pellicole di sicurezza SafetyShield. Vengono offerti una variet&#xE0; di sistemi al fine di garantire il raggiungimento di specifici livelli di sicurezza adattabili al meglio a differenti tipi di finestrature.",
+      "text": "La pellicola SafetyShield® 800 con il Sistema di Ancoraggio GullWing® applicato ai 4 lati raggiunge livello 2 della norma anti esplosione GSA e della norma UK PSDB, test eseguiti con carica esplosiva di 39 kPa e 322 kPa ms. Il sistema di ancoraggio GullWing® è disponibile in tre diversi profili, adattabili pertanto a vari tipi d’infissi. Inoltre il sistema è disponibile in tre colori standard: nero, grigio e bianco, su richiesta anche altri colori. I nostri sistemi sono i più testati ed innovativi del settore e soddisfano o eccedono ai requisiti di sicurezza nazionali ed internazionali. Disponiamo di cinque diversi sistemi di ancoraggio con proprietà brevettate, funzionali con le nostre pellicole di sicurezza SafetyShield. Vengono offerti una varietà di sistemi al fine di garantire il raggiungimento di specifici livelli di sicurezza adattabili al meglio a differenti tipi di finestrature."
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola",
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
+      "text": "Vai al focus tecnico",
+      "html": ""
+    },
+    {
+      "type": "paragraph",
+      "html": "Consulta il nostro <a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/\">approfondimento sulle pellicole di sicurezza per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Consulta il nostro approfondimento sulle pellicole di sicurezza per avere maggiori informazioni, farai una scelta più consapevole!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Sistema di ancoraggio GullWing Consulta la scheda tecnica In caso di rottura del vetro, il sistema di ancoraggio GullWing®, in combinazione con le pellicole per vetri Madico SafetyShield®, è stato concepito per assorbire e disperdere l’energia incidente a cui il vetro trattato con la pellicola è soggetto, e trasferire il ridotto carico all’intera superficie netta del vetro. Assorbendo e distribuendo il carico, l’ancoraggio GullWing® trattiene il vetro nel proprio vano, riducendo la probabilità che schegge e detriti di vetro vengano proiettati all’interno degli ambienti. Il sistema di ancoraggio GullWing® si avvale di una membrana flessibile che viene fatta aderire sia al vetro con la pellicola installata che all’infisso. A differenza dei sistemi di “contenimento”, ideati per bloccare la proiezione del vetro, il sistema GullWing®, è stato ideato per evitare che il vetro trattato con la pellicola fuoriesca dal proprio vano Prestazioni certificate La pellicola SafetyShield® 800 con il Sistema di Ancoraggio GullWing® applicato ai 4 lati raggiunge livello 2 della norma anti esplosione GSA e della norma UK PSDB, test eseguiti con carica esplosiva di 39 kPa e 322 kPa ms. Il sistema di ancoraggio GullWing® è disponibile in tre diversi profili, adattabili pertanto a vari tipi d’infissi. Inoltre il sistema è disponibile in tre colori standard: nero, grigio e bianco, su richiesta anche altri colori. I nostri sistemi sono i più testati ed innovativi del settore e soddisfano o eccedono ai requisiti di sicurezza nazionali ed internazionali. Disponiamo di cinque diversi sistemi di ancoraggio con proprietà brevettate, funzionali con le nostre pellicole di sicurezza SafetyShield. Vengono offerti una varietà di sistemi al fine di garantire il raggiungimento di specifici livelli di sicurezza adattabili al meglio a differenti tipi di finestrature. Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico Consulta il nostro approfondimento sulle pellicole di sicurezza per avere maggiori informazioni, farai una scelta più consapevole!",
+  "textLength": 2086,
+  "fetchedAt": "2026-04-28T15:09:19.445Z"
+}

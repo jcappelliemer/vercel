@@ -1,0 +1,203 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/",
+  "path": "/pagina-info/",
+  "route": {
+    "type": "info-index",
+    "label": "Informazioni",
+    "newPath": "/info/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Archivi Pagine info - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "website",
+      "og:title": "Archivi Pagine info",
+      "og:url": "https://www.solarisfilms.it/pagina-info/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\",\"name\":\"Archivi Pagine info - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/#breadcrumb\"},\"inLanguage\":\"it-IT\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Archivi: Pagine info"
+    },
+    {
+      "level": 2,
+      "text": "Glossario termini"
+    },
+    {
+      "level": 2,
+      "text": "Garanzie"
+    },
+    {
+      "level": 2,
+      "text": "Istruzione e manutenzione"
+    },
+    {
+      "level": 2,
+      "text": "I punti di forza"
+    },
+    {
+      "level": 2,
+      "text": "Certificazione NFRC"
+    },
+    {
+      "level": 2,
+      "text": "Sistemi filtranti Dpr. 59/09"
+    },
+    {
+      "level": 2,
+      "text": "Testo unico sulla salute e sicurezza sul lavoro ​"
+    },
+    {
+      "level": 2,
+      "text": "Sicurezza a norma di legge"
+    },
+    {
+      "level": 2,
+      "text": "Norma BRC"
+    },
+    {
+      "level": 2,
+      "text": "Norme"
+    }
+  ],
+  "h1": "Archivi: Pagine info",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Archivi: Pagine info",
+      "text": "Archivi: Pagine info"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/glossario-termini/\">Glossario termini",
+      "text": "Glossario termini"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/garanzie/\">Garanzie",
+      "text": "Garanzie"
+    },
+    {
+      "type": "paragraph",
+      "html": "Madico Inc. USA, riconosce la garanzia per le pellicole installate in Italia da installatori autorizzati Tecnosolar s.r.l. Distributore Ufficiale Nazionale. Madico, Inc. (USA) non onorer&#xE0; qualsiasi garanzia delle pellicole per vetri Madico in Italia, se acquistate da fonti diverse da Tecnosolar s.r.l. Madico garantisce le sue pellicole per vetri fino a 10 ANNI se installate [&amp;hellip;]",
+      "text": "Madico Inc. USA, riconosce la garanzia per le pellicole installate in Italia da installatori autorizzati Tecnosolar s.r.l. Distributore Ufficiale Nazionale. Madico, Inc. (USA) non onorerà qualsiasi garanzia delle pellicole per vetri Madico in Italia, se acquistate da fonti diverse da Tecnosolar s.r.l. Madico garantisce le sue pellicole per vetri fino a 10 ANNI se installate [&hellip;]"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/istruzioni-e-manutenzione/\">Istruzione e manutenzione",
+      "text": "Istruzione e manutenzione"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/i-punti-di-forza/\">I punti di forza",
+      "text": "I punti di forza"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 I PUNTI DI FORZA DELLE PELLICOLE ANTISOLARI MADICO",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 I PUNTI DI FORZA DELLE PELLICOLE ANTISOLARI MADICO"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/certificazione-nfrc/\">Certificazione NFRC",
+      "text": "Certificazione NFRC"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/sistemi-filtranti-dpr-59-09/\">Sistemi filtranti Dpr. 59/09",
+      "text": "Sistemi filtranti Dpr. 59/09"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/\">Testo unico sulla salute e sicurezza sul lavoro &#x200B;",
+      "text": "Testo unico sulla salute e sicurezza sul lavoro ​"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/sicurezza-a-norma-di-legge/\">Sicurezza a norma di legge",
+      "text": "Sicurezza a norma di legge"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/norma-brc/\">Norma BRC",
+      "text": "Norma BRC"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<a href=\"/pagina-info/norme/\">Norme",
+      "text": "Norme"
+    },
+    {
+      "type": "paragraph",
+      "html": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "text": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Archivi: Pagine info Glossario termini DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Garanzie Madico Inc. USA, riconosce la garanzia per le pellicole installate in Italia da installatori autorizzati Tecnosolar s.r.l. Distributore Ufficiale Nazionale. Madico, Inc. (USA) non onorerà qualsiasi garanzia delle pellicole per vetri Madico in Italia, se acquistate da fonti diverse da Tecnosolar s.r.l. Madico garantisce le sue pellicole per vetri fino a 10 ANNI se installate [&hellip;] Istruzione e manutenzione DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 I punti di forza DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 I PUNTI DI FORZA DELLE PELLICOLE ANTISOLARI MADICO Certificazione NFRC DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Sistemi filtranti Dpr. 59/09 DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Testo unico sulla salute e sicurezza sul lavoro ​ DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Sicurezza a norma di legge DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Norma BRC DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Norme DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+  "textLength": 1076,
+  "fetchedAt": "2026-04-28T15:09:39.026Z"
+}

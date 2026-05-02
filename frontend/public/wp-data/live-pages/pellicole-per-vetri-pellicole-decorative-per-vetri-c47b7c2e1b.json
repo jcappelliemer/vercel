@@ -1,0 +1,78 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/",
+  "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/",
+  "route": {
+    "type": "category",
+    "label": "Pellicole decorative",
+    "newPath": "/servizi/pellicole-decorative/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-privacy-sitemap.xml",
+  "seo": {
+    "title": "Archivi Pellicole privacy e design - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "website",
+      "og:title": "Archivi Pellicole privacy e design",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/\",\"name\":\"Archivi Pellicole privacy e design - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/vetrofanie.svg\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/#breadcrumb\"},\"inLanguage\":\"it-IT\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/vetrofanie.svg\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/vetrofanie.svg\",\"width\":1200,\"height\":1200},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole privacy e design\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole decorative per vetri"
+    },
+    {
+      "level": 2,
+      "text": "Quali pellicole decorative per vetri consigliate?"
+    }
+  ],
+  "h1": "Pellicole decorative per vetri",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole decorative per vetri",
+      "text": "Pellicole decorative per vetri"
+    },
+    {
+      "type": "paragraph",
+      "html": "Al giorno d&amp;#8217;oggi, la pellicola decorativa per vetri &#xE8; diventata un elemento ricercato da molte persone, anche se abbiamo notato che ci sono ancora pochissime informazioni a riguardo. Ti consigliamo di tenere gli occhi aperti prima di installare la pellicola sulle finestre, perch&#xE9; abbiamo notato che alcune persone hanno inserito sul web informazioni errate per venderti prodotti che non ti servono.",
+      "text": "Al giorno d’oggi, la pellicola decorativa per vetri è diventata un elemento ricercato da molte persone, anche se abbiamo notato che ci sono ancora pochissime informazioni a riguardo. Ti consigliamo di tenere gli occhi aperti prima di installare la pellicola sulle finestre, perché abbiamo notato che alcune persone hanno inserito sul web informazioni errate per venderti prodotti che non ti servono."
+    },
+    {
+      "type": "paragraph",
+      "html": "In effetti, molte persone cercano di applicarvi una pellicola schermante o riflettente vendendola come pellicola privacy. Sfortunatamente, questi film non possono garantire la privacy per tutto il giorno. Di notte, quando la luce interna &#xE8; pi&#xF9; forte della luce esterna, l&amp;#8217;effetto di oscuramento o riflesso andr&#xE0; perso e la privacy durante il giorno svanir&#xE0; magicamente. Se vuoi qualcosa che ti protegga da occhi indiscreti mentre abbellisci il tuo edificio con elementi di design quello che ti serve &#xE8; una pellicola per vetri per la privacy!<br>Ci sono due ragioni principali per installare la pellicola decorativa per vetri, una &#xE8; la riservatezza necessaria e l&amp;#8217;altra &#xE8; usare le linee di design per migliorare la linea dei vostri infissi. L&amp;#8217;effetto satinato della pellicola vi protegger&#xE0; da occhi indiscreti, donando privacy ai vostri locali. Inoltre, le pellicole decorative per vetri possono valorizzare qualsiasi superficie di vetro all&amp;#8217;interno e all&amp;#8217;esterno; non fermare la tua creativit&#xE0; e decora le tue superfici vetrate!",
+      "text": "In effetti, molte persone cercano di applicarvi una pellicola schermante o riflettente vendendola come pellicola privacy. Sfortunatamente, questi film non possono garantire la privacy per tutto il giorno. Di notte, quando la luce interna è più forte della luce esterna, l’effetto di oscuramento o riflesso andrà perso e la privacy durante il giorno svanirà magicamente. Se vuoi qualcosa che ti protegga da occhi indiscreti mentre abbellisci il tuo edificio con elementi di design quello che ti serve è una pellicola per vetri per la privacy!Ci sono due ragioni principali per installare la pellicola decorativa per vetri, una è la riservatezza necessaria e l’altra è usare le linee di design per migliorare la linea dei vostri infissi. L’effetto satinato della pellicola vi proteggerà da occhi indiscreti, donando privacy ai vostri locali. Inoltre, le pellicole decorative per vetri possono valorizzare qualsiasi superficie di vetro all’interno e all’esterno; non fermare la tua creatività e decora le tue superfici vetrate!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire altre soluzioni di design personalizzate? Ti consigliamo l&amp;#8217;<a href=\"/pellicole-per-vetri/vetrofanie/\">approfondimento sulle vetrofanie da parte del nostro team&#xA0;<em>Graphics!",
+      "text": "Vuoi scoprire altre soluzioni di design personalizzate? Ti consigliamo l’approfondimento sulle vetrofanie da parte del nostro team Graphics!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Quali pellicole decorative per vetri consigliate?",
+      "text": "Quali pellicole decorative per vetri consigliate?"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole decorative per vetri Al giorno d’oggi, la pellicola decorativa per vetri è diventata un elemento ricercato da molte persone, anche se abbiamo notato che ci sono ancora pochissime informazioni a riguardo. Ti consigliamo di tenere gli occhi aperti prima di installare la pellicola sulle finestre, perché abbiamo notato che alcune persone hanno inserito sul web informazioni errate per venderti prodotti che non ti servono. In effetti, molte persone cercano di applicarvi una pellicola schermante o riflettente vendendola come pellicola privacy. Sfortunatamente, questi film non possono garantire la privacy per tutto il giorno. Di notte, quando la luce interna è più forte della luce esterna, l’effetto di oscuramento o riflesso andrà perso e la privacy durante il giorno svanirà magicamente. Se vuoi qualcosa che ti protegga da occhi indiscreti mentre abbellisci il tuo edificio con elementi di design quello che ti serve è una pellicola per vetri per la privacy!Ci sono due ragioni principali per installare la pellicola decorativa per vetri, una è la riservatezza necessaria e l’altra è usare le linee di design per migliorare la linea dei vostri infissi. L’effetto satinato della pellicola vi proteggerà da occhi indiscreti, donando privacy ai vostri locali. Inoltre, le pellicole decorative per vetri possono valorizzare qualsiasi superficie di vetro all’interno e all’esterno; non fermare la tua creatività e decora le tue superfici vetrate! Vuoi scoprire altre soluzioni di design personalizzate? Ti consigliamo l’approfondimento sulle vetrofanie da parte del nostro team Graphics! Quali pellicole decorative per vetri consigliate?",
+  "textLength": 1646,
+  "fetchedAt": "2026-04-28T15:09:19.576Z"
+}

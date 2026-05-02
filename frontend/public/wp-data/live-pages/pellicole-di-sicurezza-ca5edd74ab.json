@@ -1,0 +1,320 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-di-sicurezza/",
+  "path": "/pellicole-di-sicurezza/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-di-sicurezza/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole di sicurezza - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Il vetro non è più sinonimo di pericolo grazie alle pellicole di sicurezza per vetri MADICO®",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-di-sicurezza/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole di sicurezza",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Il vetro non è più sinonimo di pericolo grazie alle pellicole di sicurezza per vetri MADICO®",
+      "og:url": "https://www.solarisfilms.it/pellicole-di-sicurezza/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-19T10:02:20+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-di-sicurezza\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-di-sicurezza\\/\",\"name\":\"Pellicole di sicurezza - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-15T20:49:32+00:00\",\"dateModified\":\"2025-09-19T10:02:20+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-di-sicurezza\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-di-sicurezza\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-di-sicurezza\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole di sicurezza\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole di sicurezza"
+    },
+    {
+      "level": 2,
+      "text": "Perché installare pellicole di sicurezza per vetri?"
+    },
+    {
+      "level": 2,
+      "text": "Le pellicole di sicurezza MADICO permettono di modificare un normale vetro in un “Vetro di sicurezza” di diverse tipologie:"
+    },
+    {
+      "level": 2,
+      "text": "Vetri stratificati di sicurezza."
+    },
+    {
+      "level": 2,
+      "text": "Vetri di sicurezza, contro l’attacco manuale."
+    },
+    {
+      "level": 2,
+      "text": "Vetri antiproiettili, senza rischio di schegge."
+    },
+    {
+      "level": 2,
+      "text": "Vetri di sicurezza antiesplosioni (antibomba)."
+    },
+    {
+      "level": 2,
+      "text": "Le nostre pellicole di sicurezza"
+    },
+    {
+      "level": 3,
+      "text": "Pellicole di sicurezza neutre"
+    },
+    {
+      "level": 4,
+      "text": "La serie CL"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole di sicurezza antisolari"
+    },
+    {
+      "level": 4,
+      "text": "La serie RS"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole di sicurezza antisfondamento"
+    },
+    {
+      "level": 4,
+      "text": "La serie SafetyShield"
+    },
+    {
+      "level": 2,
+      "text": "PELLICOLE ANTIGRAFFITI"
+    },
+    {
+      "level": 4,
+      "text": "La serie Graffiti Free"
+    }
+  ],
+  "h1": "Pellicole di sicurezza",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole di sicurezza",
+      "text": "Pellicole di sicurezza"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Perch&#xE9; installare pellicole di sicurezza per vetri?",
+      "text": "Perché installare pellicole di sicurezza per vetri?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole di sicurezza per vetri garantiscono il rispetto delle caratteristiche del vetro &#x2013; la trasparenza e la bellezza del materiale &#x2013; che oggi pi&#xF9; che mai, segna l&#x2019;architettura delle citt&#xE0; moderne con i suoi grandi edifici pubblici, banche, negozi, supermercati, complessi di uffici e scuole.&#xA0;<strong>Il vetro &#xE8;&#xA0;per&#xF2;&#xA0;<strong>un elemento molto fragile&#xA0;che pu&#xF2; essere fonte di costante pericolo per l&#x2019;incolumit&#xE0; delle persone e l&#x2019;integrit&#xE0; delle cose. Incendi, urti violenti, atti vandalici o rotture accidentali possono provocare danni alle cose o infortuni alle persone.",
+      "text": "Le pellicole di sicurezza per vetri garantiscono il rispetto delle caratteristiche del vetro – la trasparenza e la bellezza del materiale – che oggi più che mai, segna l’architettura delle città moderne con i suoi grandi edifici pubblici, banche, negozi, supermercati, complessi di uffici e scuole. Il vetro è però un elemento molto fragile che può essere fonte di costante pericolo per l’incolumità delle persone e l’integrità delle cose. Incendi, urti violenti, atti vandalici o rotture accidentali possono provocare danni alle cose o infortuni alle persone."
+    },
+    {
+      "type": "paragraph",
+      "html": "Fra i materiali usati in edilizia il vetro &#xE8; uno dei pi&#xF9; &#x2018;temuti&#x2019; da parte dei non addetti ai lavori: ad esso si associa spesso un&#x2019;idea di fragilit&#xE0; e di pericolo.&#xA0;<strong>Un vetro pu&#xF2; rompersi per svariati motivi, come intemperie, vibrazioni, sollecitazioni sismiche, impatti uomo-vetro, urti di oggetti, colpi di mazza o d&#x2019;ascia, proiettili, variazioni termiche, esplosioni o per la semplice presenza di imperfezioni nella manifattura del vetro.&#xA0;<strong>Le pellicole di sicurezza garantiscono resistenza al vetro. Come? In caso di rottura, la pellicola applicata consente di tenere i vari frammenti uniti, evitando che si disperdano nell&#x2019;ambiente e che causino danni pi&#xF9; o meno gravi a cose o persone. Forniscono quindi una protezione da tante piccole variabili della nostra vita quotidiana!",
+      "text": "Fra i materiali usati in edilizia il vetro è uno dei più ‘temuti’ da parte dei non addetti ai lavori: ad esso si associa spesso un’idea di fragilità e di pericolo. Un vetro può rompersi per svariati motivi, come intemperie, vibrazioni, sollecitazioni sismiche, impatti uomo-vetro, urti di oggetti, colpi di mazza o d’ascia, proiettili, variazioni termiche, esplosioni o per la semplice presenza di imperfezioni nella manifattura del vetro. Le pellicole di sicurezza garantiscono resistenza al vetro. Come? In caso di rottura, la pellicola applicata consente di tenere i vari frammenti uniti, evitando che si disperdano nell’ambiente e che causino danni più o meno gravi a cose o persone. Forniscono quindi una protezione da tante piccole variabili della nostra vita quotidiana!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Grazie alle pellicole di sicurezza per vetri si possono sostanzialmente aggirare tutta questa serie di pericoli qualora si affrontino, in modo professionalmente corretto, tutti i problemi legati alle sue varie applicazioni.",
+      "text": "Grazie alle pellicole di sicurezza per vetri si possono sostanzialmente aggirare tutta questa serie di pericoli qualora si affrontino, in modo professionalmente corretto, tutti i problemi legati alle sue varie applicazioni."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Le pellicole di sicurezza MADICO permettono di modificare un normale vetro in un &#x201C;Vetro di sicurezza&#x201D; di diverse tipologie:",
+      "text": "Le pellicole di sicurezza MADICO permettono di modificare un normale vetro in un “Vetro di sicurezza” di diverse tipologie:"
+    },
+    {
+      "type": "paragraph",
+      "html": "Ogni pellicola di sicurezza pu&#xF2; essere&#xA0;<strong>applicata&#xA0;da installatori esperti&#xA0;<strong>su vetri gi&#xE0; esistenti&#xA0;<strong>con un&#x2019;operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attivit&#xE0; lavorativa.",
+      "text": "Ogni pellicola di sicurezza può essere applicata da installatori esperti su vetri già esistenti con un’operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attività lavorativa."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Le pellicole di sicurezza MADICO&#xA0;rappresentano quanto c&#x2019;&#xE8; di meglio nel panorama delle pellicole. Grazie ad una costante azione di ricerca e sviluppo&#xA0;<strong>permettono la &#x201C;messa in sicurezza&#x201D; di qualsiasi superficie vetrata&#xA0;obbligatoria sui luoghi di lavoro come prescritto dal Testo Unico D.Lgs. 81/2008 in vigore dal 15 maggio 2008.",
+      "text": "Le pellicole di sicurezza MADICO rappresentano quanto c’è di meglio nel panorama delle pellicole. Grazie ad una costante azione di ricerca e sviluppo permettono la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro come prescritto dal Testo Unico D.Lgs. 81/2008 in vigore dal 15 maggio 2008."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;applicazione delle pellicole di sicurezza MADICO&#xAE; effettuata da personale specializzato consente inoltre di ottenere la&#xA0;<strong>certificazione in base alle varie normative europee&#xA0;e la relativa dichiarazione di conformit&#xE0;.",
+      "text": "L’applicazione delle pellicole di sicurezza MADICO® effettuata da personale specializzato consente inoltre di ottenere la certificazione in base alle varie normative europee e la relativa dichiarazione di conformità."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Tutte le pellicole di sicurezza sono state testate, collaudate e certificate, come dimostrato dai certificati delle prove alle quali sono state sottoposte.",
+      "text": "Tutte le pellicole di sicurezza sono state testate, collaudate e certificate, come dimostrato dai certificati delle prove alle quali sono state sottoposte."
+    },
+    {
+      "type": "paragraph",
+      "html": "Tramite l&#x2019;installazione delle pellicole di sicurezza per vetri&#xA0;<strong>&#xE8; possibile trasformate le vostre normali vetrate in vetri di sicurezza certificati&#xA0;a norma EN12600 a partire da spessore minimo di 2 mm in diverse classi 1B1 / 2B2 / 3B3 e classe di sicurezza P3A come da norma UNI EN 356.",
+      "text": "Tramite l’installazione delle pellicole di sicurezza per vetri è possibile trasformate le vostre normali vetrate in vetri di sicurezza certificati a norma EN12600 a partire da spessore minimo di 2 mm in diverse classi 1B1 / 2B2 / 3B3 e classe di sicurezza P3A come da norma UNI EN 356."
+    },
+    {
+      "type": "note",
+      "html": "Le pellicole di sicurezza MADICO permettono di modificare un normale vetro in un &#x201C;Vetro di sicurezza&#x201D; di diverse tipologie:",
+      "text": "Le pellicole di sicurezza MADICO permettono di modificare un normale vetro in un “Vetro di sicurezza” di diverse tipologie:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Vetri stratificati di sicurezza.",
+      "text": "Vetri stratificati di sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Vetri di sicurezza, contro l&#x2019;attacco manuale.",
+      "text": "Vetri di sicurezza, contro l’attacco manuale."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Vetri antiproiettili, senza rischio di schegge.",
+      "text": "Vetri antiproiettili, senza rischio di schegge."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Vetri di sicurezza antiesplosioni (antibomba).",
+      "text": "Vetri di sicurezza antiesplosioni (antibomba)."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Le nostre pellicole di sicurezza",
+      "text": "Le nostre pellicole di sicurezza"
+    },
+    {
+      "type": "paragraph",
+      "html": "Di seguito una panoramica delle pellicole di sicurezza presenti nel nostro catalogo. Visitate le pagine dei prodotti per avere maggiori informazioni a riguardo.",
+      "text": "Di seguito una panoramica delle pellicole di sicurezza presenti nel nostro catalogo. Visitate le pagine dei prodotti per avere maggiori informazioni a riguardo."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<a href=\"https://www.tecnosolar.it/pellicole-di-sicurezza/pellicole-di-sicurezza-neutre/\" target=\"_blank\" rel=\"noopener noreferrer\">Pellicole di sicurezza neutre",
+      "text": "Pellicole di sicurezza neutre"
+    },
+    {
+      "type": "paragraph",
+      "html": "Questo tipo di pellicola di sicurezza per vetri offre una<strong>&#xA0;perfetta trasparenza; la visuale sar&#xE0; molto nitida, senza distorsioni ottiche, l&#x2019;intero intervento sar&#xE0; praticamente invisibile. Fornisce una protezione di sicurezza continua in caso di rottura del vetro.",
+      "text": "Questo tipo di pellicola di sicurezza per vetri offre una perfetta trasparenza; la visuale sarà molto nitida, senza distorsioni ottiche, l’intero intervento sarà praticamente invisibile. Fornisce una protezione di sicurezza continua in caso di rottura del vetro."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "La serie CL",
+      "text": "La serie CL"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola di sicurezza neutra CL di Tecnosolar &#xE8; testata e certificata in conformit&#xE0; alla Norma Europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Esistono anche versioni da esterno, in modo da poterle piazzare in base alla provenienza della fonte del pericolo.",
+      "text": "La pellicola di sicurezza neutra CL di Tecnosolar è testata e certificata in conformità alla Norma Europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Esistono anche versioni da esterno, in modo da poterle piazzare in base alla provenienza della fonte del pericolo."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole di sicurezza antisolari",
+      "text": "Pellicole di sicurezza antisolari"
+    },
+    {
+      "type": "paragraph",
+      "html": "Si tratta di pellicole in grado di garantirvi&#xA0;<strong>sia una schermatura antisolare sia la protezione&#xA0;che le pellicole di sicurezza possono garantirvi. Le pellicole di sicurezza antisolari Madico offrono un ambiente di lavoro pi&#xF9; sicuro, fresco e confortevole, in quanto bilanciano la temperatura, riducono l&#x2019;abbaglio e schermano oltre il 99% dei dannosi raggi U.V.",
+      "text": "Si tratta di pellicole in grado di garantirvi sia una schermatura antisolare sia la protezione che le pellicole di sicurezza possono garantirvi. Le pellicole di sicurezza antisolari Madico offrono un ambiente di lavoro più sicuro, fresco e confortevole, in quanto bilanciano la temperatura, riducono l’abbaglio e schermano oltre il 99% dei dannosi raggi U.V."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "La serie RS",
+      "text": "La serie RS"
+    },
+    {
+      "type": "paragraph",
+      "html": "I film della serie RS vengono utilizzati dove &#xE8; richiesta una schermatura dai raggi solari intensa. Con un intervento veloce, sicuro ed economico trasformano in un vetro di sicurezza&#xA0; a norma qualsiasi tipo di vetro a partire dai 2 mm di spessore,&#xA0; in classe di sicurezza 1B1 o 2B2 a norma UNI EN 12600.",
+      "text": "I film della serie RS vengono utilizzati dove è richiesta una schermatura dai raggi solari intensa. Con un intervento veloce, sicuro ed economico trasformano in un vetro di sicurezza a norma qualsiasi tipo di vetro a partire dai 2 mm di spessore, in classe di sicurezza 1B1 o 2B2 a norma UNI EN 12600."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole di sicurezza antisfondamento",
+      "text": "Pellicole di sicurezza antisfondamento"
+    },
+    {
+      "type": "paragraph",
+      "html": "Questi prodotti di sicurezza e protezione ben progettati forniscono una&#xA0;<strong>protezione passiva continua di massimo livello. Migliorano sostanzialmente la sicurezza di tutti gli edifici contro esplosioni di bombe, esplosioni chimiche, calamit&#xE0; naturali, vandalismo.",
+      "text": "Questi prodotti di sicurezza e protezione ben progettati forniscono una protezione passiva continua di massimo livello. Migliorano sostanzialmente la sicurezza di tutti gli edifici contro esplosioni di bombe, esplosioni chimiche, calamità naturali, vandalismo."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "La serie SafetyShield",
+      "text": "La serie SafetyShield"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole di sicurezza SafetyShield di Madico e i sistemi proprietari di Anchoring Restraint riducono il rischio di morte, lesioni personali e danni e perdite alla propriet&#xE0; causati da crimini o disastri naturali. Il prodotto &#xE8; una pellicola per vetri multilaminata da 200 micron specificamente progettata per funzionare nelle situazioni pi&#xF9; difficili e pericolose per la vita. Si tratta del livello massimo di protezione che una pellicola di sicurezza per vetri pu&#xF2; offrirti.",
+      "text": "Le pellicole di sicurezza SafetyShield di Madico e i sistemi proprietari di Anchoring Restraint riducono il rischio di morte, lesioni personali e danni e perdite alla proprietà causati da crimini o disastri naturali. Il prodotto è una pellicola per vetri multilaminata da 200 micron specificamente progettata per funzionare nelle situazioni più difficili e pericolose per la vita. Si tratta del livello massimo di protezione che una pellicola di sicurezza per vetri può offrirti."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "PELLICOLE ANTIGRAFFITI",
+      "text": "PELLICOLE ANTIGRAFFITI"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antigraffiti sono utili nelle situazioni in cui il vandalismo pu&#xF2; rovinare le nostre vetrate o i nostri beni. L&#x2019;applicazione di queste pellicole&#xA0;<strong>tuteler&#xE0; le vostre propriet&#xE0; da graffiti e vandalismo.",
+      "text": "Le pellicole antigraffiti sono utili nelle situazioni in cui il vandalismo può rovinare le nostre vetrate o i nostri beni. L’applicazione di queste pellicole tutelerà le vostre proprietà da graffiti e vandalismo."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "La serie Graffiti Free",
+      "text": "La serie Graffiti Free"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole Graffiti Free fungono da barriera contro il vandalismo e forniscono un&#x2019;alternativa economica alla sostituzione dei vetri danneggiati. Le pellicole Graffiti Free sono facilmente installabili e sostituibili in modo che il tuo vetro sia sempre al meglio. Graffiti Free &#xE8; otticamente trasparente e pu&#xF2; essere utilizzato sulla superficie interna o esterna di vetro o altre superfici lisce. La pellicola &#xE8; rimovibile per una facile sostituzione senza lasciare residui.&#x200B;",
+      "text": "Le pellicole Graffiti Free fungono da barriera contro il vandalismo e forniscono un’alternativa economica alla sostituzione dei vetri danneggiati. Le pellicole Graffiti Free sono facilmente installabili e sostituibili in modo che il tuo vetro sia sempre al meglio. Graffiti Free è otticamente trasparente e può essere utilizzato sulla superficie interna o esterna di vetro o altre superfici lisce. La pellicola è rimovibile per una facile sostituzione senza lasciare residui.​"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole di sicurezza Perché installare pellicole di sicurezza per vetri? Le pellicole di sicurezza per vetri garantiscono il rispetto delle caratteristiche del vetro – la trasparenza e la bellezza del materiale – che oggi più che mai, segna l’architettura delle città moderne con i suoi grandi edifici pubblici, banche, negozi, supermercati, complessi di uffici e scuole. Il vetro è però un elemento molto fragile che può essere fonte di costante pericolo per l’incolumità delle persone e l’integrità delle cose. Incendi, urti violenti, atti vandalici o rotture accidentali possono provocare danni alle cose o infortuni alle persone. Fra i materiali usati in edilizia il vetro è uno dei più ‘temuti’ da parte dei non addetti ai lavori: ad esso si associa spesso un’idea di fragilità e di pericolo. Un vetro può rompersi per svariati motivi, come intemperie, vibrazioni, sollecitazioni sismiche, impatti uomo-vetro, urti di oggetti, colpi di mazza o d’ascia, proiettili, variazioni termiche, esplosioni o per la semplice presenza di imperfezioni nella manifattura del vetro. Le pellicole di sicurezza garantiscono resistenza al vetro. Come? In caso di rottura, la pellicola applicata consente di tenere i vari frammenti uniti, evitando che si disperdano nell’ambiente e che causino danni più o meno gravi a cose o persone. Forniscono quindi una protezione da tante piccole variabili della nostra vita quotidiana! Grazie alle pellicole di sicurezza per vetri si possono sostanzialmente aggirare tutta questa serie di pericoli qualora si affrontino, in modo professionalmente corretto, tutti i problemi legati alle sue varie applicazioni. Le pellicole di sicurezza MADICO permettono di modificare un normale vetro in un “Vetro di sicurezza” di diverse tipologie: Ogni pellicola di sicurezza può essere applicata da installatori esperti su vetri già esistenti con un’operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attività lavorativa. Le pellicole di sicurezza MADICO rappresentano quanto c’è di meglio nel panorama delle pellicole. Grazie ad una costante azione di ricerca e sviluppo permettono la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro come prescritto dal Testo Unico D.Lgs. 81/2008 in vigore dal 15 maggio 2008. L’applicazione delle pellicole di sicurezza MADICO® effettuata da personale specializzato consente inoltre di ottenere la certificazione in base alle varie normative europee e la relativa dichiarazione di conformità. Tutte le pellicole di sicurezza sono state testate, collaudate e certificate, come dimostrato dai certificati delle prove alle quali sono state sottoposte. Tramite l’installazione delle pellicole di sicurezza per vetri è possibile trasformate le vostre normali vetrate in vetri di sicurezza certificati a norma EN12600 a partire da spessore minimo di 2 mm in diverse classi 1B1 / 2B2 / 3B3 e classe di sicurezza P3A come da norma UNI EN 356. Le pellicole di sicurezza MADICO permettono di modificare un normale vetro in un “Vetro di sicurezza” di diverse tipologie: Vetri stratificati di sicurezza. Vetri di sicurezza, contro l’attacco manuale. Vetri antiproiettili, senza rischio di schegge. Vetri di sicurezza antiesplosioni (antibomba). Le nostre pellicole di sicurezza Di seguito una panoramica delle pellicole di sicurezza presenti nel nostro catalogo. Visitate le pagine dei prodotti per avere maggiori informazioni a riguardo. Pellicole di sicurezza neutre Questo tipo di pellicola di sicurezza per vetri offre una perfetta trasparenza; la visuale sarà molto nitida, senza distorsioni ottiche, l’intero intervento sarà praticamente invisibile. Fornisce una protezione di sicurezza continua in caso di rottura del vetro. La serie CL La pellicola di sicurezza neutra CL di Tecnosolar è testata e certificata in conformità alla Norma Europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Esistono anche versioni da esterno, in modo da poterle piazzare in base alla provenienza della fonte del pericolo. Pellicole di sicurezza antisolari Si tratta di pellicole in grado di garantirvi sia una schermatura antisolare sia la protezione che le pellicole di sicurezza possono garantirvi. Le pellicole di sicurezza antisolari Madico offrono un ambiente di lavoro più sicuro, fresco e confortevole, in quanto bilanciano la temperatura, riducono l’abbaglio e schermano oltre il 99% dei dannosi raggi U.V. La serie RS I film della serie RS vengono utilizzati dove è richiesta una schermatura dai raggi solari intensa. Con un intervento veloce, sicuro ed economico trasformano in un vetro di sicurezza a norma qualsiasi tipo di vetro a partire dai 2 mm di spessore, in classe di sicurezza 1B1 o 2B2 a norma UNI EN 12600. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci Pellicole di sicurezza antisfondamento Questi prodotti di sicurezza e protezione ben progettati forniscono una protezione passiva continua di massimo livello. Migliorano sostanzialmente la sicurezza di tutti gli edifici contro esplosioni di bombe, esplosioni chimiche, calamità naturali, vandalismo. La serie SafetyShield Le pellicole di sicurezza SafetyShield di Madico e i sistemi proprietari di Anchoring Restraint riducono il rischio di morte, lesioni personali e danni e perdite alla proprietà causati da crimini o disastri naturali. Il prodotto è una pellicola per vetri multilaminata da 200 micron specificamente progettata per funzionare nelle situazioni più difficili e pericolose per la vita. Si tratta del livello massimo di protezione che una pellicola di sicurezza per vetri può offrirti. PELLICOLE ANTIGRAFFITI Le pellicole antigraffiti sono utili nelle situazioni in cui il vandalismo può rovinare le nostre vetrate o i nostri beni. L’applicazione di queste pellicole tutelerà le vostre proprietà da graffiti e vandalismo. La serie Graffiti Free Le pellicole Graffiti Free fungono da barriera contro il vandalismo e forniscono un’alternativa economica alla sostituzione dei vetri danneggiati. Le pellicole Graffiti Free sono facilmente installabili e sostituibili in modo che il tuo vetro sia sempre al meglio. Graffiti Free è otticamente trasparente e può essere utilizzato sulla superficie interna o esterna di vetro o altre superfici lisce. La pellicola è rimovibile per una facile sostituzione senza lasciare residui.​ Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 6485,
+  "fetchedAt": "2026-04-28T15:09:41.480Z"
+}

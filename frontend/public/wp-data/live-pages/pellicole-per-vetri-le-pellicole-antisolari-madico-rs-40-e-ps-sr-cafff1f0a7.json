@@ -1,0 +1,320 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
+  "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
+  "route": {
+    "type": "product",
+    "label": "Prodotto",
+    "newPath": "/prodotti/madico-rs-40-e-ps-sr/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-antisolari-sitemap.xml",
+  "seo": {
+    "title": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron - Solaris Films",
+    "description": "La pellicola antisolare Madico RS 40 E PS SR è consigliata per vetrate con grossi problemi di insolazione e surriscaldamento.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron",
+      "og:description": "La pellicola antisolare Madico RS 40 E PS SR è consigliata per vetrate con grossi problemi di insolazione e surriscaldamento.",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/RS30EPSSR75.webp",
+      "og:image:width": "1141",
+      "og:image:height": "1081",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "2 minuti"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T09:24:41+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madico-rs-40-e-ps-sr\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madico-rs-40-e-ps-sr\\/\",\"name\":\"Pellicola antisolare Madico RS 40 E PS SR 75 Micron - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madico-rs-40-e-ps-sr\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madico-rs-40-e-ps-sr\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS30EPSSR75.webp\",\"datePublished\":\"2025-06-11T14:59:22+00:00\",\"dateModified\":\"2025-09-18T09:24:41+00:00\",\"description\":\"La pellicola antisolare Madico RS 40 E PS SR è consigliata per vetrate con grossi problemi di insolazione e surriscaldamento.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madico-rs-40-e-ps-sr\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madico-rs-40-e-ps-sr\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madico-rs-40-e-ps-sr\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS30EPSSR75.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/RS30EPSSR75.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madico-rs-40-e-ps-sr\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole antisolari\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pellicola antisolare Madico RS 40 E PS SR 75 Micron\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron"
+    },
+    {
+      "level": 4,
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "level": 2,
+      "text": "Utilizzi"
+    },
+    {
+      "level": 2,
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "level": 2,
+      "text": "Specifiche tecniche"
+    },
+    {
+      "level": 6,
+      "text": "Vetro singolo 6 mm"
+    },
+    {
+      "level": 6,
+      "text": "Energia solare totale"
+    },
+    {
+      "level": 6,
+      "text": "Luce visibile"
+    },
+    {
+      "level": 6,
+      "text": "Totale energia respinta"
+    },
+    {
+      "level": 2,
+      "text": "10"
+    },
+    {
+      "level": 3,
+      "text": "anni di garanzia"
+    }
+  ],
+  "h1": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron",
+      "text": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "<a href=\"https://www.solarisfilms.it/wp-content/uploads/2025/06/RS40EPSSR.pdf\">Consulta la scheda tecnica",
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Utilizzi",
+      "text": "Utilizzi"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari riflettenti Madico RS 40 E PS SR sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre.",
+      "text": "Le pellicole antisolari riflettenti Madico RS 40 E PS SR sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Caratteristiche distintive",
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Consentono di ridurre l&#x2019;ingresso di calore fino all&#x2019;89% ottenendo ambienti pi&#xF9; freschi e confortevoli.",
+          "text": "Consentono di ridurre l’ingresso di calore fino all’89% ottenendo ambienti più freschi e confortevoli."
+        },
+        {
+          "html": "In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l&#x2019;ammortamento della spesa in pochi anni.",
+          "text": "In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l’ammortamento della spesa in pochi anni."
+        },
+        {
+          "html": "Riducono l&#x2019;abbaglio offrendo un maggiore confort visivo.",
+          "text": "Riducono l’abbaglio offrendo un maggiore confort visivo."
+        },
+        {
+          "html": "Sono ideali per la difesa della privacy consentendo di vedere dall&#x2019;interno verso l&#x2019;esterno ma evitando la visione dall&#x2019;esterno verso l&#x2019;interno, escluso le ore notturne.",
+          "text": "Sono ideali per la difesa della privacy consentendo di vedere dall’interno verso l’esterno ma evitando la visione dall’esterno verso l’interno, escluso le ore notturne."
+        },
+        {
+          "html": "Garantiscono una maggiore eleganza all&#x2019;estetica dell&#x2019;edificio.",
+          "text": "Garantiscono una maggiore eleganza all’estetica dell’edificio."
+        },
+        {
+          "html": "Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza.",
+          "text": "Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza."
+        },
+        {
+          "html": "Prodotto unico, con brevetto esclusivo.",
+          "text": "Prodotto unico, con brevetto esclusivo."
+        },
+        {
+          "html": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione",
+          "text": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione"
+        },
+        {
+          "html": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.",
+          "text": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3."
+        }
+      ],
+      "text": "Consentono di ridurre l’ingresso di calore fino all’89% ottenendo ambienti più freschi e confortevoli. In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l’ammortamento della spesa in pochi anni. Riducono l’abbaglio offrendo un maggiore confort visivo. Sono ideali per la difesa della privacy consentendo di vedere dall’interno verso l’esterno ma evitando la visione dall’esterno verso l’interno, escluso le ore notturne. Garantiscono una maggiore eleganza all’estetica dell’edificio. Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Specifiche tecniche",
+      "text": "Specifiche tecniche"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari riflettenti dell&#x2019;americana <a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Madico, distribuite in esclusiva per l&#x2019;Italia da <a href=\"https://www.tecnosolar.it/\" target=\"_blank\" rel=\"noopener noreferrer\">Tecnosolar, sono formate da una base di materiale poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato a densit&#xE0; controllata. Su questo viene posto un ulteriore strato di poliestere con un successivo trattamento antigraffio per proteggerlo da abrasioni e corrosioni. L&#x2019;effetto esterno che si ottiene &#xE8; speculare di colore argento.",
+      "text": "Le pellicole antisolari riflettenti dell’americana Madico, distribuite in esclusiva per l’Italia da Tecnosolar, sono formate da una base di materiale poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato a densità controllata. Su questo viene posto un ulteriore strato di poliestere con un successivo trattamento antigraffio per proteggerlo da abrasioni e corrosioni. L’effetto esterno che si ottiene è speculare di colore argento."
+    },
+    {
+      "type": "note",
+      "html": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola",
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-riflettenti/",
+      "text": "Vai al focus tecnico",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Vetro singolo 6 mm",
+      "text": "Vetro singolo 6 mm"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Energia solare totale",
+      "text": "Energia solare totale"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "28%",
+      "text": "Trasmessa 28%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa",
+      "value": "36%",
+      "text": "Riflessa 36%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Assorbita",
+      "value": "36%",
+      "text": "Assorbita 36%",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Luce visibile",
+      "text": "Luce visibile"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "40%",
+      "text": "Trasmessa 40%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa - Esterno",
+      "value": "63%",
+      "text": "Riflessa - Esterno 63%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riduzione abbaglio",
+      "value": "54%",
+      "text": "Riduzione abbaglio 54%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Infrarossi respinti",
+      "value": "78%",
+      "text": "Infrarossi respinti 78%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Raggi UV trasmessi (max)",
+      "value": "1%",
+      "text": "Raggi UV trasmessi (max) 1%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Coefficiente schermatura",
+      "value": "0.45",
+      "text": "Coefficiente schermatura 0.45",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Fattore solare g",
+      "value": "0.39",
+      "text": "Fattore solare g 0.39",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Valore U W/m2K",
+      "value": "5.80",
+      "text": "Valore U W/m2K 5.80",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Totale energia respinta",
+      "text": "Totale energia respinta"
+    },
+    {
+      "type": "metric",
+      "label": "Energia Respinta",
+      "value": "61%",
+      "text": "Energia Respinta 61%",
+      "html": ""
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai bisogno di una pellicola antisolare? Consulta il nostro&#xA0;<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/\">approfondimento sulle pellicole antisolari&#xA0;per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>10",
+      "text": "10"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>anni di garanzia",
+      "text": "anni di garanzia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <span>pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron Consulta la scheda tecnica Utilizzi Le pellicole antisolari riflettenti Madico RS 40 E PS SR sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Caratteristiche distintive Consentono di ridurre l’ingresso di calore fino all’89% ottenendo ambienti più freschi e confortevoli. In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l’ammortamento della spesa in pochi anni. Riducono l’abbaglio offrendo un maggiore confort visivo. Sono ideali per la difesa della privacy consentendo di vedere dall’interno verso l’esterno ma evitando la visione dall’esterno verso l’interno, escluso le ore notturne. Garantiscono una maggiore eleganza all’estetica dell’edificio. Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. Specifiche tecniche Le pellicole antisolari riflettenti dell’americana Madico, distribuite in esclusiva per l’Italia da Tecnosolar, sono formate da una base di materiale poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato a densità controllata. Su questo viene posto un ulteriore strato di poliestere con un successivo trattamento antigraffio per proteggerlo da abrasioni e corrosioni. L’effetto esterno che si ottiene è speculare di colore argento. Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico Vetro singolo 6 mm Energia solare totale Trasmessa 28% Riflessa 36% Assorbita 36% Luce visibile Trasmessa 40% Riflessa - Esterno 63% Riduzione abbaglio 54% Infrarossi respinti 78% Raggi UV trasmessi (max) 1% Coefficiente schermatura 0.45 Fattore solare g 0.39 Valore U W/m2K 5.80 Totale energia respinta Energia Respinta 61% Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole! 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 2643,
+  "fetchedAt": "2026-04-28T15:09:17.901Z"
+}

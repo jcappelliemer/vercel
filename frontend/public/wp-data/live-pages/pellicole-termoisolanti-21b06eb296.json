@@ -1,0 +1,184 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-termoisolanti/",
+  "path": "/pellicole-termoisolanti/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-termoisolanti/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole termoisolanti - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Tecnosolar vi propone la soluzione migliore per creare un cappotto termico per le vostre vetrate attraverso l’uso di pellicole isolanti per vetri",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-termoisolanti/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole termoisolanti",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Tecnosolar vi propone la soluzione migliore per creare un cappotto termico per le vostre vetrate attraverso l’uso di pellicole isolanti per vetri",
+      "og:url": "https://www.solarisfilms.it/pellicole-termoisolanti/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T16:16:48+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-termoisolanti\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-termoisolanti\\/\",\"name\":\"Pellicole termoisolanti - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-17T14:41:55+00:00\",\"dateModified\":\"2025-09-18T16:16:48+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-termoisolanti\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-termoisolanti\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-termoisolanti\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole termoisolanti\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole termoisolanti"
+    },
+    {
+      "level": 2,
+      "text": "Perché installare Ecosaving?"
+    },
+    {
+      "level": 2,
+      "text": "Caldo in inverno"
+    },
+    {
+      "level": 2,
+      "text": "Trattengono il caldo all’interno degli edifici durante i mesi più freddi, garantendo il mantenimento di una temperatura più alta e confortevole."
+    },
+    {
+      "level": 2,
+      "text": "Riduzione fino al 40% della perdita di calore, assicurando un minor spreco di energia e quindi un maggior risparmio sulla bolletta."
+    },
+    {
+      "level": 2,
+      "text": "Minor dispersione termica e minor utilizzo di impianti di riscaldamento per un maggior risparmio in termini economici sui costi per riscaldare gli ambienti."
+    },
+    {
+      "level": 2,
+      "text": "Fresco in estate"
+    }
+  ],
+  "h1": "Pellicole termoisolanti",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole termoisolanti",
+      "text": "Pellicole termoisolanti"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Perch&#xE9; installare Ecosaving?",
+      "text": "Perché installare Ecosaving?"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x201C;Le&#xA0;<strong>pellicole isolanti per vetri&#xA0;della gamma EcoSaving sono pellicole basso emissive che aumentano l&#x2019;isolamento termico delle finestre.",
+      "text": "“Le pellicole isolanti per vetri della gamma EcoSaving sono pellicole basso emissive che aumentano l’isolamento termico delle finestre."
+    },
+    {
+      "type": "paragraph",
+      "html": "Grazie alla loro&#xA0;<strong>capacit&#xE0; di coibentazione delle vetrate, le pellicole termoisolanti per vetri&#xA0;<strong>EcoSaving&#xA0;<strong>trattengono il caldo all&#x2019;interno degli edifici&#xA0;durante i mesi pi&#xF9; freddi, garantendo il mantenimento di una temperatura pi&#xF9; alta e confortevole.",
+      "text": "Grazie alla loro capacità di coibentazione delle vetrate, le pellicole termoisolanti per vetri EcoSaving trattengono il caldo all’interno degli edifici durante i mesi più freddi, garantendo il mantenimento di una temperatura più alta e confortevole."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;applicazione delle pellicole per isolamento termico&#xA0;<strong>EcoSaving&#xA0;incrementa infatti le capacit&#xE0; termo isolanti delle superfici vetrate e,&#xA0;<strong>riducendo fino al 40% la perdita di calore, assicura un minor spreco di energia e quindi un maggior risparmio sulla bolletta.",
+      "text": "L’applicazione delle pellicole per isolamento termico EcoSaving incrementa infatti le capacità termo isolanti delle superfici vetrate e, riducendo fino al 40% la perdita di calore, assicura un minor spreco di energia e quindi un maggior risparmio sulla bolletta."
+    },
+    {
+      "type": "paragraph",
+      "html": "Per queste motivazioni &#xE8; proprio nel periodo invernale che le pellicole isolanti&#xA0;<strong>EcoSaving&#xA0;apportano maggiori benefici, diminuendo la dispersione del calore che attraversa le finestre e mantenendo gli ambienti pi&#xF9; caldi e pi&#xF9; a lungo.",
+      "text": "Per queste motivazioni è proprio nel periodo invernale che le pellicole isolanti EcoSaving apportano maggiori benefici, diminuendo la dispersione del calore che attraversa le finestre e mantenendo gli ambienti più caldi e più a lungo."
+    },
+    {
+      "type": "paragraph",
+      "html": "Installare le pellicole termoisolanti&#xA0;<strong>EcoSaving&#xA0;&#xE8; una buona soluzione laddove molto del tepore prodotto dai sistemi di riscaldamento interno (termosifoni, camini, stufe elettriche, stufe a pellets, condizionatori caldo freddo, ecc) viene lasciato passare dalle finestre, disperdendosi prima sulla vetrata stessa e poi esternamente all&#x2019;edificio.",
+      "text": "Installare le pellicole termoisolanti EcoSaving è una buona soluzione laddove molto del tepore prodotto dai sistemi di riscaldamento interno (termosifoni, camini, stufe elettriche, stufe a pellets, condizionatori caldo freddo, ecc) viene lasciato passare dalle finestre, disperdendosi prima sulla vetrata stessa e poi esternamente all’edificio."
+    },
+    {
+      "type": "paragraph",
+      "html": "Tale effetto, anche conosciuto come &#x201C;ponte termico&#x201D;, viene mitigato dalle pellicole isolanti per vetri EcoSaving, che agiscono esattamente come uno scudo termico capace di ostacolare la fuoriuscita del calore, limitando pertanto la dispersione termica delle finestre.",
+      "text": "Tale effetto, anche conosciuto come “ponte termico”, viene mitigato dalle pellicole isolanti per vetri EcoSaving, che agiscono esattamente come uno scudo termico capace di ostacolare la fuoriuscita del calore, limitando pertanto la dispersione termica delle finestre."
+    },
+    {
+      "type": "paragraph",
+      "html": "Minor dispersione termica significa minor utilizzo di impianti di riscaldamento e dunque un maggior risparmio in termini economici sui costi per riscaldare gli ambienti.",
+      "text": "Minor dispersione termica significa minor utilizzo di impianti di riscaldamento e dunque un maggior risparmio in termini economici sui costi per riscaldare gli ambienti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Per questo le pellicole termoisolanti<strong>&#xA0;EcoSaving&#xA0;sono anche in grado di aumentare l&#x2019;efficienza energetica di qualunque tipo di edificio: case, aziende, scuole, ospedali, fabbriche, RSA, strutture governative, punti commerciali [&#x2026;]",
+      "text": "Per questo le pellicole termoisolanti EcoSaving sono anche in grado di aumentare l’efficienza energetica di qualunque tipo di edificio: case, aziende, scuole, ospedali, fabbriche, RSA, strutture governative, punti commerciali […]"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Caldo in inverno",
+      "text": "Caldo in inverno"
+    },
+    {
+      "type": "paragraph",
+      "html": "La tecnologia di isolamento invisibile ECOSAVING aiuta a trattenere il calore mantenendoti pi&#xF9; caldo in inverno.",
+      "text": "La tecnologia di isolamento invisibile ECOSAVING aiuta a trattenere il calore mantenendoti più caldo in inverno."
+    },
+    {
+      "type": "note",
+      "html": "Le principali caratteristiche delle Pellicole termoisolanti:",
+      "text": "Le principali caratteristiche delle Pellicole termoisolanti:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Trattengono il caldo all&#x2019;interno degli edifici durante i mesi pi&#xF9; freddi, garantendo il mantenimento di una temperatura pi&#xF9; alta e confortevole.",
+      "text": "Trattengono il caldo all’interno degli edifici durante i mesi più freddi, garantendo il mantenimento di una temperatura più alta e confortevole."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Riduzione fino al 40% della perdita di calore, assicurando un minor spreco di energia e quindi un maggior risparmio sulla bolletta.",
+      "text": "Riduzione fino al 40% della perdita di calore, assicurando un minor spreco di energia e quindi un maggior risparmio sulla bolletta."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Minor dispersione termica e minor utilizzo di impianti di riscaldamento per un maggior risparmio in termini economici sui costi per riscaldare gli ambienti.",
+      "text": "Minor dispersione termica e minor utilizzo di impianti di riscaldamento per un maggior risparmio in termini economici sui costi per riscaldare gli ambienti."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Fresco in estate",
+      "text": "Fresco in estate"
+    },
+    {
+      "type": "paragraph",
+      "html": "La tecnologia a riflessione solare con isolamento invisibile ECOSAVING aiuta a bloccare il calore del sole mantenendoti pi&#xF9; fresco in estate.",
+      "text": "La tecnologia a riflessione solare con isolamento invisibile ECOSAVING aiuta a bloccare il calore del sole mantenendoti più fresco in estate."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole termoisolanti Perché installare Ecosaving? “Le pellicole isolanti per vetri della gamma EcoSaving sono pellicole basso emissive che aumentano l’isolamento termico delle finestre. Grazie alla loro capacità di coibentazione delle vetrate, le pellicole termoisolanti per vetri EcoSaving trattengono il caldo all’interno degli edifici durante i mesi più freddi, garantendo il mantenimento di una temperatura più alta e confortevole. L’applicazione delle pellicole per isolamento termico EcoSaving incrementa infatti le capacità termo isolanti delle superfici vetrate e, riducendo fino al 40% la perdita di calore, assicura un minor spreco di energia e quindi un maggior risparmio sulla bolletta. Per queste motivazioni è proprio nel periodo invernale che le pellicole isolanti EcoSaving apportano maggiori benefici, diminuendo la dispersione del calore che attraversa le finestre e mantenendo gli ambienti più caldi e più a lungo. Installare le pellicole termoisolanti EcoSaving è una buona soluzione laddove molto del tepore prodotto dai sistemi di riscaldamento interno (termosifoni, camini, stufe elettriche, stufe a pellets, condizionatori caldo freddo, ecc) viene lasciato passare dalle finestre, disperdendosi prima sulla vetrata stessa e poi esternamente all’edificio. Tale effetto, anche conosciuto come “ponte termico”, viene mitigato dalle pellicole isolanti per vetri EcoSaving, che agiscono esattamente come uno scudo termico capace di ostacolare la fuoriuscita del calore, limitando pertanto la dispersione termica delle finestre. Minor dispersione termica significa minor utilizzo di impianti di riscaldamento e dunque un maggior risparmio in termini economici sui costi per riscaldare gli ambienti. Per questo le pellicole termoisolanti EcoSaving sono anche in grado di aumentare l’efficienza energetica di qualunque tipo di edificio: case, aziende, scuole, ospedali, fabbriche, RSA, strutture governative, punti commerciali […] Caldo in inverno La tecnologia di isolamento invisibile ECOSAVING aiuta a trattenere il calore mantenendoti più caldo in inverno. Le principali caratteristiche delle Pellicole termoisolanti: Trattengono il caldo all’interno degli edifici durante i mesi più freddi, garantendo il mantenimento di una temperatura più alta e confortevole. Riduzione fino al 40% della perdita di calore, assicurando un minor spreco di energia e quindi un maggior risparmio sulla bolletta. Minor dispersione termica e minor utilizzo di impianti di riscaldamento per un maggior risparmio in termini economici sui costi per riscaldare gli ambienti. Fresco in estate La tecnologia a riflessione solare con isolamento invisibile ECOSAVING aiuta a bloccare il calore del sole mantenendoti più fresco in estate. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 2825,
+  "fetchedAt": "2026-04-28T15:09:41.352Z"
+}

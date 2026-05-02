@@ -1,0 +1,154 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/certificazione-nfrc/",
+  "path": "/pagina-info/certificazione-nfrc/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/certificazione-nfrc/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Certificazione NFRC - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/certificazione-nfrc/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Certificazione NFRC",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pagina-info/certificazione-nfrc/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T08:52:46+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/certificazione-nfrc\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/certificazione-nfrc\\/\",\"name\":\"Certificazione NFRC - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-11T10:11:35+00:00\",\"dateModified\":\"2025-09-18T08:52:46+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/certificazione-nfrc\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/certificazione-nfrc\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/certificazione-nfrc\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Certificazione NFRC\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Certificazione NFRC"
+    },
+    {
+      "level": 3,
+      "text": "NFRC CERTIFICA 45 PELLICOLE PER VETRI PER MADICO​"
+    },
+    {
+      "level": 3,
+      "text": "NFRC ORGANIZZAZIONE NO-PROFIT"
+    },
+    {
+      "level": 3,
+      "text": "MADICO Inc., LE PELLICOLE PER VETRI AMERICANE"
+    }
+  ],
+  "h1": "Certificazione NFRC",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Certificazione NFRC",
+      "text": "Certificazione NFRC"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NFRC CERTIFICA 45 PELLICOLE PER VETRI PER MADICO&#x200B;",
+      "text": "NFRC CERTIFICA 45 PELLICOLE PER VETRI PER MADICO​"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>L&amp;#8217; impegno di Madico per la salvaguardia dell&amp;#8217;ambiente, viene eticamente riconosciuto",
+      "text": "L’ impegno di Madico per la salvaguardia dell’ambiente, viene eticamente riconosciuto"
+    },
+    {
+      "type": "paragraph",
+      "html": "Woburn, MA &#x2013; USA, 28 agosto 2008 &#x2013; <strong>Madico Inc, uno dei leader a livello mondiale come produttore di tecnologie avanzate di laminati, progettati per aumentare la sicurezza umana, la sicurezza e la gestione del controllo energetico, ha annunciato oggi che la National Fenestration Rating Council (NFRC) ha certificato 45 delle sue pellicole per vetro, Sunscape Select&#xAE;, SafetyShield&#xAE; e Advanced CeramicsTM. MADICO pertanto si pregia del fatto che come Azienda produttrice di pellicole per vetro vanta il pi&#xF9; alto numero di pellicole certificate NFRC, pi&#xF9; del doppio, rispetto a qualsiasi altro produttore di pellicole.",
+      "text": "Woburn, MA – USA, 28 agosto 2008 – Madico Inc, uno dei leader a livello mondiale come produttore di tecnologie avanzate di laminati, progettati per aumentare la sicurezza umana, la sicurezza e la gestione del controllo energetico, ha annunciato oggi che la National Fenestration Rating Council (NFRC) ha certificato 45 delle sue pellicole per vetro, Sunscape Select®, SafetyShield® e Advanced CeramicsTM. MADICO pertanto si pregia del fatto che come Azienda produttrice di pellicole per vetro vanta il più alto numero di pellicole certificate NFRC, più del doppio, rispetto a qualsiasi altro produttore di pellicole."
+    },
+    {
+      "type": "paragraph",
+      "html": "Secondo il Direttore Vendite e Marketing della Madico Tom Niziolek, <strong>la certificazione NFRC &#xE8; l&#x2019;ultimo esempio che riconosce l&#x2019;impegno della Madico verso le sue politiche ambientali e le sue corrette etiche di marketing &#x201C;Questo evento senza precedenti di 45 certificazioni sui prodotti, rafforza la Madico su due delle pi&#xF9; importanti piattaforme strategiche, vale a dire soluzioni innovative che riducono il consumo di energia e funzioni per soddisfare determinate esigenze, tali da essere verificabili. Siamo fieri non solo del fatto che cos&#xEC; tanti dei nostri prodotti hanno ricevuto questa cruciale certificazione, ma anche, che la nostra dedizione alla comunicazione chiara ed onesta sia stata riconosciuta, da tale prestigiosa organizzazione.&#x201D;",
+      "text": "Secondo il Direttore Vendite e Marketing della Madico Tom Niziolek, la certificazione NFRC è l’ultimo esempio che riconosce l’impegno della Madico verso le sue politiche ambientali e le sue corrette etiche di marketing “Questo evento senza precedenti di 45 certificazioni sui prodotti, rafforza la Madico su due delle più importanti piattaforme strategiche, vale a dire soluzioni innovative che riducono il consumo di energia e funzioni per soddisfare determinate esigenze, tali da essere verificabili. Siamo fieri non solo del fatto che così tanti dei nostri prodotti hanno ricevuto questa cruciale certificazione, ma anche, che la nostra dedizione alla comunicazione chiara ed onesta sia stata riconosciuta, da tale prestigiosa organizzazione.”"
+    },
+    {
+      "type": "paragraph",
+      "html": "&amp;#8220;La certificazione, che verifica che una pellicola per vetro effettivamente &#xE8; funzionale come descritto, sul controllo del calore solare e sul coefficiente di trasmissione della luce visibile, giunge in un momento in cui i clienti prestano molta attenzione alle aziende con cui fanno affari, analizzando le loro politiche aziendali sul risparmio energetico e sulla salvaguardia ambientale. Il network dei rivenditori mondiali della Madico, oggi possono assicurare ai loro clienti privati, commerciali e governativi che Sunscape Select&#xAE;, SafetyShield&#xAE; e Advanced CeramicsTM, cos&#xEC; come una serie di altri prodotti Madico, hanno dimostrato di soddisfare sia gli standard monitorati governativi, che di enti indipendenti&amp;#8221;.",
+      "text": "“La certificazione, che verifica che una pellicola per vetro effettivamente è funzionale come descritto, sul controllo del calore solare e sul coefficiente di trasmissione della luce visibile, giunge in un momento in cui i clienti prestano molta attenzione alle aziende con cui fanno affari, analizzando le loro politiche aziendali sul risparmio energetico e sulla salvaguardia ambientale. Il network dei rivenditori mondiali della Madico, oggi possono assicurare ai loro clienti privati, commerciali e governativi che Sunscape Select®, SafetyShield® e Advanced CeramicsTM, così come una serie di altri prodotti Madico, hanno dimostrato di soddisfare sia gli standard monitorati governativi, che di enti indipendenti”."
+    },
+    {
+      "type": "paragraph",
+      "html": "&amp;#8220;Niziolek, che &#xE8; anche presidente della &#x201C;International Window Film Association&#x201D;, ha aggiunto, <strong>&#x201C;Credo che la certificazione NFRC &#xE8; il primo passo verso il conseguimento, della classificazione ENERGY STAR&#xAE; sulle pellicole per vetro ed &#xE8; il mio personale e professionale obiettivo ad aiutare l&#x2019; industria delle pellicole a raggiungere tale traguardo.&#x201D;",
+      "text": "“Niziolek, che è anche presidente della “International Window Film Association”, ha aggiunto, “Credo che la certificazione NFRC è il primo passo verso il conseguimento, della classificazione ENERGY STAR® sulle pellicole per vetro ed è il mio personale e professionale obiettivo ad aiutare l’ industria delle pellicole a raggiungere tale traguardo.”"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "NFRC ORGANIZZAZIONE NO-PROFIT",
+      "text": "NFRC ORGANIZZAZIONE NO-PROFIT"
+    },
+    {
+      "type": "paragraph",
+      "html": "<i>NFRC &#xE8; una organizzazione no-profit che gestisce conformit&#xE0;, valutazione ed etichettatura, per il rendimento energetico di porte, finestre, lucernari e di prototti ad essi correlati, l&#x2019; obiettivo &#xE8; quello di fornire valutazioni corrette, accurate, ed affidabili. NFRC nel 2005 ha adottato una nuova marcatura di rendimento energetico, esso elenca il costruttore, descrive il prodotto, fornisce una fonte di informazioni supplementari e comprende una classificazione per una o pi&#xF9; caratteristiche di rendimento energetico, si aiuta a determinare, come un prodotto ben assolve alle funzioni di contribuire a raffreddare un edificio in estate, riscaldarlo in inverno, protergerlo dal vento e resistere alla condensa. Utilizzando le informazioni contenute sull&#x2019;etichetta, costruttori e consumatori possono confrontare l&#x2019; affidabilit&#xE0; di un prodotto ripetto ad un altro e prendere decisioni in base ad informazioni di porte, finestre, lucernari e a prodotti ad essi correlati. Per maggiori informazioni consulta il sito <a href=\"https://www.nfrc.org/\" target=\"_blank\" rel=\"noopener noreferrer\"><i>www.nfrc.org",
+      "text": "NFRC è una organizzazione no-profit che gestisce conformità, valutazione ed etichettatura, per il rendimento energetico di porte, finestre, lucernari e di prototti ad essi correlati, l’ obiettivo è quello di fornire valutazioni corrette, accurate, ed affidabili. NFRC nel 2005 ha adottato una nuova marcatura di rendimento energetico, esso elenca il costruttore, descrive il prodotto, fornisce una fonte di informazioni supplementari e comprende una classificazione per una o più caratteristiche di rendimento energetico, si aiuta a determinare, come un prodotto ben assolve alle funzioni di contribuire a raffreddare un edificio in estate, riscaldarlo in inverno, protergerlo dal vento e resistere alla condensa. Utilizzando le informazioni contenute sull’etichetta, costruttori e consumatori possono confrontare l’ affidabilità di un prodotto ripetto ad un altro e prendere decisioni in base ad informazioni di porte, finestre, lucernari e a prodotti ad essi correlati. Per maggiori informazioni consulta il sito www.nfrc.org"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "MADICO Inc., LE PELLICOLE PER VETRI AMERICANE",
+      "text": "MADICO Inc., LE PELLICOLE PER VETRI AMERICANE"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Madico Inc ha sviluppato materiali innovativi per pi&#xF9; di un secolo. Un impegno senza rivali nella ricerca e nello sviluppo, ha permesso alla societ&#xE0; la creazione di numerosi nuovi brevetti, primi ad essere concepiti in materia di sicurezza e risparmio energetico. La Madico ha conseguito vari riconoscimenti mondiali, per il suo contributo sociale a favore della tutela e sicurezza alle persone e della tutela dell&#x2019;ambiente.",
+      "text": "Madico Inc ha sviluppato materiali innovativi per più di un secolo. Un impegno senza rivali nella ricerca e nello sviluppo, ha permesso alla società la creazione di numerosi nuovi brevetti, primi ad essere concepiti in materia di sicurezza e risparmio energetico. La Madico ha conseguito vari riconoscimenti mondiali, per il suo contributo sociale a favore della tutela e sicurezza alle persone e della tutela dell’ambiente."
+    },
+    {
+      "type": "paragraph",
+      "html": "La sede centrale della Madico ed il complesso produttivo si trovano a Woburn (nelle vicinanze di Boston), Massachusetts, USA",
+      "text": "La sede centrale della Madico ed il complesso produttivo si trovano a Woburn (nelle vicinanze di Boston), Massachusetts, USA"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Tutte le pellicole di sicurezza Madico sono testate e collaudate, come dimostrato dai Test certificati alle quali vengono costantemente sottoposte.",
+      "text": "Tutte le pellicole di sicurezza Madico sono testate e collaudate, come dimostrato dai Test certificati alle quali vengono costantemente sottoposte."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Madico crede che l&#x2019;aspetto pi&#xF9; importante del suo lavoro sia quello di mettere i suoi prodotti continuamente alla prova. Per ottenere questo vengono impiegati consulenti indipendenti che valutano le pellicole sottoponendole alle condizioni pi&#xF9; estreme: dalla semplice sicurezza ai pi&#xF9; severi test dell&#x2019;esplosione.",
+      "text": "Madico crede che l’aspetto più importante del suo lavoro sia quello di mettere i suoi prodotti continuamente alla prova. Per ottenere questo vengono impiegati consulenti indipendenti che valutano le pellicole sottoponendole alle condizioni più estreme: dalla semplice sicurezza ai più severi test dell’esplosione."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole Madico soddisfano e sorpassano la maggior parte degli standard governativi Americani e internazionali.",
+      "text": "Le pellicole Madico soddisfano e sorpassano la maggior parte degli standard governativi Americani e internazionali."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Certificazione NFRC NFRC CERTIFICA 45 PELLICOLE PER VETRI PER MADICO​ L’ impegno di Madico per la salvaguardia dell’ambiente, viene eticamente riconosciuto Woburn, MA – USA, 28 agosto 2008 – Madico Inc, uno dei leader a livello mondiale come produttore di tecnologie avanzate di laminati, progettati per aumentare la sicurezza umana, la sicurezza e la gestione del controllo energetico, ha annunciato oggi che la National Fenestration Rating Council (NFRC) ha certificato 45 delle sue pellicole per vetro, Sunscape Select®, SafetyShield® e Advanced CeramicsTM. MADICO pertanto si pregia del fatto che come Azienda produttrice di pellicole per vetro vanta il più alto numero di pellicole certificate NFRC, più del doppio, rispetto a qualsiasi altro produttore di pellicole. Secondo il Direttore Vendite e Marketing della Madico Tom Niziolek, la certificazione NFRC è l’ultimo esempio che riconosce l’impegno della Madico verso le sue politiche ambientali e le sue corrette etiche di marketing “Questo evento senza precedenti di 45 certificazioni sui prodotti, rafforza la Madico su due delle più importanti piattaforme strategiche, vale a dire soluzioni innovative che riducono il consumo di energia e funzioni per soddisfare determinate esigenze, tali da essere verificabili. Siamo fieri non solo del fatto che così tanti dei nostri prodotti hanno ricevuto questa cruciale certificazione, ma anche, che la nostra dedizione alla comunicazione chiara ed onesta sia stata riconosciuta, da tale prestigiosa organizzazione.” “La certificazione, che verifica che una pellicola per vetro effettivamente è funzionale come descritto, sul controllo del calore solare e sul coefficiente di trasmissione della luce visibile, giunge in un momento in cui i clienti prestano molta attenzione alle aziende con cui fanno affari, analizzando le loro politiche aziendali sul risparmio energetico e sulla salvaguardia ambientale. Il network dei rivenditori mondiali della Madico, oggi possono assicurare ai loro clienti privati, commerciali e governativi che Sunscape Select®, SafetyShield® e Advanced CeramicsTM, così come una serie di altri prodotti Madico, hanno dimostrato di soddisfare sia gli standard monitorati governativi, che di enti indipendenti”. “Niziolek, che è anche presidente della “International Window Film Association”, ha aggiunto, “Credo che la certificazione NFRC è il primo passo verso il conseguimento, della classificazione ENERGY STAR® sulle pellicole per vetro ed è il mio personale e professionale obiettivo ad aiutare l’ industria delle pellicole a raggiungere tale traguardo.” NFRC ORGANIZZAZIONE NO-PROFIT NFRC è una organizzazione no-profit che gestisce conformità, valutazione ed etichettatura, per il rendimento energetico di porte, finestre, lucernari e di prototti ad essi correlati, l’ obiettivo è quello di fornire valutazioni corrette, accurate, ed affidabili. NFRC nel 2005 ha adottato una nuova marcatura di rendimento energetico, esso elenca il costruttore, descrive il prodotto, fornisce una fonte di informazioni supplementari e comprende una classificazione per una o più caratteristiche di rendimento energetico, si aiuta a determinare, come un prodotto ben assolve alle funzioni di contribuire a raffreddare un edificio in estate, riscaldarlo in inverno, protergerlo dal vento e resistere alla condensa. Utilizzando le informazioni contenute sull’etichetta, costruttori e consumatori possono confrontare l’ affidabilità di un prodotto ripetto ad un altro e prendere decisioni in base ad informazioni di porte, finestre, lucernari e a prodotti ad essi correlati. Per maggiori informazioni consulta il sito www.nfrc.org MADICO Inc., LE PELLICOLE PER VETRI AMERICANE Madico Inc ha sviluppato materiali innovativi per più di un secolo. Un impegno senza rivali nella ricerca e nello sviluppo, ha permesso alla società la creazione di numerosi nuovi brevetti, primi ad essere concepiti in materia di sicurezza e risparmio energetico. La Madico ha conseguito vari riconoscimenti mondiali, per il suo contributo sociale a favore della tutela e sicurezza alle persone e della tutela dell’ambiente. La sede centrale della Madico ed il complesso produttivo si trovano a Woburn (nelle vicinanze di Boston), Massachusetts, USA Tutte le pellicole di sicurezza Madico sono testate e collaudate, come dimostrato dai Test certificati alle quali vengono costantemente sottoposte. Madico crede che l’aspetto più importante del suo lavoro sia quello di mettere i suoi prodotti continuamente alla prova. Per ottenere questo vengono impiegati consulenti indipendenti che valutano le pellicole sottoponendole alle condizioni più estreme: dalla semplice sicurezza ai più severi test dell’esplosione. Le pellicole Madico soddisfano e sorpassano la maggior parte degli standard governativi Americani e internazionali. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 4911,
+  "fetchedAt": "2026-04-28T15:09:40.215Z"
+}

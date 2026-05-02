@@ -1,0 +1,104 @@
+{
+  "url": "https://www.solarisfilms.it/pagina-info/garanzie/",
+  "path": "/pagina-info/garanzie/",
+  "route": {
+    "type": "info",
+    "label": "Pagina info",
+    "newPath": "/info/garanzie/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pagine-info-sitemap.xml",
+  "seo": {
+    "title": "Garanzie - Solaris Films",
+    "description": "Madico Inc. USA, riconosce la garanzia per le pellicole installate in Italia da installatori autorizzati Tecnosolar s.r.l. Distributore Ufficiale Nazionale. Madico, Inc. (USA) non onorerà qualsiasi garanzia delle pellicole per vetri Madico in Italia, se acquistate da fonti diverse da Tecnosolar s.r.l. Madico garantisce le sue pellicole per vetri fino a 10 ANNI se installate [&hellip;]",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pagina-info/garanzie/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Garanzie",
+      "og:description": "Madico Inc. USA, riconosce la garanzia per le pellicole installate in Italia da installatori autorizzati Tecnosolar s.r.l. Distributore Ufficiale Nazionale. Madico, Inc. (USA) non onorerà qualsiasi garanzia delle pellicole per vetri Madico in Italia, se acquistate da fonti diverse da Tecnosolar s.r.l. Madico garantisce le sue pellicole per vetri fino a 10 ANNI se installate [&hellip;]",
+      "og:url": "https://www.solarisfilms.it/pagina-info/garanzie/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-15T20:36:23+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/garanzie\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/garanzie\\/\",\"name\":\"Garanzie - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-15T20:27:59+00:00\",\"dateModified\":\"2025-09-15T20:36:23+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/garanzie\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/garanzie\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/garanzie\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pagine info\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pagina-info\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Garanzie\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Garanzie"
+    },
+    {
+      "level": 3,
+      "text": "CONTATTACI"
+    }
+  ],
+  "h1": "Garanzie",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Garanzie",
+      "text": "Garanzie"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "CONTATTACI",
+      "text": "CONTATTACI"
+    },
+    {
+      "type": "paragraph",
+      "html": "GARANZIA PRODOTTI",
+      "text": "GARANZIA PRODOTTI"
+    },
+    {
+      "type": "paragraph",
+      "html": "GARANZIA STANDARD",
+      "text": "GARANZIA STANDARD"
+    },
+    {
+      "type": "paragraph",
+      "html": "GARANZIA SAFETY SHIELD 10 ANNI",
+      "text": "GARANZIA SAFETY SHIELD 10 ANNI"
+    },
+    {
+      "type": "paragraph",
+      "html": "GARANZIA PELLICOLE PER INTERNO 10 ANNI",
+      "text": "GARANZIA PELLICOLE PER INTERNO 10 ANNI"
+    },
+    {
+      "type": "paragraph",
+      "html": "GARANZIA PELLICOLE ESTERNO 10 ANNI",
+      "text": "GARANZIA PELLICOLE ESTERNO 10 ANNI"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Garanzie CONTATTACI GARANZIA PRODOTTI GARANZIA STANDARD GARANZIA SAFETY SHIELD 10 ANNI GARANZIA PELLICOLE PER INTERNO 10 ANNI GARANZIA PELLICOLE ESTERNO 10 ANNI Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 252,
+  "fetchedAt": "2026-04-28T15:09:40.089Z"
+}

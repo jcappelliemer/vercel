@@ -1,0 +1,152 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/energia-solare-e-vlt/",
+  "path": "/approfondimenti/energia-solare-e-vlt/",
+  "route": {
+    "type": "article",
+    "label": "Approfondimento",
+    "newPath": "/blog/energia-solare-e-vlt/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/post-sitemap.xml",
+  "seo": {
+    "title": "ENERGIA SOLARE E VLT - Solaris Films",
+    "description": "Lavoriamo per migliorare lo sfruttamento di energia solare e VLT. Le pellicole che usiamo proteggono dal calore ma fanno penetrare la luce.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/energia-solare-e-vlt/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "ENERGIA SOLARE E VLT",
+      "og:description": "Lavoriamo per migliorare lo sfruttamento di energia solare e VLT. Le pellicole che usiamo proteggono dal calore ma fanno penetrare la luce.",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/energia-solare-e-vlt/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/pellicola-antisolare.webp",
+      "og:image:width": "2048",
+      "og:image:height": "1367",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Scritto da",
+      "twitter:data1": "Fabio Meucci",
+      "twitter:label2": "Tempo di lettura stimato",
+      "twitter:data2": "3 minuti"
+    },
+    "article": {
+      "article:published_time": "2025-06-17T13:40:45+00:00",
+      "article:modified_time": "2025-06-18T10:51:00+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/\"},\"author\":{\"name\":\"Fabio Meucci\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\"},\"headline\":\"ENERGIA SOLARE E VLT\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-18T10:51:00+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/\"},\"wordCount\":480,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare.webp\",\"articleSection\":[\"Approfondimenti\"],\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/\",\"name\":\"ENERGIA SOLARE E VLT - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare.webp\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-18T10:51:00+00:00\",\"description\":\"Lavoriamo per migliorare lo sfruttamento di energia solare e VLT. Le pellicole che usiamo proteggono dal calore ma fanno penetrare la luce.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare.webp\",\"width\":2048,\"height\":1367},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/energia-solare-e-vlt\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Lo sapevi che?\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/lo-sapevi-che\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"ENERGIA SOLARE E VLT\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\",\"name\":\"Fabio Meucci\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"caption\":\"Fabio Meucci\"},\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/fabio-meucci\\/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "level": 2,
+      "text": "L’ENERGIA SOLARE"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "paragraph",
+      "html": "La nostra mission &#xE8; quella di lavorare per migliorare lo sfruttamento di energia solare e VLT. Per questo facciamo il possibile per garantire ai nostri clienti infissi in grado di illuminare correttamente gli ambienti evitando il pi&#xF9; possibile il trasferimento del calore dall&amp;#8217;interno all&amp;#8217;esterno.",
+      "text": "La nostra mission è quella di lavorare per migliorare lo sfruttamento di energia solare e VLT. Per questo facciamo il possibile per garantire ai nostri clienti infissi in grado di illuminare correttamente gli ambienti evitando il più possibile il trasferimento del calore dall’interno all’esterno."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "L&amp;#8217;ENERGIA SOLARE",
+      "text": "L’ENERGIA SOLARE"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;energia solare rappresenta tutta l&#x2019;energia nello spettro solare che raggiunge la superficie della terra. Le componenti di questa energia includono infatti raggi UVA, UVB, la luce visibile e l&#x2019;IR da 300 a 2500 nanometri. Per questo motivo la percezione che abbiamo di questa radiazione &#xE8; in parte luce, percepibile dall&#x2019;occhio umano nelle frequenze che vanno dai 390 ai 700 nanometri, e in parte calore determinata dall&#x2019;irraggiamento.",
+      "text": "L’energia solare rappresenta tutta l’energia nello spettro solare che raggiunge la superficie della terra. Le componenti di questa energia includono infatti raggi UVA, UVB, la luce visibile e l’IR da 300 a 2500 nanometri. Per questo motivo la percezione che abbiamo di questa radiazione è in parte luce, percepibile dall’occhio umano nelle frequenze che vanno dai 390 ai 700 nanometri, e in parte calore determinata dall’irraggiamento."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "L&#x2019;energia pu&#xF2; essere trasmessa, riflessa o assorbita:",
+          "text": "L’energia può essere trasmessa, riflessa o assorbita:"
+        },
+        {
+          "html": "L&#x2019;energia trasmessa &#xE8; ad esempio quella che arriva all&#x2019;interno di un edificio attraversando le finestre.",
+          "text": "L’energia trasmessa è ad esempio quella che arriva all’interno di un edificio attraversando le finestre."
+        },
+        {
+          "html": "L&#x2019;energia riflessa &#xE8; quella percentuale di energia che viene riflessa dal vetro che non concorre a riscaldare un edificio.",
+          "text": "L’energia riflessa è quella percentuale di energia che viene riflessa dal vetro che non concorre a riscaldare un edificio."
+        },
+        {
+          "html": "L&#x2019;energia assorbita &#xE8; quella quantit&#xE0; di energia solare che &#xE8; assorbita dal vetro. Il vetro per effetto dell&#x2019;energia assorbita si riscalda e irradia egli stesso una piccola parte di calore.",
+          "text": "L’energia assorbita è quella quantità di energia solare che è assorbita dal vetro. Il vetro per effetto dell’energia assorbita si riscalda e irradia egli stesso una piccola parte di calore."
+        },
+        {
+          "html": "Il calore che toglie comfort ed aumenta il surriscaldamento degli ambienti pu&#xF2; diminuire fino al 94% con l&#x2019;applicazione delle pellicole antisolari MADICO, distribuite in esclusiva per l&amp;#8217;Italia da <a href=\"https://www.tecnosolar.it\" target=\"_blank\" rel=\"noopener noreferrer\">TECNOSOLAR.",
+          "text": "Il calore che toglie comfort ed aumenta il surriscaldamento degli ambienti può diminuire fino al 94% con l’applicazione delle pellicole antisolari MADICO, distribuite in esclusiva per l’Italia da TECNOSOLAR."
+        }
+      ],
+      "text": "L’energia può essere trasmessa, riflessa o assorbita: L’energia trasmessa è ad esempio quella che arriva all’interno di un edificio attraversando le finestre. L’energia riflessa è quella percentuale di energia che viene riflessa dal vetro che non concorre a riscaldare un edificio. L’energia assorbita è quella quantità di energia solare che è assorbita dal vetro. Il vetro per effetto dell’energia assorbita si riscalda e irradia egli stesso una piccola parte di calore. Il calore che toglie comfort ed aumenta il surriscaldamento degli ambienti può diminuire fino al 94% con l’applicazione delle pellicole antisolari MADICO, distribuite in esclusiva per l’Italia da TECNOSOLAR."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>CHE COS&#x2019;&#xC8; L&amp;#8217;INDICE VLT?<br>\nLa luce visibile &#xE8; la radiazione elettromagnetica alle lunghezze d&#x2019;onda che possiamo vedere.",
+      "text": "CHE COS’È L’INDICE VLT? La luce visibile è la radiazione elettromagnetica alle lunghezze d’onda che possiamo vedere."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;occhio umano pu&#xF2; percepire i colori che vanno dal rosso (lunghezze d&#x2019;onda pi&#xF9; grandi a circa 700nm) al violetto (lunghezze d&#x2019;onda pi&#xF9; piccole, circa 390nm).",
+      "text": "L’occhio umano può percepire i colori che vanno dal rosso (lunghezze d’onda più grandi a circa 700nm) al violetto (lunghezze d’onda più piccole, circa 390nm)."
+    },
+    {
+      "type": "paragraph",
+      "html": "La quantit&#xE0; di luce visibile che riesce ad attraversare un film solare correttamente installato su una finestra &#xE8; la VISUAL LIGHT TRASMITTANCE o VLT.",
+      "text": "La quantità di luce visibile che riesce ad attraversare un film solare correttamente installato su una finestra è la VISUAL LIGHT TRASMITTANCE o VLT."
+    },
+    {
+      "type": "paragraph",
+      "html": "Percentuali pi&#xF9; alte sono associate a pellicole molto luminose, quasi trasparenti, le percentuali pi&#xF9; basse sono quelle dei film pi&#xF9; oscuranti. L&amp;#8217;indicatore VLT varia tra 0 e 1; ad esempio la maggior parte delle finestre con doppi vetri &#xE8; compresa tra 0,3 e 0,7, il che significa che tra il 30% e il 70% della luce disponibile passa attraverso la finestra.",
+      "text": "Percentuali più alte sono associate a pellicole molto luminose, quasi trasparenti, le percentuali più basse sono quelle dei film più oscuranti. L’indicatore VLT varia tra 0 e 1; ad esempio la maggior parte delle finestre con doppi vetri è compresa tra 0,3 e 0,7, il che significa che tra il 30% e il 70% della luce disponibile passa attraverso la finestra."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>COME PROTEGGERSI?<br>\nIl filtro quasi completo dei raggi UV &#xE8; molto importante perch&#xE9; permette di limitare il deperimento di alimenti o la perdita di colore degli oggetti esposti in vetrina.",
+      "text": "COME PROTEGGERSI? Il filtro quasi completo dei raggi UV è molto importante perché permette di limitare il deperimento di alimenti o la perdita di colore degli oggetti esposti in vetrina."
+    },
+    {
+      "type": "paragraph",
+      "html": "Per questo motivo installiamo la pellicola antisolare MADICO SSN80, normalmente usata per le vetrine dei negozi, che riflette il 99% dei raggi UV, trasmettendo comunque il 78% della luce visibile e con una riduzione di calore trasmesso del 56%!",
+      "text": "Per questo motivo installiamo la pellicola antisolare MADICO SSN80, normalmente usata per le vetrine dei negozi, che riflette il 99% dei raggi UV, trasmettendo comunque il 78% della luce visibile e con una riduzione di calore trasmesso del 56%!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete sapere come proteggervi al meglio dalle parti nocive delle radiazioni solari? Leggete il nostro articolo sulle pellicole antisolari!",
+      "text": "Volete sapere come proteggervi al meglio dalle parti nocive delle radiazioni solari? Leggete il nostro articolo sulle pellicole antisolari!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Inoltre, se volete protezione con un occhio al design, se volete valorizzare le vostre facciate, vi consigliamo le pellicole riflettenti! Potete scoprirle con noi!",
+      "text": "Inoltre, se volete protezione con un occhio al design, se volete valorizzare le vostre facciate, vi consigliamo le pellicole riflettenti! Potete scoprirle con noi!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive La nostra mission è quella di lavorare per migliorare lo sfruttamento di energia solare e VLT. Per questo facciamo il possibile per garantire ai nostri clienti infissi in grado di illuminare correttamente gli ambienti evitando il più possibile il trasferimento del calore dall’interno all’esterno. L’ENERGIA SOLARE L’energia solare rappresenta tutta l’energia nello spettro solare che raggiunge la superficie della terra. Le componenti di questa energia includono infatti raggi UVA, UVB, la luce visibile e l’IR da 300 a 2500 nanometri. Per questo motivo la percezione che abbiamo di questa radiazione è in parte luce, percepibile dall’occhio umano nelle frequenze che vanno dai 390 ai 700 nanometri, e in parte calore determinata dall’irraggiamento. L’energia può essere trasmessa, riflessa o assorbita: L’energia trasmessa è ad esempio quella che arriva all’interno di un edificio attraversando le finestre. L’energia riflessa è quella percentuale di energia che viene riflessa dal vetro che non concorre a riscaldare un edificio. L’energia assorbita è quella quantità di energia solare che è assorbita dal vetro. Il vetro per effetto dell’energia assorbita si riscalda e irradia egli stesso una piccola parte di calore. Il calore che toglie comfort ed aumenta il surriscaldamento degli ambienti può diminuire fino al 94% con l’applicazione delle pellicole antisolari MADICO, distribuite in esclusiva per l’Italia da TECNOSOLAR. CHE COS’È L’INDICE VLT? La luce visibile è la radiazione elettromagnetica alle lunghezze d’onda che possiamo vedere. L’occhio umano può percepire i colori che vanno dal rosso (lunghezze d’onda più grandi a circa 700nm) al violetto (lunghezze d’onda più piccole, circa 390nm). La quantità di luce visibile che riesce ad attraversare un film solare correttamente installato su una finestra è la VISUAL LIGHT TRASMITTANCE o VLT. Percentuali più alte sono associate a pellicole molto luminose, quasi trasparenti, le percentuali più basse sono quelle dei film più oscuranti. L’indicatore VLT varia tra 0 e 1; ad esempio la maggior parte delle finestre con doppi vetri è compresa tra 0,3 e 0,7, il che significa che tra il 30% e il 70% della luce disponibile passa attraverso la finestra. COME PROTEGGERSI? Il filtro quasi completo dei raggi UV è molto importante perché permette di limitare il deperimento di alimenti o la perdita di colore degli oggetti esposti in vetrina. Per questo motivo installiamo la pellicola antisolare MADICO SSN80, normalmente usata per le vetrine dei negozi, che riflette il 99% dei raggi UV, trasmettendo comunque il 78% della luce visibile e con una riduzione di calore trasmesso del 56%! Volete sapere come proteggervi al meglio dalle parti nocive delle radiazioni solari? Leggete il nostro articolo sulle pellicole antisolari! Inoltre, se volete protezione con un occhio al design, se volete valorizzare le vostre facciate, vi consigliamo le pellicole riflettenti! Potete scoprirle con noi!",
+  "textLength": 2977,
+  "fetchedAt": "2026-04-28T15:08:05.571Z"
+}

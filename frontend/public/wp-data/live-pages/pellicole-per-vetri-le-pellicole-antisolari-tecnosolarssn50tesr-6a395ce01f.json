@@ -1,0 +1,318 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/",
+  "path": "/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/",
+  "route": {
+    "type": "product",
+    "label": "Prodotto",
+    "newPath": "/prodotti/tecnosolarssn50tesr/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-antisolari-sitemap.xml",
+  "seo": {
+    "title": "Pellicola antisolare Tecnosolar SSN 50 TE SR - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicola antisolare Tecnosolar SSN 50 TE SR",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/SSN50TESR.webp",
+      "og:image:width": "1141",
+      "og:image:height": "1081",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T09:21:59+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/tecnosolarssn50tesr\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/tecnosolarssn50tesr\\/\",\"name\":\"Pellicola antisolare Tecnosolar SSN 50 TE SR - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/tecnosolarssn50tesr\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/tecnosolarssn50tesr\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SSN50TESR.webp\",\"datePublished\":\"2025-06-11T14:34:38+00:00\",\"dateModified\":\"2025-09-18T09:21:59+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/tecnosolarssn50tesr\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/tecnosolarssn50tesr\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/tecnosolarssn50tesr\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SSN50TESR.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SSN50TESR.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/tecnosolarssn50tesr\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole antisolari\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pellicola antisolare Tecnosolar SSN 50 TE SR\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicola antisolare Tecnosolar SSN 50 TE SR"
+    },
+    {
+      "level": 4,
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "level": 2,
+      "text": "Utilizzi"
+    },
+    {
+      "level": 2,
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "level": 2,
+      "text": "Specifiche tecniche"
+    },
+    {
+      "level": 2,
+      "text": "Benefici"
+    },
+    {
+      "level": 6,
+      "text": "vetrocamera 4 mm"
+    },
+    {
+      "level": 6,
+      "text": "Energia solare totale"
+    },
+    {
+      "level": 6,
+      "text": "Luce visibile"
+    },
+    {
+      "level": 6,
+      "text": "Totale energia respinta"
+    },
+    {
+      "level": 2,
+      "text": "10"
+    },
+    {
+      "level": 3,
+      "text": "anni di garanzia"
+    }
+  ],
+  "h1": "Pellicola antisolare Tecnosolar SSN 50 TE SR",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicola antisolare Tecnosolar SSN 50 TE SR",
+      "text": "Pellicola antisolare Tecnosolar SSN 50 TE SR"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "<a href=\"https://www.solarisfilms.it/wp-content/uploads/2025/06/SSN50TESR.pdf\">Consulta la scheda tecnica",
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Utilizzi",
+      "text": "Utilizzi"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari spettro selettive Hi-Tec-Clear SSN 50 TE SR sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l&#x2019;esigenza di mantenere inalterata la trasparenza e l&#x2019;aspetto estetico delle vetrate. Sono ideali per vetrine, uffici, musei, show room, scuole, banche e per tutti gli edifici dove vi sono vincoli storici, paesaggistici o ambientali.",
+      "text": "Le pellicole antisolari spettro selettive Hi-Tec-Clear SSN 50 TE SR sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l’esigenza di mantenere inalterata la trasparenza e l’aspetto estetico delle vetrate. Sono ideali per vetrine, uffici, musei, show room, scuole, banche e per tutti gli edifici dove vi sono vincoli storici, paesaggistici o ambientali."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Caratteristiche distintive",
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola Hi-Tec-Clear SSN 50 TE SR &#xE8; una pellicola per vetri spettro selettiva estremamente resistente specifica per applicazioni in esterno. Il rivestimento esterno utilizza una innovativa tecnologia brevettata particolarmente resistente ai graffi. Bloccando oltre l&#x2019;84 % dei raggi infrarossi (calore) e lasciando passare un&#x2019;elevata quantit&#xE0; di luce visibile garantisce ambienti interni pi&#xF9; freschi e confortevoli, costi di condizionamento ridotti ed un&#x2019;elevata trasparenza, preservando l&#x2019;aspetto estetico originale del vetro.",
+      "text": "La pellicola Hi-Tec-Clear SSN 50 TE SR è una pellicola per vetri spettro selettiva estremamente resistente specifica per applicazioni in esterno. Il rivestimento esterno utilizza una innovativa tecnologia brevettata particolarmente resistente ai graffi. Bloccando oltre l’84 % dei raggi infrarossi (calore) e lasciando passare un’elevata quantità di luce visibile garantisce ambienti interni più freschi e confortevoli, costi di condizionamento ridotti ed un’elevata trasparenza, preservando l’aspetto estetico originale del vetro."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Specifiche tecniche",
+      "text": "Specifiche tecniche"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;ultima evoluzione tecnologica nel campo delle <a href=\"/\">pellicole per vetri &#xE8; rappresentata dalle pellicole antisolari spettro selettive della serie Hi-Tec-Clear, distribuite in esclusiva da <a href=\"https://www.tecnosolar.it/\" target=\"_blank\" rel=\"noopener noreferrer\">Tecnosolar. Questa pellicola per vetri &#xE8; basata sulla pionieristica tecnologia &#x201C;spettro selettiva&#x201D; si abbina l&#x2019;efficacia nel respingere l&#x2019;irraggiamento solare ad un alto grado di trasparenza tale da consentire un&#x2019;elevata luminosit&#xE0; degli ambienti ed un&#x2019;ottima visione attraverso il vetro.",
+      "text": "L’ultima evoluzione tecnologica nel campo delle pellicole per vetri è rappresentata dalle pellicole antisolari spettro selettive della serie Hi-Tec-Clear, distribuite in esclusiva da Tecnosolar. Questa pellicola per vetri è basata sulla pionieristica tecnologia “spettro selettiva” si abbina l’efficacia nel respingere l’irraggiamento solare ad un alto grado di trasparenza tale da consentire un’elevata luminosità degli ambienti ed un’ottima visione attraverso il vetro."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Benefici",
+      "text": "Benefici"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Elegante aspetto neutro ed elevata trasparenza ottica.",
+          "text": "Elegante aspetto neutro ed elevata trasparenza ottica."
+        },
+        {
+          "html": "Elevata trasmissione della luce visibile, garantisce ambienti freschi e luminosi.",
+          "text": "Elevata trasmissione della luce visibile, garantisce ambienti freschi e luminosi."
+        },
+        {
+          "html": "Scherma il 56% del calore solare, rende gli ambienti freschi e confortevoli.",
+          "text": "Scherma il 56% del calore solare, rende gli ambienti freschi e confortevoli."
+        },
+        {
+          "html": "Blocca oltre il 99% dei raggi ultravioletti, eliminando lo scolorimento e il degrado di beni.",
+          "text": "Blocca oltre il 99% dei raggi ultravioletti, eliminando lo scolorimento e il degrado di beni."
+        },
+        {
+          "html": "Bassa riflessione interna ed esterna, consente una visuale inalterata.",
+          "text": "Bassa riflessione interna ed esterna, consente una visuale inalterata."
+        }
+      ],
+      "text": "Elegante aspetto neutro ed elevata trasparenza ottica. Elevata trasmissione della luce visibile, garantisce ambienti freschi e luminosi. Scherma il 56% del calore solare, rende gli ambienti freschi e confortevoli. Blocca oltre il 99% dei raggi ultravioletti, eliminando lo scolorimento e il degrado di beni. Bassa riflessione interna ed esterna, consente una visuale inalterata."
+    },
+    {
+      "type": "note",
+      "html": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola",
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-spettro-selettive/",
+      "text": "Vai al focus tecnico",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "vetrocamera 4 mm",
+      "text": "vetrocamera 4 mm"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Energia solare totale",
+      "text": "Energia solare totale"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "25%",
+      "text": "Trasmessa 25%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa",
+      "value": "23%",
+      "text": "Riflessa 23%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Assorbita",
+      "value": "52%",
+      "text": "Assorbita 52%",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Luce visibile",
+      "text": "Luce visibile"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "45%",
+      "text": "Trasmessa 45%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa - Interno",
+      "value": "26%",
+      "text": "Riflessa - Interno 26%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa - Esterno",
+      "value": "23%",
+      "text": "Riflessa - Esterno 23%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riduzione abbaglio",
+      "value": "48%",
+      "text": "Riduzione abbaglio 48%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Infrarossi respinti",
+      "value": "84%",
+      "text": "Infrarossi respinti 84%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Raggi UV trasmessi (max)",
+      "value": "1%",
+      "text": "Raggi UV trasmessi (max) 1%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Coefficiente schermatura",
+      "value": "0.36",
+      "text": "Coefficiente schermatura 0.36",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Fattore solare g",
+      "value": "0.31",
+      "text": "Fattore solare g 0.31",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Totale energia respinta",
+      "text": "Totale energia respinta"
+    },
+    {
+      "type": "metric",
+      "label": "Energia Respinta",
+      "value": "69%",
+      "text": "Energia Respinta 69%",
+      "html": ""
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai bisogno di una pellicola antisolare? Consulta il nostro&#xA0;<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/\">approfondimento sulle pellicole antisolari&#xA0;per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>10",
+      "text": "10"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>anni di garanzia",
+      "text": "anni di garanzia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <span>pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicola antisolare Tecnosolar SSN 50 TE SR Consulta la scheda tecnica Utilizzi Le pellicole antisolari spettro selettive Hi-Tec-Clear SSN 50 TE SR sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l’esigenza di mantenere inalterata la trasparenza e l’aspetto estetico delle vetrate. Sono ideali per vetrine, uffici, musei, show room, scuole, banche e per tutti gli edifici dove vi sono vincoli storici, paesaggistici o ambientali. Caratteristiche distintive La pellicola Hi-Tec-Clear SSN 50 TE SR è una pellicola per vetri spettro selettiva estremamente resistente specifica per applicazioni in esterno. Il rivestimento esterno utilizza una innovativa tecnologia brevettata particolarmente resistente ai graffi. Bloccando oltre l’84 % dei raggi infrarossi (calore) e lasciando passare un’elevata quantità di luce visibile garantisce ambienti interni più freschi e confortevoli, costi di condizionamento ridotti ed un’elevata trasparenza, preservando l’aspetto estetico originale del vetro. Specifiche tecniche L’ultima evoluzione tecnologica nel campo delle pellicole per vetri è rappresentata dalle pellicole antisolari spettro selettive della serie Hi-Tec-Clear, distribuite in esclusiva da Tecnosolar. Questa pellicola per vetri è basata sulla pionieristica tecnologia “spettro selettiva” si abbina l’efficacia nel respingere l’irraggiamento solare ad un alto grado di trasparenza tale da consentire un’elevata luminosità degli ambienti ed un’ottima visione attraverso il vetro. Benefici Elegante aspetto neutro ed elevata trasparenza ottica. Elevata trasmissione della luce visibile, garantisce ambienti freschi e luminosi. Scherma il 56% del calore solare, rende gli ambienti freschi e confortevoli. Blocca oltre il 99% dei raggi ultravioletti, eliminando lo scolorimento e il degrado di beni. Bassa riflessione interna ed esterna, consente una visuale inalterata. Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico vetrocamera 4 mm Energia solare totale Trasmessa 25% Riflessa 23% Assorbita 52% Luce visibile Trasmessa 45% Riflessa - Interno 26% Riflessa - Esterno 23% Riduzione abbaglio 48% Infrarossi respinti 84% Raggi UV trasmessi (max) 1% Coefficiente schermatura 0.36 Fattore solare g 0.31 Totale energia respinta Energia Respinta 69% Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole! 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 2645,
+  "fetchedAt": "2026-04-28T15:09:17.645Z"
+}

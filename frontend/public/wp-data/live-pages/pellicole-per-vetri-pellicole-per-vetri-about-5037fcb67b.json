@@ -1,0 +1,268 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/about/",
+  "path": "/pellicole-per-vetri/pellicole-per-vetri/about/",
+  "route": {
+    "type": "company",
+    "label": "Chi siamo",
+    "newPath": "/chi-siamo/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/page-sitemap.xml",
+  "seo": {
+    "title": "Solaris Films | 40 Anni Esperti Pellicole Vetri e Trattamenti",
+    "description": "Solaris Films: da 40 anni esperti in pellicole per vetri e trattamenti speciali. Distributore esclusivo Madico USA in Italia. Soluzioni per risparmio energetico, sicurezza e comfort.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/about/",
+    "og": {
+      "og:title": "Chi siamo",
+      "og:description": "Solaris Films: da 40 anni esperti in pellicole per vetri e trattamenti speciali. Distributore esclusivo Madico USA in Italia. Soluzioni per risparmio energetico, sicurezza e comfort.",
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/about/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "4 minuti"
+    },
+    "article": {
+      "article:modified_time": "2026-04-27T11:30:39+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/about\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/about\\/\",\"name\":\"Solaris Films | 40 Anni Esperti Pellicole Vetri e Trattamenti\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-05-27T09:28:04+00:00\",\"dateModified\":\"2026-04-27T11:30:39+00:00\",\"description\":\"Solaris Films: da 40 anni esperti in pellicole per vetri e trattamenti speciali. Distributore esclusivo Madico USA in Italia. Soluzioni per risparmio energetico, sicurezza e comfort.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/about\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/about\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/about\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole per vetri\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Chi siamo\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Chi siamo?"
+    },
+    {
+      "level": 2,
+      "text": "La nostra storia"
+    },
+    {
+      "level": 6,
+      "text": "Social Feed"
+    },
+    {
+      "level": 4,
+      "text": "Seguici sulle pagine social di INCIPIO la nostra società di ricerca e sviluppo"
+    },
+    {
+      "level": 3,
+      "text": "Mission"
+    },
+    {
+      "level": 3,
+      "text": "Vision"
+    }
+  ],
+  "h1": "Chi siamo?",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Chi siamo?",
+      "text": "Chi siamo?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La nostra storia",
+      "text": "La nostra storia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Siamo un&#x2019;azienda Italiana con sede centrale in Toscana che da 40 anni opera in tutta Italia ed in Europa nel campo delle pellicole per vetri e trattamenti speciali per superfici trasparenti.",
+      "text": "Siamo un’azienda Italiana con sede centrale in Toscana che da 40 anni opera in tutta Italia ed in Europa nel campo delle pellicole per vetri e trattamenti speciali per superfici trasparenti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Dal 2020 siamo il DISTRIBUTORE ESCLUSIVO PER L&amp;#8217;ITALIA delle pellicole MADICO U.S.A.",
+      "text": "Dal 2020 siamo il DISTRIBUTORE ESCLUSIVO PER L’ITALIA delle pellicole MADICO U.S.A."
+    },
+    {
+      "type": "paragraph",
+      "html": "Nel 2026 inizieremo ufficialmente anche la distribuzione in SPAGNA e ISOLE CANARIE",
+      "text": "Nel 2026 inizieremo ufficialmente anche la distribuzione in SPAGNA e ISOLE CANARIE"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&#x2019;esperienza sul campo, maturata lavorando su oltre 50.000 edifici, ci permette di risolvere sempre in modo efficace ed efficiente varie tipologie di problemi; dalla riduzione dei consumi energetici grazie al raffrescamento dei locali al miglioramento del comfort ambientale all&#x2019;interno degli uffici, dalla messa in sicurezza di vetrate non a norma nelle scuole alla protezione contro le esplosioni in edifici sensibili.<br>Affidati ai professionisti del vetro, scegli Solaris Films.",
+      "text": "L’esperienza sul campo, maturata lavorando su oltre 50.000 edifici, ci permette di risolvere sempre in modo efficace ed efficiente varie tipologie di problemi; dalla riduzione dei consumi energetici grazie al raffrescamento dei locali al miglioramento del comfort ambientale all’interno degli uffici, dalla messa in sicurezza di vetrate non a norma nelle scuole alla protezione contro le esplosioni in edifici sensibili.Affidati ai professionisti del vetro, scegli Solaris Films."
+    },
+    {
+      "type": "paragraph",
+      "html": "Ecco alcune delle nostre referenze 2024/2025:",
+      "text": "Ecco alcune delle nostre referenze 2024/2025:"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Reggimento Corazzieri &amp;#8211; Roma;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#x2713; Aeroporto di Bologna &#x201C;Guglielmo Marconi&#x201D;",
+      "text": "✓ Reggimento Corazzieri – Roma; ✓ Aeroporto di Bologna “Guglielmo Marconi”"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Comune di Bologna-Polizia Locale;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Universit&#xE0; Politecnica delle Marche;",
+      "text": "✓ Comune di Bologna-Polizia Locale; ✓ Università Politecnica delle Marche;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Palazzo Lancia &amp;#8211; Torino&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#x2713; Sistema Museale Fiorentino;",
+      "text": "✓ Palazzo Lancia – Torino ✓ Sistema Museale Fiorentino;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Comune di Adria;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Aeroporto di Forl&#xEC; &#x201C;Luigi Ridolfi&#x201D;;",
+      "text": "✓ Comune di Adria; ✓ Aeroporto di Forlì “Luigi Ridolfi”;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Comune di Casciana Terme Lari;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#xA0;&#x2713; Opera del Duomo di Siena;",
+      "text": "✓ Comune di Casciana Terme Lari; ✓ Opera del Duomo di Siena;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Comune di Campi Bisenzio;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Galleria Nazionale dell&#x2019;Umbria &amp;#8211; Perugia;",
+      "text": "✓ Comune di Campi Bisenzio; ✓ Galleria Nazionale dell’Umbria – Perugia;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Universita&amp;#8217; di Bologna;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#xA0;&#x2713; Soprintendenza Archeologia, Belle arti di Firenze;",
+      "text": "✓ Universita’ di Bologna; ✓ Soprintendenza Archeologia, Belle arti di Firenze;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Ministero dell&amp;#8217;Interno &amp;#8211; UTG di Pistoia;&#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Azienda Ospedaliero Universitaria Careggi;",
+      "text": "✓ Ministero dell’Interno – UTG di Pistoia; ✓ Azienda Ospedaliero Universitaria Careggi;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; DIA Firenze;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Ospedale San Giuseppe &#x2013; Empoli (FI);",
+      "text": "✓ DIA Firenze; ✓ Ospedale San Giuseppe – Empoli (FI);"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Ministero della Difesa &amp;#8211; C.I.I. &amp;#8211; Roma;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Distretto Santa Rosa &amp;#8211; Firenze;",
+      "text": "✓ Ministero della Difesa – C.I.I. – Roma; ✓ Distretto Santa Rosa – Firenze;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Comando Regione Carabinieri Calabria;&#xA0; &#xA0;&#xA0;&#x2713; AUSL San Salvi &#x2013; Firenze &#x2013;Toscana Centro;",
+      "text": "✓ Comando Regione Carabinieri Calabria; ✓ AUSL San Salvi – Firenze –Toscana Centro;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Guardia di Finanza di Prato&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#xA0;&#x2713; Azienda USL Toscana Sud Est &amp;#8211; Grosseto;",
+      "text": "✓ Guardia di Finanza di Prato ✓ Azienda USL Toscana Sud Est – Grosseto;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Accademia Navale di Livorno;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Azienda Ospedaliero Universitaria Senese &#x2013; Siena;",
+      "text": "✓ Accademia Navale di Livorno; ✓ Azienda Ospedaliero Universitaria Senese – Siena;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Agenzia delle Entrate Bologna;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Carbench International &#x2013; Massa Carrara;",
+      "text": "✓ Agenzia delle Entrate Bologna; ✓ Carbench International – Massa Carrara;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; ASP Bologna;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Isotta Fraschini &#x2013; Bari;",
+      "text": "✓ ASP Bologna; ✓ Isotta Fraschini – Bari;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Coopselios &#x2013; Milano;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#x2713; Cr&#xE9;dit Agricole Sede di Ravenna;",
+      "text": "✓ Coopselios – Milano; ✓ Crédit Agricole Sede di Ravenna;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Corte dei Conti &amp;#8211; Roma;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#x2713; Palazzo Pitti &#x2013; Firenze;",
+      "text": "✓ Corte dei Conti – Roma; ✓ Palazzo Pitti – Firenze;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Sapienza Universit&#xE0; di Roma;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; H-Farm &#x2013; Treviso",
+      "text": "✓ Sapienza Università di Roma; ✓ H-Farm – Treviso"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Cassa Depositi e Prestiti &amp;#8211; Roma;&#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0;&#x2713; Prima Industrie &amp;#8211; Verona",
+      "text": "✓ Cassa Depositi e Prestiti – Roma; ✓ Prima Industrie – Verona"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Eur Spa &amp;#8211; Nuvola e Palazzo dei Congressi di Roma;",
+      "text": "✓ Eur Spa – Nuvola e Palazzo dei Congressi di Roma;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Banca D&#x2019;Italia;",
+      "text": "✓ Banca D’Italia;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; CNR &amp;#8211; Consiglio Nazionale delle Ricerche;",
+      "text": "✓ CNR – Consiglio Nazionale delle Ricerche;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Azienda Ospedaliero Universitaria di Sassari;",
+      "text": "✓ Azienda Ospedaliero Universitaria di Sassari;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Agenzia regionale per la protezione ambientale della Toscana;",
+      "text": "✓ Agenzia regionale per la protezione ambientale della Toscana;"
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x2713; Montecatone Rehabilitation Institute Spa &#x2013; Imola (BO);",
+      "text": "✓ Montecatone Rehabilitation Institute Spa – Imola (BO);"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Social Feed",
+      "text": "Social Feed"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Seguici sulle pagine social di INCIPIO la nostra societ&#xE0; di ricerca e sviluppo",
+      "text": "Seguici sulle pagine social di INCIPIO la nostra società di ricerca e sviluppo"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Mission",
+      "text": "Mission"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vogliamo risolvere qualsiasi problema relativo alle superfici vetrate. Per questo impieghiamo le tecnologie pi&#xF9; all&#x2019;avanguardia e prepariamo al meglio il nostro personale perch&#xE9; sia in grado di analizzare le problematiche rilevate dai nostri clienti ed offrire sempre la migliore soluzione da installare ed il miglior servizio disponibile sul mercato.<br>Il cliente &#xE8; il protagonista del nostro business, e viene accompagnato in ogni fase, ritagliando la soluzione perfetta per le sue esigenze.",
+      "text": "Vogliamo risolvere qualsiasi problema relativo alle superfici vetrate. Per questo impieghiamo le tecnologie più all’avanguardia e prepariamo al meglio il nostro personale perché sia in grado di analizzare le problematiche rilevate dai nostri clienti ed offrire sempre la migliore soluzione da installare ed il miglior servizio disponibile sul mercato.Il cliente è il protagonista del nostro business, e viene accompagnato in ogni fase, ritagliando la soluzione perfetta per le sue esigenze."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Vision",
+      "text": "Vision"
+    },
+    {
+      "type": "paragraph",
+      "html": "Intendiamo portare una visione ecocompatibile in edilizia, implementando soluzioni in grado di abbassare le emissioni, il consumo di energia e migliorare la sostenibilit&#xE0; ambientale degli edifici.<br>Nel 2020 si &#xE8; calcolato che il 22 agosto l&#x2019;umanit&#xE0; ha esaurito tutte le risorse naturali che la Terra &#xE8; capace di rigenerare in un anno; tutto ci&#xF2; che consumiamo da quella data in poi lo &#x2018;rubiamo&#x2019; al pianeta. Noi di Solaris Films vogliamo garantire un futuro alle prossime generazioni, perch&#xE9; non ereditiamo la terra dai nostri antenati, la prendiamo in prestito dai nostri figli.",
+      "text": "Intendiamo portare una visione ecocompatibile in edilizia, implementando soluzioni in grado di abbassare le emissioni, il consumo di energia e migliorare la sostenibilità ambientale degli edifici.Nel 2020 si è calcolato che il 22 agosto l’umanità ha esaurito tutte le risorse naturali che la Terra è capace di rigenerare in un anno; tutto ciò che consumiamo da quella data in poi lo ‘rubiamo’ al pianeta. Noi di Solaris Films vogliamo garantire un futuro alle prossime generazioni, perché non ereditiamo la terra dai nostri antenati, la prendiamo in prestito dai nostri figli."
+    }
+  ],
+  "contentHtml": "",
+  "text": "Chi siamo? La nostra storia Siamo un’azienda Italiana con sede centrale in Toscana che da 40 anni opera in tutta Italia ed in Europa nel campo delle pellicole per vetri e trattamenti speciali per superfici trasparenti. Dal 2020 siamo il DISTRIBUTORE ESCLUSIVO PER L’ITALIA delle pellicole MADICO U.S.A. Nel 2026 inizieremo ufficialmente anche la distribuzione in SPAGNA e ISOLE CANARIE L’esperienza sul campo, maturata lavorando su oltre 50.000 edifici, ci permette di risolvere sempre in modo efficace ed efficiente varie tipologie di problemi; dalla riduzione dei consumi energetici grazie al raffrescamento dei locali al miglioramento del comfort ambientale all’interno degli uffici, dalla messa in sicurezza di vetrate non a norma nelle scuole alla protezione contro le esplosioni in edifici sensibili.Affidati ai professionisti del vetro, scegli Solaris Films. Ecco alcune delle nostre referenze 2024/2025: ✓ Reggimento Corazzieri – Roma; ✓ Aeroporto di Bologna “Guglielmo Marconi” ✓ Comune di Bologna-Polizia Locale; ✓ Università Politecnica delle Marche; ✓ Palazzo Lancia – Torino ✓ Sistema Museale Fiorentino; ✓ Comune di Adria; ✓ Aeroporto di Forlì “Luigi Ridolfi”; ✓ Comune di Casciana Terme Lari; ✓ Opera del Duomo di Siena; ✓ Comune di Campi Bisenzio; ✓ Galleria Nazionale dell’Umbria – Perugia; ✓ Universita’ di Bologna; ✓ Soprintendenza Archeologia, Belle arti di Firenze; ✓ Ministero dell’Interno – UTG di Pistoia; ✓ Azienda Ospedaliero Universitaria Careggi; ✓ DIA Firenze; ✓ Ospedale San Giuseppe – Empoli (FI); ✓ Ministero della Difesa – C.I.I. – Roma; ✓ Distretto Santa Rosa – Firenze; ✓ Comando Regione Carabinieri Calabria; ✓ AUSL San Salvi – Firenze –Toscana Centro; ✓ Guardia di Finanza di Prato ✓ Azienda USL Toscana Sud Est – Grosseto; ✓ Accademia Navale di Livorno; ✓ Azienda Ospedaliero Universitaria Senese – Siena; ✓ Agenzia delle Entrate Bologna; ✓ Carbench International – Massa Carrara; ✓ ASP Bologna; ✓ Isotta Fraschini – Bari; ✓ Coopselios – Milano; ✓ Crédit Agricole Sede di Ravenna; ✓ Corte dei Conti – Roma; ✓ Palazzo Pitti – Firenze; ✓ Sapienza Università di Roma; ✓ H-Farm – Treviso ✓ Cassa Depositi e Prestiti – Roma; ✓ Prima Industrie – Verona ✓ Eur Spa – Nuvola e Palazzo dei Congressi di Roma; ✓ Banca D’Italia; ✓ CNR – Consiglio Nazionale delle Ricerche; ✓ Azienda Ospedaliero Universitaria di Sassari; ✓ Agenzia regionale per la protezione ambientale della Toscana; ✓ Montecatone Rehabilitation Institute Spa – Imola (BO); Social Feed Seguici sulle pagine social di INCIPIO la nostra società di ricerca e sviluppo Mission Vogliamo risolvere qualsiasi problema relativo alle superfici vetrate. Per questo impieghiamo le tecnologie più all’avanguardia e prepariamo al meglio il nostro personale perché sia in grado di analizzare le problematiche rilevate dai nostri clienti ed offrire sempre la migliore soluzione da installare ed il miglior servizio disponibile sul mercato.Il cliente è il protagonista del nostro business, e viene accompagnato in ogni fase, ritagliando la soluzione perfetta per le sue esigenze. Vision Intendiamo portare una visione ecocompatibile in edilizia, implementando soluzioni in grado di abbassare le emissioni, il consumo di energia e migliorare la sostenibilità ambientale degli edifici.Nel 2020 si è calcolato che il 22 agosto l’umanità ha esaurito tutte le risorse naturali che la Terra è capace di rigenerare in un anno; tutto ciò che consumiamo da quella data in poi lo ‘rubiamo’ al pianeta. Noi di Solaris Films vogliamo garantire un futuro alle prossime generazioni, perché non ereditiamo la terra dai nostri antenati, la prendiamo in prestito dai nostri figli.",
+  "textLength": 3641,
+  "fetchedAt": "2026-04-28T15:09:16.650Z"
+}

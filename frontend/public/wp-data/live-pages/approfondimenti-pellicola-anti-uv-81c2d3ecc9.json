@@ -1,0 +1,180 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/pellicola-anti-uv/",
+  "path": "/approfondimenti/pellicola-anti-uv/",
+  "route": {
+    "type": "article",
+    "label": "Approfondimento",
+    "newPath": "/blog/pellicola-anti-uv/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/post-sitemap.xml",
+  "seo": {
+    "title": "PELLICOLA ANTI UV - Solaris Films",
+    "description": "Phone Instagram Facebook Youtube Linkedin PELLICOLA ANTI UV In Solaris Films pensiamo anche al vostro benessere. Per questo vi portiamo le soluzioni migliori per proteggere voi ed i vostri cari dalle parti dannose dello spettro solare. I RAGGI UV I raggi UltraVioletti ( d’ora in poi UV) sono un intervallo della radiazione elettromagnetica, con lunghezza [&hellip;]",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-anti-uv/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "PELLICOLA ANTI UV",
+      "og:description": "Phone Instagram Facebook Youtube Linkedin PELLICOLA ANTI UV In Solaris Films pensiamo anche al vostro benessere. Per questo vi portiamo le soluzioni migliori per proteggere voi ed i vostri cari dalle parti dannose dello spettro solare. I RAGGI UV I raggi UltraVioletti ( d’ora in poi UV) sono un intervallo della radiazione elettromagnetica, con lunghezza [&hellip;]",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/pellicola-anti-uv/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/pellicola-antisolare-bronzo-e1629730399295.webp",
+      "og:image:width": "500",
+      "og:image:height": "579",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Scritto da",
+      "twitter:data1": "Fabio Meucci",
+      "twitter:label2": "Tempo di lettura stimato",
+      "twitter:data2": "2 minuti"
+    },
+    "article": {
+      "article:published_time": "2025-06-17T13:40:45+00:00",
+      "article:modified_time": "2025-07-22T16:13:59+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/\"},\"author\":{\"name\":\"Fabio Meucci\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\"},\"headline\":\"PELLICOLA ANTI UV\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-07-22T16:13:59+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/\"},\"wordCount\":509,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare-bronzo-e1629730399295.webp\",\"articleSection\":[\"Approfondimenti\"],\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/\",\"name\":\"PELLICOLA ANTI UV - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare-bronzo-e1629730399295.webp\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-07-22T16:13:59+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare-bronzo-e1629730399295.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicola-antisolare-bronzo-e1629730399295.webp\",\"width\":500,\"height\":579},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/pellicola-anti-uv\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Lo sapevi che?\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/lo-sapevi-che\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"PELLICOLA ANTI UV\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\",\"name\":\"Fabio Meucci\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"caption\":\"Fabio Meucci\"},\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/fabio-meucci\\/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "level": 1,
+      "text": "PELLICOLA ANTI UV"
+    },
+    {
+      "level": 2,
+      "text": "I RAGGI UV"
+    },
+    {
+      "level": 3,
+      "text": "LE NOSTRE PELLICOLE ANTI UV"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"tel:800625052\"><br>\nPhone<br>\n<br>\n<a href=\"https://www.instagram.com/solaris_films/\" target=\"_blank\" rel=\"noopener noreferrer\"><br>\nInstagram<br>\n<br>\n<a href=\"https://www.facebook.com/SolarisFilmSrl/\" target=\"_blank\" rel=\"noopener noreferrer\"><br>\nFacebook<br>\n<br>\n<a href=\"https://www.youtube.com/channel/UC7Wo3V0zdOW7IxIMv_avSrw\" target=\"_blank\" rel=\"noopener noreferrer\"><br>\nYoutube<br>\n<br>\n<a href=\"https://it.linkedin.com/company/solaris-films-srl\" target=\"_blank\" rel=\"noopener noreferrer\"><br>\nLinkedin<br>",
+      "text": "Phone Instagram Facebook Youtube Linkedin"
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "PELLICOLA ANTI UV",
+      "text": "PELLICOLA ANTI UV"
+    },
+    {
+      "type": "paragraph",
+      "html": "In Solaris Films pensiamo anche al vostro benessere. Per questo vi portiamo le soluzioni migliori per proteggere voi ed i vostri cari dalle parti dannose dello spettro solare.<br>\n<a href=\"/pellicole-per-vetri/pellicole-per-i-vetri/\"><br>",
+      "text": "In Solaris Films pensiamo anche al vostro benessere. Per questo vi portiamo le soluzioni migliori per proteggere voi ed i vostri cari dalle parti dannose dello spettro solare."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "I RAGGI UV",
+      "text": "I RAGGI UV"
+    },
+    {
+      "type": "paragraph",
+      "html": "I <a href=\"https://it.wikipedia.org/wiki/Radiazione_ultravioletta\" target=\"_blank\" rel=\"noopener noreferrer\">raggi UltraVioletti ( d&amp;#8217;ora in poi UV) sono un intervallo della radiazione elettromagnetica, con lunghezza d&amp;#8217;onda di poco inferiore a quella della luce visibile dall&amp;#8217;occhio umano. Sono dunque invisibili per noi, mentre insetti, alcuni mammiferi ed uccelli riescono a vederla in parte.",
+      "text": "I raggi UltraVioletti ( d’ora in poi UV) sono un intervallo della radiazione elettromagnetica, con lunghezza d’onda di poco inferiore a quella della luce visibile dall’occhio umano. Sono dunque invisibili per noi, mentre insetti, alcuni mammiferi ed uccelli riescono a vederla in parte."
+    },
+    {
+      "type": "paragraph",
+      "html": "I raggi UV hanno sia effetti benefici che dannosi per la salute dell&amp;#8217;uomo. L&amp;#8217;ultravioletto partecipa alla formazione della vitamina D nel nostro corpo, sostanza responsabile del rafforzamento delle ossa e di prevenzione dell&#xB4;osteoporosi, del diabete tipo 1, delle malattie autoimmuni e di diversi tipi di tumori. &#xC9; responsabile anche della produzione di serotonina e limita la proliferazione di batteri e virus, ed &#xE8; dunque importante per la nostra esistenza. Una eccedenza di irradiamento da raggi UV pu&#xF2; portare nel breve periodo al classico eritema solare (la &amp;#8216;scottatura&amp;#8217;), ad invecchiamento della pelle o a patologie pi&#xF9; serie come tumori della pelle non-melanociti, carcinoma basocellulare, carcinoma squamoso o il melanoma maligno.",
+      "text": "I raggi UV hanno sia effetti benefici che dannosi per la salute dell’uomo. L’ultravioletto partecipa alla formazione della vitamina D nel nostro corpo, sostanza responsabile del rafforzamento delle ossa e di prevenzione dell´osteoporosi, del diabete tipo 1, delle malattie autoimmuni e di diversi tipi di tumori. É responsabile anche della produzione di serotonina e limita la proliferazione di batteri e virus, ed è dunque importante per la nostra esistenza. Una eccedenza di irradiamento da raggi UV può portare nel breve periodo al classico eritema solare (la ‘scottatura’), ad invecchiamento della pelle o a patologie più serie come tumori della pelle non-melanociti, carcinoma basocellulare, carcinoma squamoso o il melanoma maligno."
+    },
+    {
+      "type": "paragraph",
+      "html": "L&amp;#8217;esposizione ai raggi UV &#xE8; responsabile anche del deperimento dei cibi e degli oggetti; dei prodotti in vetrina possono ad esempio scolorire!",
+      "text": "L’esposizione ai raggi UV è responsabile anche del deperimento dei cibi e degli oggetti; dei prodotti in vetrina possono ad esempio scolorire!"
+    },
+    {
+      "type": "paragraph",
+      "html": "L&amp;#8217;atmosfera terrestre &#xE8; gi&#xE0; un ottimo filtro della radiazione UV, andando a bloccarne una buona parte ma si deve comunque molto attenti ad una sovraesposizione, che potrebbe essere molto pericolosa.",
+      "text": "L’atmosfera terrestre è già un ottimo filtro della radiazione UV, andando a bloccarne una buona parte ma si deve comunque molto attenti ad una sovraesposizione, che potrebbe essere molto pericolosa."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "LE NOSTRE PELLICOLE ANTI UV",
+      "text": "LE NOSTRE PELLICOLE ANTI UV"
+    },
+    {
+      "type": "paragraph",
+      "html": "Per proteggersi al meglio dalla sovraesposizione ai raggi UV esistono specifiche pellicole in grado di bloccare fino al 99% di queste radiazioni senza rinunciare all&amp;#8217;illuminazione diurna fornita dalle nostre vetrate.",
+      "text": "Per proteggersi al meglio dalla sovraesposizione ai raggi UV esistono specifiche pellicole in grado di bloccare fino al 99% di queste radiazioni senza rinunciare all’illuminazione diurna fornita dalle nostre vetrate."
+    },
+    {
+      "type": "paragraph",
+      "html": "Grazie all&amp;#8217;esperienza del nostro distributore <a href=\"https://www.tecnosolar.it/\" target=\"_blank\" rel=\"noopener noreferrer\">Tecnosolar possiamo presentarvi il top di gamma in fatto di pellicole in grado di proteggervi dai raggi UV. Il nostro catalogo comprende opzioni per soddisfare le necessit&#xE0; di ogni cliente.",
+      "text": "Grazie all’esperienza del nostro distributore Tecnosolar possiamo presentarvi il top di gamma in fatto di pellicole in grado di proteggervi dai raggi UV. Il nostro catalogo comprende opzioni per soddisfare le necessità di ogni cliente."
+    },
+    {
+      "type": "paragraph",
+      "html": "Ad esempio, per il cliente che vuole protezione domestica o sul luogo di lavoro dai raggi UV consigliamo <a href=\"/tecnosolarssn50tesr/\">Madico SSN 50 TE SR, trasparente e discreta, &#xE8; una pellicola spettroselettiva, cio&#xE8; blocca laparte dannosa della radiazione solare senza impedire per nulla alla luce di entrare. Se avete invece gravosi problemi di riverbero e di abbaglio vi consigliamo la <a href=\"/madicosl8epssr/\">Madico SL8 E PS SR, una pellicola argentata riflettente in grado di respingere anche parte della luce, in modo da permettervi di avere un&amp;#8217;illuminazione uniforme in tutte le parti della giornata.",
+      "text": "Ad esempio, per il cliente che vuole protezione domestica o sul luogo di lavoro dai raggi UV consigliamo Madico SSN 50 TE SR, trasparente e discreta, è una pellicola spettroselettiva, cioè blocca laparte dannosa della radiazione solare senza impedire per nulla alla luce di entrare. Se avete invece gravosi problemi di riverbero e di abbaglio vi consigliamo la Madico SL8 E PS SR, una pellicola argentata riflettente in grado di respingere anche parte della luce, in modo da permettervi di avere un’illuminazione uniforme in tutte le parti della giornata."
+    },
+    {
+      "type": "paragraph",
+      "html": "I nostri esperti saranno in grado di guidarvi nella scelta del prodotto pi&#xF9; aderente alle vostre necessit&#xE0;. Se volete avere un preventivo, cliccate <strong><em><a href=\"/preventivo/\">QUI: i nostri tecnici vi risponderanno in breve tempo.",
+      "text": "I nostri esperti saranno in grado di guidarvi nella scelta del prodotto più aderente alle vostre necessità. Se volete avere un preventivo, cliccate QUI: i nostri tecnici vi risponderanno in breve tempo."
+    },
+    {
+      "type": "paragraph",
+      "html": "Se volete approfondire il mondo delle pellicole antisolari invece, cliccate <strong><em><span>QUI!",
+      "text": "Se volete approfondire il mondo delle pellicole antisolari invece, cliccate QUI!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai bisogno di una pellicola antisolare? Consulta il nostro <a href=\"/pellicole-per-vetri/le-pellicole-antisolari/\">approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <a href=\"/\">pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/\">www.solarisfilms.it&#x2013; Numero Verde <a href=\"tel:800625052\">800625052&#xA0;",
+      "text": "www.solarisfilms.it– Numero Verde 800625052"
+    },
+    {
+      "type": "paragraph",
+      "html": "HEADQUARTER: Via Giacomo Brodolini, 8 &#x2013; 50063 Figline e Incisa Valdarno (FI)",
+      "text": "HEADQUARTER: Via Giacomo Brodolini, 8 – 50063 Figline e Incisa Valdarno (FI)"
+    },
+    {
+      "type": "paragraph",
+      "html": "P.I. 02223380516 &#x2013; Tel. <a href=\"tel:0559107621\">0559107621",
+      "text": "P.I. 02223380516 – Tel. 0559107621"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/privacy-policy/\">PRIVACY POLICY",
+      "text": "PRIVACY POLICY"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive Phone Instagram Facebook Youtube Linkedin PELLICOLA ANTI UV In Solaris Films pensiamo anche al vostro benessere. Per questo vi portiamo le soluzioni migliori per proteggere voi ed i vostri cari dalle parti dannose dello spettro solare. I RAGGI UV I raggi UltraVioletti ( d’ora in poi UV) sono un intervallo della radiazione elettromagnetica, con lunghezza d’onda di poco inferiore a quella della luce visibile dall’occhio umano. Sono dunque invisibili per noi, mentre insetti, alcuni mammiferi ed uccelli riescono a vederla in parte. I raggi UV hanno sia effetti benefici che dannosi per la salute dell’uomo. L’ultravioletto partecipa alla formazione della vitamina D nel nostro corpo, sostanza responsabile del rafforzamento delle ossa e di prevenzione dell´osteoporosi, del diabete tipo 1, delle malattie autoimmuni e di diversi tipi di tumori. É responsabile anche della produzione di serotonina e limita la proliferazione di batteri e virus, ed è dunque importante per la nostra esistenza. Una eccedenza di irradiamento da raggi UV può portare nel breve periodo al classico eritema solare (la ‘scottatura’), ad invecchiamento della pelle o a patologie più serie come tumori della pelle non-melanociti, carcinoma basocellulare, carcinoma squamoso o il melanoma maligno. L’esposizione ai raggi UV è responsabile anche del deperimento dei cibi e degli oggetti; dei prodotti in vetrina possono ad esempio scolorire! L’atmosfera terrestre è già un ottimo filtro della radiazione UV, andando a bloccarne una buona parte ma si deve comunque molto attenti ad una sovraesposizione, che potrebbe essere molto pericolosa. LE NOSTRE PELLICOLE ANTI UV Per proteggersi al meglio dalla sovraesposizione ai raggi UV esistono specifiche pellicole in grado di bloccare fino al 99% di queste radiazioni senza rinunciare all’illuminazione diurna fornita dalle nostre vetrate. Grazie all’esperienza del nostro distributore Tecnosolar possiamo presentarvi il top di gamma in fatto di pellicole in grado di proteggervi dai raggi UV. Il nostro catalogo comprende opzioni per soddisfare le necessità di ogni cliente. Ad esempio, per il cliente che vuole protezione domestica o sul luogo di lavoro dai raggi UV consigliamo Madico SSN 50 TE SR, trasparente e discreta, è una pellicola spettroselettiva, cioè blocca laparte dannosa della radiazione solare senza impedire per nulla alla luce di entrare. Se avete invece gravosi problemi di riverbero e di abbaglio vi consigliamo la Madico SL8 E PS SR, una pellicola argentata riflettente in grado di respingere anche parte della luce, in modo da permettervi di avere un’illuminazione uniforme in tutte le parti della giornata. I nostri esperti saranno in grado di guidarvi nella scelta del prodotto più aderente alle vostre necessità. Se volete avere un preventivo, cliccate QUI: i nostri tecnici vi risponderanno in breve tempo. Se volete approfondire il mondo delle pellicole antisolari invece, cliccate QUI! Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole! Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri! www.solarisfilms.it– Numero Verde 800625052 HEADQUARTER: Via Giacomo Brodolini, 8 – 50063 Figline e Incisa Valdarno (FI) P.I. 02223380516 – Tel. 0559107621 PRIVACY POLICY",
+  "textLength": 3423,
+  "fetchedAt": "2026-04-28T15:08:06.585Z"
+}

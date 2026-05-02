@@ -1,6 +1,8 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { fetchSettings } from '../data/wpApi';
 
+const SETTINGS_STORAGE_KEY = 'solaris_settings_cache';
+
 const defaults = {
   company_name: 'Solaris Films',
   company_subtitle: 'Distributore esclusivo MADICO USA per l\'Italia',
@@ -13,7 +15,7 @@ const defaults = {
   hero_title: 'Gli Specialisti delle Pellicole per Vetri',
   hero_subtitle: 'Distributore esclusivo MADICO USA per l\'Italia e la Spagna. Da oltre 30 anni proteggiamo, schermiamo e rendiamo sicuri i vetri di edifici commerciali, industriali e residenziali.',
   hero_badge: 'Distributore Esclusivo MADICO USA',
-  hero_image: '',
+  hero_image: '/wp-data/images/hero.jpg',
   hero_cta_text: 'Richiedi Preventivo',
   hero_video_url: '',
   stat1_value: '40+',
@@ -37,18 +39,47 @@ const defaults = {
   instagram: '',
   linkedin: '',
   youtube: '',
+  logo_url: '/wp-data/images/logo.png',
+  chatbot_enabled: true,
+  chatbot_welcome: 'Ciao! Sono l\'assistente Solaris. Posso aiutarti a capire quale pellicola e piu adatta al tuo edificio.',
+  chatbot_status: 'Assistente tecnico',
+  chatbot_placeholder: 'Scrivi un messaggio...',
+  chatbot_error: 'In questo momento l\'assistente non e collegato. Puoi usare WhatsApp o richiedere un preventivo.',
 };
 
 const SettingsContext = createContext(defaults);
 
 export const useSettings = () => useContext(SettingsContext);
 
+const getInitialSettings = () => {
+  if (typeof window === 'undefined') return defaults;
+
+  try {
+    const cached = window.localStorage.getItem(SETTINGS_STORAGE_KEY);
+    return cached ? { ...defaults, ...JSON.parse(cached) } : defaults;
+  } catch {
+    return defaults;
+  }
+};
+
 export const SettingsProvider = ({ children }) => {
-  const [settings, setSettings] = useState(defaults);
+  const [settings, setSettings] = useState(getInitialSettings);
 
   useEffect(() => {
     fetchSettings().then(data => {
-      if (data) setSettings(prev => ({ ...prev, ...data }));
+      if (!data) return;
+
+      setSettings(prev => {
+        const next = { ...prev, ...data };
+
+        try {
+          window.localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(next));
+        } catch {
+          // Ignore storage errors; settings still update for the current page.
+        }
+
+        return next;
+      });
     });
   }, []);
 

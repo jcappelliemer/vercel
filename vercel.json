@@ -10,7 +10,7 @@
       ]
     }
   ],
-  "buildCommand": "cd frontend && node fetch-wp-data.js && yarn build",
+  "buildCommand": "cd frontend && node fetch-wp-data.js && node fetch-live-site.js && GENERATE_SOURCEMAP=false yarn build",
   "outputDirectory": "frontend/build",
   "framework": null
 }

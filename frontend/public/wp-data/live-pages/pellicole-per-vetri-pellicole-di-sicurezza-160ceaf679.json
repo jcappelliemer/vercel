@@ -1,0 +1,228 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/",
+  "path": "/pellicole-per-vetri/pellicole-di-sicurezza/",
+  "route": {
+    "type": "category",
+    "label": "Pellicole di sicurezza",
+    "newPath": "/servizi/pellicole-sicurezza/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-sicurezza-sitemap.xml",
+  "seo": {
+    "title": "Archivi Pellicole di sicurezza - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "website",
+      "og:title": "Archivi Pellicole di sicurezza",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"CollectionPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/\",\"name\":\"Archivi Pellicole di sicurezza - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/damaged-glass-texture.jpg\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/#breadcrumb\"},\"inLanguage\":\"it-IT\"},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/damaged-glass-texture.jpg\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/damaged-glass-texture.jpg\",\"width\":1200,\"height\":1200},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole di sicurezza\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole di sicurezza"
+    },
+    {
+      "level": 5,
+      "text": "Al giorno d’oggi la sicurezza è uno dei fattori più importanti sia sul lavoro che nella vita privata; le pellicole di sicurezza possono essere un pratico strumento per aumentare la sicurezza in comodità e senza lavori invasivi!"
+    },
+    {
+      "level": 3,
+      "text": "Potenziale Antisolare RS 20 PS SR 4Mil"
+    },
+    {
+      "level": 2,
+      "text": "Perché montare le pellicole di sicurezza?"
+    },
+    {
+      "level": 4,
+      "text": "Questo significa che con un lavoro non invasivo e rapido potete mettere in sicurezza vetri datati o posti in posizioni pericolose!"
+    },
+    {
+      "level": 5,
+      "text": "Le caratteristiche tecniche"
+    },
+    {
+      "level": 4,
+      "text": "Pellicola RS 20 PS SR 4Mil"
+    },
+    {
+      "level": 4,
+      "text": "Pellicola CL 700 PS SR"
+    },
+    {
+      "level": 6,
+      "text": "Consente anch’essa la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformità al Testo Unico D.lgs. 81/2008."
+    },
+    {
+      "level": 2,
+      "text": "10"
+    },
+    {
+      "level": 3,
+      "text": "anni di garanzia"
+    }
+  ],
+  "h1": "Pellicole di sicurezza",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole di sicurezza",
+      "text": "Pellicole di sicurezza"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "html": "Al giorno d&#x2019;oggi la sicurezza &#xE8; uno dei fattori pi&#xF9; importanti sia sul lavoro che nella vita privata; le pellicole di sicurezza possono essere un pratico strumento per aumentare la sicurezza in comodit&#xE0; e senza lavori invasivi!",
+      "text": "Al giorno d’oggi la sicurezza è uno dei fattori più importanti sia sul lavoro che nella vita privata; le pellicole di sicurezza possono essere un pratico strumento per aumentare la sicurezza in comodità e senza lavori invasivi!"
+    },
+    {
+      "type": "note",
+      "html": "12 600",
+      "text": "12 600"
+    },
+    {
+      "type": "note",
+      "html": "UNI EN",
+      "text": "UNI EN"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole di sicurezza sono infatti in grado di migliorare le caratteristiche del vetro trasformando un normale vetro in un vetro di sicurezza, o un vetro anti sfondamento. Il vetro &#xE8; un materiale duro e allo stesso tempo fragile che infrangendosi pu&#xF2; produrre vere e proprie lame di varie grandezze. La rottura di un vetro con formazione di schegge &#xE8; un problema che pu&#xF2; verificarsi in tutti gli ambienti e rappresenta un fattore di rischio da non sottovalutare. Questi film, grazie alla loro struttura fatta di poliestere, riescono a trattenere il vetro in frantumi permettendo al vetro di rompersi in modo sicuro in caso di qualsiasi incidente. La pellicola mantiene il vetro assieme nel telaio in caso di rottura ed evita la proiezione di frammenti taglienti. Per proteggere i vetri da qualsiasi sollecitazione come agenti atmosferici e urti di qualsiasi genere l&#x2019;ideale &#xE8; l&#x2019;installazione della pellicola di sicurezza.",
+      "text": "Le pellicole di sicurezza sono infatti in grado di migliorare le caratteristiche del vetro trasformando un normale vetro in un vetro di sicurezza, o un vetro anti sfondamento. Il vetro è un materiale duro e allo stesso tempo fragile che infrangendosi può produrre vere e proprie lame di varie grandezze. La rottura di un vetro con formazione di schegge è un problema che può verificarsi in tutti gli ambienti e rappresenta un fattore di rischio da non sottovalutare. Questi film, grazie alla loro struttura fatta di poliestere, riescono a trattenere il vetro in frantumi permettendo al vetro di rompersi in modo sicuro in caso di qualsiasi incidente. La pellicola mantiene il vetro assieme nel telaio in caso di rottura ed evita la proiezione di frammenti taglienti. Per proteggere i vetri da qualsiasi sollecitazione come agenti atmosferici e urti di qualsiasi genere l’ideale è l’installazione della pellicola di sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Potenziale Antisolare RS 20 PS SR 4Mil",
+      "text": "Potenziale Antisolare RS 20 PS SR 4Mil"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Perch&#xE9; montare le pellicole di sicurezza?",
+      "text": "Perché montare le pellicole di sicurezza?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole di sicurezza per vetri possono rappresentare una sicurezza nelle situazioni pi&#xF9; disparate.",
+      "text": "Le pellicole di sicurezza per vetri possono rappresentare una sicurezza nelle situazioni più disparate."
+    },
+    {
+      "type": "paragraph",
+      "html": "Un vetro pu&#xF2; rompersi a causa di diversi fattori. I pi&#xF9; comuni sono vento, grandine, vibrazioni, torsioni, fatica, sollecitazioni sismiche, urti da impatto uomo-vetro, urti di pietre, colpi di mazza o d&#x2019;ascia, proiettile, variazioni termiche, esplosioni, di atti vandalici o per la semplice presenza di imperfezioni. Le pellicole di sicurezza, realizzate con diversi strati di poliestere, conferiscono resistenza al vetro, in quanto, in caso di rottura, la pellicola applicata consente di tenere i vari frammenti uniti, evitando che si disperdano nell&#x2019;ambiente e che causino ferite e lesioni, talvolta anche gravi. Forniscono quindi una protezione da tante piccole variabili della nostra vita quotidiana!",
+      "text": "Un vetro può rompersi a causa di diversi fattori. I più comuni sono vento, grandine, vibrazioni, torsioni, fatica, sollecitazioni sismiche, urti da impatto uomo-vetro, urti di pietre, colpi di mazza o d’ascia, proiettile, variazioni termiche, esplosioni, di atti vandalici o per la semplice presenza di imperfezioni. Le pellicole di sicurezza, realizzate con diversi strati di poliestere, conferiscono resistenza al vetro, in quanto, in caso di rottura, la pellicola applicata consente di tenere i vari frammenti uniti, evitando che si disperdano nell’ambiente e che causino ferite e lesioni, talvolta anche gravi. Forniscono quindi una protezione da tante piccole variabili della nostra vita quotidiana!"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Questo significa che con un lavoro non invasivo e rapido potete mettere in sicurezza vetri datati o posti in posizioni pericolose!",
+      "text": "Questo significa che con un lavoro non invasivo e rapido potete mettere in sicurezza vetri datati o posti in posizioni pericolose!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Questa &#xE8; una soluzione molto pratica per chi deve rispettare le ultime direttive in materia di sicurezza, specie i vecchi vetri. Questa tecnologia &#xE8; in grado di aiutare anche chi vuole mettersi al sicuro dai malintenzionati; le pellicole di sicurezza offrono un buon grado di resistenza in caso di intrusioni e furti, essendo molto resistente agli urti.",
+      "text": "Questa è una soluzione molto pratica per chi deve rispettare le ultime direttive in materia di sicurezza, specie i vecchi vetri. Questa tecnologia è in grado di aiutare anche chi vuole mettersi al sicuro dai malintenzionati; le pellicole di sicurezza offrono un buon grado di resistenza in caso di intrusioni e furti, essendo molto resistente agli urti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Ora che sai proteggerti a norma di legge scopri come tutelarti dal sole con il nostro <a href=\"/pellicole-per-vetri/le-pellicole-antisolari/\">approfondimento sulle pellicole antisolari!",
+      "text": "Ora che sai proteggerti a norma di legge scopri come tutelarti dal sole con il nostro approfondimento sulle pellicole antisolari!"
+    },
+    {
+      "type": "heading",
+      "level": 5,
+      "html": "Le caratteristiche tecniche",
+      "text": "Le caratteristiche tecniche"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Pellicola RS 20 PS SR 4Mil",
+      "text": "Pellicola RS 20 PS SR 4Mil"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Pellicola CL 700 PS SR",
+      "text": "Pellicola CL 700 PS SR"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il secondo prodotto che vogliamo mostrarvi &#xE8; il&#xA0;<a href=\"/madico-cl-700-ps-sr/\">CL 700 PS SR. Anche la pellicola CL 700 PS SR &#xE8; testata e certificata in conformit&#xE0; alla Norma europea UNI EN12600, come la precedente. In questo caso la pellicola &#xE8; di classe 1B1, pi&#xF9; protettiva della prima, per uno spessore di circa 175 nanometri. Anche questa pu&#xF2; essere applicata su vetri gi&#xE0; esistenti con un semplice lavoro in economia, senza modifiche agli infissi e senza interrompere la normale attivit&#xE0; lavorativa. In questo caso ci poniamo ad una protezione pi&#xF9; ampia, per una pellicola importante che sapr&#xE0; dare affidabilit&#xE0; a chi avr&#xE0; la fortuna di averla sui vetri del proprio edificio.",
+      "text": "Il secondo prodotto che vogliamo mostrarvi è il CL 700 PS SR. Anche la pellicola CL 700 PS SR è testata e certificata in conformità alla Norma europea UNI EN12600, come la precedente. In questo caso la pellicola è di classe 1B1, più protettiva della prima, per uno spessore di circa 175 nanometri. Anche questa può essere applicata su vetri già esistenti con un semplice lavoro in economia, senza modifiche agli infissi e senza interrompere la normale attività lavorativa. In questo caso ci poniamo ad una protezione più ampia, per una pellicola importante che saprà dare affidabilità a chi avrà la fortuna di averla sui vetri del proprio edificio."
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Consente anch&#x2019;essa la &#x201C;messa in sicurezza&#x201D; di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformit&#xE0; al Testo Unico D.lgs. 81/2008.",
+      "text": "Consente anch’essa la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformità al Testo Unico D.lgs. 81/2008."
+    },
+    {
+      "type": "paragraph",
+      "html": "Nonostante lo spessore un poco pi&#xF9; accentuato della prima garantisce comunque una perfetta trasparenza, la visuale sar&#xE0; perfettamente cristallina con assenza di distorsioni ottiche, l&#x2019;intero intervento risulter&#xE0; praticamente invisibile. Offre una costante protezione antinfortunistica in caso di rottura del vetro.",
+      "text": "Nonostante lo spessore un poco più accentuato della prima garantisce comunque una perfetta trasparenza, la visuale sarà perfettamente cristallina con assenza di distorsioni ottiche, l’intero intervento risulterà praticamente invisibile. Offre una costante protezione antinfortunistica in caso di rottura del vetro."
+    },
+    {
+      "type": "paragraph",
+      "html": "Anche questo prodotto, per interno, ha un suo omologo per esterno, il&#xA0;<a href=\"/madico-cl-700-e-ps-sr/\">CL 700 E PS SR.",
+      "text": "Anche questo prodotto, per interno, ha un suo omologo per esterno, il CL 700 E PS SR."
+    },
+    {
+      "type": "paragraph",
+      "html": "Per migliorare la tenuta all&#x2019;interno del serramento delle nostre fantastiche pellicole di sicurezza ti proponiamo il sistema di ancoraggio&#xA0;<a href=\"/madico-gullwing/\">MADICO GULLWING. Scoprilo con noi!",
+      "text": "Per migliorare la tenuta all’interno del serramento delle nostre fantastiche pellicole di sicurezza ti proponiamo il sistema di ancoraggio MADICO GULLWING. Scoprilo con noi!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Se avete necessit&#xE0; di mettere in sicurezza le vostre vetrate, le pellicole di sicurezza sono quello che fa per voi! Se volete saperne di pi&#xF9; chiedeteci un preventivo&#xA0;<a href=\"/preventivo/\">QUI.",
+      "text": "Se avete necessità di mettere in sicurezza le vostre vetrate, le pellicole di sicurezza sono quello che fa per voi! Se volete saperne di più chiedeteci un preventivo QUI."
+    },
+    {
+      "type": "paragraph",
+      "html": "Se volete entrare pi&#xF9; in profondit&#xE0; nel mondo delle pellicole antisolari controllate la nostra serie di approfondimenti a tema&#xA0;<a href=\"/pellicole-per-vetri/approfondimenti-sicurezza/\">QUI.",
+      "text": "Se volete entrare più in profondità nel mondo delle pellicole antisolari controllate la nostra serie di approfondimenti a tema QUI."
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete conoscere meglio il mondo della pellicola per vetri? I nostri approfondimenti generici fanno al caso tuo! Clicca&#xA0;<a href=\"/pellicole-per-vetri/approfondimenti/\">QUI.",
+      "text": "Volete conoscere meglio il mondo della pellicola per vetri? I nostri approfondimenti generici fanno al caso tuo! Clicca QUI."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>10",
+      "text": "10"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>anni di garanzia",
+      "text": "anni di garanzia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <span>pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole di sicurezza Al giorno d’oggi la sicurezza è uno dei fattori più importanti sia sul lavoro che nella vita privata; le pellicole di sicurezza possono essere un pratico strumento per aumentare la sicurezza in comodità e senza lavori invasivi! 12 600 UNI EN Le pellicole di sicurezza sono infatti in grado di migliorare le caratteristiche del vetro trasformando un normale vetro in un vetro di sicurezza, o un vetro anti sfondamento. Il vetro è un materiale duro e allo stesso tempo fragile che infrangendosi può produrre vere e proprie lame di varie grandezze. La rottura di un vetro con formazione di schegge è un problema che può verificarsi in tutti gli ambienti e rappresenta un fattore di rischio da non sottovalutare. Questi film, grazie alla loro struttura fatta di poliestere, riescono a trattenere il vetro in frantumi permettendo al vetro di rompersi in modo sicuro in caso di qualsiasi incidente. La pellicola mantiene il vetro assieme nel telaio in caso di rottura ed evita la proiezione di frammenti taglienti. Per proteggere i vetri da qualsiasi sollecitazione come agenti atmosferici e urti di qualsiasi genere l’ideale è l’installazione della pellicola di sicurezza. Potenziale Antisolare RS 20 PS SR 4Mil Perché montare le pellicole di sicurezza? Le pellicole di sicurezza per vetri possono rappresentare una sicurezza nelle situazioni più disparate. Un vetro può rompersi a causa di diversi fattori. I più comuni sono vento, grandine, vibrazioni, torsioni, fatica, sollecitazioni sismiche, urti da impatto uomo-vetro, urti di pietre, colpi di mazza o d’ascia, proiettile, variazioni termiche, esplosioni, di atti vandalici o per la semplice presenza di imperfezioni. Le pellicole di sicurezza, realizzate con diversi strati di poliestere, conferiscono resistenza al vetro, in quanto, in caso di rottura, la pellicola applicata consente di tenere i vari frammenti uniti, evitando che si disperdano nell’ambiente e che causino ferite e lesioni, talvolta anche gravi. Forniscono quindi una protezione da tante piccole variabili della nostra vita quotidiana! Questo significa che con un lavoro non invasivo e rapido potete mettere in sicurezza vetri datati o posti in posizioni pericolose! Questa è una soluzione molto pratica per chi deve rispettare le ultime direttive in materia di sicurezza, specie i vecchi vetri. Questa tecnologia è in grado di aiutare anche chi vuole mettersi al sicuro dai malintenzionati; le pellicole di sicurezza offrono un buon grado di resistenza in caso di intrusioni e furti, essendo molto resistente agli urti. Ora che sai proteggerti a norma di legge scopri come tutelarti dal sole con il nostro approfondimento sulle pellicole antisolari! Le caratteristiche tecniche Pellicola RS 20 PS SR 4Mil Pellicola CL 700 PS SR Il secondo prodotto che vogliamo mostrarvi è il CL 700 PS SR. Anche la pellicola CL 700 PS SR è testata e certificata in conformità alla Norma europea UNI EN12600, come la precedente. In questo caso la pellicola è di classe 1B1, più protettiva della prima, per uno spessore di circa 175 nanometri. Anche questa può essere applicata su vetri già esistenti con un semplice lavoro in economia, senza modifiche agli infissi e senza interrompere la normale attività lavorativa. In questo caso ci poniamo ad una protezione più ampia, per una pellicola importante che saprà dare affidabilità a chi avrà la fortuna di averla sui vetri del proprio edificio. Consente anch’essa la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformità al Testo Unico D.lgs. 81/2008. Nonostante lo spessore un poco più accentuato della prima garantisce comunque una perfetta trasparenza, la visuale sarà perfettamente cristallina con assenza di distorsioni ottiche, l’intero intervento risulterà praticamente invisibile. Offre una costante protezione antinfortunistica in caso di rottura del vetro. Anche questo prodotto, per interno, ha un suo omologo per esterno, il CL 700 E PS SR. Per migliorare la tenuta all’interno del serramento delle nostre fantastiche pellicole di sicurezza ti proponiamo il sistema di ancoraggio MADICO GULLWING. Scoprilo con noi! Se avete necessità di mettere in sicurezza le vostre vetrate, le pellicole di sicurezza sono quello che fa per voi! Se volete saperne di più chiedeteci un preventivo QUI. Se volete entrare più in profondità nel mondo delle pellicole antisolari controllate la nostra serie di approfondimenti a tema QUI. Volete conoscere meglio il mondo della pellicola per vetri? I nostri approfondimenti generici fanno al caso tuo! Clicca QUI. 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 4718,
+  "fetchedAt": "2026-04-28T15:09:18.029Z"
+}

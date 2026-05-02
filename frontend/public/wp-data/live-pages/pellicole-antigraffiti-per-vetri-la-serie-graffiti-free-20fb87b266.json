@@ -1,0 +1,153 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+  "path": "/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole antigraffiti per vetri: la serie Graffiti Free - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole antigraffiti per vetri: la serie Graffiti Free",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T16:11:51+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free\\/\",\"name\":\"Pellicole antigraffiti per vetri: la serie Graffiti Free - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-16T10:27:10+00:00\",\"dateModified\":\"2025-09-18T16:11:51+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole antigraffiti per vetri: la serie Graffiti Free\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole antigraffiti per vetri: la serie Graffiti Free"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antigraffiti per vetri: la serie Graffiti Free"
+    },
+    {
+      "level": 2,
+      "text": "La serie Graffiti Free"
+    },
+    {
+      "level": 2,
+      "text": "Protezione invisibile contro gli atti vandalici: le nostre pellicole discrete proteggono le finestre dagli atti vandalici senza alterare l'aspetto del vostro vetro."
+    },
+    {
+      "level": 2,
+      "text": "Facile installazione e rimozione: se la tua proprietà viene danneggiata, puoi rimuovere e sostituire rapidamente la tua pellicola anti-graffiti con facilità."
+    },
+    {
+      "level": 2,
+      "text": "Aiuta a trattenere i frammenti di vetro rotti: le nostre pellicole per vetri ad alto impatto tengono insieme il vetro quando si rompono, scoraggiando le effrazioni e riducendo il rischio di lesioni."
+    },
+    {
+      "level": 2,
+      "text": "Protegge da graffi, vernice spray e incisione acida: con le pellicole per vetri Graffiti Free, puoi proteggere senza problemi oggetti di valore dagli atti vandalici."
+    },
+    {
+      "level": 2,
+      "text": "Sostituzione conveniente quando necessario: la sostituzione delle pellicole per vetri costa molto meno rispetto a quella di una finestra o di un oggetto danneggiato."
+    }
+  ],
+  "h1": "Pellicole antigraffiti per vetri: la serie Graffiti Free",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole antigraffiti per vetri: la serie Graffiti Free",
+      "text": "Pellicole antigraffiti per vetri: la serie Graffiti Free"
+    },
+    {
+      "type": "paragraph",
+      "html": "Con le pellicole antigraffiti per vetri di&#xA0;<a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Madico, puoi ridurre gli effetti degli atti vandalici e diminuire il costo dei danni alla propriet&#xE0; con facilit&#xE0;.",
+      "text": "Con le pellicole antigraffiti per vetri di Madico, puoi ridurre gli effetti degli atti vandalici e diminuire il costo dei danni alla proprietà con facilità."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le finestre e i vetri danneggiati dai graffiti possono essere costosi da sostituire, soprattutto se vengono ripetutamente rovinati. Le pellicole Graffiti Free riducono questo costo, consentendo di sostituire semplicemente la pellicola protettiva al posto delle finestre o dei vetri rovinati.&#xA0;<strong>Le nostre pellicole di sicurezza antigraffiti forniscono una barriera tra i vandali e le tue finestre.",
+      "text": "Le finestre e i vetri danneggiati dai graffiti possono essere costosi da sostituire, soprattutto se vengono ripetutamente rovinati. Le pellicole Graffiti Free riducono questo costo, consentendo di sostituire semplicemente la pellicola protettiva al posto delle finestre o dei vetri rovinati. Le nostre pellicole di sicurezza antigraffiti forniscono una barriera tra i vandali e le tue finestre."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie Graffiti Free",
+      "text": "La serie Graffiti Free"
+    },
+    {
+      "type": "paragraph",
+      "html": "La serie di pellicole antigraffiti Graffiti Free si compone di due prodotti,&#xA0;<strong>Graffiti Free 400 PS SR&#xA0;e&#xA0;<strong>Graffiti Free 600 PS SR.&#xA0;Entrambe trasparenti ed otticamente neutre, la&#xA0;<strong>400&#xA0;si presenta come pi&#xF9; fina, meno invadente ma anche meno performante rispetto sfregi molto aggressivi con lame o affini. La&#xA0;<strong>600&#xA0;invece &#xE8; pi&#xF9; spessa, e dunque pi&#xF9; protettiva in caso di tagli o sfregi.",
+      "text": "La serie di pellicole antigraffiti Graffiti Free si compone di due prodotti, Graffiti Free 400 PS SR e Graffiti Free 600 PS SR. Entrambe trasparenti ed otticamente neutre, la 400 si presenta come più fina, meno invadente ma anche meno performante rispetto sfregi molto aggressivi con lame o affini. La 600 invece è più spessa, e dunque più protettiva in caso di tagli o sfregi."
+    },
+    {
+      "type": "note",
+      "html": "Quali sono i principali vantaggi della pellicola Graffiti Free?",
+      "text": "Quali sono i principali vantaggi della pellicola Graffiti Free?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Protezione invisibile contro gli atti vandalici: le nostre pellicole discrete proteggono le finestre dagli atti vandalici senza alterare l&apos;aspetto del vostro vetro.",
+      "text": "Protezione invisibile contro gli atti vandalici: le nostre pellicole discrete proteggono le finestre dagli atti vandalici senza alterare l'aspetto del vostro vetro."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Facile installazione e rimozione: se la tua propriet&#xE0; viene danneggiata, puoi rimuovere e sostituire rapidamente la tua pellicola anti-graffiti con facilit&#xE0;.",
+      "text": "Facile installazione e rimozione: se la tua proprietà viene danneggiata, puoi rimuovere e sostituire rapidamente la tua pellicola anti-graffiti con facilità."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Aiuta a trattenere i frammenti di vetro rotti: le nostre pellicole per vetri ad alto impatto tengono insieme il vetro quando si rompono, scoraggiando le effrazioni e riducendo il rischio di lesioni.",
+      "text": "Aiuta a trattenere i frammenti di vetro rotti: le nostre pellicole per vetri ad alto impatto tengono insieme il vetro quando si rompono, scoraggiando le effrazioni e riducendo il rischio di lesioni."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Protegge da graffi, vernice spray e incisione acida: con le pellicole per vetri Graffiti Free, puoi proteggere senza problemi oggetti di valore dagli atti vandalici.",
+      "text": "Protegge da graffi, vernice spray e incisione acida: con le pellicole per vetri Graffiti Free, puoi proteggere senza problemi oggetti di valore dagli atti vandalici."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Sostituzione conveniente quando necessario: la sostituzione delle pellicole per vetri costa molto meno rispetto a quella di una finestra o di un oggetto danneggiato.",
+      "text": "Sostituzione conveniente quando necessario: la sostituzione delle pellicole per vetri costa molto meno rispetto a quella di una finestra o di un oggetto danneggiato."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole antigraffiti per vetri: la serie Graffiti Free Con le pellicole antigraffiti per vetri di Madico, puoi ridurre gli effetti degli atti vandalici e diminuire il costo dei danni alla proprietà con facilità. Le finestre e i vetri danneggiati dai graffiti possono essere costosi da sostituire, soprattutto se vengono ripetutamente rovinati. Le pellicole Graffiti Free riducono questo costo, consentendo di sostituire semplicemente la pellicola protettiva al posto delle finestre o dei vetri rovinati. Le nostre pellicole di sicurezza antigraffiti forniscono una barriera tra i vandali e le tue finestre. La serie Graffiti Free La serie di pellicole antigraffiti Graffiti Free si compone di due prodotti, Graffiti Free 400 PS SR e Graffiti Free 600 PS SR. Entrambe trasparenti ed otticamente neutre, la 400 si presenta come più fina, meno invadente ma anche meno performante rispetto sfregi molto aggressivi con lame o affini. La 600 invece è più spessa, e dunque più protettiva in caso di tagli o sfregi. Quali sono i principali vantaggi della pellicola Graffiti Free? Protezione invisibile contro gli atti vandalici: le nostre pellicole discrete proteggono le finestre dagli atti vandalici senza alterare l'aspetto del vostro vetro. Facile installazione e rimozione: se la tua proprietà viene danneggiata, puoi rimuovere e sostituire rapidamente la tua pellicola anti-graffiti con facilità. Aiuta a trattenere i frammenti di vetro rotti: le nostre pellicole per vetri ad alto impatto tengono insieme il vetro quando si rompono, scoraggiando le effrazioni e riducendo il rischio di lesioni. Protegge da graffi, vernice spray e incisione acida: con le pellicole per vetri Graffiti Free, puoi proteggere senza problemi oggetti di valore dagli atti vandalici. Sostituzione conveniente quando necessario: la sostituzione delle pellicole per vetri costa molto meno rispetto a quella di una finestra o di un oggetto danneggiato. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 2019,
+  "fetchedAt": "2026-04-28T15:09:41.227Z"
+}

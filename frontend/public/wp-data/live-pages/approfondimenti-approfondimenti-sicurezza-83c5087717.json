@@ -1,0 +1,85 @@
+{
+  "url": "https://www.solarisfilms.it/approfondimenti/approfondimenti-sicurezza/",
+  "path": "/approfondimenti/approfondimenti-sicurezza/",
+  "route": {
+    "type": "article",
+    "label": "Approfondimento",
+    "newPath": "/blog/approfondimenti-sicurezza/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/post-sitemap.xml",
+  "seo": {
+    "title": "PELLICOLE PER VETRI E SICUREZZA - Solaris Films",
+    "description": "Pellicole per vetri e sicurezza: vediamo le opzioni. Informare correttamente circa le proprietà di ogni pellicola è fondamentale.",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/approfondimenti/approfondimenti-sicurezza/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "PELLICOLE PER VETRI E SICUREZZA",
+      "og:description": "Pellicole per vetri e sicurezza: vediamo le opzioni. Informare correttamente circa le proprietà di ogni pellicola è fondamentale.",
+      "og:url": "https://www.solarisfilms.it/approfondimenti/approfondimenti-sicurezza/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/pellicolesicurezza.webp",
+      "og:image:width": "640",
+      "og:image:height": "518",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Scritto da",
+      "twitter:data1": "Fabio Meucci",
+      "twitter:label2": "Tempo di lettura stimato",
+      "twitter:data2": "2 minuti"
+    },
+    "article": {
+      "article:published_time": "2025-06-17T13:40:45+00:00",
+      "article:modified_time": "2025-06-18T11:04:38+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Article\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/#article\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/\"},\"author\":{\"name\":\"Fabio Meucci\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\"},\"headline\":\"PELLICOLE PER VETRI E SICUREZZA\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-18T11:04:38+00:00\",\"mainEntityOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/\"},\"wordCount\":239,\"commentCount\":0,\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicolesicurezza.webp\",\"articleSection\":[\"Approfondimenti\"],\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"CommentAction\",\"name\":\"Comment\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/#respond\"]}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/\",\"name\":\"PELLICOLE PER VETRI E SICUREZZA - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicolesicurezza.webp\",\"datePublished\":\"2025-06-17T13:40:45+00:00\",\"dateModified\":\"2025-06-18T11:04:38+00:00\",\"description\":\"Pellicole per vetri e sicurezza: vediamo le opzioni. Informare correttamente circa le proprietà di ogni pellicola è fondamentale.\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicolesicurezza.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/pellicolesicurezza.webp\",\"width\":640,\"height\":518},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/approfondimenti-sicurezza\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Lo sapevi che?\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-per-vetri\\/lo-sapevi-che\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"PELLICOLE PER VETRI E SICUREZZA\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"},{\"@type\":\"Person\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/person\\/734fcc458cb5dfe38e32ed9e0d607a0d\",\"name\":\"Fabio Meucci\",\"image\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"url\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"contentUrl\":\"https:\\/\\/secure.gravatar.com\\/avatar\\/ae8b2e52f85c9c7f5136301491e7c2e92f477dd15b31307eb59f772403ddd99d?s=96&d=mm&r=g\",\"caption\":\"Fabio Meucci\"},\"url\":\"https:\\/\\/www.solarisfilms.it\\/approfondimenti\\/author\\/fabio-meucci\\/\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole per vetri adesive"
+    }
+  ],
+  "h1": "Pellicole per vetri adesive",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole per vetri adesive",
+      "text": "Pellicole per vetri adesive"
+    },
+    {
+      "type": "paragraph",
+      "html": "Per noi &#xE8; fondamentale informare correttamente il cliente per instradarlo verso la scelta del film pi&#xF9; giusto alle sue aspettative. Per questo in Solaris Films abbiamo deciso di scrivere degli approfondimenti in grado di aiutare i neofiti a districarsi in questo mondo ed ai pi&#xF9; navigati di acquisire importanti informazioni.",
+      "text": "Per noi è fondamentale informare correttamente il cliente per instradarlo verso la scelta del film più giusto alle sue aspettative. Per questo in Solaris Films abbiamo deciso di scrivere degli approfondimenti in grado di aiutare i neofiti a districarsi in questo mondo ed ai più navigati di acquisire importanti informazioni."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE DI SICUREZZA<br>\nAl giorno d&amp;#8217;oggi la sicurezza &#xE8; uno dei fattori pi&#xF9; importanti sia sul lavoro che nella vita privata; le pellicole di sicurezza possono essere un pratico strumento per aumentare la sicurezza in comodit&#xE0; e senza lavori invasivi!",
+      "text": "PELLICOLE DI SICUREZZA Al giorno d’oggi la sicurezza è uno dei fattori più importanti sia sul lavoro che nella vita privata; le pellicole di sicurezza possono essere un pratico strumento per aumentare la sicurezza in comodità e senza lavori invasivi!"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE ANTIBATTERICHE<br>\nDa quasi un anno a questa parte la vita di ogni persona nel mondo &#xE8; stata stravolta dall&amp;#8217;arrivo del virus SARS-CoV-2, o COVID-19. Sono cambiate le nostre abitudini, il nostro stile di vita, i nostri contatti sociali e la fruizione degli spazi, sia pubblici che privati. Tutto questo ha portato anche a dare pi&#xF9; rilevanza ad aspetti fino ad ora lasciati in secondo piano o ritenuti fino a poco tempo fa meno importanti. Tra gli aspetti che hanno acquisito una rilevanza importante c&amp;#8217;&#xE8; sicuramente quello che riguarda la sanificazione dei locali e la trasmissione di agenti patogeni.",
+      "text": "PELLICOLE ANTIBATTERICHE Da quasi un anno a questa parte la vita di ogni persona nel mondo è stata stravolta dall’arrivo del virus SARS-CoV-2, o COVID-19. Sono cambiate le nostre abitudini, il nostro stile di vita, i nostri contatti sociali e la fruizione degli spazi, sia pubblici che privati. Tutto questo ha portato anche a dare più rilevanza ad aspetti fino ad ora lasciati in secondo piano o ritenuti fino a poco tempo fa meno importanti. Tra gli aspetti che hanno acquisito una rilevanza importante c’è sicuramente quello che riguarda la sanificazione dei locali e la trasmissione di agenti patogeni."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>PELLICOLE DI SICUREZZA PER VETRI<br>\nChe si parli di sicurezza personale o adeguamento alle norme di sicurezza sul lavoro, le pellicole di sicurezza per vetri sono un sistema all&#x2019;avanguardia per garantire la solidit&#xE0; di finestre e porte in vetro con comodit&#xE0; e senza lavori invasivi.",
+      "text": "PELLICOLE DI SICUREZZA PER VETRI Che si parli di sicurezza personale o adeguamento alle norme di sicurezza sul lavoro, le pellicole di sicurezza per vetri sono un sistema all’avanguardia per garantire la solidità di finestre e porte in vetro con comodità e senza lavori invasivi."
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole per vetri adesive Per noi è fondamentale informare correttamente il cliente per instradarlo verso la scelta del film più giusto alle sue aspettative. Per questo in Solaris Films abbiamo deciso di scrivere degli approfondimenti in grado di aiutare i neofiti a districarsi in questo mondo ed ai più navigati di acquisire importanti informazioni. PELLICOLE DI SICUREZZA Al giorno d’oggi la sicurezza è uno dei fattori più importanti sia sul lavoro che nella vita privata; le pellicole di sicurezza possono essere un pratico strumento per aumentare la sicurezza in comodità e senza lavori invasivi! PELLICOLE ANTIBATTERICHE Da quasi un anno a questa parte la vita di ogni persona nel mondo è stata stravolta dall’arrivo del virus SARS-CoV-2, o COVID-19. Sono cambiate le nostre abitudini, il nostro stile di vita, i nostri contatti sociali e la fruizione degli spazi, sia pubblici che privati. Tutto questo ha portato anche a dare più rilevanza ad aspetti fino ad ora lasciati in secondo piano o ritenuti fino a poco tempo fa meno importanti. Tra gli aspetti che hanno acquisito una rilevanza importante c’è sicuramente quello che riguarda la sanificazione dei locali e la trasmissione di agenti patogeni. PELLICOLE DI SICUREZZA PER VETRI Che si parli di sicurezza personale o adeguamento alle norme di sicurezza sul lavoro, le pellicole di sicurezza per vetri sono un sistema all’avanguardia per garantire la solidità di finestre e porte in vetro con comodità e senza lavori invasivi.",
+  "textLength": 1491,
+  "fetchedAt": "2026-04-28T15:08:05.824Z"
+}

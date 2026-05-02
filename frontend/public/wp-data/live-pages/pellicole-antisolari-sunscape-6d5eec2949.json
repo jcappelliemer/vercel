@@ -1,0 +1,258 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-antisolari-sunscape/",
+  "path": "/pellicole-antisolari-sunscape/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-antisolari-sunscape/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole antisolari sunscape - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-antisolari-sunscape/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole antisolari sunscape",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pellicole-antisolari-sunscape/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T15:37:32+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sunscape\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sunscape\\/\",\"name\":\"Pellicole antisolari sunscape - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-16T09:34:37+00:00\",\"dateModified\":\"2025-09-18T15:37:32+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sunscape\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sunscape\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-sunscape\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole antisolari sunscape\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole antisolari sunscape"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari sunscape"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola antisolare sunscape SL 8"
+    },
+    {
+      "level": 3,
+      "text": "Specifiche tecniche delle pellicole sunscape"
+    },
+    {
+      "level": 2,
+      "text": "È una pellicola innovativa, caratterizzata da un effetto estetico speculare colore argento verso l’esterno e colore fumé all’interno."
+    },
+    {
+      "level": 2,
+      "text": "Riduce notevolmente i costi energetici."
+    },
+    {
+      "level": 2,
+      "text": "Prodotto unico, con brevetto esclusivo."
+    },
+    {
+      "level": 2,
+      "text": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata."
+    },
+    {
+      "level": 2,
+      "text": "Pellicola antisolare che conferisce a un normale vetro eccellenti prestazioni di controllo solare e sicurezza."
+    },
+    {
+      "level": 2,
+      "text": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari sunscape, uso interno"
+    },
+    {
+      "level": 2,
+      "text": "Pellicole antisolari sunscape, uso esterno"
+    }
+  ],
+  "h1": "Pellicole antisolari sunscape",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole antisolari sunscape",
+      "text": "Pellicole antisolari sunscape"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari Sunscape e i grandi vantaggi che offrono: vediamoli insieme. Il sole, penetrando all&#x2019;interno, riscalda il tuo spazio abitativo e illumina i tuoi preziosi arredi. Ma la bellezza ha il suo prezzo.&#xA0;<strong>La stessa luce solare&#xA0;che filtra attraverso le tue finestre gioca anche un ruolo fondamentale nello&#xA0;<strong>sbiadire i tuoi mobili, opere d&#x2019;arte, tende e persino pavimenti. Fortunatamente,<strong>&#xA0;le pellicole sunscape riescono a bloccare quasi il 100% dei raggi UV&#xA0;emessi dal sole, consentendoti di proteggere i tuoi preziosi interni riducendo l&#x2019;abbagliamento e i costi energetici.",
+      "text": "Le pellicole antisolari Sunscape e i grandi vantaggi che offrono: vediamoli insieme. Il sole, penetrando all’interno, riscalda il tuo spazio abitativo e illumina i tuoi preziosi arredi. Ma la bellezza ha il suo prezzo. La stessa luce solare che filtra attraverso le tue finestre gioca anche un ruolo fondamentale nello sbiadire i tuoi mobili, opere d’arte, tende e persino pavimenti. Fortunatamente, le pellicole sunscape riescono a bloccare quasi il 100% dei raggi UV emessi dal sole, consentendoti di proteggere i tuoi preziosi interni riducendo l’abbagliamento e i costi energetici."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sunscape sono una&#xA0;<strong>soluzione elegante per comfort e protezione, creando al contempo un ambiente ad alta efficienza energetica che affascina e protegge. Goditi estati pi&#xF9; fresche, inverni pi&#xF9; caldi e i vantaggi dell&#x2019;abbagliamento ridotto e dell&#x2019;esposizione ai raggi UV con una pellicola per vetri superiore che manterr&#xE0; a lungo le sue prestazioni.",
+      "text": "Le pellicole antisolari sunscape sono una soluzione elegante per comfort e protezione, creando al contempo un ambiente ad alta efficienza energetica che affascina e protegge. Goditi estati più fresche, inverni più caldi e i vantaggi dell’abbagliamento ridotto e dell’esposizione ai raggi UV con una pellicola per vetri superiore che manterrà a lungo le sue prestazioni."
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x200B;La nostra pellicola per vetri sunscape SL8 &#xE8;&#xA0;<strong>progettata per fornire un&#x2019;eccellente riduzione del calore, eliminando al contempo i riflessi interni&#xA0;che potresti riscontrare con altre pellicole a controllo solare. Goditi l&#x2019;abbagliamento ridotto mentre migliori la tua visuale con la nostra serie Starlite e goditi anche una riduzione dei costi energetici.",
+      "text": "​La nostra pellicola per vetri sunscape SL8 è progettata per fornire un’eccellente riduzione del calore, eliminando al contempo i riflessi interni che potresti riscontrare con altre pellicole a controllo solare. Goditi l’abbagliamento ridotto mentre migliori la tua visuale con la nostra serie Starlite e goditi anche una riduzione dei costi energetici."
+    },
+    {
+      "type": "paragraph",
+      "html": "Si tratta di una&#xA0;<strong>pellicola con doppio rivestimento fum&#xE8;, consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell&#x2019;irraggiamento ed un alto fattore anti-abbaglio.",
+      "text": "Si tratta di una pellicola con doppio rivestimento fumè, consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell’irraggiamento ed un alto fattore anti-abbaglio."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola antisolare sunscape SL 8",
+      "text": "La pellicola antisolare sunscape SL 8"
+    },
+    {
+      "type": "paragraph",
+      "html": "Si tratta di una pellicola che prende un colore argento/fum&#xE9; perch&#xE9; prodotta depositando uno strato di alluminio col processo di&#xA0;<em>sputtering&#xA0;sopra uno strato di colore fum&#xE9;,&#xA0;<strong>in grado di tagliare di molto la trasmissione della luce, che viene rivestita con un trattamento antigraffio protettivo.",
+      "text": "Si tratta di una pellicola che prende un colore argento/fumé perché prodotta depositando uno strato di alluminio col processo di sputtering sopra uno strato di colore fumé, in grado di tagliare di molto la trasmissione della luce, che viene rivestita con un trattamento antigraffio protettivo."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari Madico SL 8 sono consigliate per il rivestimento di grandi superfici vetrate che richiedono una&#xA0;<strong>elevata riflessione dell&#x2019;irraggiamento solare e protezione dall&#x2019;abbaglio. Il secondo rivestimento fum&#xE9; permette alla pellicola di abbattere i riflessi all&#x2019;interno degli ambienti, in particolar modo sui videoterminali. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre.",
+      "text": "Le pellicole antisolari Madico SL 8 sono consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell’irraggiamento solare e protezione dall’abbaglio. Il secondo rivestimento fumé permette alla pellicola di abbattere i riflessi all’interno degli ambienti, in particolar modo sui videoterminali. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Specifiche tecniche delle pellicole sunscape",
+      "text": "Specifiche tecniche delle pellicole sunscape"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola antisolare Sunscape&#xA0;<a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Madico&#xA0;SL 8 di&#xA0;Tecnosolar&#xA0;&#xE8; realizzata con l&#x2019;avanzato processo di metallizzazione&#xA0;<a href=\"https://it.wikipedia.org/wiki/Polverizzazione_catodica#:~:text=La%20polverizzazione%20catodica%2C%20spruzzamento%20catodico,particelle%20energetiche%20(generalmente%20ioni).\" target=\"_blank\" rel=\"noopener noreferrer\">sputtering, che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni.",
+      "text": "La pellicola antisolare Sunscape Madico SL 8 di Tecnosolar è realizzata con l’avanzato processo di metallizzazione sputtering, che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni."
+    },
+    {
+      "type": "paragraph",
+      "html": "Respingendo&#xA0;<strong>fino al 94% dell&#x2019;irraggiamento solare&#xA0;offre il massimo in termini di protezione, limitando da una parte l&#x2019;incremento del calore e dall&#x2019;altra riducendo drasticamente l&#x2019;abbaglio. Questo dona agli ambienti un&#xA0;<strong>comfort termico e visivo impareggiabile&#xA0;rispetto ai prodotti analoghi presenti sul mercato.",
+      "text": "Respingendo fino al 94% dell’irraggiamento solare offre il massimo in termini di protezione, limitando da una parte l’incremento del calore e dall’altra riducendo drasticamente l’abbaglio. Questo dona agli ambienti un comfort termico e visivo impareggiabile rispetto ai prodotti analoghi presenti sul mercato."
+    },
+    {
+      "type": "note",
+      "html": "Caratteristiche distintive delle pellicole Sunscape:",
+      "text": "Caratteristiche distintive delle pellicole Sunscape:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "&#xC8; una pellicola innovativa, caratterizzata da un effetto estetico speculare colore argento verso l&#x2019;esterno e colore fum&#xE9; all&#x2019;interno.",
+      "text": "È una pellicola innovativa, caratterizzata da un effetto estetico speculare colore argento verso l’esterno e colore fumé all’interno."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Riduce notevolmente i costi energetici.",
+      "text": "Riduce notevolmente i costi energetici."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Prodotto unico, con brevetto esclusivo.",
+      "text": "Prodotto unico, con brevetto esclusivo."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.",
+      "text": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicola antisolare che conferisce a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.",
+      "text": "Pellicola antisolare che conferisce a un normale vetro eccellenti prestazioni di controllo solare e sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3",
+      "text": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole antisolari sunscape, uso interno",
+      "text": "Pellicole antisolari sunscape, uso interno"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Le pellicole antisolari vengono quasi sempre installate esternamente&#xA0;per diversi motivi. L&#x2019;installazione esterna evita che i raggi del sole passino due volte all&#x2019;interno del vetro, riscaldandolo e rischiando di rovinarlo. Un lavoro all&#x2019;esterno &#xE8; ovviamente meno invasivo, e la pellicola funger&#xE0; anche da strato protettivo da agenti atmosferici ed erosione per la superficie vetrata.",
+      "text": "Le pellicole antisolari vengono quasi sempre installate esternamente per diversi motivi. L’installazione esterna evita che i raggi del sole passino due volte all’interno del vetro, riscaldandolo e rischiando di rovinarlo. Un lavoro all’esterno è ovviamente meno invasivo, e la pellicola fungerà anche da strato protettivo da agenti atmosferici ed erosione per la superficie vetrata."
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola antisolare sunscape della serie SL da interno &#xE8; la SL 8 DA SR.&#x200B;",
+      "text": "La pellicola antisolare sunscape della serie SL da interno è la SL 8 DA SR.​"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicole antisolari sunscape, uso esterno",
+      "text": "Pellicole antisolari sunscape, uso esterno"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari si possono installare internamente principalmente quando ci si trova di fronte a&#xA0;<strong>vetri monolitici non molto spessi. Vengono anche consigliati nelle situazioni estreme in cui &#xE8;&#xA0;<strong>impossibile applicare esternamente la pellicola.&#xA0;In questo caso la pellicola non risentir&#xE0; degli agenti atmosferici esterni, e sar&#xE0; pi&#xF9; protetta.",
+      "text": "Le pellicole antisolari si possono installare internamente principalmente quando ci si trova di fronte a vetri monolitici non molto spessi. Vengono anche consigliati nelle situazioni estreme in cui è impossibile applicare esternamente la pellicola. In questo caso la pellicola non risentirà degli agenti atmosferici esterni, e sarà più protetta."
+    },
+    {
+      "type": "paragraph",
+      "html": "&#x200B;La pellicola antisolare sunscape della serie SL da esterno &#xE8; la SL 8 E PS SR&#x200B;&#x200B;.&#x200B;&#x200B;",
+      "text": "​La pellicola antisolare sunscape della serie SL da esterno è la SL 8 E PS SR​​.​​"
+    },
+    {
+      "type": "note",
+      "html": "I nostri Prodotti di questa categoria",
+      "text": "I nostri Prodotti di questa categoria"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr/\">Pellicola antisolare Tecnosolar NT 20 E PS SR",
+      "text": "Pellicola antisolare Tecnosolar NT 20 E PS SR"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/\">Pellicola antisolare Madico SG 20 E PS SR 75 micron",
+      "text": "Pellicola antisolare Madico SG 20 E PS SR 75 micron"
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr/\">Pellicola antisolare Madico SL 8 E PS SR 75 Micron",
+      "text": "Pellicola antisolare Madico SL 8 E PS SR 75 Micron"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole antisolari sunscape Le pellicole antisolari Sunscape e i grandi vantaggi che offrono: vediamoli insieme. Il sole, penetrando all’interno, riscalda il tuo spazio abitativo e illumina i tuoi preziosi arredi. Ma la bellezza ha il suo prezzo. La stessa luce solare che filtra attraverso le tue finestre gioca anche un ruolo fondamentale nello sbiadire i tuoi mobili, opere d’arte, tende e persino pavimenti. Fortunatamente, le pellicole sunscape riescono a bloccare quasi il 100% dei raggi UV emessi dal sole, consentendoti di proteggere i tuoi preziosi interni riducendo l’abbagliamento e i costi energetici. Le pellicole antisolari sunscape sono una soluzione elegante per comfort e protezione, creando al contempo un ambiente ad alta efficienza energetica che affascina e protegge. Goditi estati più fresche, inverni più caldi e i vantaggi dell’abbagliamento ridotto e dell’esposizione ai raggi UV con una pellicola per vetri superiore che manterrà a lungo le sue prestazioni. ​La nostra pellicola per vetri sunscape SL8 è progettata per fornire un’eccellente riduzione del calore, eliminando al contempo i riflessi interni che potresti riscontrare con altre pellicole a controllo solare. Goditi l’abbagliamento ridotto mentre migliori la tua visuale con la nostra serie Starlite e goditi anche una riduzione dei costi energetici. Si tratta di una pellicola con doppio rivestimento fumè, consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell’irraggiamento ed un alto fattore anti-abbaglio. La pellicola antisolare sunscape SL 8 Si tratta di una pellicola che prende un colore argento/fumé perché prodotta depositando uno strato di alluminio col processo di sputtering sopra uno strato di colore fumé, in grado di tagliare di molto la trasmissione della luce, che viene rivestita con un trattamento antigraffio protettivo. Le pellicole antisolari Madico SL 8 sono consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell’irraggiamento solare e protezione dall’abbaglio. Il secondo rivestimento fumé permette alla pellicola di abbattere i riflessi all’interno degli ambienti, in particolar modo sui videoterminali. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Specifiche tecniche delle pellicole sunscape La pellicola antisolare Sunscape Madico SL 8 di Tecnosolar è realizzata con l’avanzato processo di metallizzazione sputtering, che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Respingendo fino al 94% dell’irraggiamento solare offre il massimo in termini di protezione, limitando da una parte l’incremento del calore e dall’altra riducendo drasticamente l’abbaglio. Questo dona agli ambienti un comfort termico e visivo impareggiabile rispetto ai prodotti analoghi presenti sul mercato. Caratteristiche distintive delle pellicole Sunscape: È una pellicola innovativa, caratterizzata da un effetto estetico speculare colore argento verso l’esterno e colore fumé all’interno. Riduce notevolmente i costi energetici. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Pellicola antisolare che conferisce a un normale vetro eccellenti prestazioni di controllo solare e sicurezza. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3 Pellicole antisolari sunscape, uso interno Le pellicole antisolari vengono quasi sempre installate esternamente per diversi motivi. L’installazione esterna evita che i raggi del sole passino due volte all’interno del vetro, riscaldandolo e rischiando di rovinarlo. Un lavoro all’esterno è ovviamente meno invasivo, e la pellicola fungerà anche da strato protettivo da agenti atmosferici ed erosione per la superficie vetrata. La pellicola antisolare sunscape della serie SL da interno è la SL 8 DA SR.​ Pellicole antisolari sunscape, uso esterno Le pellicole antisolari si possono installare internamente principalmente quando ci si trova di fronte a vetri monolitici non molto spessi. Vengono anche consigliati nelle situazioni estreme in cui è impossibile applicare esternamente la pellicola. In questo caso la pellicola non risentirà degli agenti atmosferici esterni, e sarà più protetta. ​La pellicola antisolare sunscape della serie SL da esterno è la SL 8 E PS SR​​.​​ I nostri Prodotti di questa categoria Pellicola antisolare Tecnosolar NT 20 E PS SR Pellicola antisolare Madico SG 20 E PS SR 75 micron Pellicola antisolare Madico SL 8 E PS SR 75 Micron Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 4863,
+  "fetchedAt": "2026-04-28T15:09:40.721Z"
+}

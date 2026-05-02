@@ -1,0 +1,311 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/",
+  "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/",
+  "route": {
+    "type": "product",
+    "label": "Prodotto",
+    "newPath": "/prodotti/madicosg20epssr/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-antisolari-sitemap.xml",
+  "seo": {
+    "title": "Pellicola antisolare Madico SG 20 E PS SR 75 micron - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicola antisolare Madico SG 20 E PS SR 75 micron",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/SG20EPSSR.webp",
+      "og:image:width": "1141",
+      "og:image:height": "1081",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T09:15:56+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosg20epssr\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosg20epssr\\/\",\"name\":\"Pellicola antisolare Madico SG 20 E PS SR 75 micron - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosg20epssr\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosg20epssr\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SG20EPSSR.webp\",\"datePublished\":\"2025-06-11T14:06:18+00:00\",\"dateModified\":\"2025-09-18T09:15:56+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosg20epssr\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosg20epssr\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosg20epssr\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SG20EPSSR.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SG20EPSSR.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosg20epssr\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole antisolari\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pellicola antisolare Madico SG 20 E PS SR 75 micron\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicola antisolare Madico SG 20 E PS SR 75 micron"
+    },
+    {
+      "level": 4,
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "level": 2,
+      "text": "Utilizzi"
+    },
+    {
+      "level": 2,
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "level": 2,
+      "text": "Specifiche tecniche"
+    },
+    {
+      "level": 6,
+      "text": "Vetrocamera basso emissivo 6 mm"
+    },
+    {
+      "level": 6,
+      "text": "Energia solare totale"
+    },
+    {
+      "level": 6,
+      "text": "Luce visibile"
+    },
+    {
+      "level": 6,
+      "text": "Totale energia respinta"
+    },
+    {
+      "level": 2,
+      "text": "10"
+    },
+    {
+      "level": 3,
+      "text": "anni di garanzia"
+    }
+  ],
+  "h1": "Pellicola antisolare Madico SG 20 E PS SR 75 micron",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicola antisolare Madico SG 20 E PS SR 75 micron",
+      "text": "Pellicola antisolare Madico SG 20 E PS SR 75 micron"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "<a href=\"https://www.solarisfilms.it/wp-content/uploads/2025/06/SG20EPSSR.pdf\">Consulta la scheda tecnica",
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Utilizzi",
+      "text": "Utilizzi"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole sputtered <a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Madico SG 20 E PS SR <a href=\"https://www.tecnosolar.it/\" target=\"_blank\" rel=\"noopener noreferrer\">Tecnosolar vengono utilizzate dove si deve schermare l&#x2019;irraggiamento solare con esigenza di maggiore luminosit&#xE0;. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre",
+      "text": "Le pellicole sputtered Madico SG 20 E PS SR Tecnosolar vengono utilizzate dove si deve schermare l’irraggiamento solare con esigenza di maggiore luminosità. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Caratteristiche distintive",
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.",
+          "text": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo."
+        },
+        {
+          "html": "Riflettono fino al 88% dell&#x2019;energia solare rendendo gli ambienti pi&#xF9; freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica.",
+          "text": "Riflettono fino al 88% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica."
+        },
+        {
+          "html": "Pellicole pi&#xF9; chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilit&#xE0; ed evitando effetti speculari.",
+          "text": "Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari."
+        },
+        {
+          "html": "Prodotto unico, con brevetto esclusivo.",
+          "text": "Prodotto unico, con brevetto esclusivo."
+        },
+        {
+          "html": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.",
+          "text": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata."
+        },
+        {
+          "html": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.",
+          "text": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3."
+        },
+        {
+          "html": "Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.",
+          "text": "Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza."
+        }
+      ],
+      "text": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo. Riflettono fino al 88% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica. Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Specifiche tecniche",
+      "text": "Specifiche tecniche"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari <a href=\"https://it.wikipedia.org/wiki/Polverizzazione_catodica#:~:text=La%20polverizzazione%20catodica%2C%20spruzzamento%20catodico,particelle%20energetiche%20(generalmente%20ioni).\" target=\"_blank\" rel=\"noopener noreferrer\">sputtered SG 20 E PS SR Madico Tecnosolar sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni.",
+      "text": "Le pellicole antisolari sputtered SG 20 E PS SR Madico Tecnosolar sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni."
+    },
+    {
+      "type": "note",
+      "html": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola",
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-antisolari-sunscape/",
+      "text": "Vai al focus tecnico",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Vetrocamera basso emissivo 6 mm",
+      "text": "Vetrocamera basso emissivo 6 mm"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Energia solare totale",
+      "text": "Energia solare totale"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "9%",
+      "text": "Trasmessa 9%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa",
+      "value": "30%",
+      "text": "Riflessa 30%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Assorbita",
+      "value": "61%",
+      "text": "Assorbita 61%",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Luce visibile",
+      "text": "Luce visibile"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "16%",
+      "text": "Trasmessa 16%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa - Esterno",
+      "value": "31%",
+      "text": "Riflessa - Esterno 31%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riduzione abbaglio",
+      "value": "82%",
+      "text": "Riduzione abbaglio 82%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Infrarossi respinti",
+      "value": "84%",
+      "text": "Infrarossi respinti 84%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Raggi UV trasmessi (max)",
+      "value": "1%",
+      "text": "Raggi UV trasmessi (max) 1%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Coefficiente schermatura",
+      "value": "0.18",
+      "text": "Coefficiente schermatura 0.18",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Fattore solare g",
+      "value": "0.16",
+      "text": "Fattore solare g 0.16",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Valore U W/m2K",
+      "value": "1.65",
+      "text": "Valore U W/m2K 1.65",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Totale energia respinta",
+      "text": "Totale energia respinta"
+    },
+    {
+      "type": "metric",
+      "label": "Energia Respinta",
+      "value": "84%",
+      "text": "Energia Respinta 84%",
+      "html": ""
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai bisogno di una pellicola antisolare? Consulta il nostro&#xA0;<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/\">approfondimento sulle pellicole antisolari&#xA0;per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>10",
+      "text": "10"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>anni di garanzia",
+      "text": "anni di garanzia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <span>pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicola antisolare Madico SG 20 E PS SR 75 micron Consulta la scheda tecnica Utilizzi Le pellicole sputtered Madico SG 20 E PS SR Tecnosolar vengono utilizzate dove si deve schermare l’irraggiamento solare con esigenza di maggiore luminosità. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre Caratteristiche distintive Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo. Riflettono fino al 88% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica. Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza. Specifiche tecniche Le pellicole antisolari sputtered SG 20 E PS SR Madico Tecnosolar sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico Vetrocamera basso emissivo 6 mm Energia solare totale Trasmessa 9% Riflessa 30% Assorbita 61% Luce visibile Trasmessa 16% Riflessa - Esterno 31% Riduzione abbaglio 82% Infrarossi respinti 84% Raggi UV trasmessi (max) 1% Coefficiente schermatura 0.18 Fattore solare g 0.16 Valore U W/m2K 1.65 Totale energia respinta Energia Respinta 84% Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole! 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 2339,
+  "fetchedAt": "2026-04-28T15:09:17.384Z"
+}

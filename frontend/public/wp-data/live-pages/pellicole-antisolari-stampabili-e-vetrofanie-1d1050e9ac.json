@@ -1,0 +1,442 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-antisolari-stampabili-e-vetrofanie/",
+  "path": "/pellicole-antisolari-stampabili-e-vetrofanie/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "seo": {
+    "title": "Pellicole antisolari stampabili e vetrofanie - Solaris Films",
+    "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-antisolari-stampabili-e-vetrofanie/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicole antisolari stampabili e vetrofanie",
+      "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "og:url": "https://www.solarisfilms.it/pellicole-antisolari-stampabili-e-vetrofanie/",
+      "og:site_name": "Solaris Films"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-19T10:46:14+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-stampabili-e-vetrofanie\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-stampabili-e-vetrofanie\\/\",\"name\":\"Pellicole antisolari stampabili e vetrofanie - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-17T14:13:25+00:00\",\"dateModified\":\"2025-09-19T10:46:14+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-stampabili-e-vetrofanie\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-stampabili-e-vetrofanie\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-antisolari-stampabili-e-vetrofanie\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole antisolari stampabili e vetrofanie\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole antisolari stampabili e vetrofanie"
+    },
+    {
+      "level": 2,
+      "text": "Le pellicole antisolari possono essere un elemento di design imprescindibile nei vostri ambienti. Scopri come."
+    },
+    {
+      "level": 2,
+      "text": "Le pellicole stampabili di lintec sono le più performanti sul mercato e ti consentono di ottenere qualsiasi effetto sulle tue superfici vetrate!"
+    },
+    {
+      "level": 2,
+      "text": "Soluzione rapida ed economica."
+    },
+    {
+      "level": 2,
+      "text": "Rimozione semplice."
+    },
+    {
+      "level": 2,
+      "text": "Design accattivante."
+    },
+    {
+      "level": 2,
+      "text": "Grande varietà di soluzioni."
+    },
+    {
+      "level": 2,
+      "text": "Grazie all'ultra-trasparenza che le contraddistingue, le pellicole Vitrographic sono perfette per l'arredamento degli uffici!"
+    },
+    {
+      "level": 2,
+      "text": "Le Pellicole da stampa della serie Vitrographic®"
+    },
+    {
+      "level": 3,
+      "text": "100% Senza PVC"
+    },
+    {
+      "level": 3,
+      "text": "Rimovibile in un unico pezzo"
+    },
+    {
+      "level": 2,
+      "text": "VITROGRAPHIC® E 2200ZC"
+    },
+    {
+      "level": 2,
+      "text": "VITROGRAPHIC® E 1000ZC"
+    },
+    {
+      "level": 2,
+      "text": "Come posso pulire queste pellicole?"
+    },
+    {
+      "level": 2,
+      "text": "Il film è certificato antincendio?"
+    },
+    {
+      "level": 2,
+      "text": "cos’è una vetrofania?"
+    },
+    {
+      "level": 2,
+      "text": "Vetrofanie ad UV"
+    },
+    {
+      "level": 2,
+      "text": "Vetrofanie ad EcoSolvent"
+    }
+  ],
+  "h1": "Pellicole antisolari stampabili e vetrofanie",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole antisolari stampabili e vetrofanie",
+      "text": "Pellicole antisolari stampabili e vetrofanie"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Le pellicole antisolari possono essere un elemento di design imprescindibile nei vostri ambienti. Scopri come.",
+      "text": "Le pellicole antisolari possono essere un elemento di design imprescindibile nei vostri ambienti. Scopri come."
+    },
+    {
+      "type": "paragraph",
+      "html": "Il vetro &#xE8; un materiale che sta trovando uno spazio sempre pi&#xF9; importante in edilizia. L&#x2019;installazione di&#xA0;<strong>ampie vetrate&#xA0;&#xE8; stata implementata per diversi motivi, tra i quali l&#x2019;integrazione dell&#x2019;architettura con l&#x2019;ambiente circostante, la luminosit&#xE0; e la vivibilit&#xE0; degli spazi. Le vetrate non si utilizzano pi&#xF9; per&#xF2; solo verso l&#x2019;esterno. Sempre pi&#xF9;&#xA0;<strong>frequenti sono i suoi utilizzi in interno, secondo le nuove tendenze architettoniche e dell&#x2019;interior design.",
+      "text": "Il vetro è un materiale che sta trovando uno spazio sempre più importante in edilizia. L’installazione di ampie vetrate è stata implementata per diversi motivi, tra i quali l’integrazione dell’architettura con l’ambiente circostante, la luminosità e la vivibilità degli spazi. Le vetrate non si utilizzano più però solo verso l’esterno. Sempre più frequenti sono i suoi utilizzi in interno, secondo le nuove tendenze architettoniche e dell’interior design."
+    },
+    {
+      "type": "paragraph",
+      "html": "Noi di Tecnosolar distribuiamo sul mercato italiano solo&#xA0;<strong>le migliori pellicole antisolari al mondo. Per questo motivo, dopo molte ricerche, siamo fieri di presentarvi la gamma&#xA0;<strong>Vitrographic&#xAE;&#xA0;di Lintec!",
+      "text": "Noi di Tecnosolar distribuiamo sul mercato italiano solo le migliori pellicole antisolari al mondo. Per questo motivo, dopo molte ricerche, siamo fieri di presentarvi la gamma Vitrographic® di Lintec!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole stampabili di Lintec sono le pi&#xF9; performanti sul mercato e ti consentono di ottenere qualsiasi effetto sulle tue superfici vetrate!",
+      "text": "Le pellicole stampabili di Lintec sono le più performanti sul mercato e ti consentono di ottenere qualsiasi effetto sulle tue superfici vetrate!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Le pellicole stampabili di lintec sono le pi&#xF9; performanti sul mercato e ti consentono di ottenere qualsiasi effetto sulle tue superfici vetrate!",
+      "text": "Le pellicole stampabili di lintec sono le più performanti sul mercato e ti consentono di ottenere qualsiasi effetto sulle tue superfici vetrate!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il nome dell&#x2019;azienda LINTEC deriva da &#x201C;<strong>collegamento&#x201D; (<strong>LINkage) e &#x201C;<strong>tecnologia&#x201D; (<strong>TEChnology), due componenti chiave della loro filosofia aziendale, che sottolinea l&#x2019;importanza di relazioni strette, all&#x2019;interno e all&#x2019;esterno dell&#x2019;azienda, insieme a programmi di ricerca e sviluppo all&#x2019;avanguardia. Unendo questi elementi per sviluppare soluzioni innovative, si sono costruiti una reputazione in Giappone e all&#x2019;estero come azienda dinamica e affidabile, perno del loro settore di riferimento e realt&#xE0; imprenditoriale solida. Alla base di tutte le loro attivit&#xE0; commerciali c&#x2019;&#xE8; un&#x2019;enfasi costante sui concetti di &#x201C;Sincerit&#xE0; e Creativit&#xE0;&#x201D;, i valori gemelli racchiusi nel loro motto aziendale.",
+      "text": "Il nome dell’azienda LINTEC deriva da “collegamento” (LINkage) e “tecnologia” (TEChnology), due componenti chiave della loro filosofia aziendale, che sottolinea l’importanza di relazioni strette, all’interno e all’esterno dell’azienda, insieme a programmi di ricerca e sviluppo all’avanguardia. Unendo questi elementi per sviluppare soluzioni innovative, si sono costruiti una reputazione in Giappone e all’estero come azienda dinamica e affidabile, perno del loro settore di riferimento e realtà imprenditoriale solida. Alla base di tutte le loro attività commerciali c’è un’enfasi costante sui concetti di “Sincerità e Creatività”, i valori gemelli racchiusi nel loro motto aziendale."
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Ricerca e sviluppo&#xA0;sono fondamentali per la strategia di crescita di LINTEC, come dimostrano gli investimenti continui in persone, prodotti e strutture.",
+      "text": "Ricerca e sviluppo sono fondamentali per la strategia di crescita di LINTEC, come dimostrano gli investimenti continui in persone, prodotti e strutture."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "<strong>200+ ricercatori&#xA0;e personale specializzato",
+          "text": "200+ ricercatori e personale specializzato"
+        },
+        {
+          "html": "<strong>7.6 miliardi di Yen&#xA0;(&#x20AC;56,990,142.18)*&#xA0;<strong>investiti&#xA0;durante l&#x2019;ultimo anno fiscale nello sviluppo della prossima generazione di prodotti",
+          "text": "7.6 miliardi di Yen (€56,990,142.18)* investiti durante l’ultimo anno fiscale nello sviluppo della prossima generazione di prodotti"
+        },
+        {
+          "html": "<strong>80+ anni di innovazione",
+          "text": "80+ anni di innovazione"
+        },
+        {
+          "html": "<strong>Centro di ricerca, situato a Warabi-shi, Saitama-ken, Giappone",
+          "text": "Centro di ricerca, situato a Warabi-shi, Saitama-ken, Giappone"
+        },
+        {
+          "html": "<strong>Edificio tecnologico avanzato aggiuntivo&#xA0;inaugurato nel 2016",
+          "text": "Edificio tecnologico avanzato aggiuntivo inaugurato nel 2016"
+        }
+      ],
+      "text": "200+ ricercatori e personale specializzato 7.6 miliardi di Yen (€56,990,142.18)* investiti durante l’ultimo anno fiscale nello sviluppo della prossima generazione di prodotti 80+ anni di innovazione Centro di ricerca, situato a Warabi-shi, Saitama-ken, Giappone Edificio tecnologico avanzato aggiuntivo inaugurato nel 2016"
+    },
+    {
+      "type": "paragraph",
+      "html": "*XE Currency Converter Live rates 08/06/2021",
+      "text": "*XE Currency Converter Live rates 08/06/2021"
+    },
+    {
+      "type": "note",
+      "html": "Quali sono i vantaggi delle vetrofanie?",
+      "text": "Quali sono i vantaggi delle vetrofanie?"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Soluzione rapida ed economica.",
+      "text": "Soluzione rapida ed economica."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Rimozione semplice.",
+      "text": "Rimozione semplice."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Design accattivante.",
+      "text": "Design accattivante."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Grande variet&#xE0; di soluzioni.",
+      "text": "Grande varietà di soluzioni."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Grazie all&apos;ultra-trasparenza che le contraddistingue, le pellicole Vitrographic sono perfette per l&apos;arredamento degli uffici!",
+      "text": "Grazie all'ultra-trasparenza che le contraddistingue, le pellicole Vitrographic sono perfette per l'arredamento degli uffici!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Quando immagini uno &#x201C;spazio ufficio&#x201D;, &#xE8; probabile che il primo flash che ti viene in mente sia quella di&#xA0;<strong>cubicoli dalle pareti bianche e anonime.",
+      "text": "Quando immagini uno “spazio ufficio”, è probabile che il primo flash che ti viene in mente sia quella di cubicoli dalle pareti bianche e anonime."
+    },
+    {
+      "type": "paragraph",
+      "html": "Per fortuna, questa&#xA0;<strong>non &#xE8; pi&#xF9; la norma. Il pi&#xF9; delle volte, le aziende stanno facendo passi da gigante per rivoluzionare il modo in cui appare il loro spazio ufficio. Uno dei modi in cui lo fanno &#xE8; abbracciare il colore, e&#xA0;<strong>le superfici vetrate possono essere un alleato in questo!",
+      "text": "Per fortuna, questa non è più la norma. Il più delle volte, le aziende stanno facendo passi da gigante per rivoluzionare il modo in cui appare il loro spazio ufficio. Uno dei modi in cui lo fanno è abbracciare il colore, e le superfici vetrate possono essere un alleato in questo!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Per dare un po&#x2019; di vita all&#x2019;arredamento del tuo ufficio,<strong>&#xA0;prova ad allestire il tuo ufficio con colori vivaci. Questo non significa che devi dipingere il tuo ufficio di rosa acceso! Piuttosto significa che non dovresti aver paura di accentuare i colori del tuo marchio con alcuni elementi di design vitali.",
+      "text": "Per dare un po’ di vita all’arredamento del tuo ufficio, prova ad allestire il tuo ufficio con colori vivaci. Questo non significa che devi dipingere il tuo ufficio di rosa acceso! Piuttosto significa che non dovresti aver paura di accentuare i colori del tuo marchio con alcuni elementi di design vitali."
+    },
+    {
+      "type": "paragraph",
+      "html": "Nella maggior parte delle situazioni, dovresti provare a usare&#xA0;<strong>colori chiari per illuminare l&#x2019;ufficio. I toni pi&#xF9; scuri possono avere il loro posto, ma se usati in maniera preponderante daranno l&#x2019;impressione di un ambiente pi&#xF9; angusto e meno invitante di quello che &#xE8;. Tonalit&#xE0; pi&#xF9; luminose come arancione, verde acqua, giallo e blu invece daranno alle stanze una sensazione allegra ed edificante.",
+      "text": "Nella maggior parte delle situazioni, dovresti provare a usare colori chiari per illuminare l’ufficio. I toni più scuri possono avere il loro posto, ma se usati in maniera preponderante daranno l’impressione di un ambiente più angusto e meno invitante di quello che è. Tonalità più luminose come arancione, verde acqua, giallo e blu invece daranno alle stanze una sensazione allegra ed edificante."
+    },
+    {
+      "type": "paragraph",
+      "html": "Ad esempio, guarda l&#x2019;audacia dei colori nell&#x2019;ufficio vista sopra. Le pareti sono molto texturizzate e le immagini&#xA0; attirare l&#x2019;attenzione su uno spettro pi&#xF9; ampio di blu, gialli e rossi.",
+      "text": "Ad esempio, guarda l’audacia dei colori nell’ufficio vista sopra. Le pareti sono molto texturizzate e le immagini attirare l’attenzione su uno spettro più ampio di blu, gialli e rossi."
+    },
+    {
+      "type": "paragraph",
+      "html": "I&#xA0;<strong>colori freddi&#xA0;come il blu, il verde, l&#x2019;arancione e il corallo tendono ad essere&#xA0;<strong>rilassanti&#xA0;e&#xA0;<strong>piacevoli&#xA0;per gli occhi, rendendoli scelte azzeccate per uffici e ambienti in cui su vuole stimolare la&#xA0;<strong>creativit&#xE0;&#xA0;e aumentare la&#xA0;<strong>concentrazione.",
+      "text": "I colori freddi come il blu, il verde, l’arancione e il corallo tendono ad essere rilassanti e piacevoli per gli occhi, rendendoli scelte azzeccate per uffici e ambienti in cui su vuole stimolare la creatività e aumentare la concentrazione."
+    },
+    {
+      "type": "paragraph",
+      "html": "Se si vuole puntare al miglioramento dell&#x2019;<strong>estetica&#xA0;dei propri uffici garantendo anche la&#xA0;<strong>privacy&#xA0;per i nostri impiegati la soluzione &#xE8; sicuramente una grafica digitale. La loro estrema&#xA0;<strong>personalizzazione&#xA0;e la loro facile&#xA0;<strong>rimovibilit&#xE0;&#xA0;le rendono pi&#xF9;&#xA0;<strong>adattabili alle esigenze della tua azienda&#xA0;rispetto a qualsiasi altra opzione a tua disposizione. Con le grafiche digitali&#xA0;<strong>puoi stampare tutto&#xA0;quello che la tua immaginazione ti fa desiderare!",
+      "text": "Se si vuole puntare al miglioramento dell’estetica dei propri uffici garantendo anche la privacy per i nostri impiegati la soluzione è sicuramente una grafica digitale. La loro estrema personalizzazione e la loro facile rimovibilità le rendono più adattabili alle esigenze della tua azienda rispetto a qualsiasi altra opzione a tua disposizione. Con le grafiche digitali puoi stampare tutto quello che la tua immaginazione ti fa desiderare!"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Le Pellicole da stampa della serie Vitrographic&#xAE;",
+      "text": "Le Pellicole da stampa della serie Vitrographic®"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>La pellicola VITROGRAPHIC&#xAE; consente a designer e architetti di creare vetrate vivaci ed emozionanti, dalle grafiche per la privacy e la sicurezza, al design per interni, comunicazione visiva fino al branding creativo e alla pubblicit&#xE0;.",
+      "text": "La pellicola VITROGRAPHIC® consente a designer e architetti di creare vetrate vivaci ed emozionanti, dalle grafiche per la privacy e la sicurezza, al design per interni, comunicazione visiva fino al branding creativo e alla pubblicità."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole sono prodotte in camera bianca per la massima trasparenza e qualit&#xE0;, garantendo una trasmissione della luce ottimale e distorsione minima. Una volta applicato al vetro sembra che il disegno sia stampato direttamente su di esso.",
+      "text": "Le pellicole sono prodotte in camera bianca per la massima trasparenza e qualità, garantendo una trasmissione della luce ottimale e distorsione minima. Una volta applicato al vetro sembra che il disegno sia stampato direttamente su di esso."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "100% Senza PVC",
+      "text": "100% Senza PVC"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole Vitrographic possono essere smaltite tranquillamente in discarica in quanto prive di PVC al 100%. Al confronto, una classica pellicola in PVC utilizzata per la decorazione contiene tra il 23 e il 38% di plastificante.",
+      "text": "Le pellicole Vitrographic possono essere smaltite tranquillamente in discarica in quanto prive di PVC al 100%. Al confronto, una classica pellicola in PVC utilizzata per la decorazione contiene tra il 23 e il 38% di plastificante."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Rimovibile in un unico pezzo",
+      "text": "Rimovibile in un unico pezzo"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il ciclo di vita del prodotto &#xE8; un elemento importante da considerare. Il nostro concetto &#x201C;rimovibile in un unico pezzo&#x201D; significa che, quando &#xE8; necessario rinfrescare del design, la pellicola pu&#xF2; essere rimossa in modo semplice ed efficiente.",
+      "text": "Il ciclo di vita del prodotto è un elemento importante da considerare. Il nostro concetto “rimovibile in un unico pezzo” significa che, quando è necessario rinfrescare del design, la pellicola può essere rimossa in modo semplice ed efficiente."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "VITROGRAPHIC&#xAE; E 2200ZC",
+      "text": "VITROGRAPHIC® E 2200ZC"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il nostro prodotto di punta&#xA0;<strong>VITROGRAPHIC&#xAE; E-2200ZC&#xA0;&#xE8; realizzato con materiali ecologici al 100%,&#xA0;<strong>senza PVC&#xA0;ed &#xE8; combinato con un adesivo con&#xA0;<strong>filtro UV al 99%. Inoltre ha uno speciale trattamento che previene i danni superficiali nelle aree non stampate (tipicamente causati dalla pulizia) aiutando a mantenere un aspetto perfettamente trasparente come il vetro.",
+      "text": "Il nostro prodotto di punta VITROGRAPHIC® E-2200ZC è realizzato con materiali ecologici al 100%, senza PVC ed è combinato con un adesivo con filtro UV al 99%. Inoltre ha uno speciale trattamento che previene i danni superficiali nelle aree non stampate (tipicamente causati dalla pulizia) aiutando a mantenere un aspetto perfettamente trasparente come il vetro."
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicola&#xA0;<strong>stampabile a UV-inkjet&#xA0;per la decorazione del vetro, la privacy, la comunicazione visiva e la sicurezza.",
+      "text": "Pellicola stampabile a UV-inkjet per la decorazione del vetro, la privacy, la comunicazione visiva e la sicurezza."
+    },
+    {
+      "type": "paragraph",
+      "html": "Il&#xA0;<strong>poliestere ultra-trasparente antigraffio&#xA0;Vitrographic&#xAE; E-2200ZC 50&#xB5; lucido offre un&#x2019;eccellente&#xA0;<strong>chiarezza ottica e stabilit&#xE0; dimensionale&#xA0;combinate con un buon solvente, umidit&#xE0;, temperatura elevata e prestazioni di&#xA0;<strong>blocco UV del 98%&#xA0;per cinque anni. Il topcoat &#xE8; specificamente progettato per garantire una buona definizione di stampa e adesione degli inchiostri digitali UV. E-2200ZC &#xE8; rivestito con adesivo acrilico ultra trasparente PUV ad alte prestazioni che mostra un&#x2019;eccellente trasparenza ottica, deflusso e stabilit&#xE0; ai raggi UV.",
+      "text": "Il poliestere ultra-trasparente antigraffio Vitrographic® E-2200ZC 50µ lucido offre un’eccellente chiarezza ottica e stabilità dimensionale combinate con un buon solvente, umidità, temperatura elevata e prestazioni di blocco UV del 98% per cinque anni. Il topcoat è specificamente progettato per garantire una buona definizione di stampa e adesione degli inchiostri digitali UV. E-2200ZC è rivestito con adesivo acrilico ultra trasparente PUV ad alte prestazioni che mostra un’eccellente trasparenza ottica, deflusso e stabilità ai raggi UV."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "VITROGRAPHIC&#xAE; E 1000ZC",
+      "text": "VITROGRAPHIC® E 1000ZC"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vitrographic&#xAE; E-1000ZC &#xE8; progettato per la&#xA0;<strong>produzione di grafiche per finestre&#xA0;stampate digitalmente. E-1000ZC offre un&#x2019;eccellente&#xA0;<strong>chiarezza ottica e stabilit&#xE0; dimensionale. Il rivestimento di finitura &#xE8; appositamente studiato per garantire una buona adesione degli inchiostri a eco-solvente. E-1000ZC &#xE8; rivestito con adesivo acrilico ultra-trasparente ad alte prestazioni NPL che mostra un&#x2019;eccellente trasparenza ottica, fluidit&#xE0; e stabilit&#xE0; ai raggi UV.",
+      "text": "Vitrographic® E-1000ZC è progettato per la produzione di grafiche per finestre stampate digitalmente. E-1000ZC offre un’eccellente chiarezza ottica e stabilità dimensionale. Il rivestimento di finitura è appositamente studiato per garantire una buona adesione degli inchiostri a eco-solvente. E-1000ZC è rivestito con adesivo acrilico ultra-trasparente ad alte prestazioni NPL che mostra un’eccellente trasparenza ottica, fluidità e stabilità ai raggi UV."
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicola&#xA0;stampabile ad EcoSolvent,&#xA0;per la decorazione del vetro, la privacy, la comunicazione visiva e la sicurezza.",
+      "text": "Pellicola stampabile ad EcoSolvent, per la decorazione del vetro, la privacy, la comunicazione visiva e la sicurezza."
+    },
+    {
+      "type": "paragraph",
+      "html": "Oltre a garantire protezione e confort, i prodotti Madico, gi&#xE0; insigniti di numerosi riconoscimenti, hanno la provata garanzia di incrementare il risparmio energetico e la conseguente&#xA0;<strong>riduzione di CO2 nell&#x2019;atmosfera. La garanzia di un minor impatto ambientale pu&#xF2; sembrare un dettaglio irrilevante, ma noi di Tecnosolar sappiamo bene che &#xE8; fondamentale&#xA0;<strong>tutelare l&#x2019;ambiente&#xA0;per<strong>&#xA0;garantire un futuro ai nostri figli.",
+      "text": "Oltre a garantire protezione e confort, i prodotti Madico, già insigniti di numerosi riconoscimenti, hanno la provata garanzia di incrementare il risparmio energetico e la conseguente riduzione di CO2 nell’atmosfera. La garanzia di un minor impatto ambientale può sembrare un dettaglio irrilevante, ma noi di Tecnosolar sappiamo bene che è fondamentale tutelare l’ambiente per garantire un futuro ai nostri figli."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Come posso pulire queste pellicole?",
+      "text": "Come posso pulire queste pellicole?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il film ha trattamento per evitare graffi con la pulizia convenzionale. Pu&#xF2; essere pulito con acqua saponata a pH neutro e un tira-acqua, come con il vetro normale. Prodotti abrasivi devono essere evitati.",
+      "text": "Il film ha trattamento per evitare graffi con la pulizia convenzionale. Può essere pulito con acqua saponata a pH neutro e un tira-acqua, come con il vetro normale. Prodotti abrasivi devono essere evitati."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Il film &#xE8; certificato antincendio?",
+      "text": "Il film è certificato antincendio?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Queste pellicole sono state testate in conformit&#xE0; con le procedure indicate nella norma EN 13501-1: 2018: &#x201C;Classificazione al fuoco dei prodotti e degli elementi da costruzione &#x2013; Parte 1: Classificazione in base ai risultati delle prove di reazione al fuoco&#x201D;. I certificati sono disponibili su richiesta.",
+      "text": "Queste pellicole sono state testate in conformità con le procedure indicate nella norma EN 13501-1: 2018: “Classificazione al fuoco dei prodotti e degli elementi da costruzione – Parte 1: Classificazione in base ai risultati delle prove di reazione al fuoco”. I certificati sono disponibili su richiesta."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "cos&#x2019;&#xE8; una vetrofania?",
+      "text": "cos’è una vetrofania?"
+    },
+    {
+      "type": "paragraph",
+      "html": "Forse saprete tutti che la vetrofania &#xE8; un&#xA0;<strong>foglio di materiale&#xA0;<strong>stampato a colori con decorazioni o scritte che si applica sulle superfici vetrate.&#xA0;Le applicazioni pi&#xF9; comuni riguardano&#xA0;le vetrine di negozi o le finestre di casa, ma l&#x2019;unico limite &#xE8; la tua fantasia! Se siete intenzionati a lavorare con le vetrofanie ma non avete i numeri ed i mezzi per comprare un rotolo di&#xA0;<em>Vitrographic&#xA0;abbiamo la soluzione per voi! Vi offriamo la possibilit&#xE0; di&#xA0;<strong>stampare le vostre vetrofanie&#xA0;<b>sia in EcoSolvent che in UV.",
+      "text": "Forse saprete tutti che la vetrofania è un foglio di materiale stampato a colori con decorazioni o scritte che si applica sulle superfici vetrate. Le applicazioni più comuni riguardano le vetrine di negozi o le finestre di casa, ma l’unico limite è la tua fantasia! Se siete intenzionati a lavorare con le vetrofanie ma non avete i numeri ed i mezzi per comprare un rotolo di Vitrographic abbiamo la soluzione per voi! Vi offriamo la possibilità di stampare le vostre vetrofanie sia in EcoSolvent che in UV."
+    },
+    {
+      "type": "paragraph",
+      "html": "&#xC8; una soluzione che ti permette di fare pubblicit&#xE0; a basso costo. In breve&#xA0; puoi acquisire una maggiore visibilit&#xE0;, migliorando l&#x2019;aspetto della tua vetrina, rinnovandola ogni volta che vuoi in modo rapido ed economico in base al periodo dell&#x2019;anno, dalle festivit&#xE0; o delle necessit&#xE0; del tuo business!",
+      "text": "È una soluzione che ti permette di fare pubblicità a basso costo. In breve puoi acquisire una maggiore visibilità, migliorando l’aspetto della tua vetrina, rinnovandola ogni volta che vuoi in modo rapido ed economico in base al periodo dell’anno, dalle festività o delle necessità del tuo business!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Vetrofanie ad UV",
+      "text": "Vetrofanie ad UV"
+    },
+    {
+      "type": "paragraph",
+      "html": "La Stampa UV &#xE8; un tipo di tecnologia di stampa digitale poco praticata fino a qualche anno fa in Italia, ma che sta prendendo sempre pi&#xF9; piede, per gli ovvi vantaggi che comporta. Consiste nell&#x2019;applicare inchiostro sui materiali per poi farlo asciugare con una lampada a raggi UV. Questa tecnica di stampa ha come peculiarit&#xE0; la&#xA0;<strong>rapida essiccazione, grazie alla luce Ultravioletta delle lampade a LED applicate sulla stampante. Le stampanti UV sono in grado di&#xA0;<strong>stampare rapidamente ed in maniera economica&#xA0;le vostre vetrofanie.",
+      "text": "La Stampa UV è un tipo di tecnologia di stampa digitale poco praticata fino a qualche anno fa in Italia, ma che sta prendendo sempre più piede, per gli ovvi vantaggi che comporta. Consiste nell’applicare inchiostro sui materiali per poi farlo asciugare con una lampada a raggi UV. Questa tecnica di stampa ha come peculiarità la rapida essiccazione, grazie alla luce Ultravioletta delle lampade a LED applicate sulla stampante. Le stampanti UV sono in grado di stampare rapidamente ed in maniera economica le vostre vetrofanie."
+    },
+    {
+      "type": "paragraph",
+      "html": "Questo tipo di lavorazione permette di applicare delle&#xA0;<strong>finiture particolari&#xA0;che, con tecniche di stampa tradizionali, sarebbero altamente dispendiose per brevi tirature.",
+      "text": "Questo tipo di lavorazione permette di applicare delle finiture particolari che, con tecniche di stampa tradizionali, sarebbero altamente dispendiose per brevi tirature."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Vetrofanie ad EcoSolvent",
+      "text": "Vetrofanie ad EcoSolvent"
+    },
+    {
+      "type": "paragraph",
+      "html": "La stampa con inchiostri EcoSolvente &#xE8; indicata per ottenere&#xA0;<strong>un&#x2019;alta qualit&#xE0; su grandi superfici&#xA0;esponibili sia all&#x2019;interno che all&#x2019;esterno. Sono&#xA0;<strong>resistenti ai raggi UV (Ultravioletti) e agli agenti atmosferici sono&#xA0;<strong>impermeabili e resistenti all&#x2019;abrasione.",
+      "text": "La stampa con inchiostri EcoSolvente è indicata per ottenere un’alta qualità su grandi superfici esponibili sia all’interno che all’esterno. Sono resistenti ai raggi UV (Ultravioletti) e agli agenti atmosferici sono impermeabili e resistenti all’abrasione."
+    },
+    {
+      "type": "paragraph",
+      "html": "In genere impiegano circa tre anni prima che l&#x2019;inchiostro cominci ad attenuarsi.",
+      "text": "In genere impiegano circa tre anni prima che l’inchiostro cominci ad attenuarsi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Con questa tecnologia quasi tutti i materiali possono essere laminati per prolungarne la durabilit&#xE0; nel tempo all&#x2019;esposizione degli agenti atmosferici.",
+      "text": "Con questa tecnologia quasi tutti i materiali possono essere laminati per prolungarne la durabilità nel tempo all’esposizione degli agenti atmosferici."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-per-vetri/contact/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole antisolari stampabili e vetrofanie Le pellicole antisolari possono essere un elemento di design imprescindibile nei vostri ambienti. Scopri come. Il vetro è un materiale che sta trovando uno spazio sempre più importante in edilizia. L’installazione di ampie vetrate è stata implementata per diversi motivi, tra i quali l’integrazione dell’architettura con l’ambiente circostante, la luminosità e la vivibilità degli spazi. Le vetrate non si utilizzano più però solo verso l’esterno. Sempre più frequenti sono i suoi utilizzi in interno, secondo le nuove tendenze architettoniche e dell’interior design. Noi di Tecnosolar distribuiamo sul mercato italiano solo le migliori pellicole antisolari al mondo. Per questo motivo, dopo molte ricerche, siamo fieri di presentarvi la gamma Vitrographic® di Lintec! Le pellicole stampabili di Lintec sono le più performanti sul mercato e ti consentono di ottenere qualsiasi effetto sulle tue superfici vetrate! Le pellicole stampabili di lintec sono le più performanti sul mercato e ti consentono di ottenere qualsiasi effetto sulle tue superfici vetrate! Il nome dell’azienda LINTEC deriva da “collegamento” (LINkage) e “tecnologia” (TEChnology), due componenti chiave della loro filosofia aziendale, che sottolinea l’importanza di relazioni strette, all’interno e all’esterno dell’azienda, insieme a programmi di ricerca e sviluppo all’avanguardia. Unendo questi elementi per sviluppare soluzioni innovative, si sono costruiti una reputazione in Giappone e all’estero come azienda dinamica e affidabile, perno del loro settore di riferimento e realtà imprenditoriale solida. Alla base di tutte le loro attività commerciali c’è un’enfasi costante sui concetti di “Sincerità e Creatività”, i valori gemelli racchiusi nel loro motto aziendale. Ricerca e sviluppo sono fondamentali per la strategia di crescita di LINTEC, come dimostrano gli investimenti continui in persone, prodotti e strutture. 200+ ricercatori e personale specializzato 7.6 miliardi di Yen (€56,990,142.18)* investiti durante l’ultimo anno fiscale nello sviluppo della prossima generazione di prodotti 80+ anni di innovazione Centro di ricerca, situato a Warabi-shi, Saitama-ken, Giappone Edificio tecnologico avanzato aggiuntivo inaugurato nel 2016 *XE Currency Converter Live rates 08/06/2021 Quali sono i vantaggi delle vetrofanie? Soluzione rapida ed economica. Rimozione semplice. Design accattivante. Grande varietà di soluzioni. Grazie all'ultra-trasparenza che le contraddistingue, le pellicole Vitrographic sono perfette per l'arredamento degli uffici! Quando immagini uno “spazio ufficio”, è probabile che il primo flash che ti viene in mente sia quella di cubicoli dalle pareti bianche e anonime. Per fortuna, questa non è più la norma. Il più delle volte, le aziende stanno facendo passi da gigante per rivoluzionare il modo in cui appare il loro spazio ufficio. Uno dei modi in cui lo fanno è abbracciare il colore, e le superfici vetrate possono essere un alleato in questo! Per dare un po’ di vita all’arredamento del tuo ufficio, prova ad allestire il tuo ufficio con colori vivaci. Questo non significa che devi dipingere il tuo ufficio di rosa acceso! Piuttosto significa che non dovresti aver paura di accentuare i colori del tuo marchio con alcuni elementi di design vitali. Nella maggior parte delle situazioni, dovresti provare a usare colori chiari per illuminare l’ufficio. I toni più scuri possono avere il loro posto, ma se usati in maniera preponderante daranno l’impressione di un ambiente più angusto e meno invitante di quello che è. Tonalità più luminose come arancione, verde acqua, giallo e blu invece daranno alle stanze una sensazione allegra ed edificante. Ad esempio, guarda l’audacia dei colori nell’ufficio vista sopra. Le pareti sono molto texturizzate e le immagini attirare l’attenzione su uno spettro più ampio di blu, gialli e rossi. I colori freddi come il blu, il verde, l’arancione e il corallo tendono ad essere rilassanti e piacevoli per gli occhi, rendendoli scelte azzeccate per uffici e ambienti in cui su vuole stimolare la creatività e aumentare la concentrazione. Se si vuole puntare al miglioramento dell’estetica dei propri uffici garantendo anche la privacy per i nostri impiegati la soluzione è sicuramente una grafica digitale. La loro estrema personalizzazione e la loro facile rimovibilità le rendono più adattabili alle esigenze della tua azienda rispetto a qualsiasi altra opzione a tua disposizione. Con le grafiche digitali puoi stampare tutto quello che la tua immaginazione ti fa desiderare! Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci Le Pellicole da stampa della serie Vitrographic® La pellicola VITROGRAPHIC® consente a designer e architetti di creare vetrate vivaci ed emozionanti, dalle grafiche per la privacy e la sicurezza, al design per interni, comunicazione visiva fino al branding creativo e alla pubblicità. Le pellicole sono prodotte in camera bianca per la massima trasparenza e qualità, garantendo una trasmissione della luce ottimale e distorsione minima. Una volta applicato al vetro sembra che il disegno sia stampato direttamente su di esso. 100% Senza PVC Le pellicole Vitrographic possono essere smaltite tranquillamente in discarica in quanto prive di PVC al 100%. Al confronto, una classica pellicola in PVC utilizzata per la decorazione contiene tra il 23 e il 38% di plastificante. Rimovibile in un unico pezzo Il ciclo di vita del prodotto è un elemento importante da considerare. Il nostro concetto “rimovibile in un unico pezzo” significa che, quando è necessario rinfrescare del design, la pellicola può essere rimossa in modo semplice ed efficiente. VITROGRAPHIC® E 2200ZC Il nostro prodotto di punta VITROGRAPHIC® E-2200ZC è realizzato con materiali ecologici al 100%, senza PVC ed è combinato con un adesivo con filtro UV al 99%. Inoltre ha uno speciale trattamento che previene i danni superficiali nelle aree non stampate (tipicamente causati dalla pulizia) aiutando a mantenere un aspetto perfettamente trasparente come il vetro. Pellicola stampabile a UV-inkjet per la decorazione del vetro, la privacy, la comunicazione visiva e la sicurezza. Il poliestere ultra-trasparente antigraffio Vitrographic® E-2200ZC 50µ lucido offre un’eccellente chiarezza ottica e stabilità dimensionale combinate con un buon solvente, umidità, temperatura elevata e prestazioni di blocco UV del 98% per cinque anni. Il topcoat è specificamente progettato per garantire una buona definizione di stampa e adesione degli inchiostri digitali UV. E-2200ZC è rivestito con adesivo acrilico ultra trasparente PUV ad alte prestazioni che mostra un’eccellente trasparenza ottica, deflusso e stabilità ai raggi UV. VITROGRAPHIC® E 1000ZC Vitrographic® E-1000ZC è progettato per la produzione di grafiche per finestre stampate digitalmente. E-1000ZC offre un’eccellente chiarezza ottica e stabilità dimensionale. Il rivestimento di finitura è appositamente studiato per garantire una buona adesione degli inchiostri a eco-solvente. E-1000ZC è rivestito con adesivo acrilico ultra-trasparente ad alte prestazioni NPL che mostra un’eccellente trasparenza ottica, fluidità e stabilità ai raggi UV. Pellicola stampabile ad EcoSolvent, per la decorazione del vetro, la privacy, la comunicazione visiva e la sicurezza. Oltre a garantire protezione e confort, i prodotti Madico, già insigniti di numerosi riconoscimenti, hanno la provata garanzia di incrementare il risparmio energetico e la conseguente riduzione di CO2 nell’atmosfera. La garanzia di un minor impatto ambientale può sembrare un dettaglio irrilevante, ma noi di Tecnosolar sappiamo bene che è fondamentale tutelare l’ambiente per garantire un futuro ai nostri figli. Come posso pulire queste pellicole? Il film ha trattamento per evitare graffi con la pulizia convenzionale. Può essere pulito con acqua saponata a pH neutro e un tira-acqua, come con il vetro normale. Prodotti abrasivi devono essere evitati. Il film è certificato antincendio? Queste pellicole sono state testate in conformità con le procedure indicate nella norma EN 13501-1: 2018: “Classificazione al fuoco dei prodotti e degli elementi da costruzione – Parte 1: Classificazione in base ai risultati delle prove di reazione al fuoco”. I certificati sono disponibili su richiesta. cos’è una vetrofania? Forse saprete tutti che la vetrofania è un foglio di materiale stampato a colori con decorazioni o scritte che si applica sulle superfici vetrate. Le applicazioni più comuni riguardano le vetrine di negozi o le finestre di casa, ma l’unico limite è la tua fantasia! Se siete intenzionati a lavorare con le vetrofanie ma non avete i numeri ed i mezzi per comprare un rotolo di Vitrographic abbiamo la soluzione per voi! Vi offriamo la possibilità di stampare le vostre vetrofanie sia in EcoSolvent che in UV. È una soluzione che ti permette di fare pubblicità a basso costo. In breve puoi acquisire una maggiore visibilità, migliorando l’aspetto della tua vetrina, rinnovandola ogni volta che vuoi in modo rapido ed economico in base al periodo dell’anno, dalle festività o delle necessità del tuo business! Vetrofanie ad UV La Stampa UV è un tipo di tecnologia di stampa digitale poco praticata fino a qualche anno fa in Italia, ma che sta prendendo sempre più piede, per gli ovvi vantaggi che comporta. Consiste nell’applicare inchiostro sui materiali per poi farlo asciugare con una lampada a raggi UV. Questa tecnica di stampa ha come peculiarità la rapida essiccazione, grazie alla luce Ultravioletta delle lampade a LED applicate sulla stampante. Le stampanti UV sono in grado di stampare rapidamente ed in maniera economica le vostre vetrofanie. Questo tipo di lavorazione permette di applicare delle finiture particolari che, con tecniche di stampa tradizionali, sarebbero altamente dispendiose per brevi tirature. Vetrofanie ad EcoSolvent La stampa con inchiostri EcoSolvente è indicata per ottenere un’alta qualità su grandi superfici esponibili sia all’interno che all’esterno. Sono resistenti ai raggi UV (Ultravioletti) e agli agenti atmosferici sono impermeabili e resistenti all’abrasione. In genere impiegano circa tre anni prima che l’inchiostro cominci ad attenuarsi. Con questa tecnologia quasi tutti i materiali possono essere laminati per prolungarne la durabilità nel tempo all’esposizione degli agenti atmosferici. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
+  "textLength": 10499,
+  "fetchedAt": "2026-04-28T15:09:46.241Z"
+}

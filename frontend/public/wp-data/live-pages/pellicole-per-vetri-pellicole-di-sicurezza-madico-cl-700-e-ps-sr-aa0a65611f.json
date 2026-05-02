@@ -1,0 +1,356 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr/",
+  "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr/",
+  "route": {
+    "type": "product",
+    "label": "Prodotto",
+    "newPath": "/prodotti/madico-cl-700-e-ps-sr/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/pellicole-sicurezza-sitemap.xml",
+  "seo": {
+    "title": "Pellicola di sicurezza Madico CL 700 E PS SR - Solaris Films",
+    "description": "",
+    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr/",
+    "og": {
+      "og:locale": "it_IT",
+      "og:type": "article",
+      "og:title": "Pellicola di sicurezza Madico CL 700 E PS SR",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr/",
+      "og:site_name": "Solaris Films",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/CL700EPSSR.webp",
+      "og:image:width": "1141",
+      "og:image:height": "1081",
+      "og:image:type": "image/webp"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:label1": "Tempo di lettura stimato",
+      "twitter:data1": "1 minuto"
+    },
+    "article": {
+      "article:modified_time": "2025-09-18T09:45:22+00:00"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-cl-700-e-ps-sr\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-cl-700-e-ps-sr\\/\",\"name\":\"Pellicola di sicurezza Madico CL 700 E PS SR - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-cl-700-e-ps-sr\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-cl-700-e-ps-sr\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/CL700EPSSR.webp\",\"datePublished\":\"2025-06-11T16:22:25+00:00\",\"dateModified\":\"2025-09-18T09:45:22+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-cl-700-e-ps-sr\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-cl-700-e-ps-sr\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-cl-700-e-ps-sr\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/CL700EPSSR.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/CL700EPSSR.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/madico-cl-700-e-ps-sr\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole di sicurezza\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-di-sicurezza\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pellicola di sicurezza Madico CL 700 E PS SR\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicola di sicurezza Madico CL 700 E PS SR"
+    },
+    {
+      "level": 3,
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "level": 2,
+      "text": "Pellicola certificata"
+    },
+    {
+      "level": 4,
+      "text": "Qualità ed affidabilità"
+    },
+    {
+      "level": 3,
+      "text": "Conforme alle normative"
+    },
+    {
+      "level": 6,
+      "text": "Vetro singolo 3 mm"
+    },
+    {
+      "level": 6,
+      "text": "Energia solare totale"
+    },
+    {
+      "level": 6,
+      "text": "Luce visibile"
+    },
+    {
+      "level": 6,
+      "text": "Totale energia respinta"
+    },
+    {
+      "level": 6,
+      "text": "Proprietà Fisiche"
+    },
+    {
+      "level": 6,
+      "text": "Tipo adesivo"
+    },
+    {
+      "level": 2,
+      "text": "10"
+    },
+    {
+      "level": 3,
+      "text": "anni di garanzia"
+    }
+  ],
+  "h1": "Pellicola di sicurezza Madico CL 700 E PS SR",
+  "primaryImage": "",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicola di sicurezza Madico CL 700 E PS SR",
+      "text": "Pellicola di sicurezza Madico CL 700 E PS SR"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<a href=\"https://www.solarisfilms.it/wp-content/uploads/2025/06/CL700EPSSR.pdf\">Consulta la scheda tecnica",
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Pellicola certificata",
+      "text": "Pellicola certificata"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola di sicurezza <a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Madico CL 700 E PS SR di Tecnosolar &#xE8; testata e certificata in conformit&#xE0; alla Norma Europea <a href=\"https://store.uni.com/?josso_back_to=http%3A%2F%2Fstore.uni.com%2Fjosso-security-check.php&amp;amp;josso_cmd=login_optional&amp;amp;josso_partnerapp_host=store.uni.com\" target=\"_blank\" rel=\"noopener noreferrer\">EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da interno <a href=\"/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr/\">CL 700 PS SR.",
+      "text": "La pellicola di sicurezza Madico CL 700 E PS SR di Tecnosolar è testata e certificata in conformità alla Norma Europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da interno CL 700 PS SR."
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "Qualit&#xE0; ed affidabilit&#xE0;",
+      "text": "Qualità ed affidabilità"
+    },
+    {
+      "type": "paragraph",
+      "html": "Prodotta con processi produttivi tecnologicamente innovativi con l&#x2019;utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualit&#xE0; ed affidabilit&#xE0;.",
+      "text": "Prodotta con processi produttivi tecnologicamente innovativi con l’utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualità ed affidabilità."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Conforme alle normative",
+      "text": "Conforme alle normative"
+    },
+    {
+      "type": "paragraph",
+      "html": "Consente la &#x201C;messa in sicurezza&#x201D; di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformit&#xE0; al <a href=\"https://it.wikipedia.org/wiki/Testo_unico_sulla_sicurezza_nei_luoghi_di_lavoro\" target=\"_blank\" rel=\"noopener noreferrer\">Testo Unico D.lgs. 81/2008.",
+      "text": "Consente la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformità al Testo Unico D.lgs. 81/2008."
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Offre una costante protezione antinfortunistica in caso di rottura del vetro.",
+          "text": "Offre una costante protezione antinfortunistica in caso di rottura del vetro."
+        },
+        {
+          "html": "Pu&#xF2; essere applicata su vetri gi&#xE0; esistenti con un&#x2019;operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attivit&#xE0; lavorativa.",
+          "text": "Può essere applicata su vetri già esistenti con un’operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attività lavorativa."
+        },
+        {
+          "html": "Garantisce una perfetta trasparenza, la visuale sar&#xE0; perfettamente cristallina con assenza di distorsioni ottiche, l&#x2019;intero intervento risulter&#xE0; praticamente invisibile.",
+          "text": "Garantisce una perfetta trasparenza, la visuale sarà perfettamente cristallina con assenza di distorsioni ottiche, l’intero intervento risulterà praticamente invisibile."
+        }
+      ],
+      "text": "Offre una costante protezione antinfortunistica in caso di rottura del vetro. Può essere applicata su vetri già esistenti con un’operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attività lavorativa. Garantisce una perfetta trasparenza, la visuale sarà perfettamente cristallina con assenza di distorsioni ottiche, l’intero intervento risulterà praticamente invisibile."
+    },
+    {
+      "type": "note",
+      "html": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola",
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-di-sicurezza-neutre-la-serie-cl/",
+      "text": "Vai al focus tecnico",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Vetro singolo 3 mm",
+      "text": "Vetro singolo 3 mm"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Energia solare totale",
+      "text": "Energia solare totale"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "80%",
+      "text": "Trasmessa 80%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa",
+      "value": "7%",
+      "text": "Riflessa 7%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Assorbita",
+      "value": "13%",
+      "text": "Assorbita 13%",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Luce visibile",
+      "text": "Luce visibile"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "90%",
+      "text": "Trasmessa 90%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa - Esterno",
+      "value": "8%",
+      "text": "Riflessa - Esterno 8%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riduzione abbaglio",
+      "value": "1%",
+      "text": "Riduzione abbaglio 1%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Infrarossi respinti",
+      "value": "19%",
+      "text": "Infrarossi respinti 19%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Raggi UV trasmessi (max)",
+      "value": "1%",
+      "text": "Raggi UV trasmessi (max) 1%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Coefficiente schermatura",
+      "value": "0.97",
+      "text": "Coefficiente schermatura 0.97",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Fattore solare g",
+      "value": "0.84",
+      "text": "Fattore solare g 0.84",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Totale energia respinta",
+      "text": "Totale energia respinta"
+    },
+    {
+      "type": "metric",
+      "label": "Energia Respinta",
+      "value": "16%",
+      "text": "Energia Respinta 16%",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Propriet&#xE0; Fisiche",
+      "text": "Proprietà Fisiche"
+    },
+    {
+      "type": "metric",
+      "label": "Spessore",
+      "value": "175",
+      "text": "Spessore 175",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Res. Trazione",
+      "value": "172",
+      "text": "Res. Trazione 172",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Res. Rottura",
+      "value": "30.65",
+      "text": "Res. Rottura 30.65",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Forza adesiva",
+      "value": "1.05",
+      "text": "Forza adesiva 1.05",
+      "html": ""
+    },
+    {
+      "type": "paragraph",
+      "html": "Acrilico sensibile alla pressione",
+      "text": "Acrilico sensibile alla pressione"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Tipo adesivo",
+      "text": "Tipo adesivo"
+    },
+    {
+      "type": "paragraph",
+      "html": "Singolo strato",
+      "text": "Singolo strato"
+    },
+    {
+      "type": "paragraph",
+      "html": "Struttura",
+      "text": "Struttura"
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai bisogno di una pellicola antisolare? Consulta il nostro&#xA0;<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/\">approfondimento sulle pellicole antisolari&#xA0;per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>10",
+      "text": "10"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>anni di garanzia",
+      "text": "anni di garanzia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <span>pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicola di sicurezza Madico CL 700 E PS SR Consulta la scheda tecnica Pellicola certificata La pellicola di sicurezza Madico CL 700 E PS SR di Tecnosolar è testata e certificata in conformità alla Norma Europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da interno CL 700 PS SR. Qualità ed affidabilità Prodotta con processi produttivi tecnologicamente innovativi con l’utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualità ed affidabilità. Conforme alle normative Consente la “messa in sicurezza” di qualsiasi superficie vetrata obbligatoria sui luoghi di lavori in conformità al Testo Unico D.lgs. 81/2008. Offre una costante protezione antinfortunistica in caso di rottura del vetro. Può essere applicata su vetri già esistenti con un’operazione semplice, veloce, sicura ed economica, senza dover modificare gli infissi o interrompere la normale attività lavorativa. Garantisce una perfetta trasparenza, la visuale sarà perfettamente cristallina con assenza di distorsioni ottiche, l’intero intervento risulterà praticamente invisibile. Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico Vetro singolo 3 mm Energia solare totale Trasmessa 80% Riflessa 7% Assorbita 13% Luce visibile Trasmessa 90% Riflessa - Esterno 8% Riduzione abbaglio 1% Infrarossi respinti 19% Raggi UV trasmessi (max) 1% Coefficiente schermatura 0.97 Fattore solare g 0.84 Totale energia respinta Energia Respinta 16% Proprietà Fisiche Spessore 175 Res. Trazione 172 Res. Rottura 30.65 Forza adesiva 1.05 Acrilico sensibile alla pressione Tipo adesivo Singolo strato Struttura Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole! 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 1983,
+  "fetchedAt": "2026-04-28T15:09:19.063Z"
+}

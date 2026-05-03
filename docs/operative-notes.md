@@ -7,8 +7,8 @@ Aggiornato: 2026-05-03
 - Sito staging: `C:\Users\Utente\Documents\Codex\vercel`
 - Repo GitHub sito: `https://github.com/jcappelliemer/vercel`
 - Branch sito: `main`
-- Ultimo commit codice verificato: `82ef9d3 Prefer sector chatbot references`
-- Ultimo deploy staging verificato: `dpl_BTDU8rbwdfNtqEWYotfnwfBFc8T1`, `Ready`, 2026-05-03 12:01 Europe/London
+- Ultimo commit codice verificato: commit corrente `Fix mobile menu overlay`
+- Ultimo deploy staging verificato: `dpl_6c8FVwLuLmx1mCiJWGUBN6wFhRMw`, `Ready`, 2026-05-03 13:00 Europe/London
 - CRM: `C:\Users\Utente\Documents\Codex\crm-github-check`
 - Repo GitHub CRM: `https://github.com/jcappelliemer/crm`
 - Backend CRM: `https://crm.solarisfilms.it`
@@ -35,17 +35,22 @@ Aggiornato: 2026-05-03
 ## Verifiche recenti
 
 - Build frontend passata con `npm run build`.
-- Home staging: `200 OK`.
+- Deploy Vercel staging: `dpl_6c8FVwLuLmx1mCiJWGUBN6wFhRMw`, alias `https://solarisfilms.vercel.app`, bundle verificato `main.a5afea36.js`.
+- Home staging e pagine campione: `200 OK` su `/`, `/preventivo`, `/contatti`, `/servizi`, antisolare, SafetyShield 800, approfondimento, servizio locale Milano e `/mappa-sito`.
+- QA browser Chromium desktop/mobile: nessun errore console; menu mobile corretto come overlay pieno e opaco; megamenu desktop leggibile dopo transizione; scroll home fino al footer OK.
+- Form staging: contatto, preventivo e lead chatbot creati con marker `TEST QA CODEX ELIMINABILE QA STAGING 20260503` e rimossi dal CRM; conteggio finale marker `0`.
 - Chatbot API: `knowledge_status: ok`.
 - Chatbot API verificata con fonti esterne: query sicurezza mostra IWFA `sector`; query controllo solare mostra DOE/NFRC `sector`; la risposta avvisa che fonti esterne, posa e conformita richiedono verifica Solaris.
 - Asset principali reali: `/wp-data/images/logo.png`, `/wp-data/images/hero.jpg`, `/assets/solaris-logo.png`: `200 OK`.
 - Alias asset radice `/logo.png` e `/hero.jpg`: `200 OK`, content-type immagine.
 - Sitemap staging pubblica: `200 OK`, contiene solo URL `https://solarisfilms.vercel.app`.
+- `/api/chat/lead` respinge payload incompleti con `422`.
+- Il build remoto Vercel ha usato i JSON fallback per timeout temporanei sugli endpoint WordPress headless; deploy completato e QA staging passata.
 - Il mirror SEO continua a leggere il live come fonte, ma `frontend/fetch-live-site.js` usa `SITE_ORIGIN` separato per l'output sitemap.
 - Knowledge CRM pubblica: `POST /api/public/chatbot/knowledge/search` richiede campo `message`, non `query`.
 
 ## Prossimi blocchi
 
-1. QA staging completo: home, menu, pagine importate, link interni, mobile, form e chatbot.
-2. Allineamento lead: distinguere origine `sito`, `chatbot`, `email`, `whatsapp`.
-3. Test SEO staging con Orchestra, senza redirect e senza migrazione live.
+1. Allineamento lead: distinguere origine `sito`, `chatbot`, `email`, `whatsapp`.
+2. Test SEO staging con Orchestra, senza redirect e senza migrazione live.
+3. Hardening fetch WordPress/headless in build: ridurre timeout e fallback rumorosi prima della migrazione live.

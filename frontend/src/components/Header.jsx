@@ -757,13 +757,13 @@ const Header = () => {
       <AnimatePresence>
         {isMobileMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="xl:hidden bg-[#111827] border-t border-white/10"
+            initial={{ opacity: 0, y: -8 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -8 }}
+            className="fixed left-0 right-0 top-20 z-[110] h-[calc(100vh-5rem)] xl:hidden bg-[#111827] border-t border-white/10 shadow-2xl lg:top-24 lg:h-[calc(100vh-6rem)]"
             data-testid="mobile-menu"
           >
-            <div className="max-h-[calc(100vh-5rem)] overflow-y-auto px-6 py-6">
+            <div className="h-full overflow-y-auto px-6 py-6">
               {navLinks.map((link) => (
                 <MobileMenuNode
                   key={link.name}

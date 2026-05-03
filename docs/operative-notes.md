@@ -7,8 +7,8 @@ Aggiornato: 2026-05-03
 - Sito staging: `C:\Users\Utente\Documents\Codex\vercel`
 - Repo GitHub sito: `https://github.com/jcappelliemer/vercel`
 - Branch sito: `main`
-- Ultimo commit codice verificato: `81e99a1 Fix mobile menu overlay`
-- Ultimo deploy staging verificato: ultimo deploy Git automatico `Ready` su `https://solarisfilms.vercel.app`, 2026-05-03 13:06 Europe/London
+- Ultimo commit funzionale verificato: `4bbfd91 Remove static duplicate meta description`
+- Ultimo deploy staging verificato: ultimo deploy Git automatico `Ready` su `https://solarisfilms.vercel.app`, 2026-05-03 14:03 Europe/London
 - CRM: `C:\Users\Utente\Documents\Codex\crm-github-check`
 - Repo GitHub CRM: `https://github.com/jcappelliemer/crm`
 - Backend CRM: `https://crm.solarisfilms.it`
@@ -35,7 +35,7 @@ Aggiornato: 2026-05-03
 ## Verifiche recenti
 
 - Build frontend passata con `npm run build`.
-- Deploy Vercel staging: alias `https://solarisfilms.vercel.app`, bundle verificato `main.a5afea36.js`; non fissare un ID deploy nelle note per evitare di renderlo obsoleto a ogni commit note-only.
+- Deploy Vercel staging: alias `https://solarisfilms.vercel.app`; non fissare un ID deploy nelle note per evitare di renderlo obsoleto a ogni commit note-only.
 - Home staging e pagine campione: `200 OK` su `/`, `/preventivo`, `/contatti`, `/servizi`, antisolare, SafetyShield 800, approfondimento, servizio locale Milano e `/mappa-sito`.
 - QA browser Chromium desktop/mobile: nessun errore console; menu mobile corretto come overlay pieno e opaco; megamenu desktop leggibile dopo transizione; scroll home fino al footer OK.
 - Form staging: contatto, preventivo e lead chatbot creati con marker `TEST QA CODEX ELIMINABILE QA STAGING 20260503` e rimossi dal CRM; conteggio finale marker `0`.
@@ -44,6 +44,10 @@ Aggiornato: 2026-05-03
 - Asset principali reali: `/wp-data/images/logo.png`, `/wp-data/images/hero.jpg`, `/assets/solaris-logo.png`: `200 OK`.
 - Alias asset radice `/logo.png` e `/hero.jpg`: `200 OK`, content-type immagine.
 - Sitemap staging pubblica: `200 OK`, contiene solo URL `https://solarisfilms.vercel.app`.
+- SEO staging Chromium: 6 pagine campione OK; una sola meta description per pagina, title validi, canonical su path corrente staging, `noindex,nofollow` presente.
+- `/robots.txt`: text/plain dinamico; staging/preview `Disallow: /`, live `Allow: /` con sitemap live.
+- `/llms.txt`: text/plain dinamico Solaris-oriented, con Solaris come riferimento operativo e link principali live.
+- Pagine mirror: title/meta locali migliorati, es. `Pellicole per vetri Milano | Solaris Films`; canonical non punta piu ai path normalizzati interni.
 - `/api/chat/lead` respinge payload incompleti con `422`.
 - Il build remoto Vercel ha usato i JSON fallback per timeout temporanei sugli endpoint WordPress headless; deploy completato e QA staging passata.
 - Il mirror SEO continua a leggere il live come fonte, ma `frontend/fetch-live-site.js` usa `SITE_ORIGIN` separato per l'output sitemap.
@@ -51,6 +55,6 @@ Aggiornato: 2026-05-03
 
 ## Prossimi blocchi
 
-1. Allineamento lead: distinguere origine `sito`, `chatbot`, `email`, `whatsapp`.
-2. Test SEO staging con Orchestra, senza redirect e senza migrazione live.
-3. Hardening fetch WordPress/headless in build: ridurre timeout e fallback rumorosi prima della migrazione live.
+1. Decisione go-live: collegare dominio `solarisfilms.it`/`www.solarisfilms.it` al progetto Vercel e verificare DNS/SSL.
+2. Dopo go-live: verificare `robots.txt` live `Allow: /`, sitemap live con dominio live, canonical live e rimozione `noindex`.
+3. Hardening non bloccante: ridurre timeout e log rumorosi del fetch WordPress/headless in build.

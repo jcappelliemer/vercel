@@ -1,7 +1,7 @@
 const LIVE_HOSTS = new Set(['solarisfilms.it', 'www.solarisfilms.it']);
 
 function hostnameFromRequest(req) {
-  return String(req.headers['x-forwarded-host'] || req.headers.host || '')
+  return String(req.headers.host || '')
     .split(',')[0]
     .trim()
     .replace(/:\d+$/, '')

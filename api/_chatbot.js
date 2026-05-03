@@ -315,6 +315,13 @@ function isSolarisKnowledgeSource(source) {
   return ['solaris', 'internal'].includes(source?.source_type);
 }
 
+function preferredExternalReference(sources) {
+  const externalSources = sources.filter((source) => !isSolarisKnowledgeSource(source));
+  return externalSources.find((source) => source.source_type === 'sector')
+    || externalSources.find((source) => source.source_type === 'producer')
+    || externalSources[0];
+}
+
 function buildKnowledgeResponse(message, knowledge = {}) {
   const sources = Array.isArray(knowledge.sources) ? knowledge.sources : [];
   if (!sources.length) return '';
@@ -329,7 +336,7 @@ function buildKnowledgeResponse(message, knowledge = {}) {
     .slice(0, 2);
   const references = sources
     .slice(0, 3);
-  const firstExternalSource = sources.find((source) => !isSolarisKnowledgeSource(source));
+  const firstExternalSource = preferredExternalReference(sources);
   if (firstExternalSource && !references.some((source) => source.title === firstExternalSource.title)) {
     references.push(firstExternalSource);
   }

@@ -8,7 +8,7 @@ Aggiornato: 2026-05-03
 - Repo GitHub sito: `https://github.com/jcappelliemer/vercel`
 - Branch sito: `main`
 - Ultimo commit codice verificato: `81e99a1 Fix mobile menu overlay`
-- Ultimo deploy staging verificato: `dpl_FLiBpjfyz4Wz58uCZufT1KCsLMQm`, `Ready`, 2026-05-03 13:05 Europe/London
+- Ultimo deploy staging verificato: ultimo deploy Git automatico `Ready` su `https://solarisfilms.vercel.app`, 2026-05-03 13:06 Europe/London
 - CRM: `C:\Users\Utente\Documents\Codex\crm-github-check`
 - Repo GitHub CRM: `https://github.com/jcappelliemer/crm`
 - Backend CRM: `https://crm.solarisfilms.it`
@@ -35,7 +35,7 @@ Aggiornato: 2026-05-03
 ## Verifiche recenti
 
 - Build frontend passata con `npm run build`.
-- Deploy Vercel staging: `dpl_FLiBpjfyz4Wz58uCZufT1KCsLMQm`, alias `https://solarisfilms.vercel.app`, bundle verificato `main.a5afea36.js`.
+- Deploy Vercel staging: alias `https://solarisfilms.vercel.app`, bundle verificato `main.a5afea36.js`; non fissare un ID deploy nelle note per evitare di renderlo obsoleto a ogni commit note-only.
 - Home staging e pagine campione: `200 OK` su `/`, `/preventivo`, `/contatti`, `/servizi`, antisolare, SafetyShield 800, approfondimento, servizio locale Milano e `/mappa-sito`.
 - QA browser Chromium desktop/mobile: nessun errore console; menu mobile corretto come overlay pieno e opaco; megamenu desktop leggibile dopo transizione; scroll home fino al footer OK.
 - Form staging: contatto, preventivo e lead chatbot creati con marker `TEST QA CODEX ELIMINABILE QA STAGING 20260503` e rimossi dal CRM; conteggio finale marker `0`.

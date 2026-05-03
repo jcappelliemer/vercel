@@ -365,7 +365,7 @@ function createChatResponse(message, knowledge = {}) {
   }
 
   if (text.includes('madico')) {
-    return 'Solaris Films distribuisce soluzioni MADICO USA in Italia. Per scegliere il prodotto giusto conviene partire dall’esigenza: controllo solare, sicurezza, privacy o riqualificazione energetica.';
+    return "Solaris Films distribuisce soluzioni MADICO USA in Italia. Per scegliere il prodotto giusto conviene partire dall'esigenza: controllo solare, sicurezza, privacy o riqualificazione energetica.";
   }
 
   return 'Posso aiutarti a orientarti tra pellicole antisolari, Safety Shield, privacy/decorative e consulenza tecnica. Dimmi che problema vuoi risolvere, oppure lascia i dati nel modulo del chatbot per far gestire la richiesta al team Solaris.';

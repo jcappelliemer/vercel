@@ -11,7 +11,20 @@ const https = require('https');
 const crypto = require('crypto');
 const { parseDocument, DomUtils } = require('htmlparser2');
 
-const LIVE_ORIGIN = process.env.REACT_APP_LIVE_ORIGIN || 'https://www.solarisfilms.it';
+function normalizeOrigin(value, fallback) {
+  const raw = String(value || fallback || '').trim().replace(/\/+$/, '');
+  if (!raw) return '';
+  return /^https?:\/\//i.test(raw) ? raw : `https://${raw}`;
+}
+
+const LIVE_ORIGIN = normalizeOrigin(process.env.REACT_APP_LIVE_ORIGIN || process.env.LIVE_ORIGIN, 'https://www.solarisfilms.it');
+const SITE_ORIGIN = normalizeOrigin(
+  process.env.REACT_APP_SITE_ORIGIN
+    || process.env.SITE_ORIGIN
+    || process.env.VERCEL_PROJECT_PRODUCTION_URL
+    || process.env.VERCEL_URL,
+  'https://solarisfilms.vercel.app'
+);
 const SITEMAP_INDEX = `${LIVE_ORIGIN}/sitemap_index.xml`;
 const OUTPUT_DIR = path.join(__dirname, 'public', 'wp-data');
 const PAGES_DIR = path.join(OUTPUT_DIR, 'live-pages');
@@ -708,7 +721,7 @@ async function buildPageRecord(entry, index, total) {
 function buildSitemap(pages) {
   const urls = pages
     .filter((page) => !/noindex/i.test(page.seo.robots || ''))
-    .map((page) => `  <url><loc>${LIVE_ORIGIN}${page.route.newPath}</loc></url>`)
+    .map((page) => `  <url><loc>${SITE_ORIGIN}${page.route.newPath}</loc></url>`)
     .join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;

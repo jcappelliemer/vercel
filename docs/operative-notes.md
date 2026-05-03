@@ -7,7 +7,7 @@ Aggiornato: 2026-05-02
 - Sito staging: `C:\Users\Utente\Documents\Codex\vercel`
 - Repo GitHub sito: `https://github.com/jcappelliemer/vercel`
 - Branch sito: `main`
-- Ultimo commit pubblicato: `66983ff Align staging site with CRM chatbot`
+- Ultimo commit pubblicato: `b589f42 Improve chatbot snippet formatting`
 - CRM: `C:\Users\Utente\Documents\Codex\crm-github-check`
 - Repo GitHub CRM: `https://github.com/jcappelliemer/crm`
 - Backend CRM: `https://crm.solarisfilms.it`
@@ -35,8 +35,12 @@ Aggiornato: 2026-05-02
 - Build frontend passata con `npm run build`.
 - Home staging: `200 OK`.
 - Chatbot API: `knowledge_status: ok`.
-- Asset principali `logo.png` e `hero.jpg`: `200 OK`.
-- Sitemap staging: `200 OK`.
+- Asset principali reali: `/wp-data/images/logo.png`, `/wp-data/images/hero.jpg`, `/assets/solaris-logo.png`: `200 OK`.
+- Patch locale: alias asset radice `/logo.png` e `/hero.jpg` aggiunti in `vercel.json`; da verificare dopo deploy staging.
+- Sitemap staging pubblica: `200 OK`; prima della patch locale conteneva URL live.
+- Patch locale: sitemap rigenerata con origin `https://solarisfilms.vercel.app`.
+- Patch locale: il mirror SEO continua a leggere il live come fonte, ma `frontend/fetch-live-site.js` usa `SITE_ORIGIN` separato per l'output sitemap.
+- Knowledge CRM pubblica: `POST /api/public/chatbot/knowledge/search` richiede campo `message`, non `query`.
 
 ## Prossimi blocchi
 

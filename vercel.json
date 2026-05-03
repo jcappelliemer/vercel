@@ -1,5 +1,7 @@
 {
   "rewrites": [
+    { "source": "/logo.png", "destination": "/wp-data/images/logo.png" },
+    { "source": "/hero.jpg", "destination": "/wp-data/images/hero.jpg" },
     { "source": "/((?!api/).*)", "destination": "/index.html" }
   ],
   "headers": [

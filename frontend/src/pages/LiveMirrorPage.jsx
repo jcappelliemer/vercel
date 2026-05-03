@@ -16,14 +16,78 @@ const normalizePath = (pathname) => {
   return pathname.endsWith('/') ? pathname : `${pathname}/`;
 };
 
-const LivePageSEO = ({ page }) => {
+const titleCaseIfUpper = (value = '') => {
+  const trimmed = value.trim();
+  if (!trimmed || trimmed !== trimmed.toUpperCase()) return trimmed;
+  return trimmed
+    .toLocaleLowerCase('it')
+    .replace(/(^|\s|-)([a-z])/g, (match) => match.toLocaleUpperCase('it'));
+};
+
+const getLocalCityName = (page) => {
+  const seoTitle = cleanTitle(page?.seo?.title || page?.title || '');
+  const routeSlug = (page?.route?.newPath || page?.path || '')
+    .split('/')
+    .filter(Boolean)
+    .pop();
+  const fromTitle = seoTitle
+    .replace(/^pellicole\s+per\s+vetri\s+/i, '')
+    .trim();
+  const raw = fromTitle && fromTitle.length <= 40 ? fromTitle : routeSlug || '';
+  return titleCaseIfUpper(raw.replace(/-/g, ' '));
+};
+
+const livePageTitle = (page, { includeSite = false } = {}) => {
+  const routeType = page?.route?.type;
+
+  if (routeType === 'local-service') {
+    const city = getLocalCityName(page);
+    const base = city ? `Pellicole per vetri ${city}` : 'Pellicole per vetri';
+    return includeSite ? `${base} | ${SITE_NAME}` : base;
+  }
+
+  const rawTitle = titleCaseIfUpper(
+    cleanTitle(page?.seo?.title || page?.title || page?.h1 || '')
+  );
+  const base = rawTitle || page?.route?.label || SITE_NAME;
+  return includeSite && !base.includes(SITE_NAME) ? `${base} | ${SITE_NAME}` : base;
+};
+
+const cleanText = (value = '') => String(value)
+  .replace(/<[^>]+>/g, ' ')
+  .replace(/\s+/g, ' ')
+  .trim();
+
+const trimMeta = (value = '', max = 155) => {
+  const cleaned = cleanText(value);
+  if (cleaned.length <= max) return cleaned;
+  const cut = cleaned.slice(0, max - 1);
+  return `${cut.slice(0, cut.lastIndexOf(' ') > 80 ? cut.lastIndexOf(' ') : cut.length).trim()}...`;
+};
+
+const livePageDescription = (page) => {
+  const seoDescription = cleanText(page?.seo?.description || '');
+  const genericDescription = /^Solaris Films\s+-\s+Distributore esclusivo/i.test(seoDescription);
+  if (seoDescription && !genericDescription) return trimMeta(seoDescription);
+
+  if (page?.route?.type === 'local-service') {
+    const city = getLocalCityName(page);
+    return trimMeta(`Solaris Films installa pellicole per vetri MADICO a ${city || 'livello locale'}: controllo solare, sicurezza, privacy e sopralluogo tecnico.`);
+  }
+
+  return trimMeta(firstParagraph(page?.contentBlocks || []) || seoDescription || 'Solaris Films installa pellicole per vetri MADICO per controllo solare, sicurezza, privacy e protezione professionale degli edifici.');
+};
+
+const LivePageSEO = ({ page, currentPath }) => {
   const seo = page?.seo || {};
   if (!page) return null;
-  const canonicalPath = page.route?.newPath || page.path || '/';
+  const canonicalPath = currentPath || page.path || '/';
   const isLiveHost = typeof window === 'undefined' || LIVE_HOSTS.has(window.location.hostname);
   const canonical = typeof window !== 'undefined'
     ? new URL(canonicalPath, window.location.origin).toString()
     : seo.canonical;
+  const title = livePageTitle(page, { includeSite: true });
+  const description = livePageDescription(page);
   const robots = isLiveHost
     ? (seo.robots || 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
     : 'noindex, nofollow';
@@ -34,8 +98,8 @@ const LivePageSEO = ({ page }) => {
 
   return (
     <Helmet>
-      {seo.title && <title>{seo.title}</title>}
-      {seo.description && <meta name="description" content={seo.description} />}
+      <title>{title}</title>
+      <meta name="description" content={description} />
       <meta name="robots" content={robots} />
       {canonical && <link rel="canonical" href={canonical} />}
       {Object.entries(seo.og || {}).map(([property, content]) => (
@@ -75,8 +139,8 @@ const routeSectionPath = (page) => {
 };
 
 const buildLiveSchemas = (page, canonicalPath) => {
-  const title = page.h1 || cleanTitle(page.seo?.title) || SITE_NAME;
-  const description = page.seo?.description || firstParagraph(page.contentBlocks) || '';
+  const title = livePageTitle(page);
+  const description = livePageDescription(page);
   const canonicalUrl = `${BASE_URL}${canonicalPath}`;
   const sectionName = routeSectionName(page);
   const sectionPath = routeSectionPath(page);
@@ -245,8 +309,10 @@ const ContentBlocks = ({ blocks, title }) => {
 
 const LiveContent = ({ page }) => {
   const blocks = page.contentBlocks || [];
-  const title = page.h1 || cleanTitle(page.seo?.title) || 'Solaris Films';
-  const description = page.seo?.description || firstParagraph(blocks);
+  const title = page.route?.type === 'local-service'
+    ? livePageTitle(page)
+    : page.h1 || cleanTitle(page.seo?.title) || 'Solaris Films';
+  const description = livePageDescription(page) || firstParagraph(blocks);
   const route = page.route || {};
   const label = route.label || 'Solaris Films';
   const pdfHref = blocks.map(pdfHrefFromBlock).find(Boolean);
@@ -418,7 +484,7 @@ const LiveMirrorPage = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C] live-mirror-page" data-testid="live-mirror-page">
-      <LivePageSEO page={resolvedPage} />
+      <LivePageSEO page={resolvedPage} currentPath={currentPath} />
       <Header />
       <LiveContent page={resolvedPage} />
       <Footer />

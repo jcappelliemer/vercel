@@ -267,7 +267,7 @@ async function fetchKnowledgeContext({ message, pagePath }) {
       body: JSON.stringify({
         message,
         page_path: pagePath || '',
-        limit: 4,
+        limit: 6,
       }),
     });
     if (!response.ok) {
@@ -328,7 +328,12 @@ function buildKnowledgeResponse(message, knowledge = {}) {
     .filter(Boolean)
     .slice(0, 2);
   const references = sources
-    .slice(0, 3)
+    .slice(0, 3);
+  const firstExternalSource = sources.find((source) => !isSolarisKnowledgeSource(source));
+  if (firstExternalSource && !references.some((source) => source.title === firstExternalSource.title)) {
+    references.push(firstExternalSource);
+  }
+  const referenceText = references
     .map((source) => `${source.title} (${sourceTypeLabel(source.source_type)})`)
     .join(', ');
 
@@ -357,7 +362,7 @@ function buildKnowledgeResponse(message, knowledge = {}) {
     ? '\n\nLe fonti esterne sono riferimenti tecnici classificati: prodotto, posa e conformita vanno sempre verificati da Solaris sul caso specifico.'
     : '';
 
-  return `${opener} ${body}\n\nRiferimenti usati: ${references}.${externalNote}\n\nSe mi lasci citta, metri quadri indicativi e una foto o descrizione delle vetrate, passo la richiesta al team Solaris con il contesto della chat.`;
+  return `${opener} ${body}\n\nRiferimenti usati: ${referenceText}.${externalNote}\n\nSe mi lasci citta, metri quadri indicativi e una foto o descrizione delle vetrate, passo la richiesta al team Solaris con il contesto della chat.`;
 }
 
 function createChatResponse(message, knowledge = {}) {

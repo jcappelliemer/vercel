@@ -9,7 +9,11 @@ const HIGH_PRIORITY_TERMS = [
   'blast',
   'sicurezza',
   'antisfondamento',
+  'antiproiettile',
+  'bulletproof',
   'intrusione',
+  'scuola',
+  'scuole',
   'urgente',
 ];
 
@@ -303,8 +307,12 @@ function sourceTypeLabel(value) {
     producer: 'produttore',
     regulation: 'normativa',
     sector: 'settore',
-    competitor: 'settore',
+    competitor: 'fonte esterna',
   }[value] || 'fonte';
+}
+
+function isSolarisKnowledgeSource(source) {
+  return ['solaris', 'internal'].includes(source?.source_type);
 }
 
 function buildKnowledgeResponse(message, knowledge = {}) {
@@ -313,6 +321,8 @@ function buildKnowledgeResponse(message, knowledge = {}) {
 
   const text = normalizeForSearch(message);
   const top = sources[0];
+  const hasSolarisSources = sources.some(isSolarisKnowledgeSource);
+  const hasExternalSources = sources.some((source) => !isSolarisKnowledgeSource(source));
   const highlights = sources
     .map((source) => relevantHighlight(source, knowledge.tokens))
     .filter(Boolean)
@@ -322,8 +332,13 @@ function buildKnowledgeResponse(message, knowledge = {}) {
     .map((source) => `${source.title} (${sourceTypeLabel(source.source_type)})`)
     .join(', ');
 
-  let opener = 'Ho trovato informazioni nella knowledge base Solaris.';
-  if (text.includes('safety') || text.includes('sicurezza') || text.includes('antisfondamento') || text.includes('anti esplosione') || text.includes('antiesplosione')) {
+  let opener = hasExternalSources
+    ? 'Ho trovato informazioni nella knowledge base Solaris e in fonti tecniche esterne classificate.'
+    : 'Ho trovato informazioni nella knowledge base Solaris.';
+  if (hasExternalSources && !hasSolarisSources) {
+    opener = 'Ho trovato riferimenti tecnici esterni classificati nella knowledge base.';
+  }
+  if (text.includes('safety') || text.includes('sicurezza') || text.includes('antisfondamento') || text.includes('antiproiettile') || text.includes('bulletproof') || text.includes('anti esplosione') || text.includes('antiesplosione')) {
     opener = 'Per una richiesta di sicurezza o Safety Shield partirei da obiettivo, tipo di vetro e livello di rischio.';
   } else if (text.includes('caldo') || text.includes('sole') || text.includes('antisolare') || text.includes('abbagliamento')) {
     opener = 'Per caldo, sole e abbagliamento la scelta va fatta su esposizione, superficie vetrata e trasparenza desiderata.';
@@ -338,8 +353,11 @@ function buildKnowledgeResponse(message, knowledge = {}) {
   const body = highlights.length
     ? `Dalle fonti attive risulta questo: ${highlights.join(' ')}`
     : 'Posso orientarti sulle famiglie di pellicole e poi passare la richiesta al team tecnico per una verifica puntuale.';
+  const externalNote = hasExternalSources
+    ? '\n\nLe fonti esterne sono riferimenti tecnici classificati: prodotto, posa e conformita vanno sempre verificati da Solaris sul caso specifico.'
+    : '';
 
-  return `${opener} ${body}\n\nRiferimenti usati: ${references}.\n\nSe mi lasci citta, metri quadri indicativi e una foto o descrizione delle vetrate, passo la richiesta al team Solaris con il contesto della chat.`;
+  return `${opener} ${body}\n\nRiferimenti usati: ${references}.${externalNote}\n\nSe mi lasci citta, metri quadri indicativi e una foto o descrizione delle vetrate, passo la richiesta al team Solaris con il contesto della chat.`;
 }
 
 function createChatResponse(message, knowledge = {}) {

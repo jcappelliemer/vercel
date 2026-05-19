@@ -1,11 +1,11 @@
 import LiveMirrorPage from '@/pages/LiveMirrorPage';
-import { getMirrorStaticProps } from '../src/next/liveData.server';
+import { getCatchAllPaths, getMirrorStaticProps } from '../src/next/liveData.server';
 
 export default LiveMirrorPage;
 
 export const getStaticPaths = async () => ({
-  paths: [],
-  fallback: 'blocking',
+  paths: getCatchAllPaths(),
+  fallback: false,
 });
 
 export const getStaticProps = async ({ params }) => {

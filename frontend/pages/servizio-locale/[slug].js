@@ -5,7 +5,7 @@ export default LiveMirrorPage;
 
 export const getStaticPaths = async () => ({
   paths: getPathsByRoutePrefix('/servizio-locale/'),
-  fallback: 'blocking',
+  fallback: false,
 });
 
 export const getStaticProps = async ({ params }) => {

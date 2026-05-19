@@ -84,6 +84,39 @@ export const getAllMirrorPaths = () => {
     .map((joined) => ({ params: { slug: joined.split('/') } }));
 };
 
+const EXCLUDED_CATCH_ALL_PREFIXES = [
+  '/blog/',
+  '/focus-tecnico/',
+  '/info/',
+  '/prodotti/',
+  '/servizio-locale/',
+];
+
+const EXCLUDED_CATCH_ALL_EXACT = new Set([
+  '/servizi/',
+  '/company-profile/',
+  '/contatti/',
+  '/guida-tecnica/',
+  '/mappa-sito/',
+  '/preventivo/',
+  '/privacy-policy/',
+  '/lo-sapevi-che/',
+]);
+
+export const getCatchAllPaths = () => {
+  const index = readLiveIndex();
+  const paths = (index.pages || [])
+    .map((item) => normalizePath(item.route?.newPath || item.path || '/'))
+    .filter((pathname) => pathname !== '/')
+    .filter((pathname) => !EXCLUDED_CATCH_ALL_EXACT.has(pathname))
+    .filter((pathname) => !EXCLUDED_CATCH_ALL_PREFIXES.some((prefix) => pathname.startsWith(prefix)))
+    .map((pathname) => pathname.replace(/\/$/, '').split('/').filter(Boolean));
+
+  return Array.from(new Set(paths.map((segments) => segments.join('/'))))
+    .filter(Boolean)
+    .map((joined) => ({ params: { slug: joined.split('/') } }));
+};
+
 export const getDirectoryStaticProps = () => {
   const index = readLiveIndex();
   return {

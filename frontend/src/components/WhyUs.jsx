@@ -1,12 +1,12 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import { ArrowRight, CheckCircle } from '@phosphor-icons/react';
 
 const benefits = [
   'Nessun lavoro strutturale invasivo',
   'Installazione rapida senza interruzioni',
   'Risparmio energetico fino al 50%',
-  'Conformità normative D.Lgs. 81/2008',
+  'Conformita normative D.Lgs. 81/2008',
   'Personale altamente specializzato',
   'Assistenza post-installazione garantita',
 ];
@@ -26,14 +26,14 @@ const WhyUs = () => {
           >
             <div className="relative rounded-2xl overflow-hidden border border-white/10">
               <img 
-                src="https://images.pexels.com/photos/5691531/pexels-photo-5691531.jpeg?w=800"
+                src="/assets/services/pellicole-di-sicurezza.jpg"
                 alt="Installazione professionale"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C] via-transparent to-transparent" />
               {/* Badge */}
               <div className="absolute bottom-6 right-6 card-glass rounded-xl p-5">
-                <div className="text-4xl font-bold text-[#EAB308]">40+</div>
+                <div className="text-4xl font-bold text-[#EAB308]">30+</div>
                 <div className="text-xs uppercase tracking-wider text-white/60">Anni Esperienza</div>
               </div>
             </div>
@@ -52,8 +52,8 @@ const WhyUs = () => {
               <span className="text-gradient"> professionisti</span>
             </h2>
             <p className="text-[#94A3B8] leading-relaxed mb-8 text-lg">
-              Siamo un'azienda italiana con sede in Toscana che da 40 anni opera in tutta Italia 
-              ed Europa. L'esperienza maturata su oltre 45.000 edifici ci permette di risolvere 
+              Siamo un'azienda italiana con sede in Toscana che da oltre 30 anni opera in tutta Italia 
+              ed Europa. L'esperienza maturata su +45k edifici ci permette di risolvere 
               sempre in modo efficace ogni problematica delle superfici vetrate.
             </p>
 
@@ -74,11 +74,11 @@ const WhyUs = () => {
             </ul>
 
             <Link 
-              to="/chi-siamo"
+              to="/company-profile"
               className="btn-secondary group"
               data-testid="why-us-cta"
             >
-              Scopri di Più
+              Scopri il company profile
               <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
             </Link>
           </motion.div>

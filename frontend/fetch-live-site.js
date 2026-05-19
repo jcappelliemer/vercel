@@ -25,7 +25,11 @@ const SITE_ORIGIN = normalizeOrigin(
     || process.env.VERCEL_URL,
   'https://solarisfilms.vercel.app'
 );
-const SITEMAP_INDEX = `${LIVE_ORIGIN}/sitemap_index.xml`;
+const SITEMAP_INDEX_CANDIDATES = unique([
+  `${LIVE_ORIGIN}/sitemap_index.xml`,
+  `${LIVE_ORIGIN}/wp-sitemap.xml`,
+  `${LIVE_ORIGIN}/sitemap.xml`,
+]);
 const OUTPUT_DIR = path.join(__dirname, 'public', 'wp-data');
 const PAGES_DIR = path.join(OUTPUT_DIR, 'live-pages');
 const INDEX_FILE = path.join(OUTPUT_DIR, 'live-pages-index.json');
@@ -33,13 +37,53 @@ const INVENTORY_FILE = path.join(OUTPUT_DIR, 'live-seo-inventory.json');
 const URL_MAP_FILE = path.join(OUTPUT_DIR, 'url-map.json');
 const URL_MAP_CSV_FILE = path.join(OUTPUT_DIR, 'url-map.csv');
 const SITEMAP_FILE = path.join(__dirname, 'public', 'sitemap.xml');
-const RETIRED_PRODUCT_TERMS = ['l' + 'cd', 'stra' + 'tum'];
-const RETIRED_PRODUCT_SLUGS = ['pellicole-' + 'l' + 'cd-switch'];
+const DEFAULT_ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+const EXCLUDED_SOLARIS_TERMS = [
+  /\blcd\b/i,
+  /\bstratum\b/i,
+  /\bstartum\b/i,
+  /fotocromatic/i,
+  /\bcromia\b/i,
+  /\bserie\s*nt\b/i,
+  /\bnt[\s-]*20\b/i,
+  /\bnt[\s-]*35\b/i,
+  /tecnosolarnt20/i,
+  /tecnosolarnt35/i,
+];
+const EXCLUDED_PRODUCT_SLUGS = ['pellicole-lcd-switch', 'stratum', 'startum', 'tecnosolarnt20epssr', 'tecnosolarnt35epssr'];
+const EXCLUDED_LIVE_PATHS = new Set([
+  '/pellicole-per-vetri/false-parent/',
+  '/pellicole-per-vetri/llms-txt/',
+  '/pellicole-per-vetri/zoho-callback/',
+  '/pellicole-per-vetri/profilo-solaris/',
+  '/pellicole-per-vetri/anagrafica-aziende-enti-operativa/',
+  '/pellicole-per-vetri/anagrafica-privati-v2/',
+  '/pellicole-per-vetri/anagrafica-tributaria-aziende-enti/',
+  '/pellicole-per-vetri/chiusura-lavori/',
+]);
+const EXCLUDED_LIVE_PATH_PREFIXES = [
+  '/pellicole-per-vetri/false-parent/',
+  '/approfondimenti/author/',
+  '/approfondimenti/category/',
+];
 
-function hasRetiredProductReference(value = '') {
-  const lower = String(value).toLowerCase();
-  return RETIRED_PRODUCT_TERMS.some((term) => lower.includes(term))
-    || RETIRED_PRODUCT_SLUGS.some((slug) => lower.includes(slug));
+function hasExcludedProductReference(value = '') {
+  const text = String(value || '');
+  const lower = text.toLowerCase();
+  return EXCLUDED_SOLARIS_TERMS.some((term) => term.test(text))
+    || EXCLUDED_PRODUCT_SLUGS.some((slug) => lower.includes(slug));
+}
+
+function isExcludedProductUrl(value = '') {
+  const lower = String(value || '').toLowerCase();
+  return EXCLUDED_PRODUCT_SLUGS.some((slug) => lower.includes(slug))
+    || hasExcludedProductReference(lower);
+}
+
+function isExcludedLiveUrl(value = '') {
+  const pathname = normalizePath(value);
+  return EXCLUDED_LIVE_PATHS.has(pathname)
+    || EXCLUDED_LIVE_PATH_PREFIXES.some((prefix) => pathname.startsWith(prefix));
 }
 
 function fetchText(url, redirectCount = 0) {
@@ -92,8 +136,49 @@ function decodeEntities(value = '') {
     .replace(/&#x([a-fA-F0-9]+);/g, (_, n) => String.fromCharCode(parseInt(n, 16)));
 }
 
+function fixItalianTypography(value = '') {
+  return String(value)
+    .replace(/(^|[\s(])É(?=\s)/g, '$1È')
+    .replace(/\btesta e certificata\b/gi, 'testata e certificata')
+    .replace(/\bluoghi di lavori\b/gi, 'luoghi di lavoro')
+    .replace(/\bMT 200 VX\b/g, 'MT 200 XW')
+    .replace(/\bEcosaving\b/g, 'EcoSaving')
+    .replace(/\bUn eccellente riduzione\b/g, "Un'eccellente riduzione")
+    .replace(/\bvetrate\s+\?/gi, 'vetrate?')
+    .replace(/\bpiu\b/gi, 'più');
+}
+
+function fixProductNames(value = '') {
+  return String(value)
+    .replace(/\bsunscape\b/gi, 'Sunscape')
+    .replace(/\bsputtered\b/gi, 'Sputtered');
+}
+
+function normalizeSolarisProofValues(value = '') {
+  return String(value)
+    .replace(/\b(?:oltre\s+)?40\s+anni\b/gi, '30+ anni')
+    .replace(/\b45k\+\b/gi, '+45k')
+    .replace(/\b45\.000\b/g, '+45k')
+    .replace(/\b100\.000\+\b/g, '+100k');
+}
+
+function normalizeSolarisProofValuesDeep(value) {
+  if (typeof value === 'string') return normalizeSolarisProofValues(value);
+  if (Array.isArray(value)) return value.map((item) => normalizeSolarisProofValuesDeep(item));
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, normalizeSolarisProofValuesDeep(item)])
+    );
+  }
+  return value;
+}
+
+function fixItalianTypographyHtml(value = '') {
+  return fixItalianTypography(value).replace(/(^|[>\s(])(?:&#0*201;|&#x0*c9;|&Eacute;)(?=\s)/gi, '$1È');
+}
+
 function normalizeText(value = '') {
-  return decodeEntities(value)
+  return normalizeSolarisProofValues(fixProductNames(fixItalianTypography(decodeEntities(value))))
     .replace(/\u00a0/g, ' ')
     .replace(/\s+/g, ' ')
     .trim();
@@ -130,14 +215,17 @@ function extractMeta(html) {
 
   for (const tag of metaTags) {
     const key = getAttr(tag, 'name') || getAttr(tag, 'property');
-    const content = getAttr(tag, 'content');
+    const rawContent = fixItalianTypography(getAttr(tag, 'content'));
+    const content = /(?:^|:)title$|(?:^|:)description$/i.test(key)
+      ? fixProductNames(rawContent)
+      : rawContent;
     if (key && content && !key.toLowerCase().startsWith('generator')) {
       meta[key] = content;
     }
   }
 
   const canonicalTag = linkTags.find((tag) => getAttr(tag, 'rel').toLowerCase() === 'canonical');
-  const title = firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i);
+  const title = fixProductNames(fixItalianTypography(firstMatch(html, /<title[^>]*>([\s\S]*?)<\/title>/i)));
   const schemas = extractTags(html, 'script')
     .filter((tag) => /type=["']application\/ld\+json["']/i.test(tag))
     .map((tag) => firstMatch(tag, /<script\b[^>]*>([\s\S]*?)<\/script>/i))
@@ -164,6 +252,30 @@ function normalizeInternalLinks(html) {
     .replace(/href=["']\/["']/gi, 'href="/"')
     .replace(/\sdata-lazy-src=["']([^"']+)["']/gi, ' src="$1"')
     .replace(/\sdata-lazy-srcset=["']([^"']+)["']/gi, ' srcSet="$1"');
+}
+
+function normalizeLegacyHref(href = '') {
+  const raw = String(href || '').trim();
+  const hashIndex = raw.indexOf('#');
+  const hash = hashIndex >= 0 ? raw.slice(hashIndex) : '';
+  const withoutHash = hashIndex >= 0 ? raw.slice(0, hashIndex) : raw;
+  const queryIndex = withoutHash.indexOf('?');
+  const query = queryIndex >= 0 ? withoutHash.slice(queryIndex) : '';
+  const pathname = queryIndex >= 0 ? withoutHash.slice(0, queryIndex) : withoutHash;
+  const normalizedPath = pathname && pathname !== '/'
+    ? pathname.replace(/\/?$/, '/')
+    : pathname;
+  const suffix = `${query}${hash}`;
+
+  if (
+    normalizedPath === '/contact/'
+    || normalizedPath === '/contacts/'
+    || normalizedPath === '/pellicole-per-vetri/contact/'
+  ) {
+    return `/contatti/${suffix}`;
+  }
+
+  return raw;
 }
 
 function cleanContentHtml(html) {
@@ -227,7 +339,7 @@ function extractHeadings(contentHtml) {
   let match;
   while ((match = re.exec(contentHtml))) {
     const text = stripTags(match[2]);
-    if (!hasRetiredProductReference(text)) {
+    if (!hasExcludedProductReference(text)) {
       headings.push({ level: Number(match[1]), text });
     }
   }
@@ -238,27 +350,36 @@ function extractSitemapUrls(xml) {
   return unique([...xml.matchAll(/<loc>\s*([^<]+)\s*<\/loc>/gi)].map((match) => decodeEntities(match[1])));
 }
 
-function removeRetiredProductSentences(value = '') {
+function isExcludedSitemapUrl(value = '') {
+  const lower = String(value || '').toLowerCase();
+  return lower.includes('wp-sitemap-users-')
+    || lower.includes('wp-sitemap-taxonomies-')
+    || lower.includes('author-sitemap')
+    || lower.includes('category-sitemap')
+    || lower.includes('post_tag-sitemap');
+}
+
+function removeExcludedProductSentences(value = '') {
   const text = String(value || '');
-  if (!hasRetiredProductReference(text)) return text;
+  if (!hasExcludedProductReference(text)) return text;
 
   return text
-    .replace(/[^.!?<>]*(?:l\s*c\s*d|stra\s*tum)[^.!?<>]*[.!?]/gi, ' ')
+    .replace(/[^.!?<>]*(?:\blcd\b|\bstratum\b|\bstartum\b|pellicole-lcd-switch|fotocromatic[^.!?<>]*|cromia|serie\s*nt|nt[\s-]*20|nt[\s-]*35|tecnosolarnt20|tecnosolarnt35)[^.!?<>]*[.!?]/gi, ' ')
     .replace(/\s{2,}/g, ' ')
     .trim();
 }
 
-function cleanRetiredProductBlocks(blocks = []) {
+function cleanExcludedProductBlocks(blocks = []) {
   return blocks
     .map((block) => {
       if (block.type === 'list') {
         const items = (block.items || [])
           .map((item) => ({
             ...item,
-            html: removeRetiredProductSentences(item.html),
-            text: removeRetiredProductSentences(item.text),
+            html: removeExcludedProductSentences(item.html),
+            text: removeExcludedProductSentences(item.text),
           }))
-          .filter((item) => item.text && !hasRetiredProductReference(item.text));
+          .filter((item) => item.text && !hasExcludedProductReference(item.text));
 
         return {
           ...block,
@@ -269,14 +390,14 @@ function cleanRetiredProductBlocks(blocks = []) {
 
       return {
         ...block,
-        html: removeRetiredProductSentences(block.html),
-        text: removeRetiredProductSentences(block.text),
+        html: removeExcludedProductSentences(block.html),
+        text: removeExcludedProductSentences(block.text),
       };
     })
     .filter(
       (block) =>
         block.type === 'image' ||
-        (block.text && !hasRetiredProductReference(block.text) && !hasRetiredProductReference(block.html))
+        (block.text && !hasExcludedProductReference(block.text) && !hasExcludedProductReference(block.html))
     );
 }
 
@@ -350,10 +471,43 @@ function imageFromNode(node) {
   };
 }
 
+function extractPrimaryImage(seo = {}, contentBlocks = []) {
+  return seo.og?.['og:image']
+    || seo.twitter?.['twitter:image']
+    || contentBlocks.find((block) => block.type === 'image')?.src
+    || '';
+}
+
+function normalizeSeoForRoute(seo = {}, route = {}) {
+  const normalized = {
+    ...seo,
+    og: { ...(seo.og || {}) },
+    twitter: { ...(seo.twitter || {}) },
+    article: { ...(seo.article || {}) },
+    schemas: [...(seo.schemas || [])].filter((schema) => !hasExcludedProductReference(schema)),
+  };
+
+  if (route.newPath === '/company-profile/') {
+    const title = 'Company Profile Solaris';
+    const description = 'Company profile Solaris Films: specialisti delle pellicole per vetri, con esperienza nazionale, competenza tecnica e posa professionale.';
+    normalized.title = title;
+    normalized.description = description;
+    normalized.robots = DEFAULT_ROBOTS;
+    normalized.og['og:title'] = `${title} - Solaris Films`;
+    normalized.og['og:description'] = description;
+    normalized.twitter['twitter:title'] = `${title} - Solaris Films`;
+    normalized.twitter['twitter:description'] = description;
+  }
+
+  return normalized;
+}
+
 function safeHref(value) {
   let href = normalizeInternalLinks(value || '').replace(/^href=["']|["']$/g, '');
   if (!href || /^javascript:/i.test(href)) return '';
+  if (href === '/') return '';
   if (href.startsWith('/wp-content/')) href = `${LIVE_ORIGIN}${href}`;
+  href = normalizeLegacyHref(href);
   return href;
 }
 
@@ -375,7 +529,7 @@ function sanitizeInlineHtml(html = '') {
   });
 
   output = output.replace(/<\/a>/gi, '</a>').replace(/<\/span>/gi, '</span>');
-  return output.trim();
+  return fixItalianTypographyHtml(output).trim();
 }
 
 function addBlock(blocks, block) {
@@ -541,14 +695,10 @@ function classifyPath(pathname, sourceSitemap = '') {
     ['/pellicole-per-vetri/contact/', { type: 'page', label: 'Contatti', newPath: '/contatti/' }],
     ['/pellicole-per-vetri/pellicole-per-vetri/preventivo/', { type: 'page', label: 'Preventivo', newPath: '/preventivo/' }],
     ['/pellicole-per-vetri/privacy-policy/', { type: 'legal', label: 'Privacy', newPath: '/privacy-policy/' }],
-    ['/pellicole-per-vetri/profilo-solaris/', { type: 'company', label: 'Profilo Solaris', newPath: '/profilo-solaris/' }],
-    ['/pellicole-per-vetri/pellicole-per-vetri/about/', { type: 'company', label: 'Chi siamo', newPath: '/chi-siamo/' }],
+    ['/pellicole-per-vetri/pellicole-per-vetri/about/', { type: 'company', label: 'Company Profile', newPath: '/company-profile/' }],
     ['/pellicole-per-vetri/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy/', { type: 'guide', label: 'Guida tecnica', newPath: '/guida-tecnica/' }],
     ['/pellicole-per-vetri/pellicole-per-vetri/faq/', { type: 'faq', label: 'FAQ', newPath: '/faq/' }],
     ['/pellicole-per-vetri/pellicole-per-vetri/', { type: 'service-index', label: 'Pellicole per vetri', newPath: '/servizi/' }],
-    ['/pellicole-per-vetri/llms-txt/', { type: 'utility', label: 'LLMS', newPath: '/llms.txt' }],
-    ['/pellicole-per-vetri/zoho-callback/', { type: 'utility', label: 'Zoho callback', newPath: '/zoho-callback/' }],
-    ['/pellicole-per-vetri/false-parent/', { type: 'utility', label: 'Pagina tecnica', newPath: '/false-parent/' }],
     ['/pellicole-per-vetri/thank-you/', { type: 'utility', label: 'Grazie', newPath: '/grazie/' }],
     ['/servizio-locale/', { type: 'local-index', label: 'Servizio locale', newPath: '/servizio-locale/' }],
     ['/pagina-info/', { type: 'info-index', label: 'Informazioni', newPath: '/info/' }],
@@ -665,9 +815,32 @@ function classifyPath(pathname, sourceSitemap = '') {
 }
 
 async function collectLiveUrls() {
-  const indexXml = await fetchText(SITEMAP_INDEX);
-  const sitemapUrls = extractSitemapUrls(indexXml).filter((url) => url.endsWith('.xml'));
+  let indexXml = '';
+  let indexUrl = '';
+  const failures = [];
+
+  for (const candidate of SITEMAP_INDEX_CANDIDATES) {
+    try {
+      console.log(`Reading sitemap index ${candidate}`);
+      indexXml = await fetchText(candidate);
+      indexUrl = candidate;
+      break;
+    } catch (err) {
+      failures.push(`${candidate}: ${err.message}`);
+      console.warn(`  -> failed sitemap index: ${err.message}`);
+    }
+  }
+
+  if (!indexXml) {
+    throw new Error(`No live sitemap index available. ${failures.join(' | ')}`);
+  }
+
+  const sitemapUrls = extractSitemapUrls(indexXml)
+    .filter((url) => url.endsWith('.xml'))
+    .filter((url) => !isExcludedSitemapUrl(url));
   const pages = [];
+
+  console.log(`Using sitemap index ${indexUrl} with ${sitemapUrls.length} child sitemaps`);
 
   for (const sitemapUrl of sitemapUrls) {
     try {
@@ -675,7 +848,8 @@ async function collectLiveUrls() {
       const xml = await fetchText(sitemapUrl);
       const urls = extractSitemapUrls(xml)
         .filter((url) => url.startsWith(LIVE_ORIGIN))
-        .filter((url) => !hasRetiredProductReference(url));
+        .filter((url) => !isExcludedProductUrl(url))
+        .filter((url) => !isExcludedLiveUrl(url));
       for (const url of urls) {
         pages.push({ url, sitemap: sitemapUrl });
       }
@@ -696,17 +870,18 @@ async function buildPageRecord(entry, index, total) {
   const seo = extractMeta(html);
   const contentHtml = extractMainHtml(html);
   const headings = extractHeadings(contentHtml);
-  const contentBlocks = cleanRetiredProductBlocks(extractContentBlocks(contentHtml));
+  const contentBlocks = cleanExcludedProductBlocks(extractContentBlocks(contentHtml));
   const text = contentBlocks.map((block) => block.text).filter(Boolean).join(' ');
   const route = classifyPath(normalizePath(entry.url), entry.sitemap);
-  const primaryImage = '';
+  const normalizedSeo = normalizeSeoForRoute(seo, route);
+  const primaryImage = extractPrimaryImage(normalizedSeo, contentBlocks);
 
-  return {
+  return normalizeSolarisProofValuesDeep({
     url: entry.url,
     path: normalizePath(entry.url),
     route,
     sourceSitemap: entry.sitemap,
-    seo,
+    seo: normalizedSeo,
     headings,
     h1: headings.find((heading) => heading.level === 1)?.text || '',
     primaryImage,
@@ -715,7 +890,7 @@ async function buildPageRecord(entry, index, total) {
     text,
     textLength: text.length,
     fetchedAt: new Date().toISOString(),
-  };
+  });
 }
 
 function buildSitemap(pages) {
@@ -757,16 +932,27 @@ function buildUrlMapCsv(urlMap) {
 
 async function main() {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
+  let liveUrls = [];
+
+  try {
+    liveUrls = await collectLiveUrls();
+  } catch (err) {
+    if (fs.existsSync(INDEX_FILE) && fs.existsSync(PAGES_DIR)) {
+      console.warn(`Live mirror fetch skipped, using existing wp-data fallback: ${err.message}`);
+      return;
+    }
+    throw err;
+  }
+
   fs.rmSync(PAGES_DIR, { recursive: true, force: true });
   fs.mkdirSync(PAGES_DIR, { recursive: true });
-  const liveUrls = await collectLiveUrls();
   const pages = [];
 
   for (let i = 0; i < liveUrls.length; i += 1) {
     try {
       const page = await buildPageRecord(liveUrls[i], i, liveUrls.length);
       const file = pageFileName(page.path);
-      fs.writeFileSync(path.join(PAGES_DIR, file), JSON.stringify(page));
+      fs.writeFileSync(path.join(PAGES_DIR, file), `${JSON.stringify(page, null, 2)}\n`);
       pages.push({ ...page, file });
     } catch (err) {
       console.warn(`  -> failed page: ${err.message}`);

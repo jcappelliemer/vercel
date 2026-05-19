@@ -1,21 +1,21 @@
 export const LIVE_GROUPS = [
   {
     key: 'services',
-    label: 'Servizi',
+    label: 'Funzioni e servizi',
     path: '/servizi',
     types: ['category', 'service-index'],
   },
   {
     key: 'products',
-    label: 'Prodotti',
+    label: 'Catalogo prodotti',
     path: '/prodotti',
     types: ['product'],
   },
   {
     key: 'blog',
-    label: 'Approfondimenti',
+    label: 'Articoli e approfondimenti',
     path: '/blog',
-    types: ['article', 'blog-category', 'film-type', 'author'],
+    types: ['article', 'film-type'],
   },
   {
     key: 'knowledge',
@@ -25,7 +25,7 @@ export const LIVE_GROUPS = [
   },
   {
     key: 'info',
-    label: 'Info',
+    label: 'Pagine informative',
     path: '/info',
     types: ['info'],
   },
@@ -37,7 +37,7 @@ export const LIVE_GROUPS = [
   },
   {
     key: 'local',
-    label: 'Localita',
+    label: 'Pagine locali',
     path: '/servizio-locale',
     types: ['local-service'],
   },
@@ -48,57 +48,57 @@ export const DIRECTORY_CONFIG = {
     title: 'Catalogo prodotti',
     highlight: 'MADICO',
     eyebrow: 'Prodotti',
-    description: 'Tutte le schede prodotto importate dal sito live, ordinate nella nuova struttura URL.',
+    description: 'Schede prodotto MADICO ordinate per funzione, prestazioni e collegamento alle soluzioni Solaris.',
     path: '/prodotti',
     types: ['product'],
-    emptyText: 'Nessun prodotto importato.',
+    emptyText: 'Nessun prodotto disponibile.',
   },
   blog: {
-    title: 'Approfondimenti',
+    title: 'Guide e approfondimenti',
     highlight: 'tecnici',
     eyebrow: 'Blog',
-    description: 'Guide, articoli e archivi presenti sul sito live, senza importare per ora le immagini editoriali.',
+    description: 'Guide Solaris per orientarsi tra controllo solare, sicurezza vetri, privacy e posa professionale.',
     path: '/blog',
     types: ['article'],
-    secondaryTypes: ['blog-category', 'film-type', 'author'],
-    emptyText: 'Nessun approfondimento importato.',
+    secondaryTypes: ['film-type'],
+    emptyText: 'Nessun approfondimento disponibile.',
   },
   knowledge: {
     title: 'Lo sapevi che?',
     highlight: 'Solaris',
-    eyebrow: 'Approfondimenti',
-    description: 'Raccolta degli articoli e delle guide importate dal sito live, mantenendo una route dedicata per la sezione storica Lo sapevi che?.',
+    eyebrow: 'Domande pratiche',
+    description: 'Risposte pratiche ai dubbi più frequenti su comfort, sicurezza, privacy e scelta della pellicola corretta.',
     path: '/lo-sapevi-che',
     types: ['article'],
-    secondaryTypes: ['blog-category', 'film-type'],
-    emptyText: 'Nessun articolo importato.',
+    secondaryTypes: ['film-type'],
+    emptyText: 'Nessun articolo disponibile.',
   },
   info: {
     title: 'Informazioni',
     highlight: 'utili',
     eyebrow: 'Normative e supporto',
-    description: 'Norme, garanzie, istruzioni, certificazioni e pagine informative presenti sul sito live.',
+    description: 'Norme, garanzie e istruzioni lette in funzione del vetro reale, della posa e della scelta Solaris.',
     path: '/info',
     types: ['info'],
-    emptyText: 'Nessuna pagina informativa importata.',
+    emptyText: 'Nessuna pagina informativa disponibile.',
   },
   focus: {
     title: 'Focus',
     highlight: 'tecnico',
     eyebrow: 'Tecnologia pellicole',
-    description: 'Approfondimenti sulle famiglie di pellicole, le serie e le caratteristiche tecniche.',
+    description: 'Guide Solaris per tradurre prestazioni, norme e limiti delle pellicole in una scelta verificabile sul vetro reale.',
     path: '/focus-tecnico',
     types: ['technical-focus'],
-    emptyText: 'Nessun focus tecnico importato.',
+    emptyText: 'Nessun focus tecnico disponibile.',
   },
   local: {
-    title: 'Servizio',
-    highlight: 'locale',
+    title: 'Pagine',
+    highlight: 'locali',
     eyebrow: 'Copertura territoriale',
-    description: 'Pagine locali importate dal sito live per mantenere il posizionamento geografico esistente.',
+    description: 'Pagine locali Solaris per partire dalla città e arrivare a una verifica tecnica su vetro, obiettivo e posa.',
     path: '/servizio-locale',
     types: ['local-service'],
-    emptyText: 'Nessuna pagina locale importata.',
+    emptyText: 'Nessuna pagina locale disponibile.',
   },
 };
 
@@ -113,8 +113,26 @@ export const cleanTitle = (title = '') => title
   .replace(/\s+/g, ' ')
   .trim();
 
+const titleCaseIfUpper = (value = '') => {
+  const trimmed = value.trim();
+  if (!trimmed || trimmed !== trimmed.toUpperCase()) return trimmed;
+  return trimmed
+    .toLocaleLowerCase('it')
+    .replace(/(^|\s|-)([a-z])/g, (match) => match.toLocaleUpperCase('it'));
+};
+
+const isGenericLiveTitle = (value = '') => (
+  ['pellicole per vetri adesive', 'solaris films'].includes(cleanTitle(value).toLocaleLowerCase('it'))
+);
+
 export const getLiveTitle = (page = {}) => {
-  const title = page.h1 || cleanTitle(page.title) || cleanTitle(page.seo?.title);
+  const routeType = page.route?.type;
+  const candidates = ['article', 'blog-category', 'film-type', 'author'].includes(routeType)
+    ? [page.seo?.title, page.title, page.h1]
+    : [page.h1, page.seo?.title, page.title];
+  const title = candidates
+    .map((candidate) => titleCaseIfUpper(cleanTitle(candidate || '')))
+    .find((candidate) => candidate && !isGenericLiveTitle(candidate));
   return title || page.route?.label || 'Solaris Films';
 };
 
@@ -158,3 +176,34 @@ export const groupPages = (pages = [], kind = '') => (
 export const getMenuPreview = (pages = [], types = [], limit = 6) => (
   filterByTypes(pages, types).sort(byTitle).slice(0, limit)
 );
+
+const EXCLUDED_SOLARIS_TERMS = [
+  /fotocromatic/i,
+  /\bcromia\b/i,
+  /\bserie\s*nt\b/i,
+  /\bnt[\s-]*20\b/i,
+  /\bnt[\s-]*35\b/i,
+  /tecnosolar/i,
+  /tecnosolarnt20/i,
+  /tecnosolarnt35/i,
+];
+
+export const hasExcludedSolarisReference = (value = '') => {
+  const text = String(value || '');
+  return EXCLUDED_SOLARIS_TERMS.some((pattern) => pattern.test(text));
+};
+
+export const isExcludedSolarisPage = (page = {}) => {
+  const haystack = [
+    page.url,
+    page.path,
+    page.route?.newPath,
+    page.title,
+    page.h1,
+    page.description,
+    page.seo?.title,
+    page.seo?.description,
+  ].join(' ');
+
+  return hasExcludedSolarisReference(haystack);
+};

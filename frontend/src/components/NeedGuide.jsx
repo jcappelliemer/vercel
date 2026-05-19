@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import { ArrowRight, Buildings, Fire, ShieldCheck, SlidersHorizontal, Sparkle } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
@@ -11,6 +11,7 @@ const defaultNeeds = [
     href: '/servizi#antisolari',
     cta: 'Vai alle antisolari',
     icon: Fire,
+    image: '/assets/generated/home/need-antisolari.webp',
   },
   {
     title: 'Proteggere persone e vetri',
@@ -19,15 +20,17 @@ const defaultNeeds = [
     href: '/servizi#safety-shield',
     cta: 'Vai a Safety Shield',
     icon: ShieldCheck,
+    image: '/assets/generated/home/need-safety-shield.webp',
     featured: true,
   },
   {
     title: 'Aumentare privacy e design',
     label: 'Privacy',
     text: 'Per sale riunioni, ambienti commerciali, divisori interni e superfici da personalizzare senza opere invasive.',
-    href: '/servizi#privacy',
+    href: '/servizi#decorative',
     cta: 'Vai a privacy',
     icon: Sparkle,
+    image: '/assets/generated/home/need-privacy-design.webp',
   },
   {
     title: 'Non sai quale scegliere?',
@@ -36,6 +39,7 @@ const defaultNeeds = [
     href: '/preventivo',
     cta: 'Richiedi valutazione',
     icon: SlidersHorizontal,
+    image: '/assets/generated/home/need-consulenza-tecnica.webp',
   },
 ];
 
@@ -53,10 +57,10 @@ const NeedGuide = () => {
   });
 
   return (
-    <section className="py-28 relative overflow-hidden" data-testid="need-guide-section">
-      <div className="absolute inset-0 bg-[#0A0F1C]" />
-      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#EAB308]/50 to-transparent" />
-      <div className="absolute right-0 top-20 w-[520px] h-[520px] rounded-full bg-[#2563EB]/10 blur-[140px]" />
+    <section className="py-28 relative overflow-hidden bg-[#F8FAFC]" data-testid="need-guide-section">
+      <div className="absolute inset-0 bg-[linear-gradient(180deg,#FFFFFF_0%,#F8FAFC_46%,#EEF2F7_100%)]" />
+      <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-[#EAB308]/45 to-transparent" />
+      <div className="absolute right-0 top-20 w-[520px] h-[520px] rounded-full bg-[#2563EB]/8 blur-[140px]" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12">
         <div className="grid lg:grid-cols-[0.85fr_1.15fr] gap-12 lg:gap-16 items-start">
@@ -67,15 +71,15 @@ const NeedGuide = () => {
             className="lg:sticky lg:top-28"
           >
             <div className="accent-bar w-16 mb-6" />
-            <span className="inline-flex items-center gap-2 rounded-full border border-[#EAB308]/25 bg-[#EAB308]/10 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#EAB308] mb-6">
+            <span className="inline-flex items-center gap-2 rounded-full border border-[#EAB308]/30 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-[#B45309] shadow-sm mb-6">
               <Buildings size={16} weight="light" />
               {s.need_badge || 'Percorso guidato'}
             </span>
-            <h2 className="text-4xl lg:text-5xl font-medium text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-medium text-[#0A0F1C] mb-6">
               {s.need_title || 'Scegli per'}
               <span className="text-gradient"> {s.need_highlight || 'esigenza'}</span>
             </h2>
-            <p className="text-lg text-[#94A3B8] leading-relaxed max-w-md">
+            <p className="text-lg text-[#475569] leading-relaxed max-w-md">
               {s.need_subtitle || 'Non serve partire dal nome tecnico della pellicola. Parti dal problema: caldo, sicurezza, privacy o dubbio tecnico.'}
             </p>
             <Link to="/preventivo" className="btn-yellow group mt-10" data-testid="need-guide-primary-cta">
@@ -96,30 +100,42 @@ const NeedGuide = () => {
               >
                 <Link
                   to={need.href}
-                  className={`group flex h-full min-h-[300px] flex-col rounded-2xl border p-6 transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EAB308] focus-visible:ring-offset-2 focus-visible:ring-offset-[#0A0F1C] ${need.featured ? 'bg-gradient-to-br from-[#1A2332] via-[#111827] to-[#0A0F1C] border-[#EAB308]/35 shadow-[0_24px_80px_rgba(234,179,8,0.12)]' : 'bg-white/[0.03] border-white/[0.08] hover:border-[#EAB308]/30 hover:bg-white/[0.05]'}`}
+                  className={`group flex h-full min-h-[390px] flex-col overflow-hidden rounded-2xl border bg-white transition-all duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#EAB308] focus-visible:ring-offset-2 focus-visible:ring-offset-white ${need.featured ? 'border-[#EAB308]/45 shadow-[0_24px_70px_rgba(15,23,42,0.12)]' : 'border-[#E2E8F0] shadow-sm hover:border-[#EAB308]/45 hover:shadow-[0_22px_60px_rgba(15,23,42,0.10)]'}`}
                   data-testid={`need-card-${index}`}
                 >
-                  <div className="flex items-start justify-between gap-4 mb-8">
-                    <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#2563EB]/20 to-[#EAB308]/20 border border-white/10">
-                      <need.icon size={26} weight="light" className="text-[#EAB308]" />
-                    </div>
-                    <ArrowRight size={20} weight="bold" className="text-white/35 group-hover:text-[#EAB308] group-hover:translate-x-1 transition-all" />
-                  </div>
-
-                  <div className="flex-1">
-                    <span className="text-xs uppercase tracking-[0.16em] text-[#EAB308] font-semibold">
+                  <figure className="relative h-40 overflow-hidden border-b border-[#E2E8F0]">
+                    <img
+                      src={need.image}
+                      alt={need.label}
+                      className="h-full w-full object-cover opacity-95 transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C]/75 via-[#0A0F1C]/18 to-transparent" />
+                    <span className="absolute bottom-4 left-5 right-5 text-xs uppercase tracking-[0.16em] text-[#FACC15] font-semibold drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)]">
                       {need.label}
                     </span>
-                    <h3 className="text-2xl lg:text-3xl text-white font-semibold mt-3 leading-tight">
+                  </figure>
+
+                  <div className="flex flex-1 flex-col p-6">
+                    <div className="flex items-start justify-between gap-4 mb-6">
+                      <div className="w-14 h-14 rounded-xl flex items-center justify-center bg-gradient-to-br from-[#EFF6FF] to-[#FEF3C7] border border-[#DBEAFE]">
+                        <need.icon size={26} weight="light" className="text-[#EAB308]" />
+                      </div>
+                      <ArrowRight size={20} weight="bold" className="text-[#94A3B8] group-hover:text-[#EAB308] group-hover:translate-x-1 transition-all" />
+                    </div>
+
+                    <div className="flex-1">
+                    <h3 className="text-2xl lg:text-3xl text-[#0A0F1C] font-semibold mt-3 leading-tight">
                       {need.title}
                     </h3>
-                    <p className="text-[#94A3B8] mt-4 leading-relaxed">
+                    <p className="text-[#475569] mt-4 leading-relaxed">
                       {need.text}
                     </p>
                   </div>
-                  <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308]">
+                  <div className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-[#0F766E] group-hover:text-[#B45309]">
                     <span>{need.cta}</span>
                     <ArrowRight size={16} weight="bold" />
+                  </div>
                   </div>
                 </Link>
               </motion.div>

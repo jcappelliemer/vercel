@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import { motion } from 'framer-motion';
 import { ArrowRight, Compass, WarningCircle } from '@phosphor-icons/react';
 import Header from '../components/Header';
@@ -9,7 +9,7 @@ import { useLivePages } from '../hooks/useLivePages';
 import { LIVE_GROUPS, byTitle, filterByTypes, getLivePath, getLiveTitle } from '../utils/liveContent';
 
 const extraGroups = [
-  { key: 'utility', label: 'Utility', types: ['utility', 'faq', 'legal', 'company', 'guide', 'page', 'local-index', 'info-index', 'home'] },
+  { key: 'support', label: 'Supporto e pagine aziendali', types: ['utility', 'faq', 'legal', 'company', 'guide', 'page', 'local-index', 'info-index', 'home'] },
 ];
 
 const SiteMapPage = () => {
@@ -21,7 +21,7 @@ const SiteMapPage = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="site-map-page">
-      <SEO title="Mappa sito" description="Tutti gli URL importati dal sito live Solaris Films e ricollocati nella nuova architettura." path="/mappa-sito" />
+      <SEO title="Mappa sito" description="Mappa dei contenuti Solaris Films: servizi, prodotti, guide, pagine locali e informazioni utili." path="/mappa-sito" />
       <Header />
       <main className="pt-24">
         <section className="py-20 border-b border-white/5">
@@ -33,11 +33,11 @@ const SiteMapPage = () => {
                 Mappa <span className="text-gradient">sito</span>
               </h1>
               <p className="text-lg text-[#94A3B8] leading-relaxed">
-                Tutti gli URL del sito live sono importati qui e ricondotti alla nuova struttura. Questa pagina serve anche per controllare la copertura prima dei redirect 301.
+                Una vista ordinata dei contenuti Solaris: servizi, prodotti, guide, pagine locali e informazioni utili per arrivare rapidamente alla soluzione corretta.
               </p>
               <div className="inline-flex items-center gap-2 mt-8 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white/70 text-sm">
                 <Compass size={16} />
-                {loading ? 'Caricamento URL...' : `${pages.length} URL importati dal live`}
+                {loading ? 'Caricamento pagine...' : 'Percorsi organizzati'}
               </div>
             </div>
           </div>
@@ -48,7 +48,7 @@ const SiteMapPage = () => {
             {error && (
               <div className="card-light rounded-xl p-6 flex gap-3 text-[#0A0F1C]">
                 <WarningCircle size={22} className="text-[#EAB308] shrink-0" />
-                <span>Indice live non disponibile.</span>
+                <span>Mappa contenuti temporaneamente non disponibile.</span>
               </div>
             )}
 
@@ -58,7 +58,6 @@ const SiteMapPage = () => {
                   <div className="flex flex-wrap items-end justify-between gap-4 mb-6">
                     <div>
                       <h2 className="text-2xl font-medium text-[#0A0F1C]">{group.label}</h2>
-                      <p className="text-sm text-[#64748B] mt-1">{group.pages.length} URL</p>
                     </div>
                     {group.path && (
                       <Link to={group.path} className="text-sm font-medium text-[#2563EB] hover:text-[#EAB308] inline-flex items-center gap-2">
@@ -82,7 +81,6 @@ const SiteMapPage = () => {
                             <div>
                               <h3 className="font-medium text-[#0A0F1C] group-hover:text-[#2563EB] transition-colors">{getLiveTitle(page)}</h3>
                               <p className="text-xs text-[#64748B] mt-2">{getLivePath(page)}</p>
-                              <p className="text-xs text-[#94A3B8] mt-1">Live: {page.path}</p>
                             </div>
                             <ArrowRight size={16} weight="bold" className="text-[#EAB308] shrink-0 mt-1 group-hover:translate-x-1 transition-transform" />
                           </div>

@@ -83,7 +83,7 @@ const QuoteForm = () => {
       resetForm();
     } catch (err) {
       console.error('Quote submission error:', err);
-      setError('Si e verificato un errore. Riprova o contattaci direttamente.');
+      setError('Si è verificato un errore. Riprova o contattaci direttamente.');
     } finally {
       setIsSubmitting(false);
     }
@@ -124,40 +124,40 @@ const QuoteForm = () => {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Nome *</label>
-          <input type="text" name="nome" value={formData.nome} onChange={handleChange} required className="form-input-dark" data-testid="quote-nome" />
+          <input type="text" name="nome" value={formData.nome} onChange={handleChange} required placeholder="Nome" className="form-input-dark" data-testid="quote-nome" />
         </div>
         <div>
           <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Cognome *</label>
-          <input type="text" name="cognome" value={formData.cognome} onChange={handleChange} required className="form-input-dark" data-testid="quote-cognome" />
+          <input type="text" name="cognome" value={formData.cognome} onChange={handleChange} required placeholder="Cognome" className="form-input-dark" data-testid="quote-cognome" />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Azienda</label>
-          <input type="text" name="ragione_sociale" value={formData.ragione_sociale} onChange={handleChange} className="form-input-dark" data-testid="quote-ragione-sociale" />
+          <input type="text" name="ragione_sociale" value={formData.ragione_sociale} onChange={handleChange} placeholder="Azienda o ente" className="form-input-dark" data-testid="quote-ragione-sociale" />
         </div>
         <div>
-          <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Citta *</label>
-          <input type="text" name="citta" value={formData.citta} onChange={handleChange} required className="form-input-dark" data-testid="quote-citta" />
+          <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Città *</label>
+          <input type="text" name="citta" value={formData.citta} onChange={handleChange} required placeholder="Città intervento" className="form-input-dark" data-testid="quote-citta" />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Telefono *</label>
-          <input type="tel" name="telefono" value={formData.telefono} onChange={handleChange} required className="form-input-dark" data-testid="quote-telefono" />
+          <input type="tel" name="telefono" value={formData.telefono} onChange={handleChange} required placeholder="+39 ..." className="form-input-dark" data-testid="quote-telefono" />
         </div>
         <div>
           <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Email *</label>
-          <input type="email" name="email" value={formData.email} onChange={handleChange} required className="form-input-dark" data-testid="quote-email" />
+          <input type="email" name="email" value={formData.email} onChange={handleChange} required placeholder="nome@azienda.it" className="form-input-dark" data-testid="quote-email" />
         </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Superficie (mq) *</label>
-          <input type="number" step="0.1" min="0" name="superficie_mq" value={formData.superficie_mq} onChange={handleChange} required className="form-input-dark" data-testid="quote-superficie-mq" />
+          <input type="number" step="0.1" min="0" name="superficie_mq" value={formData.superficie_mq} onChange={handleChange} required placeholder="Es. 35" className="form-input-dark" data-testid="quote-superficie-mq" />
         </div>
         <div>
           <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Prodotto di interesse *</label>
@@ -169,6 +169,7 @@ const QuoteForm = () => {
             required
             className="form-input-dark"
             list="quote-product-options"
+            placeholder="Antisolari, sicurezza, privacy..."
             data-testid="quote-tipo-pellicola"
           />
           <datalist id="quote-product-options">
@@ -181,11 +182,11 @@ const QuoteForm = () => {
 
       <div>
         <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Richiesta *</label>
-        <textarea name="richiesta" value={formData.richiesta} onChange={handleChange} rows={4} required className="form-input-dark resize-none" data-testid="quote-richiesta" />
+        <textarea name="richiesta" value={formData.richiesta} onChange={handleChange} rows={4} required placeholder="Descrivi vetri, problema, obiettivo e tempi desiderati." className="form-input-dark resize-none" data-testid="quote-richiesta" />
       </div>
 
       <div>
-        <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Caricamento file</label>
+        <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Foto o documenti</label>
         <input
           key={`quote-main-files-${fileInputVersion}`}
           type="file"
@@ -198,7 +199,7 @@ const QuoteForm = () => {
         <p className="mt-2 text-xs text-[#94A3B8]/70">Puoi allegare fino a 10 file tutti insieme</p>
         <details className="mt-3">
           <summary className="inline-block cursor-pointer rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/80">
-            aggiungi file separatamente
+            Aggiungi file separatamente
           </summary>
           <div className="mt-3 grid gap-3">
             {[0, 1, 2].map((item) => (
@@ -227,7 +228,13 @@ const QuoteForm = () => {
           className="mt-1"
           data-testid="quote-privacy"
         />
-        <span>Accetto i termini e dichiaro di aver letto l'informativa privacy *</span>
+        <span>
+          Accetto i termini e dichiaro di aver letto{' '}
+          <a href="/privacy-policy/" className="text-[#EAB308] hover:text-white underline underline-offset-4">
+            l'informativa privacy
+          </a>{' '}
+          *
+        </span>
       </label>
 
       <div className="flex flex-col sm:flex-row gap-4 pt-4">

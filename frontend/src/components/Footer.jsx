@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import { Phone, EnvelopeSimple, MapPin, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
@@ -12,6 +12,7 @@ const serviceLinks = [
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const settings = useSettings();
+  const logoSrc = settings.logo_url || '/assets/solaris-logo.png';
   const socialLinks = [
     { icon: LinkedinLogo, href: settings.linkedin, label: 'LinkedIn' },
     { icon: InstagramLogo, href: settings.instagram, label: 'Instagram' },
@@ -26,7 +27,7 @@ const Footer = () => {
           <div>
             <Link to="/" className="inline-flex items-center mb-6">
               <img
-                src={settings.logo_url || '/assets/solaris-logo.png'}
+                src={logoSrc}
                 alt={settings.company_name || 'Solaris Films'}
                 className="h-14 w-auto object-contain"
               />
@@ -61,7 +62,7 @@ const Footer = () => {
           <div>
             <h4 className="text-white font-medium mb-6">Azienda</h4>
             <ul className="space-y-3">
-              {[{ name: 'Chi Siamo', path: '/chi-siamo' }, { name: 'Profilo Solaris', path: '/profilo-solaris' }, { name: 'Guida Tecnica', path: '/guida-tecnica' }, { name: 'Focus Tecnico', path: '/focus-tecnico' }, { name: 'Info e Norme', path: '/info' }, { name: 'Servizio Locale', path: '/servizio-locale' }, { name: 'Blog', path: '/blog' }, { name: 'Contatti', path: '/contatti' }].map((item, i) => (
+              {[{ name: 'Company Profile', path: '/company-profile' }, { name: 'Guida Tecnica', path: '/guida-tecnica' }, { name: 'Focus Tecnico', path: '/focus-tecnico' }, { name: 'Info e Norme', path: '/info' }, { name: 'Servizio Locale', path: '/servizio-locale' }, { name: 'Blog', path: '/blog' }, { name: 'Contatti', path: '/contatti' }].map((item, i) => (
                 <li key={i}>
                   <Link to={item.path} className="text-[#94A3B8] hover:text-[#EAB308] transition-colors text-sm">{item.name}</Link>
                 </li>
@@ -98,7 +99,7 @@ const Footer = () => {
 
       <div className="border-t border-white/5">
         <div className="max-w-7xl mx-auto px-6 md:px-12 py-6 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-[#94A3B8]/50">© {currentYear} {settings.company_name}. P.IVA {settings.piva}. Tutti i diritti riservati.</p>
+          <p className="text-xs text-[#94A3B8]/50">(c) {currentYear} {settings.company_name}. P.IVA {settings.piva}. Tutti i diritti riservati.</p>
           <div className="flex items-center gap-4 text-xs text-[#94A3B8]/50">
             <Link to="/privacy-policy" className="hover:text-[#EAB308] transition-colors">Privacy Policy</Link>
             <span className="w-px h-3 bg-white/10" />

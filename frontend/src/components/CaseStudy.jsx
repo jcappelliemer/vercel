@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import { ArrowRight, Buildings, Bank, GraduationCap, Factory, Hospital, Storefront } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
@@ -14,28 +14,28 @@ const iconMap = {
 
 const defaultCaseStudies = [
   {
-    titolo: 'Banca d\'Italia — Roma',
+    titolo: 'Banca d\'Italia - Roma',
     categoria: 'Istituzionale',
-    image: 'https://images.pexels.com/photos/210600/pexels-photo-210600.jpeg?w=800',
-    problema: 'Necessità di messa in sicurezza delle vetrate dell\'edificio storico senza alterare l\'estetica della facciata.',
+    image: '/assets/generated/home/premium-sicurezza.webp',
+    problema: 'Necessita di messa in sicurezza delle vetrate dell\'edificio storico senza alterare l\'estetica della facciata.',
     soluzione: 'Installazione pellicole di sicurezza MADICO certificate UNI EN 12600 classe 1B1 su tutte le superfici vetrate accessibili.',
-    risultati: ['Conformità D.Lgs. 81/2008', 'Zero impatto estetico', 'Protezione anti-sfondamento', 'Installazione senza interruzioni'],
+    risultati: ['Conformita D.Lgs. 81/2008', 'Zero impatto estetico', 'Protezione anti-sfondamento', 'Installazione senza interruzioni'],
   },
   {
-    titolo: 'EUR Spa — Nuvola di Roma',
+    titolo: 'EUR Spa - Nuvola di Roma',
     categoria: 'Commerciale',
-    image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?w=800',
+    image: '/assets/generated/home/hero-architectural.webp',
     problema: 'Surriscaldamento degli ambienti interni con elevati costi di climatizzazione nel complesso congressuale.',
     soluzione: 'Pellicole antisolari MADICO ad alta riflessione solare su oltre 3.000 mq di superfici vetrate.',
-    risultati: ['Riduzione temperatura -7°C', 'Risparmio energetico 40%', 'ROI in 2 anni', 'Comfort migliorato'],
+    risultati: ['Riduzione temperatura -7 gradi C', 'Risparmio energetico 40%', 'ROI in 2 anni', 'Comfort migliorato'],
   },
   {
-    titolo: 'Università di Bologna',
+    titolo: 'Universita di Bologna',
     categoria: 'Educazione',
-    image: 'https://images.pexels.com/photos/159490/yale-university-landscape-universities-702420.jpeg?w=800',
-    problema: 'Abbagliamento nelle aule e laboratori con esposizione diretta al sole. Necessità di protezione UV per strumentazione.',
-    soluzione: 'Pellicole antisolari con protezione UV 99% e riduzione abbagliamento, preservando la luminosità naturale.',
-    risultati: ['Protezione UV 99%', 'Riduzione abbagliamento', 'Luminosità preservata', 'Ambiente studio ottimale'],
+    image: '/assets/generated/home/focus-performance.webp',
+    problema: 'Abbagliamento nelle aule e laboratori con esposizione diretta al sole. Necessita di protezione UV per strumentazione.',
+    soluzione: 'Pellicole antisolari con protezione UV 99% e riduzione abbagliamento, preservando la luminosita naturale.',
+    risultati: ['Protezione UV 99%', 'Riduzione abbagliamento', 'Luminosita preservata', 'Ambiente studio ottimale'],
   },
 ];
 
@@ -61,7 +61,7 @@ const CaseStudy = () => {
             </h2>
           </div>
           <p className="max-w-md lg:text-right text-lg" style={{ color: '#64748B' }}>
-            Alcuni dei progetti più significativi realizzati nell'ultimo anno.
+            Alcuni dei progetti piu significativi realizzati nell'ultimo anno.
           </p>
         </motion.div>
 

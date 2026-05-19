@@ -3,209 +3,409 @@ import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
 import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
-import { ArrowRight, Sun, Bomb, ShieldCheck, Eye, CheckCircle } from '@phosphor-icons/react';
+import { Link } from '@/next/router-shim';
+import { ArrowRight, CheckCircle, Eye, ShieldCheck, Sun } from '@phosphor-icons/react';
 import { useLivePages } from '../hooks/useLivePages';
-import { byTitle, filterByTypes, getLiveDescription, getLivePath, getLiveTitle } from '../utils/liveContent';
+import { getPageTitle, getServiceFamilyCards } from '../utils/serviceFamilies';
 
-const services = [
+const ICON_BY_FAMILY = {
+  antisolari: Sun,
+  sicurezza: ShieldCheck,
+  decorative: Eye,
+};
+
+const SERVICES_HERO_IMAGE = '/assets/generated/home/hero-architectural.webp';
+const SERVICES_CTA_IMAGE = '/assets/generated/home/cta-consultation.webp';
+
+const NEED_IMAGE_BY_KEY = {
+  antisolari: '/assets/generated/home/need-antisolari.webp',
+  sicurezza: '/assets/generated/home/need-safety-shield.webp',
+  decorative: '/assets/generated/home/need-privacy-design.webp',
+};
+
+const FAMILY_DETAIL_IMAGE_BY_KEY = {
+  antisolari: '/assets/generated/home/focus-performance.webp',
+  sicurezza: '/assets/generated/home/premium-safety-shield.webp',
+  decorative: '/assets/generated/home/need-privacy-design.webp',
+};
+
+const needCards = [
   {
-    id: 'antisolari',
-    name: 'Pellicole Antisolari',
-    subtitle: 'Controllo solare e risparmio energetico',
-    description: 'Le pellicole antisolari MADICO riducono drasticamente il passaggio di calore, bloccando fino al 99% dei raggi UV e riducendo le temperature interne fino a 7-8°C. Costruite con materiali che consentono filtraggio e schermatura dai raggi solari, migliorano la resa energetica dei vostri edifici riducendo calore, abbagliamento e consumi. L\'installazione avviene quasi esclusivamente in esterno e non richiede lavori strutturali.',
-    icon: Sun,
-    image: 'https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/41cd0458add26ba29df8fb0b010533e357770d6fb0f027d6a8eea3a954452d5f.png',
-    benefits: ['Risparmio energetico 30-50%', 'Riduzione temperatura fino a 8°C', 'Protezione UV 99%', 'Riflessione IR fino all\'85%', 'Garanzia fino a 10 anni', 'Nessun lavoro strutturale'],
-    specs: { 'Riflessione UV': '99%', 'Riflessione IR': '85%', 'Garanzia': '10 anni', 'Ammortamento': '2-3 anni' },
-    finiture: ['Brunito — basso effetto specchio', 'Argento — superficie riflettente', 'Neutro — minimo impatto, alta resa', 'Grigio fumè — elegante e discreto'],
+    key: 'antisolari',
+    title: 'Troppo caldo, sole o abbagliamento',
+    description: 'Parti dalle pellicole antisolari quando il problema e comfort termico, raggi UV, luce diretta o consumi energetici.',
   },
   {
-    id: 'safety-shield',
-    name: 'Safety Shield — Anti-Esplosione',
-    subtitle: 'La pellicola anti-esplosione più testata al mondo',
-    description: 'SafetyShield by MADICO è il sistema di pellicole di sicurezza più rigorosamente testato al mondo. Tiene il vetro in posizione durante esplosioni, intrusioni, disastri naturali e atti di vandalismo. La nuova generazione SafetyShield G2 introduce tecnologia adesiva avanzata e costruzione in poliestere premium per prestazioni senza precedenti.',
-    icon: Bomb,
-    image: 'https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg?w=800',
-    benefits: ['Resistenza ad esplosioni e blast', 'Anti-intrusione certificata', 'Sistema FrameGard brevettato (500-800 lbs/ft)', 'Protezione disastri naturali', 'Installazione da partner certificati MSPP', 'Testato con cariche fino a 1.100 kg'],
-    specs: { 'Standard': 'GSA 3A/3B, ASTM F1642', 'Forza adesiva': '500-800 lbs/ft', 'Anti-intrusione': 'ASTM F3561, EN 356', 'Resistenza trazione': '32.000 PSI' },
-    certifications: ['ASTM F1642 — Blast Mitigation', 'ASTM F3561 — Forced Entry', 'EN 356 — Manual Attack', 'ANSI Z97.1 — Safety Glazing', 'GSA-TS01-2003 Cat. 3A/3B', 'DIN-52,290 Cat. A1'],
+    key: 'sicurezza',
+    title: 'Vetri da mettere in sicurezza',
+    description: 'Parti dalle pellicole di sicurezza quando serve trattenere i frammenti, aumentare resistenza o valutare norme e rischio.',
   },
   {
-    id: 'sicurezza',
-    name: 'Pellicole di Sicurezza',
-    subtitle: 'Protezione certificata UNI EN 12600',
-    description: 'Solaris Films installa da più di 30 anni pellicole per vetri di sicurezza che rendono le vostre superfici vetrate \'vetri di sicurezza\' secondo la norma UNI EN 12600:2004. Il loro compito è rinforzare la vetrata per permetterle di non frantumarsi anche a seguito di un urto. Tutela la sicurezza dei tuoi cari e dei tuoi dipendenti.',
-    icon: ShieldCheck,
-    image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?w=800',
-    benefits: ['Certificazione UNI EN 12600', 'Protezione anti-sfondamento', 'Conformità D.Lgs. 81/2008', 'Protezione da schegge', 'Classe 1B1 e 2B2', 'Installazione non invasiva'],
-    specs: { 'Certificazione': 'UNI EN 12600', 'Classe': '1B1 / 2B2', 'Normativa': 'D.Lgs. 81/2008', 'Spessore': '4-8 mil' },
-  },
-  {
-    id: 'privacy',
-    name: 'Pellicole Privacy e Design',
-    subtitle: 'Satinate e decorative personalizzabili',
-    description: 'Pellicole opacizzanti e decorative per garantire privacy mantenendo la luminosità. Disponibili in numerose varianti di disegno e colorazioni. Scegli il motivo che più ti piace e modellalo secondo i tuoi gusti: potrai esprimere la tua creatività e avere contemporaneamente discrezione per le tue superfici vetrate.',
-    icon: Eye,
-    image: 'https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?w=800',
-    benefits: ['Privacy garantita', 'Design personalizzabile', 'Luminosità mantenuta', 'Numerose finiture e colori', 'Aspetto professionale', 'Facile manutenzione'],
-    specs: { 'Finiture': '50+', 'Personalizzazione': 'Su misura', 'Trasparenza': 'Variabile', 'Applicazione': 'Interno/Esterno' },
+    key: 'decorative',
+    title: 'Privacy, design e vetrofanie',
+    description: 'Parti dalle pellicole decorative quando il tema e privacy visiva, immagine coordinata, loghi o superfici vetrate da valorizzare.',
   },
 ];
 
-const ServiziPagina = () => {
-  const { pages } = useLivePages();
-  const liveServicePages = filterByTypes(pages, ['category', 'service-index']).sort(byTitle);
+const SERVICE_ANCHOR_ALIASES = {
+  decorative: ['privacy'],
+};
+
+const serviceAnchorPath = (family) => `/servizi#${family?.key || 'antisolari'}`;
+
+const SAFETY_SHIELD_METRICS = [
+  { label: 'Spessore nominale', value: '200 μm (0,20 mm) - 375 μm (0,375 mm)' },
+  { label: 'Vetro di riferimento', value: '3 mm (base) - 6 mm (test antiesplosione)' },
+  { label: 'Norme dichiarate', value: 'EN 13123, EN 13124, ISO 16933, EN 356, GSA' },
+  { label: 'Classi citate', value: 'ISO 16933 EXV 33C, EN 356 P2A-P3A' },
+  { label: 'Trasmissione UV (max)', value: '1%' },
+  { label: 'Energia solare respinta', value: '17% (schede SafetyShield 800/1500)' },
+];
+
+const ServiceFamilyCard = ({ family, index }) => {
+  const Icon = ICON_BY_FAMILY[family.key] || ShieldCheck;
+  const path = family.page?.route?.newPath || serviceAnchorPath(family);
 
   return (
-    <div className="min-h-screen bg-[#0A0F1C]" data-testid="servizi-page">
-      <SEO title="Servizi" description="Pellicole antisolari, di sicurezza, anti-esplosione SafetyShield e privacy MADICO. Solaris Films offre soluzioni professionali per ogni esigenza." path="/servizi" />
-      <Header />
+    <motion.div
+      initial={{ opacity: 0, y: 22 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ delay: index * 0.06 }}
+      className="card-glass rounded-lg overflow-hidden h-full"
+    >
+      {family.image && (
+        <figure className={`service-family-image service-family-image-card service-family-image-${family.key}`}>
+          <img src={family.image} alt={family.title} loading="lazy" />
+        </figure>
+      )}
+      <div className="p-6">
+        <div className="mb-5 flex h-11 w-11 items-center justify-center rounded-lg border border-[#EAB308]/30 bg-[#EAB308]/15 text-[#EAB308]">
+          <Icon size={24} weight="light" />
+        </div>
+        <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">{family.eyebrow}</span>
+        <h3 className="mt-3 text-2xl font-medium text-white">{family.title}</h3>
+        <p className="mt-4 text-sm leading-relaxed text-[#CBD5E1]">{family.description}</p>
 
-      <main className="pt-24">
-        <section className="py-20 border-b border-white/5">
-          <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <div className="max-w-3xl">
-              <div className="accent-bar w-16 mb-6" />
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white mb-6">
-                Soluzioni
-                <span className="text-gradient"> professionali</span>
-              </h1>
-              <p className="text-lg text-[#94A3B8] leading-relaxed">
-                Distributore esclusivo MADICO USA. Pellicole certificate per controllo solare,
-                sicurezza, anti-esplosione e privacy.
-              </p>
-            </div>
+        <div className="mt-6 grid grid-cols-2 gap-2">
+          <div className="rounded-lg border border-white/10 bg-[#0A0F1C] p-3">
+            <strong className="block text-lg text-white">{family.products.length || '-'}</strong>
+            <span className="text-xs text-[#94A3B8]">prodotti</span>
           </div>
-        </section>
+          <div className="rounded-lg border border-white/10 bg-[#0A0F1C] p-3">
+            <strong className="block text-lg text-white">{family.focus.length || '-'}</strong>
+            <span className="text-xs text-[#94A3B8]">focus</span>
+          </div>
+        </div>
 
-        <section className="py-20">
-          <div className="max-w-7xl mx-auto px-6 md:px-12">
-            {liveServicePages.length > 0 && (
-              <div className="mb-20">
-                <div className="flex flex-wrap items-end justify-between gap-4 mb-8">
-                  <div>
-                    <p className="text-[#EAB308] text-sm font-medium uppercase tracking-wider mb-3">Sezioni live importate</p>
-                    <h2 className="text-3xl font-medium text-white">Percorsi servizio</h2>
-                  </div>
-                  <Link to="/mappa-sito" className="text-sm font-medium text-[#EAB308] hover:text-white inline-flex items-center gap-2">
-                    Vedi tutti gli URL
-                    <ArrowRight size={15} weight="bold" />
-                  </Link>
+        <Link to={path} className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308] hover:text-white">
+          Approfondisci la soluzione
+          <ArrowRight size={16} weight="bold" />
+        </Link>
+      </div>
+    </motion.div>
+  );
+};
+
+const FamilyDetail = ({ family, index }) => {
+  const Icon = ICON_BY_FAMILY[family.key] || ShieldCheck;
+  const path = family.page?.route?.newPath || serviceAnchorPath(family);
+  const detailImage = FAMILY_DETAIL_IMAGE_BY_KEY[family.key] || family.image;
+  const visibleProducts = family.products.slice(0, 6);
+  const visibleFocus = family.focus.slice(0, 4);
+  const isLight = index % 2 === 0;
+  const sectionClass = isLight
+    ? 'scroll-mt-28 py-20 bg-[#F8FAFC] border-t border-[#E2E8F0]'
+    : 'scroll-mt-28 py-20 border-t border-white/10';
+  const titleClass = isLight
+    ? 'mt-3 text-3xl font-medium text-[#0A0F1C] lg:text-4xl'
+    : 'mt-3 text-3xl font-medium text-white lg:text-4xl';
+  const headlineClass = isLight
+    ? 'mt-5 text-[#334155] leading-relaxed'
+    : 'mt-5 text-[#CBD5E1] leading-relaxed';
+  const roleClass = isLight
+    ? 'mt-4 text-sm text-[#64748B] leading-relaxed'
+    : 'mt-4 text-sm text-[#94A3B8] leading-relaxed';
+  const benefitClass = isLight
+    ? 'flex gap-3 text-sm leading-relaxed text-[#334155]'
+    : 'flex gap-3 text-sm leading-relaxed text-white/80';
+  const panelClass = isLight
+    ? 'rounded-lg border border-[#E2E8F0] bg-white p-6 shadow-sm'
+    : 'rounded-lg border border-white/10 bg-[#111827] p-6';
+  const productLinkClass = isLight
+    ? 'rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] p-4 text-sm text-[#0A0F1C] transition-colors hover:border-[#EAB308] hover:text-[#B45309]'
+    : 'rounded-lg border border-white/10 bg-[#0A0F1C] p-4 text-sm text-white transition-colors hover:border-[#EAB308] hover:text-[#EAB308]';
+  const focusLinkClass = isLight
+    ? 'flex min-h-12 items-center justify-between gap-4 rounded-lg border border-[#E2E8F0] bg-[#F8FAFC] px-4 text-sm text-[#334155] transition-colors hover:border-[#EAB308] hover:text-[#0A0F1C]'
+    : 'flex min-h-12 items-center justify-between gap-4 rounded-lg border border-white/10 bg-[#0A0F1C] px-4 text-sm text-[#CBD5E1] transition-colors hover:border-[#EAB308] hover:text-white';
+
+  return (
+    <>
+    {(SERVICE_ANCHOR_ALIASES[family.key] || []).map((alias) => (
+      <span key={alias} id={alias} className="block h-0 scroll-mt-28" aria-hidden="true" />
+    ))}
+    <section id={family.key} className={sectionClass}>
+      <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="grid gap-12 lg:grid-cols-[0.88fr_1.12fr] lg:items-start">
+          <motion.div
+            initial={{ opacity: 0, y: 22 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.04 }}
+          >
+            <div className="mb-6 flex h-12 w-12 items-center justify-center rounded-lg border border-[#EAB308]/30 bg-[#EAB308]/15 text-[#EAB308]">
+              <Icon size={26} weight="light" />
+            </div>
+            <span className="text-sm font-medium uppercase tracking-wider text-[#EAB308]">{family.eyebrow}</span>
+            <h2 className={titleClass}>{family.title}</h2>
+            <p className={headlineClass}>{family.headline}</p>
+            <p className={roleClass}>{family.menuRole}</p>
+
+            <div className="mt-8 grid gap-3">
+              {family.benefits.map((benefit) => (
+                <div key={benefit} className={benefitClass}>
+                  <CheckCircle size={18} weight="fill" className="mt-1 shrink-0 text-[#EAB308]" />
+                  <span>{benefit}</span>
                 </div>
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
-                  {liveServicePages.map((page, index) => (
-                    <motion.div key={page.path} initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.05 }}>
-                      <Link to={getLivePath(page)} className="card-glass rounded-xl p-6 block h-full group">
-                        <span className="text-xs text-[#EAB308] uppercase tracking-wider">{page.route?.label}</span>
-                        <h3 className="text-white font-medium mt-3 mb-3 group-hover:text-[#EAB308] transition-colors">{getLiveTitle(page)}</h3>
-                        <p className="text-sm text-[#94A3B8] line-clamp-3">{getLiveDescription(page) || 'Contenuto servizio importato dal sito live.'}</p>
-                      </Link>
-                    </motion.div>
+              ))}
+            </div>
+
+            <Link to={path} className="btn-yellow group mt-8">
+              <span>Vai alla soluzione</span>
+              <ArrowRight size={18} weight="bold" className="transition-transform group-hover:translate-x-1" />
+            </Link>
+          </motion.div>
+
+          <div className="grid gap-5">
+            {detailImage && (
+              <figure className={`services-detail-visual service-family-image service-family-image-${family.key}`}>
+                <img src={detailImage} alt={`${family.title} Solaris`} loading="lazy" />
+                <figcaption className="service-family-image-caption">
+                  <span>{family.eyebrow}</span>
+                  <p>{family.headline}</p>
+                </figcaption>
+              </figure>
+            )}
+
+            <div className={panelClass}>
+              <div className="mb-5 flex items-end justify-between gap-4">
+                <div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Prodotti correlati</span>
+                  <h3 className={`mt-2 text-xl font-medium ${isLight ? 'text-[#0A0F1C]' : 'text-white'}`}>Schede utili per questa esigenza</h3>
+                </div>
+                <Link to="/prodotti" className={`text-sm font-semibold text-[#EAB308] ${isLight ? 'hover:text-[#0A0F1C]' : 'hover:text-white'}`}>Tutti</Link>
+              </div>
+              <div className="grid gap-3 sm:grid-cols-2">
+                {visibleProducts.map((product) => (
+                  <Link
+                    key={product.path}
+                    to={product.route?.newPath || product.path}
+                    className={productLinkClass}
+                  >
+                    {getPageTitle(product)}
+                  </Link>
+                ))}
+              </div>
+            </div>
+
+            {visibleFocus.length > 0 && (
+              <div className={panelClass}>
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Approfondimenti</span>
+                <h3 className={`mt-2 text-xl font-medium ${isLight ? 'text-[#0A0F1C]' : 'text-white'}`}>Focus tecnici utili</h3>
+                <div className="mt-5 grid gap-2">
+                  {visibleFocus.map((focus) => (
+                    <Link
+                      key={focus.path}
+                      to={focus.route?.newPath || focus.path}
+                      className={focusLinkClass}
+                    >
+                      <span>{getPageTitle(focus)}</span>
+                      <ArrowRight size={15} weight="bold" className="text-[#EAB308]" />
+                    </Link>
                   ))}
                 </div>
               </div>
             )}
+          </div>
+        </div>
+      </div>
+    </section>
+    </>
+  );
+};
 
-            <div className="space-y-32">
-              {services.map((service, index) => (
-                <motion.div
-                  key={service.id}
-                  id={service.id}
-                  initial={{ opacity: 0, y: 50 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6 }}
-                  className="grid lg:grid-cols-2 gap-16 items-start"
-                  data-testid={`service-detail-${service.id}`}
-                >
-                  <div className={`${index % 2 === 1 ? 'lg:order-2' : ''}`}>
-                    <div className="relative rounded-2xl overflow-hidden border border-white/10">
-                      <img src={service.image} alt={service.name} className="w-full h-auto object-cover" />
-                      <div className="absolute inset-0 bg-gradient-to-t from-[#0A0F1C]/60 to-transparent" />
-                      <div className="absolute top-4 left-4 w-14 h-14 rounded-xl flex items-center justify-center bg-[#EAB308]/20 border border-[#EAB308]/30">
-                        <service.icon size={28} weight="light" className="text-[#EAB308]" />
-                      </div>
-                    </div>
-                  </div>
+const ServiziPagina = ({ initialPages = [] }) => {
+  const { pages } = useLivePages(initialPages);
+  const families = getServiceFamilyCards(pages);
 
-                  <div className={`${index % 2 === 1 ? 'lg:order-1' : ''}`}>
-                    <span className="text-[#EAB308] text-sm font-medium uppercase tracking-wider">{service.subtitle}</span>
-                    <h2 className="text-3xl lg:text-4xl font-medium text-white mt-2 mb-4">{service.name}</h2>
-                    <p className="text-[#94A3B8] leading-relaxed mb-8">{service.description}</p>
+  return (
+    <div className="min-h-screen bg-[#0A0F1C]" data-testid="servizi-page">
+      <SEO
+        title="Servizi"
+        description="Servizi Solaris Films: pellicole antisolari, sicurezza, privacy e design con prodotti MADICO, focus tecnici e posa professionale."
+        path="/servizi"
+      />
+      <Header />
 
-                    <div className="grid sm:grid-cols-2 gap-3 mb-8">
-                      {service.benefits.map((benefit, i) => (
-                        <div key={i} className="flex items-center gap-2">
-                          <CheckCircle size={18} weight="fill" className="text-[#EAB308] flex-shrink-0" />
-                          <span className="text-sm text-white/80">{benefit}</span>
-                        </div>
-                      ))}
-                    </div>
+      <main className="pt-24">
+        <section className="services-hub-hero border-b border-white/5 py-20">
+          <div className="services-hub-hero-bg" aria-hidden="true">
+            <img src={SERVICES_HERO_IMAGE} alt="" fetchPriority="high" />
+          </div>
+          <div className="services-hub-hero-inner max-w-7xl mx-auto px-6 md:px-12">
+            <div className="services-hub-copy max-w-4xl">
+              <div className="accent-bar mb-6 w-16" />
+              <span className="text-sm font-medium uppercase tracking-wider text-[#EAB308]">Soluzioni per vetri</span>
+              <h1 className="mt-4 text-4xl font-medium text-white sm:text-5xl lg:text-6xl">
+                Scegli la pellicola partendo dalla funzione
+              </h1>
+              <p className="mt-6 text-lg leading-relaxed text-[#94A3B8]">
+                Le famiglie principali guidano la navigazione: antisolari, sicurezza e privacy/design. Da qui si entra nei prodotti, nei focus tecnici e nella richiesta di consulenza.
+              </p>
+            </div>
 
-                    <div className="card-glass rounded-xl p-5 mb-6">
-                      <h4 className="text-xs uppercase tracking-wider font-medium text-[#94A3B8] mb-4">Specifiche Tecniche</h4>
-                      <div className="grid grid-cols-2 gap-4">
-                        {Object.entries(service.specs).map(([key, value]) => (
-                          <div key={key}>
-                            <span className="text-xs text-[#94A3B8]">{key}</span>
-                            <p className="font-medium text-white">{value}</p>
+            <div className="services-hub-media" aria-label="Famiglie di servizi Solaris">
+              {families.map((family) => {
+                const path = family.page?.route?.newPath || serviceAnchorPath(family);
+                return (
+                  <Link
+                    key={family.key}
+                    to={path}
+                    className={`services-hub-tile service-family-image service-family-image-${family.key}`}
+                  >
+                    <img src={family.image} alt={family.title} loading="lazy" />
+                    <span>{family.menuLabel}</span>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
+
+        <section className="services-problem-light py-16 bg-[#F8FAFC] border-y border-[#E2E8F0]">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <span className="text-sm font-medium uppercase tracking-wider text-[#B45309]">Scegli in base al problema</span>
+                <h2 className="mt-2 text-3xl font-medium text-white">Trova la soluzione più adatta</h2>
+              </div>
+              <Link to="/preventivo" className="text-sm font-semibold text-[#EAB308] hover:text-white">
+                Chiedi una verifica tecnica
+              </Link>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-3">
+              {needCards.map((need) => {
+                const family = families.find((item) => item.key === need.key);
+                const path = family?.page?.route?.newPath || (family ? serviceAnchorPath(family) : '/servizi');
+                const image = NEED_IMAGE_BY_KEY[need.key] || family?.image;
+                return (
+                  <Link key={need.key} to={path} className="services-need-card rounded-lg border border-white/10 bg-[#111827] transition-colors hover:border-[#EAB308]">
+                    {image && (
+                      <figure className={`services-need-image service-family-image service-family-image-${need.key}`}>
+                        <img src={image} alt={`${need.title} Solaris`} loading="lazy" />
+                        <span>{family?.eyebrow || 'Solaris'}</span>
+                      </figure>
+                    )}
+                    <div className="p-6">
+                      {family && (() => {
+                        const Icon = ICON_BY_FAMILY[family.key] || ShieldCheck;
+                        return (
+                          <div className="mb-5 flex h-10 w-10 items-center justify-center rounded-lg border border-[#EAB308]/30 bg-[#EAB308]/15 text-[#EAB308]">
+                            <Icon size={22} weight="light" />
                           </div>
-                        ))}
-                      </div>
+                        );
+                      })()}
+                      <h3 className="text-xl font-medium text-white">{need.title}</h3>
+                      <p className="mt-3 text-sm leading-relaxed text-[#94A3B8]">{need.description}</p>
+                      <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308]">
+                        Vai alla famiglia
+                        <ArrowRight size={15} weight="bold" />
+                      </span>
                     </div>
+                  </Link>
+                );
+              })}
+            </div>
+          </div>
+        </section>
 
-                    {service.certifications && (
-                      <div className="rounded-xl p-5 mb-6 bg-[#111827] border border-white/10">
-                        <h4 className="text-xs uppercase tracking-wider font-medium text-[#EAB308] mb-4">Certificazioni</h4>
-                        <div className="grid sm:grid-cols-2 gap-2">
-                          {service.certifications.map((cert, i) => (
-                            <div key={i} className="flex items-center gap-2">
-                              <ShieldCheck size={14} weight="fill" className="text-[#3B82F6] flex-shrink-0" />
-                              <span className="text-xs text-white/70">{cert}</span>
-                            </div>
-                          ))}
-                        </div>
-                      </div>
-                    )}
+        <section id="safety-shield" className="scroll-mt-28 py-20 border-t border-white/10">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
+              <div>
+                <span className="text-sm font-medium uppercase tracking-wider text-[#EAB308]">SafetyShield</span>
+                <h2 className="mt-2 text-3xl font-medium text-white lg:text-4xl">SafetyShield: sicurezza antiesplosione</h2>
+                <p className="mt-5 text-[#CBD5E1] leading-relaxed">
+                  Se il tema è protezione da frammentazione del vetro, urti violenti o scenari a rischio, SafetyShield ha un
+                  percorso dedicato. La logica resta Solaris: analisi vetro reale, rischio, telaio e posa certificata.
+                </p>
+                <p className="mt-4 text-sm text-[#94A3B8] leading-relaxed">
+                  Qui trovi i riferimenti principali per capire in pochi secondi se il caso richiede un percorso
+                  antiesplosione dedicato.
+                </p>
 
-                    {service.finiture && (
-                      <div className="rounded-xl p-5 mb-6 bg-[#111827] border border-white/10">
-                        <h4 className="text-xs uppercase tracking-wider font-medium text-[#94A3B8] mb-4">Finiture Disponibili</h4>
-                        <ul className="space-y-2">
-                          {service.finiture.map((f, i) => (
-                            <li key={i} className="text-sm text-white/70 flex items-center gap-2">
-                              <span className="w-2 h-2 rounded-full bg-[#EAB308]" />
-                              {f}
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    )}
+                <div className="mt-7 flex flex-wrap gap-3">
+                  <Link to="/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/" className="btn-yellow">
+                    Focus tecnico SafetyShield
+                  </Link>
+                  <Link to="/prodotti/madico-safetyshield-800/" className="btn-secondary">
+                    Prodotto SafetyShield 800
+                  </Link>
+                  <Link to="/prodotti/madico-safetyshield-1500/" className="btn-secondary">
+                    Prodotto SafetyShield 1500
+                  </Link>
+                </div>
+              </div>
 
-                    <Link to="/preventivo" className="btn-yellow group" data-testid={`service-cta-${service.id}`}>
-                      <span>Richiedi Preventivo</span>
-                      <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
-                    </Link>
-                  </div>
-                </motion.div>
+              <div className="rounded-lg border border-white/10 bg-[#111827] p-6">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Dati in metrica europea</span>
+                <h3 className="mt-2 text-xl font-medium text-white">Riferimenti tecnici rapidi</h3>
+                <div className="mt-5 grid gap-3 sm:grid-cols-2">
+                  {SAFETY_SHIELD_METRICS.map((item) => (
+                    <article key={item.label} className="rounded-lg border border-white/10 bg-[#0A0F1C] p-4">
+                      <p className="text-xs uppercase tracking-wider text-[#94A3B8]">{item.label}</p>
+                      <p className="mt-1 text-base font-semibold text-white">{item.value}</p>
+                    </article>
+                  ))}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-16">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="mb-8">
+              <span className="text-sm font-medium uppercase tracking-wider text-[#EAB308]">Percorsi Solaris</span>
+              <h2 className="mt-2 text-3xl font-medium text-white">Tre modi per migliorare il vetro</h2>
+            </div>
+            <div className="grid gap-5 lg:grid-cols-3">
+              {families.map((family, index) => (
+                <ServiceFamilyCard key={family.key} family={family} index={index} />
               ))}
             </div>
           </div>
         </section>
 
-        <section className="py-24 relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#2563EB]/20 to-[#EAB308]/10" />
-          <div className="relative max-w-4xl mx-auto px-6 md:px-12 text-center">
-            <h2 className="text-3xl lg:text-4xl font-medium text-white mb-6">
-              Non sai quale <span className="text-gradient">scegliere</span>?
+        {families.map((family, index) => (
+          <FamilyDetail key={family.key} family={family} index={index} />
+        ))}
+
+        <section className="services-final-cta relative overflow-hidden py-24">
+          <div className="services-final-cta-bg" aria-hidden="true">
+            <img src={SERVICES_CTA_IMAGE} alt="" loading="lazy" />
+          </div>
+          <div className="relative max-w-4xl mx-auto px-6 text-center md:px-12">
+            <h2 className="text-3xl font-medium text-white lg:text-4xl">
+              Non partiamo dal prodotto, partiamo dal vetro
             </h2>
-            <p className="text-[#94A3B8] text-lg mb-8">
-              I nostri esperti ti guideranno nella scelta della soluzione perfetta.
+            <p className="mt-5 text-lg text-[#94A3B8]">
+              Solaris valuta esposizione, vetro, obiettivo tecnico e condizioni di posa prima di proporre la pellicola corretta.
             </p>
-            <Link to="/preventivo" className="btn-yellow group">
-              <span>Consulenza Gratuita</span>
-              <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
+            <Link to="/preventivo" className="btn-yellow group mt-8">
+              <span>Richiedi preventivo</span>
+              <ArrowRight size={18} weight="bold" className="transition-transform group-hover:translate-x-1" />
             </Link>
           </div>
         </section>

@@ -3,28 +3,28 @@ import { Lightbulb } from '@phosphor-icons/react';
 
 const facts = [
   {
-    question: 'Le pellicole antisolari sostituiscono i vetri?',
-    answer: 'No! Le pellicole si applicano sui vetri esistenti, migliorandone le prestazioni senza lavori strutturali. Dopo 20 giorni diventano un corpo unico con il vetro.',
+    question: 'Serve sostituire i vetri per migliorare comfort e calore?',
+    answer: 'Spesso no. Se il vetro è compatibile, una pellicola professionale può migliorare controllo solare, raggi UV e abbagliamento senza lavori invasivi sui serramenti.',
   },
   {
-    question: 'Le pellicole riducono la luminosità interna?',
-    answer: 'Le pellicole eliminano la sensazione di irraggiamento, riflesso solare e abbagliamento, ma mantengono la luminosità naturale. Puoi scegliere tra diverse tipologie di pellicole.',
+    question: 'Una pellicola antisolare deve per forza scurire molto?',
+    answer: 'No. Esistono finiture più neutre, riflettenti o selettive: la scelta dipende da esposizione, tipo di vetro, luminosità desiderata e risultato estetico.',
   },
   {
-    question: 'Quanto si risparmia davvero?',
-    answer: 'Il risparmio medio va dal 30% al 50% sui costi di climatizzazione estiva. L\'investimento si ammortizza in massimo 3 anni, a fronte di una garanzia fino a 10 anni.',
+    question: 'La sicurezza del vetro dipende solo dallo spessore?',
+    answer: 'No. Contano anche destinazione d\'uso, telaio, superficie, rischio da ridurre e norma di riferimento. Per questo la verifica tecnica viene prima del prodotto.',
   },
   {
-    question: 'Le pellicole di sicurezza resistono davvero alle esplosioni?',
-    answer: 'Il sistema SafetyShield MADICO è testato contro cariche esplosive fino a 1.100 kg e soddisfa gli standard GSA, ISO e DIN-52,290. Tiene il vetro in posizione anche dopo l\'onda d\'urto.',
+    question: 'Privacy significa sempre perdere luce?',
+    answer: 'Non necessariamente. Pellicole satinate, decorative o privacy possono schermare la vista mantenendo ambienti leggibili, ordinati e coerenti con il progetto.',
   },
   {
-    question: 'Si possono installare su qualsiasi vetro?',
-    answer: 'Sì, su vetri singoli, vetrocamera, vetri a taglio termico e anche Low-E. Il nostro team valuta sempre la compatibilità durante il sopralluogo gratuito.',
+    question: 'Si può scegliere solo dal nome della pellicola?',
+    answer: 'Meglio di no. Codice prodotto e famiglia aiutano, ma la scelta corretta nasce da vetro, esposizione, obiettivo, resa estetica e condizioni di posa.',
   },
   {
-    question: 'Le pellicole resistono nel tempo?',
-    answer: 'Le pellicole MADICO hanno una garanzia fino a 10 anni per le versioni sputtered e sunscape, con una vita media reale spesso superiore ai 15-20 anni.',
+    question: 'Da cosa parte un preventivo più preciso?',
+    answer: 'Foto, misure indicative, destinazione d\'uso e problema da risolvere aiutano Solaris a capire se serve controllo solare, sicurezza, privacy o una combinazione.',
   },
 ];
 
@@ -47,7 +47,7 @@ const LoSapeviChe = () => {
             </div>
           </div>
           <p className="text-[#94A3B8] max-w-md lg:text-right text-lg">
-            Risposte alle domande più frequenti sulle pellicole per vetri.
+            Dubbi pratici sulle pellicole per vetri, spiegati in modo semplice prima della verifica Solaris.
           </p>
         </motion.div>
 

@@ -6,74 +6,74 @@ import { useSettings } from '../hooks/useSettings';
 const defaultGalleryItems = [
   {
     id: 1,
-    titolo: 'Palazzo Uffici — Roma',
+    titolo: 'Palazzo Uffici - Roma',
     categoria: 'Antisolari',
     location: 'Roma',
-    descrizione: 'Pellicole antisolari MADICO su facciata in vetro continuo. Riduzione temperatura interna di 7°C.',
-    image: 'https://images.pexels.com/photos/2073623/pexels-photo-2073623.jpeg?auto=compress&cs=tinysrgb&w=800',
-    risultato: '-7°C temperatura interna',
+    descrizione: 'Pellicole antisolari MADICO su facciata in vetro continuo. Riduzione temperatura interna di 7 gradi C.',
+    image: '/assets/generated/home/premium-antisolari.webp',
+    risultato: '-7 gradi C temperatura interna',
   },
   {
     id: 2,
-    titolo: 'Centro Congressi — Bologna',
+    titolo: 'Centro Congressi - Bologna',
     categoria: 'Antisolari',
     location: 'Bologna',
     descrizione: 'Installazione pellicole a riflessione solare su 2.500 mq di vetrate esposizione sud.',
-    image: 'https://images.pexels.com/photos/2073623/pexels-photo-2073623.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/generated/home/hero-architectural.webp',
     risultato: '-40% costi climatizzazione',
   },
   {
     id: 3,
-    titolo: 'Sede Bancaria — Firenze',
+    titolo: 'Sede Bancaria - Firenze',
     categoria: 'Sicurezza',
     location: 'Firenze',
     descrizione: 'Messa in sicurezza vetrate con pellicole anti-sfondamento UNI EN 12600 classe 1B1.',
-    image: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?auto=compress&cs=tinysrgb&w=800',
-    risultato: 'Conformità D.Lgs. 81/2008',
+    image: '/assets/generated/home/premium-sicurezza.webp',
+    risultato: 'Conformita D.Lgs. 81/2008',
   },
   {
     id: 4,
-    titolo: 'Ambasciata — Roma',
+    titolo: 'Ambasciata - Roma',
     categoria: 'Safety Shield',
     location: 'Roma',
     descrizione: 'Protezione anti-esplosione SafetyShield G2 con sistema FrameGard su tutte le vetrate perimetrali.',
-    image: 'https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/generated/home/premium-safety-shield.webp',
     risultato: 'Certificazione GSA 3A',
   },
   {
     id: 5,
-    titolo: 'Hotel 5 Stelle — Milano',
+    titolo: 'Hotel 5 Stelle - Milano',
     categoria: 'Privacy',
     location: 'Milano',
     descrizione: 'Pellicole satinate decorative per suite e sale meeting. Design personalizzato su misura.',
-    image: 'https://images.pexels.com/photos/1098982/pexels-photo-1098982.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/generated/home/premium-privacy-design.webp',
     risultato: 'Privacy + design esclusivo',
   },
   {
     id: 6,
-    titolo: 'Laboratorio Universitario — Pisa',
+    titolo: 'Laboratorio Universitario - Pisa',
     categoria: 'Antisolari',
     location: 'Pisa',
     descrizione: 'Protezione UV 99% per laboratorio con strumentazione sensibile. Riduzione abbagliamento.',
-    image: 'https://images.pexels.com/photos/358530/pexels-photo-358530.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/generated/home/focus-performance.webp',
     risultato: 'Protezione UV 99%',
   },
   {
     id: 7,
-    titolo: 'Edificio Governativo — Napoli',
+    titolo: 'Edificio Governativo - Napoli',
     categoria: 'Safety Shield',
     location: 'Napoli',
     descrizione: 'SafetyShield anti-intrusione e anti-esplosione su edificio ad alto rischio. ASTM F3561.',
-    image: 'https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/generated/home/need-safety-shield.webp',
     risultato: 'Anti-intrusione certificata',
   },
   {
     id: 8,
-    titolo: 'Showroom Auto — Torino',
+    titolo: 'Showroom Auto - Torino',
     categoria: 'Antisolari',
     location: 'Torino',
     descrizione: 'Pellicole antisolari con finitura neutra per protezione auto esposte e comfort clienti.',
-    image: 'https://images.pexels.com/photos/2073623/pexels-photo-2073623.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: '/assets/generated/home/need-antisolari.webp',
     risultato: '-50% irraggiamento solare',
   },
 ];
@@ -145,7 +145,7 @@ const Gallery = () => {
             </h2>
           </div>
           <p className="text-[#94A3B8] max-w-md lg:text-right text-lg">
-            Una selezione dei progetti realizzati in 40 anni di attività.
+            Una selezione dei progetti realizzati in 30+ anni di attivita.
           </p>
         </motion.div>
 

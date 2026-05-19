@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
@@ -13,7 +13,7 @@ const samplePosts = [
     titolo: 'Come scegliere la pellicola antisolare giusta per il tuo edificio',
     slug: 'come-scegliere-pellicola-antisolare',
     excerpt: 'Guida completa alla scelta delle pellicole antisolari: fattori da considerare, tipologie disponibili e consigli degli esperti.',
-    immagine: 'https://static.prod-images.emergentagent.com/jobs/1429a972-4dc9-4582-a67b-766bbd84c4f7/images/41cd0458add26ba29df8fb0b010533e357770d6fb0f027d6a8eea3a954452d5f.png',
+    immagine: '/assets/services/pellicole-antisolari.jpg',
     categoria: 'Guide',
     tags: ['antisolari', 'risparmio energetico'],
     created_at: '2025-01-15',
@@ -22,8 +22,8 @@ const samplePosts = [
     id: '2',
     titolo: 'SafetyShield G2: la nuova generazione di pellicole anti-esplosione',
     slug: 'safetyshield-g2-nuova-generazione',
-    excerpt: 'MADICO lancia SafetyShield G2: la pellicola di sicurezza più forte e più testata al mondo, con adesivo proprietario e poliestere premium.',
-    immagine: 'https://images.pexels.com/photos/5483051/pexels-photo-5483051.jpeg?w=800',
+    excerpt: 'MADICO lancia SafetyShield G2: la pellicola di sicurezza piu forte e piu testata al mondo, con adesivo proprietario e poliestere premium.',
+    immagine: '/assets/services/pellicole-di-sicurezza.jpg',
     categoria: 'Innovazione',
     tags: ['safety-shield', 'sicurezza', 'anti-esplosione'],
     created_at: '2025-01-10',
@@ -32,8 +32,8 @@ const samplePosts = [
     id: '3',
     titolo: 'Pellicole di sicurezza: normative e certificazioni',
     slug: 'pellicole-sicurezza-normative-certificazioni',
-    excerpt: 'Tutto quello che devi sapere sulle certificazioni UNI EN 12600 e la conformità al D.Lgs. 81/2008 per le pellicole di sicurezza.',
-    immagine: 'https://images.pexels.com/photos/2219024/pexels-photo-2219024.jpeg?w=800',
+    excerpt: 'Tutto quello che devi sapere sulle certificazioni UNI EN 12600 e la conformita al D.Lgs. 81/2008 per le pellicole di sicurezza.',
+    immagine: '/assets/services/pellicole-di-sicurezza.jpg',
     categoria: 'Normative',
     tags: ['sicurezza', 'certificazioni'],
     created_at: '2025-01-05',
@@ -43,7 +43,7 @@ const samplePosts = [
     titolo: 'Risparmio energetico con le pellicole per vetri: case study',
     slug: 'risparmio-energetico-pellicole-case-study',
     excerpt: 'Analisi dettagliata del risparmio energetico ottenuto in diversi edifici grazie all\'installazione di pellicole antisolari.',
-    immagine: 'https://images.pexels.com/photos/3195642/pexels-photo-3195642.jpeg?w=800',
+    immagine: '/assets/services/pellicole-antisolari.jpg',
     categoria: 'Case Study',
     tags: ['risparmio', 'efficienza'],
     created_at: '2024-12-20',
@@ -74,7 +74,7 @@ const BlogPagina = () => {
                 <span className="text-gradient"> approfondimenti</span>
               </h1>
               <p className="text-lg text-[#94A3B8] leading-relaxed">
-                Articoli, guide e novità dal mondo delle pellicole per vetri. 
+                Articoli, guide e novita dal mondo delle pellicole per vetri. 
                 Resta aggiornato sulle ultime tecnologie.
               </p>
             </div>
@@ -167,7 +167,7 @@ const BlogPagina = () => {
             <h2 className="text-2xl lg:text-3xl font-medium text-white mb-4">
               Hai domande sulle <span className="text-gradient">pellicole</span>?
             </h2>
-            <p className="text-[#94A3B8] mb-8">Il nostro team è pronto a rispondere.</p>
+            <p className="text-[#94A3B8] mb-8">Il nostro team e pronto a rispondere.</p>
             <Link to="/contatti" className="btn-yellow group">
               <span>Contattaci</span>
               <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />

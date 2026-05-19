@@ -19,6 +19,10 @@ const slugFromPath = (path = '') => normalizePath(path)
   .filter(Boolean)
   .pop();
 
+const normalizeHeadlessText = (value = '') => String(value)
+  .replace(/\bluminosita\b/gi, 'luminosità')
+  .replace(/\bvisibilita\b/gi, 'visibilità');
+
 export function useHeadlessSEO(currentPath, page) {
   const [seoMap, setSeoMap] = useState(null);
 
@@ -62,8 +66,8 @@ export function mergeHeadlessSEO(page, headlessSEO) {
     ...page,
     seo: {
       ...(page.seo || {}),
-      title: headlessSEO.title || page.seo?.title,
-      description: headlessSEO.description || page.seo?.description,
+      title: normalizeHeadlessText(headlessSEO.title || page.seo?.title || ''),
+      description: normalizeHeadlessText(headlessSEO.description || page.seo?.description || ''),
       robots: headlessSEO.robots || page.seo?.robots,
     },
     headlessSEO,

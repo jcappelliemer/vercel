@@ -1,4 +1,4 @@
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link } from '@/next/router-shim';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
@@ -44,7 +44,7 @@ const ServizioLocalePagina = () => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`servizio-locale-${citta.slug}`}>
-      <SEO title={`Pellicole per Vetri ${citta.nome}`} description={`Installazione pellicole antisolari e di sicurezza MADICO a ${citta.nome}, ${citta.regione}. Sopralluogo e preventivo gratuiti. Solaris Films, 40 anni di esperienza.`} path={`/servizio-locale/${citta.slug}`} jsonLd={buildLocalBusinessSchema(citta)} />
+      <SEO title={`Pellicole per Vetri ${citta.nome}`} description={`Installazione pellicole antisolari e di sicurezza MADICO a ${citta.nome}, ${citta.regione}. Sopralluogo e preventivo gratuiti. Solaris Films, 30+ anni di esperienza.`} path={`/servizio-locale/${citta.slug}`} jsonLd={buildLocalBusinessSchema(citta)} />
       <Header />
       <main className="pt-24">
         {/* Hero */}
@@ -83,7 +83,7 @@ const ServizioLocalePagina = () => {
                 </p>
                 <p className="text-[#475569] leading-relaxed mb-6">
                   Installiamo solo le pellicole americane MADICO, le più performanti al mondo, per garantire la 
-                  piena soddisfazione dei nostri clienti. Abbiamo più di 40 anni di esperienza nella progettazione 
+                  piena soddisfazione dei nostri clienti. Abbiamo 30+ anni di esperienza nella progettazione 
                   e installazione di pellicole per vetri a {citta.nome} ed in tutta Italia.
                 </p>
                 <p className="text-[#475569] leading-relaxed mb-8">
@@ -134,7 +134,7 @@ const ServizioLocalePagina = () => {
                 <div className="bg-[#2563EB] rounded-2xl p-6 text-white">
                   <h4 className="font-medium mb-2">Scegli la qualità</h4>
                   <p className="text-white/80 text-sm">
-                    Scegli chi fa questo lavoro con passione da oltre 40 anni. 
+                    Scegli chi fa questo lavoro con passione da 30+ anni. 
                     Scegli un installatore certificato. Scegli Solaris Films.
                   </p>
                 </div>

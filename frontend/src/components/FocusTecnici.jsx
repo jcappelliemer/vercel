@@ -39,6 +39,7 @@ const defaultItems = [
 
 const FocusTecnici = () => {
   const s = useSettings();
+  const focusImage = '/assets/generated/home/focus-performance.webp';
   const sectionTitle = s.focus_section_title || 'Risultati che fanno la differenza';
   const sectionSubtitle = s.focus_section_subtitle || 'I numeri che fanno la differenza. Dati reali, testati e certificati.';
 
@@ -59,6 +60,32 @@ const FocusTecnici = () => {
             {sectionSubtitle}
           </p>
         </motion.div>
+
+        <motion.figure
+          initial={{ opacity: 0, y: 24 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="relative mb-8 min-h-[300px] overflow-hidden rounded-2xl border border-white/10 bg-[#111827]"
+        >
+          <img
+            src={focusImage}
+            alt="Prestazioni tecniche delle pellicole per vetri Solaris"
+            className="absolute inset-0 h-full w-full object-cover"
+            loading="lazy"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#0A0F1C]/92 via-[#0A0F1C]/58 to-transparent" />
+          <figcaption className="relative z-10 flex min-h-[300px] max-w-xl flex-col justify-end p-6 sm:p-8 lg:p-10">
+            <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#EAB308]">
+              Controllo solare e sicurezza
+            </div>
+            <div className="mt-3 text-3xl font-semibold leading-tight text-white">
+              La pellicola corretta cambia temperatura, comfort e rischio.
+            </div>
+            <p className="mt-4 max-w-md text-sm leading-relaxed text-[#CBD5E1]">
+              La lettura tecnica del vetro serve a scegliere prestazioni coerenti con esposizione, superficie e uso dell'edificio.
+            </p>
+          </figcaption>
+        </motion.figure>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {defaultItems.map((item, index) => {

@@ -43,6 +43,7 @@
     "htmlparser2": "^6.1.0",
     "input-otp": "^1.4.2",
     "lucide-react": "^0.507.0",
+    "next": "^15.3.2",
     "next-themes": "^0.4.6",
     "react": "^19.0.0",
     "react-day-picker": "8.10.1",
@@ -61,10 +62,47 @@
     "zod": "^3.24.4"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "next dev",
+    "start:cra": "craco start",
     "fetch:live": "node fetch-live-site.js",
-    "build": "craco build",
+    "build": "next build",
+    "build:cra": "craco build",
+    "postbuild:cra": "node scripts/run-react-snap.cjs",
     "test": "craco test"
+  },
+  "reactSnap": {
+    "source": "build",
+    "skipThirdPartyRequests": true,
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox",
+      "--disable-dev-shm-usage"
+    ],
+    "include": [
+      "/",
+      "/servizi",
+      "/servizi/",
+      "/company-profile",
+      "/company-profile/",
+      "/preventivo",
+      "/preventivo/",
+      "/contatti",
+      "/contatti/",
+      "/guida-tecnica",
+      "/guida-tecnica/",
+      "/focus-tecnico",
+      "/focus-tecnico/",
+      "/prodotti",
+      "/prodotti/",
+      "/info",
+      "/info/",
+      "/servizio-locale",
+      "/servizio-locale/",
+      "/blog",
+      "/blog/",
+      "/lo-sapevi-che",
+      "/lo-sapevi-che/"
+    ]
   },
   "browserslist": {
     "production": [
@@ -91,7 +129,10 @@
     "eslint-plugin-react-hooks": "5.2.0",
     "globals": "15.15.0",
     "postcss": "^8.4.49",
+    "puppeteer": "^24.9.0",
     "tailwindcss": "^3.4.17"
+    ,
+    "react-snap": "^1.23.0"
   },
   "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

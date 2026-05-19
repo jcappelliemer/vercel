@@ -8,30 +8,30 @@
     "confidence": "high",
     "needsReview": false
   },
-  "sourceSitemap": "https://www.solarisfilms.it/focus-tecnico-sitemap.xml",
+  "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml",
   "seo": {
-    "title": "Pellicole riflettenti - Solaris Films",
+    "title": "Pellicole riflettenti — Solaris Films",
     "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "robots": "max-image-preview:large",
     "canonical": "https://www.solarisfilms.it/pellicole-riflettenti/",
     "og": {
-      "og:locale": "it_IT",
-      "og:type": "article",
-      "og:title": "Pellicole riflettenti",
+      "og:title": "Pellicole riflettenti — Solaris Films",
       "og:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
       "og:url": "https://www.solarisfilms.it/pellicole-riflettenti/",
-      "og:site_name": "Solaris Films"
+      "og:type": "website",
+      "og:site_name": "Solaris Films",
+      "og:locale": "it_IT",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png"
     },
     "twitter": {
       "twitter:card": "summary_large_image",
-      "twitter:label1": "Tempo di lettura stimato",
-      "twitter:data1": "1 minuto"
+      "twitter:title": "Pellicole riflettenti — Solaris Films",
+      "twitter:description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png"
     },
-    "article": {
-      "article:modified_time": "2025-09-18T15:44:41+00:00"
-    },
+    "article": {},
     "schemas": [
-      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-riflettenti\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-riflettenti\\/\",\"name\":\"Pellicole riflettenti - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-16T09:44:37+00:00\",\"dateModified\":\"2025-09-18T15:44:41+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-riflettenti\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-riflettenti\\/\"]}]},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-riflettenti\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole riflettenti\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\"},\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\"},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"inLanguage\":\"it-IT\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-riflettenti\\/#webpage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-riflettenti\\/\",\"name\":\"Pellicole riflettenti\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-16T09:44:37+02:00\",\"dateModified\":\"2025-09-18T15:44:41+02:00\",\"inLanguage\":\"it-IT\",\"description\":\"DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-riflettenti\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole riflettenti\"}]}]}",
       "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
     ]
   },
@@ -90,7 +90,7 @@
     }
   ],
   "h1": "Pellicole riflettenti",
-  "primaryImage": "",
+  "primaryImage": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png",
   "contentBlocks": [
     {
       "type": "heading",
@@ -212,18 +212,18 @@
     },
     {
       "type": "paragraph",
-      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?",
-      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ?"
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate?"
     },
     {
       "type": "cta",
-      "href": "/pellicole-per-vetri/contact/",
+      "href": "/contatti/",
       "text": "Contattaci",
       "html": ""
     }
   ],
   "contentHtml": "",
-  "text": "Pellicole riflettenti Le pellicole riflettenti sono prodotti antisolari utilizzati per migliorare l’isolamento termico delle vetrate Le pellicole oscuranti vengono fabbricate con materiali che garantiscono filtraggio e schermatura dai raggi solari, evitano che il calore entri negli ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Utilizzando la giusta pellicola si possono ridurre le temperature interne degli edifici fino a 7/8°C. Questo ovviamente porterà una cospicua diminuzione dei costi di climatizzazione estivi ed un impatto ambientale molto inferiore. Come funzionano le pellicole riflettenti? Le pellicole a specchio hanno l’utilità di riflettere la luce solare per cercare di impedire alla componente di calore di entrare all’interno della superficie vetrata. Le pellicole riflettenti della serie RS sono disponibili sia per l’installazione in esterno con la RS 20 E PS SR che in interno, con la RS20 PS SR e la RS 35 PS SR Consentono di ridurre l’ingresso di calore fino all’89% ottenendo ambienti più freschi e confortevoli. In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l’ammortamento della spesa in pochi anni. Riducono l’abbaglio, offrendo un maggiore confort visivo. Garantiscono una maggiore eleganza all’edificio. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. Le versioni di sicurezza, da 4Mil e da 8Mil, permettono di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata Le pellicole riflettenti, cosa possono dare al tuo business La pellicola riflettente è la scelta ideale per aiutarti nel tuo business. Come? Può proteggere le tue apparecchiature costose dal deperimento e da malfunzionamenti legati all’irraggiamento o al calore. Può farti risparmiare fino al 30% per la climatizzazione, tagliando i picchi di calore all’interno degli uffici o della produzione. Può aumentare la produttività dei lavoratori andando ad eliminare i fastidiosissimi riverberi. Può darti la discrezione necessaria per nascondere aree di lavoro poco ordinate o informazioni che non desideri siano in vista. È importante ricordare, tuttavia, che la pellicola riflettente per vetri non è adatta a te se il tuo obiettivo è quello di ottenere la privacy internamente tra locali o all’interno di una stanza retroilluminata da altre finestre. L’effetto riflettente del vetro può impedire che informazioni, computer o altri oggetti di valore siano visibili dall’esterno dell’ufficio attraverso porte vetrate, finestre e qualsiasi altro tipo di infisso trasparente. La serie RS Le pellicole antisolari riflettenti della serie RS (Reflective Silver) sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. La sua finitura riflettente argento forte donerà una discrezione nelle ore diurne ed un look molto personale ai tuoi infissi. I nostri Prodotti di questa categoria Pellicola antisolare Madico RS 20 e PS SR 75 Micron Pellicola antisolare Madico RS 40 E PS SR 75 Micron Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate ? Contattaci",
-  "textLength": 3428,
-  "fetchedAt": "2026-04-28T15:09:40.975Z"
+  "text": "Pellicole riflettenti Le pellicole riflettenti sono prodotti antisolari utilizzati per migliorare l’isolamento termico delle vetrate Le pellicole oscuranti vengono fabbricate con materiali che garantiscono filtraggio e schermatura dai raggi solari, evitano che il calore entri negli ambienti illuminati dalle nostre vetrate, migliorano la resa energetica dei nostri edifici, riducono calore, abbagliamento, riverberi, ma anche i consumi energetici. Utilizzando la giusta pellicola si possono ridurre le temperature interne degli edifici fino a 7/8°C. Questo ovviamente porterà una cospicua diminuzione dei costi di climatizzazione estivi ed un impatto ambientale molto inferiore. Come funzionano le pellicole riflettenti? Le pellicole a specchio hanno l’utilità di riflettere la luce solare per cercare di impedire alla componente di calore di entrare all’interno della superficie vetrata. Le pellicole riflettenti della serie RS sono disponibili sia per l’installazione in esterno con la RS 20 E PS SR che in interno, con la RS20 PS SR e la RS 35 PS SR Consentono di ridurre l’ingresso di calore fino all’89% ottenendo ambienti più freschi e confortevoli. In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l’ammortamento della spesa in pochi anni. Riducono l’abbaglio, offrendo un maggiore confort visivo. Garantiscono una maggiore eleganza all’edificio. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. Le versioni di sicurezza, da 4Mil e da 8Mil, permettono di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata Le pellicole riflettenti, cosa possono dare al tuo business La pellicola riflettente è la scelta ideale per aiutarti nel tuo business. Come? Può proteggere le tue apparecchiature costose dal deperimento e da malfunzionamenti legati all’irraggiamento o al calore. Può farti risparmiare fino al 30% per la climatizzazione, tagliando i picchi di calore all’interno degli uffici o della produzione. Può aumentare la produttività dei lavoratori andando ad eliminare i fastidiosissimi riverberi. Può darti la discrezione necessaria per nascondere aree di lavoro poco ordinate o informazioni che non desideri siano in vista. È importante ricordare, tuttavia, che la pellicola riflettente per vetri non è adatta a te se il tuo obiettivo è quello di ottenere la privacy internamente tra locali o all’interno di una stanza retroilluminata da altre finestre. L’effetto riflettente del vetro può impedire che informazioni, computer o altri oggetti di valore siano visibili dall’esterno dell’ufficio attraverso porte vetrate, finestre e qualsiasi altro tipo di infisso trasparente. La serie RS Le pellicole antisolari riflettenti della serie RS (Reflective Silver) sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni. La sua finitura riflettente argento forte donerà una discrezione nelle ore diurne ed un look molto personale ai tuoi infissi. I nostri Prodotti di questa categoria Pellicola antisolare Madico RS 20 e PS SR 75 Micron Pellicola antisolare Madico RS 40 E PS SR 75 Micron Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate? Contattaci",
+  "textLength": 3427,
+  "fetchedAt": "2026-05-19T10:40:33.721Z"
 }

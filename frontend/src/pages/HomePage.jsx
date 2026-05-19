@@ -16,12 +16,13 @@ import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
 import SEO, { buildOrganizationSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import { ArrowRight, Buildings, Camera, Ruler } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
 const CTASection = () => {
   const s = useSettings();
+  const ctaImage = '/assets/generated/home/cta-consultation.webp';
   const quickItems = [
     {
       icon: Buildings,
@@ -43,6 +44,14 @@ const CTASection = () => {
   return (
   <section className="py-32 relative overflow-hidden" data-testid="cta-section">
     <div className="absolute inset-0">
+      <img
+        src={ctaImage}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 h-full w-full object-cover opacity-35"
+        loading="lazy"
+      />
+      <div className="absolute inset-0 bg-[#0A0F1C]/82" />
       <div className="absolute inset-0 bg-gradient-to-br from-[#2563EB]/10 via-transparent to-[#EAB308]/10" />
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-[#EAB308]/8 rounded-full blur-[150px]" />
     </div>

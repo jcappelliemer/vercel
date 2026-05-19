@@ -7,6 +7,7 @@ const http = require('http');
 const https = require('https');
 const fs = require('fs');
 const path = require('path');
+const crypto = require('crypto');
 const { URL } = require('url');
 
 const DEFAULT_WP_URL = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
@@ -68,16 +69,23 @@ function downloadFile(url, destPath) {
 async function localizeImage(imageUrl, imagesDir, prefix) {
   if (!imageUrl || imageUrl.trim() === '') return '';
 
+  let tempPath = '';
   try {
     const parsed = new URL(imageUrl);
     const ext = path.extname(parsed.pathname) || '.jpg';
-    const filename = `${prefix}${ext}`;
-    const destPath = path.join(imagesDir, filename);
+    tempPath = path.join(imagesDir, `${prefix}.tmp${ext}`);
 
-    console.log(`  Downloading image: ${imageUrl} -> ${filename}`);
-    await downloadFile(imageUrl, destPath);
+    console.log(`  Downloading image: ${imageUrl} -> ${path.basename(tempPath)}`);
+    await downloadFile(imageUrl, tempPath);
+
+    const hash = crypto.createHash('sha1').update(fs.readFileSync(tempPath)).digest('hex').slice(0, 10);
+    const filename = `${prefix}-${hash}${ext}`;
+    const destPath = path.join(imagesDir, filename);
+    if (fs.existsSync(destPath)) fs.unlinkSync(destPath);
+    fs.renameSync(tempPath, destPath);
     return `/wp-data/images/${filename}`;
   } catch (err) {
+    if (tempPath && fs.existsSync(tempPath)) fs.unlinkSync(tempPath);
     console.warn(`  Failed to download image ${imageUrl}: ${err.message}`);
     return imageUrl; // fallback to original URL
   }
@@ -125,6 +133,10 @@ async function main() {
   // 2. Download and localize images from settings
   const settings = fetchedData['settings'];
   if (settings && typeof settings === 'object') {
+    settings.stat1_value = '30+';
+    settings.stat2_value = '+45k';
+    settings.footer_text = 'Distributore esclusivo MADICO USA per l\'Italia. 30+ anni di esperienza, +45k edifici trattati.';
+
     console.log('\nLocalizing settings images...');
 
     // Hero image

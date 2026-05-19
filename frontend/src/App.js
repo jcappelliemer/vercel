@@ -1,6 +1,6 @@
 import "@/App.css";
 import { useLayoutEffect } from "react";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route, useLocation } from "react-router-dom";
 import { SettingsProvider } from "./hooks/useSettings";
 import HomePage from "./pages/HomePage";
 import PreventivoPagina from "./pages/PreventivoPagina";
@@ -23,11 +23,26 @@ const ScrollToTop = () => {
     }
 
     if (hash) {
-      const target = document.getElementById(hash.slice(1));
-      if (target) {
-        target.scrollIntoView({ block: "start", behavior: "auto" });
-        return;
-      }
+      const targetId = hash.slice(1);
+      const maxAttempts = 24;
+      let attempts = 0;
+
+      const scrollWhenReady = () => {
+        const target = document.getElementById(targetId);
+        if (target) {
+          target.scrollIntoView({ block: "start", behavior: "auto" });
+          return;
+        }
+        attempts += 1;
+        if (attempts < maxAttempts) {
+          window.requestAnimationFrame(scrollWhenReady);
+        } else {
+          window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+        }
+      };
+
+      scrollWhenReady();
+      return;
     }
 
     window.scrollTo({ top: 0, left: 0, behavior: "auto" });
@@ -50,14 +65,18 @@ function App() {
           <Route path="/approfondimenti/*" element={<LiveMirrorPage />} />
           <Route path="/preventivo" element={<PreventivoPagina />} />
           <Route path="/servizi" element={<ServiziPagina />} />
-          <Route path="/chi-siamo" element={<ChiSiamoPagina />} />
+          <Route path="/company-profile" element={<ChiSiamoPagina />} />
+          <Route path="/chi-siamo" element={<Navigate to="/company-profile" replace />} />
           <Route path="/contatti" element={<ContattiPagina />} />
           <Route path="/blog" element={<LiveDirectoryPage kind="blog" />} />
           <Route path="/blog/:slug" element={<LiveMirrorPage />} />
           <Route path="/lo-sapevi-che" element={<LiveDirectoryPage kind="knowledge" />} />
           <Route path="/guida-tecnica" element={<GuidaTecnicaPagina />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPagina />} />
-          <Route path="/profilo-solaris" element={<LiveMirrorPage />} />
+          <Route path="/logo-concepts" element={<Navigate to="/company-profile" replace />} />
+          <Route path="/profilo-solaris" element={<Navigate to="/company-profile" replace />} />
+          <Route path="/pellicole-per-vetri/profilo-solaris" element={<Navigate to="/company-profile" replace />} />
+          <Route path="/pellicole-per-vetri/pellicole-per-vetri/about" element={<Navigate to="/company-profile" replace />} />
           <Route path="/servizi/:slug" element={<LiveMirrorPage />} />
           <Route path="/servizio-locale" element={<LiveDirectoryPage kind="local" />} />
           <Route path="/servizio-locale/:city" element={<LiveMirrorPage />} />

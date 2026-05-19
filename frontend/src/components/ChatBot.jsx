@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChatCircle, X, PaperPlaneTilt, Robot } from '@phosphor-icons/react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from '@/next/router-shim';
 import axios from 'axios';
 import { useSettings } from '../hooks/useSettings';
 import { buildWhatsAppHref } from '../utils/contactLinks';

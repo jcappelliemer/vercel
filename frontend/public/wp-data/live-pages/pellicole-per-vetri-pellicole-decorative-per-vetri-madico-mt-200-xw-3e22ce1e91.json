@@ -8,33 +8,30 @@
     "confidence": "high",
     "needsReview": false
   },
-  "sourceSitemap": "https://www.solarisfilms.it/pellicole-privacy-sitemap.xml",
+  "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-privacy-1.xml",
   "seo": {
-    "title": "Pellicola privacy Madico MT 200 XW - Solaris Films",
+    "title": "Pellicola privacy Madico MT 200 XW — Solaris Films",
     "description": "",
-    "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+    "robots": "max-image-preview:large",
     "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/",
     "og": {
-      "og:locale": "it_IT",
-      "og:type": "article",
-      "og:title": "Pellicola privacy Madico MT 200 XW",
+      "og:title": "Pellicola privacy Madico MT 200 XW — Solaris Films",
       "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/",
+      "og:type": "website",
       "og:site_name": "Solaris Films",
-      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/MT200XW.webp",
-      "og:image:width": "1141",
-      "og:image:height": "1081",
-      "og:image:type": "image/webp"
+      "og:locale": "it_IT",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/MT200XW-1024x970.webp",
+      "og:image:width": "800",
+      "og:image:height": "758"
     },
     "twitter": {
       "twitter:card": "summary_large_image",
-      "twitter:label1": "Tempo di lettura stimato",
-      "twitter:data1": "1 minuto"
+      "twitter:title": "Pellicola privacy Madico MT 200 XW — Solaris Films",
+      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/MT200XW-1024x970.webp"
     },
-    "article": {
-      "article:modified_time": "2025-09-18T10:00:07+00:00"
-    },
+    "article": {},
     "schemas": [
-      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/\",\"name\":\"Pellicola privacy Madico MT 200 XW - Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#primaryimage\"},\"thumbnailUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/MT200XW.webp\",\"datePublished\":\"2025-06-12T07:43:47+00:00\",\"dateModified\":\"2025-09-18T10:00:07+00:00\",\"breadcrumb\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#breadcrumb\"},\"inLanguage\":\"it-IT\",\"potentialAction\":[{\"@type\":\"ReadAction\",\"target\":[\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/\"]}]},{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/MT200XW.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/MT200XW.webp\",\"width\":1141,\"height\":1081},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole privacy e design\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/\"},{\"@type\":\"ListItem\",\"position\":3,\"name\":\"Pellicola privacy Madico MT 200 XW\"}]},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 40 anni\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":{\"@type\":\"PropertyValueSpecification\",\"valueRequired\":true,\"valueName\":\"search_term_string\"}}],\"inLanguage\":\"it-IT\"},{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"inLanguage\":\"it-IT\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"width\":423,\"height\":152,\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#\\/schema\\/logo\\/image\\/\"},\"description\":\"Distributore ed installatore di pellicole per vetri con tecnologia originale MADICO USA. 40 anni di esperienza nel settore, affidati agli specialisti delle pellicole per vetri.\",\"email\":\"info@solarisfilms.it\",\"telephone\":\"800625052\",\"legalName\":\"Solaris films srl\"}]}",
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\"},\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\"},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"inLanguage\":\"it-IT\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#webpage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/\",\"name\":\"Pellicola privacy Madico MT 200 XW\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-06-12T07:43:47+02:00\",\"dateModified\":\"2025-09-18T10:00:07+02:00\",\"inLanguage\":\"it-IT\",\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#primaryimage\"}},{\"@type\":\"Product\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#product\",\"name\":\"Pellicola privacy Madico MT 200 XW\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/\",\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#primaryimage\"}},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicola privacy Madico MT 200 XW\"}]},{\"@type\":\"ImageObject\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/pellicole-decorative-per-vetri\\/madico-mt-200-xw\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/MT200XW-1024x970.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/MT200XW-1024x970.webp\",\"width\":800,\"height\":758,\"caption\":\"Pellicola privacy Madico MT 200 XW\",\"inLanguage\":\"it-IT\"}]}",
       "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
     ]
   },
@@ -81,7 +78,7 @@
     }
   ],
   "h1": "Pellicola privacy Madico MT 200 XW",
-  "primaryImage": "",
+  "primaryImage": "https://www.solarisfilms.it/wp-content/uploads/2025/06/MT200XW-1024x970.webp",
   "contentBlocks": [
     {
       "type": "heading",
@@ -267,5 +264,5 @@
   "contentHtml": "",
   "text": "Pellicola privacy Madico MT 200 XW Consulta la scheda tecnica Benefici Tutela la privacy Preserva la luminosità Riduce l’abbaglio Migliora l’estetica degli ambienti Blocca il 99% dei raggi UV Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico Vetro singolo 3 mm Energia solare totale Trasmessa 66% Riflessa 16% Assorbita 14% Luce visibile Trasmessa 68% Riflessa - Esterno 19% Riduzione abbaglio 24% Infrarossi respinti 33% Raggi UV trasmessi (max) 1% Coefficiente schermatura 0.82 Fattore solare g 0.71 Totale energia respinta Energia Respinta 29% Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole! 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
   "textLength": 901,
-  "fetchedAt": "2026-04-28T15:09:19.841Z"
+  "fetchedAt": "2026-05-19T10:40:27.770Z"
 }

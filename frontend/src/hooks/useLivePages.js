@@ -1,12 +1,20 @@
 import { useEffect, useMemo, useState } from 'react';
+import { isExcludedSolarisPage } from '../utils/liveContent';
 
-export function useLivePages() {
-  const [pages, setPages] = useState([]);
-  const [loading, setLoading] = useState(true);
+export function useLivePages(initialPages = []) {
+  const [pages, setPages] = useState(initialPages);
+  const [loading, setLoading] = useState(!initialPages.length);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     let mounted = true;
+
+    if (initialPages.length) {
+      setLoading(false);
+      return () => {
+        mounted = false;
+      };
+    }
 
     fetch('/wp-data/live-pages-index.json')
       .then((response) => {
@@ -15,7 +23,7 @@ export function useLivePages() {
       })
       .then((data) => {
         if (!mounted) return;
-        setPages(data.pages || []);
+        setPages((data.pages || []).filter((page) => !isExcludedSolarisPage(page)));
         setLoading(false);
       })
       .catch((err) => {
@@ -27,7 +35,7 @@ export function useLivePages() {
     return () => {
       mounted = false;
     };
-  }, []);
+  }, [initialPages]);
 
   const stats = useMemo(() => pages.reduce((acc, page) => {
     const type = page.route?.type || 'unknown';

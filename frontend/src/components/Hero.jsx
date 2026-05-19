@@ -1,11 +1,12 @@
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import { motion } from 'framer-motion';
 import { ArrowRight, Play } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
 const Hero = () => {
   const s = useSettings();
-  const heroImage = s.hero_image;
+  const heroImage = s.hero_image || '/assets/generated/home/hero-architectural.webp';
+  const heroTitleWords = (s.hero_title || '').split(' ').filter(Boolean);
   const stats = [
     { value: s.stat1_value, label: s.stat1_label, delay: 0.6 },
     { value: s.stat2_value, label: s.stat2_label, delay: 0.75 },
@@ -34,7 +35,7 @@ const Hero = () => {
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-12 py-32">
         <div className="grid lg:grid-cols-12 gap-12 items-center">
-          <div className="lg:col-span-7">
+          <div className="min-w-0 lg:col-span-7">
             <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <motion.div 
                 initial={{ opacity: 0, scale: 0.9 }}
@@ -48,12 +49,13 @@ const Hero = () => {
                 </span>
               </motion.div>
 
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-white leading-[1.05] mb-8">
+              <h1 className="text-4xl sm:text-6xl lg:text-7xl font-medium tracking-tight text-white leading-[1.05] mb-8">
                 {s.hero_title ? (
                   <>
-                    {s.hero_title.split(' ').slice(0, 3).join(' ')}
+                    {heroTitleWords.slice(0, 2).join(' ')}
                     <br />
-                    <span className="text-gradient">{s.hero_title.split(' ').slice(3).join(' ')}</span>
+                    {' '}
+                    <span className="text-gradient">{heroTitleWords.slice(2).join(' ')}</span>
                   </>
                 ) : (
                   <>
@@ -64,7 +66,7 @@ const Hero = () => {
                 )}
               </h1>
 
-              <p className="text-xl text-[#94A3B8] leading-relaxed mb-10 max-w-xl">
+              <p className="text-xl text-[#94A3B8] leading-relaxed mb-10 max-w-[20rem] sm:max-w-xl">
                 {s.hero_subtitle}
               </p>
 

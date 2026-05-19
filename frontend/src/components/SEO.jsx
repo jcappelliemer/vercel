@@ -17,7 +17,7 @@ const SEO = ({ title, description, path = '', image, type = 'website', noIndex =
   const canonicalBase = isLiveHost ? BASE_URL : location?.origin || BASE_URL;
   const canonicalPath = path || location?.pathname || '';
   const fullUrl = `${canonicalBase}${canonicalPath}`;
-  const metaDesc = description || 'Solaris Films, distributore esclusivo MADICO USA per l\'Italia. Pellicole antisolari, di sicurezza, anti-esplosione e privacy per vetri. 40 anni di esperienza, oltre 45.000 edifici trattati.';
+  const metaDesc = description || 'Solaris Films, distributore esclusivo MADICO USA per l\'Italia. Pellicole antisolari, di sicurezza, anti-esplosione e privacy per vetri. 30+ anni di esperienza, +45k edifici trattati.';
   const ogImage = image || DEFAULT_IMAGE;
   const shouldNoIndex = noIndex || !isLiveHost;
 

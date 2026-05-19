@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect, useRef } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation } from '@/next/router-shim';
 import { CaretDown, List, X, Phone, WhatsappLogo } from '@phosphor-icons/react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSettings } from '../hooks/useSettings';
@@ -16,6 +16,7 @@ const LIVE_MENU = [
       {
         name: 'Pellicole Antisolari',
         href: 'https://solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/',
+        fallbackPath: '/servizi#antisolari',
         children: [
           {
             name: 'Sputtered',
@@ -36,10 +37,6 @@ const LIVE_MENU = [
             href: '/pellicole-antisolari-sunscape/',
             children: [
               {
-                name: 'Tecnosolar NT 20 E PS SR',
-                href: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr/',
-              },
-              {
                 name: 'Madico SG 20 E PS SR',
                 href: '/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/',
               },
@@ -52,12 +49,7 @@ const LIVE_MENU = [
           {
             name: 'Spettroselettive',
             href: '/pellicole-spettro-selettive/',
-            children: [
-              {
-                name: 'Tecnosolar SSN 50 TE SR',
-                href: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/',
-              },
-            ],
+            children: [],
           },
           {
             name: 'Riflettenti',
@@ -78,6 +70,7 @@ const LIVE_MENU = [
       {
         name: 'Pellicole di Sicurezza',
         href: 'https://solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/',
+        fallbackPath: '/servizi#sicurezza',
         children: [
           {
             name: 'Riflettenti',
@@ -146,6 +139,7 @@ const LIVE_MENU = [
       {
         name: 'Pellicole Privacy & Design',
         href: '/pellicole-per-vetri/pellicole-decorative-per-vetri/',
+        fallbackPath: '/servizi#privacy',
         children: [
           {
             name: 'vetrofanie',
@@ -311,6 +305,8 @@ const buildPathMap = (pages) => pages.reduce((map, page) => {
   return map;
 }, new Map());
 
+const containsBlockedBrand = (value = '') => /tecnosolar/i.test(String(value || ''));
+
 const resolveMenu = (items, pathMap) => items.map((item) => {
   const livePath = normalizeHref(item.href);
   const path = item.fallbackPath || (livePath ? pathMap.get(livePath) || livePath : '#');
@@ -320,6 +316,12 @@ const resolveMenu = (items, pathMap) => items.map((item) => {
     path,
     children: item.children ? resolveMenu(item.children, pathMap) : undefined,
   };
+}).filter((item) => {
+  if (containsBlockedBrand(item.name) || containsBlockedBrand(item.path) || containsBlockedBrand(item.href)) {
+    return false;
+  }
+  if (item.children) item.children = item.children.filter(Boolean);
+  return true;
 });
 
 const testId = (name) => name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
@@ -571,6 +573,7 @@ const Header = () => {
   const desktopMenuCloseTimer = useRef(null);
   const location = useLocation();
   const settings = useSettings();
+  const logoSrc = settings.logo_url || '/assets/solaris-logo.png';
   const { pages } = useLivePages();
 
   useEffect(() => {
@@ -656,19 +659,13 @@ const Header = () => {
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="flex items-center justify-between h-20 lg:h-24">
           <Link to="/" className="flex items-center gap-3 group" data-testid="logo-link">
-            {settings.logo_url ? (
-              <motion.img
-                whileHover={{ scale: 1.03 }}
-                src={settings.logo_url}
-                alt={settings.company_name || 'Solaris Films'}
-                className="h-10 sm:h-12 w-auto object-contain"
-                data-testid="logo-image"
-              />
-            ) : (
-              <span className="font-semibold text-xl text-white tracking-wide">
-                SOLARIS <span className="text-gradient-gold">FILMS</span>
-              </span>
-            )}
+            <motion.img
+              whileHover={{ scale: 1.03 }}
+              src={logoSrc}
+              alt={settings.company_name || 'Solaris Films'}
+              className="h-10 sm:h-12 w-auto object-contain"
+              data-testid="logo-image"
+            />
           </Link>
 
           <nav className="hidden xl:flex items-center gap-6">

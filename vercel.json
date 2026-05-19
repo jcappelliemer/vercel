@@ -1,10 +1,39 @@
 {
+  "redirects": [
+    { "source": "/chi-siamo", "destination": "/company-profile/", "permanent": true },
+    { "source": "/chi-siamo/", "destination": "/company-profile/", "permanent": true },
+    { "source": "/profilo-solaris", "destination": "/company-profile/", "permanent": true },
+    { "source": "/profilo-solaris/", "destination": "/company-profile/", "permanent": true },
+    { "source": "/pellicole-per-vetri/profilo-solaris", "destination": "/company-profile/", "permanent": true },
+    { "source": "/pellicole-per-vetri/profilo-solaris/", "destination": "/company-profile/", "permanent": true },
+    { "source": "/pellicole-per-vetri/pellicole-per-vetri/about", "destination": "/company-profile/", "permanent": true },
+    { "source": "/pellicole-per-vetri/pellicole-per-vetri/about/", "destination": "/company-profile/", "permanent": true },
+    { "source": "/false-parent", "destination": "/", "permanent": true },
+    { "source": "/false-parent/", "destination": "/", "permanent": true },
+    { "source": "/llms-txt", "destination": "/llms.txt", "permanent": true },
+    { "source": "/llms-txt/", "destination": "/llms.txt", "permanent": true },
+    { "source": "/pellicole-per-vetri/false-parent", "destination": "/", "permanent": true },
+    { "source": "/pellicole-per-vetri/false-parent/", "destination": "/", "permanent": true },
+    { "source": "/pellicole-per-vetri/llms-txt", "destination": "/llms.txt", "permanent": true },
+    { "source": "/pellicole-per-vetri/llms-txt/", "destination": "/llms.txt", "permanent": true },
+    { "source": "/zoho-callback", "destination": "/contatti/", "permanent": true },
+    { "source": "/zoho-callback/", "destination": "/contatti/", "permanent": true },
+    { "source": "/pellicole-per-vetri/zoho-callback", "destination": "/contatti/", "permanent": true },
+    { "source": "/pellicole-per-vetri/zoho-callback/", "destination": "/contatti/", "permanent": true },
+    { "source": "/blog/autore/:slug", "destination": "/blog/", "permanent": true },
+    { "source": "/blog/autore/:slug/", "destination": "/blog/", "permanent": true },
+    { "source": "/blog/categoria/:slug", "destination": "/blog/", "permanent": true },
+    { "source": "/blog/categoria/:slug/", "destination": "/blog/", "permanent": true },
+    { "source": "/approfondimenti/author/:slug", "destination": "/blog/", "permanent": true },
+    { "source": "/approfondimenti/author/:slug/", "destination": "/blog/", "permanent": true },
+    { "source": "/approfondimenti/category/:slug", "destination": "/blog/", "permanent": true },
+    { "source": "/approfondimenti/category/:slug/", "destination": "/blog/", "permanent": true }
+  ],
   "rewrites": [
     { "source": "/logo.png", "destination": "/wp-data/images/logo.png" },
     { "source": "/hero.jpg", "destination": "/wp-data/images/hero.jpg" },
     { "source": "/robots.txt", "destination": "/api/robots" },
-    { "source": "/llms.txt", "destination": "/api/llms" },
-    { "source": "/((?!api/).*)", "destination": "/index.html" }
+    { "source": "/llms.txt", "destination": "/api/llms" }
   ],
   "headers": [
     {
@@ -15,6 +44,5 @@
     }
   ],
   "buildCommand": "cd frontend && node fetch-wp-data.js && node fetch-live-site.js && GENERATE_SOURCEMAP=false yarn build",
-  "outputDirectory": "frontend/build",
-  "framework": null
+  "framework": "nextjs"
 }

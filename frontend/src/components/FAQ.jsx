@@ -41,7 +41,7 @@ const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="py-32 relative" data-testid="faq-section">
+    <section className="py-32 section-light border-y border-[#E2E8F0]" data-testid="faq-section">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -50,12 +50,12 @@ const FAQ = () => {
           className="text-center mb-16"
         >
           <div className="flex items-center justify-center gap-3 mb-6">
-            <Question size={32} weight="light" className="text-[#EAB308]" />
+            <Question size={32} weight="light" className="text-[#2563EB]" />
           </div>
-          <h2 className="text-4xl lg:text-5xl font-medium text-white mb-4">
+          <h2 className="text-4xl lg:text-5xl font-medium text-[#0A0F1C] mb-4">
             Domande <span className="text-gradient">frequenti</span>
           </h2>
-          <p className="text-[#94A3B8] text-lg">
+          <p className="text-[#475569] text-lg">
             Tutto quello che devi sapere sulle pellicole per vetri.
           </p>
         </motion.div>
@@ -68,20 +68,20 @@ const FAQ = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: index * 0.05 }}
-              className="card-glass rounded-xl overflow-hidden"
+              className="rounded-xl overflow-hidden border border-[#E2E8F0] bg-white shadow-sm"
               data-testid={`faq-item-${index}`}
             >
               <button
                 onClick={() => setOpenIndex(openIndex === index ? null : index)}
-                className="w-full flex items-center justify-between p-6 text-left hover:bg-white/[0.02] transition-colors"
+                className="w-full flex items-center justify-between p-6 text-left hover:bg-[#F8FAFC] transition-colors"
               >
-                <span className="text-white font-medium pr-4">{item.q}</span>
+                <span className="text-[#0A0F1C] font-medium pr-4">{item.q}</span>
                 <motion.div
                   animate={{ rotate: openIndex === index ? 180 : 0 }}
                   transition={{ duration: 0.3 }}
                   className="flex-shrink-0"
                 >
-                  <CaretDown size={20} className={`${openIndex === index ? 'text-[#EAB308]' : 'text-white/40'} transition-colors`} />
+                  <CaretDown size={20} className={`${openIndex === index ? 'text-[#EAB308]' : 'text-[#64748B]'} transition-colors`} />
                 </motion.div>
               </button>
               <AnimatePresence>
@@ -94,8 +94,8 @@ const FAQ = () => {
                     className="overflow-hidden"
                   >
                     <div className="px-6 pb-6 pt-0">
-                      <div className="h-px bg-white/5 mb-4" />
-                      <p className="text-[#94A3B8] leading-relaxed">{item.a}</p>
+                      <div className="h-px bg-[#E2E8F0] mb-4" />
+                      <p className="text-[#475569] leading-relaxed">{item.a}</p>
                     </div>
                   </motion.div>
                 )}

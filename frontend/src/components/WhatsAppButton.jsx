@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { WhatsappLogo } from '@phosphor-icons/react';
-import { useLocation } from 'react-router-dom';
+import { useLocation } from '@/next/router-shim';
 import { useSettings } from '../hooks/useSettings';
 import { buildWhatsAppHref } from '../utils/contactLinks';
 

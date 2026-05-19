@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Link } from 'react-router-dom';
+import { Link } from '@/next/router-shim';
 import { ArrowRight } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 
@@ -14,6 +14,7 @@ const defaultSteps = [
 
 const Process = () => {
   const s = useSettings();
+  const processImage = '/assets/generated/home/process-installation.webp';
 
   return (
     <section className="py-32 relative section-light" data-testid="process-section">
@@ -32,6 +33,23 @@ const Process = () => {
             <p className="text-lg mb-10 max-w-md" style={{ color: '#64748B' }}>
               Dalla consulenza all'installazione, ti accompagniamo con trasparenza in ogni fase.
             </p>
+            <figure className="relative mb-8 min-h-[290px] overflow-hidden rounded-2xl border border-[#CBD5E1] bg-[#0A0F1C] shadow-xl">
+              <img
+                src={processImage}
+                alt="Installazione professionale di pellicole per vetri Solaris"
+                className="absolute inset-0 h-full w-full object-cover"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#020617] via-[#020617]/25 to-transparent" />
+              <figcaption className="absolute inset-x-0 bottom-0 p-6">
+                <div className="text-xs font-semibold uppercase tracking-[0.16em] text-[#EAB308]">
+                  Posa professionale
+                </div>
+                <div className="mt-2 text-xl font-semibold leading-tight text-white">
+                  Intervento pulito, rapido e senza lavori strutturali.
+                </div>
+              </figcaption>
+            </figure>
             <Link to="/preventivo" className="inline-flex items-center gap-2 px-8 py-4 bg-[#EAB308] text-[#0A0F1C] font-bold rounded-xl hover:bg-[#D4A017] transition-all shadow-lg shadow-[#EAB308]/20 group" data-testid="process-cta">
               <span>Inizia Ora</span>
               <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />

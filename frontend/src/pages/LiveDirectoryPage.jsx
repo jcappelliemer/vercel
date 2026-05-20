@@ -360,10 +360,6 @@ const infoThemeForPage = (page = {}) => {
   return INFO_THEMES.find((theme) => theme.match.test(text)) || INFO_THEMES[2];
 };
 
-const infoThemeRoute = (theme, pages = []) => (
-  (pages[0] && getLivePath(pages[0])) || theme.route
-);
-
 const infoTags = (page = {}, theme) => {
   const text = `${getLiveTitle(page)} ${getLiveDescription(page)} ${page.path}`.toLocaleLowerCase('it');
   const tags = [theme?.eyebrow || 'Info Solaris'];
@@ -1386,7 +1382,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
               </p>
               <div className="knowledge-directory-mini-list">
                 {themeBlocks.map((theme) => (
-                  <Link key={theme.key} to={infoThemeRoute(theme, theme.pages)}>
+                  <Link key={theme.key} to={theme.route}>
                     <span>{theme.title}</span>
                     <strong>{theme.pages.length}</strong>
                   </Link>
@@ -1450,7 +1446,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
           </div>
           <div className="knowledge-directory-path-grid">
             {themeBlocks.map((theme) => (
-              <Link key={theme.key} to={infoThemeRoute(theme, theme.pages)} className="knowledge-directory-path-card">
+              <Link key={theme.key} to={theme.route} className="knowledge-directory-path-card">
                 <div>
                   <span>{theme.eyebrow}</span>
                   <h3>{theme.title}</h3>
@@ -1492,7 +1488,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
                     <span>{theme.eyebrow}</span>
                     <h2>{theme.title}</h2>
                   </div>
-                  <Link to={infoThemeRoute(theme, theme.pages)}>
+                  <Link to={theme.route}>
                     Percorso collegato
                     <ArrowRight size={16} weight="bold" />
                   </Link>
@@ -1530,6 +1526,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
           </Link>
         </section>
 
+        <div className="knowledge-directory-inventory" aria-hidden="true">&nbsp;</div>
       </main>
       <Footer />
       <ChatBot />

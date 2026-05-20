@@ -55,6 +55,36 @@ const nextConfig = {
         destination: '/focus-tecnico/pellicole-antisolari/',
         permanent: true,
       },
+      {
+        source: '/servizi/pellicole-antisolari',
+        destination: '/servizi#antisolari',
+        permanent: true,
+      },
+      {
+        source: '/servizi/pellicole-antisolari/',
+        destination: '/servizi#antisolari',
+        permanent: true,
+      },
+      {
+        source: '/servizi/pellicole-sicurezza',
+        destination: '/servizi#sicurezza',
+        permanent: true,
+      },
+      {
+        source: '/servizi/pellicole-sicurezza/',
+        destination: '/servizi#sicurezza',
+        permanent: true,
+      },
+      {
+        source: '/servizi/pellicole-decorative',
+        destination: '/servizi#decorative',
+        permanent: true,
+      },
+      {
+        source: '/servizi/pellicole-decorative/',
+        destination: '/servizi#decorative',
+        permanent: true,
+      },
     ];
   },
   webpack: (config) => {

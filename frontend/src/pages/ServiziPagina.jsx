@@ -64,7 +64,7 @@ const SAFETY_SHIELD_METRICS = [
 
 const ServiceFamilyCard = ({ family, index }) => {
   const Icon = ICON_BY_FAMILY[family.key] || ShieldCheck;
-  const path = family.page?.route?.newPath || serviceAnchorPath(family);
+  const path = family.focus?.[0]?.route?.newPath || family.page?.route?.newPath || serviceAnchorPath(family);
 
   return (
     <motion.div

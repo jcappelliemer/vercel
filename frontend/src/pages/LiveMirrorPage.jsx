@@ -90,13 +90,13 @@ const normalizeImportedHref = (href = '') => {
     return `/servizi/${suffix}`;
   }
   if (normalizedPath === '/pellicole-per-vetri/le-pellicole-antisolari/') {
-    return `/servizi/pellicole-antisolari/${suffix}`;
+    return `/servizi#antisolari${suffix}`;
   }
   if (normalizedPath === '/pellicole-per-vetri/pellicole-di-sicurezza/') {
-    return `/servizi/pellicole-sicurezza/${suffix}`;
+    return `/servizi#sicurezza${suffix}`;
   }
   if (normalizedPath === '/pellicole-per-vetri/pellicole-decorative-per-vetri/') {
-    return `/servizi/pellicole-decorative/${suffix}`;
+    return `/servizi#decorative${suffix}`;
   }
   if (
     normalizedPath === '/contact/'
@@ -128,7 +128,12 @@ const normalizeSolarisText = (value = '') => String(value)
   .replace(/\bEcosaving\b/g, 'EcoSaving')
   .replace(/\bsunscape\b/gi, 'Sunscape')
   .replace(/\bsputtered\b/gi, 'Sputtered')
-  .replace(/\bTecnosolar\b/gi, 'Solaris Films');
+  .replace(/\bTecnosolar\b/gi, 'Solaris Films')
+  .replace(/\bserie\s*nt\b/gi, '')
+  .replace(/\bnt[\s-]*20\b/gi, '')
+  .replace(/\bnt[\s-]*35\b/gi, '')
+  .replace(/\s{2,}/g, ' ')
+  .trim();
 
 const getLocalCityName = (page) => {
   const seoTitle = cleanTitle(page?.seo?.title || page?.title || '');
@@ -534,7 +539,11 @@ const normalizeImportedHeadingHtml = (value = '') => {
 const shouldRenderImportedHeadingAsParagraph = (text = '', level = 2) => {
   if (level > 3) return false;
   const trimmed = text.trim();
-  return trimmed.length > 110 || (trimmed.length > 60 && /[.!?]$/.test(trimmed));
+  if (trimmed.length > 110 || (trimmed.length > 60 && /[.!?]$/.test(trimmed))) return true;
+  const letters = trimmed.match(/[A-Za-zÀ-ÖØ-öø-ÿ]/g) || [];
+  if (letters.length < 12) return false;
+  const upper = letters.filter((letter) => letter === letter.toLocaleUpperCase('it')).length;
+  return upper / letters.length > 0.82;
 };
 
 const normalizeImportedHtml = (value = '', { relaxHeavyStrong = false } = {}) => {
@@ -555,8 +564,10 @@ const normalizeImportedHtml = (value = '', { relaxHeavyStrong = false } = {}) =>
     .replace(/\bsputtered\b/gi, 'Sputtered')
     .replace(/\bInstallatore Certificato Tecnosolar\b/gi, 'Installatore certificato Solaris Films')
     .replace(/\bTecnosolar\b/gi, 'Solaris Films')
+    .replace(/[^.!?<>]*(?:serie\s*nt|nt[\s-]*20|nt[\s-]*35)[^.!?<>]*[.!?]/gi, ' ')
     .replace(/\bUn eccellente riduzione\b/g, "Un'eccellente riduzione")
-    .replace(/\bvetrate\s+\?/gi, 'vetrate?');
+    .replace(/\bvetrate\s+\?/gi, 'vetrate?')
+    .replace(/\s{2,}/g, ' ');
   if (!relaxHeavyStrong) return withoutLegacyLinks;
 
   const strongTags = withoutLegacyLinks.match(/<strong\b/gi) || [];

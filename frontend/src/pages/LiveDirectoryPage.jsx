@@ -326,7 +326,7 @@ const INFO_THEMES = [
     key: 'normative',
     title: 'Norme e sicurezza',
     eyebrow: 'Norme applicate',
-    route: '/servizi/pellicole-sicurezza/',
+    route: '/servizi#sicurezza',
     description: 'Riferimenti normativi e sicurezza sul lavoro letti in funzione del vetro, del rischio e della posa.',
     match: /(norm|sicurezza|testo unico|dpr|brc)/i,
   },
@@ -786,7 +786,7 @@ const ProductDirectoryPage = ({ config, primaryPages, allPages, loading, error, 
             <span>Confronto prodotti</span>
             <h2>Schede tecniche per area di intervento</h2>
             <p>
-              Ogni scheda mantiene il dettaglio tecnico, ma la navigazione resta agganciata al problema da risolvere.
+              Ogni scheda conserva i dati tecnici essenziali e ti guida al passaggio successivo senza perdere il contesto della tua esigenza.
             </p>
           </div>
 
@@ -856,7 +856,7 @@ const ProductDirectoryPage = ({ config, primaryPages, allPages, loading, error, 
         </section>
 
         <p className="product-directory-inventory">
-          Catalogo Solaris organizzato per scegliere la soluzione corretta senza partire dal codice prodotto.
+          Il catalogo Solaris è organizzato per obiettivo: prima il problema da risolvere, poi il prodotto più adatto.
         </p>
       </main>
       <Footer />
@@ -1237,7 +1237,7 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
                     <span>{family.eyebrow}</span>
                     <h2>{family.title}</h2>
                   </div>
-                  <Link to={family.route}>
+                  <Link to={(family.pages[0] && getLivePath(family.pages[0])) || family.route}>
                     Vai alla soluzione
                     <ArrowRight size={16} weight="bold" />
                   </Link>

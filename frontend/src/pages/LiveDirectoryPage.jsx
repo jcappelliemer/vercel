@@ -555,9 +555,9 @@ const LocalDirectoryPage = ({ config, primaryPages, loading, error, stats }) => 
                 Richiedi sopralluogo
                 <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
               </Link>
-              <a href="tel:+390559107621" className="btn-secondary">
+              <a href="tel:800625052" className="btn-secondary">
                 <Phone size={18} weight="fill" />
-                +39 055 910 7621
+                Numero verde 800 625052
               </a>
             </div>
           </div>
@@ -666,9 +666,6 @@ const LocalDirectoryPage = ({ config, primaryPages, loading, error, stats }) => 
           </Link>
         </section>
 
-        <p className="local-directory-inventory">
-          Copertura Solaris organizzata per portare ogni richiesta locale verso una verifica tecnica concreta.
-        </p>
       </main>
       <Footer />
       <ChatBot />

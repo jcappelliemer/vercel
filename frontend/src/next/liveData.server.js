@@ -59,6 +59,24 @@ export const getMirrorStaticProps = (pathname) => {
   };
 };
 
+export const getMirrorServerProps = (pathname) => {
+  const index = readLiveIndex();
+  const entry = findPageEntryByPath(index, pathname);
+  const page = readLivePageByFile(entry?.file);
+
+  if (!entry || !page) {
+    return { notFound: true };
+  }
+
+  return {
+    props: {
+      initialIndex: index,
+      initialPage: page,
+      initialPath: normalizePath(pathname),
+    },
+  };
+};
+
 export const getPathsByRoutePrefix = (prefixPath) => {
   const index = readLiveIndex();
   const prefix = normalizePath(prefixPath);

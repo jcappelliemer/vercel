@@ -1,14 +1,9 @@
 import LiveMirrorPage from '@/pages/LiveMirrorPage';
-import { getMirrorStaticProps, getPathsByRoutePrefix } from '../../src/next/liveData.server';
+import { getMirrorServerProps } from '../../src/next/liveData.server';
 
 export default LiveMirrorPage;
 
-export const getStaticPaths = async () => ({
-  paths: getPathsByRoutePrefix('/info/'),
-  fallback: false,
-});
-
-export const getStaticProps = async ({ params }) => {
+export const getServerSideProps = async ({ params }) => {
   const pathname = `/info/${(Array.isArray(params?.slug) ? params.slug : [params?.slug].filter(Boolean)).join('/')}/`;
-  return getMirrorStaticProps(pathname);
+  return getMirrorServerProps(pathname);
 };

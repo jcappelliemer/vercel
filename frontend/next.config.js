@@ -45,6 +45,16 @@ const nextConfig = {
         destination: '/info/norme/',
         permanent: true,
       },
+      {
+        source: '/pellicole-termoisolanti',
+        destination: '/focus-tecnico/pellicole-antisolari/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-termoisolanti/',
+        destination: '/focus-tecnico/pellicole-antisolari/',
+        permanent: true,
+      },
     ];
   },
   webpack: (config) => {

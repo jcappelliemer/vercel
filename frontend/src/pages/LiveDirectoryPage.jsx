@@ -333,7 +333,7 @@ const INFO_THEMES = [
     key: 'normative',
     title: 'Norme e sicurezza',
     eyebrow: 'Norme applicate',
-    route: '/servizi#sicurezza',
+    route: '/info/norme/',
     description: 'Riferimenti normativi e sicurezza sul lavoro letti in funzione del vetro, del rischio e della posa.',
     match: /(norm|sicurezza|testo unico|dpr|brc)/i,
   },
@@ -341,7 +341,7 @@ const INFO_THEMES = [
     key: 'certificazioni',
     title: 'Garanzie e certificazioni',
     eyebrow: 'Affidabilità',
-    route: '/company-profile/',
+    route: '/info/certificazione-nfrc/',
     description: 'Garanzie, certificazioni e punti di forza da leggere insieme a prodotto, applicazione e metodo Solaris.',
     match: /(garanz|certific|nfrc|punti di forza)/i,
   },
@@ -349,7 +349,7 @@ const INFO_THEMES = [
     key: 'supporto',
     title: 'Uso, manutenzione e glossario',
     eyebrow: 'Supporto operativo',
-    route: '/preventivo',
+    route: '/info/istruzioni-e-manutenzione/',
     description: 'Istruzioni, manutenzione e termini tecnici per fare domande più precise prima della verifica.',
     match: /(istruz|manutenz|glossario|termini)/i,
   },
@@ -359,6 +359,10 @@ const infoThemeForPage = (page = {}) => {
   const text = `${getLiveTitle(page)} ${getLiveDescription(page)} ${page.path}`.toLocaleLowerCase('it');
   return INFO_THEMES.find((theme) => theme.match.test(text)) || INFO_THEMES[2];
 };
+
+const infoThemeRoute = (theme, pages = []) => (
+  (pages[0] && getLivePath(pages[0])) || theme.route
+);
 
 const infoTags = (page = {}, theme) => {
   const text = `${getLiveTitle(page)} ${getLiveDescription(page)} ${page.path}`.toLocaleLowerCase('it');
@@ -1382,7 +1386,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
               </p>
               <div className="knowledge-directory-mini-list">
                 {themeBlocks.map((theme) => (
-                  <Link key={theme.key} to={theme.route}>
+                  <Link key={theme.key} to={infoThemeRoute(theme, theme.pages)}>
                     <span>{theme.title}</span>
                     <strong>{theme.pages.length}</strong>
                   </Link>
@@ -1446,7 +1450,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
           </div>
           <div className="knowledge-directory-path-grid">
             {themeBlocks.map((theme) => (
-              <Link key={theme.key} to={theme.route} className="knowledge-directory-path-card">
+              <Link key={theme.key} to={infoThemeRoute(theme, theme.pages)} className="knowledge-directory-path-card">
                 <div>
                   <span>{theme.eyebrow}</span>
                   <h3>{theme.title}</h3>
@@ -1488,7 +1492,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
                     <span>{theme.eyebrow}</span>
                     <h2>{theme.title}</h2>
                   </div>
-                  <Link to={theme.route}>
+                  <Link to={infoThemeRoute(theme, theme.pages)}>
                     Percorso collegato
                     <ArrowRight size={16} weight="bold" />
                   </Link>
@@ -1526,9 +1530,6 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
           </Link>
         </section>
 
-        <p className="knowledge-directory-inventory">
-          Informazioni Solaris organizzate per trasformare norme e dubbi tecnici in una richiesta più chiara.
-        </p>
       </main>
       <Footer />
       <ChatBot />

@@ -43,6 +43,6 @@
       ]
     }
   ],
-  "buildCommand": "cd frontend && node fetch-wp-data.js && node fetch-live-site.js && GENERATE_SOURCEMAP=false yarn build",
+  "buildCommand": "node fetch-wp-data.js && node fetch-live-site.js && GENERATE_SOURCEMAP=false yarn build",
   "framework": "nextjs"
 }

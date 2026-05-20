@@ -241,6 +241,13 @@ const normalizeDirectoryPath = (pathname = '') => {
   return pathname.endsWith('/') ? pathname : `${pathname}/`;
 };
 
+const serviceFamilyRoute = (family = {}) => {
+  if (family.key === 'antisolari') return '/servizi#antisolari';
+  if (family.key === 'sicurezza') return '/servizi#sicurezza';
+  if (family.key === 'decorative') return '/servizi#decorative';
+  return family.route || '/servizi';
+};
+
 const stripGenericLiveDescription = (value = '') => String(value)
   .replace(/^DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983\s*/i, '')
   .replace(/^Solaris Films\s+-\s+Distributore esclusivo.*?1983\s*/i, '')
@@ -604,7 +611,7 @@ const LocalDirectoryPage = ({ config, primaryPages, loading, error, stats }) => 
           </div>
           <div className="local-directory-service-grid">
             {SERVICE_FAMILIES.map((family) => (
-              <Link key={family.key} to={family.route} className="local-directory-service-card">
+              <Link key={family.key} to={serviceFamilyRoute(family)} className="local-directory-service-card">
                 <figure className={`service-family-image service-family-image-card service-family-image-${family.key}`}>
                   <img src={family.image} alt={family.title} loading="lazy" />
                 </figure>
@@ -670,7 +677,7 @@ const LocalDirectoryPage = ({ config, primaryPages, loading, error, stats }) => 
 };
 
 const ProductFamilyCard = ({ family, products, focus }) => (
-  <Link to={family.route} className={`product-directory-family-card product-directory-family-card-${family.key}`}>
+  <Link to={serviceFamilyRoute(family)} className={`product-directory-family-card product-directory-family-card-${family.key}`}>
     <figure className={`service-family-image service-family-image-card service-family-image-${family.key}`}>
       <img src={family.image} alt={family.title} loading="lazy" />
     </figure>
@@ -741,7 +748,7 @@ const ProductDirectoryPage = ({ config, primaryPages, allPages, loading, error, 
             </p>
             <div className="product-directory-mini-list">
               {heroFamilies.map((family) => (
-                <Link key={family.key} to={family.route}>
+                <Link key={family.key} to={serviceFamilyRoute(family)}>
                   <span>{family.title}</span>
                   <strong>{family.products.length}</strong>
                 </Link>
@@ -806,7 +813,7 @@ const ProductDirectoryPage = ({ config, primaryPages, allPages, loading, error, 
                     <span>{family.eyebrow}</span>
                     <h2>{family.title}</h2>
                   </div>
-                  <Link to={family.route}>
+                  <Link to={serviceFamilyRoute(family)}>
                     Vedi soluzione
                     <ArrowRight size={16} weight="bold" />
                   </Link>
@@ -856,7 +863,7 @@ const ProductDirectoryPage = ({ config, primaryPages, allPages, loading, error, 
         </section>
 
         <p className="product-directory-inventory">
-          Il catalogo Solaris è organizzato per obiettivo: prima il problema da risolvere, poi il prodotto più adatto.
+          Catalogo Solaris orientato alla scelta pratica.
         </p>
       </main>
       <Footer />
@@ -915,7 +922,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
             <p>{copy.panelText}</p>
             <div className="knowledge-directory-mini-list">
               {familyBlocks.map((family) => (
-                <Link key={family.key} to={family.route}>
+                <Link key={family.key} to={serviceFamilyRoute(family)}>
                   <span>{family.title}</span>
                   <strong>{family.articles.length}</strong>
                 </Link>
@@ -966,7 +973,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
           </div>
           <div className="knowledge-directory-path-grid">
             {familyBlocks.map((family) => (
-              <Link key={family.key} to={family.route} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
+              <Link key={family.key} to={serviceFamilyRoute(family)} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
                 <figure className={`service-family-image service-family-image-card service-family-image-${family.key}`}>
                   <img src={family.image} alt={family.title} loading="lazy" />
                 </figure>
@@ -1006,7 +1013,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
                     <span>{family.eyebrow}</span>
                     <h2>{family.title}</h2>
                   </div>
-                  <Link to={family.route}>
+                  <Link to={serviceFamilyRoute(family)}>
                     Servizio collegato
                     <ArrowRight size={16} weight="bold" />
                   </Link>
@@ -1128,7 +1135,7 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
             </p>
             <div className="knowledge-directory-mini-list">
               {familyBlocks.map((family) => (
-                <Link key={family.key} to={family.route}>
+                <Link key={family.key} to={serviceFamilyRoute(family)}>
                   <span>{family.title}</span>
                   <strong>{family.pages.length}</strong>
                 </Link>
@@ -1194,7 +1201,7 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
           </div>
           <div className="knowledge-directory-path-grid">
             {familyBlocks.map((family) => (
-              <Link key={family.key} to={family.route} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
+              <Link key={family.key} to={serviceFamilyRoute(family)} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
                 <figure className={`service-family-image service-family-image-card service-family-image-${family.key}`}>
                   <img src={family.image} alt={family.title} loading="lazy" />
                 </figure>

@@ -64,7 +64,7 @@ const SAFETY_SHIELD_METRICS = [
 
 const ServiceFamilyCard = ({ family, index }) => {
   const Icon = ICON_BY_FAMILY[family.key] || ShieldCheck;
-  const path = family.focus?.[0]?.route?.newPath || family.page?.route?.newPath || serviceAnchorPath(family);
+  const path = family.focus?.[0]?.route?.newPath || family.ctaRoute || family.page?.route?.newPath || serviceAnchorPath(family);
 
   return (
     <motion.div
@@ -109,7 +109,7 @@ const ServiceFamilyCard = ({ family, index }) => {
 
 const FamilyDetail = ({ family, index }) => {
   const Icon = ICON_BY_FAMILY[family.key] || ShieldCheck;
-  const path = family.page?.route?.newPath || serviceAnchorPath(family);
+  const path = family.ctaRoute || family.page?.route?.newPath || serviceAnchorPath(family);
   const detailImage = FAMILY_DETAIL_IMAGE_BY_KEY[family.key] || family.image;
   const visibleProducts = family.products.slice(0, 6);
   const visibleFocus = family.focus.slice(0, 4);

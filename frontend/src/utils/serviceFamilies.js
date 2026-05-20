@@ -14,6 +14,7 @@ export const SERVICE_FAMILIES = [
   {
     key: 'antisolari',
     route: '/servizi/pellicole-antisolari/',
+    ctaRoute: '/focus-tecnico/pellicole-antisolari/',
     livePath: '/pellicole-per-vetri/le-pellicole-antisolari/',
     title: 'Pellicole antisolari',
     menuLabel: 'Pellicole Antisolari',
@@ -54,6 +55,7 @@ export const SERVICE_FAMILIES = [
   {
     key: 'sicurezza',
     route: '/servizi/pellicole-sicurezza/',
+    ctaRoute: '/focus-tecnico/pellicole-di-sicurezza/',
     livePath: '/pellicole-per-vetri/pellicole-di-sicurezza/',
     title: 'Pellicole di sicurezza',
     menuLabel: 'Pellicole di Sicurezza',
@@ -92,6 +94,7 @@ export const SERVICE_FAMILIES = [
   {
     key: 'decorative',
     route: '/servizi/pellicole-decorative/',
+    ctaRoute: '/focus-tecnico/pellicole-decorative/',
     livePath: '/pellicole-per-vetri/pellicole-decorative-per-vetri/',
     title: 'Pellicole privacy e design',
     menuLabel: 'Pellicole Privacy & Design',

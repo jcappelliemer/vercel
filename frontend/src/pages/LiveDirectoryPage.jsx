@@ -1237,7 +1237,7 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
                     <span>{family.eyebrow}</span>
                     <h2>{family.title}</h2>
                   </div>
-                  <Link to={(family.pages[0] && getLivePath(family.pages[0])) || family.route}>
+                  <Link to={(family.pages[0] && getLivePath(family.pages[0])) || family.ctaRoute || family.route}>
                     Vai alla soluzione
                     <ArrowRight size={16} weight="bold" />
                   </Link>

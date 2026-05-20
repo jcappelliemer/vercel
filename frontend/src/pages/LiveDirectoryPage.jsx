@@ -1314,9 +1314,6 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
           </Link>
         </section>
 
-        <p className="knowledge-directory-inventory">
-          Guide tecniche organizzate per passare da un dubbio su prestazioni, norme o posa a un confronto concreto tra soluzioni Solaris.
-        </p>
       </main>
       <Footer />
       <ChatBot />

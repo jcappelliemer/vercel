@@ -3591,8 +3591,8 @@
 }
 
 .contact-action-wa {
-  bottom: 20px;
-  right: 128px;
+  bottom: 84px;
+  right: 20px;
   background: #25d366;
   box-shadow: 0 16px 36px rgba(37, 211, 102, 0.25);
 }
@@ -3626,8 +3626,8 @@
   }
 
   .contact-action-wa {
-    bottom: 32px;
-    right: 220px;
+    bottom: 104px;
+    right: 32px;
   }
 
   .contact-action-label {

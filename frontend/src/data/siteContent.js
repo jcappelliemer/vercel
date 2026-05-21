@@ -211,13 +211,6 @@ export const focusTecnicoData = [
     caratteristiche: ['Protezione da graffi e incisioni', 'Sostituibile senza danni al vetro', 'Trasparenza totale', 'Ideale per vetrine, mezzi pubblici e ascensori'],
   },
   {
-    slug: 'pellicole-termoisolanti',
-    titolo: 'Pellicole Termoisolanti',
-    categoria: 'Antisolari',
-    descrizione: 'Le pellicole termoisolanti migliorano l\'isolamento termico dei vetri sia in estate che in inverno. Riducono la dispersione di calore in inverno e il surriscaldamento in estate.',
-    caratteristiche: ['Isolamento invernale ed estivo', 'Riduzione dispersione termica', 'Miglioramento classe energetica', 'Ideali per vetri singoli non performanti'],
-  },
-  {
     slug: 'pellicole-di-sicurezza',
     titolo: 'Pellicole di Sicurezza',
     categoria: 'Sicurezza',

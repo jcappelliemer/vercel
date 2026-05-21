@@ -84,7 +84,8 @@ const FocusTecnicoPagina = () => {
 // Index page
 export const FocusTecnicoIndexPagina = () => {
   const { data: allFocus } = useWPData('focus');
-  const categorie = [...new Set(allFocus.map(f => f.categoria))];
+  const visibleFocus = allFocus.filter((f) => f.slug !== 'pellicole-termoisolanti');
+  const categorie = [...new Set(visibleFocus.map((f) => f.categoria))];
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="focus-tecnico-index">
@@ -107,7 +108,7 @@ export const FocusTecnicoIndexPagina = () => {
               <div key={cat}>
                 <h2 className="text-2xl font-medium text-[#0A0F1C] mb-6">{cat}</h2>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                  {allFocus.filter(f => f.categoria === cat).map((focus, i) => (
+                  {visibleFocus.filter((f) => f.categoria === cat).map((focus, i) => (
                     <motion.div key={focus.slug} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}>
                       <Link to={`/focus-tecnico/${focus.slug}`} className="card-light rounded-xl p-6 group block h-full" data-testid={`focus-link-${focus.slug}`}>
                         <h3 className="font-medium text-[#0A0F1C] group-hover:text-[#2563EB] transition-colors mb-2">{focus.titolo}</h3>

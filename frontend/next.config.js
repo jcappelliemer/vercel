@@ -95,6 +95,16 @@ const nextConfig = {
         destination: '/lo-sapevi-che/:slug*',
         permanent: true,
       },
+      {
+        source: '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield',
+        destination: '/focus-tecnico/safetyshield/',
+        permanent: true,
+      },
+      {
+        source: '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/',
+        destination: '/focus-tecnico/safetyshield/',
+        permanent: true,
+      },
     ];
   },
   webpack: (config) => {

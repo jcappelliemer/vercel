@@ -199,7 +199,7 @@ const LIVE_MENU = [
           },
           {
             name: 'Pellicole di sicurezza antiesplosione, la serie SafetyShield',
-            href: '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/',
+            href: '/focus-tecnico/safetyshield/',
           },
           {
             name: 'Pellicole antisolari di sicurezza, la serie RS',
@@ -224,10 +224,6 @@ const LIVE_MENU = [
             href: '/pellicole-decorative-privacy/',
           },
         ],
-      },
-      {
-        name: 'Pellicole termoisolanti',
-        href: '/pellicole-termoisolanti/',
       },
     ],
   },

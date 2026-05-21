@@ -32,7 +32,6 @@ export const SERVICE_FAMILIES = [
       '/focus-tecnico/pellicole-oscuranti-per-vetri/',
       '/focus-tecnico/pellicole-riflettenti/',
       '/focus-tecnico/pellicole-spettro-selettive/',
-      '/focus-tecnico/pellicole-termoisolanti/',
     ],
     stats: [
       { value: '99%', label: 'raggi UV schermati' },

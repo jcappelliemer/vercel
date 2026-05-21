@@ -346,8 +346,8 @@ const ServiziPagina = ({ initialPages = [] }) => {
                 </p>
 
                 <div className="mt-7 flex flex-wrap gap-3">
-                  <Link to="/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/" className="btn-yellow">
-                    Focus tecnico SafetyShield
+                  <Link to="/focus-tecnico/safetyshield/" className="btn-yellow">
+                    Sezione dedicata SafetyShield
                   </Link>
                   <Link to="/prodotti/madico-safetyshield-800/" className="btn-secondary">
                     Prodotto SafetyShield 800

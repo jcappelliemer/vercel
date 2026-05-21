@@ -250,9 +250,14 @@ const normalizeKnowledgePath = (pathname = '') => {
 
 const filterPagesForKind = (pages = [], kind = '', types = []) => {
   const typed = filterByTypes(pages, types);
+  const blockedFocusPaths = new Set(['/focus-tecnico/pellicole-termoisolanti/']);
 
   if (kind === 'knowledge') {
     return typed;
+  }
+
+  if (kind === 'focus') {
+    return typed.filter((page) => !blockedFocusPaths.has(normalizeDirectoryPath(getLivePath(page))));
   }
 
   return typed;

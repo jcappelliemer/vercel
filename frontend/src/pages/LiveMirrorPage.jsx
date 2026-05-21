@@ -900,6 +900,42 @@ const focusDecisionPanel = (family) => {
   };
 };
 
+const isSafetyShieldFocusPage = (page = {}) => {
+  const path = normalizePath(page?.route?.newPath || page?.path || '');
+  return path === '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/';
+};
+
+const SAFETYSHIELD_METRIC_SPECS = [
+  { label: 'Spessore G2 800', value: '240 micron' },
+  { label: 'Spessore G2 1500', value: '432 micron' },
+  { label: 'Peel Strength', value: '4.5-5.5 kg / 2.5 cm' },
+  { label: 'Blast G2 800', value: '28 kPa / 193 kPa·ms (H4 low hazard)' },
+  { label: 'Blast G2 1500 con ancoraggio', value: '48 kPa / 365 kPa·ms (H2 minimal hazard)' },
+  { label: 'EN 356 (condizione testata)', value: 'P2A su vetro 6 mm' },
+];
+
+const SAFETYSHIELD_USE_CASES = [
+  'Scuole e sedi formative con superfici vetrate esposte.',
+  'Uffici e retail dove ridurre il rischio da frammentazione del vetro.',
+  'Sanita e ambienti ad alta frequentazione con requisiti di sicurezza elevati.',
+  'Siti industriali e facciate con rischio urto o tentata intrusione.',
+];
+
+const SAFETYSHIELD_ANCHORING = [
+  {
+    label: 'FrameGard',
+    value: 'Sistema perimetrale per trattenere la lastra nel vano quando il vetro si rompe.',
+  },
+  {
+    label: 'LifeLine',
+    value: 'Configurazione per scenari ad alta energia con test specifici su vetro+telaio.',
+  },
+  {
+    label: 'Wet Glaze / ancoraggio meccanico',
+    value: 'Setup usato per alzare la tenuta complessiva in applicazioni ad alto rischio.',
+  },
+];
+
 const normalizeSpecLabel = (value = '') => (
   String(value)
     .replace(/\.$/, '')
@@ -1444,6 +1480,7 @@ const FocusTemplate = ({ page, allPages = [] }) => {
   const relatedProducts = family ? getProductsForFamily(allPages, family).slice(0, 4) : [];
   const quickGuide = focusQuickGuide(family);
   const decisionPanel = focusDecisionPanel(family);
+  const isSafetyShield = isSafetyShieldFocusPage(page);
 
   return (
     <main className="live-modern-shell product-detail-shell focus-detail-shell">
@@ -1515,6 +1552,75 @@ const FocusTemplate = ({ page, allPages = [] }) => {
               <p>{decisionPanel.action}</p>
             </article>
           </div>
+          {isSafetyShield && (
+            <>
+              <section className="focus-specs-panel" aria-label="Posizionamento SafetyShield">
+                <header>
+                  <span>Madico SafetyShield</span>
+                  <h3>Protezione vetro strutturata per scenari reali</h3>
+                </header>
+                <div className="focus-specs-grid">
+                  <article className="focus-spec-card">
+                    <strong>Ritenzione frammenti</strong>
+                    <p>Riduce la proiezione di schegge e contiene meglio la rottura in caso di impatto.</p>
+                  </article>
+                  <article className="focus-spec-card">
+                    <strong>Ritardo intrusione</strong>
+                    <p>Il sistema vetro + film + ancoraggio aumenta il tempo necessario all'effrazione.</p>
+                  </article>
+                  <article className="focus-spec-card">
+                    <strong>Prestazioni testate</strong>
+                    <p>La scelta viene collegata a standard tecnici verificabili e alla configurazione reale.</p>
+                  </article>
+                </div>
+              </section>
+
+              <section className="focus-specs-panel" aria-label="Dati tecnici SafetyShield in metrica europea">
+                <header>
+                  <span>Scheda dati</span>
+                  <h3>Dati tecnici principali in metrica europea</h3>
+                </header>
+                <div className="focus-specs-grid">
+                  {SAFETYSHIELD_METRIC_SPECS.map((item) => (
+                    <article key={`${item.label}-${item.value}`} className="focus-spec-card">
+                      <strong>{item.label}</strong>
+                      <p>{item.value}</p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+
+              <section className="focus-specs-panel" aria-label="Casi d'uso SafetyShield">
+                <header>
+                  <span>Dove viene scelta</span>
+                  <h3>Applicazioni tipiche della serie SafetyShield</h3>
+                </header>
+                <div className="focus-specs-grid">
+                  {SAFETYSHIELD_USE_CASES.map((item) => (
+                    <article key={item} className="focus-spec-card">
+                      <strong>Caso d'uso</strong>
+                      <p>{item}</p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+
+              <section className="focus-specs-panel" aria-label="Sistemi di ancoraggio SafetyShield">
+                <header>
+                  <span>Sistemi complementari</span>
+                  <h3>Ancoraggi da valutare insieme al film</h3>
+                </header>
+                <div className="focus-specs-grid">
+                  {SAFETYSHIELD_ANCHORING.map((item) => (
+                    <article key={item.label} className="focus-spec-card">
+                      <strong>{item.label}</strong>
+                      <p>{item.value}</p>
+                    </article>
+                  ))}
+                </div>
+              </section>
+            </>
+          )}
           {specs.length > 0 && (
             <section className="focus-specs-panel" aria-label="Dati prestazionali principali">
               <header>

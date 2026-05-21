@@ -240,6 +240,14 @@ const normalizeDirectoryPath = (pathname = '') => {
   return pathname.endsWith('/') ? pathname : `${pathname}/`;
 };
 
+const normalizeKnowledgePath = (pathname = '') => {
+  const normalized = normalizeDirectoryPath(pathname);
+  if (normalized.startsWith('/blog/')) {
+    return normalized.replace(/^\/blog\//, '/lo-sapevi-che/');
+  }
+  return normalized;
+};
+
 const filterPagesForKind = (pages = [], kind = '', types = []) => {
   const typed = filterByTypes(pages, types);
 
@@ -425,7 +433,7 @@ const ResourceCard = ({ page, eyebrow, description, tags = [], index, section = 
 const ArticleCard = ({ page, family, index, featured = false }) => {
   const title = getLiveTitle(page);
   const description = resourceDescription(page, articleFallbackDescription(family));
-  const path = getLivePath(page);
+  const path = normalizeKnowledgePath(getLivePath(page));
   const articleId = path.split('/').filter(Boolean).pop() || `article-${index}`;
   const familyKey = family?.key || 'default';
 

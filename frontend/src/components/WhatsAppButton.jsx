@@ -24,6 +24,7 @@ const WhatsAppButton = () => {
       target="_blank"
       rel="noopener noreferrer"
       className="contact-action contact-action-whatsapp opacity-100 scale-100 pointer-events-auto"
+      style={{ position: 'fixed', right: '20px', bottom: '84px', zIndex: 80, opacity: 1, transform: 'none', pointerEvents: 'auto' }}
       data-testid="whatsapp-floating-btn"
       aria-label="Contattaci su WhatsApp"
     >

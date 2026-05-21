@@ -85,6 +85,16 @@ const nextConfig = {
         destination: '/servizi#decorative',
         permanent: true,
       },
+      {
+        source: '/blog',
+        destination: '/lo-sapevi-che',
+        permanent: true,
+      },
+      {
+        source: '/blog/:slug*',
+        destination: '/lo-sapevi-che/:slug*',
+        permanent: true,
+      },
     ];
   },
   webpack: (config) => {

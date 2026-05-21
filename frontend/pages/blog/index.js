@@ -1,8 +1,10 @@
-import LiveDirectoryPage from '@/pages/LiveDirectoryPage';
-import { getDirectoryStaticProps } from '../../src/next/liveData.server';
-
-export default function BlogPage({ initialPages }) {
-  return <LiveDirectoryPage kind="blog" initialPages={initialPages} />;
+export default function BlogRedirectPage() {
+  return null;
 }
 
-export const getStaticProps = async () => getDirectoryStaticProps();
+export const getServerSideProps = async () => ({
+  redirect: {
+    destination: '/lo-sapevi-che',
+    permanent: true,
+  },
+});

@@ -110,7 +110,7 @@ const normalizeImportedHref = (href = '') => {
   if (focusPath) return `${focusPath}${suffix}`;
 
   const articleMatch = normalizedPath.match(/^\/approfondimenti\/([^/]+)\/$/i);
-  if (articleMatch) return `/blog/${articleMatch[1]}/${suffix}`;
+  if (articleMatch) return `/lo-sapevi-che/${articleMatch[1]}/${suffix}`;
 
   return localHref;
 };
@@ -325,7 +325,7 @@ const LivePageSEO = ({ page, currentPath }) => {
 const routeSectionName = (page) => {
   const type = page?.route?.type;
   if (type === 'category' || type === 'service-index') return 'Servizi';
-  if (type === 'article') return 'Blog';
+  if (type === 'article') return 'Lo sapevi che?';
   if (type === 'product') return 'Prodotti';
   if (type === 'local-service') return 'Servizio locale';
   if (type === 'info') return 'Info';
@@ -336,7 +336,7 @@ const routeSectionName = (page) => {
 const routeSectionPath = (page) => {
   const type = page?.route?.type;
   if (type === 'category' || type === 'service-index') return '/servizi/';
-  if (type === 'article') return '/blog/';
+  if (type === 'article') return '/lo-sapevi-che/';
   if (type === 'product') return '/prodotti/';
   if (type === 'local-service') return '/servizio-locale/';
   if (type === 'info') return '/info/';

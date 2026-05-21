@@ -1,9 +1,13 @@
-import LiveMirrorPage from '@/pages/LiveMirrorPage';
-import { getMirrorServerProps } from '../../src/next/liveData.server';
-
-export default LiveMirrorPage;
-
 export const getServerSideProps = async ({ params }) => {
-  const pathname = `/blog/${(Array.isArray(params?.slug) ? params.slug : [params?.slug].filter(Boolean)).join('/')}/`;
-  return getMirrorServerProps(pathname);
+  const slug = (Array.isArray(params?.slug) ? params.slug : [params?.slug].filter(Boolean)).join('/');
+  return {
+    redirect: {
+      destination: `/lo-sapevi-che/${slug}`,
+      permanent: true,
+    },
+  };
 };
+
+export default function BlogSlugRedirectPage() {
+  return null;
+}

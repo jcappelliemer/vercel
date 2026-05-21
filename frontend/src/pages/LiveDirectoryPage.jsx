@@ -886,6 +886,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
   const isKnowledge = kind === 'knowledge';
   const copy = isKnowledge ? articleDirectoryCopy.knowledge : articleDirectoryCopy.blog;
   const familySectionHref = (familyKey) => `#knowledge-${familyKey}`;
+  const familyLinkTarget = (family) => (isKnowledge ? familySectionHref(family.key) : serviceFamilyRoute(family));
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`live-directory-${kind}`}>
@@ -925,7 +926,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
             <p>{copy.panelText}</p>
             <div className="knowledge-directory-mini-list">
               {familyBlocks.map((family) => (
-                <Link key={family.key} to={familySectionHref(family.key)}>
+                <Link key={family.key} to={familyLinkTarget(family)}>
                   <span>{family.title}</span>
                   <strong>{family.articles.length}</strong>
                 </Link>
@@ -976,7 +977,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
           </div>
           <div className="knowledge-directory-path-grid">
             {familyBlocks.map((family) => (
-              <Link key={family.key} to={familySectionHref(family.key)} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
+              <Link key={family.key} to={familyLinkTarget(family)} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
                 <figure className={`service-family-image service-family-image-card service-family-image-${family.key}`}>
                   <img src={family.image} alt={family.title} loading="lazy" />
                 </figure>
@@ -1016,7 +1017,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
                     <span>{family.eyebrow}</span>
                     <h2>{family.title}</h2>
                   </div>
-                  <Link to={serviceFamilyRoute(family)}>
+                  <Link to={familyLinkTarget(family)}>
                     Servizio collegato
                     <ArrowRight size={16} weight="bold" />
                   </Link>

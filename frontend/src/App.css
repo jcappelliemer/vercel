@@ -1759,6 +1759,18 @@
   margin-top: 34px;
 }
 
+.local-directory-actions .local-phone-link {
+  text-transform: none;
+  letter-spacing: 0;
+  color: #22c55e;
+  border-color: rgba(34, 197, 94, 0.45);
+}
+
+.local-directory-actions .local-phone-link:hover {
+  color: #16a34a;
+  border-color: rgba(22, 163, 74, 0.65);
+}
+
 .directory-hero-side {
   position: relative;
   z-index: 1;
@@ -1925,11 +1937,13 @@
 }
 
 .local-directory-stats span {
-  max-width: 280px;
+  max-width: 100%;
   margin-top: 12px;
   color: #cbd5e1;
   font-size: 0.95rem;
   line-height: 1.48;
+  overflow-wrap: anywhere;
+  word-break: normal;
 }
 
 .local-directory-services,

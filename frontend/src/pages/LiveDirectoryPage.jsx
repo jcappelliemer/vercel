@@ -555,9 +555,9 @@ const LocalDirectoryPage = ({ config, primaryPages, loading, error, stats }) => 
                 Richiedi sopralluogo
                 <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
               </Link>
-              <a href="tel:800625052" className="btn-secondary">
+              <a href="tel:800625052" className="btn-secondary local-phone-link">
                 <Phone size={18} weight="fill" />
-                Numero verde 800 625052
+                800625052
               </a>
             </div>
           </div>
@@ -858,10 +858,6 @@ const ProductDirectoryPage = ({ config, primaryPages, allPages, loading, error, 
             <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
           </Link>
         </section>
-
-        <p className="product-directory-inventory">
-          Catalogo Solaris orientato alla scelta pratica.
-        </p>
       </main>
       <Footer />
       <ChatBot />

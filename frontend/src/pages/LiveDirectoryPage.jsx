@@ -241,6 +241,20 @@ const normalizeDirectoryPath = (pathname = '') => {
   return pathname.endsWith('/') ? pathname : `${pathname}/`;
 };
 
+const filterPagesForKind = (pages = [], kind = '', types = []) => {
+  const typed = filterByTypes(pages, types);
+
+  if (kind === 'blog') {
+    return typed.filter((page) => normalizeDirectoryPath(getLivePath(page)).startsWith('/blog/'));
+  }
+
+  if (kind === 'knowledge') {
+    return typed.filter((page) => normalizeDirectoryPath(getLivePath(page)).startsWith('/lo-sapevi-che/'));
+  }
+
+  return typed;
+};
+
 const serviceFamilyRoute = (family = {}) => {
   if (family.key === 'antisolari') return '/servizi#antisolari';
   if (family.key === 'sicurezza') return '/servizi#sicurezza';
@@ -1530,8 +1544,8 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
 const LiveDirectoryPage = ({ kind, initialPages = [] }) => {
   const config = DIRECTORY_CONFIG[kind] || DIRECTORY_CONFIG.blog;
   const { pages, loading, error, stats } = useLivePages(initialPages);
-  const primaryPages = filterByTypes(pages, config.types).sort(byTitle);
-  const secondaryPages = filterByTypes(pages, config.secondaryTypes || []).sort(byTitle);
+  const primaryPages = filterPagesForKind(pages, kind, config.types).sort(byTitle);
+  const secondaryPages = filterPagesForKind(pages, kind, config.secondaryTypes || []).sort(byTitle);
   const grouped = groupPages(primaryPages, kind);
 
   if (kind === 'local') {

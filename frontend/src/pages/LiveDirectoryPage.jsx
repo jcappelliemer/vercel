@@ -885,6 +885,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
   const generalArticles = articles.filter((page) => !assignedPaths.has(getLivePath(page)));
   const isKnowledge = kind === 'knowledge';
   const copy = isKnowledge ? articleDirectoryCopy.knowledge : articleDirectoryCopy.blog;
+  const familySectionHref = (familyKey) => `#knowledge-${familyKey}`;
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`live-directory-${kind}`}>
@@ -924,7 +925,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
             <p>{copy.panelText}</p>
             <div className="knowledge-directory-mini-list">
               {familyBlocks.map((family) => (
-                <Link key={family.key} to={serviceFamilyRoute(family)}>
+                <Link key={family.key} to={familySectionHref(family.key)}>
                   <span>{family.title}</span>
                   <strong>{family.articles.length}</strong>
                 </Link>
@@ -975,7 +976,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
           </div>
           <div className="knowledge-directory-path-grid">
             {familyBlocks.map((family) => (
-              <Link key={family.key} to={serviceFamilyRoute(family)} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
+              <Link key={family.key} to={familySectionHref(family.key)} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
                 <figure className={`service-family-image service-family-image-card service-family-image-${family.key}`}>
                   <img src={family.image} alt={family.title} loading="lazy" />
                 </figure>
@@ -1009,7 +1010,7 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
 
           <div className="knowledge-directory-article-sections">
             {familyBlocks.map((family) => (
-              <section key={family.key} className={`knowledge-directory-article-section knowledge-directory-article-section-${family.key}`}>
+              <section id={`knowledge-${family.key}`} key={family.key} className={`knowledge-directory-article-section knowledge-directory-article-section-${family.key}`}>
                 <div className="knowledge-directory-article-section-head">
                   <div>
                     <span>{family.eyebrow}</span>

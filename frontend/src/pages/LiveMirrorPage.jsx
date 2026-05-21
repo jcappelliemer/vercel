@@ -232,6 +232,15 @@ const cleanText = (value = '') => decodeHtmlEntities(value)
   .replace(/\s+/g, ' ')
   .trim();
 
+const imageUrlFromBlock = (block = {}) => {
+  if (!block || block.type !== 'image') return '';
+  if (typeof block.src === 'string' && block.src.trim()) return block.src.trim();
+  if (typeof block.url === 'string' && block.url.trim()) return block.url.trim();
+  const html = String(block.html || '');
+  const srcMatch = html.match(/<img[^>]+src=["']([^"']+)["']/i);
+  return srcMatch?.[1] || '';
+};
+
 const stripGenericLiveDescription = (value = '') => cleanText(value)
   .replace(/^DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983\s*/i, '')
   .replace(/^Solaris Films\s+-\s+Distributore esclusivo.*?1983\s*/i, '')
@@ -1019,6 +1028,7 @@ const ArticleTemplate = ({ page }) => {
   const description = livePageDescription(page) || firstParagraph(blocks);
   const family = getServiceFamilyForArticlePage(page);
   const image = family?.image || '/assets/services/pellicole-antisolari.jpg';
+  const inlineImage = blocks.map(imageUrlFromBlock).find(Boolean) || '';
   const published = formatArticleDate(page.seo?.article?.['article:published_time']);
   const modified = formatArticleDate(page.seo?.article?.['article:modified_time']);
 
@@ -1058,6 +1068,11 @@ const ArticleTemplate = ({ page }) => {
 
       <section className="live-article-body">
         <article className="live-prose live-article-prose">
+          {inlineImage ? (
+            <figure className="live-article-inline-media">
+              <img src={inlineImage} alt={title} loading="lazy" />
+            </figure>
+          ) : null}
           <ContentBlocks blocks={blocks} title={title} skipFirstHeading />
           <div className="live-article-cta-band">
             <h2>Porta questo approfondimento sul tuo progetto</h2>

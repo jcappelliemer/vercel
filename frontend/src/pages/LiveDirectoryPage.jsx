@@ -1105,6 +1105,7 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
   const generalFocus = primaryPages.filter((page) => !assignedPaths.has(getLivePath(page)));
   const featuredFocus = [...primaryPages].sort((a, b) => (b.textLength || 0) - (a.textLength || 0)).slice(0, 3);
   const productTotal = familyBlocks.reduce((sum, family) => sum + family.products.length, 0);
+  const focusSectionHref = (familyKey) => `#focus-${familyKey}`;
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="live-directory-focus">
@@ -1149,7 +1150,7 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
             </p>
             <div className="knowledge-directory-mini-list">
               {familyBlocks.map((family) => (
-                <Link key={family.key} to={serviceFamilyRoute(family)}>
+                <Link key={family.key} to={focusSectionHref(family.key)}>
                   <span>{family.title}</span>
                   <strong>{family.pages.length}</strong>
                 </Link>
@@ -1215,7 +1216,7 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
           </div>
           <div className="knowledge-directory-path-grid">
             {familyBlocks.map((family) => (
-              <Link key={family.key} to={serviceFamilyRoute(family)} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
+              <Link key={family.key} to={focusSectionHref(family.key)} className={`knowledge-directory-path-card knowledge-directory-path-card-${family.key}`}>
                 <figure className={`service-family-image service-family-image-card service-family-image-${family.key}`}>
                   <img src={family.image} alt={family.title} loading="lazy" />
                 </figure>
@@ -1252,13 +1253,13 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
 
           <div className="knowledge-directory-article-sections">
             {familyBlocks.map((family) => (
-              <section key={family.key} className={`knowledge-directory-article-section knowledge-directory-article-section-${family.key}`}>
+              <section id={`focus-${family.key}`} key={family.key} className={`knowledge-directory-article-section knowledge-directory-article-section-${family.key}`}>
                 <div className="knowledge-directory-article-section-head">
                   <div>
                     <span>{family.eyebrow}</span>
                     <h2>{family.title}</h2>
                   </div>
-                  <Link to={(family.pages[0] && getLivePath(family.pages[0])) || family.ctaRoute || family.route}>
+                  <Link to={focusSectionHref(family.key)}>
                     Vai alla soluzione
                     <ArrowRight size={16} weight="bold" />
                   </Link>

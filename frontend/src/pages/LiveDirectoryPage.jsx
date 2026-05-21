@@ -1259,7 +1259,7 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
                     <span>{family.eyebrow}</span>
                     <h2>{family.title}</h2>
                   </div>
-                  <Link to={focusSectionHref(family.key)}>
+                  <Link to={serviceFamilyRoute(family)}>
                     Vai alla soluzione
                     <ArrowRight size={16} weight="bold" />
                   </Link>

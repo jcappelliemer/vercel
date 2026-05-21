@@ -225,8 +225,7 @@ const articleDirectoryCopy = {
     ctaTitle: 'Una risposta utile va confermata sul vetro',
     ctaText:
       'Solaris traduce il dubbio in una verifica concreta su vetro, esposizione, obiettivo e prodotto applicabile.',
-    inventory:
-      'Risposte Solaris organizzate per chiarire dubbi reali e trasformarli in una verifica tecnica concreta.',
+    inventory: '',
   },
 };
 
@@ -244,12 +243,8 @@ const normalizeDirectoryPath = (pathname = '') => {
 const filterPagesForKind = (pages = [], kind = '', types = []) => {
   const typed = filterByTypes(pages, types);
 
-  if (kind === 'blog') {
-    return typed.filter((page) => normalizeDirectoryPath(getLivePath(page)).startsWith('/blog/'));
-  }
-
   if (kind === 'knowledge') {
-    return typed.filter((page) => normalizeDirectoryPath(getLivePath(page)).startsWith('/lo-sapevi-che/'));
+    return typed;
   }
 
   return typed;
@@ -1078,9 +1073,11 @@ const ArticleDirectoryPage = ({ kind, config, primaryPages, secondaryPages, load
           </Link>
         </section>
 
-        <p className="knowledge-directory-inventory">
-          {copy.inventory}
-        </p>
+        {copy.inventory ? (
+          <p className="knowledge-directory-inventory">
+            {copy.inventory}
+          </p>
+        ) : null}
       </main>
       <Footer />
       <ChatBot />

@@ -3590,6 +3590,13 @@
   box-shadow: 0 16px 36px rgba(37, 211, 102, 0.25);
 }
 
+.contact-action-wa {
+  bottom: 20px;
+  right: 128px;
+  background: #25d366;
+  box-shadow: 0 16px 36px rgba(37, 211, 102, 0.25);
+}
+
 .contact-action-label {
   display: none;
   color: #ffffff;
@@ -3616,6 +3623,11 @@
 
   .contact-action-whatsapp {
     bottom: 104px;
+  }
+
+  .contact-action-wa {
+    bottom: 32px;
+    right: 220px;
   }
 
   .contact-action-label {

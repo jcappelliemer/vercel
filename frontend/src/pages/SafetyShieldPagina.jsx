@@ -58,9 +58,32 @@ const scenari = [
 ];
 
 const liveSolarisNarrative = [
-  'Nel patrimonio contenuti Solaris, SafetyShield viene trattata come una linea speciale, distinta dalle normali pellicole di sicurezza. Il punto non è solo rinforzare il vetro: è ridurre le conseguenze sugli occupanti quando il livello di rischio supera lo standard ordinario.',
-  'Le pagine storiche su SafetyShield 800 e 1500 convergono sullo stesso principio operativo: scegliere il film in base allo scenario, poi completare la configurazione con il sistema di ancoraggio più adatto. In questa logica, FrameGard e GullWing non sono accessori, ma parti essenziali della strategia di protezione.',
-  'Questa è la differenza di valore: non una singola pellicola, ma un sistema di mitigazione pensato per proteggere persone e continuità operativa in condizioni critiche.',
+  'Dalle pagine storiche Solaris emerge una linea chiara: SafetyShield non viene proposta come “pellicola standard”, ma come soluzione speciale quando l’obiettivo principale è la protezione delle persone.',
+  'Nel racconto live, la scelta tra 800 e 1500 parte sempre dallo scenario reale. Il prodotto arriva dopo, insieme al sistema di ancoraggio più adatto. È questa combinazione che alza il livello di sicurezza del vetro.',
+  'In altre parole, il valore non è nel singolo codice prodotto: è nel sistema completo che aiuta a gestire meglio eventi estremi e a ridurre l’impatto sugli occupanti.',
+];
+
+const faqSpecifiche = [
+  {
+    q: 'SafetyShield è una normale pellicola anti-effrazione?',
+    a: 'No. SafetyShield è trattata come soluzione speciale per scenari ad alto rischio, con focus su mitigazione esplosione e protezione delle persone.',
+  },
+  {
+    q: 'Che differenza operativa c’è tra SafetyShield 800 e 1500?',
+    a: 'Entrambe sono orientate alla sicurezza avanzata, ma la 1500 è usata quando serve una risposta più alta del sistema complessivo, soprattutto se abbinata ad ancoraggi dedicati.',
+  },
+  {
+    q: 'FrameGard e GullWing servono davvero o sono opzionali?',
+    a: 'Nei contesti più critici non sono dettagli secondari: sono componenti chiave della configurazione, perché contribuiscono alla tenuta del vetro in eventi ad alta energia.',
+  },
+  {
+    q: 'È una soluzione utile anche contro eventi naturali estremi, come uragani?',
+    a: 'Sì, la logica di progetto include anche scenari di forte impatto ambientale. La valutazione viene fatta sul caso reale, considerando vetro, telaio e condizioni dell’edificio.',
+  },
+  {
+    q: 'Come si decide la configurazione corretta?',
+    a: 'Si parte da un’analisi tecnica del rischio e delle superfici vetrate. Solo dopo si definisce la combinazione 800/1500 e il tipo di ancoraggio.',
+  },
 ];
 
 const supportiUfficiali = [
@@ -228,13 +251,35 @@ const SafetyShieldPagina = () => {
             <div className="max-w-3xl mb-10">
               <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Dal live Solaris</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
-                Narrazione e posizionamento già presenti nei contenuti storici
+                Come Solaris racconta SafetyShield
               </h2>
+              <p className="text-[#94A3B8] leading-relaxed">
+                Questa sintesi nasce dai contenuti storici Solaris già pubblicati sulle versioni SafetyShield 800 e 1500.
+              </p>
             </div>
             <div className="space-y-4">
               {liveSolarisNarrative.map((item) => (
                 <article key={item} className="card-glass rounded-xl p-6">
                   <p className="text-[#CBD5E1] leading-relaxed">{item}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 section-light">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">FAQ SafetyShield</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
+                Domande frequenti su scenari speciali
+              </h2>
+            </div>
+            <div className="space-y-4">
+              {faqSpecifiche.map((item) => (
+                <article key={item.q} className="rounded-xl border border-[#E2E8F0] bg-white p-6">
+                  <h3 className="text-xl font-medium text-[#0A0F1C]">{item.q}</h3>
+                  <p className="mt-3 text-[#475569] leading-relaxed">{item.a}</p>
                 </article>
               ))}
             </div>

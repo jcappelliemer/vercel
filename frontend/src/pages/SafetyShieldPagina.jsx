@@ -249,12 +249,13 @@ const SafetyShieldPagina = () => {
         <section className="py-20 border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Posizionamento SafetyShield</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">SafetyShield</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
                 Una soluzione speciale per scenari di rischio elevato
               </h2>
               <p className="text-[#94A3B8] leading-relaxed">
-                SafetyShield viene adottata quando la priorità è proteggere le persone e ridurre le conseguenze della rottura del vetro.
+                In scenari di rischio elevato, la differenza la fa un sistema completo: film ad alte prestazioni,
+                ancoraggio dedicato e posa tecnica coerente con l’edificio.
               </p>
             </div>
             <div className="space-y-4">

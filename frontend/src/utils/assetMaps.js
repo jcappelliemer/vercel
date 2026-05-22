@@ -7,7 +7,7 @@ const productAsset = (slug, label = 'Scheda prodotto MADICO') => ({
   src: `/assets/imported/products/${slug}.webp`,
   alt: `${slug.replace(/-/g, ' ')} Solaris Films`,
   label,
-  caption: 'Immagine prodotto recuperata dagli asset Solaris per orientare meglio la scheda tecnica.',
+  caption: 'Visuale prodotto per una lettura rapida della soluzione prima dei dettagli tecnici.',
 });
 
 export const PRODUCT_VISUALS = {
@@ -21,14 +21,14 @@ export const PRODUCT_VISUALS = {
   'madico-rs-20-ps-sr-8-mil': productAsset('madico-rs-20-ps-sr-8-mil'),
   'madico-rs-40-ps-sr-4-mil': productAsset('madico-rs-40-ps-sr-4-mil'),
   'madico-rs-40-ps-sr-8-mil': productAsset('madico-rs-40-ps-sr-8-mil'),
-  'madico-safetyshield-800': productAsset('madico-safetyshield-800', 'Scheda prodotto SafetyShield'),
-  'madico-safetyshield-1500': productAsset('madico-safetyshield-1500', 'Scheda prodotto SafetyShield'),
+  'madico-safetyshield-800': productAsset('madico-safetyshield-800', 'Prodotto SafetyShield'),
+  'madico-safetyshield-1500': productAsset('madico-safetyshield-1500', 'Prodotto SafetyShield'),
   'madico-cl-400-e-ps-sr': productAsset('madico-cl-400-e-ps-sr'),
   'madico-cl-400-ps-sr': productAsset('madico-cl-400-ps-sr'),
   'madico-cl-700-e-ps-sr': productAsset('madico-cl-700-e-ps-sr'),
   'madico-cl-700-ps-sr': productAsset('madico-cl-700-ps-sr'),
   'madico-gullwing': productAsset('madico-gullwing', 'Sistema di ancoraggio'),
-  'madico-mt-200-xw': productAsset('madico-mt-200-xw', 'Scheda privacy e design'),
+  'madico-mt-200-xw': productAsset('madico-mt-200-xw', 'Prodotto privacy e design'),
   vetrofanie: {
     src: '/assets/imported/products/vetrofanie-optimized.webp',
     alt: 'Vetrofanie Solaris',

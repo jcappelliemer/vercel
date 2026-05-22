@@ -1238,6 +1238,32 @@ const FocusDirectoryPage = ({ config, primaryPages, allPages, loading, error, st
           </div>
         </section>
 
+        <section className="knowledge-directory-paths" aria-label="Percorso speciale SafetyShield">
+          <div className="knowledge-directory-section-heading">
+            <span>Percorso speciale</span>
+            <h2>SafetyShield: protezione speciale per scenari estremi</h2>
+            <p>
+              Se il tema è mitigazione esplosione, protezione persone o tenuta del sistema vetro in eventi critici,
+              usa la sezione dedicata SafetyShield.
+            </p>
+          </div>
+          <div className="knowledge-directory-path-grid">
+            <Link to="/focus-tecnico/safetyshield/" className="knowledge-directory-path-card knowledge-directory-path-card-sicurezza">
+              <figure className="service-family-image service-family-image-card service-family-image-sicurezza">
+                <img src="/assets/safetyshield/madico-safetyshield-hero.jpg" alt="SafetyShield Special Security System" loading="lazy" />
+              </figure>
+              <div>
+                <span>Special Security System</span>
+                <h3>SafetyShield 800/1500 con FrameGard e GullWing</h3>
+                <p>
+                  Approfondimento dedicato con scenari, confronto serie, ancoraggi e documenti ufficiali.
+                </p>
+              </div>
+              <ArrowRight size={18} weight="bold" />
+            </Link>
+          </div>
+        </section>
+
         <section className="knowledge-directory-body">
           <div className="knowledge-directory-section-heading">
             <span>Guide ordinate per decisione</span>

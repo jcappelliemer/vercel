@@ -196,6 +196,19 @@ const SafetyShieldPagina = () => {
                     <p><strong className="text-white">Spessore:</strong> {item.spessore}</p>
                     <p><strong className="text-white">Riferimento dati:</strong> {item.riferimento}</p>
                   </div>
+                  <div className="mt-5">
+                    {item.serie.includes('800') ? (
+                      <Link to="/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308]">
+                        Apri scheda SafetyShield 800
+                        <ArrowRight size={14} />
+                      </Link>
+                    ) : (
+                      <Link to="/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308]">
+                        Apri scheda SafetyShield 1500
+                        <ArrowRight size={14} />
+                      </Link>
+                    )}
+                  </div>
                 </article>
               ))}
             </div>

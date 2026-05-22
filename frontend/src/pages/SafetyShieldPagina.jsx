@@ -3,7 +3,7 @@ import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
 import SEO from '../components/SEO';
 import { Link } from '@/next/router-shim';
-import { ArrowRight, CheckCircle, DownloadSimple, ShieldCheck } from '@phosphor-icons/react';
+import { ArrowRight, DownloadSimple, ShieldCheck } from '@phosphor-icons/react';
 
 const metriche = [
   { label: 'Spessore SafetyShield G2 800', value: '240 micron' },
@@ -12,6 +12,34 @@ const metriche = [
   { label: 'Blast G2 800', value: '28 kPa / 193 kPa·ms (H4)' },
   { label: 'Blast G2 1500 con ancoraggio', value: '48 kPa / 365 kPa·ms (H2)' },
   { label: 'EN 356 (condizione testata)', value: 'P2A su vetro 6 mm' },
+];
+
+const confrontoSafetyShield = [
+  {
+    serie: 'SafetyShield G2 800',
+    spessore: '240 micron',
+    scenario: 'Mitigazione frammentazione e primo livello di rinforzo in contesti professionali.',
+    blast: '28 kPa / 193 kPa·ms (H4)',
+  },
+  {
+    serie: 'SafetyShield G2 1500',
+    spessore: '432 micron',
+    scenario: 'Configurazioni ad alto rischio con richiesta di tenuta superiore.',
+    blast: '48 kPa / 365 kPa·ms (H2) con ancoraggio',
+  },
+];
+
+const criteriScelta = [
+  'Tipo di vetro esistente e configurazione del serramento.',
+  'Livello di rischio reale: urto, intrusione, scenario ad alta energia.',
+  "Obiettivo del progetto: contenimento frammenti, ritardo intrusione, protezione dell'area.",
+  'Scelta del sistema di ancoraggio in funzione del contesto (FrameGard o GullWing).',
+];
+
+const estrattiSolaris = [
+  'SafetyShield 800: orientata alla trasformazione di vetri monolitici in configurazioni rinforzate con approccio antieffrazione/antiesplosione.',
+  'SafetyShield 1500: soluzione piu robusta per richieste di sicurezza avanzata e test su classi superiori.',
+  'GullWing: ancoraggio dedicato usato per aumentare la tenuta del sistema vetro + film in eventi ad alta sollecitazione.',
 ];
 
 const supportiUfficiali = [
@@ -54,17 +82,19 @@ const SafetyShieldPagina = () => {
                   Madico <span className="text-gradient">SafetyShield</span>
                 </h1>
                 <p className="text-lg text-[#CBD5E1] leading-relaxed mb-5">
-                  Questa pagina parla solo di SafetyShield e dei sistemi di ancoraggio dedicati. Il percorso parte dal rischio reale
-                  sul vetro e arriva alla configurazione corretta con film, telaio e posa.
+                  Pagina dedicata esclusivamente a SafetyShield e ai sistemi di ancoraggio FrameGard e GullWing.
+                  Il percorso parte dal rischio reale sul vetro e arriva alla configurazione corretta di film, ancoraggio e posa.
                 </p>
                 <p className="text-[#94A3B8] leading-relaxed">
-                  Se il tema Ã¨ sicurezza avanzata su superfici vetrate, qui trovi dati, supporti ufficiali e differenze operative
-                  tra FrameGard e GullWing.
+                  Qui trovi confronto tra SafetyShield 800 e 1500, criteri di scelta, dati in metrica europea e supporti ufficiali Madico.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-8">
                   <Link to="/preventivo" className="btn-yellow group">
                     Richiedi verifica SafetyShield
                     <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <Link to="/prodotti/madico-safetyshield-800/" className="btn-secondary">
+                    Scheda prodotto 800
                   </Link>
                   <Link to="/prodotti/madico-safetyshield-1500/" className="btn-secondary">
                     Scheda prodotto 1500
@@ -96,9 +126,6 @@ const SafetyShieldPagina = () => {
               <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
                 SafetyShield in metrica europea
               </h2>
-              <p className="text-[#475569] leading-relaxed">
-                Valori chiave da usare per un confronto serio prima del sopralluogo.
-              </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -106,6 +133,30 @@ const SafetyShieldPagina = () => {
                 <article key={item.label} className="rounded-xl border border-[#E2E8F0] bg-white p-6">
                   <p className="text-xs uppercase tracking-wider text-[#64748B]">{item.label}</p>
                   <p className="mt-2 text-xl font-medium text-[#0A0F1C]">{item.value}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 border-y border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Confronto rapido</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
+                SafetyShield G2 800 e SafetyShield G2 1500
+              </h2>
+            </div>
+
+            <div className="grid lg:grid-cols-2 gap-5">
+              {confrontoSafetyShield.map((item) => (
+                <article key={item.serie} className="card-glass rounded-xl p-6">
+                  <h3 className="text-2xl font-medium text-white">{item.serie}</h3>
+                  <div className="mt-4 space-y-2 text-[#CBD5E1]">
+                    <p><strong className="text-white">Spessore:</strong> {item.spessore}</p>
+                    <p><strong className="text-white">Scenario tipico:</strong> {item.scenario}</p>
+                    <p><strong className="text-white">Riferimento blast:</strong> {item.blast}</p>
+                  </div>
                 </article>
               ))}
             </div>
@@ -123,8 +174,7 @@ const SafetyShieldPagina = () => {
                     <h3 className="text-2xl font-medium text-white">FrameGard</h3>
                   </div>
                   <p className="text-[#CBD5E1] leading-relaxed">
-                    Sistema perimetrale studiato per mantenere il vetro nel vano in caso di rottura, riducendo la proiezione di
-                    frammenti verso l'interno.
+                    Sistema perimetrale studiato per mantenere il vetro nel vano in caso di rottura, riducendo la proiezione di frammenti verso l&apos;interno.
                   </p>
                 </div>
               </article>
@@ -137,8 +187,7 @@ const SafetyShieldPagina = () => {
                     <h3 className="text-2xl font-medium text-white">GullWing</h3>
                   </div>
                   <p className="text-[#CBD5E1] leading-relaxed">
-                    Sistema di ancoraggio meccanico utilizzato in configurazioni dove serve una maggiore tenuta complessiva del
-                    sistema vetro + film.
+                    Sistema di ancoraggio meccanico usato quando serve aumentare la tenuta complessiva del sistema vetro + film.
                   </p>
                 </div>
               </article>
@@ -149,13 +198,29 @@ const SafetyShieldPagina = () => {
         <section className="py-20 section-light">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Come si decide</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
+                Criteri tecnici di scelta sul vetro reale
+              </h2>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-4">
+              {criteriScelta.map((item) => (
+                <article key={item} className="rounded-xl border border-[#E2E8F0] bg-white p-5">
+                  <p className="text-[#0A0F1C]">{item}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 section-light">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
               <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Supporti ufficiali</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
-                Documenti Madico e riferimenti Solaris
+                Documenti ufficiali Madico
               </h2>
-              <p className="text-[#475569] leading-relaxed">
-                Materiale di riferimento per dati, test e configurazioni SafetyShield.
-              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
@@ -167,31 +232,32 @@ const SafetyShieldPagina = () => {
               ))}
             </div>
 
-            <div className="mt-8 grid md:grid-cols-2 gap-4">
-              <a href="https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/" target="_blank" rel="noreferrer" className="rounded-xl border border-[#E2E8F0] bg-white p-5 flex items-center justify-between">
-                <span className="text-[#0A0F1C] font-medium">Pagina live Solaris: SafetyShield 800</span>
-                <ArrowRight size={18} className="text-[#2563EB]" />
-              </a>
-              <a href="https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/" target="_blank" rel="noreferrer" className="rounded-xl border border-[#E2E8F0] bg-white p-5 flex items-center justify-between">
-                <span className="text-[#0A0F1C] font-medium">Pagina live Solaris: SafetyShield 1500</span>
-                <ArrowRight size={18} className="text-[#2563EB]" />
-              </a>
+            <div className="mt-8 rounded-xl border border-[#E2E8F0] bg-white p-6">
+              <h3 className="text-xl font-medium text-[#0A0F1C] mb-4">Estratto operativo dai contenuti Solaris</h3>
+              <ul className="space-y-3">
+                {estrattiSolaris.map((item) => (
+                  <li key={item} className="flex items-start gap-3 text-[#334155]">
+                    <ShieldCheck size={18} className="text-[#2563EB] mt-1 shrink-0" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </section>
 
         <section className="py-20 border-t border-white/5">
           <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
-            <h2 className="text-3xl font-medium text-white mb-4">Vuoi capire se SafetyShield Ã¨ adatta al tuo edificio?</h2>
+            <h2 className="text-3xl font-medium text-white mb-4">Vuoi capire se SafetyShield e adatta al tuo edificio?</h2>
             <p className="text-[#94A3B8] mb-8">
-              Partiamo dal vetro reale, dal rischio e dall'obiettivo tecnico prima di proporre il sistema di posa.
+              Partiamo dal vetro reale, dal rischio e dall&apos;obiettivo tecnico prima di proporre il sistema di posa.
             </p>
             <div className="flex flex-wrap gap-3 justify-center">
               <Link to="/preventivo" className="btn-yellow">Richiedi analisi SafetyShield</Link>
               <a href="tel:+390559107621" className="btn-secondary">055 9107621</a>
             </div>
             <p className="mt-6 text-sm text-[#64748B]">
-              Fonti principali: madico.com (SafetyShield, FrameGard, GullWing datasheet/sell sheet) e sito live solarisfilms.it.
+              Fonti: madico.com (SafetyShield, FrameGard, GullWing datasheet/sell sheet) e contenuti tecnici Solaris rielaborati in formato UX.
             </p>
           </div>
         </section>

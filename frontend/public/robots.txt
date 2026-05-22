@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+Sitemap: https://solarisfilms.vercel.app/sitemap.xml

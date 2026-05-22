@@ -16,16 +16,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/info/garanzie',
-        destination: '/info/istruzioni-e-manutenzione/',
-        permanent: true,
-      },
-      {
-        source: '/info/garanzie/',
-        destination: '/info/istruzioni-e-manutenzione/',
-        permanent: true,
-      },
-      {
         source: '/prodotti/tecnosolarssn50tesr',
         destination: '/servizi#antisolari',
         permanent: true,

@@ -39,7 +39,7 @@ const criteriScelta = [
 const percorsoOperativo = [
   {
     title: '1. Analisi del rischio',
-    text: 'Si parte dall\'evento da mitigare: urto accidentale, tentata intrusione o scenario ad alta energia.',
+    text: "Si parte dall'evento da mitigare: urto accidentale, tentata intrusione o scenario ad alta energia.",
   },
   {
     title: '2. Verifica vetro e telaio',

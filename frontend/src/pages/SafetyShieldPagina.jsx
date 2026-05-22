@@ -61,6 +61,46 @@ const estrattiSolaris = [
   'GullWing: ancoraggio dedicato usato per aumentare la tenuta del sistema vetro + film in eventi ad alta sollecitazione.',
 ];
 
+const casiUsoDettagliati = [
+  {
+    title: 'Scuole e ambienti formativi',
+    text: 'Quando il vetro è vicino a zone di passaggio, SafetyShield aiuta a ridurre il rischio legato alla frammentazione e a gestire meglio gli impatti accidentali.',
+  },
+  {
+    title: 'Retail e uffici con vetrate esposte',
+    text: 'Nei fronti strada o nelle vetrine estese, la combinazione film + ancoraggio permette di alzare il livello di protezione senza sostituzione completa dei vetri.',
+  },
+  {
+    title: 'Sanità e strutture ad alta frequentazione',
+    text: 'In contesti con afflusso continuo, il controllo della rottura del vetro e la tenuta del sistema diventano un requisito operativo, non solo tecnico.',
+  },
+  {
+    title: 'Siti industriali e aree sensibili',
+    text: 'Quando il rischio è più elevato, la scelta tra G2 800 e G2 1500 va fatta insieme al dettaglio dell’ancoraggio e delle condizioni reali di posa.',
+  },
+];
+
+const noteImportanti = [
+  'I risultati di test non vanno letti come claim universale: valgono nelle condizioni specifiche di prova.',
+  'La classificazione finale dipende dal sistema completo: vetro, telaio, ancoraggio e installazione.',
+  'Un film corretto su vetro non compatibile può ridurre l’efficacia del progetto: la verifica preliminare resta obbligatoria.',
+];
+
+const faqSafetyShield = [
+  {
+    q: 'SafetyShield 800 e 1500 sostituiscono sempre il vetro stratificato?',
+    a: 'No. In alcuni casi possono migliorare in modo significativo la sicurezza del vetro esistente, ma la soluzione va definita su progetto e requisito reale.',
+  },
+  {
+    q: 'FrameGard e GullWing sono alternativi?',
+    a: 'Sono sistemi con logiche diverse. La scelta dipende da obiettivo, configurazione del serramento e livello di rischio da gestire.',
+  },
+  {
+    q: 'Basta scegliere il prodotto dalla scheda tecnica?',
+    a: 'No. Le schede orientano, ma la decisione corretta richiede analisi del vetro reale e impostazione della posa.',
+  },
+];
+
 const supportiUfficiali = [
   {
     label: 'Data Sheet SafetyShield G2 800 (Madico)',
@@ -190,6 +230,29 @@ const SafetyShieldPagina = () => {
           </div>
         </section>
 
+        <section className="py-20 border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Dove si applica</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
+                Casi d&apos;uso dove SafetyShield fa davvero differenza
+              </h2>
+              <p className="text-[#94A3B8] leading-relaxed">
+                Non è una pagina prodotto generica: questi sono i contesti in cui il sistema viene valutato con priorità alta.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-5">
+              {casiUsoDettagliati.map((item) => (
+                <article key={item.title} className="card-glass rounded-xl p-6">
+                  <h3 className="text-xl font-medium text-white">{item.title}</h3>
+                  <p className="mt-3 text-[#CBD5E1] leading-relaxed">{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="py-24 border-y border-white/5">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid lg:grid-cols-2 gap-8">
@@ -268,6 +331,25 @@ const SafetyShieldPagina = () => {
           </div>
         </section>
 
+        <section className="py-20 border-y border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Attenzioni</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
+                Tre punti da tenere chiari prima della scelta finale
+              </h2>
+            </div>
+            <div className="space-y-3">
+              {noteImportanti.map((item) => (
+                <article key={item} className="card-glass rounded-xl p-5 flex items-start gap-3">
+                  <ShieldCheck size={18} className="text-[#EAB308] mt-1 shrink-0" />
+                  <p className="text-[#CBD5E1]">{item}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 section-light">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
@@ -296,6 +378,25 @@ const SafetyShieldPagina = () => {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 section-light">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">FAQ rapide</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
+                Domande frequenti su SafetyShield
+              </h2>
+            </div>
+            <div className="space-y-4">
+              {faqSafetyShield.map((item) => (
+                <article key={item.q} className="rounded-xl border border-[#E2E8F0] bg-white p-6">
+                  <h3 className="text-xl font-medium text-[#0A0F1C]">{item.q}</h3>
+                  <p className="mt-3 text-[#475569] leading-relaxed">{item.a}</p>
+                </article>
+              ))}
             </div>
           </div>
         </section>

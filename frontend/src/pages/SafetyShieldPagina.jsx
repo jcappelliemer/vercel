@@ -36,6 +36,25 @@ const criteriScelta = [
   'Scelta del sistema di ancoraggio in funzione del contesto (FrameGard o GullWing).',
 ];
 
+const percorsoOperativo = [
+  {
+    title: '1. Analisi del rischio',
+    text: 'Si parte dall\'evento da mitigare: urto accidentale, tentata intrusione o scenario ad alta energia.',
+  },
+  {
+    title: '2. Verifica vetro e telaio',
+    text: 'Si controllano stratigrafia, dimensioni, appoggi e punti critici del serramento prima di definire film e ancoraggio.',
+  },
+  {
+    title: '3. Configurazione SafetyShield',
+    text: 'Si confrontano G2 800 e G2 1500 con sistema di ancoraggio coerente (FrameGard o GullWing).',
+  },
+  {
+    title: '4. Posa e controllo finale',
+    text: 'Installazione tecnica e verifica conclusiva della configurazione applicata sul caso reale.',
+  },
+];
+
 const estrattiSolaris = [
   'SafetyShield 800: orientata alla trasformazione di vetri monolitici in configurazioni rinforzate con approccio antieffrazione/antiesplosione.',
   'SafetyShield 1500: soluzione piu robusta per richieste di sicurezza avanzata e test su classi superiori.',
@@ -126,6 +145,10 @@ const SafetyShieldPagina = () => {
               <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
                 SafetyShield in metrica europea
               </h2>
+              <p className="text-[#475569] leading-relaxed">
+                Numeri sintetici per una prima lettura. La classificazione finale dipende sempre dal sistema completo:
+                vetro, telaio, ancoraggio e posa.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
@@ -146,6 +169,10 @@ const SafetyShieldPagina = () => {
               <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
                 SafetyShield G2 800 e SafetyShield G2 1500
               </h2>
+              <p className="text-[#94A3B8] leading-relaxed">
+                Entrambe le serie lavorano sulla sicurezza del vetro, ma non hanno lo stesso posizionamento operativo.
+                Qui sotto vedi la differenza in modo immediato.
+              </p>
             </div>
 
             <div className="grid lg:grid-cols-2 gap-5">
@@ -195,6 +222,30 @@ const SafetyShieldPagina = () => {
           </div>
         </section>
 
+        <section className="py-20 border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Metodo operativo</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
+                Come si struttura una scelta SafetyShield
+              </h2>
+              <p className="text-[#94A3B8] leading-relaxed">
+                La scelta non parte dal codice prodotto: parte dal rischio, passa dalla verifica del vetro e
+                arriva alla configurazione corretta con ancoraggio.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-5">
+              {percorsoOperativo.map((item) => (
+                <article key={item.title} className="card-glass rounded-xl p-6">
+                  <h3 className="text-xl font-medium text-white">{item.title}</h3>
+                  <p className="mt-3 text-[#CBD5E1] leading-relaxed">{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 section-light">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
@@ -202,6 +253,9 @@ const SafetyShieldPagina = () => {
               <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
                 Criteri tecnici di scelta sul vetro reale
               </h2>
+              <p className="text-[#475569] leading-relaxed">
+                Questi criteri evitano richieste generiche e aiutano a capire da subito quale configurazione è sensata.
+              </p>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">

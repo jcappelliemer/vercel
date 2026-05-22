@@ -1456,9 +1456,9 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
         <section className="knowledge-directory-featured">
           <div className="knowledge-directory-section-heading">
             <span>Da leggere prima</span>
-            <h2>Le informazioni che rendono più chiara la richiesta</h2>
+            <h2>Le informazioni che rendono piu chiara la richiesta</h2>
             <p>
-              Le pagine in evidenza aiutano a impostare una richiesta più precisa e a ridurre errori di valutazione.
+              Le pagine in evidenza aiutano a impostare una richiesta piu precisa e a ridurre errori di valutazione.
             </p>
           </div>
           <div className="knowledge-directory-featured-grid">
@@ -1485,7 +1485,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
             <span>Percorsi di lettura</span>
             <h2>Norme, garanzie e manutenzione: scegli il percorso giusto</h2>
             <p>
-              Se il tema è sicurezza, affidabilità o gestione dopo la posa, parti dal blocco corretto e arriva
+              Se il tema e sicurezza, affidabilita o gestione dopo la posa, parti dal blocco corretto e arriva
               rapidamente alla pagina utile.
             </p>
           </div>
@@ -1498,7 +1498,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
                   <p>{theme.description}</p>
                   <div className="product-directory-family-meta">
                     <span>{theme.pages.length} pagine</span>
-                    <span>guida alla scelta</span>
+                    <span>percorso tematico</span>
                   </div>
                 </div>
                 <ArrowRight size={18} weight="bold" />
@@ -1512,7 +1512,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
             <span>Tutte le info</span>
             <h2>Riferimenti utili per clienti, progettisti e responsabili sicurezza</h2>
             <p>
-              Le pagine sono ordinate per funzione: chiarire il contesto, preparare la richiesta e scegliere con più sicurezza.
+              Le pagine sono ordinate per funzione: chiarire il contesto, preparare la richiesta e scegliere con piu sicurezza.
             </p>
           </div>
 
@@ -1560,7 +1560,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
             <span>Dal dubbio alla verifica</span>
             <h2>Le informazioni vanno applicate al caso reale</h2>
             <p>
-              Se hai già un caso concreto, Solaris può trasformare queste informazioni in una proposta operativa
+              Se hai gia un caso concreto, Solaris puo trasformare queste informazioni in una proposta operativa
               su vetro, contesto e posa.
             </p>
           </div>

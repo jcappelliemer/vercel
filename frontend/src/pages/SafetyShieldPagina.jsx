@@ -317,6 +317,35 @@ const SafetyShieldPagina = () => {
           </div>
         </section>
 
+        <section className="py-20 section-light border-t border-[#E2E8F0]">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Percorsi collegati</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
+                Tutte le pagine utili del percorso SafetyShield
+              </h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-4">
+              <Link to="/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/" className="rounded-xl border border-[#E2E8F0] bg-white p-5 flex items-center justify-between">
+                <span className="text-[#0A0F1C] font-medium">Focus tecnico completo SafetyShield</span>
+                <ArrowRight size={18} className="text-[#2563EB]" />
+              </Link>
+              <Link to="/servizi#safety-shield" className="rounded-xl border border-[#E2E8F0] bg-white p-5 flex items-center justify-between">
+                <span className="text-[#0A0F1C] font-medium">Sezione SafetyShield nei Servizi</span>
+                <ArrowRight size={18} className="text-[#2563EB]" />
+              </Link>
+              <Link to="/preventivo" className="rounded-xl border border-[#E2E8F0] bg-white p-5 flex items-center justify-between">
+                <span className="text-[#0A0F1C] font-medium">Richiedi analisi del rischio</span>
+                <ArrowRight size={18} className="text-[#2563EB]" />
+              </Link>
+              <Link to="/contatti" className="rounded-xl border border-[#E2E8F0] bg-white p-5 flex items-center justify-between">
+                <span className="text-[#0A0F1C] font-medium">Contatto tecnico diretto</span>
+                <ArrowRight size={18} className="text-[#2563EB]" />
+              </Link>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 border-t border-white/5">
           <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
             <h2 className="text-3xl font-medium text-white mb-4">Attiviamo un percorso SafetyShield sul tuo edificio</h2>

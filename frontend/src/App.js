@@ -82,6 +82,7 @@ function App() {
           <Route path="/servizio-locale/:city" element={<LiveMirrorPage />} />
           <Route path="/info" element={<LiveDirectoryPage kind="info" />} />
           <Route path="/info/:slug" element={<LiveMirrorPage />} />
+          <Route path="/faq" element={<LiveMirrorPage />} />
           <Route path="/focus-tecnico" element={<LiveDirectoryPage kind="focus" />} />
           <Route path="/focus-tecnico/:slug" element={<LiveMirrorPage />} />
           <Route path="/prodotti" element={<LiveDirectoryPage kind="products" />} />

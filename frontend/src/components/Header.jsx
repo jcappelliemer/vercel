@@ -266,6 +266,10 @@ const LIVE_MENU = [
         href: '/pagina-info/certificazione-nfrc/',
       },
       {
+        name: 'Garanzie',
+        href: '/pagina-info/garanzie/',
+      },
+      {
         name: 'I punti di forza',
         href: '/pagina-info/i-punti-di-forza/',
       },

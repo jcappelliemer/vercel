@@ -79,7 +79,7 @@ export const DIRECTORY_CONFIG = {
     eyebrow: 'Normative e supporto',
     description: 'Norme, garanzie e istruzioni lette in funzione del vetro reale, della posa e della scelta Solaris.',
     path: '/info',
-    types: ['info'],
+    types: ['info', 'faq'],
     emptyText: 'Nessuna pagina informativa disponibile.',
   },
   focus: {

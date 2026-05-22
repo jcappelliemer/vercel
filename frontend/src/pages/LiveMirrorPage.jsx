@@ -1348,9 +1348,6 @@ const ProductTemplate = ({ page, allPages = [] }) => {
         {image && (
           <figure className={`product-detail-visual ${family ? `service-family-image-${family.key}` : ''} ${productVisual ? 'product-detail-visual-product' : ''} ${visualIsFamilyFallback ? 'product-detail-visual-cover' : ''}`}>
             <img src={image} alt={productVisual?.alt || title} loading="eager" />
-            <figcaption>
-              <span>{productVisual?.label || 'Scheda prodotto'}</span>
-            </figcaption>
           </figure>
         )}
       </section>

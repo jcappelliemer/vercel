@@ -101,6 +101,12 @@ const faqSafetyShield = [
   },
 ];
 
+const testoDalLiveSolaris = [
+  'Dalle pagine prodotto Solaris emerge un punto chiaro: SafetyShield viene usata quando si vuole aumentare la resistenza del vetro esistente senza interventi invasivi sull’involucro. In pratica, il film aiuta a contenere la rottura e riduce la dispersione dei frammenti, migliorando la gestione dell’impatto.',
+  'Nel confronto tra le due varianti, la serie 800 è presentata come soluzione efficace per scenari di sicurezza importanti ma ordinari, mentre la 1500 è pensata per richieste più severe, dove il livello di protezione deve salire insieme alla robustezza complessiva del sistema.',
+  'Un altro passaggio ricorrente nel live Solaris riguarda il metodo: la scelta non si ferma alla scheda prodotto. Vetro, telaio, contesto d’uso e ancoraggio devono essere valutati insieme, perché è la configurazione completa a determinare il risultato finale.',
+];
+
 const supportiUfficiali = [
   {
     label: 'Data Sheet SafetyShield G2 800 (Madico)',
@@ -321,6 +327,25 @@ const SafetyShieldPagina = () => {
                 <article key={item.title} className="card-glass rounded-xl p-6">
                   <h3 className="text-xl font-medium text-white">{item.title}</h3>
                   <p className="mt-3 text-[#CBD5E1] leading-relaxed">{item.text}</p>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 border-b border-white/5">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Dal live Solaris</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
+                Come viene raccontato SafetyShield nelle pagine storiche
+              </h2>
+            </div>
+
+            <div className="space-y-4">
+              {testoDalLiveSolaris.map((item) => (
+                <article key={item} className="card-glass rounded-xl p-6">
+                  <p className="text-[#CBD5E1] leading-relaxed">{item}</p>
                 </article>
               ))}
             </div>

@@ -58,9 +58,9 @@ const scenari = [
 ];
 
 const liveSolarisNarrative = [
-  'Dalle pagine storiche Solaris emerge una linea chiara: SafetyShield non viene proposta come “pellicola standard”, ma come soluzione speciale quando l’obiettivo principale è la protezione delle persone.',
-  'Nel racconto live, la scelta tra 800 e 1500 parte sempre dallo scenario reale. Il prodotto arriva dopo, insieme al sistema di ancoraggio più adatto. È questa combinazione che alza il livello di sicurezza del vetro.',
-  'In altre parole, il valore non è nel singolo codice prodotto: è nel sistema completo che aiuta a gestire meglio eventi estremi e a ridurre l’impatto sugli occupanti.',
+  'SafetyShield non è una pellicola standard: è una soluzione speciale pensata quando la priorità assoluta è la protezione delle persone.',
+  'La scelta tra 800 e 1500 parte dallo scenario reale e viene completata con il sistema di ancoraggio più adatto. È questa combinazione che aumenta il livello di sicurezza del vetro.',
+  'Il valore non sta nel singolo codice prodotto, ma nel sistema completo che aiuta a gestire meglio eventi estremi e a ridurre l’impatto sugli occupanti.',
 ];
 
 const faqSpecifiche = [

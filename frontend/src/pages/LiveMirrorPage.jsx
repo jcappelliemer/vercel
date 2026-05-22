@@ -1350,7 +1350,6 @@ const ProductTemplate = ({ page, allPages = [] }) => {
             <img src={image} alt={productVisual?.alt || title} loading="eager" />
             <figcaption>
               <span>{productVisual?.label || 'Scheda prodotto'}</span>
-              <p>{productVisual?.caption || (family ? `${family.menuLabel} selezionata e posata da Solaris Films.` : 'Soluzione selezionata e posata da Solaris Films.')}</p>
             </figcaption>
           </figure>
         )}

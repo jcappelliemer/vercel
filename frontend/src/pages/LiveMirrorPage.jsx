@@ -1025,6 +1025,38 @@ const extractSpecsFromHeadings = (blocks = [], startIndex = 0) => {
   };
 };
 
+const isProductLikeFocusText = (value = '') => {
+  const text = cleanText(value).toLocaleLowerCase('it');
+  if (!text) return false;
+
+  return (
+    /\b(?:madico\s+)?(?:sb|sg|sl|rs|cl)\s*\d{1,3}\s*(?:e\s*)?ps\s*sr\b/i.test(text)
+    || /\bsafetyshield\s*\d+\b/i.test(text)
+    || /\b(?:scheda tecnica disponibile|vai al focus tecnico|prodotto:)\b/i.test(text)
+    || /\bpellicola\s+antisolare\s+riflettente\b/i.test(text)
+  );
+};
+
+const sanitizeFocusBlocks = (blocks = []) => blocks
+  .map((block) => {
+    if (!block) return block;
+
+    if (block.type === 'paragraph' || block.type === 'heading') {
+      const value = block.text || block.html || '';
+      if (isProductLikeFocusText(value)) return null;
+      return block;
+    }
+
+    if (block.type === 'list' && Array.isArray(block.items)) {
+      const items = block.items.filter((item) => !isProductLikeFocusText(item?.text || item?.html || ''));
+      if (!items.length) return null;
+      return { ...block, items };
+    }
+
+    return block;
+  })
+  .filter(Boolean);
+
 const samePath = (a = '', b = '') => normalizePath(a) === normalizePath(b);
 
 const ArticleTemplate = ({ page }) => {
@@ -1429,7 +1461,7 @@ const ProductTemplate = ({ page, allPages = [] }) => {
 const FocusTemplate = ({ page, allPages = [] }) => {
   const rawBlocks = page.contentBlocks || [];
   const { cleanedBlocks, specs } = extractFocusSpecs(rawBlocks);
-  const blocks = cleanedBlocks;
+  const blocks = sanitizeFocusBlocks(cleanedBlocks);
   const title = liveDisplayTitle(page);
   const family = getServiceFamilyForFocusPage(page);
   const focusSubject = title || family?.title || 'Tecnologia Solaris';

@@ -123,7 +123,7 @@ const SafetyShieldPagina = () => {
                 <div className="accent-bar w-16 mb-6" />
                 <p className="text-[#EAB308] text-sm font-medium uppercase tracking-wider mb-4">Special Security System</p>
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white mb-6">
-                  SafetyShield: sicurezza speciale anti-esplosione per la protezione delle persone
+                  SafetyShield: sicurezza speciale antiesplosione per la protezione delle persone
                 </h1>
                 <p className="text-lg text-[#CBD5E1] leading-relaxed mb-5">
                   Questa non è una normale pellicola di sicurezza. SafetyShield è una soluzione di livello superiore
@@ -249,12 +249,12 @@ const SafetyShieldPagina = () => {
         <section className="py-20 border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Dal live Solaris</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Posizionamento SafetyShield</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
-                Come Solaris racconta SafetyShield
+                Una soluzione speciale per scenari di rischio elevato
               </h2>
               <p className="text-[#94A3B8] leading-relaxed">
-                Questa sintesi nasce dai contenuti storici Solaris già pubblicati sulle versioni SafetyShield 800 e 1500.
+                SafetyShield viene adottata quando la priorità è proteggere le persone e ridurre le conseguenze della rottura del vetro.
               </p>
             </div>
             <div className="space-y-4">

@@ -1483,10 +1483,10 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
         <section className="knowledge-directory-paths" aria-label="Percorsi informativi Solaris">
           <div className="knowledge-directory-section-heading">
             <span>Percorsi di lettura</span>
-            <h2>Norme, garanzie e manutenzione: entra dal dubbio corretto</h2>
+            <h2>Norme, garanzie e manutenzione: scegli il percorso giusto</h2>
             <p>
-              Se il tema è sicurezza, affidabilità o gestione dopo la posa, parti da qui e arriva a una verifica
-              più precisa.
+              Se il tema è sicurezza, affidabilità o gestione dopo la posa, parti dal blocco corretto e arriva
+              rapidamente alla pagina utile.
             </p>
           </div>
           <div className="knowledge-directory-path-grid">
@@ -1512,7 +1512,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
             <span>Tutte le info</span>
             <h2>Riferimenti utili per clienti, progettisti e responsabili sicurezza</h2>
             <p>
-              Le pagine sono ordinate per funzione: capire il quadro, preparare la richiesta e arrivare a una scelta più solida.
+              Le pagine sono ordinate per funzione: chiarire il contesto, preparare la richiesta e scegliere con più sicurezza.
             </p>
           </div>
 

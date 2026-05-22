@@ -1698,8 +1698,8 @@ const InfoTemplate = ({ page, allPages = [] }) => {
             <p>{theme.description}</p>
             <div className="knowledge-directory-mini-list">
               <Link to={theme.route}>
-                <span>Percorso collegato</span>
-                <strong>Apri</strong>
+                <span>{theme.key === 'normative' ? 'Norme e sicurezza vetri' : theme.key === 'certificazioni' ? 'Garanzie e certificazioni' : 'Uso e supporto operativo'}</span>
+                <strong>Apri percorso</strong>
               </Link>
               <Link to="/preventivo">
                 <span>Verifica sul caso reale</span>

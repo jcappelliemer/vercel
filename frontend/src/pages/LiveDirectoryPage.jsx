@@ -1392,8 +1392,8 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
             </div>
             <h1>Norme, garanzie e supporto Solaris</h1>
             <p>
-              Una raccolta di riferimenti utili per capire norme, garanzie e manutenzione senza perdere il punto:
-              ogni informazione va applicata al vetro reale.
+              Qui trovi le informazioni che aiutano a decidere meglio: obblighi, garanzie e gestione post-posa,
+              tradotti in passaggi pratici per il tuo caso.
             </p>
             <div className="knowledge-directory-actions">
               <Link to="/preventivo" className="btn-yellow group">
@@ -1423,8 +1423,8 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
               </div>
               <h2>Informazioni utili solo quando aiutano a decidere meglio</h2>
               <p>
-                Norme, certificazioni e istruzioni orientano la scelta, poi Solaris verifica prodotto, posa e contesto
-                prima di proporre la soluzione.
+                Questa sezione chiarisce cosa è obbligatorio, cosa è raccomandato e cosa va verificato sul vetro
+                prima di scegliere la soluzione.
               </p>
               <div className="knowledge-directory-mini-list">
                 {themeBlocks.map((theme) => (
@@ -1458,8 +1458,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
             <span>Da leggere prima</span>
             <h2>Le informazioni che rendono più chiara la richiesta</h2>
             <p>
-              Le pagine in evidenza aiutano a distinguere obblighi, garanzie e buone pratiche prima di scegliere
-              una pellicola.
+              Le pagine in evidenza aiutano a impostare una richiesta più precisa e a ridurre errori di valutazione.
             </p>
           </div>
           <div className="knowledge-directory-featured-grid">
@@ -1513,8 +1512,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
             <span>Tutte le info</span>
             <h2>Riferimenti utili per clienti, progettisti e responsabili sicurezza</h2>
             <p>
-              Le pagine sono ordinate per funzione: capire il quadro, preparare la richiesta e confrontarsi con
-              Solaris su dati reali.
+              Le pagine sono ordinate per funzione: capire il quadro, preparare la richiesta e arrivare a una scelta più solida.
             </p>
           </div>
 
@@ -1535,7 +1533,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
                     <h2>{theme.title}</h2>
                   </div>
                   <Link to={theme.route}>
-                    Percorso collegato
+                    {theme.key === 'normative' ? 'Apri percorso norme' : theme.key === 'certificazioni' ? 'Apri percorso garanzie' : 'Apri percorso supporto'}
                     <ArrowRight size={16} weight="bold" />
                   </Link>
                 </div>
@@ -1562,8 +1560,8 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
             <span>Dal dubbio alla verifica</span>
             <h2>Le informazioni vanno applicate al caso reale</h2>
             <p>
-              Solaris traduce norme, garanzie e dati tecnici in una proposta concreta su vetro, contesto,
-              obiettivo e posa professionale.
+              Se hai già un caso concreto, Solaris può trasformare queste informazioni in una proposta operativa
+              su vetro, contesto e posa.
             </p>
           </div>
           <Link to="/preventivo" className="btn-yellow group">

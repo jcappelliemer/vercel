@@ -29,7 +29,12 @@ export const PRODUCT_VISUALS = {
   'madico-cl-700-ps-sr': productAsset('madico-cl-700-ps-sr'),
   'madico-gullwing': productAsset('madico-gullwing', 'Sistema di ancoraggio'),
   'madico-mt-200-xw': productAsset('madico-mt-200-xw', 'Scheda privacy e design'),
-  vetrofanie: productAsset('vetrofanie', 'Vetrofanie Solaris'),
+  vetrofanie: {
+    src: '/assets/imported/products/vetrofanie-optimized.webp',
+    alt: 'Vetrofanie Solaris',
+    label: 'Vetrofanie Solaris',
+    caption: 'Immagine prodotto ottimizzata per migliorare velocita di caricamento e resa visiva della scheda.',
+  },
 };
 
 export const LOCAL_SERVICE_LOGOS = {

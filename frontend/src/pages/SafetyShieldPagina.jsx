@@ -6,12 +6,12 @@ import { Link } from '@/next/router-shim';
 import { ArrowRight, DownloadSimple, ShieldCheck } from '@phosphor-icons/react';
 
 const metriche = [
-  { label: 'Spessore SafetyShield G2 800', value: '240 micron' },
-  { label: 'Spessore SafetyShield G2 1500', value: '432 micron' },
-  { label: 'Peel strength', value: '4.5-5.5 kg / 2.5 cm' },
-  { label: 'Blast G2 800', value: '28 kPa / 193 kPa·ms (H4)' },
-  { label: 'Blast G2 1500 con ancoraggio', value: '48 kPa / 365 kPa·ms (H2)' },
-  { label: 'EN 356 (condizione testata)', value: 'P2A su vetro 6 mm' },
+  { label: 'Spessore SafetyShield 800', value: '240 micron' },
+  { label: 'Spessore SafetyShield 1500', value: '432 micron' },
+  { label: 'Adesione del film', value: '4.5-5.5 kg / 2.5 cm' },
+  { label: 'Test su SafetyShield 800', value: '28 kPa / 193 kPa·ms' },
+  { label: 'Test su SafetyShield 1500 con ancoraggio', value: '48 kPa / 365 kPa·ms' },
+  { label: 'Classe rilevata in prova EN 356', value: 'P2A su vetro 6 mm' },
 ];
 
 const confrontoSafetyShield = [
@@ -181,13 +181,32 @@ const SafetyShieldPagina = () => {
         <section className="py-20 section-light">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Dati tecnici</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Come funziona</p>
+              <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
+                Cosa succede davvero quando il vetro subisce un impatto
+              </h2>
+              <p className="text-[#475569] leading-relaxed mb-4">
+                SafetyShield lavora come un sistema, non come una semplice pellicola. Quando il vetro viene colpito, il film aiuta a
+                trattenere i frammenti e a mantenere più stabile la lastra. Questo riduce la dispersione di schegge e rende meno immediata
+                la rottura completa del varco.
+              </p>
+              <p className="text-[#475569] leading-relaxed">
+                Il risultato finale non dipende solo dal prodotto scelto: contano vetro esistente, telaio, ancoraggio e qualità della posa.
+                Per questo Solaris parte sempre da una verifica concreta sul caso reale.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 section-light border-t border-[#E2E8F0]">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="max-w-3xl mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Numeri utili</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
                 SafetyShield in metrica europea
               </h2>
               <p className="text-[#475569] leading-relaxed">
-                Numeri sintetici per una prima lettura. La classificazione finale dipende sempre dal sistema completo:
-                vetro, telaio, ancoraggio e posa.
+                Questi valori servono per orientarsi. La conferma finale arriva sempre dopo la verifica del sistema completo in opera.
               </p>
             </div>
 
@@ -205,13 +224,13 @@ const SafetyShieldPagina = () => {
         <section className="py-20 border-y border-white/5">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Confronto rapido</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Quale scegliere</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
-                SafetyShield G2 800 e SafetyShield G2 1500
+                SafetyShield 800 o SafetyShield 1500
               </h2>
               <p className="text-[#94A3B8] leading-relaxed">
-                Entrambe le serie lavorano sulla sicurezza del vetro, ma non hanno lo stesso posizionamento operativo.
-                Qui sotto vedi la differenza in modo immediato.
+                Entrambi migliorano la sicurezza del vetro, ma hanno un livello di risposta diverso. In generale, 800 è adatto
+                quando serve un rinforzo solido su scenari standard; 1500 entra in gioco quando il rischio richiede una tenuta più alta.
               </p>
             </div>
 
@@ -221,8 +240,8 @@ const SafetyShieldPagina = () => {
                   <h3 className="text-2xl font-medium text-white">{item.serie}</h3>
                   <div className="mt-4 space-y-2 text-[#CBD5E1]">
                     <p><strong className="text-white">Spessore:</strong> {item.spessore}</p>
-                    <p><strong className="text-white">Scenario tipico:</strong> {item.scenario}</p>
-                    <p><strong className="text-white">Riferimento blast:</strong> {item.blast}</p>
+                    <p><strong className="text-white">Quando ha senso:</strong> {item.scenario}</p>
+                    <p><strong className="text-white">Valore di riferimento:</strong> {item.blast}</p>
                   </div>
                 </article>
               ))}
@@ -233,12 +252,12 @@ const SafetyShieldPagina = () => {
         <section className="py-20 border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Dove si applica</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Dove si usa</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
                 Casi d&apos;uso dove SafetyShield fa davvero differenza
               </h2>
               <p className="text-[#94A3B8] leading-relaxed">
-                Non è una pagina prodotto generica: questi sono i contesti in cui il sistema viene valutato con priorità alta.
+                Questi sono i contesti in cui SafetyShield viene richiesto più spesso.
               </p>
             </div>
 
@@ -288,13 +307,12 @@ const SafetyShieldPagina = () => {
         <section className="py-20 border-b border-white/5">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Metodo operativo</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Percorso Solaris</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
                 Come si struttura una scelta SafetyShield
               </h2>
               <p className="text-[#94A3B8] leading-relaxed">
-                La scelta non parte dal codice prodotto: parte dal rischio, passa dalla verifica del vetro e
-                arriva alla configurazione corretta con ancoraggio.
+                La scelta parte dal problema reale, non dal nome del prodotto.
               </p>
             </div>
 
@@ -312,12 +330,12 @@ const SafetyShieldPagina = () => {
         <section className="py-20 section-light">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Come si decide</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Cosa valutiamo</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
                 Criteri tecnici di scelta sul vetro reale
               </h2>
               <p className="text-[#475569] leading-relaxed">
-                Questi criteri evitano richieste generiche e aiutano a capire da subito quale configurazione è sensata.
+                Sono i punti che aiutano a fare una scelta chiara e coerente.
               </p>
             </div>
 
@@ -334,9 +352,9 @@ const SafetyShieldPagina = () => {
         <section className="py-20 border-y border-white/5">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
-              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Attenzioni</p>
+              <p className="text-sm uppercase tracking-[0.3em] text-[#EAB308] mb-4">Punti importanti</p>
               <h2 className="text-3xl lg:text-4xl font-medium text-white mb-5">
-                Tre punti da tenere chiari prima della scelta finale
+                Tre aspetti da chiarire prima di decidere
               </h2>
             </div>
             <div className="space-y-3">
@@ -354,9 +372,7 @@ const SafetyShieldPagina = () => {
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="max-w-3xl mb-10">
               <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-4">Supporti ufficiali</p>
-              <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">
-                Documenti ufficiali Madico
-              </h2>
+              <h2 className="text-3xl lg:text-4xl font-medium text-[#0A0F1C] mb-5">Documenti ufficiali Madico</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-4">
@@ -369,7 +385,7 @@ const SafetyShieldPagina = () => {
             </div>
 
             <div className="mt-8 rounded-xl border border-[#E2E8F0] bg-white p-6">
-              <h3 className="text-xl font-medium text-[#0A0F1C] mb-4">Estratto operativo dai contenuti Solaris</h3>
+              <h3 className="text-xl font-medium text-[#0A0F1C] mb-4">In sintesi</h3>
               <ul className="space-y-3">
                 {estrattiSolaris.map((item) => (
                   <li key={item} className="flex items-start gap-3 text-[#334155]">
@@ -403,7 +419,7 @@ const SafetyShieldPagina = () => {
 
         <section className="py-20 border-t border-white/5">
           <div className="max-w-5xl mx-auto px-6 md:px-12 text-center">
-            <h2 className="text-3xl font-medium text-white mb-4">Vuoi capire se SafetyShield e adatta al tuo edificio?</h2>
+            <h2 className="text-3xl font-medium text-white mb-4">Vuoi capire se SafetyShield è adatta al tuo edificio?</h2>
             <p className="text-[#94A3B8] mb-8">
               Partiamo dal vetro reale, dal rischio e dall&apos;obiettivo tecnico prima di proporre il sistema di posa.
             </p>

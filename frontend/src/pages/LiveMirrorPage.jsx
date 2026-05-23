@@ -1053,6 +1053,13 @@ const sanitizeFocusBlocks = (blocks = []) => blocks
       return { ...block, items };
     }
 
+    if (block.type === 'cta') {
+      const value = block.text || block.html || '';
+      if (isProductLikeFocusText(value)) return null;
+      if (/focus-tecnico/i.test(value)) return null;
+      return block;
+    }
+
     return block;
   })
   .filter(Boolean);

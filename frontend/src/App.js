@@ -65,6 +65,12 @@ function App() {
           <Route path="/approfondimenti/*" element={<LiveMirrorPage />} />
           <Route path="/preventivo" element={<PreventivoPagina />} />
           <Route path="/servizi" element={<ServiziPagina />} />
+          <Route path="/servizi/pellicole-antisolari" element={<Navigate to="/servizi#antisolari" replace />} />
+          <Route path="/servizi/pellicole-antisolari/" element={<Navigate to="/servizi#antisolari" replace />} />
+          <Route path="/servizi/pellicole-sicurezza" element={<Navigate to="/servizi#sicurezza" replace />} />
+          <Route path="/servizi/pellicole-sicurezza/" element={<Navigate to="/servizi#sicurezza" replace />} />
+          <Route path="/servizi/pellicole-decorative" element={<Navigate to="/servizi#decorative" replace />} />
+          <Route path="/servizi/pellicole-decorative/" element={<Navigate to="/servizi#decorative" replace />} />
           <Route path="/company-profile" element={<ChiSiamoPagina />} />
           <Route path="/chi-siamo" element={<Navigate to="/company-profile" replace />} />
           <Route path="/contatti" element={<ContattiPagina />} />

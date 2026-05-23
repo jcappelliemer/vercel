@@ -13,7 +13,7 @@ const titleFromPage = (page = {}) => (
 export const SERVICE_FAMILIES = [
   {
     key: 'antisolari',
-    route: '/servizi/pellicole-antisolari/',
+    route: '/servizi#antisolari',
     ctaRoute: '/focus-tecnico/pellicole-antisolari/',
     livePath: '/pellicole-per-vetri/le-pellicole-antisolari/',
     title: 'Pellicole antisolari',
@@ -53,7 +53,7 @@ export const SERVICE_FAMILIES = [
   },
   {
     key: 'sicurezza',
-    route: '/servizi/pellicole-sicurezza/',
+    route: '/servizi#sicurezza',
     ctaRoute: '/focus-tecnico/pellicole-di-sicurezza/',
     livePath: '/pellicole-per-vetri/pellicole-di-sicurezza/',
     title: 'Pellicole di sicurezza',
@@ -92,7 +92,7 @@ export const SERVICE_FAMILIES = [
   },
   {
     key: 'decorative',
-    route: '/servizi/pellicole-decorative/',
+    route: '/servizi#decorative',
     ctaRoute: '/focus-tecnico/pellicole-decorative/',
     livePath: '/pellicole-per-vetri/pellicole-decorative-per-vetri/',
     title: 'Pellicole privacy e design',

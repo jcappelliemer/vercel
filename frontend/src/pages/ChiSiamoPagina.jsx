@@ -2,6 +2,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
 import SEO from '../components/SEO';
+import References from '../components/References';
 import { motion } from 'framer-motion';
 import { Link } from '@/next/router-shim';
 import {
@@ -335,7 +336,7 @@ const ChiSiamoPagina = ({ canonicalPath = '/company-profile' }) => {
           </div>
         </section>
 
-        <section className="py-24 section-light border-b border-[#E2E8F0]">
+        <section className="hidden py-24 section-light border-b border-[#E2E8F0]">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid lg:grid-cols-[0.72fr_1.28fr] gap-12 items-start">
               <div className="lg:sticky lg:top-28">
@@ -648,6 +649,13 @@ const ChiSiamoPagina = ({ canonicalPath = '/company-profile' }) => {
             </motion.div>
           </div>
         </section>
+
+        <References
+          theme="light"
+          title="Realtà che hanno scelto Solaris"
+          subtitle="Referenze clienti dal portfolio Solaris"
+          sectionClassName="py-20 section-light border-b border-[#E2E8F0] relative overflow-hidden"
+        />
 
         <section className="py-24 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-[#2563EB]/20 to-[#EAB308]/10" />

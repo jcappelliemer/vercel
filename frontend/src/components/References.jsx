@@ -25,6 +25,7 @@ const References = ({
   title = 'Ci hanno scelto',
   subtitle = 'Le nostre referenze piu importanti',
   sectionClassName = 'py-24 relative overflow-hidden',
+  showNames = false,
 }) => {
   const s = useSettings();
   const isLight = theme === 'light';
@@ -56,26 +57,33 @@ const References = ({
         <div className={`absolute left-0 top-0 bottom-0 w-32 z-10 ${isLight ? 'bg-gradient-to-r from-[#F8FAFC] to-transparent' : 'bg-gradient-to-r from-[#0A0F1C] to-transparent'}`} />
         <div className={`absolute right-0 top-0 bottom-0 w-32 z-10 ${isLight ? 'bg-gradient-to-l from-[#F8FAFC] to-transparent' : 'bg-gradient-to-l from-[#0A0F1C] to-transparent'}`} />
         <motion.div
-          className="flex gap-5"
+          className="flex gap-4"
           animate={{ x: ['0%', '-50%'] }}
-          transition={{ duration: 35, repeat: Infinity, ease: 'linear' }}
+          transition={{ duration: 42, repeat: Infinity, ease: 'linear' }}
         >
           {[...references, ...references].map((ref, index) => (
             <div
               key={`${ref.nome}-${index}`}
-              className={`flex-shrink-0 flex items-center gap-3 py-3 px-5 rounded-xl transition-all ${isLight ? 'border border-[#E2E8F0] bg-white hover:border-[#EAB308]/40' : 'border border-white/5 bg-[#111827]/60 hover:border-[#EAB308]/20 hover:bg-[#111827]'}`}
+              title={ref.nome}
+              className={`flex-shrink-0 rounded-xl transition-all ${isLight ? 'border border-[#E2E8F0] bg-white hover:border-[#EAB308]/40' : 'border border-white/10 bg-white/95 hover:border-[#EAB308]/40'} ${showNames ? 'p-3' : 'p-4'}`}
               data-testid={`reference-${index}`}
             >
-              {ref.logo ? (
-                <img
-                  src={ref.logo}
-                  alt={ref.nome}
-                  className={`h-8 w-auto max-w-[96px] object-contain ${isLight ? 'opacity-85' : 'brightness-0 invert opacity-70'}`}
-                />
-              ) : null}
-              <span className={`text-sm font-medium whitespace-nowrap ${isLight ? 'text-[#334155]' : 'text-white/70'}`}>
-                {ref.nome}
-              </span>
+              <div className={`flex ${showNames ? 'flex-col gap-2 items-center' : 'items-center justify-center'} w-[170px] h-[84px]`}>
+                {ref.logo ? (
+                  <img
+                    src={ref.logo}
+                    alt={ref.nome}
+                    className="max-h-[52px] max-w-[140px] w-auto object-contain"
+                  />
+                ) : (
+                  <span className="text-sm text-[#334155]">{ref.nome}</span>
+                )}
+                {showNames ? (
+                  <span className="text-[11px] leading-tight text-center text-[#475569]">
+                    {ref.nome}
+                  </span>
+                ) : null}
+              </div>
             </div>
           ))}
         </motion.div>

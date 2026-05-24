@@ -68,12 +68,12 @@ const References = ({
               className={`flex-shrink-0 rounded-xl transition-all ${isLight ? 'border border-[#E2E8F0] bg-white hover:border-[#EAB308]/40' : 'border border-white/10 bg-white/95 hover:border-[#EAB308]/40'} ${showNames ? 'p-3' : 'p-4'}`}
               data-testid={`reference-${index}`}
             >
-              <div className={`flex ${showNames ? 'flex-col gap-2 items-center' : 'items-center justify-center'} w-[220px] h-[120px]`}>
+              <div className={`flex ${showNames ? 'flex-col gap-2 items-center' : 'items-center justify-center'} w-[220px] h-[92px]`}>
                 {ref.logo ? (
                   <img
                     src={ref.logo}
                     alt={ref.nome}
-                    className="max-h-[104px] max-w-[200px] w-auto object-contain"
+                    className="max-h-[118px] max-w-[210px] w-auto object-contain"
                   />
                 ) : (
                   <span className="text-sm text-[#334155]">{ref.nome}</span>

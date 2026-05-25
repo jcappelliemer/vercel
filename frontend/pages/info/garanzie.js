@@ -16,10 +16,31 @@ export const getStaticProps = async () => {
       return { notFound: true };
     }
 
+    const sanitize = (value = '') => String(value || '').replace(/pagina non trovata/gi, '').trim();
+    const sanitizedPage = {
+      ...page,
+      title: sanitize(page?.title),
+      h1: sanitize(page?.h1),
+      description: sanitize(page?.description),
+      text: sanitize(page?.text),
+      contentBlocks: (page?.contentBlocks || []).map((block) => {
+        if (!block || typeof block !== 'object') return block;
+        return {
+          ...block,
+          text: sanitize(block.text),
+          html: sanitize(block.html),
+        };
+      }).filter((block) => {
+        const text = String(block?.text || '').trim();
+        const html = String(block?.html || '').trim();
+        return text || html || block?.type === 'image' || block?.type === 'cta';
+      }),
+    };
+
     return {
       props: {
         initialIndex: index,
-        initialPage: page,
+        initialPage: sanitizedPage,
         initialPath: '/info/garanzie/',
       },
     };

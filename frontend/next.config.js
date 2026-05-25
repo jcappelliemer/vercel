@@ -107,18 +107,6 @@ const nextConfig = {
       },
     ];
   },
-  async rewrites() {
-    return [
-      {
-        source: '/info/garanzie',
-        destination: '/pagina-info/garanzie/',
-      },
-      {
-        source: '/info/garanzie/',
-        destination: '/pagina-info/garanzie/',
-      },
-    ];
-  },
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve(__dirname, 'src');
     config.resolve.alias['react-router-dom'] = path.resolve(__dirname, 'src/next/router-shim.js');

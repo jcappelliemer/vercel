@@ -52,6 +52,61 @@ const referenze = [
   'Prima Industrie - Verona',
 ];
 
+const referenzeGruppi = [
+  {
+    title: 'Istituzioni e difesa',
+    items: [
+      "Banca d'Italia",
+      "Ministero dell'Interno",
+      'Ministero della Difesa',
+      'Guardia di Finanza di Prato',
+      'DIA Firenze',
+      'Comando Regione Carabinieri Calabria',
+      'Reggimento Corazzieri - Roma',
+      'Cassa Depositi e Prestiti - Roma',
+    ],
+  },
+  {
+    title: 'Infrastrutture e trasporti',
+    items: [
+      'Aeroporto di Bologna "Guglielmo Marconi"',
+      'Aeroporto di Forli "Luigi Ridolfi"',
+      'Capitaneria di Porto di Genova',
+      'Accademia Navale di Livorno',
+      'Fercam Italia - Bolzano',
+      'Palazzo Lancia - Torino',
+    ],
+  },
+  {
+    title: 'Corporate e industria',
+    items: [
+      'Palazzo Hyundai - sede centrale Milano',
+      'Still S.p.A. - sede centrale Milano',
+      'Philip Morris - Bologna',
+      'Credit Agricole Sede di Ravenna',
+      'H-Farm - Treviso',
+      'Prima Industrie - Verona',
+      'Groom - Torino',
+      'EUR Spa - Nuvola e Palazzo dei Congressi di Roma',
+    ],
+  },
+  {
+    title: 'Cultura, universita e ricerca',
+    items: [
+      'Ministero della Cultura - Roma',
+      'Universita di Bologna',
+      'Sapienza Universita di Roma',
+      'CNR - Consiglio Nazionale delle Ricerche',
+      'CNR - Milano',
+      'Palazzo Pitti - Firenze',
+      'Careggi - Firenze',
+      'Sistema Museale Fiorentino',
+      "Opera del Duomo di Siena",
+      "Galleria Nazionale dell'Umbria",
+    ],
+  },
+];
+
 const stats = [
   { value: '30+', label: 'anni di esperienza' },
   { value: '+45k', label: 'edifici trattati' },
@@ -619,7 +674,7 @@ const ChiSiamoPagina = ({ canonicalPath = '/company-profile' }) => {
           </div>
         </section>
 
-        <section className="py-24 section-light border-b border-[#E2E8F0]">
+        <section className="hidden py-24 section-light border-b border-[#E2E8F0]">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="text-center mb-12">
               <div className="accent-bar w-16 mx-auto mb-6" />
@@ -656,6 +711,27 @@ const ChiSiamoPagina = ({ canonicalPath = '/company-profile' }) => {
           subtitle="Referenze clienti dal portfolio Solaris"
           sectionClassName="py-20 section-light border-b border-[#E2E8F0] relative overflow-hidden"
         />
+
+        <section className="py-16 section-light border-b border-[#E2E8F0]">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="text-center mb-10">
+              <p className="text-sm uppercase tracking-[0.3em] text-[#2563EB] mb-3">Elenco completo</p>
+              <h2 className="text-2xl lg:text-3xl font-medium text-[#0A0F1C]">Referenze organizzate per contesto</h2>
+            </div>
+            <div className="grid md:grid-cols-2 gap-6">
+              {referenzeGruppi.map((group) => (
+                <div key={group.title} className="rounded-xl border border-[#E2E8F0] bg-white p-5">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.12em] text-[#0F172A] mb-3">{group.title}</h3>
+                  <ul className="space-y-2">
+                    {group.items.map((item) => (
+                      <li key={item} className="text-sm leading-relaxed text-[#475569]">{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
         <section className="py-24 relative overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-r from-[#2563EB]/20 to-[#EAB308]/10" />

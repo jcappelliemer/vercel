@@ -391,7 +391,8 @@ const ChiSiamoPagina = ({ canonicalPath = '/company-profile' }) => {
           </div>
         </section>
 
-        <section className="hidden py-24 section-light border-b border-[#E2E8F0]">
+        {false && (
+        <section className="py-24 section-light border-b border-[#E2E8F0]">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <div className="grid lg:grid-cols-[0.72fr_1.28fr] gap-12 items-start">
               <div className="lg:sticky lg:top-28">
@@ -441,6 +442,7 @@ const ChiSiamoPagina = ({ canonicalPath = '/company-profile' }) => {
             </div>
           </div>
         </section>
+        )}
 
         <section className="py-24 border-y border-white/5 bg-[#111827]/50">
           <div className="max-w-7xl mx-auto px-6 md:px-12">

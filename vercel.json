@@ -1,5 +1,7 @@
 {
   "redirects": [
+    { "source": "/info/garanzie", "destination": "/info/certificazione-nfrc/", "permanent": true },
+    { "source": "/info/garanzie/", "destination": "/info/certificazione-nfrc/", "permanent": true },
     { "source": "/servizi/pellicole-antisolari", "destination": "/servizi#antisolari", "permanent": true },
     { "source": "/servizi/pellicole-antisolari/", "destination": "/servizi#antisolari", "permanent": true },
     { "source": "/servizi/pellicole-sicurezza", "destination": "/servizi#sicurezza", "permanent": true },

@@ -42,6 +42,11 @@ const normalizePath = (pathname) => {
   return pathname.endsWith('/') ? pathname : `${pathname}/`;
 };
 
+const livePathAliases = {
+  '/info/garanzie/': '/pagina-info/garanzie/',
+  '/pagina-info/garanzie/': '/info/garanzie/',
+};
+
 const legacyFocusPathMap = new Map([
   ['/pellicole-antisolari/', '/focus-tecnico/pellicole-antisolari/'],
   ['/pellicole-di-sicurezza/', '/focus-tecnico/pellicole-di-sicurezza/'],
@@ -2427,8 +2432,16 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
   const resolvedPage = useMemo(() => mergeHeadlessSEO(page, headlessSEO), [page, headlessSEO]);
   const pageIndexEntry = useMemo(() => {
     const pages = index?.pages || [];
-    return pages.find((item) => normalizePath(item.path) === currentPath)
+    const directEntry = pages.find((item) => normalizePath(item.path) === currentPath)
       || pages.find((item) => normalizePath(item.route?.newPath) === currentPath);
+    if (directEntry) return directEntry;
+
+    const aliasPath = livePathAliases[currentPath];
+    if (!aliasPath) return null;
+
+    return pages.find((item) => normalizePath(item.path) === aliasPath)
+      || pages.find((item) => normalizePath(item.route?.newPath) === aliasPath)
+      || null;
   }, [index, currentPath]);
 
   useEffect(() => {

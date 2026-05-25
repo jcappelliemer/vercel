@@ -12,7 +12,7 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
   const { slug: routeSlug } = useParams();
   const slug = forcedSlug || routeSlug;
   const { data: allInfo } = useWPData('info');
-  const pagina = allInfo.find(p => p.slug === slug);
+  const pagina = allInfo.find(p => p.slug === slug) || pagineInfoData.find(p => p.slug === slug);
 
   if (!pagina) {
     return (

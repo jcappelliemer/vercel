@@ -5,6 +5,11 @@ const normalizePath = (pathname = '/') => {
   return pathname.endsWith('/') ? pathname : `${pathname}/`;
 };
 
+const PATH_ALIASES = {
+  '/info/garanzie/': '/pagina-info/garanzie/',
+  '/pagina-info/garanzie/': '/info/garanzie/',
+};
+
 const getStoragePaths = () => {
   const path = require('path');
   const publicDir = path.join(process.cwd(), 'public', 'wp-data');
@@ -26,8 +31,17 @@ export const readLiveIndex = () => {
 export const findPageEntryByPath = (index, pathname) => {
   const normalizedTarget = normalizePath(pathname);
   const pages = index?.pages || [];
-  return pages.find((item) => normalizePath(item.path) === normalizedTarget)
+  const directMatch = pages.find((item) => normalizePath(item.path) === normalizedTarget)
     || pages.find((item) => normalizePath(item.route?.newPath) === normalizedTarget)
+    || null;
+
+  if (directMatch) return directMatch;
+
+  const alias = PATH_ALIASES[normalizedTarget];
+  if (!alias) return null;
+
+  return pages.find((item) => normalizePath(item.path) === alias)
+    || pages.find((item) => normalizePath(item.route?.newPath) === alias)
     || null;
 };
 

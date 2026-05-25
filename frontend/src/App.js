@@ -87,10 +87,6 @@ function App() {
           <Route path="/servizio-locale" element={<LiveDirectoryPage kind="local" />} />
           <Route path="/servizio-locale/:city" element={<LiveMirrorPage />} />
           <Route path="/info" element={<LiveDirectoryPage kind="info" />} />
-          <Route path="/info/garanzie" element={<Navigate to="/info/certificazione-nfrc/" replace />} />
-          <Route path="/info/garanzie/" element={<Navigate to="/info/certificazione-nfrc/" replace />} />
-          <Route path="/pagina-info/garanzie" element={<Navigate to="/info/certificazione-nfrc/" replace />} />
-          <Route path="/pagina-info/garanzie/" element={<Navigate to="/info/certificazione-nfrc/" replace />} />
           <Route path="/info/:slug" element={<LiveMirrorPage />} />
           <Route path="/faq" element={<LiveMirrorPage />} />
           <Route path="/focus-tecnico" element={<LiveDirectoryPage kind="focus" />} />

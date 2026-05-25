@@ -76,23 +76,23 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/info/garanzie',
-        destination: '/info/certificazione-nfrc/',
+        source: '/info/certificazione-nfrc',
+        destination: '/info/garanzie/',
         permanent: true,
       },
       {
-        source: '/info/garanzie/',
-        destination: '/info/certificazione-nfrc/',
+        source: '/info/certificazione-nfrc/',
+        destination: '/info/garanzie/',
         permanent: true,
       },
       {
         source: '/pagina-info/garanzie',
-        destination: '/info/certificazione-nfrc/',
+        destination: '/info/garanzie/',
         permanent: true,
       },
       {
         source: '/pagina-info/garanzie/',
-        destination: '/info/certificazione-nfrc/',
+        destination: '/info/garanzie/',
         permanent: true,
       },
       {
@@ -104,6 +104,18 @@ const nextConfig = {
         source: '/blog/:slug*',
         destination: '/lo-sapevi-che/:slug*',
         permanent: true,
+      },
+    ];
+  },
+  async rewrites() {
+    return [
+      {
+        source: '/info/garanzie',
+        destination: '/pagina-info/garanzie/',
+      },
+      {
+        source: '/info/garanzie/',
+        destination: '/pagina-info/garanzie/',
       },
     ];
   },

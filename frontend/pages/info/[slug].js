@@ -4,6 +4,10 @@ import { getMirrorServerProps } from '../../src/next/liveData.server';
 export default LiveMirrorPage;
 
 export const getServerSideProps = async ({ params }) => {
-  const pathname = `/info/${(Array.isArray(params?.slug) ? params.slug : [params?.slug].filter(Boolean)).join('/')}/`;
+  const rawSlug = (Array.isArray(params?.slug) ? params.slug : [params?.slug].filter(Boolean)).join('/');
+  if (rawSlug === 'garanzie' || rawSlug === 'certificazione-nfrc') {
+    return getMirrorServerProps('/pagina-info/garanzie/');
+  }
+  const pathname = `/info/${rawSlug}/`;
   return getMirrorServerProps(pathname);
 };

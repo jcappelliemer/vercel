@@ -76,6 +76,26 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/info/garanzie',
+        destination: '/info/certificazione-nfrc/',
+        permanent: true,
+      },
+      {
+        source: '/info/garanzie/',
+        destination: '/info/certificazione-nfrc/',
+        permanent: true,
+      },
+      {
+        source: '/pagina-info/garanzie',
+        destination: '/info/certificazione-nfrc/',
+        permanent: true,
+      },
+      {
+        source: '/pagina-info/garanzie/',
+        destination: '/info/certificazione-nfrc/',
+        permanent: true,
+      },
+      {
         source: '/blog',
         destination: '/lo-sapevi-che',
         permanent: true,

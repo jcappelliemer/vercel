@@ -8,8 +8,9 @@ import { ArrowRight, ArrowLeft, CheckCircle, ShieldCheck } from '@phosphor-icons
 import { pagineInfoData } from '../data/siteContent';
 import { useWPData } from '../hooks/useWPData';
 
-const PaginaInfoPagina = () => {
-  const { slug } = useParams();
+const PaginaInfoPagina = ({ forcedSlug = null }) => {
+  const { slug: routeSlug } = useParams();
+  const slug = forcedSlug || routeSlug;
   const { data: allInfo } = useWPData('info');
   const pagina = allInfo.find(p => p.slug === slug);
 

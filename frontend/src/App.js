@@ -12,6 +12,7 @@ import PrivacyPolicyPagina from "./pages/PrivacyPolicyPagina";
 import LiveMirrorPage from "./pages/LiveMirrorPage";
 import LiveDirectoryPage from "./pages/LiveDirectoryPage";
 import SiteMapPage from "./pages/SiteMapPage";
+import PaginaInfoPagina from "./pages/PaginaInfoPagina";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 const ScrollToTop = () => {
@@ -87,6 +88,10 @@ function App() {
           <Route path="/servizio-locale" element={<LiveDirectoryPage kind="local" />} />
           <Route path="/servizio-locale/:city" element={<LiveMirrorPage />} />
           <Route path="/info" element={<LiveDirectoryPage kind="info" />} />
+          <Route path="/info/garanzie" element={<PaginaInfoPagina forcedSlug="garanzie" />} />
+          <Route path="/info/garanzie/" element={<PaginaInfoPagina forcedSlug="garanzie" />} />
+          <Route path="/pagina-info/garanzie" element={<PaginaInfoPagina forcedSlug="garanzie" />} />
+          <Route path="/pagina-info/garanzie/" element={<PaginaInfoPagina forcedSlug="garanzie" />} />
           <Route path="/info/:slug" element={<LiveMirrorPage />} />
           <Route path="/faq" element={<LiveMirrorPage />} />
           <Route path="/focus-tecnico" element={<LiveDirectoryPage kind="focus" />} />

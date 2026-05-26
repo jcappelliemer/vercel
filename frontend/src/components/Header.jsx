@@ -243,43 +243,43 @@ const LIVE_MENU = [
       },
       {
         name: 'Norme',
-        href: '/pagina-info/norme/',
+          href: '/info/norme/',
       },
       {
         name: 'Norma BRC',
-        href: '/pagina-info/norma-brc/',
+          href: '/info/norma-brc/',
       },
       {
         name: 'Sicurezza a norma di legge',
-        href: '/pagina-info/sicurezza-a-norma-di-legge/',
+          href: '/info/sicurezza-a-norma-di-legge/',
       },
       {
         name: 'Testo unico',
-        href: '/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/',
+          href: '/info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/',
       },
       {
         name: 'Sistemi filtranti Dpr. 59/09',
-        href: '/pagina-info/sistemi-filtranti-dpr-59-09/',
+          href: '/info/sistemi-filtranti-dpr-59-09/',
       },
       {
         name: 'Certificazione NFRC',
-        href: '/pagina-info/certificazione-nfrc/',
+          href: '/info/certificazione-nfrc/',
       },
       {
         name: 'Garanzie',
-        href: '/pagina-info/garanzie/',
+          href: '/info/garanzie/',
       },
       {
         name: 'I punti di forza',
-        href: '/pagina-info/i-punti-di-forza/',
+          href: '/info/i-punti-di-forza/',
       },
       {
         name: 'Istruzione e manutenzione',
-        href: '/pagina-info/istruzioni-e-manutenzione/',
+          href: '/info/istruzioni-e-manutenzione/',
       },
       {
         name: 'Glossario termini',
-        href: '/pagina-info/glossario-termini/',
+          href: '/info/glossario-termini/',
       },
     ],
   },

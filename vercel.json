@@ -1,9 +1,11 @@
 {
   "redirects": [
-    { "source": "/pagina-info/garanzie", "destination": "/info/certificazione-nfrc/", "permanent": true },
-    { "source": "/pagina-info/garanzie/", "destination": "/info/certificazione-nfrc/", "permanent": true },
-    { "source": "/info/garanzie", "destination": "/info/certificazione-nfrc/", "permanent": true },
-    { "source": "/info/garanzie/", "destination": "/info/certificazione-nfrc/", "permanent": true },
+    { "source": "/pagina-info/garanzie", "destination": "/info/garanzie-clienti/", "permanent": true },
+    { "source": "/pagina-info/garanzie/", "destination": "/info/garanzie-clienti/", "permanent": true },
+    { "source": "/info/certificazione-nfrc", "destination": "/info/garanzie-clienti/", "permanent": true },
+    { "source": "/info/certificazione-nfrc/", "destination": "/info/garanzie-clienti/", "permanent": true },
+    { "source": "/info/garanzie", "destination": "/info/garanzie-clienti/", "permanent": true },
+    { "source": "/info/garanzie/", "destination": "/info/garanzie-clienti/", "permanent": true },
     { "source": "/servizi/pellicole-antisolari", "destination": "/servizi#antisolari", "permanent": true },
     { "source": "/servizi/pellicole-antisolari/", "destination": "/servizi#antisolari", "permanent": true },
     { "source": "/servizi/pellicole-sicurezza", "destination": "/servizi#sicurezza", "permanent": true },

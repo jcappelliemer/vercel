@@ -77,22 +77,32 @@ const nextConfig = {
       },
       {
         source: '/info/certificazione-nfrc',
-        destination: '/info/garanzie/',
+        destination: '/info/garanzie-clienti/',
         permanent: true,
       },
       {
         source: '/info/certificazione-nfrc/',
-        destination: '/info/garanzie/',
+        destination: '/info/garanzie-clienti/',
         permanent: true,
       },
       {
         source: '/pagina-info/garanzie',
-        destination: '/info/garanzie/',
+        destination: '/info/garanzie-clienti/',
         permanent: true,
       },
       {
         source: '/pagina-info/garanzie/',
-        destination: '/info/garanzie/',
+        destination: '/info/garanzie-clienti/',
+        permanent: true,
+      },
+      {
+        source: '/info/garanzie',
+        destination: '/info/garanzie-clienti/',
+        permanent: true,
+      },
+      {
+        source: '/info/garanzie/',
+        destination: '/info/garanzie-clienti/',
         permanent: true,
       },
       {

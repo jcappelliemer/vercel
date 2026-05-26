@@ -1,5 +1,5 @@
 import PaginaInfoPagina from '@/pages/PaginaInfoPagina';
 
-export default function GaranzieInfoPage() {
+export default function GaranzieClientiInfoPage() {
   return <PaginaInfoPagina forcedSlug="garanzie" />;
 }

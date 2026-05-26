@@ -363,7 +363,7 @@ const INFO_THEMES = [
     key: 'certificazioni',
     title: 'Garanzie e certificazioni',
     eyebrow: 'Affidabilità',
-    route: '/info/certificazione-nfrc/',
+    route: '/info/garanzie-clienti/',
     description: 'Garanzie, certificazioni e punti di forza da leggere insieme a prodotto, applicazione e metodo Solaris.',
     match: /(garanz|certific|nfrc|punti di forza)/i,
   },
@@ -1372,7 +1372,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
     ...theme,
     pages: primaryPages.filter((page) => infoThemeForPage(page).key === theme.key),
   }));
-  const featuredInfoPaths = ['/info/norme/', '/info/garanzie/', '/info/istruzioni-e-manutenzione/'];
+  const featuredInfoPaths = ['/info/norme/', '/info/garanzie-clienti/', '/info/istruzioni-e-manutenzione/'];
   const featuredInfo = featuredInfoPaths
     .map((path) => primaryPages.find((page) => normalizeDirectoryPath(getLivePath(page)) === normalizeDirectoryPath(path)))
     .filter(Boolean);

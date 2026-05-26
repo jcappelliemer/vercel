@@ -800,7 +800,7 @@ const infoThemes = [
     key: 'certificazioni',
     title: 'Garanzie e certificazioni',
     eyebrow: 'Affidabilità',
-    route: '/info/garanzie/',
+    route: '/info/garanzie-clienti/',
     description: 'Garanzie, certificazioni e punti di forza da leggere insieme a prodotto, applicazione e metodo Solaris.',
     match: /(garanz|certific|nfrc|punti di forza)/i,
   },

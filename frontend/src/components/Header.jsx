@@ -263,11 +263,11 @@ const LIVE_MENU = [
       },
       {
         name: 'Certificazione NFRC',
-          href: '/info/certificazione-nfrc/',
+          href: '/info/garanzie-clienti/',
       },
       {
         name: 'Garanzie',
-          href: '/info/garanzie/',
+          href: '/info/garanzie-clienti/',
       },
       {
         name: 'I punti di forza',

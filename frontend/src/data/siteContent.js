@@ -106,7 +106,11 @@ export const pagineInfoData = [
     titolo: 'Garanzie',
     sottotitolo: 'GARANZIA PRODOTTI MADICO',
     contenuto: [
-      'Tutte le pellicole MADICO sono coperte da garanzia del produttore. La garanzia copre screpolature, demetalizzazioni e delaminazioni.',
+      'Le pellicole MADICO installate con metodo Solaris sono coperte da garanzia del produttore e da una posa eseguita secondo procedure tecniche controllate. In pratica, non acquisti solo un materiale: acquisti una prestazione completa, pensata per durare nel tempo.',
+      'La garanzia copre i difetti di prodotto come screpolature, delaminazioni e alterazioni non compatibili con il normale ciclo di vita della pellicola. La durata effettiva dipende dalla famiglia di prodotto, dalla posizione del vetro e dal contesto di installazione.',
+      'Ogni intervento parte da una verifica preventiva del vetro e dell\'esposizione: questo passaggio serve a scegliere il film corretto e a ridurre il rischio di incompatibilità o prestazioni non coerenti con l\'obiettivo richiesto.',
+      'A fine installazione, il cliente riceve un quadro chiaro su uso, pulizia e tempi di stabilizzazione ottica. Una manutenzione corretta aiuta a mantenere resa estetica e performance termiche/schermanti nel lungo periodo.',
+      'Se devi confrontare più opzioni, possiamo indicarti in anticipo quale linea è più adatta in base a priorità reali: riduzione calore, sicurezza vetro, privacy o combinazioni ibride.',
     ],
     garanzie: [
       { tipo: 'Pellicole per esterno Sputtered', durata: '10 anni' },

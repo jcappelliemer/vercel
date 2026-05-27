@@ -3,6 +3,7 @@
  * - In production (Vercel): reads pre-fetched static JSON from /wp-data/
  * - In development: fetches directly from WP REST API
  */
+import { prodottiData } from './siteContent';
 
 const DEFAULT_WP_URL = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
 const WP_URL = (process.env.REACT_APP_WP_URL || DEFAULT_WP_URL).replace(/\/$/, '');
@@ -71,16 +72,46 @@ function decodeHtml(html) {
 // ===== PRODOTTI =====
 function mapProdotto(wp) {
   const m = wp.solaris_meta || wp.meta || {};
+  const fallback = prodottiData.find((p) => p.slug === wp.slug) || null;
+  const rawDescription = wp.content?.rendered?.replace(/<[^>]*>/g, '').trim() || '';
+  const descrizione = rawDescription.length >= 80
+    ? rawDescription
+    : (fallback?.descrizione || rawDescription);
+  const caratteristiche = m.caratteristiche ? m.caratteristiche.split('\n').map(item => item.trim()).filter(Boolean) : [];
+  const mergedCaratteristiche = caratteristiche.length ? caratteristiche : (fallback?.caratteristiche || []);
+  const specificheTecniche = m.specifiche_tecniche || fallback?.specificheTecniche || '';
+  const focusTecnicoSlug = m.focus_tecnico_slug || fallback?.focusTecnicoSlug || '';
+  const datiTecnici = {
+    energiaSolare: {
+      trasmessa: m.energia_trasmessa ? `${m.energia_trasmessa}%` : '',
+      riflessa: m.energia_riflessa ? `${m.energia_riflessa}%` : '',
+      assorbita: m.energia_assorbita ? `${m.energia_assorbita}%` : '',
+    },
+    luceVisibile: {
+      trasmessa: m.vlt ? `${m.vlt}%` : '',
+      riflessaEsterno: m.vlr_esterno ? `${m.vlr_esterno}%` : '',
+      riflessaInterno: m.vlr_interno ? `${m.vlr_interno}%` : '',
+      riduzioneAbbaglio: m.riduzione_abbaglio ? `${m.riduzione_abbaglio}%` : '',
+    },
+    infrarossiRespinti: m.ir_respinti ? `${m.ir_respinti}%` : '',
+    uvTrasmessi: m.uv_trasmessi ? `${m.uv_trasmessi}%` : '',
+    energiaRespinta: m.energia_respinta ? `${m.energia_respinta}%` : '',
+  };
+
   return {
     slug: wp.slug,
     nome: decodeHtml(wp.title.rendered),
-    descrizione: wp.content?.rendered?.replace(/<[^>]*>/g, '').trim() || '',
+    descrizione,
     categoria: m.categoria || '',
     sottocategoria: m.sottocategoria || '',
     applicazione: m.applicazione || '',
     certificazione: m.certificazione || '',
     garanzia: m.garanzia || '',
     tipoVetro: m.tipo_vetro || '',
+    specificheTecniche,
+    caratteristiche: mergedCaratteristiche,
+    datiTecnici,
+    focusTecnicoSlug,
     energiaTrasmessa: m.energia_trasmessa || '',
     energiaRiflessa: m.energia_riflessa || '',
     energiaAssorbita: m.energia_assorbita || '',
@@ -91,7 +122,7 @@ function mapProdotto(wp) {
     irRespinti: m.ir_respinti || '',
     uvTrasmessi: m.uv_trasmessi || '',
     energiaRespinta: m.energia_respinta || '',
-    caratteristiche: m.caratteristiche ? m.caratteristiche.split('\n').filter(Boolean) : [],
+    caratteristicheRaw: mergedCaratteristiche,
   };
 }
 

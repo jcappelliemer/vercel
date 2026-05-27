@@ -1,9 +1,3 @@
-import LiveMirrorPage from '@/pages/LiveMirrorPage';
-import { getMirrorServerProps } from '../../src/next/liveData.server';
+import ProdottoPagina from '../../src/pages/ProdottoPagina';
 
-export default LiveMirrorPage;
-
-export const getServerSideProps = async ({ params }) => {
-  const pathname = `/prodotti/${(Array.isArray(params?.slug) ? params.slug : [params?.slug].filter(Boolean)).join('/')}/`;
-  return getMirrorServerProps(pathname);
-};
+export default ProdottoPagina;

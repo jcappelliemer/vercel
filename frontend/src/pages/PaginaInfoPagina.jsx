@@ -29,6 +29,26 @@ const infoContentOverrides = {
     'L’art. 64 richiama la necessità di ambienti conformi ai requisiti di sicurezza: questo include anche la gestione del rischio legato ai vetri in passaggi, uffici, aree operative e zone comuni.',
     'Le pellicole certificate UNI EN 12600 sono uno strumento pratico per migliorare il comportamento del vetro in caso di rottura e impostare un adeguamento graduale senza bloccare l’attività.',
   ],
+  'sistemi-filtranti-dpr-59-09': [
+    'Il DPR 59/09 inquadra i requisiti energetici degli edifici e considera i sistemi filtranti tra le soluzioni utili per ridurre il carico termico estivo.',
+    'Nel lavoro su edifici esistenti, le pellicole antisolari permettono di intervenire sull’involucro vetrato senza opere invasive, migliorando comfort interno e stabilità termica degli ambienti.',
+    'La valutazione corretta parte sempre da orientamento, tipo vetro e uso reale degli spazi: così il beneficio energetico è misurabile e coerente con l’obiettivo del progetto.',
+  ],
+  'i-punti-di-forza': [
+    'I punti di forza delle pellicole Solaris non sono solo tecnici: diventano valore reale quando migliorano comfort, protezione UV, gestione dell’abbagliamento e qualità visiva degli ambienti.',
+    'La scelta corretta dipende dall’equilibrio tra luce naturale, controllo del calore e resa estetica della facciata o dello spazio interno.',
+    'Per questo ogni soluzione va letta come combinazione tra prodotto, vetro esistente e obiettivo finale, non come semplice codice di catalogo.',
+  ],
+  'istruzioni-e-manutenzione': [
+    'Una manutenzione corretta protegge la resa della pellicola nel tempo: trasparenza, riflessione e uniformità ottica dipendono molto dalla qualità della pulizia ordinaria.',
+    'Nella fase iniziale dopo posa è normale una leggera opacizzazione temporanea: è parte del processo di assestamento e adesione completa sul vetro.',
+    'Prodotti neutri, strumenti non abrasivi e frequenza di pulizia adeguata sono la base per mantenere prestazioni e durata, soprattutto su superfici molto esposte.',
+  ],
+  'glossario-termini': [
+    'Questa sezione traduce i termini tecnici più usati nelle schede pellicola in indicazioni comprensibili anche per chi deve solo decidere quale soluzione adottare.',
+    'Conoscere parametri come trasmissione luminosa, riflessione, fattore solare e protezione UV aiuta a confrontare i prodotti in modo più oggettivo.',
+    'Il glossario è utile soprattutto in fase di preventivo: riduce i dubbi e rende più chiaro il legame tra dato tecnico e risultato atteso sul vetro.',
+  ],
 };
 
 const PaginaInfoPagina = ({ forcedSlug = null }) => {

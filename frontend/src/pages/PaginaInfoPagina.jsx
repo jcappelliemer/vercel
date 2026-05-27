@@ -8,6 +8,29 @@ import { ArrowRight, ArrowLeft, CheckCircle, ShieldCheck } from '@phosphor-icons
 import { pagineInfoData } from '../data/siteContent';
 import { useWPData } from '../hooks/useWPData';
 
+const infoContentOverrides = {
+  'norme': [
+    'Quando si lavora su una vetrata esistente, le norme servono a decidere bene prima della posa: si parte dal rischio reale, si verifica il vetro e si sceglie la soluzione più adatta per persone, ambienti e continuità d’uso.',
+    'La UNI 7697 è il riferimento iniziale per impostare il livello di sicurezza del vetro. Da lì si integrano le altre norme in base allo scenario: urto accidentale, attacco manuale, pressione da esplosione o altri eventi critici.',
+    'In pratica, la norma non è un passaggio finale: è la base per confrontare con chiarezza le opzioni tra adeguamento minimo, rinforzo con pellicola o protezione avanzata.',
+  ],
+  'norma-brc': [
+    'La norma BRC è uno standard internazionale per la sicurezza alimentare. Nelle aree produttive richiede che il rischio di contaminazione da rottura vetro venga gestito in modo preventivo.',
+    'Sulle vetrate esposte, la funzione chiave della pellicola di sicurezza è trattenere i frammenti in caso di rottura, riducendo la dispersione verso linee, macchinari e zone di lavorazione.',
+    'Questo approccio aiuta a mantenere più alto il controllo operativo durante audit, verifiche interne e gestione delle non conformità.',
+  ],
+  'sicurezza-a-norma-di-legge': [
+    'Il D.Lgs. 81/2008 richiede di valutare e ridurre i rischi per la sicurezza nei luoghi di lavoro, incluse le superfici vetrate che possono causare infortuni in caso di impatto o rottura.',
+    'Quando la sostituzione dei vetri non è immediatamente praticabile, l’adeguamento con pellicole di sicurezza certificate può essere una via efficace per aumentare la protezione e ridurre i tempi di intervento.',
+    'L’obiettivo non è solo essere conformi, ma mettere in sicurezza persone e processi con una soluzione coerente con il contesto dell’edificio.',
+  ],
+  'testo-unico-sulla-salute-e-sicurezza-sul-lavoro': [
+    'Il Testo Unico è il riferimento principale per la sicurezza nei luoghi di lavoro. Per le vetrate, il punto centrale è prevenire danni alle persone in caso di urto o rottura.',
+    'L’art. 64 richiama la necessità di ambienti conformi ai requisiti di sicurezza: questo include anche la gestione del rischio legato ai vetri in passaggi, uffici, aree operative e zone comuni.',
+    'Le pellicole certificate UNI EN 12600 sono uno strumento pratico per migliorare il comportamento del vetro in caso di rottura e impostare un adeguamento graduale senza bloccare l’attività.',
+  ],
+};
+
 const PaginaInfoPagina = ({ forcedSlug = null }) => {
   const { slug: routeSlug } = useParams();
   const slug = forcedSlug || routeSlug;
@@ -15,7 +38,13 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
   const localPagina = pagineInfoData.find(p => p.slug === slug);
   const wpPagina = allInfo.find(p => p.slug === slug);
   const preferLocal = slug === 'garanzie';
-  const pagina = (preferLocal ? localPagina : wpPagina) || wpPagina || localPagina;
+  const basePagina = (preferLocal ? localPagina : wpPagina) || wpPagina || localPagina;
+  const pagina = basePagina
+    ? {
+        ...basePagina,
+        contenuto: infoContentOverrides[slug] || basePagina.contenuto,
+      }
+    : null;
 
   if (!pagina) {
     return (

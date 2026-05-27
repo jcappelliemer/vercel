@@ -11,15 +11,23 @@ const productAsset = (slug, label = 'Scheda prodotto MADICO') => ({
 });
 
 export const PRODUCT_VISUALS = {
+  'madico-sb-20-e-ps-sr': productAsset('madicosb20epssr'),
   madicosb20epssr: productAsset('madicosb20epssr'),
+  'madico-sb-35-e-ps-sr': productAsset('madicosb35epssr'),
   madicosb35epssr: productAsset('madicosb35epssr'),
+  'madico-sg-20-e-ps-sr': productAsset('madicosg20epssr'),
   madicosg20epssr: productAsset('madicosg20epssr'),
+  'madico-sl-8-e-ps-sr': productAsset('madicosl8epssr'),
   madicosl8epssr: productAsset('madicosl8epssr'),
+  'ssn-50-te-sr': productAsset('tecnosolarssn50tesr'),
   'madico-rs-20-e-ps-sr': productAsset('madico-rs-20-e-ps-sr'),
   'madico-rs-40-e-ps-sr': productAsset('madico-rs-40-e-ps-sr'),
   'madico-rs-20-ps-sr-4mil': productAsset('madico-rs-20-ps-sr-4mil'),
+  'madico-rs-20-ps-sr-8mil': productAsset('madico-rs-20-ps-sr-8-mil'),
   'madico-rs-20-ps-sr-8-mil': productAsset('madico-rs-20-ps-sr-8-mil'),
+  'madico-rs-40-ps-sr-4mil': productAsset('madico-rs-40-ps-sr-4-mil'),
   'madico-rs-40-ps-sr-4-mil': productAsset('madico-rs-40-ps-sr-4-mil'),
+  'madico-rs-40-ps-sr-8mil': productAsset('madico-rs-40-ps-sr-8-mil'),
   'madico-rs-40-ps-sr-8-mil': productAsset('madico-rs-40-ps-sr-8-mil'),
   'madico-safetyshield-800': productAsset('madico-safetyshield-800', 'Prodotto SafetyShield'),
   'madico-safetyshield-1500': productAsset('madico-safetyshield-1500', 'Prodotto SafetyShield'),

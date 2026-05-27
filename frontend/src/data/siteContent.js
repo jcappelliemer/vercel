@@ -106,12 +106,12 @@ export const pagineInfoData = [
     titolo: 'Garanzie',
     sottotitolo: 'GARANZIA PRODOTTI MADICO',
     contenuto: [
-      'Le pellicole MADICO installate da Solaris seguono una logica semplice: prestazione dichiarata, posa corretta, copertura chiara nel tempo. Questo permette di valutare la soluzione non solo per il risultato immediato, ma anche per la sua stabilità negli anni.',
-      'La garanzia del produttore copre i principali difetti del materiale, come delaminazione, screpolature e alterazioni non compatibili con il ciclo di vita previsto del prodotto. La durata varia in base alla linea scelta e alla posizione di installazione (interno o esterno).',
-      'Dal patrimonio contenuti live emerge un punto costante: la garanzia è efficace quando la scelta del film parte dal vetro reale e dallo scenario d\'uso. Per questo la verifica iniziale è parte integrante del processo, non un passaggio accessorio.',
-      'Per le linee ad alta protezione, come SafetyShield, la lettura corretta è in ottica “sistema”: film, supporto installativo e condizioni operative devono essere allineati. In questo modo la copertura resta coerente con il livello di sicurezza richiesto.',
-      'Sul fronte prestazionale, i riferimenti di certificazione (inclusa la cornice NFRC per i dati energetici) aiutano a confrontare le soluzioni con criteri misurabili. Risultato: decisioni più trasparenti e minori margini di ambiguità in fase di acquisto.',
-      'Alla consegna, il cliente riceve indicazioni pratiche su tempi di assestamento e manutenzione ordinaria: una gestione corretta nel post-posa è fondamentale per mantenere resa estetica, comfort e durata della pellicola.',
+      'Le pellicole MADICO installate da Solaris sono coperte da garanzia convenzionale del produttore su difetti del materiale come distacco, bolle, screpolature, demetalizzazione e delaminazione, quando la posa è eseguita correttamente su supporti idonei.',
+      'La durata dipende dalla posizione del vetro: su superfici verticali la copertura è più estesa, mentre su superfici inclinate o quasi orizzontali la durata si riduce perché aumentano esposizione, deposito e stress termico.',
+      'Per questo la verifica iniziale del vetro non è formale: serve a confermare compatibilità, esposizione reale e condizioni di posa, così la soluzione scelta resta coerente anche nel lungo periodo.',
+      'La garanzia non copre rotture del vetro, difetti del vetrocamera, danni da urti o eventi esterni, manutenzione impropria, uso di sostanze aggressive o installazioni fuori specifica.',
+      'Sulle installazioni esterne la manutenzione è un requisito concreto: la pulizia periodica mantiene riflessione, trasparenza e stabilità della pellicola. Se la superficie resta sporca nel tempo, il degrado accelera e la copertura può decadere.',
+      'Per l’attivazione è necessaria la registrazione dell’installazione con la documentazione richiesta entro i tempi previsti. In caso di anomalia, la richiesta va aperta in forma scritta tramite canale autorizzato durante la validità della garanzia.',
     ],
     garanzie: [
       { tipo: 'Pellicole per esterno (serie Sputtered)', durata: '10 anni' },

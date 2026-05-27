@@ -2204,12 +2204,6 @@ const LocalServiceTemplate = ({ page }) => {
             <span>Servizio locale Solaris</span>
           </div>
           <h1>{title}</h1>
-          {localLogo && (
-            <div className="local-service-logo-lockup">
-              <img src={localLogo.src} alt={localLogo.alt} loading="eager" />
-              <span>Presidio locale Solaris</span>
-            </div>
-          )}
           <p>{description}</p>
           <div className="local-service-tags" aria-label="Servizi disponibili">
             <span>Controllo solare</span>
@@ -2227,17 +2221,8 @@ const LocalServiceTemplate = ({ page }) => {
           </div>
         </div>
 
-        <figure className="local-service-visual">
-          <img src={image} alt={title} loading="eager" />
-          {localLogo && (
-            <div className="local-service-logo-badge" aria-hidden="true">
-              <img src={localLogo.src} alt="" loading="eager" />
-            </div>
-          )}
-          <figcaption>
-            <span>Copertura territoriale</span>
-            <p>Consulenza e posa Solaris per edifici, uffici, negozi e abitazioni a {cityLabel}.</p>
-          </figcaption>
+        <figure className={`local-service-visual ${localLogo ? 'local-service-visual-logo' : ''}`}>
+          <img src={localLogo ? localLogo.src : image} alt={localLogo ? localLogo.alt : title} loading="eager" />
         </figure>
       </section>
 

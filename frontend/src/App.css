@@ -1589,6 +1589,11 @@
   box-shadow: inset 0 -132px 130px rgba(10, 15, 28, 0.82);
 }
 
+.local-service-visual.local-service-visual-logo::before,
+.local-service-visual.local-service-visual-logo::after {
+  display: none;
+}
+
 .local-service-visual img {
   width: 100%;
   height: 100%;
@@ -1596,6 +1601,12 @@
   display: block;
   object-fit: cover;
   filter: saturate(0.76) contrast(1.12) brightness(0.74);
+}
+
+.local-service-visual.local-service-visual-logo img {
+  object-fit: contain;
+  padding: 24px;
+  filter: none;
 }
 
 .local-service-logo-badge {

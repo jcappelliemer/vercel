@@ -38,13 +38,28 @@ export const PRODUCT_VISUALS = {
 };
 
 export const LOCAL_SERVICE_LOGOS = {
+  ancona: { src: '/assets/imported/local-logos/ancona.webp', alt: 'Solaris Ancona' },
+  aosta: { src: '/assets/imported/local-logos/aosta.webp', alt: 'Solaris Aosta' },
+  bari: { src: '/assets/imported/local-logos/bari.webp', alt: 'Solaris Bari' },
   bologna: { src: '/assets/imported/local-logos/bologna.webp', alt: 'Solaris Bologna' },
+  campobasso: { src: '/assets/imported/local-logos/campobasso.webp', alt: 'Solaris Campobasso' },
+  catanzaro: { src: '/assets/imported/local-logos/catanzaro.webp', alt: 'Solaris Catanzaro' },
   cosenza: { src: '/assets/imported/local-logos/cosenza.webp', alt: 'Solaris Cosenza' },
+  firenze: { src: '/assets/imported/local-logos/firenze.webp', alt: 'Solaris Firenze' },
+  genova: { src: '/assets/imported/local-logos/genova.webp', alt: 'Solaris Genova' },
+  laquila: { src: '/assets/imported/local-logos/laquila.webp', alt: "Solaris L'Aquila" },
   milano: { src: '/assets/imported/local-logos/milano.webp', alt: 'Solaris Milano' },
   napoli: { src: '/assets/imported/local-logos/napoli.webp', alt: 'Solaris Napoli' },
+  palermo: { src: '/assets/imported/local-logos/palermo.webp', alt: 'Solaris Palermo' },
   perugia: { src: '/assets/imported/local-logos/perugia.webp', alt: 'Solaris Perugia' },
+  potenza: { src: '/assets/imported/local-logos/potenza.webp', alt: 'Solaris Potenza' },
   roma: { src: '/assets/imported/local-logos/roma.webp', alt: 'Solaris Roma' },
+  romagna: { src: '/assets/imported/local-logos/romagna.webp', alt: 'Solaris Romagna' },
+  torino: { src: '/assets/imported/local-logos/torino.webp', alt: 'Solaris Torino' },
+  trento: { src: '/assets/imported/local-logos/trento.webp', alt: 'Solaris Trento' },
+  trieste: { src: '/assets/imported/local-logos/trieste.webp', alt: 'Solaris Trieste' },
   udine: { src: '/assets/imported/local-logos/udine.webp', alt: 'Solaris Udine' },
+  venezia: { src: '/assets/imported/local-logos/venezia.webp', alt: 'Solaris Venezia' },
 };
 
 export const getProductVisual = (page = {}) => PRODUCT_VISUALS[pathSlug(page)] || null;

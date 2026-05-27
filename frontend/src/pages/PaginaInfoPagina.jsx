@@ -12,7 +12,10 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
   const { slug: routeSlug } = useParams();
   const slug = forcedSlug || routeSlug;
   const { data: allInfo } = useWPData('info');
-  const pagina = allInfo.find(p => p.slug === slug) || pagineInfoData.find(p => p.slug === slug);
+  const localPagina = pagineInfoData.find(p => p.slug === slug);
+  const wpPagina = allInfo.find(p => p.slug === slug);
+  const preferLocal = slug === 'garanzie';
+  const pagina = (preferLocal ? localPagina : wpPagina) || wpPagina || localPagina;
 
   if (!pagina) {
     return (

@@ -162,6 +162,7 @@ const ProdottoPagina = () => {
   const { slug } = useParams();
   const { data: allProdotti } = useWPData('prodotti');
   const prodotto = allProdotti.find(p => p.slug === slug);
+  const [liveSections, setLiveSections] = useState({ utilizzi: '', specifiche: '', caratteristiche: [] });
 
   if (!prodotto) {
     return (
@@ -184,7 +185,6 @@ const ProdottoPagina = () => {
   const hasSpecs = dt && dt.energiaSolare;
   const faqItems = buildProductFaq(prodotto, dt);
   const productVisual = PRODUCT_VISUALS[prodotto.slug] || null;
-  const [liveSections, setLiveSections] = useState({ utilizzi: '', specifiche: '', caratteristiche: [] });
 
   useEffect(() => {
     let mounted = true;

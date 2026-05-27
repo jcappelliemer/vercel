@@ -164,6 +164,31 @@ const ProdottoPagina = () => {
   const prodotto = allProdotti.find(p => p.slug === slug);
   const [liveSections, setLiveSections] = useState({ utilizzi: '', specifiche: '', caratteristiche: [] });
 
+  useEffect(() => {
+    let mounted = true;
+    const run = async () => {
+      if (!prodotto?.slug) return;
+      try {
+        const indexRes = await fetch('/wp-data/live-pages-index.json');
+        if (!indexRes.ok) return;
+        const indexJson = await indexRes.json();
+        const targetPath = normalizePath(`/prodotti/${prodotto.slug}`);
+        const entry = (indexJson?.pages || []).find((page) => normalizePath(page?.route?.newPath || '') === targetPath);
+        if (!entry?.file) return;
+
+        const pageRes = await fetch(`/wp-data/live-pages/${entry.file}`);
+        if (!pageRes.ok) return;
+        const pageJson = await pageRes.json();
+        const extracted = extractLiveProductSections(pageJson);
+        if (mounted) setLiveSections(extracted);
+      } catch {
+        // keep fallback content
+      }
+    };
+    run();
+    return () => { mounted = false; };
+  }, [prodotto?.slug]);
+
   if (!prodotto) {
     return (
       <div className="min-h-screen bg-[#0A0F1C]">
@@ -185,30 +210,6 @@ const ProdottoPagina = () => {
   const hasSpecs = dt && dt.energiaSolare;
   const faqItems = buildProductFaq(prodotto, dt);
   const productVisual = PRODUCT_VISUALS[prodotto.slug] || null;
-
-  useEffect(() => {
-    let mounted = true;
-    const run = async () => {
-      try {
-        const indexRes = await fetch('/wp-data/live-pages-index.json');
-        if (!indexRes.ok) return;
-        const indexJson = await indexRes.json();
-        const targetPath = normalizePath(`/prodotti/${prodotto.slug}`);
-        const entry = (indexJson?.pages || []).find((page) => normalizePath(page?.route?.newPath || '') === targetPath);
-        if (!entry?.file) return;
-
-        const pageRes = await fetch(`/wp-data/live-pages/${entry.file}`);
-        if (!pageRes.ok) return;
-        const pageJson = await pageRes.json();
-        const extracted = extractLiveProductSections(pageJson);
-        if (mounted) setLiveSections(extracted);
-      } catch {
-        // keep fallback content
-      }
-    };
-    run();
-    return () => { mounted = false; };
-  }, [prodotto.slug]);
 
   const caratteristicheToShow = (liveSections.caratteristiche?.length ? liveSections.caratteristiche : prodotto.caratteristiche || []);
   const descrizioneHero = liveSections.utilizzi || prodotto.descrizione;

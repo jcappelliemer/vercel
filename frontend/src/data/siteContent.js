@@ -120,6 +120,28 @@ export const pagineInfoData = [
       { tipo: 'SafetyShield (linea anti-esplosione)', durata: '10 anni' },
       { tipo: 'Pellicole di sicurezza neutre (serie CL)', durata: 'Copertura standard di linea' },
     ],
+    faq: [
+      {
+        q: 'Cosa copre la garanzia in modo concreto?',
+        a: 'Copre i difetti del materiale come distacco, bolle, screpolature, demetalizzazione e delaminazione, a condizione che installazione e utilizzo siano conformi alle specifiche previste.',
+      },
+      {
+        q: 'La durata è sempre uguale per tutte le installazioni?',
+        a: 'No. La durata dipende da linea prodotto e posizione del vetro: su superfici verticali la copertura è più estesa, mentre su superfici inclinate o orizzontali la durata può ridursi.',
+      },
+      {
+        q: 'La rottura del vetro rientra in garanzia?',
+        a: 'No. La garanzia della pellicola non copre rottura del vetro, difetti del vetrocamera o danni strutturali dell’infisso.',
+      },
+      {
+        q: 'La manutenzione incide sulla validità della garanzia?',
+        a: 'Sì. Pulizia e gestione corretta della superficie sono necessarie per mantenere prestazioni e copertura. Sporco persistente o trattamenti non idonei possono accelerare il degrado.',
+      },
+      {
+        q: 'Come si attiva e come si apre una richiesta?',
+        a: 'La garanzia va attivata con registrazione installazione e documentazione entro i tempi previsti. In caso di anomalia, la richiesta si apre in forma scritta tramite canale autorizzato.',
+      },
+    ],
   },
   {
     slug: 'certificazione-nfrc',

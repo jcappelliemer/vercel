@@ -82,7 +82,7 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
           </section>
         )}
 
-        {pagina.garanzie && (
+        {pagina.garanzie && slug !== 'garanzie' && (
           <section className="py-16 section-light">
             <div className="max-w-4xl mx-auto px-6 md:px-12">
               <h2 className="text-2xl font-medium text-[#0A0F1C] mb-8">Dettaglio Garanzie</h2>
@@ -91,6 +91,22 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
                   <div key={i} className="card-light rounded-xl p-5">
                     <div className="text-sm text-[#475569] mb-1">{g.tipo}</div>
                     <div className="text-xl font-bold text-gradient">{g.durata}</div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {pagina.faq && (
+          <section className="py-16 section-light">
+            <div className="max-w-4xl mx-auto px-6 md:px-12">
+              <h2 className="text-2xl font-medium text-[#0A0F1C] mb-8">FAQ Garanzie</h2>
+              <div className="space-y-3">
+                {pagina.faq.map((item, i) => (
+                  <div key={i} className="card-light rounded-xl p-5">
+                    <h4 className="font-medium text-[#0A0F1C] mb-2">{item.q}</h4>
+                    <p className="text-sm text-[#475569] leading-relaxed">{item.a}</p>
                   </div>
                 ))}
               </div>

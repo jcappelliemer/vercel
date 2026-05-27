@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
 import SEO, { buildProductSchema, buildBreadcrumbSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
-import { ArrowRight, ArrowLeft, CheckCircle, Shield, Sun, Eye, Certificate, Tag, Sunglasses } from '@phosphor-icons/react';
+import { ArrowRight, ArrowLeft, CheckCircle, Shield, Sun, Eye, Certificate, Tag } from '@phosphor-icons/react';
 import { prodottiData } from '../data/siteContent';
 import { useWPData } from '../hooks/useWPData';
 import { useState, useEffect } from 'react';
@@ -30,13 +30,16 @@ const EnergyBar = ({ label, value, color = '#EAB308', light = false }) => {
   );
 };
 
-const SpecCard = ({ icon: Icon, label, value, light = false }) => (
+const SpecCard = ({ icon: Icon, label, value, light = false }) => {
+  const SafeIcon = Icon || Shield;
+  return (
   <div className={`${light ? 'bg-white border border-[#E2E8F0]' : 'card-glass'} rounded-xl p-5 text-center`}>
-    <Icon size={24} weight="fill" className={`mx-auto mb-2 ${light ? 'text-[#2563EB]' : 'text-[#EAB308]'}`} />
+    <SafeIcon size={24} weight="fill" className={`mx-auto mb-2 ${light ? 'text-[#2563EB]' : 'text-[#EAB308]'}`} />
     <p className={`text-xs mb-1 ${light ? 'text-[#64748B]' : 'text-[#94A3B8]'}`}>{label}</p>
     <p className={`text-lg font-medium ${light ? 'text-[#0A0F1C]' : 'text-white'}`}>{value}</p>
   </div>
-);
+  );
+};
 
 const cleanLiveText = (value = '') => {
   return String(value || '')
@@ -320,7 +323,7 @@ const ProdottoPagina = () => {
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
                 {dt.luceVisibile?.trasmessa && <SpecCard light icon={Eye} label="VLT" value={dt.luceVisibile.trasmessa} />}
                 {dt.infrarossiRespinti && <SpecCard light icon={Sun} label="IR Respinti" value={dt.infrarossiRespinti} />}
-                {dt.uvTrasmessi && <SpecCard light icon={Sunglasses} label="UV Trasmessi" value={dt.uvTrasmessi} />}
+                {dt.uvTrasmessi && <SpecCard light icon={Certificate} label="UV Trasmessi" value={dt.uvTrasmessi} />}
                 {dt.energiaRespinta && <SpecCard light icon={Shield} label="Energia Respinta" value={dt.energiaRespinta} />}
               </div>
 

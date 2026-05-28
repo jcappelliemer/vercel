@@ -97,7 +97,7 @@ Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni 
     ],
   },
   'madico-sl-8-e-ps-sr': {
-    panoramicaBody: `Le pellicole antisolari Madico SL 8 sono consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell irraggiamento solare e protezione dall abbaglio. Il secondo rivestimento fume permette alla pellicola di abbattere i riflessi all interno degli ambienti, in particolar modo sui videoterminali. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre.
+    panoramicaBody: `Le pellicole antisolari Madico SL 8 sono consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell irraggiamento solare e protezione dall abbaglio. Il secondo rivestimento fume permette alla pellicola di abbattere i riflessi all interno degli ambienti, in particolar modo sui videoterminali.
 
 Respingendo fino al 94% dell irraggiamento solare offre il massimo in termini di protezione, limitando da una parte l incremento del calore e dall altra riducendo drasticamente l abbaglio. Questo dona agli ambienti un comfort termico e visivo impareggiabile rispetto ai prodotti analoghi presenti sul mercato.
 E una pellicola innovativa, caratterizzata da un effetto estetico speculare colore argento verso l esterno e colore fume all interno.

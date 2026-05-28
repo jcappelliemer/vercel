@@ -78,7 +78,7 @@ Prodotto unico con doppio rivestimento antigraffio brevettato.
 Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
 Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.`,
-    contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie al tono neutro grigio fume del film. E un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
+    contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie al tono neutro grigio fume del film. E un prodotto molto adatto in contesti tipo aziende, uffici, scuole, banche, industrie e ospedali.`,
     caratteristiche: [
       'Resistenza e durata nel tempo grazie alla sofisticata tecnologia sputtering',
       'Riflettono fino all 84% dell energia solare',

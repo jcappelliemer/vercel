@@ -433,34 +433,37 @@ const ProdottoPagina = () => {
 
         <ProductFaqSection items={faqItems} />
 
-        {/* Focus Tecnico Link */}
-        {prodotto.focusTecnicoSlug && (
-          <section className="py-10 border-t border-white/5">
-            <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
-              <div>
-                <p className="text-sm text-[#94A3B8]">Approfondisci le caratteristiche tecniche di questa tipologia</p>
+        {/* Closing CTA */}
+        <section className="py-14 section-light border-t border-[#E2E8F0]">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 md:p-8">
+              <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
+                <div>
+                  <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Prossimo passo</span>
+                  <h2 className="mt-2 text-2xl font-medium text-[#0A0F1C]">Passiamo dal dato tecnico al caso reale</h2>
+                  <p className="mt-3 text-[#475569]">
+                    Inviaci il tipo di vetro, l esposizione e l obiettivo principale: ricevi una proposta coerente con prestazioni, posa e priorita del progetto.
+                  </p>
+                </div>
+                <div className="flex flex-wrap gap-3 lg:justify-end">
+                  <Link to="/preventivo" className="btn-primary group" data-testid="cta-preventivo">
+                    <span>Richiedi preventivo</span>
+                    <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  <Link to="/contatti" className="btn-secondary text-[#0A0F1C] border-[#0A0F1C]/20 hover:border-[#EAB308]" data-testid="cta-contatti">
+                    Contattaci
+                  </Link>
+                  {prodotto.focusTecnicoSlug && (
+                    <Link
+                      to={`/focus-tecnico/${prodotto.focusTecnicoSlug}`}
+                      className="btn-secondary text-[#0A0F1C] border-[#0A0F1C]/20 hover:border-[#EAB308]"
+                      data-testid="link-focus-tecnico"
+                    >
+                      Vai al focus tecnico
+                    </Link>
+                  )}
+                </div>
               </div>
-              <Link to={`/focus-tecnico/${prodotto.focusTecnicoSlug}`} className="btn-secondary text-xs" data-testid="link-focus-tecnico">
-                <span>Vai al focus tecnico</span>
-                <ArrowRight size={16} />
-              </Link>
-            </div>
-          </section>
-        )}
-
-        {/* CTA */}
-        <section className="py-14 section-light">
-          <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
-            <h2 className="text-2xl font-medium text-[#0A0F1C] mb-4">Interessato a questo prodotto?</h2>
-            <p className="text-[#64748B] mb-8">Richiedi un preventivo gratuito e senza impegno. I nostri tecnici ti consiglieranno la soluzione migliore.</p>
-            <div className="flex flex-wrap justify-center gap-4">
-              <Link to="/preventivo" className="btn-primary group" data-testid="cta-preventivo">
-                <span>Richiedi Preventivo</span>
-                <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
-              </Link>
-              <Link to="/contatti" className="btn-secondary text-[#0A0F1C] border-[#0A0F1C]/20 hover:border-[#EAB308]" data-testid="cta-contatti">
-                Contattaci
-              </Link>
             </div>
           </div>
         </section>

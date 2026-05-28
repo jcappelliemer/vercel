@@ -159,7 +159,7 @@ Esiste anche in versione di sicurezza, da 4Mil e da 8Mil che permette di ottempe
 Prodotto unico, con brevetto esclusivo.
 Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.`,
-    contextBody: `E ideale per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre.`,
+    contextBody: `E ideale per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre, dove si vuole ottenere un effetto moderno e specchiante.`,
     technicalSheetUrl: '/assets/tech-sheets/rs-20-e-ps-sr.pdf',
     caratteristiche: [
       'Riduce l ingresso di calore fino all 89%',

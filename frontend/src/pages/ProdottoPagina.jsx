@@ -58,6 +58,21 @@ const cleanLiveText = (value = '') => {
 };
 
 const normalizePath = (path = '/') => (path.endsWith('/') ? path : `${path}/`);
+const LIVE_SITE_ORIGIN = 'https://www.solarisfilms.it';
+
+const resolveLiveHref = (href = '') => {
+  if (!href) return '';
+  if (/^https?:\/\//i.test(href)) return href;
+  if (href.startsWith('//')) return `https:${href}`;
+  if (href.startsWith('/')) return `${LIVE_SITE_ORIGIN}${href}`;
+  return `${LIVE_SITE_ORIGIN}/${href.replace(/^\/+/, '')}`;
+};
+
+const pdfHrefFromBlock = (block = {}) => {
+  if (block.href && /\.pdf($|\?)/i.test(block.href)) return block.href;
+  const match = String(block.html || '').match(/href=["']([^"']+\.pdf(?:\?[^"']*)?)["']/i);
+  return match?.[1] || '';
+};
 
 const extractLiveProductSections = (pageJson) => {
   const blocks = Array.isArray(pageJson?.contentBlocks) ? pageJson.contentBlocks : [];
@@ -163,6 +178,7 @@ const ProdottoPagina = () => {
   const { data: allProdotti } = useWPData('prodotti');
   const prodotto = allProdotti.find(p => p.slug === slug);
   const [liveSections, setLiveSections] = useState({ utilizzi: '', specifiche: '', caratteristiche: [] });
+  const [technicalSheetUrl, setTechnicalSheetUrl] = useState('');
 
   useEffect(() => {
     let mounted = true;
@@ -180,7 +196,12 @@ const ProdottoPagina = () => {
         if (!pageRes.ok) return;
         const pageJson = await pageRes.json();
         const extracted = extractLiveProductSections(pageJson);
-        if (mounted) setLiveSections(extracted);
+        const blocks = Array.isArray(pageJson?.contentBlocks) ? pageJson.contentBlocks : [];
+        const pdfHref = blocks.map(pdfHrefFromBlock).find(Boolean) || '';
+        if (mounted) {
+          setLiveSections(extracted);
+          setTechnicalSheetUrl(resolveLiveHref(pdfHref));
+        }
       } catch {
         // keep fallback content
       }
@@ -265,6 +286,28 @@ const ProdottoPagina = () => {
                     ))}
                   </div>
                 )}
+
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Link to="/preventivo" className="btn-primary group" data-testid="product-cta-preventivo-hero">
+                    <span>Richiedi verifica tecnica</span>
+                    <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                  {technicalSheetUrl ? (
+                    <a
+                      href={technicalSheetUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="btn-secondary text-sm"
+                      data-testid="product-cta-download-sheet"
+                    >
+                      Scarica scheda tecnica
+                    </a>
+                  ) : (
+                    <Link to="/contatti" className="btn-secondary text-sm" data-testid="product-cta-sheet-contact">
+                      Scheda tecnica su richiesta
+                    </Link>
+                  )}
+                </div>
               </div>
 
               {productVisual?.src && (

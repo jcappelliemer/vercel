@@ -175,8 +175,8 @@ const ProductFaqSection = ({ items = [] }) => {
   return (
     <section className="py-12 section-light border-y border-[#E2E8F0]" data-testid="product-faq-section">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
-        <h2 className="text-2xl font-medium text-[#0A0F1C] mb-3">Domande frequenti</h2>
-        <p className="text-[#475569] mb-8">Le risposte essenziali per decidere in modo chiaro e senza ambiguita.</p>
+        <h2 className="text-xl sm:text-2xl font-medium text-[#0A0F1C] mb-3">Domande frequenti</h2>
+        <p className="text-[#475569] text-[15px] mb-8">Le risposte essenziali per decidere in modo chiaro e senza ambiguita.</p>
         <div className="space-y-3">
           {items.map((item, index) => (
             <div key={index} className="rounded-xl overflow-hidden border border-[#E2E8F0] bg-white">
@@ -365,12 +365,12 @@ const ProdottoPagina = () => {
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Panoramica</span>
                 {panoramicaBody && (
-                  <p className="mt-4 text-[#475569] text-base leading-relaxed whitespace-pre-line">{panoramicaBody}</p>
+                  <p className="mt-4 text-[#475569] text-[15px] leading-relaxed whitespace-pre-line">{panoramicaBody}</p>
                 )}
               </div>
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Contesto d uso consigliato</span>
-                <p className="mt-4 text-[#475569] leading-relaxed">{contextBody}</p>
+                <p className="mt-4 text-[#475569] text-[15px] leading-relaxed">{contextBody}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {prodotto.applicazione && (
                     <span className="inline-flex items-center rounded-lg bg-[#2563EB]/10 px-3 py-1.5 text-xs font-medium text-[#2563EB]">
@@ -391,8 +391,8 @@ const ProdottoPagina = () => {
         {/* Caratteristiche */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <h2 className="text-2xl font-medium text-white mb-3">Punti chiave della soluzione</h2>
-            <p className="text-[#94A3B8] mb-7">Una lettura rapida per capire benefici, contesto d uso e risultato atteso sul vetro.</p>
+            <h2 className="text-xl sm:text-2xl font-medium text-white mb-3">Punti chiave della soluzione</h2>
+            <p className="text-[#94A3B8] text-[15px] mb-7">Una lettura rapida per capire benefici, contesto d uso e risultato atteso sul vetro.</p>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
               {caratteristicheToShow.map((c, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
@@ -411,7 +411,7 @@ const ProdottoPagina = () => {
         {hasSpecs && (
           <section className="py-16 section-light" data-testid="dati-tecnici-section">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
-              <h2 className="text-2xl font-medium text-[#0A0F1C] mb-2">Prestazioni tecniche</h2>
+              <h2 className="text-xl sm:text-2xl font-medium text-[#0A0F1C] mb-2">Prestazioni tecniche</h2>
               {prodotto.tipoVetro && (
                 <p className="text-[#64748B] text-sm mb-10">Testato su: {prodotto.tipoVetro}</p>
               )}
@@ -452,7 +452,7 @@ const ProdottoPagina = () => {
                   style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.10) 0%, rgba(37,99,235,0.03) 100%)' }}
                 >
                   <p className="text-sm text-[#64748B] uppercase tracking-wider mb-1">Totale energia respinta</p>
-                  <p className="text-5xl font-bold text-[#2563EB]">{dt.energiaRespinta}</p>
+                  <p className="text-4xl font-bold text-[#2563EB]">{dt.energiaRespinta}</p>
                 </motion.div>
               )}
             </div>

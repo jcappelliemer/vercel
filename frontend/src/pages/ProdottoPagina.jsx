@@ -361,7 +361,7 @@ const ProdottoPagina = () => {
         {/* Description */}
         <section className="py-16 section-light border-y border-[#E2E8F0]">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
+            <div className="grid gap-5">
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Panoramica</span>
                 {panoramicaBody && (

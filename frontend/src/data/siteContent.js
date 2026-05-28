@@ -410,13 +410,13 @@ export const prodottiData = [
     certificazione: 'UNI EN 12600 classe 3B3',
   },
   {
-    slug: 'ssn-50-te-sr',
-    nome: 'SSN 50 TE SR',
+    slug: 'ssn-70-te-sr',
+    nome: 'SSN 70 TE SR',
     categoria: 'Antisolari',
     sottocategoria: 'Spettro-selettive — Serie Hi-Tec-Clear',
     applicazione: 'Esterno',
     focusTecnicoSlug: 'pellicole-spettro-selettive',
-    descrizione: 'Le pellicole antisolari spettro-selettive Hi-Tec-Clear SSN 50 TE SR sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l\'esigenza di mantenere inalterata la trasparenza e l\'aspetto estetico delle vetrate. Ideali per edifici con vincoli storici, paesaggistici o ambientali.',
+    descrizione: 'Le pellicole antisolari spettro-selettive Hi-Tec-Clear SSN 70 TE SR sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l\'esigenza di mantenere inalterata la trasparenza e l\'aspetto estetico delle vetrate. Ideali per edifici con vincoli storici, paesaggistici o ambientali.',
     caratteristiche: [
       'Elegante aspetto neutro ed elevata trasparenza ottica',
       'Elevata trasmissione della luce visibile, ambienti freschi e luminosi',

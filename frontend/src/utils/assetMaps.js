@@ -20,6 +20,7 @@ export const PRODUCT_VISUALS = {
   'madico-sl-8-e-ps-sr': productAsset('madicosl8epssr'),
   madicosl8epssr: productAsset('madicosl8epssr'),
   'ssn-50-te-sr': productAsset('tecnosolarssn50tesr'),
+  'ssn-70-te-sr': productAsset('tecnosolarssn50tesr'),
   'madico-rs-20-e-ps-sr': productAsset('madico-rs-20-e-ps-sr'),
   'madico-rs-40-e-ps-sr': productAsset('madico-rs-40-e-ps-sr'),
   'madico-rs-20-ps-sr-4mil': productAsset('madico-rs-20-ps-sr-4mil'),

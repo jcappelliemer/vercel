@@ -124,6 +124,29 @@ La pellicola antisolare Sunscape Madico SL 8 e realizzata con l avanzato process
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'ssn-70-te-sr': {
+    panoramicaBody: `Le pellicole antisolari spettro selettive Hi-Tec-Clear SSN 70 TE SR sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l esigenza di mantenere inalterata la trasparenza e l aspetto estetico delle vetrate.
+
+La pellicola Hi-Tec-Clear SSN 70 TE SR e una pellicola per vetri spettro selettiva estremamente resistente specifica per applicazioni in esterno. Il rivestimento esterno utilizza una innovativa tecnologia brevettata particolarmente resistente ai graffi.
+Bloccando oltre l 84% dei raggi infrarossi (calore) e lasciando passare un elevata quantita di luce visibile garantisce ambienti interni piu freschi e confortevoli, costi di condizionamento ridotti ed un elevata trasparenza, preservando l aspetto estetico originale del vetro.
+L ultima evoluzione tecnologica nel campo delle pellicole per vetri e rappresentata dalle pellicole antisolari spettro selettive della serie Hi-Tec-Clear, distribuite in esclusiva da Solaris.`,
+    contextBody: `Sono ideali per vetrine, uffici, musei, show room, scuole, banche e per tutti gli edifici dove vi sono vincoli storici, paesaggistici o ambientali.`,
+    technicalSheetUrl: '/assets/tech-sheets/ssn-70-te-sr.pdf',
+    caratteristiche: [
+      'Elegante aspetto neutro ed elevata trasparenza ottica',
+      'Elevata trasmissione della luce visibile: ambienti freschi e luminosi',
+      'Scherma il 59% del calore solare su vetrocamera 6 mm',
+      'Blocca oltre il 99% dei raggi ultravioletti',
+      'Bassa riflessione interna ed esterna, visuale inalterata',
+    ],
+    faq: [
+      { q: 'A cosa serve SSN 70 TE SR?', a: 'E pensata per ridurre il calore solare mantenendo alta trasparenza e basso impatto estetico sulle facciate vetrate.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'E consigliata su vetrocamera e su superfici dove serve controllo termico senza effetto specchiato marcato. Per questa scheda i valori principali sono riferiti a vetrocamera 6 mm.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Per scegliere in modo corretto conviene leggere energia totale respinta, trasmissione luminosa, riduzione abbaglio e infrarossi respinti, sempre in relazione al tipo di vetro esistente.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

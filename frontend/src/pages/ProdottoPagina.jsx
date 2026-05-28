@@ -140,9 +140,9 @@ L ultima evoluzione tecnologica nel campo delle pellicole per vetri e rappresent
       'Bassa riflessione interna ed esterna, visuale inalterata',
     ],
     faq: [
-      { q: 'A cosa serve SSN 70 TE SR?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore mantenendo alta trasparenza e basso impatto estetico sulle vetrate.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime ottime prestazioni su vetrocamera e in contesti dove serve ridurre il surriscaldamento senza alterare la visione. In questa scheda i dati principali sono riferiti a vetrocamera 6 mm.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano in base al tipo di vetro. Per una scelta corretta conviene leggere energia respinta, trasmissione luminosa, riduzione abbaglio e infrarossi respinti, utilizzando dati certificati.' },
+      { q: 'A cosa serve SSN 70 TE SR?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza su vetrocamera. In questa scheda i dati principali sono riferiti a vetrocamera 6 mm, con posa sul lato esterno.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente e importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
       { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],

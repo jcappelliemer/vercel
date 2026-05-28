@@ -256,7 +256,7 @@ const ProdottoPagina = () => {
                   <span className="text-[#94A3B8] text-sm">{prodotto.sottocategoria}</span>
                 </div>
                 <div className="accent-bar w-16 mb-6" />
-                <h1 className="text-4xl sm:text-5xl font-medium text-white mb-4" data-testid="product-title">{prodotto.nome}</h1>
+                <h1 className="text-4xl sm:text-5xl font-medium text-white mb-4 leading-tight" data-testid="product-title">{prodotto.nome}</h1>
                 <p className="text-[#CBD5E1] text-lg leading-relaxed">{descrizioneHero}</p>
 
                 <div className="flex flex-wrap gap-3 mt-6">
@@ -311,12 +311,12 @@ const ProdottoPagina = () => {
               </div>
 
               {productVisual?.src && (
-                <figure className="rounded-xl overflow-hidden border border-white/10 bg-[#0F172A]">
-                  <div className="aspect-[4/3] w-full">
+                <figure className="rounded-xl overflow-hidden border border-white/10 bg-gradient-to-br from-[#0F172A] to-[#111827]">
+                  <div className="aspect-[4/3] w-full p-4">
                     <img
                       src={productVisual.src}
                       alt={productVisual.alt || prodotto.nome}
-                      className="h-full w-full object-contain p-2"
+                      className="h-full w-full object-contain"
                       loading="lazy"
                     />
                   </div>
@@ -327,20 +327,45 @@ const ProdottoPagina = () => {
         </section>
 
         {/* Description */}
-        <section className="py-16">
-          <div className="max-w-4xl mx-auto px-6 md:px-12">
-            {specificheBody && (
-              <p className="text-[#64748B] text-base leading-relaxed">{specificheBody}</p>
-            )}
+        <section className="py-16 section-light border-y border-[#E2E8F0]">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
+            <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
+              <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Panoramica</span>
+                <h2 className="mt-2 text-2xl font-medium text-[#0A0F1C]">Cosa aspettarti da questa soluzione</h2>
+                {specificheBody && (
+                  <p className="mt-4 text-[#475569] text-base leading-relaxed">{specificheBody}</p>
+                )}
+              </div>
+              <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Applicazione</span>
+                <h2 className="mt-2 text-2xl font-medium text-[#0A0F1C]">Contesto d’uso consigliato</h2>
+                <p className="mt-4 text-[#475569] leading-relaxed">
+                  Questa scheda aiuta a capire in modo rapido compatibilita del vetro, livello di schermatura e risultato atteso prima della posa.
+                </p>
+                <div className="mt-5 flex flex-wrap gap-2">
+                  {prodotto.applicazione && (
+                    <span className="inline-flex items-center rounded-lg bg-[#2563EB]/10 px-3 py-1.5 text-xs font-medium text-[#2563EB]">
+                      Applicazione: {prodotto.applicazione}
+                    </span>
+                  )}
+                  {prodotto.tipoVetro && (
+                    <span className="inline-flex items-center rounded-lg bg-[#0F172A]/5 px-3 py-1.5 text-xs font-medium text-[#334155]">
+                      Test principale: {prodotto.tipoVetro}
+                    </span>
+                  )}
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
         {/* Caratteristiche */}
         <section className="py-16">
-          <div className="max-w-4xl mx-auto px-6 md:px-12">
+          <div className="max-w-7xl mx-auto px-6 md:px-12">
             <h2 className="text-2xl font-medium text-white mb-3">Caratteristiche distintive</h2>
             <p className="text-[#94A3B8] mb-7">Punti chiave per capire rapidamente se la soluzione e adatta al vetro da trattare.</p>
-            <div className="grid md:grid-cols-2 gap-3">
+            <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
               {caratteristicheToShow.map((c, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
                   className="flex items-start gap-3 p-4 card-glass rounded-xl"
@@ -357,7 +382,7 @@ const ProdottoPagina = () => {
         {/* Dati Tecnici */}
         {hasSpecs && (
           <section className="py-16 section-light" data-testid="dati-tecnici-section">
-            <div className="max-w-4xl mx-auto px-6 md:px-12">
+            <div className="max-w-7xl mx-auto px-6 md:px-12">
               <h2 className="text-2xl font-medium text-[#0A0F1C] mb-2">Dati tecnici</h2>
               {prodotto.tipoVetro && (
                 <p className="text-[#64748B] text-sm mb-10">Testato su: {prodotto.tipoVetro}</p>
@@ -411,7 +436,7 @@ const ProdottoPagina = () => {
         {/* Focus Tecnico Link */}
         {prodotto.focusTecnicoSlug && (
           <section className="py-10 border-t border-white/5">
-            <div className="max-w-4xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 flex flex-col sm:flex-row items-center justify-between gap-4">
               <div>
                 <p className="text-sm text-[#94A3B8]">Approfondisci le caratteristiche tecniche di questa tipologia</p>
               </div>
@@ -425,7 +450,7 @@ const ProdottoPagina = () => {
 
         {/* CTA */}
         <section className="py-14 section-light">
-          <div className="max-w-4xl mx-auto px-6 md:px-12 text-center">
+          <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
             <h2 className="text-2xl font-medium text-[#0A0F1C] mb-4">Interessato a questo prodotto?</h2>
             <p className="text-[#64748B] mb-8">Richiedi un preventivo gratuito e senza impegno. I nostri tecnici ti consiglieranno la soluzione migliore.</p>
             <div className="flex flex-wrap justify-center gap-4">

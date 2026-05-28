@@ -9,6 +9,30 @@ import { prodottiData } from '../data/siteContent';
 import { useWPData } from '../hooks/useWPData';
 import { useState, useEffect } from 'react';
 import { PRODUCT_VISUALS } from '../utils/assetMaps';
+const UNIFIED_DATA_COLOR = '#2563EB';
+
+const PRODUCT_PAGE_OVERRIDES = {
+  'madico-sb-20-e-ps-sr': {
+    panoramicaBody: `Le pellicole antisolari sputtered SB 20 E PS SR Madico sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.
+
+Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.
+Riflettono fino al 88% dell energia solare rendendo gli ambienti piu freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica.
+Pellicole piu chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilita ed evitando effetti speculari.
+Prodotto unico con doppio rivestimento antigraffio brevettato.
+Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
+Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
+Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.`,
+    contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie all effetto brunito del film. E un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
+    technicalSheetUrl: '/assets/tech-sheets/sb-20-e-ps-sr.pdf',
+    faq: [
+      { q: 'A cosa serve Madico SB 20 E PS SR 75 micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma puo essere installata su ogni vetrata nel lato esterno.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente e importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
+};
 
 const EnergyBar = ({ label, value, color = '#EAB308', light = false }) => {
   const numVal = parseInt(value) || 0;
@@ -43,6 +67,7 @@ const SpecCard = ({ icon: Icon, label, value, light = false }) => {
 
 const cleanLiveText = (value = '') => {
   return String(value || '')
+    .replace(/&#8217;|&#39;|&rsquo;/gi, '\'')
     .replace(/\s+/g, ' ')
     .replace(/â€™|’/g, '\'')
     .replace(/Ã¨/g, 'è')
@@ -99,6 +124,9 @@ const extractLiveProductSections = (pageJson) => {
 };
 
 const buildProductFaq = (prodotto, dt) => {
+  const overrides = PRODUCT_PAGE_OVERRIDES[prodotto?.slug];
+  if (Array.isArray(overrides?.faq) && overrides.faq.length) return overrides.faq;
+
   const categoria = (prodotto?.categoria || '').toLowerCase();
   const categoriaLabel = prodotto?.categoria || 'questa pellicola';
   const applicazione = prodotto?.applicazione ? ` ${prodotto.applicazione}` : '';
@@ -228,13 +256,17 @@ const ProdottoPagina = () => {
   }
 
   const dt = prodotto.datiTecnici;
+  const pageOverrides = PRODUCT_PAGE_OVERRIDES[prodotto.slug] || null;
   const hasSpecs = dt && dt.energiaSolare;
   const faqItems = buildProductFaq(prodotto, dt);
   const productVisual = PRODUCT_VISUALS[prodotto.slug] || null;
 
   const caratteristicheToShow = (liveSections.caratteristiche?.length ? liveSections.caratteristiche : prodotto.caratteristiche || []);
-  const descrizioneHero = liveSections.utilizzi || prodotto.descrizione;
+  const descrizioneHero = (liveSections.utilizzi || prodotto.descrizione || '').replace(/&#8217;|&#39;|&rsquo;/gi, '\'');
   const specificheBody = liveSections.specifiche || prodotto.specificheTecniche || '';
+  const panoramicaBody = pageOverrides?.panoramicaBody || specificheBody;
+  const contextBody = pageOverrides?.contextBody || 'Questa scheda aiuta a capire in modo rapido compatibilita del vetro, livello di schermatura e risultato atteso prima della posa.';
+  const downloadSheetUrl = pageOverrides?.technicalSheetUrl || technicalSheetUrl;
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`prodotto-${prodotto.slug}`}>
@@ -292,9 +324,9 @@ const ProdottoPagina = () => {
                     <span>Richiedi verifica tecnica</span>
                     <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
                   </Link>
-                  {technicalSheetUrl ? (
+                  {downloadSheetUrl ? (
                     <a
-                      href={technicalSheetUrl}
+                      href={downloadSheetUrl}
                       target="_blank"
                       rel="noreferrer"
                       className="btn-secondary text-sm"
@@ -332,17 +364,13 @@ const ProdottoPagina = () => {
             <div className="grid gap-8 lg:grid-cols-[1fr_1fr]">
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
                 <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Panoramica</span>
-                <h2 className="mt-2 text-2xl font-medium text-[#0A0F1C]">Cosa aspettarti da questa soluzione</h2>
-                {specificheBody && (
-                  <p className="mt-4 text-[#475569] text-base leading-relaxed">{specificheBody}</p>
+                {panoramicaBody && (
+                  <p className="mt-4 text-[#475569] text-base leading-relaxed whitespace-pre-line">{panoramicaBody}</p>
                 )}
               </div>
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Applicazione</span>
-                <h2 className="mt-2 text-2xl font-medium text-[#0A0F1C]">Contesto d’uso consigliato</h2>
-                <p className="mt-4 text-[#475569] leading-relaxed">
-                  Questa scheda aiuta a capire in modo rapido compatibilita del vetro, livello di schermatura e risultato atteso prima della posa.
-                </p>
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Contesto d uso consigliato</span>
+                <p className="mt-4 text-[#475569] leading-relaxed">{contextBody}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {prodotto.applicazione && (
                     <span className="inline-flex items-center rounded-lg bg-[#2563EB]/10 px-3 py-1.5 text-xs font-medium text-[#2563EB]">
@@ -400,9 +428,9 @@ const ProdottoPagina = () => {
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 mb-5">
                 <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Energia solare totale</h3>
                 <div className="space-y-3">
-                  <EnergyBar light label="Trasmessa" value={dt.energiaSolare.trasmessa} color="#EF4444" />
-                  <EnergyBar light label="Riflessa" value={dt.energiaSolare.riflessa} color="#3B82F6" />
-                  <EnergyBar light label="Assorbita" value={dt.energiaSolare.assorbita} color="#8B5CF6" />
+                  <EnergyBar light label="Trasmessa" value={dt.energiaSolare.trasmessa} color={UNIFIED_DATA_COLOR} />
+                  <EnergyBar light label="Riflessa" value={dt.energiaSolare.riflessa} color={UNIFIED_DATA_COLOR} />
+                  <EnergyBar light label="Assorbita" value={dt.energiaSolare.assorbita} color={UNIFIED_DATA_COLOR} />
                 </div>
               </div>
 
@@ -410,21 +438,21 @@ const ProdottoPagina = () => {
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 mb-5">
                 <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Luce visibile</h3>
                 <div className="space-y-3">
-                  {dt.luceVisibile.trasmessa && <EnergyBar light label="Trasmessa" value={dt.luceVisibile.trasmessa} color="#FACC15" />}
-                  {dt.luceVisibile.riflessaEsterno && <EnergyBar light label="Riflessa - Esterno" value={dt.luceVisibile.riflessaEsterno} color="#3B82F6" />}
-                  {dt.luceVisibile.riflessaInterno && <EnergyBar light label="Riflessa - Interno" value={dt.luceVisibile.riflessaInterno} color="#6366F1" />}
-                  {dt.luceVisibile.riduzioneAbbaglio && <EnergyBar light label="Riduzione Abbaglio" value={dt.luceVisibile.riduzioneAbbaglio} color="#10B981" />}
+                  {dt.luceVisibile.trasmessa && <EnergyBar light label="Trasmessa" value={dt.luceVisibile.trasmessa} color={UNIFIED_DATA_COLOR} />}
+                  {dt.luceVisibile.riflessaEsterno && <EnergyBar light label="Riflessa - Esterno" value={dt.luceVisibile.riflessaEsterno} color={UNIFIED_DATA_COLOR} />}
+                  {dt.luceVisibile.riflessaInterno && <EnergyBar light label="Riflessa - Interno" value={dt.luceVisibile.riflessaInterno} color={UNIFIED_DATA_COLOR} />}
+                  {dt.luceVisibile.riduzioneAbbaglio && <EnergyBar light label="Riduzione Abbaglio" value={dt.luceVisibile.riduzioneAbbaglio} color={UNIFIED_DATA_COLOR} />}
                 </div>
               </div>
 
               {/* Totale Energia Respinta highlight */}
               {dt.energiaRespinta && (
                 <motion.div initial={{ opacity: 0, scale: 0.95 }} whileInView={{ opacity: 1, scale: 1 }} viewport={{ once: true }}
-                  className="rounded-xl p-6 text-center border border-[#EAB308]/20"
-                  style={{ background: 'linear-gradient(135deg, rgba(234,179,8,0.08) 0%, rgba(37,99,235,0.08) 100%)' }}
+                  className="rounded-xl p-6 text-center border border-[#2563EB]/20"
+                  style={{ background: 'linear-gradient(135deg, rgba(37,99,235,0.10) 0%, rgba(37,99,235,0.03) 100%)' }}
                 >
                   <p className="text-sm text-[#64748B] uppercase tracking-wider mb-1">Totale energia respinta</p>
-                  <p className="text-5xl font-bold text-gradient-gold">{dt.energiaRespinta}</p>
+                  <p className="text-5xl font-bold text-[#2563EB]">{dt.energiaRespinta}</p>
                 </motion.div>
               )}
             </div>

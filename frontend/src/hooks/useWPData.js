@@ -26,7 +26,15 @@ export function useWPData(type) {
 
     fetcher().then(result => {
       if (result && result.length > 0) {
-        setData(result);
+        if (type === 'prodotti') {
+          const staticRows = getStaticData('prodotti');
+          const map = new Map();
+          staticRows.forEach((item) => map.set(item.slug, item));
+          result.forEach((item) => map.set(item.slug, { ...(map.get(item.slug) || {}), ...item }));
+          setData(Array.from(map.values()));
+        } else {
+          setData(result);
+        }
       }
       setLoading(false);
     }).catch(() => setLoading(false));

@@ -16,26 +16,6 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/prodotti/tecnosolarssn50tesr',
-        destination: '/servizi#antisolari',
-        permanent: true,
-      },
-      {
-        source: '/prodotti/ssn-50-te-sr',
-        destination: '/servizi#antisolari',
-        permanent: true,
-      },
-      {
-        source: '/prodotti/tecnosolarssn50tesr/',
-        destination: '/servizi#antisolari',
-        permanent: true,
-      },
-      {
-        source: '/prodotti/ssn-50-te-sr/',
-        destination: '/servizi#antisolari',
-        permanent: true,
-      },
-      {
         source: '/prodotti/madicosb20epssr',
         destination: '/prodotti/madico-sb-20-e-ps-sr/',
         permanent: true,

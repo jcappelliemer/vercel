@@ -68,6 +68,33 @@ Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni 
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'madico-sg-20-e-ps-sr': {
+    panoramicaBody: `Le pellicole antisolari sputtered SG 20 E PS SR Madico sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.
+
+Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.
+Riflettono fino all 84% dell energia solare rendendo gli ambienti piu freschi e confortevoli, con buona trasmissione luminosa e tono neutro grigio fume.
+Pellicole piu armoniche che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilita ed con effetto speculare meno invasivo.
+Prodotto unico con doppio rivestimento antigraffio brevettato.
+Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
+Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
+Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.`,
+    contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie al tono neutro grigio fume del film. E un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
+    caratteristiche: [
+      'Resistenza e durata nel tempo grazie alla sofisticata tecnologia sputtering',
+      'Riflettono fino all 84% dell energia solare',
+      'Buona schermatura solare lasciando quasi inalterata la trasparenza dall interno',
+      'Prodotto unico con doppio rivestimento antigraffio brevettato',
+      'Doppio strato antigraffio per lunga durata',
+      'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
+    ],
+    faq: [
+      { q: 'A cosa serve Madico SB 20 E PS SR 75 micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma puo essere installata su ogni vetrata nel lato esterno.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente e importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

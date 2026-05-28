@@ -106,7 +106,7 @@ Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Pellicola antisolare che conferisce a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
 La pellicola antisolare Sunscape Madico SL 8 e realizzata con l avanzato processo di metallizzazione sputtering, che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.`,
-    contextBody: `Questa pellicola e consigliata nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l abbaglio. E adatta a contesti professionali e pubblici in cui servono controllo solare elevato, comfort visivo e continuita operativa degli ambienti.`,
+    contextBody: `Questa pellicola e consigliata nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l abbaglio. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. E adatta a contesti professionali e pubblici in cui servono controllo solare elevato, comfort visivo e continuita operativa degli ambienti.`,
     technicalSheetUrl: '/assets/tech-sheets/sl-8-e-ps-sr.pdf',
     caratteristiche: [
       'Respingono fino al 94% dell irraggiamento solare',

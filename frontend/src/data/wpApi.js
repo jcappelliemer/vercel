@@ -11,6 +11,10 @@ const IS_PROD = typeof window !== 'undefined' && window.location.protocol === 'h
 
 const cache = new Map();
 const CACHE_TTL = 5 * 60 * 1000;
+const PRODUCT_SLUG_ALIASES = {
+  'ssn-50-te-sr': 'ssn-70-te-sr',
+};
+const canonicalProductSlug = (slug = '') => PRODUCT_SLUG_ALIASES[slug] || slug;
 
 async function fetchStaticJson(filename) {
   const cacheKey = `static_${filename}`;
@@ -72,7 +76,8 @@ function decodeHtml(html) {
 // ===== PRODOTTI =====
 function mapProdotto(wp) {
   const m = wp.solaris_meta || wp.meta || {};
-  const fallback = prodottiData.find((p) => p.slug === wp.slug) || null;
+  const normalizedSlug = canonicalProductSlug(wp.slug);
+  const fallback = prodottiData.find((p) => p.slug === normalizedSlug || p.slug === wp.slug) || null;
   const rawDescription = wp.content?.rendered?.replace(/<[^>]*>/g, '').trim() || '';
   const descrizione = rawDescription.length >= 80
     ? rawDescription
@@ -99,7 +104,7 @@ function mapProdotto(wp) {
   };
 
   return {
-    slug: wp.slug,
+    slug: normalizedSlug,
     nome: decodeHtml(wp.title.rendered),
     descrizione,
     categoria: m.categoria || '',

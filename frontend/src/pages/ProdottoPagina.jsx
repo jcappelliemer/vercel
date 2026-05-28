@@ -175,8 +175,8 @@ const ProductFaqSection = ({ items = [] }) => {
   return (
     <section className="py-12 section-light border-y border-[#E2E8F0]" data-testid="product-faq-section">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
-        <h2 className="text-2xl font-medium text-[#0A0F1C] mb-3">FAQ sul prodotto</h2>
-        <p className="text-[#475569] mb-8">Risposte rapide per capire se questa soluzione e adatta al tuo caso.</p>
+        <h2 className="text-2xl font-medium text-[#0A0F1C] mb-3">Domande frequenti</h2>
+        <p className="text-[#475569] mb-8">Le risposte essenziali per decidere in modo chiaro e senza ambiguita.</p>
         <div className="space-y-3">
           {items.map((item, index) => (
             <div key={index} className="rounded-xl overflow-hidden border border-[#E2E8F0] bg-white">
@@ -391,8 +391,8 @@ const ProdottoPagina = () => {
         {/* Caratteristiche */}
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
-            <h2 className="text-2xl font-medium text-white mb-3">Caratteristiche distintive</h2>
-            <p className="text-[#94A3B8] mb-7">Punti chiave per capire rapidamente se la soluzione e adatta al vetro da trattare.</p>
+            <h2 className="text-2xl font-medium text-white mb-3">Punti chiave della soluzione</h2>
+            <p className="text-[#94A3B8] mb-7">Una lettura rapida per capire benefici, contesto d uso e risultato atteso sul vetro.</p>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
               {caratteristicheToShow.map((c, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
@@ -411,7 +411,7 @@ const ProdottoPagina = () => {
         {hasSpecs && (
           <section className="py-16 section-light" data-testid="dati-tecnici-section">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
-              <h2 className="text-2xl font-medium text-[#0A0F1C] mb-2">Dati tecnici</h2>
+              <h2 className="text-2xl font-medium text-[#0A0F1C] mb-2">Prestazioni tecniche</h2>
               {prodotto.tipoVetro && (
                 <p className="text-[#64748B] text-sm mb-10">Testato su: {prodotto.tipoVetro}</p>
               )}
@@ -426,7 +426,7 @@ const ProdottoPagina = () => {
 
               {/* Energia Solare */}
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 mb-5">
-                <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Energia solare totale</h3>
+                <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Bilancio energia solare</h3>
                 <div className="space-y-3">
                   <EnergyBar light label="Trasmessa" value={dt.energiaSolare.trasmessa} color={UNIFIED_DATA_COLOR} />
                   <EnergyBar light label="Riflessa" value={dt.energiaSolare.riflessa} color={UNIFIED_DATA_COLOR} />
@@ -436,7 +436,7 @@ const ProdottoPagina = () => {
 
               {/* Luce Visibile */}
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 mb-5">
-                <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Luce visibile</h3>
+                <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Comportamento luce visibile</h3>
                 <div className="space-y-3">
                   {dt.luceVisibile.trasmessa && <EnergyBar light label="Trasmessa" value={dt.luceVisibile.trasmessa} color={UNIFIED_DATA_COLOR} />}
                   {dt.luceVisibile.riflessaEsterno && <EnergyBar light label="Riflessa - Esterno" value={dt.luceVisibile.riflessaEsterno} color={UNIFIED_DATA_COLOR} />}

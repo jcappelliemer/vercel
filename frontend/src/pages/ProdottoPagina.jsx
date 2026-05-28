@@ -17,7 +17,7 @@ const PRODUCT_PAGE_OVERRIDES = {
 
 Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.
 Riflettono fino al 88% dell energia solare rendendo gli ambienti piu freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica.
-Pellicole piu chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilita ed evitando effetti speculari.
+Pellicole piu armoniche che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilita ed con effetto speculare meno invasivo.
 Prodotto unico con doppio rivestimento antigraffio brevettato.
 Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
@@ -40,6 +40,33 @@ Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni 
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'madico-sb-35-e-ps-sr': {
+    panoramicaBody: `Le pellicole antisolari sputtered SB 35 E PS SR Madico sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.
+
+Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.
+Riflettono fino al 80% dell energia solare rendendo gli ambienti piu freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica.
+Pellicole piu chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilita ed riducendo effetti speculari.
+Prodotto unico con doppio rivestimento antigraffio brevettato.
+Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
+Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
+Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.`,
+    contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie all effetto brunito del film. E un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
+    technicalSheetUrl: '/assets/tech-sheets/sb-35-e-ps-sr.pdf',
+    caratteristiche: [
+      'Resistenza e durata nel tempo grazie alla sofisticata tecnologia sputtering',
+      'Riflettono fino all 80% dell energia solare',
+      'Maggiore trasmissione luminosa rispetto a SB 20 E PS SR',
+      'Prodotto unico con doppio rivestimento antigraffio brevettato',
+      'Doppio strato antigraffio per lunga durata',
+      'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
+    ],
+  },
+};
+
+const splitKeepUnitTogether = (name = '') => {
+  const match = String(name).match(/^(.*?)(\s\d+\s(?:micron|Micron|MIL))$/);
+  if (!match) return { main: name, unit: '' };
+  return { main: match[1], unit: match[2].trim() };
 };
 
 const EnergyBar = ({ label, value, color = '#EAB308', light = false }) => {
@@ -279,6 +306,7 @@ const ProdottoPagina = () => {
   const panoramicaBody = pageOverrides?.panoramicaBody || specificheBody;
   const contextBody = pageOverrides?.contextBody || 'Questa scheda aiuta a capire in modo rapido compatibilita del vetro, livello di schermatura e risultato atteso prima della posa.';
   const downloadSheetUrl = pageOverrides?.technicalSheetUrl || technicalSheetUrl;
+  const titleParts = splitKeepUnitTogether(prodotto.nome);
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`prodotto-${prodotto.slug}`}>
@@ -300,7 +328,10 @@ const ProdottoPagina = () => {
                   <span className="text-[#94A3B8] text-sm">{prodotto.sottocategoria}</span>
                 </div>
                 <div className="accent-bar w-16 mb-6" />
-                <h1 className="text-4xl sm:text-5xl font-medium text-white mb-4 leading-tight" data-testid="product-title">{prodotto.nome}</h1>
+                <h1 className="text-4xl sm:text-5xl font-medium text-white mb-4 leading-tight" data-testid="product-title">
+                  {titleParts.main}
+                  {titleParts.unit ? <> <span className="whitespace-nowrap">{titleParts.unit}</span></> : null}
+                </h1>
                 <p className="text-[#CBD5E1] text-lg leading-relaxed">{descrizioneHero}</p>
 
                 <div className="flex flex-wrap gap-3 mt-6">

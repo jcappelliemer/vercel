@@ -336,8 +336,8 @@ export const prodottiData = [
     descrizione: 'Le pellicole sputtered Madico SB 35 E PS SR vengono utilizzate dove si deve schermare l\'irraggiamento solare con esigenza di maggiore luminosit\u00e0. Ideali per ambienti che richiedono alta trasmissione luminosa con ottima protezione solare.',
     caratteristiche: [
       'Resistenza e durata nel tempo grazie alla tecnologia sputtering',
-      'Riflettono fino all\'88% dell\'energia solare',
-      'Elevata trasmissione luminosa e maggiore riflessione energetica',
+      'Riflettono fino all\'80% dell\'energia solare',
+      'Maggiore trasmissione luminosa rispetto a SB 20 E PS SR',
       'Prodotto unico con doppio rivestimento antigraffio brevettato',
       'Doppio strato antigraffio per lunga durata',
       'Vetro di sicurezza UNI EN 12600 classe 3B3',

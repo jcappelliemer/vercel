@@ -446,7 +446,7 @@ const ProdottoPagina = () => {
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3 lg:justify-end">
-                  <Link to="/preventivo" className="btn-primary group" data-testid="cta-preventivo">
+                  <Link to="/preventivo" className="btn-primary group !text-white" data-testid="cta-preventivo">
                     <span>Richiedi preventivo</span>
                     <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
                   </Link>

@@ -309,7 +309,7 @@ export const prodottiData = [
     caratteristiche: [
       'Resistenza e durata nel tempo grazie alla sofisticata tecnologia sputtering',
       'Riflettono fino all\'88% dell\'energia solare',
-      'Buona schermatura solare lasciando quasi inalterata la trasparenza',
+      'Buona schermatura solare lasciando quasi inalterata la trasparenza dall\'interno',
       'Prodotto unico con doppio rivestimento antigraffio brevettato',
       'Struttura rivoluzionaria con doppio strato antigraffio',
       'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
@@ -829,4 +829,5 @@ export const prodottiData = [
     isAccessorio: true,
   },
 ];
+
 

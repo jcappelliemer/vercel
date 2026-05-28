@@ -23,6 +23,14 @@ Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
 Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.`,
     contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie all effetto brunito del film. E un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
+    caratteristiche: [
+      'Resistenza e durata nel tempo grazie alla sofisticata tecnologia sputtering',
+      'Riflettono fino all 88% dell energia solare',
+      'Buona schermatura solare lasciando quasi inalterata la trasparenza dall interno',
+      'Prodotto unico con doppio rivestimento antigraffio brevettato',
+      'Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata',
+      'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
+    ],
     technicalSheetUrl: '/assets/tech-sheets/sb-20-e-ps-sr.pdf',
     faq: [
       { q: 'A cosa serve Madico SB 20 E PS SR 75 micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
@@ -261,7 +269,11 @@ const ProdottoPagina = () => {
   const faqItems = buildProductFaq(prodotto, dt);
   const productVisual = PRODUCT_VISUALS[prodotto.slug] || null;
 
-  const caratteristicheToShow = (liveSections.caratteristiche?.length ? liveSections.caratteristiche : prodotto.caratteristiche || []);
+  const caratteristicheToShow = (
+    pageOverrides?.caratteristiche?.length
+      ? pageOverrides.caratteristiche
+      : (liveSections.caratteristiche?.length ? liveSections.caratteristiche : (prodotto.caratteristiche || []))
+  );
   const descrizioneHero = (liveSections.utilizzi || prodotto.descrizione || '').replace(/&#8217;|&#39;|&rsquo;/gi, '\'');
   const specificheBody = liveSections.specifiche || prodotto.specificheTecniche || '';
   const panoramicaBody = pageOverrides?.panoramicaBody || specificheBody;

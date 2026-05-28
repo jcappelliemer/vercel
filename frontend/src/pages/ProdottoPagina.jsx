@@ -96,6 +96,34 @@ Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni 
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'madico-sl-8-e-ps-sr': {
+    panoramicaBody: `Le pellicole antisolari Madico SL 8 sono consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell irraggiamento solare e protezione dall abbaglio. Il secondo rivestimento fume permette alla pellicola di abbattere i riflessi all interno degli ambienti, in particolar modo sui videoterminali. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre.
+
+Respingendo fino al 94% dell irraggiamento solare offre il massimo in termini di protezione, limitando da una parte l incremento del calore e dall altra riducendo drasticamente l abbaglio. Questo dona agli ambienti un comfort termico e visivo impareggiabile rispetto ai prodotti analoghi presenti sul mercato.
+E una pellicola innovativa, caratterizzata da un effetto estetico speculare colore argento verso l esterno e colore fume all interno.
+Prodotto unico con doppio rivestimento antigraffio brevettato.
+Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
+Pellicola antisolare che conferisce a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.
+Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
+La pellicola antisolare Sunscape Madico SL 8 e realizzata con l avanzato processo di metallizzazione sputtering, che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.`,
+    contextBody: `Questa pellicola e consigliata nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l abbaglio. E adatta a contesti professionali e pubblici in cui servono controllo solare elevato, comfort visivo e continuita operativa degli ambienti.`,
+    technicalSheetUrl: '/assets/tech-sheets/sl-8-e-ps-sr.pdf',
+    caratteristiche: [
+      'Respingono fino al 94% dell irraggiamento solare',
+      'Effetto estetico speculare argento esterno, fume interno',
+      'Consigliato nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l abbaglio',
+      'Prodotto unico con doppio rivestimento antigraffio brevettato',
+      'Doppio strato antigraffio per lunga durata',
+      'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
+    ],
+    faq: [
+      { q: 'A cosa serve Madico SL 8 E PS SR 75 Micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo un elevata efficacia schermante.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola e adatta soprattutto a grandi superfici vetrate e vetrate a tetto, con posa sul lato esterno per massimizzare la resa in condizioni di forte irraggiamento.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni cambiano in base al tipo di vetro. Per una scelta corretta conviene leggere energia respinta, riduzione abbaglio e compatibilita con il vetro esistente, utilizzando dati certificati come quelli dei prodotti MADICO.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

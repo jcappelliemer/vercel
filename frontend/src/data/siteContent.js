@@ -393,8 +393,8 @@ export const prodottiData = [
     caratteristiche: [
       'Respingono fino al 94% dell\'irraggiamento solare',
       'Effetto estetico speculare argento esterno, fum\u00e9 interno',
-      'Riduce notevolmente i costi energetici',
-      'Prodotto unico con doppio rivestimento antigraffio brevettato e doppio strato antigraffio',
+      'Consigliato nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l\'abbaglio',
+      'Prodotto unico con doppio rivestimento antigraffio brevettato',
       'Vetro di sicurezza UNI EN 12600 classe 3B3',
     ],
     specificheTecniche: 'Pellicola antisolare Sunscape realizzata con avanzato processo di metallizzazione sputtering per garantire durata e prestazioni eccellenti.',
@@ -829,5 +829,6 @@ export const prodottiData = [
     isAccessorio: true,
   },
 ];
+
 
 

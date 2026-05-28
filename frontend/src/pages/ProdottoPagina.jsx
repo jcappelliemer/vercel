@@ -447,8 +447,8 @@ const ProdottoPagina = () => {
                 </div>
                 <div className="flex flex-wrap gap-3 lg:justify-end">
                   <Link to="/preventivo" className="btn-primary group !text-white" data-testid="cta-preventivo">
-                    <span>Richiedi preventivo</span>
-                    <ArrowRight size={18} weight="bold" className="group-hover:translate-x-1 transition-transform" />
+                    <span className="!text-white">Richiedi preventivo</span>
+                    <ArrowRight size={18} weight="bold" className="!text-white group-hover:translate-x-1 transition-transform" />
                   </Link>
                   <Link to="/contatti" className="btn-secondary text-[#0A0F1C] border-[#0A0F1C]/20 hover:border-[#EAB308]" data-testid="cta-contatti">
                     Contattaci

@@ -440,8 +440,8 @@ const ProdottoPagina = () => {
               <div className="grid gap-6 lg:grid-cols-[1.15fr_0.85fr] lg:items-center">
                 <div>
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Prossimo passo</span>
-                  <h2 className="mt-2 text-2xl font-medium text-[#0A0F1C]">Passiamo dal dato tecnico al caso reale</h2>
-                  <p className="mt-3 text-[#475569]">
+                  <h2 className="mt-2 text-2xl font-semibold text-[#020617]">Passiamo dal dato tecnico al caso reale</h2>
+                  <p className="mt-3 text-[#1E293B]">
                     Inviaci il tipo di vetro, l esposizione e l obiettivo principale: ricevi una proposta coerente con prestazioni, posa e priorita del progetto.
                   </p>
                 </div>

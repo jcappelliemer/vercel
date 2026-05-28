@@ -60,6 +60,13 @@ Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni 
       'Doppio strato antigraffio per lunga durata',
       'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
     ],
+    faq: [
+      { q: 'A cosa serve Madico SB 20 E PS SR 75 micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma puo essere installata su ogni vetrata nel lato esterno.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente e importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
   },
 };
 

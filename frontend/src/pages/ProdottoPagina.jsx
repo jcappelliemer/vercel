@@ -178,25 +178,24 @@ Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione
     ],
   },
   'madico-rs-40-e-ps-sr': {
-    panoramicaBody: `Le pellicole antisolari riflettenti Madico RS 40 E PS SR sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
+    panoramicaBody: `Le pellicole antisolari riflettenti Madico RS 40 E PS SR sono consigliate dove non si vuole un effetto specchio molto marcato.
 
-Consentono di ridurre l ingresso di calore fino all 89% ottenendo ambienti piu freschi e confortevoli.
+Consentono di ridurre l ingresso di calore fino al 61% ottenendo ambienti piu freschi e confortevoli.
 In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l ammortamento della spesa in pochi anni.
-Riducono l abbaglio offrendo un maggiore comfort visivo.
-Sono ideali per la difesa della privacy consentendo di vedere dall interno verso l esterno ma evitando la visione dall esterno verso l interno, escluso le ore notturne.
+Riducono il calore con basso effetto speculare.
 Garantiscono una maggiore eleganza all estetica dell edificio.
 Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza.
 Prodotto unico, con brevetto esclusivo.
 Struttura rivoluzionaria con doppio strato antigraffio brevettato per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
 Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solaris, sono formate da una base di materiale poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato a densita controllata. Su questo viene posto un ulteriore strato di poliestere con un successivo trattamento antigraffio per proteggerlo da abrasioni e corrosioni. L effetto esterno che si ottiene e speculare di colore argento.`,
-    contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre.`,
+    contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Soluzione adatta quando si cerca riduzione calore e un prodotto elegante a basso impatto estetico.`,
     technicalSheetUrl: '/assets/tech-sheets/rs-40-e-ps-sr.pdf',
     caratteristiche: [
-      'Riduce l ingresso di calore fino all 89%',
+      'Riduce l ingresso di calore fino al 61%',
       'Risparmio energetico con ammortamento in pochi anni',
-      'Riduzione abbaglio e maggiore comfort visivo',
-      'Privacy diurna con visione interna verso esterno',
+      'Riduzione calore con basso effetto speculare',
+      'Prodotto elegante a basso impatto estetico',
       'Prodotto unico con brevetto esclusivo',
       'Doppio strato antigraffio brevettato e certificazione UNI EN 12600 classe 3B3',
     ],

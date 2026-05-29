@@ -49,7 +49,12 @@ const LIVE_MENU = [
           {
             name: 'Spettroselettive',
             href: '/pellicole-spettro-selettive/',
-            children: [],
+            children: [
+              {
+                name: 'SSN 70 TE SR',
+                href: '/pellicole-per-vetri/le-pellicole-antisolari/ssn-70-te-sr/',
+              },
+            ],
           },
           {
             name: 'Riflettenti',

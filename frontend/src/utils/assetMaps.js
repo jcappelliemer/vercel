@@ -28,6 +28,12 @@ export const PRODUCT_VISUALS = {
     label: 'Scheda prodotto MADICO',
     caption: 'Visuale prodotto per una lettura rapida della soluzione prima dei dettagli tecnici.',
   },
+  'madico-rs-30-e-ps-sr': {
+    src: '/assets/imported/products/RS40EPSSR.jpg',
+    alt: 'Madico RS 30 E PS SR riflettente argento medio',
+    label: 'Scheda prodotto MADICO',
+    caption: 'Visuale prodotto per una lettura rapida della soluzione prima dei dettagli tecnici.',
+  },
   'madico-rs-20-ps-sr-4mil': productAsset('madico-rs-20-ps-sr-4mil'),
   'madico-rs-20-ps-sr-8mil': productAsset('madico-rs-20-ps-sr-8-mil'),
   'madico-rs-20-ps-sr-8-mil': productAsset('madico-rs-20-ps-sr-8-mil'),

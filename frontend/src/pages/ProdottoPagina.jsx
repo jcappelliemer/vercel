@@ -204,6 +204,32 @@ Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solari
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'madico-rs-30-e-ps-sr': {
+    panoramicaBody: `Le pellicole antisolari riflettenti Madico RS 30 E PS SR sono pensate come soluzione intermedia tra RS 20 e RS 40.
+
+Consentono di ridurre l ingresso di calore fino al 71% ottenendo ambienti piu freschi e confortevoli.
+In presenza di impianti di condizionamento offrono un buon risparmio energetico e una gestione piu stabile del comfort interno.
+Riduzione abbaglio con effetto speculare moderato, quindi adatta quando si cerca una resa piu equilibrata tra schermatura e luminosita.
+Struttura rivoluzionaria con doppio strato antigraffio brevettato per una lunga durata.
+Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
+Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solaris, sono formate da una base di materiale poliestere trasparente con rivestimento metallico a densita controllata e protezione antigraffio per uso esterno.`,
+    contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Soluzione adatta quando serve un livello intermedio tra effetto specchiante marcato e basso impatto estetico.`,
+    caratteristiche: [
+      'Riduce l ingresso di calore fino al 71%',
+      'Buon equilibrio tra schermatura e luminosita interna',
+      'Riduzione abbaglio con effetto speculare moderato',
+      'Prodotto elegante a basso impatto estetico',
+      'Prodotto unico con brevetto esclusivo',
+      'Doppio strato antigraffio brevettato e certificazione UNI EN 12600 classe 3B3',
+    ],
+    faq: [
+      { q: 'A cosa serve Madico RS 30 E PS SR?', a: 'E pensata per ridurre il calore in ingresso e migliorare il comfort visivo con una riflessione intermedia tra RS 20 e RS 40.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'E consigliata su vetrate esposte a irraggiamento elevato quando si cerca una soluzione equilibrata tra schermatura solare e resa estetica. La posa prevista e sul lato esterno.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {
@@ -382,7 +408,7 @@ const ProductFaqSection = ({ items = [] }) => {
 const ProdottoPagina = () => {
   const { slug } = useParams();
   const { data: allProdotti } = useWPData('prodotti');
-  const prodotto = allProdotti.find(p => p.slug === slug);
+  const prodotto = allProdotti.find(p => p.slug === slug) || prodottiData.find(p => p.slug === slug);
   const [liveSections, setLiveSections] = useState({ utilizzi: '', specifiche: '', caratteristiche: [] });
   const [technicalSheetUrl, setTechnicalSheetUrl] = useState('');
 

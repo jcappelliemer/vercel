@@ -60,6 +60,10 @@ const LIVE_MENU = [
                 href: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/',
               },
               {
+                name: 'Madico RS 30 E PS SR',
+                href: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-30-e-ps-sr/',
+              },
+              {
                 name: 'Madico RS 40 E PS SR',
                 href: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/',
               },

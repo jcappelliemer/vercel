@@ -183,13 +183,10 @@ Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione
 Consentono di ridurre l ingresso di calore fino al 61% ottenendo ambienti piu freschi e confortevoli.
 In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l ammortamento della spesa in pochi anni.
 Riducono il calore con basso effetto speculare.
-Garantiscono una maggiore eleganza all estetica dell edificio.
-Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza.
-Prodotto unico, con brevetto esclusivo.
 Struttura rivoluzionaria con doppio strato antigraffio brevettato per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
 Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solaris, sono formate da una base di materiale poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato a densita controllata. Su questo viene posto un ulteriore strato di poliestere con un successivo trattamento antigraffio per proteggerlo da abrasioni e corrosioni. L effetto esterno che si ottiene e speculare di colore argento.`,
-    contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Soluzione adatta quando si cerca riduzione calore e un prodotto elegante a basso impatto estetico.`,
+    contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Soluzione adatta quando si cerca riduzione calore e un prodotto elegante a basso impatto estetico. Garantiscono una maggiore eleganza all estetica dell edificio. Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza. Prodotto unico, con brevetto esclusivo.`,
     technicalSheetUrl: '/assets/tech-sheets/rs-40-e-ps-sr.pdf',
     caratteristiche: [
       'Riduce l ingresso di calore fino al 61%',
@@ -200,9 +197,9 @@ Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solari
       'Doppio strato antigraffio brevettato e certificazione UNI EN 12600 classe 3B3',
     ],
     faq: [
-      { q: 'A cosa serve Madico RS 40 E PS SR?', a: 'E pensata per il controllo solare e comfort interno, riduce calore e abbaglio sulle superfici vetrate mantenendo un estetica moderna e riflettente.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola e consigliata su vetrate con forte irraggiamento e surriscaldamento. Per questa scheda i dati principali sono riferiti a vetro singolo 6 mm con posa esterna.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Conviene confrontare energia respinta, riduzione abbaglio, riflessione luminosa e compatibilita con il vetro esistente.' },
+      { q: 'A cosa serve Madico RS 40 E PS SR?', a: 'E pensata per ridurre il calore in ingresso con un effetto specchiante piu contenuto rispetto alle versioni piu riflettenti, mantenendo comfort interno e buona resa estetica.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'E consigliata su vetrate esposte a forte irraggiamento dove si vuole contenere il surriscaldamento senza un effetto specchio molto marcato. La posa prevista e sul lato esterno.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
       { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
@@ -601,10 +598,6 @@ const ProdottoPagina = () => {
           <section className="py-16 section-light" data-testid="dati-tecnici-section">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
               <h2 className="text-xl sm:text-2xl font-medium text-[#0A0F1C] mb-2">Prestazioni tecniche</h2>
-              {prodotto.tipoVetro && (
-                <p className="text-[#64748B] text-sm mb-10">Testato su: {prodotto.tipoVetro}</p>
-              )}
-
               {/* Quick Stats Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
                 {dt.luceVisibile?.trasmessa && <SpecCard light icon={Eye} label="VLT" value={dt.luceVisibile.trasmessa} />}

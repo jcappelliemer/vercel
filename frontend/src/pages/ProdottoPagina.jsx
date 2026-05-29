@@ -178,7 +178,35 @@ Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione
     ],
   },
   'madico-rs-40-e-ps-sr': {
+    panoramicaBody: `Le pellicole antisolari riflettenti Madico RS 40 E PS SR sono consigliate per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
+
+Consentono di ridurre l ingresso di calore fino all 89% ottenendo ambienti piu freschi e confortevoli.
+In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l ammortamento della spesa in pochi anni.
+Riducono l abbaglio offrendo un maggiore comfort visivo.
+Sono ideali per la difesa della privacy consentendo di vedere dall interno verso l esterno ma evitando la visione dall esterno verso l interno, escluso le ore notturne.
+Garantiscono una maggiore eleganza all estetica dell edificio.
+Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza.
+Prodotto unico, con brevetto esclusivo.
+Struttura rivoluzionaria con doppio strato antigraffio brevettato per una lunga durata.
+Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
+Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solaris, sono formate da una base di materiale poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato a densita controllata. Su questo viene posto un ulteriore strato di poliestere con un successivo trattamento antigraffio per proteggerlo da abrasioni e corrosioni. L effetto esterno che si ottiene e speculare di colore argento.`,
+    contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre.`,
     technicalSheetUrl: '/assets/tech-sheets/rs-40-e-ps-sr.pdf',
+    caratteristiche: [
+      'Riduce l ingresso di calore fino all 89%',
+      'Risparmio energetico con ammortamento in pochi anni',
+      'Riduzione abbaglio e maggiore comfort visivo',
+      'Privacy diurna con visione interna verso esterno',
+      'Prodotto unico con brevetto esclusivo',
+      'Doppio strato antigraffio brevettato e certificazione UNI EN 12600 classe 3B3',
+    ],
+    faq: [
+      { q: 'A cosa serve Madico RS 40 E PS SR?', a: 'E pensata per il controllo solare e comfort interno, riduce calore e abbaglio sulle superfici vetrate mantenendo un estetica moderna e riflettente.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola e consigliata su vetrate con forte irraggiamento e surriscaldamento. Per questa scheda i dati principali sono riferiti a vetro singolo 6 mm con posa esterna.' },
+      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Conviene confrontare energia respinta, riduzione abbaglio, riflessione luminosa e compatibilita con il vetro esistente.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
   },
 };
 

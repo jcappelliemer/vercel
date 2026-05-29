@@ -22,7 +22,12 @@ export const PRODUCT_VISUALS = {
   'ssn-50-te-sr': productAsset('tecnosolarssn50tesr'),
   'ssn-70-te-sr': productAsset('tecnosolarssn50tesr'),
   'madico-rs-20-e-ps-sr': productAsset('madico-rs-20-e-ps-sr'),
-  'madico-rs-40-e-ps-sr': productAsset('madico-rs-40-e-ps-sr'),
+  'madico-rs-40-e-ps-sr': {
+    src: '/assets/imported/products/RS40EPSSR.jpg',
+    alt: 'Madico RS 40 E PS SR riflettente argento chiaro',
+    label: 'Scheda prodotto MADICO',
+    caption: 'Visuale prodotto per una lettura rapida della soluzione prima dei dettagli tecnici.',
+  },
   'madico-rs-20-ps-sr-4mil': productAsset('madico-rs-20-ps-sr-4mil'),
   'madico-rs-20-ps-sr-8mil': productAsset('madico-rs-20-ps-sr-8-mil'),
   'madico-rs-20-ps-sr-8-mil': productAsset('madico-rs-20-ps-sr-8-mil'),

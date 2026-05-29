@@ -177,6 +177,9 @@ Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'madico-rs-40-e-ps-sr': {
+    technicalSheetUrl: '/assets/tech-sheets/rs-40-e-ps-sr.pdf',
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

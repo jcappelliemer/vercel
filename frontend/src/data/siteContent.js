@@ -465,7 +465,7 @@ export const prodottiData = [
   },
   {
     slug: 'madico-rs-40-e-ps-sr',
-    nome: 'Madico RS 40 E PS SR 75 Micron',
+    nome: 'Madico RS 40 E PS SR',
     categoria: 'Antisolari',
     sottocategoria: 'Riflettenti — Serie RS',
     applicazione: 'Esterno',
@@ -483,7 +483,7 @@ export const prodottiData = [
     tipoVetro: 'Vetro singolo 6 mm',
     datiTecnici: {
       energiaSolare: { trasmessa: '28%', riflessa: '36%', assorbita: '36%' },
-      luceVisibile: { trasmessa: '40%', riflessaEsterno: '63%', riduzioneAbbaglio: '54%' },
+      luceVisibile: { trasmessa: '40%', riflessaEsterno: '31%', riflessaInterno: '31%', riduzioneAbbaglio: '54%' },
       infrarossiRespinti: '78%',
       uvTrasmessi: '1%',
       energiaRespinta: '61%',

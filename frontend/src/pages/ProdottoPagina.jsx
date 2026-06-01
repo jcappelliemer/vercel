@@ -254,6 +254,30 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'madico-rs-20-ps-sr-8mil': {
+    panoramicaBody: `La pellicola certificata antisolare di sicurezza Madico RS 20 PS SR 8 MIL e testata e certificata in conformita alla Norma europea EN 12600, classe 1B1 su lastra singola da 2, 3, 4 e 6 mm. Le proprieta riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
+
+Prodotta con processi produttivi tecnologicamente innovativi, utilizzando collanti e poliestere di alta qualita, si colloca ai massimi livelli per affidabilita. La struttura nasce da una base di poliestere trasparente su cui viene applicato un rivestimento estremamente sottile di alluminio vaporizzato. Un ulteriore strato di poliestere con trattamento antigraffio protegge il film da abrasioni e corrosioni e conferisce l effetto specchiato argento.
+
+Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformita al Testo Unico D.Lgs. 81/2008.`,
+    contextBody: `Consigliata per uffici, scuole, banche, industrie, ospedali, servizi pubblici e aree di passaggio dove serve un livello di sicurezza superiore insieme al controllo solare. Offre un ambiente piu sicuro, fresco e confortevole: riduce il calore, limita l abbaglio, scherma oltre il 99% dei raggi UV e mantiene una visuale cristallina senza distorsioni ottiche.`,
+    caratteristiche: [
+      'Certificata UNI EN 12600 classe 1B1 su vetro singolo da 2, 3, 4 e 6 mm',
+      'Maggiore spessore con protezione antinfortunistica rinforzata',
+      'Riduzione del calore e miglior comfort interno',
+      'Riduzione abbaglio su superfici vetrate esposte',
+      'Schermatura oltre il 99% dei raggi UV',
+      'Supporto alla conformita D.Lgs 81/2008',
+    ],
+    technicalSheetUrl: '/assets/tech-sheets/rs-20-e-ps-sr-8-mil.pdf',
+    faq: [
+      { q: 'A cosa serve Madico RS 20 PS SR 8 MIL?', a: 'Serve a combinare controllo solare e sicurezza rinforzata del vetro: riduce calore e abbaglio e offre una trattenuta frammenti piu elevata rispetto agli spessori inferiori.' },
+      { q: 'Qual e il vantaggio principale rispetto alla 4 MIL?', a: 'La 8 MIL raggiunge una classe di sicurezza superiore (1B1), con maggiore capacita di contenimento in caso di rottura del vetro.' },
+      { q: 'Su quali vetri e certificata?', a: 'La certificazione riportata e su lastra singola da 2, 3, 4 e 6 mm. La compatibilita finale va sempre verificata sul vetro reale in opera.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

@@ -231,14 +231,12 @@ Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solari
     ],
   },
   'madico-rs-20-ps-sr-4mil': {
-    panoramicaBody: `La pellicola antisolare di sicurezza Madico RS 20 PS SR 4 MIL e progettata per unire controllo solare e protezione del vetro in un unico sistema.
+    panoramicaBody: `La pellicola certificata antisolare di sicurezza Madico RS 20 PS SR 4 MIL e testata e certificata in conformita alla Norma europea EN 12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Le proprieta riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
 
-Riduce in modo significativo il calore in ingresso e limita l abbaglio su superfici molto esposte.
-La struttura multistrato 4 MIL aiuta a trattenere i frammenti in caso di rottura accidentale o urto, migliorando la sicurezza delle persone.
-Il film e certificato secondo UNI EN 12600 classe 2B2 su vetri singoli di riferimento.
-La finitura riflettente aiuta anche la privacy diurna e rende la facciata piu ordinata sul piano estetico.
-E una soluzione indicata quando l obiettivo non e solo comfort termico, ma anche riduzione del rischio legato alla rottura del vetro.`,
-    contextBody: `Consigliata per uffici, scuole, banche, ingressi pubblici, aree di passaggio e ambienti professionali con vetri esposti a sole e urti accidentali. E adatta quando serve una soluzione unica per comfort, controllo solare e sicurezza normativa.`,
+Prodotta con processi produttivi tecnologicamente innovativi, utilizzando collanti e poliestere di alta qualita, si colloca ai massimi livelli per affidabilita. La struttura nasce da una base di poliestere trasparente su cui viene applicato un rivestimento estremamente sottile di alluminio vaporizzato. Un ulteriore strato di poliestere con trattamento antigraffio protegge il film da abrasioni e corrosioni e conferisce l effetto specchiato argento.
+
+Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformita al Testo Unico D.Lgs. 81/2008.`,
+    contextBody: `Consigliata per uffici, scuole, banche, industrie, ospedali, servizi pubblici e aree di passaggio dove serve protezione antinfortunistica insieme a controllo solare. Offre un ambiente piu sicuro, fresco e confortevole: riduce il calore, limita l abbaglio, scherma oltre il 99% dei raggi UV e mantiene una visuale cristallina senza distorsioni ottiche.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 2B2 su vetro singolo',
       'Riduzione del calore e miglior comfort interno',
@@ -247,6 +245,7 @@ E una soluzione indicata quando l obiettivo non e solo comfort termico, ma anche
       'Schermatura oltre il 99% dei raggi UV',
       'Supporto alla conformita D.Lgs 81/2008',
     ],
+    technicalSheetUrl: 'https://www.solarisfilms.it/wp-content/uploads/2025/06/RS20PSSR-4mil.pdf',
     faq: [
       { q: 'A cosa serve Madico RS 20 PS SR 4 MIL?', a: 'Serve a combinare controllo solare e sicurezza del vetro: riduce calore e abbaglio, e allo stesso tempo trattiene i frammenti in caso di rottura.' },
       { q: 'Quando conviene scegliere la versione 4 MIL?', a: 'Quando serve un buon livello di protezione antinfortunistica certificata con una soluzione piu leggera rispetto agli spessori superiori, mantenendo equilibrio tra resa tecnica e impatto estetico.' },
@@ -677,6 +676,52 @@ const ProdottoPagina = () => {
                   {dt.luceVisibile.riduzioneAbbaglio && <EnergyBar light label="Riduzione Abbaglio" value={dt.luceVisibile.riduzioneAbbaglio} color={UNIFIED_DATA_COLOR} />}
                 </div>
               </div>
+
+              {(dt.coefficienteSchermatura || dt.fattoreSolareG) && (
+                <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 mb-5">
+                  <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Indicatori aggiuntivi</h3>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {dt.coefficienteSchermatura && (
+                      <div className="rounded-lg border border-[#E2E8F0] p-4">
+                        <p className="text-xs text-[#64748B] uppercase tracking-wider">Coefficiente schermatura</p>
+                        <p className="text-2xl font-semibold text-[#0A0F1C] mt-1">{dt.coefficienteSchermatura}</p>
+                      </div>
+                    )}
+                    {dt.fattoreSolareG && (
+                      <div className="rounded-lg border border-[#E2E8F0] p-4">
+                        <p className="text-xs text-[#64748B] uppercase tracking-wider">Fattore solare g</p>
+                        <p className="text-2xl font-semibold text-[#0A0F1C] mt-1">{dt.fattoreSolareG}</p>
+                      </div>
+                    )}
+                  </div>
+                </div>
+              )}
+
+              {prodotto.proprietaFisiche && (
+                <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 mb-5">
+                  <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Proprieta fisiche</h3>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {prodotto.proprietaFisiche.spessore && (
+                      <div className="rounded-lg border border-[#E2E8F0] p-4"><p className="text-xs text-[#64748B]">Spessore</p><p className="text-lg font-semibold text-[#0A0F1C]">{prodotto.proprietaFisiche.spessore}</p></div>
+                    )}
+                    {prodotto.proprietaFisiche.resistenzaTrazione && (
+                      <div className="rounded-lg border border-[#E2E8F0] p-4"><p className="text-xs text-[#64748B]">Res. Trazione</p><p className="text-lg font-semibold text-[#0A0F1C]">{prodotto.proprietaFisiche.resistenzaTrazione}</p></div>
+                    )}
+                    {prodotto.proprietaFisiche.resistenzaRottura && (
+                      <div className="rounded-lg border border-[#E2E8F0] p-4"><p className="text-xs text-[#64748B]">Res. Rottura</p><p className="text-lg font-semibold text-[#0A0F1C]">{prodotto.proprietaFisiche.resistenzaRottura}</p></div>
+                    )}
+                    {prodotto.proprietaFisiche.forzaAdesiva && (
+                      <div className="rounded-lg border border-[#E2E8F0] p-4"><p className="text-xs text-[#64748B]">Forza adesiva</p><p className="text-lg font-semibold text-[#0A0F1C]">{prodotto.proprietaFisiche.forzaAdesiva}</p></div>
+                    )}
+                    {prodotto.proprietaFisiche.tipoAdesivo && (
+                      <div className="rounded-lg border border-[#E2E8F0] p-4"><p className="text-xs text-[#64748B]">Tipo adesivo</p><p className="text-lg font-semibold text-[#0A0F1C]">{prodotto.proprietaFisiche.tipoAdesivo}</p></div>
+                    )}
+                    {prodotto.proprietaFisiche.struttura && (
+                      <div className="rounded-lg border border-[#E2E8F0] p-4"><p className="text-xs text-[#64748B]">Struttura</p><p className="text-lg font-semibold text-[#0A0F1C]">{prodotto.proprietaFisiche.struttura}</p></div>
+                    )}
+                  </div>
+                </div>
+              )}
 
               {/* Totale Energia Respinta highlight */}
               {dt.energiaRespinta && (

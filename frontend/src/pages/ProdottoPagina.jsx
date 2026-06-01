@@ -470,6 +470,30 @@ La scelta tra 800 e 1500 non dipende dal nome prodotto ma dallo scenario reale e
       { q: 'Che obiettivo ha questa soluzione?', a: 'Proteggere persone e operativita, riducendo l impatto di eventi severi sulle superfici vetrate esposte.' },
     ],
   },
+  'madico-gullwing': {
+    panoramicaBody: `GullWing e un sistema di ancoraggio progettato per lavorare insieme alle pellicole SafetyShield nei progetti dove la sicurezza del vetro richiede una risposta di livello superiore.
+
+In caso di rottura, il sistema aiuta ad assorbire e distribuire il carico, riducendo la probabilita che frammenti e detriti vengano proiettati all interno. La logica e chiara: non solo pellicola, ma sistema completo vetro + film + bordo.
+
+Con SafetyShield 800 e ancoraggio applicato sui 4 lati, il sistema raggiunge livello 2 GSA e UK PSDB (test con carica esplosiva 39 kPa e 322 kPa ms).`,
+    contextBody: `E consigliato quando la priorita e la protezione delle persone in scenari critici e quando la semplice applicazione del film non e sufficiente a garantire il livello di contenimento richiesto. Disponibile in tre profili per diversi infissi e in tre colori standard: nero, grigio e bianco.`,
+    caratteristiche: [
+      'Sistema di ancoraggio per configurazioni SafetyShield',
+      'Riduce il rischio di proiezione interna di frammenti',
+      'Disponibile in 3 profili per diversi tipi di infisso',
+      'Colori standard: nero, grigio, bianco',
+      'Compatibile con SafetyShield 800 e 1500',
+      'Approccio a sistema: vetro + pellicola + ancoraggio',
+    ],
+    technicalSheetUrl: '/assets/tech-sheets/gullwing.pdf',
+    faq: [
+      { q: 'GullWing e una pellicola?', a: 'No. E un sistema di ancoraggio che completa la prestazione delle pellicole SafetyShield.' },
+      { q: 'Quando conviene aggiungere GullWing?', a: 'Quando il livello di rischio richiede maggiore contenimento e un comportamento del vetro piu controllato in caso di rottura.' },
+      { q: 'Con quale pellicola lavora?', a: 'E progettato per lavorare con la linea SafetyShield, in particolare nelle configurazioni dove serve protezione avanzata.' },
+      { q: 'Ci sono varianti di installazione?', a: 'Si. Esistono tre profili per adattarsi ai diversi tipi di infisso e condizioni di bordo.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dallo scenario reale, si verifica vetro e serramento, poi si definisce la combinazione pellicola + ancoraggio piu adatta.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

@@ -279,12 +279,12 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
     ],
   },
   'madico-rs-40-ps-sr-4mil': {
-    panoramicaBody: `La pellicola certificata antisolare di sicurezza Madico RS 40 PS SR 4 MIL e testata e certificata in conformita alla Norma europea EN 12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. E la versione piu chiara della famiglia RS rispetto alla RS 20, quindi adatta quando serve piu luce naturale negli ambienti.
+    panoramicaBody: `La pellicola antisolare di sicurezza Madico RS 40 PS SR 4 Mil e testata e certificata in conformita alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Le proprieta riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
 
-Prodotta con processi tecnologicamente innovativi, usa una base in poliestere trasparente con rivestimento estremamente sottile di alluminio vaporizzato. Il trattamento antigraffio protegge da abrasioni e corrosioni e mantiene una resa estetica ordinata nel tempo.
+Prodotta con processi produttivi tecnologicamente innovativi utilizzando i migliori collanti ed il miglior poliestere, si colloca al primo posto per qualita ed affidabilita. Le pellicole antisolari riflettenti Madico RS 40 PS SR 4 Mil sono formate da una base di poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato. Viene aggiunto un ulteriore strato di poliestere con un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Questo conferisce l aspetto specchiato di colore argento.
 
-Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformita al Testo Unico D.Lgs. 81/2008.`,
-    contextBody: `Consigliata per uffici, scuole, banche e spazi operativi con vetrate esposte, quando si vuole combinare sicurezza antinfortunistica, riduzione del calore e maggiore luminosita rispetto ai prodotti RS 20.`,
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Riflette il calore solare riducendo l utilizzo dei climatizzatori e i costi estivi. Rende l ambiente piu sicuro, fresco e confortevole, riduce l abbaglio, scherma oltre il 99% dei raggi UV e garantisce una visuale cristallina senza distorsioni ottiche. E la versione piu chiara della serie RS rispetto alla RS 20.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 2B2 su vetro singolo',
       'Versione piu chiara della serie RS rispetto alla RS 20',
@@ -293,7 +293,7 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
       'Schermatura oltre il 99% dei raggi UV',
       'Supporto alla conformita D.Lgs 81/2008',
     ],
-    technicalSheetUrl: 'https://www.solarisfilms.it/wp-content/uploads/2025/06/RS40PSSR-4-MIL.pdf',
+    technicalSheetUrl: '/assets/tech-sheets/rs-40-ps-sr-4-mil.pdf',
     faq: [
       { q: 'A cosa serve Madico RS 40 PS SR 4 MIL?', a: 'Serve a combinare sicurezza e controllo solare mantenendo piu luce naturale rispetto alla versione RS 20.' },
       { q: 'Qual e la differenza principale rispetto alla RS 20 PS SR 4 MIL?', a: 'La RS 40 PS SR 4 MIL e la variante piu chiara: riduce il calore ma con trasmissione luminosa superiore.' },
@@ -303,25 +303,25 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
     ],
   },
   'madico-rs-40-ps-sr-8mil': {
-    panoramicaBody: `La pellicola certificata antisolare di sicurezza Madico RS 40 PS SR 8 MIL e testata e certificata in conformita alla Norma europea EN 12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. E la versione a maggior spessore della RS 40, mantenendo il posizionamento piu chiaro rispetto alle soluzioni RS 20.
+    panoramicaBody: `La pellicola antisolare di sicurezza Madico RS 40 PS SR 8 Mil e testata e certificata in conformita alla Norma europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Le proprieta riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
 
-Prodotta con processi tecnologicamente innovativi, usa una base in poliestere trasparente con rivestimento estremamente sottile di alluminio vaporizzato. Il trattamento antigraffio protegge da abrasioni e corrosioni e mantiene stabilita nel tempo.
+Prodotta con processi produttivi tecnologicamente innovativi utilizzando i migliori collanti ed il miglior poliestere, si colloca al primo posto per qualita ed affidabilita. Le pellicole antisolari riflettenti Madico RS 40 PS SR 8 Mil sono formate da una base di poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato. Viene aggiunto un ulteriore strato di poliestere con un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Questo conferisce l aspetto specchiato di colore argento.
 
-Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformita al Testo Unico D.Lgs. 81/2008.`,
-    contextBody: `Consigliata per ambienti professionali dove occorre una protezione rinforzata con resa luminosa piu aperta rispetto alla RS 20, mantenendo comfort termico e riduzione dell abbaglio.`,
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Riflette il calore solare riducendo l utilizzo dei climatizzatori e i costi estivi. Rende l ambiente piu sicuro, fresco e confortevole, riduce l abbaglio, scherma oltre il 99% dei raggi UV e garantisce una visuale cristallina senza distorsioni ottiche. E la versione piu chiara della serie RS rispetto alla RS 20.`,
     caratteristiche: [
-      'Certificata UNI EN 12600 classe 2B2 su vetro singolo',
+      'Certificata UNI EN 12600 classe 1B1 su vetro singolo',
       'Versione piu chiara rispetto alla RS 20',
       'Spessore 8 MIL per protezione rinforzata',
       'Riduzione del calore e miglior comfort interno',
       'Schermatura oltre il 99% dei raggi UV',
       'Supporto alla conformita D.Lgs 81/2008',
     ],
-    technicalSheetUrl: 'https://www.solarisfilms.it/wp-content/uploads/2025/06/RS40PSSR-8-MIL.pdf',
+    technicalSheetUrl: '/assets/tech-sheets/rs-40-ps-sr-8-mil.pdf',
     faq: [
       { q: 'A cosa serve Madico RS 40 PS SR 8 MIL?', a: 'Serve a combinare sicurezza rinforzata e controllo solare con una resa piu chiara rispetto alla famiglia RS 20.' },
       { q: 'Qual e la differenza principale rispetto alla RS 20 PS SR 8 MIL?', a: 'La RS 40 PS SR 8 MIL mantiene un orientamento piu luminoso, quindi e utile quando vuoi piu luce interna senza rinunciare alla protezione.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione riportata e EN 12600 classe 2B2 su lastra singola da 3, 4 e 6 mm.' },
+      { q: 'Su quali vetri e certificata?', a: 'La certificazione riportata e EN 12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
       { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],

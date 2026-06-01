@@ -245,7 +245,7 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
       'Schermatura oltre il 99% dei raggi UV',
       'Supporto alla conformita D.Lgs 81/2008',
     ],
-    technicalSheetUrl: 'https://www.solarisfilms.it/wp-content/uploads/2025/06/RS20PSSR-4mil.pdf',
+    technicalSheetUrl: '/assets/tech-sheets/rs-20-e-ps-sr-4-mil.pdf',
     faq: [
       { q: 'A cosa serve Madico RS 20 PS SR 4 MIL?', a: 'Serve a combinare controllo solare e sicurezza del vetro: riduce calore e abbaglio, e allo stesso tempo trattiene i frammenti in caso di rottura.' },
       { q: 'Quando conviene scegliere la versione 4 MIL?', a: 'Quando serve un buon livello di protezione antinfortunistica certificata con una soluzione piu leggera rispetto agli spessori superiori, mantenendo equilibrio tra resa tecnica e impatto estetico.' },

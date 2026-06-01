@@ -327,25 +327,97 @@ Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui 
     ],
   },
   'madico-cl-400-ps-sr': {
-    panoramicaBody: `La pellicola di sicurezza Madico CL 400 PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. E una soluzione neutra e trasparente pensata per aumentare la sicurezza del vetro senza alterarne l aspetto.
+    panoramicaBody: `La pellicola di sicurezza Madico CL 400 PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 2B2 su lastra singola da 2, 3, 4 e 6 mm. E la versione da interno della famiglia CL 400, neutra e trasparente, pensata per aumentare la sicurezza del vetro senza alterarne l aspetto.
 
 Prodotta con processi tecnologicamente innovativi, con collanti e poliestere di alta qualita, offre affidabilita nel tempo. La struttura e singolo strato con adesivo acrilico sensibile alla pressione.
 
 Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
     contextBody: `Ideale per uffici, scuole, banche, aree comuni e ambienti professionali dove serve protezione antinfortunistica con trasparenza quasi totale. L intervento e rapido, non invasivo e non richiede la sostituzione degli infissi.`,
     caratteristiche: [
-      'Certificata UNI EN 12600 classe 2B2 su vetro singolo da 3, 4 e 6 mm',
+      'Certificata UNI EN 12600 classe 2B2 su vetro singolo da 2, 3, 4 e 6 mm',
       'Protezione antinfortunistica in caso di rottura del vetro',
       'Trasparenza elevata con resa visiva neutra',
       'Applicazione rapida senza modificare gli infissi',
       'Schermatura oltre il 99% dei raggi UV',
       'Supporto alla conformita D.Lgs 81/2008',
     ],
-    technicalSheetUrl: 'https://www.solarisfilms.it/wp-content/uploads/2025/06/CL400PSSR.pdf',
+    technicalSheetUrl: '/assets/tech-sheets/cl-400-ps-sr.pdf',
     faq: [
       { q: 'A cosa serve Madico CL 400 PS SR?', a: 'Serve a mettere in sicurezza il vetro mantenendo una resa neutra e trasparente, riducendo il rischio di lesioni in caso di rottura.' },
       { q: 'Quando conviene scegliere una pellicola neutra CL?', a: 'Quando la priorita e la sicurezza del vetro ma si vuole preservare luminosita e aspetto originale della vetrata.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 2B2 su lastra singola da 3, 4 e 6 mm.' },
+      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 2B2 su lastra singola da 2, 3, 4 e 6 mm.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
+  'madico-cl-400-e-ps-sr': {
+    panoramicaBody: `La pellicola di sicurezza Madico CL 400 E PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 2B2 su lastra singola da 2, 3, 4 e 6 mm. E la versione da esterno della CL 400. Esiste anche la versione da interno CL 400 PS SR.
+
+Prodotta con processi produttivi tecnologicamente innovativi con l utilizzo dei migliori collanti e del miglior poliestere, si colloca al primo posto per qualita e affidabilita.
+
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Puo essere applicata su vetri esistenti con un operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere l attivita. Mantiene trasparenza elevata con visuale cristallina e intervento praticamente invisibile.`,
+    caratteristiche: [
+      'Certificata UNI EN 12600 classe 2B2 su vetro singolo da 2, 3, 4 e 6 mm',
+      'Versione da esterno della serie CL 400',
+      'Protezione antinfortunistica in caso di rottura',
+      'Applicazione rapida su vetri esistenti',
+      'Trasparenza elevata senza distorsioni ottiche',
+      'Supporto alla conformita D.Lgs 81/2008',
+    ],
+    technicalSheetUrl: '/assets/tech-sheets/cl-400-e-ps-sr.pdf',
+    faq: [
+      { q: 'A cosa serve Madico CL 400 E PS SR?', a: 'Serve a mettere in sicurezza il vetro con applicazione esterna, mantenendo trasparenza e continuita estetica della facciata.' },
+      { q: 'Qual e la differenza rispetto alla CL 400 PS SR?', a: 'La CL 400 E PS SR e la versione per esterno; la CL 400 PS SR e la versione per interno.' },
+      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 2B2 su lastra singola da 2, 3, 4 e 6 mm.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
+  'madico-cl-700-ps-sr': {
+    panoramicaBody: `La pellicola certificata di sicurezza Madico CL 700 PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da esterno CL 700 E PS SR.
+
+Prodotta con processi produttivi tecnologicamente innovativi con l utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualita ed affidabilita.
+
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Puo essere applicata su vetri gia esistenti con un operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere la normale attivita lavorativa. Mantiene una visuale cristallina, con assenza di distorsioni ottiche e intervento praticamente invisibile.`,
+    caratteristiche: [
+      'Certificata UNI EN 12600 classe 1B1 su vetro singolo da 3, 4 e 6 mm',
+      'Versione per applicazione interna',
+      'Protezione antinfortunistica in caso di rottura del vetro',
+      'Applicazione rapida su vetri esistenti',
+      'Trasparenza elevata senza distorsioni ottiche',
+      'Supporto alla conformita D.Lgs 81/2008',
+    ],
+    technicalSheetUrl: '/assets/tech-sheets/cl-700-ps-sr.pdf',
+    faq: [
+      { q: 'A cosa serve Madico CL 700 PS SR?', a: 'Serve a mettere in sicurezza il vetro con una classe di protezione elevata, mantenendo una resa neutra e trasparente.' },
+      { q: 'Qual e la differenza rispetto alla CL 700 E PS SR?', a: 'La CL 700 PS SR e la versione per interno; la CL 700 E PS SR e la versione per esterno.' },
+      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
+  'madico-cl-700-e-ps-sr': {
+    panoramicaBody: `La pellicola certificata di sicurezza Madico CL 700 E PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da interno CL 700 PS SR.
+
+Prodotta con processi produttivi tecnologicamente innovativi con l utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualita ed affidabilita.
+
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Puo essere applicata su vetri gia esistenti con un operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere la normale attivita lavorativa. Mantiene una visuale cristallina, con assenza di distorsioni ottiche e intervento praticamente invisibile.`,
+    caratteristiche: [
+      'Certificata UNI EN 12600 classe 1B1 su vetro singolo da 3, 4 e 6 mm',
+      'Versione per applicazione esterna',
+      'Protezione antinfortunistica in caso di rottura del vetro',
+      'Applicazione rapida su vetri esistenti',
+      'Trasparenza elevata senza distorsioni ottiche',
+      'Supporto alla conformita D.Lgs 81/2008',
+    ],
+    technicalSheetUrl: '/assets/tech-sheets/cl-700-e-ps-sr.pdf',
+    faq: [
+      { q: 'A cosa serve Madico CL 700 E PS SR?', a: 'Serve a mettere in sicurezza il vetro con applicazione esterna, mantenendo trasparenza e continuita estetica della facciata.' },
+      { q: 'Qual e la differenza rispetto alla CL 700 PS SR?', a: 'La CL 700 E PS SR e la versione per esterno; la CL 700 PS SR e la versione per interno.' },
+      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
       { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],

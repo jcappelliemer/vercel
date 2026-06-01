@@ -230,6 +230,31 @@ Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solari
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'madico-rs-20-ps-sr-4mil': {
+    panoramicaBody: `La pellicola antisolare di sicurezza Madico RS 20 PS SR 4 MIL e progettata per unire controllo solare e protezione del vetro in un unico sistema.
+
+Riduce in modo significativo il calore in ingresso e limita l abbaglio su superfici molto esposte.
+La struttura multistrato 4 MIL aiuta a trattenere i frammenti in caso di rottura accidentale o urto, migliorando la sicurezza delle persone.
+Il film e certificato secondo UNI EN 12600 classe 2B2 su vetri singoli di riferimento.
+La finitura riflettente aiuta anche la privacy diurna e rende la facciata piu ordinata sul piano estetico.
+E una soluzione indicata quando l obiettivo non e solo comfort termico, ma anche riduzione del rischio legato alla rottura del vetro.`,
+    contextBody: `Consigliata per uffici, scuole, banche, ingressi pubblici, aree di passaggio e ambienti professionali con vetri esposti a sole e urti accidentali. E adatta quando serve una soluzione unica per comfort, controllo solare e sicurezza normativa.`,
+    caratteristiche: [
+      'Certificata UNI EN 12600 classe 2B2 su vetro singolo',
+      'Riduzione del calore e miglior comfort interno',
+      'Riduzione abbaglio su superfici vetrate esposte',
+      'Contenimento frammenti in caso di rottura del vetro',
+      'Schermatura oltre il 99% dei raggi UV',
+      'Supporto alla conformita D.Lgs 81/2008',
+    ],
+    faq: [
+      { q: 'A cosa serve Madico RS 20 PS SR 4 MIL?', a: 'Serve a combinare controllo solare e sicurezza del vetro: riduce calore e abbaglio, e allo stesso tempo trattiene i frammenti in caso di rottura.' },
+      { q: 'Quando conviene scegliere la versione 4 MIL?', a: 'Quando serve un buon livello di protezione antinfortunistica certificata con una soluzione piu leggera rispetto agli spessori superiori, mantenendo equilibrio tra resa tecnica e impatto estetico.' },
+      { q: 'Su quali vetri va verificata prima della posa?', a: 'Va verificata sul vetro reale in opera. In questa scheda il riferimento principale e vetro singolo, ma la compatibilita finale dipende da composizione del serramento, esposizione e dimensioni della lastra.' },
+      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

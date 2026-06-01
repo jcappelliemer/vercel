@@ -437,6 +437,14 @@ SafetyShield 800 va scelta partendo dallo scenario reale, dal tipo di vetro e da
       'Supporto alla continuita operativa degli ambienti',
       'Garanzia 10 anni (con limiti e condizioni di linea)',
     ],
+    technicalMetrics: [
+      { label: 'Classe antiesplosione', value: 'ISO 16933 EXV 33C' },
+      { label: 'Riferimenti test', value: 'EN 13123 / EN 13124 / US-GSA' },
+      { label: 'Spessore film', value: '200 micron' },
+      { label: 'Resistenza rottura', value: '42 N/mm²' },
+      { label: 'Resistenza trazione', value: 'MD/TD 220 N/mm²' },
+      { label: 'Forza adesiva', value: '1.05 N/mm' },
+    ],
     technicalSheetUrl: '/assets/tech-sheets/safety-shield-800.pdf',
     faq: [
       { q: 'SafetyShield 800 e una normale pellicola di sicurezza?', a: 'No. E una soluzione speciale per scenari piu severi, da configurare come sistema completo e non come semplice film applicato al vetro.' },
@@ -461,6 +469,14 @@ La scelta tra 800 e 1500 non dipende dal nome prodotto ma dallo scenario reale e
       'Verifica tecnica preventiva su vetro e telaio',
       'Garanzia 10 anni (con limiti e condizioni di linea)',
     ],
+    technicalMetrics: [
+      { label: 'Prestazione linea', value: 'Versione più prestazionale' },
+      { label: 'Riferimenti test', value: 'EN 356 P2A/P3A / GSA' },
+      { label: 'Spessore film', value: '375 micron' },
+      { label: 'Resistenza rottura', value: '78.8 N/mm²' },
+      { label: 'Resistenza trazione', value: 'MD/TD 220 N/mm²' },
+      { label: 'Forza adesiva', value: '1.05 N/mm' },
+    ],
     technicalSheetUrl: '/assets/tech-sheets/safety-shield-1500.pdf',
     faq: [
       { q: 'Quando scegliere SafetyShield 1500 invece della 800?', a: 'Quando l analisi del rischio richiede un livello di mitigazione piu alto e un contenimento piu robusto del comportamento del vetro.' },
@@ -484,6 +500,14 @@ Con SafetyShield 800 e ancoraggio applicato sui 4 lati, il sistema raggiunge liv
       'Colori standard: nero, grigio, bianco',
       'Compatibile con SafetyShield 800 e 1500',
       'Approccio a sistema: vetro + pellicola + ancoraggio',
+    ],
+    technicalMetrics: [
+      { label: 'Tipo sistema', value: 'Ancoraggio flessibile su 4 lati' },
+      { label: 'Compatibilità', value: 'SafetyShield 800 / 1500' },
+      { label: 'Test livello', value: 'Livello 2 GSA / UK PSDB' },
+      { label: 'Carica test', value: '39 kPa, 322 kPa ms' },
+      { label: 'Profili disponibili', value: '3 profili' },
+      { label: 'Colori standard', value: 'Nero, grigio, bianco' },
     ],
     technicalSheetUrl: '/assets/tech-sheets/gullwing.pdf',
     faq: [
@@ -725,7 +749,10 @@ const ProdottoPagina = () => {
 
   const dt = prodotto.datiTecnici;
   const pageOverrides = PRODUCT_PAGE_OVERRIDES[prodotto.slug] || null;
+  const customTechMetrics = Array.isArray(pageOverrides?.technicalMetrics) ? pageOverrides.technicalMetrics : [];
+  const isSpecialSecuritySystem = ['madico-safetyshield-800', 'madico-safetyshield-1500', 'madico-gullwing'].includes(prodotto.slug);
   const hasSpecs = dt && dt.energiaSolare;
+  const hasTechnicalSection = hasSpecs || customTechMetrics.length > 0 || Boolean(prodotto.proprietaFisiche);
   const faqItems = buildProductFaq(prodotto, dt);
   const productVisual = PRODUCT_VISUALS[prodotto.slug] || null;
 
@@ -884,10 +911,25 @@ const ProdottoPagina = () => {
         </section>
 
         {/* Dati Tecnici */}
-        {hasSpecs && (
+        {hasTechnicalSection && (
           <section className="py-16 section-light" data-testid="dati-tecnici-section">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
               <h2 className="text-xl sm:text-2xl font-medium text-[#0A0F1C] mb-2">Prestazioni tecniche</h2>
+              {customTechMetrics.length > 0 && (
+                <div className="rounded-xl border border-[#E2E8F0] bg-white p-6 mb-5">
+                  <h3 className="text-sm font-medium text-[#EAB308] uppercase tracking-wider mb-5">Dati chiave di progetto</h3>
+                  <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                    {customTechMetrics.map((m) => (
+                      <div key={`${m.label}-${m.value}`} className="rounded-lg border border-[#E2E8F0] p-4">
+                        <p className="text-xs text-[#64748B]">{m.label}</p>
+                        <p className="text-lg font-semibold text-[#0A0F1C]">{m.value}</p>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+              {hasSpecs && !isSpecialSecuritySystem && (
+                <>
               {/* Quick Stats Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
                 {dt.luceVisibile?.trasmessa && <SpecCard light icon={Eye} label="VLT" value={dt.luceVisibile.trasmessa} />}
@@ -972,6 +1014,8 @@ const ProdottoPagina = () => {
                   <p className="text-sm text-[#64748B] uppercase tracking-wider mb-1">Totale energia respinta</p>
                   <p className="text-4xl font-bold text-[#2563EB]">{dt.energiaRespinta}</p>
                 </motion.div>
+              )}
+                </>
               )}
             </div>
           </section>

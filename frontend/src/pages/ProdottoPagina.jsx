@@ -422,6 +422,54 @@ Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui 
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
+  'madico-safetyshield-800': {
+    panoramicaBody: `SafetyShield 800 e una pellicola di sicurezza speciale, progettata per ridurre gli effetti della rottura del vetro in scenari ad alto rischio. La configurazione corretta non si limita al film: il risultato dipende dal sistema completo pellicola + ancoraggio.
+
+La linea e testata su standard specifici per eventi impulsivi e impatti severi. In configurazione corretta, il sistema aiuta a trattenere i frammenti e a ridurre la proiezione verso gli occupanti, migliorando la protezione delle persone e la continuita operativa dell edificio.
+
+SafetyShield 800 va scelta partendo dallo scenario reale, dal tipo di vetro e dal livello di protezione richiesto, con verifica tecnica prima della posa.`,
+    contextBody: `Indicata per siti sensibili, sedi istituzionali, aree ad alta frequentazione e contesti dove la priorita e mitigare il rischio su superfici vetrate esposte. E adatta quando serve una soluzione di protezione avanzata senza sostituire integralmente i serramenti esistenti.`,
+    caratteristiche: [
+      'Sistema speciale per mitigazione rischio su vetri in scenari critici',
+      'Riduzione proiezione frammenti in caso di rottura',
+      'Approccio a sistema: pellicola + ancoraggio',
+      'Verifica tecnica preventiva su vetro reale e telaio',
+      'Supporto alla continuita operativa degli ambienti',
+      'Garanzia 10 anni (con limiti e condizioni di linea)',
+    ],
+    technicalSheetUrl: '/assets/tech-sheets/safety-shield-800.pdf',
+    faq: [
+      { q: 'SafetyShield 800 e una normale pellicola di sicurezza?', a: 'No. E una soluzione speciale per scenari piu severi, da configurare come sistema completo e non come semplice film applicato al vetro.' },
+      { q: 'Perche serve il sistema di ancoraggio?', a: 'Perche nelle condizioni piu critiche il comportamento del vetro dipende dall insieme vetro, pellicola e bordo: l ancoraggio aiuta a trattenere e controllare la rottura.' },
+      { q: 'Quando conviene valutarla?', a: 'Quando l obiettivo principale e la protezione delle persone in presenza di rischio elevato, non solo la conformita minima antinfortunistica.' },
+      { q: 'Quali verifiche vanno fatte prima della posa?', a: 'Tipo vetro, stato del serramento, dimensioni, esposizione e scenario di rischio. Da questi dati si conferma la configurazione corretta.' },
+      { q: 'Che differenza c e rispetto ad altre pellicole di sicurezza?', a: 'SafetyShield e orientata a livelli di mitigazione superiori e richiede progettazione piu rigorosa, soprattutto sul nodo bordo e sul sistema di ancoraggio.' },
+    ],
+  },
+  'madico-safetyshield-1500': {
+    panoramicaBody: `SafetyShield 1500 e la versione ad alte prestazioni della linea speciale SafetyShield, sviluppata per scenari in cui la protezione del vetro deve mantenere un livello di contenimento ancora piu elevato.
+
+Come per tutta la linea, la prestazione reale si ottiene con una logica di sistema: film, vetro e ancoraggio devono essere valutati insieme. L obiettivo e ridurre gli effetti sugli occupanti e contenere meglio le conseguenze di eventi critici.
+
+La scelta tra 800 e 1500 non dipende dal nome prodotto ma dallo scenario reale e dal livello di rischio da coprire.`,
+    contextBody: `Consigliata in contesti dove il requisito di sicurezza e superiore allo standard ordinario: infrastrutture sensibili, edifici strategici, aree con esposizione a rischio specifico o con elevata responsabilita verso persone e continuita del servizio.`,
+    caratteristiche: [
+      'Versione SafetyShield a protezione rinforzata',
+      'Configurazione a sistema con ancoraggio dedicato',
+      'Contenimento avanzato degli effetti della rottura',
+      'Scelta basata su scenario, non su sola scheda commerciale',
+      'Verifica tecnica preventiva su vetro e telaio',
+      'Garanzia 10 anni (con limiti e condizioni di linea)',
+    ],
+    technicalSheetUrl: '/assets/tech-sheets/safety-shield-1500.pdf',
+    faq: [
+      { q: 'Quando scegliere SafetyShield 1500 invece della 800?', a: 'Quando l analisi del rischio richiede un livello di mitigazione piu alto e un contenimento piu robusto del comportamento del vetro.' },
+      { q: 'Serve sempre l ancoraggio anche sulla 1500?', a: 'Nelle configurazioni di sicurezza avanzata si, perche la prestazione dipende dall insieme pellicola-vetro-bordo.' },
+      { q: 'Può sostituire da sola la valutazione tecnica?', a: 'No. La valutazione tecnica resta necessaria per confermare compatibilita, limiti e comportamento atteso nel caso reale.' },
+      { q: 'Si applica su vetri esistenti?', a: 'In molti casi si, ma la conferma dipende da vetro, serramento, stato dei bordi e condizioni di posa.' },
+      { q: 'Che obiettivo ha questa soluzione?', a: 'Proteggere persone e operativita, riducendo l impatto di eventi severi sulle superfici vetrate esposte.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

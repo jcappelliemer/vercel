@@ -518,6 +518,56 @@ Con SafetyShield 800 e ancoraggio applicato sui 4 lati, il sistema raggiunge liv
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dallo scenario reale, si verifica vetro e serramento, poi si definisce la combinazione pellicola + ancoraggio piu adatta.' },
     ],
   },
+  'madico-mt-200-xw': {
+    panoramicaBody: `Madico MT 200 XW e una pellicola privacy con effetto vetro satinato, pensata per schermare la visione diretta mantenendo una buona luminosita interna. La resa e pulita, uniforme e adatta sia a contesti professionali sia residenziali.
+
+Oltre alla privacy, contribuisce a ridurre l abbaglio e a filtrare oltre il 99% dei raggi UV, aiutando a proteggere superfici e arredi esposti nel tempo.`,
+    contextBody: `Ideale per uffici, sale riunioni, studi professionali, ambienti sanitari e aree reception dove serve riservatezza visiva senza chiudere gli spazi. Adatta anche in abitazione per bagni, divisori e porte vetrate interne.`,
+    caratteristiche: [
+      'Effetto vetro satinato con aspetto professionale',
+      'Privacy visiva mantenendo passaggio di luce',
+      'Riduzione abbaglio in ambienti esposti',
+      'Schermatura oltre il 99% dei raggi UV',
+      'Applicazione interna su vetri esistenti',
+      'Intervento pulito e non invasivo',
+    ],
+    faq: [
+      { q: 'A cosa serve MT 200 XW?', a: 'Serve a ottenere privacy su superfici vetrate mantenendo luminosita e una resa estetica ordinata.' },
+      { q: 'Oscura completamente la luce?', a: 'No. Riduce la visione diretta, ma lascia passare luce utile per mantenere gli ambienti luminosi.' },
+      { q: 'Su quali vetri viene applicata?', a: 'In genere su vetri interni di uffici e abitazioni. La compatibilita finale va verificata sul vetro reale.' },
+      { q: 'Che manutenzione richiede?', a: 'Pulizia ordinaria con prodotti non abrasivi, come per le altre pellicole interne.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dal livello di privacy richiesto, si verifica il tipo di vetro e si definisce la finitura piu adatta al contesto.' },
+    ],
+  },
+  'vetrofanie': {
+    panoramicaBody: `Le vetrofanie trasformano la vetrata in uno spazio di comunicazione: promozione, branding, wayfinding e decorazione. Possono essere adesive o elettrostatiche, con soluzioni temporanee o permanenti in base all uso.
+
+Sono disponibili con stampa UV o EcoSolvent, in funzione del tipo di grafica, della durata attesa e delle condizioni di esposizione.`,
+    contextBody: `Consigliate per vetrine retail, ingressi, showroom, uffici, reception e superfici vetrate dove serve comunicare in modo chiaro senza interventi strutturali. Utili anche per campagne stagionali e aggiornamenti rapidi di immagine.`,
+    caratteristiche: [
+      'Comunicazione visiva immediata su vetro',
+      'Stampa personalizzata ad alta resa',
+      'Soluzioni removibili o permanenti',
+      'Applicazione interna o esterna in base al supporto',
+      'Possibile protezione UV su materiali dedicati',
+      'Intervento rapido con costi contenuti',
+    ],
+    technicalMetrics: [
+      { label: 'Tecnologia stampa', value: 'UV / EcoSolvent' },
+      { label: 'Applicazione', value: 'Adesiva o elettrostatica' },
+      { label: 'Impiego', value: 'Interno / Esterno' },
+      { label: 'Personalizzazione', value: 'Grafica su misura' },
+      { label: 'Ciclo di utilizzo', value: 'Temporaneo o permanente' },
+      { label: 'Supporti', value: 'Trasparente, opalino, coprente' },
+    ],
+    faq: [
+      { q: 'A cosa servono le vetrofanie?', a: 'Servono per comunicare, decorare e dare identita alla vetrata con grafiche coerenti al contesto commerciale o aziendale.' },
+      { q: 'Meglio UV o EcoSolvent?', a: 'Dipende da durata, finitura richiesta e supporto. La scelta corretta si fa sul caso reale.' },
+      { q: 'Si possono rimuovere facilmente?', a: 'Si, nelle versioni dedicate a campagne temporanee la rimozione e semplice e veloce.' },
+      { q: 'Possono essere usate anche per privacy?', a: 'Si, con layout e coperture adeguate possono combinare comunicazione e schermatura visiva.' },
+      { q: 'Come si conferma la soluzione migliore?', a: 'Si parte dall obiettivo (branding, promo, privacy), poi si definiscono materiale, stampa e durata.' },
+    ],
+  },
 };
 
 const splitKeepUnitTogether = (name = '') => {

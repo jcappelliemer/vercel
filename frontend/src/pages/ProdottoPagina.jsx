@@ -519,10 +519,10 @@ Con SafetyShield 800 e ancoraggio applicato sui 4 lati, il sistema raggiunge liv
     ],
   },
   'madico-mt-200-xw': {
-    panoramicaBody: `Madico MT 200 XW e una pellicola privacy con effetto vetro satinato, pensata per schermare la visione diretta mantenendo una buona luminosita interna. La resa e pulita, uniforme e adatta sia a contesti professionali sia residenziali.
+    panoramicaBody: `La pellicola privacy Madico MT 200 XW e studiata per aumentare la riservatezza degli ambienti mantenendo luce naturale e una resa estetica ordinata. L effetto satinato riduce la visione diretta attraverso il vetro senza appesantire lo spazio.
 
-Oltre alla privacy, contribuisce a ridurre l abbaglio e a filtrare oltre il 99% dei raggi UV, aiutando a proteggere superfici e arredi esposti nel tempo.`,
-    contextBody: `Ideale per uffici, sale riunioni, studi professionali, ambienti sanitari e aree reception dove serve riservatezza visiva senza chiudere gli spazi. Adatta anche in abitazione per bagni, divisori e porte vetrate interne.`,
+In uso quotidiano migliora il comfort visivo, limita l abbaglio e contribuisce a proteggere interni e arredi grazie alla schermatura UV oltre il 99%. E una soluzione pratica quando serve privacy funzionale con aspetto professionale.`,
+    contextBody: `Consigliata per uffici, sale riunioni, studi, reception e ambienti sanitari, ma anche per abitazioni dove si vogliono separare zone interne mantenendo luminosita. Funziona bene su porte vetrate, divisori e superfici che richiedono maggiore discrezione visiva.`,
     caratteristiche: [
       'Effetto vetro satinato con aspetto professionale',
       'Privacy visiva mantenendo passaggio di luce',
@@ -531,6 +531,7 @@ Oltre alla privacy, contribuisce a ridurre l abbaglio e a filtrare oltre il 99% 
       'Applicazione interna su vetri esistenti',
       'Intervento pulito e non invasivo',
     ],
+    technicalSheetUrl: '/assets/tech-sheets/mt-200-xw.pdf',
     faq: [
       { q: 'A cosa serve MT 200 XW?', a: 'Serve a ottenere privacy su superfici vetrate mantenendo luminosita e una resa estetica ordinata.' },
       { q: 'Oscura completamente la luce?', a: 'No. Riduce la visione diretta, ma lascia passare luce utile per mantenere gli ambienti luminosi.' },

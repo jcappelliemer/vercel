@@ -541,6 +541,7 @@ In uso quotidiano migliora il comfort visivo, limita l abbaglio e contribuisce a
     ],
   },
   'vetrofanie': {
+    hideSolarPerformanceCharts: true,
     panoramicaBody: `Le vetrofanie sono una soluzione pratica e di design per trasformare vetrine, finestre e superfici vetrate in spazi di comunicazione. Si realizzano su supporti stampabili, spesso vinilici, con grafiche, decorazioni, scritte o elementi coordinati all immagine del negozio, dello showroom o dell azienda.
 
 Possono essere applicate con modalita adesiva o elettrostatica e permettono interventi rapidi, rinnovabili e meno invasivi rispetto ad altre installazioni pubblicitarie. In base al progetto si puo lavorare anche su materiali trasparenti con protezione UV, cosi la grafica valorizza il vetro senza rinunciare alla visibilita e alla protezione della merce esposta.`,
@@ -814,6 +815,7 @@ const ProdottoPagina = () => {
   const pageOverrides = PRODUCT_PAGE_OVERRIDES[prodotto.slug] || null;
   const customTechMetrics = Array.isArray(pageOverrides?.technicalMetrics) ? pageOverrides.technicalMetrics : [];
   const customInfoCards = Array.isArray(pageOverrides?.customInfoCards) ? pageOverrides.customInfoCards : [];
+  const hideSolarPerformanceCharts = Boolean(pageOverrides?.hideSolarPerformanceCharts);
   const isSpecialSecuritySystem = ['madico-safetyshield-800', 'madico-safetyshield-1500', 'madico-gullwing'].includes(prodotto.slug);
   const hasSpecs = dt && dt.energiaSolare;
   const hasTechnicalSection = hasSpecs || customTechMetrics.length > 0 || Boolean(prodotto.proprietaFisiche);
@@ -1017,7 +1019,7 @@ const ProdottoPagina = () => {
                   </div>
                 </div>
               )}
-              {hasSpecs && !isSpecialSecuritySystem && (
+              {hasSpecs && !isSpecialSecuritySystem && !hideSolarPerformanceCharts && (
                 <>
               {/* Quick Stats Grid */}
               <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">

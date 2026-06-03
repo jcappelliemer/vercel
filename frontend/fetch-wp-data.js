@@ -13,6 +13,7 @@ const { URL } = require('url');
 const DEFAULT_WP_URL = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
 const WP_URL = (process.env.REACT_APP_WP_URL || process.env.WP_URL || DEFAULT_WP_URL).replace(/\/$/, '');
 const FETCH_TIMEOUT_MS = Number(process.env.WP_FETCH_TIMEOUT_MS || 3000);
+const BLOCKED_SOLARIS_DATA_RE = /\bNT\s*20\b|\bNT\s*35\b|\bserie\s*NT\b|tecnosolar|fotocromatic|cromia|llms-txt|zoho-callback|false-parent/i;
 
 if (!WP_URL || process.env.SKIP_WP_FETCH === '1') {
   console.log('WP data fetch skipped');
@@ -128,6 +129,44 @@ async function main() {
         fetchedData[name] = null;
       }
     }
+  }
+
+  if (Array.isArray(fetchedData.prodotti)) {
+    fetchedData.prodotti = fetchedData.prodotti.filter((item) => {
+      const searchable = JSON.stringify({
+        slug: item?.slug,
+        title: item?.title,
+        content: item?.content,
+        excerpt: item?.excerpt,
+        meta: item?.solaris_meta,
+      });
+      return !BLOCKED_SOLARIS_DATA_RE.test(searchable);
+    });
+  }
+
+  if (Array.isArray(fetchedData['headless-seo'])) {
+    fetchedData['headless-seo'] = fetchedData['headless-seo'].filter((item) => {
+      const searchable = JSON.stringify({
+        slug: item?.slug,
+        path: item?.path,
+        canonical: item?.canonical,
+        title: item?.title,
+        description: item?.description,
+      });
+      return !BLOCKED_SOLARIS_DATA_RE.test(searchable);
+    });
+  } else if (fetchedData['headless-seo'] && Array.isArray(fetchedData['headless-seo'].items)) {
+    fetchedData['headless-seo'].items = fetchedData['headless-seo'].items.filter((item) => {
+      const searchable = JSON.stringify({
+        slug: item?.slug,
+        path: item?.path,
+        canonical: item?.canonical,
+        title: item?.title,
+        description: item?.description,
+      });
+      return !BLOCKED_SOLARIS_DATA_RE.test(searchable);
+    });
+    fetchedData['headless-seo'].count = fetchedData['headless-seo'].items.length;
   }
 
   // 2. Download and localize images from settings

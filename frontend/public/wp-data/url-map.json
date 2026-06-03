@@ -828,6 +828,90 @@
     "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
   },
   {
+    "oldUrl": "https://www.solarisfilms.it/approfondimenti/installatore-pellicole-vetri-nord-italia/",
+    "oldPath": "/approfondimenti/installatore-pellicole-vetri-nord-italia/",
+    "newPath": "/blog/installatore-pellicole-vetri-nord-italia/",
+    "type": "article",
+    "label": "Approfondimento",
+    "confidence": "high",
+    "needsReview": false,
+    "title": "Installatore pellicole vetri Nord Italia — Solaris Films",
+    "h1": "Pellicole per vetri adesive",
+    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+  },
+  {
+    "oldUrl": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-interne-o-esterne-cosa-scegliere/",
+    "oldPath": "/approfondimenti/pellicole-vetri-interne-o-esterne-cosa-scegliere/",
+    "newPath": "/blog/pellicole-vetri-interne-o-esterne-cosa-scegliere/",
+    "type": "article",
+    "label": "Approfondimento",
+    "confidence": "high",
+    "needsReview": false,
+    "title": "Pellicole vetri interne o esterne: cosa scegliere — Solaris",
+    "h1": "Pellicole per vetri adesive",
+    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+  },
+  {
+    "oldUrl": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-anti-uv-finestre/",
+    "oldPath": "/approfondimenti/migliori-pellicole-anti-uv-finestre/",
+    "newPath": "/blog/migliori-pellicole-anti-uv-finestre/",
+    "type": "article",
+    "label": "Approfondimento",
+    "confidence": "high",
+    "needsReview": false,
+    "title": "Migliori pellicole anti UV finestre: come sceglierle — Solar",
+    "h1": "Pellicole per vetri adesive",
+    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+  },
+  {
+    "oldUrl": "https://www.solarisfilms.it/approfondimenti/guida-conformita-vetri-luoghi-pubblici/",
+    "oldPath": "/approfondimenti/guida-conformita-vetri-luoghi-pubblici/",
+    "newPath": "/blog/guida-conformita-vetri-luoghi-pubblici/",
+    "type": "article",
+    "label": "Approfondimento",
+    "confidence": "high",
+    "needsReview": false,
+    "title": "Guida conformità vetri luoghi pubblici — Solaris Films",
+    "h1": "Pellicole per vetri adesive",
+    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+  },
+  {
+    "oldUrl": "https://www.solarisfilms.it/approfondimenti/pulizia-manutenzione-pellicole-vetri/",
+    "oldPath": "/approfondimenti/pulizia-manutenzione-pellicole-vetri/",
+    "newPath": "/blog/pulizia-manutenzione-pellicole-vetri/",
+    "type": "article",
+    "label": "Approfondimento",
+    "confidence": "high",
+    "needsReview": false,
+    "title": "Pulizia e manutenzione pellicole vetri — Solaris Films",
+    "h1": "Pellicole per vetri adesive",
+    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+  },
+  {
+    "oldUrl": "https://www.solarisfilms.it/approfondimenti/privacy-vetri-uffici-soluzioni-criteri/",
+    "oldPath": "/approfondimenti/privacy-vetri-uffici-soluzioni-criteri/",
+    "newPath": "/blog/privacy-vetri-uffici-soluzioni-criteri/",
+    "type": "article",
+    "label": "Approfondimento",
+    "confidence": "high",
+    "needsReview": false,
+    "title": "Privacy vetri uffici: soluzioni e criteri — Solaris Films",
+    "h1": "Pellicole per vetri adesive",
+    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+  },
+  {
+    "oldUrl": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-vs-vetro-satinato/",
+    "oldPath": "/approfondimenti/pellicola-privacy-vs-vetro-satinato/",
+    "newPath": "/blog/pellicola-privacy-vs-vetro-satinato/",
+    "type": "article",
+    "label": "Approfondimento",
+    "confidence": "high",
+    "needsReview": false,
+    "title": "Pellicola privacy vs vetro satinato: cosa conviene — Solaris",
+    "h1": "Pellicole per vetri adesive",
+    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+  },
+  {
     "oldUrl": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
     "oldPath": "/pellicole-per-vetri/privacy-policy/",
     "newPath": "/privacy-policy/",
@@ -993,18 +1077,6 @@
     "needsReview": false,
     "title": "Pellicola antisolare Madico SL 8 E PS SR 75 Micron — Solaris",
     "h1": "Pellicola antisolare Madico SL 8 E PS SR 75 Micron",
-    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-antisolari-1.xml"
-  },
-  {
-    "oldUrl": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/ssn-70-te-sr/",
-    "oldPath": "/pellicole-per-vetri/le-pellicole-antisolari/ssn-70-te-sr/",
-    "newPath": "/prodotti/ssn-70-te-sr/",
-    "type": "product",
-    "label": "Prodotto",
-    "confidence": "high",
-    "needsReview": false,
-    "title": "Pellicola antisolare SSN 70 TE SR — Solaris Films",
-    "h1": "Pellicola antisolare SSN 70 TE SR",
     "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-antisolari-1.xml"
   },
   {

@@ -70,6 +70,14 @@ const SITEMAP_PATH_ALIASES = {
   '/prodotti/madico-rs-40-ps-sr-4-mil/': '/prodotti/madico-rs-40-ps-sr-4mil/',
   '/prodotti/madico-rs-40-ps-sr-8-mil/': '/prodotti/madico-rs-40-ps-sr-8mil/',
 };
+const APP_ONLY_SITEMAP_PATHS = [
+  '/prodotti/ssn-70-te-sr/',
+  '/prodotti/madico-rs-30-e-ps-sr/',
+  '/focus-tecnico/safetyshield/',
+  '/servizi/pellicole-antisolari/',
+  '/servizi/pellicole-sicurezza/',
+  '/servizi/pellicole-decorative/',
+];
 const EXCLUDED_LIVE_PATHS = new Set([
   '/pellicole-per-vetri/false-parent/',
   '/pellicole-per-vetri/llms-txt/',
@@ -187,6 +195,45 @@ function normalizeSolarisProofValuesDeep(value) {
   if (value && typeof value === 'object') {
     return Object.fromEntries(
       Object.entries(value).map(([key, item]) => [key, normalizeSolarisProofValuesDeep(item)])
+    );
+  }
+  return value;
+}
+
+function sanitizeImportedSolarisString(value = '') {
+  let text = String(value);
+
+  text = text
+    .replace(/tecnosolarssn50tesr/gi, 'ssn-70-te-sr')
+    .replace(/tecnosolar-ssn-50-te-sr/gi, 'ssn-70-te-sr')
+    .replace(/\bTecnosolar\s+SSN\s*50\s+TE\s+SR\b/gi, 'SSN 70 TE SR')
+    .replace(/https?:\/\/(?:www\.)?tecnosolar\.it[^"'\s<>)]*/gi, '/contatti/')
+    .replace(/Solaris Films\s+(?:è|&#xE8;|&egrave;)\s+Installatore Certificato Tecnosolar:[^"<]*(?:[.!?]|$)/gi, 'Solaris Films segue il progetto con metodo tecnico, prodotti Madico e posa professionale sul territorio. ')
+    .replace(/vi\s+affidiamo\s+alle\s+mani\s+esperte\s+del\s+nostro\s+distributore\s+Tecnosolar/gi, 'vi indirizziamo verso un referente specializzato per il settore auto')
+    .replace(/grazie\s+(?:al|all[’']esperienza del)\s+nostro\s+distributore\s+Tecnosolar/gi, 'grazie alla selezione tecnica Solaris')
+    .replace(/distributore\s+Tecnosolar/gi, 'referente Solaris')
+    .replace(/\bTECNOSOLAR\b/g, 'Solaris Films')
+    .replace(/\bTecnosolar\b/gi, 'Solaris Films');
+
+  text = removeExcludedProductSentences(text);
+
+  return text
+    .replace(/\s+([,.!?;:])/g, '$1')
+    .replace(/[ \t]{2,}/g, ' ')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim();
+}
+
+function sanitizeImportedSolarisDataDeep(value) {
+  if (typeof value === 'string') return sanitizeImportedSolarisString(value);
+  if (Array.isArray(value)) {
+    return value
+      .map((item) => sanitizeImportedSolarisDataDeep(item))
+      .filter((item) => !hasExcludedProductReference(JSON.stringify(item ?? '')));
+  }
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, sanitizeImportedSolarisDataDeep(item)])
     );
   }
   return value;
@@ -906,7 +953,7 @@ async function buildPageRecord(entry, index, total) {
   const normalizedSeo = normalizeSeoForRoute(seo, route);
   const primaryImage = extractPrimaryImage(normalizedSeo, contentBlocks);
 
-  return normalizeSolarisProofValuesDeep({
+  const record = normalizeSolarisProofValuesDeep({
     url: entry.url,
     path: normalizePath(entry.url),
     route,
@@ -921,13 +968,21 @@ async function buildPageRecord(entry, index, total) {
     textLength: text.length,
     fetchedAt: new Date().toISOString(),
   });
+  const cleanRecord = sanitizeImportedSolarisDataDeep(record);
+  cleanRecord.textLength = (cleanRecord.text || '').length;
+  return cleanRecord;
 }
 
 function buildSitemap(pages) {
-  const sitemapPaths = Array.from(new Set(pages
-    .filter((page) => !/noindex/i.test(page.seo.robots || ''))
-    .map((page) => SITEMAP_PATH_ALIASES[normalizePath(page.route.newPath)] || normalizePath(page.route.newPath))
-    .filter((newPath) => !isExcludedProductUrl(newPath))));
+  const sitemapPaths = Array.from(new Set([
+    ...pages
+      .filter((page) => !/noindex/i.test(page.seo.robots || ''))
+      .map((page) => {
+        const newPath = normalizeAppPath(page.route.newPath);
+        return SITEMAP_PATH_ALIASES[newPath] || newPath;
+      }),
+    ...APP_ONLY_SITEMAP_PATHS,
+  ].filter((newPath) => !isExcludedProductUrl(newPath))));
 
   const urls = sitemapPaths
     .map((newPath) => `  <url><loc>${SITE_ORIGIN}${newPath}</loc></url>`)

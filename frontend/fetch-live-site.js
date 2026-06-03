@@ -50,7 +50,26 @@ const EXCLUDED_SOLARIS_TERMS = [
   /tecnosolarnt20/i,
   /tecnosolarnt35/i,
 ];
-const EXCLUDED_PRODUCT_SLUGS = ['pellicole-lcd-switch', 'stratum', 'startum', 'tecnosolarnt20epssr', 'tecnosolarnt35epssr'];
+const EXCLUDED_PRODUCT_SLUGS = [
+  'pellicole-lcd-switch',
+  'stratum',
+  'startum',
+  'tecnosolarnt20epssr',
+  'tecnosolarnt35epssr',
+  'tecnosolarssn50tesr',
+  'tecnosolar-ssn-50-te-sr',
+];
+const SITEMAP_PATH_ALIASES = {
+  '/prodotti/madicosb20epssr/': '/prodotti/madico-sb-20-e-ps-sr/',
+  '/prodotti/madicosb35epssr/': '/prodotti/madico-sb-35-e-ps-sr/',
+  '/prodotti/madicosg20epssr/': '/prodotti/madico-sg-20-e-ps-sr/',
+  '/prodotti/madicosl8epssr/': '/prodotti/madico-sl-8-e-ps-sr/',
+  '/prodotti/tecnosolarssn50tesr/': '/prodotti/ssn-70-te-sr/',
+  '/prodotti/ssn-50-te-sr/': '/prodotti/ssn-70-te-sr/',
+  '/prodotti/madico-rs-20-ps-sr-8-mil/': '/prodotti/madico-rs-20-ps-sr-8mil/',
+  '/prodotti/madico-rs-40-ps-sr-4-mil/': '/prodotti/madico-rs-40-ps-sr-4mil/',
+  '/prodotti/madico-rs-40-ps-sr-8-mil/': '/prodotti/madico-rs-40-ps-sr-8mil/',
+};
 const EXCLUDED_LIVE_PATHS = new Set([
   '/pellicole-per-vetri/false-parent/',
   '/pellicole-per-vetri/llms-txt/',
@@ -364,7 +383,7 @@ function removeExcludedProductSentences(value = '') {
   if (!hasExcludedProductReference(text)) return text;
 
   return text
-    .replace(/[^.!?<>]*(?:\blcd\b|\bstratum\b|\bstartum\b|pellicole-lcd-switch|fotocromatic[^.!?<>]*|cromia|serie\s*nt|nt[\s-]*20|nt[\s-]*35|tecnosolarnt20|tecnosolarnt35)[^.!?<>]*[.!?]/gi, ' ')
+    .replace(/[^.!?<>]*(?:\blcd\b|\bstratum\b|\bstartum\b|pellicole-lcd-switch|fotocromatic[^.!?<>]*|cromia|serie\s*nt|nt[\s-]*20|nt[\s-]*35|tecnosolar)[^.!?<>]*[.!?]/gi, ' ')
     .replace(/\s{2,}/g, ' ')
     .trim();
 }
@@ -472,10 +491,11 @@ function imageFromNode(node) {
 }
 
 function extractPrimaryImage(seo = {}, contentBlocks = []) {
-  return seo.og?.['og:image']
-    || seo.twitter?.['twitter:image']
-    || contentBlocks.find((block) => block.type === 'image')?.src
-    || '';
+  return [
+    seo.og?.['og:image'],
+    seo.twitter?.['twitter:image'],
+    contentBlocks.find((block) => block.type === 'image')?.src,
+  ].find((src) => src && !hasExcludedProductReference(src)) || '';
 }
 
 function normalizeSeoForRoute(seo = {}, route = {}) {
@@ -486,6 +506,16 @@ function normalizeSeoForRoute(seo = {}, route = {}) {
     article: { ...(seo.article || {}) },
     schemas: [...(seo.schemas || [])].filter((schema) => !hasExcludedProductReference(schema)),
   };
+
+  if (hasExcludedProductReference(normalized.og['og:image'])) {
+    delete normalized.og['og:image'];
+    delete normalized.og['og:image:width'];
+    delete normalized.og['og:image:height'];
+  }
+
+  if (hasExcludedProductReference(normalized.twitter['twitter:image'])) {
+    delete normalized.twitter['twitter:image'];
+  }
 
   if (route.newPath === '/company-profile/') {
     const title = 'Company Profile Solaris';
@@ -894,9 +924,13 @@ async function buildPageRecord(entry, index, total) {
 }
 
 function buildSitemap(pages) {
-  const urls = pages
+  const sitemapPaths = Array.from(new Set(pages
     .filter((page) => !/noindex/i.test(page.seo.robots || ''))
-    .map((page) => `  <url><loc>${SITE_ORIGIN}${page.route.newPath}</loc></url>`)
+    .map((page) => SITEMAP_PATH_ALIASES[normalizePath(page.route.newPath)] || normalizePath(page.route.newPath))
+    .filter((newPath) => !isExcludedProductUrl(newPath))));
+
+  const urls = sitemapPaths
+    .map((newPath) => `  <url><loc>${SITE_ORIGIN}${newPath}</loc></url>`)
     .join('\n');
 
   return `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n${urls}\n</urlset>\n`;

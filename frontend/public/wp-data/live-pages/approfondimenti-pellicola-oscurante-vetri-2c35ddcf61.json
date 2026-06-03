@@ -20,16 +20,12 @@
       "og:url": "https://www.solarisfilms.it/approfondimenti/pellicola-oscurante-vetri/",
       "og:type": "article",
       "og:site_name": "Solaris Films",
-      "og:locale": "it_IT",
-      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/Pellicola-Fotocromatica.webp",
-      "og:image:width": "800",
-      "og:image:height": "803"
+      "og:locale": "it_IT"
     },
     "twitter": {
       "twitter:card": "summary_large_image",
       "twitter:title": "PELLICOLA OSCURANTE VETRI — Solaris Films",
-      "twitter:description": "La pellicola oscurante per vetri risolve l'annoso problema dell'irraggiamento solare. Scopri perché dovresti sceglierla.",
-      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/Pellicola-Fotocromatica.webp"
+      "twitter:description": "La pellicola oscurante per vetri risolve l'annoso problema dell'irraggiamento solare. Scopri perché dovresti sceglierla."
     },
     "article": {
       "article:published_time": "2025-06-17T13:40:45+02:00",
@@ -56,7 +52,7 @@
     }
   ],
   "h1": "Pellicole per vetri adesive",
-  "primaryImage": "https://www.solarisfilms.it/wp-content/uploads/2025/06/Pellicola-Fotocromatica.webp",
+  "primaryImage": "",
   "contentBlocks": [
     {
       "type": "heading",

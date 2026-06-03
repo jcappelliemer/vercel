@@ -66,6 +66,26 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/prodotti/tecnosolarssn50tesr',
+        destination: '/prodotti/ssn-70-te-sr/',
+        permanent: true,
+      },
+      {
+        source: '/prodotti/tecnosolarssn50tesr/',
+        destination: '/prodotti/ssn-70-te-sr/',
+        permanent: true,
+      },
+      {
+        source: '/prodotti/tecnosolar-ssn-50-te-sr',
+        destination: '/prodotti/ssn-70-te-sr/',
+        permanent: true,
+      },
+      {
+        source: '/prodotti/tecnosolar-ssn-50-te-sr/',
+        destination: '/prodotti/ssn-70-te-sr/',
+        permanent: true,
+      },
+      {
         source: '/info/norme-di-riferimento',
         destination: '/info/norme/',
         permanent: true,

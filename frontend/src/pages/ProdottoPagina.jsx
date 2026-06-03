@@ -11,6 +11,20 @@ import { useState, useEffect } from 'react';
 import { PRODUCT_VISUALS } from '../utils/assetMaps';
 const UNIFIED_DATA_COLOR = '#2563EB';
 
+const PRODUCT_SLUG_ALIASES = {
+  'madico-rs-20-ps-sr-8-mil': 'madico-rs-20-ps-sr-8mil',
+  'madico-rs-40-ps-sr-4-mil': 'madico-rs-40-ps-sr-4mil',
+  'madico-rs-40-ps-sr-8-mil': 'madico-rs-40-ps-sr-8mil',
+  'tecnosolarssn50tesr': 'ssn-70-te-sr',
+  'tecnosolar-ssn-50-te-sr': 'ssn-70-te-sr',
+  'ssn-50-te-sr': 'ssn-70-te-sr',
+};
+
+const canonicalProductSlug = (slug = '') => {
+  const value = Array.isArray(slug) ? slug[0] : slug;
+  return PRODUCT_SLUG_ALIASES[value] || value || '';
+};
+
 const PRODUCT_PAGE_OVERRIDES = {
   'madico-sb-20-e-ps-sr': {
     panoramicaBody: `Le pellicole antisolari sputtered SB 20 E PS SR Madico sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.
@@ -757,8 +771,9 @@ const ProductFaqSection = ({ items = [] }) => {
   );
 };
 
-const ProdottoPagina = () => {
-  const { slug } = useParams();
+const ProdottoPagina = ({ initialSlug = '' }) => {
+  const { slug: routeSlug } = useParams();
+  const slug = canonicalProductSlug(initialSlug || routeSlug);
   const { data: allProdotti } = useWPData('prodotti');
   const prodotto = allProdotti.find(p => p.slug === slug) || prodottiData.find(p => p.slug === slug);
   const [liveSections, setLiveSections] = useState({ utilizzi: '', specifiche: '', caratteristiche: [] });

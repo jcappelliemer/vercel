@@ -541,32 +541,46 @@ In uso quotidiano migliora il comfort visivo, limita l abbaglio e contribuisce a
     ],
   },
   'vetrofanie': {
-    panoramicaBody: `Le vetrofanie trasformano la vetrata in uno spazio di comunicazione: promozione, branding, wayfinding e decorazione. Possono essere adesive o elettrostatiche, con soluzioni temporanee o permanenti in base all uso.
+    panoramicaBody: `Le vetrofanie sono una soluzione pratica e di design per trasformare vetrine, finestre e superfici vetrate in spazi di comunicazione. Si realizzano su supporti stampabili, spesso vinilici, con grafiche, decorazioni, scritte o elementi coordinati all immagine del negozio, dello showroom o dell azienda.
 
-Sono disponibili con stampa UV o EcoSolvent, in funzione del tipo di grafica, della durata attesa e delle condizioni di esposizione.`,
-    contextBody: `Consigliate per vetrine retail, ingressi, showroom, uffici, reception e superfici vetrate dove serve comunicare in modo chiaro senza interventi strutturali. Utili anche per campagne stagionali e aggiornamenti rapidi di immagine.`,
+Possono essere applicate con modalita adesiva o elettrostatica e permettono interventi rapidi, rinnovabili e meno invasivi rispetto ad altre installazioni pubblicitarie. In base al progetto si puo lavorare anche su materiali trasparenti con protezione UV, cosi la grafica valorizza il vetro senza rinunciare alla visibilita e alla protezione della merce esposta.`,
+    contextBody: `Consigliate per vetrine, negozi, ingressi, reception, showroom e superfici vetrate esterne dove serve attirare attenzione, comunicare promozioni, guidare il cliente o rendere piu riconoscibile il punto vendita. Sono adatte anche a campagne stagionali, aperture, saldi, eventi e aggiornamenti rapidi dell immagine coordinata.`,
     caratteristiche: [
-      'Comunicazione visiva immediata su vetro',
-      'Stampa personalizzata ad alta resa',
-      'Soluzioni removibili o permanenti',
-      'Applicazione interna o esterna in base al supporto',
-      'Possibile protezione UV su materiali dedicati',
-      'Intervento rapido con costi contenuti',
+      'Soluzione rapida ed economica',
+      'Rimozione semplice quando il supporto lo prevede',
+      'Design accattivante e personalizzabile',
+      'Ampia varieta di materiali e finiture',
+      'Stampa su materiale trasparente con protezione UV',
+      'Aggiornamento veloce per stagioni e promozioni',
     ],
     technicalMetrics: [
-      { label: 'Tecnologia stampa', value: 'UV / EcoSolvent' },
       { label: 'Applicazione', value: 'Adesiva o elettrostatica' },
-      { label: 'Impiego', value: 'Interno / Esterno' },
-      { label: 'Personalizzazione', value: 'Grafica su misura' },
-      { label: 'Ciclo di utilizzo', value: 'Temporaneo o permanente' },
-      { label: 'Supporti', value: 'Trasparente, opalino, coprente' },
+      { label: 'Materiale', value: 'Vinile e supporti stampabili' },
+      { label: 'Opzione trasparente', value: 'Protezione UV per merce esposta' },
+      { label: 'Stampa UV', value: 'Asciugatura rapida con lampade LED UV' },
+      { label: 'Stampa EcoSolvent', value: 'Grandi superfici indoor e outdoor' },
+      { label: 'Durata progetto', value: 'Temporaneo o continuativo' },
+    ],
+    customInfoCards: [
+      {
+        eyebrow: 'Stampa digitale',
+        title: 'Vetrofanie ad UV',
+        image: '/assets/imported/products/vetrofanie-uv.jpg',
+        body: 'La stampa UV consente di applicare l inchiostro e fissarlo rapidamente con lampade LED UV. E indicata quando servono grafiche precise, tempi rapidi e finiture speciali anche su tirature ridotte.',
+      },
+      {
+        eyebrow: 'Grandi superfici',
+        title: 'Vetrofanie ad EcoSolvent',
+        image: '/assets/imported/products/vetrofanie-ecosolvent.jpg',
+        body: 'La stampa EcoSolvent e adatta a superfici ampie, interne o esterne. Offre buona resa cromatica, resistenza agli agenti atmosferici e puo essere protetta con plastificazione quando il progetto richiede maggiore durata.',
+      },
     ],
     faq: [
-      { q: 'A cosa servono le vetrofanie?', a: 'Servono per comunicare, decorare e dare identita alla vetrata con grafiche coerenti al contesto commerciale o aziendale.' },
-      { q: 'Meglio UV o EcoSolvent?', a: 'Dipende da durata, finitura richiesta e supporto. La scelta corretta si fa sul caso reale.' },
-      { q: 'Si possono rimuovere facilmente?', a: 'Si, nelle versioni dedicate a campagne temporanee la rimozione e semplice e veloce.' },
-      { q: 'Possono essere usate anche per privacy?', a: 'Si, con layout e coperture adeguate possono combinare comunicazione e schermatura visiva.' },
-      { q: 'Come si conferma la soluzione migliore?', a: 'Si parte dall obiettivo (branding, promo, privacy), poi si definiscono materiale, stampa e durata.' },
+      { q: 'Che cos e una vetrofania?', a: 'E una grafica stampata su un supporto sottile, spesso vinilico, applicabile su vetro in modo adesivo o elettrostatico. Serve per comunicare, decorare o rendere piu riconoscibile una superficie vetrata.' },
+      { q: 'Si puo mantenere la trasparenza della vetrata?', a: 'Si. In base al progetto si possono usare materiali trasparenti che valorizzano la grafica e mantengono visibilita, anche con protezione UV per la merce esposta.' },
+      { q: 'Quando scegliere la stampa UV?', a: 'Quando servono lavorazioni rapide, dettagli definiti e possibili finiture speciali. E una soluzione efficace anche per produzioni personalizzate e tirature non elevate.' },
+      { q: 'Quando scegliere la stampa EcoSolvent?', a: 'Quando la grafica deve coprire superfici piu grandi o lavorare in condizioni indoor e outdoor. La resa e stabile e puo essere protetta con plastificazione quando serve maggiore durata.' },
+      { q: 'La vetrofania e temporanea o permanente?', a: 'Puo essere entrambe le cose. Solaris definisce supporto, stampa e modalita applicativa in base alla durata desiderata, alla posizione del vetro e all obiettivo della comunicazione.' },
     ],
   },
 };
@@ -801,6 +815,7 @@ const ProdottoPagina = () => {
   const dt = prodotto.datiTecnici;
   const pageOverrides = PRODUCT_PAGE_OVERRIDES[prodotto.slug] || null;
   const customTechMetrics = Array.isArray(pageOverrides?.technicalMetrics) ? pageOverrides.technicalMetrics : [];
+  const customInfoCards = Array.isArray(pageOverrides?.customInfoCards) ? pageOverrides.customInfoCards : [];
   const isSpecialSecuritySystem = ['madico-safetyshield-800', 'madico-safetyshield-1500', 'madico-gullwing'].includes(prodotto.slug);
   const hasSpecs = dt && dt.energiaSolare;
   const hasTechnicalSection = hasSpecs || customTechMetrics.length > 0 || Boolean(prodotto.proprietaFisiche);
@@ -939,6 +954,31 @@ const ProdottoPagina = () => {
                 </div>
               </div>
             </div>
+            {customInfoCards.length > 0 && (
+              <div className="mt-5 grid gap-5 md:grid-cols-2">
+                {customInfoCards.map((card) => (
+                  <article key={card.title} className="overflow-hidden rounded-xl border border-[#E2E8F0] bg-white">
+                    {card.image && (
+                      <div className="aspect-[16/9] w-full bg-[#0A0F1C]">
+                        <img
+                          src={card.image}
+                          alt={card.title}
+                          className="h-full w-full object-cover"
+                          loading="lazy"
+                        />
+                      </div>
+                    )}
+                    <div className="p-6">
+                      {card.eyebrow && (
+                        <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">{card.eyebrow}</span>
+                      )}
+                      <h3 className="mt-2 text-lg font-semibold text-[#0A0F1C]">{card.title}</h3>
+                      <p className="mt-3 text-[15px] leading-relaxed text-[#475569]">{card.body}</p>
+                    </div>
+                  </article>
+                ))}
+              </div>
+            )}
           </div>
         </section>
 

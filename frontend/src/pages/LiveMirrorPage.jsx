@@ -808,7 +808,7 @@ const infoThemes = [
     key: 'supporto',
     title: 'Uso, manutenzione e glossario',
     eyebrow: 'Supporto operativo',
-    route: '/info/istruzioni-e-manutenzione/',
+    route: '/info/#supporto',
     description: 'Istruzioni, manutenzione e termini tecnici per fare domande più precise prima della verifica.',
     match: /(istruz|manutenz|glossario|termini)/i,
   },

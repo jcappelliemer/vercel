@@ -371,7 +371,7 @@ const INFO_THEMES = [
     key: 'supporto',
     title: 'Uso, manutenzione e glossario',
     eyebrow: 'Supporto operativo',
-    route: '/info/istruzioni-e-manutenzione/',
+    route: '/info/#supporto',
     description: 'Istruzioni, manutenzione e termini tecnici per fare domande più precise prima della verifica.',
     match: /(istruz|manutenz|glossario|termini)/i,
   },
@@ -1526,7 +1526,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
 
           <div className="knowledge-directory-article-sections">
             {themeBlocks.map((theme) => (
-              <section key={theme.key} className="knowledge-directory-article-section">
+              <section key={theme.key} id={theme.key} className="knowledge-directory-article-section">
                 <div className="knowledge-directory-article-section-head">
                   <div>
                     <span>{theme.eyebrow}</span>

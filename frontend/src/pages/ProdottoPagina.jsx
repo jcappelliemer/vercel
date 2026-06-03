@@ -565,13 +565,11 @@ Possono essere applicate con modalita adesiva o elettrostatica e permettono inte
       {
         eyebrow: 'Stampa digitale',
         title: 'Vetrofanie ad UV',
-        image: '/assets/imported/products/vetrofanie-uv.jpg',
         body: 'La stampa UV consente di applicare l inchiostro e fissarlo rapidamente con lampade LED UV. E indicata quando servono grafiche precise, tempi rapidi e finiture speciali anche su tirature ridotte.',
       },
       {
         eyebrow: 'Grandi superfici',
         title: 'Vetrofanie ad EcoSolvent',
-        image: '/assets/imported/products/vetrofanie-ecosolvent.jpg',
         body: 'La stampa EcoSolvent e adatta a superfici ampie, interne o esterne. Offre buona resa cromatica, resistenza agli agenti atmosferici e puo essere protetta con plastificazione quando il progetto richiede maggiore durata.',
       },
     ],

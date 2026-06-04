@@ -959,7 +959,7 @@ function classifyPath(pathname, sourceSitemap = '') {
     return {
       type: 'article',
       label: 'Approfondimento',
-      newPath: `/blog/${slug}/`,
+      newPath: `/lo-sapevi-che/${slug}/`,
       confidence: 'high',
       needsReview: false,
     };
@@ -979,7 +979,7 @@ function classifyPath(pathname, sourceSitemap = '') {
     return {
       type: 'article',
       label: 'Approfondimento',
-      newPath: `/blog/${slug}/`,
+      newPath: `/lo-sapevi-che/${slug}/`,
       confidence: 'medium',
       needsReview: true,
     };

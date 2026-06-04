@@ -165,6 +165,56 @@ const nextConfig = {
         destination: '/lo-sapevi-che/:slug*',
         permanent: true,
       },
+      {
+        source: '/approfondimenti/guida-conformita-vetri-luoghi-pubblici',
+        destination: '/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/guida-conformita-vetri-luoghi-pubblici/',
+        destination: '/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/installatore-pellicole-vetri-nord-italia',
+        destination: '/lo-sapevi-che/installatore-pellicole-vetri-nord-italia/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/installatore-pellicole-vetri-nord-italia/',
+        destination: '/lo-sapevi-che/installatore-pellicole-vetri-nord-italia/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/migliori-pellicole-anti-uv-finestre',
+        destination: '/lo-sapevi-che/migliori-pellicole-anti-uv-finestre/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/migliori-pellicole-anti-uv-finestre/',
+        destination: '/lo-sapevi-che/migliori-pellicole-anti-uv-finestre/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/pellicola-privacy-vs-vetro-satinato',
+        destination: '/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/pellicola-privacy-vs-vetro-satinato/',
+        destination: '/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/pellicole-vetri-interne-o-esterne-cosa-scegliere',
+        destination: '/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/pellicole-vetri-interne-o-esterne-cosa-scegliere/',
+        destination: '/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere/',
+        permanent: true,
+      },
     ];
   },
   webpack: (config) => {

@@ -32,6 +32,7 @@ const SITEMAP_INDEX_CANDIDATES = unique([
 ]);
 const OUTPUT_DIR = path.join(__dirname, 'public', 'wp-data');
 const PAGES_DIR = path.join(OUTPUT_DIR, 'live-pages');
+const IMAGES_DIR = path.join(OUTPUT_DIR, 'images');
 const INDEX_FILE = path.join(OUTPUT_DIR, 'live-pages-index.json');
 const INVENTORY_FILE = path.join(OUTPUT_DIR, 'live-seo-inventory.json');
 const URL_MAP_FILE = path.join(OUTPUT_DIR, 'url-map.json');
@@ -141,6 +142,38 @@ function fetchText(url, redirectCount = 0) {
     });
     req.setTimeout(20000, () => {
       req.destroy(new Error(`Timeout fetching ${url}`));
+    });
+    req.on('error', reject);
+  });
+}
+
+function fetchBuffer(url, redirectCount = 0) {
+  return new Promise((resolve, reject) => {
+    const cleanUrl = String(url || '').trim().replace(/&amp;/g, '&').replace(/\s+/g, '');
+    const requestUrl = new URL(encodeURI(cleanUrl));
+    const client = requestUrl.protocol === 'https:' ? https : http;
+    const req = client.get(requestUrl, { headers: { 'User-Agent': 'SolarisFilmsMirror/1.0' } }, (res) => {
+      const status = res.statusCode || 0;
+      const location = res.headers.location;
+      if (status >= 300 && status < 400 && location && redirectCount < 5) {
+        res.resume();
+        fetchBuffer(new URL(location, requestUrl).toString(), redirectCount + 1).then(resolve, reject);
+        return;
+      }
+      if (status < 200 || status >= 300) {
+        res.resume();
+        reject(new Error(`HTTP ${status} for ${url}`));
+        return;
+      }
+      const chunks = [];
+      res.on('data', (chunk) => chunks.push(chunk));
+      res.on('end', () => resolve({
+        buffer: Buffer.concat(chunks),
+        contentType: String(res.headers['content-type'] || ''),
+      }));
+    });
+    req.setTimeout(12000, () => {
+      req.destroy(new Error(`Timeout while fetching ${url}`));
     });
     req.on('error', reject);
   });
@@ -543,6 +576,76 @@ function extractPrimaryImage(seo = {}, contentBlocks = []) {
     seo.twitter?.['twitter:image'],
     contentBlocks.find((block) => block.type === 'image')?.src,
   ].find((src) => src && !hasExcludedProductReference(src)) || '';
+}
+
+function imageExtensionFromUrl(url = '', contentType = '') {
+  if (/webp/i.test(contentType)) return 'webp';
+  if (/png/i.test(contentType)) return 'png';
+  if (/jpe?g/i.test(contentType)) return 'jpg';
+  const pathname = (() => {
+    try {
+      return new URL(url).pathname;
+    } catch {
+      return '';
+    }
+  })();
+  const ext = path.extname(pathname).replace('.', '').toLowerCase();
+  return ['webp', 'png', 'jpg', 'jpeg', 'gif'].includes(ext) ? (ext === 'jpeg' ? 'jpg' : ext) : 'jpg';
+}
+
+function canLocalizeLiveImage(url = '') {
+  if (!url || hasExcludedProductReference(url)) return false;
+  try {
+    const parsed = new URL(url);
+    return parsed.hostname === new URL(LIVE_ORIGIN).hostname && /\/wp-content\/uploads\//i.test(parsed.pathname);
+  } catch {
+    return false;
+  }
+}
+
+async function localizeLiveImage(url = '', route = {}) {
+  if (!canLocalizeLiveImage(url)) return url;
+  try {
+    fs.mkdirSync(IMAGES_DIR, { recursive: true });
+    const { buffer, contentType } = await fetchBuffer(url);
+    const ext = imageExtensionFromUrl(url, contentType);
+    const slugPart = normalizeAppPath(route.newPath || route.path || 'article')
+      .replace(/^\/+|\/+$/g, '')
+      .replace(/[^a-z0-9]+/gi, '-')
+      .replace(/^-+|-+$/g, '')
+      .toLowerCase()
+      .slice(0, 80) || 'live-image';
+    const hash = crypto.createHash('sha1').update(url).digest('hex').slice(0, 10);
+    const filename = `${slugPart}-${hash}.${ext}`;
+    const target = path.join(IMAGES_DIR, filename);
+    if (!fs.existsSync(target)) fs.writeFileSync(target, buffer);
+    return `/wp-data/images/${filename}`;
+  } catch (err) {
+    console.warn(`  -> image fallback ${url}: ${err.message}`);
+    return url;
+  }
+}
+
+async function localizeRecordPrimaryImage(record) {
+  if (record?.route?.type !== 'article') return record;
+  const source = record.primaryImage || record.seo?.og?.['og:image'] || record.seo?.twitter?.['twitter:image'] || '';
+  const localImage = await localizeLiveImage(source, record.route);
+  if (!localImage || localImage === source) return record;
+  return {
+    ...record,
+    primaryImage: localImage,
+    seo: {
+      ...record.seo,
+      og: {
+        ...(record.seo?.og || {}),
+        'og:image': localImage,
+      },
+      twitter: {
+        ...(record.seo?.twitter || {}),
+        'twitter:image': localImage,
+      },
+    },
+  };
 }
 
 function normalizeSeoForRoute(seo = {}, route = {}) {
@@ -968,7 +1071,8 @@ async function buildPageRecord(entry, index, total) {
     textLength: text.length,
     fetchedAt: new Date().toISOString(),
   });
-  const cleanRecord = sanitizeImportedSolarisDataDeep(record);
+  const imageLocalizedRecord = await localizeRecordPrimaryImage(record);
+  const cleanRecord = sanitizeImportedSolarisDataDeep(imageLocalizedRecord);
   cleanRecord.textLength = (cleanRecord.text || '').length;
   return cleanRecord;
 }

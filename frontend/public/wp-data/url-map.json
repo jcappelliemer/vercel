@@ -912,6 +912,18 @@
     "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
   },
   {
+    "oldUrl": "https://www.solarisfilms.it/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi/",
+    "oldPath": "/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi/",
+    "newPath": "/blog/pellicola-antigraffiti-per-vetrine-negozi/",
+    "type": "article",
+    "label": "Approfondimento",
+    "confidence": "high",
+    "needsReview": false,
+    "title": "Pellicola antigraffiti per vetrine negozi: come sceglierla —",
+    "h1": "Pellicole per vetri adesive",
+    "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+  },
+  {
     "oldUrl": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
     "oldPath": "/pellicole-per-vetri/privacy-policy/",
     "newPath": "/privacy-policy/",

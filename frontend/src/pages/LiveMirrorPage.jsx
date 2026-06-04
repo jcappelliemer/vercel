@@ -1076,7 +1076,7 @@ const ArticleTemplate = ({ page }) => {
   const title = liveDisplayTitle(page);
   const description = livePageDescription(page) || firstParagraph(blocks);
   const family = getServiceFamilyForArticlePage(page);
-  const image = family?.image || '/assets/services/pellicole-antisolari.jpg';
+  const image = pageImage(page) || family?.image || '/assets/services/pellicole-antisolari.jpg';
   const inlineImage = blocks.map(imageUrlFromBlock).find(Boolean) || '';
   const published = formatArticleDate(page.seo?.article?.['article:published_time']);
   const modified = formatArticleDate(page.seo?.article?.['article:modified_time']);

@@ -75,6 +75,7 @@ export const getMirrorStaticProps = (pathname) => {
 
 export const getMirrorServerProps = (pathname) => {
   const index = readLiveIndex();
+  const normalizedPathname = normalizePath(pathname);
   const entry = findPageEntryByPath(index, pathname);
   const page = readLivePageByFile(entry?.file);
 
@@ -82,11 +83,22 @@ export const getMirrorServerProps = (pathname) => {
     return { notFound: true };
   }
 
+  const sourcePath = normalizePath(entry.path);
+  const routedPath = normalizePath(entry.route?.newPath || entry.path);
+  if (sourcePath === normalizedPathname && routedPath !== normalizedPathname) {
+    return {
+      redirect: {
+        destination: routedPath,
+        permanent: true,
+      },
+    };
+  }
+
   return {
     props: {
       initialIndex: index,
       initialPage: page,
-      initialPath: normalizePath(pathname),
+      initialPath: normalizedPathname,
     },
   };
 };

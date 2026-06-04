@@ -2,7 +2,13 @@ import { Helmet } from 'react-helmet-async';
 
 const SITE_NAME = 'Solaris Films';
 const BASE_URL = 'https://www.solarisfilms.it';
-const DEFAULT_IMAGE = `${BASE_URL}/og-solaris.jpg`;
+const PUBLIC_SITE_ORIGIN = (
+  process.env.NEXT_PUBLIC_SITE_ORIGIN
+  || process.env.REACT_APP_SITE_ORIGIN
+  || process.env.SITE_ORIGIN
+  || 'https://solarisfilms.vercel.app'
+).replace(/\/+$/, '');
+const DEFAULT_IMAGE = `${PUBLIC_SITE_ORIGIN}/og-solaris.jpg`;
 const LIVE_HOSTS = new Set(['solarisfilms.it', 'www.solarisfilms.it']);
 
 const getRuntimeLocation = () => {
@@ -13,8 +19,8 @@ const getRuntimeLocation = () => {
 const SEO = ({ title, description, path = '', image, type = 'website', noIndex = false, jsonLd }) => {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} - Distributore Esclusivo MADICO USA | Pellicole per Vetri`;
   const location = getRuntimeLocation();
-  const isLiveHost = location ? LIVE_HOSTS.has(location.hostname) : true;
-  const canonicalBase = isLiveHost ? BASE_URL : location?.origin || BASE_URL;
+  const isLiveHost = location ? LIVE_HOSTS.has(location.hostname) : LIVE_HOSTS.has(new URL(PUBLIC_SITE_ORIGIN).hostname);
+  const canonicalBase = location ? (isLiveHost ? BASE_URL : location.origin) : PUBLIC_SITE_ORIGIN;
   const canonicalPath = path || location?.pathname || '';
   const fullUrl = `${canonicalBase}${canonicalPath}`;
   const metaDesc = description || 'Solaris Films, distributore esclusivo MADICO USA per l\'Italia. Pellicole antisolari, di sicurezza, anti-esplosione e privacy per vetri. 30+ anni di esperienza, +45k edifici trattati.';
@@ -50,8 +56,8 @@ export const buildOrganizationSchema = () => ({
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'Solaris Films',
-  url: BASE_URL,
-  logo: `${BASE_URL}/logo-solaris.png`,
+  url: PUBLIC_SITE_ORIGIN,
+  logo: `${PUBLIC_SITE_ORIGIN}/logo-solaris.png`,
   description: 'Distributore esclusivo MADICO USA per l\'Italia. Pellicole antisolari, di sicurezza, anti-esplosione e privacy per vetri.',
   foundingDate: '1985',
   areaServed: { '@type': 'Country', name: 'Italy' },
@@ -69,7 +75,7 @@ export const buildProductSchema = (prodotto) => ({
   '@type': 'Product',
   name: prodotto.nome,
   description: prodotto.descrizione,
-  url: `${BASE_URL}/prodotti/${prodotto.slug}`,
+  url: `${PUBLIC_SITE_ORIGIN}/prodotti/${prodotto.slug}`,
   brand: { '@type': 'Brand', name: 'MADICO' },
   manufacturer: { '@type': 'Organization', name: 'Madico Inc.' },
   category: `Pellicole ${prodotto.categoria}`,
@@ -102,9 +108,9 @@ export const buildLocalBusinessSchema = (citta) => ({
   '@type': 'LocalBusiness',
   name: `Solaris Films - ${citta.nome}`,
   description: `Installazione pellicole per vetri MADICO a ${citta.nome}, ${citta.regione}. Sopralluogo e preventivo gratuiti.`,
-  url: `${BASE_URL}/servizio-locale/${citta.slug}`,
+  url: `${PUBLIC_SITE_ORIGIN}/servizio-locale/${citta.slug}`,
   areaServed: { '@type': 'City', name: citta.nome },
-  parentOrganization: { '@type': 'Organization', name: 'Solaris Films', url: BASE_URL },
+  parentOrganization: { '@type': 'Organization', name: 'Solaris Films', url: PUBLIC_SITE_ORIGIN },
 });
 
 export const buildFAQSchema = (items) => ({
@@ -124,7 +130,7 @@ export const buildBreadcrumbSchema = (items) => ({
     '@type': 'ListItem',
     position: i + 1,
     name: item.name,
-    item: `${BASE_URL}${item.path}`,
+    item: `${PUBLIC_SITE_ORIGIN}${item.path}`,
   })),
 });
 

@@ -29,7 +29,12 @@ import {
 import { getLocalServiceLogo, getProductVisual } from '../utils/assetMaps';
 
 const SITE_NAME = 'Solaris Films';
-const BASE_URL = 'https://www.solarisfilms.it';
+const BASE_URL = (
+  process.env.NEXT_PUBLIC_SITE_ORIGIN
+  || process.env.REACT_APP_SITE_ORIGIN
+  || process.env.SITE_ORIGIN
+  || 'https://solarisfilms.vercel.app'
+).replace(/\/+$/, '');
 const LIVE_HOSTS = new Set(['solarisfilms.it', 'www.solarisfilms.it']);
 const MAIN_PAGE_VISUALS = {
   info: '/assets/generated/main-pages/info-supporto-tecnico.webp',
@@ -158,6 +163,7 @@ const supportExplicitTitle = (page = {}) => {
 
   if (path === '/profilo-solaris/') return 'Company Profile Solaris';
   if (path === '/faq/') return 'Domande frequenti sulle pellicole per vetri';
+  if (path === '/info/norme/') return 'Norme e sicurezza per pellicole e superfici vetrate';
   if (path === '/guida-tecnica/') return 'Guida tecnica pellicole per vetri';
   if (path === '/privacy-policy/') return 'Privacy Policy';
   if (path === '/grazie/') return 'Grazie';
@@ -300,10 +306,12 @@ const LivePageSEO = ({ page, currentPath }) => {
   const seo = page?.seo || {};
   if (!page) return null;
   const canonicalPath = currentPath || page.path || '/';
-  const isLiveHost = typeof window === 'undefined' || LIVE_HOSTS.has(window.location.hostname);
+  const isLiveHost = typeof window === 'undefined'
+    ? LIVE_HOSTS.has(new URL(BASE_URL).hostname)
+    : LIVE_HOSTS.has(window.location.hostname);
   const canonical = typeof window !== 'undefined'
     ? new URL(canonicalPath, window.location.origin).toString()
-    : seo.canonical;
+    : `${BASE_URL}${canonicalPath}`;
   const title = livePageTitle(page, { includeSite: true });
   const description = livePageDescription(page);
   const robots = isLiveHost

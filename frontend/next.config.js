@@ -3,8 +3,201 @@ const path = require('path');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  async rewrites() {
+    return [
+      {
+        source: '/approfondimenti/pellicole-fotocromatiche',
+        destination: '/api/gone',
+      },
+      {
+        source: '/approfondimenti/pellicole-fotocromatiche/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/approfondimenti/guida-pellicola-lcd-switch-installazione',
+        destination: '/api/gone',
+      },
+      {
+        source: '/approfondimenti/guida-pellicola-lcd-switch-installazione/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-per-vetri/pellicole-lcd-switch',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-per-vetri/pellicole-lcd-switch/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/false-parent/battle-plan-mensile-tc-2025',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/false-parent/battle-plan-mensile-tc-2025/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/chiusura-lavori',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/chiusura-lavori/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/false-parent/line-up-settimanale-tc-2025',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/false-parent/line-up-settimanale-tc-2025/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/false-parent',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/false-parent/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/llms-txt',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/llms-txt/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/zoho-callback',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/zoho-callback/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/anagrafica-privati-v2',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/anagrafica-privati-v2/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/anagrafica-aziende-enti-operativa',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/anagrafica-aziende-enti-operativa/',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/anagrafica-tributaria-aziende-enti',
+        destination: '/api/gone',
+      },
+      {
+        source: '/pellicole-per-vetri/anagrafica-tributaria-aziende-enti/',
+        destination: '/api/gone',
+      },
+    ];
+  },
   async redirects() {
     return [
+      {
+        source: '/pellicole-per-vetri/profilo-solaris',
+        destination: '/company-profile/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/profilo-solaris/',
+        destination: '/company-profile/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/category/approfondimenti',
+        destination: '/lo-sapevi-che/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/category/approfondimenti/',
+        destination: '/lo-sapevi-che/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/sputtered',
+        destination: '/focus-tecnico/pellicole-antisolari-sputtered/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/sputtered/',
+        destination: '/focus-tecnico/pellicole-antisolari-sputtered/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/sunscape',
+        destination: '/focus-tecnico/pellicole-antisolari-sunscape/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/sunscape/',
+        destination: '/focus-tecnico/pellicole-antisolari-sunscape/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/spettroselettive',
+        destination: '/focus-tecnico/pellicole-spettro-selettive/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/spettroselettive/',
+        destination: '/focus-tecnico/pellicole-spettro-selettive/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/riflettenti',
+        destination: '/focus-tecnico/pellicole-riflettenti/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/riflettenti/',
+        destination: '/focus-tecnico/pellicole-riflettenti/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/antisfondamento',
+        destination: '/focus-tecnico/pellicole-di-sicurezza/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/antisfondamento/',
+        destination: '/focus-tecnico/pellicole-di-sicurezza/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/antiesplosione',
+        destination: '/focus-tecnico/safetyshield/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/tipo-pellicola/antiesplosione/',
+        destination: '/focus-tecnico/safetyshield/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/author/:slug*',
+        destination: '/lo-sapevi-che/',
+        permanent: true,
+      },
       {
         source: '/focus-tecnico/pellicole-termoisolanti',
         destination: '/focus-tecnico/pellicole-antisolari/',

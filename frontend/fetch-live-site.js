@@ -649,6 +649,7 @@ async function localizeRecordPrimaryImage(record) {
 }
 
 function normalizeSeoForRoute(seo = {}, route = {}) {
+  const canonicalUrl = route.newPath ? `${SITE_ORIGIN}${route.newPath}` : '';
   const normalized = {
     ...seo,
     og: { ...(seo.og || {}) },
@@ -656,6 +657,12 @@ function normalizeSeoForRoute(seo = {}, route = {}) {
     article: { ...(seo.article || {}) },
     schemas: [...(seo.schemas || [])].filter((schema) => !hasExcludedProductReference(schema)),
   };
+
+  if (canonicalUrl) {
+    normalized.canonical = canonicalUrl;
+    normalized.og['og:url'] = canonicalUrl;
+    normalized.twitter['twitter:url'] = canonicalUrl;
+  }
 
   if (hasExcludedProductReference(normalized.og['og:image'])) {
     delete normalized.og['og:image'];
@@ -671,6 +678,18 @@ function normalizeSeoForRoute(seo = {}, route = {}) {
     const title = 'Company Profile Solaris';
     const description = 'Company profile Solaris Films: specialisti delle pellicole per vetri, con esperienza nazionale, competenza tecnica e posa professionale.';
     normalized.title = title;
+    normalized.description = description;
+    normalized.robots = DEFAULT_ROBOTS;
+    normalized.og['og:title'] = `${title} - Solaris Films`;
+    normalized.og['og:description'] = description;
+    normalized.twitter['twitter:title'] = `${title} - Solaris Films`;
+    normalized.twitter['twitter:description'] = description;
+  }
+
+  if (route.newPath === '/faq/') {
+    const title = 'Domande frequenti sulle pellicole per vetri';
+    const description = normalized.description || 'Risposte pratiche sulle pellicole per vetri Solaris: controllo solare, sicurezza, privacy, posa, durata e manutenzione.';
+    normalized.title = `${title} - Solaris Films`;
     normalized.description = description;
     normalized.robots = DEFAULT_ROBOTS;
     normalized.og['og:title'] = `${title} - Solaris Films`;
@@ -929,17 +948,25 @@ function classifyPath(pathname, sourceSitemap = '') {
     return {
       type: 'blog-category',
       label: 'Categoria blog',
-      newPath: `/blog/categoria/${slug}/`,
+      newPath: '/lo-sapevi-che/',
       confidence: 'high',
       needsReview: false,
     };
   }
 
   if (normalized.startsWith('/approfondimenti/tipo-pellicola/')) {
+    const focusTargets = {
+      sputtered: '/focus-tecnico/pellicole-antisolari-sputtered/',
+      sunscape: '/focus-tecnico/pellicole-antisolari-sunscape/',
+      spettroselettive: '/focus-tecnico/pellicole-spettro-selettive/',
+      riflettenti: '/focus-tecnico/pellicole-riflettenti/',
+      antisfondamento: '/focus-tecnico/pellicole-di-sicurezza/',
+      antiesplosione: '/focus-tecnico/safetyshield/',
+    };
     return {
       type: 'film-type',
       label: 'Tipo pellicola',
-      newPath: `/blog/tipo-pellicola/${slug}/`,
+      newPath: focusTargets[slug] || '/focus-tecnico/',
       confidence: 'high',
       needsReview: false,
     };
@@ -949,7 +976,7 @@ function classifyPath(pathname, sourceSitemap = '') {
     return {
       type: 'author',
       label: 'Autore',
-      newPath: `/blog/autore/${slug}/`,
+      newPath: '/lo-sapevi-che/',
       confidence: 'high',
       needsReview: false,
     };
@@ -1055,6 +1082,9 @@ async function buildPageRecord(entry, index, total) {
   const route = classifyPath(normalizePath(entry.url), entry.sitemap);
   const normalizedSeo = normalizeSeoForRoute(seo, route);
   const primaryImage = extractPrimaryImage(normalizedSeo, contentBlocks);
+  const h1 = route.newPath === '/faq/'
+    ? 'Domande frequenti sulle pellicole per vetri'
+    : headings.find((heading) => heading.level === 1)?.text || '';
 
   const record = normalizeSolarisProofValuesDeep({
     url: entry.url,
@@ -1063,7 +1093,7 @@ async function buildPageRecord(entry, index, total) {
     sourceSitemap: entry.sitemap,
     seo: normalizedSeo,
     headings,
-    h1: headings.find((heading) => heading.level === 1)?.text || '',
+    h1,
     primaryImage,
     contentBlocks,
     contentHtml: '',

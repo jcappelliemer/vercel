@@ -10,6 +10,10 @@ const PATH_ALIASES = {
   '/pagina-info/garanzie/': '/info/garanzie/',
 };
 
+const LEGACY_REDIRECTS = {
+  '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/': '/focus-tecnico/pellicole-spettro-selettive/',
+};
+
 const getStoragePaths = () => {
   const path = require('path');
   const publicDir = path.join(process.cwd(), 'public', 'wp-data');
@@ -76,6 +80,16 @@ export const getMirrorStaticProps = (pathname) => {
 export const getMirrorServerProps = (pathname) => {
   const index = readLiveIndex();
   const normalizedPathname = normalizePath(pathname);
+  const legacyDestination = LEGACY_REDIRECTS[normalizedPathname];
+  if (legacyDestination) {
+    return {
+      redirect: {
+        destination: legacyDestination,
+        permanent: true,
+      },
+    };
+  }
+
   const entry = findPageEntryByPath(index, pathname);
   const page = readLivePageByFile(entry?.file);
 

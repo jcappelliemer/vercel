@@ -215,6 +215,26 @@ const nextConfig = {
         destination: '/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere/',
         permanent: true,
       },
+      {
+        source: '/approfondimenti/privacy-vetri-uffici-soluzioni-criteri',
+        destination: '/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/privacy-vetri-uffici-soluzioni-criteri/',
+        destination: '/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/pulizia-manutenzione-pellicole-vetri',
+        destination: '/info/istruzioni-e-manutenzione/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/pulizia-manutenzione-pellicole-vetri/',
+        destination: '/info/istruzioni-e-manutenzione/',
+        permanent: true,
+      },
     ];
   },
   webpack: (config) => {

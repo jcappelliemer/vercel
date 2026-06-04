@@ -157,7 +157,7 @@ const supportExplicitTitle = (page = {}) => {
   const path = normalizePath(page.route?.newPath || page.path);
 
   if (path === '/profilo-solaris/') return 'Company Profile Solaris';
-  if (path === '/faq/') return 'FAQ';
+  if (path === '/faq/') return 'Domande frequenti sulle pellicole per vetri';
   if (path === '/guida-tecnica/') return 'Guida tecnica pellicole per vetri';
   if (path === '/privacy-policy/') return 'Privacy Policy';
   if (path === '/grazie/') return 'Grazie';

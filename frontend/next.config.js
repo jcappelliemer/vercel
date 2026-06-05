@@ -309,13 +309,13 @@ const nextConfig = {
         permanent: true,
       },
       {
-        source: '/info/certificazione-nfrc',
-        destination: '/info/garanzie/',
+        source: '/pagina-info/certificazione-nfrc',
+        destination: '/info/certificazione-nfrc/',
         permanent: true,
       },
       {
-        source: '/info/certificazione-nfrc/',
-        destination: '/info/garanzie/',
+        source: '/pagina-info/certificazione-nfrc/',
+        destination: '/info/certificazione-nfrc/',
         permanent: true,
       },
       {

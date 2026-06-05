@@ -85,7 +85,7 @@ export const pagineInfoData = [
   },
   {
     slug: 'istruzioni-e-manutenzione',
-    titolo: 'Istruzioni e Manutenzione',
+    titolo: 'Istruzioni e manutenzione',
     sottotitolo: 'PULIZIA E MANUTENZIONE DELLE PELLICOLE PER VETRI MADICO',
     contenuto: [
       'Le pellicole Madico sono riconosciute come prodotti di alta qualità. Lo strato protettivo antigraffio superficiale protegge la pellicola dall\'abrasione.',

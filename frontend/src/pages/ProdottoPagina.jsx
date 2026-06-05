@@ -851,7 +851,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`prodotto-${prodotto.slug}`}>
-      <SEO title={`${prodotto.nome} — Pellicola ${prodotto.categoria}`} description={prodotto.descrizione?.substring(0, 160)} path={`/prodotti/${prodotto.slug}`} type="product" jsonLd={buildProductSchema(prodotto)} />
+      <SEO title={`${prodotto.nome} — Pellicole ${prodotto.categoria.toLowerCase()}`} description={prodotto.descrizione?.substring(0, 160)} path={`/prodotti/${prodotto.slug}`} type="product" jsonLd={buildProductSchema(prodotto)} />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

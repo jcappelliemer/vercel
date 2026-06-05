@@ -539,7 +539,7 @@ const restoreProperNames = (value = '') => properNameReplacements.reduce(
 ).replace(/\bl[’']aquila\b/gi, "L'Aquila");
 
 const sentenceCaseImportedHeading = (value = '') => {
-  const lowered = stripHtmlTags(value).toLocaleLowerCase('it');
+  const lowered = cleanText(value).toLocaleLowerCase('it');
   const sentenceCased = lowered
     .replace(/(^|[.!?]\s+)([a-zà-öø-ÿ])/g, (_, prefix, letter) => `${prefix}${letter.toLocaleUpperCase('it')}`)
     .replace(/\bu\.s\.a\.\b/gi, 'U.S.A.')

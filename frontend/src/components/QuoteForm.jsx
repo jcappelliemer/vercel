@@ -5,6 +5,7 @@ import axios from 'axios';
 import { useSettings } from '../hooks/useSettings';
 import { buildWhatsAppHref } from '../utils/contactLinks';
 import { appendSourceFields, getPublicCrmApiBase } from '../utils/publicApi';
+import { trackEvent } from './Analytics';
 
 const pellicoleTipi = [
   { value: 'Pellicole Antisolari', label: 'Pellicole Antisolari' },
@@ -79,6 +80,11 @@ const QuoteForm = () => {
       files.forEach((file) => payload.append('attachment_image', file));
 
       await axios.post(`${getPublicCrmApiBase()}/public/forms/quote-request/plain`, payload);
+      trackEvent('form_preventivo_submit', {
+        event_category: 'lead',
+        form_id: 'quote-form',
+        page_path: window.location.pathname,
+      });
       setIsSuccess(true);
       resetForm();
     } catch (err) {

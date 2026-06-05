@@ -1,80 +1,32 @@
 {
-  "redirects": [
-    { "source": "/pagina-info/garanzie", "destination": "/info/garanzie-clienti/", "permanent": true },
-    { "source": "/pagina-info/garanzie/", "destination": "/info/garanzie-clienti/", "permanent": true },
-    { "source": "/info/certificazione-nfrc", "destination": "/info/garanzie-clienti/", "permanent": true },
-    { "source": "/info/certificazione-nfrc/", "destination": "/info/garanzie-clienti/", "permanent": true },
-    { "source": "/info/garanzie", "destination": "/info/garanzie-clienti/", "permanent": true },
-    { "source": "/info/garanzie/", "destination": "/info/garanzie-clienti/", "permanent": true },
-    { "source": "/servizi/pellicole-antisolari", "destination": "/servizi#antisolari", "permanent": true },
-    { "source": "/servizi/pellicole-antisolari/", "destination": "/servizi#antisolari", "permanent": true },
-    { "source": "/servizi/pellicole-sicurezza", "destination": "/servizi#sicurezza", "permanent": true },
-    { "source": "/servizi/pellicole-sicurezza/", "destination": "/servizi#sicurezza", "permanent": true },
-    { "source": "/servizi/pellicole-decorative", "destination": "/servizi#decorative", "permanent": true },
-    { "source": "/servizi/pellicole-decorative/", "destination": "/servizi#decorative", "permanent": true },
-    { "source": "/info/norme-di-riferimento", "destination": "/info/norme/", "permanent": true },
-    { "source": "/info/norme-di-riferimento/", "destination": "/info/norme/", "permanent": true },
-    { "source": "/focus-tecnico/pellicole-termoisolanti", "destination": "/focus-tecnico/pellicole-antisolari/", "permanent": true },
-    { "source": "/focus-tecnico/pellicole-termoisolanti/", "destination": "/focus-tecnico/pellicole-antisolari/", "permanent": true },
-    { "source": "/prodotti/tecnosolarssn50tesr", "destination": "/servizi#antisolari", "permanent": true },
-    { "source": "/prodotti/tecnosolarssn50tesr/", "destination": "/servizi#antisolari", "permanent": true },
-    { "source": "/prodotti/madico-sb-20-e-ps-sr", "destination": "/prodotti/madicosb20epssr/", "permanent": true },
-    { "source": "/prodotti/madico-sb-20-e-ps-sr/", "destination": "/prodotti/madicosb20epssr/", "permanent": true },
-    { "source": "/prodotti/madico-sb-35-e-ps-sr", "destination": "/prodotti/madicosb35epssr/", "permanent": true },
-    { "source": "/prodotti/madico-sb-35-e-ps-sr/", "destination": "/prodotti/madicosb35epssr/", "permanent": true },
-    { "source": "/prodotti/madico-sg-20-e-ps-sr", "destination": "/prodotti/madicosg20epssr/", "permanent": true },
-    { "source": "/prodotti/madico-sg-20-e-ps-sr/", "destination": "/prodotti/madicosg20epssr/", "permanent": true },
-    { "source": "/prodotti/madico-sl-8-e-ps-sr", "destination": "/prodotti/madicosl8epssr/", "permanent": true },
-    { "source": "/prodotti/madico-sl-8-e-ps-sr/", "destination": "/prodotti/madicosl8epssr/", "permanent": true },
-    { "source": "/prodotti/ssn-50-te-sr", "destination": "/servizi#antisolari", "permanent": true },
-    { "source": "/prodotti/ssn-50-te-sr/", "destination": "/servizi#antisolari", "permanent": true },
-    { "source": "/prodotti/madico-rs-20-ps-sr-8mil", "destination": "/prodotti/madico-rs-20-ps-sr-8-mil/", "permanent": true },
-    { "source": "/prodotti/madico-rs-20-ps-sr-8mil/", "destination": "/prodotti/madico-rs-20-ps-sr-8-mil/", "permanent": true },
-    { "source": "/prodotti/madico-rs-40-ps-sr-4mil", "destination": "/prodotti/madico-rs-40-ps-sr-4-mil/", "permanent": true },
-    { "source": "/prodotti/madico-rs-40-ps-sr-4mil/", "destination": "/prodotti/madico-rs-40-ps-sr-4-mil/", "permanent": true },
-    { "source": "/prodotti/madico-rs-40-ps-sr-8mil", "destination": "/prodotti/madico-rs-40-ps-sr-8-mil/", "permanent": true },
-    { "source": "/prodotti/madico-rs-40-ps-sr-8mil/", "destination": "/prodotti/madico-rs-40-ps-sr-8-mil/", "permanent": true },
-    { "source": "/chi-siamo", "destination": "/company-profile/", "permanent": true },
-    { "source": "/chi-siamo/", "destination": "/company-profile/", "permanent": true },
-    { "source": "/profilo-solaris", "destination": "/company-profile/", "permanent": true },
-    { "source": "/profilo-solaris/", "destination": "/company-profile/", "permanent": true },
-    { "source": "/pellicole-per-vetri/profilo-solaris", "destination": "/company-profile/", "permanent": true },
-    { "source": "/pellicole-per-vetri/profilo-solaris/", "destination": "/company-profile/", "permanent": true },
-    { "source": "/pellicole-per-vetri/pellicole-per-vetri/about", "destination": "/company-profile/", "permanent": true },
-    { "source": "/pellicole-per-vetri/pellicole-per-vetri/about/", "destination": "/company-profile/", "permanent": true },
-    { "source": "/false-parent", "destination": "/", "permanent": true },
-    { "source": "/false-parent/", "destination": "/", "permanent": true },
-    { "source": "/llms-txt", "destination": "/llms.txt", "permanent": true },
-    { "source": "/llms-txt/", "destination": "/llms.txt", "permanent": true },
-    { "source": "/pellicole-per-vetri/false-parent", "destination": "/", "permanent": true },
-    { "source": "/pellicole-per-vetri/false-parent/", "destination": "/", "permanent": true },
-    { "source": "/pellicole-per-vetri/llms-txt", "destination": "/llms.txt", "permanent": true },
-    { "source": "/pellicole-per-vetri/llms-txt/", "destination": "/llms.txt", "permanent": true },
-    { "source": "/zoho-callback", "destination": "/contatti/", "permanent": true },
-    { "source": "/zoho-callback/", "destination": "/contatti/", "permanent": true },
-    { "source": "/pellicole-per-vetri/zoho-callback", "destination": "/contatti/", "permanent": true },
-    { "source": "/pellicole-per-vetri/zoho-callback/", "destination": "/contatti/", "permanent": true },
-    { "source": "/blog/autore/:slug", "destination": "/blog/", "permanent": true },
-    { "source": "/blog/autore/:slug/", "destination": "/blog/", "permanent": true },
-    { "source": "/blog/categoria/:slug", "destination": "/blog/", "permanent": true },
-    { "source": "/blog/categoria/:slug/", "destination": "/blog/", "permanent": true },
-    { "source": "/approfondimenti/author/:slug", "destination": "/blog/", "permanent": true },
-    { "source": "/approfondimenti/author/:slug/", "destination": "/blog/", "permanent": true },
-    { "source": "/approfondimenti/category/:slug", "destination": "/blog/", "permanent": true },
-    { "source": "/approfondimenti/category/:slug/", "destination": "/blog/", "permanent": true }
-  ],
-  "rewrites": [
-    { "source": "/logo.png", "destination": "/wp-data/images/logo.png" },
-    { "source": "/hero.jpg", "destination": "/wp-data/images/hero.jpg" }
-  ],
+  "framework": "nextjs",
   "headers": [
     {
-      "source": "/static/(.*)",
+      "source": "/_next/static/(.*)",
       "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/wp-data/images/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=86400"
+        }
       ]
     }
-  ],
-  "buildCommand": "node fetch-wp-data.js && node fetch-live-site.js && GENERATE_SOURCEMAP=false yarn build",
-  "framework": "nextjs"
+  ]
 }

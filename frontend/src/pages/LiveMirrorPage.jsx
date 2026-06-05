@@ -227,10 +227,10 @@ const pageImage = (page) => (
 );
 
 const decodeHtmlEntities = (value = '') => String(value)
+  .replace(/&amp;/g, '&')
   .replace(/&nbsp;/g, ' ')
   .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(Number(n)))
   .replace(/&#x([a-fA-F0-9]+);/g, (_, n) => String.fromCharCode(parseInt(n, 16)))
-  .replace(/&amp;/g, '&')
   .replace(/&quot;/g, '"')
   .replace(/&#39;/g, "'")
   .replace(/&rsquo;/g, '’')

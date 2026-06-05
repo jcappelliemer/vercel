@@ -279,6 +279,26 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/ssn-70-te-sr',
+        destination: '/prodotti/ssn-70-te-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/ssn-70-te-sr/',
+        destination: '/prodotti/ssn-70-te-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-30-e-ps-sr',
+        destination: '/prodotti/madico-rs-30-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-30-e-ps-sr/',
+        destination: '/prodotti/madico-rs-30-e-ps-sr/',
+        permanent: true,
+      },
+      {
         source: '/info/norme-di-riferimento',
         destination: '/info/norme/',
         permanent: true,

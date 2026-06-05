@@ -41,7 +41,7 @@ const defaults = {
   youtube: '',
   logo_url: '/assets/solaris-logo.png',
   chatbot_enabled: true,
-  chatbot_welcome: 'Ciao! Sono l\'assistente Solaris. Posso aiutarti a capire quale pellicola e piu adatta al tuo edificio.',
+  chatbot_welcome: 'Ciao! Sono l\'assistente Solaris. Posso aiutarti a capire quale pellicola ? più adatta al tuo edificio.',
   chatbot_status: 'Assistente tecnico',
   chatbot_placeholder: 'Scrivi un messaggio...',
   chatbot_error: 'In questo momento l\'assistente non e collegato. Puoi usare WhatsApp o richiedere un preventivo.',

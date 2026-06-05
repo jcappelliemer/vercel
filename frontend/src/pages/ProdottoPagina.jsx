@@ -30,120 +30,120 @@ const PRODUCT_PAGE_OVERRIDES = {
     panoramicaBody: `Le pellicole antisolari sputtered SB 20 E PS SR Madico sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.
 
 Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.
-Riflettono fino al 88% dell energia solare rendendo gli ambienti piu freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica.
-Pellicole piu armoniche che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilita ed con effetto speculare meno invasivo.
+Riflettono fino al 88% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con un’elevata trasmissione luminosa e una maggiore riflessione energetica.
+Pellicole più armoniche che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità e con effetto speculare meno invasivo.
 Prodotto unico con doppio rivestimento antigraffio brevettato.
 Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
 Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.`,
-    contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie all effetto brunito del film. E un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
+    contextBody: `Questa pellicola è consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosità ed un aspetto estetico integrato nel contesto architettonico grazie all’effetto brunito del film. È un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
     caratteristiche: [
       'Resistenza e durata nel tempo grazie alla sofisticata tecnologia sputtering',
-      'Riflettono fino all 88% dell energia solare',
-      'Buona schermatura solare lasciando quasi inalterata la trasparenza dall interno',
+      'Riflettono fino all’88% dell’energia solare',
+      'Buona schermatura solare lasciando quasi inalterata la trasparenza dall’interno',
       'Prodotto unico con doppio rivestimento antigraffio brevettato',
       'Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata',
       'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
     ],
     technicalSheetUrl: '/assets/tech-sheets/sb-20-e-ps-sr.pdf',
     faq: [
-      { q: 'A cosa serve Madico SB 20 E PS SR 75 micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma puo essere installata su ogni vetrata nel lato esterno.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente e importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico SB 20 E PS SR 75 micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo alta luminosità e con basso impatto architettonico.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma può essere installata su ogni vetrata nel lato esterno.' },
+      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente ? importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-sb-35-e-ps-sr': {
     panoramicaBody: `Le pellicole antisolari sputtered SB 35 E PS SR Madico sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.
 
 Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.
-Riflettono fino al 80% dell energia solare rendendo gli ambienti piu freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica.
-Pellicole piu chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilita ed riducendo effetti speculari.
+Riflettono fino al 80% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con un’elevata trasmissione luminosa e una maggiore riflessione energetica.
+Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità e riducendo effetti speculari.
 Prodotto unico con doppio rivestimento antigraffio brevettato.
 Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
 Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.`,
-    contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie all effetto brunito del film. E un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
+    contextBody: `Questa pellicola è consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosità ed un aspetto estetico integrato nel contesto architettonico grazie all’effetto brunito del film. È un prodotto molto adatto in contesti di pregio architettonico, centri storici e casali.`,
     technicalSheetUrl: '/assets/tech-sheets/sb-35-e-ps-sr.pdf',
     caratteristiche: [
       'Resistenza e durata nel tempo grazie alla sofisticata tecnologia sputtering',
-      'Riflettono fino all 80% dell energia solare',
+      'Riflettono fino all’80% dell’energia solare',
       'Maggiore trasmissione luminosa rispetto a SB 20 E PS SR',
       'Prodotto unico con doppio rivestimento antigraffio brevettato',
       'Doppio strato antigraffio per lunga durata',
       'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
     ],
     faq: [
-      { q: 'A cosa serve Madico SB 35 E PS SR 75 micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma puo essere installata su ogni vetrata nel lato esterno.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente e importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico SB 35 E PS SR 75 micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo alta luminosità e con basso impatto architettonico.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma può essere installata su ogni vetrata nel lato esterno.' },
+      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente ? importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-sg-20-e-ps-sr': {
     panoramicaBody: `Le pellicole antisolari sputtered SG 20 E PS SR Madico sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.
 
 Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.
-Riflettono fino all 84% dell energia solare rendendo gli ambienti piu freschi e confortevoli, con buona trasmissione luminosa e tono neutro grigio fume.
-Pellicole piu armoniche che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilita ed con effetto speculare meno invasivo.
+Riflettono fino all’84% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con buona trasmissione luminosa e tono neutro grigio fumé.
+Pellicole più armoniche che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità e con effetto speculare meno invasivo.
 Prodotto unico con doppio rivestimento antigraffio brevettato.
 Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
 Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.`,
-    contextBody: `Questa pellicola e consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosita ed un aspetto estetico integrato nel contesto architettonico grazie al tono neutro grigio fume del film. E un prodotto molto adatto in contesti tipo aziende, uffici, scuole, banche, industrie e ospedali.`,
+    contextBody: `Questa pellicola è consigliata per ambienti dove si vuole alte prestazioni di respinta energetica ma allo stesso tempo si richiede alta luminosità ed un aspetto estetico integrato nel contesto architettonico grazie al tono neutro grigio fumé del film. È un prodotto molto adatto in contesti tipo aziende, uffici, scuole, banche, industrie e ospedali.`,
     technicalSheetUrl: '/assets/tech-sheets/sg-20-e-ps-sr.pdf',
     caratteristiche: [
       'Resistenza e durata nel tempo grazie alla sofisticata tecnologia sputtering',
-      'Riflettono fino all 84% dell energia solare',
+      'Riflettono fino all’84% dell’energia solare',
       'Buona schermatura solare lasciando quasi inalterata la trasparenza',
       'Prodotto unico con doppio rivestimento antigraffio brevettato',
       'Doppio strato antigraffio per lunga durata',
       'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
     ],
     faq: [
-      { q: 'A cosa serve Madico SG 20 E PS SR 75 micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma puo essere installata su ogni vetrata nel lato esterno.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente e importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico SG 20 E PS SR 75 micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo alta luminosità e con basso impatto architettonico.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma può essere installata su ogni vetrata nel lato esterno.' },
+      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente ? importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-sl-8-e-ps-sr': {
-    panoramicaBody: `Le pellicole antisolari Madico SL 8 sono consigliate per il rivestimento di grandi superfici vetrate che richiedono una elevata riflessione dell irraggiamento solare e protezione dall abbaglio. Il secondo rivestimento fume permette alla pellicola di abbattere i riflessi all interno degli ambienti, in particolar modo sui videoterminali.
+    panoramicaBody: `Le pellicole antisolari Madico SL 8 sono consigliate per il rivestimento di grandi superfici vetrate che richiedono un’elevata riflessione dell’irraggiamento solare e protezione dall’abbaglio. Il secondo rivestimento fumé permette alla pellicola di abbattere i riflessi all’interno degli ambienti, in particolar modo sui videoterminali.
 
-Respingendo fino al 94% dell irraggiamento solare offre il massimo in termini di protezione, limitando da una parte l incremento del calore e dall altra riducendo drasticamente l abbaglio. Questo dona agli ambienti un comfort termico e visivo impareggiabile rispetto ai prodotti analoghi presenti sul mercato.
-E una pellicola innovativa, caratterizzata da un effetto estetico speculare colore argento verso l esterno e colore fume all interno.
+Respingendo fino al 94% dell’irraggiamento solare offre il massimo in termini di protezione, limitando da una parte l’incremento del calore e dall’altra riducendo drasticamente l’abbaglio. Questo dona agli ambienti un comfort termico e visivo impareggiabile rispetto ai prodotti analoghi presenti sul mercato.
+È una pellicola innovativa, caratterizzata da un effetto estetico speculare colore argento verso l’esterno e colore fumé all’interno.
 Prodotto unico con doppio rivestimento antigraffio brevettato.
 Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Pellicola antisolare che conferisce a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
-La pellicola antisolare Sunscape Madico SL 8 e realizzata con l avanzato processo di metallizzazione sputtering, che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.`,
-    contextBody: `Questa pellicola e consigliata nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l abbaglio. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. E adatta a contesti professionali e pubblici in cui servono controllo solare elevato, comfort visivo e continuita operativa degli ambienti.`,
+La pellicola antisolare Sunscape Madico SL 8 è realizzata con l’avanzato processo di metallizzazione sputtering, che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un doppio trattamento antigraffio brevettato per proteggerlo da abrasioni e corrosioni.`,
+    contextBody: `Questa pellicola è consigliata nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l’abbaglio. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. È adatta a contesti professionali e pubblici in cui servono controllo solare elevato, comfort visivo e continuità operativa degli ambienti.`,
     technicalSheetUrl: '/assets/tech-sheets/sl-8-e-ps-sr.pdf',
     caratteristiche: [
-      'Respingono fino al 94% dell irraggiamento solare',
-      'Effetto estetico speculare argento esterno, fume interno',
-      'Consigliato nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l abbaglio',
+      'Respingono fino al 94% dell’irraggiamento solare',
+      'Effetto estetico speculare argento esterno, fumé interno',
+      'Consigliato nelle vetrate a tetto e dove si vuole ridurre in maniera efficace l’abbaglio',
       'Prodotto unico con doppio rivestimento antigraffio brevettato',
       'Doppio strato antigraffio per lunga durata',
       'Trasforma la vetrata esterna da 4 mm in vetro di sicurezza UNI EN 12600 classe 3B3',
     ],
     faq: [
-      { q: 'A cosa serve Madico SL 8 E PS SR 75 Micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo un elevata efficacia schermante.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola e adatta soprattutto a grandi superfici vetrate e vetrate a tetto, con posa sul lato esterno per massimizzare la resa in condizioni di forte irraggiamento.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni cambiano in base al tipo di vetro. Per una scelta corretta conviene leggere energia respinta, riduzione abbaglio e compatibilita con il vetro esistente, utilizzando dati certificati come quelli dei prodotti MADICO.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico SL 8 E PS SR 75 Micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo un’elevata efficacia schermante.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola è adatta soprattutto a grandi superfici vetrate e vetrate a tetto, con posa sul lato esterno per massimizzare la resa in condizioni di forte irraggiamento.' },
+      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni cambiano in base al tipo di vetro. Per una scelta corretta conviene leggere energia respinta, riduzione abbaglio e compatibilità con il vetro esistente, utilizzando dati certificati come quelli dei prodotti MADICO.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'ssn-70-te-sr': {
-    panoramicaBody: `Le pellicole antisolari spettro selettive Hi-Tec-Clear SSN 70 TE SR sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l esigenza di mantenere inalterata la trasparenza e l aspetto estetico delle vetrate.
+    panoramicaBody: `Le pellicole antisolari spettro selettive Hi-Tec-Clear SSN 70 TE SR sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l’esigenza di mantenere inalterata la trasparenza e l’aspetto estetico delle vetrate.
 
-La pellicola Hi-Tec-Clear SSN 70 TE SR e una pellicola per vetri spettro selettiva estremamente resistente specifica per applicazioni in esterno. Il rivestimento esterno utilizza una innovativa tecnologia brevettata particolarmente resistente ai graffi.
-Bloccando oltre l 84% dei raggi infrarossi (calore) e lasciando passare un elevata quantita di luce visibile garantisce ambienti interni piu freschi e confortevoli, costi di condizionamento ridotti ed un elevata trasparenza, preservando l aspetto estetico originale del vetro.
-L ultima evoluzione tecnologica nel campo delle pellicole per vetri e rappresentata dalle pellicole antisolari spettro selettive della serie Hi-Tec-Clear, distribuite in esclusiva da Solaris.`,
+La pellicola Hi-Tec-Clear SSN 70 TE SR È una pellicola per vetri spettro selettiva estremamente resistente specifica per applicazioni in esterno. Il rivestimento esterno utilizza una innovativa tecnologia brevettata particolarmente resistente ai graffi.
+Bloccando oltre l’84% dei raggi infrarossi (calore) e lasciando passare un’elevata quantità di luce visibile garantisce ambienti interni più freschi e confortevoli, costi di condizionamento ridotti ed un’elevata trasparenza, preservando l’aspetto estetico originale del vetro.
+L’ultima evoluzione tecnologica nel campo delle pellicole per vetri è rappresentata dalle pellicole antisolari spettro selettive della serie Hi-Tec-Clear, distribuite in esclusiva da Solaris.`,
     contextBody: `Sono ideali per vetrine, uffici, musei, show room, scuole, banche e per tutti gli edifici dove vi sono vincoli storici, paesaggistici o ambientali.`,
     technicalSheetUrl: '/assets/tech-sheets/ssn-70-te-sr.pdf',
     caratteristiche: [
@@ -154,29 +154,29 @@ L ultima evoluzione tecnologica nel campo delle pellicole per vetri e rappresent
       'Bassa riflessione interna ed esterna, visuale inalterata',
     ],
     faq: [
-      { q: 'A cosa serve SSN 70 TE SR?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate mantenendo alta luminosita e con basso impatto architettonico.' },
+      { q: 'A cosa serve SSN 70 TE SR?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo alta luminosità e con basso impatto architettonico.' },
       { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza su vetrocamera. In questa scheda i dati principali sono riferiti a vetrocamera 6 mm, con posa sul lato esterno.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente e importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente ? importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-rs-20-e-ps-sr': {
-    panoramicaBody: `La pellicola antisolare riflettente RS 20 E PS SR e consigliata per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
+    panoramicaBody: `La pellicola antisolare riflettente RS 20 E PS SR È consigliata per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
 
-Consentono di ridurre l ingresso di calore fino all 89% ottenendo ambienti piu freschi e confortevoli.
+Consentono di ridurre l’ingresso di calore fino all’89% ottenendo ambienti più freschi e confortevoli.
 In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l ammortamento della spesa in pochi anni.
-Riducono l abbaglio, offrendo un maggiore comfort visivo.
-Sono ideali per la difesa della privacy, consentendo di vedere dall interno verso l esterno ma evitando la visione dall esterno verso l interno nelle ore diurne.
+Riducono l’abbaglio, offrendo un maggiore comfort visivo.
+Sono ideali per la difesa della privacy, consentendo di vedere dall’interno verso l’esterno ma evitando la visione dall’esterno verso l’interno nelle ore diurne.
 Garantiscono una maggiore eleganza all edificio.
 Esiste anche in versione di sicurezza, da 4Mil e da 8Mil che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza.
 Prodotto unico, con brevetto esclusivo.
 Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.`,
-    contextBody: `E ideale per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre, dove si vuole ottenere un effetto moderno e specchiante.`,
+    contextBody: `È ideale per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre, dove si vuole ottenere un effetto moderno e specchiante.`,
     technicalSheetUrl: '/assets/tech-sheets/rs-20-e-ps-sr.pdf',
     caratteristiche: [
-      'Riduce l ingresso di calore fino all 89%',
+      'Riduce l’ingresso di calore fino all’89%',
       'Risparmio energetico con ammortamento in pochi anni',
       'Riduzione abbaglio e maggiore comfort visivo',
       'Privacy diurna con visione interna verso esterno',
@@ -184,26 +184,26 @@ Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione
       'Doppio strato antigraffio e certificazione UNI EN 12600 classe 3B3',
     ],
     faq: [
-      { q: 'A cosa serve Madico RS 20 E PS SR 75 Micron?', a: 'E pensata per il controllo solare e comfort interno, riduce il calore e l abbaglio sulle superfici vetrate con effetto riflettente e buon livello di privacy diurna.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola e consigliata su vetrate con forte irraggiamento e surriscaldamento interno. Per questa scheda i dati principali sono riferiti a vetro singolo 6 mm con posa esterna.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Conviene confrontare energia respinta, riduzione abbaglio, riflessione luminosa e compatibilita con il vetro esistente.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico RS 20 E PS SR 75 Micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate con effetto riflettente e buon livello di privacy diurna.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola è consigliata su vetrate con forte irraggiamento e surriscaldamento interno. Per questa scheda i dati principali sono riferiti a vetro singolo 6 mm con posa esterna.' },
+      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Conviene confrontare energia respinta, riduzione abbaglio, riflessione luminosa e compatibilità con il vetro esistente.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-rs-40-e-ps-sr': {
     panoramicaBody: `Le pellicole antisolari riflettenti Madico RS 40 E PS SR sono consigliate dove non si vuole un effetto specchio molto marcato.
 
-Consentono di ridurre l ingresso di calore fino al 61% ottenendo ambienti piu freschi e confortevoli.
+Consentono di ridurre l’ingresso di calore fino al 61% ottenendo ambienti più freschi e confortevoli.
 In presenza di impianti di condizionamento offrono un notevole risparmio energetico consentendo l ammortamento della spesa in pochi anni.
 Riducono il calore con basso effetto speculare.
 Struttura rivoluzionaria con doppio strato antigraffio brevettato per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
-Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solaris, sono formate da una base di materiale poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato a densita controllata. Su questo viene posto un ulteriore strato di poliestere con un successivo trattamento antigraffio per proteggerlo da abrasioni e corrosioni. L effetto esterno che si ottiene e speculare di colore argento.`,
-    contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Soluzione adatta quando si cerca riduzione calore e un prodotto elegante a basso impatto estetico. Garantiscono una maggiore eleganza all estetica dell edificio. Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza. Prodotto unico, con brevetto esclusivo.`,
+Le pellicole antisolari riflettenti dell’americana Madico, distribuite da Solaris, sono formate da una base di materiale poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato a densità controllata. Su questo viene posto un ulteriore strato di poliestere con un successivo trattamento antigraffio per proteggerlo da abrasioni e corrosioni. L’effetto esterno che si ottiene ? speculare di colore argento.`,
+    contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Soluzione adatta quando si cerca riduzione calore e un prodotto elegante a basso impatto estetico. Garantiscono una maggiore eleganza all’estetica dell’edificio. Esiste anche in versione di sicurezza, che permette di ottemperare alle disposizioni previste dal Testo Unico D.Lgs 81/2008 in materia di sicurezza. Prodotto unico, con brevetto esclusivo.`,
     technicalSheetUrl: '/assets/tech-sheets/rs-40-e-ps-sr.pdf',
     caratteristiche: [
-      'Riduce l ingresso di calore fino al 61%',
+      'Riduce l’ingresso di calore fino al 61%',
       'Risparmio energetico con ammortamento in pochi anni',
       'Riduzione calore con basso effetto speculare',
       'Prodotto elegante a basso impatto estetico',
@@ -211,141 +211,141 @@ Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solari
       'Doppio strato antigraffio brevettato e certificazione UNI EN 12600 classe 3B3',
     ],
     faq: [
-      { q: 'A cosa serve Madico RS 40 E PS SR?', a: 'E pensata per ridurre il calore in ingresso con un effetto specchiante piu contenuto rispetto alle versioni piu riflettenti, mantenendo comfort interno e buona resa estetica.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'E consigliata su vetrate esposte a forte irraggiamento dove si vuole contenere il surriscaldamento senza un effetto specchio molto marcato. La posa prevista e sul lato esterno.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico RS 40 E PS SR?', a: 'È pensata per ridurre il calore in ingresso con un effetto specchiante più contenuto rispetto alle versioni più riflettenti, mantenendo comfort interno e buona resa estetica.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'È consigliata su vetrate esposte a forte irraggiamento dove si vuole contenere il surriscaldamento senza un effetto specchio molto marcato. La posa prevista ? sul lato esterno.' },
+      { q: 'Quali prestazioni ? utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-rs-30-e-ps-sr': {
     panoramicaBody: `Le pellicole antisolari riflettenti Madico RS 30 E PS SR sono pensate come soluzione intermedia tra RS 20 e RS 40.
 
-Consentono di ridurre l ingresso di calore fino al 71% ottenendo ambienti piu freschi e confortevoli.
-In presenza di impianti di condizionamento offrono un buon risparmio energetico e una gestione piu stabile del comfort interno.
-Riduzione abbaglio con effetto speculare moderato, quindi adatta quando si cerca una resa piu equilibrata tra schermatura e luminosita.
+Consentono di ridurre l’ingresso di calore fino al 71% ottenendo ambienti più freschi e confortevoli.
+In presenza di impianti di condizionamento offrono un buon risparmio energetico e una gestione più stabile del comfort interno.
+Riduzione abbaglio con effetto speculare moderato, quindi adatta quando si cerca una resa più equilibrata tra schermatura e luminosità.
 Struttura rivoluzionaria con doppio strato antigraffio brevettato per una lunga durata.
 Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.
-Le pellicole antisolari riflettenti dell americana Madico, distribuite da Solaris, sono formate da una base di materiale poliestere trasparente con rivestimento metallico a densita controllata e protezione antigraffio per uso esterno.`,
+Le pellicole antisolari riflettenti dell’americana Madico, distribuite da Solaris, sono formate da una base di materiale poliestere trasparente con rivestimento metallico a densità controllata e protezione antigraffio per uso esterno.`,
     contextBody: `Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici e palestre. Soluzione adatta quando serve un livello intermedio tra effetto specchiante marcato e basso impatto estetico.`,
     caratteristiche: [
-      'Riduce l ingresso di calore fino al 71%',
-      'Buon equilibrio tra schermatura e luminosita interna',
+      'Riduce l’ingresso di calore fino al 71%',
+      'Buon equilibrio tra schermatura e luminosità interna',
       'Riduzione abbaglio con effetto speculare moderato',
       'Prodotto elegante a basso impatto estetico',
       'Prodotto unico con brevetto esclusivo',
       'Doppio strato antigraffio brevettato e certificazione UNI EN 12600 classe 3B3',
     ],
     faq: [
-      { q: 'A cosa serve Madico RS 30 E PS SR?', a: 'E pensata per ridurre il calore in ingresso e migliorare il comfort visivo con una riflessione intermedia tra RS 20 e RS 40.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'E consigliata su vetrate esposte a irraggiamento elevato quando si cerca una soluzione equilibrata tra schermatura solare e resa estetica. La posa prevista e sul lato esterno.' },
-      { q: 'Quali prestazioni e utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico RS 30 E PS SR?', a: 'È pensata per ridurre il calore in ingresso e migliorare il comfort visivo con una riflessione intermedia tra RS 20 e RS 40.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'È consigliata su vetrate esposte a irraggiamento elevato quando si cerca una soluzione equilibrata tra schermatura solare e resa estetica. La posa prevista ? sul lato esterno.' },
+      { q: 'Quali prestazioni ? utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-rs-20-ps-sr-4mil': {
-    panoramicaBody: `La pellicola certificata antisolare di sicurezza Madico RS 20 PS SR 4 MIL e testata e certificata in conformita alla Norma europea EN 12600, classe 2B2 su lastra singola da 2, 3, 4 e 6 mm. Le proprieta riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
+    panoramicaBody: `La pellicola certificata antisolare di sicurezza Madico RS 20 PS SR 4 MIL è testata è certificata in conformità alla Norma europea EN 12600, classe 2B2 su lastra singola da 2, 3, 4 e 6 mm. Le proprietà riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
 
-Prodotta con processi produttivi tecnologicamente innovativi, utilizzando collanti e poliestere di alta qualita, si colloca ai massimi livelli per affidabilita. La struttura nasce da una base di poliestere trasparente su cui viene applicato un rivestimento estremamente sottile di alluminio vaporizzato. Un ulteriore strato di poliestere con trattamento antigraffio protegge il film da abrasioni e corrosioni e conferisce l effetto specchiato argento.
+Prodotta con processi produttivi tecnologicamente innovativi, utilizzando collanti e poliestere di alta qualità?, si colloca ai massimi livelli per affidabilità. La struttura nasce da una base di poliestere trasparente su cui viene applicato un rivestimento estremamente sottile di alluminio vaporizzato. Un ulteriore strato di poliestere con trattamento antigraffio protegge il film da abrasioni e corrosioni e conferisce l’effetto specchiato argento.
 
-Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformita al Testo Unico D.Lgs. 81/2008.`,
-    contextBody: `Consigliata per uffici, scuole, banche, industrie, ospedali, servizi pubblici e aree di passaggio dove serve protezione antinfortunistica insieme a controllo solare. Offre un ambiente piu sicuro, fresco e confortevole: riduce il calore, limita l abbaglio, scherma oltre il 99% dei raggi UV e mantiene una visuale cristallina senza distorsioni ottiche.`,
+Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformità al Testo Unico D.Lgs. 81/2008.`,
+    contextBody: `Consigliata per uffici, scuole, banche, industrie, ospedali, servizi pubblici e aree di passaggio dove serve protezione antinfortunistica insieme a controllo solare. Offre un ambiente più sicuro, fresco e confortevole: riduce il calore, limita l’abbaglio, scherma oltre il 99% dei raggi UV e mantiene una visuale cristallina senza distorsioni ottiche.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 2B2 su vetro singolo da 2, 3, 4 e 6 mm',
       'Riduzione del calore e miglior comfort interno',
       'Riduzione abbaglio su superfici vetrate esposte',
       'Contenimento frammenti in caso di rottura del vetro',
       'Schermatura oltre il 99% dei raggi UV',
-      'Supporto alla conformita D.Lgs 81/2008',
+      'Supporto alla conformità D.Lgs 81/2008',
     ],
     technicalSheetUrl: '/assets/tech-sheets/rs-20-e-ps-sr-4-mil.pdf',
     faq: [
       { q: 'A cosa serve Madico RS 20 PS SR 4 MIL?', a: 'Serve a combinare controllo solare e sicurezza del vetro: riduce calore e abbaglio, e allo stesso tempo trattiene i frammenti in caso di rottura.' },
-      { q: 'Quando conviene scegliere la versione 4 MIL?', a: 'Quando serve un buon livello di protezione antinfortunistica certificata con una soluzione piu leggera rispetto agli spessori superiori, mantenendo equilibrio tra resa tecnica e impatto estetico.' },
-      { q: 'Su quali vetri va verificata prima della posa?', a: 'Va verificata sul vetro reale in opera. In questa scheda il riferimento principale e vetro singolo, ma la compatibilita finale dipende da composizione del serramento, esposizione e dimensioni della lastra.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'Quando conviene scegliere la versione 4 MIL?', a: 'Quando serve un buon livello di protezione antinfortunistica certificata con una soluzione più leggera rispetto agli spessori superiori, mantenendo equilibrio tra resa tecnica e impatto estetico.' },
+      { q: 'Su quali vetri va verificata prima della posa?', a: 'Va verificata sul vetro reale in opera. In questa scheda il riferimento principale ? vetro singolo, ma la compatibilità finale dipende da composizione del serramento, esposizione e dimensioni della lastra.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-rs-20-ps-sr-8mil': {
-    panoramicaBody: `La pellicola certificata antisolare di sicurezza Madico RS 20 PS SR 8 MIL e testata e certificata in conformita alla Norma europea EN 12600, classe 1B1 su lastra singola da 2, 3, 4 e 6 mm. Le proprieta riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
+    panoramicaBody: `La pellicola certificata antisolare di sicurezza Madico RS 20 PS SR 8 MIL è testata è certificata in conformità alla Norma europea EN 12600, classe 1B1 su lastra singola da 2, 3, 4 e 6 mm. Le proprietà riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
 
-Prodotta con processi produttivi tecnologicamente innovativi, utilizzando collanti e poliestere di alta qualita, si colloca ai massimi livelli per affidabilita. La struttura nasce da una base di poliestere trasparente su cui viene applicato un rivestimento estremamente sottile di alluminio vaporizzato. Un ulteriore strato di poliestere con trattamento antigraffio protegge il film da abrasioni e corrosioni e conferisce l effetto specchiato argento.
+Prodotta con processi produttivi tecnologicamente innovativi, utilizzando collanti e poliestere di alta qualità?, si colloca ai massimi livelli per affidabilità. La struttura nasce da una base di poliestere trasparente su cui viene applicato un rivestimento estremamente sottile di alluminio vaporizzato. Un ulteriore strato di poliestere con trattamento antigraffio protegge il film da abrasioni e corrosioni e conferisce l’effetto specchiato argento.
 
-Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformita al Testo Unico D.Lgs. 81/2008.`,
-    contextBody: `Consigliata per uffici, scuole, banche, industrie, ospedali, servizi pubblici e aree di passaggio dove serve un livello di sicurezza superiore insieme al controllo solare. Offre un ambiente piu sicuro, fresco e confortevole: riduce il calore, limita l abbaglio, scherma oltre il 99% dei raggi UV e mantiene una visuale cristallina senza distorsioni ottiche.`,
+Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformità al Testo Unico D.Lgs. 81/2008.`,
+    contextBody: `Consigliata per uffici, scuole, banche, industrie, ospedali, servizi pubblici e aree di passaggio dove serve un livello di sicurezza superiore insieme al controllo solare. Offre un ambiente più sicuro, fresco e confortevole: riduce il calore, limita l’abbaglio, scherma oltre il 99% dei raggi UV e mantiene una visuale cristallina senza distorsioni ottiche.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 1B1 su vetro singolo da 2, 3, 4 e 6 mm',
       'Maggiore spessore con protezione antinfortunistica rinforzata',
       'Riduzione del calore e miglior comfort interno',
       'Riduzione abbaglio su superfici vetrate esposte',
       'Schermatura oltre il 99% dei raggi UV',
-      'Supporto alla conformita D.Lgs 81/2008',
+      'Supporto alla conformità D.Lgs 81/2008',
     ],
     technicalSheetUrl: '/assets/tech-sheets/rs-20-e-ps-sr-8-mil.pdf',
     faq: [
-      { q: 'A cosa serve Madico RS 20 PS SR 8 MIL?', a: 'Serve a combinare controllo solare e sicurezza rinforzata del vetro: riduce calore e abbaglio e offre una trattenuta frammenti piu elevata rispetto agli spessori inferiori.' },
-      { q: 'Qual e il vantaggio principale rispetto alla 4 MIL?', a: 'La 8 MIL raggiunge una classe di sicurezza superiore (1B1), con maggiore capacita di contenimento in caso di rottura del vetro.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione riportata e su lastra singola da 2, 3, 4 e 6 mm. La compatibilita finale va sempre verificata sul vetro reale in opera.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico RS 20 PS SR 8 MIL?', a: 'Serve a combinare controllo solare e sicurezza rinforzata del vetro: riduce calore e abbaglio e offre una trattenuta frammenti più elevata rispetto agli spessori inferiori.' },
+      { q: 'Qual è il vantaggio principale rispetto alla 4 MIL?', a: 'La 8 MIL raggiunge una classe di sicurezza superiore (1B1), con maggiore capacità di contenimento in caso di rottura del vetro.' },
+      { q: 'Su quali vetri è certificata?', a: 'la certificazione riportata è su lastra singola da 2, 3, 4 e 6 mm. La compatibilità finale va sempre verificata sul vetro reale in opera.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-rs-40-ps-sr-4mil': {
-    panoramicaBody: `La pellicola antisolare di sicurezza Madico RS 40 PS SR 4 Mil e testata e certificata in conformita alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Le proprieta riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
+    panoramicaBody: `La pellicola antisolare di sicurezza Madico RS 40 PS SR 4 Mil è testata è certificata in conformità alla Norma europea EN12600, classe 2B2 su lastra singola da 3, 4 e 6 mm. Le proprietà riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
 
-Prodotta con processi produttivi tecnologicamente innovativi utilizzando i migliori collanti ed il miglior poliestere, si colloca al primo posto per qualita ed affidabilita. Le pellicole antisolari riflettenti Madico RS 40 PS SR 4 Mil sono formate da una base di poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato. Viene aggiunto un ulteriore strato di poliestere con un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Questo conferisce l aspetto specchiato di colore argento.
+Prodotta con processi produttivi tecnologicamente innovativi utilizzando i migliori collanti ed il miglior poliestere, si colloca al primo posto per qualità ed affidabilità. Le pellicole antisolari riflettenti Madico RS 40 PS SR 4 Mil sono formate da una base di poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato. Viene aggiunto un ulteriore strato di poliestere con un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Questo conferisce l’aspetto specchiato di colore argento.
 
-Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
-    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Riflette il calore solare riducendo l utilizzo dei climatizzatori e i costi estivi. Rende l ambiente piu sicuro, fresco e confortevole, riduce l abbaglio, scherma oltre il 99% dei raggi UV e garantisce una visuale cristallina senza distorsioni ottiche. E la versione piu chiara della serie RS rispetto alla RS 20.`,
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformità al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Riflette il calore solare riducendo l’utilizzo dei climatizzatori e i costi estivi. Rende l’ambiente più sicuro, fresco e confortevole, riduce l’abbaglio, scherma oltre il 99% dei raggi UV e garantisce una visuale cristallina senza distorsioni ottiche. ? la versione più chiara della serie RS rispetto alla RS 20.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 2B2 su vetro singolo',
-      'Versione piu chiara della serie RS rispetto alla RS 20',
+      'Versione più chiara della serie RS rispetto alla RS 20',
       'Riduzione del calore con maggiore trasmissione luminosa',
       'Protezione antinfortunistica in caso di rottura',
       'Schermatura oltre il 99% dei raggi UV',
-      'Supporto alla conformita D.Lgs 81/2008',
+      'Supporto alla conformità D.Lgs 81/2008',
     ],
     technicalSheetUrl: '/assets/tech-sheets/rs-40-ps-sr-4-mil.pdf',
     faq: [
-      { q: 'A cosa serve Madico RS 40 PS SR 4 MIL?', a: 'Serve a combinare sicurezza e controllo solare mantenendo piu luce naturale rispetto alla versione RS 20.' },
-      { q: 'Qual e la differenza principale rispetto alla RS 20 PS SR 4 MIL?', a: 'La RS 40 PS SR 4 MIL e la variante piu chiara: riduce il calore ma con trasmissione luminosa superiore.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione riportata e EN 12600 classe 2B2 su lastra singola da 3, 4 e 6 mm.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico RS 40 PS SR 4 MIL?', a: 'Serve a combinare sicurezza e controllo solare mantenendo più luce naturale rispetto alla versione RS 20.' },
+      { q: 'Qual è la differenza principale rispetto alla RS 20 PS SR 4 MIL?', a: 'La RS 40 PS SR 4 MIL e la variante più chiara: riduce il calore ma con trasmissione luminosa superiore.' },
+      { q: 'Su quali vetri è certificata?', a: 'la certificazione riportata è EN 12600 classe 2B2 su lastra singola da 3, 4 e 6 mm.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-rs-40-ps-sr-8mil': {
-    panoramicaBody: `La pellicola antisolare di sicurezza Madico RS 40 PS SR 8 Mil e testata e certificata in conformita alla Norma europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Le proprieta riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
+    panoramicaBody: `La pellicola antisolare di sicurezza Madico RS 40 PS SR 8 Mil è testata è certificata in conformità alla Norma europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Le proprietà riflettenti la rendono ideale per vetrate con grossi problemi di insolazione, abbaglio e conseguente surriscaldamento degli ambienti interni.
 
-Prodotta con processi produttivi tecnologicamente innovativi utilizzando i migliori collanti ed il miglior poliestere, si colloca al primo posto per qualita ed affidabilita. Le pellicole antisolari riflettenti Madico RS 40 PS SR 8 Mil sono formate da una base di poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato. Viene aggiunto un ulteriore strato di poliestere con un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Questo conferisce l aspetto specchiato di colore argento.
+Prodotta con processi produttivi tecnologicamente innovativi utilizzando i migliori collanti ed il miglior poliestere, si colloca al primo posto per qualità ed affidabilità. Le pellicole antisolari riflettenti Madico RS 40 PS SR 8 Mil sono formate da una base di poliestere trasparente sulla quale viene posto un rivestimento estremamente sottile di alluminio vaporizzato. Viene aggiunto un ulteriore strato di poliestere con un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Questo conferisce l’aspetto specchiato di colore argento.
 
-Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
-    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Riflette il calore solare riducendo l utilizzo dei climatizzatori e i costi estivi. Rende l ambiente piu sicuro, fresco e confortevole, riduce l abbaglio, scherma oltre il 99% dei raggi UV e garantisce una visuale cristallina senza distorsioni ottiche. E la versione piu chiara della serie RS rispetto alla RS 20.`,
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformità al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Riflette il calore solare riducendo l’utilizzo dei climatizzatori e i costi estivi. Rende l’ambiente più sicuro, fresco e confortevole, riduce l’abbaglio, scherma oltre il 99% dei raggi UV e garantisce una visuale cristallina senza distorsioni ottiche. ? la versione più chiara della serie RS rispetto alla RS 20.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 1B1 su vetro singolo',
-      'Versione piu chiara rispetto alla RS 20',
+      'Versione più chiara rispetto alla RS 20',
       'Spessore 8 MIL per protezione rinforzata',
       'Riduzione del calore e miglior comfort interno',
       'Schermatura oltre il 99% dei raggi UV',
-      'Supporto alla conformita D.Lgs 81/2008',
+      'Supporto alla conformità D.Lgs 81/2008',
     ],
     technicalSheetUrl: '/assets/tech-sheets/rs-40-ps-sr-8-mil.pdf',
     faq: [
-      { q: 'A cosa serve Madico RS 40 PS SR 8 MIL?', a: 'Serve a combinare sicurezza rinforzata e controllo solare con una resa piu chiara rispetto alla famiglia RS 20.' },
-      { q: 'Qual e la differenza principale rispetto alla RS 20 PS SR 8 MIL?', a: 'La RS 40 PS SR 8 MIL mantiene un orientamento piu luminoso, quindi e utile quando vuoi piu luce interna senza rinunciare alla protezione.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione riportata e EN 12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico RS 40 PS SR 8 MIL?', a: 'Serve a combinare sicurezza rinforzata e controllo solare con una resa più chiara rispetto alla famiglia RS 20.' },
+      { q: 'Qual è la differenza principale rispetto alla RS 20 PS SR 8 MIL?', a: 'La RS 40 PS SR 8 MIL mantiene un orientamento più luminoso, quindi ? utile quando vuoi più luce interna senza rinunciare alla protezione.' },
+      { q: 'Su quali vetri è certificata?', a: 'la certificazione riportata è EN 12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-cl-400-ps-sr': {
-    panoramicaBody: `La pellicola di sicurezza Madico CL 400 PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 2B2 su lastra singola da 2, 3, 4 e 6 mm. E la versione da interno della famiglia CL 400, neutra e trasparente, pensata per aumentare la sicurezza del vetro senza alterarne l aspetto.
+    panoramicaBody: `La pellicola di sicurezza Madico CL 400 PS SR è testata è certificata in conformità alla Norma Europea EN12600, classe 2B2 su lastra singola da 2, 3, 4 e 6 mm. È la versione da interno della famiglia CL 400, neutra e trasparente, pensata per aumentare la sicurezza del vetro senza alterarne l’aspetto.
 
-Prodotta con processi tecnologicamente innovativi, con collanti e poliestere di alta qualita, offre affidabilita nel tempo. La struttura e singolo strato con adesivo acrilico sensibile alla pressione.
+Prodotta con processi tecnologicamente innovativi, con collanti e poliestere di alta qualità?, offre affidabilità nel tempo. La struttura ? singolo strato con adesivo acrilico sensibile alla pressione.
 
-Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
+Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in conformità al Testo Unico D.lgs. 81/2008.`,
     contextBody: `Ideale per uffici, scuole, banche, aree comuni e ambienti professionali dove serve protezione antinfortunistica con trasparenza quasi totale. L intervento e rapido, non invasivo e non richiede la sostituzione degli infissi.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 2B2 su vetro singolo da 2, 3, 4 e 6 mm',
@@ -353,102 +353,102 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
       'Trasparenza elevata con resa visiva neutra',
       'Applicazione rapida senza modificare gli infissi',
       'Schermatura oltre il 99% dei raggi UV',
-      'Supporto alla conformita D.Lgs 81/2008',
+      'Supporto alla conformità D.Lgs 81/2008',
     ],
     technicalSheetUrl: '/assets/tech-sheets/cl-400-ps-sr.pdf',
     faq: [
       { q: 'A cosa serve Madico CL 400 PS SR?', a: 'Serve a mettere in sicurezza il vetro mantenendo una resa neutra e trasparente, riducendo il rischio di lesioni in caso di rottura.' },
-      { q: 'Quando conviene scegliere una pellicola neutra CL?', a: 'Quando la priorita e la sicurezza del vetro ma si vuole preservare luminosita e aspetto originale della vetrata.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 2B2 su lastra singola da 2, 3, 4 e 6 mm.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'Quando conviene scegliere una pellicola neutra CL?', a: 'Quando la priorità è la sicurezza del vetro ma si vuole preservare luminosità e aspetto originale della vetrata.' },
+      { q: 'Su quali vetri è certificata?', a: 'La certificazione indicata è EN12600 classe 2B2 su lastra singola da 2, 3, 4 e 6 mm.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-cl-400-e-ps-sr': {
-    panoramicaBody: `La pellicola di sicurezza Madico CL 400 E PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 2B2 su lastra singola da 2, 3, 4 e 6 mm. E la versione da esterno della CL 400. Esiste anche la versione da interno CL 400 PS SR.
+    panoramicaBody: `La pellicola di sicurezza Madico CL 400 E PS SR è testata è certificata in conformità alla Norma Europea EN12600, classe 2B2 su lastra singola da 2, 3, 4 e 6 mm. È la versione da esterno della CL 400. Esiste anche la versione da interno CL 400 PS SR.
 
-Prodotta con processi produttivi tecnologicamente innovativi con l utilizzo dei migliori collanti e del miglior poliestere, si colloca al primo posto per qualita e affidabilita.
+Prodotta con processi produttivi tecnologicamente innovativi con l’utilizzo dei migliori collanti e del miglior poliestere, si colloca al primo posto per qualità e affidabilità.
 
-Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
-    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Puo essere applicata su vetri esistenti con un operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere l attivita. Mantiene trasparenza elevata con visuale cristallina e intervento praticamente invisibile.`,
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformità al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Può essere applicata su vetri esistenti con un’operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere l attività. Mantiene trasparenza elevata con visuale cristallina e intervento praticamente invisibile.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 2B2 su vetro singolo da 2, 3, 4 e 6 mm',
       'Versione da esterno della serie CL 400',
       'Protezione antinfortunistica in caso di rottura',
       'Applicazione rapida su vetri esistenti',
       'Trasparenza elevata senza distorsioni ottiche',
-      'Supporto alla conformita D.Lgs 81/2008',
+      'Supporto alla conformità D.Lgs 81/2008',
     ],
     technicalSheetUrl: '/assets/tech-sheets/cl-400-e-ps-sr.pdf',
     faq: [
-      { q: 'A cosa serve Madico CL 400 E PS SR?', a: 'Serve a mettere in sicurezza il vetro con applicazione esterna, mantenendo trasparenza e continuita estetica della facciata.' },
-      { q: 'Qual e la differenza rispetto alla CL 400 PS SR?', a: 'La CL 400 E PS SR e la versione per esterno; la CL 400 PS SR e la versione per interno.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 2B2 su lastra singola da 2, 3, 4 e 6 mm.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico CL 400 E PS SR?', a: 'Serve a mettere in sicurezza il vetro con applicazione esterna, mantenendo trasparenza e continuità estetica della facciata.' },
+      { q: 'Qual è la differenza rispetto alla CL 400 PS SR?', a: 'La CL 400 E PS SR ? la versione per esterno; la CL 400 PS SR ? la versione per interno.' },
+      { q: 'Su quali vetri è certificata?', a: 'La certificazione indicata è EN12600 classe 2B2 su lastra singola da 2, 3, 4 e 6 mm.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-cl-700-ps-sr': {
-    panoramicaBody: `La pellicola certificata di sicurezza Madico CL 700 PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da esterno CL 700 E PS SR.
+    panoramicaBody: `La pellicola certificata di sicurezza Madico CL 700 PS SR è testata è certificata in conformità alla Norma Europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da esterno CL 700 E PS SR.
 
-Prodotta con processi produttivi tecnologicamente innovativi con l utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualita ed affidabilita.
+Prodotta con processi produttivi tecnologicamente innovativi con l’utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualità ed affidabilità.
 
-Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
-    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Puo essere applicata su vetri gia esistenti con un operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere la normale attivita lavorativa. Mantiene una visuale cristallina, con assenza di distorsioni ottiche e intervento praticamente invisibile.`,
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformità al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Può essere applicata su vetri già esistenti con un’operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere la normale attività lavorativa. Mantiene una visuale cristallina, con assenza di distorsioni ottiche e intervento praticamente invisibile.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 1B1 su vetro singolo da 3, 4 e 6 mm',
       'Versione per applicazione interna',
       'Protezione antinfortunistica in caso di rottura del vetro',
       'Applicazione rapida su vetri esistenti',
       'Trasparenza elevata senza distorsioni ottiche',
-      'Supporto alla conformita D.Lgs 81/2008',
+      'Supporto alla conformità D.Lgs 81/2008',
     ],
     technicalSheetUrl: '/assets/tech-sheets/cl-700-ps-sr.pdf',
     faq: [
       { q: 'A cosa serve Madico CL 700 PS SR?', a: 'Serve a mettere in sicurezza il vetro con una classe di protezione elevata, mantenendo una resa neutra e trasparente.' },
-      { q: 'Qual e la differenza rispetto alla CL 700 E PS SR?', a: 'La CL 700 PS SR e la versione per interno; la CL 700 E PS SR e la versione per esterno.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'Qual è la differenza rispetto alla CL 700 E PS SR?', a: 'La CL 700 PS SR ? la versione per interno; la CL 700 E PS SR ? la versione per esterno.' },
+      { q: 'Su quali vetri è certificata?', a: 'La certificazione indicata è EN12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-cl-700-e-ps-sr': {
-    panoramicaBody: `La pellicola certificata di sicurezza Madico CL 700 E PS SR e testata e certificata in conformita alla Norma Europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da interno CL 700 PS SR.
+    panoramicaBody: `La pellicola certificata di sicurezza Madico CL 700 E PS SR è testata è certificata in conformità alla Norma Europea EN12600, classe 1B1 su lastra singola da 3, 4 e 6 mm. Esiste anche la versione da interno CL 700 PS SR.
 
-Prodotta con processi produttivi tecnologicamente innovativi con l utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualita ed affidabilita.
+Prodotta con processi produttivi tecnologicamente innovativi con l’utilizzo dei migliori collanti e del miglior poliestere si colloca al primo posto per qualità ed affidabilità.
 
-Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformita al Testo Unico D.lgs. 81/2008.`,
-    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Puo essere applicata su vetri gia esistenti con un operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere la normale attivita lavorativa. Mantiene una visuale cristallina, con assenza di distorsioni ottiche e intervento praticamente invisibile.`,
+Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui luoghi di lavoro in conformità al Testo Unico D.lgs. 81/2008.`,
+    contextBody: `Offre una costante protezione antinfortunistica in caso di rottura del vetro. Può essere applicata su vetri già esistenti con un’operazione semplice, veloce, sicura ed economica, senza modificare gli infissi o interrompere la normale attività lavorativa. Mantiene una visuale cristallina, con assenza di distorsioni ottiche e intervento praticamente invisibile.`,
     caratteristiche: [
       'Certificata UNI EN 12600 classe 1B1 su vetro singolo da 3, 4 e 6 mm',
       'Versione per applicazione esterna',
       'Protezione antinfortunistica in caso di rottura del vetro',
       'Applicazione rapida su vetri esistenti',
       'Trasparenza elevata senza distorsioni ottiche',
-      'Supporto alla conformita D.Lgs 81/2008',
+      'Supporto alla conformità D.Lgs 81/2008',
     ],
     technicalSheetUrl: '/assets/tech-sheets/cl-700-e-ps-sr.pdf',
     faq: [
-      { q: 'A cosa serve Madico CL 700 E PS SR?', a: 'Serve a mettere in sicurezza il vetro con applicazione esterna, mantenendo trasparenza e continuita estetica della facciata.' },
-      { q: 'Qual e la differenza rispetto alla CL 700 PS SR?', a: 'La CL 700 E PS SR e la versione per esterno; la CL 700 PS SR e la versione per interno.' },
-      { q: 'Su quali vetri e certificata?', a: 'La certificazione indicata e EN12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
-      { q: 'Che garanzia e prevista?', a: 'La garanzia e 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all interno di questo sito.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiutera a scegliere il prodotto giusto per ottenere il miglior risultato.' },
+      { q: 'A cosa serve Madico CL 700 E PS SR?', a: 'Serve a mettere in sicurezza il vetro con applicazione esterna, mantenendo trasparenza e continuità estetica della facciata.' },
+      { q: 'Qual è la differenza rispetto alla CL 700 PS SR?', a: 'La CL 700 E PS SR ? la versione per esterno; la CL 700 PS SR ? la versione per interno.' },
+      { q: 'Su quali vetri è certificata?', a: 'La certificazione indicata è EN12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
+      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
   'madico-safetyshield-800': {
-    panoramicaBody: `SafetyShield 800 e una pellicola di sicurezza speciale, progettata per ridurre gli effetti della rottura del vetro in scenari ad alto rischio. La configurazione corretta non si limita al film: il risultato dipende dal sistema completo pellicola + ancoraggio.
+    panoramicaBody: `SafetyShield 800 È una pellicola di sicurezza speciale, progettata per ridurre gli effetti della rottura del vetro in scenari ad alto rischio. La configurazione corretta non si limita al film: il risultato dipende dal sistema completo pellicola + ancoraggio.
 
-La linea e testata su standard specifici per eventi impulsivi e impatti severi. In configurazione corretta, il sistema aiuta a trattenere i frammenti e a ridurre la proiezione verso gli occupanti, migliorando la protezione delle persone e la continuita operativa dell edificio.
+La linea è testata su standard specifici per eventi impulsivi e impatti severi. In configurazione corretta, il sistema aiuta a trattenere i frammenti e a ridurre la proiezione verso gli occupanti, migliorando la protezione delle persone e la continuità operativa dell’edificio.
 
 SafetyShield 800 va scelta partendo dallo scenario reale, dal tipo di vetro e dal livello di protezione richiesto, con verifica tecnica prima della posa.`,
-    contextBody: `Indicata per siti sensibili, sedi istituzionali, aree ad alta frequentazione e contesti dove la priorita e mitigare il rischio su superfici vetrate esposte. E adatta quando serve una soluzione di protezione avanzata senza sostituire integralmente i serramenti esistenti.`,
+    contextBody: `Indicata per siti sensibili, sedi istituzionali, aree ad alta frequentazione e contesti dove la priorità e mitigare il rischio su superfici vetrate esposte. È adatta quando serve una soluzione di protezione avanzata senza sostituire integralmente i serramenti esistenti.`,
     caratteristiche: [
       'Sistema speciale per mitigazione rischio su vetri in scenari critici',
       'Riduzione proiezione frammenti in caso di rottura',
       'Approccio a sistema: pellicola + ancoraggio',
       'Verifica tecnica preventiva su vetro reale e telaio',
-      'Supporto alla continuita operativa degli ambienti',
+      'Supporto alla continuità operativa degli ambienti',
       'Garanzia 10 anni (con limiti e condizioni di linea)',
     ],
     technicalMetrics: [
@@ -461,20 +461,20 @@ SafetyShield 800 va scelta partendo dallo scenario reale, dal tipo di vetro e da
     ],
     technicalSheetUrl: '/assets/tech-sheets/safety-shield-800.pdf',
     faq: [
-      { q: 'SafetyShield 800 e una normale pellicola di sicurezza?', a: 'No. E una soluzione speciale per scenari piu severi, da configurare come sistema completo e non come semplice film applicato al vetro.' },
-      { q: 'Perche serve il sistema di ancoraggio?', a: 'Perche nelle condizioni piu critiche il comportamento del vetro dipende dall insieme vetro, pellicola e bordo: l ancoraggio aiuta a trattenere e controllare la rottura.' },
-      { q: 'Quando conviene valutarla?', a: 'Quando l obiettivo principale e la protezione delle persone in presenza di rischio elevato, non solo la conformita minima antinfortunistica.' },
+      { q: 'SafetyShield 800 è una normale pellicola di sicurezza?', a: 'No. È una soluzione speciale per scenari più severi, da configurare come sistema completo e non come semplice film applicato al vetro.' },
+      { q: 'Perché serve il sistema di ancoraggio?', a: 'Perché nelle condizioni più critiche il comportamento del vetro dipende dall’insieme vetro, pellicola e bordo: l’ancoraggio aiuta a trattenere e controllare la rottura.' },
+      { q: 'Quando conviene valutarla?', a: 'Quando l’obiettivo principale è la protezione delle persone in presenza di rischio elevato, non solo la conformità minima antinfortunistica.' },
       { q: 'Quali verifiche vanno fatte prima della posa?', a: 'Tipo vetro, stato del serramento, dimensioni, esposizione e scenario di rischio. Da questi dati si conferma la configurazione corretta.' },
-      { q: 'Che differenza c e rispetto ad altre pellicole di sicurezza?', a: 'SafetyShield e orientata a livelli di mitigazione superiori e richiede progettazione piu rigorosa, soprattutto sul nodo bordo e sul sistema di ancoraggio.' },
+      { q: 'Che differenza c’è rispetto ad altre pellicole di sicurezza?', a: 'SafetyShield è orientata a livelli di mitigazione superiori e richiede progettazione più rigorosa, soprattutto sul nodo bordo e sul sistema di ancoraggio.' },
     ],
   },
   'madico-safetyshield-1500': {
-    panoramicaBody: `SafetyShield 1500 e la versione ad alte prestazioni della linea speciale SafetyShield, sviluppata per scenari in cui la protezione del vetro deve mantenere un livello di contenimento ancora piu elevato.
+    panoramicaBody: `SafetyShield 1500 è la versione ad alte prestazioni della linea speciale SafetyShield, sviluppata per scenari in cui la protezione del vetro deve mantenere un livello di contenimento ancora più elevato.
 
-Come per tutta la linea, la prestazione reale si ottiene con una logica di sistema: film, vetro e ancoraggio devono essere valutati insieme. L obiettivo e ridurre gli effetti sugli occupanti e contenere meglio le conseguenze di eventi critici.
+Come per tutta la linea, la prestazione reale si ottiene con una logica di sistema: film, vetro e ancoraggio devono essere valutati insieme. L’obiettivo è ridurre gli effetti sugli occupanti e contenere meglio le conseguenze di eventi critici.
 
 La scelta tra 800 e 1500 non dipende dal nome prodotto ma dallo scenario reale e dal livello di rischio da coprire.`,
-    contextBody: `Consigliata in contesti dove il requisito di sicurezza e superiore allo standard ordinario: infrastrutture sensibili, edifici strategici, aree con esposizione a rischio specifico o con elevata responsabilita verso persone e continuita del servizio.`,
+    contextBody: `Consigliata in contesti dove il requisito di sicurezza è superiore allo standard ordinario: infrastrutture sensibili, edifici strategici, aree con esposizione a rischio specifico o con elevata responsabilità verso persone e continuità del servizio.`,
     caratteristiche: [
       'Versione SafetyShield a protezione rinforzata',
       'Configurazione a sistema con ancoraggio dedicato',
@@ -493,20 +493,20 @@ La scelta tra 800 e 1500 non dipende dal nome prodotto ma dallo scenario reale e
     ],
     technicalSheetUrl: '/assets/tech-sheets/safety-shield-1500.pdf',
     faq: [
-      { q: 'Quando scegliere SafetyShield 1500 invece della 800?', a: 'Quando l analisi del rischio richiede un livello di mitigazione piu alto e un contenimento piu robusto del comportamento del vetro.' },
-      { q: 'Serve sempre l ancoraggio anche sulla 1500?', a: 'Nelle configurazioni di sicurezza avanzata si, perche la prestazione dipende dall insieme pellicola-vetro-bordo.' },
-      { q: 'Può sostituire da sola la valutazione tecnica?', a: 'No. La valutazione tecnica resta necessaria per confermare compatibilita, limiti e comportamento atteso nel caso reale.' },
-      { q: 'Si applica su vetri esistenti?', a: 'In molti casi si, ma la conferma dipende da vetro, serramento, stato dei bordi e condizioni di posa.' },
-      { q: 'Che obiettivo ha questa soluzione?', a: 'Proteggere persone e operativita, riducendo l impatto di eventi severi sulle superfici vetrate esposte.' },
+      { q: 'Quando scegliere SafetyShield 1500 invece della 800?', a: 'Quando l’analisi del rischio richiede un livello di mitigazione più alto e un contenimento più robusto del comportamento del vetro.' },
+      { q: 'Serve sempre l’ancoraggio anche sulla 1500?', a: 'Nelle configurazioni di sicurezza avanzata si, perché la prestazione dipende dall’insieme pellicola-vetro-bordo.' },
+      { q: 'Può sostituire da sola la valutazione tecnica?', a: 'No. La valutazione tecnica resta necessaria per confermare compatibilità, limiti e comportamento atteso nel caso reale.' },
+      { q: 'Si applica su vetri esistenti?', a: 'In molti casi s?, ma la conferma dipende da vetro, serramento, stato dei bordi e condizioni di posa.' },
+      { q: 'Che obiettivo ha questa soluzione?', a: 'Proteggere persone e operatività, riducendo l’impatto di eventi severi sulle superfici vetrate esposte.' },
     ],
   },
   'madico-gullwing': {
-    panoramicaBody: `GullWing e un sistema di ancoraggio progettato per lavorare insieme alle pellicole SafetyShield nei progetti dove la sicurezza del vetro richiede una risposta di livello superiore.
+    panoramicaBody: `GullWing è un sistema di ancoraggio progettato per lavorare insieme alle pellicole SafetyShield nei progetti dove la sicurezza del vetro richiede una risposta di livello superiore.
 
-In caso di rottura, il sistema aiuta ad assorbire e distribuire il carico, riducendo la probabilita che frammenti e detriti vengano proiettati all interno. La logica e chiara: non solo pellicola, ma sistema completo vetro + film + bordo.
+In caso di rottura, il sistema aiuta ad assorbire e distribuire il carico, riducendo la probabilità che frammenti e detriti vengano proiettati all’interno. La logica ? chiara: non solo pellicola, ma sistema completo vetro + film + bordo.
 
 Con SafetyShield 800 e ancoraggio applicato sui 4 lati, il sistema raggiunge livello 2 GSA e UK PSDB (test con carica esplosiva 39 kPa e 322 kPa ms).`,
-    contextBody: `E consigliato quando la priorita e la protezione delle persone in scenari critici e quando la semplice applicazione del film non e sufficiente a garantire il livello di contenimento richiesto. Disponibile in tre profili per diversi infissi e in tre colori standard: nero, grigio e bianco.`,
+    contextBody: `? consigliato quando la priorità ? la protezione delle persone in scenari critici e quando la semplice applicazione del film non ? sufficiente a garantire il livello di contenimento richiesto. Disponibile in tre profili per diversi infissi e in tre colori standard: nero, grigio e bianco.`,
     caratteristiche: [
       'Sistema di ancoraggio per configurazioni SafetyShield',
       'Riduce il rischio di proiezione interna di frammenti',
@@ -525,18 +525,18 @@ Con SafetyShield 800 e ancoraggio applicato sui 4 lati, il sistema raggiunge liv
     ],
     technicalSheetUrl: '/assets/tech-sheets/gullwing.pdf',
     faq: [
-      { q: 'GullWing e una pellicola?', a: 'No. E un sistema di ancoraggio che completa la prestazione delle pellicole SafetyShield.' },
-      { q: 'Quando conviene aggiungere GullWing?', a: 'Quando il livello di rischio richiede maggiore contenimento e un comportamento del vetro piu controllato in caso di rottura.' },
-      { q: 'Con quale pellicola lavora?', a: 'E progettato per lavorare con la linea SafetyShield, in particolare nelle configurazioni dove serve protezione avanzata.' },
-      { q: 'Ci sono varianti di installazione?', a: 'Si. Esistono tre profili per adattarsi ai diversi tipi di infisso e condizioni di bordo.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dallo scenario reale, si verifica vetro e serramento, poi si definisce la combinazione pellicola + ancoraggio piu adatta.' },
+      { q: 'GullWing È una pellicola?', a: 'No. È un sistema di ancoraggio che completa la prestazione delle pellicole SafetyShield.' },
+      { q: 'Quando conviene aggiungere GullWing?', a: 'Quando il livello di rischio richiede maggiore contenimento e un comportamento del vetro più controllato in caso di rottura.' },
+      { q: 'Con quale pellicola lavora?', a: 'È progettato per lavorare con la linea SafetyShield, in particolare nelle configurazioni dove serve protezione avanzata.' },
+      { q: 'Ci sono varianti di installazione?', a: 'Sì. Esistono tre profili per adattarsi ai diversi tipi di infisso e condizioni di bordo.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dallo scenario reale, si verifica vetro e serramento, poi si definisce la combinazione pellicola + ancoraggio più adatta.' },
     ],
   },
   'madico-mt-200-xw': {
-    panoramicaBody: `La pellicola privacy Madico MT 200 XW e studiata per aumentare la riservatezza degli ambienti mantenendo luce naturale e una resa estetica ordinata. L effetto satinato riduce la visione diretta attraverso il vetro senza appesantire lo spazio.
+    panoramicaBody: `La pellicola privacy Madico MT 200 XW è studiata per aumentare la riservatezza degli ambienti mantenendo luce naturale e una resa estetica ordinata. L’effetto satinato riduce la visione diretta attraverso il vetro senza appesantire lo spazio.
 
-In uso quotidiano migliora il comfort visivo, limita l abbaglio e contribuisce a proteggere interni e arredi grazie alla schermatura UV oltre il 99%. E una soluzione pratica quando serve privacy funzionale con aspetto professionale.`,
-    contextBody: `Consigliata per uffici, sale riunioni, studi, reception e ambienti sanitari, ma anche per abitazioni dove si vogliono separare zone interne mantenendo luminosita. Funziona bene su porte vetrate, divisori e superfici che richiedono maggiore discrezione visiva.`,
+In uso quotidiano migliora il comfort visivo, limita l’abbaglio e contribuisce a proteggere interni e arredi grazie alla schermatura UV oltre il 99%. È una soluzione pratica quando serve privacy funzionale con aspetto professionale.`,
+    contextBody: `Consigliata per uffici, sale riunioni, studi, reception e ambienti sanitari, ma anche per abitazioni dove si vogliono separare zone interne mantenendo luminosità. Funziona bene su porte vetrate, divisori e superfici che richiedono maggiore discrezione visiva.`,
     caratteristiche: [
       'Effetto vetro satinato con aspetto professionale',
       'Privacy visiva mantenendo passaggio di luce',
@@ -547,24 +547,24 @@ In uso quotidiano migliora il comfort visivo, limita l abbaglio e contribuisce a
     ],
     technicalSheetUrl: '/assets/tech-sheets/mt-200-xw.pdf',
     faq: [
-      { q: 'A cosa serve MT 200 XW?', a: 'Serve a ottenere privacy su superfici vetrate mantenendo luminosita e una resa estetica ordinata.' },
+      { q: 'A cosa serve MT 200 XW?', a: 'Serve a ottenere privacy su superfici vetrate mantenendo luminosità e una resa estetica ordinata.' },
       { q: 'Oscura completamente la luce?', a: 'No. Riduce la visione diretta, ma lascia passare luce utile per mantenere gli ambienti luminosi.' },
-      { q: 'Su quali vetri viene applicata?', a: 'In genere su vetri interni di uffici e abitazioni. La compatibilita finale va verificata sul vetro reale.' },
+      { q: 'Su quali vetri viene applicata?', a: 'In genere su vetri interni di uffici e abitazioni. La compatibilità finale va verificata sul vetro reale.' },
       { q: 'Che manutenzione richiede?', a: 'Pulizia ordinaria con prodotti non abrasivi, come per le altre pellicole interne.' },
-      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dal livello di privacy richiesto, si verifica il tipo di vetro e si definisce la finitura piu adatta al contesto.' },
+      { q: 'Come si conferma la scelta corretta?', a: 'Si parte dal livello di privacy richiesto, si verifica il tipo di vetro e si definisce la finitura più adatta al contesto.' },
     ],
   },
   'vetrofanie': {
     hideSolarPerformanceCharts: true,
-    panoramicaBody: `Le vetrofanie sono una soluzione pratica e di design per trasformare vetrine, finestre e superfici vetrate in spazi di comunicazione. Si realizzano su supporti stampabili, spesso vinilici, con grafiche, decorazioni, scritte o elementi coordinati all immagine del negozio, dello showroom o dell azienda.
+    panoramicaBody: `Le vetrofanie sono una soluzione pratica e di design per trasformare vetrine, finestre e superfici vetrate in spazi di comunicazione. Si realizzano su supporti stampabili, spesso vinilici, con grafiche, decorazioni, scritte o elementi coordinati all’immagine del negozio, dello showroom o dell’azienda.
 
-Possono essere applicate con modalita adesiva o elettrostatica e permettono interventi rapidi, rinnovabili e meno invasivi rispetto ad altre installazioni pubblicitarie. In base al progetto si puo lavorare anche su materiali trasparenti con protezione UV, cosi la grafica valorizza il vetro senza rinunciare alla visibilita e alla protezione della merce esposta.`,
-    contextBody: `Consigliate per vetrine, negozi, ingressi, reception, showroom e superfici vetrate esterne dove serve attirare attenzione, comunicare promozioni, guidare il cliente o rendere piu riconoscibile il punto vendita. Sono adatte anche a campagne stagionali, aperture, saldi, eventi e aggiornamenti rapidi dell immagine coordinata.`,
+Possono essere applicate con modalità adesiva o elettrostatica e permettono interventi rapidi, rinnovabili e meno invasivi rispetto ad altre installazioni pubblicitarie. In base al progetto si può lavorare anche su materiali trasparenti con protezione UV, così la grafica valorizza il vetro senza rinunciare alla visibilità e alla protezione della merce esposta.`,
+    contextBody: `Consigliate per vetrine, negozi, ingressi, reception, showroom e superfici vetrate esterne dove serve attirare attenzione, comunicare promozioni, guidare il cliente o rendere più riconoscibile il punto vendita. Sono adatte anche a campagne stagionali, aperture, saldi, eventi e aggiornamenti rapidi dell’immagine coordinata.`,
     caratteristiche: [
       'Soluzione rapida ed economica',
       'Rimozione semplice quando il supporto lo prevede',
       'Design accattivante e personalizzabile',
-      'Ampia varieta di materiali e finiture',
+      'Ampia varietà di materiali e finiture',
       'Stampa su materiale trasparente con protezione UV',
       'Aggiornamento veloce per stagioni e promozioni',
     ],
@@ -580,20 +580,20 @@ Possono essere applicate con modalita adesiva o elettrostatica e permettono inte
       {
         eyebrow: 'Stampa digitale',
         title: 'Vetrofanie ad UV',
-        body: 'La stampa UV consente di applicare l inchiostro e fissarlo rapidamente con lampade LED UV. E indicata quando servono grafiche precise, tempi rapidi e finiture speciali anche su tirature ridotte.',
+        body: 'La stampa UV consente di applicare l’inchiostro e fissarlo rapidamente con lampade LED UV. è indicata quando servono grafiche precise, tempi rapidi e finiture speciali anche su tirature ridotte.',
       },
       {
         eyebrow: 'Grandi superfici',
         title: 'Vetrofanie ad EcoSolvent',
-        body: 'La stampa EcoSolvent e adatta a superfici ampie, interne o esterne. Offre buona resa cromatica, resistenza agli agenti atmosferici e puo essere protetta con plastificazione quando il progetto richiede maggiore durata.',
+        body: 'La stampa EcoSolvent È adatta a superfici ampie, interne o esterne. Offre buona resa cromatica, resistenza agli agenti atmosferici e può essere protetta con plastificazione quando il progetto richiede maggiore durata.',
       },
     ],
     faq: [
-      { q: 'Che cos e una vetrofania?', a: 'E una grafica stampata su un supporto sottile, spesso vinilico, applicabile su vetro in modo adesivo o elettrostatico. Serve per comunicare, decorare o rendere piu riconoscibile una superficie vetrata.' },
-      { q: 'Si puo mantenere la trasparenza della vetrata?', a: 'Si. In base al progetto si possono usare materiali trasparenti che valorizzano la grafica e mantengono visibilita, anche con protezione UV per la merce esposta.' },
-      { q: 'Quando scegliere la stampa UV?', a: 'Quando servono lavorazioni rapide, dettagli definiti e possibili finiture speciali. E una soluzione efficace anche per produzioni personalizzate e tirature non elevate.' },
-      { q: 'Quando scegliere la stampa EcoSolvent?', a: 'Quando la grafica deve coprire superfici piu grandi o lavorare in condizioni indoor e outdoor. La resa e stabile e puo essere protetta con plastificazione quando serve maggiore durata.' },
-      { q: 'La vetrofania e temporanea o permanente?', a: 'Puo essere entrambe le cose. Solaris definisce supporto, stampa e modalita applicativa in base alla durata desiderata, alla posizione del vetro e all obiettivo della comunicazione.' },
+      { q: 'Che cos’è una vetrofania?', a: 'È una grafica stampata su un supporto sottile, spesso vinilico, applicabile su vetro in modo adesivo o elettrostatico. Serve per comunicare, decorare o rendere più riconoscibile una superficie vetrata.' },
+      { q: 'Si può mantenere la trasparenza della vetrata?', a: 'Sì. In base al progetto si possono usare materiali trasparenti che valorizzano la grafica e mantengono visibilità, anche con protezione UV per la merce esposta.' },
+      { q: 'Quando scegliere la stampa UV?', a: 'Quando servono lavorazioni rapide, dettagli definiti e possibili finiture speciali. È una soluzione efficace anche per produzioni personalizzate e tirature non elevate.' },
+      { q: 'Quando scegliere la stampa EcoSolvent?', a: 'Quando la grafica deve coprire superfici più grandi o lavorare in condizioni indoor e outdoor. La resa è stabile e può essere protetta con plastificazione quando serve maggiore durata.' },
+      { q: 'La vetrofania ? temporanea o permanente?', a: 'Può essere entrambe le cose. Solaris definisce supporto, stampa e modalità applicativa in base alla durata desiderata, alla posizione del vetro e all’obiettivo della comunicazione.' },
     ],
   },
 };
@@ -700,19 +700,19 @@ const buildProductFaq = (prodotto, dt) => {
   const categoria = (prodotto?.categoria || '').toLowerCase();
   const categoriaLabel = prodotto?.categoria || 'questa pellicola';
   const applicazione = prodotto?.applicazione ? ` ${prodotto.applicazione}` : '';
-  const garanzia = prodotto?.garanzia ? `La garanzia indicata e ${prodotto.garanzia}.` : 'La durata dipende dal tipo di vetro, dall esposizione e dalla posa.';
-  const certificazione = prodotto?.certificazione ? `Il prodotto e associato a ${prodotto.certificazione}.` : 'Valutiamo il contesto per proporre la soluzione piu adatta.';
-  const uv = dt?.uvTrasmessi ? `Il dato UV trasmessi e ${dt.uvTrasmessi}, utile per ridurre l impatto dei raggi UV.` : '';
+  const garanzia = prodotto?.garanzia ? `La garanzia indicata ? ${prodotto.garanzia}.` : 'La durata dipende dal tipo di vetro, dall’esposizione e dalla posa.';
+  const certificazione = prodotto?.certificazione ? `Il prodotto ? associato a ${prodotto.certificazione}.` : 'Valutiamo il contesto per proporre la soluzione più adatta.';
+  const uv = dt?.uvTrasmessi ? `Il dato UV trasmessi ? ${dt.uvTrasmessi}, utile per ridurre l’impatto dei raggi UV.` : '';
   const energia = dt?.energiaRespinta ? `Il totale energia respinta arriva a ${dt.energiaRespinta}.` : '';
-  const tipoVetro = prodotto?.tipoVetro ? `Il test principale e su ${prodotto.tipoVetro}.` : '';
+  const tipoVetro = prodotto?.tipoVetro ? `Il test principale ? su ${prodotto.tipoVetro}.` : '';
   const caratteristiche = Array.isArray(prodotto?.caratteristiche) ? prodotto.caratteristiche.slice(0, 2).join('; ') : '';
 
   const firstAnswer =
     categoria.includes('sicurezza')
-      ? `E pensata per aumentare la protezione del vetro e contenere i frammenti in caso di rottura.${tipoVetro}`
+      ? `È pensata per aumentare la protezione del vetro e contenere i frammenti in caso di rottura.${tipoVetro}`
       : categoria.includes('privacy')
-        ? `E pensata per migliorare riservatezza e resa visiva, mantenendo coerenza con il contesto del vetro.${tipoVetro}`
-        : `E pensata per controllo solare e comfort interno, riducendo calore e abbaglio sulle superfici vetrate.${tipoVetro}`;
+        ? `È pensata per migliorare riservatezza e resa visiva, mantenendo coerenza con il contesto del vetro.${tipoVetro}`
+        : `È pensata per controllo solare e comfort interno, riducendo calore e abbaglio sulle superfici vetrate.${tipoVetro}`;
 
   return [
     {
@@ -720,8 +720,8 @@ const buildProductFaq = (prodotto, dt) => {
       a: firstAnswer,
     },
     {
-      q: `Su quali vetri si valuta l installazione di ${prodotto?.nome || 'questo prodotto'}?`,
-      a: `La valutazione parte sempre dal vetro esistente e dall uso reale dello spazio.${applicazione ? ` Ambito consigliato:${applicazione}.` : ''} ${tipoVetro}`.trim(),
+      q: `Su quali vetri si valuta l’installazione di ${prodotto?.nome || 'questo prodotto'}?`,
+      a: `La valutazione parte sempre dal vetro esistente e dall’uso reale dello spazio.${applicazione ? ` Ambito consigliato:${applicazione}.` : ''} ${tipoVetro}`.trim(),
     },
     {
       q: `Quali prestazioni conviene leggere per scegliere ${categoriaLabel.toLowerCase()}?`,
@@ -733,7 +733,7 @@ const buildProductFaq = (prodotto, dt) => {
     },
     {
       q: 'Come si arriva alla scelta finale?',
-      a: 'Si parte dall obiettivo, si verifica compatibilita del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso.',
+      a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso.',
     },
   ];
 };
@@ -746,7 +746,7 @@ const ProductFaqSection = ({ items = [] }) => {
     <section className="py-12 section-light border-y border-[#E2E8F0]" data-testid="product-faq-section">
       <div className="max-w-4xl mx-auto px-6 md:px-12">
         <h2 className="text-xl sm:text-2xl font-medium text-[#0A0F1C] mb-3">Domande frequenti</h2>
-        <p className="text-[#475569] text-[15px] mb-8">Le risposte essenziali per decidere in modo chiaro e senza ambiguita.</p>
+        <p className="text-[#475569] text-[15px] mb-8">Le risposte essenziali per decidere in modo chiaro e senza ambiguità.</p>
         <div className="space-y-3">
           {items.map((item, index) => (
             <div key={index} className="rounded-xl overflow-hidden border border-[#E2E8F0] bg-white">
@@ -845,7 +845,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
   const descrizioneHero = (liveSections.utilizzi || prodotto.descrizione || '').replace(/&#8217;|&#39;|&rsquo;/gi, '\'');
   const specificheBody = liveSections.specifiche || prodotto.specificheTecniche || '';
   const panoramicaBody = pageOverrides?.panoramicaBody || specificheBody;
-  const contextBody = pageOverrides?.contextBody || 'Questa scheda aiuta a capire in modo rapido compatibilita del vetro, livello di schermatura e risultato atteso prima della posa.';
+  const contextBody = pageOverrides?.contextBody || 'Questa scheda aiuta a capire in modo rapido compatibilità del vetro, livello di schermatura e risultato atteso prima della posa.';
   const downloadSheetUrl = pageOverrides?.technicalSheetUrl || technicalSheetUrl;
   const titleParts = splitKeepUnitTogether(prodotto.nome);
 
@@ -953,7 +953,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
                 )}
               </div>
               <div className="rounded-xl border border-[#E2E8F0] bg-white p-6">
-                <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Contesto d uso consigliato</span>
+                <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Contesto d’uso consigliato</span>
                 <p className="mt-4 text-[#475569] text-[15px] leading-relaxed">{contextBody}</p>
                 <div className="mt-5 flex flex-wrap gap-2">
                   {prodotto.applicazione && (
@@ -1001,7 +1001,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
         <section className="py-16">
           <div className="max-w-7xl mx-auto px-6 md:px-12">
             <h2 className="text-xl sm:text-2xl font-medium text-white mb-3">Punti chiave della soluzione</h2>
-            <p className="text-[#94A3B8] text-[15px] mb-7">Una lettura rapida per capire benefici, contesto d uso e risultato atteso sul vetro.</p>
+            <p className="text-[#94A3B8] text-[15px] mb-7">Una lettura rapida per capire benefici, contesto d’uso e risultato atteso sul vetro.</p>
             <div className="grid md:grid-cols-2 xl:grid-cols-3 gap-3">
               {caratteristicheToShow.map((c, i) => (
                 <motion.div key={i} initial={{ opacity: 0, x: -10 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.06 }}
@@ -1138,7 +1138,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
                   <span className="text-xs font-semibold uppercase tracking-wider text-[#EAB308]">Prossimo passo</span>
                   <h2 className="mt-2 text-2xl font-semibold text-[#020617]">Passiamo dal dato tecnico al caso reale</h2>
                   <p className="mt-3 text-[#1E293B]">
-                    Inviaci il tipo di vetro, l esposizione e l obiettivo principale: ricevi una proposta coerente con prestazioni, posa e priorita del progetto.
+                    Inviaci il tipo di vetro, l’esposizione e l’obiettivo principale: ricevi una proposta coerente con prestazioni, posa e priorità del progetto.
                   </p>
                 </div>
                 <div className="flex flex-wrap gap-3 lg:justify-end">
@@ -1178,7 +1178,7 @@ export const ProdottiIndexPagina = () => {
   const getCategoriaDesc = (cat) => {
     const descs = {
       'Antisolari': 'Pellicole antisolari per il controllo della radiazione solare, risparmio energetico e protezione UV.',
-      'Sicurezza': 'Pellicole di sicurezza certificate per protezione anti-sfondamento, anti-esplosione e conformita normativa.',
+      'Sicurezza': 'Pellicole di sicurezza certificate per protezione anti-sfondamento, anti-esplosione e conformità normativa.',
       'Privacy': 'Pellicole privacy e decorative per personalizzare e proteggere le superfici vetrate.',
     };
     return descs[cat] || '';

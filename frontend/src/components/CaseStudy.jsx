@@ -34,7 +34,7 @@ const defaultCaseStudies = [
     categoria: 'Educazione',
     image: '/assets/generated/home/focus-performance.webp',
     problema: 'Abbagliamento nelle aule e laboratori con esposizione diretta al sole. Necessita di protezione UV per strumentazione.',
-    soluzione: 'Pellicole antisolari con protezione UV 99% e riduzione abbagliamento, preservando la luminosita naturale.',
+    soluzione: 'Pellicole antisolari con protezione UV 99% e riduzione abbagliamento, preservando la luminosità naturale.',
     risultati: ['Protezione UV 99%', 'Riduzione abbagliamento', 'Luminosita preservata', 'Ambiente studio ottimale'],
   },
 ];
@@ -61,7 +61,7 @@ const CaseStudy = () => {
             </h2>
           </div>
           <p className="max-w-md lg:text-right text-lg" style={{ color: '#64748B' }}>
-            Alcuni dei progetti piu significativi realizzati nell'ultimo anno.
+            Alcuni dei progetti più significativi realizzati nell'ultimo anno.
           </p>
         </motion.div>
 

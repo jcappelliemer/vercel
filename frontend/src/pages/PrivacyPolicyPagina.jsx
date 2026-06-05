@@ -35,7 +35,7 @@ const privacySections = [
   },
   {
     title: '8. Cookie',
-    content: "Il sito utilizza cookie tecnici necessari al funzionamento e cookie analitici per migliorare l'esperienza utente. L'utente puo gestire le preferenze sui cookie tramite le impostazioni del browser.",
+    content: "Il sito utilizza cookie tecnici necessari al funzionamento e cookie analitici per migliorare l'esperienza utente. L'utente può gestire le preferenze sui cookie tramite le impostazioni del browser.",
   },
 ];
 
@@ -113,7 +113,7 @@ const PrivacyPolicyPagina = () => {
               <h2>Informativa privacy Solaris Films</h2>
               <p>
                 Questa informativa descrive in modo sintetico quali dati vengono raccolti, per quali finalita e quali diritti
-                puo esercitare l'interessato.
+                può esercitare l'interessato.
               </p>
             </div>
 

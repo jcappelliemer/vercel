@@ -50,11 +50,11 @@ const createLocalChatResponse = (message) => {
   }
 
   if (text.includes('caldo') || text.includes('sole') || text.includes('antisolare') || text.includes('abbagliamento')) {
-    return 'Per caldo e abbagliamento la famiglia corretta e quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e livello di trasparenza desiderato. Se mi lasci i dati, il team Solaris puo preparare una consulenza mirata.';
+    return 'Per caldo e abbagliamento la famiglia corretta e quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e livello di trasparenza desiderato. Se mi lasci i dati, il team Solaris può preparare una consulenza mirata.';
   }
 
   if (text.includes('privacy') || text.includes('decor') || text.includes('satin') || text.includes('opaca')) {
-    return 'Per privacy e resa estetica si lavora con pellicole decorative, satinate o schermanti. Possiamo mantenere luminosita e ridurre la visibilita, scegliendo finitura e grado di copertura in base agli ambienti.';
+    return 'Per privacy e resa estetica si lavora con pellicole decorative, satinate o schermanti. Possiamo mantenere luminosità e ridurre la visibilità, scegliendo finitura e grado di copertura in base agli ambienti.';
   }
 
   if (text.includes('preventivo') || text.includes('prezzo') || text.includes('costo') || text.includes('mq')) {
@@ -425,7 +425,7 @@ const ChatBot = () => {
                 >
                   <p className="text-sm font-medium text-white">Vuoi passare la richiesta a un tecnico?</p>
                   <p className="mt-1 text-xs leading-relaxed text-white/55">
-                    Posso inoltrare la chat al team, cosi chi ti richiama ha gia il contesto della richiesta.
+                    Posso inoltrare la chat al team, così chi ti richiama ha già il contesto della richiesta.
                   </p>
                   <button
                     type="button"

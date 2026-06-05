@@ -145,7 +145,7 @@ const Gallery = () => {
             </h2>
           </div>
           <p className="text-[#94A3B8] max-w-md lg:text-right text-lg">
-            Una selezione dei progetti realizzati in 30+ anni di attivita.
+            Una selezione dei progetti realizzati in 30+ anni di attività.
           </p>
         </motion.div>
 

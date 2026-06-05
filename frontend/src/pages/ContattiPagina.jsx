@@ -117,7 +117,7 @@ const ContattiPagina = () => {
                   <span className="text-gradient">tuo progetto</span>
                 </h1>
                 <p className="text-lg text-[#94A3B8] leading-relaxed">
-                  Scrivici cosa devi risolvere sui vetri: calore, sicurezza, privacy, design o manutenzione. Ti indirizziamo verso il percorso piu adatto.
+                  Scrivici cosa devi risolvere sui vetri: calore, sicurezza, privacy, design o manutenzione. Ti indirizziamo verso il percorso più adatto.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-3 mt-8">
                   <a href="tel:+390559107621" className="btn-yellow" data-testid="contact-hero-phone">

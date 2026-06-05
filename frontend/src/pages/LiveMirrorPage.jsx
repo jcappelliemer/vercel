@@ -856,7 +856,7 @@ const focusTagsForPage = (page = {}, family) => {
 const focusQuickGuide = (family) => {
   if (family?.key === 'antisolari') {
     return [
-      'Definisci la priorita: ridurre calore, limitare abbagliamento o mantenere piu luce naturale.',
+      'Definisci la priorità: ridurre calore, limitare abbagliamento o mantenere più luce naturale.',
       'Verifica esposizione, tipo di vetro e vincoli estetici prima di scegliere la serie.',
       'Confronta i prodotti collegati sul caso reale con verifica tecnica Solaris.',
     ];
@@ -865,14 +865,14 @@ const focusQuickGuide = (family) => {
   if (family?.key === 'sicurezza') {
     return [
       'Individua il rischio principale: urto, antisfondamento o scenario ad alta criticita.',
-      'Controlla classe richiesta, spessore e compatibilita vetro-telaio.',
+      'Controlla classe richiesta, spessore e compatibilità vetro-telaio.',
       'Valida posa e ancoraggi prima della scelta definitiva.',
     ];
   }
 
   return [
     'Chiarisci il risultato atteso: privacy, design, branding o combinazione dei tre.',
-    'Valuta luce, visibilita e finitura piu coerente con lo spazio.',
+    'Valuta luce, visibilità e finitura più coerente con lo spazio.',
     'Conferma la scelta con verifica tecnica su superfici e posa.',
   ];
 };
@@ -895,7 +895,7 @@ const focusDecisionPanel = (family) => {
       objective: 'Aumentare la sicurezza del vetro con un livello coerente al rischio reale.',
       checks: [
         'Scenario di rischio: urto, antisfondamento, frammentazione, antiesplosione.',
-        'Classe richiesta e compatibilita con vetro, telaio e contesto normativo.',
+        'Classe richiesta e compatibilità con vetro, telaio e contesto normativo.',
         'Strategia di posa e, se richiesto, sistemi di ancoraggio.',
       ],
       action: 'Richiedi verifica quando devi decidere classe, spessore e soluzione applicabile senza sostituire il vetro.',
@@ -1282,7 +1282,7 @@ const ServiceFamilyTemplate = ({ page, allPages = [] }) => {
             <div className="service-family-section-heading">
               <span>Approfondimento Solaris</span>
               <h2>Contenuto tecnico riorganizzato</h2>
-              <p>La pagina raccoglie le informazioni utili e le presenta in una struttura piu chiara per menu, SEO e conversione.</p>
+              <p>La pagina raccoglie le informazioni utili e le presenta in una struttura più chiara per menu, SEO e conversione.</p>
             </div>
             <article className="live-prose">
               <ContentBlocks blocks={blocks} title={family.title} skipFirstHeading />
@@ -1895,14 +1895,14 @@ const supportProfiles = {
   utility: {
     eyebrow: 'Pagina tecnica',
     panelTitle: 'Supporto operativo',
-    panelDescription: 'Pagina di supporto mantenuta per continuita tecnica e orientamento verso i percorsi principali Solaris.',
+    panelDescription: 'Pagina di supporto mantenuta per continuità tecnica e orientamento verso i percorsi principali Solaris.',
     cta: 'Torna ai servizi',
     route: '/servizi/',
     routeLabel: 'Servizi',
     tags: ['Solaris', 'Supporto', 'Servizi'],
     visual: {
       src: '/assets/services/pellicole-antisolari.jpg',
-      caption: 'Pagina tecnica mantenuta per continuita del progetto.',
+      caption: 'Pagina tecnica mantenuta per continuità del progetto.',
     },
   },
 };
@@ -2009,7 +2009,7 @@ const SupportTemplate = ({ page }) => {
               <h2>Verifica del caso reale</h2>
               <p>
                 La richiesta viene letta dal team Solaris e trasformata in un confronto
-                tecnico su obiettivo, superfici, contesto di posa e prodotto piu adatto.
+                tecnico su obiettivo, superfici, contesto di posa e prodotto più adatto.
               </p>
               <div className="knowledge-directory-mini-list">
                 <Link to="/preventivo/">
@@ -2148,14 +2148,14 @@ const SupportTemplate = ({ page }) => {
             <span>{profile.eyebrow}</span>
             <h2>Approfondimento Solaris</h2>
             <p>
-              Una sintesi pensata per orientare la scelta tecnica e rendere piu semplice
+              Una sintesi pensata per orientare la scelta tecnica e rendere più semplice
               il passaggio verso una verifica Solaris sul caso reale.
             </p>
           </div>
           <ContentBlocks blocks={blocks} title={title} skipFirstHeading />
           <div className="live-article-cta-band">
             <h2>Serve una risposta applicata al tuo caso?</h2>
-            <p>Solaris traduce le informazioni della pagina in una scelta concreta su pellicola, posa e responsabilita tecnica.</p>
+            <p>Solaris traduce le informazioni della pagina in una scelta concreta su pellicola, posa e responsabilità tecnica.</p>
             <Link to="/preventivo" className="btn-yellow">
               Richiedi consulenza
               <ArrowRight size={18} />

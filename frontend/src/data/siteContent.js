@@ -502,7 +502,7 @@ export const prodottiData = [
     descrizione: 'Le pellicole antisolari riflettenti Madico RS 30 E PS SR sono pensate come soluzione intermedia tra RS 20 e RS 40: controllo solare deciso, comfort visivo e impatto estetico equilibrato.',
     caratteristiche: [
       'Riduzione ingresso di calore fino al 71%',
-      'Buon equilibrio tra schermatura e luminosita interna',
+      'Buon equilibrio tra schermatura e luminosità interna',
       'Riduzione abbaglio con effetto speculare moderato',
       'Prodotto elegante a basso impatto estetico',
       'Prodotto unico con brevetto esclusivo',
@@ -606,7 +606,7 @@ export const prodottiData = [
     descrizione: 'La pellicola antisolare di sicurezza Madico RS 40 PS SR 4 Mil \u00e8 testata e certificata EN 12600, classe 2B2. Versione pi\u00f9 chiara della serie RS rispetto alla RS 20, ideale per ambienti che richiedono maggiore luminosit\u00e0 e sicurezza.',
     caratteristiche: [
       'Certificata EN 12600 classe 2B2 su lastra singola da 3, 4 e 6 mm',
-      'Versione piu chiara con maggiore trasmissione luminosa rispetto alla RS 20',
+      'Versione più chiara con maggiore trasmissione luminosa rispetto alla RS 20',
       'Protezione antinfortunistica in caso di rottura',
       'Perfetta trasparenza senza distorsioni ottiche',
       'Conforme al Testo Unico D.Lgs. 81/2008',
@@ -644,7 +644,7 @@ export const prodottiData = [
     caratteristiche: [
       'Certificata EN 12600 classe 1B1 su lastra singola da 3, 4 e 6 mm',
       'Maggiore spessore per protezione rinforzata',
-      'Versione piu chiara rispetto alla RS 20',
+      'Versione più chiara rispetto alla RS 20',
       'Protezione antinfortunistica in caso di rottura del vetro',
       'Ambiente di lavoro sicuro, fresco e confortevole',
       'Conforme al Testo Unico D.Lgs. 81/2008',
@@ -939,7 +939,7 @@ export const prodottiData = [
       'Soluzione rapida ed economica',
       'Rimozione semplice quando il supporto lo prevede',
       'Design accattivante e personalizzabile',
-      'Ampia varieta di materiali e finiture',
+      'Ampia varietà di materiali e finiture',
       'Stampa su materiale trasparente con protezione UV',
       'Disponibili stampa UV ed EcoSolvent',
     ],

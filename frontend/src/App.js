@@ -90,6 +90,10 @@ function App() {
           <Route path="/info" element={<LiveDirectoryPage kind="info" />} />
           <Route path="/info/garanzie" element={<PaginaInfoPagina forcedSlug="garanzie" />} />
           <Route path="/info/garanzie/" element={<PaginaInfoPagina forcedSlug="garanzie" />} />
+          <Route path="/info/certificazione-nfrc" element={<PaginaInfoPagina forcedSlug="certificazione-nfrc" />} />
+          <Route path="/info/certificazione-nfrc/" element={<PaginaInfoPagina forcedSlug="certificazione-nfrc" />} />
+          <Route path="/info/istruzioni-e-manutenzione" element={<PaginaInfoPagina forcedSlug="istruzioni-e-manutenzione" />} />
+          <Route path="/info/istruzioni-e-manutenzione/" element={<PaginaInfoPagina forcedSlug="istruzioni-e-manutenzione" />} />
           <Route path="/pagina-info/garanzie" element={<PaginaInfoPagina forcedSlug="garanzie" />} />
           <Route path="/pagina-info/garanzie/" element={<PaginaInfoPagina forcedSlug="garanzie" />} />
           <Route path="/info/:slug" element={<LiveMirrorPage />} />

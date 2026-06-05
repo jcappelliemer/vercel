@@ -57,7 +57,7 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
   const { data: allInfo } = useWPData('info');
   const localPagina = pagineInfoData.find(p => p.slug === slug);
   const wpPagina = allInfo.find(p => p.slug === slug);
-  const preferLocal = slug === 'garanzie' || slug === 'istruzioni-e-manutenzione';
+  const preferLocal = slug === 'garanzie' || slug === 'istruzioni-e-manutenzione' || slug === 'certificazione-nfrc';
   const basePagina = (preferLocal ? localPagina : wpPagina) || wpPagina || localPagina;
   const pagina = basePagina
     ? {

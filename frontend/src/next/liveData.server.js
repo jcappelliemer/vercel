@@ -14,6 +14,29 @@ const LEGACY_REDIRECTS = {
   '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/': '/focus-tecnico/pellicole-spettro-selettive/',
 };
 
+const sanitizeLiveString = (value = '') => String(value)
+  .replace(/\bLa pellicola oscurante NT\b/gi, 'Pellicole oscuranti ad alta riduzione luminosa')
+  .replace(/\bpellicola oscurante NT\b/gi, 'pellicola oscurante ad alta riduzione luminosa')
+  .replace(/\bCome la NT\b/gi, 'Questa soluzione')
+  .replace(/[^.!?<>]*(?:serie\s*nt|\bnt\b|nt[\s-]*20|nt[\s-]*35)[^.!?<>]*[.!?]/gi, ' ')
+  .replace(/\bserie\s*nt\b/gi, '')
+  .replace(/\bnt[\s-]*20\b/gi, '')
+  .replace(/\bnt[\s-]*35\b/gi, '')
+  .replace(/\bnt\b/gi, '')
+  .replace(/\s{2,}/g, ' ')
+  .trim();
+
+const sanitizeLivePayload = (value) => {
+  if (typeof value === 'string') return sanitizeLiveString(value);
+  if (Array.isArray(value)) return value.map(sanitizeLivePayload);
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(
+      Object.entries(value).map(([key, item]) => [key, sanitizeLivePayload(item)])
+    );
+  }
+  return value;
+};
+
 const getStoragePaths = () => {
   const path = require('path');
   const publicDir = path.join(process.cwd(), 'public', 'wp-data');
@@ -55,7 +78,7 @@ export const readLivePageByFile = (fileName) => {
   if (!fileName) return null;
   const pagePath = require('path').join(pagesDir, fileName);
   if (!fs.existsSync(pagePath)) return null;
-  return JSON.parse(fs.readFileSync(pagePath, 'utf8'));
+  return sanitizeLivePayload(JSON.parse(fs.readFileSync(pagePath, 'utf8')));
 };
 
 export const getMirrorStaticProps = (pathname) => {

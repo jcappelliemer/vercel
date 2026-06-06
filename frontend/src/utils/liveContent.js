@@ -181,6 +181,7 @@ const EXCLUDED_SOLARIS_TERMS = [
   /fotocromatic/i,
   /\bcromia\b/i,
   /\bserie\s*nt\b/i,
+  /\bnt\b/i,
   /\bnt[\s-]*20\b/i,
   /\bnt[\s-]*35\b/i,
   /tecnosolar/i,

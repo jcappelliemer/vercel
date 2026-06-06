@@ -70,14 +70,15 @@ const SITEMAP_PATH_ALIASES = {
   '/prodotti/madico-rs-20-ps-sr-8-mil/': '/prodotti/madico-rs-20-ps-sr-8mil/',
   '/prodotti/madico-rs-40-ps-sr-4-mil/': '/prodotti/madico-rs-40-ps-sr-4mil/',
   '/prodotti/madico-rs-40-ps-sr-8-mil/': '/prodotti/madico-rs-40-ps-sr-8mil/',
+  '/focus-tecnico/pellicole-termoisolanti/': '/focus-tecnico/pellicole-antisolari/',
+  '/servizi/pellicole-antisolari/': '/servizi/',
+  '/servizi/pellicole-sicurezza/': '/servizi/',
+  '/servizi/pellicole-decorative/': '/servizi/',
 };
 const APP_ONLY_SITEMAP_PATHS = [
   '/prodotti/ssn-70-te-sr/',
   '/prodotti/madico-rs-30-e-ps-sr/',
   '/focus-tecnico/safetyshield/',
-  '/servizi/pellicole-antisolari/',
-  '/servizi/pellicole-sicurezza/',
-  '/servizi/pellicole-decorative/',
 ];
 const EXCLUDED_LIVE_PATHS = new Set([
   '/pellicole-per-vetri/false-parent/',
@@ -1108,15 +1109,20 @@ async function buildPageRecord(entry, index, total) {
 }
 
 function buildSitemap(pages) {
+  const canonicalSitemapPath = (pathname) => {
+    const normalized = normalizeAppPath(pathname);
+    const aliased = SITEMAP_PATH_ALIASES[normalized] || normalized;
+    return aliased === '/' ? '/' : aliased.replace(/\/+$/, '');
+  };
+
   const sitemapPaths = Array.from(new Set([
     ...pages
       .filter((page) => !/noindex/i.test(page.seo.robots || ''))
       .map((page) => {
-        const newPath = normalizeAppPath(page.route.newPath);
-        return SITEMAP_PATH_ALIASES[newPath] || newPath;
+        return canonicalSitemapPath(page.route.newPath);
       }),
     ...APP_ONLY_SITEMAP_PATHS,
-  ].filter((newPath) => !isExcludedProductUrl(newPath))));
+  ].map(canonicalSitemapPath).filter((newPath) => !isExcludedProductUrl(newPath))));
 
   const urls = sitemapPaths
     .map((newPath) => `  <url><loc>${SITE_ORIGIN}${newPath}</loc></url>`)

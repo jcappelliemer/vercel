@@ -13,6 +13,7 @@ import LiveMirrorPage from "./pages/LiveMirrorPage";
 import LiveDirectoryPage from "./pages/LiveDirectoryPage";
 import SiteMapPage from "./pages/SiteMapPage";
 import PaginaInfoPagina from "./pages/PaginaInfoPagina";
+import Analytics from "./components/Analytics";
 import WhatsAppButton from "./components/WhatsAppButton";
 
 const ScrollToTop = () => {
@@ -58,6 +59,7 @@ function App() {
       <SettingsProvider>
         <BrowserRouter>
           <ScrollToTop />
+          <Analytics />
           <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/pellicole-per-vetri/*" element={<LiveMirrorPage />} />

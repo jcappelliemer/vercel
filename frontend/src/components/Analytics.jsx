@@ -24,11 +24,11 @@ function getClickEvent(anchor) {
   const testId = anchor.getAttribute('data-testid') || '';
 
   if (href.startsWith('tel:')) {
-    return { eventName: LEAD_EVENTS.clickTel, method: 'phone', href };
+    return { eventName: LEAD_EVENTS.clickTel, method: 'phone', linkType: 'phone_cta' };
   }
 
   if (href.startsWith('mailto:')) {
-    return { eventName: LEAD_EVENTS.clickEmail, method: 'email', href };
+    return { eventName: LEAD_EVENTS.clickEmail, method: 'email', linkType: 'email_cta' };
   }
 
   if (
@@ -37,7 +37,7 @@ function getClickEvent(anchor) {
     href.includes('/api/fast-contact') ||
     testId.includes('whatsapp')
   ) {
-    return { eventName: LEAD_EVENTS.clickWhatsapp, method: 'whatsapp', href };
+    return { eventName: LEAD_EVENTS.clickWhatsapp, method: 'whatsapp', linkType: 'whatsapp_cta' };
   }
 
   return null;
@@ -59,7 +59,7 @@ export default function Analytics() {
       trackEvent(clickEvent.eventName, {
         event_category: 'lead',
         method: clickEvent.method,
-        link_url: clickEvent.href,
+        link_type: clickEvent.linkType,
         page_path: window.location.pathname,
       });
     };

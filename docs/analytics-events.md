@@ -25,7 +25,7 @@ Click events send:
 
 - `event_category`: `lead`
 - `method`: `phone`, `email`, or `whatsapp`
-- `link_url`: clicked URL
+- `link_type`: neutral CTA type, for example `phone_cta`, `email_cta`, or `whatsapp_cta`
 - `page_path`: current page path
 
 Form events send:
@@ -57,6 +57,17 @@ SITE_URL=https://www.solarisfilms.it yarn monitor:analytics
 
 The monitor checks key public pages for the GA4 script and lead CTA markers. It does not verify GA4 server-side ingestion; use GA4 DebugView for that.
 
+## Reporting Goal
+
+Use GA4 to understand pages and sources that perform well in aggregate:
+
+- traffic by page
+- landing page quality
+- source / medium performance
+- lead events and key event rate by page
+
+See `docs/analytics-reporting.md`.
+
 ## Next Event Candidates
 
 - `form_contatti_error`: CRM submission failed.
@@ -65,4 +76,3 @@ The monitor checks key public pages for the GA4 script and lead CTA markers. It 
 - `form_preventivo_start`: user begins filling quote form.
 - `file_attachment_added`: user adds one or more files to a form.
 - `chatbot_lead_start`: user opens or starts a lead-oriented chatbot flow.
-

@@ -5,6 +5,7 @@ const crypto = require('crypto');
 
 const propertyId = process.env.GA4_PROPERTY_ID;
 const credentialsPath = process.env.GOOGLE_APPLICATION_CREDENTIALS;
+const providedAccessToken = process.env.GA4_ACCESS_TOKEN;
 const startDate = getArg('--start-date') || process.env.GA4_START_DATE || '7daysAgo';
 const endDate = getArg('--end-date') || process.env.GA4_END_DATE || 'today';
 const rowLimit = Number(getArg('--limit') || process.env.GA4_REPORT_LIMIT || 15);
@@ -17,6 +18,12 @@ function getArg(name) {
 
 function printUsage() {
   console.log(`Usage:
+  # OAuth access token mode
+  GA4_PROPERTY_ID=123456789 \\
+  GA4_ACCESS_TOKEN=ya29... \\
+  yarn report:analytics
+
+  # Service account mode
   GA4_PROPERTY_ID=123456789 \\
   GOOGLE_APPLICATION_CREDENTIALS=/path/to/service-account.json \\
   yarn report:analytics
@@ -55,6 +62,10 @@ function signJwt(serviceAccount) {
 }
 
 async function getAccessToken() {
+  if (providedAccessToken) {
+    return providedAccessToken;
+  }
+
   const serviceAccount = JSON.parse(fs.readFileSync(credentialsPath, 'utf8'));
   const assertion = signJwt(serviceAccount);
   const response = await fetch('https://oauth2.googleapis.com/token', {
@@ -126,9 +137,9 @@ async function main() {
     return;
   }
 
-  if (!propertyId || !credentialsPath) {
+  if (!propertyId || (!providedAccessToken && !credentialsPath)) {
     printUsage();
-    throw new Error('Missing GA4_PROPERTY_ID or GOOGLE_APPLICATION_CREDENTIALS.');
+    throw new Error('Missing GA4_PROPERTY_ID and either GA4_ACCESS_TOKEN or GOOGLE_APPLICATION_CREDENTIALS.');
   }
 
   const accessToken = await getAccessToken();
@@ -217,4 +228,3 @@ main().catch((error) => {
   console.error(error.message);
   process.exitCode = 1;
 });
-

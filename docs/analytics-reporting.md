@@ -75,6 +75,17 @@ This shows whether traffic from Google organic, Ads, direct, referral, or social
 
 The repo includes a GA4 Data API report script:
 
+OAuth token mode:
+
+```bash
+cd frontend
+GA4_PROPERTY_ID=123456789 \
+GA4_ACCESS_TOKEN=ya29... \
+yarn report:analytics
+```
+
+Service account mode:
+
 ```bash
 cd frontend
 GA4_PROPERTY_ID=123456789 \
@@ -96,11 +107,14 @@ The script prints:
 
 Required GA4 access:
 
-1. Create or use a Google Cloud service account.
-2. Enable the Google Analytics Data API.
-3. Add the service account email as Viewer on the GA4 property.
-4. Store the service account JSON outside the repo.
-5. Export `GA4_PROPERTY_ID` and `GOOGLE_APPLICATION_CREDENTIALS`.
+1. Enable the Google Analytics Data API.
+2. Use either OAuth access token mode or service account mode.
+3. For OAuth mode, the Google user must have Viewer access on the GA4 property.
+4. For service account mode, add the service account email as Viewer on the GA4 property.
+5. Store credentials or tokens outside the repo.
+6. Export `GA4_PROPERTY_ID` plus either `GA4_ACCESS_TOKEN` or `GOOGLE_APPLICATION_CREDENTIALS`.
+
+If GA4 rejects a service account email as not matching a Google Account, use OAuth token mode instead.
 
 ## Key Events To Mark In GA4
 

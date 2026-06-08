@@ -19,7 +19,7 @@ import axios from 'axios';
 import { useSettings } from '../hooks/useSettings';
 import { buildWhatsAppHref } from '../utils/contactLinks';
 import { appendSourceFields, getPublicCrmApiBase } from '../utils/publicApi';
-import { trackEvent } from '../components/Analytics';
+import { LEAD_EVENTS, trackEvent } from '../components/Analytics';
 
 const acceptedFiles = '.pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.zip,.rar,image/*';
 const fileInputClasses = 'block w-full text-sm text-[#94A3B8] file:mr-4 file:rounded-lg file:border-0 file:bg-white/10 file:px-4 file:py-2 file:text-sm file:text-white hover:file:bg-white/15';
@@ -87,7 +87,7 @@ const ContattiPagina = () => {
       files.forEach((file) => payload.append('attachment_image', file));
 
       await axios.post(`${getPublicCrmApiBase()}/public/forms/contact/plain`, payload);
-      trackEvent('form_contatti_submit', {
+      trackEvent(LEAD_EVENTS.contactSubmit, {
         event_category: 'lead',
         form_id: 'contact-form',
         page_path: window.location.pathname,

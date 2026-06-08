@@ -3,6 +3,14 @@ import { useEffect } from 'react';
 
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID || 'G-JVXJ62Q76Z';
 
+export const LEAD_EVENTS = {
+  clickTel: 'click_tel',
+  clickEmail: 'click_email',
+  clickWhatsapp: 'click_whatsapp',
+  contactSubmit: 'form_contatti_submit',
+  quoteSubmit: 'form_preventivo_submit',
+};
+
 export function trackEvent(eventName, parameters = {}) {
   if (typeof window === 'undefined' || typeof window.gtag !== 'function') {
     return;
@@ -16,11 +24,11 @@ function getClickEvent(anchor) {
   const testId = anchor.getAttribute('data-testid') || '';
 
   if (href.startsWith('tel:')) {
-    return { eventName: 'click_tel', method: 'phone', href };
+    return { eventName: LEAD_EVENTS.clickTel, method: 'phone', href };
   }
 
   if (href.startsWith('mailto:')) {
-    return { eventName: 'click_email', method: 'email', href };
+    return { eventName: LEAD_EVENTS.clickEmail, method: 'email', href };
   }
 
   if (
@@ -29,7 +37,7 @@ function getClickEvent(anchor) {
     href.includes('/api/fast-contact') ||
     testId.includes('whatsapp')
   ) {
-    return { eventName: 'click_whatsapp', method: 'whatsapp', href };
+    return { eventName: LEAD_EVENTS.clickWhatsapp, method: 'whatsapp', href };
   }
 
   return null;

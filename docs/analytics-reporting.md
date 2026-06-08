@@ -71,6 +71,37 @@ Add or compare:
 
 This shows whether traffic from Google organic, Ads, direct, referral, or social produces lead actions.
 
+## Agent Report Script
+
+The repo includes a GA4 Data API report script:
+
+```bash
+cd frontend
+GA4_PROPERTY_ID=123456789 \
+GOOGLE_APPLICATION_CREDENTIALS=/secure/path/service-account.json \
+yarn report:analytics
+```
+
+Optional range:
+
+```bash
+yarn report:analytics --start-date 30daysAgo --end-date today --limit 25
+```
+
+The script prints:
+
+- top pages by views
+- landing pages ordered by key events
+- traffic sources by sessions and key events
+
+Required GA4 access:
+
+1. Create or use a Google Cloud service account.
+2. Enable the Google Analytics Data API.
+3. Add the service account email as Viewer on the GA4 property.
+4. Store the service account JSON outside the repo.
+5. Export `GA4_PROPERTY_ID` and `GOOGLE_APPLICATION_CREDENTIALS`.
+
 ## Key Events To Mark In GA4
 
 Recommended:
@@ -99,4 +130,3 @@ Avoid ranking pages only by raw traffic. A technical product page with fewer vis
 ## Privacy Position
 
 This setup measures page performance and lead intent at aggregate level. It does not record form contents, session replay, screen recordings, or individual browsing paths.
-

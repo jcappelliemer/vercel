@@ -66,6 +66,7 @@
     "start:cra": "craco start",
     "fetch:live": "node fetch-live-site.js",
     "monitor:analytics": "node scripts/monitor-analytics.cjs",
+    "report:analytics": "node scripts/ga4-page-report.cjs",
     "build": "next build",
     "build:cra": "craco build",
     "postbuild:cra": "node scripts/run-react-snap.cjs",

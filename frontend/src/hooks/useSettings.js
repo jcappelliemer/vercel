@@ -57,6 +57,7 @@ const resolveAsset = (asset, fallback, legacyPaths = []) => (
 
 const normalizeSettings = (value = {}) => ({
   ...value,
+  whatsapp: '3926578067',
   stat1_value: '30+',
   stat2_value: '+45k',
   footer_text: 'Distributore esclusivo MADICO USA per l\'Italia. 30+ anni di esperienza, +45k edifici trattati.',

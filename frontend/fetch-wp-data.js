@@ -174,6 +174,7 @@ async function main() {
   if (settings && typeof settings === 'object') {
     settings.stat1_value = '30+';
     settings.stat2_value = '+45k';
+    settings.whatsapp = '3926578067';
     settings.footer_text = 'Distributore esclusivo MADICO USA per l\'Italia. 30+ anni di esperienza, +45k edifici trattati.';
 
     console.log('\nLocalizing settings images...');

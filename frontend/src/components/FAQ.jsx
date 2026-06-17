@@ -1,8 +1,9 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CaretDown, Question } from '@phosphor-icons/react';
+import fixes from '../data/orchestra-fixes.json';
 
-const faqItems = [
+const FALLBACK_FAQ = [
   {
     q: 'Quanto costa installare le pellicole per vetri?',
     a: 'Il costo dipende dal tipo di pellicola, dalla superficie da trattare, dalla posizione dei vetri e dalla complessità della posa. Per questo Solaris parte sempre da una verifica del caso reale: dimensioni, tipo di vetro, obiettivo e condizioni di installazione.',
@@ -52,6 +53,17 @@ const faqItems = [
     a: 'Perché il lavoro non si ferma alla vendita della pellicola. Solaris unisce distribuzione Madico, esperienza applicativa, verifica del vetro, scelta del prodotto, posa qualificata e documentazione tecnica, così il risultato è coerente con l’obiettivo dell’intervento.',
   },
 ];
+
+// Orchestra-managed FAQ for the home ('/'), with the hardcoded list as fallback.
+// Supports both {q,a} and {question,answer} shapes. Zero visual change downstream.
+const _orchFaq = fixes && fixes.byPath && fixes.byPath['/'] && fixes.byPath['/'].aeo
+  ? fixes.byPath['/'].aeo.faq
+  : null;
+const faqItems = (Array.isArray(_orchFaq) && _orchFaq.length)
+  ? _orchFaq
+      .map((x) => ({ q: x.q || x.question || '', a: x.a || x.answer || '' }))
+      .filter((x) => x.q && x.a)
+  : FALLBACK_FAQ;
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);

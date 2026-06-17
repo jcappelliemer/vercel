@@ -4,6 +4,7 @@ import TrustBar from '../components/TrustBar';
 import NeedGuide from '../components/NeedGuide';
 import Services from '../components/Services';
 import DecisionProof from '../components/DecisionProof';
+import Authority from '../components/Authority';
 import FocusTecnici from '../components/FocusTecnici';
 import Process from '../components/Process';
 import LoSapeviChe from '../components/LoSapeviChe';
@@ -110,6 +111,7 @@ const HomePage = () => {
         <NeedGuide />
         <Services />
         <DecisionProof />
+        <Authority />
         <FocusTecnici />
         <Process />
         <LoSapeviChe />

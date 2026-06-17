@@ -28,7 +28,11 @@ const { URL } = require('url');
 const DEFAULT_BASE = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
 const BASE = (process.env.ORCHESTRA_BASE || process.env.REACT_APP_WP_URL || process.env.WP_URL || DEFAULT_BASE).replace(/\/$/, '');
 const LICENSE = process.env.ORCHESTRA_LICENSE || '';
-const TIMEOUT_MS = Number(process.env.WP_FETCH_TIMEOUT_MS || 8000);
+// 30s per attempt: the manifest does meta-bridge + Content Store + block
+// extraction, so a cold WP (jc4e) answers in ~25s from the Vercel build network
+// (8s was too low → timeout → empty byPath → home stayed dark). Env-overridable.
+const TIMEOUT_MS = Number(process.env.WP_FETCH_TIMEOUT_MS || 30000);
+const RETRY_BACKOFFS_MS = [2000, 5000]; // between the 3 attempts; attempt 1 warms the WP
 const PER_PAGE = 50;
 const MAX_PAGES = 50; // backstop
 const OUT = path.join(__dirname, 'src', 'data', 'orchestra-fixes.json');
@@ -53,13 +57,35 @@ function fetchManifest(url) {
       let body = '';
       res.on('data', (c) => { body += c; });
       res.on('end', () => {
-        if (res.statusCode !== 200) { reject(new Error(`HTTP ${res.statusCode} for ${url}`)); return; }
-        try { resolve({ json: JSON.parse(body), headers: res.headers }); }
-        catch (e) { reject(new Error(`Invalid JSON from ${url}`)); }
+        if (res.statusCode !== 200) { reject(new Error(`HTTP ${res.statusCode}`)); return; }
+        try { resolve({ json: JSON.parse(body), headers: res.headers, status: res.statusCode }); }
+        catch (e) { reject(new Error('Invalid JSON')); }
       });
     }).on('error', reject);
-    req.setTimeout(TIMEOUT_MS, () => { req.destroy(new Error(`Timeout after ${TIMEOUT_MS}ms for ${url}`)); });
+    req.setTimeout(TIMEOUT_MS, () => { req.destroy(new Error(`Timeout after ${TIMEOUT_MS}ms`)); });
   });
+}
+
+// 3 attempts with backoff before the final fail-soft. Logs per attempt
+// (number, HTTP status / error, elapsed ms) — no token/URL beyond what main()
+// already logs. A cold WP usually times out on attempt 1 then warms up, so
+// attempt 2/3 succeed well within the 30s window.
+function sleep(ms) { return new Promise((r) => setTimeout(r, ms)); }
+async function fetchManifestRetry(url) {
+  let lastErr;
+  for (let attempt = 1; attempt <= 3; attempt++) {
+    const t0 = Date.now();
+    try {
+      const out = await fetchManifest(url);
+      console.log(`[orchestra] attempt ${attempt}/3 OK: HTTP ${out.status} in ${Date.now() - t0}ms`);
+      return out;
+    } catch (e) {
+      lastErr = e;
+      console.warn(`[orchestra] attempt ${attempt}/3 failed in ${Date.now() - t0}ms: ${e.message}`);
+      if (attempt < 3) await sleep(RETRY_BACKOFFS_MS[attempt - 1] || 5000);
+    }
+  }
+  throw lastErr;
 }
 
 function normPath(frontendUrl) {
@@ -87,7 +113,7 @@ async function main() {
   let generatedAt = null;
   let pages = 0;
   while (url && pages < MAX_PAGES) {
-    const { json, headers } = await fetchManifest(url);
+    const { json, headers } = await fetchManifestRetry(url);
     if (json && json.contract !== 1) console.warn(`[orchestra] unexpected contract: ${json && json.contract}`);
     if (!generatedAt && json) generatedAt = json.generated_at || null;
     for (const p of ((json && json.pages) || [])) {

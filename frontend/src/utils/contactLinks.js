@@ -1,4 +1,4 @@
-export const normalizeWhatsAppNumber = (value, fallback = '393925466518') => {
+export const normalizeWhatsAppNumber = (value, fallback = '393926578067') => {
   const digits = String(value || '').replace(/\D/g, '');
   if (!digits) return fallback;
   if (digits.startsWith('39')) return digits;

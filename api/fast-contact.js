@@ -6,9 +6,9 @@ module.exports = async function handler(req, res) {
     return;
   }
 
-  const toRaw = String((req.query && req.query.to) || '393925466518');
+  const toRaw = String((req.query && req.query.to) || '393926578067');
   const textRaw = String((req.query && req.query.text) || '');
-  const to = toRaw.replace(/\D/g, '') || '393925466518';
+  const to = toRaw.replace(/\D/g, '') || '393926578067';
   const text = textRaw ? `?text=${encodeURIComponent(textRaw)}` : '';
   const destination = `https://wa.me/${to}${text}`;
 

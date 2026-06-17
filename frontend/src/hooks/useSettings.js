@@ -8,7 +8,7 @@ const defaults = {
   company_subtitle: 'Distributore esclusivo MADICO USA per l\'Italia',
   phone: '+390559107621',
   phone_display: '055 9107621',
-  whatsapp: '3925466518',
+  whatsapp: '3926578067',
   email: 'info@solarisfilms.it',
   address: 'Via G. Brodolini, 8 - Figline e Incisa Valdarno (FI)',
   piva: '02223380516',

@@ -12,6 +12,7 @@ const LOCAL_STAGING_API = 'https://solarisfilms.vercel.app/api';
 const API = BACKEND_URL
   ? `${BACKEND_URL}/api`
   : (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? LOCAL_STAGING_API : '/api');
+const CRM_CHAT_ENDPOINT = 'https://crm.solarisfilms.it/api/public/chatbot/message';
 const CHAT_MESSAGES_KEY = 'solaris_chatbot_messages';
 const CHAT_SESSION_KEY = 'solaris_chatbot_session';
 
@@ -238,16 +239,24 @@ const ChatBot = () => {
     setIsLoading(true);
 
     try {
-      if (!API) {
-        throw new Error('Chat backend is not configured');
-      }
-
-      const response = await axios.post(`${API}/chat`, { message: userMessage, session_id: sessionId, page_path: pathname }, { timeout: 30000 });
-      setSessionId(response.data.session_id);
+      const response = await axios.post(CRM_CHAT_ENDPOINT, {
+        message: userMessage,
+        session_id: sessionId,
+        page_path: pathname,
+        page_url: typeof window !== 'undefined' ? window.location.href : '',
+        privacy_acceptance: false,
+      }, {
+        timeout: 30000,
+        withCredentials: false,
+      });
+      const nextSessionId = response.data.session_id || response.data.thread_id || sessionId;
+      if (nextSessionId) setSessionId(nextSessionId);
       setMessages((prev) => [...prev, {
         type: 'bot',
-        text: response.data.response,
-        sources: Array.isArray(response.data.sources) ? response.data.sources : [],
+        text: response.data.reply || response.data.response || 'Ho registrato la richiesta.',
+        sources: Array.isArray(response.data.knowledge_sources)
+          ? response.data.knowledge_sources
+          : (Array.isArray(response.data.sources) ? response.data.sources : []),
       }]);
     } catch (error) {
       const fallbackSession = sessionId || (typeof crypto !== 'undefined' && crypto.randomUUID ? crypto.randomUUID() : `local-${Date.now()}`);

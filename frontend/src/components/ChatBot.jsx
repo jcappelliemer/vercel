@@ -15,6 +15,7 @@ const API = BACKEND_URL
 const CRM_CHAT_ENDPOINT = 'https://crm.solarisfilms.it/api/public/chatbot/message';
 const CHAT_MESSAGES_KEY = 'solaris_chatbot_messages';
 const CHAT_SESSION_KEY = 'solaris_chatbot_session';
+const PRIVACY_NOTICE = 'Usando la chat accetti che i messaggi siano trattati da Solaris Films per rispondere alla richiesta; lascia i dati nel modulo solo se vuoi essere ricontattato.';
 
 const defaultQuickPrompts = [
   {
@@ -244,7 +245,7 @@ const ChatBot = () => {
         session_id: sessionId,
         page_path: pathname,
         page_url: typeof window !== 'undefined' ? window.location.href : '',
-        privacy_acceptance: false,
+        privacy_acceptance: Boolean(leadForm.privacy_accettata),
       }, {
         timeout: 30000,
         withCredentials: false,
@@ -450,7 +451,7 @@ const ChatBot = () => {
                   <div>
                     <p className="text-sm font-medium text-white">Lascia un contatto</p>
                     <p className="mt-1 text-xs leading-relaxed text-white/45">
-                      La conversazione viene allegata alla richiesta per dare contesto al team tecnico.
+                      La conversazione viene allegata alla richiesta per dare contesto al team tecnico. I dati sono usati solo per ricontatto e gestione della richiesta.
                     </p>
                   </div>
                   <div className="grid grid-cols-2 gap-2">
@@ -529,7 +530,12 @@ const ChatBot = () => {
                       onChange={(e) => updateLeadForm('privacy_accettata', e.target.checked)}
                       className="mt-0.5 accent-[#EAB308]"
                     />
-                    <span>Acconsento al trattamento dei dati per essere ricontattato da Solaris Films.</span>
+                    <span>
+                      Acconsento al trattamento dei dati per essere ricontattato da Solaris Films e dichiaro di aver letto la{' '}
+                      <Link to="/privacy-policy" onClick={() => setIsOpen(false)} className="text-[#FACC15] underline underline-offset-2">
+                        privacy policy
+                      </Link>.
+                    </span>
                   </label>
                   {leadStatus === 'error' && (
                     <p className="text-xs text-red-300">Non sono riuscito a inviare il contatto. Puoi riprovare o usare WhatsApp.</p>
@@ -585,6 +591,12 @@ const ChatBot = () => {
                   {isLeadFormOpen ? 'Nascondi modulo contatto' : 'Lascia contatto al team'}
                 </button>
               </div>
+              <p className="mt-3 text-[11px] leading-relaxed text-white/35">
+                {PRIVACY_NOTICE}{' '}
+                <Link to="/privacy-policy" onClick={() => setIsOpen(false)} className="text-white/55 underline underline-offset-2 hover:text-[#FACC15]">
+                  Privacy
+                </Link>
+              </p>
             </div>
           </motion.div>
         )}

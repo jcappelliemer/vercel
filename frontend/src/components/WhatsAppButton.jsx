@@ -19,6 +19,7 @@ const WhatsAppButton = () => {
   ].join('\n');
   const phone = normalizeWhatsAppNumber(settings.whatsapp);
   const contactHref = `/api/fast-contact?to=${encodeURIComponent(phone)}&text=${encodeURIComponent(whatsappMessage)}`;
+  const privacyHint = 'Apri WhatsApp: il messaggio passa da WhatsApp/Meta e sarà usato da Solaris Films per rispondere alla richiesta.';
 
   useEffect(() => {
     const updateVisibility = () => {
@@ -53,7 +54,8 @@ const WhatsAppButton = () => {
       rel="noopener noreferrer"
       className={`contact-action contact-action-wa ${isVisible ? 'opacity-100 scale-100 pointer-events-auto' : 'opacity-0 scale-90 pointer-events-none'}`}
       data-testid="floating-contact-btn"
-      aria-label="Contatto rapido"
+      aria-label={privacyHint}
+      title={privacyHint}
     >
       <WhatsappLogo size={26} weight="fill" className="text-white" />
       <span className="contact-action-label">WA</span>

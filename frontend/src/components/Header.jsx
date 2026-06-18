@@ -24,11 +24,11 @@ const LIVE_MENU = [
             children: [
               {
                 name: 'Madico SB 20 E PS SR',
-                href: '/pellicole-per-vetri/le-pellicole-antisolari/madicosb20epssr/',
+                href: '/prodotti/madico-sb-20-e-ps-sr/',
               },
               {
                 name: 'Madico SB 35 E PS SR',
-                href: '/pellicole-per-vetri/le-pellicole-antisolari/madicosb35epssr/',
+                href: '/prodotti/madico-sb-35-e-ps-sr/',
               },
             ],
           },
@@ -38,11 +38,11 @@ const LIVE_MENU = [
             children: [
               {
                 name: 'Madico SG 20 E PS SR',
-                href: '/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/',
+                href: '/prodotti/madico-sg-20-e-ps-sr/',
               },
               {
                 name: 'Madico SL 8 E PS SR',
-                href: '/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr/',
+                href: '/prodotti/madico-sl-8-e-ps-sr/',
               },
             ],
           },
@@ -52,7 +52,7 @@ const LIVE_MENU = [
             children: [
               {
                 name: 'SSN 70 TE SR',
-                href: '/pellicole-per-vetri/le-pellicole-antisolari/ssn-70-te-sr/',
+                href: '/prodotti/ssn-70-te-sr/',
               },
             ],
           },

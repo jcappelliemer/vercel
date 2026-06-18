@@ -4,6 +4,10 @@ import { prodottiData } from '../../src/data/siteContent';
 export default ProdottoPagina;
 
 const PRODUCT_SLUG_ALIASES = {
+  'madicosb20epssr': 'madico-sb-20-e-ps-sr',
+  'madicosb35epssr': 'madico-sb-35-e-ps-sr',
+  'madicosg20epssr': 'madico-sg-20-e-ps-sr',
+  'madicosl8epssr': 'madico-sl-8-e-ps-sr',
   'madico-rs-20-ps-sr-8-mil': 'madico-rs-20-ps-sr-8mil',
   'madico-rs-40-ps-sr-4-mil': 'madico-rs-40-ps-sr-4mil',
   'madico-rs-40-ps-sr-8-mil': 'madico-rs-40-ps-sr-8mil',

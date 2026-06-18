@@ -12,6 +12,10 @@ const IS_PROD = typeof window !== 'undefined' && window.location.protocol === 'h
 const cache = new Map();
 const CACHE_TTL = 5 * 60 * 1000;
 const PRODUCT_SLUG_ALIASES = {
+  'madicosb20epssr': 'madico-sb-20-e-ps-sr',
+  'madicosb35epssr': 'madico-sb-35-e-ps-sr',
+  'madicosg20epssr': 'madico-sg-20-e-ps-sr',
+  'madicosl8epssr': 'madico-sl-8-e-ps-sr',
   'ssn-50-te-sr': 'ssn-70-te-sr',
 };
 const canonicalProductSlug = (slug = '') => PRODUCT_SLUG_ALIASES[slug] || slug;

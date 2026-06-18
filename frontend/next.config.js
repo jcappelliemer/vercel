@@ -30,14 +30,6 @@ const nextConfig = {
         destination: '/api/gone',
       },
       {
-        source: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr/',
-        destination: '/api/gone',
-      },
-      {
         source: '/pellicole-per-vetri/false-parent/battle-plan-mensile-tc-2025',
         destination: '/api/gone',
       },
@@ -260,23 +252,63 @@ const nextConfig = {
       },
       {
         source: '/prodotti/tecnosolarssn50tesr',
-        destination: '/prodotti/ssn-70-te-sr/',
-        permanent: true,
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
       },
       {
         source: '/prodotti/tecnosolarssn50tesr/',
-        destination: '/prodotti/ssn-70-te-sr/',
-        permanent: true,
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
+      },
+      {
+        source: '/prodotti/tecnosolarnt20epssr',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
+      },
+      {
+        source: '/prodotti/tecnosolarnt20epssr/',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
+      },
+      {
+        source: '/prodotti/tecnosolar-nt-20-e-ps-sr',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
+      },
+      {
+        source: '/prodotti/tecnosolar-nt-20-e-ps-sr/',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
       },
       {
         source: '/prodotti/tecnosolar-ssn-50-te-sr',
-        destination: '/prodotti/ssn-70-te-sr/',
-        permanent: true,
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
       },
       {
         source: '/prodotti/tecnosolar-ssn-50-te-sr/',
-        destination: '/prodotti/ssn-70-te-sr/',
-        permanent: true,
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarnt20epssr/',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        statusCode: 301,
       },
       {
         source: '/pellicole-per-vetri/le-pellicole-antisolari/ssn-70-te-sr',
@@ -306,6 +338,86 @@ const nextConfig = {
       {
         source: '/info/norme-di-riferimento/',
         destination: '/info/norme/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-per-i-vetri',
+        destination: '/prodotti/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-per-i-vetri/',
+        destination: '/prodotti/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari',
+        destination: '/pellicole-antisolari/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/',
+        destination: '/pellicole-antisolari/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza',
+        destination: '/pellicole-di-sicurezza/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/',
+        destination: '/pellicole-di-sicurezza/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-decorative-per-vetri',
+        destination: '/pellicole-decorative/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-decorative-per-vetri/',
+        destination: '/pellicole-decorative/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/pellicole-oscuranti-vetri',
+        destination: '/pellicole-oscuranti-per-vetri/',
+        permanent: true,
+      },
+      {
+        source: '/approfondimenti/pellicole-oscuranti-vetri/',
+        destination: '/pellicole-oscuranti-per-vetri/',
+        permanent: true,
+      },
+      {
+        source: '/pagina-info',
+        destination: '/info/',
+        permanent: true,
+      },
+      {
+        source: '/pagina-info/',
+        destination: '/info/',
+        permanent: true,
+      },
+      {
+        source: '/info-e-faq',
+        destination: '/info/',
+        permanent: true,
+      },
+      {
+        source: '/info-e-faq/',
+        destination: '/info/',
+        permanent: true,
+      },
+      {
+        source: '/pagina-info/garanzie-clienti',
+        destination: '/info/garanzie-clienti/',
+        permanent: true,
+      },
+      {
+        source: '/pagina-info/garanzie-clienti/',
+        destination: '/info/garanzie-clienti/',
         permanent: true,
       },
       {

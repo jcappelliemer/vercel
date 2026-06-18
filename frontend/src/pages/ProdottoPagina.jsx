@@ -1,4 +1,4 @@
-import { useParams, Link } from '@/next/router-shim';
+import { useParams, useLocation, Link } from '@/next/router-shim';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
@@ -13,6 +13,10 @@ import { PRODUCT_VISUALS } from '../utils/assetMaps';
 const UNIFIED_DATA_COLOR = '#2563EB';
 
 const PRODUCT_SLUG_ALIASES = {
+  'madicosb20epssr': 'madico-sb-20-e-ps-sr',
+  'madicosb35epssr': 'madico-sb-35-e-ps-sr',
+  'madicosg20epssr': 'madico-sg-20-e-ps-sr',
+  'madicosl8epssr': 'madico-sl-8-e-ps-sr',
   'madico-rs-20-ps-sr-8-mil': 'madico-rs-20-ps-sr-8mil',
   'madico-rs-40-ps-sr-4-mil': 'madico-rs-40-ps-sr-4mil',
   'madico-rs-40-ps-sr-8-mil': 'madico-rs-40-ps-sr-8mil',
@@ -774,7 +778,9 @@ const ProductFaqSection = ({ items = [] }) => {
 
 const ProdottoPagina = ({ initialSlug = '' }) => {
   const { slug: routeSlug } = useParams();
-  const slug = canonicalProductSlug(initialSlug || routeSlug);
+  const location = useLocation();
+  const pathSlug = (location.pathname || '').match(/^\/prodotti\/([^/?#]+)/)?.[1] || '';
+  const slug = canonicalProductSlug(pathSlug || routeSlug || initialSlug);
   const { data: allProdotti } = useWPData('prodotti');
   const prodotto = allProdotti.find(p => p.slug === slug) || prodottiData.find(p => p.slug === slug);
   const [liveSections, setLiveSections] = useState({ utilizzi: '', specifiche: '', caratteristiche: [] });
@@ -809,6 +815,22 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
     run();
     return () => { mounted = false; };
   }, [prodotto?.slug]);
+
+  if (!slug) {
+    return (
+      <div className="min-h-screen bg-[#0A0F1C]">
+        <Header />
+        <main className="pt-24">
+          <section className="py-20">
+            <div className="max-w-7xl mx-auto px-6 md:px-12 text-center">
+              <h1 className="text-4xl font-medium text-white mb-6">Caricamento prodotto</h1>
+            </div>
+          </section>
+        </main>
+        <Footer />
+      </div>
+    );
+  }
 
   if (!prodotto) {
     return (

@@ -25,7 +25,7 @@ function normPath(p) {
   return s || '/';
 }
 
-export default function OrchestraConnector({ path }) {
+export default function OrchestraConnector({ path, headOnly }) {
   const loc = useLocation();
   const key = normPath(path || (loc && loc.pathname) || '/');
   const entry = fixes && fixes.byPath ? fixes.byPath[key] : null;
@@ -36,7 +36,7 @@ export default function OrchestraConnector({ path }) {
   const faqItems = Array.isArray(aeo.faq)
     ? aeo.faq.map((x) => ({ q: x.q || x.question || '', a: x.a || x.answer || '' })).filter((x) => x.q && x.a)
     : [];
-  const hasHead = meta.title || meta.description || aeo.schema_jsonld;
+  const hasHead = meta.title || meta.description || meta.keywords || aeo.schema_jsonld;
 
   return (
     <>
@@ -44,14 +44,16 @@ export default function OrchestraConnector({ path }) {
         <Helmet>
           {meta.title ? <title>{meta.title}</title> : null}
           {meta.description ? <meta name="description" content={meta.description} /> : null}
+          {meta.keywords ? <meta name="keywords" content={meta.keywords} /> : null}
           {aeo.schema_jsonld ? (
             <script type="application/ld+json">{JSON.stringify(aeo.schema_jsonld)}</script>
           ) : null}
         </Helmet>
       ) : null}
-      {aeo.authority_html ? <Authority html={aeo.authority_html} /> : null}
-      {faqItems.length ? <FAQ items={faqItems} /> : null}
-      {aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
+      {/* headOnly: la Home rende già FAQ (A.2) + Authority (A.3) nel body → evita doppioni */}
+      {!headOnly && aeo.authority_html ? <Authority html={aeo.authority_html} /> : null}
+      {!headOnly && faqItems.length ? <FAQ items={faqItems} /> : null}
+      {!headOnly && aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
     </>
   );
 }

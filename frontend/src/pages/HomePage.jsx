@@ -5,6 +5,7 @@ import NeedGuide from '../components/NeedGuide';
 import Services from '../components/Services';
 import DecisionProof from '../components/DecisionProof';
 import Authority from '../components/Authority';
+import OrchestraConnector from '../components/OrchestraConnector';
 import FocusTecnici from '../components/FocusTecnici';
 import Process from '../components/Process';
 import LoSapeviChe from '../components/LoSapeviChe';
@@ -104,6 +105,9 @@ const HomePage = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="home-page">
       <SEO path="/" jsonLd={buildOrganizationSchema()} />
+      {/* A.4-bis: head-block del manifest (schema_jsonld + meta keywords/title/desc).
+          SOLO head — FAQ + Authority restano nel body via A.2/A.3 (no doppioni). */}
+      <OrchestraConnector headOnly />
       <Header />
       <main>
         <Hero />

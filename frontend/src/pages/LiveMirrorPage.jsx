@@ -15,6 +15,7 @@ import {
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import OrchestraConnector from '../components/OrchestraConnector';
 import { useHeadlessSEO, mergeHeadlessSEO } from '../hooks/useHeadlessSEO';
 import { isExcludedSolarisPage } from '../utils/liveContent';
 import {
@@ -2523,6 +2524,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
       <LivePageSEO page={resolvedPage} currentPath={currentPath} />
       <Header />
       <LiveContent page={resolvedPage} allPages={index?.pages || []} />
+      <OrchestraConnector path={currentPath} />
       <Footer />
       <ChatBot />
     </div>

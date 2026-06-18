@@ -59,13 +59,16 @@ const FALLBACK_FAQ = [
 const _orchFaq = fixes && fixes.byPath && fixes.byPath['/'] && fixes.byPath['/'].aeo
   ? fixes.byPath['/'].aeo.faq
   : null;
-const faqItems = (Array.isArray(_orchFaq) && _orchFaq.length)
+const HOME_FAQ = (Array.isArray(_orchFaq) && _orchFaq.length)
   ? _orchFaq
       .map((x) => ({ q: x.q || x.question || '', a: x.a || x.answer || '' }))
       .filter((x) => x.q && x.a)
   : FALLBACK_FAQ;
 
-const FAQ = () => {
+// A.4: reusable across templates — pass `items` (per-path FAQ from the connector);
+// no prop = home behaviour (orchestra '/' or hardcoded fallback). Zero home change.
+const FAQ = ({ items }) => {
+  const faqItems = (Array.isArray(items) && items.length) ? items : HOME_FAQ;
   const [openIndex, setOpenIndex] = useState(null);
 
   return (

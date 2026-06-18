@@ -2,6 +2,7 @@ import { useParams, Link } from '@/next/router-shim';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
+import OrchestraConnector from '../components/OrchestraConnector';
 import SEO, { buildProductSchema, buildBreadcrumbSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CheckCircle, Shield, Sun, Eye, Certificate, Tag } from '@phosphor-icons/react';
@@ -1164,6 +1165,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
           </div>
         </section>
       </main>
+      <OrchestraConnector />
       <Footer />
       <ChatBot />
     </div>
@@ -1266,6 +1268,7 @@ export const ProdottiIndexPagina = () => {
           </div>
         </section>
       </main>
+      <OrchestraConnector />
       <Footer />
       <ChatBot />
     </div>

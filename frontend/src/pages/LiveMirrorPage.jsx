@@ -50,26 +50,18 @@ const normalizePath = (pathname) => {
 
 const livePathAliases = {
   '/info/garanzie/': '/pagina-info/garanzie/',
-  '/pagina-info/garanzie/': '/info/garanzie/',
 };
 
-const legacyFocusPathMap = new Map([
-  ['/pellicole-antisolari/', '/focus-tecnico/pellicole-antisolari/'],
-  ['/pellicole-di-sicurezza/', '/focus-tecnico/pellicole-di-sicurezza/'],
-  ['/pellicole-antisolari-sputtered/', '/focus-tecnico/pellicole-antisolari-sputtered/'],
-  ['/pellicole-antisolari-sunscape/', '/focus-tecnico/pellicole-antisolari-sunscape/'],
-  ['/pellicole-oscuranti-per-vetri/', '/focus-tecnico/pellicole-oscuranti-per-vetri/'],
-  ['/pellicole-riflettenti/', '/focus-tecnico/pellicole-riflettenti/'],
-  ['/pellicole-spettro-selettive/', '/focus-tecnico/pellicole-spettro-selettive/'],
-  ['/pellicole-di-sicurezza-neutre-la-serie-cl/', '/focus-tecnico/pellicole-di-sicurezza-neutre-la-serie-cl/'],
-  ['/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/', '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/'],
-  ['/pellicole-antisolari-di-sicurezza-la-serie-rs/', '/focus-tecnico/pellicole-antisolari-di-sicurezza-la-serie-rs/'],
-  ['/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/', '/focus-tecnico/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/'],
-  ['/pellicole-decorative/', '/focus-tecnico/pellicole-decorative/'],
-  ['/pellicole-antisolari-stampabili-e-vetrofanie/', '/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie/'],
-  ['/pellicole-decorative-privacy/', '/focus-tecnico/pellicole-decorative-privacy/'],
-  ['/pellicole-termoisolanti/', '/focus-tecnico/pellicole-termoisolanti/'],
-]);
+const legacyInternalHrefMap = {
+  '/pellicole-per-vetri/pellicole-per-i-vetri/': '/prodotti/',
+  '/pellicole-per-vetri/le-pellicole-antisolari/': '/pellicole-antisolari/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/': '/pellicole-di-sicurezza/',
+  '/pellicole-per-vetri/pellicole-decorative-per-vetri/': '/pellicole-decorative/',
+  '/approfondimenti/pellicole-oscuranti-vetri/': '/pellicole-oscuranti-per-vetri/',
+  '/pellicole-per-vetri/chiusura-lavori/': '/lo-sapevi-che/',
+  '/pagina-info/': '/info-e-faq/',
+  '/pagina-info/garanzie-clienti/': '/pagina-info/garanzie/',
+};
 
 const normalizeImportedHref = (href = '') => {
   const rawHref = String(href).trim();
@@ -94,36 +86,8 @@ const normalizeImportedHref = (href = '') => {
   const normalizedPath = normalizePath(pathOnly);
   if (isLiveAbsolute && normalizedPath.startsWith('/wp-content/')) return rawHref;
 
-  const productMatch = normalizedPath.match(/^\/pellicole-per-vetri\/(?:le-pellicole-antisolari|pellicole-di-sicurezza|pellicole-decorative-per-vetri)\/([^/]+)\/$/i);
-  if (productMatch) return `/prodotti/${productMatch[1]}/${suffix}`;
-
-  if (normalizedPath === '/pellicole-per-vetri/' || normalizedPath === '/pellicole-per-vetri/pellicole-per-vetri/') {
-    return `/servizi/${suffix}`;
-  }
-  if (normalizedPath === '/pellicole-per-vetri/le-pellicole-antisolari/') {
-    return `/servizi#antisolari${suffix}`;
-  }
-  if (normalizedPath === '/pellicole-per-vetri/pellicole-di-sicurezza/') {
-    return `/servizi#sicurezza${suffix}`;
-  }
-  if (normalizedPath === '/pellicole-per-vetri/pellicole-decorative-per-vetri/') {
-    return `/servizi#decorative${suffix}`;
-  }
-  if (
-    normalizedPath === '/contact/'
-    || normalizedPath === '/contacts/'
-    || normalizedPath === '/pellicole-per-vetri/contact/'
-  ) {
-    return `/contatti/${suffix}`;
-  }
-
-  const focusPath = legacyFocusPathMap.get(normalizedPath);
-  if (focusPath) return `${focusPath}${suffix}`;
-
-  const articleMatch = normalizedPath.match(/^\/approfondimenti\/([^/]+)\/$/i);
-  if (articleMatch) return `/lo-sapevi-che/${articleMatch[1]}/${suffix}`;
-
-  return localHref;
+  const mappedPath = legacyInternalHrefMap[normalizedPath] || normalizedPath;
+  return `${mappedPath === '/' ? '/' : mappedPath}${suffix}`;
 };
 
 const titleCaseIfUpper = (value = '') => {
@@ -149,7 +113,7 @@ const normalizeSolarisText = (value = '') => String(value)
 
 const getLocalCityName = (page) => {
   const seoTitle = cleanTitle(page?.seo?.title || page?.title || '');
-  const routeSlug = (page?.route?.newPath || page?.path || '')
+  const routeSlug = (page?.path || page?.route?.newPath || '')
     .split('/')
     .filter(Boolean)
     .pop();
@@ -161,11 +125,11 @@ const getLocalCityName = (page) => {
 };
 
 const supportExplicitTitle = (page = {}) => {
-  const path = normalizePath(page.route?.newPath || page.path);
+  const path = normalizePath(page.path || page.route?.newPath);
 
   if (path === '/profilo-solaris/') return 'Company Profile Solaris';
   if (path === '/faq/') return 'Domande frequenti sulle pellicole per vetri';
-  if (path === '/info/norme/') return 'Norme e sicurezza per pellicole e superfici vetrate';
+  if (path === '/pagina-info/norme/') return 'Norme e sicurezza per pellicole e superfici vetrate';
   if (path === '/guida-tecnica/') return 'Guida tecnica pellicole per vetri';
   if (path === '/privacy-policy/') return 'Privacy Policy';
   if (path === '/grazie/') return 'Grazie';
@@ -286,7 +250,7 @@ const getServiceFamilyForArticlePage = (page = {}) => {
     liveDisplayTitle(page),
     livePageDescription(page),
     page.path,
-    page.route?.newPath,
+    page.path,
   ].join(' ').toLocaleLowerCase('it');
 
   if (/(sicurezza|antisfond|antiesplos|antischegg|safety|rottura|framment|uni en|norma|scuol|graffiti|vandal)/i.test(text)) {
@@ -805,7 +769,7 @@ const infoThemes = [
     key: 'normative',
     title: 'Norme e sicurezza',
     eyebrow: 'Norme applicate',
-    route: '/info/norme/',
+    route: '/pagina-info/norme/',
     description: 'Riferimenti normativi e sicurezza sul lavoro letti in funzione del vetro, del rischio e della posa.',
     match: /(norm|sicurezza|testo unico|dpr|brc)/i,
   },
@@ -813,7 +777,7 @@ const infoThemes = [
     key: 'certificazioni',
     title: 'Garanzie e certificazioni',
     eyebrow: 'Affidabilità',
-    route: '/info/garanzie-clienti/',
+    route: '/pagina-info/garanzie-clienti/',
     description: 'Garanzie, certificazioni e punti di forza da leggere insieme a prodotto, applicazione e metodo Solaris.',
     match: /(garanz|certific|nfrc|punti di forza)/i,
   },
@@ -821,7 +785,7 @@ const infoThemes = [
     key: 'supporto',
     title: 'Uso, manutenzione e glossario',
     eyebrow: 'Supporto operativo',
-    route: '/info/#supporto',
+    route: '/pagina-info/#supporto',
     description: 'Istruzioni, manutenzione e termini tecnici per fare domande più precise prima della verifica.',
     match: /(istruz|manutenz|glossario|termini)/i,
   },
@@ -919,7 +883,7 @@ const focusDecisionPanel = (family) => {
 };
 
 const isLegacySafetyShieldFocusPage = (page = {}) => {
-  const path = normalizePath(page?.route?.newPath || page?.path || '');
+  const path = normalizePath(page?.path || page?.route?.newPath || '');
   return path === '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/';
 };
 
@@ -1083,6 +1047,16 @@ const sanitizeFocusBlocks = (blocks = []) => blocks
   .filter(Boolean);
 
 const samePath = (a = '', b = '') => normalizePath(a) === normalizePath(b);
+
+const isPageForPath = (page = null, pathname = '') => {
+  if (!page || !pathname) return false;
+  const normalizedPathname = normalizePath(pathname);
+  const aliasPath = livePathAliases[normalizedPathname];
+
+  return samePath(page.path, normalizedPathname)
+    || samePath(page.route?.newPath, normalizedPathname)
+    || (aliasPath && (samePath(page.path, aliasPath) || samePath(page.route?.newPath, aliasPath)));
+};
 
 const ArticleTemplate = ({ page }) => {
   const blocks = page.contentBlocks || [];
@@ -1253,7 +1227,7 @@ const ServiceFamilyTemplate = ({ page, allPages = [] }) => {
             <div className="service-family-card-grid">
               {products.map((product) => (
                 <Link
-                  to={product.route?.newPath || product.path}
+                  to={product.path || product.route?.newPath}
                   className="service-family-link-card"
                   key={product.path}
                 >
@@ -1274,7 +1248,7 @@ const ServiceFamilyTemplate = ({ page, allPages = [] }) => {
               </div>
               <div className="service-family-focus-list">
                 {focusPages.map((focus) => (
-                  <Link to={focus.route?.newPath || focus.path} key={focus.path}>
+                  <Link to={focus.path || focus.route?.newPath} key={focus.path}>
                     <span>{getPageTitle(focus)}</span>
                     <ArrowRight size={15} />
                   </Link>
@@ -1334,7 +1308,7 @@ const ProductTemplate = ({ page, allPages = [] }) => {
   const productVisual = getProductVisual(page);
   const image = productVisual?.src || pageImage(page) || family?.image;
   const pdfHref = blocks.map(pdfHrefFromBlock).find(Boolean);
-  const internalClMatch = (page.route?.newPath || page.path || '').match(/madico-cl-(400|700)-ps-sr/i);
+  const internalClMatch = (page.path || page.route?.newPath || '').match(/madico-cl-(400|700)-ps-sr/i);
   const normalizeProductBlock = (block) => {
     if (!internalClMatch) return block;
     const model = internalClMatch[1];
@@ -1368,7 +1342,7 @@ const ProductTemplate = ({ page, allPages = [] }) => {
   });
   const relatedProducts = family
     ? getProductsForFamily(allPages, family)
-      .filter((product) => normalizePath(product.route?.newPath || product.path) !== normalizePath(page.route?.newPath || page.path))
+      .filter((product) => normalizePath(product.path || product.route?.newPath) !== normalizePath(page.path || page.route?.newPath))
       .slice(0, 4)
     : [];
   const focusPages = family ? getFocusForFamily(allPages, family).slice(0, 3) : [];
@@ -1455,7 +1429,7 @@ const ProductTemplate = ({ page, allPages = [] }) => {
               <span className="live-side-eyebrow">Stessa famiglia</span>
               <div className="product-related-list">
                 {relatedProducts.map((product) => (
-                  <Link to={product.route?.newPath || product.path} key={product.path}>
+                  <Link to={product.path || product.route?.newPath} key={product.path}>
                     <span>{getPageTitle(product)}</span>
                     <ArrowRight size={14} />
                   </Link>
@@ -1469,7 +1443,7 @@ const ProductTemplate = ({ page, allPages = [] }) => {
               <span className="live-side-eyebrow">Focus tecnici</span>
               <div className="product-related-list">
                 {focusPages.map((focus) => (
-                  <Link to={focus.route?.newPath || focus.path} key={focus.path}>
+                  <Link to={focus.path || focus.route?.newPath} key={focus.path}>
                     <span>{getPageTitle(focus)}</span>
                     <ArrowRight size={14} />
                   </Link>
@@ -1496,7 +1470,7 @@ const FocusTemplate = ({ page, allPages = [] }) => {
   const image = family?.image || pageImage(page) || '/assets/services/pellicole-antisolari.jpg';
   const relatedFocus = family
     ? getFocusForFamily(allPages, family)
-      .filter((focus) => !samePath(focus.route?.newPath || focus.path, page.route?.newPath || page.path))
+      .filter((focus) => !samePath(focus.path || focus.route?.newPath, page.path || page.route?.newPath))
       .slice(0, 4)
     : [];
   const relatedProducts = family ? getProductsForFamily(allPages, family).slice(0, 4) : [];
@@ -1656,7 +1630,7 @@ const FocusTemplate = ({ page, allPages = [] }) => {
               <span className="live-side-eyebrow">Prodotti collegati</span>
               <div className="product-related-list">
                 {relatedProducts.map((product) => (
-                  <Link to={product.route?.newPath || product.path} key={product.path}>
+                  <Link to={product.path || product.route?.newPath} key={product.path}>
                     <span>{getPageTitle(product)}</span>
                     <ArrowRight size={14} />
                   </Link>
@@ -1670,7 +1644,7 @@ const FocusTemplate = ({ page, allPages = [] }) => {
               <span className="live-side-eyebrow">Altri focus</span>
               <div className="product-related-list">
                 {relatedFocus.map((focus) => (
-                  <Link to={focus.route?.newPath || focus.path} key={focus.path}>
+                  <Link to={focus.path || focus.route?.newPath} key={focus.path}>
                     <span>{getPageTitle(focus)}</span>
                     <ArrowRight size={14} />
                   </Link>
@@ -1691,7 +1665,7 @@ const InfoTemplate = ({ page, allPages = [] }) => {
   const description = livePageDescription(page) || theme.description;
   const relatedInfo = allPages
     .filter((item) => item.route?.type === 'info')
-    .filter((item) => !samePath(item.route?.newPath || item.path, page.route?.newPath || page.path))
+    .filter((item) => !samePath(item.path || item.route?.newPath, page.path || page.route?.newPath))
     .filter((item) => infoThemeForPage(item).key === theme.key)
     .slice(0, 4);
   const pdfHref = blocks.map(pdfHrefFromBlock).find(Boolean);
@@ -1817,7 +1791,7 @@ const InfoTemplate = ({ page, allPages = [] }) => {
               <span className="live-side-eyebrow">Info correlate</span>
               <div className="product-related-list">
                 {relatedInfo.map((item) => (
-                  <Link to={item.route?.newPath || item.path} key={item.path}>
+                  <Link to={item.path || item.route?.newPath} key={item.path}>
                     <span>{getPageTitle(item)}</span>
                     <ArrowRight size={14} />
                   </Link>
@@ -1850,7 +1824,7 @@ const supportProfiles = {
     panelTitle: 'Risposte operative',
     panelDescription: 'Le domande frequenti orientano la scelta, ma il caso reale va sempre verificato su vetro, esposizione e obiettivo tecnico.',
     cta: 'Chiedi conferma',
-    route: '/info/',
+    route: '/pagina-info/',
     routeLabel: 'Tutte le info',
     tags: ['FAQ', 'Supporto', 'Verifica tecnica'],
     visual: {
@@ -1915,7 +1889,7 @@ const supportProfiles = {
 const supportProfileForPage = (page = {}) => {
   const routeType = page.route?.type || 'page';
   const profile = supportProfiles[routeType] || supportProfiles.page;
-  const normalizedPath = normalizePath(page.route?.newPath || page.path);
+  const normalizedPath = normalizePath(page.path || page.route?.newPath);
 
   if (normalizedPath === '/profilo-solaris/') {
     return {
@@ -1963,7 +1937,7 @@ const SupportTemplate = ({ page }) => {
   const description = livePageDescription(page) || firstParagraph(blocks);
   const profile = supportProfileForPage(page);
   const visual = profile.visual;
-  const normalizedPath = normalizePath(page.route?.newPath || page.path);
+  const normalizedPath = normalizePath(page.path || page.route?.newPath);
 
   if (normalizedPath === '/grazie/') {
     return (
@@ -2399,10 +2373,9 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
   const [index, setIndex] = useState(initialIndex);
   const [page, setPage] = useState(initialPage);
   const [error, setError] = useState(null);
-  const hasInitialData = Boolean(initialIndex && initialPage);
 
   useEffect(() => {
-    if (hasInitialData) return undefined;
+    if (index) return undefined;
 
     let mounted = true;
 
@@ -2423,11 +2396,12 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
     return () => {
       mounted = false;
     };
-  }, [hasInitialData]);
+  }, [index]);
 
-  const currentPath = normalizePath(initialPath || location.pathname);
-  const headlessSEO = useHeadlessSEO(currentPath, page);
-  const resolvedPage = useMemo(() => mergeHeadlessSEO(page, headlessSEO), [page, headlessSEO]);
+  const currentPath = normalizePath(location.pathname || initialPath);
+  const activePage = isPageForPath(page, currentPath) ? page : null;
+  const headlessSEO = useHeadlessSEO(currentPath, activePage);
+  const resolvedPage = useMemo(() => mergeHeadlessSEO(activePage, headlessSEO), [activePage, headlessSEO]);
   const pageIndexEntry = useMemo(() => {
     const pages = index?.pages || [];
     const directEntry = pages.find((item) => normalizePath(item.path) === currentPath)
@@ -2443,12 +2417,12 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
   }, [index, currentPath]);
 
   useEffect(() => {
-    if (hasInitialData) return undefined;
-
     if (!pageIndexEntry?.file) {
       setPage(null);
       return;
     }
+
+    if (isPageForPath(page, currentPath)) return undefined;
 
     let mounted = true;
     setPage(null);
@@ -2468,7 +2442,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
     return () => {
       mounted = false;
     };
-  }, [hasInitialData, pageIndexEntry]);
+  }, [currentPath, page, pageIndexEntry]);
 
   if (error) {
     return (
@@ -2508,7 +2482,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
     );
   }
 
-  if (!page) {
+  if (!activePage) {
     return (
       <div className="min-h-screen bg-[#0A0F1C]">
         <Header />

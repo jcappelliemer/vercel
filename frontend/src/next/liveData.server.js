@@ -6,15 +6,34 @@ const normalizePath = (pathname = '/') => {
 };
 
 const PATH_ALIASES = {
+  // Keep legacy aliases only as read fallbacks. Final cutover paths remain the
+  // historical solarisfilms.it paths, e.g. /pagina-info/{slug}/.
   '/info/garanzie/': '/pagina-info/garanzie/',
-  '/pagina-info/garanzie/': '/info/garanzie/',
 };
 
-const LEGACY_REDIRECTS = {
-  '/pellicole-per-vetri/le-pellicole-antisolari/tecnosolarssn50tesr/': '/focus-tecnico/pellicole-spettro-selettive/',
+const normalizeLegacyInternalHref = (href = '') => {
+  const rawHref = String(href).trim();
+  if (!rawHref) return rawHref;
+
+  let localHref = rawHref;
+  if (/^https?:\/\//i.test(rawHref)) {
+    try {
+      const url = new URL(rawHref);
+      if (!['solarisfilms.it', 'www.solarisfilms.it'].includes(url.hostname)) return rawHref;
+      localHref = `${url.pathname}${url.search}${url.hash}`;
+    } catch {
+      return rawHref;
+    }
+  }
+
+  if (!localHref.startsWith('/')) return rawHref;
+  const [, pathOnly = localHref, suffix = ''] = localHref.match(/^([^?#]*)([?#].*)?$/) || [];
+  const normalizedPath = normalizePath(pathOnly);
+  return `${normalizedPath === '/' ? '/' : normalizedPath}${suffix}`;
 };
 
 const sanitizeLiveString = (value = '') => String(value)
+  .replace(/href=(["'])([^"']+)\1/gi, (_, quote, href) => `href=${quote}${normalizeLegacyInternalHref(href)}${quote}`)
   .replace(/\bLa pellicola oscurante NT\b/gi, 'Pellicole oscuranti ad alta riduzione luminosa')
   .replace(/\bpellicola oscurante NT\b/gi, 'pellicola oscurante ad alta riduzione luminosa')
   .replace(/\bCome la NT\b/gi, 'Questa soluzione')
@@ -59,7 +78,6 @@ export const findPageEntryByPath = (index, pathname) => {
   const normalizedTarget = normalizePath(pathname);
   const pages = index?.pages || [];
   const directMatch = pages.find((item) => normalizePath(item.path) === normalizedTarget)
-    || pages.find((item) => normalizePath(item.route?.newPath) === normalizedTarget)
     || null;
 
   if (directMatch) return directMatch;
@@ -68,7 +86,6 @@ export const findPageEntryByPath = (index, pathname) => {
   if (!alias) return null;
 
   return pages.find((item) => normalizePath(item.path) === alias)
-    || pages.find((item) => normalizePath(item.route?.newPath) === alias)
     || null;
 };
 
@@ -103,32 +120,12 @@ export const getMirrorStaticProps = (pathname) => {
 export const getMirrorServerProps = (pathname) => {
   const index = readLiveIndex();
   const normalizedPathname = normalizePath(pathname);
-  const legacyDestination = LEGACY_REDIRECTS[normalizedPathname];
-  if (legacyDestination) {
-    return {
-      redirect: {
-        destination: legacyDestination,
-        permanent: true,
-      },
-    };
-  }
 
   const entry = findPageEntryByPath(index, pathname);
   const page = readLivePageByFile(entry?.file);
 
   if (!entry || !page) {
     return { notFound: true };
-  }
-
-  const sourcePath = normalizePath(entry.path);
-  const routedPath = normalizePath(entry.route?.newPath || entry.path);
-  if (sourcePath === normalizedPathname && routedPath !== normalizedPathname) {
-    return {
-      redirect: {
-        destination: routedPath,
-        permanent: true,
-      },
-    };
   }
 
   return {
@@ -144,7 +141,7 @@ export const getPathsByRoutePrefix = (prefixPath) => {
   const index = readLiveIndex();
   const prefix = normalizePath(prefixPath);
   const paths = (index.pages || [])
-    .map((item) => normalizePath(item.route?.newPath || item.path || '/'))
+    .map((item) => normalizePath(item.path || '/'))
     .filter((pathname) => pathname.startsWith(prefix))
     .map((pathname) => pathname.replace(/\/$/, '').split('/').filter(Boolean).slice(1));
 
@@ -156,7 +153,7 @@ export const getPathsByRoutePrefix = (prefixPath) => {
 export const getAllMirrorPaths = () => {
   const index = readLiveIndex();
   const paths = (index.pages || [])
-    .map((item) => normalizePath(item.route?.newPath || item.path || '/'))
+    .map((item) => normalizePath(item.path || '/'))
     .filter((pathname) => pathname !== '/')
     .map((pathname) => pathname.replace(/\/$/, '').split('/').filter(Boolean));
 
@@ -166,9 +163,6 @@ export const getAllMirrorPaths = () => {
 };
 
 const EXCLUDED_CATCH_ALL_PREFIXES = [
-  '/blog/',
-  '/focus-tecnico/',
-  '/info/',
   '/prodotti/',
   '/servizio-locale/',
 ];
@@ -187,7 +181,7 @@ const EXCLUDED_CATCH_ALL_EXACT = new Set([
 export const getCatchAllPaths = () => {
   const index = readLiveIndex();
   const paths = (index.pages || [])
-    .map((item) => normalizePath(item.route?.newPath || item.path || '/'))
+    .map((item) => normalizePath(item.path || '/'))
     .filter((pathname) => pathname !== '/')
     .filter((pathname) => !EXCLUDED_CATCH_ALL_EXACT.has(pathname))
     .filter((pathname) => !EXCLUDED_CATCH_ALL_PREFIXES.some((prefix) => pathname.startsWith(prefix)))

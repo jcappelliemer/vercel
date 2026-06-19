@@ -3,6 +3,8 @@ const path = require('path');
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
+  trailingSlash: true,
+  skipTrailingSlashRedirect: true,
   async rewrites() {
     return [
       {
@@ -104,7 +106,7 @@ const nextConfig = {
     ];
   },
   async redirects() {
-    return [
+    const redirects = [
       {
         source: '/pellicole-per-vetri/profilo-solaris',
         destination: '/company-profile/',
@@ -113,91 +115,6 @@ const nextConfig = {
       {
         source: '/pellicole-per-vetri/profilo-solaris/',
         destination: '/company-profile/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/category/approfondimenti',
-        destination: '/lo-sapevi-che/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/category/approfondimenti/',
-        destination: '/lo-sapevi-che/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/sputtered',
-        destination: '/focus-tecnico/pellicole-antisolari-sputtered/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/sputtered/',
-        destination: '/focus-tecnico/pellicole-antisolari-sputtered/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/sunscape',
-        destination: '/focus-tecnico/pellicole-antisolari-sunscape/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/sunscape/',
-        destination: '/focus-tecnico/pellicole-antisolari-sunscape/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/spettroselettive',
-        destination: '/focus-tecnico/pellicole-spettro-selettive/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/spettroselettive/',
-        destination: '/focus-tecnico/pellicole-spettro-selettive/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/riflettenti',
-        destination: '/focus-tecnico/pellicole-riflettenti/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/riflettenti/',
-        destination: '/focus-tecnico/pellicole-riflettenti/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/antisfondamento',
-        destination: '/focus-tecnico/pellicole-di-sicurezza/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/antisfondamento/',
-        destination: '/focus-tecnico/pellicole-di-sicurezza/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/antiesplosione',
-        destination: '/focus-tecnico/safetyshield/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/tipo-pellicola/antiesplosione/',
-        destination: '/focus-tecnico/safetyshield/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/author/:slug*',
-        destination: '/lo-sapevi-che/',
-        permanent: true,
-      },
-      {
-        source: '/focus-tecnico/pellicole-termoisolanti',
-        destination: '/focus-tecnico/pellicole-antisolari/',
-        permanent: true,
-      },
-      {
-        source: '/focus-tecnico/pellicole-termoisolanti/',
-        destination: '/focus-tecnico/pellicole-antisolari/',
         permanent: true,
       },
       {
@@ -331,6 +248,236 @@ const nextConfig = {
         permanent: true,
       },
       {
+        source: '/pellicole-per-vetri/madicosb20epssr',
+        destination: '/prodotti/madico-sb-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/madicosb20epssr/',
+        destination: '/prodotti/madico-sb-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/madicosb35epssr',
+        destination: '/prodotti/madico-sb-35-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/madicosb35epssr/',
+        destination: '/prodotti/madico-sb-35-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/madicosg20epssr',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/madicosg20epssr/',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/madicosl8epssr',
+        destination: '/prodotti/madico-sl-8-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/madicosl8epssr/',
+        destination: '/prodotti/madico-sl-8-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madicosb20epssr',
+        destination: '/prodotti/madico-sb-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madicosb20epssr/',
+        destination: '/prodotti/madico-sb-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madicosb35epssr',
+        destination: '/prodotti/madico-sb-35-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madicosb35epssr/',
+        destination: '/prodotti/madico-sb-35-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/',
+        destination: '/prodotti/madico-sg-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr',
+        destination: '/prodotti/madico-sl-8-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr/',
+        destination: '/prodotti/madico-sl-8-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr',
+        destination: '/prodotti/madico-rs-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/',
+        destination: '/prodotti/madico-rs-20-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr',
+        destination: '/prodotti/madico-rs-40-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/',
+        destination: '/prodotti/madico-rs-40-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil',
+        destination: '/prodotti/madico-rs-20-ps-sr-4mil/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/',
+        destination: '/prodotti/madico-rs-20-ps-sr-4mil/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil',
+        destination: '/prodotti/madico-rs-20-ps-sr-8mil/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/',
+        destination: '/prodotti/madico-rs-20-ps-sr-8mil/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil',
+        destination: '/prodotti/madico-rs-40-ps-sr-4mil/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/',
+        destination: '/prodotti/madico-rs-40-ps-sr-4mil/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil',
+        destination: '/prodotti/madico-rs-40-ps-sr-8mil/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/',
+        destination: '/prodotti/madico-rs-40-ps-sr-8mil/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800',
+        destination: '/prodotti/madico-safetyshield-800/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/',
+        destination: '/prodotti/madico-safetyshield-800/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500',
+        destination: '/prodotti/madico-safetyshield-1500/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/',
+        destination: '/prodotti/madico-safetyshield-1500/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-e-ps-sr',
+        destination: '/prodotti/madico-cl-400-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-e-ps-sr/',
+        destination: '/prodotti/madico-cl-400-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-ps-sr',
+        destination: '/prodotti/madico-cl-400-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-ps-sr/',
+        destination: '/prodotti/madico-cl-400-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr',
+        destination: '/prodotti/madico-cl-700-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr/',
+        destination: '/prodotti/madico-cl-700-e-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr',
+        destination: '/prodotti/madico-cl-700-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr/',
+        destination: '/prodotti/madico-cl-700-ps-sr/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing',
+        destination: '/prodotti/madico-gullwing/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing/',
+        destination: '/prodotti/madico-gullwing/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw',
+        destination: '/prodotti/madico-mt-200-xw/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/',
+        destination: '/prodotti/madico-mt-200-xw/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie',
+        destination: '/prodotti/vetrofanie/',
+        permanent: true,
+      },
+      {
+        source: '/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/',
+        destination: '/prodotti/vetrofanie/',
+        permanent: true,
+      },
+      {
         source: '/info/norme-di-riferimento',
         destination: '/info/norme/',
         permanent: true,
@@ -338,116 +485,6 @@ const nextConfig = {
       {
         source: '/info/norme-di-riferimento/',
         destination: '/info/norme/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-per-vetri/pellicole-per-i-vetri',
-        destination: '/prodotti/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-per-vetri/pellicole-per-i-vetri/',
-        destination: '/prodotti/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-per-vetri/le-pellicole-antisolari',
-        destination: '/pellicole-antisolari/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-per-vetri/le-pellicole-antisolari/',
-        destination: '/pellicole-antisolari/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-per-vetri/pellicole-di-sicurezza',
-        destination: '/pellicole-di-sicurezza/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-per-vetri/pellicole-di-sicurezza/',
-        destination: '/pellicole-di-sicurezza/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-per-vetri/pellicole-decorative-per-vetri',
-        destination: '/pellicole-decorative/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-per-vetri/pellicole-decorative-per-vetri/',
-        destination: '/pellicole-decorative/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/pellicole-oscuranti-vetri',
-        destination: '/pellicole-oscuranti-per-vetri/',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/pellicole-oscuranti-vetri/',
-        destination: '/pellicole-oscuranti-per-vetri/',
-        permanent: true,
-      },
-      {
-        source: '/pagina-info',
-        destination: '/info/',
-        permanent: true,
-      },
-      {
-        source: '/pagina-info/',
-        destination: '/info/',
-        permanent: true,
-      },
-      {
-        source: '/info-e-faq',
-        destination: '/info/',
-        permanent: true,
-      },
-      {
-        source: '/info-e-faq/',
-        destination: '/info/',
-        permanent: true,
-      },
-      {
-        source: '/pagina-info/garanzie-clienti',
-        destination: '/info/garanzie-clienti/',
-        permanent: true,
-      },
-      {
-        source: '/pagina-info/garanzie-clienti/',
-        destination: '/info/garanzie-clienti/',
-        permanent: true,
-      },
-      {
-        source: '/pagina-info/certificazione-nfrc',
-        destination: '/info/certificazione-nfrc/',
-        permanent: true,
-      },
-      {
-        source: '/pagina-info/certificazione-nfrc/',
-        destination: '/info/certificazione-nfrc/',
-        permanent: true,
-      },
-      {
-        source: '/pagina-info/garanzie',
-        destination: '/info/garanzie/',
-        permanent: true,
-      },
-      {
-        source: '/pagina-info/garanzie/',
-        destination: '/info/garanzie/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-termoisolanti',
-        destination: '/focus-tecnico/pellicole-antisolari/',
-        permanent: true,
-      },
-      {
-        source: '/pellicole-termoisolanti/',
-        destination: '/focus-tecnico/pellicole-antisolari/',
         permanent: true,
       },
       {
@@ -480,87 +517,19 @@ const nextConfig = {
         destination: '/servizi#decorative',
         permanent: true,
       },
-      {
-        source: '/blog',
-        destination: '/lo-sapevi-che',
-        permanent: true,
-      },
-      {
-        source: '/blog/:slug*',
-        destination: '/lo-sapevi-che/:slug*',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/guida-conformita-vetri-luoghi-pubblici',
-        destination: '/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/guida-conformita-vetri-luoghi-pubblici/',
-        destination: '/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/installatore-pellicole-vetri-nord-italia',
-        destination: '/lo-sapevi-che/installatore-pellicole-vetri-nord-italia',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/installatore-pellicole-vetri-nord-italia/',
-        destination: '/lo-sapevi-che/installatore-pellicole-vetri-nord-italia',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/migliori-pellicole-anti-uv-finestre',
-        destination: '/lo-sapevi-che/migliori-pellicole-anti-uv-finestre',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/migliori-pellicole-anti-uv-finestre/',
-        destination: '/lo-sapevi-che/migliori-pellicole-anti-uv-finestre',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/pellicola-privacy-vs-vetro-satinato',
-        destination: '/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/pellicola-privacy-vs-vetro-satinato/',
-        destination: '/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/pellicole-vetri-interne-o-esterne-cosa-scegliere',
-        destination: '/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/pellicole-vetri-interne-o-esterne-cosa-scegliere/',
-        destination: '/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/privacy-vetri-uffici-soluzioni-criteri',
-        destination: '/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/privacy-vetri-uffici-soluzioni-criteri/',
-        destination: '/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/pulizia-manutenzione-pellicole-vetri',
-        destination: '/info/istruzioni-e-manutenzione',
-        permanent: true,
-      },
-      {
-        source: '/approfondimenti/pulizia-manutenzione-pellicole-vetri/',
-        destination: '/info/istruzioni-e-manutenzione',
-        permanent: true,
-      },
     ];
+
+    return redirects.map((redirect) => {
+      if (!redirect.destination?.startsWith('/prodotti/')) {
+        return redirect;
+      }
+
+      const { permanent, ...productRedirect } = redirect;
+      return {
+        ...productRedirect,
+        statusCode: redirect.statusCode || 301,
+      };
+    });
   },
   webpack: (config) => {
     config.resolve.alias['@'] = path.resolve(__dirname, 'src');

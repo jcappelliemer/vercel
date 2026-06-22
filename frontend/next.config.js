@@ -34,12 +34,13 @@ const gonePaths = withSlashVariants([
 ]);
 
 const editorialArchiveRedirects = [
-  ['/approfondimenti/sputtered', '/pellicole-antisolari-sputtered/'],
-  ['/approfondimenti/sunscape', '/pellicole-antisolari-sunscape/'],
-  ['/approfondimenti/spettroselettive', '/pellicole-spettro-selettive/'],
-  ['/approfondimenti/riflettenti', '/pellicole-riflettenti/'],
-  ['/approfondimenti/antiesplosione', '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/'],
-  ['/approfondimenti/antisfondamento', '/pellicole-di-sicurezza/'],
+  ['/approfondimenti/tipo-pellicola/sputtered', '/pellicole-antisolari-sputtered/'],
+  ['/approfondimenti/tipo-pellicola/sunscape', '/pellicole-antisolari-sunscape/'],
+  ['/approfondimenti/tipo-pellicola/spettroselettive', '/pellicole-spettro-selettive/'],
+  ['/approfondimenti/tipo-pellicola/riflettenti', '/pellicole-riflettenti/'],
+  ['/approfondimenti/tipo-pellicola/antiesplosione', '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/'],
+  ['/approfondimenti/tipo-pellicola/antisfondamento', '/pellicole-di-sicurezza/'],
+  ['/approfondimenti/category/approfondimenti', '/approfondimenti/'],
   ['/pellicole-per-vetri/lo-sapevi-che', '/approfondimenti/'],
   ['/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che', '/approfondimenti/'],
 ].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({

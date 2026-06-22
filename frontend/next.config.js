@@ -1,112 +1,67 @@
 const path = require('path');
 
+const withSlashVariants = (paths) => paths.flatMap((source) => [
+  source.replace(/\/$/, ''),
+  source.endsWith('/') ? source : `${source}/`,
+]);
+
+const gonePaths = withSlashVariants([
+  '/approfondimenti/pellicole-fotocromatiche',
+  '/approfondimenti/guida-pellicola-lcd-switch-installazione',
+  '/pellicole-per-vetri/pellicole-lcd-switch',
+  '/pellicole-per-vetri/pellicole-per-vetri/pellicole-lcd-switch',
+  '/pellicole-per-vetri/zoho-callback',
+  '/pellicole-per-vetri/false-parent',
+  '/pellicole-per-vetri/anagrafica-privati-v2',
+  '/pellicole-per-vetri/anagrafica-aziende-enti-operativa',
+  '/pellicole-per-vetri/anagrafica-tributaria-aziende-enti',
+  '/pellicole-per-vetri/battle-plan-mensile-tc-2025',
+  '/pellicole-per-vetri/line-up-settimanale-tc-2025',
+  '/pellicole-per-vetri/chiusura-lavori',
+  '/pellicole-per-vetri/false-parent/battle-plan-mensile-tc-2025',
+  '/pellicole-per-vetri/false-parent/line-up-settimanale-tc-2025',
+  '/pellicole-per-vetri/llms-txt',
+  '/approfondimenti/author/davide-belli',
+  '/approfondimenti/author/fabio-meucci',
+  '/approfondimenti/author/j-cappelli',
+  '/approfondimenti/author/martina-giardi',
+  '/approfondimenti/author/site-admin',
+  '/approfondimenti/davide-belli',
+  '/approfondimenti/fabio-meucci',
+  '/approfondimenti/j-cappelli',
+  '/approfondimenti/martina-giardi',
+  '/approfondimenti/site-admin',
+]);
+
+const editorialArchiveRedirects = [
+  ['/approfondimenti/sputtered', '/pellicole-antisolari-sputtered/'],
+  ['/approfondimenti/sunscape', '/pellicole-antisolari-sunscape/'],
+  ['/approfondimenti/spettroselettive', '/pellicole-spettro-selettive/'],
+  ['/approfondimenti/riflettenti', '/pellicole-riflettenti/'],
+  ['/approfondimenti/antiesplosione', '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/'],
+  ['/approfondimenti/antisfondamento', '/pellicole-di-sicurezza/'],
+  ['/pellicole-per-vetri/lo-sapevi-che', '/approfondimenti/'],
+  ['/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che', '/approfondimenti/'],
+].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
+  source: variant,
+  destination,
+  statusCode: 301,
+})));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
   async rewrites() {
-    return [
-      {
-        source: '/approfondimenti/pellicole-fotocromatiche',
-        destination: '/api/gone',
-      },
-      {
-        source: '/approfondimenti/pellicole-fotocromatiche/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/approfondimenti/guida-pellicola-lcd-switch-installazione',
-        destination: '/api/gone',
-      },
-      {
-        source: '/approfondimenti/guida-pellicola-lcd-switch-installazione/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/pellicole-per-vetri/pellicole-lcd-switch',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/pellicole-per-vetri/pellicole-lcd-switch/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/false-parent/battle-plan-mensile-tc-2025',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/false-parent/battle-plan-mensile-tc-2025/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/chiusura-lavori',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/chiusura-lavori/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/false-parent/line-up-settimanale-tc-2025',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/false-parent/line-up-settimanale-tc-2025/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/false-parent',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/false-parent/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/llms-txt',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/llms-txt/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/zoho-callback',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/zoho-callback/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/anagrafica-privati-v2',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/anagrafica-privati-v2/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/anagrafica-aziende-enti-operativa',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/anagrafica-aziende-enti-operativa/',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/anagrafica-tributaria-aziende-enti',
-        destination: '/api/gone',
-      },
-      {
-        source: '/pellicole-per-vetri/anagrafica-tributaria-aziende-enti/',
-        destination: '/api/gone',
-      },
-    ];
+    return gonePaths.map((source) => ({
+      source,
+      destination: '/api/gone',
+    }));
   },
   async redirects() {
     const redirects = [
+      ...editorialArchiveRedirects,
       {
         source: '/pellicole-per-vetri/profilo-solaris',
         destination: '/company-profile/',

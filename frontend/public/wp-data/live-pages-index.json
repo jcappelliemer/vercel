@@ -2,23 +2,23 @@
   "origin": "https://www.solarisfilms.it",
   "pages": [
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-fake-news/",
-      "path": "/approfondimenti/pellicole-vetri-fake-news/",
+      "url": "https://www.solarisfilms.it/",
+      "path": "/",
       "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-vetri-fake-news/",
+        "type": "home",
+        "label": "Home",
+        "newPath": "/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicole-vetri-fake-news-cb74b5585e.json",
-      "title": "PELLICOLE PER VETRI E FAKE NEWS — Solaris Films",
-      "description": "Pellicole per vetri e fake news: alcune risposte alle domande più frequenti legate alle fake news sulle pellicole.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-fake-news/",
+      "file": "home-42099b4af0.json",
+      "title": "Pellicole per Vetri: Soluzioni Antisolari e di Sicurezza per",
+      "description": "Solaris Films: distributore e installatore esclusivo MADICO USA. Scopri pellicole vetri antisolari, di sicurezza e privacy. 30+ anni d'esperienza per edifici più sostenibili ed efficienti.",
+      "canonical": "https://www.solarisfilms.it/",
       "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 4403,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+      "h1": "Pellicole per vetri",
+      "textLength": 6012,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
     },
     {
       "url": "https://www.solarisfilms.it/approfondimenti/approfondimenti-antisolare/",
@@ -37,25 +37,6 @@
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
       "textLength": 2739,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/approfondimenti-sicurezza/",
-      "path": "/approfondimenti/approfondimenti-sicurezza/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/approfondimenti-sicurezza/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-approfondimenti-sicurezza-83c5087717.json",
-      "title": "PELLICOLE PER VETRI E SICUREZZA — Solaris Films",
-      "description": "Pellicole per vetri e sicurezza: vediamo le opzioni. Informare correttamente circa le proprietà di ogni pellicola è fondamentale.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/approfondimenti-sicurezza/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 1491,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -78,6 +59,158 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
+      "url": "https://www.solarisfilms.it/approfondimenti/approfondimenti-sicurezza/",
+      "path": "/approfondimenti/approfondimenti-sicurezza/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/approfondimenti-sicurezza/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-approfondimenti-sicurezza-83c5087717.json",
+      "title": "PELLICOLE PER VETRI E SICUREZZA — Solaris Films",
+      "description": "Pellicole per vetri e sicurezza: vediamo le opzioni. Informare correttamente circa le proprietà di ogni pellicola è fondamentale.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/approfondimenti-sicurezza/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 1491,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/calcolo-risparmio-energetico-pellicole-solari/",
+      "path": "/approfondimenti/calcolo-risparmio-energetico-pellicole-solari/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/calcolo-risparmio-energetico-pellicole-solari/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-calcolo-risparmio-energetico-pellicole-solari-47faf0e6a7.json",
+      "title": "Calcolo risparmio energetico pellicole solari — Solaris Film",
+      "description": "Calcolo risparmio energetico pellicole solari: come stimarlo davvero, quali dati servono e da cosa dipende il taglio dei consumi negli edifici.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/calcolo-risparmio-energetico-pellicole-solari/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9283,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/come-funziona-pellicola-antiesplosione-vetri/",
+      "path": "/approfondimenti/come-funziona-pellicola-antiesplosione-vetri/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/come-funziona-pellicola-antiesplosione-vetri/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-come-funziona-pellicola-antiesplosione-vetri-d1f8913f49.json",
+      "title": "Come funziona la pellicola antiesplosione vetri — Solaris Fi",
+      "description": "Scopri come funziona la pellicola antiesplosione vetri, cosa protegge davvero, limiti, norme e quando conviene installarla su edifici e uffici.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/come-funziona-pellicola-antiesplosione-vetri/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9948,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/come-mettere-in-sicurezza-un-vetro/",
+      "path": "/approfondimenti/come-mettere-in-sicurezza-un-vetro/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/come-mettere-in-sicurezza-un-vetro/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-come-mettere-in-sicurezza-un-vetro-d8629019d3.json",
+      "title": "Mettere in sicurezza un vetro: come farlo — Solaris Films",
+      "description": "Scopri come mettere in sicurezza un vetro con soluzioni efficaci: pellicole certificate, criteri di scelta, norme e casi in cui servono davvero.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/come-mettere-in-sicurezza-un-vetro/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9395,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/come-migliorare-comfort-uffici-vetrati/",
+      "path": "/approfondimenti/come-migliorare-comfort-uffici-vetrati/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/come-migliorare-comfort-uffici-vetrati/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-come-migliorare-comfort-uffici-vetrati-8ff2d5a91b.json",
+      "title": "Come migliorare il comfort negli uffici vetrati — Solaris Fi",
+      "description": "Come migliorare comfort uffici vetrati: riduci calore, abbagliamento e consumi con soluzioni tecniche su misura per ambienti più efficienti.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/come-migliorare-comfort-uffici-vetrati/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9045,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/come-ridurre-il-calore-dalle-vetrate/",
+      "path": "/approfondimenti/come-ridurre-il-calore-dalle-vetrate/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/come-ridurre-il-calore-dalle-vetrate/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-come-ridurre-il-calore-dalle-vetrate-92b31460d7.json",
+      "title": "Ridurre il calore dalle vetrate: cosa funziona — Solaris Fil",
+      "description": "Scopri come ridurre il calore dalle vetrate con soluzioni efficaci: pellicole solari, schermature e criteri tecnici per scegliere bene.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/come-ridurre-il-calore-dalle-vetrate/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9166,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/come-scegliere-pellicola-antisolare-casa/",
+      "path": "/approfondimenti/come-scegliere-pellicola-antisolare-casa/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/come-scegliere-pellicola-antisolare-casa/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-come-scegliere-pellicola-antisolare-casa-74112d0acb.json",
+      "title": "Come scegliere pellicola antisolare casa — Solaris Films",
+      "description": "Come scegliere pellicola antisolare casa: guida pratica per ridurre calore, abbagliamento e UV valutando vetro, esposizione e prestazioni.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/come-scegliere-pellicola-antisolare-casa/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9349,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/come-scegliere-pellicola-spettroselettiva-vetri/",
+      "path": "/approfondimenti/come-scegliere-pellicola-spettroselettiva-vetri/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/come-scegliere-pellicola-spettroselettiva-vetri/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-come-scegliere-pellicola-spettroselettiva-vetri-22a5fc6429.json",
+      "title": "Come scegliere pellicola spettroselettiva vetri — Solaris Fi",
+      "description": "Come scegliere pellicola spettroselettiva vetri: criteri tecnici, prestazioni reali, errori da evitare e applicazioni per casa e ufficio.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/come-scegliere-pellicola-spettroselettiva-vetri/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9616,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
       "url": "https://www.solarisfilms.it/approfondimenti/energia-solare-e-vlt/",
       "path": "/approfondimenti/energia-solare-e-vlt/",
       "route": {
@@ -94,6 +227,253 @@
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
       "textLength": 2980,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/esempio-riduzione-consumi-con-pellicole/",
+      "path": "/approfondimenti/esempio-riduzione-consumi-con-pellicole/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/esempio-riduzione-consumi-con-pellicole/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-esempio-riduzione-consumi-con-pellicole-a31c7f0baf.json",
+      "title": "Esempio riduzione consumi con pellicole — Solaris Films",
+      "description": "Esempio riduzione consumi con pellicole: come stimare risparmio energetico, comfort e tempi di rientro su uffici, case e capannoni vetrati.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/esempio-riduzione-consumi-con-pellicole/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9656,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/garanzia-decennale-pellicole-per-vetri/",
+      "path": "/approfondimenti/garanzia-decennale-pellicole-per-vetri/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/garanzia-decennale-pellicole-per-vetri/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-garanzia-decennale-pellicole-per-vetri-6376d7462e.json",
+      "title": "Garanzia decennale pellicole per vetri — Solaris Films",
+      "description": "Garanzia decennale pellicole per vetri: cosa copre davvero, da cosa dipende e come valutarla tra posa, prodotto, certificazioni e durata.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/garanzia-decennale-pellicole-per-vetri/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9512,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/guida-conformita-vetri-luoghi-pubblici/",
+      "path": "/approfondimenti/guida-conformita-vetri-luoghi-pubblici/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/guida-conformita-vetri-luoghi-pubblici/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-guida-conformita-vetri-luoghi-pubblici-c2742c4621.json",
+      "title": "Guida conformità vetri luoghi pubblici — Solaris Films",
+      "description": "Guida conformità vetri luoghi pubblici: norme, rischi, verifiche e soluzioni per mettere in sicurezza scuole, uffici, negozi e spazi aperti al pubblico.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-conformita-vetri-luoghi-pubblici/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9593,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/guida-film-certificati-per-vetri/",
+      "path": "/approfondimenti/guida-film-certificati-per-vetri/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/guida-film-certificati-per-vetri/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-guida-film-certificati-per-vetri-a267319949.json",
+      "title": "Guida ai film certificati per vetri — Solaris Films",
+      "description": "Guida ai film certificati per vetri: norme, prestazioni e criteri di scelta per sicurezza, controllo solare, privacy e posa a regola d’arte.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-film-certificati-per-vetri/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9358,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/guida-norme-vetri-sicurezza-edifici/",
+      "path": "/approfondimenti/guida-norme-vetri-sicurezza-edifici/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/guida-norme-vetri-sicurezza-edifici/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-guida-norme-vetri-sicurezza-edifici-9c51c8e084.json",
+      "title": "Guida norme vetri sicurezza edifici — Solaris Films",
+      "description": "Guida norme vetri sicurezza edifici: cosa prevedono le regole, quando il vetro è a norma e come scegliere soluzioni certificate per ridurre i rischi.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-norme-vetri-sicurezza-edifici/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9647,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/guida-pellicole-sicurezza-uni-en-12600/",
+      "path": "/approfondimenti/guida-pellicole-sicurezza-uni-en-12600/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/guida-pellicole-sicurezza-uni-en-12600/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-guida-pellicole-sicurezza-uni-en-12600-49a1acdc4a.json",
+      "title": "Guida pellicole sicurezza UNI EN 12600 — Solaris Films",
+      "description": "Guida pellicole sicurezza UNI EN 12600: come leggere classi, test e limiti applicativi per scegliere film certificati e posa corretta.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-pellicole-sicurezza-uni-en-12600/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9324,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/guida-scelta-pellicole-per-scuole/",
+      "path": "/approfondimenti/guida-scelta-pellicole-per-scuole/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/guida-scelta-pellicole-per-scuole/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-guida-scelta-pellicole-per-scuole-1a9daef11c.json",
+      "title": "Guida scelta pellicole per scuole — Solaris Films",
+      "description": "Guida scelta pellicole per scuole: come valutare sicurezza, controllo solare, privacy e norme per aule, corridoi e ambienti comuni.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-scelta-pellicole-per-scuole/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9577,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/installatore-pellicole-vetri-nord-italia/",
+      "path": "/approfondimenti/installatore-pellicole-vetri-nord-italia/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/lo-sapevi-che/installatore-pellicole-vetri-nord-italia/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-installatore-pellicole-vetri-nord-italia-b7036371c1.json",
+      "title": "Installatore pellicole vetri Nord Italia — Solaris Films",
+      "description": "Come scegliere un installatore pellicole vetri Nord Italia: criteri tecnici, norme, posa e garanzie per edifici, uffici, negozi e case.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/installatore-pellicole-vetri-nord-italia/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9833,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/installazione-pellicole-antisolari-vetri-ufficio/",
+      "path": "/approfondimenti/installazione-pellicole-antisolari-vetri-ufficio/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/installazione-pellicole-antisolari-vetri-ufficio/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-installazione-pellicole-antisolari-vetri-ufficio-1c59b630ee.json",
+      "title": "Installazione pellicole antisolari vetri ufficio — Solaris F",
+      "description": "Installazione pellicole antisolari vetri ufficio: comfort, meno abbagliamento, risparmio energetico e posa professionale con prestazioni misurabili.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/installazione-pellicole-antisolari-vetri-ufficio/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9818,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/migliori-film-sicurezza-vetrate-scuole/",
+      "path": "/approfondimenti/migliori-film-sicurezza-vetrate-scuole/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/migliori-film-sicurezza-vetrate-scuole/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-migliori-film-sicurezza-vetrate-scuole-22c0c2ea85.json",
+      "title": "Migliori film sicurezza vetrate scuole — Solaris Films",
+      "description": "Guida ai migliori film sicurezza vetrate scuole: norme, classi, spessori e criteri tecnici per scegliere una protezione efficace e durevole.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/migliori-film-sicurezza-vetrate-scuole/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9505,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-anti-uv-finestre/",
+      "path": "/approfondimenti/migliori-pellicole-anti-uv-finestre/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/migliori-pellicole-anti-uv-finestre/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-migliori-pellicole-anti-uv-finestre-ff279649a3.json",
+      "title": "Migliori pellicole anti UV finestre: come sceglierle — Solar",
+      "description": "Guida alle migliori pellicole anti UV finestre: come valutarle per calore, abbagliamento, estetica, sicurezza e durata reale nel tempo.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-anti-uv-finestre/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9656,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-antisolari-per-vetrate-grandi/",
+      "path": "/approfondimenti/migliori-pellicole-antisolari-per-vetrate-grandi/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/migliori-pellicole-antisolari-per-vetrate-grandi/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-migliori-pellicole-antisolari-per-vetrate-grandi-a81cedb308.json",
+      "title": "Migliori pellicole antisolari per vetrate grandi — Solaris F",
+      "description": "Guida alle migliori pellicole antisolari per vetrate grandi: comfort, controllo solare, UV, abbagliamento, resa estetica e scelta tecnica.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-antisolari-per-vetrate-grandi/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9569,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-controllo-solare-edifici/",
+      "path": "/approfondimenti/migliori-pellicole-controllo-solare-edifici/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/migliori-pellicole-controllo-solare-edifici/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-migliori-pellicole-controllo-solare-edifici-8657baedb4.json",
+      "title": "Migliori pellicole controllo solare edifici — Solaris Films",
+      "description": "Guida alle migliori pellicole controllo solare edifici: come scegliere film efficaci per calore, abbagliamento, UV, comfort e consumi.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-controllo-solare-edifici/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9361,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -132,6 +512,63 @@
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
       "textLength": 2848,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-antieffrazione-per-finestre-come-sceglierla/",
+      "path": "/approfondimenti/pellicola-antieffrazione-per-finestre-come-sceglierla/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicola-antieffrazione-per-finestre-come-sceglierla/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicola-antieffrazione-per-finestre-come-sceglierla-d91f100e3e.json",
+      "title": "Pellicola antieffrazione per finestre: come sceglierla — Sol",
+      "description": "Pellicola antieffrazione per finestre: come funziona, quando serve davvero, cosa cambia rispetto ai vetri di sicurezza e come sceglierla.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-antieffrazione-per-finestre-come-sceglierla/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9718,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi/",
+      "path": "/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicola-antigraffiti-per-vetrine-negozi/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicola-antigraffiti-per-vetrine-negozi-78e0a5c9bd.json",
+      "title": "Pellicola antigraffiti per vetrine negozi: come sceglierla —",
+      "description": "Pellicola antigraffiti per vetrine negozi: come funziona, quando conviene e cosa valutare per proteggere il vetro con una posa professionale.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 8763,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-antisfondamento-vs-vetro-stratificato/",
+      "path": "/approfondimenti/pellicola-antisfondamento-vs-vetro-stratificato/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicola-antisfondamento-vs-vetro-stratificato/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicola-antisfondamento-vs-vetro-stratificato-8027f0c831.json",
+      "title": "Pellicola antisfondamento vs vetro stratificato — Solaris Fi",
+      "description": "Pellicola antisfondamento vs vetro stratificato: differenze, prestazioni, norme, costi e casi d’uso per scegliere la soluzione corretta.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-antisfondamento-vs-vetro-stratificato/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9355,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -211,60 +648,60 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-di-sicurezza-per-vetri/",
-      "path": "/approfondimenti/pellicole-di-sicurezza-per-vetri/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-per-vetri-ufficio/",
+      "path": "/approfondimenti/pellicola-privacy-per-vetri-ufficio/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicole-di-sicurezza-per-vetri/",
+        "newPath": "/blog/pellicola-privacy-per-vetri-ufficio/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicole-di-sicurezza-per-vetri-dc8d49cc56.json",
-      "title": "PELLICOLE DI SICUREZZA PER VETRI — Solaris Films",
-      "description": "Le pellicole di sicurezza per vetri sono un sistema all’avanguardia per garantire la solidità di finestre e porte in vetro.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-di-sicurezza-per-vetri/",
+      "file": "approfondimenti-pellicola-privacy-per-vetri-ufficio-fd223d04fa.json",
+      "title": "Pellicola privacy per uffici: come sceglierla — Solaris Film",
+      "description": "Come scegliere la pellicola privacy per vetri ufficio: livelli di riservatezza, luce, design, posa e criteri tecnici per ogni ambiente.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-per-vetri-ufficio/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 2618,
+      "textLength": 9325,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-vetro/",
-      "path": "/approfondimenti/pellicola-vetro/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-vs-vetro-satinato/",
+      "path": "/approfondimenti/pellicola-privacy-vs-vetro-satinato/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicola-vetro/",
+        "newPath": "/blog/pellicola-privacy-vs-vetro-satinato/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicola-vetro-16c92d3b82.json",
-      "title": "PELLICOLA VETRO — Solaris Films",
-      "description": "La pellicola vetro è un ottimo prodotto che può migliorare sensibilmente i vostri infissi e le vostre superfici vetrate.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-vetro/",
+      "file": "approfondimenti-pellicola-privacy-vs-vetro-satinato-2f5ebce42b.json",
+      "title": "Pellicola privacy vs vetro satinato: cosa conviene — Solaris",
+      "description": "Pellicola privacy vs vetro satinato: differenze su costi, posa, luce, manutenzione e flessibilità. Guida pratica per scegliere bene.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-vs-vetro-satinato/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 2541,
+      "textLength": 9266,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-oscuranti/",
-      "path": "/approfondimenti/pellicole-oscuranti/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-satinata-per-porte-in-vetro/",
+      "path": "/approfondimenti/pellicola-satinata-per-porte-in-vetro/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicole-oscuranti/",
+        "newPath": "/blog/pellicola-satinata-per-porte-in-vetro/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicole-oscuranti-c4cf7f3108.json",
-      "title": "PELLICOLE OSCURANTI — Solaris Films",
-      "description": "Le pellicole per vetri oscuranti sono molto utili per risolvere il fastidioso problema della radiazione solare.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-oscuranti/",
+      "file": "approfondimenti-pellicola-satinata-per-porte-in-vetro-ee639ed7c1.json",
+      "title": "Pellicola satinata per porte in vetro: guida — Solaris Films",
+      "description": "Pellicola satinata per porte in vetro: privacy, luce e design. Come sceglierla, dove applicarla e quando conviene la posa professionale.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-satinata-per-porte-in-vetro/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 2915,
+      "textLength": 9316,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -284,6 +721,44 @@
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
       "textLength": 2008,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-sicurezza-o-sostituzione-vetro/",
+      "path": "/approfondimenti/pellicola-sicurezza-o-sostituzione-vetro/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicola-sicurezza-o-sostituzione-vetro/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicola-sicurezza-o-sostituzione-vetro-0ba154bfee.json",
+      "title": "Pellicola sicurezza o sostituzione vetro? — Solaris Films",
+      "description": "Pellicola sicurezza o sostituzione vetro? Scopri differenze, limiti, norme e criteri pratici per scegliere la soluzione più adatta.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-sicurezza-o-sostituzione-vetro/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9406,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-solare-o-doppi-vetri/",
+      "path": "/approfondimenti/pellicola-solare-o-doppi-vetri/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicola-solare-o-doppi-vetri/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicola-solare-o-doppi-vetri-9ae9145f12.json",
+      "title": "Pellicola solare o doppi vetri: cosa conviene — Solaris Film",
+      "description": "Pellicola solare o doppi vetri: differenze, costi, prestazioni e limiti. Guida chiara per scegliere la soluzione più adatta al tuo edificio.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-solare-o-doppi-vetri/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 10008,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -325,22 +800,155 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-riflettenti-pro-e-contro/",
-      "path": "/approfondimenti/pellicole-riflettenti-pro-e-contro/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-vetro/",
+      "path": "/approfondimenti/pellicola-vetro/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicole-riflettenti-pro-e-contro/",
+        "newPath": "/blog/pellicola-vetro/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicole-riflettenti-pro-e-contro-54e7a9a63d.json",
-      "title": "PELLICOLE RIFLETTENTI, PRO E CONTRO — Solaris Films",
-      "description": "Le pellicole riflettenti per vetri stanno diventando sempre più comuni nella decorazione domestica anche in Italia. Sebbene questo prodotto possa far…",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-riflettenti-pro-e-contro/",
+      "file": "approfondimenti-pellicola-vetro-16c92d3b82.json",
+      "title": "PELLICOLA VETRO — Solaris Films",
+      "description": "La pellicola vetro è un ottimo prodotto che può migliorare sensibilmente i vostri infissi e le vostre superfici vetrate.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-vetro/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 3316,
+      "textLength": 2541,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-antiesplosione-per-vetri-sicurezza/",
+      "path": "/approfondimenti/pellicole-antiesplosione-per-vetri-sicurezza/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicole-antiesplosione-per-vetri-sicurezza/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicole-antiesplosione-per-vetri-sicurezza-95532c7ebb.json",
+      "title": "Pellicole antiesplosione per vetri sicurezza — Solaris Films",
+      "description": "Pellicole antiesplosione per vetri sicurezza: come funzionano, norme, limiti e criteri di scelta per edifici, uffici, scuole e siti sensibili.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-antiesplosione-per-vetri-sicurezza/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9365,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-antigraffiti-per-vetrine/",
+      "path": "/approfondimenti/pellicole-antigraffiti-per-vetrine/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicole-antigraffiti-per-vetrine/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicole-antigraffiti-per-vetrine-7f24681a7a.json",
+      "title": "Pellicole antigraffiti per vetrine: come sceglierle — Solari",
+      "description": "Le pellicole antigraffiti per vetrine proteggono il vetro da incisioni e vernici. Scopri come funzionano, quando servono e come sceglierle.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-antigraffiti-per-vetrine/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9226,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-antisolari-per-capannoni-industriali/",
+      "path": "/approfondimenti/pellicole-antisolari-per-capannoni-industriali/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicole-antisolari-per-capannoni-industriali/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicole-antisolari-per-capannoni-industriali-636a788a5a.json",
+      "title": "Pellicole antisolari per capannoni industriali — Solaris Fil",
+      "description": "Pellicole antisolari per capannoni industriali: meno calore, abbagliamento e consumi. Come scegliere film, prestazioni e posa corretta.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-antisolari-per-capannoni-industriali/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9872,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-antisolari-vs-vetri-basso-emissivi/",
+      "path": "/approfondimenti/pellicole-antisolari-vs-vetri-basso-emissivi/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicole-antisolari-vs-vetri-basso-emissivi/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicole-antisolari-vs-vetri-basso-emissivi-94a6051463.json",
+      "title": "Pellicole antisolari vs vetri basso emissivi — Solaris Films",
+      "description": "Pellicole antisolari vs vetri basso emissivi: differenze, costi, prestazioni e casi d’uso per scegliere la soluzione più adatta al tuo edificio.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-antisolari-vs-vetri-basso-emissivi/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9021,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-di-sicurezza-per-vetri/",
+      "path": "/approfondimenti/pellicole-di-sicurezza-per-vetri/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicole-di-sicurezza-per-vetri/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicole-di-sicurezza-per-vetri-dc8d49cc56.json",
+      "title": "PELLICOLE DI SICUREZZA PER VETRI — Solaris Films",
+      "description": "Le pellicole di sicurezza per vetri sono un sistema all’avanguardia per garantire la solidità di finestre e porte in vetro.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-di-sicurezza-per-vetri/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 2618,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-oscuranti/",
+      "path": "/approfondimenti/pellicole-oscuranti/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicole-oscuranti/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicole-oscuranti-c4cf7f3108.json",
+      "title": "PELLICOLE OSCURANTI — Solaris Films",
+      "description": "Le pellicole per vetri oscuranti sono molto utili per risolvere il fastidioso problema della radiazione solare.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-oscuranti/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 2915,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "path": "/approfondimenti/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/pellicole-per-vetri-comfort-sicurezza-privacy/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-pellicole-per-vetri-comfort-sicurezza-privacy-aeacf4b187.json",
+      "title": "Pellicole per vetri: comfort, sicurezza, privacy — Solaris F",
+      "description": "Guida alle pellicole per vetri: antisolari, sicurezza e privacy. Come scegliere in base a vetro, esposizione e norme, con prestazioni misurabili.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 8725,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -382,79 +990,41 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-per-vetri-comfort-sicurezza-privacy/",
-      "path": "/approfondimenti/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-riflettenti-per-facciate-continue/",
+      "path": "/approfondimenti/pellicole-riflettenti-per-facciate-continue/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicole-per-vetri-comfort-sicurezza-privacy/",
+        "newPath": "/blog/pellicole-riflettenti-per-facciate-continue/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicole-per-vetri-comfort-sicurezza-privacy-aeacf4b187.json",
-      "title": "Pellicole per vetri: comfort, sicurezza, privacy — Solaris F",
-      "description": "Guida alle pellicole per vetri: antisolari, sicurezza e privacy. Come scegliere in base a vetro, esposizione e norme, con prestazioni misurabili.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "file": "approfondimenti-pellicole-riflettenti-per-facciate-continue-ff870ca194.json",
+      "title": "Pellicole riflettenti per facciate continue — Solaris Films",
+      "description": "Pellicole riflettenti per facciate continue: meno calore e abbagliamento, più comfort, efficienza energetica e controllo solare.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-riflettenti-per-facciate-continue/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 8725,
+      "textLength": 9353,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-per-vetri-ufficio/",
-      "path": "/approfondimenti/pellicola-privacy-per-vetri-ufficio/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-riflettenti-pro-e-contro/",
+      "path": "/approfondimenti/pellicole-riflettenti-pro-e-contro/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicola-privacy-per-vetri-ufficio/",
+        "newPath": "/blog/pellicole-riflettenti-pro-e-contro/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicola-privacy-per-vetri-ufficio-fd223d04fa.json",
-      "title": "Pellicola privacy per uffici: come sceglierla — Solaris Film",
-      "description": "Come scegliere la pellicola privacy per vetri ufficio: livelli di riservatezza, luce, design, posa e criteri tecnici per ogni ambiente.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-per-vetri-ufficio/",
+      "file": "approfondimenti-pellicole-riflettenti-pro-e-contro-54e7a9a63d.json",
+      "title": "PELLICOLE RIFLETTENTI, PRO E CONTRO — Solaris Films",
+      "description": "Le pellicole riflettenti per vetri stanno diventando sempre più comuni nella decorazione domestica anche in Italia. Sebbene questo prodotto possa far…",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-riflettenti-pro-e-contro/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9325,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-satinate-per-vetri-bagno/",
-      "path": "/approfondimenti/pellicole-satinate-per-vetri-bagno/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-satinate-per-vetri-bagno/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-satinate-per-vetri-bagno-4ac123c20c.json",
-      "title": "Pellicole satinate bagno: come sceglierle — Solaris Films",
-      "description": "Guida alle pellicole satinate per vetri bagno: privacy, luce, resa estetica, posa e durata. Come scegliere la soluzione giusta senza errori.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-satinate-per-vetri-bagno/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9375,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/come-ridurre-il-calore-dalle-vetrate/",
-      "path": "/approfondimenti/come-ridurre-il-calore-dalle-vetrate/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/come-ridurre-il-calore-dalle-vetrate/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-come-ridurre-il-calore-dalle-vetrate-92b31460d7.json",
-      "title": "Ridurre il calore dalle vetrate: cosa funziona — Solaris Fil",
-      "description": "Scopri come ridurre il calore dalle vetrate con soluzioni efficaci: pellicole solari, schermature e criteri tecnici per scegliere bene.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/come-ridurre-il-calore-dalle-vetrate/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9166,
+      "textLength": 3316,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -477,516 +1047,22 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-spettroselettive-facciate-vetrate/",
-      "path": "/approfondimenti/pellicole-spettroselettive-facciate-vetrate/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-satinate-per-vetri-bagno/",
+      "path": "/approfondimenti/pellicole-satinate-per-vetri-bagno/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicole-spettroselettive-facciate-vetrate/",
+        "newPath": "/blog/pellicole-satinate-per-vetri-bagno/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicole-spettroselettive-facciate-vetrate-575470b9cd.json",
-      "title": "Facciate vetrate più efficienti e vivibili — Solaris Films",
-      "description": "Pellicole spettroselettive per facciate vetrate: meno calore, meno abbagliamento e più comfort senza rinunciare a luce naturale ed estetica.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-spettroselettive-facciate-vetrate/",
+      "file": "approfondimenti-pellicole-satinate-per-vetri-bagno-4ac123c20c.json",
+      "title": "Pellicole satinate bagno: come sceglierle — Solaris Films",
+      "description": "Guida alle pellicole satinate per vetri bagno: privacy, luce, resa estetica, posa e durata. Come scegliere la soluzione giusta senza errori.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-satinate-per-vetri-bagno/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9465,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-termoisolanti-per-vetri-in-inverno/",
-      "path": "/approfondimenti/pellicole-termoisolanti-per-vetri-in-inverno/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-termoisolanti-per-vetri-in-inverno/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-termoisolanti-per-vetri-in-inverno-8b6273ab06.json",
-      "title": "Pellicole termiche per vetri in inverno — Solaris Films",
-      "description": "Come funzionano le pellicole termoisolanti per vetri in inverno, quando convengono davvero e cosa valutare per comfort, risparmio e posa.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-termoisolanti-per-vetri-in-inverno/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9614,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-antieffrazione-per-finestre-come-sceglierla/",
-      "path": "/approfondimenti/pellicola-antieffrazione-per-finestre-come-sceglierla/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicola-antieffrazione-per-finestre-come-sceglierla/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicola-antieffrazione-per-finestre-come-sceglierla-d91f100e3e.json",
-      "title": "Pellicola antieffrazione per finestre: come sceglierla — Sol",
-      "description": "Pellicola antieffrazione per finestre: come funziona, quando serve davvero, cosa cambia rispetto ai vetri di sicurezza e come sceglierla.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-antieffrazione-per-finestre-come-sceglierla/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9718,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/uni-en-12600-pellicole-sicurezza-vetri/",
-      "path": "/approfondimenti/uni-en-12600-pellicole-sicurezza-vetri/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/uni-en-12600-pellicole-sicurezza-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-uni-en-12600-pellicole-sicurezza-vetri-03a10a44e0.json",
-      "title": "UNI EN 12600 e pellicole di sicurezza — Solaris Films",
-      "description": "UNI EN 12600 pellicole sicurezza vetri: cosa misura la norma, come leggere le classi e quando una pellicola rende il vetro più sicuro.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/uni-en-12600-pellicole-sicurezza-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9021,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/come-mettere-in-sicurezza-un-vetro/",
-      "path": "/approfondimenti/come-mettere-in-sicurezza-un-vetro/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/come-mettere-in-sicurezza-un-vetro/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-come-mettere-in-sicurezza-un-vetro-d8629019d3.json",
-      "title": "Mettere in sicurezza un vetro: come farlo — Solaris Films",
-      "description": "Scopri come mettere in sicurezza un vetro con soluzioni efficaci: pellicole certificate, criteri di scelta, norme e casi in cui servono davvero.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/come-mettere-in-sicurezza-un-vetro/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9395,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-antigraffiti-per-vetrine/",
-      "path": "/approfondimenti/pellicole-antigraffiti-per-vetrine/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-antigraffiti-per-vetrine/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-antigraffiti-per-vetrine-7f24681a7a.json",
-      "title": "Pellicole antigraffiti per vetrine: come sceglierle — Solari",
-      "description": "Le pellicole antigraffiti per vetrine proteggono il vetro da incisioni e vernici. Scopri come funzionano, quando servono e come sceglierle.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-antigraffiti-per-vetrine/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9226,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/vetrofanie-decorative-per-uffici/",
-      "path": "/approfondimenti/vetrofanie-decorative-per-uffici/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/vetrofanie-decorative-per-uffici/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-vetrofanie-decorative-per-uffici-54dcdd16aa.json",
-      "title": "Vetrofanie decorative per uffici: come sceglierle — Solaris",
-      "description": "Vetrofanie decorative per uffici: privacy, design e funzionalità. Come scegliere film, finiture e posa per ambienti professionali efficaci.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/vetrofanie-decorative-per-uffici/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9407,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-riflettenti-per-facciate-continue/",
-      "path": "/approfondimenti/pellicole-riflettenti-per-facciate-continue/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-riflettenti-per-facciate-continue/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-riflettenti-per-facciate-continue-ff870ca194.json",
-      "title": "Pellicole riflettenti per facciate continue — Solaris Films",
-      "description": "Pellicole riflettenti per facciate continue: meno calore e abbagliamento, più comfort, efficienza energetica e controllo solare.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-riflettenti-per-facciate-continue/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9353,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/quanto-costa-installare-pellicole-per-vetri/",
-      "path": "/approfondimenti/quanto-costa-installare-pellicole-per-vetri/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/quanto-costa-installare-pellicole-per-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-quanto-costa-installare-pellicole-per-vetri-2a620edfe0.json",
-      "title": "Quanto costa installare pellicole per vetri — Solaris Films",
-      "description": "Quanto costa installare pellicole per vetri? Prezzi, fattori che incidono, posa e differenze tra film solari, privacy e sicurezza.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/quanto-costa-installare-pellicole-per-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 8821,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-riducono-davvero-raggi-uv/",
-      "path": "/approfondimenti/pellicole-vetri-riducono-davvero-raggi-uv/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-vetri-riducono-davvero-raggi-uv/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-vetri-riducono-davvero-raggi-uv-aea3eab27e.json",
-      "title": "Pellicole vetri: riducono davvero i raggi UV? — Solaris Film",
-      "description": "Le pellicole vetri riducono raggi UV davvero? Sì, ma dipende da film, vetro e posa. Ecco come valutare prestazioni, limiti e risultati.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-riducono-davvero-raggi-uv/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 8797,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-antisolari-per-vetrate-grandi/",
-      "path": "/approfondimenti/migliori-pellicole-antisolari-per-vetrate-grandi/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/migliori-pellicole-antisolari-per-vetrate-grandi/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-migliori-pellicole-antisolari-per-vetrate-grandi-a81cedb308.json",
-      "title": "Migliori pellicole antisolari per vetrate grandi — Solaris F",
-      "description": "Guida alle migliori pellicole antisolari per vetrate grandi: comfort, controllo solare, UV, abbagliamento, resa estetica e scelta tecnica.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-antisolari-per-vetrate-grandi/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9569,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/quanto-dura-una-pellicola-per-vetri/",
-      "path": "/approfondimenti/quanto-dura-una-pellicola-per-vetri/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/quanto-dura-una-pellicola-per-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-quanto-dura-una-pellicola-per-vetri-44fbf716b8.json",
-      "title": "Quanto dura una pellicola per vetri? — Solaris Films",
-      "description": "Quanto dura una pellicola per vetri? Dipende da materiale, esposizione, posa e manutenzione. Ecco cosa incide davvero sulla durata.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/quanto-dura-una-pellicola-per-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 8973,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-antisfondamento-vs-vetro-stratificato/",
-      "path": "/approfondimenti/pellicola-antisfondamento-vs-vetro-stratificato/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicola-antisfondamento-vs-vetro-stratificato/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicola-antisfondamento-vs-vetro-stratificato-8027f0c831.json",
-      "title": "Pellicola antisfondamento vs vetro stratificato — Solaris Fi",
-      "description": "Pellicola antisfondamento vs vetro stratificato: differenze, prestazioni, norme, costi e casi d’uso per scegliere la soluzione corretta.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-antisfondamento-vs-vetro-stratificato/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9355,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/guida-pellicole-sicurezza-uni-en-12600/",
-      "path": "/approfondimenti/guida-pellicole-sicurezza-uni-en-12600/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/guida-pellicole-sicurezza-uni-en-12600/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-guida-pellicole-sicurezza-uni-en-12600-49a1acdc4a.json",
-      "title": "Guida pellicole sicurezza UNI EN 12600 — Solaris Films",
-      "description": "Guida pellicole sicurezza UNI EN 12600: come leggere classi, test e limiti applicativi per scegliere film certificati e posa corretta.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-pellicole-sicurezza-uni-en-12600/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9324,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-antiesplosione-per-vetri-sicurezza/",
-      "path": "/approfondimenti/pellicole-antiesplosione-per-vetri-sicurezza/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-antiesplosione-per-vetri-sicurezza/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-antiesplosione-per-vetri-sicurezza-95532c7ebb.json",
-      "title": "Pellicole antiesplosione per vetri sicurezza — Solaris Films",
-      "description": "Pellicole antiesplosione per vetri sicurezza: come funzionano, norme, limiti e criteri di scelta per edifici, uffici, scuole e siti sensibili.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-antiesplosione-per-vetri-sicurezza/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9365,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-antisolari-per-capannoni-industriali/",
-      "path": "/approfondimenti/pellicole-antisolari-per-capannoni-industriali/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-antisolari-per-capannoni-industriali/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-antisolari-per-capannoni-industriali-636a788a5a.json",
-      "title": "Pellicole antisolari per capannoni industriali — Solaris Fil",
-      "description": "Pellicole antisolari per capannoni industriali: meno calore, abbagliamento e consumi. Come scegliere film, prestazioni e posa corretta.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-antisolari-per-capannoni-industriali/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9872,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-satinata-per-porte-in-vetro/",
-      "path": "/approfondimenti/pellicola-satinata-per-porte-in-vetro/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicola-satinata-per-porte-in-vetro/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicola-satinata-per-porte-in-vetro-ee639ed7c1.json",
-      "title": "Pellicola satinata per porte in vetro: guida — Solaris Films",
-      "description": "Pellicola satinata per porte in vetro: privacy, luce e design. Come sceglierla, dove applicarla e quando conviene la posa professionale.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-satinata-per-porte-in-vetro/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9316,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/installazione-pellicole-antisolari-vetri-ufficio/",
-      "path": "/approfondimenti/installazione-pellicole-antisolari-vetri-ufficio/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/installazione-pellicole-antisolari-vetri-ufficio/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-installazione-pellicole-antisolari-vetri-ufficio-1c59b630ee.json",
-      "title": "Installazione pellicole antisolari vetri ufficio — Solaris F",
-      "description": "Installazione pellicole antisolari vetri ufficio: comfort, meno abbagliamento, risparmio energetico e posa professionale con prestazioni misurabili.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/installazione-pellicole-antisolari-vetri-ufficio/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9818,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/come-migliorare-comfort-uffici-vetrati/",
-      "path": "/approfondimenti/come-migliorare-comfort-uffici-vetrati/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/come-migliorare-comfort-uffici-vetrati/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-come-migliorare-comfort-uffici-vetrati-8ff2d5a91b.json",
-      "title": "Come migliorare il comfort negli uffici vetrati — Solaris Fi",
-      "description": "Come migliorare comfort uffici vetrati: riduci calore, abbagliamento e consumi con soluzioni tecniche su misura per ambienti più efficienti.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/come-migliorare-comfort-uffici-vetrati/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9045,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/guida-film-certificati-per-vetri/",
-      "path": "/approfondimenti/guida-film-certificati-per-vetri/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/guida-film-certificati-per-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-guida-film-certificati-per-vetri-a267319949.json",
-      "title": "Guida ai film certificati per vetri — Solaris Films",
-      "description": "Guida ai film certificati per vetri: norme, prestazioni e criteri di scelta per sicurezza, controllo solare, privacy e posa a regola d’arte.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-film-certificati-per-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9358,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-solari-o-tende-tecniche/",
-      "path": "/approfondimenti/pellicole-solari-o-tende-tecniche/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-solari-o-tende-tecniche/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-solari-o-tende-tecniche-da10ee10fd.json",
-      "title": "Pellicole solari o tende tecniche: cosa conviene — Solaris F",
-      "description": "Pellicole solari o tende tecniche? Confronto chiaro su calore, abbagliamento, privacy, estetica, manutenzione e costi reali nel tempo.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-solari-o-tende-tecniche/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9006,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-sicurezza-sono-a-norma-scuole/",
-      "path": "/approfondimenti/pellicole-sicurezza-sono-a-norma-scuole/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-sicurezza-sono-a-norma-scuole/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-sicurezza-sono-a-norma-scuole-2fad8de063.json",
-      "title": "Pellicole sicurezza: sono a norma per scuole? — Solaris Film",
-      "description": "Le pellicole sicurezza sono a norma scuole? Requisiti, limiti e criteri tecnici per scegliere film certificati e posa conforme.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-sicurezza-sono-a-norma-scuole/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 8882,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-antisolari-vs-vetri-basso-emissivi/",
-      "path": "/approfondimenti/pellicole-antisolari-vs-vetri-basso-emissivi/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-antisolari-vs-vetri-basso-emissivi/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-antisolari-vs-vetri-basso-emissivi-94a6051463.json",
-      "title": "Pellicole antisolari vs vetri basso emissivi — Solaris Films",
-      "description": "Pellicole antisolari vs vetri basso emissivi: differenze, costi, prestazioni e casi d’uso per scegliere la soluzione più adatta al tuo edificio.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-antisolari-vs-vetri-basso-emissivi/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9021,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/preventivo-pellicole-vetri-in-24h/",
-      "path": "/approfondimenti/preventivo-pellicole-vetri-in-24h/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/preventivo-pellicole-vetri-in-24h/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-preventivo-pellicole-vetri-in-24h-a7b4d301ec.json",
-      "title": "Preventivo pellicole vetri in 24h: cosa conta — Solaris Film",
-      "description": "Preventivo pellicole vetri in 24h: cosa serve davvero, quali dati inviare e come valutare costi, prestazioni, norme e posa senza errori.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/preventivo-pellicole-vetri-in-24h/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9839,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/calcolo-risparmio-energetico-pellicole-solari/",
-      "path": "/approfondimenti/calcolo-risparmio-energetico-pellicole-solari/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/calcolo-risparmio-energetico-pellicole-solari/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-calcolo-risparmio-energetico-pellicole-solari-47faf0e6a7.json",
-      "title": "Calcolo risparmio energetico pellicole solari — Solaris Film",
-      "description": "Calcolo risparmio energetico pellicole solari: come stimarlo davvero, quali dati servono e da cosa dipende il taglio dei consumi negli edifici.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/calcolo-risparmio-energetico-pellicole-solari/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9283,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/garanzia-decennale-pellicole-per-vetri/",
-      "path": "/approfondimenti/garanzia-decennale-pellicole-per-vetri/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/garanzia-decennale-pellicole-per-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-garanzia-decennale-pellicole-per-vetri-6376d7462e.json",
-      "title": "Garanzia decennale pellicole per vetri — Solaris Films",
-      "description": "Garanzia decennale pellicole per vetri: cosa copre davvero, da cosa dipende e come valutarla tra posa, prodotto, certificazioni e durata.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/garanzia-decennale-pellicole-per-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9512,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-termoisolanti-per-infissi-esistenti/",
-      "path": "/approfondimenti/pellicole-termoisolanti-per-infissi-esistenti/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicole-termoisolanti-per-infissi-esistenti/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicole-termoisolanti-per-infissi-esistenti-c0ea605645.json",
-      "title": "Pellicole termoisolanti per infissi esistenti — Solaris Film",
-      "description": "Pellicole termoisolanti per infissi esistenti: come funzionano, quando convengono, limiti reali, posa e criteri tecnici per scegliere bene.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-termoisolanti-per-infissi-esistenti/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9544,
+      "textLength": 9375,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -1009,117 +1085,98 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/ridurre-abbagliamento-vetrate-senza-tende/",
-      "path": "/approfondimenti/ridurre-abbagliamento-vetrate-senza-tende/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-sicurezza-sono-a-norma-scuole/",
+      "path": "/approfondimenti/pellicole-sicurezza-sono-a-norma-scuole/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/ridurre-abbagliamento-vetrate-senza-tende/",
+        "newPath": "/blog/pellicole-sicurezza-sono-a-norma-scuole/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-ridurre-abbagliamento-vetrate-senza-tende-9b8f1a9fdb.json",
-      "title": "Ridurre abbagliamento vetrate senza tende — Solaris Films",
-      "description": "Ridurre abbagliamento vetrate senza tende è possibile con pellicole solari professionali: più comfort visivo, luce naturale e prestazioni misurabili.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/ridurre-abbagliamento-vetrate-senza-tende/",
+      "file": "approfondimenti-pellicole-sicurezza-sono-a-norma-scuole-2fad8de063.json",
+      "title": "Pellicole sicurezza: sono a norma per scuole? — Solaris Film",
+      "description": "Le pellicole sicurezza sono a norma scuole? Requisiti, limiti e criteri tecnici per scegliere film certificati e posa conforme.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-sicurezza-sono-a-norma-scuole/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9747,
+      "textLength": 8882,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/guida-scelta-pellicole-per-scuole/",
-      "path": "/approfondimenti/guida-scelta-pellicole-per-scuole/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-solari-o-tende-tecniche/",
+      "path": "/approfondimenti/pellicole-solari-o-tende-tecniche/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/guida-scelta-pellicole-per-scuole/",
+        "newPath": "/blog/pellicole-solari-o-tende-tecniche/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-guida-scelta-pellicole-per-scuole-1a9daef11c.json",
-      "title": "Guida scelta pellicole per scuole — Solaris Films",
-      "description": "Guida scelta pellicole per scuole: come valutare sicurezza, controllo solare, privacy e norme per aule, corridoi e ambienti comuni.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-scelta-pellicole-per-scuole/",
+      "file": "approfondimenti-pellicole-solari-o-tende-tecniche-da10ee10fd.json",
+      "title": "Pellicole solari o tende tecniche: cosa conviene — Solaris F",
+      "description": "Pellicole solari o tende tecniche? Confronto chiaro su calore, abbagliamento, privacy, estetica, manutenzione e costi reali nel tempo.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-solari-o-tende-tecniche/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9577,
+      "textLength": 9006,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/migliori-film-sicurezza-vetrate-scuole/",
-      "path": "/approfondimenti/migliori-film-sicurezza-vetrate-scuole/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-spettroselettive-facciate-vetrate/",
+      "path": "/approfondimenti/pellicole-spettroselettive-facciate-vetrate/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/migliori-film-sicurezza-vetrate-scuole/",
+        "newPath": "/blog/pellicole-spettroselettive-facciate-vetrate/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-migliori-film-sicurezza-vetrate-scuole-22c0c2ea85.json",
-      "title": "Migliori film sicurezza vetrate scuole — Solaris Films",
-      "description": "Guida ai migliori film sicurezza vetrate scuole: norme, classi, spessori e criteri tecnici per scegliere una protezione efficace e durevole.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/migliori-film-sicurezza-vetrate-scuole/",
+      "file": "approfondimenti-pellicole-spettroselettive-facciate-vetrate-575470b9cd.json",
+      "title": "Facciate vetrate più efficienti e vivibili — Solaris Films",
+      "description": "Pellicole spettroselettive per facciate vetrate: meno calore, meno abbagliamento e più comfort senza rinunciare a luce naturale ed estetica.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-spettroselettive-facciate-vetrate/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9505,
+      "textLength": 9465,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/esempio-riduzione-consumi-con-pellicole/",
-      "path": "/approfondimenti/esempio-riduzione-consumi-con-pellicole/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-termoisolanti-per-infissi-esistenti/",
+      "path": "/approfondimenti/pellicole-termoisolanti-per-infissi-esistenti/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/esempio-riduzione-consumi-con-pellicole/",
+        "newPath": "/blog/pellicole-termoisolanti-per-infissi-esistenti/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-esempio-riduzione-consumi-con-pellicole-a31c7f0baf.json",
-      "title": "Esempio riduzione consumi con pellicole — Solaris Films",
-      "description": "Esempio riduzione consumi con pellicole: come stimare risparmio energetico, comfort e tempi di rientro su uffici, case e capannoni vetrati.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/esempio-riduzione-consumi-con-pellicole/",
+      "file": "approfondimenti-pellicole-termoisolanti-per-infissi-esistenti-c0ea605645.json",
+      "title": "Pellicole termoisolanti per infissi esistenti — Solaris Film",
+      "description": "Pellicole termoisolanti per infissi esistenti: come funzionano, quando convengono, limiti reali, posa e criteri tecnici per scegliere bene.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-termoisolanti-per-infissi-esistenti/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9656,
+      "textLength": 9544,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/vetri-sicurezza-scuole/",
-      "path": "/approfondimenti/vetri-sicurezza-scuole/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-termoisolanti-per-vetri-in-inverno/",
+      "path": "/approfondimenti/pellicole-termoisolanti-per-vetri-in-inverno/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/vetri-sicurezza-scuole/",
+        "newPath": "/blog/pellicole-termoisolanti-per-vetri-in-inverno/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-vetri-sicurezza-scuole-ee2ccfe885.json",
-      "title": "Vetri sicurezza scuole: cosa serve davvero — Solaris Films",
-      "description": "Vetri sicurezza scuole: norme, rischi e soluzioni per ridurre frammentazione, urti e danni. Come scegliere interventi efficaci e conformi.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/vetri-sicurezza-scuole/",
+      "file": "approfondimenti-pellicole-termoisolanti-per-vetri-in-inverno-8b6273ab06.json",
+      "title": "Pellicole termiche per vetri in inverno — Solaris Films",
+      "description": "Come funzionano le pellicole termoisolanti per vetri in inverno, quando convengono davvero e cosa valutare per comfort, risparmio e posa.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-termoisolanti-per-vetri-in-inverno/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 10162,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-sicurezza-o-sostituzione-vetro/",
-      "path": "/approfondimenti/pellicola-sicurezza-o-sostituzione-vetro/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicola-sicurezza-o-sostituzione-vetro/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicola-sicurezza-o-sostituzione-vetro-0ba154bfee.json",
-      "title": "Pellicola sicurezza o sostituzione vetro? — Solaris Films",
-      "description": "Pellicola sicurezza o sostituzione vetro? Scopri differenze, limiti, norme e criteri pratici per scegliere la soluzione più adatta.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-sicurezza-o-sostituzione-vetro/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9406,
+      "textLength": 9614,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -1142,193 +1199,22 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/prevenire-rottura-vetri-con-pellicole/",
-      "path": "/approfondimenti/prevenire-rottura-vetri-con-pellicole/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-fake-news/",
+      "path": "/approfondimenti/pellicole-vetri-fake-news/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/prevenire-rottura-vetri-con-pellicole/",
+        "newPath": "/blog/pellicole-vetri-fake-news/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-prevenire-rottura-vetri-con-pellicole-295676a023.json",
-      "title": "Prevenire rottura vetri con pellicole — Solaris Films",
-      "description": "Prevenire rottura vetri con pellicole è possibile: ecco come funzionano, quando servono davvero e quali criteri usare per sceglierle bene.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/prevenire-rottura-vetri-con-pellicole/",
+      "file": "approfondimenti-pellicole-vetri-fake-news-cb74b5585e.json",
+      "title": "PELLICOLE PER VETRI E FAKE NEWS — Solaris Films",
+      "description": "Pellicole per vetri e fake news: alcune risposte alle domande più frequenti legate alle fake news sulle pellicole.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-fake-news/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 10143,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/recensione-pellicole-madico-controllo-solare/",
-      "path": "/approfondimenti/recensione-pellicole-madico-controllo-solare/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/recensione-pellicole-madico-controllo-solare/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-recensione-pellicole-madico-controllo-solare-f6019d7b65.json",
-      "title": "Recensione pellicole MADICO controllo solare — Solaris Films",
-      "description": "Scopri la recensione completa delle pellicole MADICO per il controllo solare. Analizziamo come scegliere la soluzione ideale per ridurre surriscaldamento, abbagliamento e scolorimento, bilanciando estetica e prestazioni. Dalla tecnologia costruttiva ai dati chiave, valuta l'ampia gamma MADICO per ogni esigenza di comfort e risparmio energetico.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/recensione-pellicole-madico-controllo-solare/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9107,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-solare-o-doppi-vetri/",
-      "path": "/approfondimenti/pellicola-solare-o-doppi-vetri/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/pellicola-solare-o-doppi-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-pellicola-solare-o-doppi-vetri-9ae9145f12.json",
-      "title": "Pellicola solare o doppi vetri: cosa conviene — Solaris Film",
-      "description": "Pellicola solare o doppi vetri: differenze, costi, prestazioni e limiti. Guida chiara per scegliere la soluzione più adatta al tuo edificio.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-solare-o-doppi-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 10008,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/recensione-pellicole-madico-antisolari/",
-      "path": "/approfondimenti/recensione-pellicole-madico-antisolari/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/recensione-pellicole-madico-antisolari/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-recensione-pellicole-madico-antisolari-d21d8f2ad6.json",
-      "title": "Recensione pellicole Madico antisolari — Solaris Films",
-      "description": "Recensione pellicole Madico antisolari: prestazioni, limiti, comfort, resa estetica e criteri tecnici per scegliere il film giusto.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/recensione-pellicole-madico-antisolari/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9468,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-controllo-solare-edifici/",
-      "path": "/approfondimenti/migliori-pellicole-controllo-solare-edifici/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/migliori-pellicole-controllo-solare-edifici/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-migliori-pellicole-controllo-solare-edifici-8657baedb4.json",
-      "title": "Migliori pellicole controllo solare edifici — Solaris Films",
-      "description": "Guida alle migliori pellicole controllo solare edifici: come scegliere film efficaci per calore, abbagliamento, UV, comfort e consumi.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-controllo-solare-edifici/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9361,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/come-funziona-pellicola-antiesplosione-vetri/",
-      "path": "/approfondimenti/come-funziona-pellicola-antiesplosione-vetri/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/come-funziona-pellicola-antiesplosione-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-come-funziona-pellicola-antiesplosione-vetri-d1f8913f49.json",
-      "title": "Come funziona la pellicola antiesplosione vetri — Solaris Fi",
-      "description": "Scopri come funziona la pellicola antiesplosione vetri, cosa protegge davvero, limiti, norme e quando conviene installarla su edifici e uffici.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/come-funziona-pellicola-antiesplosione-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9948,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/come-scegliere-pellicola-antisolare-casa/",
-      "path": "/approfondimenti/come-scegliere-pellicola-antisolare-casa/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/come-scegliere-pellicola-antisolare-casa/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-come-scegliere-pellicola-antisolare-casa-74112d0acb.json",
-      "title": "Come scegliere pellicola antisolare casa — Solaris Films",
-      "description": "Come scegliere pellicola antisolare casa: guida pratica per ridurre calore, abbagliamento e UV valutando vetro, esposizione e prestazioni.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/come-scegliere-pellicola-antisolare-casa/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9349,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/come-scegliere-pellicola-spettroselettiva-vetri/",
-      "path": "/approfondimenti/come-scegliere-pellicola-spettroselettiva-vetri/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/come-scegliere-pellicola-spettroselettiva-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-come-scegliere-pellicola-spettroselettiva-vetri-22a5fc6429.json",
-      "title": "Come scegliere pellicola spettroselettiva vetri — Solaris Fi",
-      "description": "Come scegliere pellicola spettroselettiva vetri: criteri tecnici, prestazioni reali, errori da evitare e applicazioni per casa e ufficio.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/come-scegliere-pellicola-spettroselettiva-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9616,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/guida-norme-vetri-sicurezza-edifici/",
-      "path": "/approfondimenti/guida-norme-vetri-sicurezza-edifici/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/blog/guida-norme-vetri-sicurezza-edifici/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-guida-norme-vetri-sicurezza-edifici-9c51c8e084.json",
-      "title": "Guida norme vetri sicurezza edifici — Solaris Films",
-      "description": "Guida norme vetri sicurezza edifici: cosa prevedono le regole, quando il vetro è a norma e come scegliere soluzioni certificate per ridurre i rischi.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-norme-vetri-sicurezza-edifici/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9647,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/approfondimenti/installatore-pellicole-vetri-nord-italia/",
-      "path": "/approfondimenti/installatore-pellicole-vetri-nord-italia/",
-      "route": {
-        "type": "article",
-        "label": "Approfondimento",
-        "newPath": "/lo-sapevi-che/installatore-pellicole-vetri-nord-italia/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "approfondimenti-installatore-pellicole-vetri-nord-italia-b7036371c1.json",
-      "title": "Installatore pellicole vetri Nord Italia — Solaris Films",
-      "description": "Come scegliere un installatore pellicole vetri Nord Italia: criteri tecnici, norme, posa e garanzie per edifici, uffici, negozi e case.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/installatore-pellicole-vetri-nord-italia/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 9833,
+      "textLength": 4403,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -1351,60 +1237,76 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-anti-uv-finestre/",
-      "path": "/approfondimenti/migliori-pellicole-anti-uv-finestre/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-riducono-davvero-raggi-uv/",
+      "path": "/approfondimenti/pellicole-vetri-riducono-davvero-raggi-uv/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/migliori-pellicole-anti-uv-finestre/",
+        "newPath": "/blog/pellicole-vetri-riducono-davvero-raggi-uv/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-migliori-pellicole-anti-uv-finestre-ff279649a3.json",
-      "title": "Migliori pellicole anti UV finestre: come sceglierle — Solar",
-      "description": "Guida alle migliori pellicole anti UV finestre: come valutarle per calore, abbagliamento, estetica, sicurezza e durata reale nel tempo.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/migliori-pellicole-anti-uv-finestre/",
+      "file": "approfondimenti-pellicole-vetri-riducono-davvero-raggi-uv-aea3eab27e.json",
+      "title": "Pellicole vetri: riducono davvero i raggi UV? — Solaris Film",
+      "description": "Le pellicole vetri riducono raggi UV davvero? Sì, ma dipende da film, vetro e posa. Ecco come valutare prestazioni, limiti e risultati.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-riducono-davvero-raggi-uv/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9656,
+      "textLength": 8797,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/guida-conformita-vetri-luoghi-pubblici/",
-      "path": "/approfondimenti/guida-conformita-vetri-luoghi-pubblici/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pellicole-vetri-servono-autorizzazioni-condominiali/",
+      "path": "/approfondimenti/pellicole-vetri-servono-autorizzazioni-condominiali/",
+      "file": "approfondimenti-pellicole-vetri-servono-autorizzazioni-condominiali-manual.json",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/guida-conformita-vetri-luoghi-pubblici/",
+        "newPath": "/blog/pellicole-vetri-servono-autorizzazioni-condominiali/",
+        "confidence": "recovered-live",
+        "needsReview": false
+      },
+      "sourceSitemap": "recuperato live da www.solarisfilms.it",
+      "title": "Pellicole vetri: servono autorizzazioni condominiali?",
+      "description": "Pellicole vetri: servono autorizzazioni condominiali? Quando basta comunicarlo, quando serve il via libera e cosa valutare in facciata.",
+      "h1": "Pellicole vetri: servono autorizzazioni condominiali?"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/prevenire-rottura-vetri-con-pellicole/",
+      "path": "/approfondimenti/prevenire-rottura-vetri-con-pellicole/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/prevenire-rottura-vetri-con-pellicole/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-guida-conformita-vetri-luoghi-pubblici-c2742c4621.json",
-      "title": "Guida conformità vetri luoghi pubblici — Solaris Films",
-      "description": "Guida conformità vetri luoghi pubblici: norme, rischi, verifiche e soluzioni per mettere in sicurezza scuole, uffici, negozi e spazi aperti al pubblico.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/guida-conformita-vetri-luoghi-pubblici/",
+      "file": "approfondimenti-prevenire-rottura-vetri-con-pellicole-295676a023.json",
+      "title": "Prevenire rottura vetri con pellicole — Solaris Films",
+      "description": "Prevenire rottura vetri con pellicole è possibile: ecco come funzionano, quando servono davvero e quali criteri usare per sceglierle bene.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/prevenire-rottura-vetri-con-pellicole/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9593,
+      "textLength": 10143,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pulizia-manutenzione-pellicole-vetri/",
-      "path": "/approfondimenti/pulizia-manutenzione-pellicole-vetri/",
+      "url": "https://www.solarisfilms.it/approfondimenti/preventivo-pellicole-vetri-in-24h/",
+      "path": "/approfondimenti/preventivo-pellicole-vetri-in-24h/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pulizia-manutenzione-pellicole-vetri/",
+        "newPath": "/blog/preventivo-pellicole-vetri-in-24h/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pulizia-manutenzione-pellicole-vetri-1df91e8b69.json",
-      "title": "Pulizia e manutenzione pellicole vetri — Solaris Films",
-      "description": "Pulizia e manutenzione pellicole vetri: metodi corretti, errori da evitare e tempi giusti per preservare resa, trasparenza e durata.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pulizia-manutenzione-pellicole-vetri/",
+      "file": "approfondimenti-preventivo-pellicole-vetri-in-24h-a7b4d301ec.json",
+      "title": "Preventivo pellicole vetri in 24h: cosa conta — Solaris Film",
+      "description": "Preventivo pellicole vetri in 24h: cosa serve davvero, quali dati inviare e come valutare costi, prestazioni, norme e posa senza errori.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/preventivo-pellicole-vetri-in-24h/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9985,
+      "textLength": 9839,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
@@ -1427,155 +1329,611 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-vs-vetro-satinato/",
-      "path": "/approfondimenti/pellicola-privacy-vs-vetro-satinato/",
+      "url": "https://www.solarisfilms.it/approfondimenti/pulizia-manutenzione-pellicole-vetri/",
+      "path": "/approfondimenti/pulizia-manutenzione-pellicole-vetri/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicola-privacy-vs-vetro-satinato/",
+        "newPath": "/blog/pulizia-manutenzione-pellicole-vetri/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicola-privacy-vs-vetro-satinato-2f5ebce42b.json",
-      "title": "Pellicola privacy vs vetro satinato: cosa conviene — Solaris",
-      "description": "Pellicola privacy vs vetro satinato: differenze su costi, posa, luce, manutenzione e flessibilità. Guida pratica per scegliere bene.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-privacy-vs-vetro-satinato/",
+      "file": "approfondimenti-pulizia-manutenzione-pellicole-vetri-1df91e8b69.json",
+      "title": "Pulizia e manutenzione pellicole vetri — Solaris Films",
+      "description": "Pulizia e manutenzione pellicole vetri: metodi corretti, errori da evitare e tempi giusti per preservare resa, trasparenza e durata.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/pulizia-manutenzione-pellicole-vetri/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 9266,
+      "textLength": 9985,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi/",
-      "path": "/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi/",
+      "url": "https://www.solarisfilms.it/approfondimenti/quanto-costa-installare-pellicole-per-vetri/",
+      "path": "/approfondimenti/quanto-costa-installare-pellicole-per-vetri/",
       "route": {
         "type": "article",
         "label": "Approfondimento",
-        "newPath": "/blog/pellicola-antigraffiti-per-vetrine-negozi/",
+        "newPath": "/blog/quanto-costa-installare-pellicole-per-vetri/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "approfondimenti-pellicola-antigraffiti-per-vetrine-negozi-78e0a5c9bd.json",
-      "title": "Pellicola antigraffiti per vetrine negozi: come sceglierla —",
-      "description": "Pellicola antigraffiti per vetrine negozi: come funziona, quando conviene e cosa valutare per proteggere il vetro con una posa professionale.",
-      "canonical": "https://www.solarisfilms.it/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi/",
+      "file": "approfondimenti-quanto-costa-installare-pellicole-per-vetri-2a620edfe0.json",
+      "title": "Quanto costa installare pellicole per vetri — Solaris Films",
+      "description": "Quanto costa installare pellicole per vetri? Prezzi, fattori che incidono, posa e differenze tra film solari, privacy e sicurezza.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/quanto-costa-installare-pellicole-per-vetri/",
       "robots": "max-image-preview:large",
       "h1": "Pellicole per vetri adesive",
-      "textLength": 8763,
+      "textLength": 8821,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
-      "path": "/pellicole-per-vetri/privacy-policy/",
+      "url": "https://www.solarisfilms.it/approfondimenti/quanto-dura-una-pellicola-per-vetri/",
+      "path": "/approfondimenti/quanto-dura-una-pellicola-per-vetri/",
       "route": {
-        "type": "legal",
-        "label": "Privacy",
-        "newPath": "/privacy-policy/",
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/quanto-dura-una-pellicola-per-vetri/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-privacy-policy-f02e181b28.json",
-      "title": "Privacy Policy — Solaris Films",
-      "description": "INFORMATIVA SULLA PRIVACYGentile clienteIl Regolamento Europeo in materia di protezione dei dati personali (GDPR) agli artt. 13 e 14, commi 1, imponel’obbligo…",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
+      "file": "approfondimenti-quanto-dura-una-pellicola-per-vetri-44fbf716b8.json",
+      "title": "Quanto dura una pellicola per vetri? — Solaris Films",
+      "description": "Quanto dura una pellicola per vetri? Dipende da materiale, esposizione, posa e manutenzione. Ecco cosa incide davvero sulla durata.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/quanto-dura-una-pellicola-per-vetri/",
       "robots": "max-image-preview:large",
-      "h1": "Privacy Policy",
-      "textLength": 1652,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 8973,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/",
-      "path": "/",
+      "url": "https://www.solarisfilms.it/approfondimenti/recensione-pellicole-madico-antisolari/",
+      "path": "/approfondimenti/recensione-pellicole-madico-antisolari/",
       "route": {
-        "type": "home",
-        "label": "Home",
-        "newPath": "/",
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/recensione-pellicole-madico-antisolari/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "home-42099b4af0.json",
-      "title": "Pellicole per Vetri: Soluzioni Antisolari e di Sicurezza per",
-      "description": "Solaris Films: distributore e installatore esclusivo MADICO USA. Scopri pellicole vetri antisolari, di sicurezza e privacy. 30+ anni d'esperienza per edifici più sostenibili ed efficienti.",
-      "canonical": "https://www.solarisfilms.it/",
+      "file": "approfondimenti-recensione-pellicole-madico-antisolari-d21d8f2ad6.json",
+      "title": "Recensione pellicole Madico antisolari — Solaris Films",
+      "description": "Recensione pellicole Madico antisolari: prestazioni, limiti, comfort, resa estetica e criteri tecnici per scegliere il film giusto.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/recensione-pellicole-madico-antisolari/",
       "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri",
-      "textLength": 6012,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9468,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/about/",
-      "path": "/pellicole-per-vetri/pellicole-per-vetri/about/",
+      "url": "https://www.solarisfilms.it/approfondimenti/recensione-pellicole-madico-controllo-solare/",
+      "path": "/approfondimenti/recensione-pellicole-madico-controllo-solare/",
       "route": {
-        "type": "company",
-        "label": "Company Profile",
-        "newPath": "/company-profile/",
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/recensione-pellicole-madico-controllo-solare/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-pellicole-per-vetri-about-5037fcb67b.json",
-      "title": "Company Profile Solaris",
-      "description": "Company profile Solaris Films: specialisti delle pellicole per vetri, con esperienza nazionale, competenza tecnica e posa professionale.",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/about/",
-      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
-      "h1": "Chi siamo?",
-      "textLength": 3642,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+      "file": "approfondimenti-recensione-pellicole-madico-controllo-solare-f6019d7b65.json",
+      "title": "Recensione pellicole MADICO controllo solare — Solaris Films",
+      "description": "Scopri la recensione completa delle pellicole MADICO per il controllo solare. Analizziamo come scegliere la soluzione ideale per ridurre surriscaldamento, abbagliamento e scolorimento, bilanciando estetica e prestazioni. Dalla tecnologia costruttiva ai dati chiave, valuta l'ampia gamma MADICO per ogni esigenza di comfort e risparmio energetico.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/recensione-pellicole-madico-controllo-solare/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9107,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/faq/",
-      "path": "/pellicole-per-vetri/pellicole-per-vetri/faq/",
+      "url": "https://www.solarisfilms.it/approfondimenti/ridurre-abbagliamento-vetrate-senza-tende/",
+      "path": "/approfondimenti/ridurre-abbagliamento-vetrate-senza-tende/",
       "route": {
-        "type": "faq",
-        "label": "FAQ",
-        "newPath": "/faq/",
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/ridurre-abbagliamento-vetrate-senza-tende/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-pellicole-per-vetri-faq-16e0deea5f.json",
-      "title": "FAQ — Solaris Films",
-      "description": "Risposte celeri e concrete per le problematiche più frequenti. Un aiuto per ogni esigenza e ogni difficoltà",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/faq/",
+      "file": "approfondimenti-ridurre-abbagliamento-vetrate-senza-tende-9b8f1a9fdb.json",
+      "title": "Ridurre abbagliamento vetrate senza tende — Solaris Films",
+      "description": "Ridurre abbagliamento vetrate senza tende è possibile con pellicole solari professionali: più comfort visivo, luce naturale e prestazioni misurabili.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/ridurre-abbagliamento-vetrate-senza-tende/",
       "robots": "max-image-preview:large",
-      "h1": "FAQ",
-      "textLength": 2356,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9747,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che/",
-      "path": "/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che/",
+      "url": "https://www.solarisfilms.it/approfondimenti/uni-en-12600-pellicole-sicurezza-vetri/",
+      "path": "/approfondimenti/uni-en-12600-pellicole-sicurezza-vetri/",
       "route": {
-        "type": "knowledge-index",
-        "label": "Lo sapevi che?",
-        "newPath": "/lo-sapevi-che/",
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/uni-en-12600-pellicole-sicurezza-vetri/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-pellicole-per-vetri-lo-sapevi-che-546a8eca9e.json",
-      "title": "Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni",
-      "description": "Pellicole per vetri - Distributore ed installatore da 30+ anni",
-      "canonical": "https://www.solarisfilms.it/",
+      "file": "approfondimenti-uni-en-12600-pellicole-sicurezza-vetri-03a10a44e0.json",
+      "title": "UNI EN 12600 e pellicole di sicurezza — Solaris Films",
+      "description": "UNI EN 12600 pellicole sicurezza vetri: cosa misura la norma, come leggere le classi e quando una pellicola rende il vetro più sicuro.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/uni-en-12600-pellicole-sicurezza-vetri/",
       "robots": "max-image-preview:large",
-      "h1": "",
-      "textLength": 0,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9021,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/",
-      "path": "/pellicole-per-vetri/pellicole-per-vetri/",
+      "url": "https://www.solarisfilms.it/approfondimenti/vetri-sicurezza-scuole/",
+      "path": "/approfondimenti/vetri-sicurezza-scuole/",
       "route": {
-        "type": "service-index",
-        "label": "Pellicole per vetri",
-        "newPath": "/servizi/",
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/vetri-sicurezza-scuole/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-pellicole-per-vetri-67c2cb1ec4.json",
-      "title": "Pellicole per vetri — Solaris Films",
-      "description": "Scopri le pellicole per vetri per una maggiore sostenibilità e comfort. Affidati ai professionisti con oltre 30 anni di esperienza.",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/",
+      "file": "approfondimenti-vetri-sicurezza-scuole-ee2ccfe885.json",
+      "title": "Vetri sicurezza scuole: cosa serve davvero — Solaris Films",
+      "description": "Vetri sicurezza scuole: norme, rischi e soluzioni per ridurre frammentazione, urti e danni. Come scegliere interventi efficaci e conformi.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/vetri-sicurezza-scuole/",
       "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri",
-      "textLength": 19,
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 10162,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/approfondimenti/vetrofanie-decorative-per-uffici/",
+      "path": "/approfondimenti/vetrofanie-decorative-per-uffici/",
+      "route": {
+        "type": "article",
+        "label": "Approfondimento",
+        "newPath": "/blog/vetrofanie-decorative-per-uffici/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "approfondimenti-vetrofanie-decorative-per-uffici-54dcdd16aa.json",
+      "title": "Vetrofanie decorative per uffici: come sceglierle — Solaris",
+      "description": "Vetrofanie decorative per uffici: privacy, design e funzionalità. Come scegliere film, finiture e posa per ambienti professionali efficaci.",
+      "canonical": "https://www.solarisfilms.it/approfondimenti/vetrofanie-decorative-per-uffici/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 9407,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-post-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/certificazione-nfrc/",
+      "path": "/pagina-info/certificazione-nfrc/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/certificazione-nfrc/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-certificazione-nfrc-59cebb888a.json",
+      "title": "Certificazione NFRC — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pagina-info/certificazione-nfrc/",
+      "robots": "max-image-preview:large",
+      "h1": "Certificazione NFRC",
+      "textLength": 4910,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/garanzie/",
+      "path": "/pagina-info/garanzie/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/garanzie/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-garanzie-4d3f10447f.json",
+      "title": "Garanzie — Solaris Films",
+      "description": "Madico Inc. USA, riconosce la garanzia per le pellicole installate in Italia da installatori autorizzati Solaris Films s.r.l. Distributore Ufficiale Nazionale.…",
+      "canonical": "https://www.solarisfilms.it/pagina-info/garanzie/",
+      "robots": "max-image-preview:large",
+      "h1": "Garanzie",
+      "textLength": 251,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/glossario-termini/",
+      "path": "/pagina-info/glossario-termini/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/glossario-termini/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-glossario-termini-4fc5b29a77.json",
+      "title": "Glossario termini — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pagina-info/glossario-termini/",
+      "robots": "max-image-preview:large",
+      "h1": "Glossario termini",
+      "textLength": 1836,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/i-punti-di-forza/",
+      "path": "/pagina-info/i-punti-di-forza/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/i-punti-di-forza/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-i-punti-di-forza-8d91a7dae9.json",
+      "title": "I punti di forza — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 I PUNTI DI FORZA DELLE PELLICOLE ANTISOLARI MADICO",
+      "canonical": "https://www.solarisfilms.it/pagina-info/i-punti-di-forza/",
+      "robots": "max-image-preview:large",
+      "h1": "I punti di forza",
+      "textLength": 2967,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/istruzioni-e-manutenzione/",
+      "path": "/pagina-info/istruzioni-e-manutenzione/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/istruzioni-e-manutenzione/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-istruzioni-e-manutenzione-d6a734a4fe.json",
+      "title": "Istruzione e manutenzione — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pagina-info/istruzioni-e-manutenzione/",
+      "robots": "max-image-preview:large",
+      "h1": "Istruzione e manutenzione",
+      "textLength": 3447,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/norma-brc/",
+      "path": "/pagina-info/norma-brc/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/norma-brc/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-norma-brc-728d26b1b9.json",
+      "title": "Norma BRC — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pagina-info/norma-brc/",
+      "robots": "max-image-preview:large",
+      "h1": "Norma BRC",
+      "textLength": 11500,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/norme/",
+      "path": "/pagina-info/norme/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/norme/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-norme-2a7bf84aaa.json",
+      "title": "Norme — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pagina-info/norme/",
+      "robots": "max-image-preview:large",
+      "h1": "Norme",
+      "textLength": 12042,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/sicurezza-a-norma-di-legge/",
+      "path": "/pagina-info/sicurezza-a-norma-di-legge/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/sicurezza-a-norma-di-legge/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-sicurezza-a-norma-di-legge-642818b84c.json",
+      "title": "Sicurezza a norma di legge — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pagina-info/sicurezza-a-norma-di-legge/",
+      "robots": "max-image-preview:large",
+      "h1": "Sicurezza a norma di legge",
+      "textLength": 6637,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/sistemi-filtranti-dpr-59-09/",
+      "path": "/pagina-info/sistemi-filtranti-dpr-59-09/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/sistemi-filtranti-dpr-59-09/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-sistemi-filtranti-dpr-59-09-acd01fe810.json",
+      "title": "Sistemi filtranti Dpr. 59/09 — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pagina-info/sistemi-filtranti-dpr-59-09/",
+      "robots": "max-image-preview:large",
+      "h1": "Sistemi filtranti Dpr. 59/09",
+      "textLength": 2138,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+      "path": "/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+      "route": {
+        "type": "info",
+        "label": "Pagina info",
+        "newPath": "/info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pagina-info-testo-unico-sulla-salute-e-sicurezza-sul-lavoro-797833af13.json",
+      "title": "Testo unico sulla salute e sicurezza sul lavoro ​ — Solaris",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+      "robots": "max-image-preview:large",
+      "h1": "Testo unico sulla salute e sicurezza sul lavoro ​",
+      "textLength": 5123,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+      "path": "/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-antigraffiti-per-vetri-la-serie-graffiti-free-20fb87b266.json",
+      "title": "Pellicole antigraffiti per vetri: la serie Graffiti Free — S",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole antigraffiti per vetri: la serie Graffiti Free",
+      "textLength": 2018,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+      "path": "/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-antisolari-di-sicurezza-la-serie-rs-2079ccb62e.json",
+      "title": "Pellicole antisolari di sicurezza, la serie RS — Solaris Fil",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Sapevi che un solo decimetro quadro di vetro può produrre fino a 200 frammenti potenzialmente mortali e affilati…",
+      "canonical": "https://www.solarisfilms.it/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole antisolari di sicurezza, la serie RS",
+      "textLength": 4219,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-antisolari-sputtered/",
+      "path": "/pellicole-antisolari-sputtered/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-antisolari-sputtered/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-antisolari-sputtered-9a240b3674.json",
+      "title": "Pellicole Antisolari Sputtered — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-antisolari-sputtered/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole Antisolari Sputtered",
+      "textLength": 5028,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-antisolari-stampabili-e-vetrofanie/",
+      "path": "/pellicole-antisolari-stampabili-e-vetrofanie/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-antisolari-stampabili-e-vetrofanie-1d1050e9ac.json",
+      "title": "Pellicole antisolari stampabili e vetrofanie — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-antisolari-stampabili-e-vetrofanie/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole antisolari stampabili e vetrofanie",
+      "textLength": 10503,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-antisolari-sunscape/",
+      "path": "/pellicole-antisolari-sunscape/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-antisolari-sunscape/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-antisolari-sunscape-6d5eec2949.json",
+      "title": "Pellicole antisolari Sunscape — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-antisolari-sunscape/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole antisolari Sunscape",
+      "textLength": 4819,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-antisolari/",
+      "path": "/pellicole-antisolari/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-antisolari/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-antisolari-2b7a629bdb.json",
+      "title": "Pellicole Antisolari — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-antisolari/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole Antisolari",
+      "textLength": 12341,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-decorative-privacy/",
+      "path": "/pellicole-decorative-privacy/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-decorative-privacy/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-decorative-privacy-0af3de949d.json",
+      "title": "Pellicole decorative privacy — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Il vetro è diventato una delle principali tendenze di design per arredare spazi di business e gli uffici, e con…",
+      "canonical": "https://www.solarisfilms.it/pellicole-decorative-privacy/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole decorative privacy",
+      "textLength": 3908,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-decorative/",
+      "path": "/pellicole-decorative/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-decorative/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-decorative-8c59ae1435.json",
+      "title": "Pellicole decorative — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-decorative/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole decorative",
+      "textLength": 6011,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
+      "path": "/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield-b50c8568cc.json",
+      "title": "Pellicole di sicurezza antiesplosione, la serie SafetyShield",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Sapevi che un solo decimetro quadro di vetro può produrre fino a 200 frammenti potenzialmente mortali e affilati…",
+      "canonical": "https://www.solarisfilms.it/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole di sicurezza antiesplosione, la serie SafetyShield",
+      "textLength": 4701,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-di-sicurezza-neutre-la-serie-cl/",
+      "path": "/pellicole-di-sicurezza-neutre-la-serie-cl/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-di-sicurezza-neutre-la-serie-cl/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-di-sicurezza-neutre-la-serie-cl-4b4b23590b.json",
+      "title": "Pellicole di sicurezza neutre, la serie CL — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Le pellicole di sicurezza neutro MADICO evitano l'esplosione del vetro in caso di urti, difetti di produzione o…",
+      "canonical": "https://www.solarisfilms.it/pellicole-di-sicurezza-neutre-la-serie-cl/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole di sicurezza neutre, la serie CL",
+      "textLength": 4017,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-di-sicurezza/",
+      "path": "/pellicole-di-sicurezza/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-di-sicurezza/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-di-sicurezza-ca5edd74ab.json",
+      "title": "Pellicole di sicurezza — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Il vetro non è più sinonimo di pericolo grazie alle pellicole di sicurezza per vetri MADICO®",
+      "canonical": "https://www.solarisfilms.it/pellicole-di-sicurezza/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole di sicurezza",
+      "textLength": 6486,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-oscuranti-per-vetri/",
+      "path": "/pellicole-oscuranti-per-vetri/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-oscuranti-per-vetri/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-oscuranti-per-vetri-d78a09776f.json",
+      "title": "Pellicole oscuranti per vetri — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-oscuranti-per-vetri/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole oscuranti per vetri",
+      "textLength": 3144,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/contact/",
+      "path": "/pellicole-per-vetri/contact/",
+      "route": {
+        "type": "page",
+        "label": "Contatti",
+        "newPath": "/contatti/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-contact-bd22eff22f.json",
+      "title": "Contattaci — Solaris Films",
+      "description": "ContattaciCompila il form e ti ricontatteremo rapidamente. Nome *Cognome *Email *Telefono *Ragione socialeCittà *RichiestaCaricamento filePuoi allegare fino a…",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/contact/",
+      "robots": "max-image-preview:large",
+      "h1": "Contattaci",
+      "textLength": 59,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
     },
     {
@@ -1598,61 +1956,42 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/thank-you/",
-      "path": "/pellicole-per-vetri/thank-you/",
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/",
+      "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/",
       "route": {
-        "type": "utility",
-        "label": "Grazie",
-        "newPath": "/grazie/",
+        "type": "product",
+        "label": "Prodotto",
+        "newPath": "/prodotti/madico-rs-20-e-ps-sr/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-thank-you-5838ea4f10.json",
-      "title": "— Solaris Films",
-      "description": "Grazie! Abbiamo ricevuto la tua richiesta. Ti ricontatteremo al più presto.",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/thank-you/",
+      "file": "pellicole-per-vetri-le-pellicole-antisolari-madico-rs-20-e-ps-sr-03d4dbfcbe.json",
+      "title": "Pellicola antisolare Madico RS 20 e PS SR 75 Micron — Solari",
+      "description": "Pellicola antisolare Madico RS 20 e PS SR 75: la soluzione ideale per chi cerca una pellicola per vetro efficace.",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/",
       "robots": "max-image-preview:large",
-      "h1": "",
-      "textLength": 75,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+      "h1": "Pellicola antisolare Madico RS 20 e PS SR 75 Micron",
+      "textLength": 2142,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-antisolari-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
-      "path": "/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
+      "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
       "route": {
-        "type": "page",
-        "label": "Preventivo",
-        "newPath": "/preventivo/",
+        "type": "product",
+        "label": "Prodotto",
+        "newPath": "/prodotti/madico-rs-40-e-ps-sr/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-pellicole-per-vetri-preventivo-84e80411a4.json",
-      "title": "Richiedi preventivo — Solaris Films",
-      "description": "Richiedi un preventivo gratuito a Solaris Films per pellicole solari, oscuranti e di sicurezza. Compila il form e ricevi una risposta in poche ore, con sopralluogo in 48h.",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+      "file": "pellicole-per-vetri-le-pellicole-antisolari-madico-rs-40-e-ps-sr-cafff1f0a7.json",
+      "title": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron — Solari",
+      "description": "La pellicola antisolare Madico RS 40 E PS SR è consigliata per vetrate con grossi problemi di insolazione e surriscaldamento.",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
       "robots": "max-image-preview:large",
-      "h1": "Richiedi preventivo",
-      "textLength": 150,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/contact/",
-      "path": "/pellicole-per-vetri/contact/",
-      "route": {
-        "type": "page",
-        "label": "Contatti",
-        "newPath": "/contatti/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-per-vetri-contact-bd22eff22f.json",
-      "title": "Contattaci — Solaris Films",
-      "description": "ContattaciCompila il form e ti ricontatteremo rapidamente. Nome *Cognome *Email *Telefono *Ragione socialeCittà *RichiestaCaricamento filePuoi allegare fino a…",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/contact/",
-      "robots": "max-image-preview:large",
-      "h1": "Contattaci",
-      "textLength": 59,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+      "h1": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron",
+      "textLength": 2646,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-antisolari-1.xml"
     },
     {
       "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madicosb20epssr/",
@@ -1731,156 +2070,42 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-antisolari-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/",
-      "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/",
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/",
+      "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/",
       "route": {
         "type": "product",
         "label": "Prodotto",
-        "newPath": "/prodotti/madico-rs-20-e-ps-sr/",
+        "newPath": "/prodotti/madico-mt-200-xw/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-le-pellicole-antisolari-madico-rs-20-e-ps-sr-03d4dbfcbe.json",
-      "title": "Pellicola antisolare Madico RS 20 e PS SR 75 Micron — Solari",
-      "description": "Pellicola antisolare Madico RS 20 e PS SR 75: la soluzione ideale per chi cerca una pellicola per vetro efficace.",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicola antisolare Madico RS 20 e PS SR 75 Micron",
-      "textLength": 2142,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-antisolari-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
-      "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
-      "route": {
-        "type": "product",
-        "label": "Prodotto",
-        "newPath": "/prodotti/madico-rs-40-e-ps-sr/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-per-vetri-le-pellicole-antisolari-madico-rs-40-e-ps-sr-cafff1f0a7.json",
-      "title": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron — Solari",
-      "description": "La pellicola antisolare Madico RS 40 E PS SR è consigliata per vetrate con grossi problemi di insolazione e surriscaldamento.",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicola antisolare Madico RS 40 E PS SR 75 Micron",
-      "textLength": 2646,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-antisolari-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/",
-      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/",
-      "route": {
-        "type": "product",
-        "label": "Prodotto",
-        "newPath": "/prodotti/madico-rs-20-ps-sr-4mil/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-rs-20-ps-sr-4mil-994a52195b.json",
-      "title": "Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL — Solari",
+      "file": "pellicole-per-vetri-pellicole-decorative-per-vetri-madico-mt-200-xw-3e22ce1e91.json",
+      "title": "Pellicola privacy Madico MT 200 XW — Solaris Films",
       "description": "",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/",
       "robots": "max-image-preview:large",
-      "h1": "Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL",
-      "textLength": 2676,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
+      "h1": "Pellicola privacy Madico MT 200 XW",
+      "textLength": 901,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-privacy-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/",
-      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/",
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
+      "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
       "route": {
         "type": "product",
         "label": "Prodotto",
-        "newPath": "/prodotti/madico-rs-20-ps-sr-8-mil/",
+        "newPath": "/prodotti/vetrofanie/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-rs-20-ps-sr-8-mil-aa0165805e.json",
-      "title": "Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL — Solari",
+      "file": "pellicole-per-vetri-pellicole-decorative-per-vetri-vetrofanie-6e1efab2e8.json",
+      "title": "vetrofanie — Solaris Films",
       "description": "",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
       "robots": "max-image-preview:large",
-      "h1": "Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL",
-      "textLength": 2677,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/",
-      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/",
-      "route": {
-        "type": "product",
-        "label": "Prodotto",
-        "newPath": "/prodotti/madico-rs-40-ps-sr-4-mil/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-rs-40-ps-sr-4-mil-765d695a70.json",
-      "title": "Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL — Solari",
-      "description": "",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL",
-      "textLength": 2669,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/",
-      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/",
-      "route": {
-        "type": "product",
-        "label": "Prodotto",
-        "newPath": "/prodotti/madico-rs-40-ps-sr-8-mil/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-rs-40-ps-sr-8-mil-dec4ab0729.json",
-      "title": "Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL — Solari",
-      "description": "",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL",
-      "textLength": 2669,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
-      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
-      "route": {
-        "type": "product",
-        "label": "Prodotto",
-        "newPath": "/prodotti/madico-safetyshield-800/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-safetyshield-800-ad8c8f5d11.json",
-      "title": "Pellicola di sicurezza Madico Safetyshield 800 — Solaris Fil",
-      "description": "",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicola di sicurezza Madico Safetyshield 800",
-      "textLength": 1320,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/",
-      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/",
-      "route": {
-        "type": "product",
-        "label": "Prodotto",
-        "newPath": "/prodotti/madico-safetyshield-1500/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-safetyshield-1500-55768c6011.json",
-      "title": "Pellicola di sicurezza Madico Safetyshield 1500 — Solaris Fi",
-      "description": "",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicola di sicurezza Madico Safetyshield 1500",
-      "textLength": 1494,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
+      "h1": "Vetrofanie, una soluzione pratica e di design",
+      "textLength": 3136,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-privacy-1.xml"
     },
     {
       "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-e-ps-sr/",
@@ -1978,61 +2203,308 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/",
-      "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/",
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/",
+      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/",
       "route": {
         "type": "product",
         "label": "Prodotto",
-        "newPath": "/prodotti/madico-mt-200-xw/",
+        "newPath": "/prodotti/madico-rs-20-ps-sr-4mil/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-pellicole-decorative-per-vetri-madico-mt-200-xw-3e22ce1e91.json",
-      "title": "Pellicola privacy Madico MT 200 XW — Solaris Films",
+      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-rs-20-ps-sr-4mil-994a52195b.json",
+      "title": "Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL — Solari",
       "description": "",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/",
       "robots": "max-image-preview:large",
-      "h1": "Pellicola privacy Madico MT 200 XW",
-      "textLength": 901,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-privacy-1.xml"
+      "h1": "Pellicola antisolare di sicurezza RS 20 PS SR 4 MIL",
+      "textLength": 2676,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
-      "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/",
+      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/",
       "route": {
         "type": "product",
         "label": "Prodotto",
-        "newPath": "/prodotti/vetrofanie/",
+        "newPath": "/prodotti/madico-rs-20-ps-sr-8-mil/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "pellicole-per-vetri-pellicole-decorative-per-vetri-vetrofanie-6e1efab2e8.json",
-      "title": "vetrofanie — Solaris Films",
+      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-rs-20-ps-sr-8-mil-aa0165805e.json",
+      "title": "Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL — Solari",
       "description": "",
-      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/",
       "robots": "max-image-preview:large",
-      "h1": "Vetrofanie, una soluzione pratica e di design",
-      "textLength": 3136,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-privacy-1.xml"
+      "h1": "Pellicola antisolare di sicurezza RS 20 PS SR 8 MIL",
+      "textLength": 2677,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
     },
     {
-      "url": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-trieste/",
-      "path": "/servizio-locale/pellicole-per-vetri-trieste/",
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/",
+      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/",
       "route": {
-        "type": "local-service",
-        "label": "Servizio locale",
-        "newPath": "/servizio-locale/trieste/",
+        "type": "product",
+        "label": "Prodotto",
+        "newPath": "/prodotti/madico-rs-40-ps-sr-4-mil/",
         "confidence": "high",
         "needsReview": false
       },
-      "file": "servizio-locale-pellicole-per-vetri-trieste-b9afdbb421.json",
-      "title": "PELLICOLE PER VETRI TRIESTE — Solaris Films",
+      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-rs-40-ps-sr-4-mil-765d695a70.json",
+      "title": "Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL — Solari",
       "description": "",
-      "canonical": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-trieste/",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/",
       "robots": "max-image-preview:large",
-      "h1": "Pellicole per vetri adesive",
-      "textLength": 1708,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-servizio-locale-1.xml"
+      "h1": "Pellicola antisolare di sicurezza RS 40 PS SR 4 MIL",
+      "textLength": 2669,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/",
+      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/",
+      "route": {
+        "type": "product",
+        "label": "Prodotto",
+        "newPath": "/prodotti/madico-rs-40-ps-sr-8-mil/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-rs-40-ps-sr-8-mil-dec4ab0729.json",
+      "title": "Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL — Solari",
+      "description": "",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicola antisolare di sicurezza RS 40 PS SR 8 MIL",
+      "textLength": 2669,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/",
+      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/",
+      "route": {
+        "type": "product",
+        "label": "Prodotto",
+        "newPath": "/prodotti/madico-safetyshield-1500/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-safetyshield-1500-55768c6011.json",
+      "title": "Pellicola di sicurezza Madico Safetyshield 1500 — Solaris Fi",
+      "description": "",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicola di sicurezza Madico Safetyshield 1500",
+      "textLength": 1494,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
+      "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
+      "route": {
+        "type": "product",
+        "label": "Prodotto",
+        "newPath": "/prodotti/madico-safetyshield-800/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-pellicole-di-sicurezza-madico-safetyshield-800-ad8c8f5d11.json",
+      "title": "Pellicola di sicurezza Madico Safetyshield 800 — Solaris Fil",
+      "description": "",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicola di sicurezza Madico Safetyshield 800",
+      "textLength": 1320,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pellicole-sicurezza-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/",
+      "path": "/pellicole-per-vetri/pellicole-per-vetri/",
+      "route": {
+        "type": "service-index",
+        "label": "Pellicole per vetri",
+        "newPath": "/servizi/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-pellicole-per-vetri-67c2cb1ec4.json",
+      "title": "Pellicole per vetri — Solaris Films",
+      "description": "Scopri le pellicole per vetri per una maggiore sostenibilità e comfort. Affidati ai professionisti con oltre 30 anni di esperienza.",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri",
+      "textLength": 19,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/about/",
+      "path": "/pellicole-per-vetri/pellicole-per-vetri/about/",
+      "route": {
+        "type": "company",
+        "label": "Company Profile",
+        "newPath": "/company-profile/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-pellicole-per-vetri-about-5037fcb67b.json",
+      "title": "Company Profile Solaris",
+      "description": "Company profile Solaris Films: specialisti delle pellicole per vetri, con esperienza nazionale, competenza tecnica e posa professionale.",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/about/",
+      "robots": "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      "h1": "Chi siamo?",
+      "textLength": 3642,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/faq/",
+      "path": "/pellicole-per-vetri/pellicole-per-vetri/faq/",
+      "route": {
+        "type": "faq",
+        "label": "FAQ",
+        "newPath": "/faq/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-pellicole-per-vetri-faq-16e0deea5f.json",
+      "title": "FAQ — Solaris Films",
+      "description": "Risposte celeri e concrete per le problematiche più frequenti. Un aiuto per ogni esigenza e ogni difficoltà",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/faq/",
+      "robots": "max-image-preview:large",
+      "h1": "FAQ",
+      "textLength": 2356,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che/",
+      "path": "/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che/",
+      "route": {
+        "type": "knowledge-index",
+        "label": "Lo sapevi che?",
+        "newPath": "/lo-sapevi-che/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-pellicole-per-vetri-lo-sapevi-che-546a8eca9e.json",
+      "title": "Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni",
+      "description": "Pellicole per vetri - Distributore ed installatore da 30+ anni",
+      "canonical": "https://www.solarisfilms.it/",
+      "robots": "max-image-preview:large",
+      "h1": "",
+      "textLength": 0,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+      "path": "/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+      "route": {
+        "type": "page",
+        "label": "Preventivo",
+        "newPath": "/preventivo/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-pellicole-per-vetri-preventivo-84e80411a4.json",
+      "title": "Richiedi preventivo — Solaris Films",
+      "description": "Richiedi un preventivo gratuito a Solaris Films per pellicole solari, oscuranti e di sicurezza. Compila il form e ricevi una risposta in poche ore, con sopralluogo in 48h.",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/preventivo/",
+      "robots": "max-image-preview:large",
+      "h1": "Richiedi preventivo",
+      "textLength": 150,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
+      "path": "/pellicole-per-vetri/privacy-policy/",
+      "route": {
+        "type": "legal",
+        "label": "Privacy",
+        "newPath": "/privacy-policy/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-privacy-policy-f02e181b28.json",
+      "title": "Privacy Policy — Solaris Films",
+      "description": "INFORMATIVA SULLA PRIVACYGentile clienteIl Regolamento Europeo in materia di protezione dei dati personali (GDPR) agli artt. 13 e 14, commi 1, imponel’obbligo…",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/privacy-policy/",
+      "robots": "max-image-preview:large",
+      "h1": "Privacy Policy",
+      "textLength": 1652,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-per-vetri/thank-you/",
+      "path": "/pellicole-per-vetri/thank-you/",
+      "route": {
+        "type": "utility",
+        "label": "Grazie",
+        "newPath": "/grazie/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-per-vetri-thank-you-5838ea4f10.json",
+      "title": "— Solaris Films",
+      "description": "Grazie! Abbiamo ricevuto la tua richiesta. Ti ricontatteremo al più presto.",
+      "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/thank-you/",
+      "robots": "max-image-preview:large",
+      "h1": "",
+      "textLength": 75,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-riflettenti/",
+      "path": "/pellicole-riflettenti/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-riflettenti/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-riflettenti-7720d3d025.json",
+      "title": "Pellicole riflettenti — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-riflettenti/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole riflettenti",
+      "textLength": 3427,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-spettro-selettive/",
+      "path": "/pellicole-spettro-selettive/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-spettro-selettive/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-spettro-selettive-c154af22a1.json",
+      "title": "Pellicole spettro selettive — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
+      "canonical": "https://www.solarisfilms.it/pellicole-spettro-selettive/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole spettro selettive",
+      "textLength": 4041,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
+    },
+    {
+      "url": "https://www.solarisfilms.it/pellicole-termoisolanti/",
+      "path": "/pellicole-termoisolanti/",
+      "route": {
+        "type": "technical-focus",
+        "label": "Focus tecnico",
+        "newPath": "/focus-tecnico/pellicole-termoisolanti/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "pellicole-termoisolanti-21b06eb296.json",
+      "title": "Pellicole termoisolanti — Solaris Films",
+      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Solaris Films vi propone la soluzione migliore per creare un cappotto termico per le vostre vetrate attraverso l'uso…",
+      "canonical": "https://www.solarisfilms.it/pellicole-termoisolanti/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole termoisolanti",
+      "textLength": 2824,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
     },
     {
       "url": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-ancona/",
@@ -2396,6 +2868,25 @@
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-servizio-locale-1.xml"
     },
     {
+      "url": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-trieste/",
+      "path": "/servizio-locale/pellicole-per-vetri-trieste/",
+      "route": {
+        "type": "local-service",
+        "label": "Servizio locale",
+        "newPath": "/servizio-locale/trieste/",
+        "confidence": "high",
+        "needsReview": false
+      },
+      "file": "servizio-locale-pellicole-per-vetri-trieste-b9afdbb421.json",
+      "title": "PELLICOLE PER VETRI TRIESTE — Solaris Films",
+      "description": "",
+      "canonical": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-trieste/",
+      "robots": "max-image-preview:large",
+      "h1": "Pellicole per vetri adesive",
+      "textLength": 1708,
+      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-servizio-locale-1.xml"
+    },
+    {
       "url": "https://www.solarisfilms.it/servizio-locale/pellicole-per-vetri-udine/",
       "path": "/servizio-locale/pellicole-per-vetri-udine/",
       "route": {
@@ -2432,481 +2923,7 @@
       "h1": "Pellicole per vetri adesive",
       "textLength": 1751,
       "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-servizio-locale-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/norme/",
-      "path": "/pagina-info/norme/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/norme/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-norme-2a7bf84aaa.json",
-      "title": "Norme — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pagina-info/norme/",
-      "robots": "max-image-preview:large",
-      "h1": "Norme",
-      "textLength": 12042,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/norma-brc/",
-      "path": "/pagina-info/norma-brc/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/norma-brc/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-norma-brc-728d26b1b9.json",
-      "title": "Norma BRC — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pagina-info/norma-brc/",
-      "robots": "max-image-preview:large",
-      "h1": "Norma BRC",
-      "textLength": 11500,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/sicurezza-a-norma-di-legge/",
-      "path": "/pagina-info/sicurezza-a-norma-di-legge/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/sicurezza-a-norma-di-legge/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-sicurezza-a-norma-di-legge-642818b84c.json",
-      "title": "Sicurezza a norma di legge — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pagina-info/sicurezza-a-norma-di-legge/",
-      "robots": "max-image-preview:large",
-      "h1": "Sicurezza a norma di legge",
-      "textLength": 6637,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
-      "path": "/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-testo-unico-sulla-salute-e-sicurezza-sul-lavoro-797833af13.json",
-      "title": "Testo unico sulla salute e sicurezza sul lavoro ​ — Solaris",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
-      "robots": "max-image-preview:large",
-      "h1": "Testo unico sulla salute e sicurezza sul lavoro ​",
-      "textLength": 5123,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/sistemi-filtranti-dpr-59-09/",
-      "path": "/pagina-info/sistemi-filtranti-dpr-59-09/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/sistemi-filtranti-dpr-59-09/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-sistemi-filtranti-dpr-59-09-acd01fe810.json",
-      "title": "Sistemi filtranti Dpr. 59/09 — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pagina-info/sistemi-filtranti-dpr-59-09/",
-      "robots": "max-image-preview:large",
-      "h1": "Sistemi filtranti Dpr. 59/09",
-      "textLength": 2138,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/certificazione-nfrc/",
-      "path": "/pagina-info/certificazione-nfrc/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/certificazione-nfrc/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-certificazione-nfrc-59cebb888a.json",
-      "title": "Certificazione NFRC — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pagina-info/certificazione-nfrc/",
-      "robots": "max-image-preview:large",
-      "h1": "Certificazione NFRC",
-      "textLength": 4910,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/i-punti-di-forza/",
-      "path": "/pagina-info/i-punti-di-forza/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/i-punti-di-forza/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-i-punti-di-forza-8d91a7dae9.json",
-      "title": "I punti di forza — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 I PUNTI DI FORZA DELLE PELLICOLE ANTISOLARI MADICO",
-      "canonical": "https://www.solarisfilms.it/pagina-info/i-punti-di-forza/",
-      "robots": "max-image-preview:large",
-      "h1": "I punti di forza",
-      "textLength": 2967,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/istruzioni-e-manutenzione/",
-      "path": "/pagina-info/istruzioni-e-manutenzione/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/istruzioni-e-manutenzione/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-istruzioni-e-manutenzione-d6a734a4fe.json",
-      "title": "Istruzione e manutenzione — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pagina-info/istruzioni-e-manutenzione/",
-      "robots": "max-image-preview:large",
-      "h1": "Istruzione e manutenzione",
-      "textLength": 3447,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/garanzie/",
-      "path": "/pagina-info/garanzie/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/garanzie/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-garanzie-4d3f10447f.json",
-      "title": "Garanzie — Solaris Films",
-      "description": "Madico Inc. USA, riconosce la garanzia per le pellicole installate in Italia da installatori autorizzati Solaris Films s.r.l. Distributore Ufficiale Nazionale.…",
-      "canonical": "https://www.solarisfilms.it/pagina-info/garanzie/",
-      "robots": "max-image-preview:large",
-      "h1": "Garanzie",
-      "textLength": 251,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pagina-info/glossario-termini/",
-      "path": "/pagina-info/glossario-termini/",
-      "route": {
-        "type": "info",
-        "label": "Pagina info",
-        "newPath": "/info/glossario-termini/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pagina-info-glossario-termini-4fc5b29a77.json",
-      "title": "Glossario termini — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pagina-info/glossario-termini/",
-      "robots": "max-image-preview:large",
-      "h1": "Glossario termini",
-      "textLength": 1836,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-pagine-info-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-antisolari/",
-      "path": "/pellicole-antisolari/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-antisolari/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-antisolari-2b7a629bdb.json",
-      "title": "Pellicole Antisolari — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-antisolari/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole Antisolari",
-      "textLength": 12341,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-di-sicurezza/",
-      "path": "/pellicole-di-sicurezza/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-di-sicurezza/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-di-sicurezza-ca5edd74ab.json",
-      "title": "Pellicole di sicurezza — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Il vetro non è più sinonimo di pericolo grazie alle pellicole di sicurezza per vetri MADICO®",
-      "canonical": "https://www.solarisfilms.it/pellicole-di-sicurezza/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole di sicurezza",
-      "textLength": 6486,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-antisolari-sputtered/",
-      "path": "/pellicole-antisolari-sputtered/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-antisolari-sputtered/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-antisolari-sputtered-9a240b3674.json",
-      "title": "Pellicole Antisolari Sputtered — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-antisolari-sputtered/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole Antisolari Sputtered",
-      "textLength": 5028,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-antisolari-sunscape/",
-      "path": "/pellicole-antisolari-sunscape/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-antisolari-sunscape/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-antisolari-sunscape-6d5eec2949.json",
-      "title": "Pellicole antisolari Sunscape — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-antisolari-sunscape/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole antisolari Sunscape",
-      "textLength": 4819,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-oscuranti-per-vetri/",
-      "path": "/pellicole-oscuranti-per-vetri/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-oscuranti-per-vetri/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-oscuranti-per-vetri-d78a09776f.json",
-      "title": "Pellicole oscuranti per vetri — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-oscuranti-per-vetri/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole oscuranti per vetri",
-      "textLength": 3144,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-riflettenti/",
-      "path": "/pellicole-riflettenti/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-riflettenti/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-riflettenti-7720d3d025.json",
-      "title": "Pellicole riflettenti — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-riflettenti/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole riflettenti",
-      "textLength": 3427,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-spettro-selettive/",
-      "path": "/pellicole-spettro-selettive/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-spettro-selettive/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-spettro-selettive-c154af22a1.json",
-      "title": "Pellicole spettro selettive — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-spettro-selettive/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole spettro selettive",
-      "textLength": 4041,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-di-sicurezza-neutre-la-serie-cl/",
-      "path": "/pellicole-di-sicurezza-neutre-la-serie-cl/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-di-sicurezza-neutre-la-serie-cl/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-di-sicurezza-neutre-la-serie-cl-4b4b23590b.json",
-      "title": "Pellicole di sicurezza neutre, la serie CL — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Le pellicole di sicurezza neutro MADICO evitano l'esplosione del vetro in caso di urti, difetti di produzione o…",
-      "canonical": "https://www.solarisfilms.it/pellicole-di-sicurezza-neutre-la-serie-cl/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole di sicurezza neutre, la serie CL",
-      "textLength": 4017,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
-      "path": "/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield-b50c8568cc.json",
-      "title": "Pellicole di sicurezza antiesplosione, la serie SafetyShield",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Sapevi che un solo decimetro quadro di vetro può produrre fino a 200 frammenti potenzialmente mortali e affilati…",
-      "canonical": "https://www.solarisfilms.it/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole di sicurezza antiesplosione, la serie SafetyShield",
-      "textLength": 4701,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-antisolari-di-sicurezza-la-serie-rs/",
-      "path": "/pellicole-antisolari-di-sicurezza-la-serie-rs/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-antisolari-di-sicurezza-la-serie-rs/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-antisolari-di-sicurezza-la-serie-rs-2079ccb62e.json",
-      "title": "Pellicole antisolari di sicurezza, la serie RS — Solaris Fil",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Sapevi che un solo decimetro quadro di vetro può produrre fino a 200 frammenti potenzialmente mortali e affilati…",
-      "canonical": "https://www.solarisfilms.it/pellicole-antisolari-di-sicurezza-la-serie-rs/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole antisolari di sicurezza, la serie RS",
-      "textLength": 4219,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
-      "path": "/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-antigraffiti-per-vetri-la-serie-graffiti-free-20fb87b266.json",
-      "title": "Pellicole antigraffiti per vetri: la serie Graffiti Free — S",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole antigraffiti per vetri: la serie Graffiti Free",
-      "textLength": 2018,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-decorative/",
-      "path": "/pellicole-decorative/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-decorative/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-decorative-8c59ae1435.json",
-      "title": "Pellicole decorative — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-decorative/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole decorative",
-      "textLength": 6011,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-antisolari-stampabili-e-vetrofanie/",
-      "path": "/pellicole-antisolari-stampabili-e-vetrofanie/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-antisolari-stampabili-e-vetrofanie-1d1050e9ac.json",
-      "title": "Pellicole antisolari stampabili e vetrofanie — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983",
-      "canonical": "https://www.solarisfilms.it/pellicole-antisolari-stampabili-e-vetrofanie/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole antisolari stampabili e vetrofanie",
-      "textLength": 10503,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-decorative-privacy/",
-      "path": "/pellicole-decorative-privacy/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-decorative-privacy/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-decorative-privacy-0af3de949d.json",
-      "title": "Pellicole decorative privacy — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Il vetro è diventato una delle principali tendenze di design per arredare spazi di business e gli uffici, e con…",
-      "canonical": "https://www.solarisfilms.it/pellicole-decorative-privacy/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole decorative privacy",
-      "textLength": 3908,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
-    },
-    {
-      "url": "https://www.solarisfilms.it/pellicole-termoisolanti/",
-      "path": "/pellicole-termoisolanti/",
-      "route": {
-        "type": "technical-focus",
-        "label": "Focus tecnico",
-        "newPath": "/focus-tecnico/pellicole-termoisolanti/",
-        "confidence": "high",
-        "needsReview": false
-      },
-      "file": "pellicole-termoisolanti-21b06eb296.json",
-      "title": "Pellicole termoisolanti — Solaris Films",
-      "description": "DISTRIBUTORE DI PELLICOLE PER VETRI DAL 1983 Solaris Films vi propone la soluzione migliore per creare un cappotto termico per le vostre vetrate attraverso l'uso…",
-      "canonical": "https://www.solarisfilms.it/pellicole-termoisolanti/",
-      "robots": "max-image-preview:large",
-      "h1": "Pellicole termoisolanti",
-      "textLength": 2824,
-      "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-focus-tecnico-1.xml"
     }
-  ]
+  ],
+  "generatedAt": "2026-06-21T17:58:31.988Z"
 }

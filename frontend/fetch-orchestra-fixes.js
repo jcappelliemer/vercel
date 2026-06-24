@@ -16,7 +16,7 @@
  *   WP_FETCH_TIMEOUT_MS   per-request timeout (default 8000).
  *
  * Output: src/data/orchestra-fixes.json
- *   { contract, generatedAt, byPath: { "/": {post_id,modified_at,meta,aeo}, "/chi-siamo": {..} } }
+ *   { contract, generatedAt, byPath: { "/": {post_id,modified_at,meta,aeo,score}, "/chi-siamo": {..} } }
  *   key = normalized frontend_url path ("/" for home, no trailing slash).
  */
 const http = require('http');
@@ -99,6 +99,47 @@ function normPath(frontendUrl) {
   } catch (e) { return null; }
 }
 
+function numberOrNull(value) {
+  if (value === null || value === undefined || value === '') return null;
+  const num = Number(value);
+  return Number.isFinite(num) ? Math.round(num) : null;
+}
+
+function normalizeScore(page) {
+  const rawScore =
+    page.score ||
+    page.scores ||
+    page.aeo_score ||
+    (page.aeo && (page.aeo.score || page.aeo.scores || page.aeo.aeo_score)) ||
+    (page.analysis && page.analysis.score) ||
+    (page.meta && page.meta.score) ||
+    null;
+
+  if (!rawScore) return null;
+
+  if (typeof rawScore === 'number' || typeof rawScore === 'string') {
+    const value = numberOrNull(rawScore);
+    return value === null ? null : { aeo: value };
+  }
+
+  const score = {};
+  const seo = numberOrNull(rawScore.seo ?? rawScore.SEO ?? rawScore.seo_score ?? rawScore.seoScore);
+  const aeo = numberOrNull(rawScore.aeo ?? rawScore.AEO ?? rawScore.aeo_score ?? rawScore.aeoScore);
+  const analyzedAt =
+    rawScore.analyzed_at ||
+    rawScore.analyzedAt ||
+    rawScore.analyzed ||
+    page.analyzed_at ||
+    page.analyzedAt ||
+    null;
+
+  if (seo !== null) score.seo = seo;
+  if (aeo !== null) score.aeo = aeo;
+  if (analyzedAt) score.analyzed_at = analyzedAt;
+
+  return Object.keys(score).length ? score : null;
+}
+
 function nextLink(linkHeader) {
   if (!linkHeader) return null;
   const part = String(linkHeader).split(',').map((s) => s.trim()).find((s) => /rel="next"/.test(s));
@@ -124,6 +165,7 @@ async function main() {
         modified_at: p.modified_at,
         meta: p.meta || {},
         aeo: p.aeo || {},
+        score: normalizeScore(p),
       };
     }
     url = nextLink(headers && headers.link);

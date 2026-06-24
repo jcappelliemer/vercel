@@ -25,6 +25,38 @@ function normPath(p) {
   return s || '/';
 }
 
+function hasSchemaType(schema, type) {
+  if (!schema) return false;
+  if (Array.isArray(schema)) return schema.some((item) => hasSchemaType(item, type));
+  if (typeof schema !== 'object') return false;
+
+  const schemaType = schema['@type'];
+  if (Array.isArray(schemaType) && schemaType.includes(type)) return true;
+  if (schemaType === type) return true;
+  if (schema['@graph']) return hasSchemaType(schema['@graph'], type);
+
+  return false;
+}
+
+function cleanSchemaText(value) {
+  return String(value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
+}
+
+function buildFaqSchema(items) {
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: items.map((item) => ({
+      '@type': 'Question',
+      name: cleanSchemaText(item.q),
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: cleanSchemaText(item.a),
+      },
+    })),
+  };
+}
+
 export default function OrchestraConnector({ path, headOnly }) {
   const loc = useLocation();
   const key = normPath(path || (loc && loc.pathname) || '/');
@@ -36,7 +68,10 @@ export default function OrchestraConnector({ path, headOnly }) {
   const faqItems = Array.isArray(aeo.faq)
     ? aeo.faq.map((x) => ({ q: x.q || x.question || '', a: x.a || x.answer || '' })).filter((x) => x.q && x.a)
     : [];
-  const hasHead = meta.title || meta.description || meta.keywords || aeo.schema_jsonld;
+  const faqSchema = faqItems.length && !hasSchemaType(aeo.schema_jsonld, 'FAQPage')
+    ? buildFaqSchema(faqItems)
+    : null;
+  const hasHead = meta.title || meta.description || meta.keywords || aeo.schema_jsonld || faqSchema;
 
   return (
     <>
@@ -47,6 +82,9 @@ export default function OrchestraConnector({ path, headOnly }) {
           {meta.keywords ? <meta name="keywords" content={meta.keywords} /> : null}
           {aeo.schema_jsonld ? (
             <script type="application/ld+json">{JSON.stringify(aeo.schema_jsonld)}</script>
+          ) : null}
+          {faqSchema ? (
+            <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
           ) : null}
         </Helmet>
       ) : null}

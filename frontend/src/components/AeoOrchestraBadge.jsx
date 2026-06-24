@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useRouter } from "next/router";
 import fixes from "../data/orchestra-fixes.json";
 
 function normalizePath(pathname) {
@@ -26,8 +26,8 @@ function readAeoScore(entry) {
 }
 
 export default function AeoOrchestraBadge() {
-  const location = useLocation();
-  const path = normalizePath(location.pathname);
+  const router = useRouter();
+  const path = normalizePath(router.asPath || router.pathname || "/");
   const fallbackPath = path === "/" ? null : `${path}/`;
   const entry = fixes?.byPath?.[path] || (fallbackPath ? fixes?.byPath?.[fallbackPath] : null);
   const aeoScore = readAeoScore(entry);

@@ -15,6 +15,7 @@ import SiteMapPage from "./pages/SiteMapPage";
 import PaginaInfoPagina from "./pages/PaginaInfoPagina";
 import Analytics from "./components/Analytics";
 import WhatsAppButton from "./components/WhatsAppButton";
+import AeoOrchestraBadge from "./components/AeoOrchestraBadge";
 
 const ScrollToTop = () => {
   const { pathname, search, hash } = useLocation();
@@ -108,6 +109,7 @@ function App() {
           <Route path="*" element={<LiveMirrorPage />} />
         </Routes>
         <WhatsAppButton />
+        <AeoOrchestraBadge />
         </BrowserRouter>
       </SettingsProvider>
     </div>

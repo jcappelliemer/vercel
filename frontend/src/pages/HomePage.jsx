@@ -16,7 +16,7 @@ import Testimonials from '../components/Testimonials';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
-import SEO, { buildOrganizationSchema } from '../components/SEO';
+import SEO from '../components/SEO';
 import { motion } from 'framer-motion';
 import { Link } from '@/next/router-shim';
 import { ArrowRight, Buildings, Camera, Ruler } from '@phosphor-icons/react';
@@ -104,7 +104,7 @@ const CTASection = () => {
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="home-page">
-      <SEO path="/" jsonLd={buildOrganizationSchema()} />
+      <SEO path="/" />
       {/* A.4-bis: head-block del manifest (schema_jsonld + meta keywords/title/desc).
           SOLO head — FAQ e authority sono montate in slot body separati. */}
       <OrchestraConnector headOnly />

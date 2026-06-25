@@ -59,6 +59,52 @@ function sanitizeSchemaJsonLd(schema) {
   return schema;
 }
 
+function removeTopLevelSchemaType(schema, type) {
+  if (!schema) return null;
+  if (Array.isArray(schema)) {
+    const cleaned = schema
+      .filter((item) => !isSchemaType(item, type))
+      .map((item) => removeTopLevelSchemaType(item, type))
+      .filter(Boolean);
+    return cleaned.length ? cleaned : null;
+  }
+  if (typeof schema !== 'object') return schema;
+  if (isSchemaType(schema, type)) return null;
+
+  if (schema['@graph']) {
+    const graph = Array.isArray(schema['@graph'])
+      ? schema['@graph'].filter((item) => !isSchemaType(item, type))
+      : schema['@graph'];
+    return { ...schema, '@graph': graph };
+  }
+
+  return schema;
+}
+
+function parseJsonObject(value) {
+  if (!value) return null;
+  if (typeof value === 'object' && !Array.isArray(value)) return value;
+  if (typeof value !== 'string') return null;
+
+  try {
+    const parsed = JSON.parse(value);
+    return parsed && typeof parsed === 'object' && !Array.isArray(parsed) ? parsed : null;
+  } catch {
+    return null;
+  }
+}
+
+function buildOrganizationJsonLd(value) {
+  const organization = parseJsonObject(value);
+  if (!organization) return null;
+
+  return {
+    ...organization,
+    '@context': organization['@context'] || 'https://schema.org',
+    '@type': organization['@type'] || 'Organization',
+  };
+}
+
 function cleanSchemaText(value) {
   return String(value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
@@ -82,16 +128,20 @@ export default function OrchestraConnector({ path, headOnly }) {
   const loc = useLocation();
   const key = normalizeOrchestraPath(path || (loc && loc.pathname) || '/');
   const entry = fixes && fixes.byPath ? fixes.byPath[key] : null;
-  if (!entry) return null;
+  if (!entry && key !== '/') return null;
 
-  const aeo = entry.aeo || {};
-  const meta = entry.meta || {};
+  const aeo = entry?.aeo || {};
+  const meta = entry?.meta || {};
   const faqItems = normalizeFaqItems(aeo.faq);
-  const schemaJsonLd = sanitizeSchemaJsonLd(aeo.schema_jsonld);
+  const organizationSchema = buildOrganizationJsonLd(aeo.organization);
+  const rawSchemaJsonLd = organizationSchema
+    ? removeTopLevelSchemaType(aeo.schema_jsonld, 'Organization')
+    : aeo.schema_jsonld;
+  const schemaJsonLd = sanitizeSchemaJsonLd(rawSchemaJsonLd);
   const faqSchema = faqItems.length && !hasSchemaType(schemaJsonLd, 'FAQPage')
     ? buildFaqSchema(faqItems)
     : null;
-  const hasHead = meta.title || meta.description || meta.keywords || schemaJsonLd || faqSchema;
+  const hasHead = meta.title || meta.description || meta.keywords || organizationSchema || schemaJsonLd || faqSchema;
 
   return (
     <>
@@ -100,6 +150,9 @@ export default function OrchestraConnector({ path, headOnly }) {
           {meta.title ? <title>{meta.title}</title> : null}
           {meta.description ? <meta name="description" content={meta.description} /> : null}
           {meta.keywords ? <meta name="keywords" content={meta.keywords} /> : null}
+          {organizationSchema ? (
+            <script type="application/ld+json">{JSON.stringify(organizationSchema)}</script>
+          ) : null}
           {schemaJsonLd ? (
             <script type="application/ld+json">{JSON.stringify(schemaJsonLd)}</script>
           ) : null}
@@ -108,7 +161,7 @@ export default function OrchestraConnector({ path, headOnly }) {
           ) : null}
         </Helmet>
       ) : null}
-      {/* headOnly: la Home rende già le FAQ nel body; authority vive nello slot pre-footer dedicato. */}
+      {/* headOnly: la Home rende gia le FAQ nel body; authority vive nello slot pre-footer dedicato. */}
       {!headOnly && faqItems.length ? <FAQ items={faqItems} /> : null}
       {!headOnly && aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
     </>

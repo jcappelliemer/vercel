@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { CaretDown, Question } from '@phosphor-icons/react';
 import fixes from '../data/orchestra-fixes.json';
+import { normalizeFaqItems } from '../utils/orchestraBlocks';
 
 const FALLBACK_FAQ = [
   {
@@ -59,16 +60,14 @@ const FALLBACK_FAQ = [
 const _orchFaq = fixes && fixes.byPath && fixes.byPath['/'] && fixes.byPath['/'].aeo
   ? fixes.byPath['/'].aeo.faq
   : null;
-const HOME_FAQ = (Array.isArray(_orchFaq) && _orchFaq.length)
-  ? _orchFaq
-      .map((x) => ({ q: x.q || x.question || '', a: x.a || x.answer || '' }))
-      .filter((x) => x.q && x.a)
-  : FALLBACK_FAQ;
+const ORCHESTRA_HOME_FAQ = normalizeFaqItems(_orchFaq);
+const HOME_FAQ = ORCHESTRA_HOME_FAQ.length ? ORCHESTRA_HOME_FAQ : FALLBACK_FAQ;
 
 // A.4: reusable across templates — pass `items` (per-path FAQ from the connector);
 // no prop = home behaviour (orchestra '/' or hardcoded fallback). Zero home change.
 const FAQ = ({ items }) => {
-  const faqItems = (Array.isArray(items) && items.length) ? items : HOME_FAQ;
+  const normalizedItems = normalizeFaqItems(items);
+  const faqItems = normalizedItems.length ? normalizedItems : HOME_FAQ;
   const [openIndex, setOpenIndex] = useState(null);
 
   return (

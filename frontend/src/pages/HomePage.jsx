@@ -106,7 +106,7 @@ const HomePage = () => {
     <div className="min-h-screen bg-[#0A0F1C]" data-testid="home-page">
       <SEO path="/" jsonLd={buildOrganizationSchema()} />
       {/* A.4-bis: head-block del manifest (schema_jsonld + meta keywords/title/desc).
-          SOLO head — FAQ + Authority restano nel body via A.2/A.3 (no doppioni). */}
+          SOLO head — FAQ e authority sono montate in slot body separati. */}
       <OrchestraConnector headOnly />
       <Header />
       <main>
@@ -115,7 +115,6 @@ const HomePage = () => {
         <NeedGuide />
         <Services />
         <DecisionProof />
-        <Authority />
         <FocusTecnici />
         <Process />
         <LoSapeviChe />
@@ -125,6 +124,7 @@ const HomePage = () => {
         <Testimonials />
         <FAQ />
         <CTASection />
+        <Authority />
       </main>
       <Footer />
       <ChatBot />

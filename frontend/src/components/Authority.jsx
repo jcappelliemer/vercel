@@ -46,7 +46,7 @@ export default function Authority({ html: htmlProp, path, trustSignals: trustSig
                     Perché Solaris
                   </p>
                   <h2 className="mt-3 text-3xl font-semibold text-white md:text-4xl">
-                    La nostra autorità
+                    Authority
                   </h2>
                 </div>
                 <div className="h-px w-full bg-gradient-to-r from-[#EAB308]/70 to-transparent md:w-64" />

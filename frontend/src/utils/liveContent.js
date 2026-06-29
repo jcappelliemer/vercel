@@ -138,7 +138,10 @@ export const getLiveTitle = (page = {}) => {
 
 export const getLiveDescription = (page = {}) => page.description || page.seo?.description || '';
 
-export const getLivePath = (page = {}) => page.route?.newPath || page.path || '/';
+export const getLivePath = (page = {}) => {
+  if (page.route?.type === 'product') return page.route?.newPath || page.path || '/';
+  return page.path || page.route?.newPath || '/';
+};
 
 export const byTitle = (a, b) => getLiveTitle(a).localeCompare(getLiveTitle(b), 'it');
 

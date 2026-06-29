@@ -1118,8 +1118,13 @@ function buildSitemap(pages) {
   const sitemapPaths = Array.from(new Set([
     ...pages
       .filter((page) => !/noindex/i.test(page.seo.robots || ''))
+      .filter((page) => page.route?.type !== 'knowledge-index')
       .map((page) => {
-        return canonicalSitemapPath(page.route.newPath);
+        const routeType = page.route?.type;
+        const pathname = routeType === 'product'
+          ? page.route?.newPath
+          : page.path;
+        return canonicalSitemapPath(pathname);
       }),
     ...APP_ONLY_SITEMAP_PATHS,
   ].map(canonicalSitemapPath).filter((newPath) => !isExcludedProductUrl(newPath))));

@@ -14,7 +14,7 @@ export const SERVICE_FAMILIES = [
   {
     key: 'antisolari',
     route: '/servizi#antisolari',
-    ctaRoute: '/focus-tecnico/pellicole-antisolari/',
+    ctaRoute: '/pellicole-antisolari/',
     livePath: '/pellicole-per-vetri/le-pellicole-antisolari/',
     title: 'Pellicole antisolari',
     menuLabel: 'Pellicole Antisolari',
@@ -26,12 +26,12 @@ export const SERVICE_FAMILIES = [
     menuRole: 'Indicata quando il problema principale è gestire calore, abbagliamento, raggi UV e comfort negli ambienti esposti.',
     productOldPathIncludes: ['/pellicole-per-vetri/le-pellicole-antisolari/'],
     focusPaths: [
-      '/focus-tecnico/pellicole-antisolari/',
-      '/focus-tecnico/pellicole-antisolari-sputtered/',
-      '/focus-tecnico/pellicole-antisolari-sunscape/',
-      '/focus-tecnico/pellicole-oscuranti-per-vetri/',
-      '/focus-tecnico/pellicole-riflettenti/',
-      '/focus-tecnico/pellicole-spettro-selettive/',
+      '/pellicole-antisolari/',
+      '/pellicole-antisolari-sputtered/',
+      '/pellicole-antisolari-sunscape/',
+      '/pellicole-oscuranti-per-vetri/',
+      '/pellicole-riflettenti/',
+      '/pellicole-spettro-selettive/',
     ],
     stats: [
       { value: '99%', label: 'raggi UV schermati' },
@@ -54,7 +54,7 @@ export const SERVICE_FAMILIES = [
   {
     key: 'sicurezza',
     route: '/servizi#sicurezza',
-    ctaRoute: '/focus-tecnico/pellicole-di-sicurezza/',
+    ctaRoute: '/pellicole-di-sicurezza/',
     livePath: '/pellicole-per-vetri/pellicole-di-sicurezza/',
     title: 'Pellicole di sicurezza',
     menuLabel: 'Pellicole di Sicurezza',
@@ -66,11 +66,11 @@ export const SERVICE_FAMILIES = [
     menuRole: 'Indicata quando il vetro deve trattenere i frammenti, aumentare la resistenza o rispondere a requisiti di sicurezza.',
     productOldPathIncludes: ['/pellicole-per-vetri/pellicole-di-sicurezza/'],
     focusPaths: [
-      '/focus-tecnico/pellicole-di-sicurezza/',
-      '/focus-tecnico/pellicole-di-sicurezza-neutre-la-serie-cl/',
-      '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/',
-      '/focus-tecnico/pellicole-antisolari-di-sicurezza-la-serie-rs/',
-      '/focus-tecnico/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/',
+      '/pellicole-di-sicurezza/',
+      '/pellicole-di-sicurezza-neutre-la-serie-cl/',
+      '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/',
+      '/pellicole-antisolari-di-sicurezza-la-serie-rs/',
+      '/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/',
     ],
     stats: [
       { value: 'UNI EN 12600', label: 'riferimento sicurezza vetri' },
@@ -93,7 +93,7 @@ export const SERVICE_FAMILIES = [
   {
     key: 'decorative',
     route: '/servizi#decorative',
-    ctaRoute: '/focus-tecnico/pellicole-decorative/',
+    ctaRoute: '/pellicole-decorative/',
     livePath: '/pellicole-per-vetri/pellicole-decorative-per-vetri/',
     title: 'Pellicole privacy e design',
     menuLabel: 'Pellicole Privacy & Design',
@@ -105,9 +105,9 @@ export const SERVICE_FAMILIES = [
     menuRole: 'Indicata quando servono privacy visiva, immagine coordinata, segnaletica o una finitura decorativa su superfici vetrate.',
     productOldPathIncludes: ['/pellicole-per-vetri/pellicole-decorative-per-vetri/'],
     focusPaths: [
-      '/focus-tecnico/pellicole-decorative/',
-      '/focus-tecnico/pellicole-decorative-privacy/',
-      '/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie/',
+      '/pellicole-decorative/',
+      '/pellicole-decorative-privacy/',
+      '/pellicole-antisolari-stampabili-e-vetrofanie/',
     ],
     stats: [
       { value: 'privacy', label: 'visiva e funzionale' },
@@ -165,7 +165,7 @@ export const getProductsForFamily = (pages = [], family) => {
 
 export const getServiceFamilyForFocusPage = (page = {}) => {
   if (page.route?.type !== 'technical-focus') return null;
-  const normalized = normalizePath(page.route?.newPath || page.path);
+  const normalized = normalizePath(page.path || page.route?.newPath);
   return SERVICE_FAMILIES.find((family) => (
     family.focusPaths.some((focusPath) => normalizePath(focusPath) === normalized)
   )) || null;
@@ -176,10 +176,10 @@ export const getFocusForFamily = (pages = [], family) => {
   const focusPathSet = new Set(family.focusPaths.map(normalizePath));
   return pages
     .filter((page) => page.route?.type === 'technical-focus')
-    .filter((page) => focusPathSet.has(normalizePath(page.route?.newPath)))
+    .filter((page) => focusPathSet.has(normalizePath(page.path || page.route?.newPath)))
     .sort((a, b) => {
-      const aIndex = family.focusPaths.indexOf(normalizePath(a.route?.newPath));
-      const bIndex = family.focusPaths.indexOf(normalizePath(b.route?.newPath));
+      const aIndex = family.focusPaths.indexOf(normalizePath(a.path || a.route?.newPath));
+      const bIndex = family.focusPaths.indexOf(normalizePath(b.path || b.route?.newPath));
       return aIndex - bIndex;
     });
 };

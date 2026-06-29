@@ -250,7 +250,7 @@ const normalizeKnowledgePath = (pathname = '') => {
 
 const filterPagesForKind = (pages = [], kind = '', types = []) => {
   const typed = filterByTypes(pages, types);
-  const blockedFocusPaths = new Set(['/focus-tecnico/pellicole-termoisolanti/']);
+  const blockedFocusPaths = new Set(['/pellicole-termoisolanti/']);
 
   if (kind === 'knowledge') {
     return typed;
@@ -295,35 +295,35 @@ const focusFallbackDescription = (family) => (
 );
 
 const focusUxDescriptions = {
-  '/focus-tecnico/pellicole-antisolari/':
+  '/pellicole-antisolari/':
     'Quando il problema è calore, abbagliamento o raggi UV: guida per capire cosa misurare e quale livello di schermatura valutare.',
-  '/focus-tecnico/pellicole-di-sicurezza/':
+  '/pellicole-di-sicurezza/':
     'Guida per capire quando il vetro va messo in sicurezza, quali rischi ridurre e quali verifiche servono prima della posa.',
-  '/focus-tecnico/pellicole-antisolari-sputtered/':
+  '/pellicole-antisolari-sputtered/':
     'Spiega quando scegliere una pellicola sputtered: controllo solare più selettivo, resa estetica e compatibilità con il vetro.',
-  '/focus-tecnico/pellicole-antisolari-sunscape/':
+  '/pellicole-antisolari-sunscape/':
     'Percorso per valutare Sunscape quando serve comfort solare con una finitura esterna più discreta e controllata.',
-  '/focus-tecnico/pellicole-oscuranti-per-vetri/':
+  '/pellicole-oscuranti-per-vetri/':
     'Aiuta a distinguere privacy, oscuramento e controllo della luce, evitando scelte troppo scure o poco funzionali.',
-  '/focus-tecnico/pellicole-riflettenti/':
+  '/pellicole-riflettenti/':
     "Guida ai vantaggi e ai limiti dell'effetto riflettente su facciate, uffici e superfici esposte.",
-  '/focus-tecnico/pellicole-spettro-selettive/':
+  '/pellicole-spettro-selettive/':
     'Per capire quando una pellicola selettiva riduce calore mantenendo più luce naturale negli ambienti.',
-  '/focus-tecnico/pellicole-di-sicurezza-neutre-la-serie-cl/':
+  '/pellicole-di-sicurezza-neutre-la-serie-cl/':
     'Spiega quando usare una sicurezza neutra, quali spessori valutare e che ruolo ha la norma UNI EN 12600.',
-  '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/':
+  '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/':
     'Percorso per scenari ad alto rischio: frammenti, pressione, ancoraggi e verifica tecnica prima della scelta.',
-  '/focus-tecnico/pellicole-antisolari-di-sicurezza-la-serie-rs/':
+  '/pellicole-antisolari-di-sicurezza-la-serie-rs/':
     'Quando servono insieme controllo solare e sicurezza: guida per confrontare beneficio termico e protezione del vetro.',
-  '/focus-tecnico/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/':
+  '/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/':
     'Per vetrine e superfici esposte: capire quando una protezione sacrificabile riduce costi e tempi di ripristino.',
-  '/focus-tecnico/pellicole-decorative/':
+  '/pellicole-decorative/':
     'Aiuta a scegliere finiture decorative, satinate o stampabili in base a privacy, luce e immagine dello spazio.',
-  '/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie/':
+  '/pellicole-antisolari-stampabili-e-vetrofanie/':
     'Guida per usare vetrofanie e grafiche senza perdere coerenza tra visibilità, brand e funzione del vetro.',
-  '/focus-tecnico/pellicole-decorative-privacy/':
+  '/pellicole-decorative-privacy/':
     'Per capire quanta privacy serve davvero, cosa cambia tra giorno e sera e quale finitura valutare.',
-  '/focus-tecnico/pellicole-termoisolanti/':
+  '/pellicole-termoisolanti/':
     'Percorso per valutare isolamento e comfort su vetri esistenti, distinguendo beneficio reale, limiti e posa.',
 };
 
@@ -355,7 +355,7 @@ const INFO_THEMES = [
     key: 'normative',
     title: 'Norme e sicurezza',
     eyebrow: 'Norme applicate',
-    route: '/info/norme/',
+    route: '/pagina-info/norme/',
     description: 'Riferimenti normativi e sicurezza sul lavoro letti in funzione del vetro, del rischio e della posa.',
     match: /(norm|sicurezza|testo unico|dpr|brc)/i,
   },
@@ -363,7 +363,7 @@ const INFO_THEMES = [
     key: 'certificazioni',
     title: 'Garanzie e certificazioni',
     eyebrow: 'Affidabilità',
-    route: '/info/garanzie-clienti/',
+    route: '/pagina-info/garanzie/',
     description: 'Garanzie, certificazioni e punti di forza da leggere insieme a prodotto, applicazione e metodo Solaris.',
     match: /(garanz|certific|nfrc|punti di forza)/i,
   },
@@ -371,7 +371,7 @@ const INFO_THEMES = [
     key: 'supporto',
     title: 'Uso, manutenzione e glossario',
     eyebrow: 'Supporto operativo',
-    route: '/info/#supporto',
+    route: '/pagina-info/istruzioni-e-manutenzione/',
     description: 'Istruzioni, manutenzione e termini tecnici per fare domande più precise prima della verifica.',
     match: /(istruz|manutenz|glossario|termini)/i,
   },
@@ -1372,7 +1372,7 @@ const InfoDirectoryPage = ({ config, primaryPages, loading, error, stats }) => {
     ...theme,
     pages: primaryPages.filter((page) => infoThemeForPage(page).key === theme.key),
   }));
-  const featuredInfoPaths = ['/info/norme/', '/info/garanzie-clienti/', '/info/istruzioni-e-manutenzione/'];
+  const featuredInfoPaths = ['/pagina-info/norme/', '/pagina-info/garanzie/', '/pagina-info/istruzioni-e-manutenzione/'];
   const featuredInfo = featuredInfoPaths
     .map((path) => primaryPages.find((page) => normalizeDirectoryPath(getLivePath(page)) === normalizeDirectoryPath(path)))
     .filter(Boolean);

@@ -11,8 +11,8 @@ const PRODUCT_SLUG_ALIASES = {
   'madico-rs-20-ps-sr-8-mil': 'madico-rs-20-ps-sr-8mil',
   'madico-rs-40-ps-sr-4-mil': 'madico-rs-40-ps-sr-4mil',
   'madico-rs-40-ps-sr-8-mil': 'madico-rs-40-ps-sr-8mil',
-  'tecnosolarssn50tesr': 'ssn-70-te-sr',
-  'tecnosolar-ssn-50-te-sr': 'ssn-70-te-sr',
+  'tecnosolarssn50tesr': 'madico-sg-20-e-ps-sr',
+  'tecnosolar-ssn-50-te-sr': 'madico-sg-20-e-ps-sr',
   'ssn-50-te-sr': 'ssn-70-te-sr',
 };
 

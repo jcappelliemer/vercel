@@ -85,7 +85,7 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`info-${pagina.slug}`}>
-      <SEO title={pagina.titolo} description={pagina.contenuto?.[0]?.substring(0, 160) || `${pagina.titolo} — Informazioni e normative sulle pellicole per vetri.`} path={`/info/${pagina.slug}`} />
+      <SEO title={pagina.titolo} description={pagina.contenuto?.[0]?.substring(0, 160) || `${pagina.titolo} — Informazioni e normative sulle pellicole per vetri.`} path={`/pagina-info/${pagina.slug}`} />
       <Header />
       <main className="pt-24">
         <section className="py-20 border-b border-white/5">
@@ -250,7 +250,7 @@ export const PaginaInfoIndexPagina = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {allInfo.map((pagina, i) => (
                 <motion.div key={pagina.slug} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: i * 0.05 }}>
-                  <Link to={`/info/${pagina.slug}`} className="card-light rounded-xl p-6 group block h-full" data-testid={`info-link-${pagina.slug}`}>
+                  <Link to={`/pagina-info/${pagina.slug}`} className="card-light rounded-xl p-6 group block h-full" data-testid={`info-link-${pagina.slug}`}>
                     <h3 className="font-medium text-[#0A0F1C] group-hover:text-[#2563EB] transition-colors mb-2">{pagina.titolo}</h3>
                     <p className="text-sm text-[#64748B] line-clamp-2">{pagina.sottotitolo}</p>
                   </Link>

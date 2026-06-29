@@ -244,7 +244,7 @@ const LIVE_MENU = [
   {
     name: 'Info e FAQ',
     href: '#',
-    fallbackPath: '/info',
+    fallbackPath: '/pagina-info/norme/',
     children: [
       {
         name: 'FAQ',
@@ -252,43 +252,43 @@ const LIVE_MENU = [
       },
       {
         name: 'Norme',
-          href: '/info/norme/',
+          href: '/pagina-info/norme/',
       },
       {
         name: 'Norma BRC',
-          href: '/info/norma-brc/',
+          href: '/pagina-info/norma-brc/',
       },
       {
         name: 'Sicurezza a norma di legge',
-          href: '/info/sicurezza-a-norma-di-legge/',
+          href: '/pagina-info/sicurezza-a-norma-di-legge/',
       },
       {
         name: 'Testo unico',
-          href: '/info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/',
+          href: '/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/',
       },
       {
         name: 'Sistemi filtranti Dpr. 59/09',
-          href: '/info/sistemi-filtranti-dpr-59-09/',
+          href: '/pagina-info/sistemi-filtranti-dpr-59-09/',
       },
       {
         name: 'Certificazione NFRC',
-          href: '/info/garanzie-clienti/',
+          href: '/pagina-info/certificazione-nfrc/',
       },
       {
         name: 'Garanzie',
-          href: '/info/garanzie-clienti/',
+          href: '/pagina-info/garanzie/',
       },
       {
         name: 'I punti di forza',
-          href: '/info/i-punti-di-forza/',
+          href: '/pagina-info/i-punti-di-forza/',
       },
       {
         name: 'Istruzione e manutenzione',
-          href: '/info/istruzioni-e-manutenzione/',
+          href: '/pagina-info/istruzioni-e-manutenzione/',
       },
       {
         name: 'Glossario termini',
-          href: '/info/glossario-termini/',
+          href: '/pagina-info/glossario-termini/',
       },
     ],
   },
@@ -298,6 +298,25 @@ const LIVE_MENU = [
     fallbackPath: '/contatti',
   },
 ];
+
+const STATIC_MENU_PATH_ALIASES = new Map([
+  ['/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/', '/prodotti/madico-rs-20-e-ps-sr/'],
+  ['/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-30-e-ps-sr/', '/prodotti/madico-rs-30-e-ps-sr/'],
+  ['/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/', '/prodotti/madico-rs-40-e-ps-sr/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/', '/prodotti/madico-rs-20-ps-sr-4mil/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/', '/prodotti/madico-rs-20-ps-sr-8mil/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/', '/prodotti/madico-rs-40-ps-sr-4mil/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/', '/prodotti/madico-rs-40-ps-sr-8mil/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-ps-sr/', '/prodotti/madico-cl-400-ps-sr/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-e-ps-sr/', '/prodotti/madico-cl-400-e-ps-sr/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr/', '/prodotti/madico-cl-700-ps-sr/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr/', '/prodotti/madico-cl-700-e-ps-sr/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/', '/prodotti/madico-safetyshield-800/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/', '/prodotti/madico-safetyshield-1500/'],
+  ['/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing/', '/prodotti/madico-gullwing/'],
+  ['/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/', '/prodotti/vetrofanie/'],
+  ['/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/', '/prodotti/madico-mt-200-xw/'],
+]);
 
 const normalizeHref = (href) => {
   if (!href || href === '#') return '';
@@ -318,7 +337,7 @@ const containsBlockedBrand = (value = '') => /tecnosolar/i.test(String(value || 
 
 const resolveMenu = (items, pathMap) => items.map((item) => {
   const livePath = normalizeHref(item.href);
-  const path = item.fallbackPath || (livePath ? pathMap.get(livePath) || livePath : '#');
+  const path = item.fallbackPath || (livePath ? pathMap.get(livePath) || STATIC_MENU_PATH_ALIASES.get(livePath) || livePath : '#');
 
   return {
     ...item,

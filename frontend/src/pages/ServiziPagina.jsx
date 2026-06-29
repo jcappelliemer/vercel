@@ -64,7 +64,7 @@ const SAFETY_SHIELD_METRICS = [
 
 const ServiceFamilyCard = ({ family, index }) => {
   const Icon = ICON_BY_FAMILY[family.key] || ShieldCheck;
-  const path = family.focus?.[0]?.route?.newPath || family.ctaRoute || family.page?.route?.newPath || serviceAnchorPath(family);
+  const path = family.focus?.[0]?.path || family.ctaRoute || family.page?.route?.newPath || serviceAnchorPath(family);
 
   return (
     <motion.div
@@ -216,7 +216,7 @@ const FamilyDetail = ({ family, index }) => {
                   {visibleFocus.map((focus) => (
                     <Link
                       key={focus.path}
-                      to={focus.route?.newPath || focus.path}
+                      to={focus.path || focus.route?.newPath}
                       className={focusLinkClass}
                     >
                       <span>{getPageTitle(focus)}</span>
@@ -349,10 +349,10 @@ const ServiziPagina = ({ initialPages = [] }) => {
                   <Link to="/focus-tecnico/safetyshield/" className="btn-yellow">
                     Sezione dedicata SafetyShield
                   </Link>
-                  <Link to="/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/" className="btn-secondary">
+                  <Link to="/prodotti/madico-safetyshield-800/" className="btn-secondary">
                     Prodotto SafetyShield 800
                   </Link>
-                  <Link to="/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/" className="btn-secondary">
+                  <Link to="/prodotti/madico-safetyshield-1500/" className="btn-secondary">
                     Prodotto SafetyShield 1500
                   </Link>
                 </div>

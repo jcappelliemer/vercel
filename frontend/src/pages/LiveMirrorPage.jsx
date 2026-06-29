@@ -60,8 +60,58 @@ const legacyInternalHrefMap = {
   '/pellicole-per-vetri/pellicole-decorative-per-vetri/': '/pellicole-decorative/',
   '/approfondimenti/pellicole-oscuranti-vetri/': '/pellicole-oscuranti-per-vetri/',
   '/pellicole-per-vetri/chiusura-lavori/': '/lo-sapevi-che/',
-  '/pagina-info/': '/info-e-faq/',
+  '/pagina-info/': '/pellicole-per-vetri/pellicole-per-vetri/faq/',
   '/pagina-info/garanzie-clienti/': '/pagina-info/garanzie/',
+  '/info/norme/': '/pagina-info/norme/',
+  '/info/norma-brc/': '/pagina-info/norma-brc/',
+  '/info/sicurezza-a-norma-di-legge/': '/pagina-info/sicurezza-a-norma-di-legge/',
+  '/info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/': '/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/',
+  '/info/sistemi-filtranti-dpr-59-09/': '/pagina-info/sistemi-filtranti-dpr-59-09/',
+  '/info/certificazione-nfrc/': '/pagina-info/certificazione-nfrc/',
+  '/info/garanzie-clienti/': '/pagina-info/garanzie/',
+  '/info/garanzie/': '/pagina-info/garanzie/',
+  '/info/i-punti-di-forza/': '/pagina-info/i-punti-di-forza/',
+  '/info/istruzioni-e-manutenzione/': '/pagina-info/istruzioni-e-manutenzione/',
+  '/info/glossario-termini/': '/pagina-info/glossario-termini/',
+  '/focus-tecnico/pellicole-antisolari/': '/pellicole-antisolari/',
+  '/focus-tecnico/pellicole-di-sicurezza/': '/pellicole-di-sicurezza/',
+  '/focus-tecnico/pellicole-antisolari-sputtered/': '/pellicole-antisolari-sputtered/',
+  '/focus-tecnico/pellicole-antisolari-sunscape/': '/pellicole-antisolari-sunscape/',
+  '/focus-tecnico/pellicole-oscuranti-per-vetri/': '/pellicole-oscuranti-per-vetri/',
+  '/focus-tecnico/pellicole-riflettenti/': '/pellicole-riflettenti/',
+  '/focus-tecnico/pellicole-spettro-selettive/': '/pellicole-spettro-selettive/',
+  '/focus-tecnico/pellicole-di-sicurezza-neutre-la-serie-cl/': '/pellicole-di-sicurezza-neutre-la-serie-cl/',
+  '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/': '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/',
+  '/focus-tecnico/pellicole-antisolari-di-sicurezza-la-serie-rs/': '/pellicole-antisolari-di-sicurezza-la-serie-rs/',
+  '/focus-tecnico/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/': '/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/',
+  '/focus-tecnico/pellicole-decorative/': '/pellicole-decorative/',
+  '/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie/': '/pellicole-antisolari-stampabili-e-vetrofanie/',
+  '/focus-tecnico/pellicole-decorative-privacy/': '/pellicole-decorative-privacy/',
+  '/focus-tecnico/pellicole-termoisolanti/': '/pellicole-termoisolanti/',
+  '/pellicole-per-vetri/le-pellicole-antisolari/madicosb20epssr/': '/prodotti/madico-sb-20-e-ps-sr/',
+  '/pellicole-per-vetri/le-pellicole-antisolari/madicosb35epssr/': '/prodotti/madico-sb-35-e-ps-sr/',
+  '/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr/': '/prodotti/madico-sg-20-e-ps-sr/',
+  '/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr/': '/prodotti/madico-sl-8-e-ps-sr/',
+  '/prodotti/madicosb20epssr/': '/prodotti/madico-sb-20-e-ps-sr/',
+  '/prodotti/madicosb35epssr/': '/prodotti/madico-sb-35-e-ps-sr/',
+  '/prodotti/madicosg20epssr/': '/prodotti/madico-sg-20-e-ps-sr/',
+  '/prodotti/madicosl8epssr/': '/prodotti/madico-sl-8-e-ps-sr/',
+  '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr/': '/prodotti/madico-rs-20-e-ps-sr/',
+  '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-30-e-ps-sr/': '/prodotti/madico-rs-30-e-ps-sr/',
+  '/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr/': '/prodotti/madico-rs-40-e-ps-sr/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil/': '/prodotti/madico-rs-20-ps-sr-4mil/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil/': '/prodotti/madico-rs-20-ps-sr-8mil/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil/': '/prodotti/madico-rs-40-ps-sr-4mil/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil/': '/prodotti/madico-rs-40-ps-sr-8mil/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-ps-sr/': '/prodotti/madico-cl-400-ps-sr/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-e-ps-sr/': '/prodotti/madico-cl-400-e-ps-sr/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr/': '/prodotti/madico-cl-700-ps-sr/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr/': '/prodotti/madico-cl-700-e-ps-sr/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/': '/prodotti/madico-safetyshield-800/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/': '/prodotti/madico-safetyshield-1500/',
+  '/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing/': '/prodotti/madico-gullwing/',
+  '/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/': '/prodotti/vetrofanie/',
+  '/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/': '/prodotti/madico-mt-200-xw/',
 };
 
 const normalizeImportedHref = (href = '') => {
@@ -325,11 +375,11 @@ const routeSectionName = (page) => {
 const routeSectionPath = (page) => {
   const type = page?.route?.type;
   if (type === 'category' || type === 'service-index') return '/servizi/';
-  if (type === 'article') return '/lo-sapevi-che/';
+  if (type === 'article') return '/approfondimenti/';
   if (type === 'product') return '/prodotti/';
   if (type === 'local-service') return '/servizio-locale/';
-  if (type === 'info') return '/info/';
-  if (type === 'technical-focus') return '/focus-tecnico/';
+  if (type === 'info') return '/pagina-info/norme/';
+  if (type === 'technical-focus') return '/pellicole-antisolari/';
   return '/';
 };
 
@@ -456,6 +506,14 @@ const stripLegacyLocalLinks = (value = '') => value
   .replace(/<a\b[^>]*href=(["'])\/\1[^>]*>([\s\S]*?)<\/a>/gi, '$2')
   .replace(/<a\b[^>]*href=(["'])\/\1[^>]*>/gi, '')
   .replace(
+    /<a\b[^>]*href=(["'])https?:\/\/(?:www\.)?madico\.com\/?\1[^>]*>([\s\S]*?)<\/a>/gi,
+    '$2'
+  )
+  .replace(
+    /<a\b[^>]*href=(["'])https?:\/\/(?:www\.)?madico\.com\/?\1[^>]*>/gi,
+    ''
+  )
+  .replace(
     /<a\b[^>]*href=(["'])https?:\/\/(?:www\.)?solaris(?!films)[a-z-]*\.it\/?\1[^>]*>([\s\S]*?)<\/a>/gi,
     '$2'
   )
@@ -557,6 +615,7 @@ const normalizeImportedHtml = (value = '', { relaxHeavyStrong = false } = {}) =>
     .replace(/\bInstallatore Certificato Tecnosolar\b/gi, 'Installatore certificato Solaris Films')
     .replace(/\bTecnosolar\b/gi, 'Solaris Films')
     .replace(/[^.!?<>]*(?:serie\s*nt|\bnt\b|nt[\s-]*20|nt[\s-]*35)[^.!?<>]*[.!?]/gi, ' ')
+    .replace(/<\/?em\b[^>]*>/gi, '')
     .replace(/\bUn eccellente riduzione\b/g, "Un'eccellente riduzione")
     .replace(/\bvetrate\s+\?/gi, 'vetrate?')
     .replace(/\s{2,}/g, ' ');
@@ -778,7 +837,7 @@ const infoThemes = [
     key: 'certificazioni',
     title: 'Garanzie e certificazioni',
     eyebrow: 'Affidabilità',
-    route: '/pagina-info/garanzie-clienti/',
+    route: '/pagina-info/garanzie/',
     description: 'Garanzie, certificazioni e punti di forza da leggere insieme a prodotto, applicazione e metodo Solaris.',
     match: /(garanz|certific|nfrc|punti di forza)/i,
   },
@@ -786,7 +845,7 @@ const infoThemes = [
     key: 'supporto',
     title: 'Uso, manutenzione e glossario',
     eyebrow: 'Supporto operativo',
-    route: '/pagina-info/#supporto',
+    route: '/pagina-info/istruzioni-e-manutenzione/',
     description: 'Istruzioni, manutenzione e termini tecnici per fare domande più precise prima della verifica.',
     match: /(istruz|manutenz|glossario|termini)/i,
   },
@@ -885,7 +944,7 @@ const focusDecisionPanel = (family) => {
 
 const isLegacySafetyShieldFocusPage = (page = {}) => {
   const path = normalizePath(page?.path || page?.route?.newPath || '');
-  return path === '/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/';
+  return path === '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/';
 };
 
 const normalizeSpecLabel = (value = '') => (
@@ -1228,7 +1287,7 @@ const ServiceFamilyTemplate = ({ page, allPages = [] }) => {
             <div className="service-family-card-grid">
               {products.map((product) => (
                 <Link
-                  to={product.path || product.route?.newPath}
+                  to={normalizeImportedHref(product.route?.newPath || product.path)}
                   className="service-family-link-card"
                   key={product.path}
                 >
@@ -1430,7 +1489,7 @@ const ProductTemplate = ({ page, allPages = [] }) => {
               <span className="live-side-eyebrow">Stessa famiglia</span>
               <div className="product-related-list">
                 {relatedProducts.map((product) => (
-                  <Link to={product.path || product.route?.newPath} key={product.path}>
+                  <Link to={normalizeImportedHref(product.route?.newPath || product.path)} key={product.path}>
                     <span>{getPageTitle(product)}</span>
                     <ArrowRight size={14} />
                   </Link>
@@ -1631,7 +1690,7 @@ const FocusTemplate = ({ page, allPages = [] }) => {
               <span className="live-side-eyebrow">Prodotti collegati</span>
               <div className="product-related-list">
                 {relatedProducts.map((product) => (
-                  <Link to={product.path || product.route?.newPath} key={product.path}>
+                  <Link to={normalizeImportedHref(product.route?.newPath || product.path)} key={product.path}>
                     <span>{getPageTitle(product)}</span>
                     <ArrowRight size={14} />
                   </Link>
@@ -1825,7 +1884,7 @@ const supportProfiles = {
     panelTitle: 'Risposte operative',
     panelDescription: 'Le domande frequenti orientano la scelta, ma il caso reale va sempre verificato su vetro, esposizione e obiettivo tecnico.',
     cta: 'Chiedi conferma',
-    route: '/pagina-info/',
+    route: '/pagina-info/norme/',
     routeLabel: 'Tutte le info',
     tags: ['FAQ', 'Supporto', 'Verifica tecnica'],
     visual: {

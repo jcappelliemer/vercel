@@ -66,20 +66,20 @@ const normalizeSettings = (value = {}) => ({
 });
 
 const getInitialSettings = () => {
-  if (typeof window === 'undefined') return normalizeSettings(defaults);
-
-  try {
-    const cached = window.localStorage.getItem(SETTINGS_STORAGE_KEY);
-    return normalizeSettings(cached ? { ...defaults, ...JSON.parse(cached) } : defaults);
-  } catch {
-    return normalizeSettings(defaults);
-  }
+  return normalizeSettings(defaults);
 };
 
 export const SettingsProvider = ({ children }) => {
   const [settings, setSettings] = useState(getInitialSettings);
 
   useEffect(() => {
+    try {
+      const cached = window.localStorage.getItem(SETTINGS_STORAGE_KEY);
+      if (cached) setSettings((prev) => normalizeSettings({ ...prev, ...JSON.parse(cached) }));
+    } catch {
+      // Ignore storage errors; settings will still load from the static WP data.
+    }
+
     fetchSettings().then(data => {
       if (!data) return;
 

@@ -21,8 +21,8 @@ const PRODUCT_SLUG_ALIASES = {
   'madico-rs-20-ps-sr-8-mil': 'madico-rs-20-ps-sr-8mil',
   'madico-rs-40-ps-sr-4-mil': 'madico-rs-40-ps-sr-4mil',
   'madico-rs-40-ps-sr-8-mil': 'madico-rs-40-ps-sr-8mil',
-  'tecnosolarssn50tesr': 'ssn-70-te-sr',
-  'tecnosolar-ssn-50-te-sr': 'ssn-70-te-sr',
+  'tecnosolarssn50tesr': 'madico-sg-20-e-ps-sr',
+  'tecnosolar-ssn-50-te-sr': 'madico-sg-20-e-ps-sr',
   'ssn-50-te-sr': 'ssn-70-te-sr',
 };
 
@@ -55,8 +55,8 @@ Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni 
     faq: [
       { q: 'A cosa serve Madico SB 20 E PS SR 75 micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo alta luminosità e con basso impatto architettonico.' },
       { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma può essere installata su ogni vetrata nel lato esterno.' },
-      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente ? importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Quali prestazioni è utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente è importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -83,8 +83,8 @@ Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni 
     faq: [
       { q: 'A cosa serve Madico SB 35 E PS SR 75 micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo alta luminosità e con basso impatto architettonico.' },
       { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma può essere installata su ogni vetrata nel lato esterno.' },
-      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente ? importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Quali prestazioni è utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente è importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -111,8 +111,8 @@ Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni 
     faq: [
       { q: 'A cosa serve Madico SG 20 E PS SR 75 micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo alta luminosità e con basso impatto architettonico.' },
       { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza in vetri di nuova generazione con Ug inferiore a 1.10, ma può essere installata su ogni vetrata nel lato esterno.' },
-      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente ? importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Quali prestazioni è utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente è importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -139,8 +139,8 @@ La pellicola antisolare Sunscape Madico SL 8 è realizzata con l’avanzato proc
     faq: [
       { q: 'A cosa serve Madico SL 8 E PS SR 75 Micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo un’elevata efficacia schermante.' },
       { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola è adatta soprattutto a grandi superfici vetrate e vetrate a tetto, con posa sul lato esterno per massimizzare la resa in condizioni di forte irraggiamento.' },
-      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni cambiano in base al tipo di vetro. Per una scelta corretta conviene leggere energia respinta, riduzione abbaglio e compatibilità con il vetro esistente, utilizzando dati certificati come quelli dei prodotti MADICO.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Quali prestazioni è utile confrontare?', a: 'Le prestazioni cambiano in base al tipo di vetro. Per una scelta corretta conviene leggere energia respinta, riduzione abbaglio e compatibilità con il vetro esistente, utilizzando dati certificati come quelli dei prodotti MADICO.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -162,8 +162,8 @@ L’ultima evoluzione tecnologica nel campo delle pellicole per vetri è rappres
     faq: [
       { q: 'A cosa serve SSN 70 TE SR?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate mantenendo alta luminosità e con basso impatto architettonico.' },
       { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola esprime la sua massima efficienza su vetrocamera. In questa scheda i dati principali sono riferiti a vetrocamera 6 mm, con posa sul lato esterno.' },
-      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente ? importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Quali prestazioni è utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Sicuramente è importante usare pellicole che hanno prestazioni certificate come tutti i prodotti MADICO.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -192,8 +192,8 @@ Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione
     faq: [
       { q: 'A cosa serve Madico RS 20 E PS SR 75 Micron?', a: 'È pensata per il controllo solare e comfort interno, riduce il calore e l’abbaglio sulle superfici vetrate con effetto riflettente e buon livello di privacy diurna.' },
       { q: 'Su quali vetri conviene installarla?', a: 'Questa pellicola è consigliata su vetrate con forte irraggiamento e surriscaldamento interno. Per questa scheda i dati principali sono riferiti a vetro singolo 6 mm con posa esterna.' },
-      { q: 'Quali prestazioni ? utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Conviene confrontare energia respinta, riduzione abbaglio, riflessione luminosa e compatibilità con il vetro esistente.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Quali prestazioni è utile confrontare?', a: 'Le prestazioni di una pellicola variano a seconda del tipo di vetro sul quale viene applicata. Conviene confrontare energia respinta, riduzione abbaglio, riflessione luminosa e compatibilità con il vetro esistente.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -218,9 +218,9 @@ Le pellicole antisolari riflettenti dell’americana Madico, distribuite da Sola
     ],
     faq: [
       { q: 'A cosa serve Madico RS 40 E PS SR?', a: 'È pensata per ridurre il calore in ingresso con un effetto specchiante più contenuto rispetto alle versioni più riflettenti, mantenendo comfort interno e buona resa estetica.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'È consigliata su vetrate esposte a forte irraggiamento dove si vuole contenere il surriscaldamento senza un effetto specchio molto marcato. La posa prevista ? sul lato esterno.' },
-      { q: 'Quali prestazioni ? utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'È consigliata su vetrate esposte a forte irraggiamento dove si vuole contenere il surriscaldamento senza un effetto specchio molto marcato. La posa prevista è sul lato esterno.' },
+      { q: 'Quali prestazioni è utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -244,9 +244,9 @@ Le pellicole antisolari riflettenti dell’americana Madico, distribuite da Sola
     ],
     faq: [
       { q: 'A cosa serve Madico RS 30 E PS SR?', a: 'È pensata per ridurre il calore in ingresso e migliorare il comfort visivo con una riflessione intermedia tra RS 20 e RS 40.' },
-      { q: 'Su quali vetri conviene installarla?', a: 'È consigliata su vetrate esposte a irraggiamento elevato quando si cerca una soluzione equilibrata tra schermatura solare e resa estetica. La posa prevista ? sul lato esterno.' },
-      { q: 'Quali prestazioni ? utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Su quali vetri conviene installarla?', a: 'È consigliata su vetrate esposte a irraggiamento elevato quando si cerca una soluzione equilibrata tra schermatura solare e resa estetica. La posa prevista è sul lato esterno.' },
+      { q: 'Quali prestazioni è utile confrontare?', a: 'Per una scelta corretta conviene confrontare totale energia respinta, trasmissione luminosa, riduzione abbaglio e livello di riflessione, sempre in base al tipo di vetro esistente.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si arriva alla scelta finale?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -270,7 +270,7 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
       { q: 'A cosa serve Madico RS 20 PS SR 4 MIL?', a: 'Serve a combinare controllo solare e sicurezza del vetro: riduce calore e abbaglio, e allo stesso tempo trattiene i frammenti in caso di rottura.' },
       { q: 'Quando conviene scegliere la versione 4 MIL?', a: 'Quando serve un buon livello di protezione antinfortunistica certificata con una soluzione più leggera rispetto agli spessori superiori, mantenendo equilibrio tra resa tecnica e impatto estetico.' },
       { q: 'Su quali vetri va verificata prima della posa?', a: 'Va verificata sul vetro reale in opera. In questa scheda il riferimento principale ? vetro singolo, ma la compatibilità finale dipende da composizione del serramento, esposizione e dimensioni della lastra.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -294,7 +294,7 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
       { q: 'A cosa serve Madico RS 20 PS SR 8 MIL?', a: 'Serve a combinare controllo solare e sicurezza rinforzata del vetro: riduce calore e abbaglio e offre una trattenuta frammenti più elevata rispetto agli spessori inferiori.' },
       { q: 'Qual è il vantaggio principale rispetto alla 4 MIL?', a: 'La 8 MIL raggiunge una classe di sicurezza superiore (1B1), con maggiore capacità di contenimento in caso di rottura del vetro.' },
       { q: 'Su quali vetri è certificata?', a: 'la certificazione riportata è su lastra singola da 2, 3, 4 e 6 mm. La compatibilità finale va sempre verificata sul vetro reale in opera.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -318,7 +318,7 @@ Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui 
       { q: 'A cosa serve Madico RS 40 PS SR 4 MIL?', a: 'Serve a combinare sicurezza e controllo solare mantenendo più luce naturale rispetto alla versione RS 20.' },
       { q: 'Qual è la differenza principale rispetto alla RS 20 PS SR 4 MIL?', a: 'La RS 40 PS SR 4 MIL e la variante più chiara: riduce il calore ma con trasmissione luminosa superiore.' },
       { q: 'Su quali vetri è certificata?', a: 'la certificazione riportata è EN 12600 classe 2B2 su lastra singola da 3, 4 e 6 mm.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -340,9 +340,9 @@ Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui 
     technicalSheetUrl: '/assets/tech-sheets/rs-40-ps-sr-8-mil.pdf',
     faq: [
       { q: 'A cosa serve Madico RS 40 PS SR 8 MIL?', a: 'Serve a combinare sicurezza rinforzata e controllo solare con una resa più chiara rispetto alla famiglia RS 20.' },
-      { q: 'Qual è la differenza principale rispetto alla RS 20 PS SR 8 MIL?', a: 'La RS 40 PS SR 8 MIL mantiene un orientamento più luminoso, quindi ? utile quando vuoi più luce interna senza rinunciare alla protezione.' },
+      { q: 'Qual è la differenza principale rispetto alla RS 20 PS SR 8 MIL?', a: 'La RS 40 PS SR 8 MIL mantiene un orientamento più luminoso, quindi è utile quando vuoi più luce interna senza rinunciare alla protezione.' },
       { q: 'Su quali vetri è certificata?', a: 'la certificazione riportata è EN 12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -366,7 +366,7 @@ Consente la messa in sicurezza delle superfici vetrate nei luoghi di lavoro in c
       { q: 'A cosa serve Madico CL 400 PS SR?', a: 'Serve a mettere in sicurezza il vetro mantenendo una resa neutra e trasparente, riducendo il rischio di lesioni in caso di rottura.' },
       { q: 'Quando conviene scegliere una pellicola neutra CL?', a: 'Quando la priorità è la sicurezza del vetro ma si vuole preservare luminosità e aspetto originale della vetrata.' },
       { q: 'Su quali vetri è certificata?', a: 'La certificazione indicata è EN12600 classe 2B2 su lastra singola da 2, 3, 4 e 6 mm.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -388,9 +388,9 @@ Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui 
     technicalSheetUrl: '/assets/tech-sheets/cl-400-e-ps-sr.pdf',
     faq: [
       { q: 'A cosa serve Madico CL 400 E PS SR?', a: 'Serve a mettere in sicurezza il vetro con applicazione esterna, mantenendo trasparenza e continuità estetica della facciata.' },
-      { q: 'Qual è la differenza rispetto alla CL 400 PS SR?', a: 'La CL 400 E PS SR ? la versione per esterno; la CL 400 PS SR ? la versione per interno.' },
+      { q: 'Qual è la differenza rispetto alla CL 400 PS SR?', a: 'La CL 400 E PS SR è la versione per esterno; la CL 400 PS SR è la versione per interno.' },
       { q: 'Su quali vetri è certificata?', a: 'La certificazione indicata è EN12600 classe 2B2 su lastra singola da 2, 3, 4 e 6 mm.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -412,9 +412,9 @@ Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui 
     technicalSheetUrl: '/assets/tech-sheets/cl-700-ps-sr.pdf',
     faq: [
       { q: 'A cosa serve Madico CL 700 PS SR?', a: 'Serve a mettere in sicurezza il vetro con una classe di protezione elevata, mantenendo una resa neutra e trasparente.' },
-      { q: 'Qual è la differenza rispetto alla CL 700 E PS SR?', a: 'La CL 700 PS SR ? la versione per interno; la CL 700 E PS SR ? la versione per esterno.' },
+      { q: 'Qual è la differenza rispetto alla CL 700 E PS SR?', a: 'La CL 700 PS SR è la versione per interno; la CL 700 E PS SR è la versione per esterno.' },
       { q: 'Su quali vetri è certificata?', a: 'La certificazione indicata è EN12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -436,9 +436,9 @@ Consente la messa in sicurezza di qualsiasi superficie vetrata obbligatoria sui 
     technicalSheetUrl: '/assets/tech-sheets/cl-700-e-ps-sr.pdf',
     faq: [
       { q: 'A cosa serve Madico CL 700 E PS SR?', a: 'Serve a mettere in sicurezza il vetro con applicazione esterna, mantenendo trasparenza e continuità estetica della facciata.' },
-      { q: 'Qual è la differenza rispetto alla CL 700 PS SR?', a: 'La CL 700 E PS SR ? la versione per esterno; la CL 700 PS SR ? la versione per interno.' },
+      { q: 'Qual è la differenza rispetto alla CL 700 PS SR?', a: 'La CL 700 E PS SR è la versione per esterno; la CL 700 PS SR è la versione per interno.' },
       { q: 'Su quali vetri è certificata?', a: 'La certificazione indicata è EN12600 classe 1B1 su lastra singola da 3, 4 e 6 mm.' },
-      { q: 'Che garanzia ? prevista?', a: 'La garanzia ? 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
+      { q: 'Che garanzia è prevista?', a: 'La garanzia è 10 anni ma soggetta a limitazioni. Per approfondire si consiglia di consultare la sezione dedicata all’interno di questo sito.' },
       { q: 'Come si conferma la scelta corretta?', a: 'Si parte dall’obiettivo, si verifica compatibilità del vetro e si conferma la soluzione con indicazioni chiare su posa e risultato atteso. La nostra esperienza vi aiuterà a scegliere il prodotto giusto per ottenere il miglior risultato.' },
     ],
   },
@@ -706,9 +706,9 @@ const buildProductFaq = (prodotto, dt) => {
   const categoria = (prodotto?.categoria || '').toLowerCase();
   const categoriaLabel = prodotto?.categoria || 'questa pellicola';
   const applicazione = prodotto?.applicazione ? ` ${prodotto.applicazione}` : '';
-  const garanzia = prodotto?.garanzia ? `La garanzia indicata ? ${prodotto.garanzia}.` : 'La durata dipende dal tipo di vetro, dall’esposizione e dalla posa.';
-  const certificazione = prodotto?.certificazione ? `Il prodotto ? associato a ${prodotto.certificazione}.` : 'Valutiamo il contesto per proporre la soluzione più adatta.';
-  const uv = dt?.uvTrasmessi ? `Il dato UV trasmessi ? ${dt.uvTrasmessi}, utile per ridurre l’impatto dei raggi UV.` : '';
+  const garanzia = prodotto?.garanzia ? `La garanzia indicata è ${prodotto.garanzia}.` : 'La durata dipende dal tipo di vetro, dall’esposizione e dalla posa.';
+  const certificazione = prodotto?.certificazione ? `Il prodotto è associato a ${prodotto.certificazione}.` : 'Valutiamo il contesto per proporre la soluzione più adatta.';
+  const uv = dt?.uvTrasmessi ? `Il dato UV trasmessi è ${dt.uvTrasmessi}, utile per ridurre l’impatto dei raggi UV.` : '';
   const energia = dt?.energiaRespinta ? `Il totale energia respinta arriva a ${dt.energiaRespinta}.` : '';
   const tipoVetro = prodotto?.tipoVetro ? `Il test principale ? su ${prodotto.tipoVetro}.` : '';
   const caratteristiche = Array.isArray(prodotto?.caratteristiche) ? prodotto.caratteristiche.slice(0, 2).join('; ') : '';
@@ -1175,7 +1175,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
                   </Link>
                   {prodotto.focusTecnicoSlug && (
                     <Link
-                      to={`/focus-tecnico/${prodotto.focusTecnicoSlug}`}
+                      to={`/${prodotto.focusTecnicoSlug}/`}
                       className="btn-secondary text-[#0A0F1C] border-[#0A0F1C]/20 hover:border-[#EAB308]"
                       data-testid="link-focus-tecnico"
                     >

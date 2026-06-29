@@ -198,12 +198,12 @@ const SafetyShieldPagina = () => {
                   </div>
                   <div className="mt-5">
                     {item.serie.includes('800') ? (
-                      <Link to="/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308]">
+                      <Link to="/prodotti/madico-safetyshield-800/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308]">
                         Apri scheda SafetyShield 800
                         <ArrowRight size={14} />
                       </Link>
                     ) : (
-                      <Link to="/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308]">
+                      <Link to="/prodotti/madico-safetyshield-1500/" className="inline-flex items-center gap-2 text-sm font-semibold text-[#EAB308]">
                         Apri scheda SafetyShield 1500
                         <ArrowRight size={14} />
                       </Link>
@@ -326,7 +326,7 @@ const SafetyShieldPagina = () => {
               </h2>
             </div>
             <div className="grid md:grid-cols-2 gap-4">
-              <Link to="/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/" className="rounded-xl border border-[#E2E8F0] bg-white p-5 flex items-center justify-between">
+              <Link to="/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/" className="rounded-xl border border-[#E2E8F0] bg-white p-5 flex items-center justify-between">
                 <span className="text-[#0A0F1C] font-medium">Focus tecnico completo SafetyShield</span>
                 <ArrowRight size={18} className="text-[#2563EB]" />
               </Link>

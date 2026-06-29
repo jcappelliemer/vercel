@@ -3640,11 +3640,7 @@
 }
 
 .aeo-orchestra-badge {
-  position: fixed;
-  left: 18px;
-  bottom: 18px;
-  z-index: 45;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 10px;
   max-width: min(360px, calc(100vw - 36px));
@@ -3762,8 +3758,6 @@
 
 @media (max-width: 640px) {
   .aeo-orchestra-badge {
-    left: 12px;
-    bottom: 12px;
     max-width: calc(100vw - 24px);
     gap: 8px;
     padding: 9px 10px;

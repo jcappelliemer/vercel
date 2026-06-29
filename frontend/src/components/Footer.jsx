@@ -1,6 +1,7 @@
 import { Link } from '@/next/router-shim';
 import { Phone, EnvelopeSimple, MapPin, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
+import AeoOrchestraBadge from './AeoOrchestraBadge';
 
 const serviceLinks = [
   { name: 'Pellicole Antisolari', path: '/servizi#antisolari' },
@@ -44,6 +45,9 @@ const Footer = () => {
                 ))}
               </div>
             )}
+            <div className="mt-6">
+              <AeoOrchestraBadge />
+            </div>
           </div>
 
           {/* Services */}

@@ -66,6 +66,11 @@ const LEGACY_INTERNAL_HREF_MAP = {
   '/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw/': '/prodotti/madico-mt-200-xw/',
 };
 
+const normalizeKnownAssetUrl = (value = '') => String(value).replace(
+  /facciate-vetrate-pi(?:u|ù|%C3%B9|Ã¹)-efficienti-e-vivibili-featured-1024x683\.webp/gi,
+  'facciate-vetrate-piu-efficienti-e-vivibili-featured-1024x683.webp'
+);
+
 const normalizeLegacyInternalHref = (href = '') => {
   const rawHref = String(href).trim();
   if (!rawHref) return rawHref;
@@ -88,7 +93,7 @@ const normalizeLegacyInternalHref = (href = '') => {
   return `${mappedPath === '/' ? '/' : mappedPath}${suffix}`;
 };
 
-const sanitizeLiveString = (value = '') => String(value)
+const sanitizeLiveString = (value = '') => normalizeKnownAssetUrl(value)
   .replace(/href=(["'])([^"']+)\1/gi, (_, quote, href) => `href=${quote}${normalizeLegacyInternalHref(href)}${quote}`)
   .replace(/\bLa pellicola oscurante NT\b/gi, 'Pellicole oscuranti ad alta riduzione luminosa')
   .replace(/\bpellicola oscurante NT\b/gi, 'pellicola oscurante ad alta riduzione luminosa')

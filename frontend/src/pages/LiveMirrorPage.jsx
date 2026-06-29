@@ -44,6 +44,11 @@ const MAIN_PAGE_VISUALS = {
   local: '/assets/generated/main-pages/servizio-locale-copertura.webp',
 };
 
+const normalizeKnownAssetUrl = (value = '') => String(value).replace(
+  /facciate-vetrate-pi(?:u|ù|%C3%B9|Ã¹)-efficienti-e-vivibili-featured-1024x683\.webp/gi,
+  'facciate-vetrate-piu-efficienti-e-vivibili-featured-1024x683.webp'
+);
+
 const normalizePath = (pathname) => {
   if (!pathname || pathname === '/') return '/';
   return pathname.endsWith('/') ? pathname : `${pathname}/`;
@@ -151,6 +156,7 @@ const titleCaseIfUpper = (value = '') => {
 
 const normalizeSolarisText = (value = '') => String(value)
   .replace(/\bpiu\b/gi, 'più')
+  .replace(/facciate-vetrate-pi(?:u|ù|%C3%B9|Ã¹)-efficienti-e-vivibili-featured-1024x683\.webp/gi, 'facciate-vetrate-piu-efficienti-e-vivibili-featured-1024x683.webp')
   .replace(/\bEcosaving\b/g, 'EcoSaving')
   .replace(/\bsunscape\b/gi, 'Sunscape')
   .replace(/\bsputtered\b/gi, 'Sputtered')
@@ -237,10 +243,10 @@ const liveDisplayTitle = (page) => {
 };
 
 const pageImage = (page) => (
-  page?.primaryImage
+  normalizeKnownAssetUrl(page?.primaryImage
   || page?.seo?.og?.['og:image']
   || page?.seo?.twitter?.['twitter:image']
-  || ''
+  || '')
 );
 
 const decodeHtmlEntities = (value = '') => String(value)
@@ -335,7 +341,7 @@ const LivePageSEO = ({ page, currentPath }) => {
     ? (seo.robots || 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
     : 'noindex, nofollow';
   const schemas = [
-    ...(seo.schemas || []).map((schema) => schema.replaceAll(page.url, canonical)),
+    ...(seo.schemas || []).map((schema) => normalizeKnownAssetUrl(schema.replaceAll(page.url, canonical))),
     ...buildLiveSchemas(page, canonicalPath),
   ];
 
@@ -346,10 +352,10 @@ const LivePageSEO = ({ page, currentPath }) => {
       <meta name="robots" content={robots} />
       {canonical && <link rel="canonical" href={canonical} />}
       {Object.entries(seo.og || {}).map(([property, content]) => (
-        <meta key={property} property={property} content={property === 'og:url' ? canonical : content} />
+        <meta key={property} property={property} content={property === 'og:url' ? canonical : normalizeKnownAssetUrl(content)} />
       ))}
       {Object.entries(seo.twitter || {}).map(([name, content]) => (
-        <meta key={name} name={name} content={content} />
+        <meta key={name} name={name} content={normalizeKnownAssetUrl(content)} />
       ))}
       {Object.entries(seo.article || {}).map(([property, content]) => (
         <meta key={property} property={property} content={content} />
@@ -607,6 +613,7 @@ const normalizeImportedHtml = (value = '', { relaxHeavyStrong = false } = {}) =>
     .replace(/\bMT 200 VX\b/g, 'MT 200 XW')
     .replace(/\bEcosaving\b/g, 'EcoSaving')
     .replace(/\bpiu\b/gi, 'più')
+    .replace(/facciate-vetrate-pi(?:u|ù|%C3%B9|Ã¹)-efficienti-e-vivibili-featured-1024x683\.webp/gi, 'facciate-vetrate-piu-efficienti-e-vivibili-featured-1024x683.webp')
     .replace(/\bsunscape\b/gi, 'Sunscape')
     .replace(/\bsputtered\b/gi, 'Sputtered')
     .replace(/\bLa pellicola oscurante NT\b/gi, 'Pellicole oscuranti ad alta riduzione luminosa')

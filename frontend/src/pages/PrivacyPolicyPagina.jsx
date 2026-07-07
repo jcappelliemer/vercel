@@ -7,35 +7,51 @@ import SEO from '../components/SEO';
 const privacySections = [
   {
     title: '1. Titolare del Trattamento',
-    content: 'Il titolare del trattamento dei dati personali e Solaris Films S.r.l., con sede in Toscana, Italia. Email: info@solarisfilms.it.',
+    content: 'Il titolare del trattamento dei dati personali e Solaris Films S.r.l., con sede in Via G. Brodolini, 8 - Figline e Incisa Valdarno (FI), Italia. Email: info@solarisfilms.it.',
   },
   {
     title: '2. Tipologie di dati raccolti',
-    content: 'I dati personali raccolti attraverso i form del sito includono nome, cognome, email, numero di telefono, ragione sociale, citta e messaggio. Non vengono raccolti dati sensibili.',
+    content: 'Attraverso il sito vengono raccolti dati identificativi e di contatto, come nome, cognome, email, numero di telefono, ragione sociale, citta, messaggio, eventuali file allegati e dati necessari per gestire richieste di contatto, preventivo o assistenza.',
   },
   {
     title: '3. Finalita del trattamento',
-    content: 'I dati raccolti vengono utilizzati esclusivamente per rispondere alle richieste di preventivo e contatto, fornire informazioni sui servizi Solaris e inviare comunicazioni commerciali solo con consenso esplicito.',
+    content: 'I dati raccolti tramite il sito vengono utilizzati per rispondere alle richieste di preventivo e contatto, fornire informazioni sui servizi Solaris, organizzare sopralluoghi, gestire rapporti precontrattuali e inviare comunicazioni commerciali solo quando previsto dalla legge o previo consenso.',
   },
   {
     title: '4. Base giuridica del trattamento',
-    content: "Il trattamento dei dati si basa sul consenso dell'interessato e sull'esecuzione di misure precontrattuali adottate su richiesta dell'interessato.",
+    content: "Il trattamento dei dati si basa sul consenso dell'interessato, sull'esecuzione di misure precontrattuali o contrattuali adottate su richiesta dell'interessato, sull'adempimento di obblighi di legge e, ove applicabile, sul legittimo interesse del titolare alla gestione ordinata dei rapporti aziendali.",
   },
   {
     title: '5. Modalita di trattamento',
-    content: 'I dati vengono trattati con strumenti informatici e telematici, con logiche organizzative correlate alle finalita indicate. I dati sono conservati su server sicuri con accesso limitato al personale autorizzato.',
+    content: 'I dati vengono trattati con strumenti informatici e telematici, con logiche organizzative correlate alle finalita indicate. Sono adottate misure tecniche e organizzative adeguate e gli accessi sono limitati al personale autorizzato o a fornitori incaricati.',
   },
   {
     title: '6. Conservazione dei dati',
-    content: 'I dati vengono conservati per il tempo strettamente necessario al conseguimento delle finalita per cui sono stati raccolti e comunque non oltre 24 mesi dalla raccolta.',
+    content: 'I dati vengono conservati per il tempo necessario al conseguimento delle finalita per cui sono stati raccolti, nel rispetto degli obblighi amministrativi, contabili, fiscali, contrattuali e di tutela dei diritti del titolare.',
   },
   {
-    title: "7. Diritti dell'interessato",
-    content: "Ai sensi degli artt. 15-22 del GDPR, l'interessato ha diritto di accedere ai propri dati, rettificarli, cancellarli, limitarne il trattamento, opporsi al trattamento e richiedere la portabilita dei dati. Per esercitare tali diritti, contattare info@solarisfilms.it.",
+    title: '7. Solaris CRM e app operatori',
+    content: "Solaris Films utilizza Solaris CRM e la relativa app operatori per gestire attivita interne, lavorazioni, cantieri, presenze, note spese, documenti aziendali e comunicazioni operative. Per gli utenti abilitati possono essere trattati dati account, dati dipendente, ruolo operativo, turni e timbrature, lavorazioni assegnate, note, foto, ricevute, documenti personali o aziendali e informazioni tecniche collegate alle attivita di cantiere.",
   },
   {
-    title: '8. Cookie',
-    content: "Il sito utilizza cookie tecnici necessari al funzionamento e cookie analitici per migliorare l'esperienza utente. L'utente può gestire le preferenze sui cookie tramite le impostazioni del browser.",
+    title: '8. Posizione, fotocamera e documenti nell app',
+    content: "L'app operatori puo richiedere accesso alla posizione del dispositivo per registrare il luogo di timbratura o di aggiornamento di una lavorazione, e accesso a fotocamera o archivio immagini per allegare foto, documenti o ricevute. La posizione viene utilizzata per finalita operative, organizzative e di rendicontazione interna, non per tracciamento pubblicitario.",
+  },
+  {
+    title: '9. Destinatari e fornitori',
+    content: 'I dati possono essere trattati da personale Solaris autorizzato e da fornitori tecnici che supportano hosting, CRM, posta elettronica, sicurezza, manutenzione, strumenti di collaborazione, distribuzione app e servizi digitali. I fornitori agiscono secondo istruzioni del titolare e nei limiti necessari al servizio.',
+  },
+  {
+    title: '10. Trasferimenti e sicurezza',
+    content: 'Quando servizi tecnici o cloud comportano trattamenti fuori dallo Spazio Economico Europeo, Solaris adotta garanzie adeguate previste dalla normativa applicabile. Le credenziali e i documenti personali sono protetti con controlli di accesso e, ove previsto, download autenticato.',
+  },
+  {
+    title: "11. Diritti dell'interessato",
+    content: "Ai sensi degli artt. 15-22 del GDPR, l'interessato ha diritto di accedere ai propri dati, rettificarli, cancellarli, limitarne il trattamento, opporsi al trattamento e richiedere la portabilita dei dati nei casi previsti. Per esercitare tali diritti, contattare info@solarisfilms.it.",
+  },
+  {
+    title: '12. Cookie',
+    content: "Il sito utilizza cookie tecnici necessari al funzionamento e, previo consenso quando richiesto, cookie analitici o strumenti equivalenti per migliorare l'esperienza utente. L'utente puo gestire le preferenze sui cookie tramite il banner, le impostazioni del browser o gli strumenti messi a disposizione dal sito.",
   },
 ];
 
@@ -58,7 +74,7 @@ const PrivacyPolicyPagina = () => {
             </div>
             <h1>Privacy Policy</h1>
             <p>
-              Informativa sul trattamento dei dati personali raccolti attraverso i form e i canali di contatto Solaris Films.
+              Informativa sul trattamento dei dati personali raccolti attraverso sito, canali di contatto, Solaris CRM e app operatori.
             </p>
             <div className="product-detail-tags" aria-label="Dettagli privacy Solaris">
               <span>GDPR</span>
@@ -109,11 +125,11 @@ const PrivacyPolicyPagina = () => {
         <section className="product-detail-body info-detail-body">
           <article className="live-prose product-detail-prose privacy-policy-prose">
             <div className="local-service-intro">
-              <span>Ultimo aggiornamento: Marzo 2026</span>
+              <span>Ultimo aggiornamento: Luglio 2026</span>
               <h2>Informativa privacy Solaris Films</h2>
               <p>
                 Questa informativa descrive in modo sintetico quali dati vengono raccolti, per quali finalita e quali diritti
-                può esercitare l'interessato.
+                puo esercitare l'interessato.
               </p>
             </div>
 

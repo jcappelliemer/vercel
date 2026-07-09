@@ -14,6 +14,11 @@ const DEFAULT_WP_URL = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
 const WP_URL = (process.env.REACT_APP_WP_URL || process.env.WP_URL || DEFAULT_WP_URL).replace(/\/$/, '');
 const FETCH_TIMEOUT_MS = Number(process.env.WP_FETCH_TIMEOUT_MS || 3000);
 const BLOCKED_SOLARIS_DATA_RE = /\bNT\s*20\b|\bNT\s*35\b|\bserie\s*NT\b|tecnosolar|fotocromatic|cromia|llms-txt|zoho-callback|false-parent/i;
+const FRESH_WP_HEADERS = {
+  'Cache-Control': 'no-store, no-cache, max-age=0, must-revalidate',
+  Pragma: 'no-cache',
+  Expires: '0',
+};
 
 if (!WP_URL || process.env.SKIP_WP_FETCH === '1') {
   console.log('WP data fetch skipped');
@@ -23,7 +28,7 @@ if (!WP_URL || process.env.SKIP_WP_FETCH === '1') {
 function fetchJson(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
-    const req = client.get(url, (res) => {
+    const req = client.get(url, { headers: FRESH_WP_HEADERS }, (res) => {
       let body = '';
       res.on('data', chunk => body += chunk);
       res.on('end', () => {
@@ -41,7 +46,7 @@ function downloadFile(url, destPath) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
     const file = fs.createWriteStream(destPath);
-    const req = client.get(url, (res) => {
+    const req = client.get(url, { headers: FRESH_WP_HEADERS }, (res) => {
       if (res.statusCode === 301 || res.statusCode === 302) {
         // Follow redirect
         downloadFile(res.headers.location, destPath).then(resolve).catch(reject);

@@ -39,6 +39,12 @@ const INVENTORY_FILE = path.join(OUTPUT_DIR, 'live-seo-inventory.json');
 const URL_MAP_FILE = path.join(OUTPUT_DIR, 'url-map.json');
 const URL_MAP_CSV_FILE = path.join(OUTPUT_DIR, 'url-map.csv');
 const DEFAULT_ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+const FRESH_WP_HEADERS = {
+  'User-Agent': 'SolarisFilmsMirror/1.0',
+  'Cache-Control': 'no-store, no-cache, max-age=0, must-revalidate',
+  Pragma: 'no-cache',
+  Expires: '0',
+};
 const EXCLUDED_SOLARIS_TERMS = [
   /\blcd\b/i,
   /\bstratum\b/i,
@@ -118,7 +124,7 @@ function isExcludedLiveUrl(value = '') {
 function fetchText(url, redirectCount = 0) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https:') ? https : http;
-    const req = client.get(url, { headers: { 'User-Agent': 'SolarisFilmsMirror/1.0' } }, (res) => {
+    const req = client.get(url, { headers: FRESH_WP_HEADERS }, (res) => {
       const status = res.statusCode || 0;
       if ([301, 302, 303, 307, 308].includes(status) && res.headers.location) {
         if (redirectCount > 5) {
@@ -153,7 +159,7 @@ function fetchBuffer(url, redirectCount = 0) {
     const cleanUrl = String(url || '').trim().replace(/&amp;/g, '&').replace(/\s+/g, '');
     const requestUrl = new URL(encodeURI(cleanUrl));
     const client = requestUrl.protocol === 'https:' ? https : http;
-    const req = client.get(requestUrl, { headers: { 'User-Agent': 'SolarisFilmsMirror/1.0' } }, (res) => {
+    const req = client.get(requestUrl, { headers: FRESH_WP_HEADERS }, (res) => {
       const status = res.statusCode || 0;
       const location = res.headers.location;
       if (status >= 300 && status < 400 && location && redirectCount < 5) {

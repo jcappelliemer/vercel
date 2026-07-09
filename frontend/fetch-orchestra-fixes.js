@@ -36,6 +36,11 @@ const RETRY_BACKOFFS_MS = [2000, 5000]; // between the 3 attempts; attempt 1 war
 const PER_PAGE = 50;
 const MAX_PAGES = 50; // backstop
 const OUT = path.join(__dirname, 'src', 'data', 'orchestra-fixes.json');
+const FRESH_WP_HEADERS = {
+  'Cache-Control': 'no-store, no-cache, max-age=0, must-revalidate',
+  Pragma: 'no-cache',
+  Expires: '0',
+};
 
 const EMPTY = { contract: 1, generatedAt: null, byPath: {} };
 
@@ -53,7 +58,13 @@ if (process.env.SKIP_ORCHESTRA_FETCH === '1' || !LICENSE) {
 function fetchManifest(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
-    const req = client.get(url, { headers: { Authorization: `Bearer ${LICENSE}`, Accept: 'application/json' } }, (res) => {
+    const req = client.get(url, {
+      headers: {
+        ...FRESH_WP_HEADERS,
+        Authorization: `Bearer ${LICENSE}`,
+        Accept: 'application/json',
+      },
+    }, (res) => {
       let body = '';
       res.on('data', (c) => { body += c; });
       res.on('end', () => {

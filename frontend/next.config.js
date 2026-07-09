@@ -33,6 +33,21 @@ const gonePaths = withSlashVariants([
   '/approfondimenti/site-admin',
 ]);
 
+const wordpressProxyRewrites = [
+  {
+    source: '/llms.txt',
+    destination: 'https://wordpress-jc4e.srv1502079.hstgr.cloud/llms.txt',
+  },
+  {
+    source: '/llms-full.txt',
+    destination: 'https://wordpress-jc4e.srv1502079.hstgr.cloud/llms-full.txt',
+  },
+  {
+    source: '/seo-aeo-sitemap.xml',
+    destination: 'https://wordpress-jc4e.srv1502079.hstgr.cloud/seo-aeo-sitemap.xml',
+  },
+];
+
 const editorialArchiveRedirects = [
   ['/approfondimenti/tipo-pellicola/sputtered', '/pellicole-antisolari-sputtered/'],
   ['/approfondimenti/tipo-pellicola/sunscape', '/pellicole-antisolari-sunscape/'],
@@ -55,10 +70,13 @@ const nextConfig = {
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
   async rewrites() {
-    return gonePaths.map((source) => ({
-      source,
-      destination: '/api/gone',
-    }));
+    return [
+      ...wordpressProxyRewrites,
+      ...gonePaths.map((source) => ({
+        source,
+        destination: '/api/gone',
+      })),
+    ];
   },
   async redirects() {
     const redirects = [

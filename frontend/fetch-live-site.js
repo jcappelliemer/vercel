@@ -19,11 +19,12 @@ function normalizeOrigin(value, fallback) {
 
 const LIVE_ORIGIN = normalizeOrigin(process.env.REACT_APP_LIVE_ORIGIN || process.env.LIVE_ORIGIN, 'https://www.solarisfilms.it');
 const SITE_ORIGIN = normalizeOrigin(
-  process.env.REACT_APP_SITE_ORIGIN
+  process.env.NEXT_PUBLIC_SITE_URL
+    || process.env.NEXT_PUBLIC_SITE_ORIGIN
+    || process.env.REACT_APP_SITE_ORIGIN
     || process.env.SITE_ORIGIN
-    || process.env.VERCEL_PROJECT_PRODUCTION_URL
-    || process.env.VERCEL_URL,
-  'https://solarisfilms.vercel.app'
+    || process.env.VERCEL_PROJECT_PRODUCTION_URL,
+  'https://www.solarisfilms.it'
 );
 const SITEMAP_INDEX_CANDIDATES = unique([
   `${LIVE_ORIGIN}/sitemap_index.xml`,
@@ -37,7 +38,6 @@ const INDEX_FILE = path.join(OUTPUT_DIR, 'live-pages-index.json');
 const INVENTORY_FILE = path.join(OUTPUT_DIR, 'live-seo-inventory.json');
 const URL_MAP_FILE = path.join(OUTPUT_DIR, 'url-map.json');
 const URL_MAP_CSV_FILE = path.join(OUTPUT_DIR, 'url-map.csv');
-const SITEMAP_FILE = path.join(__dirname, 'public', 'sitemap.xml');
 const DEFAULT_ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
 const EXCLUDED_SOLARIS_TERMS = [
   /\blcd\b/i,
@@ -1229,12 +1229,12 @@ async function main() {
   fs.writeFileSync(INVENTORY_FILE, JSON.stringify(inventory, null, 2));
   fs.writeFileSync(URL_MAP_FILE, JSON.stringify(urlMap, null, 2));
   fs.writeFileSync(URL_MAP_CSV_FILE, buildUrlMapCsv(urlMap));
-  fs.writeFileSync(SITEMAP_FILE, buildSitemap(pages));
 
   console.log(`\nSaved ${pages.length} live page files to ${PAGES_DIR}`);
   console.log(`Saved live page index to ${INDEX_FILE}`);
   console.log(`Saved SEO inventory to ${INVENTORY_FILE}`);
   console.log(`Saved URL map to ${URL_MAP_FILE}`);
+  console.log('Sitemap is served dynamically by pages/sitemap.xml.js');
 }
 
 main().catch((err) => {

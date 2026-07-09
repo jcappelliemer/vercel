@@ -8,7 +8,11 @@ import { buildWhatsAppHref } from '../utils/contactLinks';
 import { getPublicCrmApiBase } from '../utils/publicApi';
 
 const BACKEND_URL = (process.env.REACT_APP_BACKEND_URL || '').replace(/\/$/, '');
-const LOCAL_STAGING_API = 'https://solarisfilms.vercel.app/api';
+const LOCAL_STAGING_API = (
+  process.env.NEXT_PUBLIC_STAGING_API
+  || process.env.REACT_APP_STAGING_API
+  || '/api'
+).replace(/\/$/, '');
 const API = BACKEND_URL
   ? `${BACKEND_URL}/api`
   : (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? LOCAL_STAGING_API : '/api');

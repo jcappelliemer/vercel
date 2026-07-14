@@ -64,6 +64,57 @@ const editorialArchiveRedirects = [
   statusCode: 301,
 })));
 
+const technicalFocusAliasRedirects = [
+  ['/focus-tecnico/pellicole-antisolari', '/pellicole-antisolari/'],
+  ['/focus-tecnico/pellicole-di-sicurezza', '/pellicole-di-sicurezza/'],
+  ['/focus-tecnico/pellicole-antisolari-sputtered', '/pellicole-antisolari-sputtered/'],
+  ['/focus-tecnico/pellicole-antisolari-sunscape', '/pellicole-antisolari-sunscape/'],
+  ['/focus-tecnico/pellicole-oscuranti-per-vetri', '/pellicole-oscuranti-per-vetri/'],
+  ['/focus-tecnico/pellicole-riflettenti', '/pellicole-riflettenti/'],
+  ['/focus-tecnico/pellicole-spettro-selettive', '/pellicole-spettro-selettive/'],
+  ['/focus-tecnico/pellicole-di-sicurezza-neutre-la-serie-cl', '/pellicole-di-sicurezza-neutre-la-serie-cl/'],
+  ['/focus-tecnico/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield', '/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/'],
+  ['/focus-tecnico/pellicole-antisolari-di-sicurezza-la-serie-rs', '/pellicole-antisolari-di-sicurezza-la-serie-rs/'],
+  ['/focus-tecnico/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free', '/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/'],
+  ['/focus-tecnico/pellicole-decorative', '/pellicole-decorative/'],
+  ['/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie', '/pellicole-antisolari-stampabili-e-vetrofanie/'],
+  ['/focus-tecnico/pellicole-decorative-privacy', '/pellicole-decorative-privacy/'],
+  ['/focus-tecnico/pellicole-termoisolanti', '/pellicole-termoisolanti/'],
+].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
+  source: variant,
+  destination,
+  statusCode: 301,
+})));
+
+const legacyUtilityRedirects = [
+  ['/pellicole-per-vetri/certificato-di-sicurezza', '/certificato-di-sicurezza/'],
+].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
+  source: variant,
+  destination,
+  statusCode: 301,
+})));
+
+const infoAliasRedirects = [
+  ['/pagina-info', '/pellicole-per-vetri/pellicole-per-vetri/faq/'],
+  ['/pagina-info/garanzie-clienti', '/pagina-info/garanzie/'],
+  ['/info/norme', '/pagina-info/norme/'],
+  ['/info/norme-di-riferimento', '/pagina-info/norme/'],
+  ['/info/norma-brc', '/pagina-info/norma-brc/'],
+  ['/info/sicurezza-a-norma-di-legge', '/pagina-info/sicurezza-a-norma-di-legge/'],
+  ['/info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro', '/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/'],
+  ['/info/sistemi-filtranti-dpr-59-09', '/pagina-info/sistemi-filtranti-dpr-59-09/'],
+  ['/info/certificazione-nfrc', '/pagina-info/certificazione-nfrc/'],
+  ['/info/garanzie-clienti', '/pagina-info/garanzie/'],
+  ['/info/garanzie', '/pagina-info/garanzie/'],
+  ['/info/i-punti-di-forza', '/pagina-info/i-punti-di-forza/'],
+  ['/info/istruzioni-e-manutenzione', '/pagina-info/istruzioni-e-manutenzione/'],
+  ['/info/glossario-termini', '/pagina-info/glossario-termini/'],
+].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
+  source: variant,
+  destination,
+  statusCode: 301,
+})));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -81,6 +132,9 @@ const nextConfig = {
   async redirects() {
     const redirects = [
       ...editorialArchiveRedirects,
+      ...technicalFocusAliasRedirects,
+      ...legacyUtilityRedirects,
+      ...infoAliasRedirects,
       {
         source: '/pellicole-per-vetri/profilo-solaris',
         destination: '/company-profile/',
@@ -449,16 +503,6 @@ const nextConfig = {
       {
         source: '/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie/',
         destination: '/prodotti/vetrofanie/',
-        permanent: true,
-      },
-      {
-        source: '/info/norme-di-riferimento',
-        destination: '/info/norme/',
-        permanent: true,
-      },
-      {
-        source: '/info/norme-di-riferimento/',
-        destination: '/info/norme/',
         permanent: true,
       },
       {

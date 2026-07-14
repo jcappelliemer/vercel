@@ -22,6 +22,7 @@ const APP_ONLY_SITEMAP_PATHS = [
   '/prodotti/ssn-70-te-sr/',
   '/prodotti/madico-rs-30-e-ps-sr/',
   '/focus-tecnico/safetyshield/',
+  '/certificato-di-sicurezza/',
 ];
 
 const EXCLUDED_SOLARIS_TERMS = [

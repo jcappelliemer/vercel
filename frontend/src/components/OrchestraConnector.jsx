@@ -1,7 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 import { useLocation } from '@/next/router-shim';
 import fixes from '../data/orchestra-fixes.json';
-import AeoOrchestraBadge from './AeoOrchestraBadge';
 import FAQ from './FAQ';
 import Snippet from './Snippet';
 import { isAuthorityFaqItem, normalizeFaqItems, normalizeOrchestraPath } from '../utils/orchestraBlocks';
@@ -163,11 +162,6 @@ export default function OrchestraConnector({ path, headOnly }) {
         </Helmet>
       ) : null}
       {/* headOnly: la Home rende gia le FAQ nel body; authority vive nello slot pre-footer dedicato. */}
-      {!headOnly && entry ? (
-        <section className="aeo-orchestra-badge-section" data-testid="aeo-orchestra-badge-section">
-          <AeoOrchestraBadge />
-        </section>
-      ) : null}
       {!headOnly && faqItems.length ? <FAQ items={faqItems} /> : null}
       {!headOnly && aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
     </>

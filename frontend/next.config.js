@@ -115,6 +115,17 @@ const infoAliasRedirects = [
   statusCode: 301,
 })));
 
+const shortLegacyAliasRedirects = [
+  ['/faq', '/pellicole-per-vetri/pellicole-per-vetri/faq/'],
+  ['/company', '/company-profile/'],
+  ['/contattaci', '/contatti/'],
+  ['/contatto', '/contatti/'],
+].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
+  source: variant,
+  destination,
+  statusCode: 301,
+})));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -135,6 +146,22 @@ const nextConfig = {
       ...technicalFocusAliasRedirects,
       ...legacyUtilityRedirects,
       ...infoAliasRedirects,
+      ...shortLegacyAliasRedirects,
+      {
+        source: '/blog',
+        destination: '/approfondimenti/',
+        statusCode: 301,
+      },
+      {
+        source: '/blog/',
+        destination: '/approfondimenti/',
+        statusCode: 301,
+      },
+      {
+        source: '/blog/:slug*',
+        destination: '/approfondimenti/:slug*',
+        statusCode: 301,
+      },
       {
         source: '/pellicole-per-vetri/profilo-solaris',
         destination: '/company-profile/',

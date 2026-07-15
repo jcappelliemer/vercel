@@ -1,4 +1,5 @@
 import { useParams, useLocation, Link } from '@/next/router-shim';
+import { decodeHtmlEntities } from '../utils/orchestraBlocks';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
@@ -760,13 +761,13 @@ const ProductFaqSection = ({ items = [] }) => {
                 onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
                 className="w-full flex items-center justify-between p-5 text-left hover:bg-[#F8FAFC] transition-colors"
               >
-                <span className="text-[#0A0F1C] font-medium pr-4">{item.q}</span>
+                <span className="text-[#0A0F1C] font-medium pr-4">{decodeHtmlEntities(item.q)}</span>
                 <span className="text-[#64748B] text-lg leading-none">{openIndex === index ? '-' : '+'}</span>
               </button>
               {openIndex === index && (
                 <div className="px-5 pb-5 pt-0">
                   <div className="h-px bg-[#E2E8F0] mb-3" />
-                  <p className="text-[#475569] leading-relaxed">{item.a}</p>
+                  <p className="text-[#475569] leading-relaxed">{decodeHtmlEntities(item.a)}</p>
                 </div>
               )}
             </div>
@@ -866,7 +867,8 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
       ? pageOverrides.caratteristiche
       : (liveSections.caratteristiche?.length ? liveSections.caratteristiche : (prodotto.caratteristiche || []))
   );
-  const descrizioneHero = (liveSections.utilizzi || prodotto.descrizione || '').replace(/&#8217;|&#39;|&rsquo;/gi, '\'');
+  // decode completo (la regex parziale mancava &#039; zero-padded — stesso gap del plugin pre-v3.74.17)
+  const descrizioneHero = decodeHtmlEntities(liveSections.utilizzi || prodotto.descrizione || '');
   const specificheBody = liveSections.specifiche || prodotto.specificheTecniche || '';
   const panoramicaBody = pageOverrides?.panoramicaBody || specificheBody;
   const contextBody = pageOverrides?.contextBody || 'Questa scheda aiuta a capire in modo rapido compatibilità del vetro, livello di schermatura e risultato atteso prima della posa.';

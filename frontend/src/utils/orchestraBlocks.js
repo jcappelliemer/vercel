@@ -25,8 +25,8 @@ export function normalizeFaqItems(items) {
 
   return items
     .map((item) => ({
-      q: item?.q || item?.question || '',
-      a: item?.a || item?.answer || '',
+      q: decodeHtmlEntities(item?.q || item?.question || ''),
+      a: decodeHtmlEntities(item?.a || item?.answer || ''),
     }))
     .filter((item) => item.q && item.a && !isAuthorityFaqItem(item));
 }
@@ -81,4 +81,35 @@ export function filterFaqItemsAgainstBody(items, page) {
     if (bodyText && bodyText.includes(key)) return false;
     return true;
   });
+}
+
+// Residuo encoding (2026-07-15) — le fonti dati runtime (prodotti.json baked dal
+// build, REST jc4e) portano ancora entita HTML nei testi; React le stampa come
+// testo letterale ("un&#039;avanzata"). Decode PURO JS (niente DOM) cosi SSR e
+// client producono la stessa stringa (no hydration mismatch). Copre numeriche
+// dec/hex e le named comuni dei contenuti italiani.
+const NAMED_ENTITIES = {
+  amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ',
+  rsquo: '’', lsquo: '‘', rdquo: '”', ldquo: '“',
+  agrave: 'à', egrave: 'è', eacute: 'é', igrave: 'ì',
+  ograve: 'ò', ugrave: 'ù', Agrave: 'À', Egrave: 'È',
+  Eacute: 'É', deg: '°', middot: '·', hellip: '…',
+  ndash: '–', mdash: '—',
+};
+
+export function decodeHtmlEntities(value) {
+  const text = String(value || '');
+  if (text.indexOf('&') === -1) return text;
+  return text
+    .replace(/&#x([0-9a-f]+);/gi, (_, hex) => {
+      const code = parseInt(hex, 16);
+      return Number.isFinite(code) && code > 0 ? String.fromCodePoint(code) : _;
+    })
+    .replace(/&#(\d+);/g, (_, dec) => {
+      const code = parseInt(dec, 10);
+      return Number.isFinite(code) && code > 0 ? String.fromCodePoint(code) : _;
+    })
+    .replace(/&([a-z]+);/gi, (m, name) =>
+      Object.prototype.hasOwnProperty.call(NAMED_ENTITIES, name) ? NAMED_ENTITIES[name] : m
+    );
 }

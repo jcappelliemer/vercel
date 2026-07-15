@@ -59,6 +59,7 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
   const wpPagina = allInfo.find(p => p.slug === slug);
   const preferLocal = slug === 'garanzie' || slug === 'istruzioni-e-manutenzione' || slug === 'certificazione-nfrc';
   const basePagina = (preferLocal ? localPagina : wpPagina) || wpPagina || localPagina;
+  const isGaranzie = slug === 'garanzie';
   const pagina = basePagina
     ? {
         ...basePagina,
@@ -112,6 +113,70 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
           </div>
         </section>
 
+        {isGaranzie && (
+          <section className="py-16 section-light">
+            <div className="max-w-5xl mx-auto px-6 md:px-12">
+              <div className="mb-10">
+                <p className="text-sm font-semibold tracking-[0.24em] uppercase text-[#EAB308] mb-3">Percorso garanzie Solaris</p>
+                <h2 className="text-2xl sm:text-3xl font-medium text-[#0A0F1C] mb-3">La garanzia si costruisce prima della posa</h2>
+                <p className="text-[#475569] leading-relaxed max-w-3xl">
+                  Una copertura chiara nasce da una scelta corretta: vetro verificato, pellicola compatibile,
+                  posa qualificata e indicazioni semplici per la gestione nel tempo.
+                </p>
+              </div>
+              <div className="grid md:grid-cols-3 gap-4">
+                {[
+                  {
+                    title: 'Verifica iniziale',
+                    text: 'Controlliamo tipologia del vetro, esposizione e obiettivo dell’intervento prima di confermare la soluzione.',
+                  },
+                  {
+                    title: 'Posa qualificata',
+                    text: 'La pellicola viene installata con metodo Solaris, perché prodotto e applicazione fanno parte della stessa garanzia.',
+                  },
+                  {
+                    title: 'Indicazioni nel tempo',
+                    text: 'Dopo la posa contano pulizia corretta, manutenzione e documentazione collegata all’intervento reale.',
+                  },
+                ].map((item) => (
+                  <div key={item.title} className="card-light rounded-xl p-6">
+                    <ShieldCheck size={24} weight="fill" className="text-[#2563EB] mb-4" />
+                    <h3 className="font-medium text-[#0A0F1C] mb-2">{item.title}</h3>
+                    <p className="text-sm text-[#475569] leading-relaxed">{item.text}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </section>
+        )}
+
+        {isGaranzie && pagina.garanzie && (
+          <section className="py-16">
+            <div className="max-w-5xl mx-auto px-6 md:px-12">
+              <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 md:p-8">
+                <div className="grid md:grid-cols-[0.9fr_1.1fr] gap-8 items-start">
+                  <div>
+                    <p className="text-sm font-semibold tracking-[0.24em] uppercase text-[#EAB308] mb-3">Cosa resta tracciato</p>
+                    <h2 className="text-2xl font-medium text-white mb-3">Non una promessa generica, ma un percorso verificabile</h2>
+                    <p className="text-[#94A3B8] leading-relaxed">
+                      La pagina non sostituisce il documento ufficiale: aiuta a capire quali passaggi rendono la garanzia leggibile
+                      e coerente con il lavoro eseguito.
+                    </p>
+                  </div>
+                  <div className="grid sm:grid-cols-2 gap-3">
+                    {pagina.garanzie.map((g, i) => (
+                      <div key={i} className="rounded-xl border border-white/10 bg-[#0F172A] p-4">
+                        <div className="text-xs uppercase tracking-[0.18em] text-[#EAB308] mb-2">{g.tipo}</div>
+                        <div className="text-sm font-medium text-white leading-snug">{g.durata}</div>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        )}
+
         {pagina.norme && (
           <section className="py-16 section-light">
             <div className="max-w-4xl mx-auto px-6 md:px-12">
@@ -150,7 +215,7 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
         {pagina.faq && (
           <section className="py-16 section-light">
             <div className="max-w-4xl mx-auto px-6 md:px-12">
-              <h2 className="text-2xl font-medium text-[#0A0F1C] mb-8">FAQ Garanzie</h2>
+              <h2 className="text-2xl font-medium text-[#0A0F1C] mb-8">{isGaranzie ? 'Domande utili sulle garanzie' : 'FAQ Garanzie'}</h2>
               <div className="space-y-3">
                 {pagina.faq.map((item, i) => (
                   <div key={i} className="card-light rounded-xl p-5">

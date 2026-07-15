@@ -21,6 +21,8 @@ const gonePaths = withSlashVariants([
   '/pellicole-per-vetri/false-parent/battle-plan-mensile-tc-2025',
   '/pellicole-per-vetri/false-parent/line-up-settimanale-tc-2025',
   '/pellicole-per-vetri/llms-txt',
+  '/pellicole-per-vetri/thank-you',
+  '/grazie',
   '/approfondimenti/author/davide-belli',
   '/approfondimenti/author/fabio-meucci',
   '/approfondimenti/author/j-cappelli',
@@ -126,6 +128,48 @@ const shortLegacyAliasRedirects = [
   statusCode: 301,
 })));
 
+const articleAliasRedirects = [
+  {
+    source: '/lo-sapevi-che/:slug',
+    destination: '/approfondimenti/:slug/',
+    statusCode: 301,
+  },
+  {
+    source: '/lo-sapevi-che/:slug/',
+    destination: '/approfondimenti/:slug/',
+    statusCode: 301,
+  },
+];
+
+const localShortAliasRedirects = [
+  'ancona',
+  'aosta',
+  'bari',
+  'bologna',
+  'campobasso',
+  'catanzaro',
+  'cosenza',
+  'firenze',
+  'genova',
+  'laquila',
+  'milano',
+  'napoli',
+  'palermo',
+  'perugia',
+  'potenza',
+  'roma',
+  'romagna',
+  'torino',
+  'trento',
+  'trieste',
+  'udine',
+  'venezia',
+].flatMap((city) => withSlashVariants([`/servizio-locale/${city}`]).map((source) => ({
+  source,
+  destination: `/servizio-locale/pellicole-per-vetri-${city}/`,
+  statusCode: 301,
+})));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -147,6 +191,8 @@ const nextConfig = {
       ...legacyUtilityRedirects,
       ...infoAliasRedirects,
       ...shortLegacyAliasRedirects,
+      ...articleAliasRedirects,
+      ...localShortAliasRedirects,
       {
         source: '/blog',
         destination: '/approfondimenti/',

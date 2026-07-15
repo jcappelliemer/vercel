@@ -124,7 +124,7 @@ function buildFaqSchema(items) {
   };
 }
 
-export default function OrchestraConnector({ path, headOnly }) {
+export default function OrchestraConnector({ path, headOnly, hideFaq = false }) {
   const loc = useLocation();
   const key = normalizeOrchestraPath(path || (loc && loc.pathname) || '/');
   const entry = fixes && fixes.byPath ? fixes.byPath[key] : null;
@@ -162,7 +162,7 @@ export default function OrchestraConnector({ path, headOnly }) {
         </Helmet>
       ) : null}
       {/* headOnly: la Home rende gia le FAQ nel body; authority vive nello slot pre-footer dedicato. */}
-      {!headOnly && faqItems.length ? <FAQ items={faqItems} /> : null}
+      {!headOnly && !hideFaq && faqItems.length ? <FAQ items={faqItems} /> : null}
       {!headOnly && aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
     </>
   );

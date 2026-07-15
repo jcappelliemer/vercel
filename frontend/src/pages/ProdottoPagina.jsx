@@ -1188,7 +1188,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
           </div>
         </section>
       </main>
-      <OrchestraConnector />
+      <OrchestraConnector hideFaq />
       <Authority />
       <Footer />
       <ChatBot />

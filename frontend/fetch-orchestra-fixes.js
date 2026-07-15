@@ -166,6 +166,9 @@ async function main() {
         meta: p.meta || {},
         aeo: p.aeo || {},
         score: normalizeScore(p),
+        // v3.74.18+ — il manifest non trasporta piu i numeri (score.seo/aeo = null):
+        // il segnale pubblico e il flag value-less. Il badge legge questo.
+        optimized_by_orchestra: p.optimized_by_orchestra === true,
       };
     }
     url = nextLink(headers && headers.link);

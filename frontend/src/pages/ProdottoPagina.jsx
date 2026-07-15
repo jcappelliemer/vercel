@@ -867,8 +867,13 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
       ? pageOverrides.caratteristiche
       : (liveSections.caratteristiche?.length ? liveSections.caratteristiche : (prodotto.caratteristiche || []))
   );
-  // decode completo (la regex parziale mancava &#039; zero-padded — stesso gap del plugin pre-v3.74.17)
-  const descrizioneHero = decodeHtmlEntities(liveSections.utilizzi || prodotto.descrizione || '');
+  // decode completo (la regex parziale mancava &#039; zero-padded — stesso gap del plugin pre-v3.74.17).
+  // Il crawl live può catturare il blocco FAQ appeso al post_content dentro
+  // 'utilizzi': tronca al marker "Domande frequenti" — le Q&A vivono
+  // nell'accordion, non come testo piatto nell'hero.
+  const descrizioneHero = decodeHtmlEntities(liveSections.utilizzi || prodotto.descrizione || '')
+    .split(/\s*Domande frequenti\s*/i)[0]
+    .trim();
   const specificheBody = liveSections.specifiche || prodotto.specificheTecniche || '';
   const panoramicaBody = pageOverrides?.panoramicaBody || specificheBody;
   const contextBody = pageOverrides?.contextBody || 'Questa scheda aiuta a capire in modo rapido compatibilità del vetro, livello di schermatura e risultato atteso prima della posa.';

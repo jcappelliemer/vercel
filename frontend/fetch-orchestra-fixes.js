@@ -151,21 +151,6 @@ function normalizeScore(page) {
   return Object.keys(score).length ? score : null;
 }
 
-function mergeConnectorFields(page) {
-  const aeo = page.aeo && typeof page.aeo === 'object' ? page.aeo : {};
-  const fields = [
-    'content_blocks_json',
-    'faq_items_json',
-    'schema_json',
-    'internal_links_json',
-  ];
-
-  return fields.reduce((next, field) => {
-    if (next[field] !== undefined || page[field] === undefined) return next;
-    return { ...next, [field]: page[field] };
-  }, aeo);
-}
-
 function nextLink(linkHeader) {
   if (!linkHeader) return null;
   const part = String(linkHeader).split(',').map((s) => s.trim()).find((s) => /rel="next"/.test(s));
@@ -190,7 +175,7 @@ async function main() {
         post_id: p.post_id,
         modified_at: p.modified_at,
         meta: p.meta || {},
-        aeo: mergeConnectorFields(p),
+        aeo: p.aeo || {},
         score: normalizeScore(p),
       };
     }

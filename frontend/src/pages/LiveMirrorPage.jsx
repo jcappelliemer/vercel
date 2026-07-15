@@ -1811,7 +1811,7 @@ const InfoTemplate = ({ page, allPages = [] }) => {
             <span>{theme.eyebrow}</span>
             <h2>Le informazioni essenziali, senza complicare la scelta</h2>
             <p>
-              Leggi i punti principali e, quando serve, passa alla verifica Solaris sul tuo caso reale.
+              Informazioni chiare per capire il tema, preparare la richiesta e scegliere il percorso più adatto.
             </p>
           </div>
           <ContentBlocks blocks={blocks} title={title} skipFirstHeading />

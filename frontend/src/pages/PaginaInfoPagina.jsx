@@ -118,25 +118,25 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
             <div className="max-w-5xl mx-auto px-6 md:px-12">
               <div className="mb-10">
                 <p className="text-sm font-semibold tracking-[0.24em] uppercase text-[#EAB308] mb-3">Percorso garanzie Solaris</p>
-                <h2 className="text-2xl sm:text-3xl font-medium text-[#0A0F1C] mb-3">La garanzia si costruisce prima della posa</h2>
+                <h2 className="text-2xl sm:text-3xl font-medium text-[#0A0F1C] mb-3">La garanzia si legge insieme all’intervento</h2>
                 <p className="text-[#475569] leading-relaxed max-w-3xl">
-                  Una copertura chiara nasce da una scelta corretta: vetro verificato, pellicola compatibile,
-                  posa qualificata e indicazioni semplici per la gestione nel tempo.
+                  Una garanzia convenzionale funziona quando prodotto, vetro, posa e manutenzione sono coerenti
+                  con le regole previste dal produttore.
                 </p>
               </div>
               <div className="grid md:grid-cols-3 gap-4">
                 {[
                   {
-                    title: 'Verifica iniziale',
-                    text: 'Controlliamo tipologia del vetro, esposizione e obiettivo dell’intervento prima di confermare la soluzione.',
+                    title: 'Prodotto corretto',
+                    text: 'La pellicola deve essere compatibile con supporto, posizione della superficie e obiettivo dell’intervento.',
                   },
                   {
                     title: 'Posa qualificata',
-                    text: 'La pellicola viene installata con metodo Solaris, perché prodotto e applicazione fanno parte della stessa garanzia.',
+                    text: 'L’installazione deve rispettare metodo, supporto e condizioni previste per quel prodotto.',
                   },
                   {
-                    title: 'Indicazioni nel tempo',
-                    text: 'Dopo la posa contano pulizia corretta, manutenzione e documentazione collegata all’intervento reale.',
+                    title: 'Gestione nel tempo',
+                    text: 'La superficie trattata va mantenuta con pulizia e accorgimenti compatibili con la pellicola installata.',
                   },
                 ].map((item) => (
                   <div key={item.title} className="card-light rounded-xl p-6">
@@ -156,11 +156,11 @@ const PaginaInfoPagina = ({ forcedSlug = null }) => {
               <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-6 md:p-8">
                 <div className="grid md:grid-cols-[0.9fr_1.1fr] gap-8 items-start">
                   <div>
-                    <p className="text-sm font-semibold tracking-[0.24em] uppercase text-[#EAB308] mb-3">Cosa resta tracciato</p>
-                    <h2 className="text-2xl font-medium text-white mb-3">Non una promessa generica, ma un percorso verificabile</h2>
+                    <p className="text-sm font-semibold tracking-[0.24em] uppercase text-[#EAB308] mb-3">Cosa deve essere chiaro</p>
+                    <h2 className="text-2xl font-medium text-white mb-3">Una garanzia convenzionale, non una promessa generica</h2>
                     <p className="text-[#94A3B8] leading-relaxed">
-                      La pagina non sostituisce il documento ufficiale: aiuta a capire quali passaggi rendono la garanzia leggibile
-                      e coerente con il lavoro eseguito.
+                      Questa pagina non espone le condizioni complete: chiarisce gli elementi che devono essere coerenti
+                      perché la documentazione di garanzia sia letta nel modo corretto.
                     </p>
                   </div>
                   <div className="grid sm:grid-cols-2 gap-3">

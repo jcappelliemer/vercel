@@ -25,10 +25,34 @@ export function normalizeFaqItems(items) {
 
   return items
     .map((item) => ({
-      q: item?.q || item?.question || '',
-      a: item?.a || item?.answer || '',
+      q: item?.q || item?.question || item?.name || item?.headline || '',
+      a: item?.a || item?.answer || item?.acceptedAnswer?.text || item?.acceptedAnswer?.answerText || '',
     }))
     .filter((item) => item.q && item.a && !isAuthorityFaqItem(item));
+}
+
+export function parseJsonValue(value) {
+  if (!value) return null;
+  if (typeof value === 'object') return value;
+  if (typeof value !== 'string') return null;
+
+  try {
+    return JSON.parse(value);
+  } catch {
+    return null;
+  }
+}
+
+export function normalizeConnectorArray(value, keys = []) {
+  const parsed = parseJsonValue(value);
+  if (Array.isArray(parsed)) return parsed;
+  if (!parsed || typeof parsed !== 'object') return [];
+
+  for (const key of keys) {
+    if (Array.isArray(parsed[key])) return parsed[key];
+  }
+
+  return [];
 }
 
 export function normalizeTrustSignals(signals) {

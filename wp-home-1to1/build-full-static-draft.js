@@ -180,6 +180,8 @@ function rewriteHtmlForLocalDraft(html) {
     }
   );
 
+  output = output.replace(/<link\b(?=[^>]*\brel=["']prefetch["'])(?=[^>]*\bas=["']script["'])[^>]*>/gi, "");
+
   if (/<body\b[^>]*class=["']/i.test(output)) {
     output = output.replace(/<body\b([^>]*class=["'])([^"']*)(["'][^>]*)>/i, (_match, before, classes, after) => {
       const classList = classes.includes("faithful-static-wp") ? classes : `${classes} faithful-static-wp`;

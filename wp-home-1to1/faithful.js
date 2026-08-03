@@ -201,4 +201,121 @@
       item.dataset.faithfulFaqOpen = item.dataset.faithfulFaqOpen === "true" ? "false" : "true";
     });
   });
+
+  const buildStaticChat = () => {
+    const toggle = root.querySelector('[data-testid="chatbot-toggle"]');
+    if (!toggle || toggle.dataset.faithfulChatBound === "true" || typeof document.createElement !== "function") return;
+    toggle.dataset.faithfulChatBound = "true";
+
+    const whatsapp = root.querySelector('[data-testid="floating-contact-btn"]');
+    const panel = document.createElement("aside");
+    panel.className = "faithful-chatbot-window";
+    panel.setAttribute("data-testid", "chatbot-window");
+    panel.setAttribute("data-faithful-chat-open", "false");
+    panel.innerHTML = `
+      <div class="faithful-chatbot-window__header">
+        <div>
+          <p>Assistente Solaris</p>
+          <span>Assistente tecnico</span>
+        </div>
+        <button type="button" data-testid="chatbot-close" aria-label="Chiudi assistente Solaris">×</button>
+      </div>
+      <div class="faithful-chatbot-window__messages" data-faithful-chat-messages></div>
+      <div class="faithful-chatbot-window__quick">
+        <button type="button">Voglio ridurre calore e abbaglio</button>
+        <button type="button">Mi serve sicurezza sul vetro</button>
+        <button type="button">Vorrei più privacy</button>
+      </div>
+      <form class="faithful-chatbot-window__form" data-faithful-chat-form>
+        <textarea data-testid="chatbot-input" rows="1" placeholder="Scrivi un messaggio..."></textarea>
+        <button type="submit" data-testid="chatbot-send" aria-label="Invia messaggio">Invia</button>
+      </form>
+    `;
+    document.body.appendChild(panel);
+
+    const messages = panel.querySelector("[data-faithful-chat-messages]");
+    const input = panel.querySelector('[data-testid="chatbot-input"]');
+    const form = panel.querySelector("[data-faithful-chat-form]");
+    const quickButtons = panel.querySelectorAll(".faithful-chatbot-window__quick button");
+
+    const emitChatState = (isOpen) => {
+      window.dispatchEvent(new CustomEvent("solaris-chatbot-state", { detail: { isOpen } }));
+      if (whatsapp) {
+        if (isOpen) {
+          whatsapp.style.setProperty("opacity", "0", "important");
+          whatsapp.style.setProperty("pointer-events", "none", "important");
+          whatsapp.style.setProperty("transform", "scale(0.9)", "important");
+        } else {
+          whatsapp.style.removeProperty("opacity");
+          whatsapp.style.removeProperty("pointer-events");
+          whatsapp.style.removeProperty("transform");
+        }
+      }
+    };
+
+    const appendMessage = (type, text) => {
+      const message = document.createElement("div");
+      message.className = `faithful-chatbot-window__message faithful-chatbot-window__message--${type}`;
+      message.textContent = text;
+      messages.appendChild(message);
+      messages.scrollTop = messages.scrollHeight;
+    };
+
+    const openChat = () => {
+      panel.dataset.faithfulChatOpen = "true";
+      toggle.classList.add("hidden");
+      emitChatState(true);
+      if (!messages.dataset.faithfulInitialized) {
+        appendMessage("bot", "Ciao! Sono l'assistente Solaris. Posso aiutarti a capire quale pellicola è più adatta al tuo edificio.");
+        messages.dataset.faithfulInitialized = "true";
+      }
+      window.setTimeout(() => input && input.focus(), 80);
+    };
+
+    const closeChat = () => {
+      panel.dataset.faithfulChatOpen = "false";
+      toggle.classList.remove("hidden");
+      emitChatState(false);
+    };
+
+    const respond = (text) => {
+      const lower = text.toLowerCase();
+      if (lower.includes("sicurezza") || lower.includes("antisfondamento") || lower.includes("certificat")) {
+        return "Per la sicurezza si verifica prima il vetro e poi si sceglie la pellicola certificata, per esempio serie CL o SafetyShield in base al rischio. Puoi inviare foto e misure dal modulo preventivo.";
+      }
+      if (lower.includes("privacy") || lower.includes("decor")) {
+        return "Per privacy e design valutiamo quanta luce vuoi mantenere, il livello di copertura e l'effetto estetico. Le soluzioni possono essere satinate, decorative o vetrofanie su misura.";
+      }
+      if (lower.includes("calore") || lower.includes("abbaglio") || lower.includes("sole")) {
+        return "Per calore e abbaglio si parte da esposizione, tipo di vetro e luminosità desiderata. Le famiglie antisolari Solaris permettono di bilanciare respinta energetica, trasparenza ed estetica.";
+      }
+      return "Ho capito. Per orientarti meglio servono città, tipo di edificio, obiettivo e qualche foto delle vetrate. Puoi continuare qui o aprire la richiesta preventivo.";
+    };
+
+    const sendMessage = (value) => {
+      const text = String(value || "").trim();
+      if (!text) return;
+      appendMessage("user", text);
+      if (input) input.value = "";
+      window.setTimeout(() => appendMessage("bot", respond(text)), 250);
+    };
+
+    toggle.addEventListener("click", (event) => {
+      event.preventDefault();
+      openChat();
+    });
+    panel.querySelector('[data-testid="chatbot-close"]').addEventListener("click", closeChat);
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      sendMessage(input && input.value);
+    });
+    quickButtons.forEach((button) => {
+      button.addEventListener("click", () => sendMessage(button.textContent));
+    });
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && panel.dataset.faithfulChatOpen === "true") closeChat();
+    });
+  };
+
+  buildStaticChat();
 })();

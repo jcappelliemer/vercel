@@ -1,55 +1,14 @@
 {
   "origin": "https://www.solarisfilms.it",
-  "generatedAt": "2026-08-03T21:51:56.817Z",
+  "generatedAt": "2026-08-03T22:48:07.330Z",
   "outputDir": "C:\\Users\\Utente\\Documents\\Codex\\vercel\\wp-site-1to1",
   "totalDiscovered": 223,
   "totalFetched": 223,
-  "totalSaved": 221,
+  "totalSaved": 225,
   "totalRedirected": 25,
   "totalFailures": 0,
   "failures": [],
-  "notSaved": [
-    {
-      "path": "/prodotti/madicosb20epssr",
-      "url": "https://www.solarisfilms.it/prodotti/madicosb20epssr",
-      "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sb-20-e-ps-sr/",
-      "redirected": true,
-      "status": 304,
-      "contentType": "",
-      "saved": false,
-      "bytes": 78995
-    },
-    {
-      "path": "/prodotti/madicosb35epssr",
-      "url": "https://www.solarisfilms.it/prodotti/madicosb35epssr",
-      "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sb-35-e-ps-sr/",
-      "redirected": true,
-      "status": 304,
-      "contentType": "",
-      "saved": false,
-      "bytes": 75570
-    },
-    {
-      "path": "/prodotti/madicosg20epssr",
-      "url": "https://www.solarisfilms.it/prodotti/madicosg20epssr",
-      "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sg-20-e-ps-sr/",
-      "redirected": true,
-      "status": 304,
-      "contentType": "",
-      "saved": false,
-      "bytes": 68815
-    },
-    {
-      "path": "/prodotti/madicosl8epssr",
-      "url": "https://www.solarisfilms.it/prodotti/madicosl8epssr",
-      "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sl-8-e-ps-sr/",
-      "redirected": true,
-      "status": 304,
-      "contentType": "",
-      "saved": false,
-      "bytes": 80447
-    }
-  ],
+  "notSaved": [],
   "pages": [
     {
       "path": "/",
@@ -1309,7 +1268,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 205335
+      "bytes": 205596
     },
     {
       "path": "/pellicole-per-vetri/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy",
@@ -1389,7 +1348,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 75570
+      "bytes": 75543
     },
     {
       "path": "/prodotti/madico-rs-40-e-ps-sr",
@@ -1399,7 +1358,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 80843
+      "bytes": 80816
     },
     {
       "path": "/prodotti/madico-rs-20-e-ps-sr",
@@ -1409,7 +1368,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 77549
+      "bytes": 77522
     },
     {
       "path": "/prodotti/madico-sg-20-e-ps-sr",
@@ -1419,7 +1378,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 68815
+      "bytes": 68788
     },
     {
       "path": "/prodotti/madico-sb-20-e-ps-sr",
@@ -1429,7 +1388,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 78995
+      "bytes": 78968
     },
     {
       "path": "/prodotti/madico-sl-8-e-ps-sr",
@@ -1439,7 +1398,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 80447
+      "bytes": 80420
     },
     {
       "path": "/prodotti/madico-gullwing",
@@ -1449,7 +1408,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71027
+      "bytes": 71000
     },
     {
       "path": "/prodotti/madico-rs-40-ps-sr-4mil",
@@ -1459,7 +1418,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 81151
+      "bytes": 81124
     },
     {
       "path": "/prodotti/madico-rs-40-ps-sr-8mil",
@@ -1469,7 +1428,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 78920
+      "bytes": 78893
     },
     {
       "path": "/prodotti/madico-cl-400-ps-sr",
@@ -1479,7 +1438,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 76450
+      "bytes": 76423
     },
     {
       "path": "/prodotti/madico-safetyshield-1500",
@@ -1489,7 +1448,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71422
+      "bytes": 71395
     },
     {
       "path": "/prodotti/madico-cl-400-e-ps-sr",
@@ -1499,7 +1458,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 77167
+      "bytes": 77140
     },
     {
       "path": "/prodotti/madico-cl-700-ps-sr",
@@ -1509,7 +1468,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 81102
+      "bytes": 81075
     },
     {
       "path": "/prodotti/madico-rs-20-ps-sr-4mil",
@@ -1519,7 +1478,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 77521
+      "bytes": 77494
     },
     {
       "path": "/prodotti/madico-safetyshield-800",
@@ -1529,7 +1488,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 70048
+      "bytes": 70021
     },
     {
       "path": "/prodotti/madico-rs-20-ps-sr-8mil",
@@ -1539,7 +1498,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 80369
+      "bytes": 80342
     },
     {
       "path": "/prodotti/madico-cl-700-e-ps-sr",
@@ -1549,7 +1508,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 77849
+      "bytes": 77822
     },
     {
       "path": "/prodotti/vetrofanie",
@@ -1559,7 +1518,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 73117
+      "bytes": 73090
     },
     {
       "path": "/prodotti/madico-mt-200-xw",
@@ -1569,7 +1528,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 75768
+      "bytes": 75741
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-roma",
@@ -1979,7 +1938,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 64494
+      "bytes": 64467
     },
     {
       "path": "/prodotti/madico-rs-30-e-ps-sr",
@@ -1989,7 +1948,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 65522
+      "bytes": 65495
     },
     {
       "path": "/certificato-di-sicurezza",
@@ -2019,7 +1978,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 75570
+      "bytes": 75543
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr",
@@ -2029,7 +1988,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 80843
+      "bytes": 80816
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr",
@@ -2039,7 +1998,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 77549
+      "bytes": 77522
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr",
@@ -2049,7 +2008,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 68815
+      "bytes": 68788
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosb20epssr",
@@ -2059,7 +2018,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 78995
+      "bytes": 78968
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr",
@@ -2069,7 +2028,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 80447
+      "bytes": 80420
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing",
@@ -2079,7 +2038,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71027
+      "bytes": 71000
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil",
@@ -2089,7 +2048,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 81151
+      "bytes": 81124
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil",
@@ -2099,7 +2058,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 78920
+      "bytes": 78893
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-ps-sr",
@@ -2109,7 +2068,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 76450
+      "bytes": 76423
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500",
@@ -2119,7 +2078,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71422
+      "bytes": 71395
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-e-ps-sr",
@@ -2129,7 +2088,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 77167
+      "bytes": 77140
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr",
@@ -2139,7 +2098,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 81102
+      "bytes": 81075
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil",
@@ -2149,7 +2108,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 77521
+      "bytes": 77494
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800",
@@ -2159,7 +2118,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 70048
+      "bytes": 70021
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil",
@@ -2169,7 +2128,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 80369
+      "bytes": 80342
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr",
@@ -2179,7 +2138,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 77849
+      "bytes": 77822
     },
     {
       "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie",
@@ -2189,7 +2148,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 73117
+      "bytes": 73090
     },
     {
       "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw",
@@ -2199,7 +2158,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 75768
+      "bytes": 75741
     },
     {
       "path": "/privacy-policy",
@@ -2216,40 +2175,40 @@
       "url": "https://www.solarisfilms.it/prodotti/madicosb20epssr",
       "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sb-20-e-ps-sr/",
       "redirected": true,
-      "status": 304,
-      "contentType": "",
-      "saved": false,
-      "bytes": 78995
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "saved": true,
+      "bytes": 78968
     },
     {
       "path": "/prodotti/madicosb35epssr",
       "url": "https://www.solarisfilms.it/prodotti/madicosb35epssr",
       "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sb-35-e-ps-sr/",
       "redirected": true,
-      "status": 304,
-      "contentType": "",
-      "saved": false,
-      "bytes": 75570
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "saved": true,
+      "bytes": 75543
     },
     {
       "path": "/prodotti/madicosg20epssr",
       "url": "https://www.solarisfilms.it/prodotti/madicosg20epssr",
       "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sg-20-e-ps-sr/",
       "redirected": true,
-      "status": 304,
-      "contentType": "",
-      "saved": false,
-      "bytes": 68815
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "saved": true,
+      "bytes": 68788
     },
     {
       "path": "/prodotti/madicosl8epssr",
       "url": "https://www.solarisfilms.it/prodotti/madicosl8epssr",
       "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sl-8-e-ps-sr/",
       "redirected": true,
-      "status": 304,
-      "contentType": "",
-      "saved": false,
-      "bytes": 80447
+      "status": 200,
+      "contentType": "text/html; charset=utf-8",
+      "saved": true,
+      "bytes": 80420
     },
     {
       "path": "/prodotti/madico-rs-20-ps-sr-8-mil",
@@ -2485,6 +2444,10 @@
     "/prodotti/madico-sb-35-e-ps-sr",
     "/prodotti/madico-sg-20-e-ps-sr",
     "/prodotti/madico-sl-8-e-ps-sr",
+    "/prodotti/madicosb20epssr",
+    "/prodotti/madicosb35epssr",
+    "/prodotti/madicosg20epssr",
+    "/prodotti/madicosl8epssr",
     "/prodotti/ssn-70-te-sr",
     "/prodotti/vetrofanie",
     "/servizi",

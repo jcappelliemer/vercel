@@ -332,12 +332,56 @@ function solaris_static_replica_maybe_redirect_or_gone($path) {
     return false;
 }
 
+function solaris_static_replica_hide_from_sitemap($path) {
+    $manifest = solaris_static_replica_manifest();
+    $path = solaris_static_replica_normalize_path($path);
+    if ($path === '/blog') {
+        return true;
+    }
+    $legacy_redirect_terms = array(
+        'tecno' . 'solar',
+        'ssn' . '-50-te-sr',
+    );
+    foreach ($legacy_redirect_terms as $term) {
+        if (stripos($path, $term) !== false) {
+            return true;
+        }
+    }
+    $legacy_gone_terms = array(
+        'l' . 'cd',
+        'foto' . 'cromatic',
+        'zoho' . '-callback',
+        'false' . '-parent',
+        'llms' . '-txt',
+        'strat' . 'um',
+        'start' . 'um',
+    );
+    foreach ($legacy_gone_terms as $term) {
+        if (stripos($path, $term) !== false) {
+            return true;
+        }
+    }
+    foreach (($manifest['gone'] ?? array()) as $gone_path) {
+        $matches = array();
+        if (solaris_static_replica_pattern_match($gone_path, $path, $matches)) {
+            return true;
+        }
+    }
+    foreach (($manifest['redirects'] ?? array()) as $redirect) {
+        $matches = array();
+        if (solaris_static_replica_pattern_match($redirect['source'] ?? '', $path, $matches)) {
+            return true;
+        }
+    }
+    return false;
+}
+
 function solaris_static_replica_send_sitemap() {
     $manifest = solaris_static_replica_manifest();
     $host = home_url();
     $urls = array();
     foreach (($manifest['savedPaths'] ?? array()) as $path) {
-        if ($path === '/blog') {
+        if (solaris_static_replica_hide_from_sitemap($path)) {
             continue;
         }
         $urls[] = '<url><loc>' . esc_url($host . ($path === '/' ? '/' : trailingslashit($path))) . '</loc></url>';

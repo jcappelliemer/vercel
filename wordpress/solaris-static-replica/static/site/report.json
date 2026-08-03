@@ -1,14 +1,55 @@
 {
   "origin": "https://www.solarisfilms.it",
-  "generatedAt": "2026-08-03T16:46:56.963Z",
+  "generatedAt": "2026-08-03T21:51:56.817Z",
   "outputDir": "C:\\Users\\Utente\\Documents\\Codex\\vercel\\wp-site-1to1",
   "totalDiscovered": 223,
   "totalFetched": 223,
-  "totalSaved": 225,
+  "totalSaved": 221,
   "totalRedirected": 25,
   "totalFailures": 0,
   "failures": [],
-  "notSaved": [],
+  "notSaved": [
+    {
+      "path": "/prodotti/madicosb20epssr",
+      "url": "https://www.solarisfilms.it/prodotti/madicosb20epssr",
+      "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sb-20-e-ps-sr/",
+      "redirected": true,
+      "status": 304,
+      "contentType": "",
+      "saved": false,
+      "bytes": 78995
+    },
+    {
+      "path": "/prodotti/madicosb35epssr",
+      "url": "https://www.solarisfilms.it/prodotti/madicosb35epssr",
+      "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sb-35-e-ps-sr/",
+      "redirected": true,
+      "status": 304,
+      "contentType": "",
+      "saved": false,
+      "bytes": 75570
+    },
+    {
+      "path": "/prodotti/madicosg20epssr",
+      "url": "https://www.solarisfilms.it/prodotti/madicosg20epssr",
+      "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sg-20-e-ps-sr/",
+      "redirected": true,
+      "status": 304,
+      "contentType": "",
+      "saved": false,
+      "bytes": 68815
+    },
+    {
+      "path": "/prodotti/madicosl8epssr",
+      "url": "https://www.solarisfilms.it/prodotti/madicosl8epssr",
+      "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sl-8-e-ps-sr/",
+      "redirected": true,
+      "status": 304,
+      "contentType": "",
+      "saved": false,
+      "bytes": 80447
+    }
+  ],
   "pages": [
     {
       "path": "/",
@@ -18,7 +59,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 184826
+      "bytes": 189431
     },
     {
       "path": "/servizi",
@@ -28,7 +69,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 234625
+      "bytes": 239637
     },
     {
       "path": "/prodotti",
@@ -38,7 +79,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 221772
+      "bytes": 226308
     },
     {
       "path": "/focus-tecnico",
@@ -48,7 +89,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 218335
+      "bytes": 222866
     },
     {
       "path": "/info",
@@ -58,7 +99,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 212163
+      "bytes": 216952
     },
     {
       "path": "/lo-sapevi-che",
@@ -68,7 +109,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 303862
+      "bytes": 308327
     },
     {
       "path": "/company-profile",
@@ -78,7 +119,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 96147
+      "bytes": 101226
     },
     {
       "path": "/guida-tecnica",
@@ -88,7 +129,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 58091
+      "bytes": 63085
     },
     {
       "path": "/servizio-locale",
@@ -98,7 +139,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 216440
+      "bytes": 221223
     },
     {
       "path": "/preventivo",
@@ -108,7 +149,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 54689
+      "bytes": 59432
     },
     {
       "path": "/contatti",
@@ -118,7 +159,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 53809
+      "bytes": 58757
     },
     {
       "path": "/pellicole-antisolari",
@@ -128,7 +169,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 276300
+      "bytes": 281172
     },
     {
       "path": "/pellicole-antisolari-sputtered",
@@ -138,7 +179,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 259352
+      "bytes": 264217
     },
     {
       "path": "/pellicole-antisolari-sunscape",
@@ -148,7 +189,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 246956
+      "bytes": 251712
     },
     {
       "path": "/pellicole-riflettenti",
@@ -158,7 +199,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 232256
+      "bytes": 237009
     },
     {
       "path": "/pellicole-spettro-selettive",
@@ -168,7 +209,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 248380
+      "bytes": 253297
     },
     {
       "path": "/pellicole-di-sicurezza",
@@ -178,7 +219,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 248146
+      "bytes": 252838
     },
     {
       "path": "/pellicole-decorative",
@@ -188,7 +229,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 243973
+      "bytes": 248564
     },
     {
       "path": "/focus-tecnico/safetyshield",
@@ -198,7 +239,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 60225
+      "bytes": 65203
     },
     {
       "path": "/approfondimenti/pellicole-sicurezza-valgono-assicurazione",
@@ -208,7 +249,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 253981
+      "bytes": 258433
     },
     {
       "path": "/approfondimenti/trend-schermature-solari-vetrate",
@@ -218,7 +259,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 254113
+      "bytes": 258537
     },
     {
       "path": "/approfondimenti/si-possono-applicare-film-su-doppi-vetri",
@@ -228,7 +269,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 253521
+      "bytes": 257945
     },
     {
       "path": "/approfondimenti/migliori-film-vetri-capannoni-industriali",
@@ -238,7 +279,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 253740
+      "bytes": 258164
     },
     {
       "path": "/approfondimenti/5-vantaggi-pellicole-sicurezza-certificate",
@@ -248,7 +289,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 250216
+      "bytes": 254834
     },
     {
       "path": "/approfondimenti/approfondimenti-antisolare",
@@ -258,7 +299,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 231238
+      "bytes": 235663
     },
     {
       "path": "/approfondimenti/calcolo-risparmio-energetico-pellicole-solari",
@@ -268,7 +309,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 284426
+      "bytes": 289215
     },
     {
       "path": "/approfondimenti/pellicole-vetri-certificate-enti-pubblici",
@@ -278,7 +319,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 255237
+      "bytes": 259661
     },
     {
       "path": "/approfondimenti/pellicole-vetri-fake-news",
@@ -288,7 +329,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 254992
+      "bytes": 259878
     },
     {
       "path": "/approfondimenti/approfondimenti-sicurezza",
@@ -298,7 +339,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 229854
+      "bytes": 234596
     },
     {
       "path": "/approfondimenti/approfondimenti-design",
@@ -308,7 +349,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 224234
+      "bytes": 228842
     },
     {
       "path": "/approfondimenti/energia-solare-e-vlt",
@@ -318,7 +359,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 238128
+      "bytes": 242774
     },
     {
       "path": "/approfondimenti/pellicola-oscurante-vetri",
@@ -328,7 +369,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 221696
+      "bytes": 226156
     },
     {
       "path": "/approfondimenti/pellicola-oscurante-vetro",
@@ -338,7 +379,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 233086
+      "bytes": 237631
     },
     {
       "path": "/approfondimenti/pellicola-per-vetri-anti-sguardo",
@@ -348,7 +389,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 229887
+      "bytes": 234530
     },
     {
       "path": "/approfondimenti/pellicola-per-vetri-casa",
@@ -358,7 +399,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 231674
+      "bytes": 236299
     },
     {
       "path": "/approfondimenti/pellicole-di-sicurezza-per-vetri",
@@ -368,7 +409,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 228151
+      "bytes": 232674
     },
     {
       "path": "/approfondimenti/pellicola-vetro",
@@ -378,7 +419,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 227640
+      "bytes": 232139
     },
     {
       "path": "/approfondimenti/pellicole-oscuranti",
@@ -388,7 +429,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 234631
+      "bytes": 239348
     },
     {
       "path": "/approfondimenti/pellicola-satinata-per-vetri",
@@ -398,7 +439,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 227214
+      "bytes": 231703
     },
     {
       "path": "/approfondimenti/pellicola-specchio",
@@ -408,7 +449,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 227835
+      "bytes": 232303
     },
     {
       "path": "/approfondimenti/pellicola-termica-per-vetri",
@@ -418,7 +459,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 229070
+      "bytes": 233599
     },
     {
       "path": "/approfondimenti/pellicole-riflettenti-pro-e-contro",
@@ -428,7 +469,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 242224
+      "bytes": 246946
     },
     {
       "path": "/approfondimenti/pellicole-per-vetri-di-qualita-vs-scadenti",
@@ -438,7 +479,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 242691
+      "bytes": 247197
     },
     {
       "path": "/approfondimenti/pellicole-per-vetri-e-fake-news",
@@ -448,7 +489,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 244427
+      "bytes": 249140
     },
     {
       "path": "/approfondimenti/pellicole-per-vetri-comfort-sicurezza-privacy",
@@ -458,7 +499,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 263579
+      "bytes": 268324
     },
     {
       "path": "/approfondimenti/pellicola-privacy-per-vetri-ufficio",
@@ -468,7 +509,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 261178
+      "bytes": 265756
     },
     {
       "path": "/approfondimenti/pellicole-satinate-per-vetri-bagno",
@@ -478,7 +519,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267906
+      "bytes": 272824
     },
     {
       "path": "/approfondimenti/come-ridurre-il-calore-dalle-vetrate",
@@ -488,7 +529,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 257564
+      "bytes": 262109
     },
     {
       "path": "/approfondimenti/pellicole-riflettenti-vetri-esterni-quando-convengono",
@@ -498,7 +539,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 270648
+      "bytes": 275407
     },
     {
       "path": "/approfondimenti/pellicole-spettroselettive-facciate-vetrate",
@@ -508,7 +549,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 265832
+      "bytes": 270549
     },
     {
       "path": "/approfondimenti/pellicole-termoisolanti-per-vetri-in-inverno",
@@ -518,7 +559,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268332
+      "bytes": 273153
     },
     {
       "path": "/approfondimenti/pellicola-antieffrazione-per-finestre-come-sceglierla",
@@ -528,7 +569,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 260782
+      "bytes": 265545
     },
     {
       "path": "/approfondimenti/uni-en-12600-pellicole-sicurezza-vetri",
@@ -538,7 +579,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 264855
+      "bytes": 269530
     },
     {
       "path": "/approfondimenti/come-mettere-in-sicurezza-un-vetro",
@@ -548,7 +589,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 272280
+      "bytes": 277246
     },
     {
       "path": "/approfondimenti/pellicole-antigraffiti-per-vetrine",
@@ -558,7 +599,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 257964
+      "bytes": 262584
     },
     {
       "path": "/approfondimenti/vetrofanie-decorative-per-uffici",
@@ -568,7 +609,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268379
+      "bytes": 273221
     },
     {
       "path": "/approfondimenti/pellicole-riflettenti-per-facciate-continue",
@@ -578,7 +619,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 260487
+      "bytes": 265120
     },
     {
       "path": "/approfondimenti/quanto-costa-installare-pellicole-per-vetri",
@@ -588,7 +629,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 265148
+      "bytes": 269943
     },
     {
       "path": "/approfondimenti/pellicole-vetri-riducono-davvero-raggi-uv",
@@ -598,7 +639,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 257248
+      "bytes": 261969
     },
     {
       "path": "/approfondimenti/migliori-pellicole-antisolari-per-vetrate-grandi",
@@ -608,7 +649,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267298
+      "bytes": 272123
     },
     {
       "path": "/approfondimenti/quanto-dura-una-pellicola-per-vetri",
@@ -618,7 +659,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 266757
+      "bytes": 271445
     },
     {
       "path": "/approfondimenti/pellicola-antisfondamento-vs-vetro-stratificato",
@@ -628,7 +669,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 266371
+      "bytes": 271008
     },
     {
       "path": "/approfondimenti/guida-pellicole-sicurezza-uni-en-12600",
@@ -638,7 +679,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 266448
+      "bytes": 271293
     },
     {
       "path": "/approfondimenti/pellicole-antiesplosione-per-vetri-sicurezza",
@@ -648,7 +689,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 259737
+      "bytes": 264330
     },
     {
       "path": "/approfondimenti/pellicole-antisolari-per-capannoni-industriali",
@@ -658,7 +699,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268510
+      "bytes": 273339
     },
     {
       "path": "/approfondimenti/pellicola-satinata-per-porte-in-vetro",
@@ -668,7 +709,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 260004
+      "bytes": 264602
     },
     {
       "path": "/approfondimenti/installazione-pellicole-antisolari-vetri-ufficio",
@@ -678,7 +719,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 270229
+      "bytes": 274867
     },
     {
       "path": "/approfondimenti/come-migliorare-comfort-uffici-vetrati",
@@ -688,7 +729,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 274380
+      "bytes": 279226
     },
     {
       "path": "/approfondimenti/guida-film-certificati-per-vetri",
@@ -698,7 +739,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 264298
+      "bytes": 268972
     },
     {
       "path": "/approfondimenti/pellicole-solari-o-tende-tecniche",
@@ -708,7 +749,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 264855
+      "bytes": 269758
     },
     {
       "path": "/approfondimenti/pellicole-sicurezza-sono-a-norma-scuole",
@@ -718,7 +759,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 257833
+      "bytes": 262319
     },
     {
       "path": "/approfondimenti/pellicole-antisolari-vs-vetri-basso-emissivi",
@@ -728,7 +769,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 265402
+      "bytes": 270030
     },
     {
       "path": "/approfondimenti/preventivo-pellicole-vetri-in-24h",
@@ -738,7 +779,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268598
+      "bytes": 273244
     },
     {
       "path": "/approfondimenti/garanzia-decennale-pellicole-per-vetri",
@@ -748,7 +789,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 259972
+      "bytes": 264491
     },
     {
       "path": "/approfondimenti/pellicole-termoisolanti-per-infissi-esistenti",
@@ -758,7 +799,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267304
+      "bytes": 272009
     },
     {
       "path": "/approfondimenti/pellicole-schermatura-solare-per-vetrate-sud",
@@ -768,7 +809,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 265212
+      "bytes": 269716
     },
     {
       "path": "/approfondimenti/ridurre-abbagliamento-vetrate-senza-tende",
@@ -778,7 +819,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268008
+      "bytes": 272757
     },
     {
       "path": "/approfondimenti/guida-scelta-pellicole-per-scuole",
@@ -788,7 +829,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 266400
+      "bytes": 271125
     },
     {
       "path": "/approfondimenti/migliori-film-sicurezza-vetrate-scuole",
@@ -798,7 +839,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 262594
+      "bytes": 267028
     },
     {
       "path": "/approfondimenti/esempio-riduzione-consumi-con-pellicole",
@@ -808,7 +849,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 282105
+      "bytes": 286888
     },
     {
       "path": "/approfondimenti/vetri-sicurezza-scuole",
@@ -818,7 +859,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 261333
+      "bytes": 265872
     },
     {
       "path": "/approfondimenti/pellicola-sicurezza-o-sostituzione-vetro",
@@ -828,7 +869,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 259346
+      "bytes": 263763
     },
     {
       "path": "/approfondimenti/prevenire-rottura-vetri-con-pellicole",
@@ -838,7 +879,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 271857
+      "bytes": 276583
     },
     {
       "path": "/approfondimenti/pellicola-solare-o-doppi-vetri",
@@ -848,7 +889,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268193
+      "bytes": 273005
     },
     {
       "path": "/approfondimenti/recensione-pellicole-madico-antisolari",
@@ -858,7 +899,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 258914
+      "bytes": 263421
     },
     {
       "path": "/approfondimenti/migliori-pellicole-controllo-solare-edifici",
@@ -868,7 +909,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 265505
+      "bytes": 270090
     },
     {
       "path": "/approfondimenti/come-funziona-pellicola-antiesplosione-vetri",
@@ -878,7 +919,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268983
+      "bytes": 273599
     },
     {
       "path": "/approfondimenti/come-scegliere-pellicola-antisolare-casa",
@@ -888,7 +929,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 258496
+      "bytes": 262984
     },
     {
       "path": "/approfondimenti/come-scegliere-pellicola-spettroselettiva-vetri",
@@ -898,7 +939,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267752
+      "bytes": 272665
     },
     {
       "path": "/approfondimenti/guida-norme-vetri-sicurezza-edifici",
@@ -908,7 +949,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 266947
+      "bytes": 271678
     },
     {
       "path": "/approfondimenti/installatore-pellicole-vetri-nord-italia",
@@ -918,7 +959,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267370
+      "bytes": 272063
     },
     {
       "path": "/approfondimenti/pellicole-vetri-interne-o-esterne-cosa-scegliere",
@@ -928,7 +969,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 273169
+      "bytes": 277943
     },
     {
       "path": "/approfondimenti/migliori-pellicole-anti-uv-finestre",
@@ -938,7 +979,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 270889
+      "bytes": 275765
     },
     {
       "path": "/approfondimenti/guida-conformita-vetri-luoghi-pubblici",
@@ -948,7 +989,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 259683
+      "bytes": 264422
     },
     {
       "path": "/approfondimenti/pulizia-manutenzione-pellicole-vetri",
@@ -958,7 +999,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 269049
+      "bytes": 273683
     },
     {
       "path": "/approfondimenti/privacy-vetri-uffici-soluzioni-criteri",
@@ -968,7 +1009,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268736
+      "bytes": 273616
     },
     {
       "path": "/approfondimenti/pellicola-privacy-vs-vetro-satinato",
@@ -978,7 +1019,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 258357
+      "bytes": 262809
     },
     {
       "path": "/approfondimenti/pellicola-antigraffiti-per-vetrine-negozi",
@@ -988,7 +1029,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 264683
+      "bytes": 269211
     },
     {
       "path": "/approfondimenti/guida-installazione-pellicole-edifici-pubblici",
@@ -998,7 +1039,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 265834
+      "bytes": 270302
     },
     {
       "path": "/approfondimenti/review-film-safetyshield-per-vetrate",
@@ -1008,7 +1049,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 261943
+      "bytes": 266396
     },
     {
       "path": "/approfondimenti/scegliere-pellicola-privacy-per-bagno-finestra",
@@ -1018,7 +1059,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267469
+      "bytes": 272323
     },
     {
       "path": "/approfondimenti/pellicole-spettroselettive-vs-riflettenti",
@@ -1028,7 +1069,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 268236
+      "bytes": 273016
     },
     {
       "path": "/approfondimenti/fornitura-posa-pellicole-vetri-italia",
@@ -1038,7 +1079,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 265595
+      "bytes": 270316
     },
     {
       "path": "/approfondimenti/quando-usare-pellicole-antiesplosione-vetri",
@@ -1048,7 +1089,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267416
+      "bytes": 272347
     },
     {
       "path": "/approfondimenti/guida-risparmio-energetico-superfici-vetrate",
@@ -1058,7 +1099,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 264620
+      "bytes": 269013
     },
     {
       "path": "/approfondimenti/pellicole-vetri-servono-autorizzazioni-condominiali",
@@ -1068,7 +1109,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 261971
+      "bytes": 266618
     },
     {
       "path": "/approfondimenti/guida-pellicole-vetri-per-negozi",
@@ -1078,7 +1119,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 261195
+      "bytes": 265947
     },
     {
       "path": "/approfondimenti/pellicole-vetri-per-privacy-open-space",
@@ -1088,7 +1129,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 253962
+      "bytes": 258386
     },
     {
       "path": "/approfondimenti/pellicole-vetri-uni-en-12600-cosa-sapere",
@@ -1098,7 +1139,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 253036
+      "bytes": 257460
     },
     {
       "path": "/approfondimenti/caso-studio-pellicole-sicurezza-scuole",
@@ -1108,7 +1149,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 255142
+      "bytes": 259736
     },
     {
       "path": "/approfondimenti/preventivo-pellicole-vetri-edificio",
@@ -1118,7 +1159,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 255833
+      "bytes": 260257
     },
     {
       "path": "/approfondimenti/guida-certificazioni-pellicole-per-vetri",
@@ -1128,7 +1169,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 257900
+      "bytes": 262498
     },
     {
       "path": "/approfondimenti/pellicola-solare-riduce-consumo-climatizzazione",
@@ -1138,7 +1179,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 256356
+      "bytes": 260974
     },
     {
       "path": "/approfondimenti/guida-pellicole-antisolari-spettroselettive",
@@ -1148,7 +1189,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 255303
+      "bytes": 259907
     },
     {
       "path": "/approfondimenti/come-scegliere-pellicola-sicurezza-scuola",
@@ -1158,7 +1199,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 255081
+      "bytes": 259485
     },
     {
       "path": "/approfondimenti/pellicole-vetri-ospedali-cosa-scegliere",
@@ -1168,7 +1209,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 254872
+      "bytes": 259466
     },
     {
       "path": "/approfondimenti/come-mettere-in-sicurezza-vetrate-scuola",
@@ -1178,7 +1219,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 250577
+      "bytes": 255001
     },
     {
       "path": "/approfondimenti/soluzioni-privacy-uffici-pareti-vetrate",
@@ -1188,7 +1229,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 251420
+      "bytes": 255970
     },
     {
       "path": "/approfondimenti/pellicole-sicurezza-edifici-pubblici-italiani",
@@ -1198,7 +1239,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 251728
+      "bytes": 256152
     },
     {
       "path": "/approfondimenti/schermature-solari-o-climatizzazione",
@@ -1208,7 +1249,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 253079
+      "bytes": 257689
     },
     {
       "path": "/approfondimenti/pellicole-anti-uv-vs-tende-interne",
@@ -1218,7 +1259,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 256068
+      "bytes": 260472
     },
     {
       "path": "/approfondimenti/pellicola-anti-uv",
@@ -1228,7 +1269,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 238121
+      "bytes": 242870
     },
     {
       "path": "/approfondimenti/pellicola-adesiva-specchio",
@@ -1238,7 +1279,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 234372
+      "bytes": 239000
     },
     {
       "path": "/approfondimenti/recensione-pellicole-madico-controllo-solare",
@@ -1248,7 +1289,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 259046
+      "bytes": 263468
     },
     {
       "path": "/approfondimenti/pellicole-vetri-bloccano-raggi-infrarossi",
@@ -1258,7 +1299,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267902
+      "bytes": 272542
     },
     {
       "path": "/pellicole-per-vetri/pellicole-per-vetri",
@@ -1268,7 +1309,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 199821
+      "bytes": 205335
     },
     {
       "path": "/pellicole-per-vetri/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy",
@@ -1278,7 +1319,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 210668
+      "bytes": 215286
     },
     {
       "path": "/pellicole-per-vetri/contact",
@@ -1288,7 +1329,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 208780
+      "bytes": 213240
     },
     {
       "path": "/pellicole-per-vetri/privacy-policy",
@@ -1298,7 +1339,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 228513
+      "bytes": 232853
     },
     {
       "path": "/pellicole-per-vetri/pellicole-per-vetri/faq",
@@ -1308,7 +1349,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 218658
+      "bytes": 223202
     },
     {
       "path": "/pellicole-per-vetri/certificato-di-sicurezza",
@@ -1318,7 +1359,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 13339
+      "bytes": 13644
     },
     {
       "path": "/pellicole-per-vetri/pellicole-per-vetri/preventivo",
@@ -1328,7 +1369,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 209502
+      "bytes": 213875
     },
     {
       "path": "/pellicole-per-vetri/pellicole-per-vetri/about",
@@ -1338,7 +1379,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 229998
+      "bytes": 234975
     },
     {
       "path": "/prodotti/madico-sb-35-e-ps-sr",
@@ -1348,7 +1389,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 68769
+      "bytes": 75570
     },
     {
       "path": "/prodotti/madico-rs-40-e-ps-sr",
@@ -1358,7 +1399,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 74162
+      "bytes": 80843
     },
     {
       "path": "/prodotti/madico-rs-20-e-ps-sr",
@@ -1368,7 +1409,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71341
+      "bytes": 77549
     },
     {
       "path": "/prodotti/madico-sg-20-e-ps-sr",
@@ -1378,7 +1419,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 64463
+      "bytes": 68815
     },
     {
       "path": "/prodotti/madico-sb-20-e-ps-sr",
@@ -1388,7 +1429,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 72763
+      "bytes": 78995
     },
     {
       "path": "/prodotti/madico-sl-8-e-ps-sr",
@@ -1398,7 +1439,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 73538
+      "bytes": 80447
     },
     {
       "path": "/prodotti/madico-gullwing",
@@ -1408,7 +1449,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 64542
+      "bytes": 71027
     },
     {
       "path": "/prodotti/madico-rs-40-ps-sr-4mil",
@@ -1418,7 +1459,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 74986
+      "bytes": 81151
     },
     {
       "path": "/prodotti/madico-rs-40-ps-sr-8mil",
@@ -1428,7 +1469,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 73470
+      "bytes": 78920
     },
     {
       "path": "/prodotti/madico-cl-400-ps-sr",
@@ -1438,7 +1479,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71482
+      "bytes": 76450
     },
     {
       "path": "/prodotti/madico-safetyshield-1500",
@@ -1448,7 +1489,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 65554
+      "bytes": 71422
     },
     {
       "path": "/prodotti/madico-cl-400-e-ps-sr",
@@ -1458,7 +1499,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 70884
+      "bytes": 77167
     },
     {
       "path": "/prodotti/madico-cl-700-ps-sr",
@@ -1468,7 +1509,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 74299
+      "bytes": 81102
     },
     {
       "path": "/prodotti/madico-rs-20-ps-sr-4mil",
@@ -1478,7 +1519,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71384
+      "bytes": 77521
     },
     {
       "path": "/prodotti/madico-safetyshield-800",
@@ -1488,7 +1529,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 64104
+      "bytes": 70048
     },
     {
       "path": "/prodotti/madico-rs-20-ps-sr-8mil",
@@ -1498,7 +1539,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 74684
+      "bytes": 80369
     },
     {
       "path": "/prodotti/madico-cl-700-e-ps-sr",
@@ -1508,7 +1549,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 70458
+      "bytes": 77849
     },
     {
       "path": "/prodotti/vetrofanie",
@@ -1518,7 +1559,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 66526
+      "bytes": 73117
     },
     {
       "path": "/prodotti/madico-mt-200-xw",
@@ -1528,7 +1569,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 69673
+      "bytes": 75768
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-roma",
@@ -1538,7 +1579,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 222992
+      "bytes": 227745
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-cosenza",
@@ -1548,7 +1589,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223446
+      "bytes": 228183
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-bologna",
@@ -1558,7 +1599,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223483
+      "bytes": 228175
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-udine",
@@ -1568,7 +1609,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223346
+      "bytes": 228063
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-trento",
@@ -1578,7 +1619,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223390
+      "bytes": 228060
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-perugia",
@@ -1588,7 +1629,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223159
+      "bytes": 227922
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-catanzaro",
@@ -1598,7 +1639,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223547
+      "bytes": 228195
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-torino",
@@ -1608,7 +1649,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223291
+      "bytes": 228072
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-napoli",
@@ -1618,7 +1659,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223167
+      "bytes": 227768
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-laquila",
@@ -1628,7 +1669,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223246
+      "bytes": 227792
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-venezia",
@@ -1638,7 +1679,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223679
+      "bytes": 228265
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-romagna",
@@ -1648,7 +1689,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223255
+      "bytes": 227934
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-potenza",
@@ -1658,7 +1699,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223297
+      "bytes": 228038
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-palermo",
@@ -1668,7 +1709,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223419
+      "bytes": 228119
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-milano",
@@ -1678,7 +1719,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223365
+      "bytes": 227951
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-genova",
@@ -1688,7 +1729,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 222952
+      "bytes": 227681
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-firenze",
@@ -1698,7 +1739,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223534
+      "bytes": 228204
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-ancona",
@@ -1708,7 +1749,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 224022
+      "bytes": 228773
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-trieste",
@@ -1718,7 +1759,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223375
+      "bytes": 228102
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-campobasso",
@@ -1728,7 +1769,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223786
+      "bytes": 228566
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-aosta",
@@ -1738,7 +1779,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223903
+      "bytes": 228544
     },
     {
       "path": "/servizio-locale/pellicole-per-vetri-bari",
@@ -1748,7 +1789,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 223573
+      "bytes": 228364
     },
     {
       "path": "/pagina-info/sicurezza-a-norma-di-legge",
@@ -1758,7 +1799,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 252807
+      "bytes": 258033
     },
     {
       "path": "/pagina-info/norme",
@@ -1768,7 +1809,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 272442
+      "bytes": 277421
     },
     {
       "path": "/pagina-info/garanzie",
@@ -1778,7 +1819,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 47971
+      "bytes": 52955
     },
     {
       "path": "/pagina-info/certificazione-nfrc",
@@ -1788,7 +1829,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 244834
+      "bytes": 249812
     },
     {
       "path": "/pagina-info/i-punti-di-forza",
@@ -1798,7 +1839,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 235075
+      "bytes": 240026
     },
     {
       "path": "/pagina-info/istruzioni-e-manutenzione",
@@ -1808,7 +1849,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 239259
+      "bytes": 245189
     },
     {
       "path": "/pagina-info/norma-brc",
@@ -1818,7 +1859,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 277426
+      "bytes": 282383
     },
     {
       "path": "/pagina-info/sistemi-filtranti-dpr-59-09",
@@ -1828,7 +1869,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 234063
+      "bytes": 238818
     },
     {
       "path": "/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro",
@@ -1838,7 +1879,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 244298
+      "bytes": 249369
     },
     {
       "path": "/pagina-info/glossario-termini",
@@ -1848,7 +1889,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 246209
+      "bytes": 252683
     },
     {
       "path": "/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield",
@@ -1858,7 +1899,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 242262
+      "bytes": 246909
     },
     {
       "path": "/pellicole-decorative-privacy",
@@ -1868,7 +1909,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 241199
+      "bytes": 246017
     },
     {
       "path": "/pellicole-antisolari-di-sicurezza-la-serie-rs",
@@ -1878,7 +1919,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 238073
+      "bytes": 242479
     },
     {
       "path": "/pellicole-di-sicurezza-neutre-la-serie-cl",
@@ -1888,7 +1929,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 237559
+      "bytes": 242212
     },
     {
       "path": "/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free",
@@ -1898,7 +1939,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 234597
+      "bytes": 239312
     },
     {
       "path": "/pellicole-termoisolanti",
@@ -1908,7 +1949,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 227179
+      "bytes": 231606
     },
     {
       "path": "/pellicole-oscuranti-per-vetri",
@@ -1918,7 +1959,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 238890
+      "bytes": 243446
     },
     {
       "path": "/pellicole-antisolari-stampabili-e-vetrofanie",
@@ -1928,7 +1969,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 267412
+      "bytes": 272232
     },
     {
       "path": "/prodotti/ssn-70-te-sr",
@@ -1938,7 +1979,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 59936
+      "bytes": 64494
     },
     {
       "path": "/prodotti/madico-rs-30-e-ps-sr",
@@ -1948,7 +1989,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 60954
+      "bytes": 65522
     },
     {
       "path": "/certificato-di-sicurezza",
@@ -1958,7 +1999,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 13339
+      "bytes": 13644
     },
     {
       "path": "/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che",
@@ -1968,7 +2009,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 303816
+      "bytes": 308519
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosb35epssr",
@@ -1978,7 +2019,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 68796
+      "bytes": 75570
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-40-e-ps-sr",
@@ -1988,7 +2029,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 74189
+      "bytes": 80843
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madico-rs-20-e-ps-sr",
@@ -1998,7 +2039,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71368
+      "bytes": 77549
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosg20epssr",
@@ -2008,7 +2049,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 64490
+      "bytes": 68815
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosb20epssr",
@@ -2018,7 +2059,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 72790
+      "bytes": 78995
     },
     {
       "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosl8epssr",
@@ -2028,7 +2069,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 73565
+      "bytes": 80447
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-gullwing",
@@ -2038,7 +2079,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 64569
+      "bytes": 71027
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-4-mil",
@@ -2048,7 +2089,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 75013
+      "bytes": 81151
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-40-ps-sr-8-mil",
@@ -2058,7 +2099,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 73497
+      "bytes": 78920
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-ps-sr",
@@ -2068,7 +2109,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71509
+      "bytes": 76450
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-1500",
@@ -2078,7 +2119,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 65581
+      "bytes": 71422
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-400-e-ps-sr",
@@ -2088,7 +2129,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 70911
+      "bytes": 77167
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-ps-sr",
@@ -2098,7 +2139,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 74326
+      "bytes": 81102
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-4mil",
@@ -2108,7 +2149,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 71411
+      "bytes": 77521
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-safetyshield-800",
@@ -2118,7 +2159,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 64131
+      "bytes": 70048
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-rs-20-ps-sr-8-mil",
@@ -2128,7 +2169,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 74711
+      "bytes": 80369
     },
     {
       "path": "/pellicole-per-vetri/pellicole-di-sicurezza/madico-cl-700-e-ps-sr",
@@ -2138,7 +2179,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 70485
+      "bytes": 77849
     },
     {
       "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/vetrofanie",
@@ -2148,7 +2189,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 66553
+      "bytes": 73117
     },
     {
       "path": "/pellicole-per-vetri/pellicole-decorative-per-vetri/madico-mt-200-xw",
@@ -2158,7 +2199,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 69700
+      "bytes": 75768
     },
     {
       "path": "/privacy-policy",
@@ -2168,47 +2209,47 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 48372
+      "bytes": 54018
     },
     {
       "path": "/prodotti/madicosb20epssr",
       "url": "https://www.solarisfilms.it/prodotti/madicosb20epssr",
       "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sb-20-e-ps-sr/",
       "redirected": true,
-      "status": 200,
-      "contentType": "text/html; charset=utf-8",
-      "saved": true,
-      "bytes": 72790
+      "status": 304,
+      "contentType": "",
+      "saved": false,
+      "bytes": 78995
     },
     {
       "path": "/prodotti/madicosb35epssr",
       "url": "https://www.solarisfilms.it/prodotti/madicosb35epssr",
       "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sb-35-e-ps-sr/",
       "redirected": true,
-      "status": 200,
-      "contentType": "text/html; charset=utf-8",
-      "saved": true,
-      "bytes": 68796
+      "status": 304,
+      "contentType": "",
+      "saved": false,
+      "bytes": 75570
     },
     {
       "path": "/prodotti/madicosg20epssr",
       "url": "https://www.solarisfilms.it/prodotti/madicosg20epssr",
       "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sg-20-e-ps-sr/",
       "redirected": true,
-      "status": 200,
-      "contentType": "text/html; charset=utf-8",
-      "saved": true,
-      "bytes": 64490
+      "status": 304,
+      "contentType": "",
+      "saved": false,
+      "bytes": 68815
     },
     {
       "path": "/prodotti/madicosl8epssr",
       "url": "https://www.solarisfilms.it/prodotti/madicosl8epssr",
       "finalUrl": "https://www.solarisfilms.it/prodotti/madico-sl-8-e-ps-sr/",
       "redirected": true,
-      "status": 200,
-      "contentType": "text/html; charset=utf-8",
-      "saved": true,
-      "bytes": 73565
+      "status": 304,
+      "contentType": "",
+      "saved": false,
+      "bytes": 80447
     },
     {
       "path": "/prodotti/madico-rs-20-ps-sr-8-mil",
@@ -2218,7 +2259,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 63276
+      "bytes": 68746
     },
     {
       "path": "/prodotti/madico-rs-40-ps-sr-4-mil",
@@ -2228,7 +2269,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 63192
+      "bytes": 69128
     },
     {
       "path": "/prodotti/madico-rs-40-ps-sr-8-mil",
@@ -2238,7 +2279,7 @@
       "status": 200,
       "contentType": "text/html; charset=utf-8",
       "saved": true,
-      "bytes": 63182
+      "bytes": 68463
     }
   ],
   "aliases": [
@@ -2444,10 +2485,6 @@
     "/prodotti/madico-sb-35-e-ps-sr",
     "/prodotti/madico-sg-20-e-ps-sr",
     "/prodotti/madico-sl-8-e-ps-sr",
-    "/prodotti/madicosb20epssr",
-    "/prodotti/madicosb35epssr",
-    "/prodotti/madicosg20epssr",
-    "/prodotti/madicosl8epssr",
     "/prodotti/ssn-70-te-sr",
     "/prodotti/vetrofanie",
     "/servizi",

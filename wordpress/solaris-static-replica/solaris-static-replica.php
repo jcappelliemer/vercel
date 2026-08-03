@@ -64,14 +64,28 @@ function solaris_static_replica_mime($file) {
     return isset($map[$ext]) ? $map[$ext] : 'application/octet-stream';
 }
 
+function solaris_static_replica_prepare_html($html) {
+    $robots = get_option('blog_public') === '0' ? 'noindex, nofollow' : 'index, follow';
+    $meta = '<meta name="robots" content="' . esc_attr($robots) . '">';
+    if (preg_match('/<meta\b[^>]*\bname=["\']robots["\'][^>]*>/i', $html)) {
+        return preg_replace('/<meta\b[^>]*\bname=["\']robots["\'][^>]*>/i', $meta, $html, 1);
+    }
+    return preg_replace('/<\/head>/i', $meta . '</head>', $html, 1);
+}
+
 function solaris_static_replica_send_file($file, $cache = 'public, max-age=300') {
     if (!file_exists($file) || !is_file($file)) {
         return false;
     }
     status_header(200);
-    header('Content-Type: ' . solaris_static_replica_mime($file));
+    $mime = solaris_static_replica_mime($file);
+    header('Content-Type: ' . $mime);
     header('Cache-Control: ' . $cache);
     header('X-Solaris-Static-Replica: 1');
+    if (strpos($mime, 'text/html') === 0) {
+        echo solaris_static_replica_prepare_html(file_get_contents($file));
+        return true;
+    }
     readfile($file);
     return true;
 }

@@ -9,6 +9,7 @@ const SITE_SOURCE = path.join(ROOT, "wp-site-1to1");
 const PUBLIC_SOURCE = path.join(ROOT, "frontend", "public");
 const NEXT_STATIC_SOURCE = path.join(ROOT, "frontend", ".next", "static");
 const NEXT_CONFIG = path.join(ROOT, "frontend", "next.config.js");
+const CANONICAL_ORIGIN = "https://www.solarisfilms.it";
 
 const TEXT_EXTENSIONS = new Set([
   ".html",
@@ -56,12 +57,22 @@ const NEXT_CSS_LINKS = nextCssLinks();
 
 function sanitizeSolarisText(value) {
   let output = String(value)
+    .replace(/https:\/\/solarisfilms\.vercel\.app/gi, CANONICAL_ORIGIN)
+    .replace(/https:\/\/wordpress-jc4e\.srv1502079\.hstgr\.cloud/gi, CANONICAL_ORIGIN)
     .replace(/Design Pellicole per Vetri:\s*LCD,\s*/gi, "Design Pellicole per Vetri: ")
     .replace(/Dalle pellicole\s+LCD\s+Switch\s+per\s+privacy\s+on-demand\s+e\s+proiezione/gi, "Dalle vetrofanie alle pellicole satinate per privacy e design")
     .replace(/\bLCD\s*Switch\b/gi, "pellicole privacy")
     .replace(/\bLCD\b/gi, "privacy");
 
   if (/<html[\s>]/i.test(output)) {
+    output = output.replace(
+      /(<link\b[^>]*\brel=["']canonical["'][^>]*\bhref=["'])(\/[^"']*)(["'][^>]*>)/gi,
+      (_, before, href, after) => `${before}${CANONICAL_ORIGIN}${href}${after}`
+    );
+    output = output.replace(
+      /(<link\b[^>]*\bhref=["'])(\/[^"']*)(["'][^>]*\brel=["']canonical["'][^>]*>)/gi,
+      (_, before, href, after) => `${before}${CANONICAL_ORIGIN}${href}${after}`
+    );
     output = output.replace(/<script\b[^>]*\bsrc=["']\/_next\/static\/[^"']+["'][^>]*>\s*<\/script>/gi, "");
     output = output.replace(/<script\b[^>]*\bsrc=["']\/_next\/static\/[^"']+["'][^>]*\/>/gi, "");
     if (PRIMARY_NEXT_CSS_PATH) {

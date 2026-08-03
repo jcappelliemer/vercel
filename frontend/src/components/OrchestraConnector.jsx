@@ -3,7 +3,7 @@ import { useLocation } from '@/next/router-shim';
 import fixes from '../data/orchestra-fixes.json';
 import FAQ from './FAQ';
 import Snippet from './Snippet';
-import { isAuthorityFaqItem, normalizeFaqItems, normalizeOrchestraPath } from '../utils/orchestraBlocks';
+import { filterFaqItemsAgainstBody, isAuthorityFaqItem, normalizeFaqItems, normalizeOrchestraPath } from '../utils/orchestraBlocks';
 
 /**
  * OrchestraConnector — A.4: renders the Orchestra AEO blocks (faq, snippet)
@@ -124,7 +124,7 @@ function buildFaqSchema(items) {
   };
 }
 
-export default function OrchestraConnector({ path, headOnly }) {
+export default function OrchestraConnector({ path, headOnly, page }) {
   const loc = useLocation();
   const key = normalizeOrchestraPath(path || (loc && loc.pathname) || '/');
   const entry = fixes && fixes.byPath ? fixes.byPath[key] : null;
@@ -133,6 +133,9 @@ export default function OrchestraConnector({ path, headOnly }) {
   const aeo = entry?.aeo || {};
   const meta = entry?.meta || {};
   const faqItems = normalizeFaqItems(aeo.faq);
+  // Fix C (BUG FAQ #2) — l'accordion salta le domande gia presenti come sezione
+  // nel corpo (prop page dal mirror); il FAQPage JSON-LD resta sul set COMPLETO.
+  const visibleFaqItems = filterFaqItemsAgainstBody(faqItems, page);
   const organizationSchema = buildOrganizationJsonLd(aeo.organization);
   const rawSchemaJsonLd = organizationSchema
     ? removeTopLevelSchemaType(aeo.schema_jsonld, 'Organization')
@@ -162,7 +165,7 @@ export default function OrchestraConnector({ path, headOnly }) {
         </Helmet>
       ) : null}
       {/* headOnly: la Home rende gia le FAQ nel body; authority vive nello slot pre-footer dedicato. */}
-      {!headOnly && faqItems.length ? <FAQ items={faqItems} /> : null}
+      {!headOnly && visibleFaqItems.length ? <FAQ items={visibleFaqItems} /> : null}
       {!headOnly && aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
     </>
   );

@@ -2565,7 +2565,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
       <LivePageSEO page={resolvedPage} currentPath={currentPath} />
       <Header />
       <LiveContent page={resolvedPage} allPages={index?.pages || []} />
-      <OrchestraConnector path={currentPath} />
+      <OrchestraConnector path={currentPath} page={resolvedPage} />
       <Authority path={currentPath} />
       <Footer />
       <ChatBot />

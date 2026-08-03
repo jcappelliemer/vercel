@@ -107,6 +107,12 @@ function solaris_static_replica_try_static_asset($path) {
             if ($file && solaris_static_replica_send_file($file, 'public, max-age=31536000, immutable')) {
                 return true;
             }
+            if ($prefix === '/_next/static/' && strpos($path, '/_next/static/css/') === 0) {
+                $css_files = glob(rtrim($root, '/\\') . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR . '*.css');
+                if (!empty($css_files) && solaris_static_replica_send_file($css_files[0], 'public, max-age=31536000, immutable')) {
+                    return true;
+                }
+            }
         }
     }
     return false;
@@ -261,9 +267,29 @@ function solaris_static_replica_send_robots() {
     echo "User-agent: *\nAllow: /\nSitemap: " . esc_url(home_url('/sitemap.xml')) . "\n";
 }
 
+function solaris_static_replica_send_fast_contact() {
+    $phone = preg_replace('/[^0-9]/', '', (string) ($_GET['to'] ?? '3926578067'));
+    if ($phone === '') {
+        $phone = '3926578067';
+    }
+    $raw_text = $_GET['text'] ?? ($_GET['amp;text'] ?? '');
+    if (is_array($raw_text)) {
+        $raw_text = reset($raw_text);
+    }
+    $location = 'https://wa.me/' . $phone;
+    if ((string) $raw_text !== '') {
+        $location .= '?text=' . rawurlencode((string) $raw_text);
+    }
+    wp_redirect($location, 302);
+}
+
 add_action('template_redirect', function () {
     $path = solaris_static_replica_normalize_path($_SERVER['REQUEST_URI'] ?? '/');
 
+    if ($path === '/api/fast-contact') {
+        solaris_static_replica_send_fast_contact();
+        exit;
+    }
     if ($path === '/robots.txt') {
         solaris_static_replica_send_robots();
         exit;

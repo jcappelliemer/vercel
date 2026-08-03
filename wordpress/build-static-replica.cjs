@@ -35,12 +35,19 @@ function hasExcludedStaticToken(value) {
   return EXCLUDED_STATIC_PATTERNS.some((pattern) => pattern.test(String(value || "")));
 }
 
-function nextCssLinks() {
+function nextCssFiles() {
   const cssDir = path.join(NEXT_STATIC_SOURCE, "css");
-  if (!fs.existsSync(cssDir)) return "";
+  if (!fs.existsSync(cssDir)) return [];
   return fs.readdirSync(cssDir)
     .filter((name) => name.toLowerCase().endsWith(".css"))
-    .sort()
+    .sort();
+}
+
+const NEXT_CSS_FILES = nextCssFiles();
+const PRIMARY_NEXT_CSS_PATH = NEXT_CSS_FILES.length ? `/_next/static/css/${NEXT_CSS_FILES[0]}` : "";
+
+function nextCssLinks() {
+  return NEXT_CSS_FILES
     .map((name) => `<link rel="stylesheet" href="/_next/static/css/${name}" />`)
     .join("");
 }
@@ -57,6 +64,9 @@ function sanitizeSolarisText(value) {
   if (/<html[\s>]/i.test(output)) {
     output = output.replace(/<script\b[^>]*\bsrc=["']\/_next\/static\/[^"']+["'][^>]*>\s*<\/script>/gi, "");
     output = output.replace(/<script\b[^>]*\bsrc=["']\/_next\/static\/[^"']+["'][^>]*\/>/gi, "");
+    if (PRIMARY_NEXT_CSS_PATH) {
+      output = output.replace(/\/_next\/static\/css\/[^"'<>\s)]+\.css(?:\?[^"'<>\s)]*)?/gi, PRIMARY_NEXT_CSS_PATH);
+    }
     if (NEXT_CSS_LINKS && !output.includes("/_next/static/css/")) {
       output = output.replace("</head>", `${NEXT_CSS_LINKS}</head>`);
     }
@@ -248,6 +258,12 @@ function solaris_static_replica_try_static_asset($path) {
             if ($file && solaris_static_replica_send_file($file, 'public, max-age=31536000, immutable')) {
                 return true;
             }
+            if ($prefix === '/_next/static/' && strpos($path, '/_next/static/css/') === 0) {
+                $css_files = glob(rtrim($root, '/\\\\') . DIRECTORY_SEPARATOR . 'css' . DIRECTORY_SEPARATOR . '*.css');
+                if (!empty($css_files) && solaris_static_replica_send_file($css_files[0], 'public, max-age=31536000, immutable')) {
+                    return true;
+                }
+            }
         }
     }
     return false;
@@ -402,9 +418,29 @@ function solaris_static_replica_send_robots() {
     echo "User-agent: *\\nAllow: /\\nSitemap: " . esc_url(home_url('/sitemap.xml')) . "\\n";
 }
 
+function solaris_static_replica_send_fast_contact() {
+    $phone = preg_replace('/[^0-9]/', '', (string) ($_GET['to'] ?? '3926578067'));
+    if ($phone === '') {
+        $phone = '3926578067';
+    }
+    $raw_text = $_GET['text'] ?? ($_GET['amp;text'] ?? '');
+    if (is_array($raw_text)) {
+        $raw_text = reset($raw_text);
+    }
+    $location = 'https://wa.me/' . $phone;
+    if ((string) $raw_text !== '') {
+        $location .= '?text=' . rawurlencode((string) $raw_text);
+    }
+    wp_redirect($location, 302);
+}
+
 add_action('template_redirect', function () {
     $path = solaris_static_replica_normalize_path($_SERVER['REQUEST_URI'] ?? '/');
 
+    if ($path === '/api/fast-contact') {
+        solaris_static_replica_send_fast_contact();
+        exit;
+    }
     if ($path === '/robots.txt') {
         solaris_static_replica_send_robots();
         exit;

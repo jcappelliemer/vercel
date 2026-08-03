@@ -1,5 +1,19 @@
 {
   "framework": "nextjs",
+  "rewrites": [
+    {
+      "source": "/llms.txt",
+      "destination": "https://wordpress-jc4e.srv1502079.hstgr.cloud/llms.txt"
+    },
+    {
+      "source": "/llms-full.txt",
+      "destination": "https://wordpress-jc4e.srv1502079.hstgr.cloud/llms-full.txt"
+    },
+    {
+      "source": "/seo-aeo-sitemap.xml",
+      "destination": "https://wordpress-jc4e.srv1502079.hstgr.cloud/seo-aeo-sitemap.xml"
+    }
+  ],
   "headers": [
     {
       "source": "/_next/static/(.*)",

@@ -1,0 +1,3616 @@
+{
+  "generatedAt": "2026-07-15T01:37:21.374Z",
+  "base": "https://solarisfilms.vercel.app",
+  "candidateCount": 865,
+  "checkedCount": 865,
+  "unreachableCount": 222,
+  "goneCount": 0,
+  "redirectCount": 0,
+  "groupedCounts": {
+    "thank-you": 2,
+    "lo-sapevi-che-alias": 176,
+    "local-short-alias": 44
+  },
+  "unreachable": [
+    {
+      "path": "/grazie",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/grazie",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/grazie",
+      "finalPath": "/grazie",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 414
+    },
+    {
+      "path": "/grazie/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/grazie/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/grazie/",
+      "finalPath": "/grazie/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 400
+    },
+    {
+      "path": "/lo-sapevi-che/approfondimenti-antisolare",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-antisolare",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-antisolare",
+      "finalPath": "/lo-sapevi-che/approfondimenti-antisolare",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 316
+    },
+    {
+      "path": "/lo-sapevi-che/approfondimenti-antisolare/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-antisolare/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-antisolare/",
+      "finalPath": "/lo-sapevi-che/approfondimenti-antisolare/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 334
+    },
+    {
+      "path": "/lo-sapevi-che/approfondimenti-design",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-design",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-design",
+      "finalPath": "/lo-sapevi-che/approfondimenti-design",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 322
+    },
+    {
+      "path": "/lo-sapevi-che/approfondimenti-design/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-design/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-design/",
+      "finalPath": "/lo-sapevi-che/approfondimenti-design/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 367
+    },
+    {
+      "path": "/lo-sapevi-che/approfondimenti-sicurezza",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-sicurezza",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-sicurezza",
+      "finalPath": "/lo-sapevi-che/approfondimenti-sicurezza",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 304
+    },
+    {
+      "path": "/lo-sapevi-che/approfondimenti-sicurezza/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-sicurezza/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/approfondimenti-sicurezza/",
+      "finalPath": "/lo-sapevi-che/approfondimenti-sicurezza/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 348
+    },
+    {
+      "path": "/lo-sapevi-che/calcolo-risparmio-energetico-pellicole-solari",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/calcolo-risparmio-energetico-pellicole-solari",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/calcolo-risparmio-energetico-pellicole-solari",
+      "finalPath": "/lo-sapevi-che/calcolo-risparmio-energetico-pellicole-solari",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 326
+    },
+    {
+      "path": "/lo-sapevi-che/calcolo-risparmio-energetico-pellicole-solari/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/calcolo-risparmio-energetico-pellicole-solari/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/calcolo-risparmio-energetico-pellicole-solari/",
+      "finalPath": "/lo-sapevi-che/calcolo-risparmio-energetico-pellicole-solari/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 340
+    },
+    {
+      "path": "/lo-sapevi-che/come-funziona-pellicola-antiesplosione-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-funziona-pellicola-antiesplosione-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-funziona-pellicola-antiesplosione-vetri",
+      "finalPath": "/lo-sapevi-che/come-funziona-pellicola-antiesplosione-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 318
+    },
+    {
+      "path": "/lo-sapevi-che/come-funziona-pellicola-antiesplosione-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-funziona-pellicola-antiesplosione-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-funziona-pellicola-antiesplosione-vetri/",
+      "finalPath": "/lo-sapevi-che/come-funziona-pellicola-antiesplosione-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 326
+    },
+    {
+      "path": "/lo-sapevi-che/come-mettere-in-sicurezza-un-vetro",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-mettere-in-sicurezza-un-vetro",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-mettere-in-sicurezza-un-vetro",
+      "finalPath": "/lo-sapevi-che/come-mettere-in-sicurezza-un-vetro",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 332
+    },
+    {
+      "path": "/lo-sapevi-che/come-mettere-in-sicurezza-un-vetro/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-mettere-in-sicurezza-un-vetro/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-mettere-in-sicurezza-un-vetro/",
+      "finalPath": "/lo-sapevi-che/come-mettere-in-sicurezza-un-vetro/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 345
+    },
+    {
+      "path": "/lo-sapevi-che/come-migliorare-comfort-uffici-vetrati",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-migliorare-comfort-uffici-vetrati",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-migliorare-comfort-uffici-vetrati",
+      "finalPath": "/lo-sapevi-che/come-migliorare-comfort-uffici-vetrati",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/lo-sapevi-che/come-migliorare-comfort-uffici-vetrati/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-migliorare-comfort-uffici-vetrati/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-migliorare-comfort-uffici-vetrati/",
+      "finalPath": "/lo-sapevi-che/come-migliorare-comfort-uffici-vetrati/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 333
+    },
+    {
+      "path": "/lo-sapevi-che/come-ridurre-il-calore-dalle-vetrate",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-ridurre-il-calore-dalle-vetrate",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-ridurre-il-calore-dalle-vetrate",
+      "finalPath": "/lo-sapevi-che/come-ridurre-il-calore-dalle-vetrate",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 336
+    },
+    {
+      "path": "/lo-sapevi-che/come-ridurre-il-calore-dalle-vetrate/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-ridurre-il-calore-dalle-vetrate/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-ridurre-il-calore-dalle-vetrate/",
+      "finalPath": "/lo-sapevi-che/come-ridurre-il-calore-dalle-vetrate/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 349
+    },
+    {
+      "path": "/lo-sapevi-che/come-scegliere-pellicola-antisolare-casa",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-scegliere-pellicola-antisolare-casa",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-scegliere-pellicola-antisolare-casa",
+      "finalPath": "/lo-sapevi-che/come-scegliere-pellicola-antisolare-casa",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 326
+    },
+    {
+      "path": "/lo-sapevi-che/come-scegliere-pellicola-antisolare-casa/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-scegliere-pellicola-antisolare-casa/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-scegliere-pellicola-antisolare-casa/",
+      "finalPath": "/lo-sapevi-che/come-scegliere-pellicola-antisolare-casa/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/lo-sapevi-che/come-scegliere-pellicola-spettroselettiva-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-scegliere-pellicola-spettroselettiva-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-scegliere-pellicola-spettroselettiva-vetri",
+      "finalPath": "/lo-sapevi-che/come-scegliere-pellicola-spettroselettiva-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 313
+    },
+    {
+      "path": "/lo-sapevi-che/come-scegliere-pellicola-spettroselettiva-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/come-scegliere-pellicola-spettroselettiva-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/come-scegliere-pellicola-spettroselettiva-vetri/",
+      "finalPath": "/lo-sapevi-che/come-scegliere-pellicola-spettroselettiva-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 351
+    },
+    {
+      "path": "/lo-sapevi-che/energia-solare-e-vlt",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/energia-solare-e-vlt",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/energia-solare-e-vlt",
+      "finalPath": "/lo-sapevi-che/energia-solare-e-vlt",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 341
+    },
+    {
+      "path": "/lo-sapevi-che/energia-solare-e-vlt/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/energia-solare-e-vlt/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/energia-solare-e-vlt/",
+      "finalPath": "/lo-sapevi-che/energia-solare-e-vlt/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 323
+    },
+    {
+      "path": "/lo-sapevi-che/esempio-riduzione-consumi-con-pellicole",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/esempio-riduzione-consumi-con-pellicole",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/esempio-riduzione-consumi-con-pellicole",
+      "finalPath": "/lo-sapevi-che/esempio-riduzione-consumi-con-pellicole",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 322
+    },
+    {
+      "path": "/lo-sapevi-che/esempio-riduzione-consumi-con-pellicole/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/esempio-riduzione-consumi-con-pellicole/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/esempio-riduzione-consumi-con-pellicole/",
+      "finalPath": "/lo-sapevi-che/esempio-riduzione-consumi-con-pellicole/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 334
+    },
+    {
+      "path": "/lo-sapevi-che/fornitura-posa-pellicole-vetri-italia",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/fornitura-posa-pellicole-vetri-italia",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/fornitura-posa-pellicole-vetri-italia",
+      "finalPath": "/lo-sapevi-che/fornitura-posa-pellicole-vetri-italia",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 329
+    },
+    {
+      "path": "/lo-sapevi-che/fornitura-posa-pellicole-vetri-italia/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/fornitura-posa-pellicole-vetri-italia/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/fornitura-posa-pellicole-vetri-italia/",
+      "finalPath": "/lo-sapevi-che/fornitura-posa-pellicole-vetri-italia/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 324
+    },
+    {
+      "path": "/lo-sapevi-che/garanzia-decennale-pellicole-per-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/garanzia-decennale-pellicole-per-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/garanzia-decennale-pellicole-per-vetri",
+      "finalPath": "/lo-sapevi-che/garanzia-decennale-pellicole-per-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/lo-sapevi-che/garanzia-decennale-pellicole-per-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/garanzia-decennale-pellicole-per-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/garanzia-decennale-pellicole-per-vetri/",
+      "finalPath": "/lo-sapevi-che/garanzia-decennale-pellicole-per-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 330
+    },
+    {
+      "path": "/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici",
+      "finalPath": "/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 353
+    },
+    {
+      "path": "/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici/",
+      "finalPath": "/lo-sapevi-che/guida-conformita-vetri-luoghi-pubblici/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 339
+    },
+    {
+      "path": "/lo-sapevi-che/guida-film-certificati-per-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-film-certificati-per-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-film-certificati-per-vetri",
+      "finalPath": "/lo-sapevi-che/guida-film-certificati-per-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 323
+    },
+    {
+      "path": "/lo-sapevi-che/guida-film-certificati-per-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-film-certificati-per-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-film-certificati-per-vetri/",
+      "finalPath": "/lo-sapevi-che/guida-film-certificati-per-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/lo-sapevi-che/guida-installazione-pellicole-edifici-pubblici",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-installazione-pellicole-edifici-pubblici",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-installazione-pellicole-edifici-pubblici",
+      "finalPath": "/lo-sapevi-che/guida-installazione-pellicole-edifici-pubblici",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 342
+    },
+    {
+      "path": "/lo-sapevi-che/guida-installazione-pellicole-edifici-pubblici/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-installazione-pellicole-edifici-pubblici/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-installazione-pellicole-edifici-pubblici/",
+      "finalPath": "/lo-sapevi-che/guida-installazione-pellicole-edifici-pubblici/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 346
+    },
+    {
+      "path": "/lo-sapevi-che/guida-norme-vetri-sicurezza-edifici",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-norme-vetri-sicurezza-edifici",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-norme-vetri-sicurezza-edifici",
+      "finalPath": "/lo-sapevi-che/guida-norme-vetri-sicurezza-edifici",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 338
+    },
+    {
+      "path": "/lo-sapevi-che/guida-norme-vetri-sicurezza-edifici/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-norme-vetri-sicurezza-edifici/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-norme-vetri-sicurezza-edifici/",
+      "finalPath": "/lo-sapevi-che/guida-norme-vetri-sicurezza-edifici/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 351
+    },
+    {
+      "path": "/lo-sapevi-che/guida-pellicole-sicurezza-uni-en-12600",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-pellicole-sicurezza-uni-en-12600",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-pellicole-sicurezza-uni-en-12600",
+      "finalPath": "/lo-sapevi-che/guida-pellicole-sicurezza-uni-en-12600",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 343
+    },
+    {
+      "path": "/lo-sapevi-che/guida-pellicole-sicurezza-uni-en-12600/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-pellicole-sicurezza-uni-en-12600/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-pellicole-sicurezza-uni-en-12600/",
+      "finalPath": "/lo-sapevi-che/guida-pellicole-sicurezza-uni-en-12600/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 378
+    },
+    {
+      "path": "/lo-sapevi-che/guida-pellicole-vetri-per-negozi",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-pellicole-vetri-per-negozi",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-pellicole-vetri-per-negozi",
+      "finalPath": "/lo-sapevi-che/guida-pellicole-vetri-per-negozi",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 332
+    },
+    {
+      "path": "/lo-sapevi-che/guida-pellicole-vetri-per-negozi/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-pellicole-vetri-per-negozi/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-pellicole-vetri-per-negozi/",
+      "finalPath": "/lo-sapevi-che/guida-pellicole-vetri-per-negozi/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 300
+    },
+    {
+      "path": "/lo-sapevi-che/guida-risparmio-energetico-superfici-vetrate",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-risparmio-energetico-superfici-vetrate",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-risparmio-energetico-superfici-vetrate",
+      "finalPath": "/lo-sapevi-che/guida-risparmio-energetico-superfici-vetrate",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 303
+    },
+    {
+      "path": "/lo-sapevi-che/guida-risparmio-energetico-superfici-vetrate/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-risparmio-energetico-superfici-vetrate/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-risparmio-energetico-superfici-vetrate/",
+      "finalPath": "/lo-sapevi-che/guida-risparmio-energetico-superfici-vetrate/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 309
+    },
+    {
+      "path": "/lo-sapevi-che/guida-scelta-pellicole-per-scuole",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-scelta-pellicole-per-scuole",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-scelta-pellicole-per-scuole",
+      "finalPath": "/lo-sapevi-che/guida-scelta-pellicole-per-scuole",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 292
+    },
+    {
+      "path": "/lo-sapevi-che/guida-scelta-pellicole-per-scuole/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-scelta-pellicole-per-scuole/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/guida-scelta-pellicole-per-scuole/",
+      "finalPath": "/lo-sapevi-che/guida-scelta-pellicole-per-scuole/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 289
+    },
+    {
+      "path": "/lo-sapevi-che/installatore-pellicole-vetri-nord-italia",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/installatore-pellicole-vetri-nord-italia",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/installatore-pellicole-vetri-nord-italia",
+      "finalPath": "/lo-sapevi-che/installatore-pellicole-vetri-nord-italia",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 304
+    },
+    {
+      "path": "/lo-sapevi-che/installatore-pellicole-vetri-nord-italia/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/installatore-pellicole-vetri-nord-italia/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/installatore-pellicole-vetri-nord-italia/",
+      "finalPath": "/lo-sapevi-che/installatore-pellicole-vetri-nord-italia/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 299
+    },
+    {
+      "path": "/lo-sapevi-che/installazione-pellicole-antisolari-vetri-ufficio",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/installazione-pellicole-antisolari-vetri-ufficio",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/installazione-pellicole-antisolari-vetri-ufficio",
+      "finalPath": "/lo-sapevi-che/installazione-pellicole-antisolari-vetri-ufficio",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 350
+    },
+    {
+      "path": "/lo-sapevi-che/installazione-pellicole-antisolari-vetri-ufficio/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/installazione-pellicole-antisolari-vetri-ufficio/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/installazione-pellicole-antisolari-vetri-ufficio/",
+      "finalPath": "/lo-sapevi-che/installazione-pellicole-antisolari-vetri-ufficio/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 316
+    },
+    {
+      "path": "/lo-sapevi-che/migliori-film-sicurezza-vetrate-scuole",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-film-sicurezza-vetrate-scuole",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-film-sicurezza-vetrate-scuole",
+      "finalPath": "/lo-sapevi-che/migliori-film-sicurezza-vetrate-scuole",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 330
+    },
+    {
+      "path": "/lo-sapevi-che/migliori-film-sicurezza-vetrate-scuole/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-film-sicurezza-vetrate-scuole/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-film-sicurezza-vetrate-scuole/",
+      "finalPath": "/lo-sapevi-che/migliori-film-sicurezza-vetrate-scuole/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 334
+    },
+    {
+      "path": "/lo-sapevi-che/migliori-pellicole-anti-uv-finestre",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-anti-uv-finestre",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-anti-uv-finestre",
+      "finalPath": "/lo-sapevi-che/migliori-pellicole-anti-uv-finestre",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 319
+    },
+    {
+      "path": "/lo-sapevi-che/migliori-pellicole-anti-uv-finestre/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-anti-uv-finestre/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-anti-uv-finestre/",
+      "finalPath": "/lo-sapevi-che/migliori-pellicole-anti-uv-finestre/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 333
+    },
+    {
+      "path": "/lo-sapevi-che/migliori-pellicole-antisolari-per-vetrate-grandi",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-antisolari-per-vetrate-grandi",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-antisolari-per-vetrate-grandi",
+      "finalPath": "/lo-sapevi-che/migliori-pellicole-antisolari-per-vetrate-grandi",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 329
+    },
+    {
+      "path": "/lo-sapevi-che/migliori-pellicole-antisolari-per-vetrate-grandi/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-antisolari-per-vetrate-grandi/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-antisolari-per-vetrate-grandi/",
+      "finalPath": "/lo-sapevi-che/migliori-pellicole-antisolari-per-vetrate-grandi/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 333
+    },
+    {
+      "path": "/lo-sapevi-che/migliori-pellicole-controllo-solare-edifici",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-controllo-solare-edifici",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-controllo-solare-edifici",
+      "finalPath": "/lo-sapevi-che/migliori-pellicole-controllo-solare-edifici",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 327
+    },
+    {
+      "path": "/lo-sapevi-che/migliori-pellicole-controllo-solare-edifici/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-controllo-solare-edifici/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/migliori-pellicole-controllo-solare-edifici/",
+      "finalPath": "/lo-sapevi-che/migliori-pellicole-controllo-solare-edifici/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 329
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-adesiva-specchio",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-adesiva-specchio",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-adesiva-specchio",
+      "finalPath": "/lo-sapevi-che/pellicola-adesiva-specchio",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 330
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-adesiva-specchio/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-adesiva-specchio/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-adesiva-specchio/",
+      "finalPath": "/lo-sapevi-che/pellicola-adesiva-specchio/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 354
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-anti-uv",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-anti-uv",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-anti-uv",
+      "finalPath": "/lo-sapevi-che/pellicola-anti-uv",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 329
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-anti-uv/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-anti-uv/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-anti-uv/",
+      "finalPath": "/lo-sapevi-che/pellicola-anti-uv/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 316
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-antieffrazione-per-finestre-come-sceglierla",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antieffrazione-per-finestre-come-sceglierla",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antieffrazione-per-finestre-come-sceglierla",
+      "finalPath": "/lo-sapevi-che/pellicola-antieffrazione-per-finestre-come-sceglierla",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 344
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-antieffrazione-per-finestre-come-sceglierla/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antieffrazione-per-finestre-come-sceglierla/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antieffrazione-per-finestre-come-sceglierla/",
+      "finalPath": "/lo-sapevi-che/pellicola-antieffrazione-per-finestre-come-sceglierla/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 328
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-antigraffiti-per-vetrine-negozi",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antigraffiti-per-vetrine-negozi",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antigraffiti-per-vetrine-negozi",
+      "finalPath": "/lo-sapevi-che/pellicola-antigraffiti-per-vetrine-negozi",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 324
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-antigraffiti-per-vetrine-negozi/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antigraffiti-per-vetrine-negozi/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antigraffiti-per-vetrine-negozi/",
+      "finalPath": "/lo-sapevi-che/pellicola-antigraffiti-per-vetrine-negozi/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 322
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-antisfondamento-vs-vetro-stratificato",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antisfondamento-vs-vetro-stratificato",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antisfondamento-vs-vetro-stratificato",
+      "finalPath": "/lo-sapevi-che/pellicola-antisfondamento-vs-vetro-stratificato",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 319
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-antisfondamento-vs-vetro-stratificato/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antisfondamento-vs-vetro-stratificato/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-antisfondamento-vs-vetro-stratificato/",
+      "finalPath": "/lo-sapevi-che/pellicola-antisfondamento-vs-vetro-stratificato/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 319
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-oscurante-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-oscurante-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-oscurante-vetri",
+      "finalPath": "/lo-sapevi-che/pellicola-oscurante-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-oscurante-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-oscurante-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-oscurante-vetri/",
+      "finalPath": "/lo-sapevi-che/pellicola-oscurante-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 337
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-oscurante-vetro",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-oscurante-vetro",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-oscurante-vetro",
+      "finalPath": "/lo-sapevi-che/pellicola-oscurante-vetro",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 336
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-oscurante-vetro/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-oscurante-vetro/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-oscurante-vetro/",
+      "finalPath": "/lo-sapevi-che/pellicola-oscurante-vetro/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 333
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-per-vetri-anti-sguardo",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-per-vetri-anti-sguardo",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-per-vetri-anti-sguardo",
+      "finalPath": "/lo-sapevi-che/pellicola-per-vetri-anti-sguardo",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 319
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-per-vetri-anti-sguardo/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-per-vetri-anti-sguardo/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-per-vetri-anti-sguardo/",
+      "finalPath": "/lo-sapevi-che/pellicola-per-vetri-anti-sguardo/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 326
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-per-vetri-casa",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-per-vetri-casa",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-per-vetri-casa",
+      "finalPath": "/lo-sapevi-che/pellicola-per-vetri-casa",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 315
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-per-vetri-casa/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-per-vetri-casa/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-per-vetri-casa/",
+      "finalPath": "/lo-sapevi-che/pellicola-per-vetri-casa/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 330
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-privacy-per-vetri-ufficio",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-privacy-per-vetri-ufficio",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-privacy-per-vetri-ufficio",
+      "finalPath": "/lo-sapevi-che/pellicola-privacy-per-vetri-ufficio",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 334
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-privacy-per-vetri-ufficio/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-privacy-per-vetri-ufficio/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-privacy-per-vetri-ufficio/",
+      "finalPath": "/lo-sapevi-che/pellicola-privacy-per-vetri-ufficio/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 322
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato",
+      "finalPath": "/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 350
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato/",
+      "finalPath": "/lo-sapevi-che/pellicola-privacy-vs-vetro-satinato/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 316
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-satinata-per-porte-in-vetro",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-satinata-per-porte-in-vetro",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-satinata-per-porte-in-vetro",
+      "finalPath": "/lo-sapevi-che/pellicola-satinata-per-porte-in-vetro",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 316
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-satinata-per-porte-in-vetro/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-satinata-per-porte-in-vetro/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-satinata-per-porte-in-vetro/",
+      "finalPath": "/lo-sapevi-che/pellicola-satinata-per-porte-in-vetro/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 325
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-satinata-per-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-satinata-per-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-satinata-per-vetri",
+      "finalPath": "/lo-sapevi-che/pellicola-satinata-per-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 321
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-satinata-per-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-satinata-per-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-satinata-per-vetri/",
+      "finalPath": "/lo-sapevi-che/pellicola-satinata-per-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 327
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-sicurezza-o-sostituzione-vetro",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-sicurezza-o-sostituzione-vetro",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-sicurezza-o-sostituzione-vetro",
+      "finalPath": "/lo-sapevi-che/pellicola-sicurezza-o-sostituzione-vetro",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 347
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-sicurezza-o-sostituzione-vetro/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-sicurezza-o-sostituzione-vetro/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-sicurezza-o-sostituzione-vetro/",
+      "finalPath": "/lo-sapevi-che/pellicola-sicurezza-o-sostituzione-vetro/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 375
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-solare-o-doppi-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-solare-o-doppi-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-solare-o-doppi-vetri",
+      "finalPath": "/lo-sapevi-che/pellicola-solare-o-doppi-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 337
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-solare-o-doppi-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-solare-o-doppi-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-solare-o-doppi-vetri/",
+      "finalPath": "/lo-sapevi-che/pellicola-solare-o-doppi-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 350
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-specchio",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-specchio",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-specchio",
+      "finalPath": "/lo-sapevi-che/pellicola-specchio",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 329
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-specchio/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-specchio/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-specchio/",
+      "finalPath": "/lo-sapevi-che/pellicola-specchio/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 361
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-termica-per-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-termica-per-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-termica-per-vetri",
+      "finalPath": "/lo-sapevi-che/pellicola-termica-per-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 323
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-termica-per-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-termica-per-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-termica-per-vetri/",
+      "finalPath": "/lo-sapevi-che/pellicola-termica-per-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 330
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-vetro",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-vetro",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-vetro",
+      "finalPath": "/lo-sapevi-che/pellicola-vetro",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 308
+    },
+    {
+      "path": "/lo-sapevi-che/pellicola-vetro/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-vetro/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicola-vetro/",
+      "finalPath": "/lo-sapevi-che/pellicola-vetro/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 324
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-antiesplosione-per-vetri-sicurezza",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antiesplosione-per-vetri-sicurezza",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antiesplosione-per-vetri-sicurezza",
+      "finalPath": "/lo-sapevi-che/pellicole-antiesplosione-per-vetri-sicurezza",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 337
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-antiesplosione-per-vetri-sicurezza/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antiesplosione-per-vetri-sicurezza/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antiesplosione-per-vetri-sicurezza/",
+      "finalPath": "/lo-sapevi-che/pellicole-antiesplosione-per-vetri-sicurezza/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 361
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-antigraffiti-per-vetrine",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antigraffiti-per-vetrine",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antigraffiti-per-vetrine",
+      "finalPath": "/lo-sapevi-che/pellicole-antigraffiti-per-vetrine",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 324
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-antigraffiti-per-vetrine/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antigraffiti-per-vetrine/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antigraffiti-per-vetrine/",
+      "finalPath": "/lo-sapevi-che/pellicole-antigraffiti-per-vetrine/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 337
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-antisolari-per-capannoni-industriali",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antisolari-per-capannoni-industriali",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antisolari-per-capannoni-industriali",
+      "finalPath": "/lo-sapevi-che/pellicole-antisolari-per-capannoni-industriali",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 366
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-antisolari-per-capannoni-industriali/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antisolari-per-capannoni-industriali/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antisolari-per-capannoni-industriali/",
+      "finalPath": "/lo-sapevi-che/pellicole-antisolari-per-capannoni-industriali/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 339
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-antisolari-vs-vetri-basso-emissivi",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antisolari-vs-vetri-basso-emissivi",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antisolari-vs-vetri-basso-emissivi",
+      "finalPath": "/lo-sapevi-che/pellicole-antisolari-vs-vetri-basso-emissivi",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 367
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-antisolari-vs-vetri-basso-emissivi/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antisolari-vs-vetri-basso-emissivi/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-antisolari-vs-vetri-basso-emissivi/",
+      "finalPath": "/lo-sapevi-che/pellicole-antisolari-vs-vetri-basso-emissivi/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 356
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-di-sicurezza-per-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-di-sicurezza-per-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-di-sicurezza-per-vetri",
+      "finalPath": "/lo-sapevi-che/pellicole-di-sicurezza-per-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 363
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-di-sicurezza-per-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-di-sicurezza-per-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-di-sicurezza-per-vetri/",
+      "finalPath": "/lo-sapevi-che/pellicole-di-sicurezza-per-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 312
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-oscuranti",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-oscuranti",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-oscuranti",
+      "finalPath": "/lo-sapevi-che/pellicole-oscuranti",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 369
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-oscuranti/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-oscuranti/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-oscuranti/",
+      "finalPath": "/lo-sapevi-che/pellicole-oscuranti/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 342
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-per-vetri-comfort-sicurezza-privacy",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-comfort-sicurezza-privacy",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-comfort-sicurezza-privacy",
+      "finalPath": "/lo-sapevi-che/pellicole-per-vetri-comfort-sicurezza-privacy",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 335
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "finalPath": "/lo-sapevi-che/pellicole-per-vetri-comfort-sicurezza-privacy/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 340
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-per-vetri-di-qualita-vs-scadenti",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-di-qualita-vs-scadenti",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-di-qualita-vs-scadenti",
+      "finalPath": "/lo-sapevi-che/pellicole-per-vetri-di-qualita-vs-scadenti",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 366
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-per-vetri-di-qualita-vs-scadenti/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-di-qualita-vs-scadenti/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-di-qualita-vs-scadenti/",
+      "finalPath": "/lo-sapevi-che/pellicole-per-vetri-di-qualita-vs-scadenti/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 343
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-per-vetri-e-fake-news",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-e-fake-news",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-e-fake-news",
+      "finalPath": "/lo-sapevi-che/pellicole-per-vetri-e-fake-news",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 341
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-per-vetri-e-fake-news/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-e-fake-news/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-per-vetri-e-fake-news/",
+      "finalPath": "/lo-sapevi-che/pellicole-per-vetri-e-fake-news/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 334
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-riflettenti-per-facciate-continue",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-per-facciate-continue",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-per-facciate-continue",
+      "finalPath": "/lo-sapevi-che/pellicole-riflettenti-per-facciate-continue",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 418
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-riflettenti-per-facciate-continue/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-per-facciate-continue/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-per-facciate-continue/",
+      "finalPath": "/lo-sapevi-che/pellicole-riflettenti-per-facciate-continue/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 348
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-riflettenti-pro-e-contro",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-pro-e-contro",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-pro-e-contro",
+      "finalPath": "/lo-sapevi-che/pellicole-riflettenti-pro-e-contro",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 329
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-riflettenti-pro-e-contro/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-pro-e-contro/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-pro-e-contro/",
+      "finalPath": "/lo-sapevi-che/pellicole-riflettenti-pro-e-contro/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 353
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-riflettenti-vetri-esterni-quando-convengono",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-vetri-esterni-quando-convengono",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-vetri-esterni-quando-convengono",
+      "finalPath": "/lo-sapevi-che/pellicole-riflettenti-vetri-esterni-quando-convengono",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 387
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-riflettenti-vetri-esterni-quando-convengono/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-vetri-esterni-quando-convengono/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-riflettenti-vetri-esterni-quando-convengono/",
+      "finalPath": "/lo-sapevi-che/pellicole-riflettenti-vetri-esterni-quando-convengono/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 422
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-satinate-per-vetri-bagno",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-satinate-per-vetri-bagno",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-satinate-per-vetri-bagno",
+      "finalPath": "/lo-sapevi-che/pellicole-satinate-per-vetri-bagno",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 326
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-satinate-per-vetri-bagno/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-satinate-per-vetri-bagno/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-satinate-per-vetri-bagno/",
+      "finalPath": "/lo-sapevi-che/pellicole-satinate-per-vetri-bagno/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 335
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-schermatura-solare-per-vetrate-sud",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-schermatura-solare-per-vetrate-sud",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-schermatura-solare-per-vetrate-sud",
+      "finalPath": "/lo-sapevi-che/pellicole-schermatura-solare-per-vetrate-sud",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 372
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-schermatura-solare-per-vetrate-sud/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-schermatura-solare-per-vetrate-sud/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-schermatura-solare-per-vetrate-sud/",
+      "finalPath": "/lo-sapevi-che/pellicole-schermatura-solare-per-vetrate-sud/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 320
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-sicurezza-sono-a-norma-scuole",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-sicurezza-sono-a-norma-scuole",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-sicurezza-sono-a-norma-scuole",
+      "finalPath": "/lo-sapevi-che/pellicole-sicurezza-sono-a-norma-scuole",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 335
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-sicurezza-sono-a-norma-scuole/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-sicurezza-sono-a-norma-scuole/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-sicurezza-sono-a-norma-scuole/",
+      "finalPath": "/lo-sapevi-che/pellicole-sicurezza-sono-a-norma-scuole/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 339
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-solari-o-tende-tecniche",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-solari-o-tende-tecniche",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-solari-o-tende-tecniche",
+      "finalPath": "/lo-sapevi-che/pellicole-solari-o-tende-tecniche",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 363
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-solari-o-tende-tecniche/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-solari-o-tende-tecniche/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-solari-o-tende-tecniche/",
+      "finalPath": "/lo-sapevi-che/pellicole-solari-o-tende-tecniche/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 345
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-spettroselettive-facciate-vetrate",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-spettroselettive-facciate-vetrate",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-spettroselettive-facciate-vetrate",
+      "finalPath": "/lo-sapevi-che/pellicole-spettroselettive-facciate-vetrate",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 370
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-spettroselettive-facciate-vetrate/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-spettroselettive-facciate-vetrate/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-spettroselettive-facciate-vetrate/",
+      "finalPath": "/lo-sapevi-che/pellicole-spettroselettive-facciate-vetrate/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 337
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-spettroselettive-vs-riflettenti",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-spettroselettive-vs-riflettenti",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-spettroselettive-vs-riflettenti",
+      "finalPath": "/lo-sapevi-che/pellicole-spettroselettive-vs-riflettenti",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 380
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-spettroselettive-vs-riflettenti/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-spettroselettive-vs-riflettenti/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-spettroselettive-vs-riflettenti/",
+      "finalPath": "/lo-sapevi-che/pellicole-spettroselettive-vs-riflettenti/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 352
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-termoisolanti-per-infissi-esistenti",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-termoisolanti-per-infissi-esistenti",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-termoisolanti-per-infissi-esistenti",
+      "finalPath": "/lo-sapevi-che/pellicole-termoisolanti-per-infissi-esistenti",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 320
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-termoisolanti-per-infissi-esistenti/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-termoisolanti-per-infissi-esistenti/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-termoisolanti-per-infissi-esistenti/",
+      "finalPath": "/lo-sapevi-che/pellicole-termoisolanti-per-infissi-esistenti/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 372
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-termoisolanti-per-vetri-in-inverno",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-termoisolanti-per-vetri-in-inverno",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-termoisolanti-per-vetri-in-inverno",
+      "finalPath": "/lo-sapevi-che/pellicole-termoisolanti-per-vetri-in-inverno",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 368
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-termoisolanti-per-vetri-in-inverno/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-termoisolanti-per-vetri-in-inverno/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-termoisolanti-per-vetri-in-inverno/",
+      "finalPath": "/lo-sapevi-che/pellicole-termoisolanti-per-vetri-in-inverno/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 327
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-bloccano-raggi-infrarossi",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-bloccano-raggi-infrarossi",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-bloccano-raggi-infrarossi",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-bloccano-raggi-infrarossi",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 339
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-bloccano-raggi-infrarossi/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-bloccano-raggi-infrarossi/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-bloccano-raggi-infrarossi/",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-bloccano-raggi-infrarossi/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 336
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-fake-news",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-fake-news",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-fake-news",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-fake-news",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 375
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-fake-news/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-fake-news/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-fake-news/",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-fake-news/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 323
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere/",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-interne-o-esterne-cosa-scegliere/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 329
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-per-privacy-open-space",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-per-privacy-open-space",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-per-privacy-open-space",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-per-privacy-open-space",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 388
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-per-privacy-open-space/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-per-privacy-open-space/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-per-privacy-open-space/",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-per-privacy-open-space/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 310
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-riducono-davvero-raggi-uv",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-riducono-davvero-raggi-uv",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-riducono-davvero-raggi-uv",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-riducono-davvero-raggi-uv",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-riducono-davvero-raggi-uv/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-riducono-davvero-raggi-uv/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-riducono-davvero-raggi-uv/",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-riducono-davvero-raggi-uv/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 352
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-servono-autorizzazioni-condominiali",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-servono-autorizzazioni-condominiali",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-servono-autorizzazioni-condominiali",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-servono-autorizzazioni-condominiali",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 360
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-servono-autorizzazioni-condominiali/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-servono-autorizzazioni-condominiali/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-servono-autorizzazioni-condominiali/",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-servono-autorizzazioni-condominiali/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 353
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-uni-en-12600-cosa-sapere",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-uni-en-12600-cosa-sapere",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-uni-en-12600-cosa-sapere",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-uni-en-12600-cosa-sapere",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 323
+    },
+    {
+      "path": "/lo-sapevi-che/pellicole-vetri-uni-en-12600-cosa-sapere/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-uni-en-12600-cosa-sapere/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pellicole-vetri-uni-en-12600-cosa-sapere/",
+      "finalPath": "/lo-sapevi-che/pellicole-vetri-uni-en-12600-cosa-sapere/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 319
+    },
+    {
+      "path": "/lo-sapevi-che/prevenire-rottura-vetri-con-pellicole",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/prevenire-rottura-vetri-con-pellicole",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/prevenire-rottura-vetri-con-pellicole",
+      "finalPath": "/lo-sapevi-che/prevenire-rottura-vetri-con-pellicole",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 353
+    },
+    {
+      "path": "/lo-sapevi-che/prevenire-rottura-vetri-con-pellicole/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/prevenire-rottura-vetri-con-pellicole/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/prevenire-rottura-vetri-con-pellicole/",
+      "finalPath": "/lo-sapevi-che/prevenire-rottura-vetri-con-pellicole/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 360
+    },
+    {
+      "path": "/lo-sapevi-che/preventivo-pellicole-vetri-in-24h",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/preventivo-pellicole-vetri-in-24h",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/preventivo-pellicole-vetri-in-24h",
+      "finalPath": "/lo-sapevi-che/preventivo-pellicole-vetri-in-24h",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 343
+    },
+    {
+      "path": "/lo-sapevi-che/preventivo-pellicole-vetri-in-24h/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/preventivo-pellicole-vetri-in-24h/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/preventivo-pellicole-vetri-in-24h/",
+      "finalPath": "/lo-sapevi-che/preventivo-pellicole-vetri-in-24h/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 339
+    },
+    {
+      "path": "/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri",
+      "finalPath": "/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 373
+    },
+    {
+      "path": "/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri/",
+      "finalPath": "/lo-sapevi-che/privacy-vetri-uffici-soluzioni-criteri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 336
+    },
+    {
+      "path": "/lo-sapevi-che/pulizia-manutenzione-pellicole-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pulizia-manutenzione-pellicole-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pulizia-manutenzione-pellicole-vetri",
+      "finalPath": "/lo-sapevi-che/pulizia-manutenzione-pellicole-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 353
+    },
+    {
+      "path": "/lo-sapevi-che/pulizia-manutenzione-pellicole-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/pulizia-manutenzione-pellicole-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/pulizia-manutenzione-pellicole-vetri/",
+      "finalPath": "/lo-sapevi-che/pulizia-manutenzione-pellicole-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 355
+    },
+    {
+      "path": "/lo-sapevi-che/quando-usare-pellicole-antiesplosione-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/quando-usare-pellicole-antiesplosione-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/quando-usare-pellicole-antiesplosione-vetri",
+      "finalPath": "/lo-sapevi-che/quando-usare-pellicole-antiesplosione-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 405
+    },
+    {
+      "path": "/lo-sapevi-che/quando-usare-pellicole-antiesplosione-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/quando-usare-pellicole-antiesplosione-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/quando-usare-pellicole-antiesplosione-vetri/",
+      "finalPath": "/lo-sapevi-che/quando-usare-pellicole-antiesplosione-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 326
+    },
+    {
+      "path": "/lo-sapevi-che/quanto-costa-installare-pellicole-per-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/quanto-costa-installare-pellicole-per-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/quanto-costa-installare-pellicole-per-vetri",
+      "finalPath": "/lo-sapevi-che/quanto-costa-installare-pellicole-per-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 368
+    },
+    {
+      "path": "/lo-sapevi-che/quanto-costa-installare-pellicole-per-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/quanto-costa-installare-pellicole-per-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/quanto-costa-installare-pellicole-per-vetri/",
+      "finalPath": "/lo-sapevi-che/quanto-costa-installare-pellicole-per-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 336
+    },
+    {
+      "path": "/lo-sapevi-che/quanto-dura-una-pellicola-per-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/quanto-dura-una-pellicola-per-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/quanto-dura-una-pellicola-per-vetri",
+      "finalPath": "/lo-sapevi-che/quanto-dura-una-pellicola-per-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 402
+    },
+    {
+      "path": "/lo-sapevi-che/quanto-dura-una-pellicola-per-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/quanto-dura-una-pellicola-per-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/quanto-dura-una-pellicola-per-vetri/",
+      "finalPath": "/lo-sapevi-che/quanto-dura-una-pellicola-per-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 320
+    },
+    {
+      "path": "/lo-sapevi-che/recensione-pellicole-madico-antisolari",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/recensione-pellicole-madico-antisolari",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/recensione-pellicole-madico-antisolari",
+      "finalPath": "/lo-sapevi-che/recensione-pellicole-madico-antisolari",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 299
+    },
+    {
+      "path": "/lo-sapevi-che/recensione-pellicole-madico-antisolari/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/recensione-pellicole-madico-antisolari/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/recensione-pellicole-madico-antisolari/",
+      "finalPath": "/lo-sapevi-che/recensione-pellicole-madico-antisolari/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 381
+    },
+    {
+      "path": "/lo-sapevi-che/recensione-pellicole-madico-controllo-solare",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/recensione-pellicole-madico-controllo-solare",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/recensione-pellicole-madico-controllo-solare",
+      "finalPath": "/lo-sapevi-che/recensione-pellicole-madico-controllo-solare",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 347
+    },
+    {
+      "path": "/lo-sapevi-che/recensione-pellicole-madico-controllo-solare/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/recensione-pellicole-madico-controllo-solare/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/recensione-pellicole-madico-controllo-solare/",
+      "finalPath": "/lo-sapevi-che/recensione-pellicole-madico-controllo-solare/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 330
+    },
+    {
+      "path": "/lo-sapevi-che/review-film-safetyshield-per-vetrate",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/review-film-safetyshield-per-vetrate",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/review-film-safetyshield-per-vetrate",
+      "finalPath": "/lo-sapevi-che/review-film-safetyshield-per-vetrate",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 345
+    },
+    {
+      "path": "/lo-sapevi-che/review-film-safetyshield-per-vetrate/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/review-film-safetyshield-per-vetrate/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/review-film-safetyshield-per-vetrate/",
+      "finalPath": "/lo-sapevi-che/review-film-safetyshield-per-vetrate/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 334
+    },
+    {
+      "path": "/lo-sapevi-che/ridurre-abbagliamento-vetrate-senza-tende",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/ridurre-abbagliamento-vetrate-senza-tende",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/ridurre-abbagliamento-vetrate-senza-tende",
+      "finalPath": "/lo-sapevi-che/ridurre-abbagliamento-vetrate-senza-tende",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 345
+    },
+    {
+      "path": "/lo-sapevi-che/ridurre-abbagliamento-vetrate-senza-tende/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/ridurre-abbagliamento-vetrate-senza-tende/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/ridurre-abbagliamento-vetrate-senza-tende/",
+      "finalPath": "/lo-sapevi-che/ridurre-abbagliamento-vetrate-senza-tende/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 305
+    },
+    {
+      "path": "/lo-sapevi-che/scegliere-pellicola-privacy-per-bagno-finestra",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/scegliere-pellicola-privacy-per-bagno-finestra",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/scegliere-pellicola-privacy-per-bagno-finestra",
+      "finalPath": "/lo-sapevi-che/scegliere-pellicola-privacy-per-bagno-finestra",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/lo-sapevi-che/scegliere-pellicola-privacy-per-bagno-finestra/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/scegliere-pellicola-privacy-per-bagno-finestra/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/scegliere-pellicola-privacy-per-bagno-finestra/",
+      "finalPath": "/lo-sapevi-che/scegliere-pellicola-privacy-per-bagno-finestra/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 319
+    },
+    {
+      "path": "/lo-sapevi-che/uni-en-12600-pellicole-sicurezza-vetri",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/uni-en-12600-pellicole-sicurezza-vetri",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/uni-en-12600-pellicole-sicurezza-vetri",
+      "finalPath": "/lo-sapevi-che/uni-en-12600-pellicole-sicurezza-vetri",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 349
+    },
+    {
+      "path": "/lo-sapevi-che/uni-en-12600-pellicole-sicurezza-vetri/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/uni-en-12600-pellicole-sicurezza-vetri/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/uni-en-12600-pellicole-sicurezza-vetri/",
+      "finalPath": "/lo-sapevi-che/uni-en-12600-pellicole-sicurezza-vetri/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 337
+    },
+    {
+      "path": "/lo-sapevi-che/vetri-sicurezza-scuole",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/vetri-sicurezza-scuole",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/vetri-sicurezza-scuole",
+      "finalPath": "/lo-sapevi-che/vetri-sicurezza-scuole",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 334
+    },
+    {
+      "path": "/lo-sapevi-che/vetri-sicurezza-scuole/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/vetri-sicurezza-scuole/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/vetri-sicurezza-scuole/",
+      "finalPath": "/lo-sapevi-che/vetri-sicurezza-scuole/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 344
+    },
+    {
+      "path": "/lo-sapevi-che/vetrofanie-decorative-per-uffici",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/vetrofanie-decorative-per-uffici",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/vetrofanie-decorative-per-uffici",
+      "finalPath": "/lo-sapevi-che/vetrofanie-decorative-per-uffici",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 333
+    },
+    {
+      "path": "/lo-sapevi-che/vetrofanie-decorative-per-uffici/",
+      "sources": [
+        "live-index:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/lo-sapevi-che/vetrofanie-decorative-per-uffici/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/lo-sapevi-che/vetrofanie-decorative-per-uffici/",
+      "finalPath": "/lo-sapevi-che/vetrofanie-decorative-per-uffici/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 344
+    },
+    {
+      "path": "/servizio-locale/ancona",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/ancona",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/ancona",
+      "finalPath": "/servizio-locale/ancona",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 349
+    },
+    {
+      "path": "/servizio-locale/ancona/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/ancona/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/ancona/",
+      "finalPath": "/servizio-locale/ancona/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 343
+    },
+    {
+      "path": "/servizio-locale/aosta",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/aosta",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/aosta",
+      "finalPath": "/servizio-locale/aosta",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 369
+    },
+    {
+      "path": "/servizio-locale/aosta/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/aosta/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/aosta/",
+      "finalPath": "/servizio-locale/aosta/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 507
+    },
+    {
+      "path": "/servizio-locale/bari",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/bari",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/bari",
+      "finalPath": "/servizio-locale/bari",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 335
+    },
+    {
+      "path": "/servizio-locale/bari/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/bari/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/bari/",
+      "finalPath": "/servizio-locale/bari/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 356
+    },
+    {
+      "path": "/servizio-locale/bologna",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/bologna",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/bologna",
+      "finalPath": "/servizio-locale/bologna",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 360
+    },
+    {
+      "path": "/servizio-locale/bologna/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/bologna/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/bologna/",
+      "finalPath": "/servizio-locale/bologna/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/servizio-locale/campobasso",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/campobasso",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/campobasso",
+      "finalPath": "/servizio-locale/campobasso",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 323
+    },
+    {
+      "path": "/servizio-locale/campobasso/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/campobasso/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/campobasso/",
+      "finalPath": "/servizio-locale/campobasso/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 341
+    },
+    {
+      "path": "/servizio-locale/catanzaro",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/catanzaro",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/catanzaro",
+      "finalPath": "/servizio-locale/catanzaro",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 346
+    },
+    {
+      "path": "/servizio-locale/catanzaro/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/catanzaro/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/catanzaro/",
+      "finalPath": "/servizio-locale/catanzaro/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 332
+    },
+    {
+      "path": "/servizio-locale/cosenza",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/cosenza",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/cosenza",
+      "finalPath": "/servizio-locale/cosenza",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 330
+    },
+    {
+      "path": "/servizio-locale/cosenza/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/cosenza/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/cosenza/",
+      "finalPath": "/servizio-locale/cosenza/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 360
+    },
+    {
+      "path": "/servizio-locale/firenze",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/firenze",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/firenze",
+      "finalPath": "/servizio-locale/firenze",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 341
+    },
+    {
+      "path": "/servizio-locale/firenze/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/firenze/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/firenze/",
+      "finalPath": "/servizio-locale/firenze/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 341
+    },
+    {
+      "path": "/servizio-locale/genova",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/genova",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/genova",
+      "finalPath": "/servizio-locale/genova",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 341
+    },
+    {
+      "path": "/servizio-locale/genova/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/genova/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/genova/",
+      "finalPath": "/servizio-locale/genova/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 385
+    },
+    {
+      "path": "/servizio-locale/laquila",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/laquila",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/laquila",
+      "finalPath": "/servizio-locale/laquila",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 332
+    },
+    {
+      "path": "/servizio-locale/laquila/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/laquila/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/laquila/",
+      "finalPath": "/servizio-locale/laquila/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 341
+    },
+    {
+      "path": "/servizio-locale/milano",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/milano",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/milano",
+      "finalPath": "/servizio-locale/milano",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 354
+    },
+    {
+      "path": "/servizio-locale/milano/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/milano/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/milano/",
+      "finalPath": "/servizio-locale/milano/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 406
+    },
+    {
+      "path": "/servizio-locale/napoli",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/napoli",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/napoli",
+      "finalPath": "/servizio-locale/napoli",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 323
+    },
+    {
+      "path": "/servizio-locale/napoli/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/napoli/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/napoli/",
+      "finalPath": "/servizio-locale/napoli/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 319
+    },
+    {
+      "path": "/servizio-locale/palermo",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/palermo",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/palermo",
+      "finalPath": "/servizio-locale/palermo",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 355
+    },
+    {
+      "path": "/servizio-locale/palermo/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/palermo/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/palermo/",
+      "finalPath": "/servizio-locale/palermo/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 381
+    },
+    {
+      "path": "/servizio-locale/perugia",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/perugia",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/perugia",
+      "finalPath": "/servizio-locale/perugia",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 338
+    },
+    {
+      "path": "/servizio-locale/perugia/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/perugia/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/perugia/",
+      "finalPath": "/servizio-locale/perugia/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 322
+    },
+    {
+      "path": "/servizio-locale/potenza",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/potenza",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/potenza",
+      "finalPath": "/servizio-locale/potenza",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 329
+    },
+    {
+      "path": "/servizio-locale/potenza/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/potenza/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/potenza/",
+      "finalPath": "/servizio-locale/potenza/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 332
+    },
+    {
+      "path": "/servizio-locale/roma",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/roma",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/roma",
+      "finalPath": "/servizio-locale/roma",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 349
+    },
+    {
+      "path": "/servizio-locale/roma/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/roma/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/roma/",
+      "finalPath": "/servizio-locale/roma/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 356
+    },
+    {
+      "path": "/servizio-locale/romagna",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/romagna",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/romagna",
+      "finalPath": "/servizio-locale/romagna",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 339
+    },
+    {
+      "path": "/servizio-locale/romagna/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/romagna/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/romagna/",
+      "finalPath": "/servizio-locale/romagna/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 336
+    },
+    {
+      "path": "/servizio-locale/torino",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/torino",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/torino",
+      "finalPath": "/servizio-locale/torino",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 350
+    },
+    {
+      "path": "/servizio-locale/torino/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/torino/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/torino/",
+      "finalPath": "/servizio-locale/torino/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 341
+    },
+    {
+      "path": "/servizio-locale/trento",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/trento",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/trento",
+      "finalPath": "/servizio-locale/trento",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 335
+    },
+    {
+      "path": "/servizio-locale/trento/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/trento/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/trento/",
+      "finalPath": "/servizio-locale/trento/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 339
+    },
+    {
+      "path": "/servizio-locale/trieste",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/trieste",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/trieste",
+      "finalPath": "/servizio-locale/trieste",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 328
+    },
+    {
+      "path": "/servizio-locale/trieste/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/trieste/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/trieste/",
+      "finalPath": "/servizio-locale/trieste/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 330
+    },
+    {
+      "path": "/servizio-locale/udine",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/udine",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/udine",
+      "finalPath": "/servizio-locale/udine",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 340
+    },
+    {
+      "path": "/servizio-locale/udine/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/udine/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/udine/",
+      "finalPath": "/servizio-locale/udine/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/servizio-locale/venezia",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/venezia",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/venezia",
+      "finalPath": "/servizio-locale/venezia",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 331
+    },
+    {
+      "path": "/servizio-locale/venezia/",
+      "sources": [
+        "live-index:newPath",
+        "url-map:newPath"
+      ],
+      "url": "https://solarisfilms.vercel.app/servizio-locale/venezia/",
+      "status": 404,
+      "finalUrl": "https://solarisfilms.vercel.app/servizio-locale/venezia/",
+      "finalPath": "/servizio-locale/venezia/",
+      "title": "404: This page could not be found",
+      "soft404": false,
+      "productMissing": false,
+      "bodyProbe": "404 This page could not be found. WA",
+      "error": null,
+      "ms": 290
+    }
+  ],
+  "gone": [],
+  "redirects": []
+}

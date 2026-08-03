@@ -1,13 +1,14 @@
 import { Helmet } from 'react-helmet-async';
 
 const SITE_NAME = 'Solaris Films';
-const BASE_URL = 'https://www.solarisfilms.it';
 const PUBLIC_SITE_ORIGIN = (
-  process.env.NEXT_PUBLIC_SITE_ORIGIN
+  process.env.NEXT_PUBLIC_SITE_URL
+  || process.env.NEXT_PUBLIC_SITE_ORIGIN
   || process.env.REACT_APP_SITE_ORIGIN
   || process.env.SITE_ORIGIN
-  || 'https://solarisfilms.vercel.app'
+  || 'https://www.solarisfilms.it'
 ).replace(/\/+$/, '');
+const BASE_URL = PUBLIC_SITE_ORIGIN;
 const DEFAULT_IMAGE = `${PUBLIC_SITE_ORIGIN}/og-solaris.jpg`;
 const LIVE_HOSTS = new Set(['solarisfilms.it', 'www.solarisfilms.it']);
 

@@ -11,6 +11,7 @@ const IS_PROD = typeof window !== 'undefined' && window.location.protocol === 'h
 
 const cache = new Map();
 const CACHE_TTL = 5 * 60 * 1000;
+const isServer = () => typeof window === 'undefined';
 const PRODUCT_SLUG_ALIASES = {
   'madicosb20epssr': 'madico-sb-20-e-ps-sr',
   'madicosb35epssr': 'madico-sb-35-e-ps-sr',
@@ -20,16 +21,42 @@ const PRODUCT_SLUG_ALIASES = {
 };
 const canonicalProductSlug = (slug = '') => PRODUCT_SLUG_ALIASES[slug] || slug;
 
+function getFreshWpFetchOptions() {
+  if (!isServer()) {
+    return { cache: 'no-store' };
+  }
+
+  return {
+    cache: 'no-store',
+    next: { revalidate: 0 },
+    headers: {
+      'Cache-Control': 'no-store, no-cache, max-age=0, must-revalidate',
+      Pragma: 'no-cache',
+      Expires: '0',
+    },
+  };
+}
+
+function getCached(cacheKey) {
+  if (isServer()) return null;
+  const cached = cache.get(cacheKey);
+  return cached && Date.now() - cached.time < CACHE_TTL ? cached.data : null;
+}
+
+function setCached(cacheKey, data) {
+  if (!isServer()) cache.set(cacheKey, { data, time: Date.now() });
+}
+
 async function fetchStaticJson(filename) {
   const cacheKey = `static_${filename}`;
-  const cached = cache.get(cacheKey);
-  if (cached && Date.now() - cached.time < CACHE_TTL) return cached.data;
+  const cached = getCached(cacheKey);
+  if (cached) return cached;
 
   try {
     const res = await fetch(`/wp-data/${filename}.json`);
     if (!res.ok) return null;
     const data = await res.json();
-    cache.set(cacheKey, { data, time: Date.now() });
+    setCached(cacheKey, data);
     return data;
   } catch {
     return null;
@@ -56,14 +83,14 @@ async function wpFetch(endpoint, params = {}) {
   const url = `${WP_URL}/wp-json/wp/v2/${endpoint}?${query}`;
   const cacheKey = url;
 
-  const cached = cache.get(cacheKey);
-  if (cached && Date.now() - cached.time < CACHE_TTL) return cached.data;
+  const cached = getCached(cacheKey);
+  if (cached) return cached;
 
   try {
-    const res = await fetch(url);
+    const res = await fetch(url, getFreshWpFetchOptions());
     if (!res.ok) throw new Error(`WP API error: ${res.status}`);
     const data = await res.json();
-    cache.set(cacheKey, { data, time: Date.now() });
+    setCached(cacheKey, data);
     return data;
   } catch (err) {
     console.warn(`WP API fallback for ${endpoint}:`, err.message);
@@ -198,13 +225,13 @@ export async function fetchSettings() {
     return fetchStaticJson('settings');
   }
   const cacheKey = 'settings';
-  const cached = cache.get(cacheKey);
-  if (cached && Date.now() - cached.time < CACHE_TTL) return cached.data;
+  const cached = getCached(cacheKey);
+  if (cached) return cached;
   try {
-    const res = await fetch(`${WP_URL}/wp-json/solaris/v1/settings`);
+    const res = await fetch(`${WP_URL}/wp-json/solaris/v1/settings`, getFreshWpFetchOptions());
     if (!res.ok) throw new Error(`Settings API error: ${res.status}`);
     const data = await res.json();
-    cache.set(cacheKey, { data, time: Date.now() });
+    setCached(cacheKey, data);
     return data;
   } catch (err) {
     console.warn('Settings API fallback:', err.message);

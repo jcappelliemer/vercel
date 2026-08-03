@@ -329,7 +329,7 @@ const normalizeHref = (href) => {
 };
 
 const buildPathMap = (pages) => pages.reduce((map, page) => {
-  if (page.path) map.set(normalizePath(page.path), page.route?.newPath || page.path);
+  if (page.path) map.set(normalizePath(page.path), page.path);
   return map;
 }, new Map());
 
@@ -337,7 +337,7 @@ const containsBlockedBrand = (value = '') => /tecnosolar/i.test(String(value || 
 
 const resolveMenu = (items, pathMap) => items.map((item) => {
   const livePath = normalizeHref(item.href);
-  const path = item.fallbackPath || (livePath ? pathMap.get(livePath) || STATIC_MENU_PATH_ALIASES.get(livePath) || livePath : '#');
+  const path = item.fallbackPath || (livePath ? STATIC_MENU_PATH_ALIASES.get(livePath) || pathMap.get(livePath) || livePath : '#');
 
   return {
     ...item,

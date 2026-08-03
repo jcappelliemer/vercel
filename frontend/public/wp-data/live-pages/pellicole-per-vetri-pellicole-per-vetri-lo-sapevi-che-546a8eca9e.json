@@ -8,16 +8,16 @@
     "confidence": "high",
     "needsReview": false
   },
-  "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml",
+  "sourceSitemap": "https://www.solarisfilms.it/sitemap-page.xml",
   "seo": {
     "title": "Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni",
     "description": "Pellicole per vetri - Distributore ed installatore da 30+ anni",
     "robots": "max-image-preview:large",
-    "canonical": "https://www.solarisfilms.it/",
+    "canonical": "https://www.solarisfilms.it/lo-sapevi-che/",
     "og": {
       "og:title": "Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni",
       "og:description": "Pellicole per vetri - Distributore ed installatore da 30+ anni",
-      "og:url": "https://www.solarisfilms.it/",
+      "og:url": "https://www.solarisfilms.it/lo-sapevi-che/",
       "og:type": "website",
       "og:site_name": "Solaris Films",
       "og:locale": "it_IT",
@@ -27,7 +27,8 @@
       "twitter:card": "summary_large_image",
       "twitter:title": "Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni",
       "twitter:description": "Pellicole per vetri - Distributore ed installatore da 30+ anni",
-      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2025/05/LogoWEB.png"
+      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2025/05/LogoWEB.png",
+      "twitter:url": "https://www.solarisfilms.it/lo-sapevi-che/"
     },
     "article": {},
     "schemas": [
@@ -42,5 +43,5 @@
   "contentHtml": "",
   "text": "",
   "textLength": 0,
-  "fetchedAt": "2026-06-04T09:15:07.890Z"
+  "fetchedAt": "2026-08-03T15:28:10.166Z"
 }

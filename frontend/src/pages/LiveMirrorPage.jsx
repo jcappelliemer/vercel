@@ -32,10 +32,11 @@ import { getLocalServiceLogo, getProductVisual } from '../utils/assetMaps';
 
 const SITE_NAME = 'Solaris Films';
 const BASE_URL = (
-  process.env.NEXT_PUBLIC_SITE_ORIGIN
+  process.env.NEXT_PUBLIC_SITE_URL
+  || process.env.NEXT_PUBLIC_SITE_ORIGIN
   || process.env.REACT_APP_SITE_ORIGIN
   || process.env.SITE_ORIGIN
-  || 'https://solarisfilms.vercel.app'
+  || 'https://www.solarisfilms.it'
 ).replace(/\/+$/, '');
 const LIVE_HOSTS = new Set(['solarisfilms.it', 'www.solarisfilms.it']);
 const MAIN_PAGE_VISUALS = {
@@ -1808,10 +1809,9 @@ const InfoTemplate = ({ page, allPages = [] }) => {
         <article className="live-prose product-detail-prose">
           <div className="local-service-intro">
             <span>{theme.eyebrow}</span>
-            <h2>Dal riferimento tecnico alla verifica sul vetro</h2>
+            <h2>Le informazioni essenziali, senza complicare la scelta</h2>
             <p>
-              Questa pagina aiuta a leggere il contesto, ma la scelta corretta dipende da vetro, rischio,
-              destinazione d'uso e posa.
+              Informazioni chiare per capire il tema, preparare la richiesta e scegliere il percorso più adatto.
             </p>
           </div>
           <ContentBlocks blocks={blocks} title={title} skipFirstHeading />

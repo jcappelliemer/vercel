@@ -1,0 +1,315 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/le-pellicole-antisolari/madicosb35epssr/",
+  "path": "/pellicole-per-vetri/le-pellicole-antisolari/madicosb35epssr/",
+  "route": {
+    "type": "product",
+    "label": "Prodotto",
+    "newPath": "/prodotti/madicosb35epssr/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/sitemap-pellicole-antisolari.xml",
+  "seo": {
+    "title": "Pellicola antisolare Madico SB 35 E PS SR 75 micron",
+    "description": "Acquista la pellicola antisolare Madico SB 35 E PS SR 75 micron su Solaris Films. Ottima per risparmio energetico e comfort, riduce calore e abbagliamento.",
+    "robots": "max-image-preview:large",
+    "canonical": "https://www.solarisfilms.it/prodotti/madicosb35epssr/",
+    "og": {
+      "og:title": "Pellicola antisolare Madico SB 35 E PS SR 75 micron",
+      "og:description": "Acquista la pellicola antisolare Madico SB 35 E PS SR 75 micron su Solaris Films. Ottima per risparmio energetico e comfort, riduce calore e abbagliamento.",
+      "og:url": "https://www.solarisfilms.it/prodotti/madicosb35epssr/",
+      "og:type": "article",
+      "og:site_name": "Solaris Films",
+      "og:locale": "it_IT",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/SB35EPSSR75-1024x970.webp",
+      "og:image:width": "800",
+      "og:image:height": "758"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Pellicola antisolare Madico SB 35 E PS SR 75 micron",
+      "twitter:description": "Acquista la pellicola antisolare Madico SB 35 E PS SR 75 micron su Solaris Films. Ottima per risparmio energetico e comfort, riduce calore e abbagliamento.",
+      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2025/06/SB35EPSSR75-1024x970.webp",
+      "twitter:url": "https://www.solarisfilms.it/prodotti/madicosb35epssr/"
+    },
+    "article": {
+      "article:published_time": "2025-06-11T13:32:10+02:00",
+      "article:modified_time": "2026-07-23T08:58:57+02:00",
+      "article:author": "Martina Giardi"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\"},\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\"},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"inLanguage\":\"it-IT\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/#webpage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/\",\"name\":\"Pellicola antisolare Madico SB 35 E PS SR 75 micron\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-06-11T13:32:10+02:00\",\"dateModified\":\"2026-07-23T08:58:57+02:00\",\"inLanguage\":\"it-IT\",\"description\":\"Acquista la pellicola antisolare Madico SB 35 E PS SR 75 micron su Solaris Films. Ottima per risparmio energetico e comfort, riduce calore e abbagliamento.\",\"primaryImageOfPage\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/#primaryimage\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/#primaryimage\"}},{\"@type\":\"Product\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/#product\",\"name\":\"Pellicola antisolare Madico SB 35 E PS SR 75 micron\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/\",\"description\":\"Acquista la pellicola antisolare Madico SB 35 E PS SR 75 micron su Solaris Films. Ottima per risparmio energetico e comfort, riduce calore e abbagliamento.\",\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/#primaryimage\"}},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicola antisolare Madico SB 35 E PS SR 75 micron\"}]},{\"@type\":\"ImageObject\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/le-pellicole-antisolari\\/madicosb35epssr\\/#primaryimage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SB35EPSSR75-1024x970.webp\",\"contentUrl\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/06\\/SB35EPSSR75-1024x970.webp\",\"width\":800,\"height\":758,\"caption\":\"Pellicola antisolare Madico SB 35 E PS SR 75 micron\",\"inLanguage\":\"it-IT\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicola antisolare Madico SB 35 E PS SR 75 micron"
+    },
+    {
+      "level": 4,
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "level": 2,
+      "text": "Utilizzi"
+    },
+    {
+      "level": 2,
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "level": 2,
+      "text": "Specifiche tecniche"
+    },
+    {
+      "level": 6,
+      "text": "Vetrocamera basso emissivo 6 mm"
+    },
+    {
+      "level": 6,
+      "text": "Energia solare totale"
+    },
+    {
+      "level": 6,
+      "text": "Luce visibile"
+    },
+    {
+      "level": 6,
+      "text": "Totale energia respinta"
+    },
+    {
+      "level": 2,
+      "text": "10"
+    },
+    {
+      "level": 3,
+      "text": "anni di garanzia"
+    }
+  ],
+  "h1": "Pellicola antisolare Madico SB 35 E PS SR 75 micron",
+  "primaryImage": "https://www.solarisfilms.it/wp-content/uploads/2025/06/SB35EPSSR75-1024x970.webp",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicola antisolare Madico SB 35 E PS SR 75 micron",
+      "text": "Pellicola antisolare Madico SB 35 E PS SR 75 micron"
+    },
+    {
+      "type": "heading",
+      "level": 4,
+      "html": "<a href=\"https://www.solarisfilms.it/wp-content/uploads/2025/06/antisolare-75.pdf\">Consulta la scheda tecnica",
+      "text": "Consulta la scheda tecnica"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Utilizzi",
+      "text": "Utilizzi"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole sputtered <a href=\"https://madico.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Madico SB 35 E PS SR <a href=\"/contatti/\" target=\"_blank\" rel=\"noopener noreferrer\">Solaris Films vengono utilizzate dove si deve schermare l&#x2019;irraggiamento solare con esigenza di maggiore luminosit&#xE0;. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre.",
+      "text": "Le pellicole Sputtered Madico SB 35 E PS SR Solaris Films vengono utilizzate dove si deve schermare l’irraggiamento solare con esigenza di maggiore luminosità. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Caratteristiche distintive",
+      "text": "Caratteristiche distintive"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        {
+          "html": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo.",
+          "text": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo."
+        },
+        {
+          "html": "Riflettono fino al 88% dell&#x2019;energia solare rendendo gli ambienti pi&#xF9; freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica.",
+          "text": "Riflettono fino al 88% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica."
+        },
+        {
+          "html": "Pellicole pi&#xF9; chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilit&#xE0; ed evitando effetti speculari.",
+          "text": "Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari."
+        },
+        {
+          "html": "Prodotto unico, con brevetto esclusivo.",
+          "text": "Prodotto unico, con brevetto esclusivo."
+        },
+        {
+          "html": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata.",
+          "text": "Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata."
+        },
+        {
+          "html": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3.",
+          "text": "Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3."
+        },
+        {
+          "html": "Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza.",
+          "text": "Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza."
+        }
+      ],
+      "text": "Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo. Riflettono fino al 88% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica. Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Specifiche tecniche",
+      "text": "Specifiche tecniche"
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole antisolari sputtered SB 35 E PS SR Madico Solaris Films sono formate da una base di poliestere trasparente trattata con un processo chiamato <a href=\"https://it.wikipedia.org/wiki/Polverizzazione_catodica#:~:text=La%20polverizzazione%20catodica%2C%20spruzzamento%20catodico,particelle%20energetiche%20(generalmente%20ioni).\" target=\"_blank\" rel=\"noopener noreferrer\">sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni.",
+      "text": "Le pellicole antisolari Sputtered SB 35 E PS SR Madico Solaris Films sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni."
+    },
+    {
+      "type": "note",
+      "html": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola",
+      "text": "Approfondisci le caratteristiche tecniche di questa tipologia di pellicola"
+    },
+    {
+      "type": "cta",
+      "href": "/pellicole-antisolari-sputtered/",
+      "text": "Vai al focus tecnico",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Vetrocamera basso emissivo 6 mm",
+      "text": "Vetrocamera basso emissivo 6 mm"
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Energia solare totale",
+      "text": "Energia solare totale"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "13%",
+      "text": "Trasmessa 13%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa",
+      "value": "41%",
+      "text": "Riflessa 41%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Assorbita",
+      "value": "46%",
+      "text": "Assorbita 46%",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Luce visibile",
+      "text": "Luce visibile"
+    },
+    {
+      "type": "metric",
+      "label": "Trasmessa",
+      "value": "26%",
+      "text": "Trasmessa 26%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riflessa - Esterno",
+      "value": "26%",
+      "text": "Riflessa - Esterno 26%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Riduzione abbaglio",
+      "value": "64%",
+      "text": "Riduzione abbaglio 64%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Infrarossi respinti",
+      "value": "89%",
+      "text": "Infrarossi respinti 89%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Raggi UV trasmessi (max)",
+      "value": "1%",
+      "text": "Raggi UV trasmessi (max) 1%",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Coefficiente schermatura",
+      "value": "0.22",
+      "text": "Coefficiente schermatura 0.22",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Fattore solare g",
+      "value": "0.20",
+      "text": "Fattore solare g 0.20",
+      "html": ""
+    },
+    {
+      "type": "metric",
+      "label": "Valore U W/m2K",
+      "value": "1.65",
+      "text": "Valore U W/m2K 1.65",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 6,
+      "html": "Totale energia respinta",
+      "text": "Totale energia respinta"
+    },
+    {
+      "type": "metric",
+      "label": "Energia Respinta",
+      "value": "80%",
+      "text": "Energia Respinta 80%",
+      "html": ""
+    },
+    {
+      "type": "paragraph",
+      "html": "Hai bisogno di una pellicola antisolare? Consulta il nostro&#xA0;<a href=\"/pellicole-per-vetri/le-pellicole-antisolari/\">approfondimento sulle pellicole antisolari&#xA0;per avere maggiori informazioni, farai una scelta pi&#xF9; consapevole!",
+      "text": "Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole!"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>10",
+      "text": "10"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "<strong>anni di garanzia",
+      "text": "anni di garanzia"
+    },
+    {
+      "type": "paragraph",
+      "html": "Volete scoprire tutte le possibilit&#xE0; che possiamo garantirvi? Scopri insieme a noi il mondo delle <span>pellicole per vetri!",
+      "text": "Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicola antisolare Madico SB 35 E PS SR 75 micron Consulta la scheda tecnica Utilizzi Le pellicole Sputtered Madico SB 35 E PS SR Solaris Films vengono utilizzate dove si deve schermare l’irraggiamento solare con esigenza di maggiore luminosità. Sono ideali per uffici, scuole, banche, industrie, ospedali, alberghi, ristoranti, servizi pubblici, negozi vari, musei, show room e palestre. Caratteristiche distintive Grazie alla sofisticata tecnologia con la quale sono realizzate garantiscono resistenza e durata nel tempo. Riflettono fino al 88% dell’energia solare rendendo gli ambienti più freschi e confortevoli, con una elevata trasmissione luminosa e una maggiore riflessione energetica. Pellicole più chiare che consentono una buona schermatura solare lasciando quasi inalterata la trasparenza e visibilità ed evitando effetti speculari. Prodotto unico, con brevetto esclusivo. Struttura rivoluzionaria con doppio strato antigraffio per una lunga durata. Trasforma la vetrata esterna da 4 mm in un vetro di sicurezza con certificazione a norma UNI EN 12600 in classe 3B3. Pellicole antisolari che conferiscono a un normale vetro eccellenti prestazioni di controllo solare e sicurezza. Specifiche tecniche Le pellicole antisolari Sputtered SB 35 E PS SR Madico Solaris Films sono formate da una base di poliestere trasparente trattata con un processo chiamato sputtering che permette di raccogliere ed incorporare nella superficie della pellicola atomi di metallo, garantendo durata e prestazioni. Infine su questi viene posto un trattamento antigraffio per proteggerlo da abrasioni e corrosioni. Approfondisci le caratteristiche tecniche di questa tipologia di pellicola Vai al focus tecnico Vetrocamera basso emissivo 6 mm Energia solare totale Trasmessa 13% Riflessa 41% Assorbita 46% Luce visibile Trasmessa 26% Riflessa - Esterno 26% Riduzione abbaglio 64% Infrarossi respinti 89% Raggi UV trasmessi (max) 1% Coefficiente schermatura 0.22 Fattore solare g 0.20 Valore U W/m2K 1.65 Totale energia respinta Energia Respinta 80% Hai bisogno di una pellicola antisolare? Consulta il nostro approfondimento sulle pellicole antisolari per avere maggiori informazioni, farai una scelta più consapevole! 10 anni di garanzia Volete scoprire tutte le possibilità che possiamo garantirvi? Scopri insieme a noi il mondo delle pellicole per vetri!",
+  "textLength": 2347,
+  "fetchedAt": "2026-08-03T15:28:10.540Z"
+}

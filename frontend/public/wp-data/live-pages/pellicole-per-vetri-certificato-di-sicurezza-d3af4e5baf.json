@@ -1,0 +1,239 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/certificato-di-sicurezza/",
+  "path": "/pellicole-per-vetri/certificato-di-sicurezza/",
+  "route": {
+    "type": "unclassified",
+    "label": "Da verificare",
+    "newPath": "/pellicole-per-vetri/certificato-di-sicurezza/",
+    "confidence": "low",
+    "needsReview": true
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/sitemap-page.xml",
+  "seo": {
+    "title": "Certificato Sicurezza Vetro Trattato | Solaris Films",
+    "description": "Il QR sul vetro trattato attesta il certificato di sicurezza. Solaris Films applica pellicole MADICO, classificando il vetro 1B1 o 2B2 (UNI EN 12600:2004).",
+    "robots": "max-image-preview:large",
+    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/certificato-di-sicurezza/",
+    "og": {
+      "og:title": "Certificato Sicurezza Vetro Trattato | Solaris Films",
+      "og:description": "Il QR sul vetro trattato attesta il certificato di sicurezza. Solaris Films applica pellicole MADICO, classificando il vetro 1B1 o 2B2 (UNI EN 12600:2004).",
+      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/certificato-di-sicurezza/",
+      "og:type": "website",
+      "og:site_name": "Solaris Films",
+      "og:locale": "it_IT",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Certificato Sicurezza Vetro Trattato | Solaris Films",
+      "twitter:description": "Il QR sul vetro trattato attesta il certificato di sicurezza. Solaris Films applica pellicole MADICO, classificando il vetro 1B1 o 2B2 (UNI EN 12600:2004).",
+      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png",
+      "twitter:url": "https://www.solarisfilms.it/pellicole-per-vetri/certificato-di-sicurezza/"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\"},\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\"},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"inLanguage\":\"it-IT\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/certificato-di-sicurezza\\/#webpage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/certificato-di-sicurezza\\/\",\"name\":\"Certificato Sicurezza Vetro Trattato | Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2026-07-14T15:14:22+02:00\",\"dateModified\":\"2026-07-22T21:08:05+02:00\",\"inLanguage\":\"it-IT\",\"description\":\"Il QR sul vetro trattato attesta il certificato di sicurezza. Solaris Films applica pellicole MADICO, classificando il vetro 1B1 o 2B2 (UNI EN 12600:2004).\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-per-vetri\\/certificato-di-sicurezza\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Certificato di sicurezza vetro trattato\"}]}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Certificato di sicurezza vetro trattato"
+    },
+    {
+      "level": 2,
+      "text": "QR sul vetro trattato"
+    },
+    {
+      "level": 2,
+      "text": "Classe del vetro scansionato"
+    },
+    {
+      "level": 3,
+      "text": "CL 700 classe 1B1 – – CL 400 classe 2B2"
+    },
+    {
+      "level": 1,
+      "text": "Cosa significa questa scansione"
+    },
+    {
+      "level": 3,
+      "text": "Il QR collega il vetro trattato alla sua messa in sicurezza"
+    },
+    {
+      "level": 2,
+      "text": "Classi di sicurezza"
+    },
+    {
+      "level": 3,
+      "text": "MADICO CL 700 – Classe 1B1"
+    },
+    {
+      "level": 3,
+      "text": "MADICO CL 400 – Classe 2B2"
+    },
+    {
+      "level": 2,
+      "text": "Riferimenti normativi"
+    },
+    {
+      "level": 3,
+      "text": "UNI EN 12600:2004"
+    },
+    {
+      "level": 3,
+      "text": "UNI 7697:2021"
+    },
+    {
+      "level": 3,
+      "text": "D.Lgs. 9 aprile 2008, n. 81"
+    }
+  ],
+  "h1": "Certificato di sicurezza vetro trattato",
+  "primaryImage": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Certificato di sicurezza vetro trattato",
+      "text": "Certificato di sicurezza vetro trattato"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "<strong>QR sul vetro trattato",
+      "text": "QR sul vetro trattato"
+    },
+    {
+      "type": "paragraph",
+      "html": "Il QR che hai scansionato si trova sul singolo vetro trattato. Quel vetro, prima dell&#x2019;intervento, era una superficie vetrata non classificata come vetro di sicurezza. Con l&#x2019;applicazione della pellicola di sicurezza MADICO installata da Solaris Films &#xE8; stato portato a una classificazione di sicurezza secondo UNI EN 12600:2004, in conformit&#xE0; ai criteri della UNI 7697:2021.",
+      "text": "Il QR che hai scansionato si trova sul singolo vetro trattato. Quel vetro, prima dell’intervento, era una superficie vetrata non classificata come vetro di sicurezza. Con l’applicazione della pellicola di sicurezza MADICO installata da Solaris Films è stato portato a una classificazione di sicurezza secondo UNI EN 12600:2004, in conformità ai criteri della UNI 7697:2021."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Classe del vetro scansionato",
+      "text": "Classe del vetro scansionato"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "CL 700 classe 1B1 &amp;#8211; &amp;#8211;&#xA0; CL 400 classe 2B2",
+      "text": "CL 700 classe 1B1 – – CL 400 classe 2B2"
+    },
+    {
+      "type": "paragraph",
+      "html": "Se sul certificato dell&#x2019;intervento &#xE8; indicata pellicola MADICO CL 700, la classe dichiarata &#xE8; 1B1. Se &#xE8; indicata MADICO CL 400, la classe dichiarata &#xE8; 2B2. Il certificato nominale collega il prodotto installato a quel vetro, al luogo di posa e alla documentazione dell&#x2019;intervento.",
+      "text": "Se sul certificato dell’intervento è indicata pellicola MADICO CL 700, la classe dichiarata è 1B1. Se è indicata MADICO CL 400, la classe dichiarata è 2B2. Il certificato nominale collega il prodotto installato a quel vetro, al luogo di posa e alla documentazione dell’intervento."
+    },
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Cosa significa questa scansione",
+      "text": "Cosa significa questa scansione"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "Il QR collega il vetro trattato alla sua messa in sicurezza",
+      "text": "Il QR collega il vetro trattato alla sua messa in sicurezza"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola di sicurezza applicata sul vetro modifica il comportamento della lastra in caso di urto e rottura: il film trattiene i frammenti, limita la dispersione delle schegge e riduce il rischio di ferite. La classificazione dichiarata riguarda il sistema vetrato trattato e deve essere coerente con il prodotto installato, la posa e la documentazione rilasciata per l&#x2019;intervento.",
+      "text": "La pellicola di sicurezza applicata sul vetro modifica il comportamento della lastra in caso di urto e rottura: il film trattiene i frammenti, limita la dispersione delle schegge e riduce il rischio di ferite. La classificazione dichiarata riguarda il sistema vetrato trattato e deve essere coerente con il prodotto installato, la posa e la documentazione rilasciata per l’intervento."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Classi di sicurezza",
+      "text": "Classi di sicurezza"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "MADICO CL 700 &amp;#8211; Classe 1B1",
+      "text": "MADICO CL 700 – Classe 1B1"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicola di sicurezza trasparente ad alte prestazioni. Quando il certificato dell&#x2019;intervento indica CL 700, il vetro trattato viene dichiarato in classe 1B1 secondo UNI EN 12600:2004.",
+      "text": "Pellicola di sicurezza trasparente ad alte prestazioni. Quando il certificato dell’intervento indica CL 700, il vetro trattato viene dichiarato in classe 1B1 secondo UNI EN 12600:2004."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "MADICO CL 400 &amp;#8211; Classe 2B2",
+      "text": "MADICO CL 400 – Classe 2B2"
+    },
+    {
+      "type": "paragraph",
+      "html": "Pellicola di sicurezza trasparente per la messa in sicurezza del vetro esistente. Quando il certificato dell&#x2019;intervento indica CL 400, il vetro trattato viene dichiarato in classe 2B2 secondo UNI EN 12600:2004.",
+      "text": "Pellicola di sicurezza trasparente per la messa in sicurezza del vetro esistente. Quando il certificato dell’intervento indica CL 400, il vetro trattato viene dichiarato in classe 2B2 secondo UNI EN 12600:2004."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Riferimenti normativi",
+      "text": "Riferimenti normativi"
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "UNI EN 12600:2004",
+      "text": "UNI EN 12600:2004"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Vetro per edilizia &amp;#8211; Prova del pendolo &amp;#8211; Metodo della prova di impatto e classificazione per il vetro piano.",
+      "text": "Vetro per edilizia – Prova del pendolo – Metodo della prova di impatto e classificazione per il vetro piano."
+    },
+    {
+      "type": "paragraph",
+      "html": "&#xC8; la norma che classifica il comportamento del vetro piano all&#x2019;impatto e la modalit&#xE0; di rottura. Le classi 1B1 e 2B2 indicano livelli diversi di prestazione del sistema vetrato sottoposto a prova.",
+      "text": "È la norma che classifica il comportamento del vetro piano all’impatto e la modalità di rottura. Le classi 1B1 e 2B2 indicano livelli diversi di prestazione del sistema vetrato sottoposto a prova."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "UNI 7697:2021",
+      "text": "UNI 7697:2021"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Criteri di sicurezza nelle applicazioni vetrarie.",
+      "text": "Criteri di sicurezza nelle applicazioni vetrarie."
+    },
+    {
+      "type": "paragraph",
+      "html": "Definisce i criteri per scegliere il vetro idoneo in base alla destinazione d&#x2019;uso e ai requisiti minimi di sicurezza per le persone.",
+      "text": "Definisce i criteri per scegliere il vetro idoneo in base alla destinazione d’uso e ai requisiti minimi di sicurezza per le persone."
+    },
+    {
+      "type": "heading",
+      "level": 3,
+      "html": "D.Lgs. 9 aprile 2008, n. 81",
+      "text": "D.Lgs. 9 aprile 2008, n. 81"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Attuazione dell&#x2019;articolo 1 della legge 3 agosto 2007, n. 123, in materia di tutela della salute e della sicurezza nei luoghi di lavoro.",
+      "text": "Attuazione dell’articolo 1 della legge 3 agosto 2007, n. 123, in materia di tutela della salute e della sicurezza nei luoghi di lavoro."
+    },
+    {
+      "type": "paragraph",
+      "html": "Nei luoghi di lavoro, la messa in sicurezza delle superfici vetrate si collega agli obblighi di prevenzione e tutela delle persone presenti negli ambienti.",
+      "text": "Nei luoghi di lavoro, la messa in sicurezza delle superfici vetrate si collega agli obblighi di prevenzione e tutela delle persone presenti negli ambienti."
+    },
+    {
+      "type": "paragraph",
+      "html": "<a href=\"/pellicole-di-sicurezza/\">Approfondisci le pellicole di sicurezza Solaris",
+      "text": "Approfondisci le pellicole di sicurezza Solaris"
+    }
+  ],
+  "contentHtml": "",
+  "text": "Certificato di sicurezza vetro trattato QR sul vetro trattato Il QR che hai scansionato si trova sul singolo vetro trattato. Quel vetro, prima dell’intervento, era una superficie vetrata non classificata come vetro di sicurezza. Con l’applicazione della pellicola di sicurezza MADICO installata da Solaris Films è stato portato a una classificazione di sicurezza secondo UNI EN 12600:2004, in conformità ai criteri della UNI 7697:2021. Classe del vetro scansionato CL 700 classe 1B1 – – CL 400 classe 2B2 Se sul certificato dell’intervento è indicata pellicola MADICO CL 700, la classe dichiarata è 1B1. Se è indicata MADICO CL 400, la classe dichiarata è 2B2. Il certificato nominale collega il prodotto installato a quel vetro, al luogo di posa e alla documentazione dell’intervento. Cosa significa questa scansione Il QR collega il vetro trattato alla sua messa in sicurezza La pellicola di sicurezza applicata sul vetro modifica il comportamento della lastra in caso di urto e rottura: il film trattiene i frammenti, limita la dispersione delle schegge e riduce il rischio di ferite. La classificazione dichiarata riguarda il sistema vetrato trattato e deve essere coerente con il prodotto installato, la posa e la documentazione rilasciata per l’intervento. Classi di sicurezza MADICO CL 700 – Classe 1B1 Pellicola di sicurezza trasparente ad alte prestazioni. Quando il certificato dell’intervento indica CL 700, il vetro trattato viene dichiarato in classe 1B1 secondo UNI EN 12600:2004. MADICO CL 400 – Classe 2B2 Pellicola di sicurezza trasparente per la messa in sicurezza del vetro esistente. Quando il certificato dell’intervento indica CL 400, il vetro trattato viene dichiarato in classe 2B2 secondo UNI EN 12600:2004. Riferimenti normativi UNI EN 12600:2004 Vetro per edilizia – Prova del pendolo – Metodo della prova di impatto e classificazione per il vetro piano. È la norma che classifica il comportamento del vetro piano all’impatto e la modalità di rottura. Le classi 1B1 e 2B2 indicano livelli diversi di prestazione del sistema vetrato sottoposto a prova. UNI 7697:2021 Criteri di sicurezza nelle applicazioni vetrarie. Definisce i criteri per scegliere il vetro idoneo in base alla destinazione d’uso e ai requisiti minimi di sicurezza per le persone. D.Lgs. 9 aprile 2008, n. 81 Attuazione dell’articolo 1 della legge 3 agosto 2007, n. 123, in materia di tutela della salute e della sicurezza nei luoghi di lavoro. Nei luoghi di lavoro, la messa in sicurezza delle superfici vetrate si collega agli obblighi di prevenzione e tutela delle persone presenti negli ambienti. Approfondisci le pellicole di sicurezza Solaris",
+  "textLength": 2643,
+  "fetchedAt": "2026-08-03T15:28:10.040Z"
+}

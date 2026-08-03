@@ -8,16 +8,16 @@
     "confidence": "high",
     "needsReview": false
   },
-  "sourceSitemap": "https://www.solarisfilms.it/wp-sitemap-posts-page-1.xml",
+  "sourceSitemap": "https://www.solarisfilms.it/sitemap-page.xml",
   "seo": {
-    "title": "Pellicole per vetri — Solaris Films",
-    "description": "Scopri le pellicole per vetri per una maggiore sostenibilità e comfort. Affidati ai professionisti con oltre 30 anni di esperienza.",
+    "title": "Pellicole per Vetri Solaris Films: Sicurezza e Risparmio",
+    "description": "Solaris Films: le tue pellicole per vetri per edilizia. Massima sicurezza, privacy e risparmio energetico. Protezione solare, isolamento termico.",
     "robots": "max-image-preview:large",
-    "canonical": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/",
+    "canonical": "https://www.solarisfilms.it/servizi/",
     "og": {
-      "og:description": "Scopri le pellicole per vetri per una maggiore sostenibilità e comfort. Affidati ai professionisti con oltre 30 anni di esperienza.",
-      "og:title": "Pellicole per vetri — Solaris Films",
-      "og:url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/",
+      "og:title": "Pellicole per Vetri Solaris Films: Sicurezza e Risparmio",
+      "og:description": "Solaris Films: le tue pellicole per vetri per edilizia. Massima sicurezza, privacy e risparmio energetico. Protezione solare, isolamento termico.",
+      "og:url": "https://www.solarisfilms.it/servizi/",
       "og:type": "website",
       "og:site_name": "Solaris Films",
       "og:locale": "it_IT",
@@ -25,9 +25,10 @@
     },
     "twitter": {
       "twitter:card": "summary_large_image",
-      "twitter:title": "Pellicole per vetri — Solaris Films",
-      "twitter:description": "Scopri le pellicole per vetri per una maggiore sostenibilità e comfort. Affidati ai professionisti con oltre 30 anni di esperienza.",
-      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png"
+      "twitter:title": "Pellicole per Vetri Solaris Films: Sicurezza e Risparmio",
+      "twitter:description": "Solaris Films: le tue pellicole per vetri per edilizia. Massima sicurezza, privacy e risparmio energetico. Protezione solare, isolamento termico.",
+      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png",
+      "twitter:url": "https://www.solarisfilms.it/servizi/"
     },
     "article": {},
     "schemas": [
@@ -53,5 +54,5 @@
   "contentHtml": "",
   "text": "Pellicole per vetri",
   "textLength": 19,
-  "fetchedAt": "2026-06-04T09:15:08.018Z"
+  "fetchedAt": "2026-08-03T15:28:09.383Z"
 }

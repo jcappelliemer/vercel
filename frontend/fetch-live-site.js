@@ -91,6 +91,7 @@ const EXCLUDED_LIVE_PATHS = new Set([
   '/pellicole-per-vetri/llms-txt/',
   '/pellicole-per-vetri/zoho-callback/',
   '/pellicole-per-vetri/profilo-solaris/',
+  '/pellicole-per-vetri/thank-you/',
   '/pellicole-per-vetri/anagrafica-aziende-enti-operativa/',
   '/pellicole-per-vetri/anagrafica-privati-v2/',
   '/pellicole-per-vetri/anagrafica-tributaria-aziende-enti/',
@@ -100,6 +101,7 @@ const EXCLUDED_LIVE_PATH_PREFIXES = [
   '/pellicole-per-vetri/false-parent/',
   '/approfondimenti/author/',
   '/approfondimenti/category/',
+  '/approfondimenti/tipo-pellicola/',
 ];
 
 function hasExcludedProductReference(value = '') {
@@ -244,6 +246,10 @@ function sanitizeImportedSolarisString(value = '') {
   let text = String(value);
 
   text = text
+    .replace(/Design Pellicole per Vetri:\s*LCD,\s*/gi, 'Design Pellicole per Vetri: ')
+    .replace(/Dalle pellicole\s+LCD\s+Switch\s+per\s+privacy\s+on-demand\s+e\s+proiezione/gi, 'Dalle vetrofanie alle pellicole satinate per privacy e design')
+    .replace(/\bLCD\s*Switch\b/gi, 'pellicole privacy')
+    .replace(/\bLCD\b/gi, 'privacy')
     .replace(/tecnosolarssn50tesr/gi, 'ssn-70-te-sr')
     .replace(/tecnosolar-ssn-50-te-sr/gi, 'ssn-70-te-sr')
     .replace(/\bTecnosolar\s+SSN\s*50\s+TE\s+SR\b/gi, 'SSN 70 TE SR')

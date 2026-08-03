@@ -1,0 +1,240 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-spettro-selettive/",
+  "path": "/pellicole-spettro-selettive/",
+  "route": {
+    "type": "technical-focus",
+    "label": "Focus tecnico",
+    "newPath": "/focus-tecnico/pellicole-spettro-selettive/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/sitemap-focus-tecnico.xml",
+  "seo": {
+    "title": "Pellicole Spettro Selettive per Vetri | Solaris Films",
+    "description": "Solaris Films, dal 1983, è il tuo partner per pellicole spettro selettive. Migliora comfort",
+    "robots": "max-image-preview:large",
+    "canonical": "https://www.solarisfilms.it/focus-tecnico/pellicole-spettro-selettive/",
+    "og": {
+      "og:title": "Pellicole Spettro Selettive per Vetri | Solaris Films",
+      "og:description": "Solaris Films, dal 1983, è il tuo partner per pellicole spettro selettive. Migliora comfort",
+      "og:url": "https://www.solarisfilms.it/focus-tecnico/pellicole-spettro-selettive/",
+      "og:type": "article",
+      "og:site_name": "Solaris Films",
+      "og:locale": "it_IT",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Pellicole Spettro Selettive per Vetri | Solaris Films",
+      "twitter:description": "Solaris Films, dal 1983, è il tuo partner per pellicole spettro selettive. Migliora comfort",
+      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png",
+      "twitter:url": "https://www.solarisfilms.it/focus-tecnico/pellicole-spettro-selettive/"
+    },
+    "article": {
+      "article:published_time": "2025-09-16T09:55:49+02:00",
+      "article:modified_time": "2026-07-22T18:44:39+02:00",
+      "article:author": "site-admin"
+    },
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\"},\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\"},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"inLanguage\":\"it-IT\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-spettro-selettive\\/#webpage\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-spettro-selettive\\/\",\"name\":\"Pellicole Spettro Selettive per Vetri | Solaris Films\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"datePublished\":\"2025-09-16T09:55:49+02:00\",\"dateModified\":\"2026-07-22T18:44:39+02:00\",\"inLanguage\":\"it-IT\",\"description\":\"Solaris Films, dal 1983, è il tuo partner per pellicole spettro selettive. Migliora comfort\"},{\"@type\":\"BreadcrumbList\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/pellicole-spettro-selettive\\/#breadcrumb\",\"itemListElement\":[{\"@type\":\"ListItem\",\"position\":1,\"name\":\"Home\",\"item\":\"https:\\/\\/www.solarisfilms.it\\/\"},{\"@type\":\"ListItem\",\"position\":2,\"name\":\"Pellicole spettro selettive\"}]}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [
+    {
+      "level": 1,
+      "text": "Pellicole spettro selettive"
+    },
+    {
+      "level": 2,
+      "text": "In molti scelgono di montare le pellicole non solo per le loro doti protettive, ma anche per il tocco di design che esse danno al vetro sul quale sono applicate. Che sia un effetto fumé oppure uno riflettente, la giusta pellicola selettiva può sicuramente donare un tocco di dinamismo ai vostri serramenti e trasformare le vostre superfici vetrate"
+    },
+    {
+      "level": 2,
+      "text": "Le serie delle pellicole spettro selettive"
+    },
+    {
+      "level": 2,
+      "text": "Protezione dalle frequenze dannose delle radiazioni solari mantenendo limpido il vostro vetro."
+    },
+    {
+      "level": 2,
+      "text": "Consentono di ridurre l’ingresso di calore ottenendo ambienti più freschi e confortevoli."
+    },
+    {
+      "level": 2,
+      "text": "Garantiscono una maggiore eleganza all’edificio."
+    },
+    {
+      "level": 2,
+      "text": "La serie Nova"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola SSN 70 Hi-Tec Clear"
+    },
+    {
+      "level": 2,
+      "text": "La serie Optivision"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola Amber"
+    },
+    {
+      "level": 2,
+      "text": "La pellicola UV Gard"
+    }
+  ],
+  "h1": "Pellicole spettro selettive",
+  "primaryImage": "https://www.solarisfilms.it/wp-content/uploads/2026/05/ogimage-Solaris.png",
+  "contentBlocks": [
+    {
+      "type": "heading",
+      "level": 1,
+      "html": "Pellicole spettro selettive",
+      "text": "Pellicole spettro selettive"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "In molti scelgono di montare le pellicole non solo per le loro doti protettive, ma anche per il tocco di design che esse danno al vetro sul quale sono applicate. Che sia un effetto fum&#xE9; oppure uno riflettente, la giusta pellicola selettiva pu&#xF2; sicuramente donare un tocco di dinamismo ai vostri serramenti e trasformare le vostre superfici vetrate",
+      "text": "In molti scelgono di montare le pellicole non solo per le loro doti protettive, ma anche per il tocco di design che esse danno al vetro sul quale sono applicate. Che sia un effetto fumé oppure uno riflettente, la giusta pellicola selettiva può sicuramente donare un tocco di dinamismo ai vostri serramenti e trasformare le vostre superfici vetrate"
+    },
+    {
+      "type": "paragraph",
+      "html": "In alcuni casi invece si vorrebbe la&#xA0;<strong>protezione antisolare di una pellicola oscurante o riflettente, senza per&#xF2; avere quegli effetti sulle proprie superfici vetrate. È qui che ci viene in aiuto la serie di pellicole selettive (o spettro selettive) che stiamo per mostrarti.",
+      "text": "In alcuni casi invece si vorrebbe la protezione antisolare di una pellicola oscurante o riflettente, senza però avere quegli effetti sulle proprie superfici vetrate. È qui che ci viene in aiuto la serie di pellicole selettive (o spettro selettive) che stiamo per mostrarti."
+    },
+    {
+      "type": "paragraph",
+      "html": "Questi films adesivi vi proteggeranno dalle frequenze dannose delle radiazioni solari&#xA0;<strong>mantenendo limpido il vostro vetro. Tenendo fuori dai vostri ambienti i raggi UV e gli infrarossi&#xA0;<strong>si rallenter&#xE0; drasticamente il deperimento degli oggetti&#xA0;esposti al sole e si eviter&#xE0; a familiari o personale dipendente la sovraesposizione a questi raggi dannosi e fastidiosi.",
+      "text": "Questi films adesivi vi proteggeranno dalle frequenze dannose delle radiazioni solari mantenendo limpido il vostro vetro. Tenendo fuori dai vostri ambienti i raggi UV e gli infrarossi si rallenterà drasticamente il deperimento degli oggetti esposti al sole e si eviterà a familiari o personale dipendente la sovraesposizione a questi raggi dannosi e fastidiosi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Le pellicole spettroselettive sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l&#x2019;esigenza di mantenere<strong>&#xA0;inalterata la trasparenza&#xA0;e l&#x2019;aspetto estetico delle vetrate. Sono ideali per vetrine, uffici, musei, show room, scuole, banche e per tutti gli edifici dove vi sono vincoli storici, paesaggistici o ambientali.",
+      "text": "Le pellicole spettroselettive sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l’esigenza di mantenere inalterata la trasparenza e l’aspetto estetico delle vetrate. Sono ideali per vetrine, uffici, musei, show room, scuole, banche e per tutti gli edifici dove vi sono vincoli storici, paesaggistici o ambientali."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Le serie delle pellicole spettro selettive",
+      "text": "Le serie delle pellicole spettro selettive"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Abbiamo deciso di fornirvi una vasta gamma di pellicole spettro selettive. Questo non solo per venire incontro ai vostri gusti nel modo pi&#xF9; completo possibile, ma anche per risolvere qualsiasi problematica relativa a sbiadimento e riverberi solari.",
+      "text": "Abbiamo deciso di fornirvi una vasta gamma di pellicole spettro selettive. Questo non solo per venire incontro ai vostri gusti nel modo più completo possibile, ma anche per risolvere qualsiasi problematica relativa a sbiadimento e riverberi solari."
+    },
+    {
+      "type": "note",
+      "html": "Alcune caratteristiche delle Pellicole spettro selettive:",
+      "text": "Alcune caratteristiche delle Pellicole spettro selettive:"
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Protezione dalle frequenze dannose delle radiazioni solari&#xA0;mantenendo limpido il vostro vetro.",
+      "text": "Protezione dalle frequenze dannose delle radiazioni solari mantenendo limpido il vostro vetro."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Consentono di ridurre l&#x2019;ingresso di calore ottenendo ambienti pi&#xF9; freschi e confortevoli.",
+      "text": "Consentono di ridurre l’ingresso di calore ottenendo ambienti più freschi e confortevoli."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "Garantiscono una maggiore eleganza all&#x2019;edificio.",
+      "text": "Garantiscono una maggiore eleganza all’edificio."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie Nova",
+      "text": "La serie Nova"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>La serie di pellicole spettro selettive Nova offre eccellenti tassi di assorbimento degli infrarossi unito ad un colore neutro con riflessi dorati, pi&#xF9; o meno accentuati in base alla potenza filtrante del prodotto. Si tratta di un ottima pellicola prodotta da Madico, che fornisce la massima luce visibile in ambienti in cui non sono desiderabili pellicole pi&#xF9; scure.",
+      "text": "La serie di pellicole spettro selettive Nova offre eccellenti tassi di assorbimento degli infrarossi unito ad un colore neutro con riflessi dorati, più o meno accentuati in base alla potenza filtrante del prodotto. Si tratta di un ottima pellicola prodotta da Madico, che fornisce la massima luce visibile in ambienti in cui non sono desiderabili pellicole più scure."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola SSN 70 Hi-Tec Clear",
+      "text": "La pellicola SSN 70 Hi-Tec Clear"
+    },
+    {
+      "type": "paragraph",
+      "html": "La pellicola Solaris Films SSN 70 TE SR &#xE8; una pellicola per vetro trasparente estremamente selettiva, progettata per applicazioni esterne. Il rivestimento esterno utilizza un&#x2019;innovativa tecnologia brevettata particolarmente resistente ai graffi.",
+      "text": "La pellicola Solaris Films SSN 70 TE SR è una pellicola per vetro trasparente estremamente selettiva, progettata per applicazioni esterne. Il rivestimento esterno utilizza un’innovativa tecnologia brevettata particolarmente resistente ai graffi."
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate?"
+    },
+    {
+      "type": "cta",
+      "href": "/contatti/",
+      "text": "Contattaci",
+      "html": ""
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La serie Optivision",
+      "text": "La serie Optivision"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Le pellicole spettroselettive della serie Optivision offrono viste notturne ottimali riducendo la riflettivit&#xE0; interna del vetro, fornendo una visione pi&#xF9; naturale dei panorami di cui potete godere dalle vostre superfici vetrate. La pellicola fornisce anche protezione solare riducendo il calore e l&#x2019;abbagliamento durante il giorno.",
+      "text": "Le pellicole spettroselettive della serie Optivision offrono viste notturne ottimali riducendo la riflettività interna del vetro, fornendo una visione più naturale dei panorami di cui potete godere dalle vostre superfici vetrate. La pellicola fornisce anche protezione solare riducendo il calore e l’abbagliamento durante il giorno."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola Amber",
+      "text": "La pellicola Amber"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>Amber 81 &#xE8; una pellicola progettata per bloccare la luce UV nella gamma di luce visibile fino a 500 nanometri, filtrando le lunghezze d&#x2019;onda pericolose e lasciando passare la luce visibile non nociva. Il caratteristico colore ambrato del film &#xE8; ci&#xF2; che gli conferisce questa peculiare capacit&#xE0; di filtraggio dei raggi solari, veramente molto utile in situazioni specifiche.",
+      "text": "Amber 81 è una pellicola progettata per bloccare la luce UV nella gamma di luce visibile fino a 500 nanometri, filtrando le lunghezze d’onda pericolose e lasciando passare la luce visibile non nociva. Il caratteristico colore ambrato del film è ciò che gli conferisce questa peculiare capacità di filtraggio dei raggi solari, veramente molto utile in situazioni specifiche."
+    },
+    {
+      "type": "heading",
+      "level": 2,
+      "html": "La pellicola UV Gard",
+      "text": "La pellicola UV Gard"
+    },
+    {
+      "type": "paragraph",
+      "html": "<strong>La pellicola spettroselettiva UV Gard &#xE8; una pellicola otticamente trasparente, pensata specificamente per la riflessione della luce ultravioletta. Viene principalmente utilizzata in applicazioni in cui si desidera la massima trasmissione della luce e la massima tutela dei beni che vengono irraggiati dal sole. Il suo utilizzo principale &#xE8; sui vetri museali, in quanto proteggono l&#x2019;opera esposta senza alterare la percezione dei visitatori.",
+      "text": "La pellicola spettroselettiva UV Gard è una pellicola otticamente trasparente, pensata specificamente per la riflessione della luce ultravioletta. Viene principalmente utilizzata in applicazioni in cui si desidera la massima trasmissione della luce e la massima tutela dei beni che vengono irraggiati dal sole. Il suo utilizzo principale è sui vetri museali, in quanto proteggono l’opera esposta senza alterare la percezione dei visitatori."
+    },
+    {
+      "type": "note",
+      "html": "I nostri Prodotti di questa categoria",
+      "text": "I nostri Prodotti di questa categoria"
+    },
+    {
+      "type": "paragraph",
+      "html": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate?",
+      "text": "Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate?"
+    },
+    {
+      "type": "cta",
+      "href": "/contatti/",
+      "text": "Contattaci",
+      "html": ""
+    }
+  ],
+  "contentHtml": "",
+  "text": "Pellicole spettro selettive In molti scelgono di montare le pellicole non solo per le loro doti protettive, ma anche per il tocco di design che esse danno al vetro sul quale sono applicate. Che sia un effetto fumé oppure uno riflettente, la giusta pellicola selettiva può sicuramente donare un tocco di dinamismo ai vostri serramenti e trasformare le vostre superfici vetrate In alcuni casi invece si vorrebbe la protezione antisolare di una pellicola oscurante o riflettente, senza però avere quegli effetti sulle proprie superfici vetrate. È qui che ci viene in aiuto la serie di pellicole selettive (o spettro selettive) che stiamo per mostrarti. Questi films adesivi vi proteggeranno dalle frequenze dannose delle radiazioni solari mantenendo limpido il vostro vetro. Tenendo fuori dai vostri ambienti i raggi UV e gli infrarossi si rallenterà drasticamente il deperimento degli oggetti esposti al sole e si eviterà a familiari o personale dipendente la sovraesposizione a questi raggi dannosi e fastidiosi. Le pellicole spettroselettive sono consigliate per vetrate che fanno entrare molto calore negli ambienti interni, ma si ha l’esigenza di mantenere inalterata la trasparenza e l’aspetto estetico delle vetrate. Sono ideali per vetrine, uffici, musei, show room, scuole, banche e per tutti gli edifici dove vi sono vincoli storici, paesaggistici o ambientali. Le serie delle pellicole spettro selettive Abbiamo deciso di fornirvi una vasta gamma di pellicole spettro selettive. Questo non solo per venire incontro ai vostri gusti nel modo più completo possibile, ma anche per risolvere qualsiasi problematica relativa a sbiadimento e riverberi solari. Alcune caratteristiche delle Pellicole spettro selettive: Protezione dalle frequenze dannose delle radiazioni solari mantenendo limpido il vostro vetro. Consentono di ridurre l’ingresso di calore ottenendo ambienti più freschi e confortevoli. Garantiscono una maggiore eleganza all’edificio. La serie Nova La serie di pellicole spettro selettive Nova offre eccellenti tassi di assorbimento degli infrarossi unito ad un colore neutro con riflessi dorati, più o meno accentuati in base alla potenza filtrante del prodotto. Si tratta di un ottima pellicola prodotta da Madico, che fornisce la massima luce visibile in ambienti in cui non sono desiderabili pellicole più scure. La pellicola SSN 70 Hi-Tec Clear La pellicola Solaris Films SSN 70 TE SR è una pellicola per vetro trasparente estremamente selettiva, progettata per applicazioni esterne. Il rivestimento esterno utilizza un’innovativa tecnologia brevettata particolarmente resistente ai graffi. Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate? Contattaci La serie Optivision Le pellicole spettroselettive della serie Optivision offrono viste notturne ottimali riducendo la riflettività interna del vetro, fornendo una visione più naturale dei panorami di cui potete godere dalle vostre superfici vetrate. La pellicola fornisce anche protezione solare riducendo il calore e l’abbagliamento durante il giorno. La pellicola Amber Amber 81 è una pellicola progettata per bloccare la luce UV nella gamma di luce visibile fino a 500 nanometri, filtrando le lunghezze d’onda pericolose e lasciando passare la luce visibile non nociva. Il caratteristico colore ambrato del film è ciò che gli conferisce questa peculiare capacità di filtraggio dei raggi solari, veramente molto utile in situazioni specifiche. La pellicola UV Gard La pellicola spettroselettiva UV Gard è una pellicola otticamente trasparente, pensata specificamente per la riflessione della luce ultravioletta. Viene principalmente utilizzata in applicazioni in cui si desidera la massima trasmissione della luce e la massima tutela dei beni che vengono irraggiati dal sole. Il suo utilizzo principale è sui vetri museali, in quanto proteggono l’opera esposta senza alterare la percezione dei visitatori. I nostri Prodotti di questa categoria Vuoi scoprire la soluzione migliore per risolvere i problemi delle tue vetrate? Contattaci",
+  "textLength": 4041,
+  "fetchedAt": "2026-08-03T15:28:18.111Z"
+}

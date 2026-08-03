@@ -1,0 +1,236 @@
+/*
+ * Static WordPress replica helpers.
+ * The source HTML is the SSR output from the current staging build; these
+ * rules compensate only for React/animation state that is absent in a static
+ * prototype.
+ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.faithful-static-wp {
+  margin: 0;
+  background: #0a0f1c;
+}
+
+.faithful-static-wp [style*="opacity:0"],
+.faithful-static-wp [style*="opacity: 0"] {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.faithful-static-wp header {
+  background: rgba(10, 15, 28, 0.92);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.faithful-static-wp .relative:hover > [data-testid^="desktop-dropdown"],
+.faithful-static-wp .relative:focus-within > [data-testid^="desktop-dropdown"],
+.faithful-static-wp .relative[data-faithful-dropdown-open="true"] > [data-testid^="desktop-dropdown"] {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: translateX(-50%) translateY(0) !important;
+}
+
+.faithful-static-wp .relative[data-faithful-dropdown-open="true"] > a {
+  color: #fff !important;
+}
+
+.faithful-static-wp [data-testid^="desktop-dropdown"]::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -52px;
+  height: 52px;
+}
+
+.faithful-static-wp [data-faithful-mobile-open="true"] {
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  transform: translateY(0) !important;
+  display: block !important;
+}
+
+.faithful-mobile-lock {
+  overflow: hidden;
+}
+
+.faithful-static-wp .faithful-mobile-panel {
+  display: none;
+}
+
+@media (max-width: 1279px) {
+  .faithful-static-wp .faithful-mobile-panel {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 80px;
+    z-index: 120;
+    display: block;
+    height: calc(100vh - 80px);
+    overflow: hidden;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    background: #111827;
+    box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 180ms ease, transform 180ms ease;
+  }
+
+  .faithful-static-wp .faithful-mobile-panel[data-faithful-mobile-open="true"] {
+    opacity: 1 !important;
+    pointer-events: auto !important;
+    transform: translateY(0) !important;
+  }
+
+  .faithful-static-wp .faithful-mobile-panel__inner {
+    height: 100%;
+    overflow-y: auto;
+    padding: 22px 24px 40px;
+  }
+
+  .faithful-static-wp .faithful-mobile-link,
+  .faithful-static-wp .faithful-mobile-section__toggle {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: transparent;
+    padding: 15px 0;
+    color: rgba(255, 255, 255, 0.78);
+    font: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.25;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .faithful-static-wp .faithful-mobile-link:hover,
+  .faithful-static-wp .faithful-mobile-section__toggle:hover {
+    color: #fff;
+  }
+
+  .faithful-static-wp .faithful-mobile-section__toggle span:last-child {
+    color: rgba(255, 255, 255, 0.38);
+    font-size: 20px;
+    line-height: 1;
+    transition: transform 180ms ease;
+  }
+
+  .faithful-static-wp .faithful-mobile-section[data-faithful-open="true"] .faithful-mobile-section__toggle {
+    color: #eab308;
+  }
+
+  .faithful-static-wp .faithful-mobile-section[data-faithful-open="true"] .faithful-mobile-section__toggle span:last-child {
+    transform: rotate(180deg);
+  }
+
+  .faithful-static-wp .faithful-mobile-section__content {
+    display: none;
+    padding: 6px 0 14px 14px;
+    border-left: 1px solid rgba(255, 255, 255, 0.08);
+  }
+
+  .faithful-static-wp .faithful-mobile-section[data-faithful-open="true"] .faithful-mobile-section__content {
+    display: grid;
+    gap: 4px;
+  }
+
+  .faithful-static-wp .faithful-mobile-overview,
+  .faithful-static-wp .faithful-mobile-sublink {
+    display: block;
+    border-radius: 10px;
+    padding: 10px 12px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 14px;
+    line-height: 1.3;
+    text-decoration: none;
+  }
+
+  .faithful-static-wp .faithful-mobile-overview {
+    color: rgba(234, 179, 8, 0.92);
+    font-weight: 700;
+  }
+
+  .faithful-static-wp .faithful-mobile-overview:hover,
+  .faithful-static-wp .faithful-mobile-sublink:hover {
+    background: rgba(255, 255, 255, 0.06);
+    color: #fff;
+  }
+
+  .faithful-static-wp .faithful-mobile-contacts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    padding-top: 22px;
+  }
+
+  .faithful-static-wp .faithful-mobile-contacts a {
+    display: flex;
+    min-height: 48px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 14px;
+    border: 1px solid rgba(34, 211, 238, 0.32);
+    background: rgba(34, 211, 238, 0.1);
+    color: #22d3ee;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  .faithful-static-wp .faithful-mobile-contacts a:last-child {
+    border-color: rgba(37, 211, 102, 0.32);
+    background: rgba(37, 211, 102, 0.1);
+    color: #25d366;
+  }
+}
+
+@media (min-width: 1280px) {
+  .faithful-static-wp .faithful-mobile-panel {
+    display: none !important;
+  }
+}
+
+.faithful-static-wp [data-faithful-faq-answer] {
+  display: none;
+}
+
+.faithful-static-wp [data-faithful-faq-open="true"] [data-faithful-faq-answer] {
+  display: block;
+}
+
+.faithful-static-wp .contact-action-wa,
+.faithful-static-wp .contact-action-chat {
+  display: inline-flex !important;
+  opacity: 1 !important;
+  transform: none !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+  z-index: 9999 !important;
+}
+
+.faithful-static-wp .contact-action-chat {
+  right: 32px !important;
+  bottom: 32px !important;
+}
+
+.faithful-static-wp .contact-action-wa {
+  right: 32px !important;
+  bottom: 104px !important;
+}
+
+.faithful-static-wp img {
+  max-width: 100%;
+}

@@ -1,0 +1,47 @@
+{
+  "url": "https://www.solarisfilms.it/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che/",
+  "path": "/pellicole-per-vetri/pellicole-per-vetri/lo-sapevi-che/",
+  "route": {
+    "type": "knowledge-index",
+    "label": "Lo sapevi che?",
+    "newPath": "/lo-sapevi-che/",
+    "confidence": "high",
+    "needsReview": false
+  },
+  "sourceSitemap": "https://www.solarisfilms.it/sitemap-page.xml",
+  "seo": {
+    "title": "Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni",
+    "description": "Pellicole per vetri - Distributore ed installatore da 30+ anni",
+    "robots": "max-image-preview:large",
+    "canonical": "https://www.solarisfilms.it/lo-sapevi-che/",
+    "og": {
+      "og:title": "Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni",
+      "og:description": "Pellicole per vetri - Distributore ed installatore da 30+ anni",
+      "og:url": "https://www.solarisfilms.it/lo-sapevi-che/",
+      "og:type": "website",
+      "og:site_name": "Solaris Films",
+      "og:locale": "it_IT",
+      "og:image": "https://www.solarisfilms.it/wp-content/uploads/2025/05/LogoWEB.png"
+    },
+    "twitter": {
+      "twitter:card": "summary_large_image",
+      "twitter:title": "Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni",
+      "twitter:description": "Pellicole per vetri - Distributore ed installatore da 30+ anni",
+      "twitter:image": "https://www.solarisfilms.it/wp-content/uploads/2025/05/LogoWEB.png",
+      "twitter:url": "https://www.solarisfilms.it/lo-sapevi-che/"
+    },
+    "article": {},
+    "schemas": [
+      "{\"@context\":\"https:\\/\\/schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\",\"name\":\"Solaris Films\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"logo\":{\"@type\":\"ImageObject\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/wp-content\\/uploads\\/2025\\/05\\/LogoWEB.png\",\"caption\":\"Solaris Films\"},\"image\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#logo\"},\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\"},{\"@type\":\"WebSite\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"inLanguage\":\"it-IT\",\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\",\"potentialAction\":[{\"@type\":\"SearchAction\",\"target\":{\"@type\":\"EntryPoint\",\"urlTemplate\":\"https:\\/\\/www.solarisfilms.it\\/?s={search_term_string}\"},\"query-input\":\"required name=search_term_string\"}]},{\"@type\":\"WebPage\",\"@id\":\"https:\\/\\/www.solarisfilms.it\\/\",\"url\":\"https:\\/\\/www.solarisfilms.it\\/\",\"name\":\"Solaris Films - Pellicole per vetri - Distributore ed installatore da 30+ anni\",\"isPartOf\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#website\"},\"about\":{\"@id\":\"https:\\/\\/www.solarisfilms.it\\/#organization\"},\"description\":\"Pellicole per vetri - Distributore ed installatore da 30+ anni\",\"inLanguage\":\"it-IT\"}]}",
+      "{\"@context\":\"https://schema.org\",\"@graph\":[{\"@type\":\"Organization\",\"@id\":\"https://www.solarisfilms.it/#organization\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"logo\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"description\":\"Installazione professionale di pellicole per vetri antisolari, di sicurezza e privacy per abitazioni e aziende.\"},{\"@type\":\"LocalBusiness\",\"@id\":\"https://www.solarisfilms.it/#localbusiness\",\"name\":\"Solaris Films\",\"url\":\"https://www.solarisfilms.it/\",\"image\":\"https://www.solarisfilms.it/wp-content/uploads/2022/10/logo-solaris-films.png\",\"priceRange\":\"€€\",\"areaServed\":{\"@type\":\"Country\",\"name\":\"Italia\"},\"makesOffer\":[{\"@type\":\"Service\",\"name\":\"Pellicole antisolari per vetri\",\"serviceType\":\"Controllo solare e riduzione calore\"},{\"@type\":\"Service\",\"name\":\"Pellicole di sicurezza per vetri\",\"serviceType\":\"Protezione anti-effrazione e anti-frammentazione\"},{\"@type\":\"Service\",\"name\":\"Pellicole privacy e decorative\",\"serviceType\":\"Privacy visiva e design per ambienti professionali e residenziali\"}]},{\"@type\":\"WebSite\",\"@id\":\"https://www.solarisfilms.it/#website\",\"url\":\"https://www.solarisfilms.it/\",\"name\":\"Solaris Films\",\"publisher\":{\"@id\":\"https://www.solarisfilms.it/#organization\"},\"inLanguage\":\"it-IT\"}]}"
+    ]
+  },
+  "headings": [],
+  "h1": "",
+  "primaryImage": "https://www.solarisfilms.it/wp-content/uploads/2025/05/LogoWEB.png",
+  "contentBlocks": [],
+  "contentHtml": "",
+  "text": "",
+  "textLength": 0,
+  "fetchedAt": "2026-08-03T15:28:10.166Z"
+}

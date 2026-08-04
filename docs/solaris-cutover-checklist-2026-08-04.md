@@ -21,6 +21,10 @@ Report crawl:
 
 `test_reports/wp-staging-host-sim-final-crawl-2026-08-04T11-48-16-267Z.json`
 
+Script verifica rapida:
+
+`scripts/solaris-prelive-verify.ps1`
+
 Zip plugin replica aggiornato:
 
 `wordpress/solaris-static-replica-cutover-ready-20260804-131210.zip`
@@ -59,6 +63,8 @@ Zip plugin replica aggiornato:
    - prodotti 200
    - redirect Tecnosolar 301
    - URL LCD/fotocromatiche/llms-txt 410
+   - script rapido:
+     `powershell -ExecutionPolicy Bypass -File scripts/solaris-prelive-verify.ps1 -ExpectIndexable`
 
 ## Switch DNS
 

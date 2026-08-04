@@ -20,6 +20,7 @@ File nella PR:
 - `docs/solaris-dns-snapshot-2026-08-04.md`
 - `docs/solaris-ssl-runbook-2026-08-04.md`
 - `docs/solaris-nginx-cutover-snippet-2026-08-04.conf`
+- `scripts/solaris-prelive-verify.ps1`
 
 ## Verifiche staging simulate
 
@@ -135,6 +136,24 @@ Verifica con host simulato su `187.124.168.153`:
 - sitemap richiesta da `www`: genera URL `https://www.solarisfilms.it/...`
 
 Conclusione: prima di rendere indicizzabile il sito finale bisogna aggiungere una regola server-side 301 apex -> `www` anche su HTTPS. Senza questa regola il canonical pagina resta corretto, ma la sitemap puo duplicarsi per host.
+
+## Script verifica rapida
+
+Creato `scripts/solaris-prelive-verify.ps1`.
+
+Esempio staging simulato:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/solaris-prelive-verify.ps1 -ResolveIp 187.124.168.153
+```
+
+Risultato atteso prima del cutover: 1 failure su `apex_redirect_to_www`, perche la regola nginx apex -> `www` non e ancora applicata. Gli altri controlli devono restare verdi.
+
+Esempio post-cutover:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/solaris-prelive-verify.ps1 -ExpectIndexable
+```
 
 ## Cosa resta prima del live
 

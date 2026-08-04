@@ -70,8 +70,8 @@ Verifica diretta su staging simulato:
 
 - URL: `/certificato-di-sicurezza/`
 - H1 servito: `Questo vetro e stato trasformato in vetro di sicurezza` con accento corretto nell'HTML
-- Nessun carattere sostitutivo `�`
-- Nessun mojibake `Ã` / `Â`
+- Nessun carattere sostitutivo Unicode visibile.
+- Nessun mojibake tipico da UTF-8 mal decodificato.
 
 Nota: alcuni report testuali mostrano caratteri alterati per effetto del parser/output, non per l'HTML servito.
 

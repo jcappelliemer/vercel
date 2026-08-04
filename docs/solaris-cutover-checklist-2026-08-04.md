@@ -33,6 +33,7 @@ Zip plugin replica aggiornato:
 2. Backup database e file del vecchio sito live.
 3. Backup configurazione nginx staging:
    - `/etc/nginx/sites-available/wordpress-jc4e`
+   - snippet preparato: `docs/solaris-nginx-cutover-snippet-2026-08-04.conf`
 4. Verificare che `nginx -t` sia pulito.
 5. Verificare che il plugin `solaris-static-replica` sia attivo.
 6. Verificare che `solarisfilms.it` e `www.solarisfilms.it` siano nel vhost staging.

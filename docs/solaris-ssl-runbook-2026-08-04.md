@@ -13,6 +13,7 @@ Questo runbook non va eseguito ora. Serve per il momento in cui James conferma i
 - Plugin DNS Aruba automatico: non presente
 - Certificato Solaris: non ancora presente
 - Certificato attuale del vhost HTTPS: `wordpress-jc4e.srv1502079.hstgr.cloud`
+- Snippet cutover preparato: `docs/solaris-nginx-cutover-snippet-2026-08-04.conf`
 
 ## Opzione A - Certificato prima dello switch DNS
 

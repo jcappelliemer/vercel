@@ -19,6 +19,7 @@ File nella PR:
 - `docs/solaris-rollback-plan-2026-08-04.md`
 - `docs/solaris-dns-snapshot-2026-08-04.md`
 - `docs/solaris-ssl-runbook-2026-08-04.md`
+- `docs/solaris-nginx-cutover-snippet-2026-08-04.conf`
 
 ## Verifiche staging simulate
 

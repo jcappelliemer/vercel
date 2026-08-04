@@ -27,6 +27,8 @@ Zip plugin replica aggiornato:
 ## Prima dello switch
 
 1. Backup DNS attuale e screenshot pannello DNS.
+   - riferimento: `docs/solaris-dns-snapshot-2026-08-04.md`
+   - attenzione ai record AAAA: se il nuovo VPS non serve Solaris anche su IPv6, rimuovere o aggiornare gli AAAA esistenti durante il cutover.
 2. Backup database e file del vecchio sito live.
 3. Backup configurazione nginx staging:
    - `/etc/nginx/sites-available/wordpress-jc4e`
@@ -58,6 +60,8 @@ Aggiornare DNS solo dopo conferma esplicita di James.
 - `solarisfilms.it` -> IP staging WP
 
 TTL consigliato prima dello switch: basso.
+
+Nota IPv6: il live attuale ha record AAAA. Non lasciare gli AAAA puntati al vecchio live se gli A puntano al nuovo VPS, altrimenti alcuni utenti e crawler potrebbero raggiungere ancora il vecchio sito.
 
 ## SSL per dominio finale
 

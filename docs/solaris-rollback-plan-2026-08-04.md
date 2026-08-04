@@ -44,9 +44,11 @@ Backup gia creati durante la preparazione:
 
 1. Ripristinare i record DNS di `solarisfilms.it` e `www.solarisfilms.it` verso il vecchio live:
    - IPv4 precedente: `89.46.109.70`
-   - IPv6 precedente, se ancora usato: valore originale del pannello DNS
+   - IPv6 precedente, se ancora usato: `2a00:6d40:4:1::c300:70`
 2. Lasciare TTL basso finche il rollback non e stabilizzato.
 3. Verificare propagazione da piu risolutori.
+
+Nota: se durante il cutover gli AAAA vengono rimossi invece che aggiornati, nel rollback ripristinare anche quelli solo se il vecchio live continua a usarli correttamente.
 
 ## Rollback WordPress staging
 

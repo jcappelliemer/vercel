@@ -49,6 +49,7 @@ Status gestiti nel crawl:
 Report:
 
 - `test_reports/sitemap-live-vs-staging-2026-08-04T12-26-48-846Z-missing-status.json`
+- `test_reports/live-vs-wp-staging-fresh-recursive-2026-08-04T13-45-57-462Z.json`
 
 Risultato:
 
@@ -56,6 +57,7 @@ Risultato:
 - 31 redirect 301
 - 17 risposte 410 intenzionali
 - 0 URL residue in 404
+- controllo ricorsivo aggiornato: live 209 URL, staging 199 URL, nessuna nuova URL live scoperta fuori gestione
 
 ## Encoding e accenti
 
@@ -82,6 +84,38 @@ Ultimo controllo HTTP mirato su staging simulato con host `www.solarisfilms.it` 
 - URL rimossi LCD/fotocromatiche/llms-txt: 410
 - `/robots.txt`: 200 con `Disallow: /`
 - `/sitemap.xml`: 200, 199 URL, nessun dominio staging, nessun termine bloccato
+
+## Check read-only VPS
+
+Verifica read-only su VPS `187.124.168.153`:
+
+- host: `srv1502079`
+- Docker presente
+- Certbot presente
+- nessun certificato Let's Encrypt ancora emesso per `solarisfilms.it` / `www.solarisfilms.it`
+- certificati presenti solo per:
+  - `aeo-orchestra.com`
+  - `cms.aeo-orchestra.com`
+  - `tfconcierge.com`
+  - `wordpress-jc4e.srv1502079.hstgr.cloud`
+- container WordPress staging attivo da settimane
+- `home`: `https://wordpress-jc4e.srv1502079.hstgr.cloud`
+- `siteurl`: `https://wordpress-jc4e.srv1502079.hstgr.cloud`
+- `blog_public`: `0`
+- plugin attivi:
+  - `seo-aeo-orchestra`
+  - `plugin-check`
+  - `solaris-static-replica`
+  - `wpforms-lite`
+  - `wp-mail-smtp`
+- must-use plugin:
+  - `solaris-headless-seo`
+- `nginx -t`: OK
+- vhost nginx riconosce gia:
+  - `wordpress-jc4e.srv1502079.hstgr.cloud`
+  - `solarisfilms.it`
+  - `www.solarisfilms.it`
+- il vhost HTTPS usa ancora il certificato staging `wordpress-jc4e.srv1502079.hstgr.cloud`; al cutover va sostituito/emesso certificato Solaris.
 
 ## Cosa resta prima del live
 

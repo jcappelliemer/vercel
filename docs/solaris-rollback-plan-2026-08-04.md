@@ -14,6 +14,7 @@ Rollback immediato se si verifica uno di questi casi:
 - Home o pagine principali non rispondono 200.
 - Crawl post-switch con 404 diffusi su URL indicizzate.
 - `robots.txt` o sitemap generano stato incoerente e non correggibile subito.
+- apex e `www` restano entrambi in 200 o la sitemap viene generata su host non canonico.
 - WordPress staging diventa instabile o non accessibile.
 
 ## Dati noti prima del cutover
@@ -85,7 +86,8 @@ Se il backup con wildcard timestamp e quello corretto, usare il file piu recente
 3. Le pagine principali del vecchio sito rispondono.
 4. Lo staging torna noindex.
 5. Nessun redirect permanente resta puntato al nuovo staging in modo involontario.
-6. Annotare ora di rollback e motivo.
+6. `solarisfilms.it` e `www.solarisfilms.it` tornano al comportamento host del vecchio live.
+7. Annotare ora di rollback e motivo.
 
 ## Cosa non fare durante rollback
 

@@ -4,9 +4,9 @@ Stato: preparazione non distruttiva completata. Il dominio live `solarisfilms.it
 
 ## Branch e PR
 
-- PR: https://github.com/jcappelliemer/vercel/pull/14
-- Branch: `agent/static-replica-cutover-routing`
-- Ultimo commit PR: `5ed24a7`
+- PR: https://github.com/jcappelliemer/vercel/pull/15
+- Branch: `agent/solaris-prelive-cutover-package`
+- Ultimo commit PR: verificare direttamente su PR #15.
 - Stato GitHub: `CLEAN`
 - Check Vercel: `SUCCESS`
 - Stato PR: draft, non mergiata
@@ -15,6 +15,10 @@ File nella PR:
 
 - `wordpress/solaris-static-replica/solaris-static-replica.php`
 - `docs/solaris-cutover-checklist-2026-08-04.md`
+- `docs/solaris-prelive-readiness-2026-08-04.md`
+- `docs/solaris-rollback-plan-2026-08-04.md`
+- `docs/solaris-dns-snapshot-2026-08-04.md`
+- `docs/solaris-ssl-runbook-2026-08-04.md`
 
 ## Verifiche staging simulate
 
@@ -116,6 +120,20 @@ Verifica read-only su VPS `187.124.168.153`:
   - `solarisfilms.it`
   - `www.solarisfilms.it`
 - il vhost HTTPS usa ancora il certificato staging `wordpress-jc4e.srv1502079.hstgr.cloud`; al cutover va sostituito/emesso certificato Solaris.
+
+## Check host canonico apex/www
+
+Verifica con host simulato su `187.124.168.153`:
+
+- `http://solarisfilms.it/` -> 301 a `https://solarisfilms.it/`
+- `https://solarisfilms.it/` -> 200
+- `http://www.solarisfilms.it/` -> 301 a `https://www.solarisfilms.it/`
+- `https://www.solarisfilms.it/` -> 200
+- canonical home su entrambi gli host: `https://www.solarisfilms.it/`
+- sitemap richiesta da apex: genera URL `https://solarisfilms.it/...`
+- sitemap richiesta da `www`: genera URL `https://www.solarisfilms.it/...`
+
+Conclusione: prima di rendere indicizzabile il sito finale bisogna aggiungere una regola server-side 301 apex -> `www` anche su HTTPS. Senza questa regola il canonical pagina resta corretto, ma la sitemap puo duplicarsi per host.
 
 ## Cosa resta prima del live
 

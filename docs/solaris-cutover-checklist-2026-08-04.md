@@ -15,6 +15,7 @@ Stato: staging WP statico pronto. Non eseguire questi passaggi finche James non 
 - Redirect previsti: 7.
 - Gone previsti: 3.
 - Certbot presente sul VPS, ma non esiste ancora un certificato per `solarisfilms.it` / `www.solarisfilms.it`.
+- Rischio host canonico individuato: con host simulato HTTPS, `solarisfilms.it` risponde 200 e genera sitemap apex, mentre il canonical pagina punta a `www.solarisfilms.it`. Al cutover va forzato un 301 apex -> `www` anche su HTTPS prima di aprire l'indicizzazione.
 
 Report crawl:
 
@@ -38,14 +39,20 @@ Zip plugin replica aggiornato:
 7. Preparare certificato SSL valido per:
    - `solarisfilms.it`
    - `www.solarisfilms.it`
-8. Solo al cutover, aggiornare dominio WordPress:
+8. Preparare regola nginx canonical host:
+   - `https://solarisfilms.it/*` -> 301 singolo hop verso `https://www.solarisfilms.it/*`
+   - `http://solarisfilms.it/*` -> 301 singolo hop verso `https://www.solarisfilms.it/*`
+   - `http://www.solarisfilms.it/*` -> 301 singolo hop verso `https://www.solarisfilms.it/*`
+   - `https://www.solarisfilms.it/*` resta 200.
+9. Solo al cutover, aggiornare dominio WordPress:
    - `wp option update home https://www.solarisfilms.it`
    - `wp option update siteurl https://www.solarisfilms.it`
-9. Solo al cutover, rimuovere blocco indicizzazione:
+10. Solo al cutover, rimuovere blocco indicizzazione:
    - `wp option update blog_public 1`
-10. Solo al cutover, verificare:
+11. Solo al cutover, verificare:
    - `/robots.txt` con `Allow: /`
    - sitemap con URL `https://www.solarisfilms.it/...`
+   - apex `https://solarisfilms.it/` in 301 verso `https://www.solarisfilms.it/`
    - home 200
    - pagine focus 200
    - prodotti 200
@@ -102,16 +109,18 @@ Note operative:
 ## Verifica post-switch
 
 1. `https://www.solarisfilms.it/` risponde 200.
-2. `http://www.solarisfilms.it/` risponde 301 verso HTTPS.
-3. Certificato SSL valido e non staging.
-4. `robots.txt` consente indicizzazione.
-5. `sitemap.xml` usa solo dominio `https://www.solarisfilms.it`.
-6. Crawl completo: 0 404, 0 link interni rotti.
-7. Search Console:
+2. `http://www.solarisfilms.it/` risponde 301 verso HTTPS `www`.
+3. `https://solarisfilms.it/` risponde 301 verso `https://www.solarisfilms.it/`.
+4. `http://solarisfilms.it/` risponde 301 verso `https://www.solarisfilms.it/`.
+5. Certificato SSL valido e non staging.
+6. `robots.txt` consente indicizzazione.
+7. `sitemap.xml` usa solo dominio `https://www.solarisfilms.it`.
+8. Crawl completo: 0 404, 0 link interni rotti.
+9. Search Console:
    - invio sitemap
    - controllo copertura
    - controllo pagine indicizzate principali
-8. Log server: monitorare 404 reali per 48-72 ore.
+10. Log server: monitorare 404 reali per 48-72 ore.
 
 ## Rollback
 

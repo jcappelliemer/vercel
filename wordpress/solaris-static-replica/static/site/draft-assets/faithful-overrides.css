@@ -231,6 +231,143 @@ body.faithful-static-wp {
   bottom: 104px !important;
 }
 
+.faithful-chatbot-window {
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10000;
+  display: none;
+  height: min(550px, calc(100vh - 80px));
+  overflow: hidden;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: #0a0f1c;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.42);
+  color: #fff;
+}
+
+.faithful-chatbot-window[data-faithful-chat-open="true"] {
+  display: flex;
+}
+
+.faithful-chatbot-window__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 16px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.2) 0%, rgba(234, 179, 8, 0.18) 100%);
+}
+
+.faithful-chatbot-window__header p {
+  margin: 0;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.faithful-chatbot-window__header span {
+  display: block;
+  margin-top: 3px;
+  color: #eab308;
+  font-size: 12px;
+}
+
+.faithful-chatbot-window__header button {
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.faithful-chatbot-window__messages {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 18px;
+}
+
+.faithful-chatbot-window__message {
+  max-width: 86%;
+  border-radius: 16px;
+  padding: 11px 13px;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.faithful-chatbot-window__message--bot {
+  align-self: flex-start;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.07);
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.faithful-chatbot-window__message--user {
+  align-self: flex-end;
+  background: linear-gradient(135deg, #2563eb 0%, #eab308 100%);
+  color: #fff;
+}
+
+.faithful-chatbot-window__quick {
+  display: grid;
+  gap: 8px;
+  padding: 0 18px 14px;
+}
+
+.faithful-chatbot-window__quick button {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.82);
+  padding: 10px 12px;
+  text-align: left;
+  cursor: pointer;
+}
+
+.faithful-chatbot-window__form {
+  display: flex;
+  gap: 10px;
+  padding: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.faithful-chatbot-window__form textarea {
+  flex: 1;
+  resize: none;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.06);
+  color: #fff;
+  padding: 12px;
+  font: inherit;
+}
+
+.faithful-chatbot-window__form button {
+  border: 0;
+  border-radius: 14px;
+  background: #eab308;
+  color: #0a0f1c;
+  padding: 0 16px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .faithful-chatbot-window {
+    left: auto;
+    right: 32px;
+    bottom: 32px;
+    width: 400px;
+  }
+}
+
 .faithful-static-wp img {
   max-width: 100%;
 }

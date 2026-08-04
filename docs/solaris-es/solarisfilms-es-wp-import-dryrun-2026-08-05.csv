@@ -1,0 +1,79 @@
+path,target_post_type,status,title,content_source,review_gate
+/,page,draft,"Peliculas para cristales que mejoran confort, seguridad y privacidad",content_seed,legal_data
+/servicios/,page,draft,"Servicios Solaris para cristales existentes",content_seed,copy_review
+/productos/,page,draft,"Productos para cada tipo de vidrio y necesidad",content_seed,copy_review
+/company-profile/,page,draft,"Solaris Films Espana",content_seed,legal_data
+/presupuesto/,page,draft,"Solicita presupuesto para peliculas de cristales",content_seed,form_crm
+/contacto/,page,draft,"Contacto Solaris Films Espana",content_seed,contact_data
+/lo-sabias/,page,draft,"Lo sabias?",content_seed,copy_review
+/certificado-de-seguridad/,page,draft,"Certificado de seguridad del vidrio tratado",content_seed,legal_review
+/peliculas-antisolares/,focus_tecnico,draft,"Peliculas antisolares para cristales",route_manifest,copy_review
+/peliculas-antisolares-sputtered/,focus_tecnico,draft,"Peliculas antisolares sputtered",route_manifest,copy_review
+/peliculas-antisolares-sunscape/,focus_tecnico,draft,"Peliculas antisolares Sunscape",route_manifest,copy_review
+/peliculas-reflectantes/,focus_tecnico,draft,"Peliculas reflectantes para cristales",route_manifest,copy_review
+/peliculas-espectro-selectivas/,focus_tecnico,draft,"Peliculas espectro selectivas",route_manifest,copy_review
+/peliculas-de-seguridad/,focus_tecnico,draft,"Peliculas de seguridad para cristales",route_manifest,legal_review
+/peliculas-de-seguridad-neutras-serie-cl/,focus_tecnico,draft,"Peliculas de seguridad neutras serie CL",route_manifest,legal_review
+/peliculas-antisolares-de-seguridad-serie-rs/,focus_tecnico,draft,"Peliculas antisolares de seguridad serie RS",route_manifest,legal_review
+/safetyshield/,focus_tecnico,draft,"Madico SafetyShield y sistemas de anclaje",route_manifest,legal_review
+/peliculas-decorativas/,focus_tecnico,draft,"Peliculas decorativas para cristales",route_manifest,copy_review
+/peliculas-decorativas-privacidad/,focus_tecnico,draft,"Peliculas decorativas para privacidad",route_manifest,copy_review
+/peliculas-antisolares-imprimibles-y-vetrofanias/,focus_tecnico,draft,"Peliculas imprimibles y vetrofanias",route_manifest,copy_review
+/peliculas-antigraffiti/,focus_tecnico,draft,"Peliculas antigraffiti para cristales",route_manifest,copy_review
+/peliculas-termoaislantes/,focus_tecnico,draft,"Peliculas termoaislantes para cristales",route_manifest,commercial_review
+/peliculas-oscurantes-para-cristales/,focus_tecnico,draft,"Peliculas oscurantes para cristales",route_manifest,commercial_review
+/productos/vetrofanias/,producto,draft,"Vetrofanias",route_manifest,copy_review
+/productos/madico-mt-200-xw/,producto,draft,"Madico MT 200 XW",route_manifest,technical_sheet
+/productos/madico-gullwing/,producto,draft,"Sistema de anclaje GullWing",route_manifest,technical_sheet
+/productos/madico-safetyshield-1500/,producto,draft,"Madico SafetyShield 1500",route_manifest,technical_sheet
+/productos/madico-safetyshield-800/,producto,draft,"Madico SafetyShield 800",route_manifest,technical_sheet
+/productos/madico-cl-700-e-ps-sr/,producto,draft,"Madico CL 700 E PS SR",route_manifest,technical_sheet
+/productos/madico-cl-700-ps-sr/,producto,draft,"Madico CL 700 PS SR",route_manifest,technical_sheet
+/productos/madico-cl-400-e-ps-sr/,producto,draft,"Madico CL 400 E PS SR",route_manifest,technical_sheet
+/productos/madico-cl-400-ps-sr/,producto,draft,"Madico CL 400 PS SR",route_manifest,technical_sheet
+/productos/madico-rs-40-ps-sr-8mil/,producto,draft,"Madico RS 40 PS SR 8 Mil",route_manifest,technical_sheet
+/productos/madico-rs-40-ps-sr-4mil/,producto,draft,"Madico RS 40 PS SR 4 Mil",route_manifest,technical_sheet
+/productos/madico-rs-20-ps-sr-8mil/,producto,draft,"Madico RS 20 PS SR 8 Mil",route_manifest,technical_sheet
+/productos/madico-rs-20-ps-sr-4mil/,producto,draft,"Madico RS 20 PS SR 4 Mil",route_manifest,technical_sheet
+/productos/madico-rs-40-e-ps-sr/,producto,draft,"Madico RS 40 E PS SR",route_manifest,technical_sheet
+/productos/madico-rs-30-e-ps-sr/,producto,draft,"Madico RS 30 E PS SR",route_manifest,technical_sheet
+/productos/madico-rs-20-e-ps-sr/,producto,draft,"Madico RS 20 E PS SR",route_manifest,technical_sheet
+/productos/ssn-70-te-sr/,producto,draft,"SSN 70 TE SR",route_manifest,technical_sheet
+/productos/madico-sl-8-e-ps-sr/,producto,draft,"Madico SL 8 E PS SR",route_manifest,technical_sheet
+/productos/madico-sg-20-e-ps-sr/,producto,draft,"Madico SG 20 E PS SR",route_manifest,technical_sheet
+/productos/madico-sb-35-e-ps-sr/,producto,draft,"Madico SB 35 E PS SR",route_manifest,technical_sheet
+/productos/madico-sb-20-e-ps-sr/,producto,draft,"Madico SB 20 E PS SR",route_manifest,technical_sheet
+/info/normativa-y-seguridad/,pagina_info,draft,"Normativa y seguridad de cristales",route_manifest,legal_review
+/info/seguridad-conforme-a-la-ley/,pagina_info,draft,"Seguridad de cristales y documentacion tecnica",route_manifest,legal_review
+/info/garantias/,pagina_info,draft,"Garantias de peliculas para cristales",route_manifest,legal_review
+/info/certificacion-nfrc/,pagina_info,draft,"Certificacion NFRC",route_manifest,copy_review
+/info/puntos-fuertes/,pagina_info,draft,"Puntos fuertes de las peliculas profesionales",route_manifest,copy_review
+/info/instrucciones-y-mantenimiento/,pagina_info,draft,"Instrucciones y mantenimiento",route_manifest,copy_review
+/info/norma-brc/,pagina_info,draft,"Norma BRC y proteccion de superficies acristaladas",route_manifest,legal_review
+/info/sistemas-filtrantes/,pagina_info,draft,"Sistemas filtrantes y control solar",route_manifest,legal_review
+/info/seguridad-y-salud-en-el-trabajo/,pagina_info,draft,"Seguridad y salud en el trabajo",route_manifest,legal_review
+/info/glosario/,pagina_info,draft,"Glosario de peliculas para cristales",route_manifest,copy_review
+/servicio-local/peliculas-para-cristales-tenerife/,servicio_local,draft,"Peliculas para cristales Tenerife",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-adeje/,servicio_local,draft,"Peliculas para cristales Adeje",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-costa-adeje/,servicio_local,draft,"Peliculas para cristales Costa Adeje",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-los-cristianos/,servicio_local,draft,"Peliculas para cristales Los Cristianos",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-arona/,servicio_local,draft,"Peliculas para cristales Arona",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/,servicio_local,draft,"Peliculas para cristales Santa Cruz de Tenerife",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-la-laguna/,servicio_local,draft,"Peliculas para cristales La Laguna",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-las-palmas/,servicio_local,draft,"Peliculas para cristales Las Palmas",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-canarias/,servicio_local,draft,"Peliculas para cristales Canarias",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-madrid/,servicio_local,draft,"Peliculas para cristales Madrid",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-barcelona/,servicio_local,draft,"Peliculas para cristales Barcelona",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-valencia/,servicio_local,draft,"Peliculas para cristales Valencia",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-malaga/,servicio_local,draft,"Peliculas para cristales Malaga",route_manifest,local_review
+/servicio-local/peliculas-para-cristales-sevilla/,servicio_local,draft,"Peliculas para cristales Sevilla",route_manifest,local_review
+/lo-sabias/peliculas-para-cristales-interior-o-exterior/,articulo,draft,"Peliculas para cristales interior o exterior",route_manifest,copy_review
+/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/,articulo,draft,"Pelicula privacidad vs vidrio satinado",route_manifest,copy_review
+/lo-sabias/como-reducir-calor-cristaleras/,articulo,draft,"Como reducir calor en cristaleras",route_manifest,copy_review
+/lo-sabias/peliculas-de-seguridad-une-en-12600/,articulo,draft,"Peliculas de seguridad y UNE EN 12600",route_manifest,legal_review
+/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/,articulo,draft,"Peliculas espectro selectivas vs reflectantes",route_manifest,copy_review
+/lo-sabias/mantenimiento-peliculas-para-cristales/,articulo,draft,"Mantenimiento de peliculas para cristales",route_manifest,copy_review
+/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/,articulo,draft,"Peliculas anti UV vs cortinas interiores",route_manifest,copy_review
+/lo-sabias/cuanto-dura-una-pelicula-para-cristales/,articulo,draft,"Cuanto dura una pelicula para cristales",route_manifest,copy_review
+/lo-sabias/peliculas-antigraffiti-para-escaparates/,articulo,draft,"Peliculas antigraffiti para escaparates",route_manifest,copy_review
+/lo-sabias/peliculas-safetyshield-para-cristales/,articulo,draft,"Peliculas SafetyShield para cristales",route_manifest,legal_review

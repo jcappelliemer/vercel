@@ -252,4 +252,6 @@ Bloccanti prima di pubblicare:
 - `docs/solaris-es/solarisfilms-es-route-manifest-2026-08-04.json`
 - `docs/solaris-es/solarisfilms-es-implementation-plan-2026-08-04.md`
 - `docs/solaris-es/solarisfilms-es-content-seed-2026-08-04.json`
-
+- `docs/solaris-es/solarisfilms-es-launch-inventory-2026-08-05.md`
+- `docs/solaris-es/solarisfilms-es-hreflang-map-2026-08-05.csv`
+- `docs/solaris-es/solarisfilms-es-wp-import-dryrun-2026-08-05.csv`

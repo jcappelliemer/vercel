@@ -67,6 +67,10 @@ Nota IPv6: il live attuale ha record AAAA. Non lasciare gli AAAA puntati al vecc
 
 Stato attuale: Certbot e presente sul VPS, ma non esiste ancora un certificato per `solarisfilms.it` / `www.solarisfilms.it`. Il vhost staging riconosce gia i due host, ma finche il certificato non viene emesso l'HTTPS non e pronto per il dominio finale.
 
+Runbook operativo:
+
+- `docs/solaris-ssl-runbook-2026-08-04.md`
+
 Opzione preferita se si vuole ridurre la finestra di rischio: certificato DNS challenge prima del cambio DNS.
 
 1. Creare il certificato con challenge DNS:

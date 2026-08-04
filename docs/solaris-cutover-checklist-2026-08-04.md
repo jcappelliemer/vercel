@@ -59,6 +59,38 @@ Aggiornare DNS solo dopo conferma esplicita di James.
 
 TTL consigliato prima dello switch: basso.
 
+## SSL per dominio finale
+
+Stato attuale: Certbot e presente sul VPS, ma non esiste ancora un certificato per `solarisfilms.it` / `www.solarisfilms.it`. Il vhost staging riconosce gia i due host, ma finche il certificato non viene emesso l'HTTPS non e pronto per il dominio finale.
+
+Opzione preferita se si vuole ridurre la finestra di rischio: certificato DNS challenge prima del cambio DNS.
+
+1. Creare il certificato con challenge DNS:
+   - `certbot certonly --manual --preferred-challenges dns -d solarisfilms.it -d www.solarisfilms.it`
+2. Inserire i record TXT richiesti nel DNS e attendere la propagazione.
+3. Agganciare il certificato emesso al vhost nginx di `wordpress-jc4e`.
+4. Verificare:
+   - `nginx -t`
+   - reload nginx
+   - test HTTPS con host simulato, se tecnicamente possibile.
+
+Opzione alternativa: HTTP challenge dopo cambio DNS.
+
+1. Puntare `solarisfilms.it` e `www.solarisfilms.it` al VPS staging WP.
+2. Attendere la propagazione DNS.
+3. Emettere il certificato:
+   - `certbot --nginx -d solarisfilms.it -d www.solarisfilms.it`
+4. Verificare che Certbot abbia installato il certificato corretto e non quello staging:
+   - `certbot certificates`
+   - `nginx -t`
+   - reload nginx
+
+Note operative:
+
+- Non lasciare il dominio finale in HTTPS con certificato `wordpress-jc4e.srv1502079.hstgr.cloud`.
+- Non impostare `blog_public=1` finche HTTPS, canonical e sitemap non sono corretti sul dominio finale.
+- Se l'emissione SSL fallisce dopo il cambio DNS, rollback DNS immediato verso il vecchio live.
+
 ## Verifica post-switch
 
 1. `https://www.solarisfilms.it/` risponde 200.

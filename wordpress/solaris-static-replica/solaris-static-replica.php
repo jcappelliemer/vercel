@@ -23,6 +23,28 @@ function solaris_static_replica_normalize_path($path) {
     return $path ?: '/';
 }
 
+function solaris_static_replica_current_origin() {
+    $host = $_SERVER['HTTP_X_FORWARDED_HOST'] ?? ($_SERVER['HTTP_HOST'] ?? '');
+    if (strpos((string) $host, ',') !== false) {
+        $host = trim(explode(',', (string) $host)[0]);
+    }
+    $host = preg_replace('/[^a-z0-9\\.\\-:\\[\\]]/i', '', (string) $host);
+    if ($host === '') {
+        return rtrim(home_url(), '/');
+    }
+
+    $proto = $_SERVER['HTTP_X_FORWARDED_PROTO'] ?? '';
+    if (strpos((string) $proto, ',') !== false) {
+        $proto = trim(explode(',', (string) $proto)[0]);
+    }
+    $proto = strtolower((string) $proto);
+    if (!in_array($proto, array('http', 'https'), true)) {
+        $proto = (!empty($_SERVER['HTTPS']) && $_SERVER['HTTPS'] !== 'off') || (string) ($_SERVER['SERVER_PORT'] ?? '') === '443' ? 'https' : 'http';
+    }
+
+    return $proto . '://' . $host;
+}
+
 function solaris_static_replica_manifest() {
     static $manifest = null;
     if ($manifest !== null) {
@@ -162,12 +184,12 @@ function solaris_static_replica_maybe_redirect_or_gone($path) {
     );
     foreach ($legacy_redirect_terms as $term) {
         if (stripos($path, $term) !== false) {
-            wp_redirect(home_url('/prodotti/madico-sg-20-e-ps-sr/'), 301);
+            wp_redirect('/prodotti/madico-sg-20-e-ps-sr/', 301);
             return true;
         }
     }
     if (stripos($path, 'ssn' . '-50-te-sr') !== false) {
-        wp_redirect(home_url('/prodotti/ssn-70-te-sr/'), 301);
+        wp_redirect('/prodotti/ssn-70-te-sr/', 301);
         return true;
     }
     $legacy_gone_terms = array(
@@ -257,7 +279,7 @@ function solaris_static_replica_hide_from_sitemap($path) {
 
 function solaris_static_replica_send_sitemap() {
     $manifest = solaris_static_replica_manifest();
-    $host = home_url();
+    $host = solaris_static_replica_current_origin();
     $urls = array();
     foreach (($manifest['savedPaths'] ?? array()) as $path) {
         if (solaris_static_replica_hide_from_sitemap($path)) {
@@ -278,7 +300,7 @@ function solaris_static_replica_send_robots() {
         echo "User-agent: *\nDisallow: /\n";
         return;
     }
-    echo "User-agent: *\nAllow: /\nSitemap: " . esc_url(home_url('/sitemap.xml')) . "\n";
+    echo "User-agent: *\nAllow: /\nSitemap: " . esc_url(solaris_static_replica_current_origin() . '/sitemap.xml') . "\n";
 }
 
 function solaris_static_replica_send_fast_contact() {

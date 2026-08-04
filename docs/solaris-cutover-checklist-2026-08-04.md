@@ -25,6 +25,10 @@ Script verifica rapida:
 
 `scripts/solaris-prelive-verify.ps1`
 
+Runbook operativo giorno switch:
+
+`docs/solaris-switch-day-runbook-2026-08-04.md`
+
 Zip plugin replica aggiornato:
 
 `wordpress/solaris-static-replica-cutover-ready-20260804-131210.zip`

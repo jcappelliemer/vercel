@@ -20,6 +20,7 @@ File nella PR:
 - `docs/solaris-dns-snapshot-2026-08-04.md`
 - `docs/solaris-ssl-runbook-2026-08-04.md`
 - `docs/solaris-nginx-cutover-snippet-2026-08-04.conf`
+- `docs/solaris-switch-day-runbook-2026-08-04.md`
 - `scripts/solaris-prelive-verify.ps1`
 
 ## Verifiche staging simulate

@@ -19,6 +19,40 @@ Snapshot read-only dei record DNS prima del cutover. Il live non e stato modific
 - TTL A osservato: `3600`
 - AAAA: `2a00:6d40:4:1::c300:70`
 - TTL AAAA osservato: `3244`
+- CNAME: non presente, `www` usa record A/AAAA diretti.
+
+## Nameserver
+
+- `dns.technorail.com`
+- `dns2.technorail.com`
+- `dns3.arubadns.net`
+- `dns4.arubadns.cz`
+
+SOA osservato:
+
+- primary name server: `dns.technorail.com`
+- serial: `2026070702`
+
+## Mail
+
+`solarisfilms.it`
+
+- MX: `mx.solarisfilms.it`
+- priority: `10`
+- TTL osservato: `3600`
+
+Non modificare i record MX durante lo switch web.
+
+## TXT da preservare
+
+`solarisfilms.it`
+
+- `v=spf1 include:aruba.it ~all`
+- `facebook-domain-verification=220g0odgpsi4bcoh61v4006iygnqnr`
+- `apple-domain-verification=D79Azbf2MjVfLIo0`
+- `zoho-verification=zb06622742.zmverify.zoho.eu`
+
+Non modificare i record TXT durante lo switch web. Servono per posta, verifiche dominio e servizi collegati.
 
 ## Nuovo target previsto solo al cutover
 

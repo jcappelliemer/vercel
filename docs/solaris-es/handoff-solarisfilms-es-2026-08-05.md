@@ -149,6 +149,32 @@ Stato attuale:
 
 Sono preview locali, non file da caricare ora.
 
+## QA editoriale payload
+
+Generazione:
+
+```powershell
+node scripts\solaris-es-content-qa.js
+```
+
+Output:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-content-qa-report.json
+docs/solaris-es/generated/solarisfilms-es-content-qa-report.csv
+docs/solaris-es/generated/solarisfilms-es-content-qa-report.md
+```
+
+Stato ultimo report:
+
+- 78 URL analizzate;
+- 1 errore bloccante: `/contacto/` contiene placeholder;
+- 61 warning di contenuto breve;
+- 78 note di revisione accenti spagnoli;
+- 71 bozze `template_generated` da revisionare prima del publish.
+
+Il controllo non scrive su WordPress. Serve a preparare la revisione editoriale prima dell'import o prima del publish.
+
 ## Configurazione contatti
 
 La pagina `/contacto/` resta bloccata finche telefono, WhatsApp e indirizzo non sono reali.

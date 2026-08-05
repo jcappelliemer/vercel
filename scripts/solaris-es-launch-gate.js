@@ -20,6 +20,10 @@ const paths = {
   preflightScript: path.join(root, "scripts", "solaris-es-preflight-check.js"),
   readinessScript: path.join(root, "scripts", "solaris-es-wp-readiness-check.js"),
   postImportQaScript: path.join(root, "scripts", "solaris-es-post-import-qa.js"),
+  contentQaScript: path.join(root, "scripts", "solaris-es-content-qa.js"),
+  contentQaJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.json"),
+  contentQaCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.csv"),
+  contentQaMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.md"),
   seoAssetsScript: path.join(root, "scripts", "solaris-es-build-seo-assets.js"),
   importBatchesScript: path.join(root, "scripts", "solaris-es-build-import-batches.js"),
   launchConfigScript: path.join(root, "scripts", "solaris-es-apply-launch-config.js"),
@@ -125,6 +129,10 @@ function validateRequiredFiles() {
     "preflightScript",
     "readinessScript",
     "postImportQaScript",
+    "contentQaScript",
+    "contentQaJson",
+    "contentQaCsv",
+    "contentQaMd",
     "seoAssetsScript",
     "importBatchesScript",
     "launchConfigScript",
@@ -224,6 +232,28 @@ function validateInstallKit() {
   };
 }
 
+function validateContentQa() {
+  if (!exists(paths.contentQaJson)) {
+    return {
+      generated: false,
+      path: rel(paths.contentQaJson),
+      issues: ["content_qa_report_not_generated"]
+    };
+  }
+
+  const report = readJson(paths.contentQaJson);
+  const summary = report.summary || {};
+  const issues = [];
+  if ((summary.error_count || 0) > 0) issues.push("content_qa_errors_present");
+
+  return {
+    generated: true,
+    path: rel(paths.contentQaJson),
+    summary,
+    issues
+  };
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const requiredFiles = validateRequiredFiles();
@@ -234,6 +264,7 @@ function main() {
   const payloadGate = validatePayload(payload);
   const seoGate = validateSeoAssets(seoSummary);
   const installKit = validateInstallKit();
+  const contentQa = validateContentQa();
 
   const repoBlockers = [];
   if (missingRequiredFiles.length) repoBlockers.push("required_files_missing");
@@ -248,6 +279,8 @@ function main() {
   if (seoGate.publish_blocked_until_review > 0) launchBlockers.push("manual_review_not_cleared");
   if (!installKit.generated) launchBlockers.push("install_kit_not_generated");
   if (installKit.issues.length) launchBlockers.push("install_kit_issues_present");
+  if (!contentQa.generated) launchBlockers.push("content_qa_not_generated");
+  if (contentQa.issues.length) launchBlockers.push("content_qa_issues_present");
   launchBlockers.push("domain_wp_https_preflight_required");
   launchBlockers.push("wordpress_readiness_required");
   launchBlockers.push("live_post_import_qa_required");
@@ -259,6 +292,7 @@ function main() {
     required_files: requiredFiles,
     payload: payloadGate,
     seo_assets: seoGate,
+    content_qa: contentQa,
     install_kit: installKit,
     repo_blockers: repoBlockers,
     launch_blockers: launchBlockers,
@@ -267,6 +301,7 @@ function main() {
       "node scripts/solaris-es-apply-launch-config.js --config docs/solaris-es/solarisfilms-es-launch-config.local.json",
       "node scripts/solaris-es-preflight-check.js",
       "node scripts/solaris-es-wp-readiness-check.js",
+      "node scripts/solaris-es-content-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --fail-on-error",
       "node scripts/solaris-es-post-import-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json",
       "node scripts/solaris-es-wp-rest-import-drafts.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --apply --type page --limit 2",
       "node scripts/solaris-es-post-import-qa.js --live --base https://www.solarisfilms.es"

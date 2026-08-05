@@ -409,6 +409,28 @@ node scripts\solaris-es-post-import-qa.js --payload docs\solaris-es\generated\so
 
 Questo controllo e offline: legge il payload, segnala duplicati, placeholder, termini esclusi e contenuti non pronti. Non visita il sito e non scrive su WordPress.
 
+QA editoriale e linguistico:
+
+```powershell
+node scripts\solaris-es-content-qa.js
+```
+
+Se il payload configurato e disponibile:
+
+```powershell
+node scripts\solaris-es-content-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json --fail-on-error
+```
+
+Output locale:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-content-qa-report.json
+docs/solaris-es/generated/solarisfilms-es-content-qa-report.csv
+docs/solaris-es/generated/solarisfilms-es-content-qa-report.md
+```
+
+Questo controllo segnala placeholder, termini vietati, link interni non presenti nel payload, residui italiani, possibili problemi di codifica, testi troppo brevi e parole spagnole da accentare in revisione. Non visita il sito e non scrive su WordPress.
+
 Dopo installazione WordPress, import bozze e pubblicazione controllata su staging `.es`, usare:
 
 ```powershell

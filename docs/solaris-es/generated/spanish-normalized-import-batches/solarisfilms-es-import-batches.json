@@ -1,0 +1,4294 @@
+{
+  "generated_at": "2026-08-05T13:49:53.177Z",
+  "payload": "docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json",
+  "safety": [
+    "All imports are drafts.",
+    "No batch authorizes publish by itself.",
+    "Publish requires manual review, contacts, legal checks and live QA."
+  ],
+  "summary": {
+    "pilot_draft_import": {
+      "total": 3,
+      "draft_import_safe": 3,
+      "publish_candidate_after_review": 3,
+      "with_blockers": 3,
+      "by_post_type": {
+        "page": 3
+      },
+      "by_review_gate": {
+        "legal_data": 1,
+        "copy_review": 2
+      }
+    },
+    "mvp_review_set": {
+      "total": 8,
+      "draft_import_safe": 8,
+      "publish_candidate_after_review": 6,
+      "with_blockers": 8,
+      "by_post_type": {
+        "page": 8
+      },
+      "by_review_gate": {
+        "legal_data": 2,
+        "copy_review": 3,
+        "form_crm": 1,
+        "contact_data": 1,
+        "legal_review": 1
+      }
+    },
+    "seed_content_review": {
+      "total": 7,
+      "draft_import_safe": 7,
+      "publish_candidate_after_review": 6,
+      "with_blockers": 7,
+      "by_post_type": {
+        "page": 7
+      },
+      "by_review_gate": {
+        "legal_data": 2,
+        "copy_review": 2,
+        "form_crm": 1,
+        "contact_data": 1,
+        "legal_review": 1
+      }
+    },
+    "full_draft_import": {
+      "total": 78,
+      "draft_import_safe": 78,
+      "publish_candidate_after_review": 6,
+      "with_blockers": 78,
+      "by_post_type": {
+        "page": 23,
+        "producto": 21,
+        "pagina_info": 10,
+        "servicio_local": 14,
+        "articulo": 10
+      },
+      "by_review_gate": {
+        "legal_data": 2,
+        "copy_review": 25,
+        "form_crm": 1,
+        "contact_data": 1,
+        "legal_review": 13,
+        "commercial_review": 2,
+        "technical_sheet": 20,
+        "local_review": 14
+      }
+    },
+    "template_generated_review": {
+      "total": 71,
+      "draft_import_safe": 71,
+      "publish_candidate_after_review": 0,
+      "with_blockers": 71,
+      "by_post_type": {
+        "page": 16,
+        "producto": 21,
+        "pagina_info": 10,
+        "servicio_local": 14,
+        "articulo": 10
+      },
+      "by_review_gate": {
+        "copy_review": 23,
+        "legal_review": 12,
+        "commercial_review": 2,
+        "technical_sheet": 20,
+        "local_review": 14
+      }
+    },
+    "publish_blockers": {
+      "total": 78,
+      "draft_import_safe": 78,
+      "publish_candidate_after_review": 6,
+      "with_blockers": 78,
+      "by_post_type": {
+        "page": 23,
+        "producto": 21,
+        "pagina_info": 10,
+        "servicio_local": 14,
+        "articulo": 10
+      },
+      "by_review_gate": {
+        "legal_data": 2,
+        "copy_review": 25,
+        "form_crm": 1,
+        "contact_data": 1,
+        "legal_review": 13,
+        "commercial_review": 2,
+        "technical_sheet": 20,
+        "local_review": 14
+      }
+    }
+  },
+  "batches": {
+    "pilot_draft_import": [
+      {
+        "batch": "pilot_draft_import",
+        "path": "/",
+        "title": "Películas para cristales que mejoran confort, seguridad y privacidad",
+        "target_post_type": "page",
+        "post_name": "home",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Prima prova REST/editor. Importare come draft, non pubblicare."
+      },
+      {
+        "batch": "pilot_draft_import",
+        "path": "/servicios/",
+        "title": "Servicios Solaris para cristales existentes",
+        "target_post_type": "page",
+        "post_name": "servicios",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Prima prova REST/editor. Importare come draft, non pubblicare."
+      },
+      {
+        "batch": "pilot_draft_import",
+        "path": "/productos/",
+        "title": "Productos para cada tipo de vidrio y necesidad",
+        "target_post_type": "page",
+        "post_name": "productos",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Prima prova REST/editor. Importare come draft, non pubblicare."
+      }
+    ],
+    "mvp_review_set": [
+      {
+        "batch": "mvp_review_set",
+        "path": "/",
+        "title": "Películas para cristales que mejoran confort, seguridad y privacidad",
+        "target_post_type": "page",
+        "post_name": "home",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Set minimo da revisionare prima di una pubblicazione corta."
+      },
+      {
+        "batch": "mvp_review_set",
+        "path": "/servicios/",
+        "title": "Servicios Solaris para cristales existentes",
+        "target_post_type": "page",
+        "post_name": "servicios",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Set minimo da revisionare prima di una pubblicazione corta."
+      },
+      {
+        "batch": "mvp_review_set",
+        "path": "/productos/",
+        "title": "Productos para cada tipo de vidrio y necesidad",
+        "target_post_type": "page",
+        "post_name": "productos",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Set minimo da revisionare prima di una pubblicazione corta."
+      },
+      {
+        "batch": "mvp_review_set",
+        "path": "/company-profile/",
+        "title": "Solaris Films España",
+        "target_post_type": "page",
+        "post_name": "company-profile",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Set minimo da revisionare prima di una pubblicazione corta."
+      },
+      {
+        "batch": "mvp_review_set",
+        "path": "/presupuesto/",
+        "title": "Solicita presupuesto para películas de cristales",
+        "target_post_type": "page",
+        "post_name": "presupuesto",
+        "review_gate": "form_crm",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Set minimo da revisionare prima di una pubblicazione corta."
+      },
+      {
+        "batch": "mvp_review_set",
+        "path": "/contacto/",
+        "title": "Contacto Solaris Films España",
+        "target_post_type": "page",
+        "post_name": "contacto",
+        "review_gate": "contact_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "placeholder_present",
+          "manual_review_required"
+        ],
+        "placeholders": [
+          "[TELEFONO_ES]",
+          "[WHATSAPP_ES]",
+          "[EMAIL_ES]",
+          "[DIRECCION_ES]"
+        ],
+        "note": "Set minimo da revisionare prima di una pubblicazione corta."
+      },
+      {
+        "batch": "mvp_review_set",
+        "path": "/lo-sabias/",
+        "title": "Lo sabias?",
+        "target_post_type": "page",
+        "post_name": "lo-sabias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Set minimo da revisionare prima di una pubblicazione corta."
+      },
+      {
+        "batch": "mvp_review_set",
+        "path": "/certificado-de-seguridad/",
+        "title": "Certificado de seguridad del vidrio tratado",
+        "target_post_type": "page",
+        "post_name": "certificado-de-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Set minimo da revisionare prima di una pubblicazione corta."
+      }
+    ],
+    "seed_content_review": [
+      {
+        "batch": "seed_content_review",
+        "path": "/",
+        "title": "Películas para cristales que mejoran confort, seguridad y privacidad",
+        "target_post_type": "page",
+        "post_name": "home",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Contenuto seed manuale: prioritario per revisione."
+      },
+      {
+        "batch": "seed_content_review",
+        "path": "/servicios/",
+        "title": "Servicios Solaris para cristales existentes",
+        "target_post_type": "page",
+        "post_name": "servicios",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Contenuto seed manuale: prioritario per revisione."
+      },
+      {
+        "batch": "seed_content_review",
+        "path": "/productos/",
+        "title": "Productos para cada tipo de vidrio y necesidad",
+        "target_post_type": "page",
+        "post_name": "productos",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Contenuto seed manuale: prioritario per revisione."
+      },
+      {
+        "batch": "seed_content_review",
+        "path": "/company-profile/",
+        "title": "Solaris Films España",
+        "target_post_type": "page",
+        "post_name": "company-profile",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Contenuto seed manuale: prioritario per revisione."
+      },
+      {
+        "batch": "seed_content_review",
+        "path": "/presupuesto/",
+        "title": "Solicita presupuesto para películas de cristales",
+        "target_post_type": "page",
+        "post_name": "presupuesto",
+        "review_gate": "form_crm",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Contenuto seed manuale: prioritario per revisione."
+      },
+      {
+        "batch": "seed_content_review",
+        "path": "/contacto/",
+        "title": "Contacto Solaris Films España",
+        "target_post_type": "page",
+        "post_name": "contacto",
+        "review_gate": "contact_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "placeholder_present",
+          "manual_review_required"
+        ],
+        "placeholders": [
+          "[TELEFONO_ES]",
+          "[WHATSAPP_ES]",
+          "[EMAIL_ES]",
+          "[DIRECCION_ES]"
+        ],
+        "note": "Contenuto seed manuale: prioritario per revisione."
+      },
+      {
+        "batch": "seed_content_review",
+        "path": "/certificado-de-seguridad/",
+        "title": "Certificado de seguridad del vidrio tratado",
+        "target_post_type": "page",
+        "post_name": "certificado-de-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Contenuto seed manuale: prioritario per revisione."
+      }
+    ],
+    "full_draft_import": [
+      {
+        "batch": "full_draft_import",
+        "path": "/",
+        "title": "Películas para cristales que mejoran confort, seguridad y privacidad",
+        "target_post_type": "page",
+        "post_name": "home",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicios/",
+        "title": "Servicios Solaris para cristales existentes",
+        "target_post_type": "page",
+        "post_name": "servicios",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/",
+        "title": "Productos para cada tipo de vidrio y necesidad",
+        "target_post_type": "page",
+        "post_name": "productos",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/company-profile/",
+        "title": "Solaris Films España",
+        "target_post_type": "page",
+        "post_name": "company-profile",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/presupuesto/",
+        "title": "Solicita presupuesto para películas de cristales",
+        "target_post_type": "page",
+        "post_name": "presupuesto",
+        "review_gate": "form_crm",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/contacto/",
+        "title": "Contacto Solaris Films España",
+        "target_post_type": "page",
+        "post_name": "contacto",
+        "review_gate": "contact_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "placeholder_present",
+          "manual_review_required"
+        ],
+        "placeholders": [
+          "[TELEFONO_ES]",
+          "[WHATSAPP_ES]",
+          "[EMAIL_ES]",
+          "[DIRECCION_ES]"
+        ],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/",
+        "title": "Lo sabias?",
+        "target_post_type": "page",
+        "post_name": "lo-sabias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/certificado-de-seguridad/",
+        "title": "Certificado de seguridad del vidrio tratado",
+        "target_post_type": "page",
+        "post_name": "certificado-de-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-antisolares/",
+        "title": "Películas antisolares para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-antisolares-sputtered/",
+        "title": "Películas antisolares sputtered",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-sputtered",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-antisolares-sunscape/",
+        "title": "Películas antisolares Sunscape",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-sunscape",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-reflectantes/",
+        "title": "Películas reflectantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-reflectantes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-espectro-selectivas/",
+        "title": "Películas espectro selectivas",
+        "target_post_type": "page",
+        "post_name": "peliculas-espectro-selectivas",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-de-seguridad/",
+        "title": "Películas de seguridad para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-de-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+        "title": "Películas de seguridad neutras serie CL",
+        "target_post_type": "page",
+        "post_name": "peliculas-de-seguridad-neutras-serie-cl",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+        "title": "Películas antisolares de seguridad serie RS",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-de-seguridad-serie-rs",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/safetyshield/",
+        "title": "Madico SafetyShield y sistemas de anclaje",
+        "target_post_type": "page",
+        "post_name": "safetyshield",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-decorativas/",
+        "title": "Películas decorativas para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-decorativas",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-decorativas-privacidad/",
+        "title": "Películas decorativas para privacidad",
+        "target_post_type": "page",
+        "post_name": "peliculas-decorativas-privacidad",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+        "title": "Películas imprimibles y vetrofanias",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-imprimibles-y-vetrofanias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-antigraffiti/",
+        "title": "Películas antigraffiti para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-antigraffiti",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-termoaislantes/",
+        "title": "Películas termoaislantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-termoaislantes",
+        "review_gate": "commercial_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/peliculas-oscurantes-para-cristales/",
+        "title": "Películas oscurantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-oscurantes-para-cristales",
+        "review_gate": "commercial_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/vetrofanias/",
+        "title": "Vetrofanias",
+        "target_post_type": "producto",
+        "post_name": "vetrofanias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-mt-200-xw/",
+        "title": "Madico MT 200 XW",
+        "target_post_type": "producto",
+        "post_name": "madico-mt-200-xw",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-gullwing/",
+        "title": "Sistema de anclaje GullWing",
+        "target_post_type": "producto",
+        "post_name": "madico-gullwing",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-safetyshield-1500/",
+        "title": "Madico SafetyShield 1500",
+        "target_post_type": "producto",
+        "post_name": "madico-safetyshield-1500",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-safetyshield-800/",
+        "title": "Madico SafetyShield 800",
+        "target_post_type": "producto",
+        "post_name": "madico-safetyshield-800",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-cl-700-e-ps-sr/",
+        "title": "Madico CL 700 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-700-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-cl-700-ps-sr/",
+        "title": "Madico CL 700 PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-700-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-cl-400-e-ps-sr/",
+        "title": "Madico CL 400 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-400-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-cl-400-ps-sr/",
+        "title": "Madico CL 400 PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-400-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-rs-40-ps-sr-8mil/",
+        "title": "Madico RS 40 PS SR 8 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-ps-sr-8mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-rs-40-ps-sr-4mil/",
+        "title": "Madico RS 40 PS SR 4 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-ps-sr-4mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-rs-20-ps-sr-8mil/",
+        "title": "Madico RS 20 PS SR 8 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-ps-sr-8mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-rs-20-ps-sr-4mil/",
+        "title": "Madico RS 20 PS SR 4 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-ps-sr-4mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-rs-40-e-ps-sr/",
+        "title": "Madico RS 40 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-rs-30-e-ps-sr/",
+        "title": "Madico RS 30 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-30-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-rs-20-e-ps-sr/",
+        "title": "Madico RS 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/ssn-70-te-sr/",
+        "title": "SSN 70 TE SR",
+        "target_post_type": "producto",
+        "post_name": "ssn-70-te-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-sl-8-e-ps-sr/",
+        "title": "Madico SL 8 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sl-8-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-sg-20-e-ps-sr/",
+        "title": "Madico SG 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sg-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-sb-35-e-ps-sr/",
+        "title": "Madico SB 35 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sb-35-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/productos/madico-sb-20-e-ps-sr/",
+        "title": "Madico SB 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sb-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/normativa-y-seguridad/",
+        "title": "Normativa y seguridad de cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "normativa-y-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/seguridad-conforme-a-la-ley/",
+        "title": "Seguridad de cristales y documentacion técnica",
+        "target_post_type": "pagina_info",
+        "post_name": "seguridad-conforme-a-la-ley",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/garantias/",
+        "title": "Garantías de películas para cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "garantias",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/certificacion-nfrc/",
+        "title": "Certificación NFRC",
+        "target_post_type": "pagina_info",
+        "post_name": "certificacion-nfrc",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/puntos-fuertes/",
+        "title": "Puntos fuertes de las películas profesionales",
+        "target_post_type": "pagina_info",
+        "post_name": "puntos-fuertes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/instrucciones-y-mantenimiento/",
+        "title": "Instrucciones y mantenimiento",
+        "target_post_type": "pagina_info",
+        "post_name": "instrucciones-y-mantenimiento",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/norma-brc/",
+        "title": "Norma BRC y protección de superficies acristaladas",
+        "target_post_type": "pagina_info",
+        "post_name": "norma-brc",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/sistemas-filtrantes/",
+        "title": "Sistemas filtrantes y control solar",
+        "target_post_type": "pagina_info",
+        "post_name": "sistemas-filtrantes",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/seguridad-y-salud-en-el-trabajo/",
+        "title": "Seguridad y salud en el trabajo",
+        "target_post_type": "pagina_info",
+        "post_name": "seguridad-y-salud-en-el-trabajo",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/info/glosario/",
+        "title": "Glosario de películas para cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "glosario",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+        "title": "Películas para cristales Tenerife",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-tenerife",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-adeje/",
+        "title": "Películas para cristales Adeje",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-adeje",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+        "title": "Películas para cristales Costa Adeje",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-costa-adeje",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+        "title": "Películas para cristales Los Cristianos",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-los-cristianos",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-arona/",
+        "title": "Películas para cristales Arona",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-arona",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+        "title": "Películas para cristales Santa Cruz de Tenerife",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-santa-cruz-de-tenerife",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+        "title": "Películas para cristales La Laguna",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-la-laguna",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+        "title": "Películas para cristales Las Palmas",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-las-palmas",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-canarias/",
+        "title": "Películas para cristales Canarias",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-canarias",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-madrid/",
+        "title": "Películas para cristales Madrid",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-madrid",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+        "title": "Películas para cristales Barcelona",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-barcelona",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-valencia/",
+        "title": "Películas para cristales Valencia",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-valencia",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-malaga/",
+        "title": "Películas para cristales Malaga",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-malaga",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+        "title": "Películas para cristales Sevilla",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-sevilla",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+        "title": "Películas para cristales interior o exterior",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-para-cristales-interior-o-exterior",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/",
+        "title": "Pelicula privacidad vs vidrio satinado",
+        "target_post_type": "articulo",
+        "post_name": "pelicula-privacidad-vs-vidrio-satinado",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/como-reducir-calor-cristaleras/",
+        "title": "Como reducir calor en cristaleras",
+        "target_post_type": "articulo",
+        "post_name": "como-reducir-calor-cristaleras",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+        "title": "Películas de seguridad y UNE EN 12600",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-de-seguridad-une-en-12600",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+        "title": "Películas espectro selectivas vs reflectantes",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-espectro-selectivas-vs-reflectantes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+        "title": "Mantenimiento de películas para cristales",
+        "target_post_type": "articulo",
+        "post_name": "mantenimiento-peliculas-para-cristales",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+        "title": "Películas anti UV vs cortinas interiores",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-anti-uv-vs-cortinas-interiores",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+        "title": "Cuanto dura una pelicula para cristales",
+        "target_post_type": "articulo",
+        "post_name": "cuanto-dura-una-pelicula-para-cristales",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+        "title": "Películas antigraffiti para escaparates",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-antigraffiti-para-escaparates",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      },
+      {
+        "batch": "full_draft_import",
+        "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+        "title": "Películas SafetyShield para cristales",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-safetyshield-para-cristales",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Import completo come draft, mai publish automatico."
+      }
+    ],
+    "template_generated_review": [
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/",
+        "title": "Lo sabias?",
+        "target_post_type": "page",
+        "post_name": "lo-sabias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-antisolares/",
+        "title": "Películas antisolares para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-antisolares-sputtered/",
+        "title": "Películas antisolares sputtered",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-sputtered",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-antisolares-sunscape/",
+        "title": "Películas antisolares Sunscape",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-sunscape",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-reflectantes/",
+        "title": "Películas reflectantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-reflectantes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-espectro-selectivas/",
+        "title": "Películas espectro selectivas",
+        "target_post_type": "page",
+        "post_name": "peliculas-espectro-selectivas",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-de-seguridad/",
+        "title": "Películas de seguridad para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-de-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+        "title": "Películas de seguridad neutras serie CL",
+        "target_post_type": "page",
+        "post_name": "peliculas-de-seguridad-neutras-serie-cl",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+        "title": "Películas antisolares de seguridad serie RS",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-de-seguridad-serie-rs",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/safetyshield/",
+        "title": "Madico SafetyShield y sistemas de anclaje",
+        "target_post_type": "page",
+        "post_name": "safetyshield",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-decorativas/",
+        "title": "Películas decorativas para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-decorativas",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-decorativas-privacidad/",
+        "title": "Películas decorativas para privacidad",
+        "target_post_type": "page",
+        "post_name": "peliculas-decorativas-privacidad",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+        "title": "Películas imprimibles y vetrofanias",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-imprimibles-y-vetrofanias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-antigraffiti/",
+        "title": "Películas antigraffiti para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-antigraffiti",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-termoaislantes/",
+        "title": "Películas termoaislantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-termoaislantes",
+        "review_gate": "commercial_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/peliculas-oscurantes-para-cristales/",
+        "title": "Películas oscurantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-oscurantes-para-cristales",
+        "review_gate": "commercial_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/vetrofanias/",
+        "title": "Vetrofanias",
+        "target_post_type": "producto",
+        "post_name": "vetrofanias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-mt-200-xw/",
+        "title": "Madico MT 200 XW",
+        "target_post_type": "producto",
+        "post_name": "madico-mt-200-xw",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-gullwing/",
+        "title": "Sistema de anclaje GullWing",
+        "target_post_type": "producto",
+        "post_name": "madico-gullwing",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-safetyshield-1500/",
+        "title": "Madico SafetyShield 1500",
+        "target_post_type": "producto",
+        "post_name": "madico-safetyshield-1500",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-safetyshield-800/",
+        "title": "Madico SafetyShield 800",
+        "target_post_type": "producto",
+        "post_name": "madico-safetyshield-800",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-cl-700-e-ps-sr/",
+        "title": "Madico CL 700 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-700-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-cl-700-ps-sr/",
+        "title": "Madico CL 700 PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-700-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-cl-400-e-ps-sr/",
+        "title": "Madico CL 400 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-400-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-cl-400-ps-sr/",
+        "title": "Madico CL 400 PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-400-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-rs-40-ps-sr-8mil/",
+        "title": "Madico RS 40 PS SR 8 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-ps-sr-8mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-rs-40-ps-sr-4mil/",
+        "title": "Madico RS 40 PS SR 4 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-ps-sr-4mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-rs-20-ps-sr-8mil/",
+        "title": "Madico RS 20 PS SR 8 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-ps-sr-8mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-rs-20-ps-sr-4mil/",
+        "title": "Madico RS 20 PS SR 4 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-ps-sr-4mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-rs-40-e-ps-sr/",
+        "title": "Madico RS 40 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-rs-30-e-ps-sr/",
+        "title": "Madico RS 30 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-30-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-rs-20-e-ps-sr/",
+        "title": "Madico RS 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/ssn-70-te-sr/",
+        "title": "SSN 70 TE SR",
+        "target_post_type": "producto",
+        "post_name": "ssn-70-te-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-sl-8-e-ps-sr/",
+        "title": "Madico SL 8 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sl-8-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-sg-20-e-ps-sr/",
+        "title": "Madico SG 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sg-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-sb-35-e-ps-sr/",
+        "title": "Madico SB 35 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sb-35-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/productos/madico-sb-20-e-ps-sr/",
+        "title": "Madico SB 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sb-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/normativa-y-seguridad/",
+        "title": "Normativa y seguridad de cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "normativa-y-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/seguridad-conforme-a-la-ley/",
+        "title": "Seguridad de cristales y documentacion técnica",
+        "target_post_type": "pagina_info",
+        "post_name": "seguridad-conforme-a-la-ley",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/garantias/",
+        "title": "Garantías de películas para cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "garantias",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/certificacion-nfrc/",
+        "title": "Certificación NFRC",
+        "target_post_type": "pagina_info",
+        "post_name": "certificacion-nfrc",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/puntos-fuertes/",
+        "title": "Puntos fuertes de las películas profesionales",
+        "target_post_type": "pagina_info",
+        "post_name": "puntos-fuertes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/instrucciones-y-mantenimiento/",
+        "title": "Instrucciones y mantenimiento",
+        "target_post_type": "pagina_info",
+        "post_name": "instrucciones-y-mantenimiento",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/norma-brc/",
+        "title": "Norma BRC y protección de superficies acristaladas",
+        "target_post_type": "pagina_info",
+        "post_name": "norma-brc",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/sistemas-filtrantes/",
+        "title": "Sistemas filtrantes y control solar",
+        "target_post_type": "pagina_info",
+        "post_name": "sistemas-filtrantes",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/seguridad-y-salud-en-el-trabajo/",
+        "title": "Seguridad y salud en el trabajo",
+        "target_post_type": "pagina_info",
+        "post_name": "seguridad-y-salud-en-el-trabajo",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/info/glosario/",
+        "title": "Glosario de películas para cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "glosario",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+        "title": "Películas para cristales Tenerife",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-tenerife",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-adeje/",
+        "title": "Películas para cristales Adeje",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-adeje",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+        "title": "Películas para cristales Costa Adeje",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-costa-adeje",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+        "title": "Películas para cristales Los Cristianos",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-los-cristianos",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-arona/",
+        "title": "Películas para cristales Arona",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-arona",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+        "title": "Películas para cristales Santa Cruz de Tenerife",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-santa-cruz-de-tenerife",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+        "title": "Películas para cristales La Laguna",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-la-laguna",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+        "title": "Películas para cristales Las Palmas",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-las-palmas",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-canarias/",
+        "title": "Películas para cristales Canarias",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-canarias",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-madrid/",
+        "title": "Películas para cristales Madrid",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-madrid",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+        "title": "Películas para cristales Barcelona",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-barcelona",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-valencia/",
+        "title": "Películas para cristales Valencia",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-valencia",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-malaga/",
+        "title": "Películas para cristales Malaga",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-malaga",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+        "title": "Películas para cristales Sevilla",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-sevilla",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+        "title": "Películas para cristales interior o exterior",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-para-cristales-interior-o-exterior",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/",
+        "title": "Pelicula privacidad vs vidrio satinado",
+        "target_post_type": "articulo",
+        "post_name": "pelicula-privacidad-vs-vidrio-satinado",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/como-reducir-calor-cristaleras/",
+        "title": "Como reducir calor en cristaleras",
+        "target_post_type": "articulo",
+        "post_name": "como-reducir-calor-cristaleras",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+        "title": "Películas de seguridad y UNE EN 12600",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-de-seguridad-une-en-12600",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+        "title": "Películas espectro selectivas vs reflectantes",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-espectro-selectivas-vs-reflectantes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+        "title": "Mantenimiento de películas para cristales",
+        "target_post_type": "articulo",
+        "post_name": "mantenimiento-peliculas-para-cristales",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+        "title": "Películas anti UV vs cortinas interiores",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-anti-uv-vs-cortinas-interiores",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+        "title": "Cuanto dura una pelicula para cristales",
+        "target_post_type": "articulo",
+        "post_name": "cuanto-dura-una-pelicula-para-cristales",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+        "title": "Películas antigraffiti para escaparates",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-antigraffiti-para-escaparates",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      },
+      {
+        "batch": "template_generated_review",
+        "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+        "title": "Películas SafetyShield para cristales",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-safetyshield-para-cristales",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": "Bozza generata: richiede copy/localizzazione prima del publish."
+      }
+    ],
+    "publish_blockers": [
+      {
+        "batch": "publish_blockers",
+        "path": "/",
+        "title": "Películas para cristales que mejoran confort, seguridad y privacidad",
+        "target_post_type": "page",
+        "post_name": "home",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicios/",
+        "title": "Servicios Solaris para cristales existentes",
+        "target_post_type": "page",
+        "post_name": "servicios",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/",
+        "title": "Productos para cada tipo de vidrio y necesidad",
+        "target_post_type": "page",
+        "post_name": "productos",
+        "review_gate": "copy_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/company-profile/",
+        "title": "Solaris Films España",
+        "target_post_type": "page",
+        "post_name": "company-profile",
+        "review_gate": "legal_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/presupuesto/",
+        "title": "Solicita presupuesto para películas de cristales",
+        "target_post_type": "page",
+        "post_name": "presupuesto",
+        "review_gate": "form_crm",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/contacto/",
+        "title": "Contacto Solaris Films España",
+        "target_post_type": "page",
+        "post_name": "contacto",
+        "review_gate": "contact_data",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "placeholder_present",
+          "manual_review_required"
+        ],
+        "placeholders": [
+          "[TELEFONO_ES]",
+          "[WHATSAPP_ES]",
+          "[EMAIL_ES]",
+          "[DIRECCION_ES]"
+        ],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/",
+        "title": "Lo sabias?",
+        "target_post_type": "page",
+        "post_name": "lo-sabias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/certificado-de-seguridad/",
+        "title": "Certificado de seguridad del vidrio tratado",
+        "target_post_type": "page",
+        "post_name": "certificado-de-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "content_seed",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": true,
+        "blockers": [
+          "manual_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-antisolares/",
+        "title": "Películas antisolares para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-antisolares-sputtered/",
+        "title": "Películas antisolares sputtered",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-sputtered",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-antisolares-sunscape/",
+        "title": "Películas antisolares Sunscape",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-sunscape",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-reflectantes/",
+        "title": "Películas reflectantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-reflectantes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-espectro-selectivas/",
+        "title": "Películas espectro selectivas",
+        "target_post_type": "page",
+        "post_name": "peliculas-espectro-selectivas",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-de-seguridad/",
+        "title": "Películas de seguridad para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-de-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+        "title": "Películas de seguridad neutras serie CL",
+        "target_post_type": "page",
+        "post_name": "peliculas-de-seguridad-neutras-serie-cl",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+        "title": "Películas antisolares de seguridad serie RS",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-de-seguridad-serie-rs",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/safetyshield/",
+        "title": "Madico SafetyShield y sistemas de anclaje",
+        "target_post_type": "page",
+        "post_name": "safetyshield",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-decorativas/",
+        "title": "Películas decorativas para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-decorativas",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-decorativas-privacidad/",
+        "title": "Películas decorativas para privacidad",
+        "target_post_type": "page",
+        "post_name": "peliculas-decorativas-privacidad",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+        "title": "Películas imprimibles y vetrofanias",
+        "target_post_type": "page",
+        "post_name": "peliculas-antisolares-imprimibles-y-vetrofanias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-antigraffiti/",
+        "title": "Películas antigraffiti para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-antigraffiti",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-termoaislantes/",
+        "title": "Películas termoaislantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-termoaislantes",
+        "review_gate": "commercial_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/peliculas-oscurantes-para-cristales/",
+        "title": "Películas oscurantes para cristales",
+        "target_post_type": "page",
+        "post_name": "peliculas-oscurantes-para-cristales",
+        "review_gate": "commercial_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/vetrofanias/",
+        "title": "Vetrofanias",
+        "target_post_type": "producto",
+        "post_name": "vetrofanias",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-mt-200-xw/",
+        "title": "Madico MT 200 XW",
+        "target_post_type": "producto",
+        "post_name": "madico-mt-200-xw",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-gullwing/",
+        "title": "Sistema de anclaje GullWing",
+        "target_post_type": "producto",
+        "post_name": "madico-gullwing",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-safetyshield-1500/",
+        "title": "Madico SafetyShield 1500",
+        "target_post_type": "producto",
+        "post_name": "madico-safetyshield-1500",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-safetyshield-800/",
+        "title": "Madico SafetyShield 800",
+        "target_post_type": "producto",
+        "post_name": "madico-safetyshield-800",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-cl-700-e-ps-sr/",
+        "title": "Madico CL 700 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-700-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-cl-700-ps-sr/",
+        "title": "Madico CL 700 PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-700-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-cl-400-e-ps-sr/",
+        "title": "Madico CL 400 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-400-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-cl-400-ps-sr/",
+        "title": "Madico CL 400 PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-cl-400-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-rs-40-ps-sr-8mil/",
+        "title": "Madico RS 40 PS SR 8 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-ps-sr-8mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-rs-40-ps-sr-4mil/",
+        "title": "Madico RS 40 PS SR 4 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-ps-sr-4mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-rs-20-ps-sr-8mil/",
+        "title": "Madico RS 20 PS SR 8 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-ps-sr-8mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-rs-20-ps-sr-4mil/",
+        "title": "Madico RS 20 PS SR 4 Mil",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-ps-sr-4mil",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-rs-40-e-ps-sr/",
+        "title": "Madico RS 40 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-40-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-rs-30-e-ps-sr/",
+        "title": "Madico RS 30 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-30-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-rs-20-e-ps-sr/",
+        "title": "Madico RS 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-rs-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/ssn-70-te-sr/",
+        "title": "SSN 70 TE SR",
+        "target_post_type": "producto",
+        "post_name": "ssn-70-te-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-sl-8-e-ps-sr/",
+        "title": "Madico SL 8 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sl-8-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-sg-20-e-ps-sr/",
+        "title": "Madico SG 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sg-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-sb-35-e-ps-sr/",
+        "title": "Madico SB 35 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sb-35-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/productos/madico-sb-20-e-ps-sr/",
+        "title": "Madico SB 20 E PS SR",
+        "target_post_type": "producto",
+        "post_name": "madico-sb-20-e-ps-sr",
+        "review_gate": "technical_sheet",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/normativa-y-seguridad/",
+        "title": "Normativa y seguridad de cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "normativa-y-seguridad",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/seguridad-conforme-a-la-ley/",
+        "title": "Seguridad de cristales y documentacion técnica",
+        "target_post_type": "pagina_info",
+        "post_name": "seguridad-conforme-a-la-ley",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/garantias/",
+        "title": "Garantías de películas para cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "garantias",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/certificacion-nfrc/",
+        "title": "Certificación NFRC",
+        "target_post_type": "pagina_info",
+        "post_name": "certificacion-nfrc",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/puntos-fuertes/",
+        "title": "Puntos fuertes de las películas profesionales",
+        "target_post_type": "pagina_info",
+        "post_name": "puntos-fuertes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/instrucciones-y-mantenimiento/",
+        "title": "Instrucciones y mantenimiento",
+        "target_post_type": "pagina_info",
+        "post_name": "instrucciones-y-mantenimiento",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/norma-brc/",
+        "title": "Norma BRC y protección de superficies acristaladas",
+        "target_post_type": "pagina_info",
+        "post_name": "norma-brc",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/sistemas-filtrantes/",
+        "title": "Sistemas filtrantes y control solar",
+        "target_post_type": "pagina_info",
+        "post_name": "sistemas-filtrantes",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/seguridad-y-salud-en-el-trabajo/",
+        "title": "Seguridad y salud en el trabajo",
+        "target_post_type": "pagina_info",
+        "post_name": "seguridad-y-salud-en-el-trabajo",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/info/glosario/",
+        "title": "Glosario de películas para cristales",
+        "target_post_type": "pagina_info",
+        "post_name": "glosario",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+        "title": "Películas para cristales Tenerife",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-tenerife",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-adeje/",
+        "title": "Películas para cristales Adeje",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-adeje",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+        "title": "Películas para cristales Costa Adeje",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-costa-adeje",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+        "title": "Películas para cristales Los Cristianos",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-los-cristianos",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-arona/",
+        "title": "Películas para cristales Arona",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-arona",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+        "title": "Películas para cristales Santa Cruz de Tenerife",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-santa-cruz-de-tenerife",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+        "title": "Películas para cristales La Laguna",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-la-laguna",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+        "title": "Películas para cristales Las Palmas",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-las-palmas",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-canarias/",
+        "title": "Películas para cristales Canarias",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-canarias",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-madrid/",
+        "title": "Películas para cristales Madrid",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-madrid",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+        "title": "Películas para cristales Barcelona",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-barcelona",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-valencia/",
+        "title": "Películas para cristales Valencia",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-valencia",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-malaga/",
+        "title": "Películas para cristales Malaga",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-malaga",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+        "title": "Películas para cristales Sevilla",
+        "target_post_type": "servicio_local",
+        "post_name": "peliculas-para-cristales-sevilla",
+        "review_gate": "local_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+        "title": "Películas para cristales interior o exterior",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-para-cristales-interior-o-exterior",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/",
+        "title": "Pelicula privacidad vs vidrio satinado",
+        "target_post_type": "articulo",
+        "post_name": "pelicula-privacidad-vs-vidrio-satinado",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/como-reducir-calor-cristaleras/",
+        "title": "Como reducir calor en cristaleras",
+        "target_post_type": "articulo",
+        "post_name": "como-reducir-calor-cristaleras",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+        "title": "Películas de seguridad y UNE EN 12600",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-de-seguridad-une-en-12600",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+        "title": "Películas espectro selectivas vs reflectantes",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-espectro-selectivas-vs-reflectantes",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+        "title": "Mantenimiento de películas para cristales",
+        "target_post_type": "articulo",
+        "post_name": "mantenimiento-peliculas-para-cristales",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+        "title": "Películas anti UV vs cortinas interiores",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-anti-uv-vs-cortinas-interiores",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+        "title": "Cuanto dura una pelicula para cristales",
+        "target_post_type": "articulo",
+        "post_name": "cuanto-dura-una-pelicula-para-cristales",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+        "title": "Películas antigraffiti para escaparates",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-antigraffiti-para-escaparates",
+        "review_gate": "copy_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      },
+      {
+        "batch": "publish_blockers",
+        "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+        "title": "Películas SafetyShield para cristales",
+        "target_post_type": "articulo",
+        "post_name": "peliculas-safetyshield-para-cristales",
+        "review_gate": "legal_review",
+        "content_source": "template_generated",
+        "draft_import_safe": true,
+        "publish_candidate_after_review": false,
+        "blockers": [
+          "manual_review_required",
+          "template_generated_review_required"
+        ],
+        "placeholders": [],
+        "note": ""
+      }
+    ]
+  }
+}

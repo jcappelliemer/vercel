@@ -29,6 +29,11 @@ const paths = {
   spanishNormalizationReport: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.json"),
   spanishNormalizationCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.csv"),
   spanishNormalizationMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.md"),
+  spanishNormalizedSeoSummary: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-seo-assets-summary.json"),
+  spanishNormalizedRobotsStaging: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-robots-staging-preview.txt"),
+  spanishNormalizedRobotsProduction: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-robots-production-preview.txt"),
+  spanishNormalizedSitemapCandidate: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-sitemap-candidate.xml"),
+  spanishNormalizedUrlPreview: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-url-publication-preview.csv"),
   reviewPacketsScript: path.join(root, "scripts", "solaris-es-build-review-packets.js"),
   reviewPacketsJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.json"),
   reviewPacketsCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.csv"),
@@ -39,6 +44,8 @@ const paths = {
   launchConfigTemplate: path.join(root, "docs", "solaris-es", "solarisfilms-es-launch-config-template-2026-08-05.json"),
   importBatchesJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-import-batches.json"),
   importBatchesCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-import-batches.csv"),
+  spanishNormalizedImportBatchesJson: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-import-batches", "solarisfilms-es-import-batches.json"),
+  spanishNormalizedImportBatchesCsv: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-import-batches", "solarisfilms-es-import-batches.csv"),
   installKitManifest: path.join(root, "wordpress", "solaris-es-install-kit", "manifest.json")
 };
 
@@ -147,6 +154,11 @@ function validateRequiredFiles() {
     "spanishNormalizationReport",
     "spanishNormalizationCsv",
     "spanishNormalizationMd",
+    "spanishNormalizedSeoSummary",
+    "spanishNormalizedRobotsStaging",
+    "spanishNormalizedRobotsProduction",
+    "spanishNormalizedSitemapCandidate",
+    "spanishNormalizedUrlPreview",
     "reviewPacketsScript",
     "reviewPacketsJson",
     "reviewPacketsCsv",
@@ -156,7 +168,9 @@ function validateRequiredFiles() {
     "launchConfigScript",
     "launchConfigTemplate",
     "importBatchesJson",
-    "importBatchesCsv"
+    "importBatchesCsv",
+    "spanishNormalizedImportBatchesJson",
+    "spanishNormalizedImportBatchesCsv"
   ];
 
   return required.map((key) => ({
@@ -204,10 +218,14 @@ function validatePayload(payload) {
   };
 }
 
-function validateSeoAssets(summary) {
-  const stagingRobots = exists(paths.robotsStaging) ? fs.readFileSync(paths.robotsStaging, "utf8") : "";
-  const productionRobots = exists(paths.robotsProduction) ? fs.readFileSync(paths.robotsProduction, "utf8") : "";
-  const sitemap = exists(paths.sitemapCandidate) ? fs.readFileSync(paths.sitemapCandidate, "utf8") : "";
+function validateSeoAssets(summary, assetPaths = {
+  robotsStaging: paths.robotsStaging,
+  robotsProduction: paths.robotsProduction,
+  sitemapCandidate: paths.sitemapCandidate
+}) {
+  const stagingRobots = exists(assetPaths.robotsStaging) ? fs.readFileSync(assetPaths.robotsStaging, "utf8") : "";
+  const productionRobots = exists(assetPaths.robotsProduction) ? fs.readFileSync(assetPaths.robotsProduction, "utf8") : "";
+  const sitemap = exists(assetPaths.sitemapCandidate) ? fs.readFileSync(assetPaths.sitemapCandidate, "utf8") : "";
 
   const issues = [];
   if (!/Disallow:\s*\//i.test(stagingRobots)) issues.push("staging_robots_not_blocking");
@@ -222,6 +240,29 @@ function validateSeoAssets(summary) {
     machine_blocked_urls: summary.machine_blocked_urls,
     publish_blocked_until_review: summary.publish_blocked_until_review,
     blockers: summary.blockers || [],
+    issues
+  };
+}
+
+function validateNormalizedImportBatches() {
+  if (!exists(paths.spanishNormalizedImportBatchesJson)) {
+    return {
+      generated: false,
+      path: rel(paths.spanishNormalizedImportBatchesJson),
+      issues: ["spanish_normalized_import_batches_not_generated"]
+    };
+  }
+
+  const report = readJson(paths.spanishNormalizedImportBatchesJson);
+  const summary = report.summary || {};
+  const fullDraftTotal = summary.full_draft_import ? summary.full_draft_import.total : 0;
+  const issues = [];
+  if (fullDraftTotal !== 78) issues.push("spanish_normalized_full_draft_total_unexpected");
+
+  return {
+    generated: true,
+    path: rel(paths.spanishNormalizedImportBatchesJson),
+    summary,
     issues
   };
 }
@@ -323,12 +364,19 @@ function main() {
   const missingRequiredFiles = requiredFiles.filter((file) => !file.exists);
   const payload = exists(paths.payload) ? readJson(paths.payload) : { items: [] };
   const seoSummary = exists(paths.seoSummary) ? readJson(paths.seoSummary) : {};
+  const spanishNormalizedSeoSummary = exists(paths.spanishNormalizedSeoSummary) ? readJson(paths.spanishNormalizedSeoSummary) : {};
 
   const payloadGate = validatePayload(payload);
   const seoGate = validateSeoAssets(seoSummary);
+  const spanishNormalizedSeoGate = validateSeoAssets(spanishNormalizedSeoSummary, {
+    robotsStaging: paths.spanishNormalizedRobotsStaging,
+    robotsProduction: paths.spanishNormalizedRobotsProduction,
+    sitemapCandidate: paths.spanishNormalizedSitemapCandidate
+  });
   const installKit = validateInstallKit();
   const contentQa = validateContentQa();
   const spanishNormalization = validateSpanishNormalization();
+  const spanishNormalizedImportBatches = validateNormalizedImportBatches();
   const reviewPackets = validateReviewPackets();
 
   const repoBlockers = [];
@@ -348,6 +396,9 @@ function main() {
   if (contentQa.issues.length) launchBlockers.push("content_qa_issues_present");
   if (!spanishNormalization.generated) launchBlockers.push("spanish_normalization_not_generated");
   if (spanishNormalization.issues.length) launchBlockers.push("spanish_normalization_issues_present");
+  if (spanishNormalizedSeoGate.issues.length) launchBlockers.push("spanish_normalized_seo_preview_invalid");
+  if (!spanishNormalizedImportBatches.generated) launchBlockers.push("spanish_normalized_import_batches_not_generated");
+  if (spanishNormalizedImportBatches.issues.length) launchBlockers.push("spanish_normalized_import_batches_issues_present");
   if (!reviewPackets.generated) launchBlockers.push("review_packets_not_generated");
   if (reviewPackets.issues.length) launchBlockers.push("review_packets_issues_present");
   launchBlockers.push("domain_wp_https_preflight_required");
@@ -361,8 +412,10 @@ function main() {
     required_files: requiredFiles,
     payload: payloadGate,
     seo_assets: seoGate,
+    spanish_normalized_seo_assets: spanishNormalizedSeoGate,
     content_qa: contentQa,
     spanish_normalization: spanishNormalization,
+    spanish_normalized_import_batches: spanishNormalizedImportBatches,
     review_packets: reviewPackets,
     install_kit: installKit,
     repo_blockers: repoBlockers,
@@ -371,6 +424,8 @@ function main() {
       "Copy-Item docs/solaris-es/solarisfilms-es-launch-config-template-2026-08-05.json docs/solaris-es/solarisfilms-es-launch-config.local.json",
       "node scripts/solaris-es-apply-launch-config.js --config docs/solaris-es/solarisfilms-es-launch-config.local.json",
       "node scripts/solaris-es-normalize-spanish.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json",
+      "node scripts/solaris-es-build-seo-assets.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs/solaris-es/generated/spanish-normalized-seo",
+      "node scripts/solaris-es-build-import-batches.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs/solaris-es/generated/spanish-normalized-import-batches",
       "node scripts/solaris-es-preflight-check.js",
       "node scripts/solaris-es-wp-readiness-check.js",
       "node scripts/solaris-es-content-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs/solaris-es/generated/spanish-normalized-qa --fail-on-error",

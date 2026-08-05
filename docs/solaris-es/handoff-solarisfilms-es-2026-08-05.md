@@ -22,7 +22,7 @@ repo_ready: true
 launch_ready: false
 ```
 
-Il repository e pronto lato strumenti: payload, tema, mu-plugin, import, QA, SEO preview, batch plan e launch gate esistono.
+Il repository e pronto lato strumenti: payload, tema, mu-plugin, import, QA, normalizzazione spagnola, SEO preview, batch plan e launch gate esistono.
 
 Il sito non e pronto per il live per questi blocchi:
 
@@ -148,6 +148,24 @@ Stato attuale:
 - robots production preview: `Allow: /` + sitemap `.es`.
 
 Sono preview locali, non file da caricare ora.
+
+Per la versione effettivamente da usare dopo la configurazione dei contatti, rigenerare gli asset SEO dal payload spagnolo normalizzato:
+
+```powershell
+node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs\solaris-es\generated\spanish-normalized-seo
+```
+
+Output normalizzato:
+
+```txt
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-sitemap-candidate.xml
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-robots-staging-preview.txt
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-robots-production-preview.txt
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-url-publication-preview.csv
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-seo-assets-summary.json
+```
+
+Stato preview normalizzata: 78 URL totali, 77 candidate sitemap, `/contacto/` esclusa finche contiene placeholder.
 
 ## QA editoriale payload
 
@@ -288,6 +306,19 @@ Batch:
 
 Nessun batch autorizza la pubblicazione automatica.
 
+Per i batch allineati al payload spagnolo normalizzato:
+
+```powershell
+node scripts\solaris-es-build-import-batches.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs\solaris-es\generated\spanish-normalized-import-batches
+```
+
+Output normalizzato:
+
+```txt
+docs/solaris-es/generated/spanish-normalized-import-batches/solarisfilms-es-import-batches.json
+docs/solaris-es/generated/spanish-normalized-import-batches/solarisfilms-es-import-batches.csv
+```
+
 ## Comandi in ordine corretto
 
 Quando WordPress `.es` sara raggiungibile:
@@ -299,7 +330,7 @@ node scripts\solaris-es-wp-rest-import-drafts.js --apply --type page --limit 2
 node scripts\solaris-es-post-import-qa.js --live --base https://www.solarisfilms.es
 ```
 
-Dopo avere creato il payload configurato, usare `--payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json` sui comandi di QA, SEO preview e import.
+Dopo avere creato il payload configurato, rigenerare prima il payload spagnolo normalizzato. Usare poi `docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json` per QA, SEO preview, batch e import.
 
 Solo dopo pilota ok:
 

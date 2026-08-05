@@ -253,7 +253,8 @@ Dopo la configurazione contatti, usare il payload configurato nei controlli e ne
 ```powershell
 node scripts\solaris-es-normalize-spanish.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
 node scripts\solaris-es-post-import-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
-node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
+node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs\solaris-es\generated\spanish-normalized-seo
+node scripts\solaris-es-build-import-batches.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs\solaris-es\generated\spanish-normalized-import-batches
 node scripts\solaris-es-wp-rest-import-drafts.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
 ```
 
@@ -381,7 +382,7 @@ node scripts\solaris-es-build-seo-assets.js
 Se il payload configurato e disponibile:
 
 ```powershell
-node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
+node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs\solaris-es\generated\spanish-normalized-seo
 ```
 
 Output locale:
@@ -392,6 +393,16 @@ docs/solaris-es/generated/solarisfilms-es-robots-staging-preview.txt
 docs/solaris-es/generated/solarisfilms-es-robots-production-preview.txt
 docs/solaris-es/generated/solarisfilms-es-url-publication-preview.csv
 docs/solaris-es/generated/solarisfilms-es-seo-assets-summary.json
+```
+
+Output normalizzato:
+
+```txt
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-sitemap-candidate.xml
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-robots-staging-preview.txt
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-robots-production-preview.txt
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-url-publication-preview.csv
+docs/solaris-es/generated/spanish-normalized-seo/solarisfilms-es-seo-assets-summary.json
 ```
 
 Questi file sono preview: non vanno caricati su WordPress finche il QA non e verde e James non approva il go-live. La sitemap candidate esclude automaticamente URL con placeholder o termini esclusi rilevati dal payload.
@@ -471,6 +482,21 @@ docs/solaris-es/generated/solarisfilms-es-review-packets.md
 ```
 
 Questi file uniscono payload, board editoriale e QA in una lista per priorita. Servono per assegnare la revisione, non autorizzano il publish.
+
+Batch import normalizzati:
+
+```powershell
+node scripts\solaris-es-build-import-batches.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs\solaris-es\generated\spanish-normalized-import-batches
+```
+
+Output locale:
+
+```txt
+docs/solaris-es/generated/spanish-normalized-import-batches/solarisfilms-es-import-batches.json
+docs/solaris-es/generated/spanish-normalized-import-batches/solarisfilms-es-import-batches.csv
+```
+
+I batch normalizzati sono quelli da usare per il pilota e per l'import completo quando i contatti reali saranno configurati.
 
 Dopo installazione WordPress, import bozze e pubblicazione controllata su staging `.es`, usare:
 

@@ -2,8 +2,8 @@ const fs = require("fs");
 const path = require("path");
 
 const root = path.resolve(__dirname, "..");
-const payloadPath = path.join(root, "docs", "solaris-es", "solarisfilms-es-wp-import-payload-2026-08-05.json");
-const outDir = path.join(root, "docs", "solaris-es", "generated");
+const defaultPayloadPath = path.join(root, "docs", "solaris-es", "solarisfilms-es-wp-import-payload-2026-08-05.json");
+const defaultOutDir = path.join(root, "docs", "solaris-es", "generated");
 
 const placeholderPattern = /\[[A-Z0-9_]+\]/g;
 const mvpPaths = new Set([
@@ -17,7 +17,46 @@ const mvpPaths = new Set([
   "/lo-sabias/"
 ]);
 
-function loadPayload() {
+function parseArgs(argv) {
+  const args = {
+    payload: defaultPayloadPath,
+    outDir: defaultOutDir
+  };
+
+  for (let i = 0; i < argv.length; i += 1) {
+    const arg = argv[i];
+    if (arg === "--payload") args.payload = path.resolve(argv[++i]);
+    else if (arg === "--out-dir") args.outDir = path.resolve(argv[++i]);
+    else if (arg === "--help") {
+      printHelp();
+      process.exit(0);
+    } else {
+      throw new Error(`Unknown argument: ${arg}`);
+    }
+  }
+
+  return args;
+}
+
+function printHelp() {
+  console.log(`
+Solaris ES import batch planner
+
+Generate local, non-deployed import batches:
+  node scripts/solaris-es-build-import-batches.js
+
+Options:
+  --payload <file>   Payload JSON to read.
+  --out-dir <dir>    Output directory. Default: docs/solaris-es/generated
+
+Safety:
+  - Writes only local planning files.
+  - Does not write to WordPress.
+  - Does not publish any content.
+`);
+}
+
+function loadPayload(payloadPath) {
   const payload = JSON.parse(fs.readFileSync(payloadPath, "utf8"));
   if (!Array.isArray(payload.items)) throw new Error("Payload does not contain items[].");
   return payload;
@@ -153,19 +192,20 @@ function summarizeBatches(batches) {
 }
 
 function main() {
-  const payload = loadPayload();
+  const args = parseArgs(process.argv.slice(2));
+  const payload = loadPayload(args.payload);
   const batches = buildBatches(payload.items);
   const rows = flattenBatches(batches);
   const summary = summarizeBatches(batches);
 
-  fs.mkdirSync(outDir, { recursive: true });
+  fs.mkdirSync(args.outDir, { recursive: true });
 
-  const jsonPath = path.join(outDir, "solarisfilms-es-import-batches.json");
-  const csvPath = path.join(outDir, "solarisfilms-es-import-batches.csv");
+  const jsonPath = path.join(args.outDir, "solarisfilms-es-import-batches.json");
+  const csvPath = path.join(args.outDir, "solarisfilms-es-import-batches.csv");
 
   fs.writeFileSync(jsonPath, `${JSON.stringify({
     generated_at: new Date().toISOString(),
-    payload: path.relative(root, payloadPath).replace(/\\/g, "/"),
+    payload: path.relative(root, args.payload).replace(/\\/g, "/"),
     safety: [
       "All imports are drafts.",
       "No batch authorizes publish by itself.",

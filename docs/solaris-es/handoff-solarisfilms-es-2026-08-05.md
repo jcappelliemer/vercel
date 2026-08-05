@@ -32,6 +32,14 @@ Il sito non e pronto per il live per questi blocchi:
 - serve readiness WordPress con CPT attivi;
 - serve QA live post-import.
 
+Nota normativa interna:
+
+```txt
+docs/solaris-es/solarisfilms-es-normative-brief-2026-08-05.md
+```
+
+Usarla prima di pubblicare contenuti su sicurezza vetri, garanzia, privacy/cookie e QR/certificato. Non sostituisce la revisione legale spagnola.
+
 ## Payload contenuti
 
 File:

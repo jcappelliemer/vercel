@@ -6,7 +6,7 @@ Esito: **NO-GO temporaneo** per pubblicazione live.
 
 ## Sintesi
 
-La pubblicazione live WordPress integrale non va eseguita adesso. Il dominio `.es` risulta in blocco registrar per verifica contatto, HTTPS non risponde e non esiste un endpoint WordPress raggiungibile sul dominio. Il payload WordPress preparato contiene 78 URL, ma tutti sono marcati come bloccati prima della pubblicazione e solo 7 hanno HTML seed importabile subito come bozza.
+La pubblicazione live WordPress integrale non va eseguita adesso. Il dominio `.es` risulta in blocco registrar per verifica contatto, HTTPS non risponde e non esiste un endpoint WordPress raggiungibile sul dominio. Il payload WordPress preparato contiene 78 URL ora importabili come bozze, ma tutti restano marcati come bloccati prima della pubblicazione.
 
 Questa verifica non ha toccato `solarisfilms.it`, DNS, WordPress live, Vercel o FilmOps.
 
@@ -67,9 +67,11 @@ Conteggi:
 Stato:
 
 - `publish_blocked_until_review`: 78/78
-- `draft_import_ready`: 7/78
+- `draft_import_ready`: 78/78
+- `content_seed`: 7/78
+- `template_generated`: 71/78
 
-Le 7 pagine importabili subito come bozze sono:
+Le 7 pagine con contenuto seed manuale sono:
 
 - `/`
 - `/servicios/`
@@ -78,6 +80,8 @@ Le 7 pagine importabili subito come bozze sono:
 - `/presupuesto/`
 - `/contacto/`
 - `/certificado-de-seguridad/`
+
+Le altre 71 URL hanno una bozza HTML generata da template editoriale. Sono utili per preparare WordPress e lavorare in editor, ma non sono da pubblicare senza revisione.
 
 Lo script di import è sicuro per impostazione:
 
@@ -126,7 +130,7 @@ Da completare prima del live:
 6. Telefono e WhatsApp `.es` mancanti.
 7. Privacy/cookie policy `.es` non pronte.
 8. Normativa spagnola non validata sulle pagine sicurezza, garanzia e QR.
-9. 71 contenuti su 78 non hanno HTML seed pronto.
+9. 71 contenuti su 78 sono bozze generate da template e richiedono revisione editoriale/tecnica.
 10. Tutti i 78 contenuti sono marcati come bloccati prima della pubblicazione.
 
 ## Sequenza corretta per andare live
@@ -155,9 +159,9 @@ Da completare prima del live:
 1. Eseguire dry-run.
 2. Import pilota di 1-2 pagine come draft.
 3. Verificare editor, permalink, template, noindex.
-4. Importare le 7 pagine core pronte come draft.
-5. Completare o generare HTML seed per i restanti 71 contenuti.
-6. Importare i restanti contenuti sempre come draft.
+4. Importare le 78 URL come draft quando WordPress e REST sono pronti.
+5. Revisionare in editor le 71 bozze generate da template.
+6. Pubblicare solo le pagine che superano QA, senza placeholder e senza contenuti non validati.
 
 ### Fase 4 - Revisione
 
@@ -187,7 +191,7 @@ Da completare prima del live:
 - Conferma canonical `www`.
 - Dati societari definitivi o placeholder da non pubblicare.
 - Telefono e WhatsApp `.es`.
-- Decisione se pubblicare MVP di 7 pagine core o aspettare tutti i 78 contenuti.
+- Decisione se pubblicare un MVP core o aspettare la revisione di tutti i 78 contenuti.
 - Conferma legale/privacy/cookie per Spagna.
 
 ## Decisione consigliata
@@ -199,4 +203,3 @@ Non andare live oggi. Usare il tempo per:
 3. importare bozze;
 4. completare i contenuti principali;
 5. pubblicare solo quando 0 placeholder, 0 problemi SSL, 0 link rotti e form testati.
-

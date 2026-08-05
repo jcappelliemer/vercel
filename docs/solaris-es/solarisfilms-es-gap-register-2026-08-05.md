@@ -17,7 +17,9 @@ Payload:
 - 14 servizio_locale;
 - 10 articoli;
 - 78/78 bloccati prima della pubblicazione;
-- 7/78 hanno gia HTML seed sufficiente per import bozza iniziale.
+- 78/78 hanno HTML importabile come bozza;
+- 7/78 hanno contenuto seed manuale;
+- 71/78 hanno bozza generata da template e richiedono revisione prima della pubblicazione.
 
 ## Regola di sicurezza
 
@@ -202,4 +204,3 @@ No-go:
 - form non testato;
 - articoli generati automaticamente senza controllo;
 - dati Italia lasciati nel footer o nei contatti.
-

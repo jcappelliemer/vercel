@@ -108,6 +108,11 @@ function blocksToHtml(blocks = []) {
       html.push(`<section class="sf-es-section">`);
       if (block.heading) html.push(`<h2>${escapeHtml(block.heading)}</h2>`);
       if (block.text) html.push(simpleTextToHtml(block.text));
+      if (Array.isArray(block.items) && block.items.length) {
+        html.push(`<ul>`);
+        for (const item of block.items) html.push(`<li>${escapeHtml(item)}</li>`);
+        html.push(`</ul>`);
+      }
       html.push(`</section>`);
       continue;
     }
@@ -147,6 +152,344 @@ function blocksToHtml(blocks = []) {
     }
   }
   return html.join("\n");
+}
+
+function titleCaseFromSlug(slug) {
+  return slug
+    .replace(/^\/|\/$/g, "")
+    .split("/")
+    .pop()
+    .replace(/-/g, " ")
+    .replace(/\b\w/g, (char) => char.toUpperCase());
+}
+
+function localAreaFromPath(pathValue) {
+  const slug = slugFromPath(pathValue).replace(/^peliculas-para-cristales-/, "");
+  return titleCaseFromSlug(slug);
+}
+
+function focusCopy(pathValue, title) {
+  const clean = normalizePath(pathValue);
+  const map = [
+    {
+      test: "safetyshield",
+      problem: "proteccion avanzada de personas frente a roturas criticas del vidrio",
+      details: "SafetyShield se plantea como un sistema especial: pelicula, vidrio existente, marco y, cuando procede, anclaje trabajan juntos para reducir la proyeccion de fragmentos en escenarios de alto impacto.",
+      items: ["evaluacion del riesgo", "tipo de vidrio y marco", "posible uso de FrameGard o GullWing", "documentacion tecnica del sistema"]
+    },
+    {
+      test: "seguridad",
+      problem: "mejorar el comportamiento del vidrio en caso de impacto o rotura",
+      details: "Las peliculas de seguridad ayudan a retener fragmentos y a reducir riesgos para las personas. La clase declarada debe leerse siempre junto con el vidrio, la instalacion y la documentacion del trabajo.",
+      items: ["UNE-EN 12600:2003 cuando aplica", "uso del espacio", "riesgo de impacto", "producto instalado"]
+    },
+    {
+      test: "espectro",
+      problem: "reducir calor manteniendo alta transparencia",
+      details: "Las soluciones espectro selectivas priorizan el equilibrio entre rechazo infrarrojo, entrada de luz natural y baja alteracion estetica del vidrio.",
+      items: ["transparencia", "rechazo infrarrojo", "baja reflexion", "compatibilidad con el vidrio"]
+    },
+    {
+      test: "reflectantes",
+      problem: "control solar con efecto exterior mas reflectante",
+      details: "Las peliculas reflectantes son utiles cuando se busca reducir calor y deslumbramiento con una imagen exterior mas marcada y, durante el dia, mayor privacidad visual.",
+      items: ["control solar", "reduccion del deslumbramiento", "efecto especular", "privacidad diurna"]
+    },
+    {
+      test: "decorativas",
+      problem: "privacidad, diseno e identidad visual en superficies acristaladas",
+      details: "Las peliculas decorativas permiten modificar el aspecto del vidrio, crear zonas de privacidad y personalizar oficinas, escaparates o espacios comerciales sin sustituir el cristal.",
+      items: ["privacidad", "diseno", "rotulacion", "integracion con la arquitectura"]
+    },
+    {
+      test: "antigraffiti",
+      problem: "proteger superficies expuestas frente a rayaduras y vandalismo",
+      details: "La pelicula actua como capa sacrificable sobre el vidrio. Si se dana, puede sustituirse con una intervencion mas simple que cambiar el cristal.",
+      items: ["escaparates", "zonas publicas", "mantenimiento", "proteccion superficial"]
+    },
+    {
+      test: "termoaislantes",
+      problem: "mejorar el confort de las superficies acristaladas en proyectos donde el aislamiento es prioritario",
+      details: "Esta familia requiere validacion comercial antes de publicarse en el mercado espanol inicial.",
+      items: ["tipo de vidrio", "estacion de uso", "resultado esperado", "revision tecnica previa"]
+    },
+    {
+      test: "oscurantes",
+      problem: "reducir entrada de luz y controlar privacidad en casos especificos",
+      details: "La seleccion debe evitar soluciones demasiado oscuras si afectan al uso del espacio o a la estetica del edificio.",
+      items: ["privacidad", "transmision luminosa", "uso del espacio", "impacto estetico"]
+    }
+  ];
+
+  const found = map.find((entry) => clean.includes(entry.test)) || {
+    problem: "controlar calor, deslumbramiento y radiacion sobre cristales existentes",
+    details: "Solaris evalua orientacion, tipo de vidrio y uso del espacio antes de proponer una pelicula compatible con el resultado esperado.",
+    items: ["tipo de vidrio", "exposicion solar", "aplicacion interior o exterior", "resultado estetico"]
+  };
+
+  return [
+    {
+      type: "hero",
+      eyebrow: "Soluciones tecnicas Solaris",
+      heading: title,
+      text: `Esta solucion esta pensada para ${found.problem}. La eleccion correcta parte del caso real y no solo del nombre del producto.`
+    },
+    {
+      type: "section",
+      heading: "Cuando tiene sentido",
+      text: found.details
+    },
+    {
+      type: "section",
+      heading: "Que se verifica antes de elegir",
+      text: "Antes de confirmar la pelicula se revisan los puntos que condicionan rendimiento, durabilidad y resultado visual.",
+      items: found.items
+    },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Como se elige la pelicula correcta?",
+          answer: "Se parte del problema real, se identifica el tipo de vidrio y se comparan las soluciones compatibles con el objetivo del proyecto."
+        },
+        {
+          question: "Se puede instalar sin cambiar los cristales?",
+          answer: "En muchos casos si. La intervencion se realiza sobre vidrio existente, pero antes hay que comprobar estado, composicion y exposicion."
+        },
+        {
+          question: "La solucion cambia la estetica del edificio?",
+          answer: "Depende de la familia elegida. Algunas peliculas son muy discretas, otras tienen un efecto mas reflectante, decorativo o tecnico."
+        }
+      ]
+    }
+  ];
+}
+
+function productCopy(pathValue, title) {
+  const clean = normalizePath(pathValue);
+  let benefit = "mejorar el comportamiento del vidrio existente";
+  let context = "edificios, oficinas, comercios y viviendas donde se necesita una solucion profesional sin sustituir el acristalamiento.";
+  let items = ["compatibilidad del vidrio", "aplicacion", "prestacion esperada", "mantenimiento"];
+
+  if (clean.includes("safetyshield")) {
+    benefit = "aumentar la proteccion en escenarios de rotura critica y alto impacto";
+    context = "proyectos donde la prioridad es proteger a las personas y reducir la proyeccion de fragmentos.";
+    items = ["nivel de prestacion", "tipo de vidrio", "marco existente", "posible sistema de anclaje"];
+  } else if (clean.includes("gullwing")) {
+    benefit = "completar sistemas de seguridad con anclaje mecanico especifico";
+    context = "instalaciones SafetyShield o proyectos donde el anclaje forma parte de la estrategia de mitigacion.";
+    items = ["sistema de anclaje", "marco", "compatibilidad", "documentacion del proyecto"];
+  } else if (clean.includes("cl-")) {
+    benefit = "aportar seguridad transparente al vidrio existente";
+    context = "colegios, oficinas, comercios, hoteles y edificios donde se busca seguridad sin alterar la vision del cristal.";
+    items = ["clase UNE-EN 12600", "espesor", "aplicacion interior o exterior", "documentacion tecnica"];
+  } else if (clean.includes("rs-") && clean.includes("ps-sr")) {
+    benefit = "combinar control solar reflectante y seguridad del vidrio";
+    context = "vitrinas, oficinas y fachadas con necesidad de reducir calor y mejorar el comportamiento del vidrio.";
+    items = ["control solar", "seguridad", "efecto reflectante", "clase certificada cuando aplica"];
+  } else if (clean.includes("sb-") || clean.includes("sg-") || clean.includes("sl-")) {
+    benefit = "reducir calor y deslumbramiento con una pelicula de control solar profesional";
+    context = "espacios de trabajo, edificios con grandes superficies acristaladas y ambientes donde se busca mas confort.";
+    items = ["energia solar rechazada", "transmision luminosa", "reflexion", "aplicacion exterior"];
+  } else if (clean.includes("ssn-70")) {
+    benefit = "reducir infrarrojos manteniendo alta transparencia";
+    context = "vitrinas, museos, showrooms, oficinas y edificios donde la estetica original del vidrio debe mantenerse.";
+    items = ["rechazo infrarrojo", "transparencia", "baja reflexion", "compatibilidad"];
+  } else if (clean.includes("mt-200") || clean.includes("vetrofan")) {
+    benefit = "crear privacidad, identidad visual o decoracion sobre cristal";
+    context = "oficinas, salas de reuniones, escaparates y espacios donde el vidrio tambien comunica imagen.";
+    items = ["privacidad", "diseno", "rotulacion", "mantenimiento"];
+  }
+
+  return [
+    {
+      type: "hero",
+      eyebrow: "Producto MADICO",
+      heading: title,
+      text: `${title} es una solucion profesional para cristales indicada cuando se necesita ${benefit}.`
+    },
+    {
+      type: "section",
+      heading: "Panoramica",
+      text: "La seleccion del producto se realiza segun tipo de vidrio, exposicion, uso del espacio y resultado esperado. Los datos tecnicos deben validarse siempre con la ficha oficial antes de publicar o presupuestar."
+    },
+    {
+      type: "section",
+      heading: "Contexto de uso recomendado",
+      text: `Se recomienda en ${context}`,
+      items
+    },
+    {
+      type: "faq",
+      items: [
+        {
+          question: `Para que se utiliza ${title}?`,
+          answer: `Se utiliza cuando el objetivo es ${benefit}, con instalacion profesional sobre vidrio existente.`
+        },
+        {
+          question: "Como se confirma si es compatible?",
+          answer: "Se revisan fotos, medidas, tipo de vidrio, orientacion y objetivo antes de confirmar la solucion."
+        },
+        {
+          question: "Tiene garantia?",
+          answer: "La garantia depende del producto, la aplicacion, la instalacion y las condiciones de uso y mantenimiento."
+        }
+      ]
+    }
+  ];
+}
+
+function infoCopy(pathValue, title) {
+  const clean = normalizePath(pathValue);
+  const isSafety = clean.includes("seguridad") || clean.includes("normativa") || clean.includes("brc") || clean.includes("sistemas-filtrantes");
+  const text = isSafety
+    ? "Esta pagina resume criterios utiles para leer la seguridad del vidrio, la documentacion tecnica y las verificaciones necesarias antes de confirmar una solucion. Las referencias normativas deben validarse para el caso concreto y el mercado espanol."
+    : "Esta pagina recoge informacion practica para entender mejor producto, mantenimiento, garantia y lenguaje tecnico antes de solicitar una valoracion.";
+
+  return [
+    {
+      type: "hero",
+      eyebrow: "Informacion Solaris",
+      heading: title,
+      text
+    },
+    {
+      type: "section",
+      heading: "Que conviene tener claro",
+      text: "La pelicula correcta depende del vidrio existente, del uso del espacio, de la exposicion y del resultado que se quiere conseguir.",
+      items: isSafety
+        ? ["tipo de vidrio", "uso y riesgo", "clasificacion tecnica", "documentacion del trabajo"]
+        : ["producto elegido", "condiciones de uso", "mantenimiento", "resultado esperado"]
+    },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Esta informacion sustituye una verificacion tecnica?",
+          answer: "No. Sirve para orientarse, pero la eleccion final debe confirmarse con datos del vidrio y del proyecto."
+        },
+        {
+          question: "Cuando conviene pedir ayuda a Solaris?",
+          answer: "Cuando hay dudas sobre compatibilidad, normativa, garantia, mantenimiento o resultado visual."
+        }
+      ]
+    }
+  ];
+}
+
+function localCopy(pathValue) {
+  const area = localAreaFromPath(pathValue);
+  return [
+    {
+      type: "hero",
+      eyebrow: "Servicio local Solaris",
+      heading: `Peliculas para cristales en ${area}`,
+      text: `Solaris Films puede valorar soluciones para cristales en ${area}: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificios con superficies acristaladas.`
+    },
+    {
+      type: "section",
+      heading: `Soluciones para edificios y cristales en ${area}`,
+      text: "La primera valoracion puede hacerse con fotos, medidas aproximadas y objetivo del proyecto. Cuando el caso lo requiere, se programa una verificacion tecnica.",
+      items: ["control solar", "reduccion de deslumbramiento", "seguridad del vidrio", "privacidad", "decoracion y rotulacion"]
+    },
+    {
+      type: "faq",
+      items: [
+        {
+          question: `Trabajais en ${area}?`,
+          answer: `Podemos valorar proyectos en ${area} y zonas cercanas, empezando por fotos, medidas y descripcion del caso.`
+        },
+        {
+          question: "Hace falta visita tecnica?",
+          answer: "No siempre. Para una primera orientacion bastan fotos y medidas. Si el vidrio o el proyecto lo requiere, se confirma una visita."
+        }
+      ]
+    }
+  ];
+}
+
+function articleCopy(pathValue, title) {
+  const clean = normalizePath(pathValue);
+  let angle = "entender como elegir una pelicula para cristales segun el problema real";
+  if (clean.includes("interior-o-exterior")) angle = "decidir si conviene una aplicacion interior o exterior";
+  else if (clean.includes("privacidad")) angle = "comparar privacidad, vidrio satinado y soluciones adhesivas";
+  else if (clean.includes("calor")) angle = "reducir calor en cristaleras sin perder funcionalidad";
+  else if (clean.includes("seguridad")) angle = "leer la seguridad del vidrio y la clasificacion UNE-EN 12600";
+  else if (clean.includes("espectro")) angle = "comparar peliculas espectro selectivas y reflectantes";
+  else if (clean.includes("mantenimiento")) angle = "mantener correctamente una pelicula para cristales";
+  else if (clean.includes("anti-uv")) angle = "proteger interiores frente a radiacion UV";
+  else if (clean.includes("dura")) angle = "entender durabilidad, mantenimiento e instalacion";
+  else if (clean.includes("antigraffiti")) angle = "proteger escaparates y superficies expuestas";
+  else if (clean.includes("safetyshield")) angle = "entender SafetyShield como sistema especial de proteccion";
+
+  return [
+    {
+      type: "hero",
+      eyebrow: "Lo sabias?",
+      heading: title,
+      text: `Una guia practica para ${angle}.`
+    },
+    {
+      type: "section",
+      heading: "Punto de partida",
+      text: "La respuesta correcta depende del vidrio, del uso del espacio y del resultado esperado. Antes de elegir una pelicula conviene definir el objetivo principal y descartar soluciones incompatibles."
+    },
+    {
+      type: "section",
+      heading: "Que mirar antes de decidir",
+      text: "Estos son los elementos que normalmente cambian la eleccion del producto.",
+      items: ["tipo de vidrio", "orientacion y exposicion", "transparencia deseada", "seguridad o privacidad requerida", "mantenimiento"]
+    },
+    {
+      type: "faq",
+      items: [
+        {
+          question: "Puedo decidir solo con una foto?",
+          answer: "Una foto ayuda a orientar, pero para confirmar la solucion pueden servir medidas, tipo de vidrio y objetivo del proyecto."
+        },
+        {
+          question: "Cuando conviene pedir una verificacion?",
+          answer: "Cuando hay dudas sobre compatibilidad, seguridad, aplicacion exterior o resultado estetico."
+        }
+      ]
+    }
+  ];
+}
+
+function indexCopy(pathValue, title, routeManifest) {
+  if (pathValue === "/lo-sabias/") {
+    return [
+      {
+        type: "hero",
+        eyebrow: "Guias Solaris",
+        heading: title,
+        text: "Articulos breves para entender como funcionan las peliculas para cristales, que verificaciones conviene hacer y que solucion puede encajar mejor en cada caso."
+      },
+      {
+        type: "cards",
+        heading: "Rutas de lectura",
+        items: (routeManifest.article_starter_pack || []).slice(0, 10).map((pathItem) => ({
+          title: titleCaseFromSlug(pathItem),
+          text: "Articulo pendiente de revision antes de la publicacion.",
+          href: pathItem
+        }))
+      }
+    ];
+  }
+  return [];
+}
+
+function templateBlocksForItem(row, source, routeManifest) {
+  const cleanPath = normalizePath(row.path);
+  const title = row.title || source.title || titleCaseFromSlug(cleanPath);
+
+  if (cleanPath === "/lo-sabias/") return indexCopy(cleanPath, title, routeManifest);
+  if (row.target_post_type === "focus_tecnico") return focusCopy(cleanPath, title);
+  if (row.target_post_type === "producto") return productCopy(cleanPath, title);
+  if (row.target_post_type === "pagina_info") return infoCopy(cleanPath, title);
+  if (row.target_post_type === "servicio_local") return localCopy(cleanPath);
+  if (row.target_post_type === "articulo") return articleCopy(cleanPath, title);
+  return [];
 }
 
 function buildLookup(routeManifest, contentSeed) {
@@ -197,7 +540,8 @@ function main() {
   const items = dryRun.map((row) => {
     const cleanPath = normalizePath(row.path);
     const source = lookup.get(cleanPath) || {};
-    const postContent = source.seed_blocks ? blocksToHtml(source.seed_blocks) : "";
+    const blocks = source.seed_blocks || templateBlocksForItem(row, source, routeManifest);
+    const postContent = blocks.length ? blocksToHtml(blocks) : "";
     const draftImportReady = Boolean(postContent);
 
     return {
@@ -209,7 +553,7 @@ function main() {
       post_name: cleanPath === "/" ? "home" : slugFromPath(cleanPath),
       post_content_html: postContent,
       source_it_reference: source.source_it_reference || "",
-      content_source: row.content_source,
+      content_source: source.seed_blocks ? row.content_source : "template_generated",
       review_gate: row.review_gate,
       draft_import_ready: draftImportReady,
       publish_blocked_until_review: true,

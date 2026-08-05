@@ -15,7 +15,9 @@ Non pubblicare pagine vuote, skeleton, placeholder o contenuti non revisionati. 
 - HTTPS non risponde.
 - `/wp-json/` non espone WordPress.
 - Payload WP pronto: 78 URL.
-- Import ready senza skeleton: 7 URL.
+- Import ready senza skeleton: 78 URL.
+- 7 URL hanno contenuto seed manuale.
+- 71 URL hanno bozza generata da template editoriale e richiedono revisione prima del publish.
 - Tutti i contenuti sono marcati `publish_blocked_until_review: true`.
 - Nessuna occorrenza contenuto di LCD, fotocromatiche o Tecnosolar nel payload `.es`.
 - Unico placeholder rilevato nel payload: pagina `/contacto/` con telefono, WhatsApp, email, indirizzo.
@@ -62,6 +64,8 @@ Richiede completamento prima del publish:
 - schema/metadata separati per `.es`;
 - nessun contenuto italiano residuo;
 - zero placeholder.
+
+Le 78 URL possono essere importate in WordPress come bozze. Questo non equivale a publish: le bozze template-generated sono un punto di partenza editoriale, non contenuto finale.
 
 ## Passo 1 - Sblocco dominio
 
@@ -225,4 +229,3 @@ Fermarsi se:
 - form CRM non testato;
 - contenuti italiani residui;
 - pagine LCD/fotocromatiche/Tecnosolar rientrano nel sito.
-

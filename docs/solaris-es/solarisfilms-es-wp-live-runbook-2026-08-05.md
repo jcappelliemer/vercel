@@ -204,6 +204,31 @@ Lo script deve tornare `go: true` prima di qualunque pubblicazione. Durante la f
 
 Il payload attuale contiene 78 bozze import-ready. Non usare `--include-skeletons` come flusso standard: serve solo per debug su payload futuri incompleti.
 
+## Passo 5B - Readiness WordPress
+
+Prima di qualunque import con `--apply`, verificare che WordPress `.es` esponga REST, CPT e slug senza collisioni:
+
+```powershell
+node scripts\solaris-es-wp-readiness-check.js
+```
+
+Con credenziali configurate, il controllo collisioni include anche bozze e contenuti privati:
+
+```powershell
+$env:SOLARIS_ES_WP_URL="https://www.solarisfilms.es"
+$env:SOLARIS_ES_WP_USER="admin-user"
+$env:SOLARIS_ES_WP_APP_PASSWORD="xxxx xxxx xxxx xxxx xxxx xxxx"
+node scripts\solaris-es-wp-readiness-check.js
+```
+
+Acceptance prima dell'import:
+
+- `wp-json` raggiungibile;
+- tipi `page`, `post`, `producto`, `pagina_info`, `servicio_local` disponibili;
+- endpoint REST coerenti;
+- 0 collisioni slug, salvo skip intenzionali documentati;
+- `go: true`.
+
 ## Passo 6 - Import pilota bozze
 
 Solo dopo REST e credenziali valide:

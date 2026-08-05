@@ -21,6 +21,9 @@ const paths = {
   readinessScript: path.join(root, "scripts", "solaris-es-wp-readiness-check.js"),
   postImportQaScript: path.join(root, "scripts", "solaris-es-post-import-qa.js"),
   seoAssetsScript: path.join(root, "scripts", "solaris-es-build-seo-assets.js"),
+  importBatchesScript: path.join(root, "scripts", "solaris-es-build-import-batches.js"),
+  importBatchesJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-import-batches.json"),
+  importBatchesCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-import-batches.csv"),
   installKitManifest: path.join(root, "wordpress", "solaris-es-install-kit", "manifest.json")
 };
 
@@ -120,7 +123,10 @@ function validateRequiredFiles() {
     "preflightScript",
     "readinessScript",
     "postImportQaScript",
-    "seoAssetsScript"
+    "seoAssetsScript",
+    "importBatchesScript",
+    "importBatchesJson",
+    "importBatchesCsv"
   ];
 
   return required.map((key) => ({

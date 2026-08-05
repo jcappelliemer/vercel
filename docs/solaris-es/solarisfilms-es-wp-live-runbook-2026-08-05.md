@@ -204,6 +204,28 @@ Lo script deve tornare `go: true` prima di qualunque pubblicazione. Durante la f
 
 Il payload attuale contiene 78 bozze import-ready. Non usare `--include-skeletons` come flusso standard: serve solo per debug su payload futuri incompleti.
 
+Piano batch import/review:
+
+```powershell
+node scripts\solaris-es-build-import-batches.js
+```
+
+Output locale:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-import-batches.json
+docs/solaris-es/generated/solarisfilms-es-import-batches.csv
+```
+
+I batch servono per organizzare il lavoro:
+
+- `pilot_draft_import`: prima prova REST/editor;
+- `mvp_review_set`: set minimo da revisionare per una pubblicazione corta;
+- `seed_content_review`: contenuti seed manuali prioritari;
+- `full_draft_import`: tutte le 78 URL come bozze;
+- `template_generated_review`: bozze generate da revisionare;
+- `publish_blockers`: cosa blocca la pubblicazione.
+
 ## Passo 5B - Readiness WordPress
 
 Prima di qualunque import con `--apply`, verificare che WordPress `.es` esponga REST, CPT e slug senza collisioni:

@@ -260,3 +260,5 @@ Bloccanti prima di pubblicare:
 - `scripts/solaris-es-build-wp-payload.js`
 - `docs/solaris-es/solarisfilms-es-import-runbook-2026-08-05.md`
 - `scripts/solaris-es-wp-rest-import-drafts.js`
+- `docs/solaris-es/solarisfilms-es-template-copy-2026-08-05.md`
+- `docs/solaris-es/solarisfilms-es-prepublish-qa-2026-08-05.md`

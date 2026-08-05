@@ -1,0 +1,294 @@
+{
+  "domain": "https://www.solarisfilms.es",
+  "language": "es-ES",
+  "status": "draft_seed_no_deploy",
+  "created_at": "2026-08-04",
+  "placeholders": {
+    "company_name": "[RAZON_SOCIAL_ES]",
+    "tax_id": "[CIF_NIF_ES]",
+    "address": "[DIRECCION_ES]",
+    "phone": "[TELEFONO_ES]",
+    "whatsapp": "[WHATSAPP_ES]",
+    "email": "[EMAIL_ES]"
+  },
+  "pages": [
+    {
+      "path": "/",
+      "type": "page",
+      "title": "Peliculas para cristales que mejoran confort, seguridad y privacidad",
+      "seo_title": "Peliculas para cristales en Espana | Solaris Films",
+      "meta_description": "Peliculas solares, de seguridad, privacidad y diseno para cristales existentes. Solaris Films ayuda a elegir la solucion correcta segun vidrio, uso y resultado esperado.",
+      "blocks": [
+        {
+          "type": "hero",
+          "eyebrow": "Solaris Films Espana",
+          "heading": "Peliculas para cristales que mejoran confort, seguridad y privacidad",
+          "text": "Aplicamos peliculas profesionales sobre cristales existentes para reducir calor, deslumbramiento y rayos UV, mejorar la seguridad del vidrio y controlar la privacidad sin sustituir la carpinteria.",
+          "secondary_text": "Primero entendemos el problema, despues comprobamos el tipo de vidrio y finalmente proponemos la pelicula mas adecuada para el edificio.",
+          "cta_primary": {
+            "label": "Solicitar presupuesto",
+            "href": "/presupuesto/"
+          },
+          "cta_secondary": {
+            "label": "Hablar por WhatsApp",
+            "href": "https://wa.me/[WHATSAPP_ES]"
+          }
+        },
+        {
+          "type": "cards",
+          "heading": "Elige por lo que necesitas resolver",
+          "items": [
+            {
+              "title": "Control solar",
+              "text": "Para oficinas, viviendas, escaparates y fachadas con exceso de calor, deslumbramiento o perdida de confort.",
+              "href": "/peliculas-antisolares/"
+            },
+            {
+              "title": "Seguridad del vidrio",
+              "text": "Para cristales que deben comportarse de forma mas segura en caso de rotura, reduciendo el riesgo para las personas.",
+              "href": "/peliculas-de-seguridad/"
+            },
+            {
+              "title": "SafetyShield",
+              "text": "Para escenarios de riesgo elevado, proteccion de personas y mitigacion de danos ante impacto, explosion o eventos extremos.",
+              "href": "/safetyshield/"
+            },
+            {
+              "title": "Privacidad y diseno",
+              "text": "Para oficinas, mamparas, escaparates y espacios donde se necesita privacidad visual, imagen corporativa o decoracion.",
+              "href": "/peliculas-decorativas/"
+            }
+          ]
+        },
+        {
+          "type": "section",
+          "heading": "Antes de instalar, verificamos el vidrio",
+          "text": "La pelicula correcta depende del cristal sobre el que se aplica. Una misma solucion puede comportarse de forma diferente en vidrio simple, doble acristalamiento, vidrio bajo emisivo o superficies expuestas al sol directo.",
+          "cta": {
+            "label": "Solicitar una verificacion",
+            "href": "/presupuesto/"
+          }
+        },
+        {
+          "type": "faq",
+          "items": [
+            {
+              "question": "Que problema puede resolver una pelicula para cristales?",
+              "answer": "Puede reducir calor, deslumbramiento y rayos UV, mejorar la seguridad en caso de rotura, controlar la privacidad o transformar la imagen de un cristal existente."
+            },
+            {
+              "question": "Siempre se puede aplicar una pelicula sobre cualquier vidrio?",
+              "answer": "No. Antes hay que comprobar el tipo de vidrio, la exposicion solar, el estado de la superficie y el resultado esperado."
+            },
+            {
+              "question": "La pelicula sustituye al vidrio de seguridad?",
+              "answer": "Depende del caso. En algunos escenarios puede ayudar a mejorar el comportamiento del vidrio existente, pero la solucion debe verificarse con documentacion tecnica y normativa aplicable."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/servicios/",
+      "type": "page",
+      "title": "Servicios Solaris para cristales existentes",
+      "seo_title": "Servicios de peliculas para cristales | Solaris Films Espana",
+      "meta_description": "Control solar, seguridad, privacidad, diseno y peliculas especiales para cristales existentes. Elige la solucion segun tu necesidad.",
+      "blocks": [
+        {
+          "type": "hero",
+          "heading": "Servicios Solaris para cristales existentes",
+          "text": "Organizamos los servicios por necesidad real: calor, seguridad, privacidad, imagen o proteccion especial."
+        },
+        {
+          "type": "service_grid",
+          "items": [
+            {
+              "title": "Control solar",
+              "text": "Reducir calor, deslumbramiento y radiacion UV en viviendas, oficinas, hoteles y edificios acristalados.",
+              "href": "/peliculas-antisolares/"
+            },
+            {
+              "title": "Seguridad",
+              "text": "Mejorar el comportamiento del vidrio en caso de rotura y reducir el riesgo de fragmentos.",
+              "href": "/peliculas-de-seguridad/"
+            },
+            {
+              "title": "SafetyShield",
+              "text": "Proteccion especial para escenarios de impacto, explosion, vandalismo o eventos extremos.",
+              "href": "/safetyshield/"
+            },
+            {
+              "title": "Privacidad y diseno",
+              "text": "Controlar la visibilidad, integrar imagen corporativa y renovar espacios acristalados sin obra.",
+              "href": "/peliculas-decorativas/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/productos/",
+      "type": "page",
+      "title": "Productos para cada tipo de vidrio y necesidad",
+      "seo_title": "Productos MADICO para cristales | Solaris Films Espana",
+      "meta_description": "Catalogo de peliculas MADICO para control solar, seguridad, SafetyShield, privacidad y diseno.",
+      "blocks": [
+        {
+          "type": "intro",
+          "heading": "Productos para cada tipo de vidrio y necesidad",
+          "text": "El catalogo Solaris no se consulta como una lista de codigos: se interpreta segun objetivo, vidrio, aplicacion interior o exterior y nivel de prestacion esperado."
+        },
+        {
+          "type": "product_families",
+          "items": [
+            "Antisolares sputtered",
+            "Espectro selectivas",
+            "Reflectantes",
+            "Antisolares de seguridad",
+            "Seguridad neutra",
+            "SafetyShield",
+            "Decorativas"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/company-profile/",
+      "type": "page",
+      "title": "Solaris Films Espana",
+      "seo_title": "Company Profile Solaris Films Espana",
+      "meta_description": "Metodo Solaris para peliculas profesionales en cristales existentes: analisis, verificacion, producto adecuado e instalacion documentada.",
+      "blocks": [
+        {
+          "type": "hero",
+          "heading": "Solaris Films Espana",
+          "text": "Solaris Films Espana nace para llevar al mercado espanol un metodo especializado en peliculas profesionales para cristales: analisis del problema, verificacion del vidrio, seleccion del producto y documentacion de la intervencion."
+        },
+        {
+          "type": "section",
+          "heading": "Un metodo orientado al resultado",
+          "text": "La experiencia Solaris se apoya en soluciones profesionales MADICO y en un enfoque pensado para edificios existentes: mejorar confort, seguridad, privacidad y estetica sin sustituir necesariamente el vidrio."
+        }
+      ]
+    },
+    {
+      "path": "/presupuesto/",
+      "type": "page",
+      "title": "Solicita presupuesto para peliculas de cristales",
+      "seo_title": "Presupuesto peliculas para cristales | Solaris Films Espana",
+      "meta_description": "Solicita una valoracion para peliculas solares, de seguridad, privacidad o diseno para cristales existentes.",
+      "blocks": [
+        {
+          "type": "hero",
+          "heading": "Solicita presupuesto para peliculas de cristales",
+          "text": "Para preparar una primera valoracion necesitamos entender el caso real: donde esta el vidrio, que problema quieres resolver, medidas aproximadas, fotos y prioridad de la intervencion."
+        },
+        {
+          "type": "form_spec",
+          "fields": [
+            "Nombre y empresa",
+            "Telefono o WhatsApp",
+            "Email",
+            "Ciudad o zona",
+            "Tipo de espacio",
+            "Necesidad principal",
+            "Medidas aproximadas",
+            "Fotos",
+            "Mensaje"
+          ]
+        }
+      ]
+    },
+    {
+      "path": "/contacto/",
+      "type": "page",
+      "title": "Contacto Solaris Films Espana",
+      "seo_title": "Contacto Solaris Films Espana",
+      "meta_description": "Contacta con Solaris Films Espana para control solar, seguridad, privacidad y peliculas para cristales.",
+      "blocks": [
+        {
+          "type": "hero",
+          "heading": "Contacto Solaris Films Espana",
+          "text": "Cuentanos que ocurre con tus cristales y que resultado necesitas conseguir. Te orientamos hacia la familia de producto adecuada y, si hace falta, revisamos el caso con fotos o visita tecnica."
+        },
+        {
+          "type": "contact_data",
+          "phone": "[TELEFONO_ES]",
+          "whatsapp": "[WHATSAPP_ES]",
+          "email": "[EMAIL_ES]",
+          "address": "[DIRECCION_ES]"
+        }
+      ]
+    },
+    {
+      "path": "/certificado-de-seguridad/",
+      "type": "page",
+      "title": "Certificado de seguridad del vidrio tratado",
+      "seo_title": "Certificado de seguridad del vidrio tratado | Solaris Films Espana",
+      "meta_description": "Pagina de verificacion para cristales tratados con peliculas de seguridad Solaris Films.",
+      "blocks": [
+        {
+          "type": "hero",
+          "heading": "Certificado de seguridad del vidrio tratado",
+          "text": "El QR que has escaneado esta asociado al vidrio tratado. Ese vidrio, antes de la intervencion, no estaba clasificado como vidrio de seguridad. Con la aplicacion de una pelicula de seguridad MADICO instalada por Solaris, el sistema puede quedar documentado segun la clasificacion indicada en el certificado del trabajo."
+        },
+        {
+          "type": "section",
+          "heading": "Como leer la documentacion",
+          "text": "La documentacion debe indicar producto instalado, ubicacion, fecha, clase obtenida y condiciones aplicables. Para vidrio de edificacion se toma como referencia la UNE EN 12600:2003 y, cuando corresponde, los criterios del CTE DB-SUA sobre seguridad frente al impacto."
+        }
+      ]
+    }
+  ],
+  "templates": {
+    "technical_focus": {
+      "fields": [
+        "hero",
+        "problem_to_solve",
+        "when_to_use",
+        "compatible_products",
+        "technical_notes",
+        "faq",
+        "cta"
+      ],
+      "tone": "human_ux_first_no_internal_notes"
+    },
+    "product": {
+      "fields": [
+        "hero",
+        "product_image",
+        "overview",
+        "recommended_context",
+        "technical_data",
+        "physical_properties",
+        "download_sheet",
+        "faq",
+        "cta"
+      ],
+      "tone": "same_as_italian_product_layout_localized"
+    },
+    "local_service": {
+      "fields": [
+        "city_hero",
+        "local_problem",
+        "available_solutions",
+        "how_we_work",
+        "faq",
+        "cta"
+      ],
+      "tone": "local_es_market"
+    },
+    "article": {
+      "fields": [
+        "hero",
+        "intro",
+        "body_sections",
+        "related_links",
+        "faq",
+        "cta"
+      ],
+      "tone": "educational_no_keyword_stuffing"
+    }
+  }
+}

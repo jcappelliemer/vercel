@@ -1,0 +1,448 @@
+const fs = require("fs");
+const path = require("path");
+
+const root = path.resolve(__dirname, "..");
+
+const paths = {
+  payload: path.join(root, "docs", "solaris-es", "solarisfilms-es-wp-import-payload-2026-08-05.json"),
+  seoSummary: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-seo-assets-summary.json"),
+  robotsStaging: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-robots-staging-preview.txt"),
+  robotsProduction: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-robots-production-preview.txt"),
+  sitemapCandidate: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-sitemap-candidate.xml"),
+  urlPreview: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-url-publication-preview.csv"),
+  themeStyle: path.join(root, "wordpress", "solaris-es-theme", "style.css"),
+  themeFunctions: path.join(root, "wordpress", "solaris-es-theme", "functions.php"),
+  themeCss: path.join(root, "wordpress", "solaris-es-theme", "assets", "css", "solaris-es.css"),
+  themeJs: path.join(root, "wordpress", "solaris-es-theme", "assets", "js", "solaris-es.js"),
+  muPlugin: path.join(root, "wordpress", "mu-plugins", "solaris-es-content-types.php"),
+  packageScript: path.join(root, "scripts", "solaris-es-package-wp-kit.js"),
+  importScript: path.join(root, "scripts", "solaris-es-wp-rest-import-drafts.js"),
+  preflightScript: path.join(root, "scripts", "solaris-es-preflight-check.js"),
+  readinessScript: path.join(root, "scripts", "solaris-es-wp-readiness-check.js"),
+  postImportQaScript: path.join(root, "scripts", "solaris-es-post-import-qa.js"),
+  contentQaScript: path.join(root, "scripts", "solaris-es-content-qa.js"),
+  contentQaJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.json"),
+  contentQaCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.csv"),
+  contentQaMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.md"),
+  spanishNormalizerScript: path.join(root, "scripts", "solaris-es-normalize-spanish.js"),
+  spanishNormalizedPayload: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-wp-import-payload-spanish-normalized.json"),
+  spanishNormalizationReport: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.json"),
+  spanishNormalizationCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.csv"),
+  spanishNormalizationMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.md"),
+  spanishNormalizedSeoSummary: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-seo-assets-summary.json"),
+  spanishNormalizedRobotsStaging: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-robots-staging-preview.txt"),
+  spanishNormalizedRobotsProduction: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-robots-production-preview.txt"),
+  spanishNormalizedSitemapCandidate: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-sitemap-candidate.xml"),
+  spanishNormalizedUrlPreview: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-seo", "solarisfilms-es-url-publication-preview.csv"),
+  reviewPacketsScript: path.join(root, "scripts", "solaris-es-build-review-packets.js"),
+  reviewPacketsJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.json"),
+  reviewPacketsCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.csv"),
+  reviewPacketsMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.md"),
+  seoAssetsScript: path.join(root, "scripts", "solaris-es-build-seo-assets.js"),
+  importBatchesScript: path.join(root, "scripts", "solaris-es-build-import-batches.js"),
+  launchConfigScript: path.join(root, "scripts", "solaris-es-apply-launch-config.js"),
+  launchConfigTemplate: path.join(root, "docs", "solaris-es", "solarisfilms-es-launch-config-template-2026-08-05.json"),
+  importBatchesJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-import-batches.json"),
+  importBatchesCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-import-batches.csv"),
+  spanishNormalizedImportBatchesJson: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-import-batches", "solarisfilms-es-import-batches.json"),
+  spanishNormalizedImportBatchesCsv: path.join(root, "docs", "solaris-es", "generated", "spanish-normalized-import-batches", "solarisfilms-es-import-batches.csv"),
+  installKitManifest: path.join(root, "wordpress", "solaris-es-install-kit", "manifest.json")
+};
+
+const forbiddenTerms = [
+  "lcd",
+  "fotocromatic",
+  "tecnosolar",
+  "stratum",
+  "startum",
+  "false-parent",
+  "zoho-callback",
+  "llms-txt",
+  "nt20",
+  "nt35",
+  "nt 20",
+  "nt 35"
+];
+
+const placeholderPattern = /\[[A-Z0-9_]+\]/g;
+
+function parseArgs(argv) {
+  const args = { out: "" };
+  for (let i = 0; i < argv.length; i += 1) {
+    const arg = argv[i];
+    if (arg === "--out") args.out = path.resolve(argv[++i]);
+    else if (arg === "--help") {
+      printHelp();
+      process.exit(0);
+    } else {
+      throw new Error(`Unknown argument: ${arg}`);
+    }
+  }
+  return args;
+}
+
+function printHelp() {
+  console.log(`
+Solaris ES launch gate
+
+Offline consolidated gate:
+  node scripts/solaris-es-launch-gate.js
+
+Write report:
+  node scripts/solaris-es-launch-gate.js --out docs/solaris-es/solarisfilms-es-launch-gate-latest.json
+
+Safety:
+  - Reads local files only.
+  - Does not call WordPress.
+  - Does not publish, deploy, change DNS or robots.
+`);
+}
+
+function rel(file) {
+  return path.relative(root, file).replace(/\\/g, "/");
+}
+
+function exists(file) {
+  return fs.existsSync(file);
+}
+
+function readJson(file) {
+  return JSON.parse(fs.readFileSync(file, "utf8"));
+}
+
+function countBy(items, key) {
+  const counts = {};
+  for (const item of items) {
+    const value = item[key] || "unknown";
+    counts[value] = (counts[value] || 0) + 1;
+  }
+  return counts;
+}
+
+function inspectText(text) {
+  const lower = text.toLowerCase();
+  return {
+    placeholders: [...new Set(text.match(placeholderPattern) || [])],
+    forbidden: forbiddenTerms.filter((term) => lower.includes(term))
+  };
+}
+
+function validateRequiredFiles() {
+  const required = [
+    "payload",
+    "seoSummary",
+    "robotsStaging",
+    "robotsProduction",
+    "sitemapCandidate",
+    "urlPreview",
+    "themeStyle",
+    "themeFunctions",
+    "themeCss",
+    "themeJs",
+    "muPlugin",
+    "packageScript",
+    "importScript",
+    "preflightScript",
+    "readinessScript",
+    "postImportQaScript",
+    "contentQaScript",
+    "contentQaJson",
+    "contentQaCsv",
+    "contentQaMd",
+    "spanishNormalizerScript",
+    "spanishNormalizedPayload",
+    "spanishNormalizationReport",
+    "spanishNormalizationCsv",
+    "spanishNormalizationMd",
+    "spanishNormalizedSeoSummary",
+    "spanishNormalizedRobotsStaging",
+    "spanishNormalizedRobotsProduction",
+    "spanishNormalizedSitemapCandidate",
+    "spanishNormalizedUrlPreview",
+    "reviewPacketsScript",
+    "reviewPacketsJson",
+    "reviewPacketsCsv",
+    "reviewPacketsMd",
+    "seoAssetsScript",
+    "importBatchesScript",
+    "launchConfigScript",
+    "launchConfigTemplate",
+    "importBatchesJson",
+    "importBatchesCsv",
+    "spanishNormalizedImportBatchesJson",
+    "spanishNormalizedImportBatchesCsv"
+  ];
+
+  return required.map((key) => ({
+    key,
+    path: rel(paths[key]),
+    exists: exists(paths[key])
+  }));
+}
+
+function validatePayload(payload) {
+  const items = Array.isArray(payload.items) ? payload.items : [];
+  const itemIssues = [];
+
+  for (const item of items) {
+    const findings = inspectText(JSON.stringify(item));
+    const issues = [];
+    if (!item.path || !item.path.startsWith("/")) issues.push("invalid_path");
+    if (!item.post_title) issues.push("missing_title");
+    if (!item.post_name) issues.push("missing_slug");
+    if (!item.target_post_type) issues.push("missing_post_type");
+    if (!item.post_content_html || !item.post_content_html.trim()) issues.push("missing_content");
+    if (findings.placeholders.length) issues.push("placeholder_present");
+    if (findings.forbidden.length) issues.push("forbidden_term_present");
+    if (item.post_status !== "draft") issues.push("post_status_not_draft");
+    if (item.publish_blocked_until_review !== true) issues.push("publish_guard_missing");
+
+    if (issues.length) {
+      itemIssues.push({
+        path: item.path,
+        issues,
+        placeholders: findings.placeholders,
+        forbidden: findings.forbidden
+      });
+    }
+  }
+
+  return {
+    total: items.length,
+    by_post_type: countBy(items, "target_post_type"),
+    by_review_gate: countBy(items, "review_gate"),
+    by_content_source: countBy(items, "content_source"),
+    draft_import_ready: items.filter((item) => item.draft_import_ready === true).length,
+    publish_blocked_until_review: items.filter((item) => item.publish_blocked_until_review === true).length,
+    item_issues: itemIssues
+  };
+}
+
+function validateSeoAssets(summary, assetPaths = {
+  robotsStaging: paths.robotsStaging,
+  robotsProduction: paths.robotsProduction,
+  sitemapCandidate: paths.sitemapCandidate
+}) {
+  const stagingRobots = exists(assetPaths.robotsStaging) ? fs.readFileSync(assetPaths.robotsStaging, "utf8") : "";
+  const productionRobots = exists(assetPaths.robotsProduction) ? fs.readFileSync(assetPaths.robotsProduction, "utf8") : "";
+  const sitemap = exists(assetPaths.sitemapCandidate) ? fs.readFileSync(assetPaths.sitemapCandidate, "utf8") : "";
+
+  const issues = [];
+  if (!/Disallow:\s*\//i.test(stagingRobots)) issues.push("staging_robots_not_blocking");
+  if (!/Allow:\s*\//i.test(productionRobots)) issues.push("production_robots_not_allowing");
+  if (!/Sitemap:\s*https:\/\/www\.solarisfilms\.es\/sitemap\.xml/i.test(productionRobots)) issues.push("production_robots_missing_sitemap");
+  if (/solarisfilms\.it/i.test(sitemap)) issues.push("sitemap_references_it_domain");
+  if (/\/contacto\/<\/loc>/i.test(sitemap)) issues.push("sitemap_includes_placeholder_contact_page");
+
+  return {
+    total: summary.total,
+    sitemap_candidate_urls: summary.sitemap_candidate_urls,
+    machine_blocked_urls: summary.machine_blocked_urls,
+    publish_blocked_until_review: summary.publish_blocked_until_review,
+    blockers: summary.blockers || [],
+    issues
+  };
+}
+
+function validateNormalizedImportBatches() {
+  if (!exists(paths.spanishNormalizedImportBatchesJson)) {
+    return {
+      generated: false,
+      path: rel(paths.spanishNormalizedImportBatchesJson),
+      issues: ["spanish_normalized_import_batches_not_generated"]
+    };
+  }
+
+  const report = readJson(paths.spanishNormalizedImportBatchesJson);
+  const summary = report.summary || {};
+  const fullDraftTotal = summary.full_draft_import ? summary.full_draft_import.total : 0;
+  const issues = [];
+  if (fullDraftTotal !== 78) issues.push("spanish_normalized_full_draft_total_unexpected");
+
+  return {
+    generated: true,
+    path: rel(paths.spanishNormalizedImportBatchesJson),
+    summary,
+    issues
+  };
+}
+
+function validateInstallKit() {
+  if (!exists(paths.installKitManifest)) {
+    return {
+      generated: false,
+      path: rel(paths.installKitManifest),
+      files: 0,
+      issues: ["install_kit_not_generated"]
+    };
+  }
+
+  const manifest = readJson(paths.installKitManifest);
+  const files = Array.isArray(manifest.files) ? manifest.files : [];
+  const issues = [];
+  if (!manifest.includes || !manifest.includes.theme) issues.push("install_kit_missing_theme_entry");
+  if (!manifest.includes || !manifest.includes.mu_plugin) issues.push("install_kit_missing_mu_plugin_entry");
+
+  return {
+    generated: true,
+    path: rel(paths.installKitManifest),
+    files: files.length,
+    issues
+  };
+}
+
+function validateContentQa() {
+  if (!exists(paths.contentQaJson)) {
+    return {
+      generated: false,
+      path: rel(paths.contentQaJson),
+      issues: ["content_qa_report_not_generated"]
+    };
+  }
+
+  const report = readJson(paths.contentQaJson);
+  const summary = report.summary || {};
+  const issues = [];
+  if ((summary.error_count || 0) > 0) issues.push("content_qa_errors_present");
+
+  return {
+    generated: true,
+    path: rel(paths.contentQaJson),
+    summary,
+    issues
+  };
+}
+
+function validateSpanishNormalization() {
+  if (!exists(paths.spanishNormalizationReport) || !exists(paths.spanishNormalizedPayload)) {
+    return {
+      generated: false,
+      path: rel(paths.spanishNormalizationReport),
+      issues: ["spanish_normalization_not_generated"]
+    };
+  }
+
+  const report = readJson(paths.spanishNormalizationReport);
+  const payload = readJson(paths.spanishNormalizedPayload);
+  const issues = [];
+  if (!Array.isArray(payload.items) || payload.items.length !== 78) issues.push("spanish_normalized_payload_total_unexpected");
+  if (!report.summary || (report.summary.total_replacements || 0) === 0) issues.push("spanish_normalization_no_replacements");
+
+  return {
+    generated: true,
+    path: rel(paths.spanishNormalizationReport),
+    summary: report.summary || {},
+    issues
+  };
+}
+
+function validateReviewPackets() {
+  if (!exists(paths.reviewPacketsJson)) {
+    return {
+      generated: false,
+      path: rel(paths.reviewPacketsJson),
+      issues: ["review_packets_not_generated"]
+    };
+  }
+
+  const report = readJson(paths.reviewPacketsJson);
+  const summary = report.summary || {};
+  const issues = [];
+  if ((summary.total || 0) !== 78) issues.push("review_packets_total_unexpected");
+
+  return {
+    generated: true,
+    path: rel(paths.reviewPacketsJson),
+    summary,
+    issues
+  };
+}
+
+function main() {
+  const args = parseArgs(process.argv.slice(2));
+  const requiredFiles = validateRequiredFiles();
+  const missingRequiredFiles = requiredFiles.filter((file) => !file.exists);
+  const payload = exists(paths.payload) ? readJson(paths.payload) : { items: [] };
+  const seoSummary = exists(paths.seoSummary) ? readJson(paths.seoSummary) : {};
+  const spanishNormalizedSeoSummary = exists(paths.spanishNormalizedSeoSummary) ? readJson(paths.spanishNormalizedSeoSummary) : {};
+
+  const payloadGate = validatePayload(payload);
+  const seoGate = validateSeoAssets(seoSummary);
+  const spanishNormalizedSeoGate = validateSeoAssets(spanishNormalizedSeoSummary, {
+    robotsStaging: paths.spanishNormalizedRobotsStaging,
+    robotsProduction: paths.spanishNormalizedRobotsProduction,
+    sitemapCandidate: paths.spanishNormalizedSitemapCandidate
+  });
+  const installKit = validateInstallKit();
+  const contentQa = validateContentQa();
+  const spanishNormalization = validateSpanishNormalization();
+  const spanishNormalizedImportBatches = validateNormalizedImportBatches();
+  const reviewPackets = validateReviewPackets();
+
+  const repoBlockers = [];
+  if (missingRequiredFiles.length) repoBlockers.push("required_files_missing");
+  if (payloadGate.total !== 78) repoBlockers.push("payload_total_unexpected");
+  if (payloadGate.draft_import_ready !== payloadGate.total) repoBlockers.push("payload_not_all_import_ready");
+  if (payloadGate.item_issues.some((item) => item.issues.includes("forbidden_term_present"))) repoBlockers.push("payload_forbidden_terms_present");
+  if (seoGate.issues.length) repoBlockers.push("seo_preview_invalid");
+
+  const launchBlockers = [];
+  if (payloadGate.item_issues.length) launchBlockers.push("payload_item_issues_present");
+  if (seoGate.machine_blocked_urls > 0) launchBlockers.push("seo_machine_blocked_urls_present");
+  if (seoGate.publish_blocked_until_review > 0) launchBlockers.push("manual_review_not_cleared");
+  if (!installKit.generated) launchBlockers.push("install_kit_not_generated");
+  if (installKit.issues.length) launchBlockers.push("install_kit_issues_present");
+  if (!contentQa.generated) launchBlockers.push("content_qa_not_generated");
+  if (contentQa.issues.length) launchBlockers.push("content_qa_issues_present");
+  if (!spanishNormalization.generated) launchBlockers.push("spanish_normalization_not_generated");
+  if (spanishNormalization.issues.length) launchBlockers.push("spanish_normalization_issues_present");
+  if (spanishNormalizedSeoGate.issues.length) launchBlockers.push("spanish_normalized_seo_preview_invalid");
+  if (!spanishNormalizedImportBatches.generated) launchBlockers.push("spanish_normalized_import_batches_not_generated");
+  if (spanishNormalizedImportBatches.issues.length) launchBlockers.push("spanish_normalized_import_batches_issues_present");
+  if (!reviewPackets.generated) launchBlockers.push("review_packets_not_generated");
+  if (reviewPackets.issues.length) launchBlockers.push("review_packets_issues_present");
+  launchBlockers.push("domain_wp_https_preflight_required");
+  launchBlockers.push("wordpress_readiness_required");
+  launchBlockers.push("live_post_import_qa_required");
+
+  const report = {
+    checked_at: new Date().toISOString(),
+    repo_ready: repoBlockers.length === 0,
+    launch_ready: launchBlockers.length === 0,
+    required_files: requiredFiles,
+    payload: payloadGate,
+    seo_assets: seoGate,
+    spanish_normalized_seo_assets: spanishNormalizedSeoGate,
+    content_qa: contentQa,
+    spanish_normalization: spanishNormalization,
+    spanish_normalized_import_batches: spanishNormalizedImportBatches,
+    review_packets: reviewPackets,
+    install_kit: installKit,
+    repo_blockers: repoBlockers,
+    launch_blockers: launchBlockers,
+    next_commands_when_wp_is_ready: [
+      "Copy-Item docs/solaris-es/solarisfilms-es-launch-config-template-2026-08-05.json docs/solaris-es/solarisfilms-es-launch-config.local.json",
+      "node scripts/solaris-es-apply-launch-config.js --config docs/solaris-es/solarisfilms-es-launch-config.local.json",
+      "node scripts/solaris-es-normalize-spanish.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json",
+      "node scripts/solaris-es-build-seo-assets.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs/solaris-es/generated/spanish-normalized-seo",
+      "node scripts/solaris-es-build-import-batches.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs/solaris-es/generated/spanish-normalized-import-batches",
+      "node scripts/solaris-es-preflight-check.js",
+      "node scripts/solaris-es-wp-readiness-check.js",
+      "node scripts/solaris-es-content-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs/solaris-es/generated/spanish-normalized-qa --fail-on-error",
+      "node scripts/solaris-es-build-review-packets.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --qa docs/solaris-es/generated/spanish-normalized-qa/solarisfilms-es-content-qa-report.json",
+      "node scripts/solaris-es-post-import-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json",
+      "node scripts/solaris-es-wp-rest-import-drafts.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --apply --type page --limit 2",
+      "node scripts/solaris-es-post-import-qa.js --live --base https://www.solarisfilms.es"
+    ]
+  };
+
+  if (args.out) {
+    fs.mkdirSync(path.dirname(args.out), { recursive: true });
+    fs.writeFileSync(args.out, `${JSON.stringify(report, null, 2)}\n`);
+  }
+
+  console.log(JSON.stringify(report, null, 2));
+  if (!report.repo_ready) process.exitCode = 1;
+}
+
+main();

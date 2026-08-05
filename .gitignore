@@ -75,3 +75,8 @@ refresh-scroll*.png
 *.pack
 *.deb
 *.dylib
+wordpress/solaris-es-install-kit/
+
+# Solaris ES local launch configuration
+docs/solaris-es/solarisfilms-es-launch-config.local.json
+docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json

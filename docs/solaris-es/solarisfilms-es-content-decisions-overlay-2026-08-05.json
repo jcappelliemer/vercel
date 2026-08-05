@@ -1,0 +1,60 @@
+{
+  "status": "draft_overlay_no_publish",
+  "created_at": "2026-08-05",
+  "purpose": "Known decisions to apply when regenerating Solarisfilms.es copy/payloads.",
+  "company": {
+    "legal_name": "Solaris Code SL",
+    "legal_status": "to_be_incorporated",
+    "commercial_name": "solarisfilms",
+    "publish_legal_name": false,
+    "notes": "Use solarisfilms as commercial brand in drafts. Do not publish Solaris Code SL as definitive legal data until incorporation is confirmed."
+  },
+  "contacts": {
+    "email": "info@solarisfilms.es",
+    "phone": null,
+    "whatsapp": null,
+    "public_contact_status": "partial",
+    "notes": "Phone and WhatsApp remain blocking placeholders."
+  },
+  "market": {
+    "phase_1": "Canarias",
+    "phase_2": "Espana",
+    "local_page_priority": [
+      "Tenerife",
+      "Adeje",
+      "Costa Adeje",
+      "Los Cristianos",
+      "Canarias"
+    ],
+    "notes": "Copy can say Canarias first, then Spain as expansion direction. Avoid promising national execution until operations are confirmed."
+  },
+  "crm": {
+    "tenant": "solarisfilms-es",
+    "platform": "filmops.app",
+    "status": "created_public_forms_configured_pending_public_ui_i18n",
+    "tenant_url": "https://solarisfilm-es.app.filmops.app/",
+    "lead_separation": "separate_from_italy",
+    "public_forms": {
+      "quote_request": "https://solarisfilm-es.app.filmops.app/forms/film-quote-request",
+      "site_survey": "https://solarisfilm-es.app.filmops.app/forms/site-survey-request",
+      "billing_profile": "https://solarisfilm-es.app.filmops.app/forms/billing-profile"
+    },
+    "notes": "Form fields are configured in Spanish. Public form shell still has app-level Italian strings; FilmOps agent owns that fix."
+  },
+  "catalog": {
+    "initial_scope": "all_products",
+    "product_count_expected": 21,
+    "publish_status": "blocked_until_technical_sheet_review"
+  },
+  "legal": {
+    "status": "research_ready_needs_validation",
+    "references": [
+      "UNE-EN 12600:2003",
+      "CTE DB-SUA",
+      "DA DB-SUA / 1",
+      "Real Decreto 486/1997",
+      "Real Decreto 488/1997"
+    ],
+    "notes": "Use cautious language. Do not claim automatic compliance or universal certification."
+  }
+}

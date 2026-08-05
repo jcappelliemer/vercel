@@ -1,0 +1,42 @@
+{
+  "generated_at": "2026-08-05T13:48:51.849Z",
+  "base": "https://www.solarisfilms.es",
+  "payload": "docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json",
+  "total": 78,
+  "sitemap_candidate_urls": 77,
+  "machine_blocked_urls": 1,
+  "publish_blocked_until_review": 78,
+  "by_post_type": {
+    "page": 23,
+    "producto": 21,
+    "pagina_info": 10,
+    "servicio_local": 14,
+    "articulo": 10
+  },
+  "by_review_gate": {
+    "legal_data": 2,
+    "copy_review": 25,
+    "form_crm": 1,
+    "contact_data": 1,
+    "legal_review": 13,
+    "commercial_review": 2,
+    "technical_sheet": 20,
+    "local_review": 14
+  },
+  "blockers": [
+    {
+      "path": "/contacto/",
+      "reasons": [
+        "placeholder_present"
+      ],
+      "placeholders": [
+        "[TELEFONO_ES]",
+        "[WHATSAPP_ES]",
+        "[EMAIL_ES]",
+        "[DIRECCION_ES]"
+      ],
+      "forbidden": []
+    }
+  ],
+  "note": "Preview only. Do not upload robots or sitemap before QA and manual publish approval."
+}

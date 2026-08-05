@@ -1,0 +1,134 @@
+severity,code,path,target_post_type,title,detail,values
+warning,thin_content_review,/servicios/,page,Servicios Solaris para cristales existentes,Contenuto breve per il tipo page; soglia 120 parole.,words:84
+warning,thin_content_review,/productos/,page,Productos para cada tipo de vidrio y necesidad,Contenuto breve per il tipo page; soglia 120 parole.,words:48
+warning,thin_content_review,/company-profile/,page,Solaris Films España,Contenuto breve per il tipo page; soglia 120 parole.,words:67
+warning,thin_content_review,/presupuesto/,page,Solicita presupuesto para películas de cristales,Contenuto breve per il tipo page; soglia 120 parole.,words:57
+error,placeholder_present,/contacto/,page,Contacto Solaris Films España,La pagina contiene placeholder non pubblicabili.,[DIRECCION_ES]|[EMAIL_ES]|[TELEFONO_ES]|[WHATSAPP_ES]
+warning,thin_content_review,/contacto/,page,Contacto Solaris Films España,Contenuto breve per il tipo page; soglia 120 parole.,words:42
+info,template_generated_review,/lo-sabias/,page,Lo sabias?,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/certificado-de-seguridad/,page,Certificado de seguridad del vidrio tratado,Contenuto breve per il tipo page; soglia 120 parole.,words:98
+info,template_generated_review,/peliculas-antisolares/,page,Películas antisolares para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-antisolares-sputtered/,page,Películas antisolares sputtered,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-antisolares-sunscape/,page,Películas antisolares Sunscape,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-reflectantes/,page,Películas reflectantes para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-espectro-selectivas/,page,Películas espectro selectivas,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-de-seguridad/,page,Películas de seguridad para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-de-seguridad-neutras-serie-cl/,page,Películas de seguridad neutras serie CL,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-antisolares-de-seguridad-serie-rs/,page,Películas antisolares de seguridad serie RS,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/safetyshield/,page,Madico SafetyShield y sistemas de anclaje,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-decorativas/,page,Películas decorativas para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-decorativas-privacidad/,page,Películas decorativas para privacidad,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-antisolares-imprimibles-y-vetrofanias/,page,Películas imprimibles y vetrofanias,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-antigraffiti/,page,Películas antigraffiti para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-termoaislantes/,page,Películas termoaislantes para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+info,template_generated_review,/peliculas-oscurantes-para-cristales/,page,Películas oscurantes para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/vetrofanias/,producto,Vetrofanias,Contenuto breve per il tipo producto; soglia 180 parole.,words:145
+info,template_generated_review,/productos/vetrofanias/,producto,Vetrofanias,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-mt-200-xw/,producto,Madico MT 200 XW,Contenuto breve per il tipo producto; soglia 180 parole.,words:154
+info,template_generated_review,/productos/madico-mt-200-xw/,producto,Madico MT 200 XW,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-gullwing/,producto,Sistema de anclaje GullWing,Contenuto breve per il tipo producto; soglia 180 parole.,words:159
+info,template_generated_review,/productos/madico-gullwing/,producto,Sistema de anclaje GullWing,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-safetyshield-1500/,producto,Madico SafetyShield 1500,Contenuto breve per il tipo producto; soglia 180 parole.,words:167
+info,template_generated_review,/productos/madico-safetyshield-1500/,producto,Madico SafetyShield 1500,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-safetyshield-800/,producto,Madico SafetyShield 800,Contenuto breve per il tipo producto; soglia 180 parole.,words:167
+info,template_generated_review,/productos/madico-safetyshield-800/,producto,Madico SafetyShield 800,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-cl-700-e-ps-sr/,producto,Madico CL 700 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:165
+info,template_generated_review,/productos/madico-cl-700-e-ps-sr/,producto,Madico CL 700 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-cl-700-ps-sr/,producto,Madico CL 700 PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:162
+info,template_generated_review,/productos/madico-cl-700-ps-sr/,producto,Madico CL 700 PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-cl-400-e-ps-sr/,producto,Madico CL 400 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:165
+info,template_generated_review,/productos/madico-cl-400-e-ps-sr/,producto,Madico CL 400 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-cl-400-ps-sr/,producto,Madico CL 400 PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:162
+info,template_generated_review,/productos/madico-cl-400-ps-sr/,producto,Madico CL 400 PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-rs-40-ps-sr-8mil/,producto,Madico RS 40 PS SR 8 Mil,Contenuto breve per il tipo producto; soglia 180 parole.,words:170
+info,template_generated_review,/productos/madico-rs-40-ps-sr-8mil/,producto,Madico RS 40 PS SR 8 Mil,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-rs-40-ps-sr-4mil/,producto,Madico RS 40 PS SR 4 Mil,Contenuto breve per il tipo producto; soglia 180 parole.,words:170
+info,template_generated_review,/productos/madico-rs-40-ps-sr-4mil/,producto,Madico RS 40 PS SR 4 Mil,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-rs-20-ps-sr-8mil/,producto,Madico RS 20 PS SR 8 Mil,Contenuto breve per il tipo producto; soglia 180 parole.,words:170
+info,template_generated_review,/productos/madico-rs-20-ps-sr-8mil/,producto,Madico RS 20 PS SR 8 Mil,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-rs-20-ps-sr-4mil/,producto,Madico RS 20 PS SR 4 Mil,Contenuto breve per il tipo producto; soglia 180 parole.,words:170
+info,template_generated_review,/productos/madico-rs-20-ps-sr-4mil/,producto,Madico RS 20 PS SR 4 Mil,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-rs-40-e-ps-sr/,producto,Madico RS 40 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:167
+info,template_generated_review,/productos/madico-rs-40-e-ps-sr/,producto,Madico RS 40 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-rs-30-e-ps-sr/,producto,Madico RS 30 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:167
+info,template_generated_review,/productos/madico-rs-30-e-ps-sr/,producto,Madico RS 30 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-rs-20-e-ps-sr/,producto,Madico RS 20 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:167
+info,template_generated_review,/productos/madico-rs-20-e-ps-sr/,producto,Madico RS 20 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/ssn-70-te-sr/,producto,SSN 70 TE SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:151
+info,template_generated_review,/productos/ssn-70-te-sr/,producto,SSN 70 TE SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-sl-8-e-ps-sr/,producto,Madico SL 8 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:172
+info,template_generated_review,/productos/madico-sl-8-e-ps-sr/,producto,Madico SL 8 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-sg-20-e-ps-sr/,producto,Madico SG 20 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:172
+info,template_generated_review,/productos/madico-sg-20-e-ps-sr/,producto,Madico SG 20 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-sb-35-e-ps-sr/,producto,Madico SB 35 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:172
+info,template_generated_review,/productos/madico-sb-35-e-ps-sr/,producto,Madico SB 35 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/productos/madico-sb-20-e-ps-sr/,producto,Madico SB 20 E PS SR,Contenuto breve per il tipo producto; soglia 180 parole.,words:172
+info,template_generated_review,/productos/madico-sb-20-e-ps-sr/,producto,Madico SB 20 E PS SR,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/normativa-y-seguridad/,pagina_info,Normativa y seguridad de cristales,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:121
+info,template_generated_review,/info/normativa-y-seguridad/,pagina_info,Normativa y seguridad de cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/seguridad-conforme-a-la-ley/,pagina_info,Seguridad de cristales y documentacion técnica,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:122
+info,template_generated_review,/info/seguridad-conforme-a-la-ley/,pagina_info,Seguridad de cristales y documentacion técnica,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/garantias/,pagina_info,Garantías de películas para cristales,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:101
+info,template_generated_review,/info/garantias/,pagina_info,Garantías de películas para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/certificacion-nfrc/,pagina_info,Certificación NFRC,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:98
+info,template_generated_review,/info/certificacion-nfrc/,pagina_info,Certificación NFRC,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/puntos-fuertes/,pagina_info,Puntos fuertes de las películas profesionales,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:102
+info,template_generated_review,/info/puntos-fuertes/,pagina_info,Puntos fuertes de las películas profesionales,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/instrucciones-y-mantenimiento/,pagina_info,Instrucciones y mantenimiento,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:99
+info,template_generated_review,/info/instrucciones-y-mantenimiento/,pagina_info,Instrucciones y mantenimiento,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/norma-brc/,pagina_info,Norma BRC y protección de superficies acristaladas,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:123
+info,template_generated_review,/info/norma-brc/,pagina_info,Norma BRC y protección de superficies acristaladas,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/sistemas-filtrantes/,pagina_info,Sistemas filtrantes y control solar,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:121
+info,template_generated_review,/info/sistemas-filtrantes/,pagina_info,Sistemas filtrantes y control solar,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/seguridad-y-salud-en-el-trabajo/,pagina_info,Seguridad y salud en el trabajo,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:122
+info,template_generated_review,/info/seguridad-y-salud-en-el-trabajo/,pagina_info,Seguridad y salud en el trabajo,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/info/glosario/,pagina_info,Glosario de películas para cristales,Contenuto breve per il tipo pagina_info; soglia 160 parole.,words:101
+info,template_generated_review,/info/glosario/,pagina_info,Glosario de películas para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-tenerife/,servicio_local,Películas para cristales Tenerife,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-tenerife/,servicio_local,Películas para cristales Tenerife,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-adeje/,servicio_local,Películas para cristales Adeje,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-adeje/,servicio_local,Películas para cristales Adeje,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-costa-adeje/,servicio_local,Películas para cristales Costa Adeje,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:126
+info,template_generated_review,/servicio-local/peliculas-para-cristales-costa-adeje/,servicio_local,Películas para cristales Costa Adeje,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-los-cristianos/,servicio_local,Películas para cristales Los Cristianos,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:126
+info,template_generated_review,/servicio-local/peliculas-para-cristales-los-cristianos/,servicio_local,Películas para cristales Los Cristianos,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-arona/,servicio_local,Películas para cristales Arona,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-arona/,servicio_local,Películas para cristales Arona,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/,servicio_local,Películas para cristales Santa Cruz de Tenerife,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:136
+info,template_generated_review,/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/,servicio_local,Películas para cristales Santa Cruz de Tenerife,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-la-laguna/,servicio_local,Películas para cristales La Laguna,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:126
+info,template_generated_review,/servicio-local/peliculas-para-cristales-la-laguna/,servicio_local,Películas para cristales La Laguna,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-las-palmas/,servicio_local,Películas para cristales Las Palmas,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:126
+info,template_generated_review,/servicio-local/peliculas-para-cristales-las-palmas/,servicio_local,Películas para cristales Las Palmas,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-canarias/,servicio_local,Películas para cristales Canarias,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-canarias/,servicio_local,Películas para cristales Canarias,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-madrid/,servicio_local,Películas para cristales Madrid,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-madrid/,servicio_local,Películas para cristales Madrid,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-barcelona/,servicio_local,Películas para cristales Barcelona,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-barcelona/,servicio_local,Películas para cristales Barcelona,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-valencia/,servicio_local,Películas para cristales Valencia,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-valencia/,servicio_local,Películas para cristales Valencia,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-malaga/,servicio_local,Películas para cristales Malaga,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-malaga/,servicio_local,Películas para cristales Malaga,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/servicio-local/peliculas-para-cristales-sevilla/,servicio_local,Películas para cristales Sevilla,Contenuto breve per il tipo servicio_local; soglia 140 parole.,words:121
+info,template_generated_review,/servicio-local/peliculas-para-cristales-sevilla/,servicio_local,Películas para cristales Sevilla,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/peliculas-para-cristales-interior-o-exterior/,articulo,Películas para cristales interior o exterior,Contenuto breve per il tipo articulo; soglia 180 parole.,words:124
+info,template_generated_review,/lo-sabias/peliculas-para-cristales-interior-o-exterior/,articulo,Películas para cristales interior o exterior,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/,articulo,Pelicula privacidad vs vidrio satinado,Contenuto breve per il tipo articulo; soglia 180 parole.,words:122
+info,template_generated_review,/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/,articulo,Pelicula privacidad vs vidrio satinado,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/como-reducir-calor-cristaleras/,articulo,Como reducir calor en cristaleras,Contenuto breve per il tipo articulo; soglia 180 parole.,words:122
+info,template_generated_review,/lo-sabias/como-reducir-calor-cristaleras/,articulo,Como reducir calor en cristaleras,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/peliculas-de-seguridad-une-en-12600/,articulo,Películas de seguridad y UNE EN 12600,Contenuto breve per il tipo articulo; soglia 180 parole.,words:127
+info,template_generated_review,/lo-sabias/peliculas-de-seguridad-une-en-12600/,articulo,Películas de seguridad y UNE EN 12600,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/,articulo,Películas espectro selectivas vs reflectantes,Contenuto breve per il tipo articulo; soglia 180 parole.,words:121
+info,template_generated_review,/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/,articulo,Películas espectro selectivas vs reflectantes,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/mantenimiento-peliculas-para-cristales/,articulo,Mantenimiento de películas para cristales,Contenuto breve per il tipo articulo; soglia 180 parole.,words:121
+info,template_generated_review,/lo-sabias/mantenimiento-peliculas-para-cristales/,articulo,Mantenimiento de películas para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/,articulo,Películas anti UV vs cortinas interiores,Contenuto breve per il tipo articulo; soglia 180 parole.,words:122
+info,template_generated_review,/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/,articulo,Películas anti UV vs cortinas interiores,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/cuanto-dura-una-pelicula-para-cristales/,articulo,Cuanto dura una pelicula para cristales,Contenuto breve per il tipo articulo; soglia 180 parole.,words:121
+info,template_generated_review,/lo-sabias/cuanto-dura-una-pelicula-para-cristales/,articulo,Cuanto dura una pelicula para cristales,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/peliculas-antigraffiti-para-escaparates/,articulo,Películas antigraffiti para escaparates,Contenuto breve per il tipo articulo; soglia 180 parole.,words:119
+info,template_generated_review,/lo-sabias/peliculas-antigraffiti-para-escaparates/,articulo,Películas antigraffiti para escaparates,Bozza generata da template: richiede revisione umana prima del publish.,
+warning,thin_content_review,/lo-sabias/peliculas-safetyshield-para-cristales/,articulo,Películas SafetyShield para cristales,Contenuto breve per il tipo articulo; soglia 180 parole.,words:121
+info,template_generated_review,/lo-sabias/peliculas-safetyshield-para-cristales/,articulo,Películas SafetyShield para cristales,Bozza generata da template: richiede revisione umana prima del publish.,

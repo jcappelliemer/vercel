@@ -1,0 +1,22 @@
+{
+  "company": {
+    "legal_name": "Solaris Code SL",
+    "commercial_name": "Solaris Films",
+    "tax_id": "",
+    "address": "",
+    "city": "",
+    "province": "Santa Cruz de Tenerife",
+    "country": "Espana"
+  },
+  "contacts": {
+    "email": "info@solarisfilms.es",
+    "phone": "",
+    "whatsapp": "",
+    "address_public": "",
+    "service_area": "Canarias y Espana"
+  },
+  "crm": {
+    "tenant": "solaris-es",
+    "base_url": "https://crm.solarisfilms.es"
+  }
+}

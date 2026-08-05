@@ -280,6 +280,23 @@ Obbligatorio:
 - controllo pagine prodotto;
 - controllo footer e contatti.
 
+Gate consolidato offline:
+
+```powershell
+node scripts\solaris-es-launch-gate.js
+```
+
+Il gate distingue:
+
+- `repo_ready`: file, payload, tema, mu-plugin, asset SEO e tooling sono presenti e coerenti;
+- `launch_ready`: sito effettivamente pubblicabile. Deve restare `false` finche non sono chiusi dominio, HTTPS, WordPress, contatti, review e QA live.
+
+Per salvare un report:
+
+```powershell
+node scripts\solaris-es-launch-gate.js --out docs\solaris-es\solarisfilms-es-launch-gate-latest.json
+```
+
 Asset SEO preview:
 
 ```powershell

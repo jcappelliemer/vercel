@@ -60,14 +60,14 @@ Decisione ricevuta:
 
 ## Form e CRM
 
-La pagina `/presupuesto/` resta bloccata finche il flusso lead non e chiaro.
+La pagina `/presupuesto/` puo usare il form preventivo FilmOps gia creato. Restano bloccanti privacy, telefono/WhatsApp e fix della cornice pubblica del form.
 
 | Punto | Decisione richiesta |
 | --- | --- |
-| Endpoint form |  |
+| Endpoint form | `https://solarisfilm-es.app.filmops.app/forms/film-quote-request` |
 | Destinatari email |  |
-| CRM usato |  |
-| Lead separati da Italia? |  |
+| CRM usato | `Solaris Film Espana CRM` su `https://solarisfilm-es.app.filmops.app/` |
+| Lead separati da Italia? | Si, tenant separato |
 | Campo paese obbligatorio? |  |
 | Consenso privacy |  |
 | Marker test eliminabili |  |
@@ -75,8 +75,10 @@ La pagina `/presupuesto/` resta bloccata finche il flusso lead non e chiaro.
 
 Decisione ricevuta:
 
-- creare un nuovo tenant su `filmops.app`;
-- mantenere separato il flusso lead `.es` dal flusso Italia.
+- tenant FilmOps `.es` creato;
+- mantenere separato il flusso lead `.es` dal flusso Italia;
+- form preventivo, visita tecnica e ficha cliente configurati;
+- correggere lato app FilmOps le stringhe pubbliche ancora in italiano.
 
 ## Revisione normativa
 

@@ -1,11 +1,11 @@
 # Solarisfilms.es - Specifica tenant FilmOps
 
 Data: 2026-08-05  
-Stato: specifica preparatoria. Nessun tenant creato da questo documento.
+Stato: tenant creato e form pubblici configurati. Restano da completare dominio CRM, telefono/WhatsApp, privacy e i18n applicativa della cornice pubblica.
 
 ## Obiettivo
 
-Creare un tenant separato su `filmops.app` per gestire i lead di `solarisfilms.es` senza mischiarli con il flusso Italia.
+Usare un tenant separato su `filmops.app` per gestire i lead di `solarisfilms.es` senza mischiarli con il flusso Italia.
 
 Il tenant `.es` deve supportare:
 
@@ -24,6 +24,23 @@ Il tenant `.es` deve supportare:
 - Email pubblica: `info@solarisfilms.es`.
 - Area: Canarie come partenza, poi Spagna.
 - Catalogo: tutti i prodotti.
+
+## Stato operativo aggiornato
+
+| Punto | Stato |
+| --- | --- |
+| Tenant FilmOps | Creato |
+| URL tenant | `https://solarisfilm-es.app.filmops.app/` |
+| Nome CRM | `Solaris Film Espana CRM` |
+| Form preventivo | Configurato |
+| Form visita tecnica | Configurato |
+| Form ficha cliente | Configurato |
+| Dominio CRM | `crm.solarisfilms.es` in configurazione esterna |
+| Lingua cornice form pubblica | Da correggere lato app FilmOps |
+
+Documento operativo collegato:
+
+- `docs/solaris-es/solarisfilms-es-crm-integration-map-2026-08-05.md`
 
 ## Nome tenant consigliato
 
@@ -44,7 +61,9 @@ Scelta consigliata: `solarisfilms-es`, per lasciare il tenant legato al dominio 
 
 | Canale | Stato | Note |
 | --- | --- | --- |
-| Form preventivo sito | Da creare | `/presupuesto/` |
+| Form preventivo sito | Creato | `https://solarisfilm-es.app.filmops.app/forms/film-quote-request` |
+| Form visita tecnica | Creato | `https://solarisfilm-es.app.filmops.app/forms/site-survey-request` |
+| Form ficha cliente | Creato | `https://solarisfilm-es.app.filmops.app/forms/billing-profile`, usare dopo qualifica |
 | WhatsApp | Numero da definire | Tracciare click con source URL |
 | Telefono | Numero da definire | Tracciare click tel se possibile |
 | Email | `info@solarisfilms.es` | Può essere canale fallback |
@@ -186,10 +205,11 @@ Regole:
 
 ## Go/no-go CRM
 
-Go:
+Go tecnico CRM:
 
 - tenant creato;
-- endpoint testato;
+- endpoint pubblici raggiungibili;
+- campi form in spagnolo;
 - lead test ricevuto;
 - lead test eliminabile;
 - email notifica corretta;
@@ -198,16 +218,17 @@ Go:
 
 No-go:
 
-- endpoint assente;
+- endpoint assente o non raggiungibile;
 - lead `.es` finisce in tenant Italia senza scelta esplicita;
 - consenso privacy non salvato;
 - telefono/WhatsApp non definiti;
 - impossibile eliminare i marker test.
+- form pubblica con testi italiani visibili al cliente finale.
 
 ## Dipendenze
 
 - Telefono e WhatsApp definitivi.
 - Privacy policy `.es`.
-- Creazione tenant `filmops.app`.
+- Tenant FilmOps creato; restano fix i18n pubblica e tracking source/UTM se richiesto.
 - Regole commerciali fuori Canarie.
 - Eventuale integrazione GA4/GTM.

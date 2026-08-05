@@ -1,0 +1,42 @@
+{
+  "status": "configured_pending_filmops_public_i18n",
+  "updated_at": "2026-08-05",
+  "tenant": {
+    "name": "Solaris Film Espana CRM",
+    "url": "https://solarisfilm-es.app.filmops.app/",
+    "planned_domain": "https://crm.solarisfilms.es/"
+  },
+  "forms": {
+    "quote_request": {
+      "title": "Solicitud de presupuesto peliculas para cristales",
+      "url": "https://solarisfilm-es.app.filmops.app/forms/film-quote-request",
+      "use_as_primary_cta": true
+    },
+    "site_survey": {
+      "title": "Solicitud de visita tecnica",
+      "url": "https://solarisfilm-es.app.filmops.app/forms/site-survey-request",
+      "use_as_primary_cta": false
+    },
+    "billing_profile": {
+      "title": "Ficha cliente",
+      "url": "https://solarisfilm-es.app.filmops.app/forms/billing-profile",
+      "use_as_public_cta": false,
+      "notes": "Use only after lead qualification or by direct operator follow-up."
+    }
+  },
+  "cta_map": {
+    "home_primary": "quote_request",
+    "home_secondary": "site_survey",
+    "presupuesto_primary": "quote_request",
+    "product_primary": "quote_request",
+    "safetyshield_primary": "site_survey",
+    "security_primary": "site_survey",
+    "local_pages_primary": "site_survey",
+    "contact_primary": "quote_request"
+  },
+  "known_gaps_for_filmops_agent": [
+    "Public form shell still shows app-level Italian strings.",
+    "source_url/UTM/test_marker hidden capture is not confirmed from the UI.",
+    "Phone and WhatsApp public numbers are still undefined."
+  ]
+}

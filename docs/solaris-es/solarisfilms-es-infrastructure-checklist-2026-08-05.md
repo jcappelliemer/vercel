@@ -102,12 +102,18 @@ Contro:
 
 ## CRM / lead
 
-- [ ] endpoint lead `.es`.
+- [x] tenant FilmOps `.es` creato: `https://solarisfilm-es.app.filmops.app/`.
+- [x] form preventivo pubblico: `https://solarisfilm-es.app.filmops.app/forms/film-quote-request`.
+- [x] form visita tecnica pubblico: `https://solarisfilm-es.app.filmops.app/forms/site-survey-request`.
+- [x] form ficha cliente pubblico: `https://solarisfilm-es.app.filmops.app/forms/billing-profile`.
+- [ ] dominio CRM `crm.solarisfilms.es`.
 - [ ] canale separato da Italia o campo `country=ES`.
 - [ ] marker test eliminabili.
 - [ ] email notifica corretta.
 - [ ] privacy consent registrato.
 - [ ] test invio preventivo.
+- [ ] fix i18n della cornice pubblica dei form FilmOps.
+- [ ] supporto `source_url` / UTM / `test_marker` se richiesto dal sito.
 
 ## Email
 
@@ -157,4 +163,3 @@ Preparare prima del go-live:
 - [ ] export contenuti;
 - [ ] piano rollback DNS;
 - [ ] contatto hosting.
-

@@ -31,8 +31,15 @@
   "crm": {
     "tenant": "solarisfilms-es",
     "platform": "filmops.app",
-    "status": "to_create",
-    "lead_separation": "separate_from_italy"
+    "status": "created_public_forms_configured_pending_public_ui_i18n",
+    "tenant_url": "https://solarisfilm-es.app.filmops.app/",
+    "lead_separation": "separate_from_italy",
+    "public_forms": {
+      "quote_request": "https://solarisfilm-es.app.filmops.app/forms/film-quote-request",
+      "site_survey": "https://solarisfilm-es.app.filmops.app/forms/site-survey-request",
+      "billing_profile": "https://solarisfilm-es.app.filmops.app/forms/billing-profile"
+    },
+    "notes": "Form fields are configured in Spanish. Public form shell still has app-level Italian strings; FilmOps agent owns that fix."
   },
   "catalog": {
     "initial_scope": "all_products",

@@ -150,6 +150,28 @@ Installazione prevista:
 2. aprire una volta Permalink in WP admin e salvare, oppure eseguire `wp rewrite flush`;
 3. verificare gli endpoint REST dei CPT.
 
+## Passo 3B - Kit installazione locale
+
+Per preparare una cartella installabile con tema e mu-plugin:
+
+```powershell
+node scripts\solaris-es-package-wp-kit.js
+```
+
+Output locale:
+
+```txt
+wordpress/solaris-es-install-kit/
+```
+
+La cartella contiene:
+
+- `wp-content/themes/solaris-es-theme/`
+- `wp-content/mu-plugins/solaris-es-content-types.php`
+- `manifest.json` con checksum SHA-256 dei file.
+
+Il kit e solo un artefatto locale di installazione. Non pubblica, non scrive su WordPress e non modifica DNS.
+
 ## Passo 4 - Credenziali import
 
 Impostare solo nella shell locale, senza committarle:
@@ -169,7 +191,7 @@ node scripts\solaris-es-wp-rest-import-drafts.js
 Atteso oggi:
 
 - `mode: dry-run`;
-- `total: 7`;
+- `total: 78`;
 - nessuna scrittura.
 
 Preflight completo prima del dry-run su WordPress:
@@ -180,13 +202,7 @@ node scripts\solaris-es-preflight-check.js
 
 Lo script deve tornare `go: true` prima di qualunque pubblicazione. Durante la fase dominio bloccato e staging incompleto e normale che segnali blocker.
 
-Per vedere tutto il pacchetto anche con skeleton:
-
-```powershell
-node scripts\solaris-es-wp-rest-import-drafts.js --include-skeletons
-```
-
-Questo comando deve restare dry-run finché i contenuti non sono revisionati.
+Il payload attuale contiene 78 bozze import-ready. Non usare `--include-skeletons` come flusso standard: serve solo per debug su payload futuri incompleti.
 
 ## Passo 6 - Import pilota bozze
 
@@ -215,13 +231,13 @@ Non pubblicare ancora.
 
 ## Passo 8 - Import completo
 
-Da fare solo dopo completamento contenuti. Non usare `--include-skeletons` per pubblicare.
+Da fare solo dopo completamento contenuti. Il comando crea comunque bozze: la pubblicazione resta manuale e separata.
 
 ```powershell
-node scripts\solaris-es-wp-rest-import-drafts.js --apply --include-skeletons
+node scripts\solaris-es-wp-rest-import-drafts.js --apply
 ```
 
-Nota: questo comando crea bozze anche per pagine incomplete. Va usato solo per preparare editor WordPress, non per andare live.
+Nota: questo comando prepara l'editor WordPress, non manda live il sito.
 
 ## Passo 9 - QA pre-live
 

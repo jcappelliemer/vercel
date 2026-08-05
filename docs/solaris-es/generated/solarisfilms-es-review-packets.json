@@ -1,0 +1,2395 @@
+{
+  "generated_at": "2026-08-05T13:37:56.529Z",
+  "sources": {
+    "payload": "docs/solaris-es/solarisfilms-es-wp-import-payload-2026-08-05.json",
+    "editorial_board": "docs/solaris-es/solarisfilms-es-editorial-board-2026-08-05.csv",
+    "qa": "docs/solaris-es/generated/solarisfilms-es-content-qa-report.json"
+  },
+  "summary": {
+    "total": 78,
+    "by_priority": {
+      "P0": 17,
+      "P1": 34,
+      "P2": 25,
+      "P2-hold": 2
+    },
+    "by_post_type": {
+      "page": 23,
+      "pagina_info": 10,
+      "articulo": 10,
+      "producto": 21,
+      "servicio_local": 14
+    },
+    "by_review_gate": {
+      "contact_data": 1,
+      "legal_review": 13,
+      "legal_data": 2,
+      "form_crm": 1,
+      "technical_sheet": 20,
+      "local_review": 14,
+      "copy_review": 25,
+      "commercial_review": 2
+    },
+    "with_qa_errors": 1,
+    "with_qa_warnings": 61,
+    "publish_blocked_until_review": 78
+  },
+  "packets": [
+    {
+      "priority": "P0",
+      "path": "/contacto/",
+      "title": "Contacto Solaris Films Espana",
+      "target_post_type": "page",
+      "review_gate": "contact_data",
+      "content_source": "content_seed",
+      "owner": "James + commerciale Spagna",
+      "blocker": "Telefono, WhatsApp, email, indirizzo e orari spagnoli.",
+      "recommended_action": "Inserire contatti definitivi.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/contatti/",
+      "word_count": 42,
+      "qa_errors": [
+        "placeholder_present"
+      ],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review"
+      ],
+      "required_actions": [
+        "Inserire contatti/dati reali prima di import o publish.",
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Inserire contatti definitivi."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Contacto Solaris Films Espana Cuentanos que ocurre con tus cristales y que resultado necesitas conseguir. Te orientamos hacia la familia de producto adecuada y, si hace falta, revisamos el caso con fotos o visita tecnic..."
+    },
+    {
+      "priority": "P0",
+      "path": "/certificado-de-seguridad/",
+      "title": "Certificado de seguridad del vidrio tratado",
+      "target_post_type": "page",
+      "review_gate": "legal_review",
+      "content_source": "content_seed",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "/certificato-di-sicurezza/",
+      "word_count": 98,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Certificado de seguridad del vidrio tratado El QR que has escaneado esta asociado al vidrio tratado. Ese vidrio, antes de la intervencion, no estaba clasificado como vidrio de seguridad. Con la aplicacion de una pelicul..."
+    },
+    {
+      "priority": "P0",
+      "path": "/company-profile/",
+      "title": "Solaris Films Espana",
+      "target_post_type": "page",
+      "review_gate": "legal_data",
+      "content_source": "content_seed",
+      "owner": "James + consulente legale/societario",
+      "blocker": "Dati societari reali, CIF/NIF, indirizzo e privacy.",
+      "recommended_action": "Inserire dati societari definitivi.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/company-profile/",
+      "word_count": 67,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Inserire dati societari definitivi."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Solaris Films Espana Solaris Films Espana nace para llevar al mercado espanol un metodo especializado en peliculas profesionales para cristales: analisis del problema, verificacion del vidrio, seleccion del producto y d..."
+    },
+    {
+      "priority": "P0",
+      "path": "/info/garantias/",
+      "title": "Garantias de peliculas para cristales",
+      "target_post_type": "pagina_info",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "información técnica sobre películas para cristales",
+      "source_it_reference": "/pagina-info/garanzie/",
+      "word_count": 101,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Garantias de peliculas para cristales Esta pagina recoge informacion practica para entender mejor producto, mantenimiento, garantia y lenguaje tecnico antes de solicitar una valoracion. Que conviene..."
+    },
+    {
+      "priority": "P0",
+      "path": "/info/norma-brc/",
+      "title": "Norma BRC y proteccion de superficies acristaladas",
+      "target_post_type": "pagina_info",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "información técnica sobre películas para cristales",
+      "source_it_reference": "/pagina-info/norma-brc/",
+      "word_count": 123,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Norma BRC y proteccion de superficies acristaladas Esta pagina resume criterios utiles para leer la seguridad del vidrio, la documentacion tecnica y las verificaciones necesarias antes de confirmar u..."
+    },
+    {
+      "priority": "P0",
+      "path": "/info/normativa-y-seguridad/",
+      "title": "Normativa y seguridad de cristales",
+      "target_post_type": "pagina_info",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "/pagina-info/norme/",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Normativa y seguridad de cristales Esta pagina resume criterios utiles para leer la seguridad del vidrio, la documentacion tecnica y las verificaciones necesarias antes de confirmar una solucion. Las..."
+    },
+    {
+      "priority": "P0",
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "title": "Seguridad de cristales y documentacion tecnica",
+      "target_post_type": "pagina_info",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "/pagina-info/sicurezza-a-norma-di-legge/",
+      "word_count": 122,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Seguridad de cristales y documentacion tecnica Esta pagina resume criterios utiles para leer la seguridad del vidrio, la documentacion tecnica y las verificaciones necesarias antes de confirmar una s..."
+    },
+    {
+      "priority": "P0",
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "title": "Seguridad y salud en el trabajo",
+      "target_post_type": "pagina_info",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "/pagina-info/testo-unico-sulla-salute-e-sicurezza-sul-lavoro/",
+      "word_count": 122,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Seguridad y salud en el trabajo Esta pagina resume criterios utiles para leer la seguridad del vidrio, la documentacion tecnica y las verificaciones necesarias antes de confirmar una solucion. Las re..."
+    },
+    {
+      "priority": "P0",
+      "path": "/info/sistemas-filtrantes/",
+      "title": "Sistemas filtrantes y control solar",
+      "target_post_type": "pagina_info",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pagina-info/sistemi-filtranti-dpr-59-09/",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Sistemas filtrantes y control solar Esta pagina resume criterios utiles para leer la seguridad del vidrio, la documentacion tecnica y las verificaciones necesarias antes de confirmar una solucion. La..."
+    },
+    {
+      "priority": "P0",
+      "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+      "title": "Peliculas de seguridad y UNE EN 12600",
+      "target_post_type": "articulo",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "",
+      "word_count": 127,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Peliculas de seguridad y UNE EN 12600 Una guia practica para leer la seguridad del vidrio y la clasificacion UNE-EN 12600. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del..."
+    },
+    {
+      "priority": "P0",
+      "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+      "title": "Peliculas SafetyShield para cristales",
+      "target_post_type": "articulo",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "películas de seguridad SafetyShield",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Peliculas SafetyShield para cristales Una guia practica para entender SafetyShield como sistema especial de proteccion. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del res..."
+    },
+    {
+      "priority": "P0",
+      "path": "/presupuesto/",
+      "title": "Solicita presupuesto para peliculas de cristales",
+      "target_post_type": "page",
+      "review_gate": "form_crm",
+      "content_source": "content_seed",
+      "owner": "James + CRM",
+      "blocker": "Endpoint form, consenso privacy, routing lead e test marker.",
+      "recommended_action": "Configurare e testare form senza lead reali.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/preventivo/",
+      "word_count": 57,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Configurare e testare form senza lead reali."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Solicita presupuesto para peliculas de cristales Para preparar una primera valoracion necesitamos entender el caso real: donde esta el vidrio, que problema quieres resolver, medidas aproximadas, fotos y prioridad de la..."
+    },
+    {
+      "priority": "P0",
+      "path": "/",
+      "title": "Peliculas para cristales que mejoran confort, seguridad y privacidad",
+      "target_post_type": "page",
+      "review_gate": "legal_data",
+      "content_source": "content_seed",
+      "owner": "James + consulente legale/societario",
+      "blocker": "Dati societari reali, CIF/NIF, indirizzo e privacy.",
+      "recommended_action": "Inserire dati societari definitivi.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "/",
+      "word_count": 285,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Inserire dati societari definitivi."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Solaris Films Espana Peliculas para cristales que mejoran confort, seguridad y privacidad Aplicamos peliculas profesionales sobre cristales existentes para reducir calor, deslumbramiento y rayos UV, mejorar la seguridad..."
+    },
+    {
+      "priority": "P0",
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "title": "Peliculas antisolares de seguridad serie RS",
+      "target_post_type": "page",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "/pellicole-antisolari-di-sicurezza-la-serie-rs/",
+      "word_count": 192,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas antisolares de seguridad serie RS Esta solucion esta pensada para mejorar el comportamiento del vidrio en caso de impacto o rotura. La eleccion correcta parte del caso real y no sol..."
+    },
+    {
+      "priority": "P0",
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "title": "Peliculas de seguridad neutras serie CL",
+      "target_post_type": "page",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "/pellicole-di-sicurezza-neutre-la-serie-cl/",
+      "word_count": 192,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas de seguridad neutras serie CL Esta solucion esta pensada para mejorar el comportamiento del vidrio en caso de impacto o rotura. La eleccion correcta parte del caso real y no solo de..."
+    },
+    {
+      "priority": "P0",
+      "path": "/peliculas-de-seguridad/",
+      "title": "Peliculas de seguridad para cristales",
+      "target_post_type": "page",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "láminas de seguridad para cristales",
+      "source_it_reference": "/pellicole-di-sicurezza/",
+      "word_count": 191,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas de seguridad para cristales Esta solucion esta pensada para mejorar el comportamiento del vidrio en caso de impacto o rotura. La eleccion correcta parte del caso real y no solo del..."
+    },
+    {
+      "priority": "P0",
+      "path": "/safetyshield/",
+      "title": "Madico SafetyShield y sistemas de anclaje",
+      "target_post_type": "page",
+      "review_gate": "legal_review",
+      "content_source": "template_generated",
+      "owner": "legale/normativo",
+      "blocker": "Validazione riferimenti UNE/CTE/garanzie e frasi di responsabilita.",
+      "recommended_action": "Revisionare testo prima di pubblicare.",
+      "primary_keyword": "películas de seguridad SafetyShield",
+      "source_it_reference": "/pellicole-di-sicurezza-antiesplosione-la-serie-safetyshield/",
+      "word_count": 192,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Revisionare testo prima di pubblicare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Madico SafetyShield y sistemas de anclaje Esta solucion esta pensada para proteccion avanzada de personas frente a roturas criticas del vidrio. La eleccion correcta parte del caso real y no s..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "title": "Madico CL 400 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico CL 400 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-cl-400-e-ps-sr/",
+      "word_count": 165,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico CL 400 E PS SR Madico CL 400 E PS SR es una solucion profesional para cristales indicada cuando se necesita aportar seguridad transparente al vidrio existente. Panoramica La seleccion del producto..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "title": "Madico CL 400 PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico CL 400 PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-cl-400-ps-sr/",
+      "word_count": 162,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico CL 400 PS SR Madico CL 400 PS SR es una solucion profesional para cristales indicada cuando se necesita aportar seguridad transparente al vidrio existente. Panoramica La seleccion del producto se..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "title": "Madico CL 700 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico CL 700 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-cl-700-e-ps-sr/",
+      "word_count": 165,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico CL 700 E PS SR Madico CL 700 E PS SR es una solucion profesional para cristales indicada cuando se necesita aportar seguridad transparente al vidrio existente. Panoramica La seleccion del producto..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "title": "Madico CL 700 PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico CL 700 PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-cl-700-ps-sr/",
+      "word_count": 162,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico CL 700 PS SR Madico CL 700 PS SR es una solucion profesional para cristales indicada cuando se necesita aportar seguridad transparente al vidrio existente. Panoramica La seleccion del producto se..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-gullwing/",
+      "title": "Sistema de anclaje GullWing",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Sistema de anclaje GullWing película para cristales",
+      "source_it_reference": "/prodotti/madico-gullwing/",
+      "word_count": 159,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Sistema de anclaje GullWing Sistema de anclaje GullWing es una solucion profesional para cristales indicada cuando se necesita completar sistemas de seguridad con anclaje mecanico especifico. Panoramica..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-mt-200-xw/",
+      "title": "Madico MT 200 XW",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico MT 200 XW película para cristales",
+      "source_it_reference": "/prodotti/madico-mt-200-xw/",
+      "word_count": 154,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico MT 200 XW Madico MT 200 XW es una solucion profesional para cristales indicada cuando se necesita crear privacidad, identidad visual o decoracion sobre cristal. Panoramica La seleccion del product..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-rs-20-e-ps-sr/",
+      "title": "Madico RS 20 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico RS 20 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-rs-20-e-ps-sr/",
+      "word_count": 167,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico RS 20 E PS SR Madico RS 20 E PS SR es una solucion profesional para cristales indicada cuando se necesita combinar control solar reflectante y seguridad del vidrio. Panoramica La seleccion del pro..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-rs-20-ps-sr-4mil/",
+      "title": "Madico RS 20 PS SR 4 Mil",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico RS 20 PS SR 4 Mil película para cristales",
+      "source_it_reference": "/prodotti/madico-rs-20-ps-sr-4mil/",
+      "word_count": 170,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico RS 20 PS SR 4 Mil Madico RS 20 PS SR 4 Mil es una solucion profesional para cristales indicada cuando se necesita combinar control solar reflectante y seguridad del vidrio. Panoramica La seleccion..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-rs-20-ps-sr-8mil/",
+      "title": "Madico RS 20 PS SR 8 Mil",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico RS 20 PS SR 8 Mil película para cristales",
+      "source_it_reference": "/prodotti/madico-rs-20-ps-sr-8mil/",
+      "word_count": 170,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico RS 20 PS SR 8 Mil Madico RS 20 PS SR 8 Mil es una solucion profesional para cristales indicada cuando se necesita combinar control solar reflectante y seguridad del vidrio. Panoramica La seleccion..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-rs-30-e-ps-sr/",
+      "title": "Madico RS 30 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico RS 30 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-rs-30-e-ps-sr/",
+      "word_count": 167,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico RS 30 E PS SR Madico RS 30 E PS SR es una solucion profesional para cristales indicada cuando se necesita combinar control solar reflectante y seguridad del vidrio. Panoramica La seleccion del pro..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-rs-40-e-ps-sr/",
+      "title": "Madico RS 40 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico RS 40 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-rs-40-e-ps-sr/",
+      "word_count": 167,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico RS 40 E PS SR Madico RS 40 E PS SR es una solucion profesional para cristales indicada cuando se necesita combinar control solar reflectante y seguridad del vidrio. Panoramica La seleccion del pro..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-rs-40-ps-sr-4mil/",
+      "title": "Madico RS 40 PS SR 4 Mil",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico RS 40 PS SR 4 Mil película para cristales",
+      "source_it_reference": "/prodotti/madico-rs-40-ps-sr-4mil/",
+      "word_count": 170,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico RS 40 PS SR 4 Mil Madico RS 40 PS SR 4 Mil es una solucion profesional para cristales indicada cuando se necesita combinar control solar reflectante y seguridad del vidrio. Panoramica La seleccion..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-rs-40-ps-sr-8mil/",
+      "title": "Madico RS 40 PS SR 8 Mil",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico RS 40 PS SR 8 Mil película para cristales",
+      "source_it_reference": "/prodotti/madico-rs-40-ps-sr-8mil/",
+      "word_count": 170,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico RS 40 PS SR 8 Mil Madico RS 40 PS SR 8 Mil es una solucion profesional para cristales indicada cuando se necesita combinar control solar reflectante y seguridad del vidrio. Panoramica La seleccion..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-safetyshield-1500/",
+      "title": "Madico SafetyShield 1500",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico SafetyShield 1500 película para cristales",
+      "source_it_reference": "/prodotti/madico-safetyshield-1500/",
+      "word_count": 167,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico SafetyShield 1500 Madico SafetyShield 1500 es una solucion profesional para cristales indicada cuando se necesita aumentar la proteccion en escenarios de rotura critica y alto impacto. Panoramica..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-safetyshield-800/",
+      "title": "Madico SafetyShield 800",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico SafetyShield 800 película para cristales",
+      "source_it_reference": "/prodotti/madico-safetyshield-800/",
+      "word_count": 167,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico SafetyShield 800 Madico SafetyShield 800 es una solucion profesional para cristales indicada cuando se necesita aumentar la proteccion en escenarios de rotura critica y alto impacto. Panoramica La..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "title": "Madico SB 20 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico SB 20 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-sb-20-e-ps-sr/",
+      "word_count": 172,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico SB 20 E PS SR Madico SB 20 E PS SR es una solucion profesional para cristales indicada cuando se necesita reducir calor y deslumbramiento con una pelicula de control solar profesional. Panoramica..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "title": "Madico SB 35 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico SB 35 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-sb-35-e-ps-sr/",
+      "word_count": 172,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico SB 35 E PS SR Madico SB 35 E PS SR es una solucion profesional para cristales indicada cuando se necesita reducir calor y deslumbramiento con una pelicula de control solar profesional. Panoramica..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "title": "Madico SG 20 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico SG 20 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-sg-20-e-ps-sr/",
+      "word_count": 172,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico SG 20 E PS SR Madico SG 20 E PS SR es una solucion profesional para cristales indicada cuando se necesita reducir calor y deslumbramiento con una pelicula de control solar profesional. Panoramica..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "title": "Madico SL 8 E PS SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "Madico SL 8 E PS SR película para cristales",
+      "source_it_reference": "/prodotti/madico-sl-8-e-ps-sr/",
+      "word_count": 172,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Madico SL 8 E PS SR Madico SL 8 E PS SR es una solucion profesional para cristales indicada cuando se necesita reducir calor y deslumbramiento con una pelicula de control solar profesional. Panoramica La..."
+    },
+    {
+      "priority": "P1",
+      "path": "/productos/ssn-70-te-sr/",
+      "title": "SSN 70 TE SR",
+      "target_post_type": "producto",
+      "review_gate": "technical_sheet",
+      "content_source": "template_generated",
+      "owner": "tecnico prodotto",
+      "blocker": "Scheda tecnica ufficiale, dati prodotto, immagini e download.",
+      "recommended_action": "Compilare prodotto da scheda tecnica e controllare download.",
+      "primary_keyword": "SSN 70 TE SR película para cristales",
+      "source_it_reference": "/prodotti/ssn-70-te-sr/",
+      "word_count": 151,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Compilare prodotto da scheda tecnica e controllare download."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO SSN 70 TE SR SSN 70 TE SR es una solucion profesional para cristales indicada cuando se necesita reducir infrarrojos manteniendo alta transparencia. Panoramica La seleccion del producto se realiza segun..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-adeje/",
+      "title": "Peliculas para cristales Adeje",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Adeje",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Adeje Solaris Films puede valorar soluciones para cristales en Adeje: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificios con..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-arona/",
+      "title": "Peliculas para cristales Arona",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Arona",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Arona Solaris Films puede valorar soluciones para cristales en Arona: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificios con..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+      "title": "Peliculas para cristales Barcelona",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Barcelona",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Barcelona Solaris Films puede valorar soluciones para cristales en Barcelona: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edific..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-canarias/",
+      "title": "Peliculas para cristales Canarias",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Canarias",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Canarias Solaris Films puede valorar soluciones para cristales en Canarias: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificio..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+      "title": "Peliculas para cristales Costa Adeje",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Costa Adeje",
+      "source_it_reference": "",
+      "word_count": 126,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Costa Adeje Solaris Films puede valorar soluciones para cristales en Costa Adeje: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y ed..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+      "title": "Peliculas para cristales La Laguna",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en La Laguna",
+      "source_it_reference": "",
+      "word_count": 126,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en La Laguna Solaris Films puede valorar soluciones para cristales en La Laguna: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edific..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+      "title": "Peliculas para cristales Las Palmas",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Las Palmas",
+      "source_it_reference": "",
+      "word_count": 126,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Las Palmas Solaris Films puede valorar soluciones para cristales en Las Palmas: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edif..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+      "title": "Peliculas para cristales Los Cristianos",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Los Cristianos",
+      "source_it_reference": "",
+      "word_count": 126,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Los Cristianos Solaris Films puede valorar soluciones para cristales en Los Cristianos: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercio..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-madrid/",
+      "title": "Peliculas para cristales Madrid",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Madrid",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Madrid Solaris Films puede valorar soluciones para cristales en Madrid: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificios co..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-malaga/",
+      "title": "Peliculas para cristales Malaga",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Malaga",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Malaga Solaris Films puede valorar soluciones para cristales en Malaga: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificios co..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+      "title": "Peliculas para cristales Santa Cruz de Tenerife",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Santa Cruz de Tenerife",
+      "source_it_reference": "",
+      "word_count": 136,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Santa Cruz De Tenerife Solaris Films puede valorar soluciones para cristales en Santa Cruz De Tenerife: control solar, seguridad, privacidad y diseno para viviendas, of..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+      "title": "Peliculas para cristales Sevilla",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Sevilla",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Sevilla Solaris Films puede valorar soluciones para cristales en Sevilla: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificios..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+      "title": "Peliculas para cristales Tenerife",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Tenerife",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Tenerife Solaris Films puede valorar soluciones para cristales en Tenerife: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificio..."
+    },
+    {
+      "priority": "P1",
+      "path": "/servicio-local/peliculas-para-cristales-valencia/",
+      "title": "Peliculas para cristales Valencia",
+      "target_post_type": "servicio_local",
+      "review_gate": "local_review",
+      "content_source": "template_generated",
+      "owner": "commerciale locale",
+      "blocker": "Aree realmente servite, CTA locale e dati contatto coerenti.",
+      "recommended_action": "Validare area servita e personalizzare CTA locale.",
+      "primary_keyword": "películas para cristales en Valencia",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Validare area servita e personalizzare CTA locale."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicio local Solaris Peliculas para cristales en Valencia Solaris Films puede valorar soluciones para cristales en Valencia: control solar, seguridad, privacidad y diseno para viviendas, oficinas, comercios y edificio..."
+    },
+    {
+      "priority": "P2",
+      "path": "/info/certificacion-nfrc/",
+      "title": "Certificacion NFRC",
+      "target_post_type": "pagina_info",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pagina-info/certificazione-nfrc/",
+      "word_count": 98,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Certificacion NFRC Esta pagina recoge informacion practica para entender mejor producto, mantenimiento, garantia y lenguaje tecnico antes de solicitar una valoracion. Que conviene tener claro La peli..."
+    },
+    {
+      "priority": "P2",
+      "path": "/info/glosario/",
+      "title": "Glosario de peliculas para cristales",
+      "target_post_type": "pagina_info",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "información técnica sobre películas para cristales",
+      "source_it_reference": "/pagina-info/glossario-termini/",
+      "word_count": 101,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Glosario de peliculas para cristales Esta pagina recoge informacion practica para entender mejor producto, mantenimiento, garantia y lenguaje tecnico antes de solicitar una valoracion. Que conviene t..."
+    },
+    {
+      "priority": "P2",
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "title": "Instrucciones y mantenimiento",
+      "target_post_type": "pagina_info",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "información técnica sobre películas para cristales",
+      "source_it_reference": "/pagina-info/istruzioni-e-manutenzione/",
+      "word_count": 99,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Instrucciones y mantenimiento Esta pagina recoge informacion practica para entender mejor producto, mantenimiento, garantia y lenguaje tecnico antes de solicitar una valoracion. Que conviene tener cl..."
+    },
+    {
+      "priority": "P2",
+      "path": "/info/puntos-fuertes/",
+      "title": "Puntos fuertes de las peliculas profesionales",
+      "target_post_type": "pagina_info",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pagina-info/i-punti-di-forza/",
+      "word_count": 102,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Informacion Solaris Puntos fuertes de las peliculas profesionales Esta pagina recoge informacion practica para entender mejor producto, mantenimiento, garantia y lenguaje tecnico antes de solicitar una valoracion. Que c..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/como-reducir-calor-cristaleras/",
+      "title": "Como reducir calor en cristaleras",
+      "target_post_type": "articulo",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "",
+      "word_count": 122,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Como reducir calor en cristaleras Una guia practica para reducir calor en cristaleras sin perder funcionalidad. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del resultado e..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+      "title": "Cuanto dura una pelicula para cristales",
+      "target_post_type": "articulo",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Cuanto dura una pelicula para cristales Una guia practica para entender durabilidad, mantenimiento e instalacion. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del resultado..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+      "title": "Mantenimiento de peliculas para cristales",
+      "target_post_type": "articulo",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "información técnica sobre películas para cristales",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Mantenimiento de peliculas para cristales Una guia practica para mantener correctamente una pelicula para cristales. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del result..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/",
+      "title": "Pelicula privacidad vs vidrio satinado",
+      "target_post_type": "articulo",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "vinilos y películas de privacidad para cristales",
+      "source_it_reference": "",
+      "word_count": 122,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Pelicula privacidad vs vidrio satinado Una guia practica para comparar privacidad, vidrio satinado y soluciones adhesivas. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+      "title": "Peliculas anti UV vs cortinas interiores",
+      "target_post_type": "articulo",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "",
+      "word_count": 122,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Peliculas anti UV vs cortinas interiores Una guia practica para proteger interiores frente a radiacion UV. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del resultado espera..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+      "title": "Peliculas antigraffiti para escaparates",
+      "target_post_type": "articulo",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "",
+      "word_count": 119,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Peliculas antigraffiti para escaparates Una guia practica para proteger escaparates y superficies expuestas. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del resultado espe..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+      "title": "Peliculas espectro selectivas vs reflectantes",
+      "target_post_type": "articulo",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "",
+      "word_count": 121,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Peliculas espectro selectivas vs reflectantes Una guia practica para comparar peliculas espectro selectivas y reflectantes. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+      "title": "Peliculas para cristales interior o exterior",
+      "target_post_type": "articulo",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "",
+      "word_count": 124,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Lo sabias? Peliculas para cristales interior o exterior Una guia practica para decidir si conviene una aplicacion interior o exterior. Punto de partida La respuesta correcta depende del vidrio, del uso del espacio y del..."
+    },
+    {
+      "priority": "P2",
+      "path": "/productos/",
+      "title": "Productos para cada tipo de vidrio y necesidad",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "content_seed",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/prodotti/",
+      "word_count": 48,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Productos para cada tipo de vidrio y necesidad El catalogo Solaris no se consulta como una lista de codigos: se interpreta segun objetivo, vidrio, aplicacion interior o exterior y nivel de prestacion esperado. Familias..."
+    },
+    {
+      "priority": "P2",
+      "path": "/productos/vetrofanias/",
+      "title": "Vetrofanias",
+      "target_post_type": "producto",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "Vetrofanias película para cristales",
+      "source_it_reference": "/prodotti/vetrofanie/",
+      "word_count": 145,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Producto MADICO Vetrofanias Vetrofanias es una solucion profesional para cristales indicada cuando se necesita crear privacidad, identidad visual o decoracion sobre cristal. Panoramica La seleccion del producto se reali..."
+    },
+    {
+      "priority": "P2",
+      "path": "/servicios/",
+      "title": "Servicios Solaris para cristales existentes",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "content_seed",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/servizi/",
+      "word_count": 84,
+      "qa_errors": [],
+      "qa_warnings": [
+        "thin_content_review"
+      ],
+      "qa_info": [
+        "spanish_accent_review"
+      ],
+      "required_actions": [
+        "Ampliare il testo prima della pubblicazione.",
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Servicios Solaris para cristales existentes Organizamos los servicios por necesidad real: calor, seguridad, privacidad, imagen o proteccion especial. Control solar Reducir calor, deslumbramiento y radiacion UV en vivien..."
+    },
+    {
+      "priority": "P2",
+      "path": "/lo-sabias/",
+      "title": "Lo sabias?",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/lo-sapevi-che/",
+      "word_count": 180,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Guias Solaris Lo sabias? Articulos breves para entender como funcionan las peliculas para cristales, que verificaciones conviene hacer y que solucion puede encajar mejor en cada caso. Rutas de lectura Peliculas Para Cri..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-antigraffiti/",
+      "title": "Peliculas antigraffiti para cristales",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pellicole-antigraffiti-per-vetri-la-serie-graffiti-free/",
+      "word_count": 171,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas antigraffiti para cristales Esta solucion esta pensada para proteger superficies expuestas frente a rayaduras y vandalismo. La eleccion correcta parte del caso real y no solo del no..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "title": "Peliculas imprimibles y vetrofanias",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "vinilos y películas de privacidad para cristales",
+      "source_it_reference": "/pellicole-antisolari-stampabili-e-vetrofanie/",
+      "word_count": 173,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas imprimibles y vetrofanias Esta solucion esta pensada para controlar calor, deslumbramiento y radiacion sobre cristales existentes. La eleccion correcta parte del caso real y no solo..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-antisolares-sputtered/",
+      "title": "Peliculas antisolares sputtered",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pellicole-antisolari-sputtered/",
+      "word_count": 172,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas antisolares sputtered Esta solucion esta pensada para controlar calor, deslumbramiento y radiacion sobre cristales existentes. La eleccion correcta parte del caso real y no solo del..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-antisolares-sunscape/",
+      "title": "Peliculas antisolares Sunscape",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pellicole-antisolari-sunscape/",
+      "word_count": 172,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas antisolares Sunscape Esta solucion esta pensada para controlar calor, deslumbramiento y radiacion sobre cristales existentes. La eleccion correcta parte del caso real y no solo del..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-antisolares/",
+      "title": "Peliculas antisolares para cristales",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pellicole-antisolari/",
+      "word_count": 173,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas antisolares para cristales Esta solucion esta pensada para controlar calor, deslumbramiento y radiacion sobre cristales existentes. La eleccion correcta parte del caso real y no sol..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-decorativas-privacidad/",
+      "title": "Peliculas decorativas para privacidad",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "vinilos y películas de privacidad para cristales",
+      "source_it_reference": "/pellicole-decorative-privacy/",
+      "word_count": 173,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas decorativas para privacidad Esta solucion esta pensada para privacidad, diseno e identidad visual en superficies acristaladas. La eleccion correcta parte del caso real y no solo del..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-decorativas/",
+      "title": "Peliculas decorativas para cristales",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "vinilos y películas de privacidad para cristales",
+      "source_it_reference": "/pellicole-decorative/",
+      "word_count": 173,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas decorativas para cristales Esta solucion esta pensada para privacidad, diseno e identidad visual en superficies acristaladas. La eleccion correcta parte del caso real y no solo del..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-espectro-selectivas/",
+      "title": "Peliculas espectro selectivas",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pellicole-spettro-selettive/",
+      "word_count": 167,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas espectro selectivas Esta solucion esta pensada para reducir calor manteniendo alta transparencia. La eleccion correcta parte del caso real y no solo del nombre del producto. Cuando..."
+    },
+    {
+      "priority": "P2",
+      "path": "/peliculas-reflectantes/",
+      "title": "Peliculas reflectantes para cristales",
+      "target_post_type": "page",
+      "review_gate": "copy_review",
+      "content_source": "template_generated",
+      "owner": "copy + James",
+      "blocker": "Riscrittura naturale in spagnolo, niente note interne, CTA coerenti.",
+      "recommended_action": "Rifinire copy e collegamenti interni.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pellicole-riflettenti/",
+      "word_count": 175,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Rifinire copy e collegamenti interni."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas reflectantes para cristales Esta solucion esta pensada para control solar con efecto exterior mas reflectante. La eleccion correcta parte del caso real y no solo del nombre del prod..."
+    },
+    {
+      "priority": "P2-hold",
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "title": "Peliculas oscurantes para cristales",
+      "target_post_type": "page",
+      "review_gate": "commercial_review",
+      "content_source": "template_generated",
+      "owner": "James/commerciale",
+      "blocker": "Decisione se includere nella prima release o tenere in backlog.",
+      "recommended_action": "Decidere se pubblicare o rimandare.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pellicole-oscuranti-per-vetri/",
+      "word_count": 171,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Decidere se pubblicare o rimandare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas oscurantes para cristales Esta solucion esta pensada para reducir entrada de luz y controlar privacidad en casos especificos. La eleccion correcta parte del caso real y no solo del..."
+    },
+    {
+      "priority": "P2-hold",
+      "path": "/peliculas-termoaislantes/",
+      "title": "Peliculas termoaislantes para cristales",
+      "target_post_type": "page",
+      "review_gate": "commercial_review",
+      "content_source": "template_generated",
+      "owner": "James/commerciale",
+      "blocker": "Decisione se includere nella prima release o tenere in backlog.",
+      "recommended_action": "Decidere se pubblicare o rimandare.",
+      "primary_keyword": "láminas solares para cristales",
+      "source_it_reference": "/pellicole-termoisolanti/",
+      "word_count": 172,
+      "qa_errors": [],
+      "qa_warnings": [],
+      "qa_info": [
+        "spanish_accent_review",
+        "template_generated_review"
+      ],
+      "required_actions": [
+        "Correggere accenti e naturalezza dello spagnolo.",
+        "Revisionare come bozza generata, non pubblicare senza controllo umano.",
+        "Decidere se pubblicare o rimandare."
+      ],
+      "publish_blocked_until_review": true,
+      "draft_import_ready": true,
+      "excerpt": "Soluciones tecnicas Solaris Peliculas termoaislantes para cristales Esta solucion esta pensada para mejorar el confort de las superficies acristaladas en proyectos donde el aislamiento es prioritario. La eleccion correc..."
+    }
+  ]
+}

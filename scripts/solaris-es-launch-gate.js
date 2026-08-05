@@ -24,6 +24,10 @@ const paths = {
   contentQaJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.json"),
   contentQaCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.csv"),
   contentQaMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.md"),
+  reviewPacketsScript: path.join(root, "scripts", "solaris-es-build-review-packets.js"),
+  reviewPacketsJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.json"),
+  reviewPacketsCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.csv"),
+  reviewPacketsMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.md"),
   seoAssetsScript: path.join(root, "scripts", "solaris-es-build-seo-assets.js"),
   importBatchesScript: path.join(root, "scripts", "solaris-es-build-import-batches.js"),
   launchConfigScript: path.join(root, "scripts", "solaris-es-apply-launch-config.js"),
@@ -133,6 +137,10 @@ function validateRequiredFiles() {
     "contentQaJson",
     "contentQaCsv",
     "contentQaMd",
+    "reviewPacketsScript",
+    "reviewPacketsJson",
+    "reviewPacketsCsv",
+    "reviewPacketsMd",
     "seoAssetsScript",
     "importBatchesScript",
     "launchConfigScript",
@@ -254,6 +262,28 @@ function validateContentQa() {
   };
 }
 
+function validateReviewPackets() {
+  if (!exists(paths.reviewPacketsJson)) {
+    return {
+      generated: false,
+      path: rel(paths.reviewPacketsJson),
+      issues: ["review_packets_not_generated"]
+    };
+  }
+
+  const report = readJson(paths.reviewPacketsJson);
+  const summary = report.summary || {};
+  const issues = [];
+  if ((summary.total || 0) !== 78) issues.push("review_packets_total_unexpected");
+
+  return {
+    generated: true,
+    path: rel(paths.reviewPacketsJson),
+    summary,
+    issues
+  };
+}
+
 function main() {
   const args = parseArgs(process.argv.slice(2));
   const requiredFiles = validateRequiredFiles();
@@ -265,6 +295,7 @@ function main() {
   const seoGate = validateSeoAssets(seoSummary);
   const installKit = validateInstallKit();
   const contentQa = validateContentQa();
+  const reviewPackets = validateReviewPackets();
 
   const repoBlockers = [];
   if (missingRequiredFiles.length) repoBlockers.push("required_files_missing");
@@ -281,6 +312,8 @@ function main() {
   if (installKit.issues.length) launchBlockers.push("install_kit_issues_present");
   if (!contentQa.generated) launchBlockers.push("content_qa_not_generated");
   if (contentQa.issues.length) launchBlockers.push("content_qa_issues_present");
+  if (!reviewPackets.generated) launchBlockers.push("review_packets_not_generated");
+  if (reviewPackets.issues.length) launchBlockers.push("review_packets_issues_present");
   launchBlockers.push("domain_wp_https_preflight_required");
   launchBlockers.push("wordpress_readiness_required");
   launchBlockers.push("live_post_import_qa_required");
@@ -293,6 +326,7 @@ function main() {
     payload: payloadGate,
     seo_assets: seoGate,
     content_qa: contentQa,
+    review_packets: reviewPackets,
     install_kit: installKit,
     repo_blockers: repoBlockers,
     launch_blockers: launchBlockers,
@@ -302,6 +336,7 @@ function main() {
       "node scripts/solaris-es-preflight-check.js",
       "node scripts/solaris-es-wp-readiness-check.js",
       "node scripts/solaris-es-content-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --fail-on-error",
+      "node scripts/solaris-es-build-review-packets.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --qa docs/solaris-es/generated/solarisfilms-es-content-qa-report.json",
       "node scripts/solaris-es-post-import-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json",
       "node scripts/solaris-es-wp-rest-import-drafts.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --apply --type page --limit 2",
       "node scripts/solaris-es-post-import-qa.js --live --base https://www.solarisfilms.es"

@@ -431,6 +431,28 @@ docs/solaris-es/generated/solarisfilms-es-content-qa-report.md
 
 Questo controllo segnala placeholder, termini vietati, link interni non presenti nel payload, residui italiani, possibili problemi di codifica, testi troppo brevi e parole spagnole da accentare in revisione. Non visita il sito e non scrive su WordPress.
 
+Pacchetti revisione editoriale:
+
+```powershell
+node scripts\solaris-es-build-review-packets.js
+```
+
+Se il payload configurato e disponibile:
+
+```powershell
+node scripts\solaris-es-build-review-packets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json --qa docs\solaris-es\generated\solarisfilms-es-content-qa-report.json
+```
+
+Output locale:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-review-packets.json
+docs/solaris-es/generated/solarisfilms-es-review-packets.csv
+docs/solaris-es/generated/solarisfilms-es-review-packets.md
+```
+
+Questi file uniscono payload, board editoriale e QA in una lista per priorita. Servono per assegnare la revisione, non autorizzano il publish.
+
 Dopo installazione WordPress, import bozze e pubblicazione controllata su staging `.es`, usare:
 
 ```powershell

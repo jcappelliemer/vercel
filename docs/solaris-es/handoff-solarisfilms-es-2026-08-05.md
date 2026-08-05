@@ -175,6 +175,34 @@ Stato ultimo report:
 
 Il controllo non scrive su WordPress. Serve a preparare la revisione editoriale prima dell'import o prima del publish.
 
+## Pacchetti revisione
+
+Generazione:
+
+```powershell
+node scripts\solaris-es-build-review-packets.js
+```
+
+Output:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-review-packets.json
+docs/solaris-es/generated/solarisfilms-es-review-packets.csv
+docs/solaris-es/generated/solarisfilms-es-review-packets.md
+```
+
+Stato ultimo pacchetto:
+
+- 78 URL organizzate;
+- P0: 17;
+- P1: 34;
+- P2: 25;
+- P2-hold: 2;
+- 1 pagina con errore QA;
+- 61 pagine con warning QA.
+
+I pacchetti uniscono owner, blocker, azione raccomandata, keyword, fonte italiana, conteggio parole e issue QA. Sono strumenti di review, non importano e non pubblicano.
+
 ## Configurazione contatti
 
 La pagina `/contacto/` resta bloccata finche telefono, WhatsApp e indirizzo non sono reali.

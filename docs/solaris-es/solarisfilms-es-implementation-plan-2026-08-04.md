@@ -270,3 +270,5 @@ Bloccanti prima di pubblicare:
 - `docs/solaris-es/solarisfilms-es-editorial-board-2026-08-05.md`
 - `docs/solaris-es/solarisfilms-es-editorial-board-2026-08-05.csv`
 - `scripts/solaris-es-build-editorial-board.js`
+- `docs/solaris-es/solarisfilms-es-james-inputs-2026-08-05.md`
+- `docs/solaris-es/solarisfilms-es-james-inputs-2026-08-05.csv`

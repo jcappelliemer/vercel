@@ -32,6 +32,14 @@ Compilare prima di lavorare su home e company profile.
 | Area servita reale |  | Home, servizi, local page |
 | Rapporto con Solaris Italia |  | Company, trust, footer |
 
+Decisione ricevuta:
+
+- ragione sociale prevista: `Solaris Code SL`;
+- stato: societa da aprire/costituire;
+- nome commerciale: `solarisfilms`.
+
+Nota operativa: usare `solarisfilms` come brand commerciale nella bozza, ma non pubblicare dati societari definitivi finche `Solaris Code SL` non e costituita.
+
 ## Contatti Spagna
 
 | Campo | Valore da fornire | Note |
@@ -42,6 +50,13 @@ Compilare prima di lavorare su home e company profile.
 | Orari/SLA risposta |  | Da usare nei testi CTA |
 | Indirizzo mostrato al pubblico |  | Se diverso dall'indirizzo legale |
 | Lingue gestite |  | Spagnolo, italiano, inglese, altro |
+
+Decisione ricevuta:
+
+- email: `info@solarisfilms.es`;
+- telefono: da definire;
+- WhatsApp: da definire;
+- area: Canarie come partenza, poi Spagna.
 
 ## Form e CRM
 
@@ -57,6 +72,11 @@ La pagina `/presupuesto/` resta bloccata finche il flusso lead non e chiaro.
 | Consenso privacy |  |
 | Marker test eliminabili |  |
 | Notifica WhatsApp/telefono |  |
+
+Decisione ricevuta:
+
+- creare un nuovo tenant su `filmops.app`;
+- mantenere separato il flusso lead `.es` dal flusso Italia.
 
 ## Revisione normativa
 
@@ -90,6 +110,12 @@ Decisioni richieste:
 | SafetyShield | Limiti comunicativi su antiesplosione, uragani, terrorismo |
 | BRC | Verificare se ha senso nel mercato spagnolo iniziale |
 
+Ricerca preliminare preparata:
+
+- `docs/solaris-es/solarisfilms-es-spanish-norms-research-2026-08-05.md`
+
+La ricerca non sblocca ancora la pubblicazione: serve conferma normativa/legale.
+
 ## Decisioni commerciali
 
 | Tema | Decisione |
@@ -100,6 +126,10 @@ Decisioni richieste:
 | Prodotti da mostrare subito | Tutti i 21 o solo catalogo iniziale |
 | Famiglie da rimandare | Termoaislanti, oscuranti, altre |
 | Immagini local | Servono foto reali Spagna/Canarie o si parte con asset Solaris |
+
+Decisione ricevuta:
+
+- catalogo iniziale completo: tutti i prodotti.
 
 ## Schede prodotto
 

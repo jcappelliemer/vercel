@@ -1,23 +1,23 @@
 input_id,priority,category,required_value,why_needed,blocks_paths,owner,status,notes
-ES_COMPANY_LEGAL_NAME,P0,legal_data,Ragione sociale spagnola,"Serve per home, company, footer, privacy e schema Organization","/;/company-profile/",James,pending,
+ES_COMPANY_LEGAL_NAME,P0,legal_data,Ragione sociale spagnola,"Serve per home, company, footer, privacy e schema Organization","/;/company-profile/",James,known_pending_constitution,"Solaris Code SL prevista, da costituire prima di pubblicare."
 ES_COMPANY_CIF_NIF,P0,legal_data,CIF/NIF,"Serve per identificazione societaria, privacy e documenti commerciali","/;/company-profile/;footer;privacy",James,pending,
 ES_LEGAL_ADDRESS,P0,legal_data,Indirizzo legale,"Serve per company, privacy, footer e dati strutturati","/;/company-profile/;/contacto/",James,pending,
 ES_OPERATING_ADDRESS,P0,legal_data,Indirizzo operativo pubblico,"Serve per contatti, LocalBusiness e local page","/contacto/;servicio-local",James,pending,
-ES_BRAND_NAME,P0,legal_data,Nome commerciale da usare,"Serve per header, footer, CTA e Organization schema","global",James,pending,"Confermare se resta Solaris Films o variante spagnola."
+ES_BRAND_NAME,P0,legal_data,Nome commerciale da usare,"Serve per header, footer, CTA e Organization schema","global",James,confirmed,solarisfilms
 ES_PRIVACY_CONTROLLER,P0,legal_data,Titolare privacy,"Serve per privacy, cookie e consenso form","/presupuesto/;/contacto/;privacy",James,pending,
 ES_PHONE,P0,contact_data,Telefono principale,"Serve per CTA, header/footer, contatti e local page","/contacto/;/presupuesto/;servicio-local",James,pending,
 ES_WHATSAPP,P0,contact_data,Numero WhatsApp,"Serve per CTA mobile e tracking conversioni","global",James,pending,
-ES_EMAIL,P0,contact_data,Email pubblica,"Serve per form, contatti, footer e privacy","/contacto/;/presupuesto/;footer",James,pending,
-ES_SERVICE_AREA,P0,commercial_scope,Area servita reale,"Evita local page fuorvianti e CTA non gestibili","/;servicios;servicio-local",James,pending,"Decidere Tenerife Sud, Canarie o Spagna."
-ES_FORM_ENDPOINT,P0,form_crm,Endpoint form preventivo,"Serve per testare /presupuesto senza lead persi","/presupuesto/",James + CRM,pending,
-ES_LEAD_ROUTING,P0,form_crm,Regole routing lead,"Serve per separare Italia/Spagna e non mischiare CRM","/presupuesto/",James + CRM,pending,
+ES_EMAIL,P0,contact_data,Email pubblica,"Serve per form, contatti, footer e privacy","/contacto/;/presupuesto/;footer",James,confirmed,info@solarisfilms.es
+ES_SERVICE_AREA,P0,commercial_scope,Area servita reale,"Evita local page fuorvianti e CTA non gestibili","/;servicios;servicio-local",James,confirmed_direction,"Partenza Canarie, poi estensione Spagna."
+ES_FORM_ENDPOINT,P0,form_crm,Endpoint form preventivo,"Serve per testare /presupuesto senza lead persi","/presupuesto/",James + CRM,pending_tenant,"Creare nuovo tenant su filmops.app."
+ES_LEAD_ROUTING,P0,form_crm,Regole routing lead,"Serve per separare Italia/Spagna e non mischiare CRM","/presupuesto/",James + CRM,confirmed_direction,"Nuovo tenant filmops.app separato da Italia."
 ES_PRIVACY_CONSENT_TEXT,P0,form_crm,Testo consenso form,"Serve per pubblicare form conforme","/presupuesto/",James + legale,pending,
-ES_SECURITY_NORM_COPY,P0,legal_review,Formula normativa sicurezza,"Serve per sicurezza, QR, EN/UNE, CTE e pagine info","/certificado-de-seguridad/;/peliculas-de-seguridad/;/info/normativa-y-seguridad/",legale/normativo,pending,
+ES_SECURITY_NORM_COPY,P0,legal_review,Formula normativa sicurezza,"Serve per sicurezza, QR, EN/UNE, CTE e pagine info","/certificado-de-seguridad/;/peliculas-de-seguridad/;/info/normativa-y-seguridad/",legale/normativo,research_ready_needs_validation,"Vedi solarisfilms-es-spanish-norms-research-2026-08-05.md."
 ES_QR_CERTIFICATE_COPY,P0,legal_review,Testo QR certificato sicurezza,"Serve per pagina certificato scansionata dal vetro","/certificado-de-seguridad/",James + legale,pending,
-ES_WARRANTY_PUBLIC_COPY,P0,legal_review,Testo pubblico garanzia,"Serve per parlare di garanzia senza esporre condizioni usabili dai concorrenti","/info/garantias/",James + legale,pending,
-ES_SAFETYSHIELD_CLAIMS,P0,legal_review,Limiti comunicativi SafetyShield,"Serve per evitare promesse assolute su antiesplosione/terrorismo/calamita","/safetyshield/;/lo-sabias/peliculas-safetyshield-para-cristales/",James + tecnico,pending,
+ES_WARRANTY_PUBLIC_COPY,P0,legal_review,Testo pubblico garanzia,"Serve per parlare di garanzia senza esporre condizioni usabili dai concorrenti","/info/garantias/",James + legale,research_ready_needs_validation,"Vedi formula prudente nella nota normativa."
+ES_SAFETYSHIELD_CLAIMS,P0,legal_review,Limiti comunicativi SafetyShield,"Serve per evitare promesse assolute su antiesplosione/terrorismo/calamita","/safetyshield/;/lo-sabias/peliculas-safetyshield-para-cristales/",James + tecnico,research_ready_needs_validation,"Vedi formula prudente nella nota normativa."
 ES_BRC_RELEVANCE,P0,legal_review,Decisione su norma BRC,"Serve per decidere se pubblicare la pagina in Spagna","/info/norma-brc/",James + legale,pending,
-ES_PRODUCT_PDFS,P1,technical_sheet,Schede tecniche prodotto,"Serve per 21 prodotti e download","/productos/*",tecnico prodotto,pending,
+ES_PRODUCT_PDFS,P1,technical_sheet,Schede tecniche prodotto,"Serve per 21 prodotti e download","/productos/*",tecnico prodotto,scope_confirmed_data_pending,"Catalogo completo: tutti i prodotti."
 ES_PRODUCT_IMAGES,P1,technical_sheet,Immagini prodotto,"Serve per UX e coerenza catalogo","/productos/*",tecnico prodotto,pending,
 ES_LOCAL_AREAS,P1,local_review,Lista aree locali reali,"Serve per 14 pagine local e sitemap","/servicio-local/*",James + commerciale,pending,
 ES_LOCAL_ASSETS,P1,local_review,Foto o asset locali,"Serve per rendere credibili pagine Canarie/Spagna","/servicio-local/*",James + marketing,pending,

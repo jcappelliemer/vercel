@@ -13,7 +13,6 @@ const defaultEndpointMap = {
   page: "pages",
   articulo: "posts",
   producto: "producto",
-  focus_tecnico: "focus_tecnico",
   pagina_info: "pagina_info",
   servicio_local: "servicio_local"
 };

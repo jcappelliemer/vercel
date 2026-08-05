@@ -9,6 +9,10 @@ const routeManifestPath = path.join(docsDir, "solarisfilms-es-route-manifest-202
 const contentSeedPath = path.join(docsDir, "solarisfilms-es-content-seed-2026-08-04.json");
 const outputPath = path.join(docsDir, "solarisfilms-es-wp-import-payload-2026-08-05.json");
 
+const targetPostTypeMap = {
+  focus_tecnico: "page",
+};
+
 function parseCsvLine(line) {
   const values = [];
   let current = "";
@@ -543,11 +547,13 @@ function main() {
     const blocks = source.seed_blocks || templateBlocksForItem(row, source, routeManifest);
     const postContent = blocks.length ? blocksToHtml(blocks) : "";
     const draftImportReady = Boolean(postContent);
+    const targetPostType = targetPostTypeMap[row.target_post_type] || row.target_post_type;
 
     return {
       path: cleanPath,
       frontend_url: `${routeManifest.domain.replace(/\/$/, "")}${cleanPath}`,
-      target_post_type: row.target_post_type,
+      target_post_type: targetPostType,
+      route_type: row.target_post_type,
       post_status: row.status || "draft",
       post_title: row.title || source.title || slugFromPath(cleanPath),
       post_name: cleanPath === "/" ? "home" : slugFromPath(cleanPath),

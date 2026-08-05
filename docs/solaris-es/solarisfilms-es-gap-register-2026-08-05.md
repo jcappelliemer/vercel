@@ -10,8 +10,7 @@ Il pacchetto `.es` e pronto come base di lavoro, ma non e pronto per pubblicazio
 Payload:
 
 - 78 URL totali;
-- 8 page;
-- 15 focus tecnici;
+- 23 page, incluse le 15 pagine focus tecniche top-level;
 - 21 prodotti;
 - 10 pagina_info;
 - 14 servizio_locale;

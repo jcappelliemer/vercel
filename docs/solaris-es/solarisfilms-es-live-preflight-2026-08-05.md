@@ -56,8 +56,7 @@ Conteggi:
 
 | Tipo | Conteggio |
 | --- | ---: |
-| `page` | 8 |
-| `focus_tecnico` | 15 |
+| `page` | 23 |
 | `producto` | 21 |
 | `pagina_info` | 10 |
 | `servicio_local` | 14 |
@@ -70,6 +69,8 @@ Stato:
 - `draft_import_ready`: 78/78
 - `content_seed`: 7/78
 - `template_generated`: 71/78
+
+Nota: le 15 pagine tecniche/focus sono importate come WordPress Pages, non come CPT, per preservare gli URL top-level `.es` come `/peliculas-antisolares/`.
 
 Le 7 pagine con contenuto seed manuale sono:
 
@@ -149,10 +150,10 @@ Da completare prima del live:
 3. Tenere staging/noindex finché non si chiude QA.
 4. Registrare CPT richiesti:
    - `producto`
-   - `focus_tecnico`
    - `pagina_info`
    - `servicio_local`
-5. Verificare REST API e Application Password.
+5. Importare i focus tecnici come WordPress Pages top-level.
+6. Verificare REST API e Application Password.
 
 ### Fase 3 - Import controllato
 

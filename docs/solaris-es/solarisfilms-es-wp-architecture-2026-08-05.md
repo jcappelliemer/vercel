@@ -15,7 +15,7 @@ Per una ragione sociale diversa, la scelta piu pulita e:
 
 Multisite resta possibile, ma richiede piu disciplina per evitare contaminazione tra Italia e Spagna.
 
-## CPT
+## CPT e Pages
 
 ### `producto`
 
@@ -43,7 +43,7 @@ REST:
 'show_in_rest' => true
 ```
 
-### `focus_tecnico`
+### Focus tecnici come WordPress Pages
 
 Uso:
 
@@ -53,30 +53,19 @@ Uso:
 - SafetyShield;
 - privacy/design.
 
-Rewrite:
-
-```php
-'rewrite' => ['slug' => '', 'with_front' => false]
-```
-
-Nota: in WordPress il rewrite top-level vuoto va gestito con attenzione. Alternativa piu stabile:
-
-- usare Pages top-level per i focus principali;
-- usare CPT `focus_tecnico` solo se accettiamo prefisso `/soluciones/`.
-
-Per `.es`, non avendo storico SEO, possiamo scegliere:
-
-Opzione pulita:
+Decisione operativa per il payload corrente:
 
 - `/peliculas-antisolares/` come Page;
 - `/peliculas-de-seguridad/` come Page;
 - `/safetyshield/` come Page.
 
-Opzione CPT:
+Motivo:
 
-- `/soluciones/peliculas-antisolares/`.
+- preserva URL top-level puliti;
+- evita rewrite CPT vuoti o fragili;
+- resta gestibile da WordPress e Orchestra come contenuto first-class.
 
-Consiglio: usare Pages top-level per i 15 focus iniziali, come gia fatto nel ragionamento path-preserving italiano.
+Un CPT `focus_tecnico` con prefisso `/soluciones/` puo essere valutato piu avanti, ma non va usato per questa prima importazione se vogliamo mantenere gli URL gia decisi.
 
 ### `pagina_info`
 
@@ -336,4 +325,3 @@ Prima release tecnica:
 - post nativi per articoli con permalink `/lo-sabias/%postname%/`;
 - tutte le importazioni iniziali in `draft`;
 - noindex finche i gate non sono chiusi.
-

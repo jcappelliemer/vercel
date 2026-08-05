@@ -88,9 +88,10 @@ Default usati dallo script:
 | `page` | `pages` |
 | `articulo` | `posts` |
 | `producto` | `producto` |
-| `focus_tecnico` | `focus_tecnico` |
 | `pagina_info` | `pagina_info` |
 | `servicio_local` | `servicio_local` |
+
+Nota: nel payload `.es` corrente le pagine focus tecniche top-level hanno `route_type=focus_tecnico`, ma `target_post_type=page`. Questo preserva URL come `/peliculas-antisolares/` senza introdurre un prefisso WordPress.
 
 Se il WordPress `.es` usa endpoint diversi, impostare:
 
@@ -143,4 +144,3 @@ wp post list --post_status=draft --date_query_column=post_date --format=ids
 ```
 
 Verificare sempre manualmente prima di cancellare.
-

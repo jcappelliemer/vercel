@@ -116,11 +116,24 @@ Devono esistere prima dell'import:
 | `page` | `/wp-json/wp/v2/pages` |
 | `articulo` | `/wp-json/wp/v2/posts` |
 | `producto` | `/wp-json/wp/v2/producto` |
-| `focus_tecnico` | `/wp-json/wp/v2/focus_tecnico` |
 | `pagina_info` | `/wp-json/wp/v2/pagina_info` |
 | `servicio_local` | `/wp-json/wp/v2/servicio_local` |
 
+Le 15 pagine focus tecniche sono importate come Pages top-level, non come CPT, per mantenere URL come `/peliculas-antisolares/`.
+
 Se gli endpoint hanno nomi diversi, impostare `SOLARIS_ES_CPT_ENDPOINTS`.
+
+Mu-plugin preparato nel repo:
+
+```txt
+wordpress/mu-plugins/solaris-es-content-types.php
+```
+
+Installazione prevista:
+
+1. copiare il file in `wp-content/mu-plugins/` del WordPress `.es`;
+2. aprire una volta Permalink in WP admin e salvare, oppure eseguire `wp rewrite flush`;
+3. verificare gli endpoint REST dei CPT.
 
 ## Passo 4 - Credenziali import
 
@@ -143,6 +156,14 @@ Atteso oggi:
 - `mode: dry-run`;
 - `total: 7`;
 - nessuna scrittura.
+
+Preflight completo prima del dry-run su WordPress:
+
+```powershell
+node scripts\solaris-es-preflight-check.js
+```
+
+Lo script deve tornare `go: true` prima di qualunque pubblicazione. Durante la fase dominio bloccato e staging incompleto e normale che segnali blocker.
 
 Per vedere tutto il pacchetto anche con skeleton:
 

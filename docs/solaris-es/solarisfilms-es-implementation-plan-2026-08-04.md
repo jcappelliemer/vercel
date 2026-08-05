@@ -267,3 +267,6 @@ Bloccanti prima di pubblicare:
 - `scripts/solaris-es-build-seo-metadata.js`
 - `docs/solaris-es/solarisfilms-es-wp-architecture-2026-08-05.md`
 - `docs/solaris-es/solarisfilms-es-infrastructure-checklist-2026-08-05.md`
+- `docs/solaris-es/solarisfilms-es-editorial-board-2026-08-05.md`
+- `docs/solaris-es/solarisfilms-es-editorial-board-2026-08-05.csv`
+- `scripts/solaris-es-build-editorial-board.js`

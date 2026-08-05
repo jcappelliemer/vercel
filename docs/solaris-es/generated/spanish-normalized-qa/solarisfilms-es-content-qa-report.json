@@ -1,0 +1,1348 @@
+{
+  "generated_at": "2026-08-05T13:46:35.883Z",
+  "payload": "docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json",
+  "summary": {
+    "total_items": 78,
+    "by_post_type": {
+      "page": 23,
+      "producto": 21,
+      "pagina_info": 10,
+      "servicio_local": 14,
+      "articulo": 10
+    },
+    "error_count": 1,
+    "warning_count": 61,
+    "info_count": 71,
+    "by_code": {
+      "thin_content_review": 61,
+      "placeholder_present": 1,
+      "template_generated_review": 71
+    }
+  },
+  "issues": [
+    {
+      "path": "/servicios/",
+      "target_post_type": "page",
+      "title": "Servicios Solaris para cristales existentes",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo page; soglia 120 parole.",
+      "values": [
+        "words:84"
+      ]
+    },
+    {
+      "path": "/productos/",
+      "target_post_type": "page",
+      "title": "Productos para cada tipo de vidrio y necesidad",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo page; soglia 120 parole.",
+      "values": [
+        "words:48"
+      ]
+    },
+    {
+      "path": "/company-profile/",
+      "target_post_type": "page",
+      "title": "Solaris Films España",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo page; soglia 120 parole.",
+      "values": [
+        "words:67"
+      ]
+    },
+    {
+      "path": "/presupuesto/",
+      "target_post_type": "page",
+      "title": "Solicita presupuesto para películas de cristales",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo page; soglia 120 parole.",
+      "values": [
+        "words:57"
+      ]
+    },
+    {
+      "path": "/contacto/",
+      "target_post_type": "page",
+      "title": "Contacto Solaris Films España",
+      "severity": "error",
+      "code": "placeholder_present",
+      "detail": "La pagina contiene placeholder non pubblicabili.",
+      "values": [
+        "[DIRECCION_ES]",
+        "[EMAIL_ES]",
+        "[TELEFONO_ES]",
+        "[WHATSAPP_ES]"
+      ]
+    },
+    {
+      "path": "/contacto/",
+      "target_post_type": "page",
+      "title": "Contacto Solaris Films España",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo page; soglia 120 parole.",
+      "values": [
+        "words:42"
+      ]
+    },
+    {
+      "path": "/lo-sabias/",
+      "target_post_type": "page",
+      "title": "Lo sabias?",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/certificado-de-seguridad/",
+      "target_post_type": "page",
+      "title": "Certificado de seguridad del vidrio tratado",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo page; soglia 120 parole.",
+      "values": [
+        "words:98"
+      ]
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "target_post_type": "page",
+      "title": "Películas antisolares para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "target_post_type": "page",
+      "title": "Películas antisolares sputtered",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "target_post_type": "page",
+      "title": "Películas antisolares Sunscape",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "target_post_type": "page",
+      "title": "Películas reflectantes para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "target_post_type": "page",
+      "title": "Películas espectro selectivas",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "target_post_type": "page",
+      "title": "Películas de seguridad para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "target_post_type": "page",
+      "title": "Películas de seguridad neutras serie CL",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "target_post_type": "page",
+      "title": "Películas antisolares de seguridad serie RS",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/safetyshield/",
+      "target_post_type": "page",
+      "title": "Madico SafetyShield y sistemas de anclaje",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "target_post_type": "page",
+      "title": "Películas decorativas para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "target_post_type": "page",
+      "title": "Películas decorativas para privacidad",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "target_post_type": "page",
+      "title": "Películas imprimibles y vetrofanias",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "target_post_type": "page",
+      "title": "Películas antigraffiti para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "target_post_type": "page",
+      "title": "Películas termoaislantes para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "target_post_type": "page",
+      "title": "Películas oscurantes para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/vetrofanias/",
+      "target_post_type": "producto",
+      "title": "Vetrofanias",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:145"
+      ]
+    },
+    {
+      "path": "/productos/vetrofanias/",
+      "target_post_type": "producto",
+      "title": "Vetrofanias",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-mt-200-xw/",
+      "target_post_type": "producto",
+      "title": "Madico MT 200 XW",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:154"
+      ]
+    },
+    {
+      "path": "/productos/madico-mt-200-xw/",
+      "target_post_type": "producto",
+      "title": "Madico MT 200 XW",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-gullwing/",
+      "target_post_type": "producto",
+      "title": "Sistema de anclaje GullWing",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:159"
+      ]
+    },
+    {
+      "path": "/productos/madico-gullwing/",
+      "target_post_type": "producto",
+      "title": "Sistema de anclaje GullWing",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-safetyshield-1500/",
+      "target_post_type": "producto",
+      "title": "Madico SafetyShield 1500",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:167"
+      ]
+    },
+    {
+      "path": "/productos/madico-safetyshield-1500/",
+      "target_post_type": "producto",
+      "title": "Madico SafetyShield 1500",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-safetyshield-800/",
+      "target_post_type": "producto",
+      "title": "Madico SafetyShield 800",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:167"
+      ]
+    },
+    {
+      "path": "/productos/madico-safetyshield-800/",
+      "target_post_type": "producto",
+      "title": "Madico SafetyShield 800",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico CL 700 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:165"
+      ]
+    },
+    {
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico CL 700 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico CL 700 PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:162"
+      ]
+    },
+    {
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico CL 700 PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico CL 400 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:165"
+      ]
+    },
+    {
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico CL 400 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico CL 400 PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:162"
+      ]
+    },
+    {
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico CL 400 PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-8mil/",
+      "target_post_type": "producto",
+      "title": "Madico RS 40 PS SR 8 Mil",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:170"
+      ]
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-8mil/",
+      "target_post_type": "producto",
+      "title": "Madico RS 40 PS SR 8 Mil",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-4mil/",
+      "target_post_type": "producto",
+      "title": "Madico RS 40 PS SR 4 Mil",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:170"
+      ]
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-4mil/",
+      "target_post_type": "producto",
+      "title": "Madico RS 40 PS SR 4 Mil",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-8mil/",
+      "target_post_type": "producto",
+      "title": "Madico RS 20 PS SR 8 Mil",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:170"
+      ]
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-8mil/",
+      "target_post_type": "producto",
+      "title": "Madico RS 20 PS SR 8 Mil",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-4mil/",
+      "target_post_type": "producto",
+      "title": "Madico RS 20 PS SR 4 Mil",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:170"
+      ]
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-4mil/",
+      "target_post_type": "producto",
+      "title": "Madico RS 20 PS SR 4 Mil",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-rs-40-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico RS 40 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:167"
+      ]
+    },
+    {
+      "path": "/productos/madico-rs-40-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico RS 40 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-rs-30-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico RS 30 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:167"
+      ]
+    },
+    {
+      "path": "/productos/madico-rs-30-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico RS 30 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-rs-20-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico RS 20 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:167"
+      ]
+    },
+    {
+      "path": "/productos/madico-rs-20-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico RS 20 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/ssn-70-te-sr/",
+      "target_post_type": "producto",
+      "title": "SSN 70 TE SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:151"
+      ]
+    },
+    {
+      "path": "/productos/ssn-70-te-sr/",
+      "target_post_type": "producto",
+      "title": "SSN 70 TE SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico SL 8 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:172"
+      ]
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico SL 8 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico SG 20 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:172"
+      ]
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico SG 20 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico SB 35 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:172"
+      ]
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico SB 35 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico SB 20 E PS SR",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo producto; soglia 180 parole.",
+      "values": [
+        "words:172"
+      ]
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "target_post_type": "producto",
+      "title": "Madico SB 20 E PS SR",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/normativa-y-seguridad/",
+      "target_post_type": "pagina_info",
+      "title": "Normativa y seguridad de cristales",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/info/normativa-y-seguridad/",
+      "target_post_type": "pagina_info",
+      "title": "Normativa y seguridad de cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "target_post_type": "pagina_info",
+      "title": "Seguridad de cristales y documentacion técnica",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:122"
+      ]
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "target_post_type": "pagina_info",
+      "title": "Seguridad de cristales y documentacion técnica",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/garantias/",
+      "target_post_type": "pagina_info",
+      "title": "Garantías de películas para cristales",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:101"
+      ]
+    },
+    {
+      "path": "/info/garantias/",
+      "target_post_type": "pagina_info",
+      "title": "Garantías de películas para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "target_post_type": "pagina_info",
+      "title": "Certificación NFRC",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:98"
+      ]
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "target_post_type": "pagina_info",
+      "title": "Certificación NFRC",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "target_post_type": "pagina_info",
+      "title": "Puntos fuertes de las películas profesionales",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:102"
+      ]
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "target_post_type": "pagina_info",
+      "title": "Puntos fuertes de las películas profesionales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "target_post_type": "pagina_info",
+      "title": "Instrucciones y mantenimiento",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:99"
+      ]
+    },
+    {
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "target_post_type": "pagina_info",
+      "title": "Instrucciones y mantenimiento",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/norma-brc/",
+      "target_post_type": "pagina_info",
+      "title": "Norma BRC y protección de superficies acristaladas",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:123"
+      ]
+    },
+    {
+      "path": "/info/norma-brc/",
+      "target_post_type": "pagina_info",
+      "title": "Norma BRC y protección de superficies acristaladas",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/sistemas-filtrantes/",
+      "target_post_type": "pagina_info",
+      "title": "Sistemas filtrantes y control solar",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/info/sistemas-filtrantes/",
+      "target_post_type": "pagina_info",
+      "title": "Sistemas filtrantes y control solar",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "target_post_type": "pagina_info",
+      "title": "Seguridad y salud en el trabajo",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:122"
+      ]
+    },
+    {
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "target_post_type": "pagina_info",
+      "title": "Seguridad y salud en el trabajo",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/info/glosario/",
+      "target_post_type": "pagina_info",
+      "title": "Glosario de películas para cristales",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo pagina_info; soglia 160 parole.",
+      "values": [
+        "words:101"
+      ]
+    },
+    {
+      "path": "/info/glosario/",
+      "target_post_type": "pagina_info",
+      "title": "Glosario de películas para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Tenerife",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Tenerife",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-adeje/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Adeje",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-adeje/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Adeje",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Costa Adeje",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:126"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Costa Adeje",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Los Cristianos",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:126"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Los Cristianos",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-arona/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Arona",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-arona/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Arona",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Santa Cruz de Tenerife",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:136"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Santa Cruz de Tenerife",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales La Laguna",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:126"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales La Laguna",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Las Palmas",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:126"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Las Palmas",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-canarias/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Canarias",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-canarias/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Canarias",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-madrid/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Madrid",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-madrid/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Madrid",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Barcelona",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Barcelona",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-valencia/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Valencia",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-valencia/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Valencia",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-malaga/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Malaga",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-malaga/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Malaga",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Sevilla",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo servicio_local; soglia 140 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+      "target_post_type": "servicio_local",
+      "title": "Películas para cristales Sevilla",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+      "target_post_type": "articulo",
+      "title": "Películas para cristales interior o exterior",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:124"
+      ]
+    },
+    {
+      "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+      "target_post_type": "articulo",
+      "title": "Películas para cristales interior o exterior",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/",
+      "target_post_type": "articulo",
+      "title": "Pelicula privacidad vs vidrio satinado",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:122"
+      ]
+    },
+    {
+      "path": "/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/",
+      "target_post_type": "articulo",
+      "title": "Pelicula privacidad vs vidrio satinado",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/como-reducir-calor-cristaleras/",
+      "target_post_type": "articulo",
+      "title": "Como reducir calor en cristaleras",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:122"
+      ]
+    },
+    {
+      "path": "/lo-sabias/como-reducir-calor-cristaleras/",
+      "target_post_type": "articulo",
+      "title": "Como reducir calor en cristaleras",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+      "target_post_type": "articulo",
+      "title": "Películas de seguridad y UNE EN 12600",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:127"
+      ]
+    },
+    {
+      "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+      "target_post_type": "articulo",
+      "title": "Películas de seguridad y UNE EN 12600",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+      "target_post_type": "articulo",
+      "title": "Películas espectro selectivas vs reflectantes",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+      "target_post_type": "articulo",
+      "title": "Películas espectro selectivas vs reflectantes",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+      "target_post_type": "articulo",
+      "title": "Mantenimiento de películas para cristales",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+      "target_post_type": "articulo",
+      "title": "Mantenimiento de películas para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+      "target_post_type": "articulo",
+      "title": "Películas anti UV vs cortinas interiores",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:122"
+      ]
+    },
+    {
+      "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+      "target_post_type": "articulo",
+      "title": "Películas anti UV vs cortinas interiores",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+      "target_post_type": "articulo",
+      "title": "Cuanto dura una pelicula para cristales",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+      "target_post_type": "articulo",
+      "title": "Cuanto dura una pelicula para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+      "target_post_type": "articulo",
+      "title": "Películas antigraffiti para escaparates",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:119"
+      ]
+    },
+    {
+      "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+      "target_post_type": "articulo",
+      "title": "Películas antigraffiti para escaparates",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    },
+    {
+      "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+      "target_post_type": "articulo",
+      "title": "Películas SafetyShield para cristales",
+      "severity": "warning",
+      "code": "thin_content_review",
+      "detail": "Contenuto breve per il tipo articulo; soglia 180 parole.",
+      "values": [
+        "words:121"
+      ]
+    },
+    {
+      "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+      "target_post_type": "articulo",
+      "title": "Películas SafetyShield para cristales",
+      "severity": "info",
+      "code": "template_generated_review",
+      "detail": "Bozza generata da template: richiede revisione umana prima del publish.",
+      "values": []
+    }
+  ]
+}

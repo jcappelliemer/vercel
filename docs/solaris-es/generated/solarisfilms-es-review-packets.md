@@ -1,6 +1,6 @@
 # Solarisfilms.es - Pacchetti revisione editoriale
 
-Generato: 2026-08-05T13:37:56.529Z
+Generato: 2026-08-05T13:46:36.002Z
 Payload: `docs/solaris-es/solarisfilms-es-wp-import-payload-2026-08-05.json`
 QA: `docs/solaris-es/generated/solarisfilms-es-content-qa-report.json`
 

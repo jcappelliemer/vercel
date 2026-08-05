@@ -1,0 +1,3035 @@
+{
+  "generated_at": "2026-08-05T13:46:31.523Z",
+  "source_payload": "docs/solaris-es/solarisfilms-es-wp-import-payload-2026-08-05.json",
+  "output_payload": "docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json",
+  "summary": {
+    "total_items": 78,
+    "total_replacements": 401,
+    "paths_changed": 78,
+    "by_field": {
+      "post_title": 46,
+      "post_content_html": 355
+    },
+    "by_replacement": {
+      "Peliculas>Películas": 77,
+      "Espana>España": 6,
+      "peliculas>películas": 35,
+      "mas>más": 42,
+      "despues>después": 1,
+      "proteccion>protección": 11,
+      "tecnica>técnica": 58,
+      "radiacion>radiación": 6,
+      "Proteccion>Protección": 1,
+      "aplicacion>aplicación": 46,
+      "estetica>estética": 19,
+      "tecnico>técnico": 20,
+      "instalacion>instalación": 46,
+      "energia>energía": 4,
+      "Informacion>Información": 10,
+      "informacion>información": 15,
+      "Garantias>Garantías": 2,
+      "Certificacion>Certificación": 2
+    }
+  },
+  "changed_pages": [
+    {
+      "path": "/lo-sabias/",
+      "total_replacements": 18,
+      "by_field": {
+        "post_content_html": 18
+      }
+    },
+    {
+      "path": "/",
+      "total_replacements": 13,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 12
+      }
+    },
+    {
+      "path": "/info/garantias/",
+      "total_replacements": 9,
+      "by_field": {
+        "post_title": 2,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "total_replacements": 9,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 8
+      }
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "total_replacements": 8,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "total_replacements": 8,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "total_replacements": 8,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "total_replacements": 8,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "total_replacements": 8,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "total_replacements": 8,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "total_replacements": 8,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "total_replacements": 8,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/info/glosario/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/info/norma-brc/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/servicios/",
+      "total_replacements": 7,
+      "by_field": {
+        "post_content_html": 7
+      }
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "total_replacements": 6,
+      "by_field": {
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "total_replacements": 6,
+      "by_field": {
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "total_replacements": 6,
+      "by_field": {
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "total_replacements": 6,
+      "by_field": {
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/safetyshield/",
+      "total_replacements": 6,
+      "by_field": {
+        "post_content_html": 6
+      }
+    },
+    {
+      "path": "/company-profile/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 4
+      }
+    },
+    {
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/info/normativa-y-seguridad/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/info/sistemas-filtrantes/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/productos/madico-safetyshield-1500/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/productos/madico-safetyshield-800/",
+      "total_replacements": 5,
+      "by_field": {
+        "post_content_html": 5
+      }
+    },
+    {
+      "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/ssn-70-te-sr/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_content_html": 4
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-adeje/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-arona/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-canarias/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-madrid/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-malaga/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-valencia/",
+      "total_replacements": 4,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/contacto/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 2
+      }
+    },
+    {
+      "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 2
+      }
+    },
+    {
+      "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 2
+      }
+    },
+    {
+      "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 2
+      }
+    },
+    {
+      "path": "/productos/madico-gullwing/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/madico-mt-200-xw/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/madico-rs-20-e-ps-sr/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-4mil/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-8mil/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/madico-rs-30-e-ps-sr/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/madico-rs-40-e-ps-sr/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-4mil/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-8mil/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/productos/vetrofanias/",
+      "total_replacements": 3,
+      "by_field": {
+        "post_content_html": 3
+      }
+    },
+    {
+      "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+      "total_replacements": 2,
+      "by_field": {
+        "post_content_html": 2
+      }
+    },
+    {
+      "path": "/presupuesto/",
+      "total_replacements": 2,
+      "by_field": {
+        "post_title": 1,
+        "post_content_html": 1
+      }
+    },
+    {
+      "path": "/certificado-de-seguridad/",
+      "total_replacements": 1,
+      "by_field": {
+        "post_content_html": 1
+      }
+    },
+    {
+      "path": "/lo-sabias/como-reducir-calor-cristaleras/",
+      "total_replacements": 1,
+      "by_field": {
+        "post_content_html": 1
+      }
+    },
+    {
+      "path": "/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/",
+      "total_replacements": 1,
+      "by_field": {
+        "post_content_html": 1
+      }
+    },
+    {
+      "path": "/productos/",
+      "total_replacements": 1,
+      "by_field": {
+        "post_content_html": 1
+      }
+    }
+  ],
+  "changes": [
+    {
+      "path": "/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "Espana",
+      "to": "España"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "despues",
+      "to": "después"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicios/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/servicios/",
+      "field": "post_content_html",
+      "from": "radiacion",
+      "to": "radiación"
+    },
+    {
+      "path": "/servicios/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/servicios/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/servicios/",
+      "field": "post_content_html",
+      "from": "Proteccion",
+      "to": "Protección"
+    },
+    {
+      "path": "/servicios/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/servicios/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/productos/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/company-profile/",
+      "field": "post_title",
+      "from": "Espana",
+      "to": "España"
+    },
+    {
+      "path": "/company-profile/",
+      "field": "post_content_html",
+      "from": "Espana",
+      "to": "España"
+    },
+    {
+      "path": "/company-profile/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/company-profile/",
+      "field": "post_content_html",
+      "from": "Espana",
+      "to": "España"
+    },
+    {
+      "path": "/company-profile/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/presupuesto/",
+      "field": "post_title",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/presupuesto/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/contacto/",
+      "field": "post_title",
+      "from": "Espana",
+      "to": "España"
+    },
+    {
+      "path": "/contacto/",
+      "field": "post_content_html",
+      "from": "Espana",
+      "to": "España"
+    },
+    {
+      "path": "/contacto/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/certificado-de-seguridad/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "field": "post_content_html",
+      "from": "radiacion",
+      "to": "radiación"
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-antisolares/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "field": "post_content_html",
+      "from": "radiacion",
+      "to": "radiación"
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-antisolares-sputtered/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "field": "post_content_html",
+      "from": "radiacion",
+      "to": "radiación"
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-antisolares-sunscape/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-reflectantes/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-espectro-selectivas/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-de-seguridad/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-de-seguridad-neutras-serie-cl/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-antisolares-de-seguridad-serie-rs/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/safetyshield/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/safetyshield/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/safetyshield/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/safetyshield/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/safetyshield/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/safetyshield/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-decorativas/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-decorativas-privacidad/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "field": "post_content_html",
+      "from": "radiacion",
+      "to": "radiación"
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-antisolares-imprimibles-y-vetrofanias/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-antigraffiti/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-termoaislantes/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/peliculas-oscurantes-para-cristales/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/productos/vetrofanias/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/vetrofanias/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/vetrofanias/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-mt-200-xw/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-mt-200-xw/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-mt-200-xw/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-gullwing/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-gullwing/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-gullwing/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-safetyshield-1500/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/productos/madico-safetyshield-1500/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/productos/madico-safetyshield-1500/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-safetyshield-1500/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-safetyshield-1500/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-safetyshield-800/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/productos/madico-safetyshield-800/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/productos/madico-safetyshield-800/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-safetyshield-800/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-safetyshield-800/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-cl-700-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-cl-700-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-cl-400-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-cl-400-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-8mil/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-8mil/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-8mil/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-4mil/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-4mil/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-40-ps-sr-4mil/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-8mil/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-8mil/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-8mil/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-4mil/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-4mil/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-20-ps-sr-4mil/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-rs-40-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-40-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-40-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-rs-30-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-30-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-30-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-rs-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-rs-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/ssn-70-te-sr/",
+      "field": "post_content_html",
+      "from": "estetica",
+      "to": "estética"
+    },
+    {
+      "path": "/productos/ssn-70-te-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/ssn-70-te-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/ssn-70-te-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "energia",
+      "to": "energía"
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-sl-8-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "energia",
+      "to": "energía"
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-sg-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "energia",
+      "to": "energía"
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-sb-35-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "mas",
+      "to": "más"
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "energia",
+      "to": "energía"
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/productos/madico-sb-20-e-ps-sr/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/info/normativa-y-seguridad/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/normativa-y-seguridad/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/normativa-y-seguridad/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/normativa-y-seguridad/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/normativa-y-seguridad/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "field": "post_title",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/seguridad-conforme-a-la-ley/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_title",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_title",
+      "from": "Garantias",
+      "to": "Garantías"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_content_html",
+      "from": "Garantias",
+      "to": "Garantías"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/garantias/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "field": "post_title",
+      "from": "Certificacion",
+      "to": "Certificación"
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "field": "post_content_html",
+      "from": "Certificacion",
+      "to": "Certificación"
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/certificacion-nfrc/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "field": "post_title",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/puntos-fuertes/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/instrucciones-y-mantenimiento/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/norma-brc/",
+      "field": "post_title",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/info/norma-brc/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/norma-brc/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/info/norma-brc/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/norma-brc/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/norma-brc/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/norma-brc/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/sistemas-filtrantes/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/sistemas-filtrantes/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/sistemas-filtrantes/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/sistemas-filtrantes/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/sistemas-filtrantes/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/seguridad-y-salud-en-el-trabajo/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/glosario/",
+      "field": "post_title",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/info/glosario/",
+      "field": "post_content_html",
+      "from": "Informacion",
+      "to": "Información"
+    },
+    {
+      "path": "/info/glosario/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/info/glosario/",
+      "field": "post_content_html",
+      "from": "tecnico",
+      "to": "técnico"
+    },
+    {
+      "path": "/info/glosario/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/info/glosario/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/info/glosario/",
+      "field": "post_content_html",
+      "from": "informacion",
+      "to": "información"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-tenerife/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-adeje/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-adeje/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-adeje/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-adeje/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-costa-adeje/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-los-cristianos/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-arona/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-arona/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-arona/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-arona/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-santa-cruz-de-tenerife/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-la-laguna/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-las-palmas/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-canarias/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-canarias/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-canarias/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-canarias/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-madrid/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-madrid/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-madrid/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-madrid/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-barcelona/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-valencia/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-valencia/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-valencia/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-valencia/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-malaga/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-malaga/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-malaga/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-malaga/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/servicio-local/peliculas-para-cristales-sevilla/",
+      "field": "post_content_html",
+      "from": "tecnica",
+      "to": "técnica"
+    },
+    {
+      "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/peliculas-para-cristales-interior-o-exterior/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/pelicula-privacidad-vs-vidrio-satinado/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/como-reducir-calor-cristaleras/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-de-seguridad-une-en-12600/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-espectro-selectivas-vs-reflectantes/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+      "field": "post_title",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+      "field": "post_content_html",
+      "from": "peliculas",
+      "to": "películas"
+    },
+    {
+      "path": "/lo-sabias/mantenimiento-peliculas-para-cristales/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+      "field": "post_content_html",
+      "from": "radiacion",
+      "to": "radiación"
+    },
+    {
+      "path": "/lo-sabias/peliculas-anti-uv-vs-cortinas-interiores/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+      "field": "post_content_html",
+      "from": "instalacion",
+      "to": "instalación"
+    },
+    {
+      "path": "/lo-sabias/cuanto-dura-una-pelicula-para-cristales/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-antigraffiti-para-escaparates/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    },
+    {
+      "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+      "field": "post_title",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+      "field": "post_content_html",
+      "from": "Peliculas",
+      "to": "Películas"
+    },
+    {
+      "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+      "field": "post_content_html",
+      "from": "proteccion",
+      "to": "protección"
+    },
+    {
+      "path": "/lo-sabias/peliculas-safetyshield-para-cristales/",
+      "field": "post_content_html",
+      "from": "aplicacion",
+      "to": "aplicación"
+    }
+  ]
+}

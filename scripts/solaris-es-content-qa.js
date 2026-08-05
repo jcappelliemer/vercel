@@ -281,8 +281,9 @@ function inspectPayload(payload, payloadPath) {
     const pathValue = normalizePath(item.path);
     const html = item.post_content_html || "";
     const text = stripHtml(html);
+    const languageText = text.replace(placeholderPattern, " ");
     const serialized = JSON.stringify(item);
-    const wordCount = countWords(text);
+    const wordCount = countWords(languageText);
     const minWords = minimumWords[item.target_post_type] || 120;
 
     const base = {
@@ -334,7 +335,7 @@ function inspectPayload(payload, payloadPath) {
       });
     }
 
-    const italianTerms = findTerms(text, italianResidueTerms);
+    const italianTerms = findTerms(languageText, italianResidueTerms);
     if (italianTerms.length) {
       issues.push({
         ...base,
@@ -345,7 +346,7 @@ function inspectPayload(payload, payloadPath) {
       });
     }
 
-    const accentTerms = findTerms(text, accentReviewTerms);
+    const accentTerms = findTerms(languageText, accentReviewTerms);
     if (accentTerms.length) {
       issues.push({
         ...base,

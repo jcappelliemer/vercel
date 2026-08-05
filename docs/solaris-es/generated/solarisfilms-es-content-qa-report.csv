@@ -9,7 +9,7 @@ warning,thin_content_review,/company-profile/,page,Solaris Films Espana,Contenut
 info,spanish_accent_review,/presupuesto/,page,Solicita presupuesto para peliculas de cristales,Termini spagnoli probabilmente da accentare in revisione editoriale.,peliculas
 warning,thin_content_review,/presupuesto/,page,Solicita presupuesto para peliculas de cristales,Contenuto breve per il tipo page; soglia 120 parole.,words:57
 error,placeholder_present,/contacto/,page,Contacto Solaris Films Espana,La pagina contiene placeholder non pubblicabili.,[DIRECCION_ES]|[EMAIL_ES]|[TELEFONO_ES]|[WHATSAPP_ES]
-info,spanish_accent_review,/contacto/,page,Contacto Solaris Films Espana,Termini spagnoli probabilmente da accentare in revisione editoriale.,tecnica|direccion|Espana
+info,spanish_accent_review,/contacto/,page,Contacto Solaris Films Espana,Termini spagnoli probabilmente da accentare in revisione editoriale.,tecnica|Espana
 warning,thin_content_review,/contacto/,page,Contacto Solaris Films Espana,Contenuto breve per il tipo page; soglia 120 parole.,words:42
 info,spanish_accent_review,/lo-sabias/,page,Lo sabias?,Termini spagnoli probabilmente da accentare in revisione editoriale.,peliculas|mas
 info,template_generated_review,/lo-sabias/,page,Lo sabias?,Bozza generata da template: richiede revisione umana prima del publish.,

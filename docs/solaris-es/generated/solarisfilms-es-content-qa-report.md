@@ -1,6 +1,6 @@
 # Solarisfilms.es - QA editoriale offline
 
-Generato: 2026-08-05T13:26:05.146Z
+Generato: 2026-08-05T13:46:31.492Z
 Payload: `docs/solaris-es/solarisfilms-es-wp-import-payload-2026-08-05.json`
 
 ## Sintesi
@@ -97,7 +97,7 @@ Payload: `docs/solaris-es/solarisfilms-es-wp-import-payload-2026-08-05.json`
 - `/productos/` - spanish_accent_review: Termini spagnoli probabilmente da accentare in revisione editoriale. (aplicacion)
 - `/company-profile/` - spanish_accent_review: Termini spagnoli probabilmente da accentare in revisione editoriale. (peliculas, estetica, Espana)
 - `/presupuesto/` - spanish_accent_review: Termini spagnoli probabilmente da accentare in revisione editoriale. (peliculas)
-- `/contacto/` - spanish_accent_review: Termini spagnoli probabilmente da accentare in revisione editoriale. (tecnica, direccion, Espana)
+- `/contacto/` - spanish_accent_review: Termini spagnoli probabilmente da accentare in revisione editoriale. (tecnica, Espana)
 - `/lo-sabias/` - spanish_accent_review: Termini spagnoli probabilmente da accentare in revisione editoriale. (peliculas, mas)
 - `/lo-sabias/` - template_generated_review: Bozza generata da template: richiede revisione umana prima del publish.
 - `/certificado-de-seguridad/` - spanish_accent_review: Termini spagnoli probabilmente da accentare in revisione editoriale. (aplicacion)

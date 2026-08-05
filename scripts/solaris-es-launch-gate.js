@@ -24,6 +24,11 @@ const paths = {
   contentQaJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.json"),
   contentQaCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.csv"),
   contentQaMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-content-qa-report.md"),
+  spanishNormalizerScript: path.join(root, "scripts", "solaris-es-normalize-spanish.js"),
+  spanishNormalizedPayload: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-wp-import-payload-spanish-normalized.json"),
+  spanishNormalizationReport: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.json"),
+  spanishNormalizationCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.csv"),
+  spanishNormalizationMd: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-spanish-normalization-report.md"),
   reviewPacketsScript: path.join(root, "scripts", "solaris-es-build-review-packets.js"),
   reviewPacketsJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.json"),
   reviewPacketsCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-review-packets.csv"),
@@ -137,6 +142,11 @@ function validateRequiredFiles() {
     "contentQaJson",
     "contentQaCsv",
     "contentQaMd",
+    "spanishNormalizerScript",
+    "spanishNormalizedPayload",
+    "spanishNormalizationReport",
+    "spanishNormalizationCsv",
+    "spanishNormalizationMd",
     "reviewPacketsScript",
     "reviewPacketsJson",
     "reviewPacketsCsv",
@@ -262,6 +272,29 @@ function validateContentQa() {
   };
 }
 
+function validateSpanishNormalization() {
+  if (!exists(paths.spanishNormalizationReport) || !exists(paths.spanishNormalizedPayload)) {
+    return {
+      generated: false,
+      path: rel(paths.spanishNormalizationReport),
+      issues: ["spanish_normalization_not_generated"]
+    };
+  }
+
+  const report = readJson(paths.spanishNormalizationReport);
+  const payload = readJson(paths.spanishNormalizedPayload);
+  const issues = [];
+  if (!Array.isArray(payload.items) || payload.items.length !== 78) issues.push("spanish_normalized_payload_total_unexpected");
+  if (!report.summary || (report.summary.total_replacements || 0) === 0) issues.push("spanish_normalization_no_replacements");
+
+  return {
+    generated: true,
+    path: rel(paths.spanishNormalizationReport),
+    summary: report.summary || {},
+    issues
+  };
+}
+
 function validateReviewPackets() {
   if (!exists(paths.reviewPacketsJson)) {
     return {
@@ -295,6 +328,7 @@ function main() {
   const seoGate = validateSeoAssets(seoSummary);
   const installKit = validateInstallKit();
   const contentQa = validateContentQa();
+  const spanishNormalization = validateSpanishNormalization();
   const reviewPackets = validateReviewPackets();
 
   const repoBlockers = [];
@@ -312,6 +346,8 @@ function main() {
   if (installKit.issues.length) launchBlockers.push("install_kit_issues_present");
   if (!contentQa.generated) launchBlockers.push("content_qa_not_generated");
   if (contentQa.issues.length) launchBlockers.push("content_qa_issues_present");
+  if (!spanishNormalization.generated) launchBlockers.push("spanish_normalization_not_generated");
+  if (spanishNormalization.issues.length) launchBlockers.push("spanish_normalization_issues_present");
   if (!reviewPackets.generated) launchBlockers.push("review_packets_not_generated");
   if (reviewPackets.issues.length) launchBlockers.push("review_packets_issues_present");
   launchBlockers.push("domain_wp_https_preflight_required");
@@ -326,6 +362,7 @@ function main() {
     payload: payloadGate,
     seo_assets: seoGate,
     content_qa: contentQa,
+    spanish_normalization: spanishNormalization,
     review_packets: reviewPackets,
     install_kit: installKit,
     repo_blockers: repoBlockers,
@@ -333,12 +370,13 @@ function main() {
     next_commands_when_wp_is_ready: [
       "Copy-Item docs/solaris-es/solarisfilms-es-launch-config-template-2026-08-05.json docs/solaris-es/solarisfilms-es-launch-config.local.json",
       "node scripts/solaris-es-apply-launch-config.js --config docs/solaris-es/solarisfilms-es-launch-config.local.json",
+      "node scripts/solaris-es-normalize-spanish.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json",
       "node scripts/solaris-es-preflight-check.js",
       "node scripts/solaris-es-wp-readiness-check.js",
-      "node scripts/solaris-es-content-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --fail-on-error",
-      "node scripts/solaris-es-build-review-packets.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --qa docs/solaris-es/generated/solarisfilms-es-content-qa-report.json",
-      "node scripts/solaris-es-post-import-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json",
-      "node scripts/solaris-es-wp-rest-import-drafts.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --apply --type page --limit 2",
+      "node scripts/solaris-es-content-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs/solaris-es/generated/spanish-normalized-qa --fail-on-error",
+      "node scripts/solaris-es-build-review-packets.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --qa docs/solaris-es/generated/spanish-normalized-qa/solarisfilms-es-content-qa-report.json",
+      "node scripts/solaris-es-post-import-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json",
+      "node scripts/solaris-es-wp-rest-import-drafts.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json --apply --type page --limit 2",
       "node scripts/solaris-es-post-import-qa.js --live --base https://www.solarisfilms.es"
     ]
   };

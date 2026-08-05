@@ -175,6 +175,33 @@ Stato ultimo report:
 
 Il controllo non scrive su WordPress. Serve a preparare la revisione editoriale prima dell'import o prima del publish.
 
+## Normalizzazione spagnola
+
+Generazione:
+
+```powershell
+node scripts\solaris-es-normalize-spanish.js
+```
+
+Output:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json
+docs/solaris-es/generated/solarisfilms-es-spanish-normalization-report.json
+docs/solaris-es/generated/solarisfilms-es-spanish-normalization-report.csv
+docs/solaris-es/generated/solarisfilms-es-spanish-normalization-report.md
+```
+
+Stato ultimo report:
+
+- 78 URL modificate;
+- 401 sostituzioni;
+- solo campi `post_title` e `post_content_html`;
+- placeholder, tag HTML, href, slug, path e codici prodotto protetti;
+- QA sul payload normalizzato: note accenti ridotte da 78 a 0. Restano i blocker reali: `/contacto/` e contenuti brevi/review.
+
+Quando esiste il payload configurato con i contatti reali, rigenerare il normalizzato partendo da quello, non dal payload base.
+
 ## Pacchetti revisione
 
 Generazione:

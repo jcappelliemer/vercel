@@ -251,9 +251,10 @@ Il payload attuale contiene 78 bozze import-ready. Non usare `--include-skeleton
 Dopo la configurazione contatti, usare il payload configurato nei controlli e nell'import:
 
 ```powershell
-node scripts\solaris-es-post-import-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
-node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
-node scripts\solaris-es-wp-rest-import-drafts.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+node scripts\solaris-es-normalize-spanish.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+node scripts\solaris-es-post-import-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
+node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
+node scripts\solaris-es-wp-rest-import-drafts.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
 ```
 
 Piano batch import/review:
@@ -380,7 +381,7 @@ node scripts\solaris-es-build-seo-assets.js
 Se il payload configurato e disponibile:
 
 ```powershell
-node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
 ```
 
 Output locale:
@@ -404,7 +405,7 @@ node scripts\solaris-es-post-import-qa.js
 Se il payload configurato e disponibile:
 
 ```powershell
-node scripts\solaris-es-post-import-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+node scripts\solaris-es-post-import-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json
 ```
 
 Questo controllo e offline: legge il payload, segnala duplicati, placeholder, termini esclusi e contenuti non pronti. Non visita il sito e non scrive su WordPress.
@@ -415,10 +416,28 @@ QA editoriale e linguistico:
 node scripts\solaris-es-content-qa.js
 ```
 
+Normalizzazione accenti spagnoli:
+
+```powershell
+node scripts\solaris-es-normalize-spanish.js
+```
+
+Output locale:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-wp-import-payload-spanish-normalized.json
+docs/solaris-es/generated/solarisfilms-es-spanish-normalization-report.json
+docs/solaris-es/generated/solarisfilms-es-spanish-normalization-report.csv
+docs/solaris-es/generated/solarisfilms-es-spanish-normalization-report.md
+```
+
+Lo script genera una copia separata e tocca solo `post_title` e `post_content_html`. Non modifica slug, URL, path, link interni, codici prodotto o riferimenti sorgente. Placeholder e attributi HTML sono protetti.
+
 Se il payload configurato e disponibile:
 
 ```powershell
-node scripts\solaris-es-content-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json --fail-on-error
+node scripts\solaris-es-normalize-spanish.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+node scripts\solaris-es-content-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json --out-dir docs\solaris-es\generated\spanish-normalized-qa --fail-on-error
 ```
 
 Output locale:
@@ -440,7 +459,7 @@ node scripts\solaris-es-build-review-packets.js
 Se il payload configurato e disponibile:
 
 ```powershell
-node scripts\solaris-es-build-review-packets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json --qa docs\solaris-es\generated\solarisfilms-es-content-qa-report.json
+node scripts\solaris-es-build-review-packets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-spanish-normalized.json --qa docs\solaris-es\generated\spanish-normalized-qa\solarisfilms-es-content-qa-report.json
 ```
 
 Output locale:

@@ -255,6 +255,29 @@ Obbligatorio:
 - controllo pagine prodotto;
 - controllo footer e contatti.
 
+QA automatizzato preparato:
+
+```powershell
+node scripts\solaris-es-post-import-qa.js
+```
+
+Questo controllo e offline: legge il payload, segnala duplicati, placeholder, termini esclusi e contenuti non pronti. Non visita il sito e non scrive su WordPress.
+
+Dopo installazione WordPress, import bozze e pubblicazione controllata su staging `.es`, usare:
+
+```powershell
+node scripts\solaris-es-post-import-qa.js --live --base https://www.solarisfilms.es --out docs\solaris-es\solarisfilms-es-post-import-qa-latest.json
+```
+
+Acceptance prima del go-live pubblico:
+
+- `go: true`;
+- 0 URL con status diverso da 200;
+- 0 placeholder;
+- 0 termini esclusi;
+- 0 pagine che mostrano hold registrar, 404 o copia "pagina non trovata";
+- ogni pagina pubblicata ha almeno `<title>` e `<h1>`.
+
 ## Passo 10 - Go-live
 
 Solo dopo QA:

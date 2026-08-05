@@ -182,6 +182,50 @@ $env:SOLARIS_ES_WP_USER="admin-user"
 $env:SOLARIS_ES_WP_APP_PASSWORD="xxxx xxxx xxxx xxxx xxxx xxxx"
 ```
 
+## Passo 4A - Configurazione contatti e societa
+
+Prima di qualsiasi import o sitemap candidate definitiva, sostituire i placeholder della pagina `/contacto/` usando una configurazione locale non committata.
+
+Template:
+
+```txt
+docs/solaris-es/solarisfilms-es-launch-config-template-2026-08-05.json
+```
+
+Creare una copia locale ignorata da git:
+
+```powershell
+Copy-Item docs\solaris-es\solarisfilms-es-launch-config-template-2026-08-05.json docs\solaris-es\solarisfilms-es-launch-config.local.json
+```
+
+Compilare nel file locale solo dati reali:
+
+- telefono pubblico `.es`;
+- WhatsApp pubblico `.es`;
+- email pubblica, oggi prevista `info@solarisfilms.es`;
+- indirizzo pubblico o sede operativa da mostrare;
+- eventuali dati societari confermati.
+
+Generare un payload configurato separato:
+
+```powershell
+node scripts\solaris-es-apply-launch-config.js --config docs\solaris-es\solarisfilms-es-launch-config.local.json
+```
+
+Output locale, ignorato da git:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json
+```
+
+Lo script:
+
+- non scrive su WordPress;
+- non pubblica;
+- non modifica DNS;
+- si rifiuta di scrivere se telefono, WhatsApp, email o indirizzo sono vuoti o placeholder;
+- lascia invariato il payload originale.
+
 ## Passo 5 - Dry-run
 
 ```powershell
@@ -203,6 +247,14 @@ node scripts\solaris-es-preflight-check.js
 Lo script deve tornare `go: true` prima di qualunque pubblicazione. Durante la fase dominio bloccato e staging incompleto e normale che segnali blocker.
 
 Il payload attuale contiene 78 bozze import-ready. Non usare `--include-skeletons` come flusso standard: serve solo per debug su payload futuri incompleti.
+
+Dopo la configurazione contatti, usare il payload configurato nei controlli e nell'import:
+
+```powershell
+node scripts\solaris-es-post-import-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+node scripts\solaris-es-wp-rest-import-drafts.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+```
 
 Piano batch import/review:
 
@@ -325,6 +377,12 @@ Asset SEO preview:
 node scripts\solaris-es-build-seo-assets.js
 ```
 
+Se il payload configurato e disponibile:
+
+```powershell
+node scripts\solaris-es-build-seo-assets.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
+```
+
 Output locale:
 
 ```txt
@@ -341,6 +399,12 @@ QA automatizzato preparato:
 
 ```powershell
 node scripts\solaris-es-post-import-qa.js
+```
+
+Se il payload configurato e disponibile:
+
+```powershell
+node scripts\solaris-es-post-import-qa.js --payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json
 ```
 
 Questo controllo e offline: legge il payload, segnala duplicati, placeholder, termini esclusi e contenuti non pronti. Non visita il sito e non scrive su WordPress.

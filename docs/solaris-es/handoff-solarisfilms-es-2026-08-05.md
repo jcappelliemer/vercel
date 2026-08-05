@@ -149,6 +149,36 @@ Stato attuale:
 
 Sono preview locali, non file da caricare ora.
 
+## Configurazione contatti
+
+La pagina `/contacto/` resta bloccata finche telefono, WhatsApp e indirizzo non sono reali.
+
+Template committato:
+
+```txt
+docs/solaris-es/solarisfilms-es-launch-config-template-2026-08-05.json
+```
+
+File locale da creare, ignorato da git:
+
+```txt
+docs/solaris-es/solarisfilms-es-launch-config.local.json
+```
+
+Generazione payload configurato:
+
+```powershell
+node scripts\solaris-es-apply-launch-config.js --config docs\solaris-es\solarisfilms-es-launch-config.local.json
+```
+
+Output locale ignorato:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json
+```
+
+Lo script non scrive su WordPress e non modifica il payload originale. Se mancano telefono, WhatsApp, email o indirizzo pubblici, fallisce senza produrre output.
+
 ## Batch plan
 
 Generazione:
@@ -187,6 +217,8 @@ node scripts\solaris-es-wp-readiness-check.js
 node scripts\solaris-es-wp-rest-import-drafts.js --apply --type page --limit 2
 node scripts\solaris-es-post-import-qa.js --live --base https://www.solarisfilms.es
 ```
+
+Dopo avere creato il payload configurato, usare `--payload docs\solaris-es\generated\solarisfilms-es-wp-import-payload-configured.json` sui comandi di QA, SEO preview e import.
 
 Solo dopo pilota ok:
 

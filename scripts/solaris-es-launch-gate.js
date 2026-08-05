@@ -22,6 +22,8 @@ const paths = {
   postImportQaScript: path.join(root, "scripts", "solaris-es-post-import-qa.js"),
   seoAssetsScript: path.join(root, "scripts", "solaris-es-build-seo-assets.js"),
   importBatchesScript: path.join(root, "scripts", "solaris-es-build-import-batches.js"),
+  launchConfigScript: path.join(root, "scripts", "solaris-es-apply-launch-config.js"),
+  launchConfigTemplate: path.join(root, "docs", "solaris-es", "solarisfilms-es-launch-config-template-2026-08-05.json"),
   importBatchesJson: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-import-batches.json"),
   importBatchesCsv: path.join(root, "docs", "solaris-es", "generated", "solarisfilms-es-import-batches.csv"),
   installKitManifest: path.join(root, "wordpress", "solaris-es-install-kit", "manifest.json")
@@ -125,6 +127,8 @@ function validateRequiredFiles() {
     "postImportQaScript",
     "seoAssetsScript",
     "importBatchesScript",
+    "launchConfigScript",
+    "launchConfigTemplate",
     "importBatchesJson",
     "importBatchesCsv"
   ];
@@ -259,9 +263,12 @@ function main() {
     repo_blockers: repoBlockers,
     launch_blockers: launchBlockers,
     next_commands_when_wp_is_ready: [
+      "Copy-Item docs/solaris-es/solarisfilms-es-launch-config-template-2026-08-05.json docs/solaris-es/solarisfilms-es-launch-config.local.json",
+      "node scripts/solaris-es-apply-launch-config.js --config docs/solaris-es/solarisfilms-es-launch-config.local.json",
       "node scripts/solaris-es-preflight-check.js",
       "node scripts/solaris-es-wp-readiness-check.js",
-      "node scripts/solaris-es-wp-rest-import-drafts.js --apply --type page --limit 2",
+      "node scripts/solaris-es-post-import-qa.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json",
+      "node scripts/solaris-es-wp-rest-import-drafts.js --payload docs/solaris-es/generated/solarisfilms-es-wp-import-payload-configured.json --apply --type page --limit 2",
       "node scripts/solaris-es-post-import-qa.js --live --base https://www.solarisfilms.es"
     ]
   };

@@ -97,6 +97,21 @@ Configurazione consigliata:
 - plugin minimi;
 - Orchestra come plugin/funzione, non badge hardcoded nel tema.
 
+Tema preparato nel repo:
+
+```txt
+wordpress/solaris-es-theme/
+```
+
+Installazione prevista:
+
+1. comprimere o copiare `wordpress/solaris-es-theme/` in `wp-content/themes/solaris-es-theme/`;
+2. attivare il tema `Solaris Films ES`;
+3. creare il menu principale da Aspetto > Menu oppure usare il fallback del tema;
+4. dopo import della pagina `/`, andare in Impostazioni > Lettura e impostare la pagina `home` come homepage statica;
+5. configurare solo dati reali per telefono, WhatsApp e indirizzo. Se non sono presenti, il tema li nasconde;
+6. non inserire badge AEO Orchestra nel tema: deve arrivare dal plugin Orchestra.
+
 REST deve rispondere:
 
 ```powershell

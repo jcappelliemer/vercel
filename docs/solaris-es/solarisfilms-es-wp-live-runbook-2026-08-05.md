@@ -255,6 +255,24 @@ Obbligatorio:
 - controllo pagine prodotto;
 - controllo footer e contatti.
 
+Asset SEO preview:
+
+```powershell
+node scripts\solaris-es-build-seo-assets.js
+```
+
+Output locale:
+
+```txt
+docs/solaris-es/generated/solarisfilms-es-sitemap-candidate.xml
+docs/solaris-es/generated/solarisfilms-es-robots-staging-preview.txt
+docs/solaris-es/generated/solarisfilms-es-robots-production-preview.txt
+docs/solaris-es/generated/solarisfilms-es-url-publication-preview.csv
+docs/solaris-es/generated/solarisfilms-es-seo-assets-summary.json
+```
+
+Questi file sono preview: non vanno caricati su WordPress finche il QA non e verde e James non approva il go-live. La sitemap candidate esclude automaticamente URL con placeholder o termini esclusi rilevati dal payload.
+
 QA automatizzato preparato:
 
 ```powershell

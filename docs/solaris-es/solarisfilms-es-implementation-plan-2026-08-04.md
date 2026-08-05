@@ -274,3 +274,5 @@ Bloccanti prima di pubblicare:
 - `docs/solaris-es/solarisfilms-es-james-inputs-2026-08-05.csv`
 - `docs/solaris-es/solarisfilms-es-decisions-2026-08-05.md`
 - `docs/solaris-es/solarisfilms-es-spanish-norms-research-2026-08-05.md`
+- `docs/solaris-es/solarisfilms-es-filmops-tenant-spec-2026-08-05.md`
+- `docs/solaris-es/solarisfilms-es-content-decisions-overlay-2026-08-05.json`

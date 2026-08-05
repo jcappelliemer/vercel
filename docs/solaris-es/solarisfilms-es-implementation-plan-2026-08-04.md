@@ -265,3 +265,5 @@ Bloccanti prima di pubblicare:
 - `docs/solaris-es/solarisfilms-es-keyword-taxonomy-2026-08-05.md`
 - `docs/solaris-es/solarisfilms-es-seo-metadata-2026-08-05.csv`
 - `scripts/solaris-es-build-seo-metadata.js`
+- `docs/solaris-es/solarisfilms-es-wp-architecture-2026-08-05.md`
+- `docs/solaris-es/solarisfilms-es-infrastructure-checklist-2026-08-05.md`

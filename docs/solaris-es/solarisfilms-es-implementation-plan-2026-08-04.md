@@ -258,3 +258,5 @@ Bloccanti prima di pubblicare:
 - `docs/solaris-es/solarisfilms-es-wp-import-payload-2026-08-05.json`
 - `docs/solaris-es/solarisfilms-es-gap-register-2026-08-05.md`
 - `scripts/solaris-es-build-wp-payload.js`
+- `docs/solaris-es/solarisfilms-es-import-runbook-2026-08-05.md`
+- `scripts/solaris-es-wp-rest-import-drafts.js`

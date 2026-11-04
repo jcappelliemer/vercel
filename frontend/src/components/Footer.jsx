@@ -2,6 +2,8 @@ import { Link } from '@/next/router-shim';
 import { Phone, EnvelopeSimple, MapPin, LinkedinLogo, InstagramLogo, YoutubeLogo } from '@phosphor-icons/react';
 import { useSettings } from '../hooks/useSettings';
 import AeoOrchestraBadge from './AeoOrchestraBadge';
+import Authority from './Authority';
+import OrchestraConnector from './OrchestraConnector';
 
 const serviceLinks = [
   { name: 'Pellicole Antisolari', path: '/servizi#antisolari' },
@@ -10,7 +12,7 @@ const serviceLinks = [
   { name: 'Privacy e Design', path: '/servizi#privacy' },
 ];
 
-const Footer = () => {
+const Footer = ({ orchestraEnabled = true, orchestraPage, orchestraPath }) => {
   const currentYear = new Date().getFullYear();
   const settings = useSettings();
   const logoSrc = settings.logo_url || '/assets/solaris-logo.png';
@@ -21,7 +23,14 @@ const Footer = () => {
   ].filter((item) => item.href);
 
   return (
-    <footer className="border-t border-white/5" data-testid="footer">
+    <>
+      {orchestraEnabled ? (
+        <>
+          <OrchestraConnector bodyOnly path={orchestraPath} page={orchestraPage} />
+          <Authority path={orchestraPath} />
+        </>
+      ) : null}
+      <footer className="border-t border-white/5" data-testid="footer">
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Brand */}
@@ -113,7 +122,8 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </footer>
+      </footer>
+    </>
   );
 };
 

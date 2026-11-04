@@ -15,8 +15,6 @@ import {
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
-import OrchestraConnector from '../components/OrchestraConnector';
-import Authority from '../components/Authority';
 import { useHeadlessSEO, mergeHeadlessSEO } from '../hooks/useHeadlessSEO';
 import { isExcludedSolarisPage } from '../utils/liveContent';
 import {
@@ -963,6 +961,9 @@ const normalizeSpecLabel = (value = '') => (
 
 const parseFocusSpecItem = (text = '') => {
   const normalized = normalizeSpecLabel(text);
+  // Metric cards are terse facts. Questions and long editorial headings can
+  // contain words such as "installazione" or "garanzia" without being specs.
+  if (!normalized || normalized.includes('?') || normalized.length > 90) return null;
   const lower = normalized.toLocaleLowerCase('it');
 
   const map = [
@@ -2519,7 +2520,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
           <h1 className="text-4xl font-medium mb-4">Contenuti non disponibili</h1>
           <p className="text-[#94A3B8]">I contenuti non sono disponibili in questo momento. Riprova tra poco o torna alla home.</p>
         </main>
-        <Footer />
+        <Footer orchestraEnabled={false} />
       </div>
     );
   }
@@ -2544,7 +2545,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
           <p className="text-[#94A3B8] mb-8">Questo URL non e presente nella mappa del sito Solaris.</p>
           <Link to="/" className="btn-yellow">Torna alla home</Link>
         </main>
-        <Footer />
+        <Footer orchestraEnabled={false} />
       </div>
     );
   }
@@ -2565,9 +2566,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
       <LivePageSEO page={resolvedPage} currentPath={currentPath} />
       <Header />
       <LiveContent page={resolvedPage} allPages={index?.pages || []} />
-      <OrchestraConnector path={currentPath} page={resolvedPage} />
-      <Authority path={currentPath} />
-      <Footer />
+      <Footer orchestraPath={currentPath} orchestraPage={resolvedPage} />
       <ChatBot />
     </div>
   );

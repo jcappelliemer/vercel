@@ -1,5 +1,47 @@
 import { isExcludedSolarisPage } from '@/utils/liveContent';
 
+const SOURCE_ORIGIN = String(
+  process.env.NEXT_PUBLIC_WP_ORIGIN
+  || process.env.REACT_APP_WP_URL
+  || 'https://wordpress-jc4e.srv1502079.hstgr.cloud'
+).replace(/\/+$/, '');
+const PUBLIC_ORIGIN = String(
+  process.env.NEXT_PUBLIC_SITE_URL
+  || process.env.NEXT_PUBLIC_SITE_ORIGIN
+  || 'https://solarisfilms.vercel.app'
+).replace(/\/+$/, '');
+const SCHEMA_IDENTITY_URL_KEYS = new Set(['@id', 'url', 'mainEntityOfPage', 'item', 'urlTemplate']);
+
+const rebaseSourceUrl = (value = '') => {
+  const raw = String(value || '');
+  return raw.startsWith(SOURCE_ORIGIN)
+    ? `${PUBLIC_ORIGIN}${raw.slice(SOURCE_ORIGIN.length)}`
+    : raw;
+};
+
+const rewriteSchemaIdentityUrls = (value, key = '') => {
+  if (Array.isArray(value)) {
+    return value.map((item) => rewriteSchemaIdentityUrls(item, key));
+  }
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([childKey, childValue]) => [
+      childKey,
+      rewriteSchemaIdentityUrls(childValue, childKey),
+    ]));
+  }
+  if (typeof value !== 'string' || !SCHEMA_IDENTITY_URL_KEYS.has(key)) return value;
+  return rebaseSourceUrl(value);
+};
+
+const normalizeSchemaOrigin = (value) => {
+  if (typeof value !== 'string') return rewriteSchemaIdentityUrls(value);
+  try {
+    return JSON.stringify(rewriteSchemaIdentityUrls(JSON.parse(value)));
+  } catch {
+    return value;
+  }
+};
+
 const normalizePath = (pathname = '/') => {
   if (!pathname || pathname === '/') return '/';
   return pathname.endsWith('/') ? pathname : `${pathname}/`;
@@ -131,14 +173,21 @@ export const readLiveIndex = () => {
   const { indexPath } = getStoragePaths();
   const raw = fs.readFileSync(indexPath, 'utf8');
   const data = JSON.parse(raw);
-  const pages = (data?.pages || []).filter((item) => !isExcludedSolarisPage(item));
-  return { ...data, pages };
+  const pages = (data?.pages || [])
+    .filter((item) => !isExcludedSolarisPage(item))
+    .map((item) => ({
+      ...item,
+      url: rebaseSourceUrl(item.url),
+      sourceSitemap: rebaseSourceUrl(item.sourceSitemap),
+    }));
+  return { ...data, origin: PUBLIC_ORIGIN, pages };
 };
 
 export const findPageEntryByPath = (index, pathname) => {
   const normalizedTarget = normalizePath(pathname);
   const pages = index?.pages || [];
   const directMatch = pages.find((item) => normalizePath(item.path) === normalizedTarget)
+    || pages.find((item) => normalizePath(item.route?.newPath) === normalizedTarget)
     || null;
 
   if (directMatch) return directMatch;
@@ -156,7 +205,16 @@ export const readLivePageByFile = (fileName) => {
   if (!fileName) return null;
   const pagePath = require('path').join(pagesDir, fileName);
   if (!fs.existsSync(pagePath)) return null;
-  return sanitizeLivePayload(JSON.parse(fs.readFileSync(pagePath, 'utf8')));
+  const payload = sanitizeLivePayload(JSON.parse(fs.readFileSync(pagePath, 'utf8')));
+  return {
+    ...payload,
+    url: rebaseSourceUrl(payload.url),
+    sourceSitemap: rebaseSourceUrl(payload.sourceSitemap),
+    seo: {
+      ...(payload.seo || {}),
+      schemas: (payload.seo?.schemas || []).map(normalizeSchemaOrigin),
+    },
+  };
 };
 
 export const getMirrorStaticProps = (pathname) => {

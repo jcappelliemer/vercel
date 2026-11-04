@@ -53,7 +53,13 @@ if (process.env.SKIP_ORCHESTRA_FETCH === '1' || !LICENSE) {
 function fetchManifest(url) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https') ? https : http;
-    const req = client.get(url, { headers: { Authorization: `Bearer ${LICENSE}`, Accept: 'application/json' } }, (res) => {
+    const req = client.get(url, { headers: {
+      Authorization: `Bearer ${LICENSE}`,
+      Accept: 'application/json',
+      'Cache-Control': 'no-store, no-cache, max-age=0, must-revalidate',
+      Pragma: 'no-cache',
+      Expires: '0',
+    } }, (res) => {
       let body = '';
       res.on('data', (c) => { body += c; });
       res.on('end', () => {
@@ -162,6 +168,8 @@ async function main() {
       if (!key) continue;
       byPath[key] = {
         post_id: p.post_id,
+        wp_url: p.wp_url || '',
+        frontend_url: p.frontend_url || '',
         modified_at: p.modified_at,
         meta: p.meta || {},
         aeo: p.aeo || {},

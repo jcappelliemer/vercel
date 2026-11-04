@@ -1,4 +1,9 @@
 const path = require('path');
+const wpProxyOrigin = String(
+  process.env.WP_PROXY_ORIGIN
+  || process.env.NEXT_PUBLIC_WP_ORIGIN
+  || 'https://wordpress-jc4e.srv1502079.hstgr.cloud'
+).replace(/\/+$/, '');
 
 const withSlashVariants = (paths) => paths.flatMap((source) => [
   source.replace(/\/$/, ''),
@@ -54,11 +59,30 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
+  async headers() {
+    if (process.env.SITE_INDEXABLE === '1' || process.env.NEXT_PUBLIC_SITE_INDEXABLE === '1') {
+      return [];
+    }
+    return [{
+      source: '/:path*',
+      headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+    }];
+  },
   async rewrites() {
-    return gonePaths.map((source) => ({
-      source,
-      destination: '/api/gone',
-    }));
+    return [
+      {
+        source: '/seo-aeo-sitemap.xml',
+        destination: `${wpProxyOrigin}/seo-aeo-sitemap.xml`,
+      },
+      {
+        source: '/sitemap-:kind.xml',
+        destination: `${wpProxyOrigin}/sitemap-:kind.xml`,
+      },
+      ...gonePaths.map((source) => ({
+        source,
+        destination: '/api/gone',
+      })),
+    ];
   },
   async redirects() {
     const redirects = [

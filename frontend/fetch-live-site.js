@@ -28,6 +28,7 @@ const SITE_ORIGIN = normalizeOrigin(
 const SITEMAP_INDEX_CANDIDATES = unique([
   `${LIVE_ORIGIN}/sitemap_index.xml`,
   `${LIVE_ORIGIN}/wp-sitemap.xml`,
+  `${LIVE_ORIGIN}/seo-aeo-sitemap.xml`,
   `${LIVE_ORIGIN}/sitemap.xml`,
 ]);
 const OUTPUT_DIR = path.join(__dirname, 'public', 'wp-data');
@@ -39,6 +40,12 @@ const URL_MAP_FILE = path.join(OUTPUT_DIR, 'url-map.json');
 const URL_MAP_CSV_FILE = path.join(OUTPUT_DIR, 'url-map.csv');
 const SITEMAP_FILE = path.join(__dirname, 'public', 'sitemap.xml');
 const DEFAULT_ROBOTS = 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1';
+const FRESH_WP_HEADERS = {
+  'User-Agent': 'SolarisFilmsMirror/1.0',
+  'Cache-Control': 'no-store, no-cache, max-age=0, must-revalidate',
+  Pragma: 'no-cache',
+  Expires: '0',
+};
 const EXCLUDED_SOLARIS_TERMS = [
   /\blcd\b/i,
   /\bstratum\b/i,
@@ -118,7 +125,7 @@ function isExcludedLiveUrl(value = '') {
 function fetchText(url, redirectCount = 0) {
   return new Promise((resolve, reject) => {
     const client = url.startsWith('https:') ? https : http;
-    const req = client.get(url, { headers: { 'User-Agent': 'SolarisFilmsMirror/1.0' } }, (res) => {
+    const req = client.get(url, { headers: FRESH_WP_HEADERS }, (res) => {
       const status = res.statusCode || 0;
       if ([301, 302, 303, 307, 308].includes(status) && res.headers.location) {
         if (redirectCount > 5) {
@@ -153,7 +160,7 @@ function fetchBuffer(url, redirectCount = 0) {
     const cleanUrl = String(url || '').trim().replace(/&amp;/g, '&').replace(/\s+/g, '');
     const requestUrl = new URL(encodeURI(cleanUrl));
     const client = requestUrl.protocol === 'https:' ? https : http;
-    const req = client.get(requestUrl, { headers: { 'User-Agent': 'SolarisFilmsMirror/1.0' } }, (res) => {
+    const req = client.get(requestUrl, { headers: FRESH_WP_HEADERS }, (res) => {
       const status = res.statusCode || 0;
       const location = res.headers.location;
       if (status >= 300 && status < 400 && location && redirectCount < 5) {
@@ -182,6 +189,18 @@ function fetchBuffer(url, redirectCount = 0) {
 
 function unique(values) {
   return [...new Set(values.filter(Boolean))];
+}
+
+// Orchestra sitemaps describe public frontend URLs even when the build reads
+// from a separate WordPress origin. Rebase only for fetching; stored routes
+// and generated canonicals continue to use SITE_ORIGIN.
+function toLiveSourceUrl(value) {
+  try {
+    const parsed = new URL(String(value || ''));
+    return `${LIVE_ORIGIN}${parsed.pathname}${parsed.search}${parsed.hash}`;
+  } catch {
+    return value;
+  }
 }
 
 function decodeEntities(value = '') {
@@ -1023,15 +1042,20 @@ function classifyPath(pathname, sourceSitemap = '') {
 }
 
 async function collectLiveUrls() {
-  let indexXml = '';
   let indexUrl = '';
+  let rootUrls = [];
   const failures = [];
 
   for (const candidate of SITEMAP_INDEX_CANDIDATES) {
     try {
       console.log(`Reading sitemap index ${candidate}`);
-      indexXml = await fetchText(candidate);
+      const candidateXml = await fetchText(candidate);
+      const candidateUrls = extractSitemapUrls(candidateXml);
+      if (!candidateUrls.length) {
+        throw new Error('response contains no sitemap URLs');
+      }
       indexUrl = candidate;
+      rootUrls = candidateUrls.map(toLiveSourceUrl);
       break;
     } catch (err) {
       failures.push(`${candidate}: ${err.message}`);
@@ -1039,14 +1063,19 @@ async function collectLiveUrls() {
     }
   }
 
-  if (!indexXml) {
+  if (!rootUrls.length) {
     throw new Error(`No live sitemap index available. ${failures.join(' | ')}`);
   }
 
-  const sitemapUrls = extractSitemapUrls(indexXml)
-    .filter((url) => url.endsWith('.xml'))
+  const sitemapUrls = rootUrls
+    .filter((url) => /\.xml(?:$|[?#])/i.test(url))
     .filter((url) => !isExcludedSitemapUrl(url));
-  const pages = [];
+  const pages = rootUrls
+    .filter((url) => !/\.xml(?:$|[?#])/i.test(url))
+    .filter((url) => url.startsWith(LIVE_ORIGIN))
+    .filter((url) => !isExcludedProductUrl(url))
+    .filter((url) => !isExcludedLiveUrl(url))
+    .map((url) => ({ url, sitemap: indexUrl }));
 
   console.log(`Using sitemap index ${indexUrl} with ${sitemapUrls.length} child sitemaps`);
 
@@ -1055,6 +1084,7 @@ async function collectLiveUrls() {
       console.log(`Reading sitemap ${sitemapUrl}`);
       const xml = await fetchText(sitemapUrl);
       const urls = extractSitemapUrls(xml)
+        .map(toLiveSourceUrl)
         .filter((url) => url.startsWith(LIVE_ORIGIN))
         .filter((url) => !isExcludedProductUrl(url))
         .filter((url) => !isExcludedLiveUrl(url));

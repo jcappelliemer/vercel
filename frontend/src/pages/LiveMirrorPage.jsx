@@ -2443,7 +2443,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (index) return undefined;
+    if (index && index.partial !== true) return undefined;
 
     let mounted = true;
 
@@ -2455,7 +2455,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
       .then((data) => {
         if (!mounted) return;
         const pages = (data?.pages || []).filter((item) => !isExcludedSolarisPage(item));
-        setIndex({ ...data, pages });
+        setIndex({ ...data, partial: false, pages });
       })
       .catch((err) => {
         if (mounted) setError(err);

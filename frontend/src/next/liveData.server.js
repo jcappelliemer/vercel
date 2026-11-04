@@ -217,6 +217,28 @@ export const readLivePageByFile = (fileName) => {
   };
 };
 
+const toDirectoryPage = (page = {}) => ({
+  url: page.url || '',
+  path: page.path || '',
+  title: page.title || '',
+  description: page.description || '',
+  h1: page.h1 || '',
+  route: {
+    type: page.route?.type || '',
+    label: page.route?.label || '',
+    newPath: page.route?.newPath || '',
+  },
+});
+
+const MIRROR_RELATED_TYPES = new Set(['product', 'technical-focus', 'info']);
+
+const getInitialMirrorIndex = (index, currentEntry) => ({
+  partial: true,
+  pages: (index.pages || [])
+    .filter((page) => page === currentEntry || MIRROR_RELATED_TYPES.has(page.route?.type))
+    .map((page) => ({ ...toDirectoryPage(page), file: page.file || '' })),
+});
+
 export const getMirrorStaticProps = (pathname) => {
   const index = readLiveIndex();
   const entry = findPageEntryByPath(index, pathname);
@@ -228,7 +250,7 @@ export const getMirrorStaticProps = (pathname) => {
 
   return {
     props: {
-      initialIndex: index,
+      initialIndex: getInitialMirrorIndex(index, entry),
       initialPage: page,
       initialPath: normalizePath(pathname),
     },
@@ -249,7 +271,7 @@ export const getMirrorServerProps = (pathname) => {
 
   return {
     props: {
-      initialIndex: index,
+      initialIndex: getInitialMirrorIndex(index, entry),
       initialPage: page,
       initialPath: normalizedPathname,
     },
@@ -315,7 +337,10 @@ export const getDirectoryStaticProps = () => {
   const index = readLiveIndex();
   return {
     props: {
-      initialPages: index.pages || [],
+      // Directory cards only use identity, copy and route classification. Do
+      // not serialize file, canonical, robots and sitemap metadata on every
+      // directory route; the full index remains available as a static asset.
+      initialPages: (index.pages || []).map(toDirectoryPage),
     },
     revalidate: 300,
   };

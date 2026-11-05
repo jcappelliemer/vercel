@@ -99,7 +99,7 @@ if [[ ! "${ORCHESTRA_PAGE_COUNT}" =~ ^[0-9]+$ ]] || (( ORCHESTRA_PAGE_COUNT < MI
     exit 1
 fi
 
-npm run start -- --hostname 127.0.0.1 --port "${PORT}" >"${SERVER_LOG}" 2>&1 &
+./node_modules/.bin/next start --hostname 127.0.0.1 --port "${PORT}" >"${SERVER_LOG}" 2>&1 &
 SERVER_PID=$!
 for _ in $(seq 1 60); do
     if curl -fsS --max-time 3 "http://127.0.0.1:${PORT}/" >/dev/null; then

@@ -2,6 +2,7 @@ import { Helmet } from 'react-helmet-async';
 import { useLocation } from '@/next/router-shim';
 import fixes from '../data/orchestra-fixes.json';
 import FAQ from './FAQ';
+import InternalLinks from './InternalLinks';
 import Snippet from './Snippet';
 import { filterFaqItemsAgainstBody, isAuthorityFaqItem, normalizeFaqItems, resolveOrchestraPath } from '../utils/orchestraBlocks';
 
@@ -18,8 +19,8 @@ const WP_ORIGIN = String(
 const SCHEMA_IDENTITY_URL_KEYS = new Set(['@id', 'url', 'mainEntityOfPage', 'item']);
 
 /**
- * OrchestraConnector — A.4: renders the Orchestra AEO blocks (faq, snippet)
- * + head (schema_jsonld, meta) for the CURRENT route, read from
+ * OrchestraConnector — A.4: renders the Orchestra AEO blocks (FAQ, snippet,
+ * internal links) + head (schema_jsonld, meta) for the CURRENT route, read from
  * orchestra-fixes.json by path. ADDITIVE over the .it-sourced body (does not
  * replace it). Renders nothing when the path has no Orchestra entry (graceful —
  * no hardcoded fallback outside the home). Blocks appear only after a rebuild
@@ -149,6 +150,20 @@ function rewriteSchemaIdentityUrls(value, sourceOrigin, targetOrigin, key = '') 
   }
 }
 
+function rewriteHtmlIdentityUrls(html, sourceOrigin, targetOrigin) {
+  if (!html || !sourceOrigin || !targetOrigin) return html;
+
+  return String(html).replace(/(\bhref\s*=\s*)(["'])(.*?)\2/gi, (full, prefix, quote, value) => {
+    try {
+      const parsed = new URL(value);
+      if (parsed.origin !== sourceOrigin) return full;
+      return `${prefix}${quote}${targetOrigin}${parsed.pathname}${parsed.search}${parsed.hash}${quote}`;
+    } catch {
+      return full;
+    }
+  });
+}
+
 function cleanSchemaText(value) {
   return String(value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
@@ -200,6 +215,11 @@ export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
   const faqSchema = faqItems.length && !hasSchemaType(schemaJsonLd, 'FAQPage')
     ? buildFaqSchema(faqItems)
     : null;
+  const internalLinksHtml = rewriteHtmlIdentityUrls(
+    aeo.internal_links_html,
+    sourceOrigin,
+    targetOrigin
+  );
   const hasHead = meta.title || meta.description || meta.keywords || organizationSchema || schemaJsonLd || faqSchema;
 
   return (
@@ -223,6 +243,7 @@ export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
       {/* Head and body mounts are split so every route receives metadata once. */}
       {!headOnly && visibleFaqItems.length ? <FAQ items={visibleFaqItems} /> : null}
       {!headOnly && aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
+      {!headOnly && internalLinksHtml ? <InternalLinks html={internalLinksHtml} /> : null}
     </>
   );
 }

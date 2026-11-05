@@ -54,6 +54,20 @@ const editorialArchiveRedirects = [
   statusCode: 301,
 })));
 
+const staticReplicaLegacyRedirects = [
+  ['/blog', '/lo-sapevi-che/'],
+  [
+    '/pellicole-per-vetri/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy',
+    '/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy/',
+  ],
+  ['/pellicole-per-vetri/pellicole-per-vetri', '/pellicole-per-vetri/'],
+  ['/pellicole-per-vetri/pellicole-per-vetri/faq', '/faq/'],
+].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
+  source: variant,
+  destination,
+  statusCode: 301,
+})));
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -87,6 +101,7 @@ const nextConfig = {
   async redirects() {
     const redirects = [
       ...editorialArchiveRedirects,
+      ...staticReplicaLegacyRedirects,
       {
         source: '/pellicole-per-vetri/profilo-solaris',
         destination: '/company-profile/',

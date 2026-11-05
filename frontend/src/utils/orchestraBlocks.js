@@ -1,3 +1,5 @@
+import routeAliases from '../data/orchestra-route-aliases.json';
+
 export function normalizeOrchestraPath(pathname) {
   let normalized = String(pathname || '/');
   const cut = normalized.search(/[?#]/);
@@ -5,6 +7,15 @@ export function normalizeOrchestraPath(pathname) {
   if (!normalized.startsWith('/')) normalized = `/${normalized}`;
   if (normalized.length > 1) normalized = normalized.replace(/\/+$/, '');
   return normalized || '/';
+}
+
+export function resolveOrchestraPath(pathname, entries = {}) {
+  const normalized = normalizeOrchestraPath(pathname);
+  if (entries && entries[normalized]) return normalized;
+
+  const sourcePath = normalizeOrchestraPath(routeAliases?.[normalized] || normalized);
+  if (entries && entries[sourcePath]) return sourcePath;
+  return normalized;
 }
 
 function stripAccents(value) {

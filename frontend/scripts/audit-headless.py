@@ -35,6 +35,11 @@ def norm_path(value):
     return path
 
 
+def manifest_key(value):
+    path = norm_path(value)
+    return "/" if path == "/" else path.rstrip("/")
+
+
 def is_authority_question(value):
     text = unicodedata.normalize("NFD", norm_text(value).lower())
     text = "".join(char for char in text if unicodedata.category(char) != "Mn")
@@ -251,7 +256,23 @@ def fetch(path, entry):
 def main():
     manifest_path = Path(sys.argv[1] if len(sys.argv) > 1 else "src/data/orchestra-fixes.json")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    entries = manifest.get("byPath") or {}
+    source_entries = manifest.get("byPath") or {}
+    entries = dict(source_entries)
+    alias_path = Path(
+        sys.argv[2]
+        if len(sys.argv) > 2
+        else manifest_path.with_name("orchestra-route-aliases.json")
+    )
+    alias_entries = 0
+    if alias_path.exists():
+        aliases = json.loads(alias_path.read_text(encoding="utf-8"))
+        for alias, source in aliases.items():
+            alias_key = manifest_key(alias)
+            source_key = manifest_key(source)
+            if alias_key in entries or source_key not in source_entries:
+                continue
+            entries[alias_key] = source_entries[source_key]
+            alias_entries += 1
     with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
         results = list(executor.map(lambda item: fetch(*item), entries.items()))
 
@@ -271,6 +292,8 @@ def main():
     h1_fail = [item for item in live if item["h1_count"] != 1]
     wp_host_fail = [item for item in live if item["wp_host_in_html"]]
     summary = {
+        "source_manifest_entries": len(source_entries),
+        "resolved_alias_entries": alias_entries,
         "manifest_entries": len(entries),
         "status_counts": dict(sorted(Counter(item.get("status", 0) for item in results).items())),
         "direct_live": len(direct),

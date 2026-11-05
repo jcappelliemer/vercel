@@ -3,7 +3,7 @@ import { useLocation } from '@/next/router-shim';
 import fixes from '../data/orchestra-fixes.json';
 import FAQ from './FAQ';
 import Snippet from './Snippet';
-import { filterFaqItemsAgainstBody, isAuthorityFaqItem, normalizeFaqItems, normalizeOrchestraPath } from '../utils/orchestraBlocks';
+import { filterFaqItemsAgainstBody, isAuthorityFaqItem, normalizeFaqItems, resolveOrchestraPath } from '../utils/orchestraBlocks';
 
 const SITE_ORIGIN = String(
   process.env.NEXT_PUBLIC_SITE_URL
@@ -170,8 +170,9 @@ function buildFaqSchema(items) {
 
 export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
   const loc = useLocation();
-  const key = normalizeOrchestraPath(path || (loc && loc.pathname) || '/');
-  const entry = fixes && fixes.byPath ? fixes.byPath[key] : null;
+  const entries = fixes && fixes.byPath ? fixes.byPath : {};
+  const key = resolveOrchestraPath(path || (loc && loc.pathname) || '/', entries);
+  const entry = entries[key] || null;
   if (!entry && key !== '/') return null;
 
   const aeo = entry?.aeo || {};

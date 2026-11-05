@@ -70,6 +70,7 @@ class PageParser(HTMLParser):
         self.h1_count = 0
         self.classes = []
         self.testids = []
+        self.hrefs = []
         self.in_jsonld = False
         self.jsonld_buffer = []
         self.jsonld = []
@@ -90,6 +91,8 @@ class PageParser(HTMLParser):
             self.classes.extend(str(attrs["class"]).split())
         if attrs.get("data-testid"):
             self.testids.append(str(attrs["data-testid"]))
+        if tag == "a" and attrs.get("href"):
+            self.hrefs.append(str(attrs["href"]))
         if tag == "script" and str(attrs.get("type", "")).lower() == "application/ld+json":
             self.in_jsonld = True
             self.jsonld_buffer = []
@@ -126,6 +129,19 @@ def meta_value(parser, name):
         if attrs.get("name", "").lower() == name:
             return attrs.get("content", "")
     return ""
+
+
+def canonical_href(value):
+    parsed = urlparse(urljoin(BASE + "/", html.unescape(str(value or ""))))
+    query = "?" + parsed.query if parsed.query else ""
+    fragment = "#" + parsed.fragment if parsed.fragment else ""
+    return f"{parsed.scheme.lower()}://{parsed.netloc.lower()}{norm_path(parsed.path)}{query}{fragment}"
+
+
+def html_hrefs(value):
+    parser = PageParser()
+    parser.feed(str(value or ""))
+    return [canonical_href(href) for href in parser.hrefs]
 
 
 def schema_types(value):
@@ -227,6 +243,11 @@ def fetch(path, entry):
     trust_visible = [item for item in trust if item in visible]
     snippet_text = norm_text((entry.get("aeo") or {}).get("snippet_html"))
     authority_text = norm_text((entry.get("aeo") or {}).get("authority_html"))
+    internal_links_html = (entry.get("aeo") or {}).get("internal_links_html") or ""
+    internal_links_text = norm_text(internal_links_html)
+    expected_internal_hrefs = set(html_hrefs(internal_links_html))
+    actual_hrefs = set(canonical_href(href) for href in parser.hrefs)
+    missing_internal_hrefs = sorted(expected_internal_hrefs - actual_hrefs)
     robots = meta_value(parser, "robots").lower()
     xrobots = headers.get("X-Robots-Tag", headers.get("x-robots-tag", "")).lower()
 
@@ -251,6 +272,10 @@ def fetch(path, entry):
         "snippet_visible": not snippet_text or snippet_text in visible,
         "authority_expected": bool(authority_text),
         "authority_section": "authority-section" in parser.testids,
+        "internal_links_expected": bool(internal_links_text or expected_internal_hrefs),
+        "internal_links_visible": not internal_links_text or internal_links_text in visible,
+        "internal_links_section": "internal-links-section" in parser.testids,
+        "internal_links_missing_hrefs": missing_internal_hrefs,
         "badge": "aeo-orchestra-badge" in parser.classes,
         "wp_host_in_html": WP_HOST in body,
         "technical_hosts_in_html": sorted(host for host in TECHNICAL_HOSTS if host in body),
@@ -290,6 +315,14 @@ def main():
     faq_fail = [item for item in direct if item["faq_visible"] != item["faq_expected"]]
     trust_fail = [item for item in direct if item["trust_visible"] != item["trust_expected"]]
     snippet_fail = [item for item in direct if item["snippet_expected"] and not item["snippet_visible"]]
+    internal_links_fail = [
+        item for item in direct
+        if item["internal_links_expected"] and (
+            not item["internal_links_visible"]
+            or not item["internal_links_section"]
+            or item["internal_links_missing_hrefs"]
+        )
+    ]
     authority_fail = [item for item in live if not item["authority_section"]]
     badge_fail = [item for item in live if not item["badge"]]
     noindex_header_fail = [item for item in results if not item.get("xrobots_noindex")]
@@ -313,6 +346,12 @@ def main():
         "trust_visible_direct": len(direct) - len(trust_fail),
         "snippet_visible_direct": sum(item["snippet_expected"] and item["snippet_visible"] for item in direct),
         "snippet_expected_direct": sum(item["snippet_expected"] for item in direct),
+        "internal_links_visible_direct": sum(
+            item["internal_links_expected"] and not item["internal_links_missing_hrefs"]
+            and item["internal_links_visible"] and item["internal_links_section"]
+            for item in direct
+        ),
+        "internal_links_expected_direct": sum(item["internal_links_expected"] for item in direct),
         "authority_section_live": sum(item["authority_section"] for item in live),
         "badge_live": sum(item["badge"] for item in live),
         "wp_host_leaks_live": sum(item["wp_host_in_html"] for item in live),
@@ -325,6 +364,15 @@ def main():
             "faq": [{"path": item["path"], "expected": item["faq_expected"], "visible": item["faq_visible"], "missing": item["faq_missing"]} for item in faq_fail],
             "trust": [{"path": item["path"], "expected": item["trust_expected"], "visible": item["trust_visible"]} for item in trust_fail],
             "snippet": [item["path"] for item in snippet_fail],
+            "internal_links": [
+                {
+                    "path": item["path"],
+                    "visible": item["internal_links_visible"],
+                    "section": item["internal_links_section"],
+                    "missing_hrefs": item["internal_links_missing_hrefs"],
+                }
+                for item in internal_links_fail
+            ],
             "authority": [item["path"] for item in authority_fail],
             "badge": [item["path"] for item in badge_fail],
             "noindex_header": [item["path"] for item in noindex_header_fail],
@@ -346,6 +394,7 @@ def main():
         or faq_fail
         or trust_fail
         or snippet_fail
+        or internal_links_fail
         or authority_fail
         or badge_fail
         or noindex_header_fail

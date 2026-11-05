@@ -2,8 +2,15 @@ import { Helmet } from 'react-helmet-async';
 import { useLocation } from '@/next/router-shim';
 import fixes from '../data/orchestra-fixes.json';
 import FAQ from './FAQ';
+import InternalLinks from './InternalLinks';
 import Snippet from './Snippet';
-import { filterFaqItemsAgainstBody, isAuthorityFaqItem, normalizeFaqItems, resolveOrchestraPath } from '../utils/orchestraBlocks';
+import {
+  filterFaqItemsAgainstBody,
+  isAuthorityFaqItem,
+  normalizeFaqItems,
+  resolveOrchestraPath,
+  rewriteOrchestraHtmlIdentityUrls,
+} from '../utils/orchestraBlocks';
 import { hasSchemaType, sanitizeProductSchemaJsonLd } from '../utils/schemaJsonLd';
 
 const SITE_ORIGIN = String(
@@ -19,8 +26,8 @@ const WP_ORIGIN = String(
 const SCHEMA_IDENTITY_URL_KEYS = new Set(['@id', 'url', 'mainEntityOfPage', 'item']);
 
 /**
- * OrchestraConnector — A.4: renders the Orchestra AEO blocks (faq, snippet)
- * + head (schema_jsonld, meta) for the CURRENT route, read from
+ * OrchestraConnector — A.4: renders the Orchestra AEO blocks (FAQ, snippet,
+ * internal links) + head (schema_jsonld, meta) for the CURRENT route, read from
  * orchestra-fixes.json by path. ADDITIVE over the .it-sourced body (does not
  * replace it). Renders nothing when the path has no Orchestra entry (graceful —
  * no hardcoded fallback outside the home). Blocks appear only after a rebuild
@@ -203,6 +210,11 @@ export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
   const faqSchema = faqItems.length && !hasSchemaType(schemaJsonLd, 'FAQPage')
     ? buildFaqSchema(faqItems, pageIdentityUrl)
     : null;
+  const internalLinksHtml = rewriteOrchestraHtmlIdentityUrls(
+    aeo.internal_links_html,
+    sourceOrigin,
+    targetOrigin
+  );
   const hasHead = meta.title || meta.description || meta.keywords || organizationSchema || schemaJsonLd || faqSchema;
 
   return (
@@ -226,6 +238,7 @@ export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
       {/* Head and body mounts are split so every route receives metadata once. */}
       {!headOnly && visibleFaqItems.length ? <FAQ items={visibleFaqItems} /> : null}
       {!headOnly && aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
+      {!headOnly && internalLinksHtml ? <InternalLinks html={internalLinksHtml} /> : null}
     </>
   );
 }

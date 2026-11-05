@@ -18,6 +18,20 @@ export function resolveOrchestraPath(pathname, entries = {}) {
   return normalized;
 }
 
+export function rewriteOrchestraHtmlIdentityUrls(html, sourceOrigin, targetOrigin) {
+  if (!html || !sourceOrigin || !targetOrigin) return html;
+
+  return String(html).replace(/(\bhref\s*=\s*)(["'])(.*?)\2/gi, (full, prefix, quote, value) => {
+    try {
+      const parsed = new URL(value);
+      if (parsed.origin !== sourceOrigin) return full;
+      return `${prefix}${quote}${targetOrigin}${parsed.pathname}${parsed.search}${parsed.hash}${quote}`;
+    } catch {
+      return full;
+    }
+  });
+}
+
 function stripAccents(value) {
   return String(value || '')
     .normalize('NFD')

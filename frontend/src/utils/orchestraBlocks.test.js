@@ -1,7 +1,34 @@
 import {
   applyOrchestraIntroRewrite,
   normalizeOrchestraIntroText,
+  rewriteOrchestraHtmlIdentityUrls,
 } from './orchestraBlocks';
+
+describe('Orchestra managed HTML identity', () => {
+  test('rebases only absolute links owned by the WordPress source', () => {
+    const html = [
+      '<a href="https://wordpress-jc4e.srv1502079.hstgr.cloud/servizi/?ref=1#film">Servizi</a>',
+      '<a href="/contatti/">Contatti</a>',
+      '<a href="https://example.com/partner/">Partner</a>',
+    ].join('');
+
+    expect(rewriteOrchestraHtmlIdentityUrls(
+      html,
+      'https://wordpress-jc4e.srv1502079.hstgr.cloud',
+      'https://www.solarisfilms.it'
+    )).toBe([
+      '<a href="https://www.solarisfilms.it/servizi/?ref=1#film">Servizi</a>',
+      '<a href="/contatti/">Contatti</a>',
+      '<a href="https://example.com/partner/">Partner</a>',
+    ].join(''));
+  });
+
+  test('fails closed when the source or target identity is unavailable', () => {
+    const html = '<a href="https://wordpress-jc4e.srv1502079.hstgr.cloud/servizi/">Servizi</a>';
+    expect(rewriteOrchestraHtmlIdentityUrls(html, '', 'https://www.solarisfilms.it')).toBe(html);
+    expect(rewriteOrchestraHtmlIdentityUrls(html, 'https://wordpress-jc4e.srv1502079.hstgr.cloud', '')).toBe(html);
+  });
+});
 
 describe('Orchestra REWRITE_INTRO bridge', () => {
   const before = 'Questa è un’introduzione sufficientemente lunga per descrivere il servizio e il suo obiettivo tecnico.';

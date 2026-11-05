@@ -30,6 +30,7 @@ add_filter('seo_aeo_capability_managed_block_action_supported', function ($suppo
     return in_array((string) $action_type, array(
         'ADD_AUTHORITY_SIGNALS',
         'ADD_FAQ_SECTION',
+        'ADD_INTERNAL_LINKS',
         'OPTIMIZE_FEATURED_SNIPPET',
         'REWRITE_INTRO',
     ), true);

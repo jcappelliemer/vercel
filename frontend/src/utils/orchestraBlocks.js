@@ -94,6 +94,53 @@ export function filterFaqItemsAgainstBody(items, page) {
   });
 }
 
+function plainIntroText(value) {
+  return decodeHtmlEntities(String(value || '').replace(/<[^>]*>/g, ' '))
+    .replace(/\u00a0/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function normalizeOrchestraIntroText(value) {
+  return plainIntroText(value)
+    .replace(/[‘’ʼ]/g, "'")
+    .replace(/[“”]/g, '"');
+}
+
+/**
+ * Apply a snapshot-backed REWRITE_INTRO to a committed static mirror.
+ * Only the first substantial paragraph is eligible and its normalized text
+ * must still match before_html exactly. A stale or ambiguous mirror therefore
+ * remains untouched instead of displaying the generated text in the wrong spot.
+ */
+export function applyOrchestraIntroRewrite(page, rewrite) {
+  if (!page || !rewrite || !Array.isArray(page.contentBlocks)) return page;
+
+  const before = normalizeOrchestraIntroText(rewrite.before_html);
+  const after = normalizeOrchestraIntroText(rewrite.after_html);
+  if (!before || !after || before === after) return page;
+
+  const firstSubstantial = page.contentBlocks.findIndex((block) => {
+    if (!block || block.type !== 'paragraph') return false;
+    const text = normalizeOrchestraIntroText(block.html || block.text || '');
+    return text.length >= 40 && text.split(/\s+/).filter(Boolean).length >= 6;
+  });
+  if (firstSubstantial < 0) return page;
+
+  const source = page.contentBlocks[firstSubstantial];
+  if (normalizeOrchestraIntroText(source.html || source.text || '') !== before) return page;
+
+  const contentBlocks = page.contentBlocks.slice();
+  contentBlocks[firstSubstantial] = {
+    ...source,
+    html: String(rewrite.after_html),
+    text: plainIntroText(rewrite.after_html),
+    orchestraManagedAction: 'REWRITE_INTRO',
+  };
+
+  return { ...page, contentBlocks };
+}
+
 // Residuo encoding (2026-07-15) — le fonti dati runtime (prodotti.json baked dal
 // build, REST jc4e) portano ancora entita HTML nei testi; React le stampa come
 // testo letterale ("un&#039;avanzata"). Decode PURO JS (niente DOM) cosi SSR e

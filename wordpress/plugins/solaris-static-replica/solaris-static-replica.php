@@ -15,8 +15,10 @@ define('SOLARIS_STATIC_REPLICA_URL', plugin_dir_url(__FILE__));
 define('SOLARIS_STATIC_REPLICA_REBUILD_OPTION', 'solaris_static_replica_rebuild_token');
 
 /**
- * The React replica renders these marker blocks after consuming Orchestra's
- * headless-fixes manifest. Other post_content actions stay fail-closed.
+ * The React replica renders these managed changes after consuming Orchestra's
+ * headless-fixes manifest. REWRITE_INTRO is applied only when the committed
+ * mirror still exact-matches the snapshot source; other body actions stay
+ * fail-closed.
  */
 add_filter('seo_aeo_capability_managed_block_action_supported', function ($supported, $action_type, $post_id) {
     if ($supported) {
@@ -28,6 +30,7 @@ add_filter('seo_aeo_capability_managed_block_action_supported', function ($suppo
     return in_array((string) $action_type, array(
         'ADD_AUTHORITY_SIGNALS',
         'OPTIMIZE_FEATURED_SNIPPET',
+        'REWRITE_INTRO',
     ), true);
 }, 10, 3);
 

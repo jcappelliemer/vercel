@@ -16,7 +16,9 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
 import { useHeadlessSEO, mergeHeadlessSEO } from '../hooks/useHeadlessSEO';
+import fixes from '../data/orchestra-fixes.json';
 import { isExcludedSolarisPage } from '../utils/liveContent';
+import { applyOrchestraIntroRewrite, resolveOrchestraPath } from '../utils/orchestraBlocks';
 import {
   SERVICE_FAMILIES,
   getFocusForFamily,
@@ -2469,7 +2471,13 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
   const currentPath = normalizePath(location.pathname || initialPath);
   const activePage = isPageForPath(page, currentPath) ? page : null;
   const headlessSEO = useHeadlessSEO(currentPath, activePage);
-  const resolvedPage = useMemo(() => mergeHeadlessSEO(activePage, headlessSEO), [activePage, headlessSEO]);
+  const seoResolvedPage = useMemo(() => mergeHeadlessSEO(activePage, headlessSEO), [activePage, headlessSEO]);
+  const resolvedPage = useMemo(() => {
+    const entries = fixes?.byPath || {};
+    const orchestraPath = resolveOrchestraPath(currentPath, entries);
+    const rewrite = entries[orchestraPath]?.aeo?.intro_rewrite || null;
+    return applyOrchestraIntroRewrite(seoResolvedPage, rewrite);
+  }, [seoResolvedPage, currentPath]);
   const pageIndexEntry = useMemo(() => {
     const pages = index?.pages || [];
     const directEntry = pages.find((item) => normalizePath(item.path) === currentPath)

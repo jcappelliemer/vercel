@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Solaris Static Replica
  * Description: Serve la replica statica 1:1 del nuovo sito Solaris dentro WordPress, con redirect e 410 server-side.
- * Version: 0.2.0
+ * Version: 0.3.0
  * Author: Solaris Films
  */
 
@@ -12,6 +12,68 @@ if (!defined('ABSPATH')) {
 
 define('SOLARIS_STATIC_REPLICA_DIR', plugin_dir_path(__FILE__));
 define('SOLARIS_STATIC_REPLICA_URL', plugin_dir_url(__FILE__));
+define('SOLARIS_STATIC_REPLICA_REBUILD_OPTION', 'solaris_static_replica_rebuild_token');
+
+/**
+ * The React replica renders these marker blocks after consuming Orchestra's
+ * headless-fixes manifest. Other post_content actions stay fail-closed.
+ */
+add_filter('seo_aeo_capability_managed_block_action_supported', function ($supported, $action_type, $post_id) {
+    if ($supported) {
+        return true;
+    }
+    if ((int) $post_id <= 0) {
+        return false;
+    }
+    return in_array((string) $action_type, array(
+        'ADD_AUTHORITY_SIGNALS',
+        'OPTIMIZE_FEATURED_SNIPPET',
+    ), true);
+}, 10, 3);
+
+function solaris_static_replica_rebuild_permission($request) {
+    $provided = (string) $request->get_param('token');
+    $expected = (string) get_option(SOLARIS_STATIC_REPLICA_REBUILD_OPTION, '');
+    return $provided !== '' && $expected !== '' && hash_equals($expected, $provided);
+}
+
+function solaris_static_replica_request_rebuild() {
+    $uploads = wp_upload_dir();
+    if (!empty($uploads['error']) || empty($uploads['basedir'])) {
+        return new WP_Error('rebuild_queue_unavailable', 'Rebuild queue unavailable.', array('status' => 503));
+    }
+
+    $queue_dir = trailingslashit($uploads['basedir']) . 'solaris-static-replica-rebuild';
+    if (!wp_mkdir_p($queue_dir) || !is_dir($queue_dir)) {
+        return new WP_Error('rebuild_queue_unavailable', 'Rebuild queue unavailable.', array('status' => 503));
+    }
+
+    $request_id = gmdate('Ymd\THis\Z') . '-' . wp_generate_password(12, false, false);
+    $payload = wp_json_encode(array(
+        'request_id' => $request_id,
+        'requested_at' => gmdate('c'),
+        'source' => 'aeo-orchestra-deploy-hook',
+    ));
+    $target = trailingslashit($queue_dir) . 'request-' . sanitize_file_name($request_id) . '.json';
+    $written = file_put_contents($target, $payload . "\n", LOCK_EX);
+    if ($written === false) {
+        return new WP_Error('rebuild_queue_write_failed', 'Rebuild request was not queued.', array('status' => 503));
+    }
+    @chmod($target, 0640);
+
+    return new WP_REST_Response(array(
+        'accepted' => true,
+        'request_id' => $request_id,
+    ), 202);
+}
+
+add_action('rest_api_init', function () {
+    register_rest_route('solaris-static-replica/v1', '/rebuild/(?P<token>[A-Za-z0-9_-]{32,128})', array(
+        'methods' => 'POST',
+        'callback' => 'solaris_static_replica_request_rebuild',
+        'permission_callback' => 'solaris_static_replica_rebuild_permission',
+    ));
+});
 
 function solaris_static_replica_normalize_path($path) {
     $path = parse_url((string) $path, PHP_URL_PATH);

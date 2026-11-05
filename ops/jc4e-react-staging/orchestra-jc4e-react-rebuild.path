@@ -1,0 +1,9 @@
+[Unit]
+Description=Watch Orchestra rebuild requests for jc4e React staging
+
+[Path]
+PathChanged=/var/lib/docker/volumes/wordpress-jc4e_wordpress/_data/wp-content/uploads/solaris-static-replica-rebuild
+Unit=orchestra-jc4e-react-rebuild.service
+
+[Install]
+WantedBy=multi-user.target

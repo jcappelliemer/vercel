@@ -1,0 +1,15 @@
+[Unit]
+Description=Rebuild Solaris React replica for jc4e staging
+After=docker.service network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+ExecStart=/opt/solaris-react-staging/bin/rebuild.sh
+TimeoutStartSec=30min
+Nice=10
+IOSchedulingClass=best-effort
+IOSchedulingPriority=7
+NoNewPrivileges=true

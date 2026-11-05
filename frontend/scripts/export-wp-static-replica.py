@@ -327,9 +327,10 @@ def main():
     copy_assets(frontend_root, output_root)
     build_id, data_count, data_missing = export_next_data(args, frontend_root, saved, output_root)
 
-    accepted = saved | set(redirects) | gone
+    redirected = set(redirects)
+    accepted = saved | redirected | gone
     missing_orchestra = sorted(inputs["orchestra"] - accepted)
-    missing_canonical = sorted(inputs["canonical"] - saved)
+    missing_canonical = sorted(inputs["canonical"] - (saved | redirected))
     if missing_orchestra or missing_canonical:
         print(json.dumps({
             "missing_orchestra": missing_orchestra,

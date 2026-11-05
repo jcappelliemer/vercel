@@ -58,9 +58,12 @@ const staticReplicaLegacyRedirects = [
   ['/blog', '/lo-sapevi-che/'],
   [
     '/pellicole-per-vetri/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy',
-    '/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy/',
+    '/guida-tecnica/',
   ],
-  ['/pellicole-per-vetri/pellicole-per-vetri', '/pellicole-per-vetri/'],
+  ['/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy', '/guida-tecnica/'],
+  ['/pellicole-per-vetri/pellicole-per-vetri', '/servizi/'],
+  ['/pellicole-per-vetri', '/servizi/'],
+  ['/about', '/company-profile/'],
   ['/pellicole-per-vetri/pellicole-per-vetri/faq', '/faq/'],
 ].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
   source: variant,

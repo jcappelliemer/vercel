@@ -217,6 +217,14 @@ export const readLivePageByFile = (fileName) => {
   };
 };
 
+const mergePageWithIndexEntry = (page, entry) => ({
+  ...page,
+  route: {
+    ...(page?.route || {}),
+    ...(entry?.route || {}),
+  },
+});
+
 const toDirectoryPage = (page = {}) => ({
   url: page.url || '',
   path: page.path || '',
@@ -251,7 +259,7 @@ export const getMirrorStaticProps = (pathname) => {
   return {
     props: {
       initialIndex: getInitialMirrorIndex(index, entry),
-      initialPage: page,
+      initialPage: mergePageWithIndexEntry(page, entry),
       initialPath: normalizePath(pathname),
     },
     revalidate: 300,
@@ -272,7 +280,7 @@ export const getMirrorServerProps = (pathname) => {
   return {
     props: {
       initialIndex: getInitialMirrorIndex(index, entry),
-      initialPage: page,
+      initialPage: mergePageWithIndexEntry(page, entry),
       initialPath: normalizedPathname,
     },
   };

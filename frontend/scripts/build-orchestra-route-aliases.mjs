@@ -9,6 +9,14 @@ const frontendRoot = path.resolve(here, '..');
 const indexPath = path.join(frontendRoot, 'public', 'wp-data', 'live-pages-index.json');
 const outPath = path.join(frontendRoot, 'src', 'data', 'orchestra-route-aliases.json');
 
+// These WordPress permalinks differ from both the legacy public paths and the
+// React canonical routes. Keep the connector keyed to the current WP records.
+const WORDPRESS_ROUTE_ALIASES = {
+  '/company-profile': '/about',
+  '/guida-tecnica': '/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy',
+  '/servizi': '/pellicole-per-vetri',
+};
+
 function normalizePath(value) {
   let pathname = String(value || '/').trim();
   try {
@@ -40,6 +48,8 @@ function main() {
     }
     aliases[target] = source;
   }
+
+  Object.assign(aliases, WORDPRESS_ROUTE_ALIASES);
 
   const ordered = Object.fromEntries(Object.entries(aliases).sort(([a], [b]) => a.localeCompare(b)));
   fs.mkdirSync(path.dirname(outPath), { recursive: true });

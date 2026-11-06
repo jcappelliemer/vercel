@@ -19,6 +19,10 @@ WP_HOST = os.environ.get(
     "HEADLESS_AUDIT_WP_HOST",
     "wordpress-jc4e.srv1502079.hstgr.cloud",
 )
+TECHNICAL_HOSTS = {
+    WP_HOST,
+    "solarisfilms.vercel.app",
+}
 
 
 def norm_text(value):
@@ -249,6 +253,7 @@ def fetch(path, entry):
         "authority_section": "authority-section" in parser.testids,
         "badge": "aeo-orchestra-badge" in parser.classes,
         "wp_host_in_html": WP_HOST in body,
+        "technical_hosts_in_html": sorted(host for host in TECHNICAL_HOSTS if host in body),
         "body_bytes": len(body.encode("utf-8")),
     }
 
@@ -291,6 +296,7 @@ def main():
     noindex_meta_fail = [item for item in live if not item.get("meta_robots_noindex")]
     h1_fail = [item for item in live if item["h1_count"] != 1]
     wp_host_fail = [item for item in live if item["wp_host_in_html"]]
+    technical_host_fail = [item for item in live if item["technical_hosts_in_html"]]
     summary = {
         "source_manifest_entries": len(source_entries),
         "resolved_alias_entries": alias_entries,
@@ -310,6 +316,7 @@ def main():
         "authority_section_live": sum(item["authority_section"] for item in live),
         "badge_live": sum(item["badge"] for item in live),
         "wp_host_leaks_live": sum(item["wp_host_in_html"] for item in live),
+        "technical_host_leaks_live": sum(bool(item["technical_hosts_in_html"]) for item in live),
         "failures": {
             "http": [{"path": item["path"], "status": item["status"], "error": item.get("error")} for item in failed],
             "redirected": [{"path": item["path"], "final_path": item["final_path"]} for item in redirected],
@@ -324,6 +331,10 @@ def main():
             "noindex_meta": [item["path"] for item in noindex_meta_fail],
             "h1": [{"path": item["path"], "count": item["h1_count"]} for item in h1_fail],
             "wp_host": [item["path"] for item in wp_host_fail],
+            "technical_host": [
+                {"path": item["path"], "hosts": item["technical_hosts_in_html"]}
+                for item in technical_host_fail
+            ],
         },
     }
     print(json.dumps(summary, ensure_ascii=False, indent=2))
@@ -340,7 +351,7 @@ def main():
         or noindex_header_fail
         or noindex_meta_fail
         or h1_fail
-        or wp_host_fail
+        or technical_host_fail
     )
     if critical_failures:
         raise SystemExit(1)

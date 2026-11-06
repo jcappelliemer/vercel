@@ -48,6 +48,7 @@ add_filter('seo_aeo_capability_managed_head_action_supported', function ($suppor
     return in_array((string) $action_type, array(
         'REWRITE_META',
         'OPTIMIZE_KEYWORDS',
+        'GENERATE_SCHEMA',
     ), true);
 }, 10, 3);
 

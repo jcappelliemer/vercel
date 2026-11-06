@@ -4,6 +4,7 @@ import fixes from '../data/orchestra-fixes.json';
 import FAQ from './FAQ';
 import Snippet from './Snippet';
 import { filterFaqItemsAgainstBody, isAuthorityFaqItem, normalizeFaqItems, resolveOrchestraPath } from '../utils/orchestraBlocks';
+import { hasSchemaType, sanitizeProductSchemaJsonLd } from '../utils/schemaJsonLd';
 
 const SITE_ORIGIN = String(
   process.env.NEXT_PUBLIC_SITE_URL
@@ -30,19 +31,6 @@ const SCHEMA_IDENTITY_URL_KEYS = new Set(['@id', 'url', 'mainEntityOfPage', 'ite
  * `page` when rendering a mirrored WordPress page so visible FAQ items can be
  * deduplicated against the page body.
  */
-function hasSchemaType(schema, type) {
-  if (!schema) return false;
-  if (Array.isArray(schema)) return schema.some((item) => hasSchemaType(item, type));
-  if (typeof schema !== 'object') return false;
-
-  const schemaType = schema['@type'];
-  if (Array.isArray(schemaType) && schemaType.includes(type)) return true;
-  if (schemaType === type) return true;
-  if (schema['@graph']) return hasSchemaType(schema['@graph'], type);
-
-  return false;
-}
-
 function isSchemaType(schema, type) {
   const schemaType = schema?.['@type'];
   if (Array.isArray(schemaType)) return schemaType.includes(type);
@@ -193,7 +181,7 @@ export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
     ? removeTopLevelSchemaType(aeo.schema_jsonld, 'Organization')
     : aeo.schema_jsonld;
   const schemaJsonLd = rewriteSchemaIdentityUrls(
-    sanitizeSchemaJsonLd(rawSchemaJsonLd),
+    sanitizeProductSchemaJsonLd(sanitizeSchemaJsonLd(rawSchemaJsonLd)),
     sourceOrigin,
     targetOrigin
   );

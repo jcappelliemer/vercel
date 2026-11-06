@@ -70,38 +70,58 @@ export const buildOrganizationSchema = () => ({
   sameAs: [],
 });
 
-export const buildProductSchema = (prodotto) => ({
-  '@context': 'https://schema.org',
-  '@type': 'Product',
-  name: prodotto.nome,
-  description: prodotto.descrizione,
-  url: `${PUBLIC_SITE_ORIGIN}/prodotti/${prodotto.slug}`,
-  brand: { '@type': 'Brand', name: 'MADICO' },
-  manufacturer: { '@type': 'Organization', name: 'Madico Inc.' },
-  category: `Pellicole ${prodotto.categoria}`,
-  ...(prodotto.datiTecnici && {
-    additionalProperty: [
-      ...(prodotto.datiTecnici.luceVisibile?.trasmessa ? [{
-        '@type': 'PropertyValue', name: 'VLT (Visible Light Transmittance)', value: prodotto.datiTecnici.luceVisibile.trasmessa,
-      }] : []),
-      ...(prodotto.datiTecnici.infrarossiRespinti ? [{
-        '@type': 'PropertyValue', name: 'Infrared Rejection', value: prodotto.datiTecnici.infrarossiRespinti,
-      }] : []),
-      ...(prodotto.datiTecnici.uvTrasmessi ? [{
-        '@type': 'PropertyValue', name: 'UV Transmission', value: prodotto.datiTecnici.uvTrasmessi,
-      }] : []),
-      ...(prodotto.datiTecnici.energiaRespinta ? [{
-        '@type': 'PropertyValue', name: 'Total Solar Energy Rejected', value: prodotto.datiTecnici.energiaRespinta,
-      }] : []),
-    ],
-  }),
-  offers: {
-    '@type': 'Offer',
-    availability: 'https://schema.org/InStock',
-    priceCurrency: 'EUR',
-    seller: { '@type': 'Organization', name: 'Solaris Films' },
-  },
-});
+export const buildProductSchema = (prodotto) => {
+  const rawPrice = prodotto?.offer?.price
+    ?? prodotto?.price?.amount
+    ?? prodotto?.price
+    ?? prodotto?.prezzo?.amount
+    ?? prodotto?.prezzo;
+  if (rawPrice === null || rawPrice === undefined || typeof rawPrice === 'object') return null;
+
+  const price = String(rawPrice).trim().replace(',', '.');
+  if (!/^\d+(?:\.\d{1,2})?$/.test(price)) return null;
+
+  const priceCurrency = String(
+    prodotto?.offer?.priceCurrency
+    ?? prodotto?.price?.currency
+    ?? prodotto?.prezzo?.currency
+    ?? 'EUR'
+  ).trim().toUpperCase();
+
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Product',
+    name: prodotto.nome,
+    description: prodotto.descrizione,
+    url: `${PUBLIC_SITE_ORIGIN}/prodotti/${prodotto.slug}`,
+    brand: { '@type': 'Brand', name: 'MADICO' },
+    manufacturer: { '@type': 'Organization', name: 'Madico Inc.' },
+    category: `Pellicole ${prodotto.categoria}`,
+    ...(prodotto.datiTecnici && {
+      additionalProperty: [
+        ...(prodotto.datiTecnici.luceVisibile?.trasmessa ? [{
+          '@type': 'PropertyValue', name: 'VLT (Visible Light Transmittance)', value: prodotto.datiTecnici.luceVisibile.trasmessa,
+        }] : []),
+        ...(prodotto.datiTecnici.infrarossiRespinti ? [{
+          '@type': 'PropertyValue', name: 'Infrared Rejection', value: prodotto.datiTecnici.infrarossiRespinti,
+        }] : []),
+        ...(prodotto.datiTecnici.uvTrasmessi ? [{
+          '@type': 'PropertyValue', name: 'UV Transmission', value: prodotto.datiTecnici.uvTrasmessi,
+        }] : []),
+        ...(prodotto.datiTecnici.energiaRespinta ? [{
+          '@type': 'PropertyValue', name: 'Total Solar Energy Rejected', value: prodotto.datiTecnici.energiaRespinta,
+        }] : []),
+      ],
+    }),
+    offers: {
+      '@type': 'Offer',
+      price,
+      priceCurrency,
+      availability: prodotto?.offer?.availability || 'https://schema.org/InStock',
+      seller: { '@type': 'Organization', name: 'Solaris Films' },
+    },
+  };
+};
 
 export const buildLocalBusinessSchema = (citta) => ({
   '@context': 'https://schema.org',

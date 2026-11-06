@@ -3,7 +3,7 @@ import { decodeHtmlEntities } from '../utils/orchestraBlocks';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
-import SEO, { buildProductSchema, buildBreadcrumbSchema } from '../components/SEO';
+import SEO, { buildBreadcrumbSchema } from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CheckCircle, Shield, Sun, Eye, Certificate, Tag } from '@phosphor-icons/react';
 import { prodottiData } from '../data/siteContent';
@@ -880,7 +880,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`prodotto-${prodotto.slug}`}>
-      <SEO title={`${prodotto.nome} — Pellicole ${prodotto.categoria.toLowerCase()}`} description={prodotto.descrizione?.substring(0, 160)} path={`/prodotti/${prodotto.slug}`} type="product" jsonLd={buildProductSchema(prodotto)} />
+      <SEO title={`${prodotto.nome} — Pellicole ${prodotto.categoria.toLowerCase()}`} description={prodotto.descrizione?.substring(0, 160)} path={`/prodotti/${prodotto.slug}`} type="product" />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}

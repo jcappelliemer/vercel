@@ -19,6 +19,7 @@ import { useHeadlessSEO, mergeHeadlessSEO } from '../hooks/useHeadlessSEO';
 import fixes from '../data/orchestra-fixes.json';
 import { isExcludedSolarisPage } from '../utils/liveContent';
 import { applyOrchestraIntroRewrite, resolveOrchestraPath } from '../utils/orchestraBlocks';
+import { hasSchemaType, sanitizeSchemaJsonLdText } from '../utils/schemaJsonLd';
 import {
   SERVICE_FAMILIES,
   getFocusForFamily,
@@ -340,8 +341,18 @@ const LivePageSEO = ({ page, currentPath }) => {
   const robots = isLiveHost
     ? (seo.robots || 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
     : 'noindex, nofollow';
+  const entries = fixes?.byPath || {};
+  const orchestraPath = resolveOrchestraPath(canonicalPath, entries);
+  const orchestraOwnsProduct = hasSchemaType(entries[orchestraPath]?.aeo?.schema_jsonld, 'Product');
   const schemas = [
-    ...(seo.schemas || []).map((schema) => normalizeKnownAssetUrl(schema.replaceAll(page.url, canonical))),
+    ...(seo.schemas || []).map((schema) => {
+      const cleaned = sanitizeSchemaJsonLdText(schema, {
+        removeProducts: orchestraOwnsProduct,
+        sourceOrigin: page.url,
+        targetOrigin: canonical,
+      });
+      return cleaned ? normalizeKnownAssetUrl(cleaned) : null;
+    }).filter(Boolean),
     ...buildLiveSchemas(page, canonicalPath),
   ];
 
@@ -398,9 +409,7 @@ const buildLiveSchemas = (page, canonicalPath) => {
   const type = page.route?.type;
   const contentType = ['article', 'blog-category', 'film-type', 'author'].includes(type)
     ? 'Article'
-    : ['product'].includes(type)
-      ? 'Product'
-      : 'Service';
+    : 'Service';
   const image = pageImage(page);
 
   const breadcrumb = {
@@ -428,11 +437,6 @@ const buildLiveSchemas = (page, canonicalPath) => {
     },
   };
 
-  if (contentType === 'Product') {
-    content.brand = { '@type': 'Brand', name: 'MADICO' };
-    content.category = 'Pellicole per vetri';
-  }
-
   if (contentType === 'Article') {
     content.author = {
       '@type': 'Person',
@@ -452,7 +456,8 @@ const buildLiveSchemas = (page, canonicalPath) => {
     if (image) content.image = image;
   }
 
-  return [breadcrumb, content].map((schema) => JSON.stringify(schema));
+  const schemas = type === 'product' ? [breadcrumb] : [breadcrumb, content];
+  return schemas.map((schema) => JSON.stringify(schema));
 };
 
 const cleanTitle = (title = '') => title.replace(/\s+-\s+Solaris Films$/i, '').trim();

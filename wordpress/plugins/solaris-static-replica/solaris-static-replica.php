@@ -34,6 +34,23 @@ add_filter('seo_aeo_capability_managed_block_action_supported', function ($suppo
     ), true);
 }, 10, 3);
 
+/**
+ * The React connector consumes these metadata fields from Orchestra's fixes
+ * manifest and Helmet republishes them in the generated document head.
+ */
+add_filter('seo_aeo_capability_managed_head_action_supported', function ($supported, $action_type, $post_id) {
+    if ($supported) {
+        return true;
+    }
+    if ((int) $post_id <= 0) {
+        return false;
+    }
+    return in_array((string) $action_type, array(
+        'REWRITE_META',
+        'OPTIMIZE_KEYWORDS',
+    ), true);
+}, 10, 3);
+
 function solaris_static_replica_rebuild_permission($request) {
     $provided = (string) $request->get_param('token');
     $expected = (string) get_option(SOLARIS_STATIC_REPLICA_REBUILD_OPTION, '');

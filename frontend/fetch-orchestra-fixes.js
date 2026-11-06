@@ -44,6 +44,8 @@ const MAX_PAGES = 50; // backstop
 const OUT = path.join(__dirname, 'src', 'data', 'orchestra-fixes.json');
 const LIVE_INDEX = path.join(__dirname, 'public', 'wp-data', 'live-pages-index.json');
 const LIVE_PAGES_DIR = path.join(__dirname, 'public', 'wp-data', 'live-pages');
+const ROUTE_ALIASES = path.join(__dirname, 'src', 'data', 'orchestra-route-aliases.json');
+const NEXT_CONFIG = path.join(__dirname, 'next.config.js');
 const PUBLIC_ORIGIN = String(
   process.env.NEXT_PUBLIC_SITE_URL
   || process.env.NEXT_PUBLIC_SITE_ORIGIN
@@ -174,6 +176,21 @@ function indexEntryPaths(entry) {
     .map(normalizeMirrorPath);
 }
 
+async function configuredRoutePaths() {
+  if (!fs.existsSync(NEXT_CONFIG)) return [];
+
+  try {
+    const config = require(NEXT_CONFIG);
+    const redirects = typeof config.redirects === 'function' ? await config.redirects() : [];
+    return redirects.flatMap((entry) => [entry && entry.source, entry && entry.destination])
+      .filter((value) => typeof value === 'string' && value.startsWith('/') && !value.includes(':'))
+      .map(normalizeMirrorPath);
+  } catch (error) {
+    console.warn(`[orchestra] route config unavailable: ${error.message}`);
+    return [];
+  }
+}
+
 async function materializeMissingMirrorPages(byPath) {
   if (!fs.existsSync(LIVE_INDEX)) return 0;
 
@@ -187,6 +204,14 @@ async function materializeMissingMirrorPages(byPath) {
 
   const pages = (index.pages || []).filter((entry) => entry.sourceSitemap !== FALLBACK_SOURCE);
   const knownPaths = new Set(pages.flatMap(indexEntryPaths));
+  if (fs.existsSync(ROUTE_ALIASES)) {
+    const aliases = JSON.parse(fs.readFileSync(ROUTE_ALIASES, 'utf8'));
+    for (const [targetPath, sourcePath] of Object.entries(aliases || {})) {
+      knownPaths.add(normalizeMirrorPath(targetPath));
+      knownPaths.add(normalizeMirrorPath(sourcePath));
+    }
+  }
+  for (const routePath of await configuredRoutePaths()) knownPaths.add(routePath);
   let created = 0;
 
   for (const [rawPath, summary] of Object.entries(byPath)) {

@@ -1,4 +1,4 @@
-import { isExcludedSolarisPage } from '@/utils/liveContent';
+import { isExcludedSolarisPage } from '../utils/liveContent';
 
 const SOURCE_ORIGIN = String(
   process.env.NEXT_PUBLIC_WP_ORIGIN
@@ -17,6 +17,60 @@ const rebaseSourceUrl = (value = '') => {
   return raw.startsWith(SOURCE_ORIGIN)
     ? `${PUBLIC_ORIGIN}${raw.slice(SOURCE_ORIGIN.length)}`
     : raw;
+};
+
+const urlHostname = (value = '') => {
+  try {
+    return new URL(String(value || '')).hostname;
+  } catch {
+    return '';
+  }
+};
+
+const LEGACY_IDENTITY_HOSTS = new Set([
+  'solarisfilms.vercel.app',
+  'solarisfilms.it',
+  'www.solarisfilms.it',
+  urlHostname(SOURCE_ORIGIN),
+].filter(Boolean));
+
+export const rebasePublicIdentityUrl = (value = '', targetOrigin = PUBLIC_ORIGIN) => {
+  const raw = String(value || '');
+  if (!raw) return raw;
+
+  try {
+    const parsed = new URL(raw);
+    const target = String(targetOrigin || '').replace(/\/+$/, '');
+    if (!LEGACY_IDENTITY_HOSTS.has(parsed.hostname) || !urlHostname(target)) return raw;
+    return `${target}${parsed.pathname}${parsed.search}${parsed.hash}`;
+  } catch {
+    return raw;
+  }
+};
+
+export const normalizeSeoIdentityMetadata = (value = {}, targetOrigin = PUBLIC_ORIGIN) => {
+  const seo = value && typeof value === 'object' ? value : {};
+  const og = seo.og && typeof seo.og === 'object' ? seo.og : {};
+  const twitter = seo.twitter && typeof seo.twitter === 'object' ? seo.twitter : {};
+
+  return {
+    ...seo,
+    ...(seo.canonical ? { canonical: rebasePublicIdentityUrl(seo.canonical, targetOrigin) } : {}),
+    ...(seo.og ? {
+      og: {
+        ...og,
+        ...(og['og:url'] ? { 'og:url': rebasePublicIdentityUrl(og['og:url'], targetOrigin) } : {}),
+      },
+    } : {}),
+    ...(seo.twitter ? {
+      twitter: {
+        ...twitter,
+        ...(twitter['twitter:url'] ? {
+          'twitter:url': rebasePublicIdentityUrl(twitter['twitter:url'], targetOrigin),
+        } : {}),
+      },
+    } : {}),
+  };
 };
 
 const rewriteSchemaIdentityUrls = (value, key = '') => {
@@ -206,13 +260,14 @@ export const readLivePageByFile = (fileName) => {
   const pagePath = require('path').join(pagesDir, fileName);
   if (!fs.existsSync(pagePath)) return null;
   const payload = sanitizeLivePayload(JSON.parse(fs.readFileSync(pagePath, 'utf8')));
+  const seo = normalizeSeoIdentityMetadata(payload.seo);
   return {
     ...payload,
     url: rebaseSourceUrl(payload.url),
     sourceSitemap: rebaseSourceUrl(payload.sourceSitemap),
     seo: {
-      ...(payload.seo || {}),
-      schemas: (payload.seo?.schemas || []).map(normalizeSchemaOrigin),
+      ...seo,
+      schemas: (seo.schemas || []).map(normalizeSchemaOrigin),
     },
   };
 };

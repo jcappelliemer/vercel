@@ -366,7 +366,7 @@ const LivePageSEO = ({ page, currentPath }) => {
         <meta key={property} property={property} content={property === 'og:url' ? canonical : normalizeKnownAssetUrl(content)} />
       ))}
       {Object.entries(seo.twitter || {}).map(([name, content]) => (
-        <meta key={name} name={name} content={normalizeKnownAssetUrl(content)} />
+        <meta key={name} name={name} content={name === 'twitter:url' ? canonical : normalizeKnownAssetUrl(content)} />
       ))}
       {Object.entries(seo.article || {}).map(([property, content]) => (
         <meta key={property} property={property} content={content} />

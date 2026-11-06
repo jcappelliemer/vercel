@@ -1,15 +1,12 @@
 import { Helmet } from 'react-helmet-async';
+import {
+  PUBLIC_SITE_ORIGIN,
+  buildPublicIdentityUrl,
+  isPublicSiteHost,
+} from '../utils/publicIdentity';
 
 const SITE_NAME = 'Solaris Films';
-const BASE_URL = 'https://www.solarisfilms.it';
-const PUBLIC_SITE_ORIGIN = (
-  process.env.NEXT_PUBLIC_SITE_ORIGIN
-  || process.env.REACT_APP_SITE_ORIGIN
-  || process.env.SITE_ORIGIN
-  || 'https://solarisfilms.vercel.app'
-).replace(/\/+$/, '');
 const DEFAULT_IMAGE = `${PUBLIC_SITE_ORIGIN}/og-solaris.jpg`;
-const LIVE_HOSTS = new Set(['solarisfilms.it', 'www.solarisfilms.it']);
 
 const getRuntimeLocation = () => {
   if (typeof window === 'undefined') return null;
@@ -19,10 +16,9 @@ const getRuntimeLocation = () => {
 const SEO = ({ title, description, path = '', image, type = 'website', noIndex = false, jsonLd }) => {
   const fullTitle = title ? `${title} | ${SITE_NAME}` : `${SITE_NAME} - Distributore Esclusivo MADICO USA | Pellicole per Vetri`;
   const location = getRuntimeLocation();
-  const isLiveHost = location ? LIVE_HOSTS.has(location.hostname) : LIVE_HOSTS.has(new URL(PUBLIC_SITE_ORIGIN).hostname);
-  const canonicalBase = location ? (isLiveHost ? BASE_URL : location.origin) : PUBLIC_SITE_ORIGIN;
+  const isLiveHost = location ? isPublicSiteHost(location.hostname) : true;
   const canonicalPath = path || location?.pathname || '';
-  const fullUrl = `${canonicalBase}${canonicalPath}`;
+  const fullUrl = buildPublicIdentityUrl(canonicalPath);
   const metaDesc = description || 'Solaris Films, distributore esclusivo MADICO USA per l\'Italia. Pellicole antisolari, di sicurezza, anti-esplosione e privacy per vetri. 30+ anni di esperienza, +45k edifici trattati.';
   const ogImage = image || DEFAULT_IMAGE;
   const shouldNoIndex = noIndex || !isLiveHost;

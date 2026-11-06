@@ -30,15 +30,13 @@ import {
   getServiceFamilyForPage,
 } from '../utils/serviceFamilies';
 import { getLocalServiceLogo, getProductVisual } from '../utils/assetMaps';
+import {
+  PUBLIC_SITE_ORIGIN,
+  buildPublicIdentityUrl,
+  isPublicSiteHost,
+} from '../utils/publicIdentity';
 
 const SITE_NAME = 'Solaris Films';
-const BASE_URL = (
-  process.env.NEXT_PUBLIC_SITE_ORIGIN
-  || process.env.REACT_APP_SITE_ORIGIN
-  || process.env.SITE_ORIGIN
-  || 'https://solarisfilms.vercel.app'
-).replace(/\/+$/, '');
-const LIVE_HOSTS = new Set(['solarisfilms.it', 'www.solarisfilms.it']);
 const MAIN_PAGE_VISUALS = {
   info: '/assets/generated/main-pages/info-supporto-tecnico.webp',
   norms: '/assets/generated/main-pages/info-norme-verifica.webp',
@@ -129,7 +127,7 @@ const normalizeImportedHref = (href = '') => {
   if (/^https?:\/\//i.test(rawHref)) {
     try {
       const url = new URL(rawHref);
-      if (!LIVE_HOSTS.has(url.hostname)) return rawHref;
+      if (!isPublicSiteHost(url.hostname)) return rawHref;
       isLiveAbsolute = true;
       localHref = `${url.pathname}${url.search}${url.hash}`;
     } catch {
@@ -331,11 +329,9 @@ const LivePageSEO = ({ page, currentPath }) => {
   if (!page) return null;
   const canonicalPath = currentPath || page.path || '/';
   const isLiveHost = typeof window === 'undefined'
-    ? LIVE_HOSTS.has(new URL(BASE_URL).hostname)
-    : LIVE_HOSTS.has(window.location.hostname);
-  const canonical = typeof window !== 'undefined'
-    ? new URL(canonicalPath, window.location.origin).toString()
-    : `${BASE_URL}${canonicalPath}`;
+    ? true
+    : isPublicSiteHost(window.location.hostname);
+  const canonical = buildPublicIdentityUrl(canonicalPath);
   const title = livePageTitle(page, { includeSite: true });
   const description = livePageDescription(page);
   const robots = isLiveHost
@@ -403,7 +399,7 @@ const routeSectionPath = (page) => {
 const buildLiveSchemas = (page, canonicalPath) => {
   const title = livePageTitle(page);
   const description = livePageDescription(page);
-  const canonicalUrl = `${BASE_URL}${canonicalPath}`;
+  const canonicalUrl = buildPublicIdentityUrl(canonicalPath);
   const sectionName = routeSectionName(page);
   const sectionPath = routeSectionPath(page);
   const type = page.route?.type;
@@ -416,8 +412,8 @@ const buildLiveSchemas = (page, canonicalPath) => {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: sectionName, item: `${BASE_URL}${sectionPath}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: PUBLIC_SITE_ORIGIN },
+      { '@type': 'ListItem', position: 2, name: sectionName, item: buildPublicIdentityUrl(sectionPath) },
       { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
     ],
   };
@@ -433,7 +429,7 @@ const buildLiveSchemas = (page, canonicalPath) => {
     provider: {
       '@type': 'Organization',
       name: SITE_NAME,
-      url: BASE_URL,
+      url: PUBLIC_SITE_ORIGIN,
     },
   };
 
@@ -445,7 +441,7 @@ const buildLiveSchemas = (page, canonicalPath) => {
     content.publisher = {
       '@type': 'Organization',
       name: SITE_NAME,
-      url: BASE_URL,
+      url: PUBLIC_SITE_ORIGIN,
     };
     if (page.seo?.article?.['article:published_time']) {
       content.datePublished = page.seo.article['article:published_time'];

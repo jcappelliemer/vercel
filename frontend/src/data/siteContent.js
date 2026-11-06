@@ -946,6 +946,33 @@ export const prodottiData = [
     specificheTecniche: 'Disponibili con stampa UV per lavorazioni rapide e finiture speciali, oppure EcoSolvent per grandi superfici indoor e outdoor. In base al progetto si possono usare supporti trasparenti, opalini o coprenti.',
     isAccessorio: true,
   },
+  // QA fixture: removed after the SCHEMA_PRODUCT headless certification.
+  {
+    slug: 'orchestra-qa-product-schema-20261106',
+    nome: 'Pellicola Orchestra QA 50',
+    categoria: 'Antisolari',
+    sottocategoria: 'QA staging',
+    applicazione: 'Interno',
+    focusTecnicoSlug: 'pellicole-antisolari',
+    descrizione: 'Prodotto temporaneo dello staging usato per verificare la pubblicazione headless dei dati strutturati Product di AEO Orchestra.',
+    caratteristiche: [
+      'Finitura trasparente',
+      'Applicazione professionale',
+      'Codice di prova QA-50',
+      'Disponibile esclusivamente nello staging',
+    ],
+    specificheTecniche: 'Fixture temporaneo per il collaudo controllato del connettore headless. Non rappresenta un prodotto commerciale pubblicato.',
+    tipoVetro: 'Vetro singolo 4 mm',
+    datiTecnici: {
+      energiaSolare: { trasmessa: '42%', riflessa: '18%', assorbita: '40%' },
+      luceVisibile: { trasmessa: '50%', riflessaEsterno: '17%', riduzioneAbbaglio: '45%' },
+      infrarossiRespinti: '62%',
+      uvTrasmessi: '1%',
+      energiaRespinta: '55%',
+    },
+    garanzia: '5 anni',
+    price: { amount: '49.00', currency: 'EUR' },
+  },
 ];
 
 

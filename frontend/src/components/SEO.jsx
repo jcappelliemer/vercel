@@ -70,7 +70,7 @@ export const buildOrganizationSchema = () => ({
   sameAs: [],
 });
 
-export const buildProductSchema = (prodotto) => {
+export const getProductOffer = (prodotto) => {
   const rawPrice = prodotto?.offer?.price
     ?? prodotto?.price?.amount
     ?? prodotto?.price
@@ -87,6 +87,17 @@ export const buildProductSchema = (prodotto) => {
     ?? prodotto?.prezzo?.currency
     ?? 'EUR'
   ).trim().toUpperCase();
+
+  return {
+    price,
+    priceCurrency,
+    availability: prodotto?.offer?.availability || 'https://schema.org/InStock',
+  };
+};
+
+export const buildProductSchema = (prodotto) => {
+  const offer = getProductOffer(prodotto);
+  if (!offer) return null;
 
   return {
     '@context': 'https://schema.org',
@@ -115,9 +126,7 @@ export const buildProductSchema = (prodotto) => {
     }),
     offers: {
       '@type': 'Offer',
-      price,
-      priceCurrency,
-      availability: prodotto?.offer?.availability || 'https://schema.org/InStock',
+      ...offer,
       seller: { '@type': 'Organization', name: 'Solaris Films' },
     },
   };

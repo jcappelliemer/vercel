@@ -1,4 +1,5 @@
 import {
+  ensureSchemaRootIds,
   hasSchemaType,
   sanitizeProductSchemaJsonLd,
   sanitizeSchemaJsonLdText,
@@ -75,5 +76,24 @@ describe('Product JSON-LD sanitation', () => {
         priceCurrency: 'EUR',
       },
     });
+  });
+
+  test('adds deterministic IDs only to root graph nodes that do not already have one', () => {
+    const canonical = 'https://www.example.test/guide/';
+    const input = JSON.stringify({
+      '@context': 'https://schema.org',
+      '@graph': [
+        { '@type': 'Organization', '@id': `${canonical}#organization` },
+        { '@type': 'Article', headline: 'Guide' },
+        { '@type': 'FAQPage', mainEntity: [{ '@type': 'Question', name: 'Question' }] },
+      ],
+    });
+
+    const result = JSON.parse(ensureSchemaRootIds(input, canonical, 2));
+
+    expect(result['@graph'][0]['@id']).toBe(`${canonical}#organization`);
+    expect(result['@graph'][1]['@id']).toBe(`${canonical}#article-3-2`);
+    expect(result['@graph'][2]['@id']).toBe(`${canonical}#faqpage-3-3`);
+    expect(result['@graph'][2].mainEntity[0]['@id']).toBeUndefined();
   });
 });

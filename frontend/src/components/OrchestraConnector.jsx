@@ -141,10 +141,11 @@ function cleanSchemaText(value) {
   return String(value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-function buildFaqSchema(items) {
+function buildFaqSchema(items, pageIdentityUrl = '') {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    ...(pageIdentityUrl ? { '@id': `${pageIdentityUrl.replace(/#.*$/, '')}#faq` } : {}),
     mainEntity: items.map((item) => ({
       '@type': 'Question',
       name: cleanSchemaText(item.q),
@@ -154,6 +155,19 @@ function buildFaqSchema(items) {
       },
     })),
   };
+}
+
+function buildPageIdentityUrl(origin, frontendUrl, path) {
+  if (!origin) return '';
+  let pathname = path || '/';
+  try {
+    pathname = new URL(String(frontendUrl || '')).pathname || pathname;
+  } catch {
+    // Fall back to the resolved Orchestra route.
+  }
+  if (!pathname.startsWith('/')) pathname = `/${pathname}`;
+  if (pathname !== '/' && !pathname.endsWith('/')) pathname += '/';
+  return `${origin}${pathname}`;
 }
 
 export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
@@ -167,6 +181,7 @@ export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
   const meta = entry?.meta || {};
   const sourceOrigin = urlOrigin(entry?.wp_url) || urlOrigin(WP_ORIGIN);
   const targetOrigin = SITE_ORIGIN || urlOrigin(entry?.frontend_url);
+  const pageIdentityUrl = buildPageIdentityUrl(targetOrigin, entry?.frontend_url, key);
   const faqItems = normalizeFaqItems(aeo.faq);
   // Fix C (BUG FAQ #2) — l'accordion salta le domande gia presenti come sezione
   // nel corpo (prop page dal mirror); il FAQPage JSON-LD resta sul set COMPLETO.
@@ -186,7 +201,7 @@ export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
     targetOrigin
   );
   const faqSchema = faqItems.length && !hasSchemaType(schemaJsonLd, 'FAQPage')
-    ? buildFaqSchema(faqItems)
+    ? buildFaqSchema(faqItems, pageIdentityUrl)
     : null;
   const hasHead = meta.title || meta.description || meta.keywords || organizationSchema || schemaJsonLd || faqSchema;
 

@@ -19,7 +19,7 @@ import { useHeadlessSEO, mergeHeadlessSEO } from '../hooks/useHeadlessSEO';
 import fixes from '../data/orchestra-fixes.json';
 import { isExcludedSolarisPage } from '../utils/liveContent';
 import { applyOrchestraIntroRewrite, resolveOrchestraPath } from '../utils/orchestraBlocks';
-import { hasSchemaType, sanitizeSchemaJsonLdText } from '../utils/schemaJsonLd';
+import { ensureSchemaRootIds, hasSchemaType, sanitizeSchemaJsonLdText } from '../utils/schemaJsonLd';
 import {
   SERVICE_FAMILIES,
   getFocusForFamily,
@@ -354,7 +354,7 @@ const LivePageSEO = ({ page, currentPath }) => {
       return cleaned ? normalizeKnownAssetUrl(cleaned) : null;
     }).filter(Boolean),
     ...buildLiveSchemas(page, canonicalPath),
-  ];
+  ].map((schema, index) => ensureSchemaRootIds(schema, canonical, index));
 
   return (
     <Helmet>

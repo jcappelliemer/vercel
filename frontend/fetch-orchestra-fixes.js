@@ -24,6 +24,12 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const { URL } = require('url');
+const {
+  FALLBACK_SOURCE,
+  buildOrchestraFallbackPage,
+  fallbackFileName,
+  normalizeMirrorPath,
+} = require('./scripts/orchestra-fallback.cjs');
 
 const DEFAULT_BASE = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
 const BASE = (process.env.ORCHESTRA_BASE || process.env.REACT_APP_WP_URL || process.env.WP_URL || DEFAULT_BASE).replace(/\/$/, '');
@@ -36,6 +42,14 @@ const RETRY_BACKOFFS_MS = [2000, 5000]; // between the 3 attempts; attempt 1 war
 const PER_PAGE = 50;
 const MAX_PAGES = 50; // backstop
 const OUT = path.join(__dirname, 'src', 'data', 'orchestra-fixes.json');
+const LIVE_INDEX = path.join(__dirname, 'public', 'wp-data', 'live-pages-index.json');
+const LIVE_PAGES_DIR = path.join(__dirname, 'public', 'wp-data', 'live-pages');
+const PUBLIC_ORIGIN = String(
+  process.env.NEXT_PUBLIC_SITE_URL
+  || process.env.NEXT_PUBLIC_SITE_ORIGIN
+  || 'https://solarisfilms.vercel.app'
+).replace(/\/+$/, '');
+const SITE_INDEXABLE = String(process.env.NEXT_PUBLIC_SITE_INDEXABLE || '1') !== '0';
 
 const EMPTY = { contract: 1, generatedAt: null, byPath: {} };
 
@@ -154,6 +168,65 @@ function nextLink(linkHeader) {
   return m ? m[1] : null;
 }
 
+function indexEntryPaths(entry) {
+  return [entry && entry.path, entry && entry.route && entry.route.newPath]
+    .filter(Boolean)
+    .map(normalizeMirrorPath);
+}
+
+async function materializeMissingMirrorPages(byPath) {
+  if (!fs.existsSync(LIVE_INDEX)) return 0;
+
+  const index = JSON.parse(fs.readFileSync(LIVE_INDEX, 'utf8'));
+  const generatedEntries = (index.pages || []).filter((entry) => entry.sourceSitemap === FALLBACK_SOURCE);
+  for (const entry of generatedEntries) {
+    if (!entry.file || !String(entry.file).startsWith('orchestra-')) continue;
+    const generatedFile = path.join(LIVE_PAGES_DIR, entry.file);
+    if (fs.existsSync(generatedFile)) fs.unlinkSync(generatedFile);
+  }
+
+  const pages = (index.pages || []).filter((entry) => entry.sourceSitemap !== FALLBACK_SOURCE);
+  const knownPaths = new Set(pages.flatMap(indexEntryPaths));
+  let created = 0;
+
+  for (const [rawPath, summary] of Object.entries(byPath)) {
+    const pathname = normalizeMirrorPath(rawPath);
+    if (knownPaths.has(pathname)) continue;
+
+    const targetUrl = summary.frontend_url || summary.wp_url || `${PUBLIC_ORIGIN}${pathname}`;
+    const detailUrl = `${BASE}/wp-json/aeo-orchestra/v1/headless-fixes?include=content&url=${encodeURIComponent(targetUrl)}`;
+    const { json: detail } = await fetchManifestRetry(detailUrl);
+    if (!detail || detail.post_status !== 'publish' || typeof detail.content !== 'string') {
+      console.warn(`[orchestra] fallback skipped for ${pathname}: connector detail unavailable`);
+      continue;
+    }
+
+    const page = buildOrchestraFallbackPage(detail, pathname, PUBLIC_ORIGIN, { indexable: SITE_INDEXABLE });
+    const file = fallbackFileName(detail.post_id, pathname);
+    fs.mkdirSync(LIVE_PAGES_DIR, { recursive: true });
+    fs.writeFileSync(path.join(LIVE_PAGES_DIR, file), JSON.stringify(page));
+
+    pages.push({
+      url: page.url,
+      path: page.path,
+      route: page.route,
+      file,
+      title: page.seo.title,
+      description: page.seo.description,
+      canonical: page.seo.canonical,
+      robots: page.seo.robots,
+      h1: page.h1,
+      textLength: page.textLength,
+      sourceSitemap: FALLBACK_SOURCE,
+    });
+    knownPaths.add(pathname);
+    created += 1;
+  }
+
+  fs.writeFileSync(LIVE_INDEX, JSON.stringify({ ...index, origin: PUBLIC_ORIGIN, pages }, null, 2));
+  return created;
+}
+
 async function main() {
   const byPath = {};
   let url = `${BASE}/wp-json/aeo-orchestra/v1/headless-fixes?view=manifest&per_page=${PER_PAGE}&page=1`;
@@ -182,8 +255,9 @@ async function main() {
     url = nextLink(headers && headers.link);
     pages++;
   }
+  const fallbackPages = await materializeMissingMirrorPages(byPath);
   writeOut({ contract: 1, generatedAt, byPath });
-  console.log(`[orchestra] baked ${Object.keys(byPath).length} page(s) over ${pages} request(s) → ${path.relative(process.cwd(), OUT)}`);
+  console.log(`[orchestra] baked ${Object.keys(byPath).length} page(s) over ${pages} request(s), materialized ${fallbackPages} missing mirror page(s) → ${path.relative(process.cwd(), OUT)}`);
 }
 
 main().catch((err) => {

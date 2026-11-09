@@ -256,6 +256,8 @@ def fetch(path, entry):
     trust_visible = [item for item in trust if item in visible]
     snippet_text = norm_text((entry.get("aeo") or {}).get("snippet_html"))
     authority_text = norm_text((entry.get("aeo") or {}).get("authority_html"))
+    intro_rewrite = (entry.get("aeo") or {}).get("intro_rewrite") or {}
+    intro_after = norm_text(intro_rewrite.get("after_html")) if isinstance(intro_rewrite, dict) else ""
     internal_links_html = (entry.get("aeo") or {}).get("internal_links_html") or ""
     internal_links_text = norm_text(internal_links_html)
     expected_internal_hrefs = set(html_hrefs(internal_links_html))
@@ -285,6 +287,8 @@ def fetch(path, entry):
         "snippet_visible": not snippet_text or snippet_text in visible,
         "authority_expected": bool(authority_text),
         "authority_section": "authority-section" in parser.testids,
+        "intro_expected": bool(intro_after),
+        "intro_visible": not intro_after or intro_after in visible,
         "internal_links_expected": bool(internal_links_text or expected_internal_hrefs),
         "internal_links_visible": not internal_links_text or internal_links_text in visible,
         "internal_links_section": "internal-links-section" in parser.testids,
@@ -328,6 +332,7 @@ def main():
     faq_fail = [item for item in direct if item["faq_visible"] != item["faq_expected"]]
     trust_fail = [item for item in direct if item["trust_visible"] != item["trust_expected"]]
     snippet_fail = [item for item in direct if item["snippet_expected"] and not item["snippet_visible"]]
+    intro_fail = [item for item in direct if item["intro_expected"] and not item["intro_visible"]]
     internal_links_fail = [
         item for item in direct
         if item["internal_links_expected"] and (
@@ -359,6 +364,8 @@ def main():
         "trust_visible_direct": len(direct) - len(trust_fail),
         "snippet_visible_direct": sum(item["snippet_expected"] and item["snippet_visible"] for item in direct),
         "snippet_expected_direct": sum(item["snippet_expected"] for item in direct),
+        "intro_visible_direct": sum(item["intro_expected"] and item["intro_visible"] for item in direct),
+        "intro_expected_direct": sum(item["intro_expected"] for item in direct),
         "internal_links_visible_direct": sum(
             item["internal_links_expected"] and not item["internal_links_missing_hrefs"]
             and item["internal_links_visible"] and item["internal_links_section"]
@@ -377,6 +384,7 @@ def main():
             "faq": [{"path": item["path"], "expected": item["faq_expected"], "visible": item["faq_visible"], "missing": item["faq_missing"]} for item in faq_fail],
             "trust": [{"path": item["path"], "expected": item["trust_expected"], "visible": item["trust_visible"]} for item in trust_fail],
             "snippet": [item["path"] for item in snippet_fail],
+            "intro": [item["path"] for item in intro_fail],
             "internal_links": [
                 {
                     "path": item["path"],
@@ -407,6 +415,7 @@ def main():
         or faq_fail
         or trust_fail
         or snippet_fail
+        or intro_fail
         or internal_links_fail
         or authority_fail
         or badge_fail

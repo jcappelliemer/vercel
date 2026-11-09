@@ -19,6 +19,10 @@ WP_HOST = os.environ.get(
     "HEADLESS_AUDIT_WP_HOST",
     "wordpress-jc4e.srv1502079.hstgr.cloud",
 )
+PUBLIC_ORIGIN = os.environ.get(
+    "HEADLESS_AUDIT_PUBLIC_ORIGIN",
+    os.environ.get("NEXT_PUBLIC_SITE_URL", "https://www.solarisfilms.it"),
+).rstrip("/")
 TECHNICAL_HOSTS = {
     WP_HOST,
     "solarisfilms.vercel.app",
@@ -138,10 +142,19 @@ def canonical_href(value):
     return f"{parsed.scheme.lower()}://{parsed.netloc.lower()}{norm_path(parsed.path)}{query}{fragment}"
 
 
+def expected_internal_href(value):
+    parsed = urlparse(urljoin(BASE + "/", html.unescape(str(value or ""))))
+    if (parsed.hostname or "").lower() == WP_HOST.lower():
+        public = urlparse(PUBLIC_ORIGIN)
+        if public.scheme and public.netloc:
+            parsed = parsed._replace(scheme=public.scheme, netloc=public.netloc)
+    return canonical_href(parsed.geturl())
+
+
 def html_hrefs(value):
     parser = PageParser()
     parser.feed(str(value or ""))
-    return [canonical_href(href) for href in parser.hrefs]
+    return [expected_internal_href(href) for href in parser.hrefs]
 
 
 def schema_types(value):

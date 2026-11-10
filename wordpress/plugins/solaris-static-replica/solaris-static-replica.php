@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Solaris Static Replica
  * Description: Serve la replica statica 1:1 del nuovo sito Solaris dentro WordPress, con redirect e 410 server-side.
- * Version: 0.3.3
+ * Version: 0.3.4
  * Author: Solaris Films
  */
 
@@ -578,15 +578,29 @@ function solaris_static_replica_public_sources($knowledge) {
     return $result;
 }
 
-function solaris_static_replica_wordpress_knowledge($message, $limit = 3) {
+function solaris_static_replica_knowledge_search_terms($message) {
     $normalized = strtolower(remove_accents(wp_strip_all_tags((string) $message)));
     preg_match_all('/[a-z0-9]{4,}/', $normalized, $matches);
-    $stopwords = array('come', 'cosa', 'della', 'delle', 'degli', 'sono', 'quale', 'questo', 'questa', 'vorrei', 'posso', 'vetri', 'vetro', 'pellicola', 'pellicole');
+    $stopwords = array('aiuta', 'aiutano', 'come', 'cosa', 'della', 'delle', 'degli', 'migliora', 'migliorare', 'posso', 'quale', 'questo', 'questa', 'ridurre', 'sono', 'vetri', 'vetro', 'vorrei', 'pellicola', 'pellicole');
     $tokens = array_values(array_filter(array_unique($matches[0] ?? array()), function ($token) use ($stopwords) {
         return !in_array($token, $stopwords, true);
     }));
-    $tokens = array_slice($tokens, 0, 5);
-    $posts = array();
+
+    if (preg_match('/caldo|sole|solare|abbagliamento|antisolar|infraross/', $normalized)) {
+        $tokens = array_merge($tokens, array('antisolare', 'solare', 'abbagliamento', 'caldo'));
+    }
+    if (preg_match('/safety|sicurezza|antisfondamento|antiesplosione|anti-esplosione/', $normalized)) {
+        $tokens = array_merge($tokens, array('safety', 'sicurezza', 'antisfondamento', 'antiesplosione'));
+    }
+    if (preg_match('/privacy|decorativ|satinat|opac/', $normalized)) {
+        $tokens = array_merge($tokens, array('privacy', 'decorativa', 'satinata'));
+    }
+    return array_slice(array_values(array_unique($tokens)), 0, 9);
+}
+
+function solaris_static_replica_wordpress_knowledge($message, $limit = 3) {
+    $tokens = solaris_static_replica_knowledge_search_terms($message);
+    $candidates = array();
     $seen = array();
     $public_types = get_post_types(array('public' => true), 'names');
     unset($public_types['attachment']);
@@ -596,7 +610,7 @@ function solaris_static_replica_wordpress_knowledge($message, $limit = 3) {
             'post_type' => array_values($public_types),
             'post_status' => 'publish',
             's' => $token,
-            'numberposts' => $limit,
+            'numberposts' => 8,
             'orderby' => 'relevance',
             'order' => 'DESC',
             'suppress_filters' => false,
@@ -606,12 +620,35 @@ function solaris_static_replica_wordpress_knowledge($message, $limit = 3) {
                 continue;
             }
             $seen[$post->ID] = true;
-            $posts[] = $post;
-            if (count($posts) >= $limit) {
+            $candidates[] = $post;
+            if (count($candidates) >= 40) {
                 break 2;
             }
         }
     }
+
+    $scored = array();
+    foreach ($candidates as $post) {
+        $title = strtolower(remove_accents(wp_strip_all_tags(get_the_title($post))));
+        $content = strtolower(remove_accents(wp_strip_all_tags(strip_shortcodes((string) $post->post_content))));
+        $score = 0;
+        foreach ($tokens as $token) {
+            if (strpos($title, $token) !== false) {
+                $score += 20;
+            }
+            $score += min(5, substr_count($content, $token)) * 3;
+        }
+        if ($post->post_type === 'approfondimento') {
+            $score += 2;
+        }
+        $scored[] = array('post' => $post, 'score' => $score);
+    }
+    usort($scored, function ($left, $right) {
+        return $right['score'] <=> $left['score'];
+    });
+    $posts = array_map(function ($item) {
+        return $item['post'];
+    }, array_slice($scored, 0, $limit));
 
     $public_origin = untrailingslashit((string) apply_filters('solaris_static_replica_public_origin', 'https://www.solarisfilms.it'));
     $sources = array();
@@ -623,7 +660,7 @@ function solaris_static_replica_wordpress_knowledge($message, $limit = 3) {
             'title' => get_the_title($post),
             'source_type' => 'solaris',
             'origin_url' => $public_origin . ($path ?: '/'),
-            'score' => 100 - ($index * 5),
+            'score' => (float) ($scored[$index]['score'] ?? (100 - ($index * 5))),
             'snippet' => wp_trim_words($content, 45, '...'),
         );
     }

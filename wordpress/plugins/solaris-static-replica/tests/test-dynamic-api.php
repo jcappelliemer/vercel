@@ -69,6 +69,11 @@ $wordpress_knowledge_mock = function () {
 add_filter('solaris_static_replica_wordpress_knowledge', $wordpress_knowledge_mock, 10, 0);
 
 try {
+    $terms = solaris_static_replica_knowledge_search_terms('Quale pellicola aiuta a ridurre caldo e abbagliamento?');
+    if (in_array('aiuta', $terms, true) || !in_array('antisolare', $terms, true)) {
+        throw new RuntimeException('Chat knowledge terms did not prioritize the technical intent.');
+    }
+
     ob_start();
     solaris_static_replica_handle_chat(array(
         'message' => 'Come posso ridurre il caldo?',

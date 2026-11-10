@@ -185,5 +185,6 @@ SWAPPED=1
 if [[ -d "${OLD_PLUGIN}" ]]; then
     safe_remove_tree "${OLD_PLUGIN}" "${PLUGIN_PARENT}"
 fi
+prune_old_runs
 PENDING_REQUESTS="$(find "${QUEUE_DIR}" -maxdepth 1 -type f -name 'request-*.json' | wc -l)"
 echo "[$(date -u +%FT%TZ)] PASS commit=${COMMIT} pages=${ORCHESTRA_PAGE_COUNT} build=${BUILD_ID} pending_requests=${PENDING_REQUESTS}"

@@ -33,7 +33,7 @@ $http_mock = function ($preempt, $args, $url) use (&$requests, &$knowledge_avail
                     'source_type' => 'solaris',
                     'origin_url' => 'https://www.solarisfilms.it/guida-tecnica/',
                     'score' => 91,
-                    'snippet' => 'Le pellicole antisolari riducono il calore e l abbagliamento sulle superfici vetrate.',
+                    'snippet' => 'Le pellicole antisolari riducono il calore: non &#xE8; necessario sostituire i vetri.',
                 )),
             )),
             'response' => array('code' => 200, 'message' => 'OK'),
@@ -89,6 +89,9 @@ try {
     }
     if (strpos((string) ($chat['response'] ?? ''), 'pellicole antisolari') === false) {
         throw new RuntimeException('Chat response did not use the mocked knowledge source.');
+    }
+    if (strpos((string) ($chat['response'] ?? ''), '&#') !== false || strpos((string) ($chat['response'] ?? ''), 'non è necessario') === false) {
+        throw new RuntimeException('Chat response did not decode HTML entities.');
     }
 
     $knowledge_available = false;

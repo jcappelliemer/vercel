@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Solaris Static Replica
  * Description: Serve la replica statica 1:1 del nuovo sito Solaris dentro WordPress, con redirect e 410 server-side.
- * Version: 0.3.4
+ * Version: 0.3.5
  * Author: Solaris Films
  */
 
@@ -528,6 +528,11 @@ function solaris_static_replica_chat_fallback($message) {
     return 'Posso aiutarti a orientarti tra pellicole antisolari, Safety Shield, privacy, decorative e consulenza tecnica. Dimmi quale problema vuoi risolvere.';
 }
 
+function solaris_static_replica_plain_text($value) {
+    $decoded = html_entity_decode((string) $value, ENT_QUOTES | ENT_HTML5, 'UTF-8');
+    return trim(preg_replace('/\s+/u', ' ', wp_strip_all_tags(strip_shortcodes($decoded))));
+}
+
 function solaris_static_replica_chat_response($message, $knowledge) {
     $sources = isset($knowledge['sources']) && is_array($knowledge['sources']) ? $knowledge['sources'] : array();
     if (!$sources) {
@@ -540,11 +545,11 @@ function solaris_static_replica_chat_response($message, $knowledge) {
         if (!is_array($source)) {
             continue;
         }
-        $title = sanitize_text_field((string) ($source['title'] ?? ''));
+        $title = sanitize_text_field(solaris_static_replica_plain_text($source['title'] ?? ''));
         if ($title !== '') {
             $references[] = $title;
         }
-        $snippet = trim(preg_replace('/\s+/', ' ', wp_strip_all_tags((string) ($source['snippet'] ?? ''))));
+        $snippet = solaris_static_replica_plain_text($source['snippet'] ?? '');
         if ($snippet !== '' && count($highlights) < 2) {
             $highlights[] = wp_html_excerpt($snippet, 220, '...');
         }
@@ -569,7 +574,7 @@ function solaris_static_replica_public_sources($knowledge) {
             continue;
         }
         $result[] = array(
-            'title' => sanitize_text_field((string) ($source['title'] ?? '')),
+            'title' => sanitize_text_field(solaris_static_replica_plain_text($source['title'] ?? '')),
             'source_type' => sanitize_key((string) ($source['source_type'] ?? '')),
             'origin_url' => esc_url_raw((string) ($source['origin_url'] ?? '')),
             'score' => isset($source['score']) ? (float) $source['score'] : null,
@@ -579,7 +584,7 @@ function solaris_static_replica_public_sources($knowledge) {
 }
 
 function solaris_static_replica_knowledge_search_terms($message) {
-    $normalized = strtolower(remove_accents(wp_strip_all_tags((string) $message)));
+    $normalized = strtolower(remove_accents(solaris_static_replica_plain_text($message)));
     preg_match_all('/[a-z0-9]{4,}/', $normalized, $matches);
     $stopwords = array('aiuta', 'aiutano', 'come', 'cosa', 'della', 'delle', 'degli', 'migliora', 'migliorare', 'posso', 'quale', 'questo', 'questa', 'ridurre', 'sono', 'vetri', 'vetro', 'vorrei', 'pellicola', 'pellicole');
     $tokens = array_values(array_filter(array_unique($matches[0] ?? array()), function ($token) use ($stopwords) {
@@ -629,8 +634,8 @@ function solaris_static_replica_wordpress_knowledge($message, $limit = 3) {
 
     $scored = array();
     foreach ($candidates as $post) {
-        $title = strtolower(remove_accents(wp_strip_all_tags(get_the_title($post))));
-        $content = strtolower(remove_accents(wp_strip_all_tags(strip_shortcodes((string) $post->post_content))));
+        $title = strtolower(remove_accents(solaris_static_replica_plain_text(get_the_title($post))));
+        $content = strtolower(remove_accents(solaris_static_replica_plain_text($post->post_content)));
         $score = 0;
         foreach ($tokens as $token) {
             if (strpos($title, $token) !== false) {
@@ -655,9 +660,9 @@ function solaris_static_replica_wordpress_knowledge($message, $limit = 3) {
     foreach ($posts as $index => $post) {
         $permalink = get_permalink($post);
         $path = is_string($permalink) ? wp_parse_url($permalink, PHP_URL_PATH) : '';
-        $content = wp_strip_all_tags(strip_shortcodes((string) $post->post_content));
+        $content = solaris_static_replica_plain_text($post->post_content);
         $sources[] = array(
-            'title' => get_the_title($post),
+            'title' => solaris_static_replica_plain_text(get_the_title($post)),
             'source_type' => 'solaris',
             'origin_url' => $public_origin . ($path ?: '/'),
             'score' => (float) ($scored[$index]['score'] ?? (100 - ($index * 5))),

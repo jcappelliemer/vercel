@@ -1,7 +1,6 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { fetchSettings } from '../data/wpApi';
-
-const SETTINGS_STORAGE_KEY = 'solaris_settings_cache_v2';
+import { SETTINGS_STORAGE_KEY } from '../utils/storageKeys';
 
 const defaults = {
   company_name: 'Solaris Films',

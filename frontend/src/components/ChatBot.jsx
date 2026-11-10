@@ -6,6 +6,7 @@ import axios from 'axios';
 import { useSettings } from '../hooks/useSettings';
 import { buildWhatsAppHref } from '../utils/contactLinks';
 import { getPublicCrmApiBase } from '../utils/publicApi';
+import { CHAT_MESSAGES_KEY, CHAT_SESSION_KEY } from '../utils/storageKeys';
 
 const BACKEND_URL = (process.env.REACT_APP_BACKEND_URL || '').replace(/\/$/, '');
 const LOCAL_STAGING_API = (
@@ -16,8 +17,6 @@ const LOCAL_STAGING_API = (
 const API = BACKEND_URL
   ? `${BACKEND_URL}/api`
   : (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? LOCAL_STAGING_API : '/api');
-const CHAT_MESSAGES_KEY = 'solaris_chatbot_messages';
-const CHAT_SESSION_KEY = 'solaris_chatbot_session';
 const PRIVACY_NOTICE = 'Usando la chat accetti che i messaggi siano trattati da Solaris Films per rispondere alla richiesta; lascia i dati nel modulo solo se vuoi essere ricontattato.';
 
 const defaultQuickPrompts = [

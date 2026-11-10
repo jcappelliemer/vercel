@@ -24,6 +24,11 @@ PUBLIC_ORIGIN = os.environ.get(
     os.environ.get("NEXT_PUBLIC_SITE_URL", "https://www.solarisfilms.it"),
 ).rstrip("/")
 REQUIRE_BADGE = os.environ.get("HEADLESS_AUDIT_REQUIRE_BADGE", "0") == "1"
+EXPECT_NOINDEX = os.environ.get("HEADLESS_AUDIT_EXPECT_NOINDEX", "1").lower() not in {
+    "0",
+    "false",
+    "no",
+}
 TECHNICAL_HOSTS = {
     WP_HOST,
     "solarisfilms.vercel.app",
@@ -274,6 +279,7 @@ def fetch(path, entry):
         "redirected": norm_path(final_url) != norm_path(path),
         "xrobots_noindex": "noindex" in xrobots,
         "meta_robots_noindex": "noindex" in robots,
+        "meta_robots_indexable": "index" in robots and "noindex" not in robots,
         "h1_count": parser.h1_count,
         "meta_checks": meta_checks,
         "schema_expected": sorted(expected_types),
@@ -305,6 +311,9 @@ def main():
     manifest_path = Path(sys.argv[1] if len(sys.argv) > 1 else "src/data/orchestra-fixes.json")
     manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
     source_entries = manifest.get("byPath") or {}
+    if not isinstance(source_entries, dict) or not source_entries:
+        print(json.dumps({"error": "Orchestra manifest has no byPath entries"}, indent=2))
+        raise SystemExit(1)
     entries = dict(source_entries)
     alias_path = Path(
         sys.argv[2]
@@ -344,8 +353,12 @@ def main():
     ]
     authority_fail = [item for item in direct if not item["authority_section"]]
     badge_fail = [item for item in direct if REQUIRE_BADGE and not item["badge"]]
-    noindex_header_fail = [item for item in results if not item.get("xrobots_noindex")]
-    noindex_meta_fail = [item for item in live if not item.get("meta_robots_noindex")]
+    if EXPECT_NOINDEX:
+        robots_header_fail = [item for item in results if not item.get("xrobots_noindex")]
+        robots_meta_fail = [item for item in live if not item.get("meta_robots_noindex")]
+    else:
+        robots_header_fail = [item for item in results if item.get("xrobots_noindex")]
+        robots_meta_fail = [item for item in live if not item.get("meta_robots_indexable")]
     h1_fail = [item for item in live if item["h1_count"] != 1]
     wp_host_fail = [item for item in live if item["wp_host_in_html"]]
     technical_host_fail = [item for item in live if item["technical_hosts_in_html"]]
@@ -356,8 +369,10 @@ def main():
         "status_counts": dict(sorted(Counter(item.get("status", 0) for item in results).items())),
         "direct_live": len(direct),
         "redirected_live": len(redirected),
-        "noindex_header": sum(item.get("xrobots_noindex", False) for item in results),
-        "noindex_meta_live": sum(item.get("meta_robots_noindex", False) for item in live),
+        "robots_expectation": "noindex" if EXPECT_NOINDEX else "indexable",
+        "xrobots_noindex": sum(item.get("xrobots_noindex", False) for item in results),
+        "meta_robots_noindex_live": sum(item.get("meta_robots_noindex", False) for item in live),
+        "meta_robots_indexable_live": sum(item.get("meta_robots_indexable", False) for item in live),
         "one_h1_live": sum(item.get("h1_count") == 1 for item in live),
         "meta_exact_direct": len(direct) - len(meta_fail),
         "schema_types_direct": len(direct) - len(schema_fail),
@@ -398,8 +413,8 @@ def main():
             ],
             "authority": [item["path"] for item in authority_fail],
             "badge": [item["path"] for item in badge_fail],
-            "noindex_header": [item["path"] for item in noindex_header_fail],
-            "noindex_meta": [item["path"] for item in noindex_meta_fail],
+            "robots_header": [item["path"] for item in robots_header_fail],
+            "robots_meta": [item["path"] for item in robots_meta_fail],
             "h1": [{"path": item["path"], "count": item["h1_count"]} for item in h1_fail],
             "wp_host": [item["path"] for item in wp_host_fail],
             "technical_host": [
@@ -421,8 +436,8 @@ def main():
         or internal_links_fail
         or authority_fail
         or badge_fail
-        or noindex_header_fail
-        or noindex_meta_fail
+        or robots_header_fail
+        or robots_meta_fail
         or h1_fail
         or technical_host_fail
     )

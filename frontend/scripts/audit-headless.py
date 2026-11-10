@@ -49,6 +49,11 @@ def norm_path(value):
     return path
 
 
+def blocks_indexing(value):
+    tokens = set(re.split(r"[,\s]+", str(value or "").lower()))
+    return "noindex" in tokens or "none" in tokens
+
+
 def manifest_key(value):
     path = norm_path(value)
     return "/" if path == "/" else path.rstrip("/")
@@ -277,9 +282,9 @@ def fetch(path, entry):
         "status": status,
         "final_path": norm_path(final_url),
         "redirected": norm_path(final_url) != norm_path(path),
-        "xrobots_noindex": "noindex" in xrobots,
-        "meta_robots_noindex": "noindex" in robots,
-        "meta_robots_indexable": "index" in robots and "noindex" not in robots,
+        "xrobots_noindex": blocks_indexing(xrobots),
+        "meta_robots_noindex": blocks_indexing(robots),
+        "meta_robots_indexable": not blocks_indexing(robots),
         "h1_count": parser.h1_count,
         "meta_checks": meta_checks,
         "schema_expected": sorted(expected_types),

@@ -1,5 +1,6 @@
 const DEFAULT_CRM_WEBHOOK_URL = 'https://crm.solarisfilms.it/api/webhook/wordpress-lead';
 const DEFAULT_CRM_KNOWLEDGE_SEARCH_URL = 'https://crm.solarisfilms.it/api/public/chatbot/knowledge/search';
+const DEFAULT_CRM_PUBLIC_CONTACT_URL = 'https://crm.solarisfilms.it/api/public/forms/contact/plain';
 
 const HIGH_PRIORITY_TERMS = [
   'safety',
@@ -220,6 +221,40 @@ function buildWhatsAppCrmPayload(data, leadId) {
   };
 }
 
+async function sendPublicContactLead(payload, source = 'chatbot') {
+  const contactUrl = normalizeText(process.env.CRM_PUBLIC_CONTACT_URL) || DEFAULT_CRM_PUBLIC_CONTACT_URL;
+  const body = new URLSearchParams();
+  body.set('first_name', normalizeText(payload.name) || 'Lead Solaris');
+  body.set('last_name', '');
+  body.set('email', normalizeText(payload.email));
+  body.set('phone', normalizeText(payload.phone));
+  body.set('company_name', normalizeText(payload.company));
+  body.set('request_notes', normalizeText(payload.message));
+  body.set('privacy_acceptance', 'true');
+  body.set('source_page', normalizeText(payload.source_page));
+  body.set('source_site', normalizeText(payload.source_site) || 'solarisfilms.it');
+  body.set('form_code', source === 'whatsapp' ? 'whatsapp' : 'chatbot');
+
+  try {
+    const response = await fetch(contactUrl, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded;charset=UTF-8',
+        'X-Solaris-Source': source,
+      },
+      body: body.toString(),
+    });
+
+    if (response.ok) {
+      return { status: 'sent', ok: true, status_code: response.status, transport: 'public-form' };
+    }
+
+    return { status: 'error', ok: false, status_code: response.status, transport: 'public-form' };
+  } catch (error) {
+    return { status: 'error', ok: false, error: error.message, transport: 'public-form' };
+  }
+}
+
 async function sendCrmLead(payload, source = 'chatbot') {
   if (String(process.env.CRM_WEBHOOK_ENABLED || 'true').toLowerCase() === 'false') {
     return { status: 'disabled', ok: false };
@@ -231,7 +266,10 @@ async function sendCrmLead(payload, source = 'chatbot') {
     'X-Solaris-Source': source,
   };
   const webhookKey = normalizeText(process.env.CRM_WEBHOOK_KEY);
-  if (webhookKey) headers['X-Solaris-Key'] = webhookKey;
+  if (!webhookKey) {
+    return sendPublicContactLead(payload, source);
+  }
+  headers['X-Solaris-Key'] = webhookKey;
 
   try {
     const response = await fetch(webhookUrl, {
@@ -243,11 +281,9 @@ async function sendCrmLead(payload, source = 'chatbot') {
     if (response.ok) {
       return { status: 'sent', ok: true, status_code: response.status };
     }
-
-    const errorText = (await response.text()).slice(0, 500);
-    return { status: 'error', ok: false, status_code: response.status, error: errorText };
+    return sendPublicContactLead(payload, source);
   } catch (error) {
-    return { status: 'error', ok: false, error: error.message };
+    return sendPublicContactLead(payload, source);
   }
 }
 
@@ -409,5 +445,6 @@ module.exports = {
   handleOptions,
   readJson,
   sendCrmLead,
+  sendPublicContactLead,
   sendJson,
 };

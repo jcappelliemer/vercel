@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Solaris Static Replica
  * Description: Serve la replica statica 1:1 del nuovo sito Solaris dentro WordPress, con redirect e 410 server-side.
- * Version: 0.3.1
+ * Version: 0.3.2
  * Author: Solaris Films
  */
 
@@ -13,6 +13,10 @@ if (!defined('ABSPATH')) {
 define('SOLARIS_STATIC_REPLICA_DIR', plugin_dir_path(__FILE__));
 define('SOLARIS_STATIC_REPLICA_URL', plugin_dir_url(__FILE__));
 define('SOLARIS_STATIC_REPLICA_REBUILD_OPTION', 'solaris_static_replica_rebuild_token');
+
+function solaris_static_replica_is_private() {
+    return (int) get_option('blog_public', 1) === 0;
+}
 
 /**
  * The React replica renders these managed changes after consuming Orchestra's
@@ -172,7 +176,7 @@ function solaris_static_replica_mime($file) {
 }
 
 function solaris_static_replica_prepare_html($html) {
-    $robots = (int) get_option('blog_public', 1) === 0 ? 'noindex, nofollow' : 'index, follow';
+    $robots = solaris_static_replica_is_private() ? 'noindex, nofollow' : 'index, follow';
     $meta = '<meta name="robots" content="' . esc_attr($robots) . '">';
     if (preg_match('/<meta\b[^>]*\bname=["\']robots["\'][^>]*>/i', $html)) {
         $html = preg_replace('/<meta\b[^>]*\bname=["\']robots["\'][^>]*>/i', $meta, $html, 1);
@@ -190,7 +194,7 @@ function solaris_static_replica_send_file($file, $cache = 'public, max-age=300')
     $mime = solaris_static_replica_mime($file);
     header('Content-Type: ' . $mime);
     $is_html = strpos($mime, 'text/html') === 0;
-    $is_private_staging = (int) get_option('blog_public', 1) === 0;
+    $is_private_staging = solaris_static_replica_is_private();
     if ($is_html && $is_private_staging) {
         $cache = 'no-store, max-age=0';
         header('X-Robots-Tag: noindex, nofollow');
@@ -411,7 +415,7 @@ function solaris_static_replica_send_sitemap() {
     }
     status_header(200);
     header('Content-Type: application/xml; charset=utf-8');
-    if (get_option('blog_public') === '0') {
+    if (solaris_static_replica_is_private()) {
         header('X-Robots-Tag: noindex, nofollow');
     }
     echo '<?xml version="1.0" encoding="UTF-8"?>' . "\n";
@@ -421,7 +425,7 @@ function solaris_static_replica_send_sitemap() {
 function solaris_static_replica_send_robots() {
     status_header(200);
     header('Content-Type: text/plain; charset=utf-8');
-    if (get_option('blog_public') === '0') {
+    if (solaris_static_replica_is_private()) {
         echo "User-agent: *\nDisallow: /\n";
         return;
     }
@@ -444,9 +448,295 @@ function solaris_static_replica_send_fast_contact() {
     wp_redirect($location, 302);
 }
 
+function solaris_static_replica_send_json($status, $payload) {
+    status_header((int) $status);
+    nocache_headers();
+    header('Content-Type: application/json; charset=utf-8');
+    echo wp_json_encode($payload, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+}
+
+function solaris_static_replica_read_json_request($payload = null) {
+    if (is_array($payload)) {
+        return $payload;
+    }
+
+    $raw = file_get_contents('php://input');
+    if (!is_string($raw) || $raw === '') {
+        return array();
+    }
+    if (strlen($raw) > 100000) {
+        return new WP_Error('request_too_large', 'Request body too large');
+    }
+
+    $decoded = json_decode($raw, true);
+    if (!is_array($decoded)) {
+        return new WP_Error('invalid_json', 'Invalid JSON body');
+    }
+    return $decoded;
+}
+
+function solaris_static_replica_crm_api_url($path) {
+    $base = (string) apply_filters('solaris_static_replica_crm_api_base', 'https://crm.solarisfilms.it/api');
+    return untrailingslashit($base) . '/' . ltrim((string) $path, '/');
+}
+
+function solaris_static_replica_crm_post($path, $body, $as_json = false) {
+    $headers = array('X-Solaris-Source' => 'headless-wordpress');
+    $request_body = $body;
+    if ($as_json) {
+        $headers['Content-Type'] = 'application/json';
+        $request_body = wp_json_encode($body, JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE);
+    }
+
+    $response = wp_safe_remote_post(solaris_static_replica_crm_api_url($path), array(
+        'timeout' => 25,
+        'redirection' => 0,
+        'headers' => $headers,
+        'body' => $request_body,
+        'limit_response_size' => 1048576,
+    ));
+    if (is_wp_error($response)) {
+        return array('ok' => false, 'status' => 0, 'data' => array());
+    }
+
+    $status = (int) wp_remote_retrieve_response_code($response);
+    $data = json_decode((string) wp_remote_retrieve_body($response), true);
+    return array(
+        'ok' => $status >= 200 && $status < 300,
+        'status' => $status,
+        'data' => is_array($data) ? $data : array(),
+    );
+}
+
+function solaris_static_replica_chat_fallback($message) {
+    $text = strtolower(remove_accents((string) $message));
+    if (preg_match('/safety|sicurezza|antisfondamento|blindat/', $text)) {
+        return 'Per sicurezza e protezione delle vetrate valuterei le soluzioni Safety Shield. Per consigliarti bene servono tipo di vetro, dimensioni e obiettivo: antieffrazione, anti-infortunio o protezione da esplosione.';
+    }
+    if (preg_match('/caldo|sole|antisolare|abbagliamento/', $text)) {
+        return 'Per caldo e abbagliamento la famiglia corretta e quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e trasparenza desiderata.';
+    }
+    if (preg_match('/privacy|decor|satin|opaca/', $text)) {
+        return 'Per privacy e resa estetica si lavora con pellicole decorative, satinate o schermanti, mantenendo la luminosita richiesta.';
+    }
+    if (preg_match('/preventivo|prezzo|costo|\bmq\b/', $text)) {
+        return 'Per un preventivo servono citta, metri quadri indicativi, tipo di esigenza e qualche foto delle vetrate. Puoi lasciare i dati nel modulo del chatbot.';
+    }
+    if (strpos($text, 'madico') !== false) {
+        return 'Solaris Films distribuisce soluzioni MADICO USA in Italia. La famiglia corretta dipende dall obiettivo: controllo solare, sicurezza, privacy o riqualificazione energetica.';
+    }
+    return 'Posso aiutarti a orientarti tra pellicole antisolari, Safety Shield, privacy, decorative e consulenza tecnica. Dimmi quale problema vuoi risolvere.';
+}
+
+function solaris_static_replica_chat_response($message, $knowledge) {
+    $sources = isset($knowledge['sources']) && is_array($knowledge['sources']) ? $knowledge['sources'] : array();
+    if (!$sources) {
+        return solaris_static_replica_chat_fallback($message);
+    }
+
+    $highlights = array();
+    $references = array();
+    foreach (array_slice($sources, 0, 3) as $source) {
+        if (!is_array($source)) {
+            continue;
+        }
+        $title = sanitize_text_field((string) ($source['title'] ?? ''));
+        if ($title !== '') {
+            $references[] = $title;
+        }
+        $snippet = trim(preg_replace('/\s+/', ' ', wp_strip_all_tags((string) ($source['snippet'] ?? ''))));
+        if ($snippet !== '' && count($highlights) < 2) {
+            $highlights[] = wp_html_excerpt($snippet, 220, '...');
+        }
+    }
+
+    if (!$highlights) {
+        return solaris_static_replica_chat_fallback($message);
+    }
+
+    $response = solaris_static_replica_chat_fallback($message) . ' Dalle fonti attive risulta inoltre: ' . implode(' ', $highlights);
+    if ($references) {
+        $response .= "\n\nRiferimenti usati: " . implode(', ', array_unique($references)) . '.';
+    }
+    return $response;
+}
+
+function solaris_static_replica_public_sources($knowledge) {
+    $result = array();
+    $sources = isset($knowledge['sources']) && is_array($knowledge['sources']) ? $knowledge['sources'] : array();
+    foreach (array_slice($sources, 0, 3) as $source) {
+        if (!is_array($source)) {
+            continue;
+        }
+        $result[] = array(
+            'title' => sanitize_text_field((string) ($source['title'] ?? '')),
+            'source_type' => sanitize_key((string) ($source['source_type'] ?? '')),
+            'origin_url' => esc_url_raw((string) ($source['origin_url'] ?? '')),
+            'score' => isset($source['score']) ? (float) $source['score'] : null,
+        );
+    }
+    return $result;
+}
+
+function solaris_static_replica_handle_chat($payload = null) {
+    if ($payload === null && strtoupper((string) ($_SERVER['REQUEST_METHOD'] ?? 'GET')) !== 'POST') {
+        solaris_static_replica_send_json(405, array('detail' => 'Method not allowed'));
+        return;
+    }
+
+    $body = solaris_static_replica_read_json_request($payload);
+    if (is_wp_error($body)) {
+        solaris_static_replica_send_json(400, array('detail' => $body->get_error_message()));
+        return;
+    }
+    $message = sanitize_textarea_field((string) ($body['message'] ?? ''));
+    if ($message === '') {
+        solaris_static_replica_send_json(422, array('detail' => 'Message is required'));
+        return;
+    }
+
+    $knowledge_result = solaris_static_replica_crm_post('/public/chatbot/knowledge/search', array(
+        'message' => $message,
+        'page_path' => sanitize_text_field((string) ($body['page_path'] ?? '')),
+        'limit' => 6,
+    ), true);
+    $knowledge = $knowledge_result['ok'] ? $knowledge_result['data'] : array();
+    $session_id = sanitize_text_field((string) ($body['session_id'] ?? ''));
+    if ($session_id === '') {
+        $session_id = wp_generate_uuid4();
+    }
+
+    solaris_static_replica_send_json(200, array(
+        'response' => solaris_static_replica_chat_response($message, $knowledge),
+        'session_id' => $session_id,
+        'sources' => solaris_static_replica_public_sources($knowledge),
+        'knowledge_status' => $knowledge_result['ok'] ? 'ok' : 'fallback',
+    ));
+}
+
+function solaris_static_replica_chat_priority($body) {
+    $parts = array(
+        (string) ($body['interesse'] ?? ''),
+        (string) ($body['messaggio'] ?? ''),
+        (string) ($body['page_path'] ?? ''),
+    );
+    foreach (($body['transcript'] ?? array()) as $item) {
+        if (is_array($item)) {
+            $parts[] = (string) ($item['text'] ?? '');
+        }
+    }
+    $text = strtolower(remove_accents(implode(' ', $parts)));
+    if (preg_match('/safety|shield|anti-esplosione|sicurezza|antisfondamento|urgente/', $text)) {
+        return 'alta';
+    }
+    if (preg_match('/preventivo|consulenza|sopralluogo|azienda|ufficio|\bmq\b|metri|caldo|antisolare/', $text)) {
+        return 'media';
+    }
+    return 'standard';
+}
+
+function solaris_static_replica_chat_notes($body) {
+    $notes = array(
+        'Lead generato dal chatbot Solaris Films.',
+        'Priorita: ' . solaris_static_replica_chat_priority($body),
+        'Interesse: ' . sanitize_text_field((string) ($body['interesse'] ?? 'Non specificato')),
+        'Citta: ' . sanitize_text_field((string) ($body['citta'] ?? 'Non specificata')),
+        'Pagina: ' . sanitize_text_field((string) ($body['page_path'] ?? 'Non disponibile')),
+        'URL completo: ' . esc_url_raw((string) ($body['source_url'] ?? '')),
+        'Sessione chat: ' . sanitize_text_field((string) ($body['session_id'] ?? 'Non disponibile')),
+    );
+    $message = sanitize_textarea_field((string) ($body['messaggio'] ?? ''));
+    if ($message !== '') {
+        $notes[] = '';
+        $notes[] = 'Messaggio cliente: ' . $message;
+    }
+    $transcript = array();
+    foreach (array_slice((array) ($body['transcript'] ?? array()), -12) as $item) {
+        if (!is_array($item)) {
+            continue;
+        }
+        $role = ($item['type'] ?? '') === 'user' ? 'Cliente' : 'Assistente';
+        $text = sanitize_textarea_field((string) ($item['text'] ?? ''));
+        if ($text !== '') {
+            $transcript[] = $role . ': ' . $text;
+        }
+    }
+    if ($transcript) {
+        $notes[] = '';
+        $notes[] = "Ultimi messaggi chat:\n" . implode("\n", $transcript);
+    }
+    return implode("\n", $notes);
+}
+
+function solaris_static_replica_handle_chat_lead($payload = null) {
+    if ($payload === null && strtoupper((string) ($_SERVER['REQUEST_METHOD'] ?? 'GET')) !== 'POST') {
+        solaris_static_replica_send_json(405, array('detail' => 'Method not allowed'));
+        return;
+    }
+
+    $body = solaris_static_replica_read_json_request($payload);
+    if (is_wp_error($body)) {
+        solaris_static_replica_send_json(400, array('detail' => $body->get_error_message()));
+        return;
+    }
+    if (!filter_var($body['privacy_accettata'] ?? false, FILTER_VALIDATE_BOOLEAN)) {
+        solaris_static_replica_send_json(422, array('detail' => 'Privacy non accettata'));
+        return;
+    }
+    $first_name = sanitize_text_field((string) ($body['nome'] ?? ''));
+    $email = sanitize_email((string) ($body['email'] ?? ''));
+    $phone = sanitize_text_field((string) ($body['telefono'] ?? ''));
+    if ($first_name === '') {
+        solaris_static_replica_send_json(422, array('detail' => 'Nome obbligatorio'));
+        return;
+    }
+    if ($email === '' && $phone === '') {
+        solaris_static_replica_send_json(422, array('detail' => 'Inserisci almeno email o telefono'));
+        return;
+    }
+
+    $source_page = esc_url_raw((string) ($body['source_url'] ?? $body['page_path'] ?? ''));
+    $source_site = sanitize_text_field((string) ($body['source_site'] ?? ''));
+    if ($source_site === '' && $source_page !== '') {
+        $source_site = (string) wp_parse_url($source_page, PHP_URL_HOST);
+    }
+    $crm_result = solaris_static_replica_crm_post('/public/forms/contact/plain', array(
+        'first_name' => $first_name,
+        'last_name' => sanitize_text_field((string) ($body['cognome'] ?? '')),
+        'email' => $email,
+        'phone' => $phone,
+        'company_name' => sanitize_text_field((string) ($body['ragione_sociale'] ?? '')),
+        'city' => sanitize_text_field((string) ($body['citta'] ?? '')),
+        'request_notes' => solaris_static_replica_chat_notes($body),
+        'privacy_acceptance' => 'true',
+        'source_page' => $source_page,
+        'source_site' => $source_site !== '' ? $source_site : 'solarisfilms.it',
+        'form_code' => 'chatbot',
+    ));
+    if (!$crm_result['ok'] || empty($crm_result['data']['lead_id'])) {
+        solaris_static_replica_send_json(502, array('detail' => 'Lead temporarily unavailable', 'crm_status' => 'error'));
+        return;
+    }
+
+    solaris_static_replica_send_json(200, array(
+        'id' => sanitize_text_field((string) $crm_result['data']['lead_id']),
+        'status' => 'created',
+        'crm_status' => 'sent',
+        'session_id' => sanitize_text_field((string) ($body['session_id'] ?? '')),
+    ));
+}
+
 add_action('template_redirect', function () {
     $path = solaris_static_replica_normalize_path($_SERVER['REQUEST_URI'] ?? '/');
 
+    if ($path === '/api/chat') {
+        solaris_static_replica_handle_chat();
+        exit;
+    }
+    if ($path === '/api/chat/lead') {
+        solaris_static_replica_handle_chat_lead();
+        exit;
+    }
     if ($path === '/api/fast-contact') {
         solaris_static_replica_send_fast_contact();
         exit;

@@ -16,7 +16,6 @@ const LOCAL_STAGING_API = (
 const API = BACKEND_URL
   ? `${BACKEND_URL}/api`
   : (typeof window !== 'undefined' && window.location.hostname === 'localhost' ? LOCAL_STAGING_API : '/api');
-const CRM_CHAT_ENDPOINT = 'https://crm.solarisfilms.it/api/public/chatbot/message';
 const CHAT_MESSAGES_KEY = 'solaris_chatbot_messages';
 const CHAT_SESSION_KEY = 'solaris_chatbot_session';
 const PRIVACY_NOTICE = 'Usando la chat accetti che i messaggi siano trattati da Solaris Films per rispondere alla richiesta; lascia i dati nel modulo solo se vuoi essere ricontattato.';
@@ -88,10 +87,6 @@ const formatTranscript = (items) => items.slice(-12).map((msg) => {
 }).join('\n');
 
 const sendLeadDirectToCrm = async (data, messages) => {
-  const name = [data.nome, data.cognome].map((value) => String(value || '').trim()).filter(Boolean).join(' ')
-    || data.email
-    || data.telefono
-    || 'Lead chatbot Solaris';
   const context = readLeadContext();
   const priority = buildPriority(data, messages);
   const messageParts = [
@@ -109,18 +104,20 @@ const sendLeadDirectToCrm = async (data, messages) => {
   const transcript = formatTranscript(messages);
   if (transcript) messageParts.push('', 'Ultimi messaggi chat:', transcript);
 
-  await axios.post(`${getPublicCrmApiBase()}/webhook/wordpress-lead`, {
-    name,
-    email: data.email || '',
-    phone: data.telefono || '',
-    company: data.ragione_sociale || '',
-    message: messageParts.join('\n').trim(),
-    source: 'chatbot',
-    product_interest: data.interesse || '',
-    source_page: context.source_url || data.page_path || '',
-    source_site: typeof window !== 'undefined' ? window.location.hostname : 'solarisfilms.it',
-    priority,
-  }, { timeout: 15000 });
+  const payload = new FormData();
+  payload.append('first_name', data.nome || 'Lead chatbot Solaris');
+  payload.append('last_name', data.cognome || '');
+  payload.append('email', data.email || '');
+  payload.append('phone', data.telefono || '');
+  payload.append('company_name', data.ragione_sociale || '');
+  payload.append('city', data.citta || '');
+  payload.append('request_notes', messageParts.join('\n').trim());
+  payload.append('privacy_acceptance', 'true');
+  payload.append('source_page', context.source_url || data.page_path || '');
+  payload.append('source_site', typeof window !== 'undefined' ? window.location.hostname : 'solarisfilms.it');
+  payload.append('form_code', 'chatbot');
+
+  await axios.post(`${getPublicCrmApiBase()}/public/forms/contact/plain`, payload, { timeout: 15000 });
 
   return { crm_status: 'sent' };
 };
@@ -244,7 +241,7 @@ const ChatBot = () => {
     setIsLoading(true);
 
     try {
-      const response = await axios.post(CRM_CHAT_ENDPOINT, {
+      const response = await axios.post(`${API}/chat`, {
         message: userMessage,
         session_id: sessionId,
         page_path: pathname,
@@ -254,11 +251,15 @@ const ChatBot = () => {
         timeout: 30000,
         withCredentials: false,
       });
+      const responseText = response.data?.reply || response.data?.response;
+      if (!responseText) {
+        throw new Error('Chat response is empty');
+      }
       const nextSessionId = response.data.session_id || response.data.thread_id || sessionId;
       if (nextSessionId) setSessionId(nextSessionId);
       setMessages((prev) => [...prev, {
         type: 'bot',
-        text: response.data.reply || response.data.response || 'Ho registrato la richiesta.',
+        text: responseText,
         sources: Array.isArray(response.data.knowledge_sources)
           ? response.data.knowledge_sources
           : (Array.isArray(response.data.sources) ? response.data.sources : []),
@@ -317,10 +318,15 @@ const ChatBot = () => {
         responseData = response.data;
       } catch (apiError) {
         const status = apiError.response?.status;
-        if (status && ![404, 405].includes(status)) {
+        if (status && ![404, 405, 502, 503].includes(status)) {
           throw apiError;
         }
+      }
+      if (responseData?.crm_status !== 'sent') {
         responseData = await sendLeadDirectToCrm(payload, messages);
+      }
+      if (responseData?.crm_status !== 'sent') {
+        throw new Error('Lead was not delivered');
       }
       setLeadStatus('sent');
       setIsLeadFormOpen(false);

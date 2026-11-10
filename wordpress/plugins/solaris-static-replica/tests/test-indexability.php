@@ -17,6 +17,10 @@ $sample = '<!doctype html><html><head><meta name="robots" content="noindex, nofo
 
 try {
     update_option('blog_public', 0);
+    if (!solaris_static_replica_is_private()) {
+        throw new RuntimeException('Integer zero was not recognized as private.');
+    }
+
     $private = solaris_static_replica_prepare_html($sample);
     if (substr_count($private, 'noindex, nofollow') !== 1) {
         throw new RuntimeException('Private replica did not emit exactly one noindex directive.');
@@ -24,6 +28,9 @@ try {
 
     update_option('blog_public', 1);
     $public = solaris_static_replica_prepare_html($sample);
+    if (solaris_static_replica_is_private()) {
+        throw new RuntimeException('Integer one was incorrectly recognized as private.');
+    }
     if (substr_count($public, 'index, follow') !== 1 || strpos($public, 'noindex') !== false) {
         throw new RuntimeException('Public replica did not become indexable.');
     }

@@ -14,6 +14,7 @@ WP_ORIGIN="https://wordpress-jc4e.srv1502079.hstgr.cloud"
 PUBLIC_ORIGIN="https://www.solarisfilms.it"
 PORT="4195"
 MIN_ORCHESTRA_PAGES="150"
+RUN_RETENTION="${RUN_RETENTION:-5}"
 
 safe_remove_tree() {
     local target="$1"
@@ -23,6 +24,31 @@ safe_remove_tree() {
         return 1
     fi
     rm -rf -- "${target}"
+}
+
+prune_old_runs() {
+    if [[ ! "${RUN_RETENTION}" =~ ^[1-9][0-9]*$ ]]; then
+        echo "[$(date -u +%FT%TZ)] invalid RUN_RETENTION: ${RUN_RETENTION}"
+        return 1
+    fi
+
+    local -a runs=()
+    local name target resolved
+    mapfile -t runs < <(
+        find "${WORK_ROOT}" -mindepth 1 -maxdepth 1 -type d -printf '%f\n' \
+            | grep -E '^20[0-9]{6}T[0-9]{6}Z$' \
+            | sort -r
+    )
+    for name in "${runs[@]:${RUN_RETENTION}}"; do
+        target="${WORK_ROOT}/${name}"
+        resolved="$(realpath -e "${target}")"
+        if [[ ! "${resolved}" =~ ^${WORK_ROOT}/20[0-9]{6}T[0-9]{6}Z$ ]]; then
+            echo "[$(date -u +%FT%TZ)] refusing unsafe run cleanup: ${resolved}"
+            return 1
+        fi
+        safe_remove_tree "${resolved}" "${WORK_ROOT}"
+        echo "[$(date -u +%FT%TZ)] pruned old run: ${name}"
+    done
 }
 
 mkdir -p "${WORK_ROOT}" "${ROLLBACK_ROOT}" "${QUEUE_DIR}"
@@ -43,11 +69,14 @@ if [[ ! -d "${REPO_ROOT}/.git" || ! -d "${FRONTEND_CACHE}" ]]; then
     exit 1
 fi
 
+prune_old_runs
+
 BUILD_ID="$(date -u +%Y%m%dT%H%M%SZ)"
 RUN_DIR="${WORK_ROOT}/${BUILD_ID}"
 SOURCE_DIR="${RUN_DIR}/source"
 FRONTEND_DIR="${SOURCE_DIR}/frontend"
 EXPORT_DIR="${RUN_DIR}/solaris-static-replica"
+REQUEST_DIR="${RUN_DIR}/rebuild-requests"
 NEW_PLUGIN="${PLUGIN_PARENT}/.solaris-static-replica.new-${BUILD_ID}"
 OLD_PLUGIN="${PLUGIN_PARENT}/.solaris-static-replica.old-${BUILD_ID}"
 SERVER_LOG="${RUN_DIR}/next-server.log"
@@ -68,7 +97,15 @@ cleanup() {
 }
 trap cleanup EXIT
 
-mkdir -p "${SOURCE_DIR}"
+mkdir -p "${SOURCE_DIR}" "${REQUEST_DIR}"
+shopt -s nullglob
+REQUEST_FILES=("${QUEUE_DIR}"/request-*.json)
+if (( ${#REQUEST_FILES[@]} > 0 )); then
+    mv -- "${REQUEST_FILES[@]}" "${REQUEST_DIR}/"
+fi
+shopt -u nullglob
+echo "[$(date -u +%FT%TZ)] claimed rebuild requests: ${#REQUEST_FILES[@]}"
+
 COMMIT="$(git -C "${REPO_ROOT}" rev-parse HEAD)"
 git -C "${REPO_ROOT}" archive HEAD | tar -xf - -C "${SOURCE_DIR}"
 ln -s "${FRONTEND_CACHE}" "${FRONTEND_DIR}/node_modules"
@@ -148,6 +185,5 @@ SWAPPED=1
 if [[ -d "${OLD_PLUGIN}" ]]; then
     safe_remove_tree "${OLD_PLUGIN}" "${PLUGIN_PARENT}"
 fi
-find "${QUEUE_DIR}" -maxdepth 1 -type f -name 'request-*.json' -delete
-
-echo "[$(date -u +%FT%TZ)] PASS commit=${COMMIT} pages=${ORCHESTRA_PAGE_COUNT} build=${BUILD_ID}"
+PENDING_REQUESTS="$(find "${QUEUE_DIR}" -maxdepth 1 -type f -name 'request-*.json' | wc -l)"
+echo "[$(date -u +%FT%TZ)] PASS commit=${COMMIT} pages=${ORCHESTRA_PAGE_COUNT} build=${BUILD_ID} pending_requests=${PENDING_REQUESTS}"

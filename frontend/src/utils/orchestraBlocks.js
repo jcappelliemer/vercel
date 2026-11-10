@@ -1,3 +1,5 @@
+import routeAliases from '../data/orchestra-route-aliases.json';
+
 export function normalizeOrchestraPath(pathname) {
   let normalized = String(pathname || '/');
   const cut = normalized.search(/[?#]/);
@@ -5,6 +7,29 @@ export function normalizeOrchestraPath(pathname) {
   if (!normalized.startsWith('/')) normalized = `/${normalized}`;
   if (normalized.length > 1) normalized = normalized.replace(/\/+$/, '');
   return normalized || '/';
+}
+
+export function resolveOrchestraPath(pathname, entries = {}) {
+  const normalized = normalizeOrchestraPath(pathname);
+  if (entries && entries[normalized]) return normalized;
+
+  const sourcePath = normalizeOrchestraPath(routeAliases?.[normalized] || normalized);
+  if (entries && entries[sourcePath]) return sourcePath;
+  return normalized;
+}
+
+export function rewriteOrchestraHtmlIdentityUrls(html, sourceOrigin, targetOrigin) {
+  if (!html || !sourceOrigin || !targetOrigin) return html;
+
+  return String(html).replace(/(\bhref\s*=\s*)(["'])(.*?)\2/gi, (full, prefix, quote, value) => {
+    try {
+      const parsed = new URL(value);
+      if (parsed.origin !== sourceOrigin) return full;
+      return `${prefix}${quote}${targetOrigin}${parsed.pathname}${parsed.search}${parsed.hash}${quote}`;
+    } catch {
+      return full;
+    }
+  });
 }
 
 function stripAccents(value) {
@@ -81,6 +106,53 @@ export function filterFaqItemsAgainstBody(items, page) {
     if (bodyText && bodyText.includes(key)) return false;
     return true;
   });
+}
+
+function plainIntroText(value) {
+  return decodeHtmlEntities(String(value || '').replace(/<[^>]*>/g, ' '))
+    .replace(/\u00a0/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+export function normalizeOrchestraIntroText(value) {
+  return plainIntroText(value)
+    .replace(/[‘’ʼ]/g, "'")
+    .replace(/[“”]/g, '"');
+}
+
+/**
+ * Apply a snapshot-backed REWRITE_INTRO to a committed static mirror.
+ * Only the first substantial paragraph is eligible and its normalized text
+ * must still match before_html exactly. A stale or ambiguous mirror therefore
+ * remains untouched instead of displaying the generated text in the wrong spot.
+ */
+export function applyOrchestraIntroRewrite(page, rewrite) {
+  if (!page || !rewrite || !Array.isArray(page.contentBlocks)) return page;
+
+  const before = normalizeOrchestraIntroText(rewrite.before_html);
+  const after = normalizeOrchestraIntroText(rewrite.after_html);
+  if (!before || !after || before === after) return page;
+
+  const firstSubstantial = page.contentBlocks.findIndex((block) => {
+    if (!block || block.type !== 'paragraph') return false;
+    const text = normalizeOrchestraIntroText(block.html || block.text || '');
+    return text.length >= 40 && text.split(/\s+/).filter(Boolean).length >= 6;
+  });
+  if (firstSubstantial < 0) return page;
+
+  const source = page.contentBlocks[firstSubstantial];
+  if (normalizeOrchestraIntroText(source.html || source.text || '') !== before) return page;
+
+  const contentBlocks = page.contentBlocks.slice();
+  contentBlocks[firstSubstantial] = {
+    ...source,
+    html: String(rewrite.after_html),
+    text: plainIntroText(rewrite.after_html),
+    orchestraManagedAction: 'REWRITE_INTRO',
+  };
+
+  return { ...page, contentBlocks };
 }
 
 // Residuo encoding (2026-07-15) — le fonti dati runtime (prodotti.json baked dal

@@ -68,8 +68,11 @@
     "fetch:orchestra": "node fetch-orchestra-fixes.js",
     "monitor:analytics": "node scripts/monitor-analytics.cjs",
     "report:analytics": "node scripts/ga4-page-report.cjs",
-    "prebuild": "node fetch-orchestra-fixes.js",
+    "prebuild": "node scripts/build-orchestra-route-aliases.mjs && node fetch-orchestra-fixes.js",
     "build": "next build",
+    "audit:headless": "python3 scripts/audit-headless.py src/data/orchestra-fixes.json",
+    "export:wp-replica": "python3 scripts/export-wp-static-replica.py",
+    "smoke:wp-replica": "node scripts/smoke-wp-static-replica.mjs",
     "build:cra": "craco build",
     "postbuild:cra": "node scripts/run-react-snap.cjs",
     "test": "craco test"

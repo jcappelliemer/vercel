@@ -24,6 +24,12 @@ const https = require('https');
 const fs = require('fs');
 const path = require('path');
 const { URL } = require('url');
+const {
+  FALLBACK_SOURCE,
+  buildOrchestraFallbackPage,
+  fallbackFileName,
+  normalizeMirrorPath,
+} = require('./scripts/orchestra-fallback.cjs');
 
 const DEFAULT_BASE = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
 const BASE = (process.env.ORCHESTRA_BASE || process.env.REACT_APP_WP_URL || process.env.WP_URL || DEFAULT_BASE).replace(/\/$/, '');
@@ -41,6 +47,16 @@ const FRESH_WP_HEADERS = {
   Pragma: 'no-cache',
   Expires: '0',
 };
+const LIVE_INDEX = path.join(__dirname, 'public', 'wp-data', 'live-pages-index.json');
+const LIVE_PAGES_DIR = path.join(__dirname, 'public', 'wp-data', 'live-pages');
+const ROUTE_ALIASES = path.join(__dirname, 'src', 'data', 'orchestra-route-aliases.json');
+const NEXT_CONFIG = path.join(__dirname, 'next.config.js');
+const PUBLIC_ORIGIN = String(
+  process.env.NEXT_PUBLIC_SITE_URL
+  || process.env.NEXT_PUBLIC_SITE_ORIGIN
+  || 'https://solarisfilms.vercel.app'
+).replace(/\/+$/, '');
+const SITE_INDEXABLE = String(process.env.NEXT_PUBLIC_SITE_INDEXABLE || '1') !== '0';
 
 const EMPTY = { contract: 1, generatedAt: null, byPath: {} };
 
@@ -159,6 +175,88 @@ function nextLink(linkHeader) {
   return m ? m[1] : null;
 }
 
+function indexEntryPaths(entry) {
+  return [entry && entry.path, entry && entry.route && entry.route.newPath]
+    .filter(Boolean)
+    .map(normalizeMirrorPath);
+}
+
+async function configuredRoutePaths() {
+  if (!fs.existsSync(NEXT_CONFIG)) return [];
+
+  try {
+    const config = require(NEXT_CONFIG);
+    const redirects = typeof config.redirects === 'function' ? await config.redirects() : [];
+    return redirects.flatMap((entry) => [entry && entry.source, entry && entry.destination])
+      .filter((value) => typeof value === 'string' && value.startsWith('/') && !value.includes(':'))
+      .map(normalizeMirrorPath);
+  } catch (error) {
+    console.warn(`[orchestra] route config unavailable: ${error.message}`);
+    return [];
+  }
+}
+
+async function materializeMissingMirrorPages(byPath) {
+  if (!fs.existsSync(LIVE_INDEX)) return 0;
+
+  const index = JSON.parse(fs.readFileSync(LIVE_INDEX, 'utf8'));
+  const generatedEntries = (index.pages || []).filter((entry) => entry.sourceSitemap === FALLBACK_SOURCE);
+  for (const entry of generatedEntries) {
+    if (!entry.file || !String(entry.file).startsWith('orchestra-')) continue;
+    const generatedFile = path.join(LIVE_PAGES_DIR, entry.file);
+    if (fs.existsSync(generatedFile)) fs.unlinkSync(generatedFile);
+  }
+
+  const pages = (index.pages || []).filter((entry) => entry.sourceSitemap !== FALLBACK_SOURCE);
+  const knownPaths = new Set(pages.flatMap(indexEntryPaths));
+  if (fs.existsSync(ROUTE_ALIASES)) {
+    const aliases = JSON.parse(fs.readFileSync(ROUTE_ALIASES, 'utf8'));
+    for (const [targetPath, sourcePath] of Object.entries(aliases || {})) {
+      knownPaths.add(normalizeMirrorPath(targetPath));
+      knownPaths.add(normalizeMirrorPath(sourcePath));
+    }
+  }
+  for (const routePath of await configuredRoutePaths()) knownPaths.add(routePath);
+  let created = 0;
+
+  for (const [rawPath, summary] of Object.entries(byPath)) {
+    const pathname = normalizeMirrorPath(rawPath);
+    if (knownPaths.has(pathname)) continue;
+
+    const targetUrl = summary.frontend_url || summary.wp_url || `${PUBLIC_ORIGIN}${pathname}`;
+    const detailUrl = `${BASE}/wp-json/aeo-orchestra/v1/headless-fixes?include=content&url=${encodeURIComponent(targetUrl)}`;
+    const { json: detail } = await fetchManifestRetry(detailUrl);
+    if (!detail || detail.post_status !== 'publish' || typeof detail.content !== 'string') {
+      console.warn(`[orchestra] fallback skipped for ${pathname}: connector detail unavailable`);
+      continue;
+    }
+
+    const page = buildOrchestraFallbackPage(detail, pathname, PUBLIC_ORIGIN, { indexable: SITE_INDEXABLE });
+    const file = fallbackFileName(detail.post_id, pathname);
+    fs.mkdirSync(LIVE_PAGES_DIR, { recursive: true });
+    fs.writeFileSync(path.join(LIVE_PAGES_DIR, file), JSON.stringify(page));
+
+    pages.push({
+      url: page.url,
+      path: page.path,
+      route: page.route,
+      file,
+      title: page.seo.title,
+      description: page.seo.description,
+      canonical: page.seo.canonical,
+      robots: page.seo.robots,
+      h1: page.h1,
+      textLength: page.textLength,
+      sourceSitemap: FALLBACK_SOURCE,
+    });
+    knownPaths.add(pathname);
+    created += 1;
+  }
+
+  fs.writeFileSync(LIVE_INDEX, JSON.stringify({ ...index, origin: PUBLIC_ORIGIN, pages }, null, 2));
+  return created;
+}
+
 async function main() {
   const byPath = {};
   let url = `${BASE}/wp-json/aeo-orchestra/v1/headless-fixes?view=manifest&per_page=${PER_PAGE}&page=1`;
@@ -173,6 +271,8 @@ async function main() {
       if (!key) continue;
       byPath[key] = {
         post_id: p.post_id,
+        wp_url: p.wp_url || '',
+        frontend_url: p.frontend_url || '',
         modified_at: p.modified_at,
         meta: p.meta || {},
         aeo: p.aeo || {},
@@ -185,8 +285,9 @@ async function main() {
     url = nextLink(headers && headers.link);
     pages++;
   }
+  const fallbackPages = await materializeMissingMirrorPages(byPath);
   writeOut({ contract: 1, generatedAt, byPath });
-  console.log(`[orchestra] baked ${Object.keys(byPath).length} page(s) over ${pages} request(s) → ${path.relative(process.cwd(), OUT)}`);
+  console.log(`[orchestra] baked ${Object.keys(byPath).length} page(s) over ${pages} request(s), materialized ${fallbackPages} missing mirror page(s) → ${path.relative(process.cwd(), OUT)}`);
 }
 
 main().catch((err) => {

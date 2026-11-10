@@ -1,4 +1,9 @@
 const path = require('path');
+const wpProxyOrigin = String(
+  process.env.WP_PROXY_ORIGIN
+  || process.env.NEXT_PUBLIC_WP_ORIGIN
+  || 'https://wordpress-jc4e.srv1502079.hstgr.cloud'
+).replace(/\/+$/, '');
 
 const withSlashVariants = (paths) => paths.flatMap((source) => [
   source.replace(/\/$/, ''),
@@ -82,6 +87,21 @@ const technicalFocusAliasRedirects = [
   ['/focus-tecnico/pellicole-antisolari-stampabili-e-vetrofanie', '/pellicole-antisolari-stampabili-e-vetrofanie/'],
   ['/focus-tecnico/pellicole-decorative-privacy', '/pellicole-decorative-privacy/'],
   ['/focus-tecnico/pellicole-termoisolanti', '/pellicole-termoisolanti/'],
+].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
+  source: variant,
+  destination,
+  statusCode: 301,
+})));
+
+const staticReplicaLegacyRedirects = [
+  [
+    '/pellicole-per-vetri/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy',
+    '/guida-tecnica/',
+  ],
+  ['/guida-tecnica-pellicole-per-vetri-antisolari-sicurezza-e-privacy', '/guida-tecnica/'],
+  ['/pellicole-per-vetri/pellicole-per-vetri', '/servizi/'],
+  ['/pellicole-per-vetri', '/servizi/'],
+  ['/about', '/company-profile/'],
 ].flatMap(([source, destination]) => withSlashVariants([source]).map((variant) => ({
   source: variant,
   destination,
@@ -175,9 +195,22 @@ const nextConfig = {
   reactStrictMode: true,
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
+  async headers() {
+    if (process.env.SITE_INDEXABLE === '1' || process.env.NEXT_PUBLIC_SITE_INDEXABLE === '1') {
+      return [];
+    }
+    return [{
+      source: '/:path*',
+      headers: [{ key: 'X-Robots-Tag', value: 'noindex, nofollow' }],
+    }];
+  },
   async rewrites() {
     return [
       ...wordpressProxyRewrites,
+      {
+        source: '/sitemap-:kind.xml',
+        destination: `${wpProxyOrigin}/sitemap-:kind.xml`,
+      },
       ...gonePaths.map((source) => ({
         source,
         destination: '/api/gone',
@@ -208,6 +241,7 @@ const nextConfig = {
         destination: '/approfondimenti/:slug*',
         statusCode: 301,
       },
+      ...staticReplicaLegacyRedirects,
       {
         source: '/pellicole-per-vetri/profilo-solaris',
         destination: '/company-profile/',

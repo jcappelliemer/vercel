@@ -29,6 +29,7 @@ const SITE_ORIGIN = normalizeOrigin(
 const SITEMAP_INDEX_CANDIDATES = unique([
   `${LIVE_ORIGIN}/sitemap_index.xml`,
   `${LIVE_ORIGIN}/wp-sitemap.xml`,
+  `${LIVE_ORIGIN}/seo-aeo-sitemap.xml`,
   `${LIVE_ORIGIN}/sitemap.xml`,
 ]);
 const OUTPUT_DIR = path.join(__dirname, 'public', 'wp-data');
@@ -190,6 +191,18 @@ function fetchBuffer(url, redirectCount = 0) {
 
 function unique(values) {
   return [...new Set(values.filter(Boolean))];
+}
+
+// Orchestra sitemaps describe public frontend URLs even when the build reads
+// from a separate WordPress origin. Rebase only for fetching; stored routes
+// and generated canonicals continue to use SITE_ORIGIN.
+function toLiveSourceUrl(value) {
+  try {
+    const parsed = new URL(String(value || ''));
+    return `${LIVE_ORIGIN}${parsed.pathname}${parsed.search}${parsed.hash}`;
+  } catch {
+    return value;
+  }
 }
 
 function decodeEntities(value = '') {
@@ -1035,15 +1048,20 @@ function classifyPath(pathname, sourceSitemap = '') {
 }
 
 async function collectLiveUrls() {
-  let indexXml = '';
   let indexUrl = '';
+  let rootUrls = [];
   const failures = [];
 
   for (const candidate of SITEMAP_INDEX_CANDIDATES) {
     try {
       console.log(`Reading sitemap index ${candidate}`);
-      indexXml = await fetchText(candidate);
+      const candidateXml = await fetchText(candidate);
+      const candidateUrls = extractSitemapUrls(candidateXml);
+      if (!candidateUrls.length) {
+        throw new Error('response contains no sitemap URLs');
+      }
       indexUrl = candidate;
+      rootUrls = candidateUrls.map(toLiveSourceUrl);
       break;
     } catch (err) {
       failures.push(`${candidate}: ${err.message}`);
@@ -1051,14 +1069,19 @@ async function collectLiveUrls() {
     }
   }
 
-  if (!indexXml) {
+  if (!rootUrls.length) {
     throw new Error(`No live sitemap index available. ${failures.join(' | ')}`);
   }
 
-  const sitemapUrls = extractSitemapUrls(indexXml)
-    .filter((url) => url.endsWith('.xml'))
+  const sitemapUrls = rootUrls
+    .filter((url) => /\.xml(?:$|[?#])/i.test(url))
     .filter((url) => !isExcludedSitemapUrl(url));
-  const pages = [];
+  const pages = rootUrls
+    .filter((url) => !/\.xml(?:$|[?#])/i.test(url))
+    .filter((url) => url.startsWith(LIVE_ORIGIN))
+    .filter((url) => !isExcludedProductUrl(url))
+    .filter((url) => !isExcludedLiveUrl(url))
+    .map((url) => ({ url, sitemap: indexUrl }));
 
   console.log(`Using sitemap index ${indexUrl} with ${sitemapUrls.length} child sitemaps`);
 
@@ -1067,6 +1090,7 @@ async function collectLiveUrls() {
       console.log(`Reading sitemap ${sitemapUrl}`);
       const xml = await fetchText(sitemapUrl);
       const urls = extractSitemapUrls(xml)
+        .map(toLiveSourceUrl)
         .filter((url) => url.startsWith(LIVE_ORIGIN))
         .filter((url) => !isExcludedProductUrl(url))
         .filter((url) => !isExcludedLiveUrl(url));

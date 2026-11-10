@@ -1,6 +1,6 @@
 import fixes from '../data/orchestra-fixes.json';
 import { useLocation } from '@/next/router-shim';
-import { normalizeOrchestraPath, normalizeTrustSignals } from '../utils/orchestraBlocks';
+import { resolveOrchestraPath, normalizeTrustSignals } from '../utils/orchestraBlocks';
 
 function removeAuthorityHeading(html) {
   return String(html || '')
@@ -10,7 +10,7 @@ function removeAuthorityHeading(html) {
 
 export default function Authority({ html: htmlProp, path, trustSignals: trustSignalsProp }) {
   const loc = useLocation();
-  const key = normalizeOrchestraPath(path || (loc && loc.pathname) || '/');
+  const key = resolveOrchestraPath(path || (loc && loc.pathname) || '/', fixes?.byPath || {});
   const aeo = fixes?.byPath?.[key]?.aeo || {};
   const rawHtml = (typeof htmlProp === 'string' && htmlProp)
     ? htmlProp

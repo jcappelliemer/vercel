@@ -13,6 +13,11 @@ const { URL } = require('url');
 const DEFAULT_WP_URL = 'https://wordpress-jc4e.srv1502079.hstgr.cloud';
 const WP_URL = (process.env.REACT_APP_WP_URL || process.env.WP_URL || DEFAULT_WP_URL).replace(/\/$/, '');
 const FETCH_TIMEOUT_MS = Number(process.env.WP_FETCH_TIMEOUT_MS || 3000);
+const FRESH_WP_HEADERS = {
+  'Cache-Control': 'no-store, no-cache, max-age=0, must-revalidate',
+  Pragma: 'no-cache',
+  Expires: '0',
+};
 const BLOCKED_SOLARIS_DATA_RE = /\bNT\s*20\b|\bNT\s*35\b|\bserie\s*NT\b|tecnosolar|fotocromatic|cromia|llms-txt|zoho-callback|false-parent/i;
 const FRESH_WP_HEADERS = {
   'Cache-Control': 'no-store, no-cache, max-age=0, must-revalidate',

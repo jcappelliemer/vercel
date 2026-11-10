@@ -2,33 +2,42 @@ import { Helmet } from 'react-helmet-async';
 import { useLocation } from '@/next/router-shim';
 import fixes from '../data/orchestra-fixes.json';
 import FAQ from './FAQ';
+import InternalLinks from './InternalLinks';
 import Snippet from './Snippet';
-import { filterFaqItemsAgainstBody, isAuthorityFaqItem, normalizeFaqItems, normalizeOrchestraPath } from '../utils/orchestraBlocks';
+import {
+  filterFaqItemsAgainstBody,
+  isAuthorityFaqItem,
+  normalizeFaqItems,
+  resolveOrchestraPath,
+  rewriteOrchestraHtmlIdentityUrls,
+} from '../utils/orchestraBlocks';
+import { hasSchemaType, sanitizeProductSchemaJsonLd } from '../utils/schemaJsonLd';
+
+const SITE_ORIGIN = String(
+  process.env.NEXT_PUBLIC_SITE_URL
+  || process.env.NEXT_PUBLIC_SITE_ORIGIN
+  || 'https://solarisfilms.vercel.app'
+).replace(/\/+$/, '');
+const WP_ORIGIN = String(
+  process.env.NEXT_PUBLIC_WP_ORIGIN
+  || process.env.REACT_APP_WP_URL
+  || 'https://wordpress-jc4e.srv1502079.hstgr.cloud'
+).replace(/\/+$/, '');
+const SCHEMA_IDENTITY_URL_KEYS = new Set(['@id', 'url', 'mainEntityOfPage', 'item']);
 
 /**
- * OrchestraConnector — A.4: renders the Orchestra AEO blocks (faq, snippet)
- * + head (schema_jsonld, meta) for the CURRENT route, read from
+ * OrchestraConnector — A.4: renders the Orchestra AEO blocks (FAQ, snippet,
+ * internal links) + head (schema_jsonld, meta) for the CURRENT route, read from
  * orchestra-fixes.json by path. ADDITIVE over the .it-sourced body (does not
  * replace it). Renders nothing when the path has no Orchestra entry (graceful —
  * no hardcoded fallback outside the home). Blocks appear only after a rebuild
  * (build-time connector); byPath holds only pages with applied blocks.
  *
- * Drop `<OrchestraConnector />` before the authority/footer slot. The path is
- * read from the router (useLocation); pass `path` to override.
+ * The app mounts the head globally and the body blocks immediately before the
+ * footer. The path is read from the router (useLocation); pass `path` and
+ * `page` when rendering a mirrored WordPress page so visible FAQ items can be
+ * deduplicated against the page body.
  */
-function hasSchemaType(schema, type) {
-  if (!schema) return false;
-  if (Array.isArray(schema)) return schema.some((item) => hasSchemaType(item, type));
-  if (typeof schema !== 'object') return false;
-
-  const schemaType = schema['@type'];
-  if (Array.isArray(schemaType) && schemaType.includes(type)) return true;
-  if (schemaType === type) return true;
-  if (schema['@graph']) return hasSchemaType(schema['@graph'], type);
-
-  return false;
-}
-
 function isSchemaType(schema, type) {
   const schemaType = schema?.['@type'];
   if (Array.isArray(schemaType)) return schemaType.includes(type);
@@ -105,14 +114,45 @@ function buildOrganizationJsonLd(value) {
   };
 }
 
+function urlOrigin(value) {
+  try {
+    return new URL(String(value || '')).origin;
+  } catch {
+    return '';
+  }
+}
+
+function rewriteSchemaIdentityUrls(value, sourceOrigin, targetOrigin, key = '') {
+  if (!value || !sourceOrigin || !targetOrigin) return value;
+  if (Array.isArray(value)) {
+    return value.map((item) => rewriteSchemaIdentityUrls(item, sourceOrigin, targetOrigin, key));
+  }
+  if (typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([childKey, childValue]) => [
+      childKey,
+      rewriteSchemaIdentityUrls(childValue, sourceOrigin, targetOrigin, childKey),
+    ]));
+  }
+  if (typeof value !== 'string' || !SCHEMA_IDENTITY_URL_KEYS.has(key)) return value;
+
+  try {
+    const parsed = new URL(value);
+    if (parsed.origin !== sourceOrigin) return value;
+    return `${targetOrigin}${parsed.pathname}${parsed.search}${parsed.hash}`;
+  } catch {
+    return value;
+  }
+}
+
 function cleanSchemaText(value) {
   return String(value || '').replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-function buildFaqSchema(items) {
+function buildFaqSchema(items, pageIdentityUrl = '') {
   return {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
+    ...(pageIdentityUrl ? { '@id': `${pageIdentityUrl.replace(/#.*$/, '')}#faq` } : {}),
     mainEntity: items.map((item) => ({
       '@type': 'Question',
       name: cleanSchemaText(item.q),
@@ -124,31 +164,62 @@ function buildFaqSchema(items) {
   };
 }
 
-export default function OrchestraConnector({ path, headOnly, page }) {
+function buildPageIdentityUrl(origin, frontendUrl, path) {
+  if (!origin) return '';
+  let pathname = path || '/';
+  try {
+    pathname = new URL(String(frontendUrl || '')).pathname || pathname;
+  } catch {
+    // Fall back to the resolved Orchestra route.
+  }
+  if (!pathname.startsWith('/')) pathname = `/${pathname}`;
+  if (pathname !== '/' && !pathname.endsWith('/')) pathname += '/';
+  return `${origin}${pathname}`;
+}
+
+export default function OrchestraConnector({ path, headOnly, bodyOnly, page }) {
   const loc = useLocation();
-  const key = normalizeOrchestraPath(path || (loc && loc.pathname) || '/');
-  const entry = fixes && fixes.byPath ? fixes.byPath[key] : null;
+  const entries = fixes && fixes.byPath ? fixes.byPath : {};
+  const key = resolveOrchestraPath(path || (loc && loc.pathname) || '/', entries);
+  const entry = entries[key] || null;
   if (!entry && key !== '/') return null;
 
   const aeo = entry?.aeo || {};
   const meta = entry?.meta || {};
+  const sourceOrigin = urlOrigin(entry?.wp_url) || urlOrigin(WP_ORIGIN);
+  const targetOrigin = SITE_ORIGIN || urlOrigin(entry?.frontend_url);
+  const pageIdentityUrl = buildPageIdentityUrl(targetOrigin, entry?.frontend_url, key);
   const faqItems = normalizeFaqItems(aeo.faq);
   // Fix C (BUG FAQ #2) — l'accordion salta le domande gia presenti come sezione
   // nel corpo (prop page dal mirror); il FAQPage JSON-LD resta sul set COMPLETO.
-  const visibleFaqItems = filterFaqItemsAgainstBody(faqItems, page);
-  const organizationSchema = buildOrganizationJsonLd(aeo.organization);
+  // The home already renders its manifest-backed FAQ in the main page flow.
+  const visibleFaqItems = key === '/' ? [] : filterFaqItemsAgainstBody(faqItems, page);
+  const organizationSchema = rewriteSchemaIdentityUrls(
+    buildOrganizationJsonLd(aeo.organization),
+    sourceOrigin,
+    targetOrigin
+  );
   const rawSchemaJsonLd = organizationSchema
     ? removeTopLevelSchemaType(aeo.schema_jsonld, 'Organization')
     : aeo.schema_jsonld;
-  const schemaJsonLd = sanitizeSchemaJsonLd(rawSchemaJsonLd);
+  const schemaJsonLd = rewriteSchemaIdentityUrls(
+    sanitizeProductSchemaJsonLd(sanitizeSchemaJsonLd(rawSchemaJsonLd)),
+    sourceOrigin,
+    targetOrigin
+  );
   const faqSchema = faqItems.length && !hasSchemaType(schemaJsonLd, 'FAQPage')
-    ? buildFaqSchema(faqItems)
+    ? buildFaqSchema(faqItems, pageIdentityUrl)
     : null;
+  const internalLinksHtml = rewriteOrchestraHtmlIdentityUrls(
+    aeo.internal_links_html,
+    sourceOrigin,
+    targetOrigin
+  );
   const hasHead = meta.title || meta.description || meta.keywords || organizationSchema || schemaJsonLd || faqSchema;
 
   return (
     <>
-      {hasHead ? (
+      {!bodyOnly && hasHead ? (
         <Helmet>
           {meta.title ? <title>{meta.title}</title> : null}
           {meta.description ? <meta name="description" content={meta.description} /> : null}
@@ -164,9 +235,10 @@ export default function OrchestraConnector({ path, headOnly, page }) {
           ) : null}
         </Helmet>
       ) : null}
-      {/* headOnly: la Home rende gia le FAQ nel body; authority vive nello slot pre-footer dedicato. */}
+      {/* Head and body mounts are split so every route receives metadata once. */}
       {!headOnly && visibleFaqItems.length ? <FAQ items={visibleFaqItems} /> : null}
       {!headOnly && aeo.snippet_html ? <Snippet html={aeo.snippet_html} /> : null}
+      {!headOnly && internalLinksHtml ? <InternalLinks html={internalLinksHtml} /> : null}
     </>
   );
 }

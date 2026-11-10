@@ -1,4 +1,100 @@
-import { isExcludedSolarisPage } from '@/utils/liveContent';
+import { isExcludedSolarisPage } from '../utils/liveContent';
+
+const SOURCE_ORIGIN = String(
+  process.env.NEXT_PUBLIC_WP_ORIGIN
+  || process.env.REACT_APP_WP_URL
+  || 'https://wordpress-jc4e.srv1502079.hstgr.cloud'
+).replace(/\/+$/, '');
+const PUBLIC_ORIGIN = String(
+  process.env.NEXT_PUBLIC_SITE_URL
+  || process.env.NEXT_PUBLIC_SITE_ORIGIN
+  || 'https://solarisfilms.vercel.app'
+).replace(/\/+$/, '');
+const SCHEMA_IDENTITY_URL_KEYS = new Set(['@id', 'url', 'mainEntityOfPage', 'item', 'urlTemplate']);
+
+const rebaseSourceUrl = (value = '') => {
+  const raw = String(value || '');
+  return raw.startsWith(SOURCE_ORIGIN)
+    ? `${PUBLIC_ORIGIN}${raw.slice(SOURCE_ORIGIN.length)}`
+    : raw;
+};
+
+const urlHostname = (value = '') => {
+  try {
+    return new URL(String(value || '')).hostname;
+  } catch {
+    return '';
+  }
+};
+
+const LEGACY_IDENTITY_HOSTS = new Set([
+  'solarisfilms.vercel.app',
+  'solarisfilms.it',
+  'www.solarisfilms.it',
+  urlHostname(SOURCE_ORIGIN),
+].filter(Boolean));
+
+export const rebasePublicIdentityUrl = (value = '', targetOrigin = PUBLIC_ORIGIN) => {
+  const raw = String(value || '');
+  if (!raw) return raw;
+
+  try {
+    const parsed = new URL(raw);
+    const target = String(targetOrigin || '').replace(/\/+$/, '');
+    if (!LEGACY_IDENTITY_HOSTS.has(parsed.hostname) || !urlHostname(target)) return raw;
+    return `${target}${parsed.pathname}${parsed.search}${parsed.hash}`;
+  } catch {
+    return raw;
+  }
+};
+
+export const normalizeSeoIdentityMetadata = (value = {}, targetOrigin = PUBLIC_ORIGIN) => {
+  const seo = value && typeof value === 'object' ? value : {};
+  const og = seo.og && typeof seo.og === 'object' ? seo.og : {};
+  const twitter = seo.twitter && typeof seo.twitter === 'object' ? seo.twitter : {};
+
+  return {
+    ...seo,
+    ...(seo.canonical ? { canonical: rebasePublicIdentityUrl(seo.canonical, targetOrigin) } : {}),
+    ...(seo.og ? {
+      og: {
+        ...og,
+        ...(og['og:url'] ? { 'og:url': rebasePublicIdentityUrl(og['og:url'], targetOrigin) } : {}),
+      },
+    } : {}),
+    ...(seo.twitter ? {
+      twitter: {
+        ...twitter,
+        ...(twitter['twitter:url'] ? {
+          'twitter:url': rebasePublicIdentityUrl(twitter['twitter:url'], targetOrigin),
+        } : {}),
+      },
+    } : {}),
+  };
+};
+
+const rewriteSchemaIdentityUrls = (value, key = '') => {
+  if (Array.isArray(value)) {
+    return value.map((item) => rewriteSchemaIdentityUrls(item, key));
+  }
+  if (value && typeof value === 'object') {
+    return Object.fromEntries(Object.entries(value).map(([childKey, childValue]) => [
+      childKey,
+      rewriteSchemaIdentityUrls(childValue, childKey),
+    ]));
+  }
+  if (typeof value !== 'string' || !SCHEMA_IDENTITY_URL_KEYS.has(key)) return value;
+  return rebaseSourceUrl(value);
+};
+
+const normalizeSchemaOrigin = (value) => {
+  if (typeof value !== 'string') return rewriteSchemaIdentityUrls(value);
+  try {
+    return JSON.stringify(rewriteSchemaIdentityUrls(JSON.parse(value)));
+  } catch {
+    return value;
+  }
+};
 
 const normalizePath = (pathname = '/') => {
   if (!pathname || pathname === '/') return '/';
@@ -131,14 +227,21 @@ export const readLiveIndex = () => {
   const { indexPath } = getStoragePaths();
   const raw = fs.readFileSync(indexPath, 'utf8');
   const data = JSON.parse(raw);
-  const pages = (data?.pages || []).filter((item) => !isExcludedSolarisPage(item));
-  return { ...data, pages };
+  const pages = (data?.pages || [])
+    .filter((item) => !isExcludedSolarisPage(item))
+    .map((item) => ({
+      ...item,
+      url: rebaseSourceUrl(item.url),
+      sourceSitemap: rebaseSourceUrl(item.sourceSitemap),
+    }));
+  return { ...data, origin: PUBLIC_ORIGIN, pages };
 };
 
 export const findPageEntryByPath = (index, pathname) => {
   const normalizedTarget = normalizePath(pathname);
   const pages = index?.pages || [];
   const directMatch = pages.find((item) => normalizePath(item.path) === normalizedTarget)
+    || pages.find((item) => normalizePath(item.route?.newPath) === normalizedTarget)
     || null;
 
   if (directMatch) return directMatch;
@@ -156,8 +259,48 @@ export const readLivePageByFile = (fileName) => {
   if (!fileName) return null;
   const pagePath = require('path').join(pagesDir, fileName);
   if (!fs.existsSync(pagePath)) return null;
-  return sanitizeLivePayload(JSON.parse(fs.readFileSync(pagePath, 'utf8')));
+  const payload = sanitizeLivePayload(JSON.parse(fs.readFileSync(pagePath, 'utf8')));
+  const seo = normalizeSeoIdentityMetadata(payload.seo);
+  return {
+    ...payload,
+    url: rebaseSourceUrl(payload.url),
+    sourceSitemap: rebaseSourceUrl(payload.sourceSitemap),
+    seo: {
+      ...seo,
+      schemas: (seo.schemas || []).map(normalizeSchemaOrigin),
+    },
+  };
 };
+
+const mergePageWithIndexEntry = (page, entry) => ({
+  ...page,
+  route: {
+    ...(page?.route || {}),
+    ...(entry?.route || {}),
+  },
+});
+
+const toDirectoryPage = (page = {}) => ({
+  url: page.url || '',
+  path: page.path || '',
+  title: page.title || '',
+  description: page.description || '',
+  h1: page.h1 || '',
+  route: {
+    type: page.route?.type || '',
+    label: page.route?.label || '',
+    newPath: page.route?.newPath || '',
+  },
+});
+
+const MIRROR_RELATED_TYPES = new Set(['product', 'technical-focus', 'info']);
+
+const getInitialMirrorIndex = (index, currentEntry) => ({
+  partial: true,
+  pages: (index.pages || [])
+    .filter((page) => page === currentEntry || MIRROR_RELATED_TYPES.has(page.route?.type))
+    .map((page) => ({ ...toDirectoryPage(page), file: page.file || '' })),
+});
 
 export const getMirrorStaticProps = (pathname) => {
   const index = readLiveIndex();
@@ -170,8 +313,8 @@ export const getMirrorStaticProps = (pathname) => {
 
   return {
     props: {
-      initialIndex: index,
-      initialPage: page,
+      initialIndex: getInitialMirrorIndex(index, entry),
+      initialPage: mergePageWithIndexEntry(page, entry),
       initialPath: normalizePath(pathname),
     },
     revalidate: 300,
@@ -191,8 +334,8 @@ export const getMirrorServerProps = (pathname) => {
 
   return {
     props: {
-      initialIndex: index,
-      initialPage: page,
+      initialIndex: getInitialMirrorIndex(index, entry),
+      initialPage: mergePageWithIndexEntry(page, entry),
       initialPath: normalizedPathname,
     },
   };
@@ -257,7 +400,10 @@ export const getDirectoryStaticProps = () => {
   const index = readLiveIndex();
   return {
     props: {
-      initialPages: index.pages || [],
+      // Directory cards only use identity, copy and route classification. Do
+      // not serialize file, canonical, robots and sitemap metadata on every
+      // directory route; the full index remains available as a static asset.
+      initialPages: (index.pages || []).map(toDirectoryPage),
     },
     revalidate: 300,
   };

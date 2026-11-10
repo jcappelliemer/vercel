@@ -15,10 +15,11 @@ import {
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
-import OrchestraConnector from '../components/OrchestraConnector';
-import Authority from '../components/Authority';
 import { useHeadlessSEO, mergeHeadlessSEO } from '../hooks/useHeadlessSEO';
+import fixes from '../data/orchestra-fixes.json';
 import { isExcludedSolarisPage } from '../utils/liveContent';
+import { applyOrchestraIntroRewrite, resolveOrchestraPath } from '../utils/orchestraBlocks';
+import { ensureSchemaRootIds, hasSchemaType, sanitizeSchemaJsonLdText } from '../utils/schemaJsonLd';
 import {
   SERVICE_FAMILIES,
   getFocusForFamily,
@@ -29,16 +30,13 @@ import {
   getServiceFamilyForPage,
 } from '../utils/serviceFamilies';
 import { getLocalServiceLogo, getProductVisual } from '../utils/assetMaps';
+import {
+  PUBLIC_SITE_ORIGIN,
+  buildPublicIdentityUrl,
+  isPublicSiteHost,
+} from '../utils/publicIdentity';
 
 const SITE_NAME = 'Solaris Films';
-const BASE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL
-  || process.env.NEXT_PUBLIC_SITE_ORIGIN
-  || process.env.REACT_APP_SITE_ORIGIN
-  || process.env.SITE_ORIGIN
-  || 'https://www.solarisfilms.it'
-).replace(/\/+$/, '');
-const LIVE_HOSTS = new Set(['solarisfilms.it', 'www.solarisfilms.it']);
 const MAIN_PAGE_VISUALS = {
   info: '/assets/generated/main-pages/info-supporto-tecnico.webp',
   norms: '/assets/generated/main-pages/info-norme-verifica.webp',
@@ -129,7 +127,7 @@ const normalizeImportedHref = (href = '') => {
   if (/^https?:\/\//i.test(rawHref)) {
     try {
       const url = new URL(rawHref);
-      if (!LIVE_HOSTS.has(url.hostname)) return rawHref;
+      if (!isPublicSiteHost(url.hostname)) return rawHref;
       isLiveAbsolute = true;
       localHref = `${url.pathname}${url.search}${url.hash}`;
     } catch {
@@ -331,20 +329,28 @@ const LivePageSEO = ({ page, currentPath }) => {
   if (!page) return null;
   const canonicalPath = currentPath || page.path || '/';
   const isLiveHost = typeof window === 'undefined'
-    ? LIVE_HOSTS.has(new URL(BASE_URL).hostname)
-    : LIVE_HOSTS.has(window.location.hostname);
-  const canonical = typeof window !== 'undefined'
-    ? new URL(canonicalPath, window.location.origin).toString()
-    : `${BASE_URL}${canonicalPath}`;
+    ? true
+    : isPublicSiteHost(window.location.hostname);
+  const canonical = buildPublicIdentityUrl(canonicalPath);
   const title = livePageTitle(page, { includeSite: true });
   const description = livePageDescription(page);
   const robots = isLiveHost
     ? (seo.robots || 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1')
     : 'noindex, nofollow';
+  const entries = fixes?.byPath || {};
+  const orchestraPath = resolveOrchestraPath(canonicalPath, entries);
+  const orchestraOwnsProduct = hasSchemaType(entries[orchestraPath]?.aeo?.schema_jsonld, 'Product');
   const schemas = [
-    ...(seo.schemas || []).map((schema) => normalizeKnownAssetUrl(schema.replaceAll(page.url, canonical))),
+    ...(seo.schemas || []).map((schema) => {
+      const cleaned = sanitizeSchemaJsonLdText(schema, {
+        removeProducts: orchestraOwnsProduct,
+        sourceOrigin: page.url,
+        targetOrigin: canonical,
+      });
+      return cleaned ? normalizeKnownAssetUrl(cleaned) : null;
+    }).filter(Boolean),
     ...buildLiveSchemas(page, canonicalPath),
-  ];
+  ].map((schema, index) => ensureSchemaRootIds(schema, canonical, index));
 
   return (
     <Helmet>
@@ -356,7 +362,7 @@ const LivePageSEO = ({ page, currentPath }) => {
         <meta key={property} property={property} content={property === 'og:url' ? canonical : normalizeKnownAssetUrl(content)} />
       ))}
       {Object.entries(seo.twitter || {}).map(([name, content]) => (
-        <meta key={name} name={name} content={normalizeKnownAssetUrl(content)} />
+        <meta key={name} name={name} content={name === 'twitter:url' ? canonical : normalizeKnownAssetUrl(content)} />
       ))}
       {Object.entries(seo.article || {}).map(([property, content]) => (
         <meta key={property} property={property} content={content} />
@@ -393,23 +399,21 @@ const routeSectionPath = (page) => {
 const buildLiveSchemas = (page, canonicalPath) => {
   const title = livePageTitle(page);
   const description = livePageDescription(page);
-  const canonicalUrl = `${BASE_URL}${canonicalPath}`;
+  const canonicalUrl = buildPublicIdentityUrl(canonicalPath);
   const sectionName = routeSectionName(page);
   const sectionPath = routeSectionPath(page);
   const type = page.route?.type;
   const contentType = ['article', 'blog-category', 'film-type', 'author'].includes(type)
     ? 'Article'
-    : ['product'].includes(type)
-      ? 'Product'
-      : 'Service';
+    : 'Service';
   const image = pageImage(page);
 
   const breadcrumb = {
     '@context': 'https://schema.org',
     '@type': 'BreadcrumbList',
     itemListElement: [
-      { '@type': 'ListItem', position: 1, name: 'Home', item: BASE_URL },
-      { '@type': 'ListItem', position: 2, name: sectionName, item: `${BASE_URL}${sectionPath}` },
+      { '@type': 'ListItem', position: 1, name: 'Home', item: PUBLIC_SITE_ORIGIN },
+      { '@type': 'ListItem', position: 2, name: sectionName, item: buildPublicIdentityUrl(sectionPath) },
       { '@type': 'ListItem', position: 3, name: title, item: canonicalUrl },
     ],
   };
@@ -425,14 +429,9 @@ const buildLiveSchemas = (page, canonicalPath) => {
     provider: {
       '@type': 'Organization',
       name: SITE_NAME,
-      url: BASE_URL,
+      url: PUBLIC_SITE_ORIGIN,
     },
   };
-
-  if (contentType === 'Product') {
-    content.brand = { '@type': 'Brand', name: 'MADICO' };
-    content.category = 'Pellicole per vetri';
-  }
 
   if (contentType === 'Article') {
     content.author = {
@@ -442,7 +441,7 @@ const buildLiveSchemas = (page, canonicalPath) => {
     content.publisher = {
       '@type': 'Organization',
       name: SITE_NAME,
-      url: BASE_URL,
+      url: PUBLIC_SITE_ORIGIN,
     };
     if (page.seo?.article?.['article:published_time']) {
       content.datePublished = page.seo.article['article:published_time'];
@@ -453,7 +452,8 @@ const buildLiveSchemas = (page, canonicalPath) => {
     if (image) content.image = image;
   }
 
-  return [breadcrumb, content].map((schema) => JSON.stringify(schema));
+  const schemas = type === 'product' ? [breadcrumb] : [breadcrumb, content];
+  return schemas.map((schema) => JSON.stringify(schema));
 };
 
 const cleanTitle = (title = '') => title.replace(/\s+-\s+Solaris Films$/i, '').trim();
@@ -964,6 +964,9 @@ const normalizeSpecLabel = (value = '') => (
 
 const parseFocusSpecItem = (text = '') => {
   const normalized = normalizeSpecLabel(text);
+  // Metric cards are terse facts. Questions and long editorial headings can
+  // contain words such as "installazione" or "garanzia" without being specs.
+  if (!normalized || normalized.includes('?') || normalized.length > 90) return null;
   const lower = normalized.toLocaleLowerCase('it');
 
   const map = [
@@ -2442,7 +2445,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    if (index) return undefined;
+    if (index && index.partial !== true) return undefined;
 
     let mounted = true;
 
@@ -2454,7 +2457,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
       .then((data) => {
         if (!mounted) return;
         const pages = (data?.pages || []).filter((item) => !isExcludedSolarisPage(item));
-        setIndex({ ...data, pages });
+        setIndex({ ...data, partial: false, pages });
       })
       .catch((err) => {
         if (mounted) setError(err);
@@ -2468,7 +2471,13 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
   const currentPath = normalizePath(location.pathname || initialPath);
   const activePage = isPageForPath(page, currentPath) ? page : null;
   const headlessSEO = useHeadlessSEO(currentPath, activePage);
-  const resolvedPage = useMemo(() => mergeHeadlessSEO(activePage, headlessSEO), [activePage, headlessSEO]);
+  const seoResolvedPage = useMemo(() => mergeHeadlessSEO(activePage, headlessSEO), [activePage, headlessSEO]);
+  const resolvedPage = useMemo(() => {
+    const entries = fixes?.byPath || {};
+    const orchestraPath = resolveOrchestraPath(currentPath, entries);
+    const rewrite = entries[orchestraPath]?.aeo?.intro_rewrite || null;
+    return applyOrchestraIntroRewrite(seoResolvedPage, rewrite);
+  }, [seoResolvedPage, currentPath]);
   const pageIndexEntry = useMemo(() => {
     const pages = index?.pages || [];
     const directEntry = pages.find((item) => normalizePath(item.path) === currentPath)
@@ -2519,7 +2528,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
           <h1 className="text-4xl font-medium mb-4">Contenuti non disponibili</h1>
           <p className="text-[#94A3B8]">I contenuti non sono disponibili in questo momento. Riprova tra poco o torna alla home.</p>
         </main>
-        <Footer />
+        <Footer orchestraEnabled={false} />
       </div>
     );
   }
@@ -2544,7 +2553,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
           <p className="text-[#94A3B8] mb-8">Questo URL non e presente nella mappa del sito Solaris.</p>
           <Link to="/" className="btn-yellow">Torna alla home</Link>
         </main>
-        <Footer />
+        <Footer orchestraEnabled={false} />
       </div>
     );
   }
@@ -2565,9 +2574,7 @@ const LiveMirrorPage = ({ initialIndex = null, initialPage = null, initialPath =
       <LivePageSEO page={resolvedPage} currentPath={currentPath} />
       <Header />
       <LiveContent page={resolvedPage} allPages={index?.pages || []} />
-      <OrchestraConnector path={currentPath} page={resolvedPage} />
-      <Authority path={currentPath} />
-      <Footer />
+      <Footer orchestraPath={currentPath} orchestraPage={resolvedPage} />
       <ChatBot />
     </div>
   );

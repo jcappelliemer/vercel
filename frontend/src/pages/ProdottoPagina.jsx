@@ -3,9 +3,7 @@ import { decodeHtmlEntities } from '../utils/orchestraBlocks';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import ChatBot from '../components/ChatBot';
-import OrchestraConnector from '../components/OrchestraConnector';
-import Authority from '../components/Authority';
-import SEO, { buildProductSchema, buildBreadcrumbSchema } from '../components/SEO';
+import SEO, { buildBreadcrumbSchema, getProductOffer } from '../components/SEO';
 import { motion } from 'framer-motion';
 import { ArrowRight, ArrowLeft, CheckCircle, Shield, Sun, Eye, Certificate, Tag } from '@phosphor-icons/react';
 import { prodottiData } from '../data/siteContent';
@@ -829,7 +827,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
             </div>
           </section>
         </main>
-        <Footer />
+        <Footer orchestraEnabled={false} />
       </div>
     );
   }
@@ -846,7 +844,7 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
             </div>
           </section>
         </main>
-        <Footer />
+        <Footer orchestraEnabled={false} />
       </div>
     );
   }
@@ -879,10 +877,11 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
   const contextBody = pageOverrides?.contextBody || 'Questa scheda aiuta a capire in modo rapido compatibilità del vetro, livello di schermatura e risultato atteso prima della posa.';
   const downloadSheetUrl = pageOverrides?.technicalSheetUrl || technicalSheetUrl;
   const titleParts = splitKeepUnitTogether(prodotto.nome);
+  const productOffer = getProductOffer(prodotto);
 
   return (
     <div className="min-h-screen bg-[#0A0F1C]" data-testid={`prodotto-${prodotto.slug}`}>
-      <SEO title={`${prodotto.nome} — Pellicole ${prodotto.categoria.toLowerCase()}`} description={prodotto.descrizione?.substring(0, 160)} path={`/prodotti/${prodotto.slug}`} type="product" jsonLd={buildProductSchema(prodotto)} />
+      <SEO title={`${prodotto.nome} — Pellicole ${prodotto.categoria.toLowerCase()}`} description={prodotto.descrizione?.substring(0, 160)} path={`/prodotti/${prodotto.slug}`} type="product" />
       <Header />
       <main className="pt-24">
         {/* Hero Section */}
@@ -905,6 +904,20 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
                   {titleParts.unit ? <> <span className="whitespace-nowrap">{titleParts.unit}</span></> : null}
                 </h1>
                 <p className="text-[#CBD5E1] text-lg leading-relaxed">{descrizioneHero}</p>
+
+                {productOffer && (
+                  <div className="mt-6 flex flex-wrap items-center gap-4" data-testid="product-price-offer">
+                    <div>
+                      <span className="block text-xs uppercase tracking-wider text-[#94A3B8]">Prezzo</span>
+                      <strong className="text-xl font-semibold text-white">
+                        {productOffer.price} {productOffer.priceCurrency}
+                      </strong>
+                    </div>
+                    <Link to="/preventivo" className="btn-primary" data-testid="product-cta-acquista">
+                      Acquista ora
+                    </Link>
+                  </div>
+                )}
 
                 <div className="flex flex-wrap gap-3 mt-6">
                   {prodotto.applicazione && (
@@ -1195,8 +1208,6 @@ const ProdottoPagina = ({ initialSlug = '' }) => {
           </div>
         </section>
       </main>
-      <OrchestraConnector />
-      <Authority />
       <Footer />
       <ChatBot />
     </div>
@@ -1299,8 +1310,6 @@ export const ProdottiIndexPagina = () => {
           </div>
         </section>
       </main>
-      <OrchestraConnector />
-      <Authority />
       <Footer />
       <ChatBot />
     </div>

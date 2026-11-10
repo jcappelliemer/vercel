@@ -55,7 +55,7 @@ const createLocalChatResponse = (message) => {
   }
 
   if (text.includes('caldo') || text.includes('sole') || text.includes('antisolare') || text.includes('abbagliamento')) {
-    return 'Per caldo e abbagliamento la famiglia corretta e quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e livello di trasparenza desiderato. Se mi lasci i dati, il team Solaris può preparare una consulenza mirata.';
+    return 'Per caldo e abbagliamento la famiglia corretta è quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e livello di trasparenza desiderato. Se mi lasci i dati, il team Solaris può preparare una consulenza mirata.';
   }
 
   if (text.includes('privacy') || text.includes('decor') || text.includes('satin') || text.includes('opaca')) {
@@ -63,7 +63,7 @@ const createLocalChatResponse = (message) => {
   }
 
   if (text.includes('preventivo') || text.includes('prezzo') || text.includes('costo') || text.includes('mq')) {
-    return 'Per un preventivo servono pochi dati: citta, metri quadri indicativi, tipo di esigenza e qualche foto delle vetrate. Puoi lasciare nome, email o telefono qui nel chatbot e il team Solaris ti ricontatta.';
+    return 'Per un preventivo servono pochi dati: città, metri quadri indicativi, tipo di esigenza e qualche foto delle vetrate. Puoi lasciare nome, email o telefono qui nel chatbot e il team Solaris ti ricontatta.';
   }
 
   return 'Posso aiutarti a orientarti tra pellicole antisolari, Safety Shield, privacy/decorative e consulenza tecnica. Dimmi che problema vuoi risolvere, oppure lascia i dati nel modulo del chatbot per far gestire la richiesta al team Solaris.';
@@ -91,9 +91,9 @@ const sendLeadDirectToCrm = async (data, messages) => {
   const priority = buildPriority(data, messages);
   const messageParts = [
     'Lead generato dal chatbot Solaris Films.',
-    `Priorita: ${priority}`,
+    `Priorità: ${priority}`,
     `Interesse: ${data.interesse || 'Non specificato'}`,
-    `Citta: ${data.citta || 'Non specificata'}`,
+    `Città: ${data.citta || 'Non specificata'}`,
     `Pagina: ${data.page_path || 'Non disponibile'}`,
     `URL completo: ${context.source_url || 'Non disponibile'}`,
     `Referrer: ${context.referrer || 'Non disponibile'}`,
@@ -510,7 +510,7 @@ const ChatBot = () => {
                       type="text"
                       value={leadForm.citta}
                       onChange={(e) => updateLeadForm('citta', e.target.value)}
-                      placeholder="Citta"
+                      placeholder="Città"
                       className="col-span-2 sm:col-span-1 bg-white/5 border border-white/10 rounded-xl px-3 py-2 text-xs text-white placeholder-white/30 focus:outline-none focus:border-[#EAB308]/50"
                       maxLength={80}
                     />

@@ -1,7 +1,7 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { fetchSettings } from '../data/wpApi';
 
-const SETTINGS_STORAGE_KEY = 'solaris_settings_cache';
+const SETTINGS_STORAGE_KEY = 'solaris_settings_cache_v2';
 
 const defaults = {
   company_name: 'Solaris Films',
@@ -41,10 +41,10 @@ const defaults = {
   youtube: '',
   logo_url: '/assets/solaris-logo.png',
   chatbot_enabled: true,
-  chatbot_welcome: 'Ciao! Sono l\'assistente Solaris. Posso aiutarti a capire quale pellicola ? più adatta al tuo edificio.',
+  chatbot_welcome: 'Ciao! Sono l\'assistente Solaris. Posso aiutarti a capire quale pellicola è più adatta al tuo edificio.',
   chatbot_status: 'Assistente tecnico',
   chatbot_placeholder: 'Scrivi un messaggio...',
-  chatbot_error: 'In questo momento l\'assistente non e collegato. Puoi usare WhatsApp o richiedere un preventivo.',
+  chatbot_error: 'In questo momento l\'assistente non è collegato. Puoi usare WhatsApp o richiedere un preventivo.',
 };
 
 const SettingsContext = createContext(defaults);

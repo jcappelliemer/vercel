@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Solaris Static Replica
  * Description: Serve la replica statica 1:1 del nuovo sito Solaris dentro WordPress, con redirect e 410 server-side.
- * Version: 0.3.5
+ * Version: 0.3.6
  * Author: Solaris Films
  */
 
@@ -514,16 +514,16 @@ function solaris_static_replica_chat_fallback($message) {
         return 'Per sicurezza e protezione delle vetrate valuterei le soluzioni Safety Shield. Per consigliarti bene servono tipo di vetro, dimensioni e obiettivo: antieffrazione, anti-infortunio o protezione da esplosione.';
     }
     if (preg_match('/caldo|sole|antisolare|abbagliamento/', $text)) {
-        return 'Per caldo e abbagliamento la famiglia corretta e quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e trasparenza desiderata.';
+        return 'Per caldo e abbagliamento la famiglia corretta è quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e trasparenza desiderata.';
     }
     if (preg_match('/privacy|decor|satin|opaca/', $text)) {
-        return 'Per privacy e resa estetica si lavora con pellicole decorative, satinate o schermanti, mantenendo la luminosita richiesta.';
+        return 'Per privacy e resa estetica si lavora con pellicole decorative, satinate o schermanti, mantenendo la luminosità richiesta.';
     }
     if (preg_match('/preventivo|prezzo|costo|\bmq\b/', $text)) {
-        return 'Per un preventivo servono citta, metri quadri indicativi, tipo di esigenza e qualche foto delle vetrate. Puoi lasciare i dati nel modulo del chatbot.';
+        return 'Per un preventivo servono città, metri quadri indicativi, tipo di esigenza e qualche foto delle vetrate. Puoi lasciare i dati nel modulo del chatbot.';
     }
     if (strpos($text, 'madico') !== false) {
-        return 'Solaris Films distribuisce soluzioni MADICO USA in Italia. La famiglia corretta dipende dall obiettivo: controllo solare, sicurezza, privacy o riqualificazione energetica.';
+        return 'Solaris Films distribuisce soluzioni MADICO USA in Italia. La famiglia corretta dipende dall\'obiettivo: controllo solare, sicurezza, privacy o riqualificazione energetica.';
     }
     return 'Posso aiutarti a orientarti tra pellicole antisolari, Safety Shield, privacy, decorative e consulenza tecnica. Dimmi quale problema vuoi risolvere.';
 }
@@ -746,9 +746,9 @@ function solaris_static_replica_chat_priority($body) {
 function solaris_static_replica_chat_notes($body) {
     $notes = array(
         'Lead generato dal chatbot Solaris Films.',
-        'Priorita: ' . solaris_static_replica_chat_priority($body),
+        'Priorità: ' . solaris_static_replica_chat_priority($body),
         'Interesse: ' . sanitize_text_field((string) ($body['interesse'] ?? 'Non specificato')),
-        'Citta: ' . sanitize_text_field((string) ($body['citta'] ?? 'Non specificata')),
+        'Città: ' . sanitize_text_field((string) ($body['citta'] ?? 'Non specificata')),
         'Pagina: ' . sanitize_text_field((string) ($body['page_path'] ?? 'Non disponibile')),
         'URL completo: ' . esc_url_raw((string) ($body['source_url'] ?? '')),
         'Sessione chat: ' . sanitize_text_field((string) ($body['session_id'] ?? 'Non disponibile')),

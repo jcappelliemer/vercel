@@ -153,9 +153,9 @@ function buildCrmPayload(data, leadId) {
 
   const messageParts = [
     'Lead generato dal chatbot Solaris Films.',
-    `Priorita: ${priority}`,
+    `Priorità: ${priority}`,
     `Interesse: ${normalizeText(data.interesse) || 'Non specificato'}`,
-    `Citta: ${normalizeText(data.citta) || 'Non specificata'}`,
+    `Città: ${normalizeText(data.citta) || 'Non specificata'}`,
     `Pagina: ${normalizeText(data.page_path) || 'Non disponibile'}`,
     `URL completo: ${normalizeText(data.source_url) || 'Non disponibile'}`,
     `Referrer: ${normalizeText(data.referrer) || 'Non disponibile'}`,
@@ -198,7 +198,7 @@ function buildWhatsAppCrmPayload(data, leadId) {
   const messageParts = [
     'Lead generato da WhatsApp Solaris Films.',
     'Canale: WhatsApp',
-    `Priorita: ${priority}`,
+    `Priorità: ${priority}`,
     `Interesse: ${interest || 'Non specificato'}`,
     `Telefono WhatsApp: ${phone || 'Non disponibile'}`,
     `Pagina: ${sourcePage || 'Non disponibile'}`,
@@ -391,21 +391,21 @@ function buildKnowledgeResponse(message, knowledge = {}) {
   } else if (text.includes('caldo') || text.includes('sole') || text.includes('antisolare') || text.includes('abbagliamento')) {
     opener = 'Per caldo, sole e abbagliamento la scelta va fatta su esposizione, superficie vetrata e trasparenza desiderata.';
   } else if (text.includes('privacy') || text.includes('decor') || text.includes('satin') || text.includes('opaca')) {
-    opener = 'Per privacy e resa estetica conviene distinguere tra schermatura visiva, decorazione e luminosita da mantenere.';
+    opener = 'Per privacy e resa estetica conviene distinguere tra schermatura visiva, decorazione e luminosità da mantenere.';
   } else if (text.includes('prezzo') || text.includes('preventivo') || text.includes('costo') || text.includes('mq')) {
-    opener = 'Per stimare correttamente un preventivo servono metri quadri, citta, foto delle vetrate e obiettivo tecnico.';
+    opener = 'Per stimare correttamente un preventivo servono metri quadri, città, foto delle vetrate e obiettivo tecnico.';
   } else if (normalizeForSearch(top?.title).includes('madico') || text.includes('madico')) {
-    opener = 'Per i prodotti Madico conviene partire dalla esigenza applicativa e poi scegliere la famiglia tecnica corretta.';
+    opener = 'Per i prodotti Madico conviene partire dall\'esigenza applicativa e poi scegliere la famiglia tecnica corretta.';
   }
 
   const body = highlights.length
     ? `Dalle fonti attive risulta questo: ${highlights.join(' ')}`
     : 'Posso orientarti sulle famiglie di pellicole e poi passare la richiesta al team tecnico per una verifica puntuale.';
   const externalNote = hasExternalSources
-    ? '\n\nLe fonti esterne sono riferimenti tecnici classificati: prodotto, posa e conformita vanno sempre verificati da Solaris sul caso specifico.'
+    ? '\n\nLe fonti esterne sono riferimenti tecnici classificati: prodotto, posa e conformità vanno sempre verificati da Solaris sul caso specifico.'
     : '';
 
-  return `${opener} ${body}\n\nRiferimenti usati: ${referenceText}.${externalNote}\n\nSe mi lasci citta, metri quadri indicativi e una foto o descrizione delle vetrate, passo la richiesta al team Solaris con il contesto della chat.`;
+  return `${opener} ${body}\n\nRiferimenti usati: ${referenceText}.${externalNote}\n\nSe mi lasci città, metri quadri indicativi e una foto o descrizione delle vetrate, passo la richiesta al team Solaris con il contesto della chat.`;
 }
 
 function createChatResponse(message, knowledge = {}) {
@@ -419,15 +419,15 @@ function createChatResponse(message, knowledge = {}) {
   }
 
   if (text.includes('caldo') || text.includes('sole') || text.includes('antisolare') || text.includes('abbagliamento')) {
-    return 'Per caldo e abbagliamento la famiglia corretta e quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e livello di trasparenza desiderato. Se mi lasci i dati dal modulo posso far preparare una consulenza mirata.';
+    return 'Per caldo e abbagliamento la famiglia corretta è quella delle pellicole antisolari. La scelta dipende da esposizione, dimensione delle vetrate e livello di trasparenza desiderato. Se mi lasci i dati dal modulo posso far preparare una consulenza mirata.';
   }
 
   if (text.includes('privacy') || text.includes('decor') || text.includes('satin') || text.includes('opaca')) {
-    return "Per privacy e resa estetica si lavora con pellicole decorative, satinate o schermanti. Possiamo mantenere luminosita e ridurre la visibilita dall'esterno, scegliendo finitura e grado di copertura in base agli ambienti.";
+    return "Per privacy e resa estetica si lavora con pellicole decorative, satinate o schermanti. Possiamo mantenere luminosità e ridurre la visibilità dall'esterno, scegliendo finitura e grado di copertura in base agli ambienti.";
   }
 
   if (text.includes('preventivo') || text.includes('prezzo') || text.includes('costo') || text.includes('mq')) {
-    return 'Per un preventivo servono pochi dati: citta, metri quadri indicativi, tipo di esigenza e qualche foto delle vetrate. Puoi lasciare nome, email o telefono qui nel chatbot e il team Solaris ti ricontatta.';
+    return 'Per un preventivo servono pochi dati: città, metri quadri indicativi, tipo di esigenza e qualche foto delle vetrate. Puoi lasciare nome, email o telefono qui nel chatbot e il team Solaris ti ricontatta.';
   }
 
   if (text.includes('madico')) {

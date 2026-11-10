@@ -363,7 +363,7 @@ const ChatBot = () => {
             initial={{ opacity: 0, y: 20, scale: 0.9 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, y: 20, scale: 0.9 }}
-            className="fixed bottom-4 left-4 right-4 md:left-auto md:bottom-8 md:right-8 z-50 md:w-[400px] bg-[#0A0F1C] border border-white/10 rounded-2xl flex flex-col overflow-hidden shadow-2xl"
+            className="fixed bottom-4 left-4 right-4 md:left-auto md:bottom-8 md:right-8 z-[10010] md:w-[400px] bg-[#0A0F1C] border border-white/10 rounded-2xl flex flex-col overflow-hidden shadow-2xl"
             style={{ height: '550px', maxHeight: 'calc(100vh - 80px)' }}
             data-testid="chatbot-window"
           >

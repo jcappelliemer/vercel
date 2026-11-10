@@ -50,6 +50,15 @@ $http_mock = function ($preempt, $args, $url) use (&$requests, &$knowledge_avail
             'filename' => null,
         );
     }
+    if (strpos($url, '/public/forms/quote-request/plain') !== false) {
+        return array(
+            'headers' => array('content-type' => 'application/json'),
+            'body' => wp_json_encode(array('ok' => true, 'lead_id' => 'quote-test-1')),
+            'response' => array('code' => 200, 'message' => 'OK'),
+            'cookies' => array(),
+            'filename' => null,
+        );
+    }
     return $preempt;
 };
 add_filter('pre_http_request', $http_mock, 10, 3);
@@ -67,6 +76,7 @@ $wordpress_knowledge_mock = function () {
     ));
 };
 add_filter('solaris_static_replica_wordpress_knowledge', $wordpress_knowledge_mock, 10, 0);
+$temporary_files = array();
 
 try {
     $terms = solaris_static_replica_knowledge_search_terms('Quale pellicola aiuta a ridurre caldo e abbagliamento?');
@@ -142,9 +152,73 @@ try {
         throw new RuntimeException('CRM lead payload is missing the chat transcript.');
     }
 
+    $before_invalid_form = count($requests);
+    ob_start();
+    solaris_static_replica_handle_public_form('contact', array(
+        'first_name' => 'Test',
+        'email' => 'test@example.invalid',
+        'privacy_acceptance' => 'false',
+    ), array(), false);
+    $invalid_form = json_decode(ob_get_clean(), true);
+    if (($invalid_form['detail'] ?? '') !== 'Privacy non accettata' || count($requests) !== $before_invalid_form) {
+        throw new RuntimeException('Invalid public form was forwarded to the CRM.');
+    }
+
+    ob_start();
+    solaris_static_replica_handle_public_form('contact', array(
+        'first_name' => 'Test',
+        'email' => 'test@example.invalid',
+        'privacy_acceptance' => 'true',
+        'form_code' => 'contattaci',
+    ), array(), false);
+    $contact = json_decode(ob_get_clean(), true);
+    $contact_request = end($requests);
+    if (($contact['lead_id'] ?? '') !== 'lead-test-1' || strpos($contact_request['url'] ?? '', '/public/forms/contact/plain') === false) {
+        throw new RuntimeException('Contact proxy did not forward to the expected CRM form.');
+    }
+    if (strpos((string) ($contact_request['args']['headers']['Content-Type'] ?? ''), 'multipart/form-data; boundary=') !== 0
+        || strpos((string) ($contact_request['args']['body'] ?? ''), 'name="first_name"') === false) {
+        throw new RuntimeException('Contact proxy did not preserve the multipart contract.');
+    }
+
+    ob_start();
+    solaris_static_replica_handle_public_form('quote', array(
+        'first_name' => 'Test',
+        'email' => 'test@example.invalid',
+        'privacy_acceptance' => 'true',
+        'form_code' => 'richiedi_preventivo',
+    ), array(), false);
+    $quote = json_decode(ob_get_clean(), true);
+    $quote_request = end($requests);
+    if (($quote['lead_id'] ?? '') !== 'quote-test-1' || strpos($quote_request['url'] ?? '', '/public/forms/quote-request/plain') === false) {
+        throw new RuntimeException('Quote proxy did not forward to the expected CRM form.');
+    }
+
+    $temporary_files[] = wp_tempnam('solaris-one.txt');
+    $temporary_files[] = wp_tempnam('solaris-two.txt');
+    file_put_contents($temporary_files[0], 'one');
+    file_put_contents($temporary_files[1], 'two');
+    $multipart = solaris_static_replica_build_multipart(array('privacy_acceptance' => 'true'), array(
+        'attachment_image' => array(
+            'name' => array('one.txt', 'two.txt'),
+            'type' => array('text/plain', 'text/plain'),
+            'tmp_name' => $temporary_files,
+            'error' => array(UPLOAD_ERR_OK, UPLOAD_ERR_OK),
+            'size' => array(3, 3),
+        ),
+    ), false);
+    if (is_wp_error($multipart) || substr_count($multipart['body'] ?? '', 'name="attachment_image"; filename=') !== 2) {
+        throw new RuntimeException('Multipart builder did not preserve multiple attachments.');
+    }
+
     echo "static_replica_dynamic_api=PASS\n";
 } finally {
     remove_filter('pre_http_request', $http_mock, 10);
     remove_filter('solaris_static_replica_crm_webhook_key', $crm_key_mock);
     remove_filter('solaris_static_replica_wordpress_knowledge', $wordpress_knowledge_mock, 10);
+    foreach ($temporary_files as $temporary_file) {
+        if (is_string($temporary_file) && file_exists($temporary_file)) {
+            unlink($temporary_file);
+        }
+    }
 }

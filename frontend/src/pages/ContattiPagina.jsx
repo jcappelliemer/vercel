@@ -18,7 +18,8 @@ import {
 import axios from 'axios';
 import { useSettings } from '../hooks/useSettings';
 import { buildWhatsAppHref } from '../utils/contactLinks';
-import { appendSourceFields, getPublicCrmApiBase } from '../utils/publicApi';
+import { appendSourceFields } from '../utils/publicApi';
+import { FORM_FILE_LIMIT_LABEL, selectFormFiles } from '../utils/formFiles';
 import { LEAD_EVENTS, trackEvent } from '../components/Analytics';
 
 const acceptedFiles = '.pdf,.doc,.docx,.xls,.xlsx,.csv,.txt,.zip,.rar,image/*';
@@ -37,7 +38,7 @@ const emptyContact = {
 
 const contactProof = [
   'Consulenza su antisolari, sicurezza, privacy e design',
-  'Possibilita di allegare foto, misure e documenti',
+  'Possibilità di allegare foto, misure e documenti',
   'Risposta tecnica orientata al caso reale',
 ];
 
@@ -56,8 +57,9 @@ const ContattiPagina = () => {
   };
 
   const addFiles = (fileList) => {
-    const selected = Array.from(fileList || []);
-    setFiles((prev) => [...prev, ...selected].slice(0, 10));
+    const result = selectFormFiles(files, fileList);
+    setFiles(result.files);
+    setError(result.error);
   };
 
   const resetForm = () => {
@@ -84,9 +86,9 @@ const ContattiPagina = () => {
       payload.append('privacy_acceptance', String(formData.privacy_accettata));
       payload.append('messaggio', formData.richiesta);
       appendSourceFields(payload, 'contattaci');
-      files.forEach((file) => payload.append('attachment_image', file));
+      files.forEach((file) => payload.append('attachment_image[]', file));
 
-      await axios.post(`${getPublicCrmApiBase()}/public/forms/contact/plain`, payload);
+      await axios.post('/api/contact', payload, { timeout: 30000 });
       trackEvent(LEAD_EVENTS.contactSubmit, {
         event_category: 'lead',
         form_id: 'contact-form',
@@ -95,7 +97,7 @@ const ContattiPagina = () => {
       setIsSuccess(true);
       resetForm();
     } catch (err) {
-      setError('Si e verificato un errore. Riprova o contattaci direttamente.');
+      setError('Si è verificato un errore. Riprova o contattaci direttamente.');
     } finally {
       setIsSubmitting(false);
     }
@@ -288,7 +290,7 @@ const ContattiPagina = () => {
                     <p className="text-[#EAB308] text-sm font-medium uppercase tracking-wider mb-3">Messaggio al team</p>
                     <h2 className="text-2xl md:text-3xl font-medium text-white">Inviaci dettagli e allegati</h2>
                     <p className="text-[#94A3B8] mt-3">
-                      Indica citta, obiettivo e tipo di edificio. Se hai foto dei vetri, allegale: aiutano a rispondere meglio.
+                      Indica città, obiettivo e tipo di edificio. Se hai foto dei vetri, allegale: aiutano a rispondere meglio.
                     </p>
                   </div>
 
@@ -328,8 +330,8 @@ const ContattiPagina = () => {
                           <input type="text" name="ragione_sociale" value={formData.ragione_sociale} onChange={handleChange} placeholder="Azienda o ente" className="form-input-dark" data-testid="contact-ragione-sociale" />
                         </div>
                         <div>
-                          <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Citta *</label>
-                          <input type="text" name="citta" value={formData.citta} onChange={handleChange} required placeholder="Citta intervento" className="form-input-dark" data-testid="contact-citta" />
+                          <label className="block text-xs uppercase tracking-widest text-[#94A3B8] mb-3">Città *</label>
+                          <input type="text" name="citta" value={formData.citta} onChange={handleChange} required placeholder="Città intervento" className="form-input-dark" data-testid="contact-citta" />
                         </div>
                       </div>
                       <div>
@@ -347,7 +349,7 @@ const ContattiPagina = () => {
                           className={fileInputClasses}
                           data-testid="contact-files"
                         />
-                        <p className="mt-2 text-xs text-[#94A3B8]/70">Puoi allegare fino a 10 file tutti insieme</p>
+                        <p className="mt-2 text-xs text-[#94A3B8]/70">{FORM_FILE_LIMIT_LABEL}</p>
                         <details className="mt-3">
                           <summary className="inline-block cursor-pointer rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/80">
                             aggiungi file separatamente

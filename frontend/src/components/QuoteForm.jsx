@@ -4,7 +4,8 @@ import { CheckCircle, ArrowRight, Phone, WhatsappLogo } from '@phosphor-icons/re
 import axios from 'axios';
 import { useSettings } from '../hooks/useSettings';
 import { buildWhatsAppHref } from '../utils/contactLinks';
-import { appendSourceFields, getPublicCrmApiBase } from '../utils/publicApi';
+import { appendSourceFields } from '../utils/publicApi';
+import { FORM_FILE_LIMIT_LABEL, selectFormFiles } from '../utils/formFiles';
 import { LEAD_EVENTS, trackEvent } from './Analytics';
 
 const pellicoleTipi = [
@@ -46,8 +47,9 @@ const QuoteForm = () => {
   };
 
   const addFiles = (fileList) => {
-    const selected = Array.from(fileList || []);
-    setFiles((prev) => [...prev, ...selected].slice(0, 10));
+    const result = selectFormFiles(files, fileList);
+    setFiles(result.files);
+    setError(result.error);
   };
 
   const resetForm = () => {
@@ -77,9 +79,9 @@ const QuoteForm = () => {
       payload.append('privacy_acceptance', String(formData.privacy_accettata));
       payload.append('messaggio', formData.richiesta);
       appendSourceFields(payload, 'richiedi_preventivo');
-      files.forEach((file) => payload.append('attachment_image', file));
+      files.forEach((file) => payload.append('attachment_image[]', file));
 
-      await axios.post(`${getPublicCrmApiBase()}/public/forms/quote-request/plain`, payload);
+      await axios.post('/api/quote', payload, { timeout: 30000 });
       trackEvent(LEAD_EVENTS.quoteSubmit, {
         event_category: 'lead',
         form_id: 'quote-form',
@@ -202,7 +204,7 @@ const QuoteForm = () => {
           className={fileInputClasses}
           data-testid="quote-files"
         />
-        <p className="mt-2 text-xs text-[#94A3B8]/70">Puoi allegare fino a 10 file tutti insieme</p>
+        <p className="mt-2 text-xs text-[#94A3B8]/70">{FORM_FILE_LIMIT_LABEL}</p>
         <details className="mt-3">
           <summary className="inline-block cursor-pointer rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs text-white/80">
             Aggiungi file separatamente

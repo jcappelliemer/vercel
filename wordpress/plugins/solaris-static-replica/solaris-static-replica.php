@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Solaris Static Replica
  * Description: Serve la replica statica 1:1 del nuovo sito Solaris dentro WordPress, con redirect e 410 server-side.
- * Version: 0.3.6
+ * Version: 0.4.0
  * Author: Solaris Films
  */
 
@@ -508,6 +508,183 @@ function solaris_static_replica_crm_post($path, $body, $as_json = false, $extra_
     );
 }
 
+function solaris_static_replica_public_form_fields($input) {
+    $allowed = array(
+        'nome', 'cognome', 'ragione_sociale', 'citta', 'telefono', 'email',
+        'superficie_mq', 'tipo_pellicola', 'richiesta', 'privacy_accettata',
+        'first_name', 'last_name', 'company_name', 'city', 'phone',
+        'surface_sqm', 'product_interest', 'request_notes', 'privacy_acceptance',
+        'messaggio', 'form_code', 'source_page', 'source_site',
+    );
+    $fields = array();
+    foreach ($allowed as $key) {
+        if (!isset($input[$key]) || !is_scalar($input[$key])) {
+            continue;
+        }
+        $fields[$key] = substr(str_replace("\0", '', (string) $input[$key]), 0, 100000);
+    }
+    return $fields;
+}
+
+function solaris_static_replica_public_form_files($files) {
+    $spec = $files['attachment_image'] ?? $files['attachment_image[]'] ?? null;
+    if (!is_array($spec) || !isset($spec['name'])) {
+        return array();
+    }
+
+    $names = is_array($spec['name']) ? $spec['name'] : array($spec['name']);
+    $types = is_array($spec['type'] ?? null) ? $spec['type'] : array($spec['type'] ?? '');
+    $temporary = is_array($spec['tmp_name'] ?? null) ? $spec['tmp_name'] : array($spec['tmp_name'] ?? '');
+    $errors = is_array($spec['error'] ?? null) ? $spec['error'] : array($spec['error'] ?? UPLOAD_ERR_NO_FILE);
+    $sizes = is_array($spec['size'] ?? null) ? $spec['size'] : array($spec['size'] ?? 0);
+    $result = array();
+    foreach (array_keys($names) as $index) {
+        $result[] = array(
+            'name' => (string) ($names[$index] ?? ''),
+            'type' => (string) ($types[$index] ?? ''),
+            'tmp_name' => (string) ($temporary[$index] ?? ''),
+            'error' => (int) ($errors[$index] ?? UPLOAD_ERR_NO_FILE),
+            'size' => (int) ($sizes[$index] ?? 0),
+        );
+    }
+    return $result;
+}
+
+function solaris_static_replica_build_multipart($fields, $files = array(), $require_uploaded = true) {
+    $boundary = '----SolarisHeadless' . wp_generate_password(24, false, false);
+    $body = '';
+    foreach ((array) $fields as $key => $value) {
+        $name = sanitize_key((string) $key);
+        if ($name === '') {
+            continue;
+        }
+        $body .= '--' . $boundary . "\r\n";
+        $body .= 'Content-Disposition: form-data; name="' . $name . "\"\r\n\r\n";
+        $body .= (string) $value . "\r\n";
+    }
+
+    $uploads = solaris_static_replica_public_form_files($files);
+    if (count($uploads) > 10) {
+        return new WP_Error('too_many_files', 'Troppi allegati');
+    }
+    $total_size = 0;
+    foreach ($uploads as $upload) {
+        if ($upload['error'] === UPLOAD_ERR_NO_FILE) {
+            continue;
+        }
+        if ($upload['error'] !== UPLOAD_ERR_OK) {
+            return new WP_Error('upload_error', 'Caricamento allegato non riuscito');
+        }
+        if ($require_uploaded && !is_uploaded_file($upload['tmp_name'])) {
+            return new WP_Error('invalid_upload', 'Allegato non valido');
+        }
+        if (!is_readable($upload['tmp_name'])) {
+            return new WP_Error('unreadable_upload', 'Allegato non leggibile');
+        }
+        $size = (int) filesize($upload['tmp_name']);
+        $total_size += $size;
+        if ($size > 10 * MB_IN_BYTES) {
+            return new WP_Error('file_too_large', 'Un allegato supera 10 MB');
+        }
+        if ($total_size > 28 * MB_IN_BYTES) {
+            return new WP_Error('files_too_large', 'Gli allegati superano 28 MB');
+        }
+
+        $contents = file_get_contents($upload['tmp_name']);
+        if (!is_string($contents)) {
+            return new WP_Error('read_error', 'Allegato non leggibile');
+        }
+        $filename = sanitize_file_name($upload['name']);
+        $mime = sanitize_mime_type($upload['type']);
+        $body .= '--' . $boundary . "\r\n";
+        $body .= 'Content-Disposition: form-data; name="attachment_image"; filename="' . ($filename ?: 'allegato') . "\"\r\n";
+        $body .= 'Content-Type: ' . ($mime ?: 'application/octet-stream') . "\r\n\r\n";
+        $body .= $contents . "\r\n";
+    }
+    $body .= '--' . $boundary . "--\r\n";
+
+    return array(
+        'body' => $body,
+        'content_type' => 'multipart/form-data; boundary=' . $boundary,
+    );
+}
+
+function solaris_static_replica_crm_multipart_post($path, $multipart) {
+    $response = wp_safe_remote_post(solaris_static_replica_crm_api_url($path), array(
+        'timeout' => 30,
+        'redirection' => 0,
+        'headers' => array(
+            'Content-Type' => $multipart['content_type'],
+            'X-Solaris-Source' => 'headless-wordpress',
+        ),
+        'body' => $multipart['body'],
+        'data_format' => 'body',
+        'limit_response_size' => 1048576,
+    ));
+    if (is_wp_error($response)) {
+        return array('ok' => false, 'status' => 0, 'data' => array());
+    }
+
+    $status = (int) wp_remote_retrieve_response_code($response);
+    $data = json_decode((string) wp_remote_retrieve_body($response), true);
+    return array(
+        'ok' => $status >= 200 && $status < 300,
+        'status' => $status,
+        'data' => is_array($data) ? $data : array(),
+    );
+}
+
+function solaris_static_replica_handle_public_form($form_type, $input_fields = null, $input_files = null, $require_uploaded = true) {
+    if ($input_fields === null && strtoupper((string) ($_SERVER['REQUEST_METHOD'] ?? 'GET')) !== 'POST') {
+        solaris_static_replica_send_json(405, array('detail' => 'Method not allowed'));
+        return;
+    }
+    $targets = array(
+        'contact' => '/public/forms/contact/plain',
+        'quote' => '/public/forms/quote-request/plain',
+    );
+    if (!isset($targets[$form_type])) {
+        solaris_static_replica_send_json(404, array('detail' => 'Unknown form'));
+        return;
+    }
+
+    $fields = solaris_static_replica_public_form_fields($input_fields === null ? $_POST : $input_fields);
+    $privacy = $fields['privacy_acceptance'] ?? $fields['privacy_accettata'] ?? false;
+    if (!filter_var($privacy, FILTER_VALIDATE_BOOLEAN)) {
+        solaris_static_replica_send_json(422, array('detail' => 'Privacy non accettata'));
+        return;
+    }
+    $first_name = trim((string) ($fields['first_name'] ?? $fields['nome'] ?? ''));
+    $email = trim((string) ($fields['email'] ?? ''));
+    $phone = trim((string) ($fields['phone'] ?? $fields['telefono'] ?? ''));
+    if ($first_name === '') {
+        solaris_static_replica_send_json(422, array('detail' => 'Nome obbligatorio'));
+        return;
+    }
+    if ($email === '' && $phone === '') {
+        solaris_static_replica_send_json(422, array('detail' => 'Inserisci almeno email o telefono'));
+        return;
+    }
+
+    $multipart = solaris_static_replica_build_multipart(
+        $fields,
+        $input_files === null ? $_FILES : $input_files,
+        $require_uploaded
+    );
+    if (is_wp_error($multipart)) {
+        solaris_static_replica_send_json(413, array('detail' => $multipart->get_error_message()));
+        return;
+    }
+
+    $crm_result = solaris_static_replica_crm_multipart_post($targets[$form_type], $multipart);
+    $status = $crm_result['status'] ?: 502;
+    $payload = $crm_result['data'];
+    if (!$payload) {
+        $payload = array('detail' => $crm_result['ok'] ? 'Richiesta inviata' : 'Form temporarily unavailable');
+    }
+    solaris_static_replica_send_json($status, $payload);
+}
+
 function solaris_static_replica_chat_fallback($message) {
     $text = strtolower(remove_accents((string) $message));
     if (preg_match('/safety|sicurezza|antisfondamento|blindat/', $text)) {
@@ -843,6 +1020,14 @@ add_action('template_redirect', function () {
     }
     if ($path === '/api/chat/lead') {
         solaris_static_replica_handle_chat_lead();
+        exit;
+    }
+    if ($path === '/api/contact') {
+        solaris_static_replica_handle_public_form('contact');
+        exit;
+    }
+    if ($path === '/api/quote') {
+        solaris_static_replica_handle_public_form('quote');
         exit;
     }
     if ($path === '/api/fast-contact') {

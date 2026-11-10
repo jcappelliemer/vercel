@@ -11,9 +11,19 @@ if (!function_exists('solaris_static_replica_handle_chat')) {
 }
 
 $requests = array();
-$http_mock = function ($preempt, $args, $url) use (&$requests) {
+$knowledge_available = true;
+$http_mock = function ($preempt, $args, $url) use (&$requests, &$knowledge_available) {
     $requests[] = array('url' => $url, 'args' => $args);
     if (strpos($url, '/public/chatbot/knowledge/search') !== false) {
+        if (!$knowledge_available) {
+            return array(
+                'headers' => array('content-type' => 'application/json'),
+                'body' => wp_json_encode(array('detail' => 'Unavailable')),
+                'response' => array('code' => 503, 'message' => 'Unavailable'),
+                'cookies' => array(),
+                'filename' => null,
+            );
+        }
         return array(
             'headers' => array('content-type' => 'application/json'),
             'body' => wp_json_encode(array(
@@ -43,6 +53,20 @@ $http_mock = function ($preempt, $args, $url) use (&$requests) {
     return $preempt;
 };
 add_filter('pre_http_request', $http_mock, 10, 3);
+$crm_key_mock = function () {
+    return 'test-key';
+};
+add_filter('solaris_static_replica_crm_webhook_key', $crm_key_mock);
+$wordpress_knowledge_mock = function () {
+    return array(array(
+        'title' => 'Pagina Solaris locale',
+        'source_type' => 'solaris',
+        'origin_url' => 'https://www.solarisfilms.it/guida-tecnica/',
+        'score' => 80,
+        'snippet' => 'La pagina WordPress locale contiene indicazioni tecniche sulle pellicole per vetri.',
+    ));
+};
+add_filter('solaris_static_replica_wordpress_knowledge', $wordpress_knowledge_mock, 10, 0);
 
 try {
     ob_start();
@@ -60,6 +84,17 @@ try {
     }
     if (strpos((string) ($chat['response'] ?? ''), 'pellicole antisolari') === false) {
         throw new RuntimeException('Chat response did not use the mocked knowledge source.');
+    }
+
+    $knowledge_available = false;
+    ob_start();
+    solaris_static_replica_handle_chat(array(
+        'message' => 'Mi serve una guida tecnica locale',
+        'page_path' => '/',
+    ));
+    $wordpress_chat = json_decode(ob_get_clean(), true);
+    if (($wordpress_chat['knowledge_status'] ?? '') !== 'wordpress' || count($wordpress_chat['sources'] ?? array()) !== 1) {
+        throw new RuntimeException('Chat did not fall back to the local WordPress knowledge.');
     }
 
     $before_invalid = count($requests);
@@ -102,4 +137,6 @@ try {
     echo "static_replica_dynamic_api=PASS\n";
 } finally {
     remove_filter('pre_http_request', $http_mock, 10);
+    remove_filter('solaris_static_replica_crm_webhook_key', $crm_key_mock);
+    remove_filter('solaris_static_replica_wordpress_knowledge', $wordpress_knowledge_mock, 10);
 }

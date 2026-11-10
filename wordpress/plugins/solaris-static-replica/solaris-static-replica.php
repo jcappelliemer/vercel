@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Solaris Static Replica
  * Description: Serve la replica statica 1:1 del nuovo sito Solaris dentro WordPress, con redirect e 410 server-side.
- * Version: 0.3.2
+ * Version: 0.3.3
  * Author: Solaris Films
  */
 
@@ -480,8 +480,8 @@ function solaris_static_replica_crm_api_url($path) {
     return untrailingslashit($base) . '/' . ltrim((string) $path, '/');
 }
 
-function solaris_static_replica_crm_post($path, $body, $as_json = false) {
-    $headers = array('X-Solaris-Source' => 'headless-wordpress');
+function solaris_static_replica_crm_post($path, $body, $as_json = false, $extra_headers = array()) {
+    $headers = array_merge(array('X-Solaris-Source' => 'headless-wordpress'), (array) $extra_headers);
     $request_body = $body;
     if ($as_json) {
         $headers['Content-Type'] = 'application/json';
@@ -578,6 +578,59 @@ function solaris_static_replica_public_sources($knowledge) {
     return $result;
 }
 
+function solaris_static_replica_wordpress_knowledge($message, $limit = 3) {
+    $normalized = strtolower(remove_accents(wp_strip_all_tags((string) $message)));
+    preg_match_all('/[a-z0-9]{4,}/', $normalized, $matches);
+    $stopwords = array('come', 'cosa', 'della', 'delle', 'degli', 'sono', 'quale', 'questo', 'questa', 'vorrei', 'posso', 'vetri', 'vetro', 'pellicola', 'pellicole');
+    $tokens = array_values(array_filter(array_unique($matches[0] ?? array()), function ($token) use ($stopwords) {
+        return !in_array($token, $stopwords, true);
+    }));
+    $tokens = array_slice($tokens, 0, 5);
+    $posts = array();
+    $seen = array();
+    $public_types = get_post_types(array('public' => true), 'names');
+    unset($public_types['attachment']);
+
+    foreach ($tokens as $token) {
+        $found = get_posts(array(
+            'post_type' => array_values($public_types),
+            'post_status' => 'publish',
+            's' => $token,
+            'numberposts' => $limit,
+            'orderby' => 'relevance',
+            'order' => 'DESC',
+            'suppress_filters' => false,
+        ));
+        foreach ($found as $post) {
+            if (isset($seen[$post->ID])) {
+                continue;
+            }
+            $seen[$post->ID] = true;
+            $posts[] = $post;
+            if (count($posts) >= $limit) {
+                break 2;
+            }
+        }
+    }
+
+    $public_origin = untrailingslashit((string) apply_filters('solaris_static_replica_public_origin', 'https://www.solarisfilms.it'));
+    $sources = array();
+    foreach ($posts as $index => $post) {
+        $permalink = get_permalink($post);
+        $path = is_string($permalink) ? wp_parse_url($permalink, PHP_URL_PATH) : '';
+        $content = wp_strip_all_tags(strip_shortcodes((string) $post->post_content));
+        $sources[] = array(
+            'title' => get_the_title($post),
+            'source_type' => 'solaris',
+            'origin_url' => $public_origin . ($path ?: '/'),
+            'score' => 100 - ($index * 5),
+            'snippet' => wp_trim_words($content, 45, '...'),
+        );
+    }
+
+    return (array) apply_filters('solaris_static_replica_wordpress_knowledge', $sources, $message, $limit);
+}
+
 function solaris_static_replica_handle_chat($payload = null) {
     if ($payload === null && strtoupper((string) ($_SERVER['REQUEST_METHOD'] ?? 'GET')) !== 'POST') {
         solaris_static_replica_send_json(405, array('detail' => 'Method not allowed'));
@@ -595,12 +648,25 @@ function solaris_static_replica_handle_chat($payload = null) {
         return;
     }
 
-    $knowledge_result = solaris_static_replica_crm_post('/public/chatbot/knowledge/search', array(
-        'message' => $message,
-        'page_path' => sanitize_text_field((string) ($body['page_path'] ?? '')),
-        'limit' => 6,
-    ), true);
-    $knowledge = $knowledge_result['ok'] ? $knowledge_result['data'] : array();
+    $crm_key = (string) apply_filters(
+        'solaris_static_replica_crm_webhook_key',
+        get_option('solaris_static_replica_crm_webhook_key', '')
+    );
+    $knowledge_result = $crm_key !== ''
+        ? solaris_static_replica_crm_post('/public/chatbot/knowledge/search', array(
+            'message' => $message,
+            'page_path' => sanitize_text_field((string) ($body['page_path'] ?? '')),
+            'limit' => 6,
+        ), true, array('X-CRM-Key' => $crm_key))
+        : array('ok' => false, 'status' => 0, 'data' => array());
+    $knowledge_status = 'crm';
+    if ($knowledge_result['ok']) {
+        $knowledge = $knowledge_result['data'];
+    } else {
+        $wordpress_sources = solaris_static_replica_wordpress_knowledge($message, 3);
+        $knowledge = array('sources' => $wordpress_sources, 'tokens' => array());
+        $knowledge_status = $wordpress_sources ? 'wordpress' : 'fallback';
+    }
     $session_id = sanitize_text_field((string) ($body['session_id'] ?? ''));
     if ($session_id === '') {
         $session_id = wp_generate_uuid4();
@@ -610,7 +676,7 @@ function solaris_static_replica_handle_chat($payload = null) {
         'response' => solaris_static_replica_chat_response($message, $knowledge),
         'session_id' => $session_id,
         'sources' => solaris_static_replica_public_sources($knowledge),
-        'knowledge_status' => $knowledge_result['ok'] ? 'ok' : 'fallback',
+        'knowledge_status' => $knowledge_status,
     ));
 }
 

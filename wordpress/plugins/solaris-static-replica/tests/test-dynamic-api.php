@@ -76,7 +76,7 @@ try {
         'session_id' => 'session-test',
     ));
     $chat = json_decode(ob_get_clean(), true);
-    if (!is_array($chat) || ($chat['knowledge_status'] ?? '') !== 'ok') {
+    if (!is_array($chat) || ($chat['knowledge_status'] ?? '') !== 'crm') {
         throw new RuntimeException('Chat knowledge proxy did not return a successful response.');
     }
     if (($chat['session_id'] ?? '') !== 'session-test' || count($chat['sources'] ?? array()) !== 1) {

@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Solaris Static Replica
  * Description: Serve la replica statica 1:1 del nuovo sito Solaris dentro WordPress, con redirect e 410 server-side.
- * Version: 0.3.0
+ * Version: 0.3.1
  * Author: Solaris Films
  */
 
@@ -172,7 +172,7 @@ function solaris_static_replica_mime($file) {
 }
 
 function solaris_static_replica_prepare_html($html) {
-    $robots = get_option('blog_public') === '0' ? 'noindex, nofollow' : 'index, follow';
+    $robots = (int) get_option('blog_public', 1) === 0 ? 'noindex, nofollow' : 'index, follow';
     $meta = '<meta name="robots" content="' . esc_attr($robots) . '">';
     if (preg_match('/<meta\b[^>]*\bname=["\']robots["\'][^>]*>/i', $html)) {
         $html = preg_replace('/<meta\b[^>]*\bname=["\']robots["\'][^>]*>/i', $meta, $html, 1);
@@ -190,7 +190,7 @@ function solaris_static_replica_send_file($file, $cache = 'public, max-age=300')
     $mime = solaris_static_replica_mime($file);
     header('Content-Type: ' . $mime);
     $is_html = strpos($mime, 'text/html') === 0;
-    $is_private_staging = get_option('blog_public') === '0';
+    $is_private_staging = (int) get_option('blog_public', 1) === 0;
     if ($is_html && $is_private_staging) {
         $cache = 'no-store, max-age=0';
         header('X-Robots-Tag: noindex, nofollow');

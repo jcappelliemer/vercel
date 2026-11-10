@@ -49,6 +49,17 @@ const isAcceptedPrivacy = (form) => {
   return ['1', 'true', 'on', 'yes'].includes(String(value || '').toLowerCase());
 };
 
+async function* limitedRequestBody(req) {
+  let totalBytes = 0;
+  for await (const chunk of req) {
+    totalBytes += Buffer.byteLength(chunk);
+    if (totalBytes > MAX_BODY_BYTES) {
+      throw httpError(413, 'Request body too large');
+    }
+    yield chunk;
+  }
+}
+
 async function parsePublicForm(req) {
   const contentType = String(req.headers?.['content-type'] || '');
   if (!contentType.includes('multipart/form-data') && !contentType.includes('application/x-www-form-urlencoded')) {
@@ -63,7 +74,7 @@ async function parsePublicForm(req) {
   const request = new Request('http://localhost/form', {
     method: 'POST',
     headers: { 'content-type': contentType },
-    body: Readable.toWeb(req),
+    body: Readable.toWeb(Readable.from(limitedRequestBody(req))),
     duplex: 'half',
   });
   const incoming = await request.formData();

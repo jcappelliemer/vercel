@@ -71,3 +71,13 @@ test('rejects missing consent before contacting the CRM', async () => {
   assert.equal(res.statusCode, 422);
   assert.match(res.body.toString(), /Privacy non accettata/);
 });
+
+test('rejects an oversized request before parsing multipart data', async () => {
+  const req = Readable.from([]);
+  req.method = 'POST';
+  req.headers = {
+    'content-type': 'application/x-www-form-urlencoded',
+    'content-length': String(64 * 1024 * 1024),
+  };
+  await assert.rejects(parsePublicForm(req), (error) => error.status === 413);
+});
